@@ -1,0 +1,234 @@
+
+nodropen 
+spdirection  1 1 1 1
+cansave      2
+nofadeout    0
+disablehof   1
+typemp       2
+#nodebug      1
+#versusdamage 1
+#blockratio   1
+#mpblock      1
+
+maxattacks 5
+
+
+#------------------------
+
+#Animated Title and Select screens
+load    bgselect        data/bgs/select/bgselect.txt
+load    bgtitle         data/bgs/title/bgtitle.txt
+
+#Flash animations
+load    flash           data/chars/misc/flash/flash.txt
+load    flashmedium     data/chars/misc/flash/flashmedium.txt
+load    flashbig        data/chars/misc/flash/flashbig.txt
+
+
+#Players special animations
+know    aura            data/chars/seiya/special/aura.txt
+know    constellation   data/chars/seiya/special/constellation.txt
+know    pegasus         data/chars/seiya/special/pegasus.txt
+know    meteor          data/chars/seiya/special/meteor.txt
+know    meteord         data/chars/seiya/special/meteord.txt
+
+know    energy          data/chars/OBJ/energy.txt
+know    cosmo           data/chars/OBJ/cosmo.txt
+know    life            data/chars/OBJ/life.txt
+know    NPC-PLAYER      data/chars/OBJ/NPC-PLAYER.txt
+
+know    kikisuper       data/chars/KIKI/kikisuper.txt
+load    KIKI            data/chars/KIKI/KIKI.txt
+load    KIKI2           data/chars/KIKI2/KIKI2.txt
+
+know    libra1          data/chars/LIBRA/libra1.txt
+know    libra2          data/chars/LIBRA/libra2.txt
+know    libra3          data/chars/LIBRA/libra3.txt
+know    libra4          data/chars/LIBRA/libra4.txt
+know    libra5          data/chars/LIBRA/libra5.txt
+know    libra6          data/chars/LIBRA/libra6.txt
+know    libra7          data/chars/LIBRA/libra7.txt
+
+know    arma0-1         data/chars/LIBRA/arma0-1.txt
+know    arma0-2         data/chars/LIBRA/arma0-2.txt
+know    arma0-3         data/chars/LIBRA/arma0-3.txt
+know    arma0-4         data/chars/LIBRA/arma0-4.txt
+
+load    CASSIOS         data/chars/CASSIOS/CASSIOS.txt
+
+## PEGASUS / SEIYA
+
+load    seiya           data/chars/seiya/seiya.txt
+
+## DRAGON / SHIRYU
+
+know    dragonsuper     data/chars/DRAGON-SHIRYU/dragonsuper.txt
+load    DRAGON-SHIRYU   data/chars/DRAGON-SHIRYU/DRAGON-SHIRYU.txt
+load    DSARMA0         data/chars/DRAGON-SHIRYU/DSARMA0.txt
+load    DSARMA1         data/chars/DRAGON-SHIRYU/DSARMA1.txt
+load    DSARMA2         data/chars/DRAGON-SHIRYU/DSARMA2.txt
+load    DSARMA3         data/chars/DRAGON-SHIRYU/DSARMA3.txt
+load    DSARMA4         data/chars/DRAGON-SHIRYU/DSARMA4.txt
+load    DSARMA5         data/chars/DRAGON-SHIRYU/DSARMA5.txt
+load    DSARMA6         data/chars/DRAGON-SHIRYU/DSARMA6.txt
+
+## CYGNUS - HYOGA
+
+load    CYGNUS-HYOGA    data/chars/CYGNUS-HYOGA/CYGNUS-HYOGA.txt
+load    CHARMA0         data/chars/CYGNUS-HYOGA/CHARMA0.txt
+load    CHARMA1         data/chars/CYGNUS-HYOGA/CHARMA1.txt
+load    CHARMA2         data/chars/CYGNUS-HYOGA/CHARMA2.txt
+load    CHARMA3         data/chars/CYGNUS-HYOGA/CHARMA3.txt
+load    CHARMA4         data/chars/CYGNUS-HYOGA/CHARMA4.txt
+load    CHARMA5         data/chars/CYGNUS-HYOGA/CHARMA5.txt
+load    CHARMA6         data/chars/CYGNUS-HYOGA/CHARMA6.txt
+
+## ANDROMEDA / SHUN
+
+load    ANDROMEDA-SHUN  data/chars/ANDROMEDA-SHUN/ANDROMEDA-SHUN.txt
+load    ASARMA0         data/chars/ANDROMEDA-SHUN/ASARMA0.txt
+load    ASARMA1         data/chars/ANDROMEDA-SHUN/ASARMA1.txt
+load    ASARMA2         data/chars/ANDROMEDA-SHUN/ASARMA2.txt
+load    ASARMA3         data/chars/ANDROMEDA-SHUN/ASARMA3.txt
+load    ASARMA4         data/chars/ANDROMEDA-SHUN/ASARMA4.txt
+load    ASARMA5         data/chars/ANDROMEDA-SHUN/ASARMA5.txt
+load    ASARMA6         data/chars/ANDROMEDA-SHUN/ASARMA6.txt
+
+## PHOENIX / IKKI
+
+know    ikkisuper       data/chars/PHOENIX-IKKI/ikkisuper.txt
+load    PHOENIX-IKKI    data/chars/PHOENIX-IKKI/PHOENIX-IKKI.txt
+load    PIARMA0         data/chars/PHOENIX-IKKI/PIARMA0.txt
+load    PIARMA1         data/chars/PHOENIX-IKKI/PIARMA1.txt
+load    PIARMA2         data/chars/PHOENIX-IKKI/PIARMA2.txt
+load    PIARMA3         data/chars/PHOENIX-IKKI/PIARMA3.txt
+load    PIARMA4         data/chars/PHOENIX-IKKI/PIARMA4.txt
+load    PIARMA5         data/chars/PHOENIX-IKKI/PIARMA5.txt
+load    PIARMA6         data/chars/PHOENIX-IKKI/PIARMA6.txt
+
+## UNICORN / JABU
+
+load    UNICORN-JABU    data/chars/UNICORN-JABU/UNICORN-JABU.txt
+load    UJARMA0         data/chars/UNICORN-JABU/UJARMA0.txt
+load    UJARMA1         data/chars/UNICORN-JABU/UJARMA1.txt
+load    UJARMA2         data/chars/UNICORN-JABU/UJARMA2.txt
+load    UJARMA3         data/chars/UNICORN-JABU/UJARMA3.txt
+load    UJARMA4         data/chars/UNICORN-JABU/UJARMA4.txt
+load    UJARMA5         data/chars/UNICORN-JABU/UJARMA5.txt
+load    UJARMA6         data/chars/UNICORN-JABU/UJARMA6.txt
+
+## HYDRA / ICHI
+
+load    HYDRA-ICHI      data/chars/HYDRA-ICHI/HYDRA-ICHI.txt
+load    HIARMA0         data/chars/HYDRA-ICHI/HIARMA0.txt
+load    HIARMA1         data/chars/HYDRA-ICHI/HIARMA1.txt
+load    HIARMA2         data/chars/HYDRA-ICHI/HIARMA2.txt
+load    HIARMA3         data/chars/HYDRA-ICHI/HIARMA3.txt
+load    HIARMA4         data/chars/HYDRA-ICHI/HIARMA4.txt
+load    HIARMA5         data/chars/HYDRA-ICHI/HIARMA5.txt
+load    HIARMA6         data/chars/HYDRA-ICHI/HIARMA6.txt
+
+## BEAR / GEKI
+
+load    BEAR-GEKI       data/chars/BEAR-GEKI/BEAR-GEKI.txt
+load    BGARMA0         data/chars/BEAR-GEKI/BGARMA0.txt
+load    BGARMA1         data/chars/BEAR-GEKI/BGARMA1.txt
+load    BGARMA2         data/chars/BEAR-GEKI/BGARMA2.txt
+load    BGARMA3         data/chars/BEAR-GEKI/BGARMA3.txt
+load    BGARMA4         data/chars/BEAR-GEKI/BGARMA4.txt
+load    BGARMA5         data/chars/BEAR-GEKI/BGARMA5.txt
+load    BGARMA6         data/chars/BEAR-GEKI/BGARMA6.txt
+
+## LIONET / BAN
+
+load    LIONET-BAN      data/chars/LIONET-BAN/LIONET-BAN.txt
+load    LBARMA0         data/chars/LIONET-BAN/LBARMA0.txt
+load    LBARMA1         data/chars/LIONET-BAN/LBARMA1.txt
+load    LBARMA2         data/chars/LIONET-BAN/LBARMA2.txt
+load    LBARMA3         data/chars/LIONET-BAN/LBARMA3.txt
+load    LBARMA4         data/chars/LIONET-BAN/LBARMA4.txt
+load    LBARMA5         data/chars/LIONET-BAN/LBARMA5.txt
+load    LBARMA6         data/chars/LIONET-BAN/LBARMA6.txt
+
+## WOLF / NACHI
+
+load    WOLF-NACHI      data/chars/WOLF-NACHI/WOLF-NACHI.txt
+load    WNARMA0         data/chars/WOLF-NACHI/WNARMA0.txt
+load    WNARMA1         data/chars/WOLF-NACHI/WNARMA1.txt
+load    WNARMA2         data/chars/WOLF-NACHI/WNARMA2.txt
+load    WNARMA3         data/chars/WOLF-NACHI/WNARMA3.txt
+load    WNARMA4         data/chars/WOLF-NACHI/WNARMA4.txt
+load    WNARMA5         data/chars/WOLF-NACHI/WNARMA5.txt
+load    WNARMA6         data/chars/WOLF-NACHI/WNARMA6.txt
+
+## EAGLE / MARIN
+
+load    EAGLE-MARIN     data/chars/EAGLE-MARIN/EAGLE-MARIN.txt
+load    EMARMA0         data/chars/EAGLE-MARIN/EMARMA0.txt
+load    EMARMA1         data/chars/EAGLE-MARIN/EMARMA1.txt
+load    EMARMA2         data/chars/EAGLE-MARIN/EMARMA2.txt
+load    EMARMA3         data/chars/EAGLE-MARIN/EMARMA3.txt
+load    EMARMA4         data/chars/EAGLE-MARIN/EMARMA4.txt
+load    EMARMA5         data/chars/EAGLE-MARIN/EMARMA5.txt
+load    EMARMA6         data/chars/EAGLE-MARIN/EMARMA6.txt
+
+## PNJ ##
+
+know    roccia1         data/chars/OBJ/roccia1.txt
+know    rock01          data/chars/OBJ/rock01.txt
+know    roccia2         data/chars/OBJ/roccia2.txt
+know    rock02          data/chars/OBJ/rock02.txt
+
+#Enemies
+
+know    malesoldier     data/chars/malesoldier/malesoldier.txt
+know    soldiersuper    data/chars/SOLDIER1-1/soldiersuper.txt
+know    SOLDIER         data/chars/SOLDIER/SOLDIER.txt
+know    SOLDIER1        data/chars/SOLDIER1/SOLDIER1.txt
+know    SOLDIER1-1      data/chars/SOLDIER1-1/SOLDIER1-1.txt
+know    SOLDIER2        data/chars/SOLDIER2/SOLDIER2.txt
+know    SOLDIER3        data/chars/SOLDIER3/SOLDIER3.txt
+know    SOLDIER4        data/chars/SOLDIER4/SOLDIER4.txt
+
+## GOLD KINGHTS ##
+
+know    ALDEBARAN       data/chars/ALDEBARAN/ALDEBARAN.txt
+
+know    leonesuper      data/chars/AIOLIA/leonesuper.txt
+know    AIOLIA          data/chars/AIOLIA/AIOLIA.txt
+
+know    pescisuper1     data/chars/APHRODITE/pescisuper1.txt
+know    pescisuper2     data/chars/APHRODITE/pescisuper2.txt
+know    pescisuper3     data/chars/APHRODITE/pescisuper3.txt
+know    APHRODITE       data/chars/APHRODITE/APHRODITE.txt
+
+know    CAMUS           data/chars/CAMUS/CAMUS.txt
+
+know    DEATHMASK       data/chars/DEATHMASK/DEATHMASK.txt
+
+know    GEMINI          data/chars/GEMINI/GEMINI.txt
+
+know    MILO            data/chars/MILO/MILO.txt
+
+know    geminisuper     data/chars/SAGA/geminisuper.txt
+know    SAGA            data/chars/SAGA/SAGA.txt
+
+know    SHAKA           data/chars/SHAKA/SHAKA.txt
+know    SHURA           data/chars/SHURA/SHURA.txt
+
+know    CUBE            data/chars/CUBE/CUBE.txt
+
+know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
+
+know    FIORE           data/chars/FIORE/FIORE.txt
+
+
+#Misc stages
+
+load    mu              data/bgs/temple1/mu/mu.txt
+load    heads           data/bgs/temple4/heads/heads.txt
+load    temple4columns  data/bgs/temple4/temple4columns.txt
+load    flame           data/bgs/temple5/flame/flame.txt
+load    temple5columns  data/bgs/temple5/temple5columns.txt
+load    temple5columns  data/bgs/temple13/temple13columns.txt
+

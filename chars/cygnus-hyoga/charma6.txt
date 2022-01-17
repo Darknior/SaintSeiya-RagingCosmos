@@ -1,0 +1,1461 @@
+
+name	CHARMA6
+health	100
+speed	25
+type	none
+shadow	0
+
+mp 100
+
+weaploss 2
+modelflag 0
+
+icon	data/chars/CYGNUS-HYOGA/icon.png
+nodieblink 1
+jumpheight 5
+\\jumpspeed 6
+running 45 5 3
+noquake 1 1
+
+makeinv 4 0
+
+weapons         CHARMA6 CHARMA0 CHARMA1 CHARMA2 CHARMA3 CHARMA4 CHARMA5  CYGNUS-HYOGA
+
+
+
+
+
+com  d  -> s  freespecial
+
+blockodds 1
+
+holdblock 2
+
+
+
+
+
+anim VICTORY
+
+  loop	0
+	delay	10
+	offset	210 176
+	bbox.position.x 0
+	bbox.position.y 0
+	bbox.size.x 0
+	bbox.size.y 0
+frame	data/chars/CYGNUS-HYOGA/38.png
+frame	data/chars/CYGNUS-HYOGA/38.png
+frame	data/chars/CYGNUS-HYOGA/38.png
+frame	data/chars/CYGNUS-HYOGA/38.png
+frame	data/chars/CYGNUS-HYOGA/38.png
+frame	data/chars/CYGNUS-HYOGA/38.png
+frame	data/chars/CYGNUS-HYOGA/38.png
+
+
+
+
+anim	waiting
+  loop	0
+	delay	10
+	offset	102 142
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+
+
+
+anim	select
+loop	0
+	delay	10
+	offset	102 142
+sound data/chars/select.wav
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+frame	data/chars/CYGNUS-HYOGA/SELECT2.png
+frame	data/chars/CYGNUS-HYOGA/SELECT.png
+
+
+
+
+
+
+
+anim	block
+	loop	0
+	delay	2
+	offset	210 176
+
+
+
+dropv 4 1 0
+	bbox.position.x 157
+	bbox.position.y 67
+	bbox.size.x 97
+	bbox.size.y 115
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/31.png
+frame	data/chars/CYGNUS-HYOGA/31.png
+
+
+
+
+
+anim idle
+	loop	0
+	delay	10
+	offset	210 176
+dropv 4 1 0
+	bbox.position.x 181
+	bbox.position.y 54
+	bbox.size.x 50
+	bbox.size.y 131
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/01.png
+frame	data/chars/CYGNUS-HYOGA/01.png
+frame	data/chars/CYGNUS-HYOGA/01.png
+frame	data/chars/CYGNUS-HYOGA/01.png
+        
+    
+
+anim walk
+
+        loop	1
+	delay	7
+	offset	210 176
+ 
+	
+
+	dropv 4 1 0
+	bbox.position.x 141
+	bbox.position.y 90
+	bbox.size.x 122
+	bbox.size.y 93
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+  frame	data/chars/CYGNUS-HYOGA/25.png
+ frame	data/chars/CYGNUS-HYOGA/26.png
+  frame	data/chars/CYGNUS-HYOGA/27.png
+  frame	data/chars/CYGNUS-HYOGA/28.png
+ frame	data/chars/CYGNUS-HYOGA/29.png
+  frame	data/chars/CYGNUS-HYOGA/30.png
+
+   
+
+anim RUN
+
+        loop	1
+	delay	5
+	offset	210 176
+ 
+dropv 4 1 0
+	bbox.position.x 143
+	bbox.position.y 87
+	bbox.size.x 119
+	bbox.size.y 96
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+  frame	data/chars/CYGNUS-HYOGA/25.png
+ frame	data/chars/CYGNUS-HYOGA/26.png
+  frame	data/chars/CYGNUS-HYOGA/27.png
+  frame	data/chars/CYGNUS-HYOGA/28.png
+ frame	data/chars/CYGNUS-HYOGA/29.png
+  frame	data/chars/CYGNUS-HYOGA/30.png
+
+
+
+anim  RUNJUMP
+     loop	0
+	delay	10
+	offset	210 176
+
+dropv 4 1 0
+	bbox.position.x 179
+	bbox.position.y 72
+	bbox.size.x 63
+	bbox.size.y 111
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+
+     
+
+
+anim	get
+
+loop	0
+	delay	5
+	offset	210 176
+weaponframe 2 1
+	
+dropv 4 1 0
+	bbox.position.x 169
+	bbox.position.y 93
+	bbox.size.x 67
+	bbox.size.y 91
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/19.png
+frame	data/chars/CYGNUS-HYOGA/19.png
+frame	data/chars/CYGNUS-HYOGA/19.png
+frame	data/chars/CYGNUS-HYOGA/19.png
+
+
+
+anim attack1
+     
+
+loop	0
+	delay	5
+	offset	210 176
+
+	dropv 4 1 0
+
+	bbox.position.x 162
+	bbox.position.y 51
+	bbox.size.x 81
+	bbox.size.y 131
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/17.png
+frame	data/chars/CYGNUS-HYOGA/17.png
+frame	data/chars/CYGNUS-HYOGA/17.png
+	bbox.position.x 152
+	bbox.position.y 65
+	bbox.size.x 104
+	bbox.size.y 114
+	attack.damage.force 50
+	attack.position.x 249
+	attack.position.y 62
+	attack.size.x 77
+	attack.size.y 120
+frame	data/chars/CYGNUS-HYOGA/18.png
+frame	data/chars/CYGNUS-HYOGA/18.png
+	attack.damage.force 50
+	attack.position.x 249
+	attack.position.y 64
+	attack.size.x 76
+	attack.size.y 118
+frame	data/chars/CYGNUS-HYOGA/18.png
+	
+
+
+
+anim attack2
+
+
+
+ 
+     
+
+       
+      
+	
+
+anim attack3
+
+
+
+
+
+
+
+	
+	
+
+	
+anim special
+
+
+
+
+
+anim SPECIAL2
+
+loop	0
+	delay	6
+	offset	210 176
+energycost  20
+sound data/chars/CYGNUS-HYOGA/01.wav
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/50.png
+frame	data/chars/CYGNUS-HYOGA/51.png
+	attack.damage.force 10
+	attack.position.x 36
+	attack.position.y 65
+	attack.reaction.fall.force 0
+	attack.size.x 379
+	attack.size.y 150
+frame	data/chars/CYGNUS-HYOGA/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/53.png
+	attack.damage.force 10
+	attack.position.x 60
+	attack.position.y 52
+	attack.reaction.fall.force 0
+	attack.size.x 318
+	attack.size.y 165
+frame	data/chars/CYGNUS-HYOGA/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/55.png
+attack.damage.force 10
+	attack.position.x 36
+	attack.position.y 65
+	attack.reaction.fall.force 0
+	attack.size.x 379
+	attack.size.y 150
+frame	data/chars/CYGNUS-HYOGA/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/53.png
+	attack.damage.force 10
+	attack.position.x 60
+	attack.position.y 52
+	attack.reaction.fall.force 0
+	attack.size.x 318
+	attack.size.y 165
+frame	data/chars/CYGNUS-HYOGA/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/55.png
+attack.damage.force 10
+	attack.position.x 36
+	attack.position.y 65
+	attack.reaction.fall.force 0
+	attack.size.x 379
+	attack.size.y 150
+frame	data/chars/CYGNUS-HYOGA/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/53.png
+	attack.damage.force 10
+	attack.position.x 60
+	attack.position.y 52
+	attack.reaction.fall.force 0
+	attack.size.x 318
+	attack.size.y 165
+frame	data/chars/CYGNUS-HYOGA/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/55.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png	
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png
+	attack.damage.force 50
+	attack.position.x 68
+	attack.position.y 48
+	attack.reaction.fall.force 0
+	attack.size.x 336
+	attack.size.y 173
+frame	data/chars/CYGNUS-HYOGA/56.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/57.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 205
+frame	data/chars/CYGNUS-HYOGA/58.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/59.png	
+	
+
+
+
+   
+
+anim freespecial
+loop	0
+	delay	6
+	offset	210 176
+energycost  30
+sound data/chars/CYGNUS-HYOGA/02.wav
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/50.png
+frame	data/chars/CYGNUS-HYOGA/51.png
+	attack.damage.force 10
+	attack.position.x 36
+	attack.position.y 65
+	attack.reaction.fall.force 0
+	attack.size.x 379
+	attack.size.y 150
+frame	data/chars/CYGNUS-HYOGA/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/53.png
+	attack.damage.force 10
+	attack.position.x 60
+	attack.position.y 52
+	attack.reaction.fall.force 0
+	attack.size.x 318
+	attack.size.y 165
+frame	data/chars/CYGNUS-HYOGA/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/55.png
+	attack.damage.force 10
+	attack.position.x 36
+	attack.position.y 65
+	attack.reaction.fall.force 0
+	attack.size.x 379
+	attack.size.y 150
+frame	data/chars/CYGNUS-HYOGA/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/53.png
+	attack.damage.force 10
+	attack.position.x 60
+	attack.position.y 52
+	attack.reaction.fall.force 0
+	attack.size.x 318
+	attack.size.y 165
+frame	data/chars/CYGNUS-HYOGA/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/55.png
+	attack.damage.force 10
+	attack.position.x 36
+	attack.position.y 65
+	attack.reaction.fall.force 0
+	attack.size.x 379
+	attack.size.y 150
+frame	data/chars/CYGNUS-HYOGA/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/53.png
+	attack.damage.force 10
+	attack.position.x 60
+	attack.position.y 52
+	attack.reaction.fall.force 0
+	attack.size.x 318
+	attack.size.y 165
+frame	data/chars/CYGNUS-HYOGA/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/55.png
+	attack.damage.force 50
+	attack.position.x 69
+	attack.position.y 6
+	attack.reaction.fall.force 0
+	attack.size.x 333
+	attack.size.y 203
+frame	data/chars/CYGNUS-HYOGA/60.png
+	attack.damage.force 50
+	attack.position.x 80
+	attack.position.y 22
+	attack.reaction.fall.force 0
+	attack.size.x 297
+	attack.size.y 188
+frame	data/chars/CYGNUS-HYOGA/61.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/62.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 961
+	attack.size.y 197
+frame	data/chars/CYGNUS-HYOGA/63.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/64.png
+	attack.damage.force 50
+	attack.position.x 61
+	attack.position.y -24
+	attack.reaction.fall.force 0
+	attack.size.x 998
+	attack.size.y 256
+frame	data/chars/CYGNUS-HYOGA/65.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/66.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 2
+	attack.reaction.fall.force 0
+	attack.size.x 959
+	attack.size.y 217
+frame	data/chars/CYGNUS-HYOGA/67.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/62.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 961
+	attack.size.y 197
+frame	data/chars/CYGNUS-HYOGA/63.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/64.png
+	attack.damage.force 50
+	attack.position.x 61
+	attack.position.y -24
+	attack.reaction.fall.force 0
+	attack.size.x 998
+	attack.size.y 256
+frame	data/chars/CYGNUS-HYOGA/65.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/66.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 2
+	attack.reaction.fall.force 0
+	attack.size.x 959
+	attack.size.y 217
+frame	data/chars/CYGNUS-HYOGA/67.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/62.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 961
+	attack.size.y 197
+frame	data/chars/CYGNUS-HYOGA/63.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/64.png
+	attack.damage.force 50
+	attack.position.x 61
+	attack.position.y -24
+	attack.reaction.fall.force 0
+	attack.size.x 998
+	attack.size.y 256
+frame	data/chars/CYGNUS-HYOGA/65.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/66.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 2
+	attack.reaction.fall.force 0
+	attack.size.x 959
+	attack.size.y 217
+frame	data/chars/CYGNUS-HYOGA/67.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/62.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 961
+	attack.size.y 197
+frame	data/chars/CYGNUS-HYOGA/63.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/64.png
+	attack.damage.force 50
+	attack.position.x 61
+	attack.position.y -24
+	attack.reaction.fall.force 0
+	attack.size.x 998
+	attack.size.y 256
+frame	data/chars/CYGNUS-HYOGA/65.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/66.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 2
+	attack.reaction.fall.force 0
+	attack.size.x 959
+	attack.size.y 217
+frame	data/chars/CYGNUS-HYOGA/67.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/62.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 961
+	attack.size.y 197
+frame	data/chars/CYGNUS-HYOGA/63.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/64.png
+	attack.damage.force 50
+	attack.position.x 61
+	attack.position.y -24
+	attack.reaction.fall.force 0
+	attack.size.x 998
+	attack.size.y 256
+frame	data/chars/CYGNUS-HYOGA/65.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/66.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 2
+	attack.reaction.fall.force 0
+	attack.size.x 959
+	attack.size.y 217
+frame	data/chars/CYGNUS-HYOGA/67.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/62.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 961
+	attack.size.y 197
+frame	data/chars/CYGNUS-HYOGA/63.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/64.png
+	attack.damage.force 50
+	attack.position.x 61
+	attack.position.y -24
+	attack.reaction.fall.force 0
+	attack.size.x 998
+	attack.size.y 256
+frame	data/chars/CYGNUS-HYOGA/65.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/66.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 2
+	attack.reaction.fall.force 0
+	attack.size.x 959
+	attack.size.y 217
+frame	data/chars/CYGNUS-HYOGA/67.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/62.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 961
+	attack.size.y 197
+frame	data/chars/CYGNUS-HYOGA/63.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/64.png
+	attack.damage.force 50
+	attack.position.x 61
+	attack.position.y -24
+	attack.reaction.fall.force 0
+	attack.size.x 998
+	attack.size.y 256
+frame	data/chars/CYGNUS-HYOGA/65.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/66.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 2
+	attack.reaction.fall.force 0
+	attack.size.x 959
+	attack.size.y 217
+frame	data/chars/CYGNUS-HYOGA/67.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/62.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 961
+	attack.size.y 197
+frame	data/chars/CYGNUS-HYOGA/63.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/64.png
+	attack.damage.force 50
+	attack.position.x 61
+	attack.position.y -24
+	attack.reaction.fall.force 0
+	attack.size.x 998
+	attack.size.y 256
+frame	data/chars/CYGNUS-HYOGA/65.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/66.png
+	attack.damage.force 50
+	attack.position.x 65
+	attack.position.y 2
+	attack.reaction.fall.force 0
+	attack.size.x 959
+	attack.size.y 217
+frame	data/chars/CYGNUS-HYOGA/67.png
+
+
+
+
+
+
+
+
+
+
+anim freespecial2
+
+
+
+
+
+
+
+
+anim freespecial3
+
+
+
+
+
+anim freespecial4
+
+
+
+
+         
+	
+
+anim jump
+
+        loop	0
+	delay	10
+	offset	210 176
+
+
+dropv 4 1 0
+	bbox.position.x 178
+	bbox.position.y 70
+	bbox.size.x 67
+	bbox.size.y 111
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/39.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+frame	data/chars/CYGNUS-HYOGA/41.png
+
+	
+
+
+	
+
+
+anim jumpattack
+    loop	0
+	delay	4
+	offset	210 176
+	
+	dropv 4 1 0
+sound data/sounds/punch.wav
+	bbox.position.x 179
+	bbox.position.y 61
+	bbox.size.x 85
+	bbox.size.y 110
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CYGNUS-HYOGA/40.png
+frame	data/chars/CYGNUS-HYOGA/40.png
+	attack.damage.force 10
+	attack.position.x 227
+	attack.position.y 110
+	attack.reaction.fall.force 1
+	attack.size.x 72
+	attack.size.y 72
+frame	data/chars/CYGNUS-HYOGA/49.png
+frame	data/chars/CYGNUS-HYOGA/49.png
+
+
+
+
+
+	
+
+
+anim jumpattack2
+
+
+
+anim grab
+	
+
+anim grabattack
+	
+
+
+anim grabattack2
+	
+
+
+anim throw
+	
+
+
+anim pain
+loop	0
+offset	210 176
+move	-5
+delay	10
+dropv 4 1 0
+frame	data/chars/CYGNUS-HYOGA/32.png
+frame	data/chars/CYGNUS-HYOGA/32.png
+frame	data/chars/CYGNUS-HYOGA/32.png
+	
+	
+
+
+anim fall
+
+loop	0
+offset	210 176
+delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/CYGNUS-HYOGA/33.png
+frame	data/chars/CYGNUS-HYOGA/33.png
+frame	data/chars/CYGNUS-HYOGA/33.png
+frame	data/chars/CYGNUS-HYOGA/33.png
+frame	data/chars/CYGNUS-HYOGA/33.png
+frame	data/chars/CYGNUS-HYOGA/33.png
+frame	data/chars/CYGNUS-HYOGA/33.png
+frame	data/chars/CYGNUS-HYOGA/33.png
+frame	data/chars/CYGNUS-HYOGA/34.png
+frame	data/chars/CYGNUS-HYOGA/34.png
+frame	data/chars/CYGNUS-HYOGA/34.png
+
+anim DEATH
+
+loop	0
+offset	210 176
+delay	10
+dropv 4 1 0
+frame	data/chars/CYGNUS-HYOGA/34.png
+frame	data/chars/CYGNUS-HYOGA/34.png
+frame	data/chars/CYGNUS-HYOGA/34.png
+
+
+anim rise
+
+	loop	0
+	delay	10
+	offset	210 176
+dropv 4 1 0
+	frame	data/chars/CYGNUS-HYOGA/35.png
+	frame	data/chars/CYGNUS-HYOGA/36.png
+	frame	data/chars/CYGNUS-HYOGA/37.png
+
+	
+	
+	
+	
+
+
+anim land
+
+
+
+
+anim duck
+	
+
+anim duckattack
+
+
+

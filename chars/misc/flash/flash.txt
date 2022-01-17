@@ -1,0 +1,21 @@
+name	flash
+type	none
+shadow	0
+#alpha 6
+
+anim	idle
+	loop	0
+	delay	3
+	offset	75 101
+	drawmethod scale 0.3 0.3
+	drawmethod alpha 1
+	frame	data/chars/misc/flash/flashsmall1.png
+	frame	data/chars/misc/flash/flashsmall2.png
+	frame	data/chars/misc/flash/flashsmall3.png
+	frame	data/chars/misc/flash/flashsmall4.png
+	frame	data/chars/misc/flash/flashsmall5.png
+	frame	data/chars/misc/flash/flashsmall6.png
+	frame	data/chars/misc/flash/flashsmall7.png
+	frame	data/chars/misc/flash/flashsmall8.png
+	frame	data/chars/misc/flash/flashsmall9.png
+	frame	data/chars/misc/flash/flashsmall10.png

@@ -1,0 +1,1607 @@
+
+name	HIARMA3
+health	100
+speed	25
+type	none
+shadow	0
+
+mp 100
+
+weaploss 2
+modelflag 0
+
+icon	data/chars/HYDRA-ICHI/icon.png
+nodieblink 1
+jumpheight 5
+\\jumpspeed 6
+running 45 5 3
+noquake 1 1
+
+makeinv 4 0
+
+weapons         HIARMA3 HIARMA0 HIARMA1 HIARMA2 HIARMA4 HIARMA5 HIARMA6 HYDRA-ICHI
+
+
+
+
+
+com  d  -> s  freespecial
+
+blockodds 1
+
+holdblock 2
+
+
+
+
+
+anim VICTORY
+
+  loop	0
+	delay	10
+	offset	212 173
+frame	data/chars/HYDRA-ICHI/35.png
+frame	data/chars/HYDRA-ICHI/35.png
+frame	data/chars/HYDRA-ICHI/35.png
+frame	data/chars/HYDRA-ICHI/35.png
+frame	data/chars/HYDRA-ICHI/35.png
+frame	data/chars/HYDRA-ICHI/35.png
+frame	data/chars/HYDRA-ICHI/35.png
+
+
+
+
+anim	waiting
+  loop	0
+	delay	10
+	offset	102 142
+frame	data/chars/HYDRA-ICHI/SELECT.png
+
+
+
+anim	select
+loop	0
+	delay	10
+	offset	102 142
+sound data/chars/select.wav
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+frame	data/chars/HYDRA-ICHI/SELECT2.png
+frame	data/chars/HYDRA-ICHI/SELECT.png
+
+
+
+
+
+
+
+anim	block
+	loop	0
+	delay	2
+	offset	212 173
+
+
+dropv 4 1 0
+	bbox.position.x 171
+	bbox.position.y 66
+	bbox.size.x 88
+	bbox.size.y 115
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/28.png
+frame	data/chars/HYDRA-ICHI/28.png
+
+
+
+
+
+anim idle
+	loop	0
+	delay	10
+	offset	212 173
+
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 174
+	bbox.position.y 64
+	bbox.size.x 86
+	bbox.size.y 117
+frame	data/chars/HYDRA-ICHI/01.png
+frame	data/chars/HYDRA-ICHI/01.png
+frame	data/chars/HYDRA-ICHI/01.png
+frame	data/chars/HYDRA-ICHI/01.png
+        
+    
+
+anim walk
+
+        loop	1
+	delay	7
+	offset	212 173
+ 
+	
+dropv 4 1 0
+	bbox.position.x 184
+	bbox.position.y 73
+	bbox.size.x 61
+	bbox.size.y 109
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+  frame	data/chars/HYDRA-ICHI/22.png
+ frame	data/chars/HYDRA-ICHI/23.png
+  frame	data/chars/HYDRA-ICHI/24.png
+  frame	data/chars/HYDRA-ICHI/25.png
+ frame	data/chars/HYDRA-ICHI/26.png
+  frame	data/chars/HYDRA-ICHI/27.png
+
+   
+
+anim RUN
+
+        loop	1
+	delay	5
+	offset	212 173
+ dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 188
+	bbox.position.y 70
+	bbox.size.x 53
+	bbox.size.y 110
+  frame	data/chars/HYDRA-ICHI/22.png
+ frame	data/chars/HYDRA-ICHI/23.png
+  frame	data/chars/HYDRA-ICHI/24.png
+  frame	data/chars/HYDRA-ICHI/25.png
+ frame	data/chars/HYDRA-ICHI/26.png
+  frame	data/chars/HYDRA-ICHI/27.png
+
+
+
+anim  RUNJUMP
+     loop	0
+	delay	10
+	offset	212 173
+
+dropv 4 1 0
+	bbox.position.x 174
+	bbox.position.y 44
+	bbox.size.x 85
+	bbox.size.y 113
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/38.png
+frame	data/chars/HYDRA-ICHI/38.png
+frame	data/chars/HYDRA-ICHI/38.png
+frame	data/chars/HYDRA-ICHI/38.png
+frame	data/chars/HYDRA-ICHI/38.png
+
+     
+
+
+anim	get
+
+loop	0
+	delay	5
+	offset	212 173
+weaponframe 2 1
+	dropv 4 1 0
+
+	bbox.position.x 173
+	bbox.position.y 82
+	bbox.size.x 78
+	bbox.size.y 105
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/16.png
+frame	data/chars/HYDRA-ICHI/16.png
+frame	data/chars/HYDRA-ICHI/16.png
+frame	data/chars/HYDRA-ICHI/16.png
+
+
+
+anim attack1
+     
+
+loop	0
+	delay	5
+	offset	212 173
+dropv 4 1 0
+	bbox.position.x 172
+	bbox.position.y 66
+	bbox.size.x 85
+	bbox.size.y 115
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/06.png
+frame	data/chars/HYDRA-ICHI/06.png
+frame	data/chars/HYDRA-ICHI/06.png
+	bbox.position.x 165
+	bbox.position.y 80
+	bbox.size.x 94
+	bbox.size.y 102
+	attack.damage.force 50
+	attack.position.x 247
+	attack.position.y 78
+	attack.size.x 92
+	attack.size.y 109
+frame	data/chars/HYDRA-ICHI/08.png
+frame	data/chars/HYDRA-ICHI/08.png
+	attack.damage.force 50
+	attack.position.x 249
+	attack.position.y 78
+	attack.size.x 89
+	attack.size.y 105
+frame	data/chars/HYDRA-ICHI/08.png
+
+	
+
+
+
+anim attack2
+
+
+
+ 
+     
+
+       
+      
+	
+
+anim attack3
+
+
+
+
+
+
+
+	
+	
+
+	
+anim special
+
+
+
+
+
+anim SPECIAL2
+
+loop	0
+	delay	6
+	offset	220 173
+energycost  20
+sound data/chars/HYDRA-ICHI/01.wav
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/00000.png
+frame	data/chars/HYDRA-ICHI/0000.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/000.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/00.png
+	attack.damage.force 10
+	attack.position.x 188
+	attack.position.y 20
+	attack.reaction.fall.force 0
+	attack.size.x 185
+	attack.size.y 180
+frame	data/chars/HYDRA-ICHI/59.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/68.png
+frame	data/chars/HYDRA-ICHI/00.png
+frame	data/chars/HYDRA-ICHI/000.png
+frame	data/chars/HYDRA-ICHI/0000.png
+frame	data/chars/HYDRA-ICHI/00000.png
+	
+	
+	
+
+
+
+   
+
+anim freespecial
+loop	0
+	delay	6
+	offset	220 173
+energycost  20
+sound data/chars/HYDRA-ICHI/02.wav
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/00000.png
+frame	data/chars/HYDRA-ICHI/0000.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/000.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/00.png
+	attack.damage.force 10
+	attack.position.x 188
+	attack.position.y 20
+	attack.reaction.fall.force 0
+	attack.size.x 185
+	attack.size.y 180
+frame	data/chars/HYDRA-ICHI/50.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/HYDRA-ICHI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/HYDRA-ICHI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/HYDRA-ICHI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/HYDRA-ICHI/58.png
+frame	data/chars/HYDRA-ICHI/00.png
+frame	data/chars/HYDRA-ICHI/000.png
+frame	data/chars/HYDRA-ICHI/0000.png
+frame	data/chars/HYDRA-ICHI/00000.png
+
+
+
+
+anim freespecial2
+
+
+
+
+
+
+
+
+anim freespecial3
+
+
+
+
+
+anim freespecial4
+
+
+
+
+         
+	
+
+anim jump
+
+        loop	0
+	delay	10
+	offset	212 173
+
+dropv 4 1 0
+
+	bbox.position.x 176
+	bbox.position.y 45
+	bbox.size.x 86
+	bbox.size.y 111
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/37.png
+frame	data/chars/HYDRA-ICHI/38.png
+frame	data/chars/HYDRA-ICHI/38.png
+frame	data/chars/HYDRA-ICHI/38.png
+frame	data/chars/HYDRA-ICHI/38.png
+frame	data/chars/HYDRA-ICHI/38.png
+
+	
+
+
+	
+
+
+anim jumpattack
+    loop	0
+	delay	4
+	offset	212 173
+sound data/sounds/punch.wav
+dropv 4 1 0
+	bbox.position.x 185
+	bbox.position.y 29
+	bbox.size.x 56
+	bbox.size.y 156
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/HYDRA-ICHI/36.png
+frame	data/chars/HYDRA-ICHI/36.png
+	attack.damage.force 10
+	attack.position.x 225
+	attack.position.y 45
+	attack.reaction.fall.force 1
+	attack.size.x 106
+	attack.size.y 97
+	bbox.position.x 144
+	bbox.position.y 42
+	bbox.size.x 78
+	bbox.size.y 108
+frame	data/chars/HYDRA-ICHI/46.png
+frame	data/chars/HYDRA-ICHI/46.png
+	attack.damage.force 10
+	attack.position.x 226
+	attack.position.y 48
+	attack.reaction.fall.force 1
+	attack.size.x 103
+	attack.size.y 94
+frame	data/chars/HYDRA-ICHI/46.png
+
+
+
+
+	
+
+
+anim jumpattack2
+
+
+
+anim grab
+	
+
+anim grabattack
+	
+
+
+anim grabattack2
+	
+
+
+anim throw
+	
+
+
+anim pain
+loop	0
+offset	212 173
+move	-5
+delay	10
+dropv 4 1 0
+frame	data/chars/HYDRA-ICHI/29.png
+frame	data/chars/HYDRA-ICHI/29.png
+frame	data/chars/HYDRA-ICHI/29.png
+	
+	
+
+
+anim fall
+
+loop	0
+offset	212 173
+delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/HYDRA-ICHI/30.png
+frame	data/chars/HYDRA-ICHI/30.png
+frame	data/chars/HYDRA-ICHI/30.png
+frame	data/chars/HYDRA-ICHI/30.png
+frame	data/chars/HYDRA-ICHI/30.png
+frame	data/chars/HYDRA-ICHI/30.png
+frame	data/chars/HYDRA-ICHI/30.png
+frame	data/chars/HYDRA-ICHI/30.png
+frame	data/chars/HYDRA-ICHI/31.png
+frame	data/chars/HYDRA-ICHI/31.png
+frame	data/chars/HYDRA-ICHI/31.png
+
+anim DEATH
+
+loop	0
+offset	212 173
+delay	10
+dropv 4 1 0
+frame	data/chars/HYDRA-ICHI/31.png
+frame	data/chars/HYDRA-ICHI/31.png
+frame	data/chars/HYDRA-ICHI/31.png
+
+
+anim rise
+
+	loop	0
+	delay	10
+	offset	212 173
+dropv 4 1 0
+	frame	data/chars/HYDRA-ICHI/32.png
+	frame	data/chars/HYDRA-ICHI/33.png
+	frame	data/chars/HYDRA-ICHI/34.png
+
+	
+	
+	
+	
+
+
+anim land
+
+
+
+
+anim duck
+	
+
+anim duckattack
+
+
+

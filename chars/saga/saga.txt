@@ -1,0 +1,667 @@
+
+name	SAGA
+health	2680
+speed	1
+type	enemy
+
+icon	data/chars/SAGA/icon.png
+\\hostile          player
+\\aimove           Wander
+\\aimove           Chase
+\\aimove           Avoid
+aggression       -200
+hitenemy          0 0
+blockodds 1
+blocked 1
+noquake 1 1
+nodrop 2
+nodieblink 3
+nomove 1 0
+\\facing 2
+\\subject_to_wall 0
+\\subject_to_hole 0
+\\subject_to_screen 0
+\\subject_to_minz 1
+\\subject_to_maxz 1
+falldie 1
+gfxshadow	1
+load geminisuper
+load cosmo
+
+anim SPAWN
+	loop	0
+	delay	10
+	offset	220 245
+dropv 4 1 0
+	
+frame	data/chars/SAGA/00.png	
+	
+frame	data/chars/SAGA/000.png	
+	
+frame	data/chars/SAGA/null.png
+
+
+anim DEATH
+loop	0
+	offset	220 245
+
+	delay	10
+
+
+
+
+
+frame	data/chars/SAGA/12.png
+frame	data/chars/SAGA/13.png
+frame	data/chars/SAGA/14.png
+frame	data/chars/SAGA/15.png
+frame	data/chars/SAGA/16.png
+frame	data/chars/SAGA/17.png
+frame	data/chars/SAGA/18.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+frame	data/chars/SAGA/20.png
+
+
+
+
+anim	block
+loop	0
+	offset	220 245
+
+	delay	10
+
+subentity cosmo
+summonframe 2 100 425 0 1
+	
+	dropv 4 1 0
+
+	bbox.position.x 179
+	bbox.position.y 97
+	bbox.size.x 83
+	bbox.size.y 166
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/00.png	
+	
+frame	data/chars/SAGA/000.png	
+	
+frame	data/chars/SAGA/null.png	
+
+
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	220 245
+dropv 4 1 0
+	bbox.position.x 180
+	bbox.position.y 104
+	bbox.size.x 82
+	bbox.size.y 153
+	attack.damage.force 10
+	attack.position.x 120
+	attack.position.y -280
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 208
+	attack.size.y 785
+frame	data/chars/SAGA/01.png
+	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/01.png
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	220 245
+dropv 4 1 0
+	bbox.position.x 177
+	bbox.position.y 94
+	bbox.size.x 84
+	bbox.size.y 168
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/01.png
+
+
+
+
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	220 245
+dropv 4 1 0
+	attack.damage.force 10
+	attack.position.x 120
+	attack.position.y -288
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 207
+	attack.size.y 701
+frame	data/chars/SAGA/02.png
+	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/02.png
+	
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	220 245
+	delay	10
+
+
+
+frame	data/chars/SAGA/01.png
+frame	data/chars/SAGA/01.png
+
+
+	
+
+
+anim attack1
+
+ range	-1000 1000
+        loop	0
+	offset	220 245
+	delay	6
+sound data/chars/SAGA/01.wav
+
+	
+shock        0 0 10 10 5 1 0 0 0 0
+dropv 4 1 0	
+	attack.damage.force 50
+	attack.position.x 120
+	attack.position.y -280
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 10.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 203
+	attack.size.y 736
+frame	data/chars/SAGA/03.png	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/04.png	
+	
+	attack.damage.force 50
+	attack.position.x 24
+	attack.position.y -286
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 716
+frame	data/chars/SAGA/05.png	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/06.png	
+	
+	attack.damage.force 50
+	attack.position.x 32
+	attack.position.y -311
+	attack.size.x 394
+	attack.size.y 738
+frame	data/chars/SAGA/07.png	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/24.png
+
+	attack.damage.force 50
+	attack.position.x 66
+	attack.position.y -338
+	attack.size.x 847
+	attack.size.y 805
+frame	data/chars/SAGA/25.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/26.png
+
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y -318
+	attack.size.x 913
+	attack.size.y 827
+frame	data/chars/SAGA/37.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/24.png
+
+	attack.damage.force 50
+	attack.position.x 24
+	attack.position.y -404
+	attack.size.x 895
+	attack.size.y 837
+frame	data/chars/SAGA/25.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/26.png
+
+	attack.damage.force 50
+	attack.position.x 27
+	attack.position.y -355
+	attack.size.x 852
+	attack.size.y 810
+frame	data/chars/SAGA/37.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/24.png
+
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -372
+	attack.size.x 944
+	attack.size.y 893
+frame	data/chars/SAGA/25.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/26.png
+
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -377
+	attack.size.x 825
+	attack.size.y 815
+frame	data/chars/SAGA/37.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/24.png
+
+	attack.damage.force 50
+	attack.position.x 19
+	attack.position.y -382
+	attack.size.x 869
+	attack.size.y 825
+frame	data/chars/SAGA/25.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/26.png
+
+	attack.damage.force 50
+	attack.position.x 17
+	attack.position.y -350
+	attack.size.x 834
+	attack.size.y 800
+frame	data/chars/SAGA/37.png		
+
+
+	
+
+move 180
+	
+frame	data/chars/SAGA/00.png	
+
+frame	data/chars/SAGA/000.png	
+
+frame	data/chars/SAGA/null.png
+
+
+
+
+
+
+
+anim attack2
+
+ range	-1000 1000
+        loop	0
+	offset	220 245
+	delay	6
+sound data/chars/SAGA/02.wav
+
+custknife	geminisuper
+	throwframe	4
+
+
+dropv 4 1 0
+	
+	attack.damage.force 10
+	attack.position.x 126
+	attack.position.y -276
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 10.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 197
+	attack.size.y 718
+frame	data/chars/SAGA/03.png	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/04.png	
+	
+	attack.damage.force 50
+	attack.position.x 30
+	attack.position.y -258
+	attack.size.x 388
+	attack.size.y 660
+frame	data/chars/SAGA/05.png	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/06.png	
+	
+	attack.damage.force 50
+	attack.position.x 30
+	attack.position.y -280
+	attack.size.x 392
+	attack.size.y 718
+frame	data/chars/SAGA/07.png	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/08.png
+
+	attack.damage.force 50
+	attack.position.x 24
+	attack.position.y -278
+	attack.size.x 400
+	attack.size.y 675
+frame	data/chars/SAGA/09.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/10.png
+
+	attack.damage.force 50
+	attack.position.x 28
+	attack.position.y -274
+	attack.size.x 390
+	attack.size.y 685
+frame	data/chars/SAGA/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/08.png
+
+	attack.damage.force 50
+	attack.position.x 24
+	attack.position.y -278
+	attack.size.x 400
+	attack.size.y 675
+frame	data/chars/SAGA/09.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/10.png
+
+	attack.damage.force 50
+	attack.position.x 28
+	attack.position.y -274
+	attack.size.x 390
+	attack.size.y 685
+frame	data/chars/SAGA/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/08.png
+
+	attack.damage.force 50
+	attack.position.x 24
+	attack.position.y -278
+	attack.size.x 400
+	attack.size.y 675
+frame	data/chars/SAGA/09.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/10.png
+
+	attack.damage.force 50
+	attack.position.x 28
+	attack.position.y -274
+	attack.size.x 390
+	attack.size.y 685
+frame	data/chars/SAGA/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/08.png
+
+	attack.damage.force 50
+	attack.position.x 24
+	attack.position.y -278
+	attack.size.x 400
+	attack.size.y 675
+frame	data/chars/SAGA/09.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/10.png
+
+	attack.damage.force 50
+	attack.position.x 28
+	attack.position.y -274
+	attack.size.x 390
+	attack.size.y 685
+frame	data/chars/SAGA/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/08.png
+
+	attack.damage.force 50
+	attack.position.x 24
+	attack.position.y -278
+	attack.size.x 400
+	attack.size.y 675
+frame	data/chars/SAGA/09.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/10.png
+
+	attack.damage.force 50
+	attack.position.x 28
+	attack.position.y -274
+	attack.size.x 390
+	attack.size.y 685
+frame	data/chars/SAGA/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/08.png
+
+	attack.damage.force 50
+	attack.position.x 24
+	attack.position.y -278
+	attack.size.x 400
+	attack.size.y 675
+frame	data/chars/SAGA/09.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SAGA/10.png
+
+	attack.damage.force 50
+	attack.position.x 28
+	attack.position.y -274
+	attack.size.x 390
+	attack.size.y 685
+frame	data/chars/SAGA/11.png
+
+move 180
+	
+frame	data/chars/SAGA/00.png	
+
+frame	data/chars/SAGA/000.png	
+
+frame	data/chars/SAGA/null.png
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+name            bgtitle
+health          1
+type            panel
+speed           10
+shadow          0
+#setlayer       -2000
+facing          1
+palette         none
+
+
+anim idle
+    loop        1
+    offset      1 1
+    delay       20
+    @cmd        changeentityproperty getlocalvar("self") "direction" 1
+    frame       data/bgs/title/title1.png
+    @cmd        changeentityproperty getlocalvar("self") "setlayer" -2000
+    frame       data/bgs/title/title2.png
+    frame       data/bgs/title/title3.png
+    frame       data/bgs/title/title4.png
+    frame       data/bgs/title/title5.png
+    frame       data/bgs/title/title6.png
+    frame       data/bgs/title/title7.png
+    frame       data/bgs/title/title8.png
+    frame       data/bgs/title/title9.png
+    frame       data/bgs/title/title10.png
+    frame       data/bgs/title/title11.png
+    frame       data/bgs/title/title12.png
+    frame       data/bgs/title/title13.png
+    frame       data/bgs/title/title14.png
+    frame       data/bgs/title/title15.png
+    frame       data/bgs/title/title16.png
+    frame       data/bgs/title/title17.png
+    frame       data/bgs/title/title18.png
+    frame       data/bgs/title/title19.png
+    frame       data/bgs/title/title20.png

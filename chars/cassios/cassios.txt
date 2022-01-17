@@ -1,0 +1,312 @@
+
+name	CASSIOS
+health	500
+speed	15
+type	npc
+icon	data/chars/CASSIOS/icon.png
+hostile          enemy
+candamage enemy
+\\aimove           Wander
+aimove           Chase 
+\\aimove           Avoid
+aggression  100
+hitenemy          0 0
+blockodds 1
+nodieblink 0
+blocked 1
+noquake 1 1
+
+
+\\subject_to_wall 0
+
+subject_to_screen 0
+
+
+
+anim	block
+loop	0
+	offset	215 174
+
+
+	delay	10
+
+
+
+	dropv 4 1 0
+	bbox.position.x 163
+	bbox.position.y -1
+	bbox.size.x 90
+	bbox.size.y 186
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CASSIOS/08.png
+frame	data/chars/CASSIOS/08.png
+frame	data/chars/CASSIOS/08.png
+frame	data/chars/CASSIOS/08.png
+
+
+
+
+
+
+
+
+anim idle
+
+	loop	1
+	delay	10
+	offset	215 174
+
+dropv 4 1 0
+	bbox.position.x 167
+	bbox.position.y 0
+	bbox.size.x 99
+	bbox.size.y 185
+frame	data/chars/CASSIOS/01.png
+
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	215 174
+dropv 4 1 0
+	bbox.position.x 173
+	bbox.position.y 20
+	bbox.size.x 84
+	bbox.size.y 159
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CASSIOS/02.png
+frame	data/chars/CASSIOS/03.png
+frame	data/chars/CASSIOS/04.png
+frame	data/chars/CASSIOS/05.png
+frame	data/chars/CASSIOS/06.png
+frame	data/chars/CASSIOS/07.png
+
+
+
+anim BACKWALK
+	loop	1
+	delay	20
+	offset	510 174
+dropv 4 1 0
+	bbox.position.x 453
+	bbox.position.y 9
+	bbox.size.x 107
+	bbox.size.y 178
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CASSIOS/22.png
+frame	data/chars/CASSIOS/23.png
+frame	data/chars/CASSIOS/24.png
+frame	data/chars/CASSIOS/25.png
+frame	data/chars/CASSIOS/26.png
+frame	data/chars/CASSIOS/27.png
+
+
+
+      
+ 
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	215 174
+
+dropv 4 1 0
+
+frame	data/chars/CASSIOS/09.png
+frame	data/chars/CASSIOS/09.png
+
+
+        
+
+anim fall
+
+    loop	0
+	
+	delay	10
+offset	215 174
+
+dropv 4 1 0
+frame	data/chars/CASSIOS/10.png
+frame	data/chars/CASSIOS/10.png
+frame	data/chars/CASSIOS/10.png
+frame	data/chars/CASSIOS/10.png
+frame	data/chars/CASSIOS/10.png
+frame	data/chars/CASSIOS/10.png
+frame	data/chars/CASSIOS/10.png
+frame	data/chars/CASSIOS/10.png
+frame	data/chars/CASSIOS/11.png
+frame	data/chars/CASSIOS/11.png
+frame	data/chars/CASSIOS/11.png
+
+
+
+
+
+anim rise
+        loop	0
+	offset	215 174
+	delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/CASSIOS/12.png
+frame	data/chars/CASSIOS/13.png
+frame	data/chars/CASSIOS/14.png
+
+
+
+	
+
+
+anim attack1
+
+
+	loop	0
+	delay	10
+offset	215 174
+
+
+dropv 4 1 0
+	
+	bbox.position.x 164
+	bbox.position.y 19
+	bbox.size.x 102
+	bbox.size.y 161
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CASSIOS/15.png
+	attack.damage.force 10
+	attack.position.x 238
+	attack.position.y 16
+	attack.size.x 55
+	attack.size.y 168
+	bbox.position.x 159
+	bbox.position.y 22
+	bbox.size.x 79
+	bbox.size.y 157
+frame	data/chars/CASSIOS/16.png
+
+
+
+
+anim attack2
+
+	loop	0
+	delay	10
+offset	215 174
+
+
+
+	dropv 4 1 0
+	bbox.position.x 148
+	bbox.position.y 20
+	bbox.size.x 137
+	bbox.size.y 159
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CASSIOS/17.png
+	attack.damage.force 10
+	attack.position.x 258
+	attack.position.y 43
+	attack.size.x 45
+	attack.size.y 141
+	bbox.position.x 133
+	bbox.position.y 20
+	bbox.size.x 124
+	bbox.size.y 161
+frame	data/chars/CASSIOS/18.png
+
+
+anim attack3
+	
+
+	loop	0
+	delay	10
+offset	215 174
+
+
+dropv 4 1 0
+	
+	bbox.position.x 168
+	bbox.position.y 4
+	bbox.size.x 94
+	bbox.size.y 177
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CASSIOS/19.png
+	bbox.position.x 184
+	bbox.position.y 12
+	bbox.size.x 100
+	bbox.size.y 167
+frame	data/chars/CASSIOS/20.png
+	attack.damage.force 10
+	attack.position.x 256
+	attack.position.y 54
+	attack.reaction.fall.force 1
+	attack.size.x 61
+	attack.size.y 130
+	bbox.position.x 182
+	bbox.position.y 53
+	bbox.size.x 73
+	bbox.size.y 126
+frame	data/chars/CASSIOS/21.png
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

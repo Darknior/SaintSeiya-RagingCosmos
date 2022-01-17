@@ -1,0 +1,39 @@
+name	geminisuper
+health	50
+type	none
+remove   1
+speed	25
+shadow	0
+
+
+
+
+anim idle
+	loop	1
+	delay	5
+	offset	30 160
+dropv 10 1 0
+	attack.damage.force 50
+	attack.position.x 10
+	attack.position.y 26
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 282
+	attack.size.y 247
+frame	data/chars/SAGA/21.png
+	attack.damage.force 50
+	attack.position.x -1
+	attack.position.y 16
+	attack.reaction.fall.force 1
+	attack.size.x 305
+	attack.size.y 267
+frame	data/chars/SAGA/22.png
+	attack.damage.force 50
+	attack.position.x 9
+	attack.position.y 12
+	attack.reaction.fall.force 1
+	attack.size.x 293
+	attack.size.y 278
+frame	data/chars/SAGA/23.png

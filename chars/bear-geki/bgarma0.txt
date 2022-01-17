@@ -1,0 +1,1603 @@
+
+name	BGARMA0
+health	100
+speed	20
+type	none
+shadow	0
+
+mp 100
+
+weaploss 2
+modelflag 0
+
+icon	data/chars/BEAR-GEKI/icon.png
+nodieblink 1
+jumpheight 5
+\\jumpspeed 6
+running 20 5 3
+noquake 1 1
+
+makeinv 4 0
+
+weapons         BGARMA0 BGARMA1 BGARMA2 BGARMA3 BGARMA4 BGARMA5 BGARMA6BEAR-GEKI
+
+load arma0-3
+
+
+
+com  d  -> s  freespecial
+
+blockodds 1
+
+holdblock 2
+
+
+
+
+
+anim VICTORY
+
+  loop	0
+	delay	10
+	offset	212 173
+frame	data/chars/BEAR-GEKI/35.png
+frame	data/chars/BEAR-GEKI/35.png
+frame	data/chars/BEAR-GEKI/35.png
+frame	data/chars/BEAR-GEKI/35.png
+frame	data/chars/BEAR-GEKI/35.png
+frame	data/chars/BEAR-GEKI/35.png
+frame	data/chars/BEAR-GEKI/35.png
+
+
+
+
+anim	waiting
+  loop	0
+	delay	10
+	offset	102 142
+frame	data/chars/BEAR-GEKI/SELECT.png
+
+
+
+anim	select
+loop	0
+	delay	10
+	offset	102 142
+sound data/chars/select.wav
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+frame	data/chars/BEAR-GEKI/SELECT2.png
+frame	data/chars/BEAR-GEKI/SELECT.png
+
+
+
+
+
+
+
+anim	block
+	loop	0
+	delay	2
+	offset	212 173
+
+
+
+dropv 4 1 0
+	bbox.position.x 171
+	bbox.position.y 41
+	bbox.size.x 81
+	bbox.size.y 138
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/28.png
+frame	data/chars/BEAR-GEKI/28.png
+
+
+
+
+
+anim idle
+	loop	0
+	delay	10
+	offset	212 173
+
+
+	dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 163
+	bbox.position.y 39
+	bbox.size.x 101
+	bbox.size.y 140
+frame	data/chars/BEAR-GEKI/01.png
+frame	data/chars/BEAR-GEKI/01.png
+frame	data/chars/BEAR-GEKI/01.png
+frame	data/chars/BEAR-GEKI/01.png
+        
+    
+
+anim walk
+
+        loop	1
+	delay	15
+	offset	212 173
+ 
+	
+
+	dropv 4 1 0
+	bbox.position.x 180
+	bbox.position.y 39
+	bbox.size.x 69
+	bbox.size.y 146
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+  frame	data/chars/BEAR-GEKI/22.png
+ frame	data/chars/BEAR-GEKI/23.png
+  frame	data/chars/BEAR-GEKI/24.png
+  frame	data/chars/BEAR-GEKI/25.png
+ frame	data/chars/BEAR-GEKI/26.png
+  frame	data/chars/BEAR-GEKI/27.png
+
+   
+
+anim RUN
+
+        loop	1
+	delay	10
+	offset	212 173
+ 
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 181
+	bbox.position.y 36
+	bbox.size.x 65
+	bbox.size.y 150
+  frame	data/chars/BEAR-GEKI/22.png
+ frame	data/chars/BEAR-GEKI/23.png
+  frame	data/chars/BEAR-GEKI/24.png
+  frame	data/chars/BEAR-GEKI/25.png
+ frame	data/chars/BEAR-GEKI/26.png
+  frame	data/chars/BEAR-GEKI/27.png
+
+
+
+anim  RUNJUMP
+     loop	0
+	delay	10
+	offset	212 173
+
+dropv 4 1 0
+	bbox.position.x 174
+	bbox.position.y 44
+	bbox.size.x 85
+	bbox.size.y 113
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/38.png
+frame	data/chars/BEAR-GEKI/38.png
+frame	data/chars/BEAR-GEKI/38.png
+frame	data/chars/BEAR-GEKI/38.png
+frame	data/chars/BEAR-GEKI/38.png
+
+     
+
+
+anim	get
+
+loop	0
+	delay	5
+	offset	212 173
+weaponframe 2 1
+	dropv 4 1 0
+
+	bbox.position.x 173
+	bbox.position.y 82
+	bbox.size.x 78
+	bbox.size.y 105
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/16.png
+frame	data/chars/BEAR-GEKI/16.png
+frame	data/chars/BEAR-GEKI/16.png
+frame	data/chars/BEAR-GEKI/16.png
+
+
+
+anim attack1
+     
+
+loop	0
+	delay	5
+	offset	212 173
+
+sound data/chars/SAGITTARIUS-CLOTH/01.wav
+custknife	arma0-3
+	throwframe	4
+
+
+	bbox.position.x 175
+	bbox.position.y 25
+	bbox.size.x 82
+	bbox.size.y 155
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/02.png
+frame	data/chars/BEAR-GEKI/02.png
+frame	data/chars/BEAR-GEKI/02.png
+frame	data/chars/BEAR-GEKI/03.png
+frame	data/chars/BEAR-GEKI/03.png
+frame	data/chars/BEAR-GEKI/03.png
+
+
+	
+
+
+
+anim attack2
+
+
+
+ 
+     
+
+       
+      
+	
+
+anim attack3
+
+
+
+
+
+
+
+	
+	
+
+	
+anim special
+
+
+
+
+
+anim SPECIAL2
+
+loop	0
+	delay	6
+	offset	240 173
+energycost  20
+sound data/chars/BEAR-GEKI/01.wav
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/00000.png
+frame	data/chars/BEAR-GEKI/0000.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/000.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/00.png
+	attack.damage.force 10
+	attack.position.x 188
+	attack.position.y 20
+	attack.reaction.fall.force 0
+	attack.size.x 185
+	attack.size.y 180
+frame	data/chars/BEAR-GEKI/59.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/60.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/61.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/62.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/63.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/64.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/65.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/66.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/68.png
+frame	data/chars/BEAR-GEKI/00.png
+frame	data/chars/BEAR-GEKI/000.png
+frame	data/chars/BEAR-GEKI/0000.png
+frame	data/chars/BEAR-GEKI/00000.png
+	
+	
+	
+
+
+
+   
+
+anim freespecial
+loop	0
+	delay	6
+	offset	240 173
+energycost  20
+sound data/chars/BEAR-GEKI/02.wav
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/00000.png
+frame	data/chars/BEAR-GEKI/0000.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/000.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/00.png
+	attack.damage.force 10
+	attack.position.x 188
+	attack.position.y 20
+	attack.reaction.fall.force 0
+	attack.size.x 185
+	attack.size.y 180
+frame	data/chars/BEAR-GEKI/50.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/51.png
+	attack.damage.force 50
+	attack.position.x 134
+	attack.position.y 17
+	attack.reaction.fall.force 0
+	attack.size.x 357
+	attack.size.y 201
+frame	data/chars/BEAR-GEKI/52.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/53.png
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -18
+	attack.reaction.fall.force 0
+	attack.size.x 759
+	attack.size.y 265
+frame	data/chars/BEAR-GEKI/54.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/55.png
+	attack.damage.force 50
+	attack.position.x 124
+	attack.position.y -32
+	attack.reaction.fall.force 0
+	attack.size.x 904
+	attack.size.y 271
+frame	data/chars/BEAR-GEKI/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/57.png
+	attack.damage.force 50
+	attack.position.x 116
+	attack.position.y -4
+	attack.reaction.fall.force 0
+	attack.size.x 398
+	attack.size.y 232
+frame	data/chars/BEAR-GEKI/58.png
+frame	data/chars/BEAR-GEKI/00.png
+frame	data/chars/BEAR-GEKI/000.png
+frame	data/chars/BEAR-GEKI/0000.png
+frame	data/chars/BEAR-GEKI/00000.png
+
+
+
+
+anim freespecial2
+
+
+
+
+
+
+
+
+anim freespecial3
+
+
+
+
+
+anim freespecial4
+
+
+
+
+         
+	
+
+anim jump
+
+        loop	0
+	delay	10
+	offset	212 173
+
+dropv 4 1 0
+
+	bbox.position.x 176
+	bbox.position.y 45
+	bbox.size.x 86
+	bbox.size.y 111
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/37.png
+frame	data/chars/BEAR-GEKI/38.png
+frame	data/chars/BEAR-GEKI/38.png
+frame	data/chars/BEAR-GEKI/38.png
+frame	data/chars/BEAR-GEKI/38.png
+frame	data/chars/BEAR-GEKI/38.png
+
+	
+
+
+	
+
+
+anim jumpattack
+    loop	0
+	delay	4
+	offset	212 173
+dropv 4 1 0	
+sound data/sounds/punch.wav
+	bbox.position.x 169
+	bbox.position.y 46
+	bbox.size.x 97
+	bbox.size.y 108
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/BEAR-GEKI/36.png
+frame	data/chars/BEAR-GEKI/36.png
+	attack.damage.force 10
+	attack.position.x 225
+	attack.position.y 45
+	attack.reaction.fall.force 1
+	attack.size.x 106
+	attack.size.y 97
+	bbox.position.x 144
+	bbox.position.y 42
+	bbox.size.x 78
+	bbox.size.y 108
+frame	data/chars/BEAR-GEKI/46.png
+frame	data/chars/BEAR-GEKI/46.png
+	attack.damage.force 10
+	attack.position.x 226
+	attack.position.y 48
+	attack.reaction.fall.force 1
+	attack.size.x 103
+	attack.size.y 94
+frame	data/chars/BEAR-GEKI/46.png
+
+
+
+
+	
+
+
+anim jumpattack2
+
+
+
+anim grab
+	
+
+anim grabattack
+	
+
+
+anim grabattack2
+	
+
+
+anim throw
+	
+
+
+anim pain
+loop	0
+offset	212 173
+move	-5
+delay	10
+dropv 4 1 0
+frame	data/chars/BEAR-GEKI/29.png
+frame	data/chars/BEAR-GEKI/29.png
+frame	data/chars/BEAR-GEKI/29.png
+	
+	
+
+
+anim fall
+
+loop	0
+offset	212 173
+delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/BEAR-GEKI/30.png
+frame	data/chars/BEAR-GEKI/30.png
+frame	data/chars/BEAR-GEKI/30.png
+frame	data/chars/BEAR-GEKI/30.png
+frame	data/chars/BEAR-GEKI/30.png
+frame	data/chars/BEAR-GEKI/30.png
+frame	data/chars/BEAR-GEKI/30.png
+frame	data/chars/BEAR-GEKI/30.png
+frame	data/chars/BEAR-GEKI/31.png
+frame	data/chars/BEAR-GEKI/31.png
+frame	data/chars/BEAR-GEKI/31.png
+
+anim DEATH
+
+loop	0
+offset	212 173
+delay	10
+dropv 4 1 0
+frame	data/chars/BEAR-GEKI/31.png
+frame	data/chars/BEAR-GEKI/31.png
+frame	data/chars/BEAR-GEKI/31.png
+
+
+anim rise
+
+	loop	0
+	delay	10
+	offset	212 173
+dropv 4 1 0
+	frame	data/chars/BEAR-GEKI/32.png
+	frame	data/chars/BEAR-GEKI/33.png
+	frame	data/chars/BEAR-GEKI/34.png
+
+	
+	
+	
+	
+
+
+anim land
+
+
+
+
+anim duck
+	
+
+anim duckattack
+
+
+

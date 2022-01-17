@@ -1,0 +1,250 @@
+
+name	CUBE
+health	2680
+speed	1
+type	enemy
+
+icon	data/chars/CUBE/icon.png
+\\hostile          player
+\\aimove           Wander
+\\aimove           Chase
+\\aimove           Avoid
+aggression       500
+hitenemy          0 0
+blockodds 1
+blocked 1
+noquake 1 1
+nodrop 2
+nodieblink 3
+nomove 1 0
+facing 1
+subject_to_wall 0
+\\subject_to_hole 0
+\\subject_to_screen 0
+\\subject_to_minz 1
+\\subject_to_maxz 1
+falldie 1
+
+
+
+load soldier
+
+anim SPAWN
+loop	0
+	offset	232 357
+
+	delay	1
+
+
+frame	data/chars/CUBE/null.png
+
+
+
+
+
+
+anim DEATH
+loop	0
+	offset	232 357
+
+	delay	15
+
+
+
+
+
+frame	data/chars/CUBE/02.png
+frame	data/chars/CUBE/03.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/04.png
+
+
+
+anim	block
+loop	0
+	offset	232 357
+
+
+	delay	10
+
+subentity soldier
+summonframe 1 -100 0 0 1
+	
+	
+	bbox.position.x 153
+	bbox.position.y 98
+	bbox.size.x 177
+	bbox.size.y 267
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CUBE/01.png	
+frame	data/chars/CUBE/05.png		
+frame	data/chars/CUBE/01.png
+
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	232 357
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 153
+	bbox.position.y 90
+	bbox.size.x 175
+	bbox.size.y 280
+frame	data/chars/CUBE/01.png
+	
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	232 357
+	
+	bbox.position.x 144
+	bbox.position.y 94
+	bbox.size.x 200
+	bbox.size.y 280
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CUBE/01.png
+
+
+
+
+
+
+anim pain
+    loop	0
+	
+	delay	5
+
+subentity soldier
+summonframe 1 -200 0 0 1
+offset	232 357
+dropv 4 1 0
+	
+frame	data/chars/CUBE/01.png
+frame	data/chars/CUBE/05.png
+	
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	232 357
+	delay	10
+
+dropv 4 1 0
+
+frame	data/chars/CUBE/01.png
+frame	data/chars/CUBE/01.png
+
+
+	
+
+
+anim attack1
+
+	
+
+
+
+
+
+
+anim attack2
+ 
+
+
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

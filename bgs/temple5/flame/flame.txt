@@ -1,0 +1,19 @@
+name                flame
+type                none
+shadow              0
+setlayer            2
+
+
+anim idle
+    loop        1
+    delay       16
+    offset      48 85
+    drawmethod  scale 0.5 0.5
+    frame       data/bgs/temple5/flame/e_2-0.png
+    frame       data/bgs/temple5/flame/e_2-1.png
+    frame       data/bgs/temple5/flame/e_2-2.png
+    frame       data/bgs/temple5/flame/e_2-3.png
+    frame       data/bgs/temple5/flame/e_2-4.png    
+    frame       data/bgs/temple5/flame/e_2-5.png
+    frame       data/bgs/temple5/flame/e_2-6.png    
+    frame       data/bgs/temple5/flame/e_2-7.png

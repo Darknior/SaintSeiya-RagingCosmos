@@ -1,0 +1,11 @@
+color25     25 212 0
+color50     25 212 0
+color100    25 212 0
+color200    255 186 0
+color300    255 252 0
+color400    255 253 103
+
+colormagic  0 48 255
+whitebox    255 255 255
+
+blackbox    0 0 0

@@ -1,0 +1,165 @@
+
+name	roccia2
+health	10
+speed	50
+type	enemy
+aimove           Avoid
+hitenemy          0 0
+bounce 0
+nodieblink 2
+offscreenkill 9999999999999
+
+load rock01
+load rock02
+
+
+anim DEATH
+    loop	0
+	
+	delay	3
+offset	25 80
+
+frame	data/chars/OBJ/null.png
+
+
+
+
+anim idle
+	loop	1
+	delay	20
+	offset	25 80
+
+
+
+	move -200
+
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+
+
+
+
+
+
+anim walk
+	loop	1
+	delay	20
+	offset	25 80
+custknife	rock02
+	throwframe	1
+move -200
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+
+
+
+
+
+
+
+
+
+ 
+
+
+anim pain
+    loop	0
+	
+	delay	3
+offset	25 80
+dropv 4 1 0
+
+
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+
+
+
+
+
+anim fall
+
+    loop	0
+	
+	delay	3
+offset	25 80
+
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+
+
+
+
+
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	25 80
+	delay	5
+
+dropv 4 1 0
+
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+frame	data/chars/OBJ/null.png
+
+
+
+	
+
+
+anim attack1
+
+
+
+
+
+
+
+
+anim attack2
+
+
+
+
+anim attack3
+	
+
+
+
+
+anim jump
+	
+
+
+
+
+anim jumpattack
+
+
+
+
+
+
+
+
+
+
+
+
+
+

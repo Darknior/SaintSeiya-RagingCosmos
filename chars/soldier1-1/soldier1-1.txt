@@ -1,0 +1,216 @@
+
+name	SOLDIER1-1
+health	50
+speed	10
+type	enemy
+
+icon	data/chars/SOLDIER1-1/icon.png
+hostile          player npc 
+candamage player npc
+\\aimove           Wander
+aimove           Chase
+\\aimove           Avoid
+\\aggression       0
+hitenemy          0 0
+blockodds 1
+nodieblink 0
+blocked 1
+noquake 1 1
+palette data/chars/SOLDIER1-1/COLOR1.png
+
+\\subject_to_wall 0
+
+subject_to_screen 0
+
+load soldiersuper
+
+
+anim	block
+loop	0
+	offset	110 180
+
+
+	delay	10
+
+
+
+dropv 4 1 0
+	bbox.position.x 71
+	bbox.position.y 57
+	bbox.size.x 84
+	bbox.size.y 133
+frame	data/chars/SOLDIER1-1/04.png
+frame	data/chars/SOLDIER1-1/04.png
+frame	data/chars/SOLDIER1-1/04.png
+frame	data/chars/SOLDIER1-1/04.png
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	110 180
+dropv 4 1 0
+	bbox.position.x 62
+	bbox.position.y 57
+	bbox.size.x 93
+	bbox.size.y 132
+frame	data/chars/SOLDIER1-1/02.png
+
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	110 180
+
+
+	bbox.position.x 66
+	bbox.position.y 62
+	bbox.size.x 90
+	bbox.size.y 125
+frame	data/chars/SOLDIER1-1/09.png
+frame	data/chars/SOLDIER1-1/10.png
+frame	data/chars/SOLDIER1-1/11.png
+frame	data/chars/SOLDIER1-1/12.png
+
+
+
+
+anim BACKWALK
+
+	loop	1
+	delay	15
+	offset	110 180
+
+
+dropv 4 1 0
+	bbox.position.x 42
+	bbox.position.y 64
+	bbox.size.x 99
+	bbox.size.y 121
+frame	data/chars/SOLDIER1-1/17.png
+frame	data/chars/SOLDIER1-1/18.png
+frame	data/chars/SOLDIER1-1/19.png
+frame	data/chars/SOLDIER1-1/20.png
+
+
+
+      
+ 
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	110 180
+
+dropv 4 1 0
+
+frame	data/chars/SOLDIER1-1/05.png
+frame	data/chars/SOLDIER1-1/05.png
+
+
+        
+
+anim fall
+
+    loop	0
+	
+	delay	10
+offset	110 180
+
+dropv 4 1 0
+frame	data/chars/SOLDIER1-1/06.png
+frame	data/chars/SOLDIER1-1/06.png
+frame	data/chars/SOLDIER1-1/06.png
+frame	data/chars/SOLDIER1-1/06.png
+frame	data/chars/SOLDIER1-1/06.png
+frame	data/chars/SOLDIER1-1/06.png
+frame	data/chars/SOLDIER1-1/06.png
+frame	data/chars/SOLDIER1-1/06.png
+frame	data/chars/SOLDIER1-1/07.png
+frame	data/chars/SOLDIER1-1/07.png
+frame	data/chars/SOLDIER1-1/07.png
+
+
+
+
+
+anim rise
+        loop	0
+	offset	110 180
+	delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/SOLDIER1-1/08.png
+
+
+	
+
+
+anim attack1
+
+range	-500 500
+	loop	0
+	delay	10
+offset	110 180
+custknife	soldiersuper
+	throwframe	2
+
+
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 64
+	bbox.position.y 49
+	bbox.size.x 88
+	bbox.size.y 142
+frame	data/chars/SOLDIER1-1/14.png
+frame	data/chars/SOLDIER1-1/15.png
+frame	data/chars/SOLDIER1-1/13.png
+frame	data/chars/SOLDIER1-1/13.png
+frame	data/chars/SOLDIER1-1/13.png
+
+
+
+
+anim attack2
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

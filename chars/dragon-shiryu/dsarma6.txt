@@ -1,0 +1,876 @@
+
+name	DSARMA6
+health	100
+speed	25
+type	none
+shadow	0
+
+mp 100
+
+weaploss 2
+modelflag 0
+
+icon	data/chars/DRAGON-SHIRYU/icon.png
+nodieblink 1
+jumpheight 5
+\\jumpspeed 6
+running 45 5 3
+noquake 1 1
+
+makeinv 4 0
+
+weapons         DSARMA6 DSARMA0 DSARMA1 DSARMA2 DSARMA3 DSARMA4 DSARMA5 DRAGON-SHIRYU
+
+load dragonsuper
+
+
+
+
+com  d  -> s  freespecial
+
+blockodds 1
+
+holdblock 2
+
+
+
+
+
+anim VICTORY
+
+  loop	0
+	delay	10
+	offset	210 650
+frame	data/chars/DRAGON-SHIRYU/41.png
+frame	data/chars/DRAGON-SHIRYU/41.png
+frame	data/chars/DRAGON-SHIRYU/41.png
+frame	data/chars/DRAGON-SHIRYU/41.png
+frame	data/chars/DRAGON-SHIRYU/41.png
+frame	data/chars/DRAGON-SHIRYU/41.png
+frame	data/chars/DRAGON-SHIRYU/41.png
+
+
+
+
+anim	waiting
+  loop	0
+	delay	10
+	offset	102 142
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+
+
+
+anim	select
+loop	0
+	delay	10
+	offset	102 142
+sound data/chars/select.wav
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+frame	data/chars/DRAGON-SHIRYU/SELECT2.png
+frame	data/chars/DRAGON-SHIRYU/SELECT.png
+
+
+
+
+
+
+
+anim	block
+	loop	0
+	delay	2
+	offset	210 650
+
+
+dropv 4 1 0
+
+	bbox.position.x 166
+	bbox.position.y 532
+	bbox.size.x 89
+	bbox.size.y 124
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/34.png
+frame	data/chars/DRAGON-SHIRYU/34.png
+
+
+
+
+
+anim idle
+	loop	0
+	delay	10
+	offset	210 650
+
+dropv 4 1 0
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 168
+	bbox.position.y 527
+	bbox.size.x 89
+	bbox.size.y 130
+frame	data/chars/DRAGON-SHIRYU/01.png
+frame	data/chars/DRAGON-SHIRYU/01.png
+frame	data/chars/DRAGON-SHIRYU/01.png
+frame	data/chars/DRAGON-SHIRYU/01.png
+        
+    
+
+anim walk
+
+        loop	1
+	delay	7
+	offset	210 650
+ 
+	
+dropv 4 1 0
+	
+	bbox.position.x 160
+	bbox.position.y 532
+	bbox.size.x 96
+	bbox.size.y 124
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+  frame	data/chars/DRAGON-SHIRYU/26.png
+ frame	data/chars/DRAGON-SHIRYU/27.png
+  frame	data/chars/DRAGON-SHIRYU/28.png
+  frame	data/chars/DRAGON-SHIRYU/29.png
+ frame	data/chars/DRAGON-SHIRYU/30.png
+
+   
+
+anim RUN
+
+        loop	1
+	delay	5
+	offset	210 650
+ 
+dropv 4 1 0
+	bbox.position.x 163
+	bbox.position.y 534
+	bbox.size.x 96
+	bbox.size.y 122
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+  frame	data/chars/DRAGON-SHIRYU/26.png
+ frame	data/chars/DRAGON-SHIRYU/27.png
+  frame	data/chars/DRAGON-SHIRYU/28.png
+  frame	data/chars/DRAGON-SHIRYU/29.png
+ frame	data/chars/DRAGON-SHIRYU/30.png
+
+
+
+
+anim  RUNJUMP
+     loop	0
+	delay	10
+	offset	210 650
+dropv 4 1 0
+
+	bbox.position.x 180
+	bbox.position.y 498
+	bbox.size.x 73
+	bbox.size.y 153
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+
+     
+
+
+anim	get
+
+loop	0
+	delay	5
+	offset	210 650
+weaponframe 2 1
+	dropv 4 1 0
+
+	bbox.position.x 183
+	bbox.position.y 575
+	bbox.size.x 62
+	bbox.size.y 79
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/20.png
+frame	data/chars/DRAGON-SHIRYU/20.png
+frame	data/chars/DRAGON-SHIRYU/20.png
+frame	data/chars/DRAGON-SHIRYU/20.png
+
+
+
+anim attack1
+     
+
+loop	0
+	delay	5
+	offset	210 650
+dropv 4 1 0
+	bbox.position.x 165
+	bbox.position.y 510
+	bbox.size.x 91
+	bbox.size.y 144
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/18.png
+frame	data/chars/DRAGON-SHIRYU/18.png
+frame	data/chars/DRAGON-SHIRYU/18.png
+	attack.damage.force 50
+	attack.position.x 246
+	attack.position.y 505
+	attack.size.x 85
+	attack.size.y 156
+frame	data/chars/DRAGON-SHIRYU/19.png
+frame	data/chars/DRAGON-SHIRYU/19.png
+	attack.damage.force 50
+	attack.position.x 246
+	attack.position.y 509
+	attack.size.x 85
+	attack.size.y 151
+frame	data/chars/DRAGON-SHIRYU/19.png
+
+	
+
+
+
+anim attack2
+
+     
+
+       
+      
+	
+
+anim attack3
+
+
+
+
+
+
+
+	
+	
+
+	
+anim special
+
+
+
+
+
+anim SPECIAL2
+
+loop	0
+	delay	6
+	offset	210 650
+energycost  20
+sound data/chars/DRAGON-SHIRYU/01.wav
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/54.png
+frame	data/chars/DRAGON-SHIRYU/55.png
+	attack.damage.force 10
+	attack.position.x 50
+	attack.position.y 483
+	attack.reaction.fall.force 0
+	attack.size.x 346
+	attack.size.y 207
+frame	data/chars/DRAGON-SHIRYU/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/57.png
+	attack.damage.force 10
+	attack.position.x 43
+	attack.position.y 471
+	attack.reaction.fall.force 0
+	attack.size.x 327
+	attack.size.y 212
+frame	data/chars/DRAGON-SHIRYU/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/59.png
+	attack.damage.force 10
+	attack.position.x 50
+	attack.position.y 483
+	attack.reaction.fall.force 0
+	attack.size.x 346
+	attack.size.y 207
+frame	data/chars/DRAGON-SHIRYU/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/57.png
+	attack.damage.force 10
+	attack.position.x 43
+	attack.position.y 471
+	attack.reaction.fall.force 0
+	attack.size.x 327
+	attack.size.y 212
+frame	data/chars/DRAGON-SHIRYU/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/59.png
+	attack.damage.force 10
+	attack.position.x 50
+	attack.position.y 483
+	attack.reaction.fall.force 0
+	attack.size.x 346
+	attack.size.y 207
+frame	data/chars/DRAGON-SHIRYU/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/57.png
+	attack.damage.force 10
+	attack.position.x 43
+	attack.position.y 471
+	attack.reaction.fall.force 0
+	attack.size.x 327
+	attack.size.y 212
+frame	data/chars/DRAGON-SHIRYU/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/59.png
+delay	8
+	offset	210 650
+	attack.damage.force 50
+	attack.position.x 63
+	attack.position.y 480
+	attack.reaction.fall.force 0
+	attack.size.x 302
+	attack.size.y 220
+frame	data/chars/DRAGON-SHIRYU/64.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/65.png
+	attack.damage.force 50
+	attack.position.x 75
+	attack.position.y 359
+	attack.reaction.fall.force 0
+	attack.size.x 293
+	attack.size.y 321
+frame	data/chars/DRAGON-SHIRYU/66.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/67.png
+	attack.damage.force 50
+	attack.position.x -4
+	attack.position.y 157
+	attack.reaction.fall.force 0
+	attack.size.x 378
+	attack.size.y 543
+frame	data/chars/DRAGON-SHIRYU/68.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/69.png
+	attack.damage.force 50
+	attack.position.x 17
+	attack.position.y 143
+	attack.reaction.fall.force 0
+	attack.size.x 365
+	attack.size.y 553
+frame	data/chars/DRAGON-SHIRYU/70.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/71.png
+	attack.damage.force 50
+	attack.position.x 42
+	attack.position.y 454
+	attack.reaction.fall.force 0
+	attack.size.x 329
+	attack.size.y 240
+frame	data/chars/DRAGON-SHIRYU/72.png
+	attack.damage.force 50
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/73.png
+
+	
+	
+
+
+
+   
+
+anim freespecial
+
+
+loop	0
+	delay	6
+	offset	210 650
+energycost  20
+sound data/chars/DRAGON-SHIRYU/02.wav
+custknife	dragonsuper
+	throwframe	15
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/54.png
+frame	data/chars/DRAGON-SHIRYU/55.png
+	attack.damage.force 10
+	attack.position.x 50
+	attack.position.y 483
+	attack.reaction.fall.force 0
+	attack.size.x 346
+	attack.size.y 207
+frame	data/chars/DRAGON-SHIRYU/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/57.png
+	attack.damage.force 10
+	attack.position.x 43
+	attack.position.y 471
+	attack.reaction.fall.force 0
+	attack.size.x 327
+	attack.size.y 212
+frame	data/chars/DRAGON-SHIRYU/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/59.png
+	attack.damage.force 10
+	attack.position.x 50
+	attack.position.y 483
+	attack.reaction.fall.force 0
+	attack.size.x 346
+	attack.size.y 207
+frame	data/chars/DRAGON-SHIRYU/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/57.png
+	attack.damage.force 10
+	attack.position.x 43
+	attack.position.y 471
+	attack.reaction.fall.force 0
+	attack.size.x 327
+	attack.size.y 212
+frame	data/chars/DRAGON-SHIRYU/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/59.png
+	attack.damage.force 10
+	attack.position.x 50
+	attack.position.y 483
+	attack.reaction.fall.force 0
+	attack.size.x 346
+	attack.size.y 207
+frame	data/chars/DRAGON-SHIRYU/56.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/57.png
+	attack.damage.force 10
+	attack.position.x 43
+	attack.position.y 471
+	attack.reaction.fall.force 0
+	attack.size.x 327
+	attack.size.y 212
+frame	data/chars/DRAGON-SHIRYU/58.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/59.png
+	attack.damage.force 10
+	attack.position.x 65
+	attack.position.y 522
+	attack.reaction.fall.force 0
+	attack.size.x 313
+	attack.size.y 178
+frame	data/chars/DRAGON-SHIRYU/60.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/61.png
+	attack.damage.force 10
+	attack.position.x 55
+	attack.position.y 505
+	attack.reaction.fall.force 0
+	attack.size.x 314
+	attack.size.y 189
+frame	data/chars/DRAGON-SHIRYU/62.png
+	attack.damage.force 10
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/63.png
+
+
+
+
+
+
+anim freespecial2
+
+
+
+
+
+
+
+
+anim freespecial3
+
+
+
+
+
+anim freespecial4
+
+
+
+
+         
+	
+
+anim jump
+
+        loop	0
+	delay	10
+	offset	210 650
+
+dropv 4 1 0
+
+	bbox.position.x 179
+	bbox.position.y 494
+	bbox.size.x 73
+	bbox.size.y 158
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/43.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+frame	data/chars/DRAGON-SHIRYU/45.png
+
+	
+
+
+	
+
+
+anim jumpattack
+    loop	0
+	delay	4
+	offset	210 650
+	
+sound data/sounds/punch.wav
+	dropv 4 1 0
+	bbox.position.x 185
+	bbox.position.y 506
+	bbox.size.x 74
+	bbox.size.y 141
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/DRAGON-SHIRYU/44.png
+frame	data/chars/DRAGON-SHIRYU/44.png
+	bbox.position.x 176
+	bbox.position.y 484
+	bbox.size.x 60
+	bbox.size.y 115
+	attack.damage.force 10
+	attack.position.x 227
+	attack.position.y 551
+	attack.reaction.fall.force 1
+	attack.size.x 67
+	attack.size.y 89
+frame	data/chars/DRAGON-SHIRYU/53.png
+	attack.damage.force 10
+	attack.position.x 226
+	attack.position.y 556
+	attack.reaction.fall.force 1
+	attack.size.x 66
+	attack.size.y 84
+frame	data/chars/DRAGON-SHIRYU/53.png
+
+
+
+
+
+	
+
+
+anim jumpattack2
+
+
+
+anim grab
+	
+
+anim grabattack
+	
+
+
+anim grabattack2
+	
+
+
+anim throw
+	
+
+
+anim pain
+loop	0
+offset	210 650
+move	-5
+delay	10
+dropv 4 1 0
+frame	data/chars/DRAGON-SHIRYU/35.png
+frame	data/chars/DRAGON-SHIRYU/35.png
+frame	data/chars/DRAGON-SHIRYU/35.png
+	
+	
+
+
+anim fall
+
+loop	0
+offset	210 650
+delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/DRAGON-SHIRYU/36.png
+frame	data/chars/DRAGON-SHIRYU/36.png
+frame	data/chars/DRAGON-SHIRYU/36.png
+frame	data/chars/DRAGON-SHIRYU/36.png
+frame	data/chars/DRAGON-SHIRYU/36.png
+frame	data/chars/DRAGON-SHIRYU/36.png
+frame	data/chars/DRAGON-SHIRYU/36.png
+frame	data/chars/DRAGON-SHIRYU/36.png
+frame	data/chars/DRAGON-SHIRYU/37.png
+frame	data/chars/DRAGON-SHIRYU/37.png
+frame	data/chars/DRAGON-SHIRYU/37.png
+
+anim DEATH
+
+loop	0
+offset	210 650
+delay	10
+dropv 4 1 0
+frame	data/chars/DRAGON-SHIRYU/37.png
+frame	data/chars/DRAGON-SHIRYU/37.png
+frame	data/chars/DRAGON-SHIRYU/37.png
+
+
+anim rise
+
+	loop	0
+	delay	10
+	offset	210 650
+dropv 4 1 0
+	frame	data/chars/DRAGON-SHIRYU/38.png
+	frame	data/chars/DRAGON-SHIRYU/39.png
+	frame	data/chars/DRAGON-SHIRYU/40.png
+
+	
+	
+	
+	
+
+
+anim land
+
+
+
+
+anim duck
+	
+
+anim duckattack
+
+
+

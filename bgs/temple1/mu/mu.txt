@@ -1,0 +1,15 @@
+name        mu
+type        none
+shadow      0
+setlayer    2
+
+anim idle
+    loop    1
+    delay   16
+    offset  48 85
+    frame   data/bgs/temple1/mu/mu1.png
+    frame   data/bgs/temple1/mu/mu2.png
+    frame   data/bgs/temple1/mu/mu3.png
+    frame   data/bgs/temple1/mu/mu4.png
+    frame   data/bgs/temple1/mu/mu3.png    
+    frame   data/bgs/temple1/mu/mu2.png    

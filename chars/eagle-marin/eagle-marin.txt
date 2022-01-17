@@ -1,0 +1,1130 @@
+
+name	EAGLE-MARIN
+health	100
+speed	25
+type	player
+shadow	0
+
+mp 100
+
+weaploss 2
+modelflag 0
+
+icon	data/chars/EAGLE-MARIN/icon.png
+nodieblink 1
+jumpheight 5
+\\jumpspeed 6
+running 45 5 3
+noquake 1 1
+
+makeinv 4 0
+
+weapons         EMARMA0 EMARMA1 EMARMA2 EMARMA3 EMARMA4 EMARMA5 EMARMA6 EAGLE-MARIN
+
+
+
+
+
+com  d  -> s  freespecial
+
+blockodds 1
+
+holdblock 2
+
+
+anim	SHOCK
+
+
+loop	0
+offset	205 173
+delay	5
+
+
+
+dropv 4 1 0
+
+frame	data/chars/EAGLE-MARIN/SELECT3.png
+frame	data/chars/EAGLE-MARIN/SELECT4.png
+frame	data/chars/EAGLE-MARIN/SELECT3.png
+frame	data/chars/EAGLE-MARIN/SELECT4.png
+frame	data/chars/EAGLE-MARIN/SELECT3.png
+frame	data/chars/EAGLE-MARIN/SELECT4.png
+frame	data/chars/EAGLE-MARIN/SELECT3.png
+frame	data/chars/EAGLE-MARIN/SELECT4.png
+frame	data/chars/EAGLE-MARIN/SELECT3.png
+frame	data/chars/EAGLE-MARIN/SELECT4.png
+frame	data/chars/EAGLE-MARIN/SELECT3.png
+frame	data/chars/EAGLE-MARIN/SELECT4.png
+frame	data/chars/EAGLE-MARIN/SELECT3.png
+frame	data/chars/EAGLE-MARIN/SELECT4.png
+frame	data/chars/EAGLE-MARIN/SELECT3.png
+frame	data/chars/EAGLE-MARIN/SELECT4.png
+
+frame	data/chars/EAGLE-MARIN/null.png
+
+
+anim VICTORY
+
+  loop	0
+	delay	10
+	offset	205 173
+frame	data/chars/EAGLE-MARIN/29.png
+frame	data/chars/EAGLE-MARIN/29.png
+frame	data/chars/EAGLE-MARIN/29.png
+frame	data/chars/EAGLE-MARIN/29.png
+frame	data/chars/EAGLE-MARIN/29.png
+frame	data/chars/EAGLE-MARIN/29.png
+frame	data/chars/EAGLE-MARIN/29.png
+
+
+
+
+anim	waiting
+  loop	0
+	delay	10
+	offset	102 142
+frame	data/chars/EAGLE-MARIN/SELECT.png
+
+
+
+anim	select
+loop	0
+	delay	10
+	offset	102 142
+sound data/chars/select.wav
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+frame	data/chars/EAGLE-MARIN/SELECT2.png
+frame	data/chars/EAGLE-MARIN/SELECT.png
+
+
+
+
+
+
+
+anim	block
+	loop	0
+	delay	2
+	offset	205 173
+
+
+
+dropv 4 1 0
+	bbox.position.x 174
+	bbox.position.y 70
+	bbox.size.x 69
+	bbox.size.y 110
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/22.png
+frame	data/chars/EAGLE-MARIN/22.png
+
+
+
+
+
+anim idle
+	loop	0
+	delay	10
+	offset	205 173
+
+
+	dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 171
+	bbox.position.y 71
+	bbox.size.x 68
+	bbox.size.y 108
+frame	data/chars/EAGLE-MARIN/01.png
+frame	data/chars/EAGLE-MARIN/01.png
+frame	data/chars/EAGLE-MARIN/01.png
+frame	data/chars/EAGLE-MARIN/01.png
+        
+    
+
+anim walk
+
+        loop	1
+	delay	7
+	offset	205 173
+ 
+	
+
+	dropv 4 1 0
+	bbox.position.x 163
+	bbox.position.y 77
+	bbox.size.x 88
+	bbox.size.y 103
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+  frame	data/chars/EAGLE-MARIN/16.png
+ frame	data/chars/EAGLE-MARIN/17.png
+  frame	data/chars/EAGLE-MARIN/18.png
+  frame	data/chars/EAGLE-MARIN/19.png
+ frame	data/chars/EAGLE-MARIN/20.png
+  frame	data/chars/EAGLE-MARIN/21.png
+
+   
+
+anim RUN
+
+        loop	1
+	delay	5
+	offset	205 173
+ dropv 4 1 0
+
+	bbox.position.x 161
+	bbox.position.y 81
+	bbox.size.x 89
+	bbox.size.y 97
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+  frame	data/chars/EAGLE-MARIN/16.png
+ frame	data/chars/EAGLE-MARIN/17.png
+  frame	data/chars/EAGLE-MARIN/18.png
+  frame	data/chars/EAGLE-MARIN/19.png
+ frame	data/chars/EAGLE-MARIN/20.png
+  frame	data/chars/EAGLE-MARIN/21.png
+
+
+
+anim  RUNJUMP
+     loop	0
+	delay	10
+	offset	205 173
+
+dropv 4 1 0
+	bbox.position.x 186
+	bbox.position.y 43
+	bbox.size.x 42
+	bbox.size.y 135
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/30.png
+frame	data/chars/EAGLE-MARIN/30.png
+frame	data/chars/EAGLE-MARIN/30.png
+frame	data/chars/EAGLE-MARIN/30.png
+frame	data/chars/EAGLE-MARIN/30.png
+	bbox.position.x 193
+	bbox.position.y 48
+	bbox.size.x 45
+	bbox.size.y 115
+frame	data/chars/EAGLE-MARIN/32.png
+frame	data/chars/EAGLE-MARIN/32.png
+frame	data/chars/EAGLE-MARIN/32.png
+frame	data/chars/EAGLE-MARIN/32.png
+frame	data/chars/EAGLE-MARIN/32.png
+
+     
+
+
+anim	get
+
+loop	0
+	delay	5
+	offset	205 173
+
+	
+dropv 4 1 0
+	bbox.position.x 175
+	bbox.position.y 106
+	bbox.size.x 61
+	bbox.size.y 77
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/15.png
+frame	data/chars/EAGLE-MARIN/15.png
+frame	data/chars/EAGLE-MARIN/15.png
+frame	data/chars/EAGLE-MARIN/15.png
+
+
+
+anim attack1
+     
+
+loop	0
+	delay	5
+	offset	205 173
+
+	
+
+	dropv 4 1 0
+	bbox.position.x 174
+	bbox.position.y 79
+	bbox.size.x 65
+	bbox.size.y 100
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/33.png
+	attack.damage.force 10
+	attack.position.x 229
+	attack.position.y 77
+	attack.size.x 39
+	attack.size.y 100
+frame	data/chars/EAGLE-MARIN/34.png
+
+
+	
+
+
+
+anim attack2
+
+
+
+
+loop	0
+	delay	5
+	offset	205 173
+
+dropv 4 1 0
+
+	bbox.position.x 181
+	bbox.position.y 82
+	bbox.size.x 58
+	bbox.size.y 96
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/35.png
+	bbox.position.x 173
+	bbox.position.y 66
+	bbox.size.x 55
+	bbox.size.y 115
+	attack.damage.force 10
+	attack.position.x 223
+	attack.position.y 65
+	attack.size.x 44
+	attack.size.y 119
+frame	data/chars/EAGLE-MARIN/36.png
+
+ 
+     
+
+       
+      
+	
+
+anim attack3
+
+loop	0
+	delay	7
+	offset	205 173
+
+dropv 4 1 0
+
+	bbox.position.x 195
+	bbox.position.y 64
+	bbox.size.x 36
+	bbox.size.y 122
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/37.png
+	bbox.position.x 181
+	bbox.position.y 68
+	bbox.size.x 70
+	bbox.size.y 111
+frame	data/chars/EAGLE-MARIN/38.png
+	bbox.position.x 171
+	bbox.position.y 77
+	bbox.size.x 59
+	bbox.size.y 98
+	attack.damage.force 10
+	attack.position.x 220
+	attack.position.y 76
+	attack.reaction.fall.force 1
+	attack.size.x 58
+	attack.size.y 96
+frame	data/chars/EAGLE-MARIN/39.png
+frame	data/chars/EAGLE-MARIN/39.png
+	attack.damage.force 10
+	attack.position.x 222
+	attack.position.y 75
+	attack.reaction.fall.force 1
+	attack.size.x 57
+	attack.size.y 101
+frame	data/chars/EAGLE-MARIN/39.png
+frame	data/chars/EAGLE-MARIN/39.png
+
+
+
+anim jump
+
+        loop	0
+	delay	10
+	offset	205 173
+
+dropv 4 1 0
+
+	bbox.position.x 187
+	bbox.position.y 43
+	bbox.size.x 40
+	bbox.size.y 140
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/30.png
+frame	data/chars/EAGLE-MARIN/30.png
+frame	data/chars/EAGLE-MARIN/30.png
+frame	data/chars/EAGLE-MARIN/30.png
+frame	data/chars/EAGLE-MARIN/30.png
+	bbox.position.x 195
+	bbox.position.y 47
+	bbox.size.x 40
+	bbox.size.y 114
+frame	data/chars/EAGLE-MARIN/32.png
+frame	data/chars/EAGLE-MARIN/32.png
+frame	data/chars/EAGLE-MARIN/32.png
+frame	data/chars/EAGLE-MARIN/32.png
+frame	data/chars/EAGLE-MARIN/32.png
+
+	
+
+
+	
+
+
+anim jumpattack
+    loop	0
+	delay	4
+	offset	205 173
+	
+sound data/sounds/punch.wav
+	dropv 4 1 0
+	bbox.position.x 185
+	bbox.position.y 61
+	bbox.size.x 52
+	bbox.size.y 82
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/31.png
+frame	data/chars/EAGLE-MARIN/31.png
+	bbox.position.x 159
+	bbox.position.y 52
+	bbox.size.x 65
+	bbox.size.y 69
+	attack.damage.force 10
+	attack.position.x 217
+	attack.position.y 82
+	attack.reaction.fall.force 1
+	attack.size.x 53
+	attack.size.y 74
+frame	data/chars/EAGLE-MARIN/40.png
+	attack.damage.force 10
+	attack.position.x 216
+	attack.position.y 92
+	attack.reaction.fall.force 1
+	attack.size.x 54
+	attack.size.y 63
+frame	data/chars/EAGLE-MARIN/40.png
+
+
+
+anim pain
+loop	0
+offset	205 173
+move	-5
+delay	10
+dropv 4 1 0
+frame	data/chars/EAGLE-MARIN/23.png
+frame	data/chars/EAGLE-MARIN/23.png
+frame	data/chars/EAGLE-MARIN/23.png
+	
+	
+
+
+anim fall
+
+loop	0
+offset	205 173
+delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/EAGLE-MARIN/24.png
+frame	data/chars/EAGLE-MARIN/24.png
+frame	data/chars/EAGLE-MARIN/24.png
+frame	data/chars/EAGLE-MARIN/24.png
+frame	data/chars/EAGLE-MARIN/24.png
+frame	data/chars/EAGLE-MARIN/24.png
+frame	data/chars/EAGLE-MARIN/24.png
+frame	data/chars/EAGLE-MARIN/24.png
+frame	data/chars/EAGLE-MARIN/25.png
+frame	data/chars/EAGLE-MARIN/25.png
+frame	data/chars/EAGLE-MARIN/25.png
+
+anim DEATH
+
+loop	0
+offset	205 173
+delay	10
+dropv 4 1 0
+frame	data/chars/EAGLE-MARIN/25.png
+frame	data/chars/EAGLE-MARIN/25.png
+frame	data/chars/EAGLE-MARIN/25.png
+
+
+anim rise
+
+	loop	0
+	delay	10
+	offset	205 173
+dropv 4 1 0
+	frame	data/chars/EAGLE-MARIN/26.png
+	frame	data/chars/EAGLE-MARIN/27.png
+	frame	data/chars/EAGLE-MARIN/28.png
+
+
+	
+	
+
+	
+anim special
+
+
+
+
+
+anim SPECIAL2
+
+loop	0
+	delay	6
+	offset	205 173
+energycost  30
+sound data/chars/EAGLE-MARIN/01.wav
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/41.png
+frame	data/chars/EAGLE-MARIN/41.png
+	attack.damage.force 10
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/42.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/43.png
+	attack.damage.force 10
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/44.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/45.png
+attack.damage.force 10
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/42.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/43.png
+	attack.damage.force 10
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/44.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/45.png
+attack.damage.force 10
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/42.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/43.png
+	attack.damage.force 10
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/44.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/45.png
+	attack.damage.force 50
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/46.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/47.png
+	attack.damage.force 50
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/48.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/49.png
+	attack.damage.force 50
+	attack.position.x 70
+	attack.position.y 41
+	attack.reaction.fall.force 0
+	attack.size.x 431
+	attack.size.y 170
+frame	data/chars/EAGLE-MARIN/50.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/51.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 624
+	attack.size.y 217
+frame	data/chars/EAGLE-MARIN/52.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/53.png
+	attack.damage.force 50
+	attack.position.x 26
+	attack.position.y 36
+	attack.reaction.fall.force 0
+	attack.size.x 695
+	attack.size.y 195
+frame	data/chars/EAGLE-MARIN/54.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/55.png
+	attack.damage.force 50
+	attack.position.x 56
+	attack.position.y 28
+	attack.reaction.fall.force 0
+	attack.size.x 754
+	attack.size.y 205
+frame	data/chars/EAGLE-MARIN/56.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/57.png
+attack.damage.force 50
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/46.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/47.png
+	attack.damage.force 50
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/48.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/49.png
+	attack.damage.force 50
+	attack.position.x 70
+	attack.position.y 41
+	attack.reaction.fall.force 0
+	attack.size.x 431
+	attack.size.y 170
+frame	data/chars/EAGLE-MARIN/50.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/51.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 624
+	attack.size.y 217
+frame	data/chars/EAGLE-MARIN/52.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/53.png
+	attack.damage.force 50
+	attack.position.x 26
+	attack.position.y 36
+	attack.reaction.fall.force 0
+	attack.size.x 695
+	attack.size.y 195
+frame	data/chars/EAGLE-MARIN/54.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/55.png
+	attack.damage.force 50
+	attack.position.x 56
+	attack.position.y 28
+	attack.reaction.fall.force 0
+	attack.size.x 754
+	attack.size.y 205
+frame	data/chars/EAGLE-MARIN/56.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/57.png
+attack.damage.force 50
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/46.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/47.png
+	attack.damage.force 50
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/48.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/49.png
+	attack.damage.force 50
+	attack.position.x 70
+	attack.position.y 41
+	attack.reaction.fall.force 0
+	attack.size.x 431
+	attack.size.y 170
+frame	data/chars/EAGLE-MARIN/50.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/51.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 624
+	attack.size.y 217
+frame	data/chars/EAGLE-MARIN/52.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/53.png
+	attack.damage.force 50
+	attack.position.x 26
+	attack.position.y 36
+	attack.reaction.fall.force 0
+	attack.size.x 695
+	attack.size.y 195
+frame	data/chars/EAGLE-MARIN/54.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/55.png
+	attack.damage.force 50
+	attack.position.x 56
+	attack.position.y 28
+	attack.reaction.fall.force 0
+	attack.size.x 754
+	attack.size.y 205
+frame	data/chars/EAGLE-MARIN/56.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/57.png
+attack.damage.force 50
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/46.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/47.png
+	attack.damage.force 50
+	attack.position.x 38
+	attack.position.y 64
+	attack.reaction.fall.force 0
+	attack.size.x 354
+	attack.size.y 165
+frame	data/chars/EAGLE-MARIN/48.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/49.png
+	attack.damage.force 50
+	attack.position.x 70
+	attack.position.y 41
+	attack.reaction.fall.force 0
+	attack.size.x 431
+	attack.size.y 170
+frame	data/chars/EAGLE-MARIN/50.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/51.png
+	attack.damage.force 50
+	attack.position.x 34
+	attack.position.y 19
+	attack.reaction.fall.force 0
+	attack.size.x 624
+	attack.size.y 217
+frame	data/chars/EAGLE-MARIN/52.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/53.png
+	attack.damage.force 50
+	attack.position.x 26
+	attack.position.y 36
+	attack.reaction.fall.force 0
+	attack.size.x 695
+	attack.size.y 195
+frame	data/chars/EAGLE-MARIN/54.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/55.png
+	attack.damage.force 50
+	attack.position.x 56
+	attack.position.y 28
+	attack.reaction.fall.force 0
+	attack.size.x 754
+	attack.size.y 205
+frame	data/chars/EAGLE-MARIN/56.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/EAGLE-MARIN/57.png
+	
+
+	
+	
+
+
+
+   
+
+anim freespecial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim freespecial2
+
+
+
+anim freespecial3
+
+
+
+
+
+anim freespecial4
+
+
+	
+
+
+anim jumpattack2
+
+
+
+anim grab
+	
+
+anim grabattack
+	
+
+
+anim grabattack2
+	
+
+
+anim throw
+		
+
+
+anim land
+
+
+
+
+anim duck
+	
+
+anim duckattack
+
+
+

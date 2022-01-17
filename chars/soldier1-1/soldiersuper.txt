@@ -1,0 +1,30 @@
+name	soldiersuper
+health	20
+type	none
+remove   1
+speed	20
+shadow	0
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	-30 30
+
+dropv 4 1 0
+	attack.damage.force 20
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 92
+	attack.size.y 24
+frame	data/chars/SOLDIER1-1/16.png
+
+
+
+

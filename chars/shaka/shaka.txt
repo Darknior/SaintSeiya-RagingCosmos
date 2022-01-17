@@ -1,0 +1,768 @@
+
+name	SHAKA
+health	2680
+speed	1
+type	enemy
+
+icon	data/chars/SHAKA/icon.png
+\\hostile          player
+\\aimove           Wander
+\\aimove           Chase
+\\aimove           Avoid
+aggression       -100
+hitenemy          0 0
+blockodds 1
+blocked 1
+noquake 1 1
+nodrop 2
+nodieblink 3
+nomove 1 0
+\\facing 2
+\\subject_to_wall 0
+\\subject_to_hole 0
+\\subject_to_screen 0
+\\subject_to_minz 1
+\\subject_to_maxz 1
+falldie 1
+gfxshadow	1
+load cosmo
+
+anim DEATH
+loop	0
+	offset	220 246
+
+	delay	10
+
+
+
+frame	data/chars/SHAKA/11.png
+frame	data/chars/SHAKA/12.png
+frame	data/chars/SHAKA/13.png
+frame	data/chars/SHAKA/14.png
+frame	data/chars/SHAKA/15.png
+frame	data/chars/SHAKA/16.png
+frame	data/chars/SHAKA/17.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+frame	data/chars/SHAKA/20.png
+
+
+
+anim	block
+loop	0
+	offset	220 246
+
+
+	delay	10
+
+subentity cosmo
+summonframe 2 100 430 0 1
+	dropv 4 1 0
+	
+	bbox.position.x 186
+	bbox.position.y 113
+	bbox.size.x 73
+	bbox.size.y 147
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/00.png	
+frame	data/chars/SHAKA/000.png	
+frame	data/chars/SHAKA/null.png	
+
+
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	220 246
+	dropv 4 1 0
+	attack.damage.force 10
+	attack.position.x 121
+	attack.position.y -210
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 201
+	attack.size.y 627
+	bbox.position.x 193
+	bbox.position.y 119
+	bbox.size.x 60
+	bbox.size.y 133
+frame	data/chars/SHAKA/01.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/01.png
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	220 246
+	dropv 4 1 0
+	bbox.position.x 185
+	bbox.position.y 106
+	bbox.size.x 81
+	bbox.size.y 153
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/01.png
+
+
+
+
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	220 246
+	dropv 4 1 0
+	attack.damage.force 10
+	attack.position.x 113
+	attack.position.y -255
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 215
+	attack.size.y 654
+frame	data/chars/SHAKA/02.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/02.png
+	
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	220 246
+	delay	10
+
+dropv 4 1 0
+
+frame	data/chars/SHAKA/01.png
+frame	data/chars/SHAKA/01.png
+
+
+	
+
+
+anim attack1
+
+ range	-1000 1000
+        loop	0
+	offset	220 246
+	delay	6
+
+sound data/chars/SHAKA/01.wav
+
+dropv 4 1 0
+
+	
+	attack.damage.force 50
+	attack.position.x -14
+	attack.position.y 28
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 464
+	attack.size.y 287
+frame	data/chars/SHAKA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/04.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -339
+	attack.size.x 900
+	attack.size.y 927
+frame	data/chars/SHAKA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/06.png
+	attack.damage.force 50
+	attack.position.x -14
+	attack.position.y 28
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 464
+	attack.size.y 287
+frame	data/chars/SHAKA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/04.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -339
+	attack.size.x 900
+	attack.size.y 927
+frame	data/chars/SHAKA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/06.png
+	attack.damage.force 50
+	attack.position.x -14
+	attack.position.y 28
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 464
+	attack.size.y 287
+frame	data/chars/SHAKA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/04.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -339
+	attack.size.x 900
+	attack.size.y 927
+frame	data/chars/SHAKA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/06.png
+	attack.damage.force 50
+	attack.position.x -14
+	attack.position.y 28
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 464
+	attack.size.y 287
+frame	data/chars/SHAKA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/04.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -339
+	attack.size.x 900
+	attack.size.y 927
+frame	data/chars/SHAKA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/06.png
+	attack.damage.force 50
+	attack.position.x -14
+	attack.position.y 28
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 464
+	attack.size.y 287
+frame	data/chars/SHAKA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/04.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -339
+	attack.size.x 900
+	attack.size.y 927
+frame	data/chars/SHAKA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/06.png
+	attack.damage.force 50
+	attack.position.x -14
+	attack.position.y 28
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 464
+	attack.size.y 287
+frame	data/chars/SHAKA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/04.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -339
+	attack.size.x 900
+	attack.size.y 927
+frame	data/chars/SHAKA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/06.png
+	attack.damage.force 50
+	attack.position.x -14
+	attack.position.y 28
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 464
+	attack.size.y 287
+frame	data/chars/SHAKA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/04.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -339
+	attack.size.x 900
+	attack.size.y 927
+frame	data/chars/SHAKA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/06.png
+	attack.damage.force 50
+	attack.position.x -14
+	attack.position.y 28
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 464
+	attack.size.y 287
+frame	data/chars/SHAKA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/04.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -339
+	attack.size.x 900
+	attack.size.y 927
+frame	data/chars/SHAKA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/06.png
+	
+move 180
+frame	data/chars/APHRODITE/00.png	
+frame	data/chars/APHRODITE/000.png	
+frame	data/chars/APHRODITE/null.png
+
+
+
+
+anim attack2
+ 
+ range	-1000 1000
+        loop	0
+	offset	220 246
+	delay	6
+
+sound data/chars/SHAKA/02.wav
+
+
+dropv 4 1 0
+	
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y -271
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 447
+	attack.size.y 687
+frame	data/chars/SHAKA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/08.png	
+	attack.damage.force 50
+	attack.position.x 46
+	attack.position.y -285
+	attack.size.x 753
+	attack.size.y 810
+frame	data/chars/SHAKA/09.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHAKA/10.png
+	
+move 180
+frame	data/chars/APHRODITE/00.png	
+frame	data/chars/APHRODITE/000.png	
+frame	data/chars/APHRODITE/null.png
+
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

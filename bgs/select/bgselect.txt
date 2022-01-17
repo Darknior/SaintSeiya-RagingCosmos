@@ -1,0 +1,33 @@
+name        bgselect
+health      1
+type        panel
+speed       10
+shadow      0
+setlayer    -2000
+facing      1
+
+
+anim    idle
+    loop    1
+    offset  1 1
+    delay   20
+    @cmd    changeentityproperty getlocalvar("self") "direction" 1
+    frame   data/bgs/select/select1.png
+    @cmd    changeentityproperty getlocalvar("self") "setlayer" -2000
+    frame   data/bgs/select/select2.png
+    frame   data/bgs/select/select3.png
+    frame   data/bgs/select/select4.png
+    frame   data/bgs/select/select5.png
+    frame   data/bgs/select/select6.png
+    frame   data/bgs/select/select7.png
+    frame   data/bgs/select/select8.png
+    frame   data/bgs/select/select9.png
+    frame   data/bgs/select/select10.png
+    frame   data/bgs/select/select11.png
+    frame   data/bgs/select/select12.png
+    frame   data/bgs/select/select13.png
+    frame   data/bgs/select/select14.png
+    frame   data/bgs/select/select15.png
+    frame   data/bgs/select/select16.png
+    frame   data/bgs/select/select17.png
+    frame   data/bgs/select/select18.png

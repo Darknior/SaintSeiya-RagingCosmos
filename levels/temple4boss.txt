@@ -1,0 +1,37 @@
+music           data/music/cancer.ogg
+
+panel           data/bgs/temple4/layer2.png
+fglayer         data/bgs/temple4/fog1.png        100 0.1 0 -20 0 0 0 1 1 0 1 1 5 30 0.7
+fglayer         data/bgs/temple4/fog2.png        -150 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0 1
+fglayer         data/bgs/temple4/fog2.png        -25 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0 1
+frontpanel      data/bgs/temple4/layer1.png 
+
+order           a
+direction       both
+settime         0
+
+cameratype      0
+light           256 -44
+at              0
+shadowalpha     2
+at              0
+
+spawn1          60 30
+
+
+#-- LEVEL -----------------------------------
+
+spawn           heads
+coords          520 -22
+at              0
+
+spawn           temple4columns
+coords          0 0
+at              0
+
+
+#-- BOSS -----------------------------------
+
+spawn           DEATHMASK
+coords          850 390
+at              0

@@ -1,0 +1,160 @@
+
+name	KIKI2
+health	10
+speed	7
+type	enemy
+
+icon	data/chars/KIKI2/icon.png
+hostile          player
+aimove           Wander
+#aimove           Chase
+#aimove           Avoid
+aggression       500
+hitenemy          0 0
+#blockodds 1
+nodieblink 3
+blocked 1
+noquake 1 1
+
+
+#subject_to_wall 0
+
+subject_to_screen 0
+
+
+
+anim DEATH
+
+loop	1
+	delay	10
+	offset	54 92
+dropv 4 1 0
+
+frame	data/chars/KIKI2/01.png
+frame	data/chars/KIKI2/05.png
+frame	data/chars/KIKI2/06.png
+frame	data/chars/KIKI2/null.png
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	54 92
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 17
+	bbox.position.y 23
+	bbox.size.x 52
+	bbox.size.y 76
+frame	data/chars/KIKI2/01.png
+
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	54 92
+dropv 4 1 0
+
+	bbox.position.x 14
+	bbox.position.y 22
+	bbox.size.x 54
+	bbox.size.y 79
+frame	data/chars/KIKI2/02.png
+frame	data/chars/KIKI2/03.png
+frame	data/chars/KIKI2/02.png
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	54 92
+
+dropv 4 1 0
+
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/04.png
+
+
+        
+
+anim fall
+
+    loop	0
+	
+	delay	10
+offset	54 92
+
+dropv 4 1 0
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/04.png
+frame	data/chars/KIKI2/01.png
+frame	data/chars/KIKI2/05.png
+frame	data/chars/KIKI2/06.png
+frame	data/chars/KIKI2/null.png
+
+
+
+
+anim rise
+        loop	0
+	offset	54 92
+	delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/KIKI2/01.png
+
+
+	
+
+
+anim attack1
+
+
+
+
+
+
+anim attack2
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

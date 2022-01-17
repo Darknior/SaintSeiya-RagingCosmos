@@ -1,0 +1,50 @@
+name	leonesuper
+health	50
+type	none
+remove   1
+speed	25
+shadow	0
+
+
+
+
+anim idle
+	loop	1
+	delay	5
+	offset	-35 100
+	dropv 4 1 0
+	attack.damage.force 50
+	attack.position.x -12
+	attack.position.y -31
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 247
+	attack.size.y 238
+frame	data/chars/AIOLIA/33.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -11
+	attack.reaction.fall.force 1
+	attack.size.x 231
+	attack.size.y 202
+frame	data/chars/AIOLIA/34.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -27
+	attack.reaction.fall.force 1
+	attack.size.x 236
+	attack.size.y 232
+frame	data/chars/AIOLIA/35.png
+	attack.damage.force 50
+	attack.position.x -1
+	attack.position.y -13
+	attack.reaction.fall.force 1
+	attack.size.x 222
+	attack.size.y 215
+frame	data/chars/AIOLIA/36.png
+
+
+
+

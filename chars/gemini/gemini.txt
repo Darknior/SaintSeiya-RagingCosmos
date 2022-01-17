@@ -1,0 +1,450 @@
+
+name	GEMINI
+health	2680
+speed	1
+type	enemy
+
+icon	data/chars/GEMINI/icon.png
+\\hostile          player
+\\aimove           Wander
+\\aimove           Chase
+\\aimove           Avoid
+aggression       -300
+hitenemy          0 0
+blockodds 1
+blocked 1
+noquake 1 1
+nodrop 2
+nodieblink 3
+nomove 1 0
+\\facing 2
+\\subject_to_wall 0
+\\subject_to_hole 0
+\\subject_to_screen 0
+\\subject_to_minz 1
+\\subject_to_maxz 1
+falldie 1
+gfxshadow	1
+load cosmo
+
+anim DEATH
+loop	0
+	offset	220 245
+
+	delay	10
+
+
+
+
+
+frame	data/chars/GEMINI/09.png
+frame	data/chars/GEMINI/10.png
+frame	data/chars/GEMINI/11.png
+frame	data/chars/GEMINI/12.png
+frame	data/chars/GEMINI/13.png
+frame	data/chars/GEMINI/14.png
+frame	data/chars/GEMINI/15.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+frame	data/chars/GEMINI/17.png
+
+
+
+anim	block
+loop	0
+	offset	220 245
+
+	delay	10
+
+subentity cosmo
+summonframe 2 100 430 0 1
+dropv 4 1 0
+	
+	
+	bbox.position.x 179
+	bbox.position.y 101
+	bbox.size.x 87
+	bbox.size.y 158
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/00.png	
+	
+frame	data/chars/GEMINI/000.png	
+	
+frame	data/chars/GEMINI/null.png	
+
+
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	220 245
+dropv 4 1 0
+	bbox.position.x 182
+	bbox.position.y 102
+	bbox.size.x 79
+	bbox.size.y 155
+	attack.damage.force 10
+	attack.position.x 120
+	attack.position.y -274
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 201
+	attack.size.y 798
+frame	data/chars/GEMINI/01.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/01.png
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	220 245
+	dropv 4 1 0
+	bbox.position.x 176
+	bbox.position.y 91
+	bbox.size.x 87
+	bbox.size.y 175
+frame	data/chars/GEMINI/01.png
+
+
+
+
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	220 245
+dropv 4 1 0
+	attack.damage.force 10
+	attack.position.x 120
+	attack.position.y -6
+	attack.reaction.fall.force 1
+	attack.size.x 200
+	attack.size.y 342
+frame	data/chars/GEMINI/02.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/02.png
+	
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	220 245
+	delay	10
+
+
+dropv 4 1 0
+frame	data/chars/GEMINI/01.png
+frame	data/chars/GEMINI/01.png
+
+
+	
+
+
+anim attack1
+
+ range	-1000 1000
+        loop	0
+	offset	220 245
+	delay	6
+sound data/chars/GEMINI/01.wav
+
+dropv 4 1 0
+
+	
+shock        0 0 10 10 5 1 0 0 0 0
+	attack.damage.force 200
+	attack.position.x 121
+	attack.position.y -3
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 201
+	attack.size.y 383
+frame	data/chars/GEMINI/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/04.png	
+	attack.damage.force 200
+	attack.position.x -275
+	attack.position.y -255
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 778
+frame	data/chars/GEMINI/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/06.png	
+	attack.damage.force 200
+	attack.position.x -256
+	attack.position.y -331
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 832
+frame	data/chars/GEMINI/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/08.png	
+attack.damage.force 200
+	attack.position.x -275
+	attack.position.y -255
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 778
+frame	data/chars/GEMINI/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/06.png	
+	attack.damage.force 200
+	attack.position.x -256
+	attack.position.y -331
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 832
+frame	data/chars/GEMINI/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/08.png	
+attack.damage.force 200
+	attack.position.x -275
+	attack.position.y -255
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 778
+frame	data/chars/GEMINI/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/06.png	
+	attack.damage.force 200
+	attack.position.x -256
+	attack.position.y -331
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 832
+frame	data/chars/GEMINI/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/08.png	
+attack.damage.force 200
+	attack.position.x -275
+	attack.position.y -255
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 778
+frame	data/chars/GEMINI/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/06.png	
+	attack.damage.force 200
+	attack.position.x -256
+	attack.position.y -331
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 832
+frame	data/chars/GEMINI/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/08.png	
+attack.damage.force 200
+	attack.position.x -275
+	attack.position.y -255
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 778
+frame	data/chars/GEMINI/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/06.png	
+	attack.damage.force 200
+	attack.position.x -256
+	attack.position.y -331
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 832
+frame	data/chars/GEMINI/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/08.png	
+attack.damage.force 200
+	attack.position.x -275
+	attack.position.y -255
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 778
+frame	data/chars/GEMINI/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/06.png	
+	attack.damage.force 200
+	attack.position.x -256
+	attack.position.y -331
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 832
+frame	data/chars/GEMINI/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/GEMINI/08.png	
+
+	
+
+move 180
+	
+frame	data/chars/GEMINI/00.png	
+
+frame	data/chars/GEMINI/000.png	
+
+frame	data/chars/GEMINI/null.png
+
+
+
+
+
+
+
+anim attack2
+
+
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

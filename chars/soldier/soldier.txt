@@ -1,0 +1,204 @@
+name	SOLDIER
+health	20
+speed	20
+type	enemy
+
+icon	data/chars/SOLDIER/icon.png
+hostile          player npc 
+candamage player npc
+#aimove           Wander
+aimove           Chase
+#aimove           Avoid
+#aggression       5
+hitenemy          0 0
+blockodds 1
+nodieblink 0
+blocked 1
+noquake 1 1
+
+
+subject_to_screen 0
+
+palette data/chars/SOLDIER1-1/COLOR1.png
+
+anim	block
+loop	0
+	offset	110 180
+
+#sound data/chars/SOLDIER/KO.wav
+	delay	10
+
+
+
+dropv 4 1 0
+	bbox.position.x 71
+	bbox.position.y 57
+	bbox.size.x 84
+	bbox.size.y 133
+frame	data/chars/SOLDIER/04.png
+frame	data/chars/SOLDIER/04.png
+frame	data/chars/SOLDIER/04.png
+frame	data/chars/SOLDIER/04.png
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	110 180
+dropv 4 1 0
+	bbox.position.x 62
+	bbox.position.y 57
+	bbox.size.x 93
+	bbox.size.y 132
+frame	data/chars/SOLDIER/01.png
+
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	110 180
+
+
+	bbox.position.x 66
+	bbox.position.y 62
+	bbox.size.x 90
+	bbox.size.y 125
+frame	data/chars/SOLDIER/09.png
+frame	data/chars/SOLDIER/10.png
+frame	data/chars/SOLDIER/11.png
+frame	data/chars/SOLDIER/12.png
+
+
+
+
+anim BACKWALK
+
+	loop	1
+	delay	15
+	offset	110 180
+
+
+dropv 4 1 0
+	bbox.position.x 42
+	bbox.position.y 64
+	bbox.size.x 99
+	bbox.size.y 121
+frame	data/chars/SOLDIER/17.png
+frame	data/chars/SOLDIER/18.png
+frame	data/chars/SOLDIER/19.png
+frame	data/chars/SOLDIER/20.png
+
+
+
+      
+ 
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	110 180
+	bbox.position.x 42
+	bbox.position.y 64
+	bbox.size.x 99
+	bbox.size.y 121
+
+frame	data/chars/SOLDIER/05.png
+frame	data/chars/SOLDIER/05.png
+
+
+        
+
+anim fall
+
+    loop	0
+	
+	delay	10
+offset	110 180
+
+dropv 4 1 0
+frame	data/chars/SOLDIER/06.png
+frame	data/chars/SOLDIER/06.png
+frame	data/chars/SOLDIER/06.png
+frame	data/chars/SOLDIER/06.png
+frame	data/chars/SOLDIER/06.png
+frame	data/chars/SOLDIER/06.png
+frame	data/chars/SOLDIER/06.png
+frame	data/chars/SOLDIER/06.png
+frame	data/chars/SOLDIER/07.png
+frame	data/chars/SOLDIER/07.png
+frame	data/chars/SOLDIER/07.png
+
+
+
+
+
+anim rise
+        loop	0
+	offset	110 180
+	delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/SOLDIER/08.png
+
+
+	
+
+
+anim attack1
+
+
+	loop	0
+	delay	10
+offset	110 180
+
+
+dropv 4 1 0
+
+	bbox.position.x 58
+	bbox.position.y 59
+	bbox.size.x 94
+	bbox.size.y 133
+	attack.damage.force 10
+	attack.position.x 147
+	attack.position.y 58
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 36
+	attack.size.y 133
+frame	data/chars/SOLDIER/03.png
+
+
+
+
+
+anim attack2
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

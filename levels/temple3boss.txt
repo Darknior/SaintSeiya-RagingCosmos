@@ -1,0 +1,29 @@
+music           data/music/7sens.ogg
+
+panel           data/bgs/temple3/temple3_panel.png
+
+order           a
+direction       both
+settime         0
+
+cameratype      0
+
+spawn1          60 30
+
+
+#-- LEVEL ----------------------------------------------
+
+spawn           temple3_columns
+coords          1200 0
+at              0
+
+spawn           temple3_grid
+coords          1200 -120
+at              0
+
+
+#-- BOSS ----------------------------------------------
+
+spawn           gemini
+coords          850 390
+at              0

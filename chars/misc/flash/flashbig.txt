@@ -1,0 +1,26 @@
+name	flashbig
+type	none
+shadow	0
+#alpha 6
+
+anim	idle
+	loop	0
+	delay	3
+	offset	69 73
+	drawmethod scale 0.3 0.3
+	drawmethod alpha 1
+	frame	data/chars/misc/flash/flashbig1.png
+	frame	data/chars/misc/flash/flashbig2.png
+	frame	data/chars/misc/flash/flashbig3.png
+	frame	data/chars/misc/flash/flashbig4.png
+	frame	data/chars/misc/flash/flashbig5.png
+	frame	data/chars/misc/flash/flashbig6.png
+	frame	data/chars/misc/flash/flashbig7.png
+	frame	data/chars/misc/flash/flashbig8.png
+	frame	data/chars/misc/flash/flashbig9.png
+	frame	data/chars/misc/flash/flashbig10.png
+	frame	data/chars/misc/flash/flashbig11.png
+	frame	data/chars/misc/flash/flashbig12.png
+	frame	data/chars/misc/flash/flashbig13.png	
+	frame	data/chars/misc/flash/flashbig14.png
+	frame	data/chars/misc/flash/flashbig15.png	

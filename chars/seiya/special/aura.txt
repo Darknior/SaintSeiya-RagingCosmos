@@ -1,0 +1,23 @@
+name	aura
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+
+anim	idle
+	loop	1
+	delay	3
+	offset	85 232
+	drawmethod alpha 1
+	frame	data/chars/seiya/special/aura1.png
+	frame	data/chars/seiya/special/aura2.png
+	frame	data/chars/seiya/special/aura3.png
+	frame	data/chars/seiya/special/aura4.png
+	frame	data/chars/seiya/special/aura5.png
+	frame	data/chars/seiya/special/aura6.png
+	frame	data/chars/seiya/special/aura7.png
+	frame	data/chars/seiya/special/aura8.png
+	frame	data/chars/seiya/special/aura9.png
+	frame	data/chars/seiya/special/aura10.png
+	frame	data/chars/seiya/special/aura11.png
+	frame	data/chars/seiya/special/aura12.png

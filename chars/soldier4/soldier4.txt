@@ -1,0 +1,251 @@
+
+name	SOLDIER4
+health	80
+speed	7
+type	enemy
+
+icon	data/chars/SOLDIER4/icon.png
+hostile          player npc 
+candamage player npc
+\\aimove           Wander
+aimove           Chase
+\\aimove           Avoid
+\\aggression       5
+hitenemy          0 0
+blockodds 1
+nodieblink 2
+blocked 1
+noquake 1 1
+nodrop 2
+
+\\subject_to_wall 0
+
+subject_to_screen 0
+
+
+falldie 1
+
+anim DEATH
+loop	0
+	offset	90 165
+
+	delay	7
+
+
+
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SOLDIER4/05.png
+frame	data/chars/SOLDIER4/07.png
+frame	data/chars/SOLDIER4/08.png
+frame	data/chars/SOLDIER4/05.png
+frame	data/chars/SOLDIER4/07.png
+frame	data/chars/SOLDIER4/08.png
+frame	data/chars/SOLDIER4/05.png
+frame	data/chars/SOLDIER4/07.png
+frame	data/chars/SOLDIER4/08.png
+frame	data/chars/SOLDIER4/09.png
+frame	data/chars/SOLDIER4/null.png
+
+
+
+
+anim	block
+loop	0
+	offset	90 165
+
+
+	delay	10
+
+
+
+	
+	bbox.position.x 48
+	bbox.position.y 28
+	bbox.size.x 109
+	bbox.size.y 150
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SOLDIER4/10.png
+frame	data/chars/SOLDIER4/10.png
+frame	data/chars/SOLDIER4/10.png
+frame	data/chars/SOLDIER4/10.png
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	90 165
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 59
+	bbox.position.y 27
+	bbox.size.x 63
+	bbox.size.y 147
+frame	data/chars/SOLDIER4/01.png
+
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	90 165
+
+
+
+	bbox.position.x 57
+	bbox.position.y 27
+	bbox.size.x 70
+	bbox.size.y 148
+frame	data/chars/SOLDIER4/01.png
+frame	data/chars/SOLDIER4/02.png
+frame	data/chars/SOLDIER4/03.png
+frame	data/chars/SOLDIER4/04.png
+
+
+
+
+anim BACKWALK
+
+	loop	1
+	delay	15
+	offset	110 165
+
+
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 80
+	bbox.position.y 30
+	bbox.size.x 61
+	bbox.size.y 143
+frame	data/chars/SOLDIER4/11.png
+frame	data/chars/SOLDIER4/12.png
+frame	data/chars/SOLDIER4/13.png
+frame	data/chars/SOLDIER4/14.png
+
+
+
+      
+ 
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	90 165
+
+
+
+frame	data/chars/SOLDIER4/05.png
+frame	data/chars/SOLDIER4/05.png
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	90 165
+	delay	10
+
+
+
+
+frame	data/chars/SOLDIER4/01.png
+
+
+	
+
+
+anim attack1
+
+
+	loop	0
+	delay	10
+offset	90 165
+
+
+
+	bbox.position.x 44
+	bbox.position.y 31
+	bbox.size.x 83
+	bbox.size.y 146
+	attack.damage.force 10
+	attack.position.x 115
+	attack.position.y 29
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 73
+	attack.size.y 147
+frame	data/chars/SOLDIER4/06.png
+
+
+
+
+
+anim attack2
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

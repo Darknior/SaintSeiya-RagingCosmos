@@ -1,0 +1,3 @@
+maxentityvars   15
+#maxindexedvars 100
+alwaysupdate    1

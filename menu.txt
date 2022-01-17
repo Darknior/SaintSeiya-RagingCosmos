@@ -1,0 +1,8 @@
+disablekey screenshot
+disablekey attack2
+disablekey attack3
+disablekey attack4     
+
+renamekey attack  Attack
+renamekey jump    Jump
+renamekey special Block/Special

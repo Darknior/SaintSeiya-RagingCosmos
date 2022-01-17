@@ -1,0 +1,25 @@
+music       data/music/MSC-tragic.ogg
+
+panel       data/bgs/temple10/temple10_panel.png 
+bglayer     data/bgs/temple10/temple10_back.png        0.9 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple10/temple10_bglayer.png      0.3 1 0 0 0 0 1 9999 1 0
+
+
+order       a
+direction   both
+settime     0
+
+cameratype  0
+light       256 -44
+at          0
+shadowalpha 2
+at          0
+
+spawn1      60 30
+
+
+#-------------------------------------
+
+spawn       shura
+coords      850 390
+at          0

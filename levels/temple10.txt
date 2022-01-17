@@ -1,0 +1,210 @@
+
+music		data/music/music3.bor
+
+panel		data/bgs/ROOMS/temple10.png 
+
+frontpanel                   data/bgs/ROOMS/templerock10.png
+
+background                 data/bgs/ROOMS/sky003.png
+
+cameratype 1
+
+direction right
+
+settime 0
+
+order	a
+
+
+
+\\rock 3
+
+
+
+
+
+
+nofadeout 0
+disablehof 1
+lives 4
+noshare 1
+credits 1
+cansave 0
+nodebug 1
+notime 1
+nosave 1
+blocked 1
+nosame 1
+noslow 1
+completebg 1
+
+
+
+-------------------------------------
+
+spawn kiki2
+alias KIKI
+item libra4
+coords	850 390
+at 400
+
+spawn soldier1
+alias SOLDIER
+coords	850 100
+at 400
+
+spawn soldier3
+alias SOLDIER
+coords	-200 300
+at 400
+
+spawn soldier2
+alias SOLDIER
+coords	-200 500
+at 400
+
+
+wait
+at 400
+
+
+spawn soldier3
+alias SOLDIER
+coords	850 100
+at 1000
+
+spawn soldier2
+alias SOLDIER
+coords	-200 300
+at 1000
+
+spawn soldier3
+alias SOLDIER
+coords	-200 500
+at 1000
+
+
+wait
+at 1000
+
+spawn kiki2
+alias KIKI
+item libra5
+coords	850 390
+at 1500
+
+spawn soldier1
+alias SOLDIER
+coords	850 100
+at 1500
+
+spawn soldier2
+alias SOLDIER
+coords	-200 300
+at 1500
+
+spawn soldier3
+alias SOLDIER
+item ENERGY
+coords	-200 500
+at 1500
+
+
+wait
+at 1500
+
+
+
+spawn soldier1-1
+alias SOLDIER
+coords	850 100
+at 2000
+
+spawn soldier2
+alias SOLDIER
+coords	-200 300
+at 2000
+
+spawn soldier1
+alias SOLDIER
+coords	-200 500
+at 2000
+
+
+wait
+at 2000
+
+spawn kiki2
+alias KIKI
+item libra6
+coords	850 390
+at 2400
+
+
+spawn soldier3
+alias SOLDIER
+coords	850 100
+at 2400
+
+spawn soldier1-1
+alias SOLDIER
+coords	-200 300
+at 2400
+
+spawn soldier1-1
+alias SOLDIER
+coords	-200 500
+at 2400
+
+
+wait
+at 2400
+
+
+spawn soldier1-1
+alias SOLDIER
+item LIFE
+coords	850 100
+at 2800
+
+spawn soldier2
+alias SOLDIER
+coords	-200 300
+at 2800
+
+spawn soldier1-1
+alias SOLDIER
+coords	-200 500
+at 2800
+
+
+wait
+at 2800
+
+
+spawn soldier3
+alias SOLDIER
+item LIFE
+coords	850 100
+at 3800
+
+spawn soldier3
+alias SOLDIER
+coords	-200 300
+at 3800
+
+spawn soldier3
+alias SOLDIER
+coords	-200 500
+at 3800
+
+
+wait
+at 3800
+
+
+
+
+
+
+

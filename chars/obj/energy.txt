@@ -1,0 +1,16 @@
+name	ENERGY
+health	100
+type	item
+
+offscreenkill 9999999
+
+anim idle
+	loop	1
+	delay	10
+	offset	8 14
+
+	bbox	0 0 16 16
+
+
+	frame	data/chars/OBJ/obj2.png
+frame	data/chars/OBJ/obj4.png

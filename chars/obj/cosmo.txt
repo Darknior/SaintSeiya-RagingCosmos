@@ -1,0 +1,17 @@
+name	COSMO
+\\credit 1
+mp 100
+
+type	item
+
+offscreenkill 9999999
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	8 14
+	bbox	0 0 16 16
+
+	frame	data/chars/OBJ/obj1.png
+frame	data/chars/OBJ/obj3.png

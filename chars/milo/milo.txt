@@ -1,0 +1,541 @@
+
+name	MILO
+health	2680
+speed	1
+type	enemy
+
+icon	data/chars/MILO/icon.png
+\\hostile          player
+\\aimove           Wander
+\\aimove           Chase
+\\aimove           Avoid
+aggression       -300
+hitenemy          0 0
+blockodds 1
+blocked 1
+noquake 1 1
+nodrop 2
+nodieblink 3
+nomove 1 1
+facing 2
+\\subject_to_wall 0
+\\subject_to_hole 0
+\\subject_to_screen 0
+\\subject_to_minz 1
+\\subject_to_maxz 1
+falldie 1
+gfxshadow	1
+load cosmo
+
+anim DEATH
+loop	0
+	offset	214 246
+
+	delay	10
+
+
+
+
+	
+frame	data/chars/MILO/12.png
+frame	data/chars/MILO/13.png
+frame	data/chars/MILO/14.png
+frame	data/chars/MILO/15.png
+frame	data/chars/MILO/16.png
+frame	data/chars/MILO/17.png
+frame	data/chars/MILO/18.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+frame	data/chars/MILO/20.png
+
+
+
+anim	block
+loop	0
+	offset	214 246
+
+dropv 4 1 0
+	delay	10
+
+subentity cosmo
+summonframe 2 100 430 0 1
+	
+	bbox.position.x 168
+	bbox.position.y 106
+	bbox.size.x 95
+	bbox.size.y 161
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/00.png
+	
+frame	data/chars/MILO/000.png
+	
+frame	data/chars/MILO/null.png
+	
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	214 246
+	dropv 4 1 0
+	attack.damage.force 10
+	attack.position.x 110
+	attack.position.y -265
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 208
+	attack.size.y 669
+	bbox.position.x 178
+	bbox.position.y 120
+	bbox.size.x 72
+	bbox.size.y 137
+frame	data/chars/MILO/01.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/01.png
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	214 246
+dropv 4 1 0
+	
+	bbox.position.x 172
+	bbox.position.y 111
+	bbox.size.x 85
+	bbox.size.y 151
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/01.png
+
+
+
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	214 246
+	dropv 4 1 0
+	attack.damage.force 10
+	attack.position.x 115
+	attack.position.y -274
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 204
+	attack.size.y 678
+frame	data/chars/MILO/02.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/02.png
+	
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	214 246
+	delay	10
+
+dropv 4 1 0
+
+frame	data/chars/MILO/01.png
+frame	data/chars/MILO/01.png
+
+
+	
+
+
+anim attack1
+
+ range	-1000 1000
+        loop	0
+	offset	214 246
+	delay	6
+sound data/chars/MILO/01.wav
+
+dropv 4 1 0
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/03.png
+	attack.damage.force 50
+	attack.position.x 64
+	attack.position.y -271
+	attack.reaction.fall.force 0
+	attack.size.x 353
+	attack.size.y 703
+frame	data/chars/MILO/04.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/05.png
+	attack.damage.force 50
+	attack.position.x 21
+	attack.position.y -269
+	attack.size.x 395
+	attack.size.y 662
+frame	data/chars/MILO/06.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/08.png
+	attack.damage.force 50
+	attack.position.x 40
+	attack.position.y -269
+	attack.size.x 1000
+	attack.size.y 732
+frame	data/chars/MILO/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/10.png
+	attack.damage.force 50
+	attack.position.x 33
+	attack.position.y -349
+	attack.size.x 1000
+	attack.size.y 851
+frame	data/chars/MILO/11.png
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/MILO/03.png
+
+
+
+
+
+
+anim attack2
+
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

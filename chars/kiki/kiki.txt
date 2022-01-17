@@ -1,0 +1,262 @@
+
+name	KIKI
+health	500
+speed	20
+type	npc
+
+icon	data/chars/KIKI/icon.png
+hostile          enemy
+\\aimove           Wander
+aimove           Chase 
+\\aimove           Avoid
+aggression      10 
+hitenemy          0 0
+blockodds 1
+nodieblink 0
+blocked 1
+noquake 1 1
+
+
+\\subject_to_wall 0
+
+subject_to_screen 0
+
+load kikisuper
+
+anim	block
+loop	0
+	offset	207 174
+
+
+	delay	10
+
+
+dropv 4 1 0
+	
+	bbox.position.x 188
+	bbox.position.y 106
+	bbox.size.x 33
+	bbox.size.y 76
+move -80
+frame	data/chars/KIKI/06.png
+frame	data/chars/KIKI/07.png
+frame	data/chars/KIKI/06-1.png
+frame	data/chars/KIKI/null.png
+
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	207 174
+
+dropv 4 1 0
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	bbox.position.x 190
+	bbox.position.y 105
+	bbox.size.x 31
+	bbox.size.y 77
+frame	data/chars/KIKI/01.png
+
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	207 174
+dropv 4 1 0
+	bbox.position.x 186
+	bbox.position.y 107
+	bbox.size.x 41
+	bbox.size.y 76
+frame	data/chars/KIKI/02.png
+frame	data/chars/KIKI/03.png
+frame	data/chars/KIKI/04.png
+frame	data/chars/KIKI/05.png
+
+
+
+
+anim BACKWALK
+	loop	1
+	delay	15
+	offset	514 174
+dropv 4 1 0
+	bbox.position.x 496
+	bbox.position.y 108
+	bbox.size.x 35
+	bbox.size.y 73
+frame	data/chars/KIKI/18.png
+frame	data/chars/KIKI/19.png
+frame	data/chars/KIKI/20.png
+frame	data/chars/KIKI/21.png
+
+
+
+
+      
+ 
+
+
+anim pain
+    loop	0
+	
+	delay	6
+offset	207 174
+
+dropv 4 1 0
+
+frame	data/chars/KIKI/08.png
+frame	data/chars/KIKI/08.png
+move -80
+frame	data/chars/KIKI/06.png
+frame	data/chars/KIKI/07.png
+frame	data/chars/KIKI/06-1.png
+frame	data/chars/KIKI/null.png
+
+
+        
+
+anim fall
+
+    loop	0
+	
+	delay	10
+offset	207 174
+
+dropv 4 1 0
+frame	data/chars/KIKI/09.png
+frame	data/chars/KIKI/09.png
+frame	data/chars/KIKI/09.png
+frame	data/chars/KIKI/09.png
+frame	data/chars/KIKI/09.png
+frame	data/chars/KIKI/09.png
+frame	data/chars/KIKI/09.png
+frame	data/chars/KIKI/09.png
+frame	data/chars/KIKI/10.png
+frame	data/chars/KIKI/10.png
+frame	data/chars/KIKI/10.png
+move -80
+frame	data/chars/KIKI/06.png
+frame	data/chars/KIKI/07.png
+frame	data/chars/KIKI/06-1.png
+frame	data/chars/KIKI/null.png
+
+
+
+
+
+anim rise
+        loop	0
+	offset	207 174
+	delay	10
+
+
+
+dropv 4 1 0
+move -80
+frame	data/chars/KIKI/11.png
+frame	data/chars/KIKI/11-1.png
+frame	data/chars/KIKI/null.png
+frame	data/chars/KIKI/06-1.png
+frame	data/chars/KIKI/07.png
+frame	data/chars/KIKI/06.png
+
+
+	
+
+
+anim attack1
+
+range -50 50
+	loop	0
+	delay	10
+offset	207 174
+
+
+
+	dropv 4 1 0
+	
+	bbox.position.x 179
+	bbox.position.y 108
+	bbox.size.x 30
+	bbox.size.y 72
+	attack.damage.force 10
+	attack.position.x 205
+	attack.position.y 108
+	attack.size.x 27
+	attack.size.y 72
+frame	data/chars/KIKI/12.png
+
+
+
+
+
+
+anim attack2
+
+range -650 650
+	loop	0
+	delay	10
+offset	207 174
+
+custknife	kikisuper
+	throwframe	6
+
+	dropv 4 1 0
+	
+	bbox.position.x 191
+	bbox.position.y 109
+	bbox.size.x 32
+	bbox.size.y 71
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/KIKI/14.png
+frame	data/chars/KIKI/14-1.png
+frame	data/chars/KIKI/15.png
+frame	data/chars/KIKI/16.png
+frame	data/chars/KIKI/16.png
+frame	data/chars/KIKI/17-1.png
+frame	data/chars/KIKI/17.png
+frame	data/chars/KIKI/17.png
+frame	data/chars/KIKI/17.png
+
+
+
+
+
+anim attack3
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

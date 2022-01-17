@@ -1,0 +1,732 @@
+
+name	CAMUS
+health	2680
+speed	1
+type	enemy
+
+icon	data/chars/CAMUS/icon.png
+\\hostile          player
+\\aimove           Wander
+\\aimove           Chase
+\\aimove           Avoid
+aggression       -600
+hitenemy          0 0
+blockodds 1
+blocked 1
+noquake 1 1
+nodrop 2
+nodieblink 3
+nomove 1 0
+\\facing 2
+\\subject_to_wall 0
+\\subject_to_hole 0
+\\subject_to_screen 0
+\\subject_to_minz 1
+\\subject_to_maxz 1
+falldie 1
+gfxshadow	1
+load cosmo
+
+anim DEATH
+loop	0
+	offset	220 245
+
+	delay	10
+
+
+
+
+frame	data/chars/CAMUS/12.png
+frame	data/chars/CAMUS/13.png
+frame	data/chars/CAMUS/14.png
+frame	data/chars/CAMUS/15.png
+frame	data/chars/CAMUS/16.png
+frame	data/chars/CAMUS/17.png
+frame	data/chars/CAMUS/18.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+frame	data/chars/CAMUS/20.png
+
+
+
+anim	block
+loop	0
+	offset	220 245
+
+dropv 4 1 0
+	delay	10
+
+subentity cosmo
+summonframe 2 100 430 0 1
+
+	attack.damage.force 10
+	attack.position.x 168
+	attack.position.y 88
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 106
+	attack.size.y 211
+	bbox.position.x 180
+	bbox.position.y 102
+	bbox.size.x 81
+	bbox.size.y 160
+frame	data/chars/CAMUS/00.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/000.png	
+	attack.damage.force 10
+	attack.position.x 84
+	attack.position.y -267
+	attack.reaction.fall.force 1
+	attack.size.x 349
+	attack.size.y 703
+frame	data/chars/CAMUS/null.png	
+
+
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	220 245
+dropv 4 1 0
+	bbox.position.x 174
+	bbox.position.y 115
+	bbox.size.x 97
+	bbox.size.y 147
+	attack.damage.force 10
+	attack.position.x 120
+	attack.position.y -280
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 201
+	attack.size.y 751
+frame	data/chars/CAMUS/01.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/01.png
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	220 245
+	dropv 4 1 0
+	bbox.position.x 174
+	bbox.position.y 105
+	bbox.size.x 98
+	bbox.size.y 162
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/01.png
+
+
+
+
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	220 245
+dropv 4 1 0
+	attack.damage.force 10
+	attack.position.x 117
+	attack.position.y 44
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 205
+	attack.size.y 341
+frame	data/chars/CAMUS/02.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/02.png
+	
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	220 245
+	delay	10
+
+
+dropv 4 1 0
+frame	data/chars/CAMUS/01.png
+frame	data/chars/CAMUS/01.png
+
+
+	
+
+
+anim attack1
+
+ range	-1000 1000
+        loop	0
+	offset	220 245
+	delay	6
+dropv 4 1 0
+sound data/chars/CAMUS/01.wav
+
+
+
+	
+
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/03.png
+	attack.damage.force 50
+	attack.position.x -29
+	attack.position.y -259
+	attack.reaction.fall.force 1
+	attack.size.x 503
+	attack.size.y 667
+frame	data/chars/CAMUS/04.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/05.png
+	attack.damage.force 50
+	attack.position.x 12
+	attack.position.y -262
+	attack.reaction.fall.force 1
+	attack.size.x 415
+	attack.size.y 645
+frame	data/chars/CAMUS/06.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/07.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -365
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 787
+frame	data/chars/CAMUS/08.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/09.png
+	attack.damage.force 50
+	attack.position.x -2
+	attack.position.y -343
+	attack.reaction.fall.force 1
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/CAMUS/10.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/CAMUS/11.png
+
+
+
+
+
+
+
+
+
+anim attack2
+
+
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

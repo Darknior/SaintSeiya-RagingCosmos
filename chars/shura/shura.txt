@@ -1,0 +1,464 @@
+
+name	SHURA
+health	2680
+speed	1
+type	enemy
+
+icon	data/chars/SHURA/icon.png
+\\hostile          player
+\\aimove           Wander
+\\aimove           Chase
+\\aimove           Avoid
+aggression       -100
+hitenemy          0 0
+blockodds 1
+blocked 1
+noquake 1 1
+nodrop 2
+nodieblink 3
+nomove 1 0
+\\facing 2
+\\subject_to_wall 0
+\\subject_to_hole 0
+\\subject_to_screen 0
+\\subject_to_minz 1
+\\subject_to_maxz 1
+falldie 1
+gfxshadow	1
+load cosmo
+
+anim DEATH
+loop	0
+	offset	220 246
+
+	delay	10
+
+
+
+frame	data/chars/SHURA/19.png
+frame	data/chars/SHURA/20.png
+frame	data/chars/SHURA/21.png
+frame	data/chars/SHURA/22.png
+frame	data/chars/SHURA/23.png
+frame	data/chars/SHURA/24.png
+frame	data/chars/SHURA/25.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+frame	data/chars/SHURA/27.png
+
+
+
+
+anim	block
+loop	0
+	offset	220 246
+
+
+	delay	10
+
+subentity cosmo
+summonframe 2 100 430 0 1
+	dropv 4 1 0
+	bbox.position.x 171
+	bbox.position.y 94
+	bbox.size.x 96
+	bbox.size.y 169
+frame	data/chars/SHURA/00.png	
+frame	data/chars/SHURA/000.png	
+frame	data/chars/SHURA/null.png	
+
+
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	220 246
+	dropv 4 1 0
+	bbox.position.x 173
+	bbox.position.y 105
+	bbox.size.x 89
+	bbox.size.y 147
+	attack.damage.force 10
+	attack.position.x 114
+	attack.position.y -279
+	attack.reaction.fall.force 1
+	attack.size.x 205
+	attack.size.y 705
+frame	data/chars/SHURA/01.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 1
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/01.png
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	220 246
+	dropv 4 1 0
+	bbox.position.x 168
+	bbox.position.y 97
+	bbox.size.x 98
+	bbox.size.y 166
+frame	data/chars/SHURA/01.png
+
+
+
+
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	220 246
+	dropv 4 1 0
+	attack.damage.force 10
+	attack.position.x 124
+	attack.position.y -274
+	attack.reaction.fall.force 1
+	attack.size.x 192
+	attack.size.y 693
+frame	data/chars/SHURA/02.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/02.png
+	
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	220 246
+	delay	10
+
+dropv 4 1 0
+
+frame	data/chars/SHURA/01.png
+frame	data/chars/SHURA/01.png
+
+
+	
+
+
+anim attack1
+
+ range	-1000 1000
+        loop	0
+	offset	220 246
+	delay	6
+
+sound data/chars/SHURA/01.wav
+
+dropv 4 1 0
+	
+	
+	attack.damage.force 10
+	attack.position.x 118
+	attack.position.y -295
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 201
+	attack.size.y 716
+frame	data/chars/SHURA/03.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/04.png	
+	attack.damage.force 50
+	attack.position.x 128
+	attack.position.y -265
+	attack.size.x 195
+	attack.size.y 740
+frame	data/chars/SHURA/05.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/06.png
+	attack.damage.force 50
+	attack.position.x 52
+	attack.position.y -265
+	attack.size.x 421
+	attack.size.y 683
+frame	data/chars/SHURA/07.png	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/08.png
+	attack.damage.force 50
+	attack.position.x 38
+	attack.position.y -302
+	attack.size.x 707
+	attack.size.y 742
+frame	data/chars/SHURA/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/10.png
+	attack.damage.force 50
+	attack.position.x 55
+	attack.position.y -295
+	attack.size.x 1000
+	attack.size.y 728
+frame	data/chars/SHURA/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/12.png
+	attack.damage.force 50
+	attack.position.x 67
+	attack.position.y -358
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/SHURA/13.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/14.png
+	attack.damage.force 50
+	attack.position.x 70
+	attack.position.y -367
+	attack.size.x 1000
+	attack.size.y 924
+frame	data/chars/SHURA/15.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/16.png
+	attack.damage.force 50
+	attack.position.x 21
+	attack.position.y -419
+	attack.size.x 1000
+	attack.size.y 991
+frame	data/chars/SHURA/17.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/18.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/12.png
+	attack.damage.force 50
+	attack.position.x 67
+	attack.position.y -358
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/SHURA/13.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/14.png
+	attack.damage.force 50
+	attack.position.x 70
+	attack.position.y -367
+	attack.size.x 1000
+	attack.size.y 924
+frame	data/chars/SHURA/15.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/16.png
+	attack.damage.force 50
+	attack.position.x 21
+	attack.position.y -419
+	attack.size.x 1000
+	attack.size.y 991
+frame	data/chars/SHURA/17.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/18.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/12.png
+	attack.damage.force 50
+	attack.position.x 67
+	attack.position.y -358
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/SHURA/13.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/14.png
+	attack.damage.force 50
+	attack.position.x 70
+	attack.position.y -367
+	attack.size.x 1000
+	attack.size.y 924
+frame	data/chars/SHURA/15.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/16.png
+	attack.damage.force 50
+	attack.position.x 21
+	attack.position.y -419
+	attack.size.x 1000
+	attack.size.y 991
+frame	data/chars/SHURA/17.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/18.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/12.png
+	attack.damage.force 50
+	attack.position.x 67
+	attack.position.y -358
+	attack.size.x 1000
+	attack.size.y 869
+frame	data/chars/SHURA/13.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/14.png
+	attack.damage.force 50
+	attack.position.x 70
+	attack.position.y -367
+	attack.size.x 1000
+	attack.size.y 924
+frame	data/chars/SHURA/15.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/16.png
+	attack.damage.force 50
+	attack.position.x 21
+	attack.position.y -419
+	attack.size.x 1000
+	attack.size.y 991
+frame	data/chars/SHURA/17.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/SHURA/18.png
+
+
+
+anim attack2
+ 
+
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

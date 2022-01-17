@@ -1,0 +1,684 @@
+
+name	ALDEBARAN
+health	2680
+speed	1
+type	enemy
+
+icon	data/chars/ALDEBARAN/icon.png
+\\hostile          player
+\\aimove           Wander
+\\aimove           Chase
+\\aimove           Avoid
+aggression       -300
+hitenemy          0 0
+blockodds 1
+blocked 1
+noquake 1 1
+nodrop 2
+nodieblink 3
+nomove 1 1
+facing 2
+\\subject_to_wall 0
+\\subject_to_hole 0
+\\subject_to_screen 0
+\\subject_to_minz 1
+\\subject_to_maxz 1
+falldie 1
+gfxshadow	1
+load cosmo
+
+anim DEATH
+loop	0
+	offset	220 246
+
+	delay	10
+
+
+
+
+	
+frame	data/chars/ALDEBARAN/13.png
+frame	data/chars/ALDEBARAN/15.png
+frame	data/chars/ALDEBARAN/16.png
+frame	data/chars/ALDEBARAN/17.png
+frame	data/chars/ALDEBARAN/18.png
+frame	data/chars/ALDEBARAN/19.png
+frame	data/chars/ALDEBARAN/20.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+frame	data/chars/ALDEBARAN/22.png
+
+
+
+anim	block
+loop	0
+	offset	220 246
+
+
+	delay	10
+
+subentity cosmo
+summonframe 2 100 430 0 1
+dropv 4 1 0
+	attack.damage.force 50
+	attack.position.x 118
+	attack.position.y -56
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 203
+	attack.size.y 454
+	bbox.position.x 174
+	bbox.position.y 80
+	bbox.size.x 93
+	bbox.size.y 189
+frame	data/chars/ALDEBARAN/01.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/01.png
+	attack.damage.force 50
+	attack.position.x 113
+	attack.position.y -55
+	attack.reaction.fall.force 1
+	attack.size.x 212
+	attack.size.y 470
+frame	data/chars/ALDEBARAN/01.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/01.png
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	220 246
+dropv 4 1 0
+	bbox.position.x 177
+	bbox.position.y 89
+	bbox.size.x 82
+	bbox.size.y 167
+	attack.damage.force 10
+	attack.position.x 122
+	attack.position.y -295
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 199
+	attack.size.y 759
+frame	data/chars/ALDEBARAN/01.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/01.png
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	220 246
+
+dropv 4 1 0
+	bbox.position.x 177
+	bbox.position.y 89
+	bbox.size.x 82
+	bbox.size.y 167
+frame	data/chars/ALDEBARAN/01.png
+
+
+
+
+
+anim pain
+    loop	0
+	
+	delay	5
+offset	220 246
+dropv 4 1 0
+	attack.damage.force 50
+	attack.position.x 117
+	attack.position.y -58
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 209
+	attack.size.y 451
+frame	data/chars/ALDEBARAN/00.png
+frame	data/chars/ALDEBARAN/00.png
+	
+
+
+        
+
+anim fall
+
+
+
+
+
+
+anim rise
+        loop	0
+	offset	220 246
+	delay	10
+
+dropv 4 1 0
+
+frame	data/chars/ALDEBARAN/01.png
+frame	data/chars/ALDEBARAN/01.png
+
+
+	
+
+
+anim attack1
+
+ range	-1000 1000
+        loop	0
+	offset	220 246
+	delay	6
+dropv 4 1 0
+sound data/chars/ALDEBARAN/01.wav
+
+
+
+	attack.damage.force 50
+	attack.position.x 119
+	attack.position.y -56
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 202
+	attack.size.y 446
+frame	data/chars/ALDEBARAN/03.png
+frame	data/chars/ALDEBARAN/04.png
+	attack.damage.force 50
+	attack.position.x 1
+	attack.position.y 18
+	attack.reaction.fall.force 0
+	attack.size.x 478
+	attack.size.y 297
+frame	data/chars/ALDEBARAN/05.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/06.png
+	attack.damage.force 50
+	attack.position.x -18
+	attack.position.y -352
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 860
+frame	data/chars/ALDEBARAN/07.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/08.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -336
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 878
+frame	data/chars/ALDEBARAN/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/10.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -349
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 891
+frame	data/chars/ALDEBARAN/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/12.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/06.png
+	attack.damage.force 50
+	attack.position.x -18
+	attack.position.y -352
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 860
+frame	data/chars/ALDEBARAN/07.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/08.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -336
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 878
+frame	data/chars/ALDEBARAN/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/10.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -349
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 891
+frame	data/chars/ALDEBARAN/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/12.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/06.png
+	attack.damage.force 50
+	attack.position.x -18
+	attack.position.y -352
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 860
+frame	data/chars/ALDEBARAN/07.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/08.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -336
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 878
+frame	data/chars/ALDEBARAN/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/10.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -349
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 891
+frame	data/chars/ALDEBARAN/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/12.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/06.png
+	attack.damage.force 50
+	attack.position.x -18
+	attack.position.y -352
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 860
+frame	data/chars/ALDEBARAN/07.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/08.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -336
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 878
+frame	data/chars/ALDEBARAN/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/10.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -349
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 891
+frame	data/chars/ALDEBARAN/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/12.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/06.png
+	attack.damage.force 50
+	attack.position.x -18
+	attack.position.y -352
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 860
+frame	data/chars/ALDEBARAN/07.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/08.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -336
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 878
+frame	data/chars/ALDEBARAN/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/10.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -349
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 891
+frame	data/chars/ALDEBARAN/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/12.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/06.png
+	attack.damage.force 50
+	attack.position.x -18
+	attack.position.y -352
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 860
+frame	data/chars/ALDEBARAN/07.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/08.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -336
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 878
+frame	data/chars/ALDEBARAN/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/10.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -349
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 891
+frame	data/chars/ALDEBARAN/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/12.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/06.png
+	attack.damage.force 50
+	attack.position.x -18
+	attack.position.y -352
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 860
+frame	data/chars/ALDEBARAN/07.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/08.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -336
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 878
+frame	data/chars/ALDEBARAN/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/10.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -349
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 891
+frame	data/chars/ALDEBARAN/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/12.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/06.png
+	attack.damage.force 50
+	attack.position.x -18
+	attack.position.y -352
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 860
+frame	data/chars/ALDEBARAN/07.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/08.png
+	attack.damage.force 50
+	attack.position.x -8
+	attack.position.y -336
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 878
+frame	data/chars/ALDEBARAN/09.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/10.png
+	attack.damage.force 50
+	attack.position.x -27
+	attack.position.y -349
+	attack.reaction.fall.force 0
+	attack.size.x 1000
+	attack.size.y 891
+frame	data/chars/ALDEBARAN/11.png
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.size.x 0
+	attack.size.y 0
+frame	data/chars/ALDEBARAN/12.png
+
+	attack.damage.force 50
+	attack.position.x 168
+	attack.position.y 81
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 102
+	attack.size.y 186
+frame	data/chars/ALDEBARAN/03.png
+
+
+
+
+
+
+anim attack2
+
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

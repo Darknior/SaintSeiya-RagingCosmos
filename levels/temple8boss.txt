@@ -1,0 +1,18 @@
+music		data/music/Stringer-Requiem.ogg
+
+panel		data/bgs/temple8/layer2.png
+
+
+order	    a
+direction   both
+settime     0
+cameratype  0
+
+spawn1      60 30
+
+
+#-------------------------------------
+
+spawn       milo
+coords	    850 390
+at          0
