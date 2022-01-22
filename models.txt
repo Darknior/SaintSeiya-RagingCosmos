@@ -223,12 +223,27 @@ know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
 know    FIORE           data/chars/FIORE/FIORE.txt
 
 
-#Misc stages
+#-- LEVELS --------------------------------------------------------------------------
 
-load    mu              data/bgs/temple1/mu/mu.txt
-load    heads           data/bgs/temple4/heads/heads.txt
-load    temple4columns  data/bgs/temple4/temple4columns.txt
-load    flame           data/bgs/temple5/flame/flame.txt
-load    temple5columns  data/bgs/temple5/temple5columns.txt
-load    temple5columns  data/bgs/temple13/temple13columns.txt
+## TEMPLE 1
 
+load    mu                  data/bgs/temple1/mu/mu.txt
+
+## TEMPLE 3
+
+know    temple3_columns     data/bgs/temple3/columns/temple3_columns.txt
+know    temple3_grid        data/bgs/temple3/grid/temple3_grid.txt
+
+## TEMPLE 4
+
+know    temple4_columns     data/bgs/temple4/columns/temple4_columns.txt
+know    temple4_heads       data/bgs/temple4/heads/temple4_heads.txt
+know    temple4_wallheads   data/bgs/temple4/heads/temple4_wallheads.txt
+know    temple4_faces01     data/bgs/temple4/faces/temple4_faces01.txt
+know    temple4_faces02     data/bgs/temple4/faces/temple4_faces02.txt
+know    temple4_faces03     data/bgs/temple4/faces/temple4_faces03.txt
+
+## TEMPLE 5
+
+load    flame               data/bgs/temple5/flame/flame.txt
+load    temple5columns      data/bgs/temple5/temple5columns.txt

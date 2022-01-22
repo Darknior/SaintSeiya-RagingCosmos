@@ -2,21 +2,36 @@ music           data/music/7sens.ogg
 
 panel           data/bgs/temple3/temple3_panel.png
 
+
 order           a
 direction       both
 settime         0
 
 cameratype      0
+light           100 -100
+at              0
+shadowcolor     -2  # Mirror effect
+at              0
+shadowalpha     6   # Mirror transparency
+at              0
+
+
+#-- PLAYERS ---------------------------------
 
 spawn1          60 30
+spawn2          70 40
 
 
-#-- LEVEL ----------------------------------------------
+#-- INTRO -----------------------------------
+
+#-- LEVEL ANIMATIONS -----------------------
+
+load temple3_columns 3
+load temple3_grid 3
 
 spawn           temple3_columns
 coords          1200 0
 at              0
-
 spawn           temple3_grid
 coords          1200 -120
 at              0

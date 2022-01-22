@@ -113,7 +113,7 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           378 484
+z           400 484
 file        data/levels/temple4boss.txt
 
 set         Temple_5_Lion
