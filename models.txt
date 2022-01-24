@@ -247,3 +247,7 @@ know    temple4_faces03     data/bgs/temple4/faces/temple4_faces03.txt
 
 load    flame               data/bgs/temple5/flame/flame.txt
 load    temple5columns      data/bgs/temple5/temple5columns.txt
+
+## TEMPLE 11
+
+load    temple5columns      data/bgs/temple11/temple11columns.txt

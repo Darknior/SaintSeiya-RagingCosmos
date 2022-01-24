@@ -1,34 +1,40 @@
-music       data/music/boss.bor
+music		data/music/ryuseiken.ogg
+panel		data/bgs/temple11/layer2.png
+fglayer         data/bgs/temple11/crystals.png        100 0.1 0 -20 0 0 0 1 1 0 1 0 5 30 0.7
+fglayer         data/bgs/temple11/clouds.png        -150 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0 1
+fglayer         data/bgs/temple11/clouds.png        -25 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0 1
+order	a
 
-panel       data/bgs/ROOMS/templeBOSS11.png 
+direction both
 
-cameratype  1
-direction   right
-settime     0
-order       a
-nofadeout   0
-disablehof  1
-lives       4
-noshare     1
-credits     1
-cansave     0
-nodebug     1
-notime      1
-nosave      1
-blocked     1
-nosame      1
-noslow      1
-completebg  1
+settime 0
 
-spawn1      300  0 0
+cameratype 0
+light        256 -44
+at        0
+shadowalpha     2
+at        0
+
+spawn1  60 30
+
+-------------------------------------
+spawn temple11columns
+coords	0 0
+at 0
+
+spawn camus
+coords	850 390
+at 0
 
 
-#-------------------------------------
 
-spawn       CAMUS
-boss        1
-coords      750 435
-at          100
 
-wait
-at          200
+
+
+
+
+
+
+
+
+
