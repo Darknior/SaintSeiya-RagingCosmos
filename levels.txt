@@ -138,6 +138,65 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple6boss.txt
 
+set         Temple_7_Balance
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           355 470
+file        data/levels/temple7BOSS.txt
+
+set         Temple_8_Scorpion
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           435 435
+file        data/levels/temple8BOSS.txt
+
+## 09 Sagittaire
+
+set         Temple_10_Capricorne
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           435 435
+file        data/levels/temple10BOSS.txt
+
+set         Temple_11_Verseau
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           435 435
+file        data/levels/temple11BOSS.txt
+
+## 12 Poisson
+
+set         Temple_13_Gand_Pope
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           430 430
+file        data/levels/templefinalBOSS.txt
+
 
 ##-----------------------------------------------------
 ##-----------------------------------------------------
