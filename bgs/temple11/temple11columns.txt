@@ -9,3 +9,5 @@ anim idle
 	drawmethod alpha 6
 	drawmethod channel 0.83
 	frame	data/bgs/temple11/temple11columns.png
+
+""""""""
