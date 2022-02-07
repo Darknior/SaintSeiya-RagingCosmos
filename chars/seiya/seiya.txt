@@ -41,6 +41,7 @@ animationscript	data/scripts/player.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Météores de Pégase
+com  U a2  	freespecial6 	#Comète de Pégase
 com  D F a1 freespecial5 	#Uppercut
 
 load aura
@@ -48,7 +49,8 @@ load constellation
 load pegasus
 load meteor
 load meteord
-
+load comet
+load comet_back
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
 	loop 1
@@ -243,12 +245,12 @@ anim runattack # Attaque en courant
 	frame	data/chars/seiya/runattack1.png
 	frame	data/chars/seiya/runattack2.png
 	frame	data/chars/seiya/runattack3.png
-	attack1 31 13 55 83 20 1 0 0 0 0
+	attack2 31 13 55 83 20 1 0 0 5 12
 	frame	data/chars/seiya/runattack4.png
 	frame	data/chars/seiya/runattack5.png
 	frame	data/chars/seiya/runattack4.png
 	frame	data/chars/seiya/runattack5.png
-	attack1 0 
+	attack2 0 
 	@cmd	stop
 	delay	12
 	frame	data/chars/seiya/runattack3.png
@@ -283,7 +285,7 @@ anim attack1 # Attaque combo 1
 	offset	45 119
 	bbox 21 7 51 112
 	frame	data/chars/seiya/attack1.png
-	attack1 62 21 67 26 10 0 0 0 0 0
+	attack1 62 21 67 26 10 0 0 0 5 12
 	frame	data/chars/seiya/attack2.png
 	frame	data/chars/seiya/attack3.png
 	frame	data/chars/seiya/attack2.png
@@ -298,7 +300,7 @@ anim attack2 # Attaque combo 2
 	frame	data/chars/seiya/attack22.png
 	frame	data/chars/seiya/attack23.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 0 0
+	attack1 62 21 67 26 10 0 0 0 5 12
 	frame	data/chars/seiya/attack24.png
 	attack1 0
 	
@@ -309,7 +311,7 @@ anim attack3 # Attaque combo 3
 	frame	data/chars/seiya/attack31.png
 	frame	data/chars/seiya/attack32.png
 	dropv 4.0 1.0 0.0
-	attack2 62 21 67 26 10 0 0 0 0 0
+	attack1 62 21 67 26 10 0 0 0 5 12
 	frame	data/chars/seiya/attack33.png
 	attack1 0
 	
@@ -321,7 +323,7 @@ anim attack4 # Attaque combo 4
 	frame	data/chars/seiya/attack41.png
 	frame	data/chars/seiya/attack42.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 0 0
+	attack1 62 21 67 26 10 0 0 0 5 12
 	frame	data/chars/seiya/attack43.png
 	attack1 0
 	
@@ -334,7 +336,7 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/seiya/attack52.png
 	frame	data/chars/seiya/attack53.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 20 1 0 0 0 0
+	attack1 62 21 67 26 20 1 0 0 5 12
 	frame	data/chars/seiya/attack54.png
 	frame	data/chars/seiya/attack55.png
 	attack1 0
@@ -356,7 +358,7 @@ anim attackbackward # Attaque arrière (Arrière + attaque)
 	frame	data/chars/seiya/attackbackward4.png
 	frame	data/chars/seiya/attackbackward5.png
 	frame	data/chars/seiya/attackbackward6.png
-	attack1 55 35 84 29 20 1 0 0 0 0
+	attack1 55 35 84 29 20 1 0 0 5 12
 	frame	data/chars/seiya/attackbackward7.png
 	frame	data/chars/seiya/attackbackward8.png
 	frame	data/chars/seiya/attackbackward9.png
@@ -378,7 +380,7 @@ anim attackboth # Attaque arrière (bouton saut + attaque)
 	frame	data/chars/seiya/attackbackward4.png
 	frame	data/chars/seiya/attackbackward5.png
 	frame	data/chars/seiya/attackbackward6.png
-	attack1 55 35 84 29 20 1 0 0 0 0
+	attack1 55 35 84 29 20 1 0 0 5 12
 	frame	data/chars/seiya/attackbackward7.png
 	frame	data/chars/seiya/attackbackward8.png
 	frame	data/chars/seiya/attackbackward9.png
@@ -400,7 +402,7 @@ anim freespecial4 # Attaque arrière (à partir d'un cancel)
 	frame	data/chars/seiya/attackbackward4.png
 	frame	data/chars/seiya/attackbackward5.png
 	frame	data/chars/seiya/attackbackward6.png
-	attack1 55 35 84 29 20 1 0 0 0 0
+	attack1 55 35 84 29 20 1 0 0 5 12
 	frame	data/chars/seiya/attackbackward7.png
 	frame	data/chars/seiya/attackbackward8.png
 	frame	data/chars/seiya/attackbackward9.png
@@ -420,9 +422,9 @@ anim grabattack #Saisie Coup de genou X2
 	delay	7
 	offset	38 114
 	bbox 21 0 35 114
-	attack1 62 21 47 26 10 0 0 0 0 0
+	attack3 62 21 47 26 10 0 0 0 5 12
 	frame	data/chars/seiya/grabattack.png
-	attack1 0
+	attack3 0
 	
 anim grabattack2 #Saisie Coup finisher
 	delay	6
@@ -431,11 +433,11 @@ anim grabattack2 #Saisie Coup finisher
 	frame	data/chars/seiya/grabattack21.png
 	frame	data/chars/seiya/grabattack22.png
 	frame	data/chars/seiya/grabattack23.png
-	attack1 62 21 90 26 15 1 0 0 0 0
+	attack3 62 21 90 26 15 1 0 0 0 0
 	frame	data/chars/seiya/grabattack24.png
 	frame	data/chars/seiya/grabattack25.png
 	frame	data/chars/seiya/grabattack26.png
-	attack1 0
+	attack3 0
 	frame	data/chars/seiya/grabattack23.png
 	
 anim throw #Projection en arrière
@@ -468,12 +470,12 @@ anim freespecial # Défense spéciale explosion du cosmos
 	hitflash flashbig
 	frame	data/chars/seiya/special1.png
 	frame	data/chars/seiya/special2.png
-	attack1 -28 -61 120 180 30 1 0 0 0 0
+	attack5 -28 -61 120 180 30 1 0 0 5 12
 	frame	data/chars/seiya/special3.png
 	frame	data/chars/seiya/special4.png
 	frame	data/chars/seiya/special3.png
 	frame	data/chars/seiya/special4.png
-	attack1 0
+	attack5 0
 	frame	data/chars/seiya/special5.png
 	frame	data/chars/seiya/special5.png
 	
@@ -481,12 +483,12 @@ anim freespecial2 # Météores de Pégase
 	delay	10
 	offset	31 116
 	sound data/chars/seiya/02.wav
-	summonframe 0 0 0 0
+	summonframe 0 0 0 0 0
 	subentity constellation
 	unsummonframe 27
 	energycost  20 1 0
 	hitflash flashbig
-	attack1 -8 -64 100 180 10 1 0 0 0 0
+	attack5 -8 -64 100 180 10 1 0 0 5 12
 	frame	data/chars/seiya/special21.png
 	frame	data/chars/seiya/special22.png
 	frame	data/chars/seiya/special23.png
@@ -502,7 +504,7 @@ anim freespecial2 # Météores de Pégase
 	frame	data/chars/seiya/special33.png
 	frame	data/chars/seiya/special34.png
 	offset	31 123
-	attack1 -8 -57 100 180 10 1 0 0 0 0
+	attack5 -8 -57 100 180 10 1 0 0 5 12
 	frame	data/chars/seiya/special35.png
 	frame	data/chars/seiya/special36.png
 	frame	data/chars/seiya/special37.png
@@ -523,8 +525,9 @@ anim freespecial2 # Météores de Pégase
 	@cmd	shooter "meteor" 77 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
 	@cmd	shooter "meteor" 77 100 0 3 0 0		
+	attack5 0
 	@cmd	dasher 5 0 0 1
-	attack1 90 40 55 83 20 1 0 0 0 0
+	attack4 90 40 55 83 40 1 0 0 5 12
 	frame	data/chars/seiya/special42.png
 		offset 100 147
 	frame	data/chars/seiya/special44.png
@@ -540,10 +543,31 @@ anim freespecial2 # Météores de Pégase
 	frame	data/chars/seiya/special43.png
 	offset 100 147
 	frame	data/chars/seiya/special44.png
-	attack1 0 0 0 0 0 0 0 0 0 0
+	attack4 0
 	@cmd	stop
 		offset	31 116
 	frame	data/chars/seiya/special42.png
+
+anim freespecial6 # Comète de Pégase ( haut + bouton special)
+	delay	10
+	offset	45 113
+	#bbox 21 16 51 97
+	summonframe 0 0 0 0 1
+	subentity comet_back
+	unsummonframe 8	
+	energycost  5 1 0
+	frame	data/chars/seiya/upspecial1.png
+	frame	data/chars/seiya/upspecial2.png
+	frame	data/chars/seiya/upspecial3.png
+	frame	data/chars/seiya/upspecial4.png
+	delay	10
+	frame	data/chars/seiya/upspecial5.png
+	frame	data/chars/seiya/upspecial6.png
+	frame	data/chars/seiya/upspecial7.png
+	@cmd	shooter "comet" 77 80 0 2 0 0
+	delay 50	
+	frame	data/chars/seiya/upspecial7.png	
+	frame	data/chars/seiya/upspecial7.png
 	
 anim jump # Saut Statique
 	delay	10
@@ -596,10 +620,10 @@ anim jumpattack #Attaque sautée statique
 	frame	data/chars/seiya/jumpattack1.png
 	frame	data/chars/seiya/jumpattack2.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 1 0 0 0 0
+	attack4 62 21 67 26 10 1 0 0 5 12
 	frame	data/chars/seiya/jumpattack3.png
 	frame	data/chars/seiya/jumpattack3.png
-	attack1 0
+	attack4 0
 	
 anim jumpforward #Attaque sautée vers l'avant
 	delay	5
@@ -608,10 +632,10 @@ anim jumpforward #Attaque sautée vers l'avant
 	sound data/sounds/punch.wav	
 	frame	data/chars/seiya/jumpforward1.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 1 0 0 0 0
+	attack4 62 21 67 26 10 1 0 0 5 12
 	frame	data/chars/seiya/jumpforward2.png
 	frame	data/chars/seiya/jumpforward2.png
-	attack1 0
+	attack4 0
 	
 anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
 	delay	5
@@ -623,10 +647,10 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
 	frame	data/chars/seiya/jumpattack23.png	
 	jumpframe 2 -2 0
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 0 0
+	attack4 62 21 67 26 10 0 0 0 5 12
 	frame	data/chars/seiya/jumpattack24.png
 	frame	data/chars/seiya/jumpattack24.png
-	attack1 0
+	attack4 0
 
 anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
 	delay	5
@@ -635,10 +659,10 @@ anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
 	sound data/sounds/punch.wav	
 	frame	data/chars/seiya/jumpattack31.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 1 0 0 0 0
+	attack4 62 21 67 26 10 1 0 0 5 12
 	frame	data/chars/seiya/jumpattack32.png
 	frame	data/chars/seiya/jumpattack32.png
-	attack1 0
+	attack4 0
 	
 anim freespecial3 # Saut attaque spéciale météores (déclenchée par une commande cancel A2)
 	delay	5
@@ -662,12 +686,11 @@ anim freespecial5 # Uppercut
 	bbox 21 22 51 112
 	hitflash flashbig
 	delay	5
-	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/seiya/uppercut1.png
 	frame	data/chars/seiya/uppercut2.png
 	jumpframe 0 6 1.5
 	delay 25
-	attack1 55 0 35 84 15 1 0 0 0 0
+	attack1 55 0 35 84 15 1 0 0 5 12
 	frame	data/chars/seiya/uppercut3.png
 	frame	data/chars/seiya/uppercut3.png
 	frame	data/chars/seiya/uppercut3.png
@@ -679,7 +702,7 @@ anim freespecial5 # Uppercut
 anim pain
 	offset	51 111
 	bbox 21 0 51 112
-	move	-5
+	#move	-5
 	delay	3
 	frame	data/chars/seiya/pain1.png
 	frame	data/chars/seiya/pain2.png
@@ -692,7 +715,7 @@ anim pain
 anim pain2
 	offset	24 110
 	bbox 11 2 36 112
-	move	-5
+	#move	-5
 	delay	3
 	frame	data/chars/seiya/pain21.png
 	frame	data/chars/seiya/pain22.png

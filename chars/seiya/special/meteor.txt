@@ -12,7 +12,7 @@ anim	idle
 	offset	15 11
 	bbox 0 0 28 22
 	drawmethod alpha 1	
-	attack1 0 0 28 22 5 0 0 0 0 20
+	attack5 0 0 28 22 10 0 0 0 0 20
 	frame	data/chars/seiya/special/meteor1.png
 	frame	data/chars/seiya/special/meteor2.png
 	frame	data/chars/seiya/special/meteor3.png
@@ -28,4 +28,4 @@ anim	idle
 	frame	data/chars/seiya/special/meteor13.png
 	frame	data/chars/seiya/special/meteor14.png
 	frame	data/chars/seiya/special/meteor15.png
-	attack1 0
+	attack5 0

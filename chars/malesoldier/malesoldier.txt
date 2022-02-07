@@ -9,9 +9,9 @@ aimove      chase
 
 icon		data/chars/malesoldier/icon.png
 
-hitenemy    0 0
+gfxshadow	1
+hitenemy    1 0
 blockodds 	1
-blocked 	1
 nodieblink 0
 noquake 1 1
 
@@ -99,7 +99,7 @@ anim attack1
 	offset	44 125
 	bbox 30 10 35 115
 	frame	data/chars/malesoldier/attack1.png
-	attack1 65 26 63 25 10 0 0 0 0 0
+	attack1 65 26 63 25 10 0 0 0 5 12
 	frame	data/chars/malesoldier/attack2.png
 	frame	data/chars/malesoldier/attack3.png
 
@@ -108,7 +108,7 @@ anim attack2
 	offset	44 125
 	bbox 30 10 35 115
 	frame	data/chars/malesoldier/attack21.png
-	attack1 65 88 86 29 10 1 0 0 0 0
+	attack1 65 88 86 29 10 1 0 0 5 12
 	frame	data/chars/malesoldier/attack22.png
 	frame	data/chars/malesoldier/attack23.png
 
@@ -141,7 +141,7 @@ anim jumpattack #Attaque sautée statique
 	sound data/sounds/punch.wav	
 	frame	data/chars/malesoldier/jumpattack1.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 1 0 0 0 0
+	attack1 62 21 67 26 10 1 0 0 5 12
 	frame	data/chars/malesoldier/jumpattack2.png
 	attack1 0
 	
