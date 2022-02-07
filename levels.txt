@@ -157,7 +157,7 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           435 435
+z           378 484
 file        data/levels/temple8BOSS.txt
 
 ## 09 Sagittaire
@@ -170,7 +170,7 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           435 435
+z           378 484
 file        data/levels/temple10BOSS.txt
 
 set         Temple_11_Verseau
@@ -181,7 +181,7 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           435 435
+z           378 484
 file        data/levels/temple11BOSS.txt
 
 ## 12 Poisson
@@ -194,8 +194,8 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           430 430
-file        data/levels/templefinalBOSS.txt
+z           378 430
+file        data/levels/temple13BOSS.txt
 
 
 ##-----------------------------------------------------
@@ -324,7 +324,7 @@ z       420 420
 file    data/levels/templefiori.txt
 scene   data/scenes/temple13.txt
 z       430 430
-file    data/levels/templefinalBOSS.txt
+file    data/levels/temple13BOSS.txt
 
 #-- ENDING --
 
