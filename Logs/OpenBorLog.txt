@@ -1,6 +1,6 @@
 Total Ram: 8542273536 Bytes
- Free Ram: 5685313536 Bytes
- Used Ram: 6430720 Bytes
+ Free Ram: 4277010432 Bytes
+ Used Ram: 6488064 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1680, 1050, 24, 60
 OpenBoR v3.0 Build 6391, Compile Date: Apr  8 2020
@@ -22,8 +22,8 @@ Loading level order..........
 *            Shutting Down            *
 
 Error loading level list from data/levels.txtTotal Ram: 8542273536 Bytes
- Free Ram: 5652930560 Bytes
- Used Ram: 50753536 Bytes
+ Free Ram: 4212371456 Bytes
+ Used Ram: 50819072 Bytes
 
 Release level data...........
 Done!
