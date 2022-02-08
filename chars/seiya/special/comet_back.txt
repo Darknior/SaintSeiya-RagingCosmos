@@ -1,0 +1,17 @@
+name	comet_back
+type	panel
+speed	10
+shadow	0
+setlayer 1
+antigravity 100
+
+anim	idle
+	loop	1
+	delay	20
+	offset	330 0
+	drawmethod scale 2.5 2.5
+	frame	data/chars/seiya/special/comet_back1.png
+	frame	data/chars/seiya/special/comet_back2.png
+	frame	data/chars/seiya/special/comet_back3.png
+	frame	data/chars/seiya/special/comet_back4.png	
+	

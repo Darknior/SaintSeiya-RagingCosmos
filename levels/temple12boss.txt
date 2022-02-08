@@ -1,0 +1,34 @@
+music       data/music/boss.bor
+
+panel       data/bgs/ROOMS/templeBOSS12.png 
+
+cameratype  1
+direction   right
+settime     0
+order       a
+nofadeout   0
+disablehof  1
+lives       4
+noshare     1
+credits     1
+cansave     0
+nodebug     1
+notime      1
+nosave      1
+blocked     1
+nosame      1
+noslow      1
+completebg  1
+
+spawn1      300  0 0
+
+
+#-------------------------------------
+
+spawn       APHRODITE
+boss        1
+coords      750 435
+at          100
+
+wait
+at          200

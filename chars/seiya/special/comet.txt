@@ -1,0 +1,36 @@
+name	comet
+type	none
+shadow	0
+setlayer 2
+antigravity 100
+lifespan  6
+
+anim	idle
+	loop	0
+	delay	16
+	offset	15 80
+	bbox 0 0 200 150
+	drawmethod alpha 1
+	attack5 0 0 200 150 60 1 0 0 0 20
+	frame	data/chars/seiya/special/comet1.png
+	frame	data/chars/seiya/special/comet2.png
+	frame	data/chars/seiya/special/comet3.png
+	frame	data/chars/seiya/special/comet4.png
+	frame	data/chars/seiya/special/comet5.png
+	frame	data/chars/seiya/special/comet6.png
+	frame	data/chars/seiya/special/comet7.png
+	frame	data/chars/seiya/special/comet8.png
+	frame	data/chars/seiya/special/comet9.png
+	frame	data/chars/seiya/special/comet10.png
+	frame	data/chars/seiya/special/comet11.png
+	frame	data/chars/seiya/special/comet12.png
+	frame	data/chars/seiya/special/comet13.png
+	frame	data/chars/seiya/special/comet14.png
+	frame	data/chars/seiya/special/comet15.png
+	frame	data/chars/seiya/special/comet16.png
+	frame	data/chars/seiya/special/comet17.png
+	frame	data/chars/seiya/special/comet18.png
+	frame	data/chars/seiya/special/comet19.png
+	frame	data/chars/seiya/special/comet20.png
+	frame	data/chars/seiya/special/comet21.png	
+	attack5 0

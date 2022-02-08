@@ -1,0 +1,152 @@
+name		malesoldier_defense_all
+health		30
+speed		20
+type		enemy
+hostile     player npc 
+candamage 	player npc
+aimove      chase
+
+icon		data/chars/malesoldier/icon.png
+
+gfxshadow	1
+hitenemy    1 0
+blockodds 	1
+nodieblink 0
+noquake 1 1
+
+atchain 1 1 2
+
+defense all 0	  # Invulnérable à toutes les attaques
+
+#----------------------------------------------------------
+anim spawn
+	delay	10
+	offset	44 125
+	frame	data/chars/malesoldier/idle1.png
+	frame	data/chars/malesoldier/idle2.png
+	frame	data/chars/malesoldier/idle3.png
+	frame	data/chars/malesoldier/idle2.png	
+
+anim follow1 #Entrée en jeu custom
+	delay	10
+	offset	44 130
+	bbox 29 10 35 71
+	jumpframe 0 3 1.5 0	
+	frame	data/chars/malesoldier/jump1.png
+	frame	data/chars/malesoldier/jump2.png
+	frame	data/chars/malesoldier/jump3.png
+	frame	data/chars/malesoldier/jump2.png
+	frame	data/chars/malesoldier/jump1.png
+
+anim idle
+	loop	1
+	delay	25
+	offset	44 125
+	bbox 29 10 35 115
+	frame	data/chars/malesoldier/idle1.png
+	frame	data/chars/malesoldier/idle2.png
+	frame	data/chars/malesoldier/idle3.png
+	frame	data/chars/malesoldier/idle2.png	
+
+anim walk
+	loop	1
+	delay	15
+	offset	65 125
+	bbox 49 10 50 115
+	frame	data/chars/malesoldier/run1.png
+	frame	data/chars/malesoldier/run2.png
+	frame	data/chars/malesoldier/run3.png
+	frame	data/chars/malesoldier/run4.png
+
+anim rise
+	loop	1
+	delay	15
+	offset	65 125
+	bbox 49 10 50 115
+	frame	data/chars/malesoldier/run1.png
+	frame	data/chars/malesoldier/run2.png
+	frame	data/chars/malesoldier/run3.png
+	frame	data/chars/malesoldier/run4.png
+
+anim pain
+	delay	5
+	offset	44 125
+	bbox 29 10 35 115
+	frame	data/chars/malesoldier/pain1.png
+	frame	data/chars/malesoldier/pain2.png
+	frame	data/chars/malesoldier/pain1.png
+
+anim fall
+	delay	10
+	offset	118 125
+	frame	data/chars/malesoldier/fall1.png
+	frame	data/chars/malesoldier/fall2.png
+	frame	data/chars/malesoldier/fall3.png
+	frame	data/chars/malesoldier/fall4.png
+	frame	data/chars/malesoldier/fall5.png
+	frame	data/chars/malesoldier/fall6.png
+	frame	data/chars/malesoldier/fall7.png
+
+anim rise
+	offset	118 125
+	delay	10
+	frame	data/chars/malesoldier/rise1.png
+	frame	data/chars/malesoldier/rise2.png
+	frame	data/chars/malesoldier/rise3.png
+
+anim attack1
+	delay	10
+	offset	44 125
+	bbox 30 10 35 115
+	frame	data/chars/malesoldier/attack1.png
+	attack1 65 26 63 25 10 0 0 0 5 12
+	frame	data/chars/malesoldier/attack2.png
+	frame	data/chars/malesoldier/attack3.png
+
+anim attack2
+	delay	10
+	offset	44 125
+	bbox 30 10 35 115
+	frame	data/chars/malesoldier/attack21.png
+	attack1 65 88 86 29 10 1 0 0 5 12
+	frame	data/chars/malesoldier/attack22.png
+	frame	data/chars/malesoldier/attack23.png
+
+anim jump # Saut Statique
+	delay	10
+	offset	44 130
+	bbox 29 10 35 71
+	frame	data/chars/malesoldier/jump1.png
+	frame	data/chars/malesoldier/jump2.png
+	frame	data/chars/malesoldier/jump3.png
+	frame	data/chars/malesoldier/jump2.png
+	frame	data/chars/malesoldier/jump1.png
+	
+anim jumpdelay # Animation de saut intermédiaire
+	delay	10
+	offset	44 130
+	bbox 29 10 35 71
+	frame	data/chars/malesoldier/jump2.png
+
+anim jumpland # Aterrissage du saut
+	delay	12
+	offset	44 125
+	bbox 29 10 35 115
+	frame	data/chars/malesoldier/get.png
+	
+anim jumpattack #Attaque sautée statique
+	delay	10
+	offset	44 130
+	bbox 29 10 35 71
+	sound data/sounds/punch.wav	
+	frame	data/chars/malesoldier/jumpattack1.png
+	dropv 4.0 1.0 0.0
+	attack1 62 21 67 26 10 1 0 0 5 12
+	frame	data/chars/malesoldier/jumpattack2.png
+	attack1 0
+	
+anim	block
+	offset	44 125
+	bbox 29 10 35 115
+	frame	data/chars/malesoldier/block1.png
+	frame	data/chars/malesoldier/block2.png

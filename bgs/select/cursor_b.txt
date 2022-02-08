@@ -1,0 +1,91 @@
+name			cursor_b #USED WHEN A PLAYER IS HIGHLIGHTED OR CHOSEN (VERSUS MODE)
+type			none
+shadow			0
+setlayer		2000
+script 			data/scripts/cursor.c
+
+anim idle #DEFAULT
+	loop	0
+	delay	2
+	offset	1 1
+	frame	data/bgs/select/chosen00.png
+	
+anim follow1 #SMALL HIGHLIGHT 1P
+	loop	0
+	delay	4
+	offset	1 1
+	frame	data/bgs/select/cursor01a.png
+	
+anim follow2 #SMALL HIGHLIGHT 2P
+	loop	0
+	delay	4
+	offset	1 1
+	frame	data/bgs/select/cursor02a.png
+	
+anim follow3 #SMALL HIGHLIGHT 3P
+	loop	0
+	delay	4
+	offset	1 1
+	frame	data/bgs/select/cursor03a.png
+	
+anim follow4 #SMALL HIGHLIGHT 4P
+	loop	0
+	delay	4
+	offset	1 1
+	frame	data/bgs/select/cursor04a.png
+	
+anim follow5 #SMALL CHOSEN 1P
+	loop	1 7 8
+	delay	3
+	offset	1 1
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor01a.png
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor01a.png
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor01a.png
+	frame	data/bgs/select/chosen02.png
+		delay	1000
+	frame	data/bgs/select/cursor01a.png
+	
+anim follow6 #SMALL CHOSEN 2P
+	loop	1 7 8
+	delay	3
+	offset	1 1
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor02a.png
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor02a.png
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor02a.png
+	frame	data/bgs/select/chosen02.png
+		delay	1000
+	frame	data/bgs/select/cursor02a.png
+	
+anim follow7 #SMALL CHOSEN 3P
+	loop	1 7 8
+	delay	3
+	offset	1 1
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor03a.png
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor03a.png
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor03a.png
+	frame	data/bgs/select/chosen02.png
+		delay	1000
+	frame	data/bgs/select/cursor03a.png
+	
+anim follow8 #SMALL CHOSEN 4P
+	loop	1 7 8
+	delay	3
+	offset	1 1
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor04a.png
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor04a.png
+	frame	data/bgs/select/chosen02.png
+	frame	data/bgs/select/cursor04a.png
+	frame	data/bgs/select/chosen02.png
+		delay	1000
+	frame	data/bgs/select/cursor04a.png

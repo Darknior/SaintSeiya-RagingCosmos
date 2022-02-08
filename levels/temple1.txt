@@ -1,0 +1,32 @@
+music		data/music/temple1.ogg
+
+panel		data/bgs/temple1/temple1_panel.png 
+frontpanel      data/bgs/temple1/layer1.png 
+bglayer  	data/bgs/temple1/temple1_back.png		0.9 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple1/temple1_bglayer2.png   	0.4 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple1/temple1_bglayer.png  	0.3 1 0 0 0 0 1 9999 1 0
+
+
+order	a
+
+direction both
+
+settime 0
+
+cameratype 0
+
+spawn1  60 30
+
+-------------------------------------
+spawn mu
+coords	594 277
+at 0
+
+spawn malesoldier
+alias SOLDIER
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	850 500
+at 0

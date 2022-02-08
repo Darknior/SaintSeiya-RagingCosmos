@@ -1,0 +1,12 @@
+name	 dialogbox
+type	 panel
+speed	 5
+scroll	 -0.5
+setlayer 2
+
+
+anim idle
+	offset   0 0
+	drawmethod  alpha 6
+	drawmethod channel 0.85	
+	frame data/bgs/temple1/mu_dialog/dialogbox.png

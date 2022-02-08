@@ -1,0 +1,57 @@
+music       data/music/ryuseiken.ogg
+
+panel       data/bgs/temple7/layer2.png
+frontpanel  data/bgs/temple7/layer1.png 
+
+order       a
+direction   both
+settime     0
+
+cameratype  0
+
+spawn1      60 30
+
+
+#-------------------------------------
+
+spawn       libra2
+alias       WEAPON
+coords      50 370
+at          0
+
+spawn       libra3
+alias       WEAPON
+coords      130 365
+at          0
+
+spawn       libra4
+alias       WEAPON
+coords      220 363
+at          0
+
+spawn       libra5
+alias       WEAPON
+coords      290 365
+at          0
+
+spawn       libra6
+alias       WEAPON
+coords      370 360
+at          0
+
+spawn       libra7
+alias       WEAPON
+coords      460 360
+at          0
+
+
+spawn       CUBE
+alias       COFFIN-OF-ICE
+boss        1
+coords      600 412
+at          0
+
+wait
+at          0
+
+wall        469 518 -1 -2 361 370 191 1284

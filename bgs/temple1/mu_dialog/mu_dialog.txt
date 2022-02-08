@@ -1,0 +1,102 @@
+name	 mu_dialog
+type	 panel
+speed	 5
+scroll -0.5
+lifespan 6
+setlayer 100
+
+load dialogbox
+
+anim spawn
+
+
+
+anim idle
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog1.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog1.png
+	
+anim follow1
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog2.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog2.png	
+	
+anim follow2
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog3.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog3.png		
+
+anim follow3
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog4.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog4.png	
+
+anim follow4
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog5.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog5.png	
+	
+anim follow5
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog6.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog6.png		
+
+anim follow6
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog7.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog7.png	
+
+anim follow7
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog8.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog8.png	
+
+anim follow8
+    loop 1
+	delay     2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	frame data/bgs/temple1/mu_dialog/mu_dialog9.png
+  delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog9.png		
