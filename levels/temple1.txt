@@ -1,7 +1,7 @@
 music		data/music/temple1.ogg
 
 panel		data/bgs/temple1/temple1_panel.png 
-frontpanel      data/bgs/temple1/layer1.png 
+frontpanel  data/bgs/temple1/layer1.png 
 bglayer  	data/bgs/temple1/temple1_back.png		0.9 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple1/temple1_bglayer2.png   	0.4 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple1/temple1_bglayer.png  	0.3 1 0 0 0 0 1 9999 1 0
@@ -15,18 +15,232 @@ settime 0
 
 cameratype 0
 
-spawn1  60 30
-
--------------------------------------
-spawn mu
-coords	594 277
+light 0 -64
 at 0
 
-spawn malesoldier
-alias SOLDIER
+spawn1  400 30
+
+#-------------------------------------
+
+spawn mu
+coords	594 279
+at 0
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+at 0
+
+group 1 1
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+#-------------------------------------
+
+spawn malesoldier_attackcombo
+alias soldier
+coords	850 500
+at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW1"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn malesoldier_jumpattack
+alias soldier
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
 } @end_script
 coords	850 500
 at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW2"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn malesoldier_specialattack
+alias soldier
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	0 500
+at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW3"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn malesoldier_runattack
+alias soldier
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	850 500
+at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW4"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn malesoldier_attackcombo
+alias soldier
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	0 500
+at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW5"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn malesoldier
+alias soldier
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	850 500
+at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW6"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn malesoldier_specialattack
+alias soldier
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	850 500
+at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW7"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn malesoldier_specialattack
+alias soldier
+boss 1
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	850 500
+at 0
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW8"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+#-------------------------------------

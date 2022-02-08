@@ -34,6 +34,9 @@ know    constellation   data/chars/seiya/special/constellation.txt
 know    pegasus         data/chars/seiya/special/pegasus.txt
 know    meteor          data/chars/seiya/special/meteor.txt
 know    meteord         data/chars/seiya/special/meteord.txt
+know    comet          	data/chars/seiya/special/comet.txt
+know    comet_back       data/chars/seiya/special/comet_back.txt
+
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt
@@ -185,6 +188,12 @@ know    rock02          data/chars/OBJ/rock02.txt
 #Enemies
 
 know    malesoldier     data/chars/malesoldier/malesoldier.txt
+know    malesoldier     			data/chars/malesoldier/malesoldier.txt
+know    malesoldier_attackcombo 	data/chars/malesoldier/malesoldier_attackcombo.txt
+know    malesoldier_jumpattack  	data/chars/malesoldier/malesoldier_jumpattack.txt
+know    malesoldier_specialattack	data/chars/malesoldier/malesoldier_specialattack.txt
+know    malesoldier_runattack		data/chars/malesoldier/malesoldier_runattack.txt
+know    malesoldier_defense_all		data/chars/malesoldier/malesoldier_defense_all.txt
 know    soldiersuper    data/chars/SOLDIER1-1/soldiersuper.txt
 know    SOLDIER         data/chars/SOLDIER/SOLDIER.txt
 know    SOLDIER1        data/chars/SOLDIER1/SOLDIER1.txt
@@ -231,6 +240,11 @@ know    FIORE           data/chars/FIORE/FIORE.txt
 ## TEMPLE 1
 
 load    mu                  data/bgs/temple1/mu/mu.txt
+
+## Dialogs
+load    dialogdelay     data/bgs/temple1/mu_dialog/dialogdelay.txt
+know 	dialogbox		data/bgs/temple1/mu_dialog/dialogbox.txt
+know 	mu_dialog		data/bgs/temple1/mu_dialog/mu_dialog.txt
 
 ## TEMPLE 3
 
