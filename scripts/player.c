@@ -78,3 +78,46 @@ void spawnM(void Name, float dx, float dy, float dz)
    Spawn = spawn01(Name, dx, dy, dz);
    changeentityproperty(Spawn, "map", map);
 }
+
+//Direction
+//  0 = No change
+//  1 = Same direction as parent
+// -1 = Opposite direction as parent
+//  2 = Always right
+// -2 = Always left
+
+//BindFlag:
+//  0 = No effect
+//  1 = Keep same animation as target
+//  2 = Also keep same frame as target
+//  4 = Kill binded entity if animation doesn't match
+//  5 = Keep same animation as target and kill binded entity if animation doesn't match 
+//  6 = Keep same frame as target and kill binded entity if animation doesn't match 
+
+//Example: @cmd spawnbind "Naruto_Rasengan" "ANI_FOLLOW10" 0 0 0 1 0
+//Result: Binds a Rasengan on the caller, running its "Follow 10" animation.
+
+void spawnbind(void ChildName, void ChildAnim, float OffsetX, float OffsetY, float OffsetZ, int Direction, int BindFlag)
+{
+	void self = getlocalvar("self");										//Spawnin parent entity.
+	void Child;																//Spawned child entity.
+
+	clearspawnentry();														//Clear current spawn entity.
+	setspawnentry("name", ChildName);											//Set spawn entity by it's name.
+  	
+  	Child = spawn();														//Spawn child entity.
+	
+	changeentityproperty(Child, "parent", self);							//Set child's parent.
+	performattack(Child, openborconstant(ChildAnim));
+
+	
+return Child;
+
+	bindentity(Child, self, OffsetX, OffsetY, OffsetZ, Direction, BindFlag);
+}
+
+void unbind()
+{
+	void self = getlocalvar("self");
+	bindentity(self, NULL());
+}

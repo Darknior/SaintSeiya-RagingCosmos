@@ -105,7 +105,6 @@ anim walk
 	frame	data/chars/gemini/walk4.png
 	frame	data/chars/gemini/walk5.png
 	frame	data/chars/gemini/walk6.png
-	frame	data/chars/gemini/walk7.png
 	
 anim run
 	loop	1
@@ -115,7 +114,6 @@ anim run
 	frame	data/chars/gemini/run1.png
 	frame	data/chars/gemini/run2.png
 	frame	data/chars/gemini/run3.png
-	frame	data/chars/gemini/run4.png	
 	
 anim runattack # Attaque en courant
 	delay	7
