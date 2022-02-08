@@ -223,6 +223,7 @@ anim attack1 # Attaque combo 1
 	attack1 56 37 72 25 10 0 0 0 5 12
 	frame	data/chars/aldebaran/attack2.png
 	frame	data/chars/aldebaran/attack3.png
+	attack1 0
 
 anim attack2 # Attaque combo 2
 	delay	5
@@ -232,6 +233,8 @@ anim attack2 # Attaque combo 2
 	attack1 56 36 70 29 10 0 0 0 5 12
 	frame	data/chars/aldebaran/attack22.png
 	frame	data/chars/aldebaran/attack23.png
+	attack1 0
+	frame	data/chars/aldebaran/attack23.png	
 
 anim attack3 # Attaque combo 3
 	delay	5
@@ -252,7 +255,6 @@ anim attack4 # Attaque combo 4
 	offset	46 163
 	bbox 19 13 38 151
 	hitflash flashmedium
-	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/aldebaran/attack41.png
 	attack1 62 46 67 26 10 0 0 0 5 12
 	frame	data/chars/aldebaran/attack42.png
@@ -267,8 +269,8 @@ anim attack5 # Attaque combo 5
 	bbox 19 13 38 151
 	hitflash flashbig
 	frame	data/chars/aldebaran/attack51.png
-	dropv 4.0 1.0 0.0
 	attack1 62 21 67 26 20 1 0 0 5 12
+	dropv 4.0 1.0 0.0
 	frame	data/chars/aldebaran/attack52.png
 	frame	data/chars/aldebaran/attack53.png
 	attack1 0
