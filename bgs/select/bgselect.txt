@@ -1,19 +1,21 @@
-name        bgselect
-health      1
-type        panel
-speed       10
-shadow      0
-setlayer    -2000
-facing      1
+name            bgselect
+type            none
+shadow          0
+setlayer        -2000
+ondrawscript	data/scripts/menu_select.c
 
 
-anim    idle
+anim    idle # CHANGED TO A TRANSPARENT SPRITE TO USE THE SELECT.PNG 24-BIT IMAGE
+    loop    0
+    offset  1 1
+    delay   20
+    frame   data/bgs/select/select0.png
+
+anim    follow1 # PREVIOUS ANIMATION
     loop    1
     offset  1 1
     delay   20
-    @cmd    changeentityproperty getlocalvar("self") "direction" 1
     frame   data/bgs/select/select1.png
-    @cmd    changeentityproperty getlocalvar("self") "setlayer" -2000
     frame   data/bgs/select/select2.png
     frame   data/bgs/select/select3.png
     frame   data/bgs/select/select4.png

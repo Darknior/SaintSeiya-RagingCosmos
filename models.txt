@@ -11,6 +11,7 @@ typemp       2
 #mpblock      1
 
 maxattacks 5
+maxfollows 50
 
 
 #------------------------
@@ -18,6 +19,8 @@ maxattacks 5
 #Animated Title and Select screens
 load    bgselect        data/bgs/select/bgselect.txt
 load    bgtitle         data/bgs/title/bgtitle.txt
+load    cursor_a        data/bgs/select/cursor_a.txt
+load    cursor_b        data/bgs/select/cursor_b.txt
 
 #Flash animations
 load    flash           data/chars/misc/flash/flash.txt

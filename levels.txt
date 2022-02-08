@@ -24,7 +24,7 @@ p1lifex     -100 -100
 p1life      40  21
 p1mp        40  35
 p1icon      5   20
-p1smenu     75 380 -1000 -1000 -1000 -1000
+p1smenu     100 999 -1000 -1000 -1000 -1000
 p1namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
 p2score     40  48
@@ -32,7 +32,7 @@ p2lifen     145 59
 p2life      40  58
 p2mp        40  67
 p2icon      -5  -12
-p2smenu     276 295 -10000 -10000 -10000 -10000
+p2smenu     200 999 -10000 -10000 -10000 -10000
 p2namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
 p3score     520 11
@@ -40,7 +40,7 @@ p3lifen     800 23
 p3life      520 21
 p3mp        520 35
 p3icon      475 -46
-p3smenu     449 295 -10000 -10000 -10000 -10000
+p3smenu     300 999 -10000 -10000 -10000 -10000
 p3namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
 p4score     520 48
@@ -48,7 +48,7 @@ p4lifen     800 59
 p4life      520 58
 p4mp        520 67
 p4icon      475 -12
-p4smenu     622 295 -10000 -10000 -10000 -10000
+p4smenu     400 999 -10000 -10000 -10000 -10000
 p4namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
 
@@ -203,7 +203,7 @@ file        data/levels/templefinalBOSS.txt
 
 set         Story_Mode_(Solo)
 
-maxplayers  1
+maxplayers  4
 lives       1
 credits     10
 cansave     2

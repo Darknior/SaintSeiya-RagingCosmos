@@ -60,12 +60,12 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 	if((openborvariant("in_selectscreen")) &&(counter2!=1)) // Check the variable to avoid double spawn
 		{void subent;
 		loadmodel("bgselect"); // name of the entity to be loaded
-        clearspawnentry(); // clean the spawn entry
-		setspawnentry("name", "bgselect"); // define the entity to be spawn
-		setspawnentry("coords", 1,0,-1); // set the position of the entity
-		subent=spawn();  //  spawn the entity
-		changeentityproperty(subent, "position", 1,0,-1); //for safe, set again the position
-		counter2 = setlocalvar("counter2",1); // turn on the variable, blocking a new spawn to be made
+		clearspawnentry();
+		setspawnentry("name", "bgselect");
+		subent = spawn();
+		changeentityproperty(subent, "position", 0, 0, 0);
+		changeentityproperty(subent, "direction", 1);		
+      counter2 = setlocalvar("counter2",1); // turn on the variable, blocking a new spawn to be made
 	}	
 
 if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
@@ -79,6 +79,28 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 		subent=spawn();  //  spawn the entity
 		changeentityproperty(subent, "position", 1,0,-1); //for safe, set again the position
 		counter3 = setlocalvar("counter3",1); // turn on the variable, blocking a new spawn to be made
-	}	
+	}
 
+   if(openborvariant("in_titlescreen")){
+
+      //SCRIPT USED TO CLEAR ALL VARIABLES AND ASSETS
+		if(getglobalvar("clearAll") != NULL()){clearlocalvar();clearglobalvar();}
+
+      //WORKS WITH "SELECT SCREEN" FUNCTIONS
+   	if(getglobalvar("previewCol0") == NULL()){
+   		setglobalvar("previewCol0", 1);
+   		setglobalvar("previewCol1", 1);
+   		setglobalvar("previewCol2", 1);
+   		setglobalvar("previewCol3", 1);
+   		setglobalvar("previewLine0", 1);
+   		setglobalvar("previewLine1", 1);
+   		setglobalvar("previewLine2", 1);
+   		setglobalvar("previewLine3", 1);
+   	}
+   }
+
+   //MENU SCREEN, SET THE "CLEARALL" FLAG TO 1
+	if(openborvariant("in_menuscreen")){
+		if(getglobalvar("clearAll") == NULL()){setglobalvar("clearAll", 1);}
+	}
 }// MAIN END
