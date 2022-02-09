@@ -254,7 +254,7 @@ anim jumpland # Aterrissage du saut
 	frame	data/chars/gemini/get1.png
 	
 anim jumpattack # Attaque sautée statique
-	delay	10
+	delay	8
 	offset	75 171
 	bbox 59 40 35 71
 	sound data/sounds/punch.wav
