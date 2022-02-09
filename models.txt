@@ -37,6 +37,8 @@ know    meteord         data/chars/seiya/special/meteord.txt
 know    comet          	data/chars/seiya/special/comet.txt
 know    comet_back      data/chars/seiya/special/comet_back.txt
 
+know    dimension_back  data/chars/gemini/special/dimension_back.txt
+
 know    runtaurus       data/chars/aldebaran/special/runtaurus.txt
 
 know    energy          data/chars/OBJ/energy.txt

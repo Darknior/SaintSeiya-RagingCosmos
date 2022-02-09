@@ -84,7 +84,7 @@ z           378 484
 file        data/levels/temple1.txt
 
 set         Temple_2_Taureau
-maxplayers  1
+maxplayers  4
 lives       1
 credits     10
 cansave     2
