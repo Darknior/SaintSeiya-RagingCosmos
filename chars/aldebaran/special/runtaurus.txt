@@ -1,0 +1,14 @@
+name	runtaurus
+type	none
+shadow	0
+setlayer 1
+#antigravity 100
+
+anim	idle
+	loop	1
+	delay	60
+	offset	80 155
+	#drawmethod alpha 6
+	#drawmethod channel 0.5
+	frame	data/chars/aldebaran/special/runtaurus.png
+	frame	data/chars/aldebaran/special/runtaurus.png
