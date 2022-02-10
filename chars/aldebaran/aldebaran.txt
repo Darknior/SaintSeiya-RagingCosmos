@@ -128,7 +128,7 @@ anim runattack # Attaque en courant
 	bbox 21 13 38 151
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
-	@cmd 	spawnbind "runtaurus" "ANI_IDLE" 0 0 0 1 0		
+	@cmd 	spawnbind "runtaurus" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/aldebaran/runattack1.png
 	frame	data/chars/aldebaran/runattack2.png
 	frame	data/chars/aldebaran/runattack3.png
@@ -152,6 +152,7 @@ anim freespecial # Attaque en courant
 	range 	80 175
 	rangea 	0 100
 	@cmd	dasher 3.5 0 0 1
+	@cmd 	spawnbind "runtaurus" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/aldebaran/runattack1.png
 	frame	data/chars/aldebaran/runattack2.png
 	frame	data/chars/aldebaran/runattack3.png
@@ -398,6 +399,7 @@ anim special2 #Attaque spéciale Punch combo
 	attack1 59 30 55 35 5 0 0 0 12 12
 	frame	data/chars/aldebaran/special25.png
 	attack1 0 
+	frame	data/chars/aldebaran/special25.png
 	delay	10
 	attack1 59 25 83 55 5 1 0 0 12 12
 	dropv 3.0 3.0 0.0
@@ -444,7 +446,8 @@ anim riseattack #Attaque spéciale Punch combo
 	frame	data/chars/aldebaran/special24.png
 	attack1 59 30 55 35 5 0 0 0 12 12
 	frame	data/chars/aldebaran/special25.png
-	attack1 0	
+	attack1 0
+	frame	data/chars/aldebaran/special25.png
 	attack2 59 25 100 75 5 1 0 0 12 12
 	dropv 3.0 3.0 0.0
 	frame	data/chars/aldebaran/special26.png
