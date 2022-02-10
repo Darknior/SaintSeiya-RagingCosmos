@@ -1,0 +1,13 @@
+name	hands
+type	none
+shadow	0
+setlayer 99
+antigravity 100
+
+anim	idle
+	loop	1
+	delay	90
+	offset	82 130
+	frame	data/chars/deathmask/special/hands1.png
+	frame	data/chars/deathmask/special/hands2.png
+	frame	data/chars/deathmask/special/hands1.png
