@@ -22,7 +22,7 @@ makeinv 4 0
 weapons         DSARMA0 DSARMA1 DSARMA2 DSARMA3 DSARMA4 DSARMA5 DSARMA6 DRAGON-SHIRYU
 
 load dragonsuper
-
+script	data/scripts/blink_select.c
 
 
 com  d  -> s  freespecial

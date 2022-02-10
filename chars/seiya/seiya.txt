@@ -38,6 +38,7 @@ icon       	data/chars/seiya/icon.png
 
 
 animationscript	data/scripts/player.c
+script	data/scripts/blink_select.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Météores de Pégase

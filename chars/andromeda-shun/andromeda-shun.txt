@@ -22,6 +22,7 @@ makeinv 4 0
 weapons         ASARMA0 ASARMA1 ASARMA2 ASARMA3 ASARMA4 ASARMA5 ASARMA6 ANDROMEDA-SHUN
 
 
+script	data/scripts/blink_select.c
 
 
 com  d  -> s  freespecial

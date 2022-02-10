@@ -22,7 +22,7 @@ makeinv 4 0
 weapons         CHARMA0 CHARMA1 CHARMA2 CHARMA3 CHARMA4 CHARMA5 CHARMA6 CYGNUS-HYOGA
 
 
-
+script	data/scripts/blink_select.c
 
 
 com  d  -> s  freespecial
