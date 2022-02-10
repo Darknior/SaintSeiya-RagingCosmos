@@ -109,11 +109,9 @@ void spawnbind(void ChildName, void ChildAnim, float OffsetX, float OffsetY, flo
 	
 	changeentityproperty(Child, "parent", self);							//Set child's parent.
 	performattack(Child, openborconstant(ChildAnim));
+  bindentity(Child, self, OffsetX, OffsetY, OffsetZ, Direction, BindFlag);
 
-	
-return Child;
-
-	bindentity(Child, self, OffsetX, OffsetY, OffsetZ, Direction, BindFlag);
+  return Child;
 }
 
 void unbind()
