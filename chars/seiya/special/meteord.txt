@@ -17,6 +17,7 @@ anim	idle
 	drawmethod alpha 1		
 	attack5 0 0 28 22 15 0 0 0 0 20
 	drawmethod rotate 45
+	drawmethod fliprotate 1
 	frame	data/chars/seiya/special/meteor1.png
 	frame	data/chars/seiya/special/meteor2.png
 	frame	data/chars/seiya/special/meteor3.png

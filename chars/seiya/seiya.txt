@@ -192,8 +192,7 @@ anim turn
 	delay	8
 	offset	36 116
 	bbox 21 0 51 112
-	@cmd	keyint "ANI_ATTACKBACKWARD" 0 "A" 0
-	#cancel 0 3 0 A1 freespecial4 
+	cancel 0 3 0 A freespecial4 
 	frame	data/chars/seiya/turn1.png
 	frame	data/chars/seiya/turn2.png
 	frame	data/chars/seiya/turn3.png

@@ -74,5 +74,6 @@ at              0
 #-- BOSS -----------------------------------
 
 spawn           DEATHMASK
-coords          850 410
+boss 			1
+coords          650 410
 at              0
