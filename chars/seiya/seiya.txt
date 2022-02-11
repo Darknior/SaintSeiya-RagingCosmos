@@ -555,7 +555,7 @@ anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	summonframe 0 0 0 0 1
 	subentity comet_back
 	unsummonframe 8	
-	energycost  5 1 0
+	energycost  20 1 0
 	frame	data/chars/seiya/upspecial1.png
 	frame	data/chars/seiya/upspecial2.png
 	frame	data/chars/seiya/upspecial3.png

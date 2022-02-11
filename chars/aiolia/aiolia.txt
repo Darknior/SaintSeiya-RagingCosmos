@@ -1,766 +1,452 @@
+name		aiolia
+health		500
+mp 			100
+speed		20
+type		enemy
+hostile     player npc 
+candamage 	player npc
+aimove      chase
 
-name	AIOLIA
-health	2680
-speed	1
-type	enemy
 
-icon	data/chars/AIOLIA/icon.png
-\\hostile          player
-\\aimove           Wander
-\\aimove           Chase
-\\aimove           Avoid
-aggression       10
-hitenemy          0 0
-blockodds 1
-blocked 1
-noquake 1 1
-nodrop 2
-nodieblink 3
-nomove 1 0
-\\facing 2
-\\subject_to_wall 0
-\\subject_to_hole 0
-\\subject_to_screen 0
-\\subject_to_minz 1
-\\subject_to_maxz 1
-falldie 1
+icon		data/chars/aiolia/icon.png
+
 gfxshadow	1
-load leonesuper
+hitenemy    1 0
+blockodds 	1
+noquake 	1 1
+escapehits  1
+nodieblink 	3
+death 		1
 
-load cosmo
+atchain 1 1 2 3 4 5
 
-anim DEATH
-loop	0
-	offset	220 595
+animationscript	data/scripts/player.c
 
+load lionstar
+load multihit
+#----------------------------------------------------------
+anim spawn
 	delay	10
-
-
-
-
-frame	data/chars/AIOLIA/12.png
-frame	data/chars/AIOLIA/13.png
-frame	data/chars/AIOLIA/14.png
-frame	data/chars/AIOLIA/15.png
-frame	data/chars/AIOLIA/16.png
-frame	data/chars/AIOLIA/17.png
-frame	data/chars/AIOLIA/18.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-frame	data/chars/AIOLIA/20.png
-
-
-
-anim	block
-loop	0
-	offset	220 595
-
-
-	delay	10
-
-subentity cosmo
-summonframe 2 100 430 0 1
-dropv 4 1 0
-	
-	bbox.position.x 172
-	bbox.position.y 462
-	bbox.size.x 97
-	bbox.size.y 146
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/000.png	
-frame	data/chars/AIOLIA/0000.png	
-frame	data/chars/AIOLIA/null.png	
-
-
-
-
-
-
-
-
-
+	offset	73 126
+	frame	data/chars/aiolia/spawn1.png
+	frame	data/chars/aiolia/spawn2.png
+	frame	data/chars/aiolia/spawn3.png
+	frame	data/chars/aiolia/spawn4.png
+	frame	data/chars/aiolia/spawn5.png
+	frame	data/chars/aiolia/spawn6.png
+	frame	data/chars/aiolia/spawn7.png
+	frame	data/chars/aiolia/spawn8.png
+	frame	data/chars/aiolia/spawn9.png
+	frame	data/chars/aiolia/spawn10.png
+	frame	data/chars/aiolia/spawn11.png
+	frame	data/chars/aiolia/spawn12.png
+	frame	data/chars/aiolia/spawn13.png
+	frame	data/chars/aiolia/spawn14.png
+	frame	data/chars/aiolia/spawn15.png
+	frame	data/chars/aiolia/spawn16.png
+	frame	data/chars/aiolia/spawn17.png
+	frame	data/chars/aiolia/spawn18.png
+	frame	data/chars/aiolia/spawn19.png
+	frame	data/chars/aiolia/spawn20.png
+	frame	data/chars/aiolia/spawn21.png
+	frame	data/chars/aiolia/spawn22.png
+	frame	data/chars/aiolia/spawn23.png
+	frame	data/chars/aiolia/spawn24.png	
 
 anim idle
 	loop	1
+	delay	40
+	offset	35 134
+	bbox 19 17 38 117
+	frame	data/chars/aiolia/idle1.png		frame	data/chars/aiolia/idle1.png
 	delay	10
-	offset	220 595
-dropv 4 1 0
-	attack.damage.force 10
-	attack.position.x 114
-	attack.position.y 83
-	attack.reaction.fall.force 1
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 210
-	attack.size.y 730
-	bbox.position.x 178
-	bbox.position.y 462
-	bbox.size.x 83
-	bbox.size.y 141
-frame	data/chars/AIOLIA/01.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.reaction.fall.force 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/01.png
-
+	frame	data/chars/aiolia/idle2.png
+	frame	data/chars/aiolia/idle3.png
+	frame	data/chars/aiolia/idle4.png
+	frame	data/chars/aiolia/idle5.png
+	frame	data/chars/aiolia/idle6.png
+	frame	data/chars/aiolia/idle7.png
+	frame	data/chars/aiolia/idle8.png
+	frame	data/chars/aiolia/idle9.png
+	frame	data/chars/aiolia/idle10.png
+	frame	data/chars/aiolia/idle11.png
+	frame	data/chars/aiolia/idle12.png
+	frame	data/chars/aiolia/idle13.png
+	frame	data/chars/aiolia/idle14.png
+	frame	data/chars/aiolia/idle13.png
+	frame	data/chars/aiolia/idle12.png
+	frame	data/chars/aiolia/idle11.png
+	frame	data/chars/aiolia/idle10.png
+	frame	data/chars/aiolia/idle9.png
+	frame	data/chars/aiolia/idle8.png
+	frame	data/chars/aiolia/idle7.png
+	frame	data/chars/aiolia/idle6.png
+	frame	data/chars/aiolia/idle5.png
+	frame	data/chars/aiolia/idle4.png
+	frame	data/chars/aiolia/idle3.png
+	frame	data/chars/aiolia/idle2.png
+	
+anim sleep
+	loop	1
+	delay	40
+	offset	29 128
+	bbox 10 17 38 117
+	frame	data/chars/aiolia/sleep1.png
+	frame	data/chars/aiolia/sleep2.png
 
 anim walk
 	loop	1
-	delay	10
-	offset	220 595
-dropv 4 1 0
-	bbox.position.x 181
-	bbox.position.y 463
-	bbox.size.x 78
-	bbox.size.y 147
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.reaction.fall.force 0
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/01.png
-
-
-
-
-
-
-anim pain
-    loop	0
+	delay	15
+	offset	35 134
+	bbox 19 17 38 117
+	frame	data/chars/aiolia/walk1.png
+	frame	data/chars/aiolia/walk2.png
+	frame	data/chars/aiolia/walk3.png
+	frame	data/chars/aiolia/walk4.png
+	frame	data/chars/aiolia/walk5.png
+	frame	data/chars/aiolia/walk6.png
 	
+anim run
+	loop	1
+	delay	15
+	offset	51 136
+	bbox 37 19 38 117
+	frame	data/chars/aiolia/run1.png
+	frame	data/chars/aiolia/run2.png
+	frame	data/chars/aiolia/run3.png
+	frame	data/chars/aiolia/run4.png
+	frame	data/chars/aiolia/run5.png
+	
+anim runattack # Attaque en courant
+	delay	7
+	offset	50 136
+	bbox 31 17 38 117
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/aiolia/runattack1.png
+	frame	data/chars/aiolia/runattack2.png
+	frame	data/chars/aiolia/runattack3.png
+	attack2 60 40 88 40 20 1 0 0 5 12
+	frame	data/chars/aiolia/runattack4.png
+	frame	data/chars/aiolia/runattack1.png
+	frame	data/chars/aiolia/runattack6.png
+	attack2 0 0 0 0 0 0 0 0 0 0
+	@cmd	stop
+	delay	12
+	frame	data/chars/aiolia/runattack1.png
+	frame	data/chars/aiolia/runattack4.png
+	
+anim freespecial # Attaque en courant
+	delay	7
+	offset	50 136
+	bbox 31 17 38 117
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/aiolia/runattack1.png
+	frame	data/chars/aiolia/runattack2.png
+	frame	data/chars/aiolia/runattack3.png
+	attack2 60 40 88 40 20 1 0 0 5 12
+	frame	data/chars/aiolia/runattack4.png
+	frame	data/chars/aiolia/runattack1.png
+	frame	data/chars/aiolia/runattack6.png
+	attack2 0 0 0 0 0 0 0 0 0 0
+	@cmd	stop
+	delay	12
+	frame	data/chars/aiolia/runattack1.png
+	frame	data/chars/aiolia/runattack4.png
+	
+anim pain # Up
 	delay	5
-offset	220 595
-dropv 4 1 0
-	attack.damage.force 10
-	attack.position.x 122
-	attack.position.y 290
-	attack.reaction.fall.force 1
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 200
-	attack.size.y 440
-frame	data/chars/AIOLIA/00.png
-frame	data/chars/AIOLIA/00.png
+	offset	45 137
+	bbox 19 17 38 117
+	frame	data/chars/aiolia/pain1.png
+	frame	data/chars/aiolia/pain2.png
+	frame	data/chars/aiolia/pain3.png
+	frame	data/chars/aiolia/pain4.png
+	frame	data/chars/aiolia/pain3.png
+	frame	data/chars/aiolia/pain2.png
+	frame	data/chars/aiolia/pain1.png
 	
-
-
-        
+anim pain2 # Down
+	delay	5
+	offset	35 131
+	bbox 19 17 38 117
+	frame	data/chars/aiolia/pain21.png
+	frame	data/chars/aiolia/pain22.png
+	frame	data/chars/aiolia/pain23.png
+	frame	data/chars/aiolia/pain22.png
+	frame	data/chars/aiolia/pain21.png
 
 anim fall
-
-
-
-
-
+	delay	10
+	offset	124 135
+	landframe 4
+	frame	data/chars/aiolia/fall1.png
+	frame	data/chars/aiolia/fall2.png
+	frame	data/chars/aiolia/fall3.png
+	frame	data/chars/aiolia/fall4.png
+	frame	data/chars/aiolia/fall5.png
+	
+anim death
+	delay	10
+	offset	70 128
+	frame	data/chars/aiolia/death1.png
+	frame	data/chars/aiolia/death2.png
+	frame	data/chars/aiolia/death3.png
+	frame	data/chars/aiolia/death4.png
+	frame	data/chars/aiolia/death5.png
+	frame	data/chars/aiolia/death6.png
+	frame	data/chars/aiolia/death7.png
+	frame	data/chars/aiolia/death8.png
+	frame	data/chars/aiolia/death9.png
+	frame	data/chars/aiolia/death10.png
+	frame	data/chars/aiolia/death11.png
+	frame	data/chars/aiolia/death12.png
+	frame	data/chars/aiolia/death13.png	
 
 anim rise
-        loop	0
-	offset	220 595
+	offset	124 135
 	delay	10
+	frame	data/chars/aiolia/rise1.png
+	frame	data/chars/aiolia/rise2.png
+	frame	data/chars/aiolia/rise3.png
+	frame	data/chars/aiolia/rise4.png	
 
-dropv 4 1 0
+anim attack1 # Attaque combo 1
+	delay	5
+	offset	35 134
+	bbox 19 17 38 117
+	frame	data/chars/aiolia/attack1.png
+	attack1 36 37 72 25 10 0 0 0 5 12
+	frame	data/chars/aiolia/attack2.png
+	frame	data/chars/aiolia/attack3.png
+	attack1 0
 
-frame	data/chars/AIOLIA/01.png
-frame	data/chars/AIOLIA/01.png
+anim attack2 # Attaque combo 2
+	delay	5
+	offset	35 134
+	bbox 19 17 38 117
+	frame	data/chars/aiolia/attack21.png
+	attack1 56 36 70 29 10 0 0 0 5 12
+	frame	data/chars/aiolia/attack22.png
+	frame	data/chars/aiolia/attack23.png
+	attack1 0
+	frame	data/chars/aiolia/attack23.png	
 
-
+anim attack3 # Attaque combo 3
+	delay	10
+	offset	29 137
+	bbox 19 17 38 117
+	frame	data/chars/aiolia/attack31.png
+	frame	data/chars/aiolia/attack31.png
+	attack1 46 25 67 56 10 0 0 0 5 12
+	frame	data/chars/aiolia/attack32.png
+	frame	data/chars/aiolia/attack32.png
+	attack1 0
+	frame	data/chars/aiolia/attack31.png
+	
+anim attack4 # Attaque combo 4
+	delay	10
+	offset	38 138
+	bbox 19 17 38 117
+	hitflash flashmedium
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/aiolia/attack41.png
+	attack1 62 46 67 26 10 0 0 0 5 12
+	frame	data/chars/aiolia/attack42.png
+	frame	data/chars/aiolia/attack42.png
+	frame	data/chars/aiolia/attack42.png
+	attack1 0
+	frame	data/chars/aiolia/attack41.png
+	
+anim attack5 # Attaque combo 5
+	delay	8
+	offset	41 137
+	bbox 19 17 38 117
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/aiolia/attack51.png
+	attack1 82 42 78 56 20 1 0 0 5 12
+	dropv 4.0 1.0 0.0
+	frame	data/chars/aiolia/attack52.png
+	frame	data/chars/aiolia/attack53.png
+	frame	data/chars/aiolia/attack54.png
+	attack1 0
+	frame	data/chars/aiolia/attack55.png
+	frame	data/chars/aiolia/attack56.png
+	frame	data/chars/aiolia/attack57.png
 	
 
-
-anim attack1
-
- range	-1000 1000
-        loop	0
-	offset	220 595
-	delay	6
-
-sound data/chars/AIOLIA/01.wav
-
-
-
-dropv 4 1 0
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/02.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/03.png
-	attack.damage.force 50
-	attack.position.x 12
-	attack.position.y -24
-	attack.size.x 1000
-	attack.size.y 942
-frame	data/chars/AIOLIA/21.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/22.png
-	attack.damage.force 50
-	attack.position.x -5
-	attack.position.y -18
-	attack.size.x 1000
-	attack.size.y 985
-frame	data/chars/AIOLIA/23.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/24.png
-	attack.damage.force 50
-	attack.position.x -36
-	attack.position.y 27
-	attack.size.x 1000
-	attack.size.y 985
-frame	data/chars/AIOLIA/25.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/26.png
-	attack.damage.force 50
-	attack.position.x -24
-	attack.position.y -45
-	attack.size.x 1000
-	attack.size.y 1000
-frame	data/chars/AIOLIA/27.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/28.png
-	attack.damage.force 50
-	attack.position.x -33
-	attack.position.y -51
-	attack.size.x 1000
-	attack.size.y 1000
-frame	data/chars/AIOLIA/29.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/30.png
-	attack.damage.force 50
-	attack.position.x -39
-	attack.position.y -61
-	attack.size.x 1000
-	attack.size.y 1000
-frame	data/chars/AIOLIA/31.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/32.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y -85
-	attack.size.x 1000
-	attack.size.y 988
-frame	data/chars/AIOLIA/04.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/05.png
-	attack.damage.force 50
-	attack.position.x -11
-	attack.position.y 18
-	attack.size.x 1000
-	attack.size.y 955
-frame	data/chars/AIOLIA/06.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/07.png
-
-	attack.damage.force 50
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/02.png
-	attack.damage.force 50
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/02.png
-	attack.damage.force 50
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/02.png
+anim jump # Saut Statique
+	delay	10
+	offset	44 137
+	bbox 19 17 38 80
+	frame	data/chars/aiolia/jump1.png
+	frame	data/chars/aiolia/jump2.png
+	frame	data/chars/aiolia/jump1.png
 	
+anim jumpdelay # Animation de saut intermédiaire
+	delay	10
+	offset	44 137
+	bbox 28 17 38 80
+	frame	data/chars/aiolia/jump2.png
 
-
-
-
-
-
-anim attack2
- range	-1000 1000
-        loop	0
-	offset	220 595
-	delay	6
-
-sound data/chars/AIOLIA/02.wav
-dropv 4 1 0
-custknife	leonesuper
-	throwframe	4
-
-
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/02.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/03.png
-	attack.damage.force 50
-	attack.position.x 55
-	attack.position.y 436
-	attack.size.x 378
-	attack.size.y 231
-frame	data/chars/AIOLIA/08.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/09.png
-	attack.damage.force 50
-	attack.position.x 49
-	attack.position.y 433
-	attack.size.x 354
-	attack.size.y 222
-frame	data/chars/AIOLIA/10.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/11.png
-	attack.damage.force 50
-	attack.position.x 55
-	attack.position.y 436
-	attack.size.x 378
-	attack.size.y 231
-frame	data/chars/AIOLIA/08.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/09.png
-	attack.damage.force 50
-	attack.position.x 49
-	attack.position.y 433
-	attack.size.x 354
-	attack.size.y 222
-frame	data/chars/AIOLIA/10.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/11.png
-	attack.damage.force 50
-	attack.position.x 55
-	attack.position.y 436
-	attack.size.x 378
-	attack.size.y 231
-frame	data/chars/AIOLIA/08.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/09.png
-	attack.damage.force 50
-	attack.position.x 49
-	attack.position.y 433
-	attack.size.x 354
-	attack.size.y 222
-frame	data/chars/AIOLIA/10.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/11.png
-	attack.damage.force 50
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/02.png
-	attack.damage.force 50
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/02.png
-	attack.damage.force 50
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/AIOLIA/02.png
-
-
-
-
-
-anim attack3
+anim jumpland # Aterrissage du saut
+	delay	8
+	offset	32 134
+	bbox 16 30 38 106
+	frame	data/chars/aiolia/get1.png
+	frame	data/chars/aiolia/get2.png
+	frame	data/chars/aiolia/get3.png
+	frame	data/chars/aiolia/get2.png
+	frame	data/chars/aiolia/get1.png
 	
+anim jumpattack # Attaque sautée statique
+	delay	10
+	offset	44 137
+	bbox 19 17 38 80
+	sound data/sounds/punch.wav	
+	frame	data/chars/aiolia/jumpattack1.png
+	dropv 4.0 1.0 0.0
+	attack1 62 51 75 26 10 1 0 0 5 12
+	frame	data/chars/aiolia/jumpattack2.png
+	attack1 0
 
-
-
-anim jump
+anim special # Défense spéciale multihit
+	delay	15
+	offset	28 128
+	sound data/chars/aiolia/02.wav
+	hitflash flashbig
+	summonframe 0 0 0 0 1
+	subentity multihit
+	unsummonframe 8
+	energycost  20 1 0
+	attack1 -50 0 160 150 2 0 0 0 0 20
+	frame	data/chars/aiolia/special1.png
+	attack1 0
+	attack1 -50 0 160 150 2 0 0 0 0 20
+	frame	data/chars/aiolia/special2.png
+	attack1 0
+	attack1 -50 0 160 150 2 0 0 0 0 20
+	frame	data/chars/aiolia/special3.png
+	attack1 -50 0 160 150 2 0 0 0 0 20
+	frame	data/chars/aiolia/special5.png
+	attack1 0
+	attack1 -50 0 160 150 2 0 0 0 0 20
+	frame	data/chars/aiolia/special6.png
+	attack1 0
+	attack1 -50 0 160 150 2 0 0 0 0 20
+	frame	data/chars/aiolia/special7.png
+	attack1 0	
+	attack1 -50 0 160 150 10 1 0 0 0 20
+	frame	data/chars/aiolia/special8.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
 	
-
-    
-
-
-anim jumpattack
+anim freespecial2 # Défense spéciale multihit
+	delay	10
+	offset	29 128
+	sound data/chars/aiolia/02.wav
+	hitflash flashbig
+	range 	50 80
+	summonframe 0 0 0 0 1
+	subentity multihit
+	unsummonframe 8
+	energycost  20 1 0
+	attack1 -50 0 160 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special1.png
+	attack1 0
+	attack1 -50 0 160 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special2.png
+	attack1 0
+	attack1 -50 0 160 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special3.png
+	attack1 -50 0 160 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special5.png
+	attack1 0
+	attack1 -50 0 160 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special6.png
+	attack1 0
+	attack1 -50 0 160 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special7.png
+	attack1 0	
+	attack1 -50 0 160 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special8.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
 	
-
-
-
-
-
-
-
-
+anim special2 #Défense spéciale multihit
+	delay	10
+	offset	29 128
+	sound data/chars/aiolia/02.wav
+	hitflash flashbig
+	range 	70 100
+	summonframe 0 0 0 0 1
+	subentity multihit
+	unsummonframe 8
+	energycost  20 1 0
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special1.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special2.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special3.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special5.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special6.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special7.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special8.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	
+anim freespecial3 #Lion star shot
+	fastattack 1
+	forcedirection -1
+	range 200 400
+	delay	10
+	offset	35 128
+	energycost  15 1 0
+	frame	data/chars/aiolia/special21.png
+	frame	data/chars/aiolia/special22.png
+	frame	data/chars/aiolia/special23.png
+	frame	data/chars/aiolia/special24.png
+	@cmd	shooter "lionstar" 0 80 0 2 0 0
+	frame	data/chars/aiolia/special24.png
+	frame	data/chars/aiolia/special23.png
+	frame	data/chars/aiolia/special22.png
+	frame	data/chars/aiolia/special21.png		
+anim riseattack #Attaque spéciale Punch combo
+	delay	15
+	offset	28 128
+	sound data/chars/aiolia/02.wav
+	hitflash flashbig
+	summonframe 0 0 0 0 1
+	subentity multihit
+	unsummonframe 8
+	energycost  20 1 0
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special1.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special2.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special3.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special5.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special6.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special7.png
+	attack1 -70 0 200 150 2 0 0 0 12 12
+	frame	data/chars/aiolia/special8.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	
+anim	block
+	offset	24 132
+	bbox 8 17 38 117
+	frame	data/chars/aiolia/block1.png
+	frame	data/chars/aiolia/block2.png
+	frame	data/chars/aiolia/block1.png

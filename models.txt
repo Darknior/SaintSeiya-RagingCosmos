@@ -41,6 +41,8 @@ know    runtaurus       data/chars/aldebaran/special/runtaurus.txt
 know    dimension_back  data/chars/gemini/special/dimension_back.txt
 know    circles         data/chars/deathmask/special/circles.txt
 know    hands         	data/chars/deathmask/special/hands.txt
+know    lionstar        data/chars/aiolia/special/lionstar.txt
+know    multihit        data/chars/aiolia/special/multihit.txt
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt

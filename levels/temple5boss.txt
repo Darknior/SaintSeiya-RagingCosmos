@@ -41,5 +41,6 @@ at          0
 #-- BOSS -----------------------------------
 
 spawn       aiolia
-coords      850 390
+boss 		1
+coords      650 390
 at          0
