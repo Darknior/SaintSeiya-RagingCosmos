@@ -1,0 +1,37 @@
+name	lionstar
+type	none
+candamage player
+shadow	0
+setlayer 2
+antigravity 100
+remove 0
+lifespan  6
+
+anim	idle
+	loop	1
+	delay	8
+	offset	72 80
+	drawmethod alpha 1
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/lionstar1.png
+	attack1 0
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/lionstar2.png
+	attack1 0
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/lionstar3.png
+	attack1 0
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/lionstar4.png
+	attack1 0
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/lionstar5.png
+	attack1 0
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/lionstar6.png
+	attack1 0
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/lionstar7.png
+	attack1 0
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/lionstar8.png

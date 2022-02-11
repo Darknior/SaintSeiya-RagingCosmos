@@ -1,0 +1,25 @@
+name	multihit
+type	panel
+speed	10
+shadow	0
+setlayer 2
+antigravity 100
+lifespan  2
+
+anim	idle
+	loop	1
+	delay	10
+	offset	330 0
+	drawmethod scale 2.5 2.5	
+	drawmethod alpha 1
+	frame	data/chars/aiolia/special/multihit1.png
+	frame	data/chars/aiolia/special/multihit2.png
+	frame	data/chars/aiolia/special/multihit3.png
+	frame	data/chars/aiolia/special/multihit4.png
+	frame	data/chars/aiolia/special/multihit5.png
+	frame	data/chars/aiolia/special/multihit6.png
+	frame	data/chars/aiolia/special/multihit7.png
+	frame	data/chars/aiolia/special/multihit8.png
+	frame	data/chars/aiolia/special/multihit9.png
+	frame	data/chars/aiolia/special/multihit10.png
+	frame	data/chars/aiolia/special/multihit11.png
