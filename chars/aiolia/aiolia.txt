@@ -313,6 +313,7 @@ anim jumpattack # Attaque sautée statique
 	attack1 0
 
 anim special # Défense spéciale multihit
+	fastattack 1
 	delay	15
 	offset	28 128
 	sound data/chars/aiolia/02.wav
@@ -324,26 +325,22 @@ anim special # Défense spéciale multihit
 	attack1 -50 0 160 150 2 0 0 0 0 20
 	frame	data/chars/aiolia/special1.png
 	attack1 0
-	attack1 -50 0 160 150 2 0 0 0 0 20
 	frame	data/chars/aiolia/special2.png
-	attack1 0
 	attack1 -50 0 160 150 2 0 0 0 0 20
 	frame	data/chars/aiolia/special3.png
-	attack1 -50 0 160 150 2 0 0 0 0 20
-	frame	data/chars/aiolia/special5.png
 	attack1 0
+	frame	data/chars/aiolia/special5.png
 	attack1 -50 0 160 150 2 0 0 0 0 20
 	frame	data/chars/aiolia/special6.png
 	attack1 0
-	attack1 -50 0 160 150 2 0 0 0 0 20
 	frame	data/chars/aiolia/special7.png
-	attack1 0	
 	attack1 -50 0 160 150 10 1 0 0 0 20
 	frame	data/chars/aiolia/special8.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
 	
 anim freespecial2 # Défense spéciale multihit
+	fastattack 1
 	delay	10
 	offset	29 128
 	sound data/chars/aiolia/02.wav
@@ -356,26 +353,22 @@ anim freespecial2 # Défense spéciale multihit
 	attack1 -50 0 160 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special1.png
 	attack1 0
-	attack1 -50 0 160 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special2.png
-	attack1 0
 	attack1 -50 0 160 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special3.png
-	attack1 -50 0 160 150 2 0 0 0 12 12
-	frame	data/chars/aiolia/special5.png
 	attack1 0
+	frame	data/chars/aiolia/special5.png
 	attack1 -50 0 160 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special6.png
 	attack1 0
-	attack1 -50 0 160 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special7.png
-	attack1 0	
 	attack1 -50 0 160 150 10 1 0 0 12 12
 	frame	data/chars/aiolia/special8.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
 	
 anim special2 #Défense spéciale multihit
+	fastattack 1
 	delay	10
 	offset	29 128
 	sound data/chars/aiolia/02.wav
@@ -387,15 +380,15 @@ anim special2 #Défense spéciale multihit
 	energycost  20 1 0
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special1.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
+	attack1 0
 	frame	data/chars/aiolia/special2.png
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special3.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
+	attack1 0
 	frame	data/chars/aiolia/special5.png
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special6.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
+	attack1 0
 	frame	data/chars/aiolia/special7.png
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special8.png
@@ -417,8 +410,10 @@ anim freespecial3 #Lion star shot
 	frame	data/chars/aiolia/special24.png
 	frame	data/chars/aiolia/special23.png
 	frame	data/chars/aiolia/special22.png
-	frame	data/chars/aiolia/special21.png		
+	frame	data/chars/aiolia/special21.png
+
 anim riseattack #Attaque spéciale Punch combo
+	fastattack 1
 	delay	15
 	offset	28 128
 	sound data/chars/aiolia/02.wav
@@ -429,15 +424,15 @@ anim riseattack #Attaque spéciale Punch combo
 	energycost  20 1 0
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special1.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
+	attack1 0
 	frame	data/chars/aiolia/special2.png
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special3.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
+	attack1 0
 	frame	data/chars/aiolia/special5.png
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special6.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
+	attack1 0
 	frame	data/chars/aiolia/special7.png
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special8.png
