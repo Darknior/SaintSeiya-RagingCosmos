@@ -73,7 +73,7 @@ at              0
 
 #-- BOSS -----------------------------------
 
-spawn           DEATHMASK
+spawn           deathmask
 boss 			1
 coords          650 410
 at              0

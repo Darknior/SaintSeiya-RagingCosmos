@@ -1,768 +1,466 @@
+name		shaka
+health		500
+mp 			100
+speed		20
+type		enemy
+hostile     player npc 
+candamage 	player npc
+aimove      chase
 
-name	SHAKA
-health	2680
-speed	1
-type	enemy
 
-icon	data/chars/SHAKA/icon.png
-\\hostile          player
-\\aimove           Wander
-\\aimove           Chase
-\\aimove           Avoid
-aggression       -100
-hitenemy          0 0
-blockodds 1
-blocked 1
-noquake 1 1
-nodrop 2
-nodieblink 3
-nomove 1 0
-\\facing 2
-\\subject_to_wall 0
-\\subject_to_hole 0
-\\subject_to_screen 0
-\\subject_to_minz 1
-\\subject_to_maxz 1
-falldie 1
+icon		data/chars/shaka/icon.png
+
 gfxshadow	1
-load cosmo
+hitenemy    1 0
+blockodds 	1
+noquake 	1 1
+escapehits  1
+nodieblink 	3
+death 		1
 
-anim DEATH
-loop	0
-	offset	220 246
+atchain 1 1 2 3 4 5
 
-	delay	10
+animationscript	data/scripts/player.c
 
-
-
-frame	data/chars/SHAKA/11.png
-frame	data/chars/SHAKA/12.png
-frame	data/chars/SHAKA/13.png
-frame	data/chars/SHAKA/14.png
-frame	data/chars/SHAKA/15.png
-frame	data/chars/SHAKA/16.png
-frame	data/chars/SHAKA/17.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-frame	data/chars/SHAKA/20.png
-
-
-
-anim	block
-loop	0
-	offset	220 246
-
-
-	delay	10
-
-subentity cosmo
-summonframe 2 100 430 0 1
-	dropv 4 1 0
-	
-	bbox.position.x 186
-	bbox.position.y 113
-	bbox.size.x 73
-	bbox.size.y 147
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/00.png	
-frame	data/chars/SHAKA/000.png	
-frame	data/chars/SHAKA/null.png	
-
-
-
-
-
-
-
-
-
+load dimension_back
+#----------------------------------------------------------
+anim spawn
+	delay	20
+	offset	69 176
+	frame	data/chars/shaka/spawn1.png
+	frame	data/chars/shaka/spawn2.png
+	frame	data/chars/shaka/spawn3.png
+	frame	data/chars/shaka/spawn4.png
+	frame	data/chars/shaka/spawn5.png
+	frame	data/chars/shaka/spawn6.png
+	frame	data/chars/shaka/spawn7.png
+	frame	data/chars/shaka/spawn8.png
+	frame	data/chars/shaka/spawn9.png
+	frame	data/chars/shaka/spawn10.png
+	frame	data/chars/shaka/spawn11.png
+	frame	data/chars/shaka/spawn12.png
+	frame	data/chars/shaka/spawn13.png
+	frame	data/chars/shaka/spawn14.png
+	frame	data/chars/shaka/spawn15.png
+	frame	data/chars/shaka/spawn16.png
+	frame	data/chars/shaka/spawn17.png
+	frame	data/chars/shaka/spawn18.png
 
 anim idle
 	loop	1
-	delay	10
-	offset	220 246
-	dropv 4 1 0
-	attack.damage.force 10
-	attack.position.x 121
-	attack.position.y -210
-	attack.reaction.fall.force 1
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 201
-	attack.size.y 627
-	bbox.position.x 193
-	bbox.position.y 119
-	bbox.size.x 60
-	bbox.size.y 133
-frame	data/chars/SHAKA/01.png
+	delay	25
+	offset	66 144
+	bbox 46 13 38 137
+	frame	data/chars/shaka/idle1.png
+	frame	data/chars/shaka/idle2.png
+	frame	data/chars/shaka/idle3.png
+	frame	data/chars/shaka/idle4.png
+
+anim sleep
+	loop	1 4 7
+	delay	25
+	offset	46 157
+	bbox 19 6 38 151
+	frame	data/chars/aldebaran/sleep1.png
+	frame	data/chars/aldebaran/sleep2.png
+	frame	data/chars/aldebaran/sleep3.png
+	frame	data/chars/aldebaran/sleep4.png
+	frame	data/chars/aldebaran/sleep5.png
+	frame	data/chars/aldebaran/sleep6.png
+	frame	data/chars/aldebaran/sleep5.png	
 	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.reaction.fall.force 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/01.png
-
-
 anim walk
 	loop	1
-	delay	10
-	offset	220 246
-	dropv 4 1 0
-	bbox.position.x 185
-	bbox.position.y 106
-	bbox.size.x 81
-	bbox.size.y 153
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/01.png
-
-
-
-
-
-
-anim pain
-    loop	0
+	delay	15
+	offset	117 150
+	bbox 102 18 38 132
+	frame	data/chars/shaka/walk1.png
+	frame	data/chars/shaka/walk2.png
+	frame	data/chars/shaka/walk3.png
+	frame	data/chars/shaka/walk4.png
 	
+anim run
+	loop	1
+	delay	15
+	offset	117 150
+	bbox 102 18 38 132
+	frame	data/chars/shaka/run1.png
+	frame	data/chars/shaka/run2.png
+	frame	data/chars/shaka/run3.png
+	frame	data/chars/shaka/run4.png
+	frame	data/chars/shaka/run5.png
+	frame	data/chars/shaka/run6.png	
+	
+anim runattack # Attaque en courant
+	delay	7
+	offset	94 144
+	bbox 78 9 38 137
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/shaka/runattack1.png
+	frame	data/chars/shaka/runattack2.png
+	attack2 115 40 62 61 20 1 0 0 5 12
+	frame	data/chars/shaka/runattack3.png
+	frame	data/chars/shaka/runattack3.png
+	frame	data/chars/shaka/runattack3.png
+	frame	data/chars/shaka/runattack3.png
+	attack2 0 0 0 0 0 0 0 0 0 0
+	@cmd	stop
+	delay	12
+	frame	data/chars/shaka/runattack2.png
+	frame	data/chars/shaka/runattack1.png
+	
+anim freespecial # Attaque en courant
+	delay	7
+	offset	94 144
+	bbox 78 9 38 137
+	forcedirection -1
+	range 	80 175
+	rangea 	0 100
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/shaka/runattack1.png
+	frame	data/chars/shaka/runattack2.png
+	attack2 115 40 62 61 20 1 0 0 5 12
+	frame	data/chars/shaka/runattack3.png
+	frame	data/chars/shaka/runattack3.png
+	frame	data/chars/shaka/runattack3.png
+	frame	data/chars/shaka/runattack3.png
+	attack2 0 0 0 0 0 0 0 0 0 0
+	@cmd	stop
+	delay	12
+	frame	data/chars/shaka/runattack2.png
+	frame	data/chars/shaka/runattack1.png
+	
+anim pain # Up
 	delay	5
-offset	220 246
-	dropv 4 1 0
-	attack.damage.force 10
-	attack.position.x 113
-	attack.position.y -255
-	attack.reaction.fall.force 1
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 215
-	attack.size.y 654
-frame	data/chars/SHAKA/02.png
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.reaction.fall.force 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/02.png
+	offset	58 170
+	bbox 46 33 38 137
+	frame	data/chars/shaka/pain1.png
+	frame	data/chars/shaka/pain2.png
+	frame	data/chars/shaka/pain1.png	
 	
-
-
-        
+anim pain2 # Down
+	delay	5
+	offset	42 150
+	bbox 25 18 38 132
+	frame	data/chars/shaka/pain21.png
+	frame	data/chars/shaka/pain22.png
+	frame	data/chars/shaka/pain21.png	
 
 anim fall
-
-
-
-
-
+	delay	10
+	offset	146 144
+	landframe 4
+	frame	data/chars/shaka/fall1.png
+	frame	data/chars/shaka/fall2.png
+	frame	data/chars/shaka/fall3.png
+	frame	data/chars/shaka/fall4.png
+	frame	data/chars/shaka/fall5.png
+	
+anim death
+	delay	40
+	offset	90 150
+	frame	data/chars/shaka/death1.png
+	frame	data/chars/shaka/death2.png
+	offset	90 126
+	frame	data/chars/shaka/death3.png
+	delay	150
+	frame	data/chars/shaka/death3.png
+	delay	10
+	offset	69 176
+	frame	data/chars/shaka/spawn5.png
+	frame	data/chars/shaka/spawn4.png
+	frame	data/chars/shaka/spawn3.png
+	frame	data/chars/shaka/spawn2.png
+	frame	data/chars/shaka/spawn1.png
 
 anim rise
-        loop	0
-	offset	220 246
+	offset	146 144
 	delay	10
+	frame	data/chars/shaka/rise1.png
+	frame	data/chars/shaka/rise2.png
+	frame	data/chars/shaka/rise3.png
+	frame	data/chars/shaka/rise4.png
+	frame	data/chars/shaka/rise5.png
 
-dropv 4 1 0
+anim attack1 # Attaque combo 1
+	delay	5
+	offset	129 144
+	bbox 108 13 38 137
+	frame	data/chars/shaka/attack1.png
+	frame	data/chars/shaka/attack2.png	
+	attack1 132 27 60 25 10 0 0 0 5 12
+	frame	data/chars/shaka/attack3.png
+	frame	data/chars/shaka/attack4.png
 
-frame	data/chars/SHAKA/01.png
-frame	data/chars/SHAKA/01.png
+anim attack2 # Attaque combo 2
+	delay	5
+	offset	129 144
+	bbox 108 13 38 137
+	frame	data/chars/shaka/attack21.png
+	frame	data/chars/shaka/attack22.png
+	frame	data/chars/shaka/attack23.png	
+	attack1 132 27 60 25 10 0 0 0 5 12
+	frame	data/chars/shaka/attack24.png
+	frame	data/chars/shaka/attack25.png
+	frame	data/chars/shaka/attack26.png	
 
-
+anim attack3 # Attaque combo 3
+	delay	5
+	offset	129 144
+	bbox 108 13 38 137
+	frame	data/chars/shaka/attack31.png
+	frame	data/chars/shaka/attack32.png
+	frame	data/chars/shaka/attack33.png
+	frame	data/chars/shaka/attack34.png	
+	attack1 109 57 82 42 10 0 0 0 5 12
+	frame	data/chars/shaka/attack35.png
+	frame	data/chars/shaka/attack36.png	
+	attack1 0
+	frame	data/chars/shaka/attack37.png
 	
+anim attack4 # Attaque combo 4
+	delay	5
+	offset	115 142
+	bbox 99 23 38 126
+	hitflash flashmedium
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/shaka/attack41.png
+	frame	data/chars/shaka/attack42.png
+	attack1 120 109 71 43 10 0 0 0 5 12
+	frame	data/chars/shaka/attack43.png
+	frame	data/chars/shaka/attack43.png
+	attack1 0
+	frame	data/chars/shaka/attack41.png
+	
+anim attack5 # Attaque combo 5
+	delay	12
+	offset	129 144
+	bbox 108 13 38 137
+	hitflash flashbig
+	frame	data/chars/shaka/attack51.png
+	frame	data/chars/shaka/attack52.png
+	attack1 120 31 87 26 20 1 0 0 5 12
+	dropv 4.0 1.0 0.0
+	frame	data/chars/shaka/attack53.png
+	frame	data/chars/shaka/attack54.png
+	attack1 0
 
+anim jump # Saut Statique
+	delay	8
+	offset	75 171
+	bbox 59 40 35 71
+	frame	data/chars/shaka/jump1.png
+	frame	data/chars/shaka/jump2.png
+	frame	data/chars/shaka/jump3.png
+	frame	data/chars/shaka/jump4.png
+	frame	data/chars/shaka/jump5.png
+	frame	data/chars/shaka/jump6.png	
+	frame	data/chars/shaka/jump5.png	
+	frame	data/chars/shaka/jump3.png
+	frame	data/chars/shaka/jump2.png
+	frame	data/chars/shaka/jump1.png
+	
+anim jumpdelay # Animation de saut intermédiaire
+	delay	10
+	offset	75 171
+	bbox 59 40 35 71
+	frame	data/chars/shaka/jump2.png
 
-anim attack1
+anim jumpland # Aterrissage du saut
+	delay	8
+	offset	75 171
+	bbox 59 73 35 71
+	frame	data/chars/shaka/get1.png
+	frame	data/chars/shaka/get2.png
+	frame	data/chars/shaka/get3.png
+	frame	data/chars/shaka/get2.png
+	frame	data/chars/shaka/get1.png
+	
+anim jumpattack # Attaque sautée statique
+	delay	8
+	offset	75 171
+	bbox 59 40 35 71
+	sound data/sounds/punch.wav
+	frame	data/chars/shaka/jumpattack1.png
+	frame	data/chars/shaka/jumpattack2.png
+	attack1 62 90 87 26 10 1 0 0 5 12
+	frame	data/chars/shaka/jumpattack3.png
+	frame	data/chars/shaka/jumpattack3.png
+	attack1 0
 
- range	-1000 1000
-        loop	0
-	offset	220 246
+anim special # Défense spéciale Dimension
+	delay	5
+	offset	66 144
+	sound data/chars/shaka/02.wav
+	summonframe 0 0 0 0 1
+	subentity dimension_back
+	unsummonframe 13
+	hitflash flashbig
+	frame	data/chars/shaka/special1.png
+	frame	data/chars/shaka/special2.png
+	frame	data/chars/shaka/special3.png
+	attack1 -28 -12 120 180 30 1 0 0 5 12
+	frame	data/chars/shaka/special5.png
+	frame	data/chars/shaka/special6.png
+	frame	data/chars/shaka/special7.png
+	frame	data/chars/shaka/special8.png
+	frame	data/chars/shaka/special9.png
+	frame	data/chars/shaka/special10.png
+	frame	data/chars/shaka/special7.png
+	frame	data/chars/shaka/special8.png
+	frame	data/chars/shaka/special9.png
+	frame	data/chars/shaka/special10.png
+	attack1 0
+	frame	data/chars/shaka/special6.png
+	
+anim special2 #Attaque spéciale Punch combo
+	fastattack 1
+	forcedirection -1
+	energycost  20 1 0
 	delay	6
+	offset	66 144
+	bbox 21 11 38 151
+	sound data/chars/shaka/02.wav
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/shaka/special21.png
+	attack1 0
+	frame	data/chars/shaka/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/shaka/special23.png
+	attack1 0
+	frame	data/chars/shaka/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/shaka/special25.png
+	attack1 0	
+	frame	data/chars/shaka/special26.png
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/shaka/special21.png
+	attack1 0	
+	frame	data/chars/shaka/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/shaka/special23.png
+	attack1 0	
+	frame	data/chars/shaka/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/shaka/special25.png
+	attack1 0	
+	frame	data/chars/shaka/special26.png
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/shaka/special21.png
+	attack1 0
+	frame	data/chars/shaka/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/shaka/special23.png
+	attack1 0	
+	frame	data/chars/shaka/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/shaka/special25.png
+	attack1 0	
+	frame	data/chars/shaka/special26.png
+	attack1 0	
+	frame	data/chars/shaka/special26.png	
+	offset	116 150
+	delay	10
+	frame	data/chars/shaka/special27.png
+	frame	data/chars/shaka/special28.png
+	attack1 59 25 83 55 5 1 0 0 12 12
+	dropv 3.0 3.0 0.0	
+	frame	data/chars/shaka/special29.png
+	frame	data/chars/shaka/special30.png
+	attack1 0
+	frame	data/chars/shaka/special31.png
 
-sound data/chars/SHAKA/01.wav
-
-dropv 4 1 0
-
-	
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y 28
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 464
-	attack.size.y 287
-frame	data/chars/SHAKA/03.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/04.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -339
-	attack.size.x 900
-	attack.size.y 927
-frame	data/chars/SHAKA/05.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/06.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y 28
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 464
-	attack.size.y 287
-frame	data/chars/SHAKA/03.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/04.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -339
-	attack.size.x 900
-	attack.size.y 927
-frame	data/chars/SHAKA/05.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/06.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y 28
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 464
-	attack.size.y 287
-frame	data/chars/SHAKA/03.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/04.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -339
-	attack.size.x 900
-	attack.size.y 927
-frame	data/chars/SHAKA/05.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/06.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y 28
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 464
-	attack.size.y 287
-frame	data/chars/SHAKA/03.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/04.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -339
-	attack.size.x 900
-	attack.size.y 927
-frame	data/chars/SHAKA/05.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/06.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y 28
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 464
-	attack.size.y 287
-frame	data/chars/SHAKA/03.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/04.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -339
-	attack.size.x 900
-	attack.size.y 927
-frame	data/chars/SHAKA/05.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/06.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y 28
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 464
-	attack.size.y 287
-frame	data/chars/SHAKA/03.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/04.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -339
-	attack.size.x 900
-	attack.size.y 927
-frame	data/chars/SHAKA/05.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/06.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y 28
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 464
-	attack.size.y 287
-frame	data/chars/SHAKA/03.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/04.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -339
-	attack.size.x 900
-	attack.size.y 927
-frame	data/chars/SHAKA/05.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/06.png
-	attack.damage.force 50
-	attack.position.x -14
-	attack.position.y 28
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 464
-	attack.size.y 287
-frame	data/chars/SHAKA/03.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/04.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -339
-	attack.size.x 900
-	attack.size.y 927
-frame	data/chars/SHAKA/05.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/06.png
-	
-move 180
-frame	data/chars/APHRODITE/00.png	
-frame	data/chars/APHRODITE/000.png	
-frame	data/chars/APHRODITE/null.png
-
-
-
-
-anim attack2
- 
- range	-1000 1000
-        loop	0
-	offset	220 246
+anim freespecial2 # Attaque spéciale Punch combo
+	range 	50 80
+	rangea 	0 100
+	hitflash flashbig
+	fastattack 1
+	forcedirection -1
+	energycost  20 1 0
 	delay	6
-
-sound data/chars/SHAKA/02.wav
-
-
-dropv 4 1 0
+	offset	66 144
+	bbox 21 11 38 151
+	sound data/chars/shaka/02.wav
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/shaka/special21.png
+	attack1 0
+	frame	data/chars/shaka/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/shaka/special23.png
+	attack1 0
+	frame	data/chars/shaka/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/shaka/special25.png
+	attack1 0	
+	frame	data/chars/shaka/special26.png
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/shaka/special21.png
+	attack1 0	
+	frame	data/chars/shaka/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/shaka/special23.png
+	attack1 0	
+	frame	data/chars/shaka/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/shaka/special25.png
+	attack1 0	
+	frame	data/chars/shaka/special26.png
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/shaka/special21.png
+	attack1 0
+	frame	data/chars/shaka/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/shaka/special23.png
+	attack1 0	
+	frame	data/chars/shaka/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/shaka/special25.png
+	attack1 0	
+	frame	data/chars/shaka/special26.png
+	attack1 0	
+	frame	data/chars/shaka/special26.png	
+	offset	116 150
+	delay	10
+	frame	data/chars/shaka/special27.png
+	frame	data/chars/shaka/special28.png
+	attack1 59 25 83 55 5 1 0 0 12 12
+	dropv 3.0 3.0 0.0	
+	frame	data/chars/shaka/special29.png
+	frame	data/chars/shaka/special30.png
+	attack1 0
+	frame	data/chars/shaka/special31.png
 	
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
-	attack.damage.force 50
-	attack.position.x 1
-	attack.position.y -271
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 447
-	attack.size.y 687
-frame	data/chars/SHAKA/07.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/08.png	
-	attack.damage.force 50
-	attack.position.x 46
-	attack.position.y -285
-	attack.size.x 753
-	attack.size.y 810
-frame	data/chars/SHAKA/09.png	
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/SHAKA/10.png
+anim riseattack	#Teleportation
+	jumpframe	2 0 0 0
+	loop	0
+	delay	5
+	offset	66 144
+	frame	data/chars/shaka/riseattack1.png
+	frame	data/chars/shaka/riseattack2.png
+	frame	data/chars/shaka/riseattack3.png
+	frame	data/chars/shaka/riseattack4.png
+	frame	data/chars/shaka/riseattack6.png
+	frame	data/chars/shaka/riseattack6.png
+	frame	data/chars/shaka/riseattack7.png
+	frame	data/chars/shaka/riseattack8.png
+	move	20
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	move	0
+	frame	data/chars/shaka/riseattack8.png
+	frame	data/chars/shaka/riseattack7.png
+	frame	data/chars/shaka/riseattack6.png
+	frame	data/chars/shaka/riseattack5.png
+	frame	data/chars/shaka/riseattack1.png
 	
-move 180
-frame	data/chars/APHRODITE/00.png	
-frame	data/chars/APHRODITE/000.png	
-frame	data/chars/APHRODITE/null.png
-
-
-
-
-anim attack3
-	
-
-
-
-anim jump
-	
-
-    
-
-
-anim jumpattack
-	
-
-
-
-
-
-
-
-
+anim	block
+	offset	66 144
+	bbox 46 13 38 137
+	frame	data/chars/shaka/block1.png
+	frame	data/chars/shaka/block2.png
+	frame	data/chars/shaka/block3.png	

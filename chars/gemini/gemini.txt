@@ -119,19 +119,20 @@ anim freespecial # Attaque en courant
 	frame	data/chars/gemini/runattack1.png
 	
 anim pain # Up
-	delay	10
+	delay	5
 	offset	58 170
 	bbox 46 33 38 137
 	frame	data/chars/gemini/pain1.png
 	frame	data/chars/gemini/pain2.png
+	frame	data/chars/gemini/pain1.png	
 	
 anim pain2 # Down
-	delay	10
+	delay	5
 	offset	42 150
 	bbox 25 18 38 132
 	frame	data/chars/gemini/pain21.png
 	frame	data/chars/gemini/pain22.png
-	
+	frame	data/chars/gemini/pain21.png	
 
 anim fall
 	delay	10
@@ -290,35 +291,13 @@ anim special # Défense spéciale Dimension
 	attack1 0
 	frame	data/chars/gemini/special6.png
 	
-anim freespecial2 # Défense spéciale 
-	delay	5
-	offset	66 144
-	sound data/chars/gemini/02.wav
-	range 	50 80
-	rangea 	0 100
-	hitflash flashbig
-	frame	data/chars/gemini/special1.png
-	frame	data/chars/gemini/special2.png
-	frame	data/chars/gemini/special3.png
-	attack5 -28 -12 120 180 30 1 0 0 5 12
-	dropv 	8.0 3 0	
-	frame	data/chars/gemini/special4.png	
-	frame	data/chars/gemini/special5.png
-	frame	data/chars/gemini/special6.png
-	frame	data/chars/gemini/special7.png
-	frame	data/chars/gemini/special8.png
-	frame	data/chars/gemini/special9.png
-	frame	data/chars/gemini/special10.png
-	attack5 0
-	frame	data/chars/gemini/special6.png
-	
 anim special2 #Attaque spéciale Punch combo
 	fastattack 1
 	forcedirection -1
-	#energycost 20 2 5
+	energycost  20 1 0
 	delay	6
 	offset	66 144
-	#bbox 21 11 38 151
+	bbox 21 11 38 151
 	sound data/chars/gemini/02.wav
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
@@ -330,35 +309,101 @@ anim special2 #Attaque spéciale Punch combo
 	frame	data/chars/gemini/special24.png
 	attack1 59 8 98 48 5 0 0 0 12 12
 	frame	data/chars/gemini/special25.png
+	attack1 0	
 	frame	data/chars/gemini/special26.png
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
+	attack1 0	
 	frame	data/chars/gemini/special22.png
 	attack1 59 30 97 35 5 0 0 0 12 12
 	frame	data/chars/gemini/special23.png
+	attack1 0	
 	frame	data/chars/gemini/special24.png
 	attack1 59 8 98 48 5 0 0 0 12 12
 	frame	data/chars/gemini/special25.png
+	attack1 0	
 	frame	data/chars/gemini/special26.png
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
-
+	attack1 0
 	frame	data/chars/gemini/special22.png
 	attack1 59 30 97 35 5 0 0 0 12 12
 	frame	data/chars/gemini/special23.png
+	attack1 0	
 	frame	data/chars/gemini/special24.png
 	attack1 59 8 98 48 5 0 0 0 12 12
 	frame	data/chars/gemini/special25.png
+	attack1 0	
 	frame	data/chars/gemini/special26.png
-	attack1 59 25 83 55 5 1 0 0 12 12
-	dropv 3.0 3.0 0.0
+	attack1 0	
+	frame	data/chars/gemini/special26.png	
 	offset	116 150
 	delay	10
 	frame	data/chars/gemini/special27.png
 	frame	data/chars/gemini/special28.png
+	attack1 59 25 83 55 5 1 0 0 12 12
+	dropv 3.0 3.0 0.0	
 	frame	data/chars/gemini/special29.png
-	attack1 128 46 91 54 5 1 0 0 12 12
-	dropv 3.0 3.0 0.0
+	frame	data/chars/gemini/special30.png
+	attack1 0
+	frame	data/chars/gemini/special31.png
+
+anim freespecial2 # Attaque spéciale Punch combo
+	range 	50 80
+	rangea 	0 100
+	hitflash flashbig
+	fastattack 1
+	forcedirection -1
+	energycost  20 1 0
+	delay	6
+	offset	66 144
+	bbox 21 11 38 151
+	sound data/chars/gemini/02.wav
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/gemini/special21.png
+	attack1 0
+	frame	data/chars/gemini/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/gemini/special23.png
+	attack1 0
+	frame	data/chars/gemini/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/gemini/special25.png
+	attack1 0	
+	frame	data/chars/gemini/special26.png
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/gemini/special21.png
+	attack1 0	
+	frame	data/chars/gemini/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/gemini/special23.png
+	attack1 0	
+	frame	data/chars/gemini/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/gemini/special25.png
+	attack1 0	
+	frame	data/chars/gemini/special26.png
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/gemini/special21.png
+	attack1 0
+	frame	data/chars/gemini/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/gemini/special23.png
+	attack1 0	
+	frame	data/chars/gemini/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/gemini/special25.png
+	attack1 0	
+	frame	data/chars/gemini/special26.png
+	attack1 0	
+	frame	data/chars/gemini/special26.png	
+	offset	116 150
+	delay	10
+	frame	data/chars/gemini/special27.png
+	frame	data/chars/gemini/special28.png
+	attack1 59 25 83 55 5 1 0 0 12 12
+	dropv 3.0 3.0 0.0	
+	frame	data/chars/gemini/special29.png
 	frame	data/chars/gemini/special30.png
 	attack1 0
 	frame	data/chars/gemini/special31.png

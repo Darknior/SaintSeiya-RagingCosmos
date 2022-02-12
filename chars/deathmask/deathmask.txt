@@ -14,7 +14,7 @@ gfxshadow	1
 hitenemy    1 0
 blockodds 	1
 noquake 	1 1
-escapehits  1
+escapehits  2
 nodieblink 	3
 death 		1
 
@@ -76,24 +76,18 @@ anim victory
 	frame	data/chars/deathmask/victory7.png
 
 anim walk
-	loop	1 8 13
-	delay	15
+	loop	1 4 8
+	delay	10
 	offset	33 130
 	bbox 13 16 38 114
 	frame	data/chars/deathmask/walk1.png
 	frame	data/chars/deathmask/walk2.png
 	frame	data/chars/deathmask/walk3.png
-	frame	data/chars/deathmask/walk2.png
-	frame	data/chars/deathmask/walk1.png
-	frame	data/chars/deathmask/walk2.png
-	frame	data/chars/deathmask/walk3.png
 	frame	data/chars/deathmask/walk4.png
 	frame	data/chars/deathmask/walk5.png
-	frame	data/chars/deathmask/walk6.png
+	frame	data/chars/deathmask/walk6.png	
 	frame	data/chars/deathmask/walk7.png
-	frame	data/chars/deathmask/walk8.png
-	frame	data/chars/deathmask/walk9.png
-	frame	data/chars/deathmask/walk10.png
+	frame	data/chars/deathmask/walk8.png	
 	
 anim run
 	loop	1
