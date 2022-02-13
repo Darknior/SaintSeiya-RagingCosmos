@@ -1,0 +1,23 @@
+name	lotus
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+
+anim	idle
+	loop	0
+	delay	5
+	offset	106 145
+	#drawmethod scale 0.5 0.5
+	drawmethod alpha 6
+	drawmethod channel 0.5
+	frame	data/chars/shaka/special/lotus1.png
+	frame	data/chars/shaka/special/lotus2.png
+	frame	data/chars/shaka/special/lotus3.png
+	frame	data/chars/shaka/special/lotus4.png
+	frame	data/chars/shaka/special/lotus5.png
+	frame	data/chars/shaka/special/lotus6.png
+	frame	data/chars/shaka/special/lotus7.png
+	frame	data/chars/shaka/special/lotus8.png
+	frame	data/chars/shaka/special/lotus9.png
+	frame	data/chars/shaka/special/lotus10.png

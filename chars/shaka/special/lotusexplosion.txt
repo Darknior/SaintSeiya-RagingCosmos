@@ -1,0 +1,19 @@
+name	lotusexplosion
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+
+anim	idle
+	loop	0
+	delay	20
+	offset	307 270
+	drawmethod alpha 1
+	frame	data/chars/shaka/special/lotusexplosion1.png
+	frame	data/chars/shaka/special/lotusexplosion2.png
+	frame	data/chars/shaka/special/lotusexplosion3.png
+	frame	data/chars/shaka/special/lotusexplosion4.png
+	frame	data/chars/shaka/special/lotusexplosion5.png
+	frame	data/chars/shaka/special/lotusexplosion6.png
+	frame	data/chars/shaka/special/lotusexplosion7.png
+	frame	data/chars/shaka/special/lotusexplosion8.png
