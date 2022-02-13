@@ -210,6 +210,7 @@ anim death
 	frame	data/chars/shaka/death11.png
 	frame	data/chars/shaka/death12.png
 	frame	data/chars/shaka/death13.png
+	frame	data/chars/shaka/death14.png	
 
 anim rise
 	offset	108 127
