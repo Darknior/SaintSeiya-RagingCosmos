@@ -69,17 +69,6 @@ anim sleep
 	frame	data/chars/milo/sleep4.png
 	frame	data/chars/milo/sleep5.png
 
-anim victory
-	delay	25
-	offset	29 127
-	frame	data/chars/milo/victory1.png
-	frame	data/chars/milo/victory2.png
-	frame	data/chars/milo/victory3.png
-	frame	data/chars/milo/victory4.png
-	frame	data/chars/milo/victory5.png
-	frame	data/chars/milo/victory6.png
-	frame	data/chars/milo/victory7.png
-
 anim walk
 	loop	1 4 8
 	delay	10
@@ -91,8 +80,6 @@ anim walk
 	frame	data/chars/milo/walk4.png
 	frame	data/chars/milo/walk5.png
 	frame	data/chars/milo/walk6.png	
-	frame	data/chars/milo/walk7.png
-	frame	data/chars/milo/walk8.png	
 	
 anim run
 	loop	1
@@ -104,8 +91,6 @@ anim run
 	frame	data/chars/milo/run3.png
 	frame	data/chars/milo/run4.png
 	frame	data/chars/milo/run5.png
-	frame	data/chars/milo/run6.png
-	frame	data/chars/milo/run7.png
 	
 anim runattack # Attaque en courant
 	delay	7
