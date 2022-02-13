@@ -43,6 +43,9 @@ know    circles         data/chars/deathmask/special/circles.txt
 know    hands         	data/chars/deathmask/special/hands.txt
 know    lionstar        data/chars/aiolia/special/lionstar.txt
 know    multihit        data/chars/aiolia/special/multihit.txt
+know    lotus	        data/chars/shaka/special/lotus.txt
+know    lotusshot	    data/chars/shaka/special/lotusshot.txt
+know    lotusexplosion  data/chars/shaka/special/lotusexplosion.txt
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt

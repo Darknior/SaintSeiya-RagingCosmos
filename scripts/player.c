@@ -119,3 +119,25 @@ void unbind()
 	void self = getlocalvar("self");
 	bindentity(self, NULL());
 }
+
+void tosser3(void Bomb, float dx, float dy, float dz, float Vx, float Vy, float Vz)
+{// Tossing bomb with desired speed and base 0 (SIGNAL BOTTLE)
+	void self 		= getlocalvar("self");
+	int Direction 	= getentityproperty(self, "direction");
+	int x 			= getentityproperty(self, "x");
+	int y 			= getentityproperty(self, "a");
+	int z 			= getentityproperty(self, "z");
+	void Shot;
+
+	if(Direction == 0){ //Is entity facing left?                  
+		dx = -dx; //Reverse X direction to match facing
+	}
+
+	Shot = projectile(Bomb, x+dx, z+dz, y+dy, Direction, 0, 0, 0);
+	tossentity(Shot, Vy, Vx, Vz);
+	changeentityproperty(Shot, "speed", Vx);
+	changeentityproperty(Shot, "projectile", 0); 
+	changeentityproperty(Shot, "base", 0);
+	changeentityproperty(Shot, "parent", self);
+	return Shot;
+}

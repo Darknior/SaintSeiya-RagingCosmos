@@ -14,5 +14,6 @@ spawn1          60 30
 #-------------------------------------
 
 spawn       shaka
-coords      850 390
+boss 		1
+coords      610 390
 at          0
