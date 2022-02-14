@@ -1,7 +1,8 @@
 name	lotusexplosion
 type	none
-shadow	0
+shadow	 0
 setlayer 1
+lifespan 1
 antigravity 100
 
 anim	idle

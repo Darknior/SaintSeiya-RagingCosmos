@@ -46,6 +46,7 @@ know    multihit        data/chars/aiolia/special/multihit.txt
 know    lotus	        data/chars/shaka/special/lotus.txt
 know    lotusshot	    data/chars/shaka/special/lotusshot.txt
 know    lotusexplosion  data/chars/shaka/special/lotusexplosion.txt
+know    sting  			data/chars/milo/special/sting.txt
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt
