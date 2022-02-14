@@ -3,6 +3,7 @@ type	none
 shadow	0
 setlayer 1
 antigravity 100
+lifespan 1
 
 anim	idle
 	loop	0
