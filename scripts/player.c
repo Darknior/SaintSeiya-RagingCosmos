@@ -141,3 +141,13 @@ void tosser3(void Bomb, float dx, float dy, float dz, float Vx, float Vy, float 
 	changeentityproperty(Shot, "parent", self);
 	return Shot;
 }
+
+void stop(void anim)
+{// Stop!!
+	void self = getlocalvar("self");
+
+	changeentityproperty(self, "speed", 0);
+	changeentityproperty(self, "velocity", 0, 0, 0);
+  if(anim != NULL()){performattack(self, openborconstant(anim));}
+
+}
