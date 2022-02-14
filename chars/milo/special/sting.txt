@@ -1,0 +1,20 @@
+name	sting
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+
+anim	idle
+	loop	0
+	delay	10
+	offset	255 350
+	#drawmethod scale 0.5 0.5
+	drawmethod alpha 1
+	frame	data/chars/milo/special/sting1.png
+	frame	data/chars/milo/special/sting2.png
+	frame	data/chars/milo/special/sting3.png
+	frame	data/chars/milo/special/sting4.png
+	frame	data/chars/milo/special/sting5.png
+	frame	data/chars/milo/special/sting6.png
+	frame	data/chars/milo/special/sting7.png
+	frame	data/chars/milo/special/sting8.png
