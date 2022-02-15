@@ -23,7 +23,8 @@ coords	0 0
 at 0
 
 spawn camus
-coords	850 390
+boss 	1
+coords	650 390
 at 0
 
 
