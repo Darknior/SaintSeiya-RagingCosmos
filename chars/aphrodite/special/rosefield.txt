@@ -1,0 +1,43 @@
+name	rosefield
+type	none
+shadow	0
+setlayer 1
+lifespan 2
+candamage player
+
+anim	idle
+	loop	0
+	delay	10
+	offset	14 32
+	attack1 31 0 100 30 30 1 0 0 0 0
+	frame	data/chars/aphrodite/special/rosefield1.png
+	attack1 0
+	frame	data/chars/aphrodite/special/rosefield2.png
+	attack1 31 0 150 30 30 1 0 0 0 0
+	frame	data/chars/aphrodite/special/rosefield3.png
+	attack1 0
+	frame	data/chars/aphrodite/special/rosefield4.png
+	attack1 31 0 300 30 30 1 0 0 0 0
+	frame	data/chars/aphrodite/special/rosefield5.png
+	attack1 0
+	frame	data/chars/aphrodite/special/rosefield6.png
+	attack1 31 0 500 30 30 1 0 0 0 0
+	frame	data/chars/aphrodite/special/rosefield7.png
+	attack1 0
+	frame	data/chars/aphrodite/special/rosefield8.png
+	attack1 31 0 800 30 30 1 0 0 0 0
+	frame	data/chars/aphrodite/special/rosefield9.png
+	attack1 0
+	frame	data/chars/aphrodite/special/rosefield10.png
+	attack1 31 0 800 30 30 1 0 0 0 0
+	frame	data/chars/aphrodite/special/rosefield11.png
+	attack1 0
+	frame	data/chars/aphrodite/special/rosefield12.png
+	attack1 31 0 800 30 30 1 0 0 0 0
+	frame	data/chars/aphrodite/special/rosefield13.png
+	attack1 0
+	frame	data/chars/aphrodite/special/rosefield14.png
+	attack1 31 0 800 30 30 1 0 0 0 0
+	frame	data/chars/aphrodite/special/rosefield15.png
+	attack1 0
+	frame	data/chars/aphrodite/special/rosefield16.png	
