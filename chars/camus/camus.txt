@@ -247,6 +247,7 @@ anim jump # Saut Statique
 	frame	data/chars/camus/jump6.png
 	frame	data/chars/camus/jump7.png
 	frame	data/chars/camus/jump8.png	
+	
 anim jumpdelay # Animation de saut intermédiaire
 	loop 	1
 	delay	10

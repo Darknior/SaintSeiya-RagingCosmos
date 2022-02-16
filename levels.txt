@@ -184,6 +184,18 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple11BOSS.txt
 
+set         Temple_12_Poissons
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           420 484
+file        data/levels/temple12BOSS.txt
+
+
 ## 12 Poisson
 
 set         Temple_13_Gand_Pope

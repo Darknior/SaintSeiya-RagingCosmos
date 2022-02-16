@@ -49,6 +49,7 @@ know    lotusexplosion  data/chars/shaka/special/lotusexplosion.txt
 know    sting  			data/chars/milo/special/sting.txt
 know    iceray  		data/chars/camus/special/iceray.txt
 know    icecrystal  	data/chars/camus/special/icecrystal.txt
+know    rosefield  		data/chars/aphrodite/special/rosefield.txt
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt

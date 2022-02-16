@@ -20,15 +20,12 @@ nosame      1
 noslow      1
 completebg  1
 
-spawn1      300  0 0
+spawn1      435  0 0
 
 
 #-------------------------------------
 
-spawn       APHRODITE
+spawn       aphrodite
 boss        1
-coords      750 435
-at          100
-
-wait
-at          200
+coords      650 435
+at          0
