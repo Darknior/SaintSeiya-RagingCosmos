@@ -9,8 +9,8 @@ lifespan  2
 anim	idle
 	loop	1
 	delay	10
-	offset	330 0
-	drawmethod scale 2.5 2.5	
+	offset	1000 100
+	drawmethod scale 1 1	
 	drawmethod alpha 1
 	frame	data/chars/aiolia/special/multihit1.png
 	frame	data/chars/aiolia/special/multihit2.png
