@@ -1,0 +1,452 @@
+name		great_pope
+health		500
+mp 			100
+speed		20
+type		enemy
+hostile     player npc 
+candamage 	player npc
+aimove      chase
+
+
+icon		data/chars/great_pope/icon.png
+
+gfxshadow	1
+hitenemy    1 0
+blockodds 	1
+noquake 	1 1
+escapehits  2
+nodieblink 	3
+subject_to_screen 1
+
+atchain 1 1 2 3 4 5
+
+animationscript	data/scripts/player.c
+
+load knife
+#----------------------------------------------------------
+anim spawn
+	delay	15
+	offset	81 136
+	frame	data/chars/great_pope/spawn1.png
+	frame	data/chars/great_pope/spawn2.png
+	frame	data/chars/great_pope/spawn3.png
+	frame	data/chars/great_pope/spawn4.png
+	frame	data/chars/great_pope/spawn5.png
+	frame	data/chars/great_pope/spawn6.png
+	frame	data/chars/great_pope/spawn7.png
+	frame	data/chars/great_pope/spawn8.png
+	frame	data/chars/great_pope/spawn9.png
+	frame	data/chars/great_pope/spawn10.png
+	frame	data/chars/great_pope/spawn11.png
+	frame	data/chars/great_pope/spawn12.png
+	frame	data/chars/great_pope/spawn13.png
+	frame	data/chars/great_pope/spawn14.png
+
+anim idle
+	loop	1
+	delay	20
+	offset	50 136
+	bbox 22 13 38 132
+	frame	data/chars/great_pope/idle1.png
+	frame	data/chars/great_pope/idle2.png
+	frame	data/chars/great_pope/idle3.png
+	frame	data/chars/great_pope/idle4.png
+	frame	data/chars/great_pope/idle5.png
+	frame	data/chars/great_pope/idle6.png
+	frame	data/chars/great_pope/idle5.png
+	frame	data/chars/great_pope/idle4.png
+	frame	data/chars/great_pope/idle3.png
+	frame	data/chars/great_pope/idle2.png
+	
+anim walk
+	loop	1
+	delay	10
+	offset	80 140
+	bbox 59 13 38 132
+	frame	data/chars/great_pope/walk1.png
+	frame	data/chars/great_pope/walk2.png
+	frame	data/chars/great_pope/walk3.png
+	frame	data/chars/great_pope/walk2.png
+	
+anim run
+	loop	1
+	delay	8
+	offset	80 140
+	bbox 61 13 38 132
+	frame	data/chars/great_pope/walk1.png
+	frame	data/chars/great_pope/walk2.png
+	frame	data/chars/great_pope/walk3.png
+	frame	data/chars/great_pope/walk2.png
+	
+anim runattack # Attaque en courant
+	delay	7
+	offset	21 159
+	bbox 9 27 38 132
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/great_pope/attack1.png
+	frame	data/chars/great_pope/attack2.png
+	attack2 60 59 120 33 20 1 0 0 5 12
+	dropv 4.0 2.0 0.0
+	frame	data/chars/great_pope/attack3.png
+	frame	data/chars/great_pope/attack3.png
+	frame	data/chars/great_pope/attack4.png
+	frame	data/chars/great_pope/attack4.png
+	attack2 0
+	@cmd	stop
+	delay	12
+	frame	data/chars/great_pope/attack2.png
+	frame	data/chars/great_pope/attack1.png
+	
+anim freespecial # Attaque en courant
+	delay	7
+	offset	21 159
+	bbox 9 27 38 132
+	range 	80 130
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/great_pope/attack1.png
+	frame	data/chars/great_pope/attack2.png
+	attack2 60 59 120 33 20 1 0 0 5 12
+	dropv 4.0 2.0 0.0
+	frame	data/chars/great_pope/attack3.png
+	frame	data/chars/great_pope/attack3.png
+	frame	data/chars/great_pope/attack4.png
+	frame	data/chars/great_pope/attack4.png
+	attack2 0
+	@cmd	stop
+	delay	12
+	frame	data/chars/great_pope/attack2.png
+	frame	data/chars/great_pope/attack1.png
+	
+anim pain # Up
+	delay	10
+	offset	81 136
+	bbox 60 13 38 132
+	frame	data/chars/great_pope/pain1.png
+	frame	data/chars/great_pope/pain2.png
+	frame	data/chars/great_pope/pain1.png
+	
+anim pain2 # Down
+	delay	10
+	offset	81 136
+	bbox 60 13 38 132
+	frame	data/chars/great_pope/pain21.png
+	frame	data/chars/great_pope/pain22.png
+	frame	data/chars/great_pope/pain21.png
+
+anim fall
+	delay	10
+	offset	131 129
+	landframe 4
+	frame	data/chars/great_pope/fall1.png
+	frame	data/chars/great_pope/fall2.png
+	frame	data/chars/great_pope/fall3.png
+	frame	data/chars/great_pope/fall4.png
+	frame	data/chars/great_pope/fall5.png
+
+anim rise
+	offset	104 138
+	delay	10
+	frame	data/chars/great_pope/rise1.png
+	frame	data/chars/great_pope/rise2.png
+	frame	data/chars/great_pope/rise3.png
+	frame	data/chars/great_pope/rise4.png
+
+anim attack1 # Attaque combo 1
+	delay	5
+	offset	56 136
+	bbox 33 13 38 132
+	frame	data/chars/great_pope/attack1.png
+	attack1 56 40 75 25 10 0 0 0 5 12
+	frame	data/chars/great_pope/attack2.png
+	frame	data/chars/great_pope/attack3.png
+	attack1 0
+	frame	data/chars/great_pope/attack4.png
+
+anim attack2 # Attaque combo 2
+	delay	5
+	offset	77 136
+	bbox 59 13 38 132
+	frame	data/chars/great_pope/attack21.png
+	frame	data/chars/great_pope/attack22.png
+	attack1 76 35 65 24 10 0 0 0 5 12
+	frame	data/chars/great_pope/attack23.png
+	frame	data/chars/great_pope/attack24.png
+	attack1 0
+	frame	data/chars/great_pope/attack25.png	
+
+anim attack3 # Attaque combo 3
+	delay	8
+	offset	67 136
+	bbox 43 13 38 132
+	frame	data/chars/great_pope/attack31.png
+	frame	data/chars/great_pope/attack32.png
+	attack1 61 36 70 30 10 0 0 0 5 12
+	frame	data/chars/great_pope/attack33.png
+	frame	data/chars/great_pope/attack34.png
+	frame	data/chars/great_pope/attack34.png
+	attack1 0
+	frame	data/chars/great_pope/attack33.png
+	
+anim attack4 # Attaque combo 4
+	delay	5
+	offset	56 136
+	bbox 33 13 38 132
+	hitflash flashmedium
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/attack41.png
+	frame	data/chars/great_pope/attack42.png
+	frame	data/chars/great_pope/attack43.png
+	attack1 49 75 80 26 10 0 0 0 5 12
+	frame	data/chars/great_pope/attack44.png
+	frame	data/chars/great_pope/attack44.png
+	frame	data/chars/great_pope/attack45.png
+	attack1 0
+	frame	data/chars/great_pope/attack45.png
+	
+anim attack5 # Attaque combo 5
+	delay	12
+	offset	56 136
+	bbox 33 13 38 132
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/attack51.png
+	attack1 64 61 105 30 20 1 0 0 5 12
+	dropv 4.0 1.0 0.0
+	frame	data/chars/great_pope/attack52.png
+	frame	data/chars/great_pope/attack53.png
+	attack1 0
+	frame	data/chars/great_pope/attack52.png
+	frame	data/chars/great_pope/attack51.png
+
+anim jump # Saut Statique
+	delay	10
+	offset	81 152
+	bbox 58 31 38 96
+	frame	data/chars/great_pope/jump1.png
+	frame	data/chars/great_pope/jump2.png
+	frame	data/chars/great_pope/jump3.png
+	frame	data/chars/great_pope/jump4.png
+	frame	data/chars/great_pope/jump5.png
+	frame	data/chars/great_pope/jump6.png
+	
+anim jumpdelay # Animation de saut intermédiaire
+	loop 	1
+	delay	10
+	offset	81 152
+	bbox 58 31 38 96
+	frame	data/chars/great_pope/jump5.png
+
+anim jumpland # Aterrissage du saut
+	delay	12
+	offset	79 142
+	bbox 63 42 38 97
+	frame	data/chars/great_pope/get1.png
+	frame	data/chars/great_pope/get2.png
+	frame	data/chars/great_pope/get1.png
+	
+anim jumpattack # Attaque sautée statique
+	delay	10
+	offset	81 152
+	bbox 58 31 38 96
+	sound data/sounds/punch.wav
+	frame	data/chars/great_pope/jumpattack1.png
+	attack1 57 76 98 45 10 1 0 0 5 12
+	frame	data/chars/great_pope/jumpattack2.png
+
+anim special # Défense spéciale 
+	delay	10
+	offset	45 138
+	sound data/chars/great_pope/02.wav
+	energycost  10 1 0
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/special1.png
+	frame	data/chars/great_pope/special2.png
+	frame	data/chars/great_pope/special3.png
+	frame	data/chars/great_pope/special4.png
+	frame	data/chars/great_pope/special5.png
+	attack5 7 3 150 142 30 1 0 0 5 12
+	dropv 4.0 3.0 0.0
+	frame	data/chars/great_pope/special6.png
+	frame	data/chars/great_pope/special7.png
+	frame	data/chars/great_pope/special8.png
+	attack5 0
+	frame	data/chars/great_pope/special9.png
+	
+anim special2 #Attaque spéciale Punch combo
+	fastattack 1
+	forcedirection -1
+	energycost 20 2 5
+	delay	6
+	offset	56 136
+	bbox 29 11 38 136
+	sound data/chars/great_pope/02.wav
+	frame	data/chars/great_pope/special21.png
+	frame	data/chars/great_pope/special22.png
+	frame	data/chars/great_pope/special23.png
+	frame	data/chars/great_pope/special24.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special25.png
+	attack1 0
+	frame	data/chars/great_pope/special21.png
+	frame	data/chars/great_pope/special22.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special23.png
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	frame	data/chars/great_pope/special25.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special21.png
+	attack1 0
+	frame	data/chars/great_pope/special22.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special23.png
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special25.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/special25.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special26.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/special27.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special28.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/special29.png
+	delay	10
+	attack1 59 25 83 55 5 1 0 0 12 12
+	dropv 3.0 3.0 0.0
+	frame	data/chars/great_pope/special30.png
+	frame	data/chars/great_pope/special31.png
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	frame	data/chars/great_pope/special23.png
+	
+anim freespecial2 #Attaque spéciale Punch combo
+	fastattack 1
+	forcedirection -1
+	energycost 20 2 5
+	delay	6
+	offset	42 160
+	bbox 21 11 38 151
+	sound data/chars/great_pope/02.wav
+	frame	data/chars/great_pope/special21.png
+	frame	data/chars/great_pope/special22.png
+	frame	data/chars/great_pope/special23.png
+	frame	data/chars/great_pope/special24.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special25.png
+	attack1 0
+	frame	data/chars/great_pope/special21.png
+	frame	data/chars/great_pope/special22.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special23.png
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	frame	data/chars/great_pope/special25.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special21.png
+	attack1 0
+	frame	data/chars/great_pope/special22.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special23.png
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special25.png
+	attack1 0 
+	frame	data/chars/great_pope/special25.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special26.png
+	attack1 0	
+	frame	data/chars/great_pope/special27.png
+	attack1 59 30 55 35 5 0 0 0 12 12	
+	frame	data/chars/great_pope/special28.png
+	attack1 0	
+	frame	data/chars/great_pope/special29.png
+	delay	10
+	attack1 59 25 83 55 5 1 0 0 12 12
+	dropv 3.0 3.0 0.0	
+	frame	data/chars/great_pope/special30.png	
+	frame	data/chars/great_pope/special31.png	
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	frame	data/chars/great_pope/special23.png	
+	
+anim freespecial3 # Attaque spéciale Lancer de couteau
+	range 	130 300
+	rangea 	0 100
+	delay	10
+	offset	77 136
+	bbox 59 13 38 132
+	sound data/chars/great_pope/02.wav
+	@cmd	shooter "knife" 0 80 0 2.5 0 0	
+	frame	data/chars/great_pope/attack21.png
+	frame	data/chars/great_pope/attack22.png
+	attack1 59 71 75 24 10 0 0 0 5 12
+	frame	data/chars/great_pope/attack23.png
+	frame	data/chars/great_pope/attack24.png
+	attack1 0
+	frame	data/chars/great_pope/attack25.png
+	
+anim riseattack # Défense spéciale carnivore roses
+	fastattack 1
+	forcedirection -1
+	energycost 20 2 5
+	delay	6
+	offset	56 136
+	bbox 29 11 38 136
+	sound data/chars/great_pope/02.wav
+	frame	data/chars/great_pope/special21.png
+	frame	data/chars/great_pope/special22.png
+	frame	data/chars/great_pope/special23.png
+	frame	data/chars/great_pope/special24.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special25.png
+	attack1 0
+	frame	data/chars/great_pope/special21.png
+	frame	data/chars/great_pope/special22.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special23.png
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	frame	data/chars/great_pope/special25.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special21.png
+	attack1 0
+	frame	data/chars/great_pope/special22.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special23.png
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special25.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/special25.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special26.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/special27.png
+	attack1 59 30 55 35 5 0 0 0 12 12
+	frame	data/chars/great_pope/special28.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/great_pope/special29.png
+	delay	10
+	attack1 59 25 83 55 5 1 0 0 12 12
+	dropv 3.0 3.0 0.0
+	frame	data/chars/great_pope/special30.png
+	frame	data/chars/great_pope/special31.png
+	attack1 0
+	frame	data/chars/great_pope/special24.png
+	frame	data/chars/great_pope/special23.png
+
+anim	block
+	offset	81 137
+	bbox 61 13 38 132
+	frame	data/chars/great_pope/block1.png
+	frame	data/chars/great_pope/block2.png
+	frame	data/chars/great_pope/block3.png
