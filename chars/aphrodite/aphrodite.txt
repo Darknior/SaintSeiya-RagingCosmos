@@ -16,7 +16,7 @@ blockodds 	1
 noquake 	1 1
 escapehits  2
 nodieblink 	3
-death 		1
+falldie		2
 
 atchain 1 1 2 3 4 5
 

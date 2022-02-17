@@ -1,6 +1,7 @@
 name	iceray
 type	none
 shadow	0
+nolife 	 1
 setlayer 1
 lifespan 1
 candamage player

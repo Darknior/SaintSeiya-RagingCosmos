@@ -737,6 +737,7 @@ anim fall
 anim rise
 	delay	10
 	offset	114 110
+	jumpframe 0 0 0	
 	frame	data/chars/seiya/rise1.png
 	frame	data/chars/seiya/rise2.png
 	frame	data/chars/seiya/rise1.png
