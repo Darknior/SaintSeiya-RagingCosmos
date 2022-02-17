@@ -1,0 +1,21 @@
+name                temple12_Roses03
+type                none
+shadow              0
+setlayer            198
+
+offscreenkill       1500
+
+anim idle
+    loop            1 2 3
+    palette         data/bgs/temple12/Roses/Roses03.png
+
+# SHOW
+    delay           1
+    offset          0 0
+    frame           data/bgs/temple12/Roses/Roses03.png
+
+# MOVE
+    delay           1
+    movea           1
+    frame           data/bgs/temple12/Roses/Roses03.png
+    frame           data/bgs/temple12/Roses/Roses03.png

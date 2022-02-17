@@ -1,0 +1,22 @@
+name                temple12_Roses01
+type                none
+shadow              0
+setlayer            200
+
+offscreenkill       1500
+
+anim idle
+    loop            1 2 3
+    palette         data/bgs/temple12/Roses/Roses01.png
+    sound           data/bgs/temple12/Roses/voices.wav
+
+# SHOW
+    delay           1
+    offset          0 0
+    frame           data/bgs/temple12/Roses/Roses01.png
+
+# MOVE
+    delay           1
+    movea           3
+    frame           data/bgs/temple12/Roses/Roses01.png
+    frame           data/bgs/temple12/Roses/Roses01.png
