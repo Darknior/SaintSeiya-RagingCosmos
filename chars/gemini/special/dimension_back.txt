@@ -2,11 +2,12 @@ name	dimension_back
 type	none
 shadow	0
 setlayer 1
+lifespan 2
 antigravity 100
 
 anim	idle
 	loop	1
-	delay	6
+	delay	10
 	offset	600 0
 	drawmethod scale 1.5 1
 	frame	data/chars/gemini/special/dimension_back1.png
@@ -18,9 +19,3 @@ anim	idle
 	frame	data/chars/gemini/special/dimension_back7.png
 	frame	data/chars/gemini/special/dimension_back8.png
 	frame	data/chars/gemini/special/dimension_back9.png
-        frame	data/chars/gemini/special/dimension_back10.png
-        frame	data/chars/gemini/special/dimension_back11.png
-	frame	data/chars/gemini/special/dimension_back12.png
-	frame	data/chars/gemini/special/dimension_back13.png
-	frame	data/chars/gemini/special/dimension_back14.png
-	frame	data/chars/gemini/special/dimension_back15.png

@@ -50,6 +50,7 @@ know    sting  			data/chars/milo/special/sting.txt
 know    iceray  		data/chars/camus/special/iceray.txt
 know    icecrystal  	data/chars/camus/special/icecrystal.txt
 know    rosefield  		data/chars/aphrodite/special/rosefield.txt
+know    knife  			data/chars/great_pope/special/knife.txt
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt
@@ -245,7 +246,7 @@ know    CUBE            data/chars/CUBE/CUBE.txt
 
 know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
 
-know    FIORE           data/chars/FIORE/FIORE.txt
+know    great_pope      data/chars/great_pope/great_pope.txt
 
 
 #-- LEVELS --------------------------------------------------------------------------

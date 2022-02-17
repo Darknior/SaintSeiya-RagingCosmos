@@ -21,6 +21,7 @@ spawn       temple13columns
 coords	    0 0
 at          0
 
-spawn       saga
-coords	    850 390
+spawn       great_pope
+boss 		1
+coords	    600 390
 at          0

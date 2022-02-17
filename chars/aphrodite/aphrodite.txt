@@ -68,7 +68,7 @@ anim walk
 	
 anim run
 	loop	1
-	delay	15
+	delay	8
 	offset	65 142
 	bbox 63 34 50 108
 	frame	data/chars/aphrodite/run1.png
@@ -383,6 +383,7 @@ anim riseattack # Défense spéciale carnivore roses
 	frame	data/chars/aphrodite/special11.png
 	attack5 0
 	frame	data/chars/aphrodite/special1.png
+	
 anim	block
 	offset	33 144
 	bbox 16 9 38 135
