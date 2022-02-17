@@ -6,9 +6,9 @@ antigravity 100
 
 anim	idle
 	loop	1
-	delay	10
-	offset	330 0
-	drawmethod scale 2.5 2.5
+	delay	6
+	offset	600 0
+	drawmethod scale 1.5 1
 	frame	data/chars/gemini/special/dimension_back1.png
 	frame	data/chars/gemini/special/dimension_back2.png
 	frame	data/chars/gemini/special/dimension_back3.png
@@ -18,3 +18,9 @@ anim	idle
 	frame	data/chars/gemini/special/dimension_back7.png
 	frame	data/chars/gemini/special/dimension_back8.png
 	frame	data/chars/gemini/special/dimension_back9.png
+        frame	data/chars/gemini/special/dimension_back10.png
+        frame	data/chars/gemini/special/dimension_back11.png
+	frame	data/chars/gemini/special/dimension_back12.png
+	frame	data/chars/gemini/special/dimension_back13.png
+	frame	data/chars/gemini/special/dimension_back14.png
+	frame	data/chars/gemini/special/dimension_back15.png
