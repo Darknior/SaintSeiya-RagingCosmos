@@ -1,31 +1,69 @@
-music       data/music/boss.bor
+music           data/music/cancer.ogg
 
-panel       data/bgs/ROOMS/templeBOSS12.png 
+# Shorter 1200x484
+background      data/bgs/temple12/temple12_back.png      0 0 0 -4
 
-cameratype  1
-direction   right
-settime     0
-order       a
-nofadeout   0
-disablehof  1
-lives       4
-noshare     1
-credits     1
-cansave     0
-nodebug     1
-notime      1
-nosave      1
-blocked     1
-nosame      1
-noslow      1
-completebg  1
+panel           data/bgs/temple12/temple12_ground.png
 
-spawn1      435  0 0
+# 1400x484
+fglayer         data/bgs/temple12/fogYellow.png         100  0.1 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
+fglayer         data/bgs/temple12/RosesPetals.png         100  0.1 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
+fglayer         data/bgs/temple12/fogOrange.png       -150 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
+fglayer         data/bgs/temple12/fogOrange.png        -25 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
+
+#frontpanel      data/bgs/temple12/temple12_columns.png
+
+order           a
+direction       both
+settime         0
+
+cameratype      0
+light           256 -44
+at              0
+shadowalpha     2
+at              0
 
 
-#-------------------------------------
+#-- PLAYERS ---------------------------------
 
-spawn       aphrodite
-boss        1
-coords      650 435
-at          0
+spawn1          60 30
+spawn2          70 40
+
+
+#-- INTRO -----------------------------------
+
+load temple12_Roses01 3
+load temple12_Roses02 3
+load temple12_Roses03 3
+
+spawn           temple12_Roses01
+flip            1
+coords          0 0
+at              0
+spawn           temple12_Roses02
+flip            1
+coords          0 0
+at              0
+spawn           temple12_Roses03
+flip            1
+coords          0 0
+at              0
+
+
+
+#-- LEVEL ANIMATIONS -----------------------
+
+load temple12_columns 3
+
+spawn           temple12_columns
+coords          0 0
+at              0
+
+
+
+#-- BOSS -----------------------------------
+
+spawn           aphrodite
+boss 			1
+coords          650 410
+at              0

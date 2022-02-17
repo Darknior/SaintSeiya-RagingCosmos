@@ -192,11 +192,8 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           420 484
+z           378 484
 file        data/levels/temple12BOSS.txt
-
-
-## 12 Poisson
 
 set         Temple_13_Gand_Pope
 maxplayers  1

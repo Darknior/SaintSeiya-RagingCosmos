@@ -49,7 +49,6 @@ know    lotusexplosion  data/chars/shaka/special/lotusexplosion.txt
 know    sting  			data/chars/milo/special/sting.txt
 know    iceray  		data/chars/camus/special/iceray.txt
 know    icecrystal  	data/chars/camus/special/icecrystal.txt
-know    rosefield  		data/chars/aphrodite/special/rosefield.txt
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt
@@ -281,6 +280,13 @@ load    temple5columns      data/bgs/temple5/temple5columns.txt
 ## TEMPLE 11
 
 load    temple11columns      data/bgs/temple11/temple11columns.txt
+
+## TEMPLE 12
+
+know    temple12_columns     data/bgs/temple12/columns/temple12_columns.txt
+know    temple12_Roses01     data/bgs/temple12/Roses/temple12_Roses01.txt
+know    temple12_Roses02     data/bgs/temple12/Roses/temple12_Roses02.txt
+know    temple12_Roses03     data/bgs/temple12/Roses/temple12_Roses03.txt
 
 ## TEMPLE 13 FINAL
 
