@@ -1,4 +1,4 @@
-music		data/music/Phoenix-GenMaKen.ogg
+music		data/music/God-Warriors-vs-Saints.ogg
 
 panel		data/bgs/temple13/layer2.png
 
