@@ -4,11 +4,11 @@ speed	10
 shadow	0
 setlayer 2
 antigravity 100
-lifespan  2
+lifespan  1.9
 
 anim	idle
 	loop	1
-	delay	10
+	delay	17
 	offset	1000 100
 	drawmethod scale 1 1	
 	drawmethod alpha 1

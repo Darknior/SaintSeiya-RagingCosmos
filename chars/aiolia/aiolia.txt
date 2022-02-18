@@ -321,7 +321,7 @@ anim special # Défense spéciale multihit
 	hitflash flashbig
 	summonframe 0 0 0 0 1
 	subentity multihit
-	unsummonframe 8
+	unsummonframe 11
 	energycost  20 1 0
 	attack1 -50 0 160 150 2 0 0 0 0 20
 	frame	data/chars/aiolia/special1.png

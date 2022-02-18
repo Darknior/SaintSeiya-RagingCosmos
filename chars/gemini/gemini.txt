@@ -272,7 +272,7 @@ anim special # Défense spéciale Dimension
 	sound data/chars/gemini/02.wav
 	summonframe 0 0 0 0 1
 	subentity dimension_back
-	unsummonframe 13
+	unsummonframe 20
 	hitflash flashbig
 	frame	data/chars/gemini/special1.png
 	frame	data/chars/gemini/special2.png
