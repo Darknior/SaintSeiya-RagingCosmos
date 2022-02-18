@@ -81,7 +81,6 @@ anim spawn
 	delay	40	
 	frame	data/chars/shaka/spawn12.png	
 	
-
 anim idle
 	loop	1
 	delay	25
@@ -140,19 +139,19 @@ anim runattack # Attaque en courant
 	frame	data/chars/shaka/runattack3.png
 	frame	data/chars/shaka/runattack4.png
 	frame	data/chars/shaka/runattack4.png
-	attack2 0 0 0 0 0 0 0 0 0 0
-	@cmd	stop
+	attack2 0
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/shaka/runattack5.png
 	frame	data/chars/shaka/runattack5.png
 	
 anim freespecial # Attaque en courant
-	range 	80 175
-	rangea 	0 100
 	delay	7
 	offset	23 130
 	bbox 9 4 38 126
 	forcedirection -1
+	range 	80 175
+	rangea 	0 100	
 	@cmd	dasher 3.5 0 0 1
 	frame	data/chars/shaka/runattack1.png
 	frame	data/chars/shaka/runattack2.png
@@ -161,8 +160,8 @@ anim freespecial # Attaque en courant
 	frame	data/chars/shaka/runattack3.png
 	frame	data/chars/shaka/runattack4.png
 	frame	data/chars/shaka/runattack4.png
-	attack2 0 0 0 0 0 0 0 0 0 0
-	@cmd	stop
+	attack2 0
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/shaka/runattack5.png
 	frame	data/chars/shaka/runattack5.png

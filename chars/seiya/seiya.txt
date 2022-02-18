@@ -251,7 +251,7 @@ anim runattack # Attaque en courant
 	frame	data/chars/seiya/runattack4.png
 	frame	data/chars/seiya/runattack5.png
 	attack2 0 
-	@cmd	stop
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/seiya/runattack3.png
 	frame	data/chars/seiya/runattack2.png

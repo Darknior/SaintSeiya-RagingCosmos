@@ -116,8 +116,8 @@ anim runattack # Attaque en courant
 	frame	data/chars/deathmask/runattack3.png
 	frame	data/chars/deathmask/runattack4.png
 	frame	data/chars/deathmask/runattack4.png
-	attack2 0 0 0 0 0 0 0 0 0 0
-	@cmd	stop
+	attack2 0
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/deathmask/runattack2.png
 	frame	data/chars/deathmask/runattack1.png
@@ -127,6 +127,8 @@ anim freespecial # Attaque en courant
 	offset	46 130
 	bbox 32 16 38 114
 	forcedirection -1
+	range 	80 150
+	rangea 	0 100	
 	@cmd	dasher 3.5 0 0 1
 	frame	data/chars/deathmask/runattack1.png
 	frame	data/chars/deathmask/runattack2.png
@@ -136,8 +138,8 @@ anim freespecial # Attaque en courant
 	frame	data/chars/deathmask/runattack3.png
 	frame	data/chars/deathmask/runattack4.png
 	frame	data/chars/deathmask/runattack4.png
-	attack2 0 0 0 0 0 0 0 0 0 0
-	@cmd	stop
+	attack2 0
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/deathmask/runattack2.png
 	frame	data/chars/deathmask/runattack1.png

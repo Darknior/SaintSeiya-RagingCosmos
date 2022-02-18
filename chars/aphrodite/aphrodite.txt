@@ -93,7 +93,7 @@ anim runattack # Attaque en courant
 	frame	data/chars/aphrodite/runattack5.png
 	frame	data/chars/aphrodite/runattack5.png
 	attack2 0
-	@cmd	stop
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/aphrodite/runattack2.png
 	frame	data/chars/aphrodite/runattack1.png
@@ -102,7 +102,8 @@ anim freespecial # Attaque en courant
 	delay	7
 	offset	21 159
 	bbox 9 27 38 132
-	range 	80 130
+	range 	80 150
+	rangea 	0 100
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	frame	data/chars/aphrodite/runattack1.png
@@ -114,7 +115,7 @@ anim freespecial # Attaque en courant
 	frame	data/chars/aphrodite/runattack5.png
 	frame	data/chars/aphrodite/runattack5.png
 	attack2 0
-	@cmd	stop
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/aphrodite/runattack2.png
 	frame	data/chars/aphrodite/runattack1.png

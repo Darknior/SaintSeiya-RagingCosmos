@@ -91,8 +91,8 @@ anim runattack # Attaque en courant
 	frame	data/chars/gemini/runattack3.png
 	frame	data/chars/gemini/runattack3.png
 	frame	data/chars/gemini/runattack3.png
-	attack2 0 0 0 0 0 0 0 0 0 0
-	@cmd	stop
+	attack2 0 
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/gemini/runattack2.png
 	frame	data/chars/gemini/runattack1.png
@@ -112,8 +112,8 @@ anim freespecial # Attaque en courant
 	frame	data/chars/gemini/runattack3.png
 	frame	data/chars/gemini/runattack3.png
 	frame	data/chars/gemini/runattack3.png
-	attack2 0 0 0 0 0 0 0 0 0 0
-	@cmd	stop
+	attack2 0
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/gemini/runattack2.png
 	frame	data/chars/gemini/runattack1.png
@@ -184,7 +184,7 @@ anim attack2 # Attaque combo 2
 	offset	129 144
 	bbox 108 13 38 137
 	frame	data/chars/gemini/attack21.png
-		attack1 132 27 60 25 10 0 0 0 5 12
+	attack1 132 27 60 25 10 0 0 0 5 12
 	frame	data/chars/gemini/attack22.png
 	frame	data/chars/gemini/attack23.png
 

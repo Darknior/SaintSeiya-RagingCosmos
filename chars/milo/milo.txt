@@ -104,7 +104,7 @@ anim runattack # Attaque en courant
 	frame	data/chars/milo/runattack3.png
 	frame	data/chars/milo/runattack3.png
 	attack2 0
-	@cmd	stop
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/milo/runattack2.png
 	frame	data/chars/milo/runattack1.png
@@ -113,7 +113,7 @@ anim freespecial # Attaque en courant
 	delay	7
 	offset	46 130
 	bbox 32 16 38 114
-	range 	80 130
+	range 	80 150
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	frame	data/chars/milo/runattack1.png
@@ -125,7 +125,7 @@ anim freespecial # Attaque en courant
 	frame	data/chars/milo/runattack3.png
 	frame	data/chars/milo/runattack3.png
 	attack2 0
-	@cmd	stop
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/milo/runattack2.png
 	frame	data/chars/milo/runattack1.png

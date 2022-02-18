@@ -195,7 +195,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple12BOSS.txt
 
-set         Temple_13_Gand_Pope
+set         Temple_13_Grand_Pope
 maxplayers  1
 lives       1
 credits     10

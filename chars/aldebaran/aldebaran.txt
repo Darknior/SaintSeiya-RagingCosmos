@@ -137,8 +137,8 @@ anim runattack # Attaque en courant
 	frame	data/chars/aldebaran/runattack5.png
 	frame	data/chars/aldebaran/runattack6.png
 	frame	data/chars/aldebaran/runattack7.png
-	attack2 0 0 0 0 0 0 0 0 0 0
-	@cmd	stop
+	attack2 0
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/aldebaran/runattack8.png
 	frame	data/chars/aldebaran/runattack9.png
@@ -161,8 +161,8 @@ anim freespecial # Attaque en courant
 	frame	data/chars/aldebaran/runattack5.png
 	frame	data/chars/aldebaran/runattack6.png
 	frame	data/chars/aldebaran/runattack7.png
-	attack2 0 0 0 0 0 0 0 0 0 0
-	@cmd	stop
+	attack2 0
+	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/aldebaran/runattack8.png
 	frame	data/chars/aldebaran/runattack9.png
