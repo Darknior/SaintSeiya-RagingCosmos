@@ -198,7 +198,7 @@ anim fall
 	frame	data/chars/aldebaran/fall8.png
 	
 anim death
-	delay	10
+	delay	20
 	offset	52 154
 	frame	data/chars/aldebaran/death1.png
 	frame	data/chars/aldebaran/death2.png
