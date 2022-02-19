@@ -211,6 +211,7 @@ anim death
 	frame	data/chars/aldebaran/death9.png
 	frame	data/chars/aldebaran/death10.png
 	frame	data/chars/aldebaran/death11.png	
+	frame	data/chars/aldebaran/death11.png	
 
 anim rise
 	offset	118 164

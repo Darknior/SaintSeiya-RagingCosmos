@@ -12,8 +12,26 @@ spawn1          60 30
 
 
 #-- BOSS -----------------------------------
+spawn           aldebaran_dialog
+flip			1
+coords          300 50
+at              0
+
 
 spawn           aldebaran
 boss 			1
 coords          650 390
 at              0
+
+group 1 1
+at 0
+
+spawn           aldebaran_dialog2
+flip			1
+coords          300 50
+at              0
+
+
+
+
+

@@ -256,9 +256,11 @@ know    great_pope      data/chars/great_pope/great_pope.txt
 load    mu                  data/bgs/temple1/mu/mu.txt
 
 ## Dialogs
-load    dialogdelay     data/bgs/temple1/mu_dialog/dialogdelay.txt
-know 	dialogbox		data/bgs/temple1/mu_dialog/dialogbox.txt
-know 	mu_dialog		data/bgs/temple1/mu_dialog/mu_dialog.txt
+load    dialogdelay     	data/bgs/temple1/mu_dialog/dialogdelay.txt
+know 	dialogbox			data/bgs/temple1/mu_dialog/dialogbox.txt
+know 	mu_dialog			data/bgs/temple1/mu_dialog/mu_dialog.txt
+know 	aldebaran_dialog	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
+know 	aldebaran_dialog2	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
 
 ## TEMPLE 2 ROAD
 
