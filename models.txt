@@ -260,6 +260,10 @@ load    dialogdelay     data/bgs/temple1/mu_dialog/dialogdelay.txt
 know 	dialogbox		data/bgs/temple1/mu_dialog/dialogbox.txt
 know 	mu_dialog		data/bgs/temple1/mu_dialog/mu_dialog.txt
 
+## TEMPLE 2 ROAD
+
+load    temple2roadcolumns      data/bgs/temple2-road/temple2roadcolumns.txt
+
 ## TEMPLE 3
 
 know    temple3_columns     data/bgs/temple3/columns/temple3_columns.txt

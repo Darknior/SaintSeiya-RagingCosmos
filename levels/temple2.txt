@@ -1,11 +1,11 @@
 
 music		data/music/music1.bor
 
-panel		data/bgs/ROOMS/temple2.png 
-
-frontpanel                   data/bgs/ROOMS/templerock2.png
-
-background                 data/bgs/ROOMS/sky001.png
+panel		data/bgs/temple2-road/temple2-road.png 
+frontpanel  data/bgs/temple2-road/layer1.png 
+bglayer  	data/bgs/temple2-road/temple2-sky.png		1 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple2-road/temple2-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple2-road/temple2-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
 
 cameratype 1
 
@@ -41,6 +41,11 @@ completebg 1
 
 
 -------------------------------------
+
+spawn       temple2roadcolumns
+coords      0 0
+at          0
+
 spawn malesoldier
 alias SOLDIER
 @script

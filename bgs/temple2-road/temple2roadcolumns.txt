@@ -1,0 +1,12 @@
+name            temple2roadcolumns
+type            panel
+speedf          -0.5
+setlayer        200
+facing          1
+
+
+anim idle
+    offset      0 0
+    drawmethod  alpha 6
+    drawmethod  channel 0.7
+    frame       data/bgs/temple2-road/temple2roadcolumns.png
