@@ -21,8 +21,8 @@ void menuSelect(int player)
 				int maxLines;
 				int add     = 1;
 
-				//ARCADE - SURVIVAL
-				if(openborvariant("current_set") == 11){
+				//STORY MODE
+				if(openborvariant("current_set") == 13){
 					maxCols  = 1;
 					maxLines	= 1;
 
@@ -66,8 +66,8 @@ void changeModel(int player)
 		
 		if(ani != openborconstant("ANI_PICK")){ //THE CURRENT HIGHLIGHTED CHARACTER IS NOT CONFIRMED YET?? EXECUTE ALL TASKS BELOW
 
-			//USED TO TRANSLATE MODELS - ARCADE/SURVIVAL
-			if(openborvariant("current_set") == 11){
+			//USED TO TRANSLATE MODELS - STORY MODE
+			if(openborvariant("current_set") == 13){
 				if(getglobalvar("previewLine"+player) == 0){
 					if(getglobalvar("previewCol"+player) == 0){setglobalvar("previewModel"+player, "DRAGON-SHIRYU");}else
 					if(getglobalvar("previewCol"+player) == 1){setglobalvar("previewModel"+player, "CYGNUS-HYOGA");}
