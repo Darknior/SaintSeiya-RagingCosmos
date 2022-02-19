@@ -1,0 +1,15 @@
+name	 aldebaran_dialog2
+type	 text
+setlayer 100
+
+load dialogbox
+
+anim idle
+	delay 	2
+	offset    0 0
+	summonframe 1 0 0 0 0
+	custentity dialogbox
+	delay	  500	
+	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog5.png
+	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog6.png	
+	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog7.png		
