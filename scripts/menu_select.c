@@ -3,7 +3,7 @@ void main()
 	void self = getlocalvar("self");
 	
 	if(openborvariant("in_selectscreen")){
-		if(openborvariant("current_set") == 11){drawStory();}
+		if(openborvariant("current_set") == 13){drawStory();}
 	}
 	
 	if(!openborvariant("in_selectscreen")){killentity(self);}
