@@ -259,6 +259,7 @@ load    mu                  data/bgs/temple1/mu/mu.txt
 load    dialogdelay     	data/bgs/temple1/mu_dialog/dialogdelay.txt
 know 	dialogbox			data/bgs/temple1/mu_dialog/dialogbox.txt
 know 	mu_dialog			data/bgs/temple1/mu_dialog/mu_dialog.txt
+know 	temple2_dialogbox	data/bgs/temple2/aldebaran_dialog/temple2_dialogbox.txt
 know 	aldebaran_dialog	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
 know 	aldebaran_dialog2	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
 know 	aiolia_dialog	data/bgs/temple5/aiolia_dialog/aiolia_dialog.txt

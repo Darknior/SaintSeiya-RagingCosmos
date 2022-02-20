@@ -1,0 +1,18 @@
+name	 aiolia_dialog
+type	 text
+setlayer 100
+
+load dialogbox
+
+anim idle
+	delay 	2
+	offset    100 0
+	summonframe 0 0 0 0 0
+	custentity dialogbox
+	delay	  500	
+	frame data/bgs/temple5/aiolia_dialog/01.png
+	frame data/bgs/temple5/aiolia_dialog/02.png
+	frame data/bgs/temple5/aiolia_dialog/03.png	
+	frame data/bgs/temple5/aiolia_dialog/04.png
+	frame data/bgs/temple5/aiolia_dialog/05.png
+	frame data/bgs/temple5/aiolia_dialog/06.png
