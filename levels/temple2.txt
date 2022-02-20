@@ -8,7 +8,10 @@ bglayer     data/bgs/temple2-road/temple2-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple2-road/temple2-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
 
 cameratype 1
-
+light        256 -44
+at        0
+shadowalpha     2
+at        0
 direction right
 
 settime 0

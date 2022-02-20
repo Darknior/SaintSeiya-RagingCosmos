@@ -1,0 +1,16 @@
+name	 milo_dialog
+type	 text
+setlayer 100
+
+load dialogbox
+
+anim idle
+	delay 	2
+	offset    0 0
+	summonframe 0 0 0 0 0
+	custentity dialogbox
+	delay	  500	
+	frame data/bgs/temple8/milo_dialog/01.png
+	frame data/bgs/temple8/milo_dialog/02.png
+	frame data/bgs/temple8/milo_dialog/03.png	
+	frame data/bgs/temple8/milo_dialog/04.png

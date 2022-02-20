@@ -1,0 +1,32 @@
+TEMPLE07:
+-INTRO-
+
+Milo:
+Bienvenu chevalier de bronze!
+
+Hyoga:
+Tu es Milo, le chevalier d'or du scorpion n'est ce pas? Laisse nous passer nous devons accéder à la salle du grand Pope!
+
+Milo:
+Si tu crois que je vais te laisser traverser et que tu
+as la moindre chance de me battre, tu rêve Hyoga du cygne!
+
+Hyoga:
+Personne n'a à me dire que je ne dois pas croire en mes rêves si
+tel est le cas! Seul un perdant sans convictions peut croire une chose pareille!
+
+END OF FIGHT
+
+Milo:
+Tu vas mourir Hyoga! Personne n'a pu survivre aux multiples piqûres du
+scorpion jusqu'ici; que l'aiguille d'Antarés te terrasse!
+
+Hyoga:
+Par la poussière de diamants!!
+
+Milo:
+Mais que? Il a réussi à toucher tous mes points vitaux!
+Sans la résistance spécifique de mon armure je serai mort...
+
+Milo:
+Trés bien, tu as prouvé ta bravoure et ton honneur de chevalier, j'accepte de te laisser passer Hyoga, pars rejoindre tes amis...
