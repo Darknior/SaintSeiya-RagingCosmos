@@ -9,7 +9,7 @@ anim idle
 	offset    100 0
 	summonframe 0 0 0 0 0
 	custentity dialogbox
-	delay	  500	
+	delay	  700	
 	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog1.png
 	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.png
 	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog3.png	
