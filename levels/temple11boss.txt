@@ -22,10 +22,24 @@ spawn temple11columns
 coords	0 0
 at 0
 
-spawn camus
-boss 	1
-coords	650 390
+spawn           camus_dialog
+flip			1
+coords          300 50
+at              0
+
+spawn           camus
+boss 			1
+coords          650 390
+at              0
+
+group 1 1
 at 0
+
+spawn           camus_dialog2
+boss 			1
+flip			1
+coords          300 50
+at              0
 
 
 

@@ -261,6 +261,13 @@ know 	dialogbox			data/bgs/temple1/mu_dialog/dialogbox.txt
 know 	mu_dialog			data/bgs/temple1/mu_dialog/mu_dialog.txt
 know 	aldebaran_dialog	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
 know 	aldebaran_dialog2	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
+know 	aiolia_dialog	data/bgs/temple5/aiolia_dialog/aiolia_dialog.txt
+know 	aiolia_dialog2	data/bgs/temple5/aiolia_dialog/aiolia_dialog2.txt
+know 	camus_dialog	data/bgs/temple11/camus_dialog/camus_dialog.txt
+know 	camus_dialog	data/bgs/temple11/camus_dialog/camus_dialog2.txt
+know 	aphrodite_dialog	data/bgs/temple12/aphrodite_dialog/aphrodite_dialog.txt
+know 	aphrodite_dialog2	data/bgs/temple12/aphrodite_dialog/aphrodite_dialog2.txt
+
 
 ## TEMPLE 2 ROAD
 
