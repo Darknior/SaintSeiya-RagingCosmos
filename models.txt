@@ -264,6 +264,8 @@ know 	aldebaran_dialog	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
 know 	aldebaran_dialog2	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
 know 	aiolia_dialog	data/bgs/temple5/aiolia_dialog/aiolia_dialog.txt
 know 	aiolia_dialog2	data/bgs/temple5/aiolia_dialog/aiolia_dialog2.txt
+know 	shaka_dialog	data/bgs/temple6/shaka_dialog/shaka_dialog.txt
+know 	shaka_dialog	data/bgs/temple6/shaka_dialog/shaka_dialog2.txt
 know 	milo_dialog	data/bgs/temple8/milo_dialog/milo_dialog.txt
 know 	milo_dialog	data/bgs/temple8/milo_dialog/milo_dialog2.txt
 know 	shura_dialog	data/bgs/temple10/shura_dialog/shura_dialog.txt
