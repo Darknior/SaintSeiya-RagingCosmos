@@ -31,7 +31,7 @@ load soldier
 
 anim SPAWN
 loop	0
-	offset	232 357
+	offset	232 325
 
 	delay	1
 
@@ -45,7 +45,7 @@ frame	data/chars/CUBE/null.png
 
 anim DEATH
 loop	0
-	offset	232 357
+	offset	232 325
 
 	delay	15
 
@@ -55,47 +55,47 @@ loop	0
 
 frame	data/chars/CUBE/02.png
 frame	data/chars/CUBE/03.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
-frame	data/chars/CUBE/04.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
+frame	data/chars/CUBE/045.png
 
 
 
 anim	block
 loop	0
-	offset	232 357
+	offset	232 325
 
 
 	delay	10
@@ -131,7 +131,7 @@ frame	data/chars/CUBE/01.png
 anim idle
 	loop	1
 	delay	10
-	offset	232 357
+	offset	232 325
 	
 	attack.damage.force 0
 	attack.position.x 0
@@ -152,7 +152,7 @@ frame	data/chars/CUBE/01.png
 anim walk
 	loop	1
 	delay	10
-	offset	232 357
+	offset	232 325
 	
 	bbox.position.x 144
 	bbox.position.y 94
@@ -180,7 +180,7 @@ anim pain
 
 subentity soldier
 summonframe 1 -200 0 0 1
-offset	232 357
+offset	232 325
 dropv 4 1 0
 	
 frame	data/chars/CUBE/01.png
@@ -199,7 +199,7 @@ anim fall
 
 anim rise
         loop	0
-	offset	232 357
+	offset	232 325
 	delay	10
 
 dropv 4 1 0

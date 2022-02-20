@@ -1,47 +1,54 @@
-music       data/music/ryuseiken.ogg
+background      data/bgs/temple7/temple7_back.png      0.4 1 0 0 0 0 1 1 1 0
+panel           data/bgs/temple7/temple7_ground.png
+#frontpanel      data/bgs/temple7/temple7_columns.png
 
-panel       data/bgs/temple7/layer2.png
-frontpanel  data/bgs/temple7/layer1.png 
+order           a
+direction       both
+settime         0
 
-order       a
-direction   both
-settime     0
-
-cameratype  0
+cameratype      0
+light           256 -44
+at              0
+shadowalpha     2
+at              0
 
 spawn1      60 30
 
 
 #-------------------------------------
 
+spawn       temple7columns
+coords      0 0
+at          0
+
 spawn       libra2
 alias       WEAPON
-coords      50 370
+coords      50 425
 at          0
 
 spawn       libra3
 alias       WEAPON
-coords      130 365
+coords      130 425
 at          0
 
 spawn       libra4
 alias       WEAPON
-coords      220 363
+coords      220 425
 at          0
 
 spawn       libra5
 alias       WEAPON
-coords      290 365
+coords      290 425
 at          0
 
 spawn       libra6
 alias       WEAPON
-coords      370 360
+coords      370 425
 at          0
 
 spawn       libra7
 alias       WEAPON
-coords      460 360
+coords      460 425
 at          0
 
 
@@ -53,7 +60,7 @@ at              0
 
 spawn           cube
 boss 			1
-coords          650 390
+coords          650 400
 at              0
 
 group 1 1
