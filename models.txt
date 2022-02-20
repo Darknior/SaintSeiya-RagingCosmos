@@ -262,6 +262,8 @@ know 	mu_dialog			data/bgs/temple1/mu_dialog/mu_dialog.txt
 know 	temple2_dialogbox	data/bgs/temple2/aldebaran_dialog/temple2_dialogbox.txt
 know 	aldebaran_dialog	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
 know 	aldebaran_dialog2	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
+know 	gemini_dialog	data/bgs/temple3/gemini_dialog/gemini_dialog.txt
+know 	gemini_dialog2	data/bgs/temple3/gemini_dialog/gemini_dialog2.txt
 know 	aiolia_dialog	data/bgs/temple5/aiolia_dialog/aiolia_dialog.txt
 know 	aiolia_dialog2	data/bgs/temple5/aiolia_dialog/aiolia_dialog2.txt
 know 	shaka_dialog	data/bgs/temple6/shaka_dialog/shaka_dialog.txt

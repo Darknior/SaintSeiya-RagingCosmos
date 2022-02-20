@@ -1,0 +1,14 @@
+name	 gemini_dialog2
+type	 text
+setlayer 100
+
+load dialogbox
+
+anim idle
+	delay 	2
+	offset    100 0
+	summonframe 0 0 0 0 0
+	custentity dialogbox
+	delay	  500	
+	frame data/bgs/temple3/gemini_dialog/06.png	
+

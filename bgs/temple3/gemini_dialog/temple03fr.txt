@@ -1,0 +1,34 @@
+TEMPLE03:
+
+-INTRO-
+
+Shun:
+Voici donc le chevalier d’or 
+des gémeaux! Ce temple semble 
+flotter dans une autre dimension et ne 
+posséde pas de sortie! 
+
+Gemini:
+.....
+
+Shun:
+Ma chaîne ne réagit pas! C'est comme si
+cet homme n'avait pas de cosmos 
+et n'existait pas!
+
+Gemini:
+.....
+
+Shun:
+Je dois réussir à le vaincre pour
+pouvoir sortir de cette illusion!
+
+BOSS DEAD
+cinematic in webm
+
+Shun:
+L'illusion a disparu! Cette armure
+était controllée par un lointain 
+cosmos, mais par qui?
+
+END OF LEVEL
