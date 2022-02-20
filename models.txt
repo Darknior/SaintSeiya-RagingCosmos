@@ -265,6 +265,8 @@ know 	aiolia_dialog	data/bgs/temple5/aiolia_dialog/aiolia_dialog.txt
 know 	aiolia_dialog2	data/bgs/temple5/aiolia_dialog/aiolia_dialog2.txt
 know 	milo_dialog	data/bgs/temple8/milo_dialog/milo_dialog.txt
 know 	milo_dialog	data/bgs/temple8/milo_dialog/milo_dialog2.txt
+know 	shura_dialog	data/bgs/temple10/shura_dialog/shura_dialog.txt
+know 	shura_dialog	data/bgs/temple10/shura_dialog/shura_dialog2.txt
 know 	camus_dialog	data/bgs/temple11/camus_dialog/camus_dialog.txt
 know 	camus_dialog	data/bgs/temple11/camus_dialog/camus_dialog2.txt
 know 	aphrodite_dialog	data/bgs/temple12/aphrodite_dialog/aphrodite_dialog.txt
