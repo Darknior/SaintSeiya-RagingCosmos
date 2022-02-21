@@ -60,7 +60,7 @@ at              0
 
 spawn           cube
 boss 			1
-coords          650 400
+coords          590 400
 at              0
 
 group 1 1
