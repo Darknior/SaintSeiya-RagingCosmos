@@ -1,4 +1,5 @@
 music		data/music/ryuseiken.ogg
+background      data/bgs/temple11/temple11_back.png      0.4 1 0 0 0 0 1 1 1 0
 panel		data/bgs/temple11/layer2.png
 fglayer         data/bgs/temple11/crystals.png        100 0.1 0 -20 0 0 0 1 1 0 1 0 5 30 0.7
 fglayer         data/bgs/temple11/clouds.png        -150 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0 1
