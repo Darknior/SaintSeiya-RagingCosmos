@@ -55,7 +55,7 @@ at          0
 spawn           balance_dialog
 flip			1
 coords          300 50
-at              0
+at              1
 
 
 spawn           cube
@@ -70,7 +70,7 @@ spawn           balance_dialog2
 boss 			1
 flip			1
 coords          300 50
-at              0
+at              1
 
 wait
 at          0

@@ -43,7 +43,7 @@ at          0
 spawn           aiolia_dialog
 flip			1
 coords          300 50
-at              0
+at              1
 
 
 spawn           aiolia
@@ -58,5 +58,5 @@ spawn           aiolia_dialog2
 boss 			1
 flip			1
 coords          300 50
-at              0
+at              1
 

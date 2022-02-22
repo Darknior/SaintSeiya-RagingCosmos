@@ -1,6 +1,6 @@
 name	 shura_dialog2
 type	 text
-setlayer 100
+setlayer 210
 
 load dialogbox
 

@@ -26,7 +26,7 @@ at 0
 spawn           camus_dialog
 flip			1
 coords          300 50
-at              0
+at              1
 
 spawn           camus
 boss 			1
@@ -40,7 +40,7 @@ spawn           camus_dialog2
 boss 			1
 flip			1
 coords          300 50
-at              0
+at              1
 
 
 
