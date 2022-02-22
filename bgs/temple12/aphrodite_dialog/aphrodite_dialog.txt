@@ -12,7 +12,6 @@ anim idle
 	delay	  500	
 	frame data/bgs/temple12/aphrodite_dialog/01.png
 	frame data/bgs/temple12/aphrodite_dialog/02.png
- @cmd playwebm "data/bgs/temple12/temple12-cutscene.webm" 1
 	frame data/bgs/temple12/aphrodite_dialog/03.png	
 	frame data/bgs/temple12/aphrodite_dialog/04.png
         frame data/bgs/temple12/aphrodite_dialog/05.png

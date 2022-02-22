@@ -13,17 +13,15 @@ spawn1          60 30
 
 #-------------------------------------
 
+spawn       shaka
+boss 		1
+coords      610 390
+at          0
 
 spawn           shaka_dialog
 flip			1
 coords          300 50
 at              1
-
-
-spawn       shaka
-boss 		1
-coords      610 390
-at          0
 
 group 1 1
 at 0

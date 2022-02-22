@@ -14,4 +14,4 @@ anim idle
 	frame data/bgs/temple3/gemini_dialog/02.png
 	frame data/bgs/temple3/gemini_dialog/03.png	
 	frame data/bgs/temple3/gemini_dialog/04.png
-	frame data/bgs/temple3/gemini_dialog/05.png
+

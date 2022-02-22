@@ -10,6 +10,8 @@ anim idle
 	summonframe 0 0 0 0 0
 	custentity dialogbox
 	delay	  500	
+	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialogA.png
+        @cmd playwebm "data/bgs/temple2/temple02-cutscene.webm" 1
 	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog5.png
 	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog6.png	
 	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog7.png		

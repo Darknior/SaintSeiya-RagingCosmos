@@ -63,15 +63,15 @@ at              0
 
 #-- BOSS -----------------------------------
 
-spawn           aphrodite_dialog
-flip			1
-coords          300 50
-at              1
-
 spawn           aphrodite
 boss 			1
 coords          650 410
 at              0
+
+spawn           aphrodite_dialog
+flip			1
+coords          300 50
+at              1
 
 group 1 1
 at 0

@@ -12,6 +12,9 @@ anim idle
 	delay	  500	
 	frame data/bgs/temple5/aiolia_dialog/07.png
 	frame data/bgs/temple5/aiolia_dialog/08.png	
+        @cmd playwebm "data/bgs/temple5/temple05-part1.webm" 1
 	frame data/bgs/temple5/aiolia_dialog/09.png
+	frame data/bgs/temple5/aiolia_dialog/07.png
+        @cmd playwebm "data/bgs/temple5/temple05-part2.webm" 1
 	frame data/bgs/temple5/aiolia_dialog/10.png
 	frame data/bgs/temple5/aiolia_dialog/11.png
