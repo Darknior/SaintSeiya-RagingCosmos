@@ -1,0 +1,12 @@
+name            temple6columns
+type            panel
+speedf          -0.5
+setlayer        200
+facing          1
+
+
+anim idle
+    offset      0 0
+    drawmethod  alpha 6
+    drawmethod  channel 0.83
+    frame       data/bgs/temple6/temple6columns.png

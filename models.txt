@@ -304,6 +304,10 @@ know    temple4_faces03     data/bgs/temple4/faces/temple4_faces03.txt
 load    flame               data/bgs/temple5/flame/flame.txt
 load    temple5columns      data/bgs/temple5/temple5columns.txt
 
+## TEMPLE 6
+
+load    temple6columns      data/bgs/temple6/temple6columns.txt
+
 ## TEMPLE 7
 
 load    temple7columns      data/bgs/temple7/temple7columns.txt

@@ -1,17 +1,25 @@
-music           data/music/ryuseiken.ogg
-panel           data/bgs/temple6/layer2.png
-frontpanel      data/bgs/temple6/layer1.png 
+music		data/music/7sens.ogg
+background      data/bgs/temple6/temple6_back.png      0.4 1 0 0 0 0 1 1 1 0
+panel           data/bgs/temple6/temple6_ground.png
 
 order           a
 direction       both
 settime         0
 
-cameratype      0
+cameratype 0
+light        256 -44
+at        0
+shadowalpha     2
+at        0
 
 spawn1          60 30
 
 
 #-------------------------------------
+
+spawn temple6columns
+coords	0 0
+at 0
 
 spawn       shaka
 boss 		1
