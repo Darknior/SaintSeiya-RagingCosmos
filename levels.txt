@@ -72,17 +72,6 @@ e4icon      3  442
 ##-----------------------------------------------------
 ##-----------------------------------------------------
 
-set         Temple2-Road
-maxplayers  1
-lives       1
-credits     10
-cansave     2
-disablehof  0
-typemp      0
-skipselect  seiya
-z           378 484
-file        data/levels/temple2.txt
-
 set         Temple_1_Mu
 maxplayers  1
 lives       1
@@ -93,6 +82,17 @@ typemp      0
 skipselect  seiya
 z           378 484
 file        data/levels/temple1.txt
+
+set         Temple_2-Road
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           378 484
+file        data/levels/temple2.txt
 
 set         Temple_2_Taureau
 maxplayers  4
@@ -172,6 +172,17 @@ z           378 484
 file        data/levels/temple8BOSS.txt
 
 ## 09 Sagittaire
+
+set         Temple_10-Road
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           378 484
+file        data/levels/temple10.txt
 
 set         Temple_10_Capricorne
 maxplayers  1

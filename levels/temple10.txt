@@ -1,14 +1,17 @@
 
-music		data/music/music3.bor
+music		data/music/music1.bor
 
-panel		data/bgs/ROOMS/temple10.png 
-
-frontpanel                   data/bgs/ROOMS/templerock10.png
-
-background                 data/bgs/ROOMS/sky003.png
+panel		data/bgs/temple10-road/temple10-road.png 
+frontpanel  data/bgs/temple10-road/layer1.png 
+bglayer  	data/bgs/temple10-road/temple10-sky.png		1 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple10-road/temple10-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple10-road/temple10-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
 
 cameratype 1
-
+light        256 -44
+at        0
+shadowalpha     2
+at        0
 direction right
 
 settime 0
