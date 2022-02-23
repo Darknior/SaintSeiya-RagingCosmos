@@ -13,16 +13,15 @@ spawn1      60 30
 
 #-------------------------------------
 
-spawn           milo_dialog
-flip			1
-coords          300 50
-at              0
-
-
 spawn           milo
 boss 			1
 coords          650 390
 at              0
+
+spawn           milo_dialog
+flip			1
+coords          300 50
+at              1
 
 group 1 1
 at 0
@@ -31,5 +30,5 @@ spawn           milo_dialog2
 boss 			1
 flip			1
 coords          300 50
-at              0
+at              1
 

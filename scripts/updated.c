@@ -103,4 +103,50 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 	if(openborvariant("in_menuscreen")){
 		if(getglobalvar("clearAll") == NULL()){setglobalvar("clearAll", 1);}
 	}
+	menuScreen();
 }// MAIN END
+
+void menuScreen()
+{//Draw a menu screen with and allow to customize positions
+
+	if(openborvariant("in_menuscreen")){
+		void vScreen	= openborvariant("vscreen");
+		float scaleX	= 256;
+		float scaleY	= 256;
+		float xMenu		= -216;
+		float yMenu		= 0;
+		float xBar		= -100;
+		float yBar		= 0;
+
+		//START AND DEFINE VARIABLES
+		if(getglobalvar("screen") == NULL()){
+			setglobalvar("screen", allocscreen(openborvariant("hresolution"), openborvariant("vresolution")));
+		}
+		
+		//CLEAR SCREEN
+		clearscreen(getglobalvar("screen"));
+		
+		//DRAW BACKGROUND
+		drawspriteq(getglobalvar("screen"), 0, openborconstant("MIN_INT"), openborconstant("MAX_INT")/3000000000, 0, 0);
+
+		//DRAW MENU
+		drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/2000000000, openborconstant("MAX_INT")/1000000000, xBar, yBar);
+		drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/10, openborconstant("MAX_INT"), xMenu, yMenu);
+
+		//DRAW SCREEN
+		changedrawmethod(NULL(),"reset", 1);
+		changedrawmethod(NULL(),"enabled", 1);
+		changedrawmethod(NULL(),"scalex", scaleX);
+		changedrawmethod(NULL(),"scaley", scaleY);
+		drawscreen(getglobalvar("screen"), 0, 0, openborconstant("MAX_INT"));
+		drawspriteq(vScreen, 0, openborconstant("MIN_INT"), openborconstant("MAX_INT"), 0, 0);
+		clearspriteq();
+	}
+	else
+	{
+		if(getglobalvar("screen") != NULL()){
+			free(getglobalvar("screen"));
+			setglobalvar("screen", NULL());
+		}
+	}
+}

@@ -1,6 +1,6 @@
 name	 shaka_dialog2
 type	 text
-setlayer 100
+setlayer 210
 
 load dialogbox
 
@@ -11,6 +11,9 @@ anim idle
 	custentity dialogbox
 	delay	  500	
 	frame data/bgs/temple6/shaka_dialog/05.png
-	frame data/bgs/temple6/shaka_dialog/06.png	
+        @cmd playwebm "data/bgs/temple6/temple06-part1.webm" 1	
+	frame data/bgs/temple6/shaka_dialog/06.png
 	frame data/bgs/temple6/shaka_dialog/07.png
-	frame data/bgs/temple6/shaka_dialog/08.png	
+	frame data/bgs/temple6/shaka_dialog/08.png
+        @cmd playwebm "data/bgs/temple6/temple06-part2.webm" 1	
+	frame data/bgs/temple6/shaka_dialog/08.png

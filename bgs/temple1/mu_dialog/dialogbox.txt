@@ -2,7 +2,7 @@ name	 dialogbox
 type	 panel
 speed	 5
 scroll	 -0.5
-setlayer 2
+setlayer 200
 
 
 anim idle

@@ -1,6 +1,6 @@
 name	 aphrodite_dialog
 type	 text
-setlayer 100
+setlayer 210
 
 load dialogbox
 
