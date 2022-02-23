@@ -151,3 +151,17 @@ void stop(void anim)
   if(anim != NULL()){performattack(self, openborconstant(anim));}
 
 }
+
+void jump(int flag)
+{//Turns jumping status
+    void self = getlocalvar("self");
+
+    if(flag == 1){
+        changeentityproperty(self, "aiflag", "jumping", 1);
+        changeentityproperty(self, "takeaction", "common_jump");
+    }
+    else
+    {
+        changeentityproperty(self, "aiflag", "jumping", 0);
+    }
+}

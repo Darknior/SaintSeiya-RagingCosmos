@@ -29,54 +29,35 @@ load lotusexplosion
 anim spawn
 	offset	93 127
 	delay	30	
-	seta 	208
+	seta    70
 	frame	data/chars/shaka/spawn1.png
 	frame	data/chars/shaka/spawn2.png
 	frame	data/chars/shaka/spawn3.png
 	frame	data/chars/shaka/spawn4.png
 	frame	data/chars/shaka/spawn5.png
+	@cmd jump 1
+	@cmd leaper 0 3.5 1
 	delay	5	
-	seta 	200
 	frame	data/chars/shaka/spawn5.png	
-	seta 	190
 	frame	data/chars/shaka/spawn5.png
-	seta 	180		
 	frame	data/chars/shaka/spawn6.png	
-	seta 	170		
 	frame	data/chars/shaka/spawn6.png	
-	seta 	160		
 	frame	data/chars/shaka/spawn6.png
-	seta 	150		
 	frame	data/chars/shaka/spawn7.png
-	seta 	140		
 	frame	data/chars/shaka/spawn7.png	
-	seta 	130		
 	frame	data/chars/shaka/spawn7.png
-	seta 	120		
 	frame	data/chars/shaka/spawn8.png	
-	seta 	110		
 	frame	data/chars/shaka/spawn8.png
-	seta 	100		
 	frame	data/chars/shaka/spawn8.png
-	seta 	90	
 	frame	data/chars/shaka/spawn9.png	
-	seta 	80	
 	frame	data/chars/shaka/spawn9.png
-	seta 	70	
 	frame	data/chars/shaka/spawn9.png
-	seta 	60
 	frame	data/chars/shaka/spawn10.png	
-	seta 	50
 	frame	data/chars/shaka/spawn10.png
-	seta 	40
 	frame	data/chars/shaka/spawn10.png
-	seta 	30
 	frame	data/chars/shaka/spawn11.png
-	seta 	20		
 	frame	data/chars/shaka/spawn11.png
-	seta 	10	
 	frame	data/chars/shaka/spawn11.png
-	seta 	0	
 	frame	data/chars/shaka/spawn12.png
 	delay	40	
 	frame	data/chars/shaka/spawn12.png	
