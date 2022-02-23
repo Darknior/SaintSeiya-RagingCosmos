@@ -23,7 +23,7 @@ at 0
 
 spawn       shaka
 boss 		1
-coords      610 390
+coords      600 390
 at          0
 
 spawn           shaka_dialog

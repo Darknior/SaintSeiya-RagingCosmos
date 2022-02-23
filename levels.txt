@@ -181,7 +181,7 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           378 484
+z           490 990
 file        data/levels/temple10.txt
 
 set         Temple_10_Capricorne
