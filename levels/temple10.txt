@@ -25,147 +25,60 @@ wall		3824 800 0 0 693 693 308 306		# Mur 2 à droite du temple
 
 -------------------------------------
 
+wait
+at 100
 
 spawn soldier1
 alias SOLDIER
-coords	850 700
-at 400
+coords	1500 800
+at 0
 
 spawn soldier3
 alias SOLDIER
-coords	-200 700
-at 400
+coords	1500 800
+at 0
 
 spawn soldier2
 alias SOLDIER
-coords	-200 800
-at 400
-
+coords	1500 800
+at 0
 
 wait
-at 400
-
+at 900
 
 spawn soldier3
 alias SOLDIER
-coords	850 700
-at 1000
+coords	1100 900
+at 900
 
 spawn soldier2
 alias SOLDIER
-coords	-200 650
-at 1000
+coords	1500 800
+at 900
 
 spawn soldier3
 alias SOLDIER
-coords	-200 600
-at 1000
+coords	1000 800
+at 900
 
 
 wait
-at 1000
-
+at 1700
 
 spawn soldier1
 alias SOLDIER
-coords	850 700
-at 1500
+coords	1600 800
+at 1700
+
+spawn soldier3
+alias SOLDIER
+coords	1400 800
+at 1700
 
 spawn soldier2
 alias SOLDIER
-coords	-200 800
-at 1500
-
-spawn soldier3
-alias SOLDIER
-item ENERGY
-coords	-200 600
-at 1500
-
+coords	1600 800
+at 1700
 
 wait
-at 1500
-
-
-
-spawn soldier1-1
-alias SOLDIER
-coords	850 800
-at 2000
-
-spawn soldier2
-alias SOLDIER
-coords	-200 900
-at 2000
-
-spawn soldier1
-alias SOLDIER
-coords	-200 700
-at 2000
-
-
-wait
-at 2000
-
-
-
-spawn soldier3
-alias SOLDIER
-coords	850 800
-at 2400
-
-spawn soldier1-1
-alias SOLDIER
-coords	-200 700
-at 2400
-
-spawn soldier1-1
-alias SOLDIER
-coords	-200 700
-at 2400
-
-
-wait
-at 2400
-
-
-spawn soldier1-1
-alias SOLDIER
-item LIFE
-coords	850 800
-at 2800
-
-spawn soldier2
-alias SOLDIER
-coords	-200 800
-at 2800
-
-spawn soldier1-1
-alias SOLDIER
-coords	-200 900
-at 2800
-
-
-wait
-at 2800
-
-
-spawn soldier3
-alias SOLDIER
-item LIFE
-coords	850 700
-at 3800
-
-spawn soldier3
-alias SOLDIER
-coords	-200 800
-at 3800
-
-spawn soldier3
-alias SOLDIER
-coords	-200 900
-at 3800
-
-
-wait
-at 3800
+at 1700
