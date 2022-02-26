@@ -3,6 +3,7 @@ void main()
 	int player = getlocalvar("player");
 	
 	menuSelect(player);
+	dialogs(player);
 }
 
 void menuSelect(int player)
@@ -89,6 +90,21 @@ void changeModel(int player)
 				changeentityproperty(getglobalvar("previewEntity"+player), "model", getglobalvar("previewModel"+player), 1);
 				changeentityproperty(getglobalvar("previewEntity"+player), "animation", openborconstant("ANI_SELECT"));
 			}
+		}
+	}
+}
+
+void dialogs(int player)
+{//Used to advance frames of the dialog entities
+	void entity	= getglobalvar("dialog_entity");
+	int exists	= getentityproperty(entity, "exists");
+	int lock	= getglobalvar("lockButton");
+	int frame	= getentityproperty(entity, "animpos");
+
+	//FRAME ADVANCE
+	if(entity && lock == 0){
+		if(playerkeys(player, 1, "attack")){
+			updateframe(entity, frame+1);
 		}
 	}
 }

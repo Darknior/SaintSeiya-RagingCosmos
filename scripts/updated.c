@@ -84,6 +84,11 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 	if(openborvariant("in_titlescreen")){
 
 		//FREE ASSETS
+		if(getglobalvar("portrait_seiya1") != NULL()){free(getglobalvar("portrait_seiya1"));}
+		if(getglobalvar("portrait_seiya2") != NULL()){free(getglobalvar("portrait_seiya2"));}
+		if(getglobalvar("portrait_aldebaran1") != NULL()){free(getglobalvar("portrait_aldebaran1"));}
+		if(getglobalvar("portrait_aldebaran2") != NULL()){free(getglobalvar("portrait_aldebaran2"));}
+		if(getglobalvar("portrait_aldebaran3") != NULL()){free(getglobalvar("portrait_aldebaran3"));}
 		if(getglobalvar("screen") != NULL()){free(getglobalvar("screen"));}
 
 		//SCRIPT USED TO CLEAR ALL VARIABLES AND ASSETS

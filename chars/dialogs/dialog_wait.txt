@@ -1,0 +1,14 @@
+name			dialog_wait #HOLD THE LEVEL ACTIVE UNTIL ALL DIALOG ENDS
+type			enemy
+health			1
+shadow			0
+nomove			1 1
+nodrop			2
+lifespan		0.001
+offscreenkill	6000
+
+anim idle
+	loop	0
+	delay	1
+	offset	0 0
+	frame	data/chars/dialogs/empty.png

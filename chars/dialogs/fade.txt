@@ -1,0 +1,13 @@
+name		fade #BLACK FADE
+type		text
+subtype		noskip
+setlayer	100000050
+shadow		0
+script		data/scripts/dialogs/fade.c
+
+anim idle
+	loop	0
+	delay	-1000
+	offset	0 0
+	frame	data/chars/dialogs/fade00.png
+	frame	data/chars/dialogs/fade01.png
