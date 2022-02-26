@@ -16,7 +16,8 @@ void main()
 	int lineAdd		= 18;
 	int textLayer	= 1001;
 	int spriteLayer	= 1000000001;
-	int alpha		= 3;
+	int alpha		= 6;
+	int channel		= 190;
 	int color		= 0;
 	int boxWidth	= 376;
 	int boHeight	= 91;
@@ -37,6 +38,11 @@ void main()
 		//REGISTER SELF AS THE CURRENT DIALOG ENTITY
 		setglobalvar("dialog_entity", self);
 	}
+
+	//SET CHANNEL OPACITIY
+	changedrawmethod(NULL(), "channelr", channel);
+	changedrawmethod(NULL(), "channelg", channel);
+	changedrawmethod(NULL(), "channelb", channel);
 
 	//TEXT PART 1 (RIGHT ALIGNMENT)
 	if(getglobalvar("drawText") == "part1"){
