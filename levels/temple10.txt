@@ -10,7 +10,7 @@ bglayer     data/bgs/temple10-road/temple10-temple.png  	0.5 1 0 0 0 0 1 9999 1 
 cameratype 1
 light        256 -44
 at        0
-shadowalpha     2
+shadowalpha     6
 at        0
 direction right
 

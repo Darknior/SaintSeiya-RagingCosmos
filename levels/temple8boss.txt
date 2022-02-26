@@ -6,8 +6,13 @@ panel		data/bgs/temple8/layer2.png
 order	    a
 direction   both
 settime     0
-cameratype  0
-
+cameratype      0
+light           100 -100
+at              0
+shadowcolor     -2  # Mirror effect
+at              0
+shadowalpha     3   # Mirror transparency
+at              0
 spawn1      60 30
 
 

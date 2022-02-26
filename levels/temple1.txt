@@ -17,6 +17,8 @@ cameratype 0
 
 light 0 -64
 at 0
+shadowalpha     6
+at        0
 
 spawn1  400 30
 

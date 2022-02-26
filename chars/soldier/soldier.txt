@@ -12,6 +12,7 @@ aimove           Chase
 #aggression       5
 hitenemy          0 0
 blockodds 1
+gfxshadow	1
 nodieblink 0
 blocked 1
 noquake 1 1

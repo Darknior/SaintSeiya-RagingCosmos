@@ -15,6 +15,7 @@ hitenemy          0 0
 nodieblink 3
 blocked 1
 noquake 1 1
+gfxshadow 1
 
 
 #subject_to_wall 0

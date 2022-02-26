@@ -15,7 +15,7 @@ hitenemy          0 0
 blockodds 1
 nodieblink 0
 blocked 1
-
+gfxshadow 1
 
 
 \\subject_to_wall 0

@@ -16,6 +16,7 @@ blockodds 1
 nodieblink 0
 blocked 1
 noquake 1 1
+gfxshadow 1
 palette data/chars/SOLDIER1-1/COLOR1.png
 
 \\subject_to_wall 0

@@ -12,7 +12,7 @@ light           100 -100
 at              0
 shadowcolor     -2  # Mirror effect
 at              0
-shadowalpha     6   # Mirror transparency
+shadowalpha     3   # Mirror transparency
 at              0
 
 
