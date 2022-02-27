@@ -49,16 +49,20 @@ void main()
 		drawsprite(getglobalvar("portrait_aldebaran1"), xPortRight, yPort, spriteLayer);
 		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
 
-		font = 0; text = "So here are the rebellious Bronze";
-		xText = xTextRight-strwidth(text, font);yText = yPos+lineStart;
+		font = 0; text = "So, here are the rebellious Bronze";
+		xText = 225;yText = 95 +lineStart;
 		drawstring(xText, yText, font, text, textLayer);
 
-		font = 0; text = "Knights who dare to defy the Sanctuary";
-		xText = xTextRight-strwidth(text, font);yText = yText+lineAdd;
+		font = 0; text = "Knights who dare to defy the";
+		xText = 225;yText = yText+lineStart;
 		drawstring(xText, yText, font, text, textLayer);
 
-		font = 0; text = "and the Grand Pope's orders!";
-		xText = xTextRight-strwidth(text, font);yText = yText+lineAdd;
+		font = 0; text = "Sanctuary and the Grand Pope's";
+		xText = 225;yText = yText+lineStart;
+		drawstring(xText, yText, font, text, textLayer);
+		
+		font = 0; text = "orders!";
+		xText = 225;yText = yText+lineStart;
 		drawstring(xText, yText, font, text, textLayer);
 	}
 
@@ -67,16 +71,20 @@ void main()
 		drawsprite(getglobalvar("portrait_seiya1"), xPortLeft, yPort, spriteLayer);
 		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
 
-		font = 0; text = "Let us pass, we must cross the 12 temples";
-		xText = xTextLeft;yText = yPos+lineStart;
+		font = 0; text = "Let us pass, we must cross the 12";
+		xText = 310;yText = 95 +lineStart;
 		drawstring(xText, yText, font, text, textLayer);
 
-		font = 0; text = "to reason with the great pope and save";
-		xText = xTextLeft;yText = yText+lineAdd;
+		font = 0; text = "temples to reason with the great";
+		xText = 310;yText = yText+lineStart;
 		drawstring(xText, yText, font, text, textLayer);
 
-		font = 0; text = "Saori, the reincarnation of Athena!";
-		xText = xTextLeft;yText = yText+lineAdd;
+		font = 0; text = "pope and save Saori, the";
+		xText = 310;yText = yText+lineStart;
+		drawstring(xText, yText, font, text, textLayer);
+		
+		font = 0; text = "reincarnation of Athena!";
+		xText = 310;yText = yText+lineStart;
 		drawstring(xText, yText, font, text, textLayer);
 	}
 
@@ -85,12 +93,16 @@ void main()
 		drawsprite(getglobalvar("portrait_aldebaran2"), xPortRight, yPort, spriteLayer);
 		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
 
-		font = 0; text = "I Aldebaran, golden knight of the bull";
-		xText = xTextRight-strwidth(text, font);yText = yPos+lineStart;
+		font = 0; text = "I, Aldebaran, golden knight of the";
+		xText = 225;yText = yPos+lineStart;
 		drawstring(xText, yText, font, text, textLayer);
 		
-		font = 0; text = "I will not let anyone cross my temple!!";
-		xText = xTextRight-strwidth(text, font);yText = yText+lineAdd;
+		font = 0; text = "bull, i will not let anyone cross my ";
+		xText = 225;yText = yText+lineAdd;
+		drawstring(xText, yText, font, text, textLayer);
+		
+		font = 0; text = "temple!!";
+		xText = 225;yText = yText+lineStart;
 		drawstring(xText, yText, font, text, textLayer);
 	}
 

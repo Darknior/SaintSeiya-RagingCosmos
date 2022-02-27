@@ -43,6 +43,19 @@ void main()
 	changedrawmethod(NULL(), "channelb", channel);
 
 	
+	//TEXT PART 0 (RIGHT ALIGNMENT)
+	if(getglobalvar("drawText") == "part0"){
+		drawsprite(getglobalvar("portrait_aldebaran2"), xPortRight, yPort, spriteLayer);
+		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
+
+		font = 0; text = "The fun is over! You will";
+		xText = 225;yText = 95+lineStart;
+		drawstring(xText, yText, font, text, textLayer);
+		
+		font = 0; text = "receive my ultimate technique!";
+		xText = 225;yText = yText+lineAdd;
+		drawstring(xText, yText, font, text, textLayer);
+
 	//TEXT PART 1 (RIGHT ALIGNMENT)
 	if(getglobalvar("drawText") == "part1"){
 		drawsprite(getglobalvar("portrait_aldebaran2"), xPortRight, yPort, spriteLayer);
