@@ -1,0 +1,18 @@
+name			dialog_aldebaran0 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog_aldebaran0.c
+animationscript	data/scripts/dialogs/dialog_animation.c
+
+anim idle
+	loop	0
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	@cmd setVar "drawText" "part0"
+		delay	600
+	frame	data/chars/dialogs/textbox.png
+	@cmd setVar "drawText" "dialog0_end"
+
+
