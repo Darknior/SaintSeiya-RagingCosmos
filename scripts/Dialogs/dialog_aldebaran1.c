@@ -31,9 +31,13 @@ void main()
 	if(getglobalvar("dialog_entity") == NULL()){
 		setglobalvar("portrait_seiya1", loadsprite("data/chars/dialogs/seiya1.png"));
 		setglobalvar("portrait_seiya2", loadsprite("data/chars/dialogs/seiya2.png"));
+		setglobalvar("portrait_seiya3", loadsprite("data/chars/dialogs/seiya3.png"));
 		setglobalvar("portrait_aldebaran1", loadsprite("data/chars/dialogs/aldebaran1.png"));
 		setglobalvar("portrait_aldebaran2", loadsprite("data/chars/dialogs/aldebaran2.png"));
 		setglobalvar("portrait_aldebaran3", loadsprite("data/chars/dialogs/aldebaran3.png"));
+		setglobalvar("portrait_aldebaran4", loadsprite("data/chars/dialogs/aldebaran4.png"));
+		setglobalvar("portrait_aldebaran5", loadsprite("data/chars/dialogs/aldebaran5.png"));
+
 
 		//REGISTER SELF AS THE CURRENT DIALOG ENTITY
 		setglobalvar("dialog_entity", self);
@@ -90,7 +94,7 @@ void main()
 
 	//TEXT PART 3 (RIGHT ALIGNMENT)
 	if(getglobalvar("drawText") == "part3"){
-		drawsprite(getglobalvar("portrait_aldebaran2"), xPortRight, yPort, spriteLayer);
+		drawsprite(getglobalvar("portrait_aldebaran1"), xPortRight, yPort, spriteLayer);
 		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
 
 		font = 0; text = "I, Aldebaran, golden knight of the";
@@ -108,7 +112,7 @@ void main()
 
 	//TEXT PART 4 (LEFT ALIGNMENT)
 	if(getglobalvar("drawText") == "part4"){
-		drawsprite(getglobalvar("portrait_seiya2"), xPortLeft, yPort, spriteLayer);
+		drawsprite(getglobalvar("portrait_seiya3"), xPortLeft, yPort, spriteLayer);
 		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
 
 		font = 0; text = "That's what we're going to see!";

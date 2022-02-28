@@ -8,22 +8,15 @@ animationscript	data/scripts/dialogs/dialog_animation.c
 
 anim idle
 	loop	0
-	delay	250
+	delay	600
 	offset	0 0
-	frame	data/chars/dialogs/empty.png
-	@cmd setVar "drawText" "part1"
-                delay	600
-	frame	data/chars/dialogs/textbox.png
-        (doesn't work?) cmd spawnFade "out" 0 0 0 10000000001 0.5
-	@cmd setVar "lockButton" 0
 	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
 	@cmd playwebm "data/bgs/temple2/scene1.webm" 1
 	@cmd playwebm "data/bgs/temple2/scene2.webm" 0
 	@cmd spawnFade "in" 0 0 0 10000000001 0.5
-	frame	data/chars/dialogs/textbox.png
 	@cmd setVar "drawText" "part1"
-delay	200
-	@cmd setVar "lockButton" 0
+delay	600
 	frame	data/chars/dialogs/textbox.png
 	@cmd setVar "drawText" "part2"
 delay	600

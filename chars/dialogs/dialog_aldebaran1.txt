@@ -13,9 +13,8 @@ anim idle
 	@cmd spawnFade "in" 0 0 0 10000000001 0.25
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
-		delay	-1000
+		delay	600
 	@cmd setVar "drawText" "part1"
-	@cmd setVar "lockButton" 0
 	frame	data/chars/dialogs/textbox.png
 	@cmd setVar "drawText" "part2"
 	frame	data/chars/dialogs/textbox.png

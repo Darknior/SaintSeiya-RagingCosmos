@@ -32,7 +32,7 @@ void main()
 		setglobalvar("portrait_aldebaran1", loadsprite("data/chars/dialogs/aldebaran1.png"));
 		setglobalvar("portrait_aldebaran2", loadsprite("data/chars/dialogs/aldebaran2.png"));
 		setglobalvar("portrait_aldebaran3", loadsprite("data/chars/dialogs/aldebaran3.png"));
-		setglobalvar("portrait_aldebaran4", loadsprite("data/chars/dialogs/aldebaran4.png"));
+	    setglobalvar("portrait_aldebaran4", loadsprite("data/chars/dialogs/aldebaran4.png"));
 		setglobalvar("portrait_aldebaran5", loadsprite("data/chars/dialogs/aldebaran5.png"));
 
 		//REGISTER SELF AS THE CURRENT DIALOG ENTITY
@@ -46,53 +46,20 @@ void main()
 
 	
 	//TEXT PART 1 (RIGHT ALIGNMENT)
-	if(getglobalvar("drawText") == "part1"){
-		drawsprite(getglobalvar("portrait_aldebaran2"), xPortRight, yPort, spriteLayer);
+	if(getglobalvar("drawText") == "part0"){
+		drawsprite(getglobalvar("portrait_aldebaran5"), xPortRight, yPort, spriteLayer);
 		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
 
-		font = 0; text = "Agh... But how?? You are going to d...";
+		font = 0; text = "The fun is over! You will";
 		xText = 225;yText = 95+lineStart;
-		drawstring(xText, yText, font, text, textLayer);
-	}
-
-	//TEXT PART 2 (RIGHT ALIGNMENT)
-	if(getglobalvar("drawText") == "part2"){
-		drawsprite(getglobalvar("portrait_aldebaran3"), xPortRight, yPort, spriteLayer);
-		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
-
-		font = 0; text = "Mwahaha!! You blew me away!!";
-		xText = 225;yText = 95+lineStart;
-		drawstring(xText, yText, font, text, textLayer);
-
-		font = 0; text = "You managed to break one of my";
-		xText = 225;yText = yText+lineAdd;
 		drawstring(xText, yText, font, text, textLayer);
 		
-		font = 0; text = "horns!";
+		font = 0; text = "receive my ultimate technique!";
 		xText = 225;yText = yText+lineAdd;
 		drawstring(xText, yText, font, text, textLayer);
 	}
-
-	//TEXT PART 3 (RIGHT ALIGNMENT)
-	if(getglobalvar("drawText") == "part3"){
-		drawsprite(getglobalvar("portrait_aldebaran4"), xPortRight, yPort, spriteLayer);
-		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
-
-		font = 0; text = "I really underestimated you bronze";
-		xText = 225;yText = 95+lineStart;
-		drawstring(xText, yText, font, text, textLayer);
-
-		font = 0; text = "knights! By way of gratitude, I agree";
-		xText = 225;yText = yText+lineAdd;
-		drawstring(xText, yText, font, text, textLayer);
-
-		font = 0; text = "to let you go on your way.";
-		xText = 225;yText = yText+lineAdd;
-		drawstring(xText, yText, font, text, textLayer);
-	}
-
 	//KILL THE DIALOG ENTITY AT THE END AND CLEAR VARIABLES
-	if(getglobalvar("drawText") == "dialog2_end"){
+	if(getglobalvar("drawText") == "dialog0_end"){
 		setglobalvar("dialog_entity", NULL());
 		killentity(self);
 	}

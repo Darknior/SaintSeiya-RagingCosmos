@@ -23,6 +23,7 @@ load    cursor_a        data/bgs/select/cursor_a.txt
 load    cursor_b        data/bgs/select/cursor_b.txt
 
 #Dialogs
+load    dialog_aldebaran0 data/chars/dialogs/dialog_aldebaran0.txt
 load    dialog_aldebaran1 data/chars/dialogs/dialog_aldebaran1.txt
 load    dialog_aldebaran2 data/chars/dialogs/dialog_aldebaran2.txt
 load    dialog_wait       data/chars/dialogs/dialog_wait.txt

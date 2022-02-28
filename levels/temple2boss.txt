@@ -29,6 +29,11 @@ at              0
 group			1 1
 at				0
 
+spawn           dialog_aldebaran0
+flip            1
+coords          200 100 #THIS IS THE DIALOG BOX POSITION, NO NEED TO CHANGE THE SCRIPT
+at              0
+
 spawn           dialog_aldebaran2
 flip            1
 coords          200 100 #THIS IS THE DIALOG BOX POSITION, NO NEED TO CHANGE THE SCRIPT
