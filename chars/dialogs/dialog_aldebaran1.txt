@@ -3,24 +3,55 @@ type			text
 subtype			noskip
 setlayer		100000001
 shadow			0
-ondrawscript	data/scripts/dialogs/dialog_aldebaran1.c
-animationscript	data/scripts/dialogs/dialog_animation.c
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
 
 anim idle
 	loop	0
-	delay	500
+	delay	2
 	offset	0 0
-	@cmd spawnFade "in" 0 0 0 10000000001 0.25
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
+
 		delay	600
-	@cmd setVar "drawText" "part1"
+	@cmd setVar "line1" "So, here are the rebellious Bronze"
+	@cmd setVar "line2" "Knights who dare to defy the"
+	@cmd setVar "line3" "Sanctuary and the Grand Pope's"
+	@cmd setVar "line4" "orders!"
+	@cmd setVar "portraitName" "aldebaran1"
+	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
-	@cmd setVar "drawText" "part2"
+
+	@cmd setVar "line1" "Let us pass, we must cross the 12"
+	@cmd setVar "line2" "temples to reason with the great"
+	@cmd setVar "line3" "pope and save Saori, the"
+	@cmd setVar "line4" "reincarnation of Athena!"
+	@cmd setVar "portraitName" "seiya1"
+	@cmd setVar "portraitSide" "left"
 	frame	data/chars/dialogs/textbox.png
-	@cmd setVar "drawText" "part3"
+
+	@cmd setVar "line1" "I, Aldebaran, golden knight of the"
+	@cmd setVar "line2" "bull, i will not let anyone cross my"
+	@cmd setVar "line3" "temple!!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aldebaran1"
+	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
-	@cmd setVar "drawText" "part4"
+
+	@cmd setVar "line1" "That's what we're going to see!"
+	@cmd setVar "line2" "On guard golden knight!"
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "seiya3"
+	@cmd setVar "portraitSide" "left"
 	frame	data/chars/dialogs/textbox.png
-	@cmd setVar "drawText" "dialog1_end"
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
 	frame	data/chars/dialogs/textbox.png

@@ -27,6 +27,7 @@ load runtaurus
 anim spawn
 	delay	10
 	offset	231 162
+	@cmd spawnFade "in" 0 0 0 10000000001 0.25
 	frame	data/chars/aldebaran/spawn1.png
 	frame	data/chars/aldebaran/spawn2.png
 	frame	data/chars/aldebaran/spawn3.png
@@ -38,6 +39,7 @@ anim spawn
 	frame	data/chars/aldebaran/spawn9.png
 	frame	data/chars/aldebaran/spawn10.png
 	frame	data/chars/aldebaran/spawn11.png
+	@cmd spawnDialog "dialog_aldebaran1" 200 100
 	frame	data/chars/aldebaran/spawn12.png
 	frame	data/chars/aldebaran/spawn13.png
 	frame	data/chars/aldebaran/spawn14.png
@@ -200,6 +202,7 @@ anim fall
 anim death
 	delay	20
 	offset	52 154
+	@cmd spawnDialog "dialog_aldebaran2" 200 100
 	frame	data/chars/aldebaran/death1.png
 	frame	data/chars/aldebaran/death2.png
 	frame	data/chars/aldebaran/death3.png
@@ -210,6 +213,7 @@ anim death
 	frame	data/chars/aldebaran/death8.png
 	frame	data/chars/aldebaran/death9.png
 	frame	data/chars/aldebaran/death10.png
+	@cmd spawnDialog "dialog_aldebaran3" 200 100
 	frame	data/chars/aldebaran/death11.png	
 	frame	data/chars/aldebaran/death11.png	
 

@@ -3,7 +3,7 @@ void spawnFade(void operation, float fX, float fY, float fZ, int layer, float ra
 	void vSpawn;
 	void self	= getlocalvar("self");
 	float xPos	= openborvariant("xpos");
-	int iDir	= getentityproperty(self, "direction");
+	int iDir	= 1;
 
 	fX = xPos+fX;
 
@@ -36,8 +36,34 @@ void spawnFade(void operation, float fX, float fY, float fZ, int layer, float ra
 	return vSpawn;
 }
 
+void spawnDialog(void entity, float fX, float fY)
+{//Spawn dialog entities
+	void vSpawn;
+	void self	= getlocalvar("self");
+	float xPos	= openborvariant("xpos");
+	int iDir	= 1;
+
+	fX = xPos+fX;
+
+	clearspawnentry();
+	setspawnentry("name", entity);
+
+	vSpawn = spawn();
+
+	changeentityproperty(vSpawn, "position", fX, fY, 0);
+	changeentityproperty(vSpawn, "direction", iDir);
+	
+	return vSpawn;
+}
+
 void setVar(void variable, float value)
 {//Set generic global variable for further use
 	
 	setglobalvar(variable, value);
+}
+
+void suicide()
+{//Set generic global variable for further use
+	
+	killentity(getlocalvar("self"));
 }

@@ -1,0 +1,49 @@
+name			dialog_aldebaran3 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "Agh... But how?? You are going to d..."
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aldebaran2"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Mwahaha!! You blew me away!!"
+	@cmd setVar "line2" "You managed to break one of my"
+	@cmd setVar "line3" "horns!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aldebaran3"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "I really underestimated you bronze"
+	@cmd setVar "line2" "knights! By way of gratitude, I agree"
+	@cmd setVar "line3" "to let you go on your way."
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aldebaran4"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png
