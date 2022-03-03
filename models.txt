@@ -26,6 +26,9 @@ load    cursor_b        data/bgs/select/cursor_b.txt
 load    dialog_aldebaran1 data/chars/dialogs/dialog_aldebaran1.txt
 load    dialog_aldebaran2 data/chars/dialogs/dialog_aldebaran2.txt
 load    dialog_aldebaran3 data/chars/dialogs/dialog_aldebaran3.txt
+load    dialog_gemini1 data/chars/dialogs/dialog_gemini1.txt
+load    dialog_gemini2 data/chars/dialogs/dialog_gemini2.txt
+load    dialog_gemini3 data/chars/dialogs/dialog_gemini3.txt
 load    dialog_wait       data/chars/dialogs/dialog_wait.txt
 load	fade              data/chars/dialogs/fade.txt
 

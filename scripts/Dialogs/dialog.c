@@ -14,8 +14,8 @@ void main()
 	int portraitLeft	= xPos+21;
 	int portraitRight	= xPos+302;
 	int yPortrait		= yPos+12;
-	int textLeft		= xPos+20;
-	int textRight		= xPos+104;
+	int textLeft		= xPos+27;
+	int textRight		= xPos+114;
 	int lineStart		= yPos+18;
 	int lineAdd			= 18;
 	int textLayer		= 1001;
@@ -27,7 +27,7 @@ void main()
 	int boHeight		= 91;
 	int xBox			= xPos+12;
 	int yBox			= yPos+5;
-	int font			= 0;
+	int font			= 5;
 	int xPortrait;
 	int xText;
 	int yText;

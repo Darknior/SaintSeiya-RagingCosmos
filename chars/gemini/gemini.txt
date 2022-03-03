@@ -27,6 +27,7 @@ load dimension_back
 anim spawn
 	delay	20
 	offset	69 176
+	@cmd spawnFade "in" 0 0 0 10000000001 0.25
 	frame	data/chars/gemini/spawn1.png
 	frame	data/chars/gemini/spawn2.png
 	frame	data/chars/gemini/spawn3.png
@@ -40,10 +41,12 @@ anim spawn
 	frame	data/chars/gemini/spawn11.png
 	frame	data/chars/gemini/spawn12.png
 	frame	data/chars/gemini/spawn13.png
+	@cmd spawnDialog "dialog_gemini1" 200 100
 	frame	data/chars/gemini/spawn14.png
 	frame	data/chars/gemini/spawn15.png
 	frame	data/chars/gemini/spawn16.png
 	frame	data/chars/gemini/spawn17.png
+	frame	data/chars/gemini/spawn18.png
 	frame	data/chars/gemini/spawn18.png
 
 anim idle
@@ -147,6 +150,19 @@ anim fall
 anim death
 	delay	40
 	offset	90 150
+	frame	data/chars/gemini/fall1.png
+	frame	data/chars/gemini/fall2.png
+	frame	data/chars/gemini/fall3.png
+	frame	data/chars/gemini/fall4.png
+	frame	data/chars/gemini/fall5.png
+	frame	data/chars/gemini/rise1.png
+	frame	data/chars/gemini/rise2.png
+	frame	data/chars/gemini/rise3.png
+	frame	data/chars/gemini/rise4.png
+	frame	data/chars/gemini/rise5.png
+	@cmd spawnDialog "dialog_gemini2" 200 100
+	frame	data/chars/gemini/death1.png
+	@cmd spawnDialog "dialog_gemini3" 200 100
 	frame	data/chars/gemini/death1.png
 	frame	data/chars/gemini/death2.png
 	offset	90 126

@@ -202,6 +202,17 @@ anim fall
 anim death
 	delay	20
 	offset	52 154
+        frame	data/chars/aldebaran/fall1.png
+	frame	data/chars/aldebaran/fall2.png
+	frame	data/chars/aldebaran/fall3.png
+	frame	data/chars/aldebaran/fall4.png
+	frame	data/chars/aldebaran/fall5.png
+	frame	data/chars/aldebaran/fall6.png
+	frame	data/chars/aldebaran/fall7.png
+	frame	data/chars/aldebaran/fall8.png
+	frame	data/chars/aldebaran/rise1.png
+	frame	data/chars/aldebaran/rise2.png
+	frame	data/chars/aldebaran/rise3.png
 	@cmd spawnDialog "dialog_aldebaran2" 200 100
 	frame	data/chars/aldebaran/death1.png
 	frame	data/chars/aldebaran/death2.png
