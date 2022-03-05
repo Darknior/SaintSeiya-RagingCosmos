@@ -1,5 +1,5 @@
 name		aiolia
-health		500
+health		100
 mp 			100
 speed		20
 type		enemy
@@ -30,6 +30,7 @@ anim spawn
 	offset	73 126
 	frame	data/chars/aiolia/spawn1.png
 	frame	data/chars/aiolia/spawn2.png
+	@cmd spawnDialog "dialog_aiolia1" 200 100
 	frame	data/chars/aiolia/spawn3.png
 	frame	data/chars/aiolia/spawn4.png
 	frame	data/chars/aiolia/spawn5.png
@@ -190,8 +191,22 @@ anim fall
 	frame	data/chars/aiolia/fall5.png
 	
 anim death
-	delay	10
-	offset	70 128
+	delay	15
+	offset	124 135
+	frame	data/chars/aiolia/fall1.png
+	frame	data/chars/aiolia/fall2.png
+	frame	data/chars/aiolia/fall3.png
+	frame	data/chars/aiolia/fall4.png
+	frame	data/chars/aiolia/fall5.png
+	frame	data/chars/aiolia/rise1.png
+	frame	data/chars/aiolia/rise2.png
+	frame	data/chars/aiolia/rise3.png
+	frame	data/chars/aiolia/rise4.png
+	@cmd spawnDialog "dialog_aiolia2" 200 100
+	frame	data/chars/aiolia/rise4.png
+	@cmd spawnDialog "dialog_aiolia3" 200 100	
+	frame	data/chars/aiolia/rise4.png
+	@cmd spawnDialog "dialog_aiolia4" 200 100
 	frame	data/chars/aiolia/death1.png
 	frame	data/chars/aiolia/death2.png
 	frame	data/chars/aiolia/death3.png

@@ -1,0 +1,73 @@
+name			dialog_aiolia1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "Aiolia! I'm happy to see you! We"
+	@cmd setVar "line2" "can count on you to help us,"
+	@cmd setVar "line3" "right?"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "seiya1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "....."
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aiolia1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "What is going on? You do not"
+	@cmd setVar "line2" "answer? Your Eyes! You have"
+	@cmd setVar "line3" "something changed on you!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "seiya4"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "....."
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aiolia1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "I see an evil look in your eyes!"
+	@cmd setVar "line2" "You are possessed! Your mind is"
+	@cmd setVar "line3" "being controlled by someone!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "seiya4"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Grrrr!"
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aiolia2"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

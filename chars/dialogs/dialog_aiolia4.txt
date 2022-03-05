@@ -1,0 +1,49 @@
+name			dialog_aiolia4 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "What happened?"
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aiolia3"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "You were under the influence"
+	@cmd setVar "line2" "of the great pope who controlled "
+	@cmd setVar "line3" "your mind... You came to your senses"
+	@cmd setVar "line4" "after killing someone... Cassios..."
+	@cmd setVar "portraitName" "seiya4"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "I am really sorry..."
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aiolia3"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

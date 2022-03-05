@@ -1,7 +1,7 @@
 music           data/music/ryuseiken.ogg
 
 panel           data/bgs/temple5/layer2.png
-
+offscreenkill 10000
 order           a
 direction       both
 settime         0
@@ -45,17 +45,12 @@ boss 			1
 coords          650 390
 at              0
 
-spawn           aiolia_dialog
-flip			1
-coords          300 50
-at              1
+group			1 1
+at				0
 
-group 1 1
-at 0
-
-spawn           aiolia_dialog2
-boss 			1
-flip			1
-coords          300 50
-at              1
+spawn           dialog_wait
+flip            1
+boss			1
+coords          1 1
+at              0
 

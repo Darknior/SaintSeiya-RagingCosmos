@@ -1,0 +1,58 @@
+name			dialog_aiolia2 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "Die Seiya! Lightning plasma..."
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aiolia2"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Hold on! I've been waiting for"
+	@cmd setVar "line2" "this moment for too long! It's up to"
+	@cmd setVar "line3" "me to kill Seiya!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "cassios1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "What are you doing? You fool!"
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aiolia2"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	delay	250
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd spawnFade "out" 0 0 0 10000000001 0.5
+	frame	data/chars/dialogs/empty.png
+	
+	@cmd playwebm "data/bgs/temple5/scene1.webm" 1
+	@cmd playwebm "data/bgs/temple5/scene2.webm" 0
+	@cmd spawnFade "in" 0 0 0 10000000001 0.5
+	frame	data/chars/dialogs/empty.png
+
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png
