@@ -1,5 +1,5 @@
 name		shaka
-health		500
+health		50
 mp 			100
 speed		20
 type		enemy
@@ -30,6 +30,8 @@ anim spawn
 	offset	93 127
 	delay	30	
 	seta    70
+	frame	data/chars/shaka/spawn1.png
+	@cmd spawnDialog "dialog_shaka1" 200 100
 	frame	data/chars/shaka/spawn1.png
 	frame	data/chars/shaka/spawn2.png
 	frame	data/chars/shaka/spawn3.png
@@ -176,10 +178,37 @@ anim fall
 	
 anim death
 	delay	20
+	offset	121 127
+	frame	data/chars/shaka/fall1.png
+	frame	data/chars/shaka/fall2.png
+	frame	data/chars/shaka/fall3.png
+	frame	data/chars/shaka/fall4.png
+	frame	data/chars/shaka/fall5.png
+	frame	data/chars/shaka/fall6.png
+	offset	108 127
+	frame	data/chars/shaka/rise1.png
+	frame	data/chars/shaka/rise2.png
+	frame	data/chars/shaka/rise3.png
+	offset	66 149
+	frame	data/chars/shaka/special21.png
+	frame	data/chars/shaka/special22.png
+	frame	data/chars/shaka/special23.png
+	frame	data/chars/shaka/special24.png
+	frame	data/chars/shaka/special25.png
+	frame	data/chars/shaka/special26.png
+	frame	data/chars/shaka/special27.png	
+	frame	data/chars/shaka/special28.png
+	frame	data/chars/shaka/special29.png	
+	frame	data/chars/shaka/special30.png	
+	frame	data/chars/shaka/special31.png	
+	@cmd spawnDialog "dialog_shaka2" 200 100
+	frame	data/chars/shaka/special32.png	
+	frame	data/chars/shaka/special33.png
 	offset	53 160
 	frame	data/chars/shaka/death1.png
 	frame	data/chars/shaka/death2.png
 	frame	data/chars/shaka/death3.png
+	@cmd spawnDialog "dialog_shaka3" 200 100
 	frame	data/chars/shaka/death4.png
 	frame	data/chars/shaka/death5.png
 	frame	data/chars/shaka/death6.png
@@ -190,6 +219,8 @@ anim death
 	frame	data/chars/shaka/death11.png
 	frame	data/chars/shaka/death12.png
 	frame	data/chars/shaka/death13.png
+	frame	data/chars/shaka/death14.png
+	@cmd spawnDialog "dialog_shaka4" 200 100
 	frame	data/chars/shaka/death14.png	
 
 anim rise

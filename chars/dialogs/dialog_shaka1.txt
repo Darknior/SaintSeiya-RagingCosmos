@@ -1,0 +1,58 @@
+name			dialog_shaka1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "How dare you disturb my"
+	@cmd setVar "line2" "meditation?"
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shaka1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "You are the golden knight of the"
+	@cmd setVar "line2" "virgin Shaka, the one who claims"
+	@cmd setVar "line3" "to be closest to the gods?"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "ikki1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Right, and you're Ikki the phoenix"
+	@cmd setVar "line2" "knight, right? I will punish your"
+	@cmd setVar "line3" "arrogance and send you to hell!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shaka1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "It doesn't bother me, quite the"
+	@cmd setVar "line2" "contrary! Hell is a place i visit"
+	@cmd setVar "line3" "often!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "ikki1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

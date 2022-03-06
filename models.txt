@@ -35,6 +35,10 @@ load    dialog_aiolia1 data/chars/dialogs/dialog_aiolia1.txt
 load    dialog_aiolia2 data/chars/dialogs/dialog_aiolia2.txt
 load    dialog_aiolia3 data/chars/dialogs/dialog_aiolia3.txt
 load    dialog_aiolia4 data/chars/dialogs/dialog_aiolia4.txt
+load    dialog_shaka1 data/chars/dialogs/dialog_shaka1.txt
+load    dialog_shaka2 data/chars/dialogs/dialog_shaka2.txt
+load    dialog_shaka3 data/chars/dialogs/dialog_shaka3.txt
+load    dialog_shaka4 data/chars/dialogs/dialog_shaka4.txt
 load    dialog_wait       data/chars/dialogs/dialog_wait.txt
 load	fade              data/chars/dialogs/fade.txt
 

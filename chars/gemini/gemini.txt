@@ -1,5 +1,5 @@
 name		gemini
-health		500
+health		50
 mp 			100
 speed		20
 type		enemy

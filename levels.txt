@@ -146,7 +146,7 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           378 484
+z           390 484
 file        data/levels/temple6boss.txt
 
 set         Temple_7_Balance
