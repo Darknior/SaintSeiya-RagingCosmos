@@ -26,11 +26,10 @@ load circles
 load hands
 #----------------------------------------------------------
 anim spawn
-	delay	250
+	delay	10
 	offset	68 160
 	frame	data/chars/deathmask/spawn1.png
 	frame	data/chars/deathmask/spawn1.png
-	delay	16
 	frame	data/chars/deathmask/spawn1.png
 	frame	data/chars/deathmask/spawn2.png
 	frame	data/chars/deathmask/spawn3.png
@@ -39,6 +38,8 @@ anim spawn
 	frame	data/chars/deathmask/spawn6.png
 	frame	data/chars/deathmask/spawn7.png
 	frame	data/chars/deathmask/spawn8.png
+	frame	data/chars/deathmask/spawn9.png
+	@cmd spawnDialog "dialog_deathmask1" 200 100
 	frame	data/chars/deathmask/spawn9.png
 
 anim idle
