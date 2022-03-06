@@ -198,6 +198,7 @@ anim death
 	frame	data/chars/aiolia/fall3.png
 	frame	data/chars/aiolia/fall4.png
 	frame	data/chars/aiolia/fall5.png
+	offset	124 135
 	frame	data/chars/aiolia/rise1.png
 	frame	data/chars/aiolia/rise2.png
 	frame	data/chars/aiolia/rise3.png

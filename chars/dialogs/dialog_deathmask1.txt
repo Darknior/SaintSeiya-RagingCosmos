@@ -1,4 +1,4 @@
-name			dialog_deatmask1 #TIMELINE
+name			dialog_deathmask1 #TIMELINE
 type			text
 subtype			noskip
 setlayer		100000001
@@ -30,18 +30,18 @@ anim idle
 	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
 
-	@cmd setVar "line1" "Every tortured face around you belongs"
-	@cmd setVar "line2" "to a man I killed with my own hands!"
-	@cmd setVar "line3" ""
+	@cmd setVar "line1" "Every tortured face around you"
+	@cmd setVar "line2" "belongs to a man I killed with"
+	@cmd setVar "line3" "my own hands!"
 	@cmd setVar "line4" ""
 	@cmd setVar "portraitName" "deathmask1"
 	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
 
 	@cmd setVar "line1" "Even though I can't see you, I sense"
-	@cmd setVar "line2" "your evil energy, your dark soul puts"
-	@cmd setVar "line3" "the reputation of the Golden Knights"
-	@cmd setVar "line4" "to shame!"
+	@cmd setVar "line2" "your evil energy, your dark soul"
+	@cmd setVar "line3" "puts the reputation of the Golden"
+	@cmd setVar "line4" "Knights to shame!"
 	@cmd setVar "portraitName" "shiryu1"
 	@cmd setVar "portraitSide" "left"
 	frame	data/chars/dialogs/textbox.png

@@ -1,5 +1,5 @@
 name		deathmask
-health		500
+health		50
 mp 			100
 speed		20
 type		enemy
@@ -28,18 +28,20 @@ load hands
 anim spawn
 	delay	10
 	offset	68 160
-	frame	data/chars/deathmask/spawn1.png
-	frame	data/chars/deathmask/spawn1.png
-	frame	data/chars/deathmask/spawn1.png
-	frame	data/chars/deathmask/spawn2.png
-	frame	data/chars/deathmask/spawn3.png
-	frame	data/chars/deathmask/spawn4.png
-	frame	data/chars/deathmask/spawn5.png
-	frame	data/chars/deathmask/spawn6.png
 	frame	data/chars/deathmask/spawn7.png
 	frame	data/chars/deathmask/spawn8.png
 	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
 	@cmd spawnDialog "dialog_deathmask1" 200 100
+	frame	data/chars/deathmask/spawn9.png
+	frame	data/chars/deathmask/spawn9.png
 	frame	data/chars/deathmask/spawn9.png
 
 anim idle
@@ -171,26 +173,23 @@ anim fall
 	frame	data/chars/deathmask/fall5.png
 	
 anim death
-	summonframe 0 0 0 0
-	subentity hands
-	unsummonframe 12
-	delay	15
-	offset	36 127
-	frame	data/chars/deathmask/pain1.png
-	frame	data/chars/deathmask/pain2.png
-	frame	data/chars/deathmask/pain3.png
-	frame	data/chars/deathmask/pain1.png
-	frame	data/chars/deathmask/pain2.png
-	frame	data/chars/deathmask/pain3.png
+	delay	10
+	offset	92 126
+	frame	data/chars/deathmask/fall1.png
+	frame	data/chars/deathmask/fall2.png
+	frame	data/chars/deathmask/fall3.png
+	frame	data/chars/deathmask/fall4.png
+	frame	data/chars/deathmask/fall5.png
 	offset	77 130
-	delay	15
 	frame	data/chars/deathmask/rise1.png
 	frame	data/chars/deathmask/rise2.png
 	frame	data/chars/deathmask/rise3.png
-	frame	data/chars/deathmask/rise1.png
-	frame	data/chars/deathmask/rise2.png
-	frame	data/chars/deathmask/rise3.png
-	frame	data/chars/misc/empty.gif
+	frame	data/chars/deathmask/idle1.png
+	offset	37 169
+	frame	data/chars/deathmask/special1.png
+	frame	data/chars/deathmask/special2.png
+	@cmd spawnDialog "dialog_deathmask2" 200 100
+	frame	data/chars/deathmask/special2.png
 
 anim rise
 	offset	77 130

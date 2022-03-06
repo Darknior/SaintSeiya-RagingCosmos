@@ -149,18 +149,20 @@ anim fall
 	
 anim death
 	delay	40
-	offset	90 150
+	offset	146 144
 	frame	data/chars/gemini/fall1.png
 	frame	data/chars/gemini/fall2.png
 	frame	data/chars/gemini/fall3.png
 	frame	data/chars/gemini/fall4.png
 	frame	data/chars/gemini/fall5.png
+	offset	146 144
 	frame	data/chars/gemini/rise1.png
 	frame	data/chars/gemini/rise2.png
 	frame	data/chars/gemini/rise3.png
 	frame	data/chars/gemini/rise4.png
 	frame	data/chars/gemini/rise5.png
 	@cmd spawnDialog "dialog_gemini2" 200 100
+	offset	90 150
 	frame	data/chars/gemini/death1.png
 	@cmd spawnDialog "dialog_gemini3" 200 100
 	frame	data/chars/gemini/death1.png

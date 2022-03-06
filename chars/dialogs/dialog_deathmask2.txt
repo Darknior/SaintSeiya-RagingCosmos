@@ -14,11 +14,11 @@ anim idle
 	frame	data/chars/dialogs/empty.png
 
 		delay	600
-	@cmd setVar "line1" "The fun is over! You will"
-	@cmd setVar "line2" "receive my ultimate technique!"
-	@cmd setVar "line3" ""
-	@cmd setVar "line4" ""
-	@cmd setVar "portraitName" "aldebaran5"
+	@cmd setVar "line1" "You guys are tougher than I"
+	@cmd setVar "line2" "thought! Let's continue this fight in"
+	@cmd setVar "line3" "the realm of the dead! By the waves"
+	@cmd setVar "line4" "of Hades!"
+	@cmd setVar "portraitName" "deathmask2"
 	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
 
@@ -32,8 +32,8 @@ anim idle
 	@cmd spawnFade "out" 0 0 0 10000000001 0.5
 	frame	data/chars/dialogs/empty.png
 	
-	@cmd playwebm "data/bgs/temple2/scene1.webm" 1
-	@cmd playwebm "data/bgs/temple2/scene2.webm" 0
+	@cmd playwebm "data/bgs/temple4/scene1.webm" 1
+	@cmd playwebm "data/bgs/temple4/scene2.webm" 0
 	@cmd spawnFade "in" 0 0 0 10000000001 0.5
 	frame	data/chars/dialogs/empty.png
 
