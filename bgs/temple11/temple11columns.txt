@@ -1,6 +1,7 @@
 name			temple11columns
 type			panel
 speedf  -0.5
+offscreenkill 10000
 setlayer 200
 facing 1
 

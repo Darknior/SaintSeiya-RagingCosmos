@@ -39,6 +39,9 @@ load    dialog_shaka1 data/chars/dialogs/dialog_shaka1.txt
 load    dialog_shaka2 data/chars/dialogs/dialog_shaka2.txt
 load    dialog_shaka3 data/chars/dialogs/dialog_shaka3.txt
 load    dialog_shaka4 data/chars/dialogs/dialog_shaka4.txt
+load    dialog_camus1 data/chars/dialogs/dialog_camus1.txt
+load    dialog_camus2 data/chars/dialogs/dialog_camus2.txt
+load    dialog_camus3 data/chars/dialogs/dialog_camus3.txt
 load    dialog_wait       data/chars/dialogs/dialog_wait.txt
 load	fade              data/chars/dialogs/fade.txt
 

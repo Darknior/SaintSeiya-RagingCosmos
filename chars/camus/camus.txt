@@ -1,5 +1,5 @@
 name		camus
-health		500
+health		50
 mp 			100
 speed		20
 type		enemy
@@ -28,8 +28,8 @@ load icecrystal
 anim spawn
 	delay	15
 	offset	67 128
-	frame	data/chars/camus/spawn1.png
-	frame	data/chars/camus/spawn2.png
+	frame	data/chars/camus/spawn3.png
+	@cmd spawnDialog "dialog_camus1" 200 100
 	frame	data/chars/camus/spawn3.png
 	frame	data/chars/camus/spawn4.png
 	frame	data/chars/camus/spawn5.png
@@ -151,7 +151,25 @@ anim fall
 	frame	data/chars/camus/fall5.png
 	
 anim death
-	delay	25
+	delay	20
+	offset	97 127
+	frame	data/chars/camus/fall1.png
+	frame	data/chars/camus/fall2.png
+	frame	data/chars/camus/fall3.png
+	frame	data/chars/camus/fall4.png
+	frame	data/chars/camus/fall5.png
+	offset	115 127
+	frame	data/chars/camus/rise1.png
+	frame	data/chars/camus/rise2.png
+	frame	data/chars/camus/rise3.png
+	frame	data/chars/camus/rise4.png
+	offset	56 143
+	frame	data/chars/camus/special21.png
+	frame	data/chars/camus/special22.png
+	frame	data/chars/camus/special23.png
+	frame	data/chars/camus/special24.png
+	@cmd spawnDialog "dialog_camus2" 200 100
+	frame	data/chars/camus/special25.png
 	offset	110 240
 	frame	data/chars/camus/death1.png
 	frame	data/chars/camus/death2.png
@@ -159,6 +177,8 @@ anim death
 	frame	data/chars/camus/death4.png
 	frame	data/chars/camus/death5.png
 	frame	data/chars/camus/death6.png
+	frame	data/chars/camus/death7.png
+	@cmd spawnDialog "dialog_camus3" 200 100
 	frame	data/chars/camus/death7.png
 
 anim rise
