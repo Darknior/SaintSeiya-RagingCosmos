@@ -1,0 +1,41 @@
+name			dialog_milo4 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "What? He managed to hit all my"
+	@cmd setVar "line2" "vital points! Without the specific"
+	@cmd setVar "line3" "resistance of my armor I would be"
+	@cmd setVar "line4" "dead..."
+	@cmd setVar "portraitName" "milo1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Very well, you have proven your"
+	@cmd setVar "line2" "bravery and your honor as a knight,"
+	@cmd setVar "line3" "I agree to let you pass Hyoga,"
+	@cmd setVar "line4" "go join your friends..."
+	@cmd setVar "portraitName" "milo1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

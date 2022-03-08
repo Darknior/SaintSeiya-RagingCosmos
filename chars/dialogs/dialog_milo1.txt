@@ -1,0 +1,58 @@
+name			dialog_milo1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "Welcome Bronze Knight!"
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "milo1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "You are Milo, the Golden Knight"
+	@cmd setVar "line2" "of the Scorpion aren't you? Let"
+	@cmd setVar "line3" "us pass we must reach the room"
+	@cmd setVar "line4" "of the great Pope!"
+	@cmd setVar "portraitName" "hyoga1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "If you believe that I will let"
+	@cmd setVar "line2" "you cross and you have the slightest"
+	@cmd setVar "line3" "chance of beating me, you are"
+	@cmd setVar "line4" "dreaming Hyoga of the swan!"
+	@cmd setVar "portraitName" "milo1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "No one has to tell me that I"
+	@cmd setVar "line2" "shouldn't believe in my dreams if"
+	@cmd setVar "line3" "that's the case! Only a loser without"
+	@cmd setVar "line4" "convictions can believe such a thing!"
+	@cmd setVar "portraitName" "hyoga4"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

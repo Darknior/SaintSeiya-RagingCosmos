@@ -1,5 +1,5 @@
 name		milo
-health		500
+health		100
 mp 			100
 speed		20
 type		enemy
@@ -27,6 +27,7 @@ load sting
 anim spawn
 	delay	12	
 	offset	127 139
+	@cmd spawnFade "in" 0 0 0 10000000001 0.25
 	frame	data/chars/milo/spawn1.png
 	frame	data/chars/milo/spawn2.png
 	frame	data/chars/milo/spawn3.png	
@@ -36,6 +37,7 @@ anim spawn
 	frame	data/chars/milo/spawn1.png
 	frame	data/chars/milo/spawn2.png
 	frame	data/chars/milo/spawn3.png
+	sound data/chars/milo/laugh.wav
 	frame	data/chars/milo/spawn1.png
 	frame	data/chars/milo/spawn2.png
 	frame	data/chars/milo/spawn3.png	
@@ -50,6 +52,8 @@ anim spawn
 	frame	data/chars/milo/spawn12.png
 	frame	data/chars/milo/spawn13.png
 	frame	data/chars/milo/spawn14.png
+	frame	data/chars/milo/spawn15.png
+	@cmd spawnDialog "dialog_milo1" 200 100
 	frame	data/chars/milo/spawn15.png
 
 anim idle
@@ -158,6 +162,22 @@ anim fall
 	
 anim death
 	delay	15
+	offset	92 126
+	frame	data/chars/milo/fall1.png
+	frame	data/chars/milo/fall2.png
+	frame	data/chars/milo/fall3.png
+	frame	data/chars/milo/fall4.png
+	frame	data/chars/milo/fall5.png
+	offset	95 130
+	frame	data/chars/milo/rise1.png
+	frame	data/chars/milo/rise2.png
+	frame	data/chars/milo/rise3.png
+	frame	data/chars/milo/rise4.png
+	frame	data/chars/milo/rise5.png
+	@cmd spawnDialog "dialog_milo2" 200 100	
+	frame	data/chars/milo/rise5.png
+	@cmd spawnDialog "dialog_milo3" 200 100	
+	frame	data/chars/milo/rise5.png
 	offset	47 127
 	frame	data/chars/milo/death1.png
 	frame	data/chars/milo/death2.png
@@ -168,6 +188,7 @@ anim death
 	frame	data/chars/milo/death7.png
 	frame	data/chars/milo/death8.png
 	frame	data/chars/milo/death9.png
+	@cmd spawnDialog "dialog_milo4" 200 100	
 	frame	data/chars/milo/death8.png
 	frame	data/chars/milo/death9.png
 	frame	data/chars/milo/death8.png
@@ -299,7 +320,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale sting
 	delay	15
 	offset	62 126
-	sound data/chars/milo/02.wav
+	sound data/chars/milo/scarlet-needle1.wav
 	summonframe 0 0 0 0
 	subentity sting
 	unsummonframe 6
@@ -319,7 +340,7 @@ anim special # Défense spéciale sting
 anim freespecial2 # Défense spéciale sting
 	delay	15
 	offset	62 126
-	sound data/chars/milo/02.wav
+	sound data/chars/milo/scarlet-needle1.wav
 	summonframe 0 0 0 0
 	subentity sting
 	unsummonframe 6
@@ -339,7 +360,7 @@ anim freespecial2 # Défense spéciale sting
 anim special2 # Défense spéciale sting
 	delay	15
 	offset	62 126
-	sound data/chars/milo/02.wav
+	sound data/chars/milo/scarlet-needle1.wav
 	summonframe 0 0 0 0
 	subentity sting
 	unsummonframe 6
@@ -362,7 +383,7 @@ anim freespecial3 # Attaque spéciale Aiguille écarlate
 	delay	5
 	offset	46 130
 	bbox 32 16 38 114
-	sound data/chars/milo/02.wav
+	sound data/chars/milo/scarlet-needle1.wav
 	summonframe 0 0 0 0
 	subentity sting
 	unsummonframe 5
@@ -387,6 +408,7 @@ anim freespecial3 # Attaque spéciale Aiguille écarlate
 	attack5 60 16 55 83 10 0 0 0 5 12
 	frame	data/chars/milo/special30.png
 	attack5 0
+	sound data/chars/milo/scarlet-needle2.wav
 	frame	data/chars/milo/special31.png
 	attack5 24 56 150 32 10 0 0 0 5 12
 	frame	data/chars/milo/special32.png
@@ -409,7 +431,7 @@ anim freespecial3 # Attaque spéciale Aiguille écarlate
 anim riseattack # Défense spéciale sting
 	delay	15
 	offset	62 126
-	sound data/chars/milo/02.wav
+	sound data/chars/milo/scarlet-needle1.wav
 	summonframe 0 0 0 0
 	subentity sting
 	unsummonframe 6
