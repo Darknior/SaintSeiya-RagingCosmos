@@ -98,6 +98,7 @@ know    arma0-3         data/chars/LIBRA/arma0-3.txt
 know    arma0-4         data/chars/LIBRA/arma0-4.txt
 
 load    CASSIOS         data/chars/CASSIOS/CASSIOS.txt
+load    cassios_rescue  data/chars/cassios/cassios_rescue.txt
 
 ## PEGASUS / SEIYA
 

@@ -1,0 +1,32 @@
+
+name			cassios_rescue
+type			npc
+health			1
+nomove			1 1
+gfxshadow		1
+ondrawscript	data/scripts/dialogs/cassios_rescue.c
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	215 174
+@cmd dasher 2 0 0
+frame	data/chars/cassios/02.png
+frame	data/chars/cassios/03.png
+frame	data/chars/cassios/04.png
+frame	data/chars/cassios/05.png
+frame	data/chars/cassios/06.png
+frame	data/chars/cassios/07.png
+
+anim	follow1
+	loop	1
+	delay	10
+	offset	215 174
+frame	data/chars/cassios/18.png
+
+anim	follow2
+	loop	1
+	delay	10
+	offset	215 174
+frame	data/chars/cassios/11.png

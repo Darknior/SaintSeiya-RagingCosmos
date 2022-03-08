@@ -198,14 +198,21 @@ anim death
 	frame	data/chars/aiolia/fall3.png
 	frame	data/chars/aiolia/fall4.png
 	frame	data/chars/aiolia/fall5.png
-	offset	124 135
 	frame	data/chars/aiolia/rise1.png
 	frame	data/chars/aiolia/rise2.png
 	frame	data/chars/aiolia/rise3.png
 	frame	data/chars/aiolia/rise4.png
 	@cmd spawnDialog "dialog_aiolia2" 200 100
 	frame	data/chars/aiolia/rise4.png
-	@cmd spawnDialog "dialog_aiolia3" 200 100	
+		delay	-1000
+	@cmd spawnScreen "cassios_rescue" -50 0 0 1 "ANI_IDLE"
+	frame	data/chars/aiolia/rise4.png
+	@cmd spawnDialog "dialog_aiolia3" 200 100
+	frame	data/chars/aiolia/rise4.png
+		delay	15
+	frame	data/chars/aiolia/rise1.png
+	frame	data/chars/aiolia/rise2.png
+	frame	data/chars/aiolia/rise3.png
 	frame	data/chars/aiolia/rise4.png
 	@cmd spawnDialog "dialog_aiolia4" 200 100
 	frame	data/chars/aiolia/death1.png

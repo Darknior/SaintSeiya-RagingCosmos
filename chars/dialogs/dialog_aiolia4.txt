@@ -10,7 +10,7 @@ anim idle
 	loop	0
 	delay	2
 	offset	0 0
-	@cmd setVar "lockButton" 1
+	@cmd setVar "lockButton" 0
 	frame	data/chars/dialogs/empty.png
 
 		delay	600
@@ -46,4 +46,4 @@ anim idle
 	@cmd setVar "portraitSide" "right"
 	@cmd setVar "dialog_entity" NULL()
 	@cmd suicide
-	frame	data/chars/dialogs/textbox.png
+	frame	data/chars/dialogs/empty.png

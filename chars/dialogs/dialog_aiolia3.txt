@@ -10,7 +10,16 @@ anim idle
 	loop	0
 	delay	2
 	offset	0 0
-	@cmd setVar "lockButton" 1
+	@cmd setVar "lockButton" 0
+	frame	data/chars/dialogs/empty.png
+		delay	250
+	@cmd spawnFade "out" 0 0 0 10000000001 0.5
+	frame	data/chars/dialogs/empty.png
+
+	@cmd playwebm "data/bgs/temple5/scene1.webm" 1
+	@cmd playwebm "data/bgs/temple5/scene2.webm" 0
+	@cmd spawnFade "in" 0 0 0 10000000001 0.5
+	@cmd setVar "cassios_rescue" "fall"
 	frame	data/chars/dialogs/empty.png
 
 		delay	600
@@ -38,7 +47,7 @@ anim idle
 	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
 
-	delay	250
+		delay	250
 	@cmd setVar "line1" NULL()
 	@cmd setVar "line2" NULL()
 	@cmd setVar "line3" NULL()
@@ -50,9 +59,10 @@ anim idle
 	
 	@cmd playwebm "data/bgs/temple5/scene3.webm" 1
 	@cmd playwebm "data/bgs/temple5/scene4.webm" 0
+	@cmd setVar "aiolia" "fall"
 	@cmd spawnFade "in" 0 0 0 10000000001 0.5
 	frame	data/chars/dialogs/empty.png
 
 	@cmd setVar "dialog_entity" NULL()
 	@cmd suicide
-	frame	data/chars/dialogs/textbox.png
+	frame	data/chars/dialogs/empty.png

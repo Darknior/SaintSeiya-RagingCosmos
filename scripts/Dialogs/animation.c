@@ -56,6 +56,29 @@ void spawnDialog(void entity, float fX, float fY)
 	return vSpawn;
 }
 
+void spawnScreen(void entity, float fX, float fY, float fZ, int dir, void anim)
+{//Spawn entity at specific location relative to xPos and yPos
+	void vSpawn;
+	void self	= getlocalvar("self");
+	float z		= getentityproperty(self, "z");
+	float xPos	= openborvariant("xpos");
+
+	fX = xPos+fX;
+	fZ = z+fZ;
+
+	clearspawnentry();
+	setspawnentry("name", entity);
+
+	vSpawn = spawn();
+	
+	changeentityproperty(vSpawn, "position", fX, fZ, fY);
+	changeentityproperty(vSpawn, "direction", dir);
+	changeentityproperty(vSpawn, "parent", self);
+	changeentityproperty(vSpawn, "animation", openborconstant(anim));
+
+	return vSpawn;
+}
+
 void setVar(void variable, float value)
 {//Set generic global variable for further use
 	
