@@ -1,0 +1,66 @@
+name			dialog_shura3 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "What are you doing you fool!"
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shura1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "You leave me no choice, the only"
+	@cmd setVar "line2" "way to defeat you  is to use the"
+	@cmd setVar "line3" "Forbidden Ultimate Dragon"
+	@cmd setVar "line4" "Technique!"
+	@cmd setVar "portraitName" "shiryu6"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "The ultimate dragon technique?"
+	@cmd setVar "line2" "This is ridiculous, are you going"
+	@cmd setVar "line3" "to sacrifice yourself to beat me?"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shura2"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Yes I told you so... I can die in"
+	@cmd setVar "line2" "this fight... but know one thing..."
+	@cmd setVar "line3" "a dragon never dies alone!!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shiryu4"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	delay	250
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd spawnFade "out" 0 0 0 10000000001 0.5
+	frame	data/chars/dialogs/empty.png
+	
+	@cmd playwebm "data/bgs/temple10/scene3.webm" 1
+	@cmd playwebm "data/bgs/temple10/scene4.webm" 0
+	@cmd spawnFade "in" 0 0 0 10000000001 0.5
+	frame	data/chars/dialogs/empty.png
+
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png
