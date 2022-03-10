@@ -1,6 +1,6 @@
 
 name	SHURA
-health	2680
+health	10
 speed	1
 type	enemy
 
@@ -27,21 +27,31 @@ falldie 1
 gfxshadow	1
 load cosmo
 
+anim spawn
+	delay	10
+	offset	231 162
+	@cmd spawnFade "in" 0 0 0 10000000001 0.25
+	frame	data/chars/shura/01.png
+	frame	data/chars/shura/01.png
+	frame	data/chars/shura/01.png
+	@cmd spawnDialog "dialog_shura1" 200 100
+	frame	data/chars/shura/01.png
+	frame	data/chars/shura/01.png
+
+
 anim DEATH
 loop	0
 	offset	220 246
-
 	delay	10
-
-
-
 frame	data/chars/SHURA/19.png
+	@cmd spawnDialog "dialog_shura2" 200 100
 frame	data/chars/SHURA/20.png
 frame	data/chars/SHURA/21.png
 frame	data/chars/SHURA/22.png
 frame	data/chars/SHURA/23.png
 frame	data/chars/SHURA/24.png
 frame	data/chars/SHURA/25.png
+	@cmd spawnDialog "dialog_shura3" 200 100
 frame	data/chars/SHURA/27.png
 frame	data/chars/SHURA/27.png
 frame	data/chars/SHURA/27.png
