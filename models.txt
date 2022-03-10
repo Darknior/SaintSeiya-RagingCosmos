@@ -10,7 +10,7 @@ typemp       2
 #blockratio   1
 #mpblock      1
 
-maxattacks 5
+maxattacks 6
 maxfollows 50
 
 
@@ -101,7 +101,7 @@ know    arma0-2         data/chars/LIBRA/arma0-2.txt
 know    arma0-3         data/chars/LIBRA/arma0-3.txt
 know    arma0-4         data/chars/LIBRA/arma0-4.txt
 
-load    CASSIOS         data/chars/CASSIOS/CASSIOS.txt
+load    cassios        data/chars/cassios/cassios.txt
 load    cassios_rescue  data/chars/cassios/cassios_rescue.txt
 
 ## PEGASUS / SEIYA

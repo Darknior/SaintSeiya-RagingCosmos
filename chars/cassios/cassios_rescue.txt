@@ -1,4 +1,3 @@
-
 name			cassios_rescue
 type			npc
 health			1
@@ -9,24 +8,30 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
-	delay	10
-	offset	215 174
+	delay	20
+	offset	66 190
 @cmd dasher 2 0 0
-frame	data/chars/cassios/02.png
-frame	data/chars/cassios/03.png
-frame	data/chars/cassios/04.png
-frame	data/chars/cassios/05.png
-frame	data/chars/cassios/06.png
-frame	data/chars/cassios/07.png
+	frame	data/chars/cassios/walk1.png
+	frame	data/chars/cassios/walk2.png
+	frame	data/chars/cassios/walk3.png
+	frame	data/chars/cassios/walk4.png
+	frame	data/chars/cassios/walk5.png
+	frame	data/chars/cassios/walk6.png
 
 anim	follow1
-	loop	1
 	delay	10
-	offset	215 174
-frame	data/chars/cassios/18.png
+	offset	113 190
+	frame	data/chars/cassios/special21.png
+	frame	data/chars/cassios/special22.png
+	frame	data/chars/cassios/special23.png
+	frame	data/chars/cassios/special24.png
+	frame	data/chars/cassios/special25.png
+	frame	data/chars/cassios/special26.png
+	frame	data/chars/cassios/special27.png
+	loop	1	
+	frame	data/chars/cassios/special28.png
 
 anim	follow2
-	loop	1
-	delay	10
-	offset	215 174
-frame	data/chars/cassios/11.png
+	loop 1
+	offset	146 199
+	frame	data/chars/cassios/fall6.png

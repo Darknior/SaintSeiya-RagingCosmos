@@ -42,8 +42,9 @@ completebg 1
 
 -------------------------------------
 
-spawn CASSIOS
-coords  800 100
+spawn cassios
+boss 1
+coords  740 450
 at 0
 
 spawn soldier1

@@ -1,6 +1,7 @@
 #import "data/scripts/library/spawn.h"
 #import "data/scripts/library/basic.h"
 #import "data/scripts/dialogs/animation.c"
+#import "data/scripts/main_grabs.c"
 
 void keyint(void Ani, int Frame, void Key, int Hflag)
 {// Change current animation if proper key is pressed or released

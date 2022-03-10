@@ -127,6 +127,17 @@ skipselect  seiya
 z           400 484
 file        data/levels/temple4boss.txt
 
+set         Temple_5_Cassios
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           384 484
+file        data/levels/temple5.txt
+
 set         Temple_5_Lion
 maxplayers  1
 lives       1
