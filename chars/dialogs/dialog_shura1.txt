@@ -1,0 +1,65 @@
+name			dialog_shura1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "There you are knight! Why didn't"
+	@cmd setVar "line2" "you fight us inside your temple?"
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shiryu5"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "I am Shura, Golden Knight of"
+	@cmd setVar "line2" "Capricorn! I am Athena's most"
+	@cmd setVar "line3" "trusted servant!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shura1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Do you really think I would have"
+	@cmd setVar "line2" "taken the risk of dirtying the"
+	@cmd setVar "line3" "statue of Athena inside my temple?"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shura1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "How can you say such nonsense!"
+	@cmd setVar "line2" "Saori Kido is the reincarnation of"
+	@cmd setVar "line3" "Athena! You have the wrong enemy,"
+	@cmd setVar "line4" "we are trying to save her!"
+	@cmd setVar "portraitName" "shiryu5"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "You are usurpers with your false"
+	@cmd setVar "line2" "Athena! You deserve death for"
+	@cmd setVar "line3" "speaking such blasphemies!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shura1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png
