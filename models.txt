@@ -43,10 +43,6 @@ load    dialog_milo1 data/chars/dialogs/dialog_milo1.txt
 load    dialog_milo2 data/chars/dialogs/dialog_milo2.txt
 load    dialog_milo3 data/chars/dialogs/dialog_milo3.txt
 load    dialog_milo4 data/chars/dialogs/dialog_milo4.txt
-load    dialog_shura1 data/chars/dialogs/dialog_shura1.txt
-load    dialog_shura2 data/chars/dialogs/dialog_shura2.txt
-load    dialog_shura3 data/chars/dialogs/dialog_shura3.txt
-load    dialog_shura4 data/chars/dialogs/dialog_shura4.txt
 load    dialog_camus1 data/chars/dialogs/dialog_camus1.txt
 load    dialog_camus2 data/chars/dialogs/dialog_camus2.txt
 load    dialog_camus3 data/chars/dialogs/dialog_camus3.txt
@@ -268,11 +264,10 @@ know    GEMINI          data/chars/GEMINI/GEMINI.txt
 
 know    MILO            data/chars/MILO/MILO.txt
 
-know    geminisuper     data/chars/SAGA/geminisuper.txt
-know    SAGA            data/chars/SAGA/SAGA.txt
+know    saga            data/chars/saga/saga.txt
 
 know    SHAKA           data/chars/SHAKA/SHAKA.txt
-know    SHURA           data/chars/SHURA/shura2.txt
+know    SHURA           data/chars/SHURA/SHURA.txt
 
 know    CUBE            data/chars/CUBE/CUBE.txt
 

@@ -1,5 +1,5 @@
 name		great_pope
-health		500
+health		50
 mp 			100
 speed		20
 type		enemy
@@ -23,6 +23,7 @@ atchain 1 1 2 3 4 5
 animationscript	data/scripts/player.c
 
 load knife
+load saga
 #----------------------------------------------------------
 anim spawn
 	delay	15
@@ -177,6 +178,8 @@ anim death
 	frame	data/chars/great_pope/death25.png
 	frame	data/chars/great_pope/death26.png
 	frame	data/chars/great_pope/death27.png
+	@cmd spawn01 "saga" 0 0 0	
+	frame	data/chars/misc/empty.gif
 
 anim rise
 	offset	104 138
