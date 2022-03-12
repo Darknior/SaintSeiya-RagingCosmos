@@ -7,31 +7,38 @@ ondrawscript	data/scripts/dialogs/cassios_rescue.c
 animationscript	data/scripts/player.c
 
 anim	idle
-	loop	1
+	loop	0
 	delay	20
-	offset	66 190
-@cmd dasher 2 0 0
+	offset	73 187
+	@cmd dasher 1.2 0 0
 	frame	data/chars/cassios/walk1.png
 	frame	data/chars/cassios/walk2.png
 	frame	data/chars/cassios/walk3.png
 	frame	data/chars/cassios/walk4.png
 	frame	data/chars/cassios/walk5.png
 	frame	data/chars/cassios/walk6.png
+	frame	data/chars/cassios/walk1.png
+	frame	data/chars/cassios/walk2.png
+	frame	data/chars/cassios/walk3.png
+	frame	data/chars/cassios/walk4.png
+	frame	data/chars/cassios/walk5.png
+	frame	data/chars/cassios/walk6.png
+	delay	100
+	offset	61 214
+	@cmd dasher 0 0 0
+	frame	data/chars/cassios/special4.png
+	offset	114 189
+	@cmd dasher 4 0 0
+	frame	data/chars/cassios/special21.png
 
 anim	follow1
+	loop	0
 	delay	10
-	offset	113 190
-	frame	data/chars/cassios/special21.png
-	frame	data/chars/cassios/special22.png
-	frame	data/chars/cassios/special23.png
-	frame	data/chars/cassios/special24.png
-	frame	data/chars/cassios/special25.png
+	offset	67 191
 	frame	data/chars/cassios/special26.png
-	frame	data/chars/cassios/special27.png
-	loop	1	
-	frame	data/chars/cassios/special28.png
 
 anim	follow2
-	loop 1
-	offset	146 199
+	loop	0
+	delay	10
+	offset	89 210
 	frame	data/chars/cassios/fall6.png

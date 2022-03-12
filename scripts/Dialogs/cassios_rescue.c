@@ -9,17 +9,22 @@ void main()
 	void vAnim		= getentityproperty(self, "animationID");
 	void pAnim		= getentityproperty(parent, "animationID");
 	float xPos		= openborvariant("xpos");
+	int vFrame		= getentityproperty(self, "animpos");
+	int pFrame		= getentityproperty(parent, "animpos");
 	int dx			= getentityproperty(self, "x");
 	int px			= getentityproperty(parent, "x");
-	int xBind		= 40;
+	int xBind		= 35;
+	int yBind		= 55;
+	int zBind		= -1;
+	int dBind		= -1;
 	int dist		= 160;
 	
 	if(vAnim == openborconstant("ANI_IDLE")){
-		if(dx >= px){
-			bindentity(parent, self, xBind, 0, 0, 0);
+		if(dx >= px-xBind){
+			bindentity(parent, self, xBind, zBind, yBind, dBind);
 			changeentityproperty(self, "velocity", 0, NULL(), NULL());
 			changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
-			updateframe(parent, getentityproperty(parent, "animpos")+1);
+			updateframe(parent, pFrame+1);
 		}
 	}
 
@@ -28,14 +33,15 @@ void main()
 			bindentity(parent, NULL());
 			changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
 			changeentityproperty(self, "position", xPos+dist);
-			changeentityproperty(parent, "position", xPos+dist*2);
+			changeentityproperty(parent, "position", xPos+dist*2, NULL(), 0);
 			changeentityproperty(parent, "direction", 0);
+			updateframe(parent, pFrame+1);
 		}
 	}
 
 	if(vAnim == openborconstant("ANI_FOLLOW2")){
 		if(getglobalvar("aiolia") == "fall"){
-			updateframe(parent, getentityproperty(parent, "animpos")+1);
+			updateframe(parent, pFrame+1);
 			setglobalvar("aiolia", NULL());
 		}
 	}
