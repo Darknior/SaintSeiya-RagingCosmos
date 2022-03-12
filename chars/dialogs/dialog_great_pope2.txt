@@ -1,0 +1,43 @@
+name			dialog_great_pope2 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "You are the Gemini Knight!!"
+	@cmd setVar "line2" "It's you who usurped the place"
+	@cmd setVar "line3" "of the true great pope all this time!!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "seiya6"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+		delay	600
+	@cmd setVar "line1" "It's too late for athena! She"
+	@cmd setVar "line2" "is already dead, with her scepter"
+	@cmd setVar "line3" "and her shield I will soon be able"
+	@cmd setVar "line4" "to beat anyone, even the gods!"
+	@cmd setVar "portraitName" "saga0"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

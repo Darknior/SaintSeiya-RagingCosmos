@@ -50,6 +50,10 @@ load    dialog_shura4 data/chars/dialogs/dialog_shura4.txt
 load    dialog_camus1 data/chars/dialogs/dialog_camus1.txt
 load    dialog_camus2 data/chars/dialogs/dialog_camus2.txt
 load    dialog_camus3 data/chars/dialogs/dialog_camus3.txt
+load    dialog_great_pope1 data/chars/dialogs/dialog_great_pope1.txt
+load    dialog_great_pope2 data/chars/dialogs/dialog_great_pope2.txt
+load    dialog_great_pope3 data/chars/dialogs/dialog_great_pope3.txt
+load    dialog_great_pope4 data/chars/dialogs/dialog_great_pope4.txt
 load    dialog_wait       data/chars/dialogs/dialog_wait.txt
 load	fade              data/chars/dialogs/fade.txt
 

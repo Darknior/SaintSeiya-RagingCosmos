@@ -36,6 +36,7 @@ anim spawn
 	frame	data/chars/great_pope/spawn6.png
 	frame	data/chars/great_pope/spawn7.png
 	frame	data/chars/great_pope/spawn8.png
+	@cmd spawnDialog "dialog_great_pope1" 200 100
 	frame	data/chars/great_pope/spawn9.png
 	frame	data/chars/great_pope/spawn10.png
 	frame	data/chars/great_pope/spawn10.png

@@ -29,6 +29,7 @@ anim spawn
 	delay	20
 	offset	43 221
 	frame	data/chars/saga/spawn1.png
+	@cmd spawnDialog "dialog_great_pope2" 200 100
 	frame	data/chars/saga/spawn2.png
 	frame	data/chars/saga/spawn3.png
 	frame	data/chars/saga/spawn4.png
@@ -53,7 +54,11 @@ anim spawn
 	frame	data/chars/saga/spawn23.png
 	frame	data/chars/saga/spawn24.png
 	frame	data/chars/saga/spawn25.png
-	frame	data/chars/saga/spawn26.png	
+	frame	data/chars/saga/spawn26.png
+	offset	35 135
+	frame	data/chars/saga/idle1.png
+	@cmd spawnDialog "dialog_great_pope3" 200 100	
+	frame	data/chars/saga/idle1.png
 
 anim idle
 	loop	1
@@ -167,7 +172,7 @@ anim fall
 	frame	data/chars/saga/fall8.png
 	
 anim death
-	delay	10
+	delay	20
 	offset	152 137
 	landframe 7
 	frame	data/chars/saga/fall1.png
@@ -181,6 +186,8 @@ anim death
 	frame	data/chars/saga/death1.png
 	frame	data/chars/saga/death2.png
 	frame	data/chars/saga/death3.png
+	frame	data/chars/saga/death4.png
+	@cmd spawnDialog "dialog_great_pope4" 200 100
 	frame	data/chars/saga/death4.png
 
 anim rise
