@@ -296,14 +296,18 @@ anim grabattack2 # Attaque au corps à corps finisher
 	bbox 30 24 57 205
 	sound data/sounds/punch.wav
 	@cmd grabStart
-	@cmd position 5 45 15 0 0	
+	@cmd position 0 41 85 1 0	
 	frame	data/chars/cassios/grabattack21.png
-	@cmd position 3 25 15 0 0
+	@cmd position 0 4 135 1 0
 	frame	data/chars/cassios/grabattack22.png
+	@cmd position 0 3 126 1 0
 	frame	data/chars/cassios/grabattack23.png
-	@cmd position 4 40 -1 0 0	
+	@cmd position 0 38 56 1 0
 	frame	data/chars/cassios/grabattack24.png
-	@cmd slam 12 2 -1 2.5 0 0	
+	@cmd position 2 21 32 1 0
+	frame	data/chars/cassios/grabattack25.png
+	@cmd depost
+	@cmd slam 12 2 -1 -2.5 0 0	
 	frame	data/chars/cassios/grabattack25.png
 	@cmd clearL	
 	frame	data/chars/cassios/grabattack25.png	

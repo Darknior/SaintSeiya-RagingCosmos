@@ -38,6 +38,7 @@ icon       	data/chars/seiya/icon.png
 
 
 animationscript	data/scripts/player.c
+#ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/blink_select.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
@@ -729,6 +730,14 @@ anim fall
 	offset	114 110
 	delay	10
 	landframe 4
+	frame	data/chars/seiya/fall1.png
+	frame	data/chars/seiya/fall2.png
+	frame	data/chars/seiya/fall3.png
+	frame	data/chars/seiya/fall4.png
+
+anim fall7
+	offset	114 110
+	delay	-1000
 	frame	data/chars/seiya/fall1.png
 	frame	data/chars/seiya/fall2.png
 	frame	data/chars/seiya/fall3.png
