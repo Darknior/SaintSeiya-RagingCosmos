@@ -1,0 +1,65 @@
+name			dialog_aphrodite1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "I'm Afrodite, the knight of the"
+	@cmd setVar "line2" "fishes, it's a real miracle that"
+	@cmd setVar "line3" "you made it to the twelfth house!!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "aphrodite1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Those roses you're holding! It was"
+	@cmd setVar "line2" "you who murdered my master Albior"
+	@cmd setVar "line3" "on the island of Andromeda many"
+	@cmd setVar "line4" "years ago, right?"
+	@cmd setVar "portraitName" "shun2"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Of course! Albior was a traitor"
+	@cmd setVar "line2" "who did not obey the orders of"
+	@cmd setVar "line3" "the great pope! He got what he"
+	@cmd setVar "line4" "deserved!!"
+	@cmd setVar "portraitName" "aphrodite1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "In this case, you leave me"
+	@cmd setVar "line2" "no choice, I hate to fight, but"
+	@cmd setVar "line3" "I have to defeat you to finally"
+	@cmd setVar "line4" "reach the room of the great Pope!"
+	@cmd setVar "portraitName" "shun1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "You'll never get there, I lined"
+	@cmd setVar "line2" "the road leading to the grand pope"
+	@cmd setVar "line3" "with thousands of poisonous roses,"
+	@cmd setVar "line4" "their scent is deadly!!"
+	@cmd setVar "portraitName" "aphrodite1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

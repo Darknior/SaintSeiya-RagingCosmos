@@ -1,5 +1,5 @@
 name		aphrodite
-health		500
+health		50
 mp 			100
 speed		20
 type		enemy
@@ -27,6 +27,8 @@ load rosefield
 anim spawn
 	delay	15
 	offset	46 144
+	frame	data/chars/aphrodite/spawn1.png
+	@cmd spawnDialog "dialog_aphrodite1" 200 100
 	frame	data/chars/aphrodite/spawn1.png
 	frame	data/chars/aphrodite/spawn2.png
 	frame	data/chars/aphrodite/spawn3.png
@@ -152,6 +154,29 @@ anim fall
 
 anim death
 	delay	25
+	offset	131 129
+	frame	data/chars/aphrodite/fall1.png
+	frame	data/chars/aphrodite/fall2.png
+	frame	data/chars/aphrodite/fall3.png
+	frame	data/chars/aphrodite/fall4.png
+	frame	data/chars/aphrodite/fall5.png
+	frame	data/chars/aphrodite/fall6.png
+	frame	data/chars/aphrodite/fall7.png
+	offset	142 140
+	frame	data/chars/aphrodite/rise1.png
+	frame	data/chars/aphrodite/rise2.png
+	frame	data/chars/aphrodite/rise3.png
+	frame	data/chars/aphrodite/rise4.png	
+	@cmd spawnDialog "dialog_aphrodite2" 200 100
+	frame	data/chars/aphrodite/rise4.png	
+	offset	131 129
+	frame	data/chars/aphrodite/fall1.png
+	frame	data/chars/aphrodite/fall2.png
+	frame	data/chars/aphrodite/fall3.png
+	frame	data/chars/aphrodite/fall4.png
+	frame	data/chars/aphrodite/fall5.png
+	frame	data/chars/aphrodite/fall6.png
+	frame	data/chars/aphrodite/fall7.png
 	offset	143 129
 	frame	data/chars/aphrodite/death1.png
 	frame	data/chars/aphrodite/death2.png

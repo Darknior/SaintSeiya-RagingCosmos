@@ -1,0 +1,50 @@
+name			dialog_aphrodite2 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 0
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "Farewell Shun! You will suffer my"
+	@cmd setVar "line2" "most fearsome attack, the evil white"
+	@cmd setVar "line3" "rose! This rose will absorb your"
+	@cmd setVar "line4" "heart's blood and kill you!"
+	@cmd setVar "portraitName" "aphrodite1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "I don't want to kill you,"
+	@cmd setVar "line2" "don't you realize the power of"
+	@cmd setVar "line3" "of andromeda is limitless? In that"
+	@cmd setVar "line4" "case, you leave me no choices!"
+	@cmd setVar "portraitName" "shun1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+		delay	250
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd spawnFade "out" 0 0 0 10000000001 0.5
+	frame	data/chars/dialogs/empty.png
+	
+	@cmd playwebm "data/bgs/temple12/scene1.webm" 1
+	@cmd playwebm "data/bgs/temple12/scene2.webm" 0
+	@cmd spawnFade "in" 0 0 0 10000000001 0.5
+	frame	data/chars/dialogs/empty.png
+
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png
