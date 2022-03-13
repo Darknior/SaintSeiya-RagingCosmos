@@ -8,7 +8,7 @@ offscreenkill       1500
 anim idle
     loop            1 2 3
     palette         data/bgs/temple12/Roses/Roses01.png
-    sound           data/bgs/temple12/Roses/voices.wav
+
 
 # SHOW
     delay           1
