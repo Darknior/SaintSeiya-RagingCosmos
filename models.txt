@@ -88,6 +88,7 @@ know    iceray  		data/chars/camus/special/iceray.txt
 know    icecrystal  	data/chars/camus/special/icecrystal.txt
 know    rosefield  		data/chars/aphrodite/special/rosefield.txt
 know    knife  			data/chars/great_pope/special/knife.txt
+know    columnT  		data/chars/jaki/special/columnT.txt
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt
@@ -253,6 +254,8 @@ know    SOLDIER1-1      data/chars/SOLDIER1-1/SOLDIER1-1.txt
 know    SOLDIER2        data/chars/SOLDIER2/SOLDIER2.txt
 know    SOLDIER3        data/chars/SOLDIER3/SOLDIER3.txt
 know    SOLDIER4        data/chars/SOLDIER4/SOLDIER4.txt
+know 	jaki			data/chars/jaki/jaki.txt
+
 
 ## GOLD KINGHTS ##
 
