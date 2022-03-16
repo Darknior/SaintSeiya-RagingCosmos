@@ -1,21 +1,24 @@
 
-music		data/music/music3.bor
+music		data/music/music1.bor
 
-panel		data/bgs/ROOMS/temple4.png 
-
-frontpanel                   data/bgs/ROOMS/templerock4.png
-
-background                 data/bgs/ROOMS/sky004.png
+panel		data/bgs/temple4-road/temple4-road.png 
+frontpanel  data/bgs/temple4-road/layer1.png 
+bglayer  	data/bgs/temple4-road/temple4-sky.png		1 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple4-road/temple4-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple4-road/temple4-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
 
 cameratype 1
-
+light        256 -44
+at        0
+shadowalpha     6
+at        0
 direction right
 
 settime 0
 
 order	a
 
-
+spawn1  60 30
 
 \\rock 3
 
@@ -42,6 +45,13 @@ completebg 1
 
 -------------------------------------
 
+spawn       temple4roadcolumns
+coords      0 0
+at          0
+
+spawn jaki
+coords	550 390
+at 0
 
 spawn soldier4
 alias SOUL

@@ -330,6 +330,10 @@ load    temple2roadcolumns      data/bgs/temple2-road/temple2roadcolumns.txt
 know    temple3_columns     data/bgs/temple3/columns/temple3_columns.txt
 know    temple3_grid        data/bgs/temple3/grid/temple3_grid.txt
 
+## TEMPLE 4 ROAD
+
+load    temple4roadcolumns      data/bgs/temple4-road/temple4roadcolumns.txt
+
 ## TEMPLE 4
 
 know    temple4_columns     data/bgs/temple4/columns/temple4_columns.txt

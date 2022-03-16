@@ -105,7 +105,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple2boss.txt
 
-set         Temple_3_Jaki
+set         Temple_4_Jaki
 maxplayers  1
 lives       1
 credits     10
@@ -114,7 +114,7 @@ disablehof  0
 typemp      0
 skipselect  seiya
 z           385 484
-file        data/levels/temple3.txt
+file        data/levels/temple4.txt
 
 set         Temple_3_Gemeaux
 maxplayers  1
@@ -126,6 +126,17 @@ typemp      0
 skipselect  seiya
 z           378 484
 file        data/levels/temple3boss.txt
+
+set         Temple_4-Road
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           378 484
+file        data/levels/temple4.txt
 
 set         Temple_4_Cancer
 maxplayers  1
