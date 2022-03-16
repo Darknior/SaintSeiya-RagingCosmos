@@ -371,6 +371,10 @@ know    temple12_Roses01     data/bgs/temple12/Roses/temple12_Roses01.txt
 know    temple12_Roses02     data/bgs/temple12/Roses/temple12_Roses02.txt
 know    temple12_Roses03     data/bgs/temple12/Roses/temple12_Roses03.txt
 
+## TEMPLE 13 ROAD
+
+load    temple13roadcolumns      data/bgs/temple13-road/temple13roadcolumns.txt
+
 ## TEMPLE 13 FINAL
 
 load    temple13columns      data/bgs/temple13/temple13columns.txt

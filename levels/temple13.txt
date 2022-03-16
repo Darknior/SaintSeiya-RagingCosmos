@@ -1,21 +1,24 @@
 
-music		data/music/music5.bor
+music		data/music/music1.bor
 
-panel		data/bgs/ROOMS/temple12.png 
-
-frontpanel                   data/bgs/ROOMS/templerock12.png
-
-background                 data/bgs/ROOMS/sky003.png
+panel		data/bgs/temple13-road/temple13-road.png 
+frontpanel  data/bgs/temple13-road/layer1.png 
+bglayer  	data/bgs/temple13-road/temple13-sky.png		1 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple13-road/temple13-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple13-road/temple13-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
 
 cameratype 1
-
+light        256 -44
+at        0
+shadowalpha     6
+at        0
 direction right
 
 settime 0
 
 order	a
 
-
+spawn1  60 30
 
 \\rock 3
 
@@ -42,10 +45,9 @@ completebg 1
 
 -------------------------------------
 
-spawn kiki
-alias KIKI
-coords	850 390
-at 400
+spawn       temple13roadcolumns
+coords      0 0
+at          0
 
 spawn soldier1
 alias SOLDIER
