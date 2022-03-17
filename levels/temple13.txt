@@ -4,13 +4,15 @@ music		data/music/music1.bor
 panel		data/bgs/temple13-road/temple13-road.png 
 frontpanel  data/bgs/temple13-road/layer1.png 
 bglayer  	data/bgs/temple13-road/temple13-sky.png		1 1 0 0 0 0 1 1 1 0
+fglayer         data/bgs/temple13-road/fogOrange.png         100  0.9 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
+fglayer         data/bgs/temple13-road/RosesPetals.png         100  0.5 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
 bglayer     data/bgs/temple13-road/temple13-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple13-road/temple13-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
 
 cameratype 1
 light        256 -44
 at        0
-shadowalpha     6
+shadowalpha     4
 at        0
 direction right
 
