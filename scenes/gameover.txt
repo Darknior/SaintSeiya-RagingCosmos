@@ -3,5 +3,6 @@
 #	silence					# Stop music
 
 
-\\music           data/music/gameover.bor 1 0
+video data/scenes/gameover.webm 0 0 1 0
+music           data/music/athenabg.ogg 1 0
 animation	data/scenes/gameover.gif 4 0
