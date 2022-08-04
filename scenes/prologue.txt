@@ -1,0 +1,18 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+
+music           data/music/twinsal.ogg 1 0
+animation	data/scenes/prologue/prologue1.gif   0 0 1 0
+animation	data/scenes/prologue/prologue2.gif   0 0 1 0
+animation	data/scenes/prologue/prologue3.gif   0 0 1 0
+animation	data/scenes/prologue/prologue4.gif   0 0 1 0
+animation	data/scenes/prologue/prologue5.gif   0 0 1 0
+animation	data/scenes/prologue/prologue6.gif   0 0 1 0
+animation	data/scenes/prologue/prologue7.gif   0 0 1 0
+animation	data/scenes/prologue/prologue8.gif   0 0 1 0
+animation	data/scenes/prologue/prologue9.gif   0 0 1 0
+animation	data/scenes/prologue/prologue10.gif  0 0 1 0
+animation	data/scenes/prologue/prologue11.gif  0 0 1 0
+animation	data/scenes/prologue/prologue12.gif  0 0 1 0
