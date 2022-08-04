@@ -25,7 +25,7 @@ spawn1  400 30
 #-------------------------------------
 
 spawn mu
-coords	594 279
+coords	594 309
 at 0
 
 spawn mu_dialog
