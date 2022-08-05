@@ -4,15 +4,34 @@
 
 
 music           data/music/twinsal.ogg 1 0
-animation	data/scenes/prologue/prologue1.gif   0 0 1 0
-animation	data/scenes/prologue/prologue2.gif   0 0 1 0
-animation	data/scenes/prologue/prologue3.gif   0 0 1 0
-animation	data/scenes/prologue/prologue4.gif   0 0 1 0
-animation	data/scenes/prologue/prologue5.gif   0 0 1 0
-animation	data/scenes/prologue/prologue6.gif   0 0 1 0
-animation	data/scenes/prologue/prologue7.gif   0 0 1 0
-animation	data/scenes/prologue/prologue8.gif   0 0 1 0
-animation	data/scenes/prologue/prologue9.gif   0 0 1 0
-animation	data/scenes/prologue/prologue10.gif  0 0 1 0
-animation	data/scenes/prologue/prologue11.gif  0 0 1 0
-animation	data/scenes/prologue/prologue12.gif  0 0 1 0
+animation	data/scenes/prologue/0.gif   0 0 1 0
+animation	data/scenes/prologue/0-bis.gif   0 0 1 0
+animation	data/scenes/prologue/1.gif   0 0 1 0
+animation	data/scenes/prologue/1-bis.gif   0 0 1 0
+animation	data/scenes/prologue/2.gif   0 0 1 0
+animation	data/scenes/prologue/2-bis.gif   0 0 1 0
+animation	data/scenes/prologue/3.gif   0 0 1 0
+animation	data/scenes/prologue/3-bis.gif   0 0 1 0
+animation	data/scenes/prologue/4.gif   0 0 1 0
+animation	data/scenes/prologue/4-bis.gif   0 0 1 0
+animation	data/scenes/prologue/5.gif   0 0 1 0
+animation	data/scenes/prologue/5-bis.gif   0 0 1 0
+animation	data/scenes/prologue/6.gif   0 0 1 0
+animation	data/scenes/prologue/6-bis.gif   0 0 1 0
+animation	data/scenes/prologue/7.gif   0 0 1 0
+animation	data/scenes/prologue/7-bis.gif   0 0 1 0
+animation	data/scenes/prologue/8.gif   0 0 1 0
+animation	data/scenes/prologue/8-bis.gif   0 0 1 0
+animation	data/scenes/prologue/9.gif   0 0 1 0
+animation	data/scenes/prologue/9-bis.gif   0 0 1 0
+animation	data/scenes/prologue/10.gif  0 0 1 0
+animation	data/scenes/prologue/10-bis.gif  0 0 1 0
+
+
+
+
+
+
+
+
+

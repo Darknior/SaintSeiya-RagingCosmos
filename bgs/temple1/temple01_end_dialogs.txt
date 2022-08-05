@@ -1,0 +1,15 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+
+music           data/music/temple1.ogg 1 0
+animation	data/bgs/temple1/end_dialogs/0.gif   0 0 1 0
+animation	data/bgs/temple1/end_dialogs/0-bis.gif   0 0 1 0
+animation	data/bgs/temple1/end_dialogs/1.gif   0 0 1 0
+animation	data/bgs/temple1/end_dialogs/1-bis.gif   0 0 1 0
+animation	data/bgs/temple1/end_dialogs/2.gif   0 0 1 0
+animation	data/bgs/temple1/end_dialogs/2-bis.gif   0 0 1 0
+animation	data/bgs/temple1/end_dialogs/3.gif   0 0 1 0
+animation	data/bgs/temple1/end_dialogs/3-bis.gif   0 0 1 0
+

@@ -1,0 +1,5 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+video data\bgs\temple1\temple01_part2.webm 0 0 1 0
