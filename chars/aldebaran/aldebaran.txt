@@ -28,6 +28,7 @@ anim spawn
 	delay	10
 	offset	231 162
 	@cmd spawnFade "in" 0 0 0 10000000001 0.25
+        sound data/chars/aldebaran/04-voice1.wav
 	frame	data/chars/aldebaran/spawn1.png
 	frame	data/chars/aldebaran/spawn2.png
 	frame	data/chars/aldebaran/spawn3.png
@@ -131,6 +132,7 @@ anim runattack # Attaque en courant
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	@cmd 	spawnbind "runtaurus" "ANI_IDLE" 0 0 0 1 0
+	sound data/chars/aldebaran/01-great_horn.wav
 	frame	data/chars/aldebaran/runattack1.png
 	frame	data/chars/aldebaran/runattack2.png
 	frame	data/chars/aldebaran/runattack3.png
@@ -155,6 +157,7 @@ anim freespecial # Attaque en courant
 	rangea 	0 100
 	@cmd	dasher 3.5 0 0 1
 	@cmd 	spawnbind "runtaurus" "ANI_IDLE" 0 0 0 1 0
+	sound data/chars/aldebaran/01-great_horn.wav
 	frame	data/chars/aldebaran/runattack1.png
 	frame	data/chars/aldebaran/runattack2.png
 	frame	data/chars/aldebaran/runattack3.png
@@ -202,6 +205,7 @@ anim fall
 anim death
 	delay	20
 	offset	118 164
+        sound data/chars/aldebaran/05-die.wav
         frame	data/chars/aldebaran/fall1.png
 	frame	data/chars/aldebaran/fall2.png
 	frame	data/chars/aldebaran/fall3.png
@@ -216,6 +220,7 @@ anim death
 	frame	data/chars/aldebaran/rise3.png
 	@cmd spawnDialog "dialog_aldebaran2" 200 100
 	offset	52 154
+	sound data/chars/aldebaran/03-horn.wav
 	frame	data/chars/aldebaran/death1.png
 	frame	data/chars/aldebaran/death2.png
 	frame	data/chars/aldebaran/death3.png
@@ -335,7 +340,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale Taurus homerun
 	delay	5
 	offset	37 163
-	sound data/chars/aldebaran/02.wav
+	sound data/chars/aldebaran/02-swing.wav
 	hitflash flashbig
 	frame	data/chars/aldebaran/special1.png
 	frame	data/chars/aldebaran/special2.png
@@ -358,7 +363,7 @@ anim special # Défense spéciale Taurus homerun
 anim freespecial2 # Défense spéciale Taurus homerun
 	delay	5
 	offset	37 163
-	sound data/chars/aldebaran/02.wav
+	sound data/chars/aldebaran/02-swing.wav
 	range 	50 80
 	rangea 	0 100
 	hitflash flashbig
@@ -387,7 +392,7 @@ anim special2 #Attaque spéciale Punch combo
 	delay	6
 	offset	42 160
 	#bbox 21 11 38 151
-	sound data/chars/aldebaran/02.wav
+	sound data/chars/aldebaran/02-swing.wav
 	attack1 59 30 55 35 5 0 0 0 12 12
 	frame	data/chars/aldebaran/special21.png
 	attack1 0
@@ -435,7 +440,7 @@ anim riseattack #Attaque spéciale Punch combo
 	delay	6
 	offset	42 160
 	#bbox 21 11 38 151
-	sound data/chars/aldebaran/02.wav
+	sound data/chars/aldebaran/02-swing.wav
 	attack1 59 30 55 35 5 0 0 0 12 12
 	frame	data/chars/aldebaran/special21.png
 	attack1 0
