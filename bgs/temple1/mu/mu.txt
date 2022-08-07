@@ -1,7 +1,7 @@
 name        mu
 type        none
 shadow      0
-setlayer    2
+setlayer    1
 
 anim idle
     loop    1

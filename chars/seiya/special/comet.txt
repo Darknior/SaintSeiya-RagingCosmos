@@ -1,7 +1,7 @@
 name	comet
 type	none
 shadow	0
-setlayer 2
+setlayer 6
 antigravity 100
 lifespan  6
 
