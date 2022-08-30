@@ -1,11 +1,22 @@
 name	runtaurus
 type	none
 shadow	0
+layer 2
 lifespan 1
 
 anim	idle
 	loop	1
-	delay	60
-	offset	80 155
-	frame	data/chars/aldebaran/special/runtaurus.png
-	frame	data/chars/aldebaran/special/runtaurus.png
+	delay	20
+	offset	120 190
+        drawmethod  alpha 6
+        drawmethod  channel 0.53
+	frame	data/chars/aldebaran/special/runtaurus1.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.73
+	frame	data/chars/aldebaran/special/runtaurus2.png
+	frame	data/chars/aldebaran/special/runtaurus3.png
+	frame	data/chars/aldebaran/special/runtaurus4.png
+        drawmethod  channel 0.53
+	frame	data/chars/aldebaran/special/runtaurus4.png
+	frame	data/chars/aldebaran/special/runtaurus4.png
+	frame	data/chars/aldebaran/special/runtaurus4.png

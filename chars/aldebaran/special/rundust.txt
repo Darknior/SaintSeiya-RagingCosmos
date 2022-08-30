@@ -1,0 +1,28 @@
+name	rundust
+type	none
+shadow	0
+layer 997
+antigravity 100
+lifespan 1
+
+anim	idle
+	loop	1
+	delay	10
+	offset	-20 186
+        drawmethod  alpha 6
+        drawmethod  channel 0.73
+	frame	data/chars/aldebaran/special/rundust0.png
+	frame	data/chars/aldebaran/special/rundust1.png
+	frame	data/chars/aldebaran/special/rundust2.png
+	frame	data/chars/aldebaran/special/rundust3.png
+	frame	data/chars/aldebaran/special/rundust4.png
+	frame	data/chars/aldebaran/special/rundust5.png
+	frame	data/chars/aldebaran/special/rundust6.png
+	frame	data/chars/aldebaran/special/rundust7.png
+	frame	data/chars/aldebaran/special/rundust8.png
+	frame	data/chars/aldebaran/special/rundust9.png
+	frame	data/chars/aldebaran/special/rundust10.png
+	frame	data/chars/aldebaran/special/rundust11.png
+	frame	data/chars/aldebaran/special/rundust12.png
+	frame	data/chars/aldebaran/special/rundust13.png
+	frame	data/chars/aldebaran/special/rundust14.png

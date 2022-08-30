@@ -6,10 +6,21 @@ antigravity 100
 
 anim	idle
 	loop	1
-	delay	3
-	offset	150 280
-	drawmethod scale 0.5 0.5
+	delay	30
+	offset	120 200
+	drawmethod scale 1 1
 	drawmethod alpha 6
-	drawmethod channel 0.5
-	frame	data/chars/seiya/special/constellation.png
-	frame	data/chars/seiya/special/constellation.png
+	drawmethod channel 0.55
+	frame	data/chars/seiya/special/constellation1.png
+	drawmethod alpha 6
+	drawmethod channel 0.85
+	frame	data/chars/seiya/special/constellation2.png
+	frame	data/chars/seiya/special/constellation3.png
+	frame	data/chars/seiya/special/constellation4.png
+	frame	data/chars/seiya/special/constellation4.png
+	frame	data/chars/seiya/special/constellation4.png
+	frame	data/chars/seiya/special/constellation3.png
+	drawmethod alpha 6
+	drawmethod channel 0.55
+	frame	data/chars/seiya/special/constellation2.png
+	frame	data/chars/seiya/special/constellation1.png

@@ -75,6 +75,8 @@ know    comet          	data/chars/seiya/special/comet.txt
 know    comet_back      data/chars/seiya/special/comet_back.txt
 
 know    runtaurus       data/chars/aldebaran/special/runtaurus.txt
+know    rundust         data/chars/aldebaran/special/rundust.txt
+know    swing        data/chars/aldebaran/special/swing.txt
 know    dimension_back  data/chars/gemini/special/dimension_back.txt
 know    circles         data/chars/deathmask/special/circles.txt
 know    hands         	data/chars/deathmask/special/hands.txt

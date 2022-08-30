@@ -23,12 +23,21 @@ atchain 1 1 2 3 4 5
 animationscript	data/scripts/player.c
 
 load runtaurus
+load rundust
+load swing
 #----------------------------------------------------------
 anim spawn
 	delay	10
 	offset	231 162
 	@cmd spawnFade "in" 0 0 0 10000000001 0.25
         sound data/chars/aldebaran/04-voice1.wav
+	frame	data/chars/aldebaran/spawn8.png
+	frame	data/chars/aldebaran/spawn7.png
+	frame	data/chars/aldebaran/spawn6.png
+	frame	data/chars/aldebaran/spawn5.png
+	frame	data/chars/aldebaran/spawn4.png
+	frame	data/chars/aldebaran/spawn3.png
+	frame	data/chars/aldebaran/spawn2.png
 	frame	data/chars/aldebaran/spawn1.png
 	frame	data/chars/aldebaran/spawn2.png
 	frame	data/chars/aldebaran/spawn3.png
@@ -134,6 +143,9 @@ anim runattack # Attaque en courant
 	@cmd 	spawnbind "runtaurus" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/01-great_horn.wav
 	frame	data/chars/aldebaran/runattack1.png
+        summonframe 0 0 0 0 0
+        subentity rundust
+	unsummonframe 20
 	frame	data/chars/aldebaran/runattack2.png
 	frame	data/chars/aldebaran/runattack3.png
 	attack2 60 40 55 83 20 1 0 0 5 12
@@ -159,6 +171,9 @@ anim freespecial # Attaque en courant
 	@cmd 	spawnbind "runtaurus" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/01-great_horn.wav
 	frame	data/chars/aldebaran/runattack1.png
+        summonframe 0 0 0 0 0
+        subentity rundust
+	unsummonframe 20
 	frame	data/chars/aldebaran/runattack2.png
 	frame	data/chars/aldebaran/runattack3.png
 	attack2 60 40 55 83 20 1 0 0 5 12
@@ -343,10 +358,14 @@ anim special # Défense spéciale Taurus homerun
 	sound data/chars/aldebaran/02-swing.wav
 	hitflash flashbig
 	frame	data/chars/aldebaran/special1.png
+        summonframe 5 0 0 0 0
+        subentity swing
+	unsummonframe 14
 	frame	data/chars/aldebaran/special2.png
 	frame	data/chars/aldebaran/special3.png
 	attack5 -28 -12 120 180 30 1 0 0 5 12
-	dropv 	8.0 3 0		
+	dropv 	8.0 3 0	
+	frame	data/chars/aldebaran/special4.png	
 	frame	data/chars/aldebaran/special5.png
 	frame	data/chars/aldebaran/special6.png
 	frame	data/chars/aldebaran/special7.png
@@ -368,6 +387,9 @@ anim freespecial2 # Défense spéciale Taurus homerun
 	rangea 	0 100
 	hitflash flashbig
 	frame	data/chars/aldebaran/special1.png
+        summonframe 5 0 0 0 0
+        subentity swing
+	unsummonframe 14
 	frame	data/chars/aldebaran/special2.png
 	frame	data/chars/aldebaran/special3.png
 	attack5 -28 -12 120 180 30 1 0 0 5 12

@@ -1,7 +1,7 @@
 name	meteor
 type	none
 shadow	0
-setlayer 1
+setlayer 99
 antigravity 100
 lifespan  6
 

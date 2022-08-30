@@ -1,0 +1,23 @@
+name	swing
+type	none
+shadow	0
+layer 997
+antigravity 100
+lifespan 1
+
+anim	idle
+	loop	1
+	delay	10
+	offset	0 240
+        drawmethod  alpha 6
+        drawmethod  channel 0.53
+	frame	data/chars/aldebaran/special/swing0.png
+	frame	data/chars/aldebaran/special/swing1.png
+	frame	data/chars/aldebaran/special/swing2.png
+	frame	data/chars/aldebaran/special/swing3.png
+	frame	data/chars/aldebaran/special/swing4.png
+	frame	data/chars/aldebaran/special/swing5.png
+	frame	data/chars/aldebaran/special/swing6.png
+	frame	data/chars/aldebaran/special/swing7.png
+	frame	data/chars/aldebaran/special/swing8.png
+	frame	data/chars/aldebaran/special/swing9.png

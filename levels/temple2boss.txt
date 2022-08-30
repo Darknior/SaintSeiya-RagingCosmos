@@ -17,7 +17,7 @@ spawn1          60 30
 #-- BOSS -----------------------------------
 
 spawn           aldebaran
-health			1
+health		500
 coords          650 390
 at              0
 
