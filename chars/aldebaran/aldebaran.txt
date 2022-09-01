@@ -25,6 +25,8 @@ animationscript	data/scripts/player.c
 load runtaurus
 load rundust
 load swing
+load ultraGH
+load ultraGH_back
 #----------------------------------------------------------
 anim spawn
 	delay	10
@@ -501,6 +503,36 @@ anim riseattack #Attaque spéciale Punch combo
 	frame	data/chars/aldebaran/special29.png
 	attack2 0
 	frame	data/chars/aldebaran/special30.png
+
+anim freespecial6 # Ultra Great Horn ( haut + bouton special)
+	delay	10
+	offset	45 160
+	#bbox 21 16 51 97
+	summonframe 0 0 0 0 0
+	subentity ultraGH_back
+        unsummonframe 11
+	energycost  20 1 0
+	sound data/chars/aldebaran/06-ultraGH.wav
+	frame	data/chars/aldebaran/special40.png
+	frame	data/chars/aldebaran/special41.png
+	frame	data/chars/aldebaran/special42.png
+	frame	data/chars/aldebaran/special43.png
+	delay	10
+	frame	data/chars/aldebaran/special44.png
+	frame	data/chars/aldebaran/special45.png
+	frame	data/chars/aldebaran/special46.png
+	frame	data/chars/aldebaran/special47.png	
+	frame	data/chars/aldebaran/special48.png
+	frame	data/chars/aldebaran/special49.png
+	frame	data/chars/aldebaran/special50.png
+	frame	data/chars/aldebaran/special51.png
+	@cmd 	spawnbind "ultraGH" "ANI_IDLE" 0 0 0 1 0
+	sound data/chars/aldebaran/07-ultraGH2.wav
+	delay   40
+	frame	data/chars/aldebaran/special52.png
+	frame	data/chars/aldebaran/special53.png
+	frame	data/chars/aldebaran/special54.png
+	frame	data/chars/aldebaran/special55.png
 	
 anim	block
 	offset	37 164

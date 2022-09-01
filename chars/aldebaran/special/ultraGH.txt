@@ -1,0 +1,37 @@
+name	ultraGH
+type	none
+shadow	0
+remove 0
+setlayer 999
+antigravity 100
+lifespan  2.3
+
+anim	idle
+	loop	1
+	delay	12
+	offset	7 420
+	drawmethod scale 0.7 0.7
+        drawmethod  alpha 6
+        drawmethod  channel 0.73
+	frame	data/chars/aldebaran/special/ultraGH0.png
+	frame	data/chars/aldebaran/special/ultraGH1.png
+	frame	data/chars/aldebaran/special/ultraGH2.png
+	frame	data/chars/aldebaran/special/ultraGH3.png
+	frame	data/chars/aldebaran/special/ultraGH4.png
+	frame	data/chars/aldebaran/special/ultraGH5.png
+	frame	data/chars/aldebaran/special/ultraGH6.png	
+	frame	data/chars/aldebaran/special/ultraGH7.png	
+	frame	data/chars/aldebaran/special/ultraGH8.png	
+	frame	data/chars/aldebaran/special/ultraGH9.png	
+	frame	data/chars/aldebaran/special/ultraGH10.png
+	frame	data/chars/aldebaran/special/ultraGH11.png
+	frame	data/chars/aldebaran/special/ultraGH12.png
+	frame	data/chars/aldebaran/special/ultraGH13.png
+	frame	data/chars/aldebaran/special/ultraGH14.png
+	frame	data/chars/aldebaran/special/ultraGH15.png
+	frame	data/chars/aldebaran/special/ultraGH16.png	
+	frame	data/chars/aldebaran/special/ultraGH17.png	
+	frame	data/chars/aldebaran/special/ultraGH18.png	
+	frame	data/chars/aldebaran/special/ultraGH19.png
+	
+

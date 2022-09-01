@@ -1,0 +1,37 @@
+name	ultraGH_back
+type	panel
+speed	10
+shadow	0
+setlayer 5
+antigravity 100
+lifespan 1.5
+
+anim	idle
+	delay	15
+	offset	355 405
+	drawmethod scale 1 1
+        drawmethod  alpha 6
+        drawmethod  channel 0.25
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.50
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.75
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.99
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.75
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.50
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.25
+	frame	data/chars/aldebaran/special/ultraGH_back1.png
