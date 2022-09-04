@@ -67,12 +67,19 @@ load    flashbig        data/chars/misc/flash/flashbig.txt
 
 #Players special animations
 know    aura            data/chars/seiya/special/aura.txt
+know    aura_air_kick            data/chars/seiya/special/aura_air_kick.txt
+know    aura_air_ryuseiken            data/chars/seiya/special/aura_air_ryuseiken.txt
+know    aura_ryuseiken            data/chars/seiya/special/aura_ryuseiken.txt
 know    constellation   data/chars/seiya/special/constellation.txt
 know    pegasus         data/chars/seiya/special/pegasus.txt
 know    meteor          data/chars/seiya/special/meteor.txt
 know    meteord         data/chars/seiya/special/meteord.txt
 know    comet          	data/chars/seiya/special/comet.txt
 know    comet_back      data/chars/seiya/special/comet_back.txt
+know    dash_dust      data/chars/seiya/special/dash_dust.txt
+know    down_dust      data/chars/seiya/special/down_dust.txt
+know    upper_dust      data/chars/seiya/special/upper_dust.txt
+know    round_dust      data/chars/seiya/special/round_dust.txt
 
 know    runtaurus       data/chars/aldebaran/special/runtaurus.txt
 know    rundust         data/chars/aldebaran/special/rundust.txt

@@ -7,8 +7,8 @@ lifespan 1
 anim	idle
 	loop	1
 	delay	20
-	offset	120 190
-        drawmethod  alpha 6
+	offset	120 194
+        drawmethod  alpha 1
         drawmethod  channel 0.53
 	frame	data/chars/aldebaran/special/runtaurus1.png
         drawmethod  alpha 6

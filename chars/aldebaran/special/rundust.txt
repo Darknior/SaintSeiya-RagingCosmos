@@ -1,7 +1,7 @@
 name	rundust
 type	none
 shadow	0
-layer 997
+layer 7777
 antigravity 100
 lifespan 1
 
@@ -9,7 +9,7 @@ anim	idle
 	loop	1
 	delay	10
 	offset	-20 186
-        drawmethod  alpha 6
+        drawmethod  alpha 1
         drawmethod  channel 0.73
 	frame	data/chars/aldebaran/special/rundust0.png
 	frame	data/chars/aldebaran/special/rundust1.png

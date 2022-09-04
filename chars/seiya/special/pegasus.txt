@@ -6,7 +6,7 @@ antigravity 100
 
 anim	idle
 	loop	1
-	delay	5
+	delay	3
 	offset	150 280
 	drawmethod scale 0.5 0.5
 	drawmethod alpha 1

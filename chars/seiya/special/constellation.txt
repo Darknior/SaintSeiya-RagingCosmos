@@ -11,16 +11,16 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 6
 	drawmethod channel 0.55
-	frame	data/chars/seiya/special/constellation1.png
+	frame	data/chars/seiya/special/constellation/constellation1.png
 	drawmethod alpha 6
 	drawmethod channel 0.85
-	frame	data/chars/seiya/special/constellation2.png
-	frame	data/chars/seiya/special/constellation3.png
-	frame	data/chars/seiya/special/constellation4.png
-	frame	data/chars/seiya/special/constellation4.png
-	frame	data/chars/seiya/special/constellation4.png
-	frame	data/chars/seiya/special/constellation3.png
+	frame	data/chars/seiya/special/constellation/constellation2.png
+	frame	data/chars/seiya/special/constellation/constellation3.png
+	frame	data/chars/seiya/special/constellation/constellation4.png
+	frame	data/chars/seiya/special/constellation/constellation4.png
+	frame	data/chars/seiya/special/constellation/constellation4.png
+	frame	data/chars/seiya/special/constellation/constellation3.png
 	drawmethod alpha 6
 	drawmethod channel 0.55
-	frame	data/chars/seiya/special/constellation2.png
-	frame	data/chars/seiya/special/constellation1.png
+	frame	data/chars/seiya/special/constellation/constellation2.png
+	frame	data/chars/seiya/special/constellation/constellation1.png

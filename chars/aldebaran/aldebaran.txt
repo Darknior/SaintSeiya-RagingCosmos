@@ -508,9 +508,8 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	delay	10
 	offset	45 160
 	#bbox 21 16 51 97
-	summonframe 0 0 0 0 0
+	summonframe 0 0 0 0 1
 	subentity ultraGH_back
-        unsummonframe 11
 	energycost  20 1 0
 	sound data/chars/aldebaran/06-ultraGH.wav
 	frame	data/chars/aldebaran/special40.png

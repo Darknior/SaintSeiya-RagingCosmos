@@ -9,7 +9,7 @@ anim	idle
 	loop	1
 	delay	10
 	offset	0 240
-        drawmethod  alpha 6
+        drawmethod  alpha 1
         drawmethod  channel 0.53
 	frame	data/chars/aldebaran/special/swing0.png
 	frame	data/chars/aldebaran/special/swing1.png

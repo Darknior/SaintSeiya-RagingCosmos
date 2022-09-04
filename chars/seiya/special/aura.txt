@@ -1,7 +1,7 @@
 name	aura
 type	none
 shadow	0
-setlayer 1
+setlayer 778
 antigravity 100
 
 anim	idle
@@ -9,15 +9,15 @@ anim	idle
 	delay	3
 	offset	85 232
 	drawmethod alpha 1
-	frame	data/chars/seiya/special/aura1.png
-	frame	data/chars/seiya/special/aura2.png
-	frame	data/chars/seiya/special/aura3.png
-	frame	data/chars/seiya/special/aura4.png
-	frame	data/chars/seiya/special/aura5.png
-	frame	data/chars/seiya/special/aura6.png
-	frame	data/chars/seiya/special/aura7.png
-	frame	data/chars/seiya/special/aura8.png
-	frame	data/chars/seiya/special/aura9.png
-	frame	data/chars/seiya/special/aura10.png
-	frame	data/chars/seiya/special/aura11.png
-	frame	data/chars/seiya/special/aura12.png
+	frame	data/chars/seiya/special/aura/aura1.png
+	frame	data/chars/seiya/special/aura/aura2.png
+	frame	data/chars/seiya/special/aura/aura3.png
+	frame	data/chars/seiya/special/aura/aura4.png
+	frame	data/chars/seiya/special/aura/aura5.png
+	frame	data/chars/seiya/special/aura/aura6.png
+	frame	data/chars/seiya/special/aura/aura7.png
+	frame	data/chars/seiya/special/aura/aura8.png
+	frame	data/chars/seiya/special/aura/aura9.png
+	frame	data/chars/seiya/special/aura/aura10.png
+	frame	data/chars/seiya/special/aura/aura11.png
+	frame	data/chars/seiya/special/aura/aura12.png

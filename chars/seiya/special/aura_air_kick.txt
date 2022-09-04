@@ -1,0 +1,13 @@
+name	aura_air_kick
+type	none
+shadow	0
+setlayer 2
+lifespan 0.6
+
+anim	idle
+	loop	0
+	delay	30
+	offset	45 130
+	drawmethod alpha 1
+	frame	data/chars/seiya/special/aura_air_kick/aura_air_kick1.png
+	frame	data/chars/seiya/special/aura_air_kick/aura_air_kick2.png

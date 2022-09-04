@@ -1,0 +1,23 @@
+name	down_dust
+type	none
+shadow	0
+setlayer 778
+lifespan 0.5
+
+anim	idle
+	loop	0
+	delay	8
+	offset	140 159
+	drawmethod alpha 1
+	frame	data/chars/seiya/special/down_dust/down_dust1.png
+	frame	data/chars/seiya/special/down_dust/down_dust2.png
+	frame	data/chars/seiya/special/down_dust/down_dust3.png
+	frame	data/chars/seiya/special/down_dust/down_dust4.png
+	frame	data/chars/seiya/special/down_dust/down_dust5.png
+	frame	data/chars/seiya/special/down_dust/down_dust6.png
+	frame	data/chars/seiya/special/down_dust/down_dust7.png
+	frame	data/chars/seiya/special/down_dust/down_dust8.png
+	frame	data/chars/seiya/special/down_dust/down_dust9.png
+	frame	data/chars/seiya/special/down_dust/down_dust10.png
+	frame	data/chars/seiya/special/down_dust/down_dust11.png
+	frame	data/chars/seiya/special/down_dust/down_dust12.png

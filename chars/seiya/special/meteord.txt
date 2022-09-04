@@ -18,21 +18,21 @@ anim	idle
 	attack5 0 0 28 22 15 0 0 0 0 20
 	drawmethod rotate 45
 	drawmethod fliprotate 1
-	frame	data/chars/seiya/special/meteor1.png
-	frame	data/chars/seiya/special/meteor2.png
-	frame	data/chars/seiya/special/meteor3.png
-	frame	data/chars/seiya/special/meteor4.png	
-	frame	data/chars/seiya/special/meteor5.png
-	frame	data/chars/seiya/special/meteor6.png
-	frame	data/chars/seiya/special/meteor7.png
-	frame	data/chars/seiya/special/meteor8.png
-	frame	data/chars/seiya/special/meteor9.png
-	frame	data/chars/seiya/special/meteor10.png
-	frame	data/chars/seiya/special/meteor11.png
-	frame	data/chars/seiya/special/meteor12.png
-	frame	data/chars/seiya/special/meteor13.png
-	frame	data/chars/seiya/special/meteor14.png
-	frame	data/chars/seiya/special/meteor15.png
+	frame	data/chars/seiya/special/meteord/meteor1.png
+	frame	data/chars/seiya/special/meteord/meteor2.png
+	frame	data/chars/seiya/special/meteord/meteor3.png
+	frame	data/chars/seiya/special/meteord/meteor4.png	
+	frame	data/chars/seiya/special/meteord/meteor5.png
+	frame	data/chars/seiya/special/meteord/meteor6.png
+	frame	data/chars/seiya/special/meteord/meteor7.png
+	frame	data/chars/seiya/special/meteord/meteor8.png
+	frame	data/chars/seiya/special/meteord/meteor9.png
+	frame	data/chars/seiya/special/meteord/meteor10.png
+	frame	data/chars/seiya/special/meteord/meteor11.png
+	frame	data/chars/seiya/special/meteord/meteor12.png
+	frame	data/chars/seiya/special/meteord/meteor13.png
+	frame	data/chars/seiya/special/meteord/meteor14.png
+	frame	data/chars/seiya/special/meteord/meteor15.png
 	attack5 0
 	
 anim	follow1

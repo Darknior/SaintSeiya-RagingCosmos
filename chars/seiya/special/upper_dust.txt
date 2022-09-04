@@ -1,0 +1,19 @@
+name	upper_dust
+type	none
+shadow	0
+setlayer 778
+lifespan 0.5
+
+anim	idle
+	loop	0
+	delay	10
+	offset	-46 284
+	drawmethod alpha 1
+	frame	data/chars/seiya/special/upper_dust/upper_dust1.png
+	frame	data/chars/seiya/special/upper_dust/upper_dust2.png
+	frame	data/chars/seiya/special/upper_dust/upper_dust3.png
+	frame	data/chars/seiya/special/upper_dust/upper_dust4.png
+	frame	data/chars/seiya/special/upper_dust/upper_dust5.png
+	frame	data/chars/seiya/special/upper_dust/upper_dust6.png
+	frame	data/chars/seiya/special/upper_dust/upper_dust7.png
+	frame	data/chars/seiya/special/upper_dust/upper_dust8.png
