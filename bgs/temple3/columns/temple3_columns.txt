@@ -1,7 +1,7 @@
 name                temple3_columns
 type                none
 shadow              0
-setlayer            10
+setlayer            100
 subject_to_gravity  1
 
 

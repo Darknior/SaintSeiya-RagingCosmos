@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	100
 	@cmd setVar "line1" "Here are the golden knight of"
 	@cmd setVar "line2" "Gemini! This temple semble to float"
 	@cmd setVar "line3" "in another dimension and has no"

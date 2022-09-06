@@ -9,6 +9,7 @@ anim	idle
 	loop	1
 	delay	17
 	offset	700 0
+        drawmethod  alpha 1
 	drawmethod scale 1.5 1
 	frame	data/chars/gemini/special/dimension_back1.png
 	frame	data/chars/gemini/special/dimension_back2.png
