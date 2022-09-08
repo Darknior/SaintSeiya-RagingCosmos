@@ -22,7 +22,9 @@ atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
 
-load dimension_back
+load melee_gemini
+load rundust_gemini
+load multihits_gemini
 #----------------------------------------------------------
 anim spawn
 	delay	20
@@ -40,6 +42,7 @@ anim spawn
 	frame	data/chars/gemini/spawn10.png
 	frame	data/chars/gemini/spawn11.png
 	frame	data/chars/gemini/spawn12.png
+	sound data/chars/gemini/03-ahah.wav
 	frame	data/chars/gemini/spawn13.png
 	@cmd spawnDialog "dialog_gemini1" 200 100
 	frame	data/chars/gemini/spawn14.png
@@ -87,7 +90,11 @@ anim runattack # Attaque en courant
 	bbox 78 9 38 137
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
+        summonframe 0 0 0 0 0
+        subentity rundust_gemini
+	unsummonframe 20
 	frame	data/chars/gemini/runattack1.png
+	sound data/chars/gemini/04-dash.wav
 	frame	data/chars/gemini/runattack2.png
 	attack2 115 40 62 61 20 1 0 0 5 12
 	frame	data/chars/gemini/runattack3.png
@@ -108,7 +115,11 @@ anim freespecial # Attaque en courant
 	range 	80 175
 	rangea 	0 100
 	@cmd	dasher 3.5 0 0 1
+        summonframe 0 0 0 0 0
+        subentity rundust_gemini
+	unsummonframe 20
 	frame	data/chars/gemini/runattack1.png
+	sound data/chars/gemini/04-dash.wav
 	frame	data/chars/gemini/runattack2.png
 	attack2 115 40 62 61 20 1 0 0 5 12
 	frame	data/chars/gemini/runattack3.png
@@ -284,12 +295,12 @@ anim jumpattack # Attaque sautée statique
 	frame	data/chars/gemini/jumpattack4.png
 	attack1 0
 
-anim special # Défense spéciale Dimension
-	delay	5
+anim special # Défense spéciale Melee
+	delay	12
 	offset	66 144
-	sound data/chars/gemini/02.wav
-	summonframe 0 0 0 0 1
-	subentity dimension_back
+	sound data/chars/gemini/02-ahah.wav
+	summonframe 0 0 0 0 0
+	subentity melee_gemini
 	unsummonframe 20
 	hitflash flashbig
 	frame	data/chars/gemini/special1.png
@@ -316,9 +327,12 @@ anim special2 #Attaque spéciale Punch combo
 	delay	6
 	offset	66 144
 	bbox 21 11 38 151
-	sound data/chars/gemini/02.wav
+	sound data/chars/gemini/11-multihits.wav
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
+	summonframe 0 0 0 0 0
+	subentity multihits_gemini
+	unsummonframe 20
 	attack1 0
 	frame	data/chars/gemini/special22.png
 	attack1 59 30 97 35 5 0 0 0 12 12
@@ -376,9 +390,12 @@ anim freespecial2 # Attaque spéciale Punch combo
 	delay	6
 	offset	66 144
 	bbox 21 11 38 151
-	sound data/chars/gemini/02.wav
+	sound data/chars/gemini/11-multihits.wav
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
+	summonframe 0 0 0 0 0
+	subentity multihits_gemini
+	unsummonframe 20
 	attack1 0
 	frame	data/chars/gemini/special22.png
 	attack1 59 30 97 35 5 0 0 0 12 12
@@ -436,6 +453,7 @@ anim riseattack	#Teleportation
 	frame	data/chars/gemini/riseattack3.png
 	frame	data/chars/gemini/riseattack4.png
 	frame	data/chars/gemini/riseattack6.png
+	sound data/chars/gemini/05-rise.wav
 	frame	data/chars/gemini/riseattack6.png
 	frame	data/chars/gemini/riseattack7.png
 	frame	data/chars/gemini/riseattack8.png

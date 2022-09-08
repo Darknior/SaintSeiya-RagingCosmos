@@ -86,20 +86,32 @@ know    rundust         data/chars/aldebaran/special/rundust.txt
 know    swing           data/chars/aldebaran/special/swing.txt
 know    ultraGH         data/chars/aldebaran/special/ultraGH.txt
 know    ultraGH_back    data/chars/aldebaran/special/ultraGH_back.txt
+
 know    dimension_back  data/chars/gemini/special/dimension_back.txt
+know    rundust_gemini  data/chars/gemini/special/rundust_gemini.txt
+know    multihits_gemini  data/chars/gemini/special/multihits_gemini.txt
+know    melee_gemini  data/chars/gemini/special/melee_gemini.txt
+
 know    circles         data/chars/deathmask/special/circles.txt
 know    hands         	data/chars/deathmask/special/hands.txt
+
 know    lionstar        data/chars/aiolia/special/lionstar.txt
 know    multihit        data/chars/aiolia/special/multihit.txt
+
 know    lotus	        data/chars/shaka/special/lotus.txt
-know    lotusshot	    data/chars/shaka/special/lotusshot.txt
+know    lotusshot	data/chars/shaka/special/lotusshot.txt
 know    lotusexplosion  data/chars/shaka/special/lotusexplosion.txt
-know    sting  			data/chars/milo/special/sting.txt
-know    iceray  		data/chars/camus/special/iceray.txt
+
+know    sting  		data/chars/milo/special/sting.txt
+
+know    iceray  	data/chars/camus/special/iceray.txt
 know    icecrystal  	data/chars/camus/special/icecrystal.txt
-know    rosefield  		data/chars/aphrodite/special/rosefield.txt
-know    knife  			data/chars/great_pope/special/knife.txt
-know    columnT  		data/chars/jaki/special/columnT.txt
+
+know    rosefield  	data/chars/aphrodite/special/rosefield.txt
+
+know    knife  		data/chars/great_pope/special/knife.txt
+
+know    columnT  	data/chars/jaki/special/columnT.txt
 
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt
