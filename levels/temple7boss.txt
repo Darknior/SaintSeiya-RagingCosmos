@@ -14,54 +14,58 @@ at              0
 
 spawn1      60 30
 
-
+load cube       3
+load libra_box  3
 #-------------------------------------
 
 spawn       temple7columns
 coords      0 0
 at          0
 
-spawn       libra2
-alias       WEAPON
-coords      50 425
-at          0
+#spawn       libra2
+#alias       WEAPON
+#coords      640 425
+#at          0
 
-spawn       libra3
-alias       WEAPON
-coords      130 425
-at          0
+#spawn       libra3
+#alias       WEAPON
+#coords      680 425
+#at          0
 
-spawn       libra4
-alias       WEAPON
-coords      220 425
-at          0
+#spawn       libra4
+#alias       WEAPON
+#coords      720 425
+#at          0
 
-spawn       libra5
-alias       WEAPON
-coords      290 425
-at          0
+#spawn       libra5
+#alias       WEAPON
+#coords      760 425
+#at          0
 
-spawn       libra6
-alias       WEAPON
-coords      370 425
-at          0
+#spawn       libra6
+#alias       WEAPON
+#coords      800 425
+#at          0
 
-spawn       libra7
-alias       WEAPON
-coords      460 425
-at          0
+#spawn       libra7
+#alias       WEAPON
+#coords      840 425
+#at          0
 
+spawn           cube
+boss 			1
+coords          650 400
+at              0
+
+spawn           libra_box
+flip			1
+coords          340 412
+at              0
 
 spawn           balance_dialog
 flip			1
 coords          300 50
 at              1
-
-
-spawn           cube
-boss 			1
-coords          590 400
-at              0
 
 group 1 1
 at 0
@@ -75,4 +79,4 @@ at              1
 wait
 at          0
 
-wall        469 518 -1 -2 361 370 191 1284
+#wall        469 518 -1 -2 361 370 191 1284

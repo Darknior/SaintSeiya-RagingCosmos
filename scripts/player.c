@@ -167,3 +167,10 @@ void jump(int flag)
         changeentityproperty(self, "aiflag", "jumping", 0);
     }
 }
+
+void setLayer(int layer)
+{//Changes layer
+	void self = getlocalvar("self");
+
+	changeentityproperty(self, "setlayer", layer);
+}

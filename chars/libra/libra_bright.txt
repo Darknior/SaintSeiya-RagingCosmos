@@ -1,0 +1,74 @@
+name			libra_bright
+type			none
+shadow			0
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	3
+	offset	235 401
+	drawmethod alpha 1
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_011.png
+	delay	20
+	frame	data/chars/LIBRA/bright_000.png
+	frame	data/chars/LIBRA/bright_001.png
+	frame	data/chars/LIBRA/bright_002.png
+	frame	data/chars/LIBRA/bright_003.png
+	frame	data/chars/LIBRA/bright_004.png
+	frame	data/chars/LIBRA/bright_005.png
+	frame	data/chars/LIBRA/bright_006.png
+	frame	data/chars/LIBRA/bright_007.png
+	frame	data/chars/LIBRA/bright_008.png
+	frame	data/chars/LIBRA/bright_009.png
+	frame	data/chars/LIBRA/bright_010.png
+	delay	10
+	drawmethod alpha 6
+	drawmethod channel 0.6
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.55
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.5
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.45
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.4
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.35
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.3
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.25
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.2
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.15
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.1
+	frame	data/chars/LIBRA/bright_010.png
+	drawmethod channel 0.05
+	frame	data/chars/LIBRA/bright_010.png
+	@cmd suicide
+	frame	data/chars/LIBRA/bright_011.png

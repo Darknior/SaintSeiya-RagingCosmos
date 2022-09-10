@@ -130,6 +130,10 @@ know    libra5          data/chars/LIBRA/libra5.txt
 know    libra6          data/chars/LIBRA/libra6.txt
 know    libra7          data/chars/LIBRA/libra7.txt
 
+know    libra_light     data/chars/LIBRA/libra_light.txt
+know    libra_bright    data/chars/LIBRA/libra_bright.txt
+know    libra_box       data/chars/LIBRA/libra_box.txt
+
 know    arma0-1         data/chars/LIBRA/arma0-1.txt
 know    arma0-2         data/chars/LIBRA/arma0-2.txt
 know    arma0-3         data/chars/LIBRA/arma0-3.txt
