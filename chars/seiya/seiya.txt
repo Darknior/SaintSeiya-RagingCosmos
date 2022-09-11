@@ -60,6 +60,7 @@ load round_dust
 load aura_air_kick
 load aura_air_ryuseiken
 load aura_ryuseiken
+load fall_dust_medium
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -797,16 +798,24 @@ anim fall
 	offset	114 110
 	delay	10
 	landframe 4
+	summonframe 3 0 0 0 0
+	subentity fall_dust_medium
+	unsummonframe 14
 	frame	data/chars/seiya/fall1.png
 	frame	data/chars/seiya/fall2.png
+	delay	30
 	frame	data/chars/seiya/fall3.png
 	frame	data/chars/seiya/fall4.png
 
 anim fall7
 	offset	114 110
 	delay	-1000
+	summonframe 3 0 0 0 0
+	subentity fall_dust_medium
+	unsummonframe 14
 	frame	data/chars/seiya/fall1.png
 	frame	data/chars/seiya/fall2.png
+	delay	30
 	frame	data/chars/seiya/fall3.png
 	frame	data/chars/seiya/fall4.png
 

@@ -1,0 +1,27 @@
+name	ultra_gemini
+type	none
+shadow	0
+layer 546
+antigravity 100
+lifespan 1.5
+
+anim	idle
+	loop	0
+	delay	10
+	offset	420 217
+	drawmethod scale 0.6 0.6
+        drawmethod  alpha 1
+        drawmethod  channel 0.9
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini0.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini1.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini2.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini3.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini4.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini5.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini6.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini7.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini8.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini9.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini10.png
+	frame	data/chars/gemini/special/ultra_gemini/ultra_gemini11.png
+

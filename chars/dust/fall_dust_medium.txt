@@ -1,0 +1,28 @@
+name	fall_dust_medium
+type	none
+shadow	0
+layer 2
+antigravity 100
+lifespan 1
+
+anim	idle
+	loop	1
+	delay	10
+	offset	264 159
+	drawmethod scale 0.5 0.5
+        drawmethod  alpha 1
+        drawmethod  channel 0.63
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium1.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium2.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium3.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium4.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium5.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium6.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium7.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium8.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium9.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium10.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium11.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium12.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium13.png
+	frame	data/chars/dust/fall_dust_medium/fall_dust_medium14.png

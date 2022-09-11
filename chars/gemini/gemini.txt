@@ -23,8 +23,10 @@ atchain 1 1 2 3 4 5
 animationscript	data/scripts/player.c
 
 load melee_gemini
+load dimension_back
 load rundust_gemini
 load multihits_gemini
+load ultra_gemini
 #----------------------------------------------------------
 anim spawn
 	delay	20
@@ -442,6 +444,31 @@ anim freespecial2 # Attaque spéciale Punch combo
 	frame	data/chars/gemini/special30.png
 	attack1 0
 	frame	data/chars/gemini/special31.png
+
+anim freespecial6 # Another dimension
+	delay	12
+	offset	66 144
+	sound data/chars/gemini/01-dimension.wav
+	summonframe 0 0 0 0 1
+	subentity dimension_back
+	hitflash flashbig
+	frame	data/chars/gemini/special1.png
+	@cmd 	spawnbind "ultra_gemini" "ANI_IDLE" 0 0 0 1 0
+	frame	data/chars/gemini/special2.png
+	frame	data/chars/gemini/special3.png
+	attack1 -28 -12 120 180 30 1 0 0 5 12
+	frame	data/chars/gemini/special5.png
+	frame	data/chars/gemini/special6.png
+	frame	data/chars/gemini/special7.png
+	frame	data/chars/gemini/special8.png
+	frame	data/chars/gemini/special9.png
+	frame	data/chars/gemini/special10.png
+	frame	data/chars/gemini/special7.png
+	frame	data/chars/gemini/special8.png
+	frame	data/chars/gemini/special9.png
+	frame	data/chars/gemini/special10.png
+	attack1 0
+	frame	data/chars/gemini/special6.png
 	
 anim riseattack	#Teleportation
 	jumpframe	2 0 0 0

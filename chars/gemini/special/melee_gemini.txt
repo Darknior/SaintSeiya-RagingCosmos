@@ -1,7 +1,7 @@
 name	melee_gemini
 type	none
 shadow	0
-layer 2
+layer 1
 antigravity 100
 lifespan 1.7
 
@@ -30,12 +30,14 @@ anim	idle
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini18.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini19.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini20.png
+	frame	data/chars/gemini/special/melee_gemini/melee_gemini21.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini22.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini24.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini25.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini26.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini27.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini28.png
+	frame	data/chars/gemini/special/melee_gemini/melee_gemini29.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini31.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini32.png
 	frame	data/chars/gemini/special/melee_gemini/melee_gemini33.png

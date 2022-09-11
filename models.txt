@@ -64,6 +64,19 @@ load    flash           data/chars/misc/flash/flash.txt
 load    flashmedium     data/chars/misc/flash/flashmedium.txt
 load    flashbig        data/chars/misc/flash/flashbig.txt
 
+#Dust animations
+load    dash_dust           data/chars/dust/dash_dust.txt
+load    dash_dustB     data/chars/dust/dash_dustB.txt
+load    down_dust       data/chars/dust/down_dust.txt
+load    fall_dust_big           data/chars/dust/fall_dust_big.txt
+load    fall_dust_medium     data/chars/dust/fall_dust_medium.txt
+load    fall_dust_small       data/chars/dust/fall_dust_small.txt
+load    idle_dust           data/chars/dust/idle_dust.txt
+load    round_dust     data/chars/dust/round_dust.txt
+load    run_dust       data/chars/dust/run_dust.txt
+load    upper_dust     data/chars/dust/upper_dust.txt
+load    vertical_dust       data/chars/dust/vertical_dust.txt
+
 
 #Players special animations
 know    aura            data/chars/seiya/special/aura.txt
@@ -76,6 +89,7 @@ know    meteor          data/chars/seiya/special/meteor.txt
 know    meteord         data/chars/seiya/special/meteord.txt
 know    comet          	data/chars/seiya/special/comet.txt
 know    comet_back      data/chars/seiya/special/comet_back.txt
+
 know    dash_dust      data/chars/seiya/special/dash_dust.txt
 know    down_dust      data/chars/seiya/special/down_dust.txt
 know    upper_dust      data/chars/seiya/special/upper_dust.txt
@@ -91,6 +105,7 @@ know    dimension_back  data/chars/gemini/special/dimension_back.txt
 know    rundust_gemini  data/chars/gemini/special/rundust_gemini.txt
 know    multihits_gemini  data/chars/gemini/special/multihits_gemini.txt
 know    melee_gemini  data/chars/gemini/special/melee_gemini.txt
+know    ultra_gemini  data/chars/gemini/special/ultra_gemini.txt
 
 know    circles         data/chars/deathmask/special/circles.txt
 know    hands         	data/chars/deathmask/special/hands.txt
