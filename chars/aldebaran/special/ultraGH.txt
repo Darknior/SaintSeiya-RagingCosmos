@@ -13,25 +13,25 @@ anim	idle
 	drawmethod scale 0.7 0.7
         drawmethod  alpha 1
         drawmethod  channel 0.73
-	frame	data/chars/aldebaran/special/ultraGH0.png
-	frame	data/chars/aldebaran/special/ultraGH1.png
-	frame	data/chars/aldebaran/special/ultraGH2.png
-	frame	data/chars/aldebaran/special/ultraGH3.png
-	frame	data/chars/aldebaran/special/ultraGH4.png
-	frame	data/chars/aldebaran/special/ultraGH5.png
-	frame	data/chars/aldebaran/special/ultraGH6.png	
-	frame	data/chars/aldebaran/special/ultraGH7.png	
-	frame	data/chars/aldebaran/special/ultraGH8.png	
-	frame	data/chars/aldebaran/special/ultraGH9.png	
-	frame	data/chars/aldebaran/special/ultraGH10.png
-	frame	data/chars/aldebaran/special/ultraGH11.png
-	frame	data/chars/aldebaran/special/ultraGH12.png
-	frame	data/chars/aldebaran/special/ultraGH13.png
-	frame	data/chars/aldebaran/special/ultraGH14.png
-	frame	data/chars/aldebaran/special/ultraGH15.png
-	frame	data/chars/aldebaran/special/ultraGH16.png	
-	frame	data/chars/aldebaran/special/ultraGH17.png	
-	frame	data/chars/aldebaran/special/ultraGH18.png	
-	frame	data/chars/aldebaran/special/ultraGH19.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH0.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH1.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH2.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH3.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH4.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH5.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH6.png	
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH7.png	
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH8.png	
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH9.png	
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH10.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH11.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH12.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH13.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH14.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH15.png
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH16.png	
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH17.png	
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH18.png	
+	frame	data/chars/aldebaran/special/ultraGH/ultraGH19.png
 	
 

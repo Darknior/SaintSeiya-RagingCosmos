@@ -1,6 +1,7 @@
 name	dimension_back
-type	none
+type	panel
 shadow	0
+speed 10
 setlayer 1
 antigravity 100
 lifespan 3.8
