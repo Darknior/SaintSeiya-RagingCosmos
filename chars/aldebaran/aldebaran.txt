@@ -108,7 +108,17 @@ anim victory
 	frame	data/chars/aldebaran/victory1.png
 	frame	data/chars/aldebaran/victory2.png
 	frame	data/chars/aldebaran/victory3.png
-	frame	data/chars/aldebaran/victory2.png	
+	frame	data/chars/aldebaran/victory2.png
+
+anim turn
+	delay	8
+	offset	36 156
+	cancel 0 3 0 A freespecial4 
+	bbox 16 8 42 150
+	frame	data/chars/aldebaran/turn1.png
+	frame	data/chars/aldebaran/turn2.png
+	frame	data/chars/aldebaran/turn3.png
+
 
 anim walk
 	loop	1
@@ -129,7 +139,7 @@ anim walk
 anim run
 	loop	1
 	delay	15
-	offset	65 125
+	offset	65 161
 	bbox 49 10 50 115
 	frame	data/chars/aldebaran/run1.png
 	frame	data/chars/aldebaran/run2.png

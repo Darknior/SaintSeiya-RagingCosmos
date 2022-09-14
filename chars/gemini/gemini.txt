@@ -64,6 +64,15 @@ anim idle
 	frame	data/chars/gemini/idle3.png
 	frame	data/chars/gemini/idle4.png
 	frame	data/chars/gemini/idle5.png
+
+anim turn
+	delay	12
+	offset	60 144
+	cancel 0 3 0 A freespecial4 
+	bbox 39 11 42 139
+	frame	data/chars/gemini/turn1.png
+	frame	data/chars/gemini/turn2.png
+	frame	data/chars/gemini/turn3.png
 	
 anim walk
 	loop	1
