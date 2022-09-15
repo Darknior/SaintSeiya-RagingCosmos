@@ -6,6 +6,7 @@ type		player
 gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
+dust		fall_dust_medium # Default "dust entity" using the native "Dust" function
 
 speed		20	# Vitesse de déplacement
 running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -798,9 +799,9 @@ anim fall
 	offset	114 110
 	delay	10
 	landframe 4
-	summonframe 3 0 0 0 0
-	subentity fall_dust_medium
-	unsummonframe 14
+	#summonframe 3 0 0 0 0
+	#subentity fall_dust_medium
+	#unsummonframe 14
 	frame	data/chars/seiya/fall1.png
 	frame	data/chars/seiya/fall2.png
 	delay	30
@@ -810,9 +811,9 @@ anim fall
 anim fall7
 	offset	114 110
 	delay	-1000
-	summonframe 3 0 0 0 0
-	subentity fall_dust_medium
-	unsummonframe 14
+	#summonframe 3 0 0 0 0
+	#subentity fall_dust_medium
+	#unsummonframe 14
 	frame	data/chars/seiya/fall1.png
 	frame	data/chars/seiya/fall2.png
 	delay	30
