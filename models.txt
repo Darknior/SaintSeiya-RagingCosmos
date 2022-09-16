@@ -107,8 +107,12 @@ know    multihits_gemini  data/chars/gemini/special/multihits_gemini.txt
 know    melee_gemini  data/chars/gemini/special/melee_gemini.txt
 know    ultra_gemini  data/chars/gemini/special/ultra_gemini.txt
 
-know    circles         data/chars/deathmask/special/circles.txt
+know    deathmask_circles         data/chars/deathmask/special/deathmask_circles.txt
 know    hands         	data/chars/deathmask/special/hands.txt
+know    deathmask_constellation      data/chars/deathmask/special/deathmask_constellation.txt
+know    deathmask_spiral        	data/chars/deathmask/special/deathmask_spiral.txt
+know    deathmask_claw        	data/chars/deathmask/special/deathmask_claw.txt
+know    deathmask_melee        	data/chars/deathmask/special/deathmask_melee.txt
 
 know    lionstar        data/chars/aiolia/special/lionstar.txt
 know    multihit        data/chars/aiolia/special/multihit.txt

@@ -1,0 +1,82 @@
+name	deathmask_circles
+type	none
+shadow	0
+remove 0
+setlayer 666
+antigravity 100
+lifespan 3.5
+
+anim	idle
+	loop	0
+	delay	5
+	offset	435 382
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles1.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles2.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles3.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles4.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles5.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles6.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles7.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles8.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles9.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles10.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles11.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles12.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles13.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles14.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles15.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles16.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles17.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles18.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles19.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles20.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles21.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles22.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles24.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles25.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles26.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles27.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles28.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles29.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles31.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles32.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles33.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles34.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles35.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles36.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles37.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles38.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles39.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles40.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles41.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles42.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles43.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles44.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles45.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles46.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles47.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles48.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles49.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles50.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles51.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles52.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles53.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles54.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles55.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles56.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles57.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles58.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles59.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles60.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles61.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles62.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles63.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles64.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles65.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles66.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles67.png
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles68.png
+
+

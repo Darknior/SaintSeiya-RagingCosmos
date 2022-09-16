@@ -8,6 +8,6 @@ anim	idle
 	loop	1
 	delay	90
 	offset	82 130
-	frame	data/chars/deathmask/special/hands1.png
-	frame	data/chars/deathmask/special/hands2.png
-	frame	data/chars/deathmask/special/hands1.png
+	frame	data/chars/deathmask/special/hands/hands1.png
+	frame	data/chars/deathmask/special/hands/hands2.png
+	frame	data/chars/deathmask/special/hands/hands1.png

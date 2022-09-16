@@ -1,0 +1,35 @@
+name	deathmask_melee
+type	none
+shadow	0
+setlayer 555
+antigravity 100
+lifespan 2
+
+anim	idle
+	loop	0
+	delay	10
+	offset	165 331
+	drawmethod scale 0.5 0.5
+	drawmethod alpha 1
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee1.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee2.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee3.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee4.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee5.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee6.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee7.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee8.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee9.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee10.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee11.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee12.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee13.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee14.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee15.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee16.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee17.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee18.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee19.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee20.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee21.png
+	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee22.png

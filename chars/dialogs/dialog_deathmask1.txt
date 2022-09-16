@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	100
 	@cmd setVar "line1" "What is this? The floor and walls"
 	@cmd setVar "line2" "of this temple are covered with"
 	@cmd setVar "line3" "human faces!"

@@ -22,8 +22,12 @@ atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
 
-load circles
 load hands
+load deathmask_claw
+load deathmask_constellation
+load deathmask_circles
+load deathmask_melee
+
 #----------------------------------------------------------
 anim spawn
 	delay	10
@@ -78,6 +82,15 @@ anim victory
 	frame	data/chars/deathmask/victory6.png
 	frame	data/chars/deathmask/victory7.png
 
+anim turn
+	delay	12
+	offset	36 127
+	cancel 0 3 0 A freespecial4 
+	bbox 22 5 42 122
+	frame	data/chars/deathmask/turn1.png
+	frame	data/chars/deathmask/turn2.png
+	frame	data/chars/deathmask/turn3.png
+
 anim walk
 	loop	1 4 8
 	delay	10
@@ -108,6 +121,9 @@ anim run
 anim runattack # Attaque en courant
 	delay	7
 	offset	46 130
+	summonframe 3 0 0 0
+	subentity deathmask_claw
+	unsummonframe 17
 	bbox 32 16 38 114
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
@@ -116,6 +132,7 @@ anim runattack # Attaque en courant
 	attack2 60 16 55 83 20 1 0 0 5 12
 	dropv 4.0 2.0 0.0
 	frame	data/chars/deathmask/runattack3.png
+	sound data/chars/deathmask/10-slash.wav
 	frame	data/chars/deathmask/runattack3.png
 	frame	data/chars/deathmask/runattack4.png
 	frame	data/chars/deathmask/runattack4.png
@@ -128,6 +145,9 @@ anim runattack # Attaque en courant
 anim freespecial # Attaque en courant
 	delay	7
 	offset	46 130
+	summonframe 3 0 0 0
+	subentity deathmask_claw
+	unsummonframe 17
 	bbox 32 16 38 114
 	forcedirection -1
 	range 	80 150
@@ -138,6 +158,7 @@ anim freespecial # Attaque en courant
 	attack2 60 16 55 83 20 1 0 0 5 12
 	dropv 4.0 2.0 0.0
 	frame	data/chars/deathmask/runattack3.png
+	sound data/chars/deathmask/10-slash.wav
 	frame	data/chars/deathmask/runattack3.png
 	frame	data/chars/deathmask/runattack4.png
 	frame	data/chars/deathmask/runattack4.png
@@ -305,10 +326,10 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale circles
 	delay	15
 	offset	37 169
-	sound data/chars/deathmask/02.wav
+	sound data/chars/deathmask/07-ahah2.wav
 	summonframe 0 0 0 0
-	subentity circles
-	unsummonframe 5
+	subentity deathmask_melee
+	unsummonframe 22
 	energycost  10 1 0
 	hitflash flashbig
 	frame	data/chars/deathmask/special1.png
@@ -325,9 +346,9 @@ anim special # Défense spéciale circles
 anim freespecial2 # Défense spéciale circles
 	delay	15
 	offset	37 169
-	sound data/chars/deathmask/02.wav
+	sound data/chars/deathmask/07-ahah2.wav
 	summonframe 0 0 0 0
-	subentity circles
+	subentity deathmask_melee
 	unsummonframe 5
 	energycost  10 1 0
 	hitflash flashbig
@@ -345,9 +366,9 @@ anim freespecial2 # Défense spéciale circles
 anim special2 # Défense spéciale circles
 	delay	15
 	offset	37 169
-	sound data/chars/deathmask/02.wav
+	sound data/chars/deathmask/07-ahah2.wav
 	summonframe 0 0 0 0
-	subentity circles
+	subentity deathmask_melee
 	unsummonframe 5
 	energycost  10 1 0
 	hitflash flashbig
@@ -365,9 +386,9 @@ anim special2 # Défense spéciale circles
 anim riseattack # Défense spéciale circles
 	delay	15
 	offset	37 169
-	sound data/chars/deathmask/02.wav
+	sound data/chars/deathmask/07-ahah2.wav
 	summonframe 0 0 0 0
-	subentity circles
+	subentity deathmask_melee
 	unsummonframe 5
 	energycost  10 1 0
 	hitflash flashbig
@@ -388,3 +409,29 @@ anim	block
 	frame	data/chars/deathmask/block1.png
 	frame	data/chars/deathmask/block2.png
 	frame	data/chars/deathmask/block3.png	
+
+anim freespecial6 # Meikai ha
+	delay	12
+	offset	66 144
+	sound data/chars/deathmask/09-mekai3.wav
+	summonframe 0 0 0 0 1
+	subentity deathmask_constellation
+	hitflash flashbig
+	frame	data/chars/deathmask/special1.png
+	@cmd 	spawnbind "deathmask_circles" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/deathmask/special1.png
+	frame	data/chars/deathmask/special2.png
+	attack1 -28 -12 120 180 30 1 0 0 5 12
+	frame	data/chars/deathmask/special2.png
+	delay	30
+	frame	data/chars/deathmask/special2.png
+	frame	data/chars/deathmask/special2.png
+	frame	data/chars/deathmask/special2.png
+	frame	data/chars/deathmask/special2.png
+	frame	data/chars/deathmask/special2.png
+	frame	data/chars/deathmask/special2.png
+	frame	data/chars/deathmask/special2.png
+	frame	data/chars/deathmask/special2.png
+	frame	data/chars/deathmask/special1.png
+	attack1 0
+	frame	data/chars/deathmask/special1.png
