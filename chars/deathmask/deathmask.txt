@@ -418,6 +418,7 @@ anim freespecial3 # Spirit hands
 	delay	10
 	offset	35 128
 	energycost  15 1 0
+	sound data/chars/deathmask/05-spirit.wav
 	frame	data/chars/deathmask/attack1.png
 	frame	data/chars/deathmask/attack2.png
 	frame	data/chars/deathmask/attack3.png
