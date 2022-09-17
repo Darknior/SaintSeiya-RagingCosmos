@@ -8,9 +8,10 @@ lifespan 1.5
 anim	idle
 	loop	0
 	delay	5
-	offset	-29 164
+	offset	116 164
 	drawmethod scale 1 1
 	drawmethod alpha 1
+	attack 86 124 162 66 0 0 0 0 0 0
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit0.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit1.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit2.png
@@ -36,4 +37,5 @@ anim	idle
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit22.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit23.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit24.png
+	attack 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit25.png
