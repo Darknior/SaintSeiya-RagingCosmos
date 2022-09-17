@@ -27,6 +27,7 @@ load deathmask_claw
 load deathmask_constellation
 load deathmask_circles
 load deathmask_melee
+load deathmask_spirit
 
 #----------------------------------------------------------
 anim spawn
@@ -409,6 +410,23 @@ anim	block
 	frame	data/chars/deathmask/block1.png
 	frame	data/chars/deathmask/block2.png
 	frame	data/chars/deathmask/block3.png	
+
+anim freespecial3 # Spirit hands
+	fastattack 1
+	forcedirection -1
+	range 200 400
+	delay	10
+	offset	35 128
+	energycost  15 1 0
+	frame	data/chars/deathmask/attack1.png
+	frame	data/chars/deathmask/attack2.png
+	frame	data/chars/deathmask/attack3.png
+	frame	data/chars/deathmask/attack3.png
+	@cmd	shooter "deathmask_spirit" 0 80 0 2 0 0
+	frame	data/chars/deathmask/attack3.png
+	frame	data/chars/deathmask/attack2.png
+	frame	data/chars/deathmask/attack1.png
+	frame	data/chars/deathmask/attack1.png
 
 anim freespecial6 # Meikai ha
 	delay	12

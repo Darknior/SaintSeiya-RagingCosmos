@@ -113,6 +113,7 @@ know    deathmask_constellation      data/chars/deathmask/special/deathmask_cons
 know    deathmask_spiral        	data/chars/deathmask/special/deathmask_spiral.txt
 know    deathmask_claw        	data/chars/deathmask/special/deathmask_claw.txt
 know    deathmask_melee        	data/chars/deathmask/special/deathmask_melee.txt
+know    deathmask_spirit       	data/chars/deathmask/special/deathmask_spirit.txt
 
 know    lionstar        data/chars/aiolia/special/lionstar.txt
 know    multihit        data/chars/aiolia/special/multihit.txt

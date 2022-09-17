@@ -1,0 +1,39 @@
+name	deathmask_spirit
+type	none
+shadow	0
+setlayer 333
+antigravity 100
+lifespan 1.5
+
+anim	idle
+	loop	0
+	delay	5
+	offset	-29 164
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit0.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit1.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit2.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit3.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit4.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit5.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit6.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit7.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit8.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit9.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit10.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit11.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit12.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit13.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit14.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit15.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit16.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit17.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit18.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit19.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit20.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit21.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit22.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit23.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit24.png
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit25.png
