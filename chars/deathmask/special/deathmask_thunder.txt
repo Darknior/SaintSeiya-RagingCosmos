@@ -1,0 +1,23 @@
+name	deathmask_thunder
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	414 417
+	drawmethod  alpha 1
+	drawmethod  channel 0.8
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation0.png
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation1.png
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation2.png
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation3.png
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation4.png
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation5.png
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation6.png
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation7.png
+	@cmd suicide
+	frame	data/chars/deathmask/special/deathmask_constellation/constellation7.png

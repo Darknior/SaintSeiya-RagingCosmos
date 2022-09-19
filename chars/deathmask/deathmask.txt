@@ -26,6 +26,7 @@ load hands
 load deathmask_claw
 load deathmask_constellation
 load deathmask_circles
+load deathmask_thunder
 load deathmask_melee
 load deathmask_spirit
 
@@ -431,7 +432,7 @@ anim freespecial3 # Spirit hands
 
 anim freespecial6 # Meikai ha
 	delay	12
-	offset	66 144
+	offset	36 173
 	sound data/chars/deathmask/09-mekai3.wav
 	summonframe 0 0 0 0 1
 	subentity deathmask_constellation
@@ -448,6 +449,7 @@ anim freespecial6 # Meikai ha
 	frame	data/chars/deathmask/special2.png
 	frame	data/chars/deathmask/special2.png
 	frame	data/chars/deathmask/special2.png
+	@cmd 	spawnbind "deathmask_thunder" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/deathmask/special2.png
 	frame	data/chars/deathmask/special2.png
 	frame	data/chars/deathmask/special2.png

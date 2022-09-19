@@ -110,6 +110,7 @@ know    ultra_gemini  data/chars/gemini/special/ultra_gemini.txt
 know    deathmask_circles         data/chars/deathmask/special/deathmask_circles.txt
 know    hands         	data/chars/deathmask/special/hands.txt
 know    deathmask_constellation      data/chars/deathmask/special/deathmask_constellation.txt
+know    deathmask_thunder      data/chars/deathmask/special/deathmask_thunder.txt
 know    deathmask_spiral        	data/chars/deathmask/special/deathmask_spiral.txt
 know    deathmask_claw        	data/chars/deathmask/special/deathmask_claw.txt
 know    deathmask_melee        	data/chars/deathmask/special/deathmask_melee.txt

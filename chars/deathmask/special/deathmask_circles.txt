@@ -3,14 +3,12 @@ type	none
 shadow	0
 remove 0
 setlayer 666
-antigravity 100
-lifespan 3.5
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
 	delay	5
-	offset	435 382
-	drawmethod scale 1 1
+	offset	414 417
 	drawmethod alpha 1
 	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles1.png
 	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles2.png
@@ -78,5 +76,5 @@ anim	idle
 	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles66.png
 	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles67.png
 	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles68.png
-
-
+	@cmd suicide
+	frame	data/chars/deathmask/special/deathmask_circles/deathmask_circles68.png

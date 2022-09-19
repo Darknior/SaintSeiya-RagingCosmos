@@ -102,12 +102,7 @@ void spawnM(void Name, float dx, float dy, float dz)
 void spawnbind(void ChildName, void ChildAnim, float OffsetX, float OffsetY, float OffsetZ, int Direction, int BindFlag)
 {
 	void self = getlocalvar("self");										//Spawnin parent entity.
-	void Child;																//Spawned child entity.
-
-	clearspawnentry();														//Clear current spawn entity.
-	setspawnentry("name", ChildName);											//Set spawn entity by it's name.
-  	
-  	Child = spawn();														//Spawn child entity.
+	void Child = spawn01(ChildName, OffsetX, OffsetY, OffsetZ);							//Spawned child entity.
 	
 	changeentityproperty(Child, "parent", self);							//Set child's parent.
 	performattack(Child, openborconstant(ChildAnim));
