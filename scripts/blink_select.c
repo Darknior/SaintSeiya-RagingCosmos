@@ -4,6 +4,10 @@ void main()
 	if(openborvariant("in_selectscreen")){
 		blinkSelect();
 	}
+
+	if(openborvariant("in_level")){
+		blinkDamage();
+	}
 }
 
 void blinkSelect()
@@ -47,27 +51,46 @@ void blinkSelect()
 	if(type != openborconstant("TYPE_NPC")){setglobalvar("defaultEntity"+index, self);}
 }
 
+void blinkDamage()
+{//Turn on/off generic blink effects during some "takedamage" events
+	void self			= getlocalvar("self");
+	void animation		= getentityproperty(self, "animationID");
+	int dead			= getentityproperty(self, "dead");
+	int tintMode;
+	float time			= openborvariant("elapsed_time");
+	float poisonTime	= getentityvar(self, "poisonTime");
+	float time;
+	float rate;
+	
+	//POISON EFFECT
+	if(poisonTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 2;
+		rate		= 2.5;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(time*rate, 0x00, time*rate));
+	}
+	else
+	{
+		//BLINK RESET
+		if(animation != openborconstant("ANI_PICK")){ //IS NOT IN THE SELECT ANIMATION??
+			if(poisonTime != NULL()){
+				if(getdrawmethod(self, "enabled")){
+					blinkReset("poisonTime");
+				}
+			}
+		}
+	}
+}
+
 void blinkReset(void varReset)
 {//Reset any blink effect and all used variables
 	void self = getlocalvar("self");
 
 	//GLOBAL RESET
-	if(varReset != NULL()){setglobalvar(varReset, NULL());}changedrawmethod(self, "reset", 1);
-
-	//USED ONLY FOR BREAK CHARACTER
-	if(getentityvar(self, "speedLV") == 2){
-
-		//USED TO RESET "BREAK" CHARACTER TO PREVIOUS DRAWMETHOD "REDDISH" TONE
-		changedrawmethod(self, "enabled", 1);
-		changedrawmethod(self, "tintmode", 3);
-		changedrawmethod(self, "tintcolor", rgbcolor(0xA0, 0x60, 0x60));
-	}
-	else
-	if(getentityvar(self, "speedLV") == 3){
-
-		//USED TO RESET "BREAK" CHARACTER TO PREVIOUS DRAWMETHOD "REDDISH" TONE
-		changedrawmethod(self, "enabled", 1);
-		changedrawmethod(self, "tintmode", 3);
-		changedrawmethod(self, "tintcolor", rgbcolor(0xC0, 0x60, 0x60));
-	}
+	if(varReset != NULL()){setentityvar(self, varReset, NULL());}changedrawmethod(self, "reset", 1);
 }

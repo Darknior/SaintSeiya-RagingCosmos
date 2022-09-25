@@ -20,6 +20,7 @@ death 		1
 
 atchain 1 1 2 3 4 5
 
+didhitscript	data/scripts/deathmask_poison.c
 animationscript	data/scripts/player.c
 
 load hands
@@ -132,6 +133,7 @@ anim runattack # Attaque en courant
 	frame	data/chars/deathmask/runattack1.png
 	frame	data/chars/deathmask/runattack2.png
 	attack2 60 16 55 83 20 1 0 0 5 12
+	dot 0 800 1 10 50
 	dropv 4.0 2.0 0.0
 	frame	data/chars/deathmask/runattack3.png
 	sound data/chars/deathmask/10-slash.wav
@@ -158,6 +160,7 @@ anim freespecial # Attaque en courant
 	frame	data/chars/deathmask/runattack1.png
 	frame	data/chars/deathmask/runattack2.png
 	attack2 60 16 55 83 20 1 0 0 5 12
+	dot 0 800 1 10 50
 	dropv 4.0 2.0 0.0
 	frame	data/chars/deathmask/runattack3.png
 	sound data/chars/deathmask/10-slash.wav
