@@ -1,0 +1,53 @@
+name	aiolia_plasma
+type	panel
+shadow	0
+speed 10
+setlayer 666
+antigravity 100
+lifespan 4
+
+anim	idle
+	loop	0
+	delay	8
+	offset	800 0
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma1.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma2.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma3.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma4.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma5.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma6.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma7.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma8.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma9.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma10.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma11.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma12.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma13.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma14.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma15.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma16.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma17.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma18.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma19.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma20.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma21.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma22.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma24.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma25.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma26.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma27.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma28.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma29.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma31.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma32.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma33.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma34.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma35.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma36.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma37.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma38.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma39.png
+
+

@@ -116,8 +116,13 @@ know    deathmask_claw        	data/chars/deathmask/special/deathmask_claw.txt
 know    deathmask_melee        	data/chars/deathmask/special/deathmask_melee.txt
 know    deathmask_spirit       	data/chars/deathmask/special/deathmask_spirit.txt
 
-know    lionstar        data/chars/aiolia/special/lionstar.txt
-know    multihit        data/chars/aiolia/special/multihit.txt
+know    aiolia_lionstar        data/chars/aiolia/special/aiolia_lionstar.txt
+know    aiolia_multihit        data/chars/aiolia/special/aiolia_multihit.txt
+know    aiolia_beam        data/chars/aiolia/special/aiolia_beam.txt
+know    aiolia_dash        data/chars/aiolia/special/aiolia_dash.txt
+know    aiolia_plasma        data/chars/aiolia/special/aiolia_plasma.txt
+know    aiolia_constellation        data/chars/aiolia/special/aiolia_constellation.txt
+know    aiolia_explosion        data/chars/aiolia/special/aiolia_explosion.txt
 
 know    lotus	        data/chars/shaka/special/lotus.txt
 know    lotusshot	data/chars/shaka/special/lotusshot.txt

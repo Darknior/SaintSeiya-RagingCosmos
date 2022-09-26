@@ -22,8 +22,14 @@ atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
 
-load lionstar
-load multihit
+load aiolia_lionstar
+load aiolia_multihit
+load aiolia_constellation
+load aiolia_beam
+load aiolia_dash
+load aiolia_plasma
+load aiolia_explosion
+
 #----------------------------------------------------------
 anim spawn
 	delay	10
@@ -59,7 +65,7 @@ anim idle
 	delay	40
 	offset	35 134
 	bbox 19 17 38 117
-	frame	data/chars/aiolia/idle1.png		frame	data/chars/aiolia/idle1.png
+	frame	data/chars/aiolia/idle1.png	
 	delay	10
 	frame	data/chars/aiolia/idle2.png
 	frame	data/chars/aiolia/idle3.png
@@ -95,6 +101,15 @@ anim sleep
 	frame	data/chars/aiolia/sleep1.png
 	frame	data/chars/aiolia/sleep2.png
 
+anim turn
+	delay	12
+	offset	67 150
+	cancel 0 3 0 A freespecial4 
+	bbox 47 19 42 135
+	frame	data/chars/aiolia/turn1.png
+	frame	data/chars/aiolia/turn2.png
+	frame	data/chars/aiolia/turn3.png
+
 anim walk
 	loop	1
 	delay	15
@@ -119,42 +134,48 @@ anim run
 	frame	data/chars/aiolia/run5.png
 	
 anim runattack # Attaque en courant
-	delay	7
+	delay	10
 	offset	50 136
 	bbox 31 17 38 117
+	sound data/chars/aiolia/01-roar.wav
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
+        @cmd 	spawnbind "aiolia_dash" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/aiolia/runattack1.png
 	frame	data/chars/aiolia/runattack2.png
 	frame	data/chars/aiolia/runattack3.png
 	attack2 60 40 88 40 20 1 0 0 5 12
 	frame	data/chars/aiolia/runattack4.png
 	frame	data/chars/aiolia/runattack1.png
+	delay	70
 	frame	data/chars/aiolia/runattack6.png
 	attack2 0 
 	@cmd	dasher 0 0 0 1
-	delay	12
+	delay	10
 	frame	data/chars/aiolia/runattack1.png
 	frame	data/chars/aiolia/runattack4.png
 	
 anim freespecial # Attaque en courant
-	delay	7
+	delay	10
 	offset	50 136
 	bbox 31 17 38 117
+	sound data/chars/aiolia/01-roar.wav
 	forcedirection -1
 	range 	80 175
 	rangea 	0 100	
 	@cmd	dasher 3.5 0 0 1
+        @cmd 	spawnbind "aiolia_dash" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/aiolia/runattack1.png
 	frame	data/chars/aiolia/runattack2.png
 	frame	data/chars/aiolia/runattack3.png
 	attack2 60 40 88 40 20 1 0 0 5 12
 	frame	data/chars/aiolia/runattack4.png
 	frame	data/chars/aiolia/runattack1.png
+	delay	70
 	frame	data/chars/aiolia/runattack6.png
 	attack2 0
 	@cmd	dasher 0 0 0 1
-	delay	12
+	delay	10
 	frame	data/chars/aiolia/runattack1.png
 	frame	data/chars/aiolia/runattack4.png
 	
@@ -339,76 +360,78 @@ anim jumpattack # Attaque sautée statique
 	frame	data/chars/aiolia/jumpattack2.png
 	attack1 0
 
-anim special # Défense spéciale multihit
-	fastattack 1
-	delay	15
-	offset	28 128
-	sound data/chars/aiolia/02.wav
+	
+anim special # Défense spéciale Lion homerun
+	delay	10
+	offset	134 184
+	sound data/chars/aiolia/04-swing.wav
 	hitflash flashbig
 	summonframe 0 0 0 0 1
-	subentity multihit
-	unsummonframe 11
-	energycost  20 1 0
-	attack1 -50 0 160 150 2 0 0 0 0 20
-	frame	data/chars/aiolia/special1.png
-	attack1 0
-	frame	data/chars/aiolia/special2.png
-	attack1 -50 0 160 150 2 0 0 0 0 20
-	frame	data/chars/aiolia/special3.png
-	attack1 0
-	frame	data/chars/aiolia/special5.png
-	attack1 -50 0 160 150 2 0 0 0 0 20
-	frame	data/chars/aiolia/special6.png
-	attack1 0
-	frame	data/chars/aiolia/special7.png
-	attack1 -50 0 160 150 10 1 0 0 0 20
-	frame	data/chars/aiolia/special8.png
-	attack1 0
-	frame	data/chars/aiolia/special8.png
-	
-anim freespecial2 # Défense spéciale multihit
-	fastattack 1
+	subentity aiolia_multihit
+	@cmd 	spawnbind "aiolia_explosion" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/aiolia/melee1.png
+	sound data/chars/aiolia/15-explosion.wav
+	frame	data/chars/aiolia/melee2.png
+	sound data/chars/aiolia/01.wav
+	attack5 74 1 120 180 30 1 0 0 5 12
+	dropv 	8.0 3 0
+	delay	40
+	frame	data/chars/aiolia/melee3.png
 	delay	10
-	offset	29 128
-	sound data/chars/aiolia/02.wav
-	hitflash flashbig
+	frame	data/chars/aiolia/melee4.png
+	frame	data/chars/aiolia/melee5.png
+	frame	data/chars/aiolia/melee6.png
+	delay	100
+	frame	data/chars/aiolia/melee7.png
+	delay	20
+        frame	data/chars/aiolia/melee8.png
+	attack5 0
+        frame	data/chars/aiolia/melee8.png
+
+anim freespecial2 # Défense spéciale Lion homerun
+	delay	10
+	offset	134 184
+	sound data/chars/aiolia/04-swing.wav
 	range 	50 80
+	rangea 	0 100
+	hitflash flashbig
 	summonframe 0 0 0 0 1
-	subentity multihit
-	unsummonframe 8
-	energycost  20 1 0
-	attack1 -70 0 200 150 2 0 0 0 12 12
-	frame	data/chars/aiolia/special1.png
-	attack1 0
-	frame	data/chars/aiolia/special2.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
-	frame	data/chars/aiolia/special3.png
-	attack1 0
-	frame	data/chars/aiolia/special5.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
-	frame	data/chars/aiolia/special6.png
-	attack1 0
-	frame	data/chars/aiolia/special7.png
-	attack1 -70 0 200 150 10 1 0 0 12 12
-	frame	data/chars/aiolia/special8.png
-	attack1 0
-	frame	data/chars/aiolia/special8.png
+	subentity aiolia_multihit
+	@cmd 	spawnbind "aiolia_explosion" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/aiolia/melee1.png
+	sound data/chars/aiolia/15-explosion.wav
+	frame	data/chars/aiolia/melee2.png
+	sound data/chars/aiolia/01.wav
+	attack5 74 1 120 180 30 1 0 0 5 12
+	dropv 	8.0 3 0
+	delay	40
+	frame	data/chars/aiolia/melee3.png
+	delay	10
+	frame	data/chars/aiolia/melee4.png
+	frame	data/chars/aiolia/melee5.png
+	frame	data/chars/aiolia/melee6.png
+	delay	100
+	frame	data/chars/aiolia/melee7.png
+	delay	20
+        frame	data/chars/aiolia/melee8.png
+	attack5 0
+        frame	data/chars/aiolia/melee8.png
 	
-anim special2 #Défense spéciale multihit
+anim freespecial6 #ULTRA Lightning Plasma
 	fastattack 1
 	delay	10
 	offset	29 128
-	sound data/chars/aiolia/02.wav
-	hitflash flashbig
+	sound data/chars/aiolia/02-plasma1.wav
 	range 	70 100
-	summonframe 0 0 0 0 1
-	subentity multihit
-	unsummonframe 8
+	spawnframe 0 0 0 0 1
+	subentity aiolia_constellation
 	energycost  20 1 0
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special1.png
 	attack1 0
 	frame	data/chars/aiolia/special2.png
+	spawnframe 0 0 0 0 1
+	subentity aiolia_plasma
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special3.png
 	attack1 0
@@ -433,7 +456,8 @@ anim freespecial3 #Lion star shot
 	frame	data/chars/aiolia/special22.png
 	frame	data/chars/aiolia/special23.png
 	frame	data/chars/aiolia/special24.png
-	@cmd	shooter "lionstar" 0 80 0 2 0 0
+	sound data/chars/aiolia/08-lionstar.wav
+	@cmd	shooter "aiolia_lionstar" 0 80 0 2 0 0
 	frame	data/chars/aiolia/special24.png
 	frame	data/chars/aiolia/special23.png
 	frame	data/chars/aiolia/special22.png

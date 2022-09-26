@@ -1,0 +1,50 @@
+name	aiolia_beam
+type	none
+shadow	0
+remove 0
+setlayer 666
+antigravity 100
+lifespan 3.5
+
+anim	idle
+	loop	0
+	delay	5
+	offset	435 382
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam4.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam5.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam6.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam7.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam8.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam9.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam10.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam11.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam12.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam13.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam14.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam15.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam16.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam17.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam18.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam19.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam20.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam21.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam22.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam24.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam25.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam26.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam27.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam28.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam29.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam31.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam32.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam33.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam34.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam35.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam36.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam37.png
+	frame	data/chars/aiolia/special/aiolia_beam/aiolia_beam38.png
+
+
+
