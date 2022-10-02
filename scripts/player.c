@@ -169,3 +169,14 @@ void setLayer(int layer)
 
 	changeentityproperty(self, "setlayer", layer);
 }
+
+void spawnScreen(void name, float fX, float fY, float fZ, int dir)
+{//Spawn entity at specific location relative to xPos
+	void self	= getlocalvar("self");
+	void vSpawn	= spawn01(name, 0, 0, 0);
+	float xPos	= openborvariant("xpos");
+
+	fX = xPos+fX; //CHANGES POSITION RELATIVE TO XPOS
+	changeentityproperty(vSpawn, "position", fX, fZ, fY); //SET SPAWN LOCATION.
+  changeentityproperty(vSpawn, "direction", dir); //Set direction.
+}

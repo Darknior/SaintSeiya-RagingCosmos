@@ -430,8 +430,7 @@ anim freespecial6 #ULTRA Lightning Plasma
 	frame	data/chars/aiolia/special1.png
 	attack1 0
 	frame	data/chars/aiolia/special2.png
-	spawnframe 0 0 0 0 1
-	subentity aiolia_plasma
+	@cmd spawnScreen "aiolia_plasma" 0 0 0 0
 	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special3.png
 	attack1 0
