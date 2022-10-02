@@ -418,29 +418,69 @@ anim freespecial2 # Défense spéciale Lion homerun
         frame	data/chars/aiolia/melee8.png
 	
 anim freespecial6 #ULTRA Lightning Plasma
+	range 	70 100
 	fastattack 1
 	delay	10
 	offset	29 128
 	sound data/chars/aiolia/02-plasma1.wav
-	range 	70 100
 	spawnframe 0 0 0 0 1
 	subentity aiolia_constellation
 	energycost  20 1 0
-	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special1.png
-	attack1 0
 	frame	data/chars/aiolia/special2.png
-	@cmd spawnScreen "aiolia_plasma" 0 0 0 0
-	attack1 -70 0 200 150 2 0 0 0 12 12
 	frame	data/chars/aiolia/special3.png
-	attack1 0
+	frame	data/chars/aiolia/special4.png
 	frame	data/chars/aiolia/special5.png
-	attack1 -70 0 200 150 2 0 0 0 12 12
+	@cmd spawnScreen "aiolia_plasma" 0 0 0 0
 	frame	data/chars/aiolia/special6.png
-	attack1 0
+
+	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
-	attack1 -70 0 200 150 10 1 0 0 12 12
+	attack1 0
 	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+
+	attack1 0 0 800 480 10 1 0 0 12 480 #LAST HIT, NUMBER 10
+	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
 	
