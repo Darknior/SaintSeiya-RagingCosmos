@@ -1,0 +1,59 @@
+name	shaka_circlesB
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	14
+	offset	253 346
+	drawmethod alpha 1
+	drawmethod scale 1 1
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB0.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB1.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB2.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB3.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB4.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB5.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB6.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB7.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB8.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB9.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB10.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB0.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB1.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB2.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB3.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB4.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB5.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB6.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB7.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB8.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB9.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB10.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB0.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB1.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB2.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB3.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB4.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB5.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB6.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB7.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB8.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB9.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB10.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB0.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB1.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB2.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB3.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB4.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB5.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB6.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB7.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB8.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB9.png
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB10.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_circlesB/shaka_circlesB10.png

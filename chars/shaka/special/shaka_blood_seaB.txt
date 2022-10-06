@@ -1,0 +1,52 @@
+name	shaka_blood_seaB
+type	panel
+shadow	0
+speed 10
+setlayer 9999
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	16
+	offset	650 -205
+	drawmethod scale 1.25 1.25
+	drawmethod alpha 6
+        drawmethod  channel 0.99
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB21.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB22.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB23.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB24.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB25.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB26.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB21.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB22.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB23.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB24.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB25.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB26.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB21.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB22.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB23.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB24.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB25.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB26.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB21.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB22.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB23.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB24.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB25.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB26.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB21.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB22.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB23.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB24.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB25.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB26.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB21.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB22.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB23.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB24.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB25.png
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB26.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_blood_seaB/shaka_blood_seaB26.png

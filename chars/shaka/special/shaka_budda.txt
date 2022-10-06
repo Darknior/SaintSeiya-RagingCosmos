@@ -1,0 +1,73 @@
+name	shaka_budda
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	245 434
+	drawmethod  alpha 1
+	drawmethod  channel 0.8
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda0.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda1.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda2.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda3.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda4.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda5.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda6.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda7.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda8.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda9.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda10.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda11.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda12.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda13.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda14.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda15.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda16.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda17.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda18.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda19.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda20.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda21.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda22.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda24.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda25.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda26.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda27.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda28.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda29.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda0.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda1.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda2.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda3.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda4.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda5.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda6.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda7.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda8.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda9.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda10.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda11.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda12.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda13.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda14.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda15.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda16.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda17.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda18.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda19.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda20.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda21.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda22.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda24.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda25.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda26.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda27.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda28.png
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda29.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_budda/shaka_budda29.png

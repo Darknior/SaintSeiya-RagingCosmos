@@ -2,7 +2,7 @@ name	aiolia_lionstar
 type	none
 candamage player
 shadow	0
-setlayer 10
+setlayer 100
 antigravity 100
 remove 0
 lifespan  6

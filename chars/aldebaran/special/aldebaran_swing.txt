@@ -1,0 +1,25 @@
+name	aldebaran_swing
+type	none
+shadow	0
+layer 997
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	0 240
+        drawmethod  alpha 1
+        drawmethod  channel 0.53
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing0.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing1.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing2.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing3.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing4.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing5.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing6.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing7.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing8.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing9.png
+	@cmd suicide
+	frame	data/chars/aldebaran/special/aldebaran_swing/swing9.png

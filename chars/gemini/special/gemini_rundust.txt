@@ -1,0 +1,30 @@
+name	gemini_rundust
+type	none
+shadow	0
+layer 2
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	40 186
+        drawmethod  alpha 1
+        drawmethod  channel 0.63
+	frame	data/chars/gemini/special/gemini_rundust/rundust0.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust1.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust2.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust3.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust4.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust5.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust6.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust7.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust8.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust9.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust10.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust11.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust12.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust13.png
+	frame	data/chars/gemini/special/gemini_rundust/rundust14.png
+	@cmd suicide
+	frame	data/chars/gemini/special/gemini_rundust/rundust14.png

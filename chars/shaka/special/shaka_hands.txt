@@ -1,0 +1,24 @@
+name	shaka_hands
+type	none
+shadow	0
+setlayer 333
+antigravity 100
+lifespan 1.5
+
+anim	idle
+	loop	0
+	delay	5
+	offset	9 42
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	attack 39 -11 119 66 0 0 0 0 0 0
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands0.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands1.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands2.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands3.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands4.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands5.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands6.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands7.png
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands7.png

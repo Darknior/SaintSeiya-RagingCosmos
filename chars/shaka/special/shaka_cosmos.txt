@@ -1,0 +1,63 @@
+name	shaka_cosmos
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	15
+	offset	200 298
+	drawmethod alpha 1
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos0.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos1.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos2.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos3.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos4.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos5.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos6.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos7.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos8.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos9.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos10.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos11.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos12.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos13.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos14.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos15.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos16.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos17.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos18.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos19.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos20.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos21.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos22.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos24.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos25.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos26.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos27.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos28.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos29.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos31.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos32.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos33.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos34.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos35.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos36.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos37.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos38.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos39.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos40.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos41.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos42.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos43.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos44.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos45.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos46.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos47.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos48.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos49.png
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos50.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos50.png

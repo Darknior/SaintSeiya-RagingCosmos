@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	100
+		delay	50
 	@cmd setVar "line1" "So, here are the rebellious Bronze"
 	@cmd setVar "line2" "Knights who dare to defy the"
 	@cmd setVar "line3" "Sanctuary and the Grand Pope's"

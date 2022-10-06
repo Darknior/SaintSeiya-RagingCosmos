@@ -4,7 +4,7 @@ speed	10
 shadow	0
 setlayer 854
 antigravity 100
-lifespan  1.9
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
@@ -23,4 +23,6 @@ anim	idle
 	frame	data/chars/aiolia/special/multihit/multihit8.png
 	frame	data/chars/aiolia/special/multihit/multihit9.png
 	frame	data/chars/aiolia/special/multihit/multihit10.png
+	frame	data/chars/aiolia/special/multihit/multihit11.png
+	@cmd suicide
 	frame	data/chars/aiolia/special/multihit/multihit11.png

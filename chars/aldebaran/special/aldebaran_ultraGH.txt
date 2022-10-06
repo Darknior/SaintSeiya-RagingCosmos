@@ -1,0 +1,39 @@
+name	aldebaran_ultraGH
+type	none
+shadow	0
+remove 0
+setlayer 999
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	15
+	offset	7 420
+	drawmethod scale 0.7 0.7
+        drawmethod  alpha 1
+        drawmethod  channel 0.73
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH0.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH1.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH2.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH3.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH4.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH5.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH6.png	
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH7.png	
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH8.png	
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH9.png	
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH10.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH11.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH12.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH13.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH14.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH15.png
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH16.png	
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH17.png	
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH18.png	
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH19.png
+	@cmd suicide
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH19.png
+	
+

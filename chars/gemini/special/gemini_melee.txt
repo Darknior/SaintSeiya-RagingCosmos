@@ -1,0 +1,52 @@
+name	gemini_melee
+type	none
+shadow	0
+layer 1
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	7
+	offset	304 314
+	drawmethod scale 0.9 0.9
+        drawmethod  alpha 1
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini2.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini3.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini4.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini5.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini6.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini7.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini8.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini9.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini10.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini11.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini12.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini13.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini14.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini15.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini16.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini17.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini18.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini19.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini20.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini21.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini22.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini24.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini25.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini26.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini27.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini28.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini29.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini31.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini32.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini33.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini34.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini35.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini36.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini37.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini38.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini39.png
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini40.png
+	@cmd suicide
+	frame	data/chars/gemini/special/gemini_melee/melee_gemini40.png

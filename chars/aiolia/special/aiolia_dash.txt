@@ -3,7 +3,7 @@ type	none
 shadow	0
 setlayer 666
 antigravity 100
-lifespan 1.5
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
@@ -42,6 +42,8 @@ anim	idle
 	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash29.png
 	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash31.png
 	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash32.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash33.png
+	@cmd suicide
 	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash33.png
 
 

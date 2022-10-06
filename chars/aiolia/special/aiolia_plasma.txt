@@ -4,7 +4,7 @@ shadow	0
 speed 10
 setlayer 666
 antigravity 100
-lifespan 4
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
@@ -48,6 +48,8 @@ anim	idle
 	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma36.png
 	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma37.png
 	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma38.png
+	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma39.png
+	@cmd suicide
 	frame	data/chars/aiolia/special/aiolia_plasma/aiolia_plasma39.png
 
 

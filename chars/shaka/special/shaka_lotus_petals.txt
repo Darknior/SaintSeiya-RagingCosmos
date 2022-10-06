@@ -1,0 +1,45 @@
+name	shaka_lotus_petals
+type	none
+shadow	0
+remove 0
+setlayer 999
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	100 255
+	drawmethod alpha 1
+	drawmethod scale 0.7 0.7
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals0.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals1.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals2.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals3.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals4.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals5.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals6.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals7.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals8.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals9.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals10.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals11.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals12.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals13.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals14.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals15.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals16.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals17.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals18.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals19.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals20.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals21.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals22.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals24.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals25.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals26.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals27.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals28.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals29.png
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals31.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_lotus_petals/shaka_lotus_petals31.png

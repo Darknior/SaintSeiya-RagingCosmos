@@ -1,0 +1,42 @@
+name	shaka_constellation
+type	panel
+shadow	0
+speed 10
+setlayer 5
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	20
+	offset	800 0
+        drawmethod  alpha 6
+        drawmethod  channel 0.20
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.50
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.75
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.99
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	delay	100
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.75
+	delay	20
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.50
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.20
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png

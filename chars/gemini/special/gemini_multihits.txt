@@ -1,0 +1,23 @@
+name	gemini_multihits
+type	none
+shadow	0
+layer 546
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	-50 333
+	drawmethod scale 0.4 0.4
+        drawmethod  alpha 1
+        drawmethod  channel 0.43
+	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini0.png
+	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini1.png
+	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini2.png
+	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini3.png
+	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini4.png
+	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini5.png
+	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini6.png
+	@cmd suicide
+	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini6.png

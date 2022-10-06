@@ -65,50 +65,40 @@ load    flashmedium     data/chars/misc/flash/flashmedium.txt
 load    flashbig        data/chars/misc/flash/flashbig.txt
 
 #Dust animations
-load    dash_dust           data/chars/dust/dash_dust.txt
-load    dash_dustB     data/chars/dust/dash_dustB.txt
-load    down_dust       data/chars/dust/down_dust.txt
-load    fall_dust_big           data/chars/dust/fall_dust_big.txt
-load    fall_dust_medium     data/chars/dust/fall_dust_medium.txt
-load    fall_dust_small       data/chars/dust/fall_dust_small.txt
-load    idle_dust           data/chars/dust/idle_dust.txt
-load    round_dust     data/chars/dust/round_dust.txt
-load    run_dust       data/chars/dust/run_dust.txt
-load    upper_dust     data/chars/dust/upper_dust.txt
-load    vertical_dust       data/chars/dust/vertical_dust.txt
 
+load    fall_dust_medium     data/chars/dust/fall_dust_medium.txt
 
 #Players special animations
-know    aura            data/chars/seiya/special/aura.txt
-know    aura_air_kick            data/chars/seiya/special/aura_air_kick.txt
-know    aura_air_ryuseiken            data/chars/seiya/special/aura_air_ryuseiken.txt
-know    aura_ryuseiken            data/chars/seiya/special/aura_ryuseiken.txt
-know    constellation   data/chars/seiya/special/constellation.txt
-know    pegasus         data/chars/seiya/special/pegasus.txt
-know    meteor          data/chars/seiya/special/meteor.txt
-know    meteord         data/chars/seiya/special/meteord.txt
-know    comet          	data/chars/seiya/special/comet.txt
-know    comet_back      data/chars/seiya/special/comet_back.txt
 
-know    dash_dust      data/chars/seiya/special/dash_dust.txt
-know    down_dust      data/chars/seiya/special/down_dust.txt
-know    upper_dust      data/chars/seiya/special/upper_dust.txt
-know    round_dust      data/chars/seiya/special/round_dust.txt
+know    seiya_aura            data/chars/seiya/special/seiya_aura.txt
+know    seiya_aura_air_kick            data/chars/seiya/special/seiya_aura_air_kick.txt
+know    seiya_aura_air_ryuseiken            data/chars/seiya/special/seiya_aura_air_ryuseiken.txt
+know    seiya_aura_ryuseiken            data/chars/seiya/special/seiya_aura_ryuseiken.txt
+know    seiya_constellation   data/chars/seiya/special/seiya_constellation.txt
+know    seiya_pegasus         data/chars/seiya/special/seiya_pegasus.txt
+know    seiya_meteor          data/chars/seiya/special/seiya_meteor.txt
+know    seiya_meteord         data/chars/seiya/special/seiya_meteord.txt
+know    seiya_comet          	data/chars/seiya/special/seiya_comet.txt
+know    seiya_comet_back      data/chars/seiya/special/seiya_comet_back.txt
+know    seiya_dash_dust      data/chars/seiya/special/seiya_dash_dust.txt
+know    seiya_down_dust      data/chars/seiya/special/seiya_down_dust.txt
+know    seiya_upper_dust      data/chars/seiya/special/seiya_upper_dust.txt
+know    seiya_round_dust      data/chars/seiya/special/seiya_round_dust.txt
 
-know    runtaurus       data/chars/aldebaran/special/runtaurus.txt
-know    rundust         data/chars/aldebaran/special/rundust.txt
-know    swing           data/chars/aldebaran/special/swing.txt
-know    ultraGH         data/chars/aldebaran/special/ultraGH.txt
-know    ultraGH_back    data/chars/aldebaran/special/ultraGH_back.txt
+know    aldebaran_runtaurus       data/chars/aldebaran/special/aldebaran_runtaurus.txt
+know    aldebaran_rundust         data/chars/aldebaran/special/aldebaran_rundust.txt
+know    aldebaran_swing           data/chars/aldebaran/special/aldebaran_swing.txt
+know    aldebaran_ultraGH         data/chars/aldebaran/special/aldebaran_ultraGH.txt
+know    aldebaran_ultraGH_back    data/chars/aldebaran/special/aldebaran_ultraGH_back.txt
 
-know    dimension_back  data/chars/gemini/special/dimension_back.txt
-know    rundust_gemini  data/chars/gemini/special/rundust_gemini.txt
-know    multihits_gemini  data/chars/gemini/special/multihits_gemini.txt
-know    melee_gemini  data/chars/gemini/special/melee_gemini.txt
-know    ultra_gemini  data/chars/gemini/special/ultra_gemini.txt
+know    gemini_dimension_back  data/chars/gemini/special/gemini_dimension_back.txt
+know    gemini_rundust    data/chars/gemini/special/gemini_rundust.txt
+know    gemini_multihits  data/chars/gemini/special/gemini_multihits.txt
+know    gemini_melee      data/chars/gemini/special/gemini_melee.txt
+know    gemini_ultra      data/chars/gemini/special/gemini_ultra.txt
 
 know    deathmask_circles         data/chars/deathmask/special/deathmask_circles.txt
-know    hands         	data/chars/deathmask/special/hands.txt
+know    deathmask_hands         	data/chars/deathmask/special/deathmask_hands.txt
 know    deathmask_constellation      data/chars/deathmask/special/deathmask_constellation.txt
 know    deathmask_thunder      data/chars/deathmask/special/deathmask_thunder.txt
 know    deathmask_spiral        	data/chars/deathmask/special/deathmask_spiral.txt
@@ -124,9 +114,18 @@ know    aiolia_plasma        data/chars/aiolia/special/aiolia_plasma.txt
 know    aiolia_constellation        data/chars/aiolia/special/aiolia_constellation.txt
 know    aiolia_explosion        data/chars/aiolia/special/aiolia_explosion.txt
 
-know    lotus	        data/chars/shaka/special/lotus.txt
-know    lotusshot	data/chars/shaka/special/lotusshot.txt
-know    lotusexplosion  data/chars/shaka/special/lotusexplosion.txt
+know    shaka_lotus	        data/chars/shaka/special/shaka_lotus.txt
+know    shaka_lotus_shot	data/chars/shaka/special/shaka_lotus_shot.txt
+know    shaka_cosmos    data/chars/shaka/special/shaka_cosmos.txt
+know    shaka_constellation    data/chars/shaka/special/shaka_constellation.txt
+know    shaka_budda    data/chars/shaka/special/shaka_budda.txt
+know    shaka_circles   data/chars/shaka/special/shaka_circles.txt
+know    shaka_circlesB    data/chars/shaka/special/shaka_circlesB.txt
+know    shaka_blood_sea    data/chars/shaka/special/shaka_blood_sea.txt
+know    shaka_blood_seaB    data/chars/shaka/special/shaka_blood_seaB.txt
+know    shaka_blood_geyser    data/chars/shaka/special/shaka_blood_geyser.txt
+know    shaka_lotus_petals    data/chars/shaka/special/shaka_lotus_petals.txt
+know    shaka_hands    data/chars/shaka/special/shaka_hands.txt
 
 know    sting  		data/chars/milo/special/sting.txt
 
@@ -170,7 +169,7 @@ load    cassios_rescue  data/chars/cassios/cassios_rescue.txt
 
 ## PEGASUS / SEIYA
 
-load    seiya           data/chars/seiya/seiya.txt
+load    seiya           data/chars/seiya/00_seiya.txt
 
 ## DRAGON / SHIRYU
 
@@ -312,27 +311,27 @@ know 	jaki			data/chars/jaki/jaki.txt
 
 ## GOLD KINGHTS ##
 
-know    ALDEBARAN       data/chars/ALDEBARAN/ALDEBARAN.txt
+know    ALDEBARAN       data/chars/ALDEBARAN/00_ALDEBARAN.txt
 
 know    leonesuper      data/chars/AIOLIA/leonesuper.txt
-know    AIOLIA          data/chars/AIOLIA/AIOLIA.txt
+know    AIOLIA          data/chars/AIOLIA/00_AIOLIA.txt
 
 know    pescisuper1     data/chars/APHRODITE/pescisuper1.txt
 know    pescisuper2     data/chars/APHRODITE/pescisuper2.txt
 know    pescisuper3     data/chars/APHRODITE/pescisuper3.txt
-know    APHRODITE       data/chars/APHRODITE/APHRODITE.txt
+know    APHRODITE       data/chars/APHRODITE/00_APHRODITE.txt
 
 know    CAMUS           data/chars/CAMUS/CAMUS.txt
 
-know    DEATHMASK       data/chars/DEATHMASK/DEATHMASK.txt
+know    DEATHMASK       data/chars/DEATHMASK/00_DEATHMASK.txt
 
-know    GEMINI          data/chars/GEMINI/GEMINI.txt
+know    GEMINI          data/chars/GEMINI/00_GEMINI.txt
 
 know    MILO            data/chars/MILO/MILO.txt
 
 know    saga            data/chars/saga/saga.txt
 
-know    SHAKA           data/chars/SHAKA/SHAKA.txt
+know    SHAKA           data/chars/SHAKA/00_SHAKA.txt
 know    SHURA           data/chars/SHURA/shura2.txt
 
 know    CUBE            data/chars/CUBE/CUBE.txt

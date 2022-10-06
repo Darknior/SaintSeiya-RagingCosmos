@@ -1,0 +1,37 @@
+name	shaka_blood_geyser
+type	none
+shadow	0
+remove 0
+setlayer 1
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	15
+	offset	231 632
+	drawmethod alpha 6
+        drawmethod  channel 0.99
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser10.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser9.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser8.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser7.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser6.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser5.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser4.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser3.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser2.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser9.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser1.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser10.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser9.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser8.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser7.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser6.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser5.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser4.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser3.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser2.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser9.png
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser1.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser1.png

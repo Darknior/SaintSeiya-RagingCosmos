@@ -1,0 +1,35 @@
+name	shaka_lotus_shot
+type	none
+candamage player
+shadow	0
+setlayer 2
+remove 0
+lifespan  2
+animationscript	data/scripts/player.c
+
+anim	idle
+	landframe 1
+	loop	0
+	delay	-1000
+	offset	12 22
+	bbox 0 0 25 25
+	followanim 1
+	followcond 1
+	attack1 0 0 25 25 10 0 0 0 12 12
+	frame	data/chars/shaka/special/shaka_lotus_shot/lotusshot1.png
+	@cmd stop "ANI_FOLLOW1"
+	frame	data/chars/shaka/special/shaka_lotus_shot/lotusshot1.png
+	
+anim follow1
+	loop	1
+	offset	12 22
+	bbox 0 0 25 25
+	@cmd stop
+	attack1 0 0 25 25 10 0 0 0 12 12
+	frame	data/chars/shaka/special/shaka_lotus_shot/lotusshot2.png
+	attack1 0
+	frame	data/chars/shaka/special/shaka_lotus_shot/lotusshot3.png
+	attack1 0 0 25 25 10 0 0 0 12 12
+	frame	data/chars/shaka/special/shaka_lotus_shot/lotusshot4.png
+	attack1 0
+	frame	data/chars/shaka/special/shaka_lotus_shot/lotusshot5.png
