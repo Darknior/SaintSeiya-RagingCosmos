@@ -66,7 +66,7 @@ load    flashbig        data/chars/misc/flash/flashbig.txt
 
 #Dust animations
 
-load    fall_dust_medium     data/chars/dust/fall_dust_medium.txt
+load    round_dustB     data/chars/dust/round_dustB.txt
 
 #Players special animations
 

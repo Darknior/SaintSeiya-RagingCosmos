@@ -16,7 +16,7 @@ nodieblink 0
 noquake 1 1
 
 atchain 1 1 2
-
+dust		round_dustB
 
 #----------------------------------------------------------
 anim spawn

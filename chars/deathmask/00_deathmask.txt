@@ -1,12 +1,12 @@
 name		deathmask
-health		50
+health		150
 mp 			100
 speed		20
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
-
+dust		round_dustB
 
 icon		data/chars/deathmask/icon.png
 
@@ -434,28 +434,67 @@ anim freespecial3 # Spirit hands
 	frame	data/chars/deathmask/attack1.png
 
 anim freespecial6 # Meikai ha
-	delay	12
+	delay	50
 	offset	36 173
-	sound data/chars/deathmask/09-mekai3.wav
+	fastattack 1
 	summonframe 0 0 0 0 1
 	subentity deathmask_constellation
 	hitflash flashbig
+	sound data/chars/deathmask/77-cosmos.wav
 	frame	data/chars/deathmask/special1.png
+	frame	data/chars/deathmask/special2.png
+	delay	10
+	frame	data/chars/deathmask/special2.png
+	sound data/chars/deathmask/09-mekai3.wav
 	@cmd 	spawnbind "deathmask_circles" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/deathmask/special1.png
 	frame	data/chars/deathmask/special2.png
-	attack1 -28 -12 120 180 30 1 0 0 5 12
+	delay	10
 	frame	data/chars/deathmask/special2.png
-	delay	30
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/deathmask/special2.png
+	attack1 0
 	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/deathmask/special2.png
+	attack1 0
 	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/deathmask/special2.png
+	attack1 0
+	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	@cmd 	spawnbind "deathmask_thunder" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/deathmask/special2.png
+	attack1 0
 	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/deathmask/special2.png
-	frame	data/chars/deathmask/special1.png
+	attack1 0
+	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/deathmask/special2.png
+	attack1 0
+	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/deathmask/special2.png
+	attack1 0
+	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/deathmask/special2.png
+	attack1 0
+	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/deathmask/special2.png
+	attack1 0
+	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/deathmask/special2.png
+	attack1 0
+	frame	data/chars/deathmask/special2.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/deathmask/special2.png
 	attack1 0
 	frame	data/chars/deathmask/special1.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/deathmask/special1.png
+	attack1 0

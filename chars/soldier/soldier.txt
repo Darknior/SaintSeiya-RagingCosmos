@@ -16,7 +16,7 @@ gfxshadow	1
 nodieblink 0
 blocked 1
 noquake 1 1
-
+dust		round_dustB
 
 subject_to_screen 0
 

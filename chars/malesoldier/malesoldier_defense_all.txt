@@ -5,7 +5,7 @@ type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
-
+dust		round_dustB
 icon		data/chars/malesoldier/icon.png
 
 gfxshadow	1

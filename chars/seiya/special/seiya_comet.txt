@@ -8,7 +8,8 @@ lifespan  6
 
 anim	idle
 	loop	1
-	delay	16
+	fastattack 1
+	delay	10
 	offset	15 80
 	drawmethod alpha 1
 	attack5 0 0 200 150 20 0 0 0 0 20

@@ -6,7 +6,7 @@ type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
-
+dust		round_dustB
 
 icon		data/chars/aldebaran/icon.png
 
@@ -519,6 +519,7 @@ anim riseattack #Attaque spéciale Punch combo
 anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	delay	10
 	offset	45 160
+	fastattack 1
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
 	subentity aldebaran_ultraGH_back
@@ -536,10 +537,9 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	frame	data/chars/aldebaran/special48.png
 	frame	data/chars/aldebaran/special49.png
 	frame	data/chars/aldebaran/special50.png
+	sound data/chars/aldebaran/06-ultraGH.wav
 	frame	data/chars/aldebaran/special51.png
-	sound data/chars/aldebaran/06-aldebaran_ultraGH.wav
 	@cmd 	spawnbind "aldebaran_ultraGH" "ANI_IDLE" 0 0 0 1 0
-	sound data/chars/aldebaran/07-aldebaran_ultraGH2.wav
 	delay   5
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
@@ -573,6 +573,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	frame	data/chars/aldebaran/special53.png
 	attack1 41 66 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
+	sound data/chars/aldebaran/07-ultraGH2.wav
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
 	attack1 41 66 900 182 15 0 0 0 0 50

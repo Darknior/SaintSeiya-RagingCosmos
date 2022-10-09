@@ -1,4 +1,4 @@
-name		seiya
+   name		seiya
 health		400
 mp 			100
 type		player
@@ -6,7 +6,7 @@ type		player
 gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
-dust		fall_dust_medium # Default "dust entity" using the native "Dust" function
+dust		round_dustB # Default "dust entity" using the native "Dust" function
 
 speed		20	# Vitesse de déplacement
 running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -368,8 +368,9 @@ anim attack5 # Attaque combo 5
 anim attackbackward # Attaque arrière (Arrière + attaque)
 	flipframe 1
 	offset	45 134
+	fastattack 1
 	bbox 21 22 51 112
-	hitflash flashbig	
+	hitflash flashbig
 	delay	5
 sound   data/chars/seiya/17-back_kick.wav
 	frame	data/chars/seiya/attackbackward1.png
@@ -381,19 +382,22 @@ sound   data/chars/seiya/17-back_kick.wav
 	frame	data/chars/seiya/attackbackward4.png
 	frame	data/chars/seiya/attackbackward5.png
 	frame	data/chars/seiya/attackbackward6.png
-	attack1 55 35 84 29 20 1 0 0 5 12
+	attack1 55 35 84 29 20 0 0 0 5 12
 	frame	data/chars/seiya/attackbackward7.png
+	attack1 0
 	frame	data/chars/seiya/attackbackward8.png
+	attack1 55 35 84 29 20 1 0 0 5 12
 	frame	data/chars/seiya/attackbackward9.png
+	attack1 0
 	frame	data/chars/seiya/attackbackward10.png
 	frame	data/chars/seiya/attackbackward11.png
-	attack1 0
 	delay   12
-	frame	data/chars/seiya/attackbackward1.png
+	frame	data/chars/seiya/attackbackward1.png	
 
 anim attackboth # Attaque arrière (bouton saut + attaque)
 	flipframe 1
 	offset	45 134
+	fastattack 1
 	bbox 21 22 51 112
 	hitflash flashbig
 	delay	5
@@ -407,19 +411,22 @@ sound   data/chars/seiya/17-back_kick.wav
 	frame	data/chars/seiya/attackbackward4.png
 	frame	data/chars/seiya/attackbackward5.png
 	frame	data/chars/seiya/attackbackward6.png
-	attack1 55 35 84 29 20 1 0 0 5 12
+	attack1 55 35 84 29 20 0 0 0 5 12
 	frame	data/chars/seiya/attackbackward7.png
+	attack1 0
 	frame	data/chars/seiya/attackbackward8.png
+	attack1 55 35 84 29 20 1 0 0 5 12
 	frame	data/chars/seiya/attackbackward9.png
+	attack1 0
 	frame	data/chars/seiya/attackbackward10.png
 	frame	data/chars/seiya/attackbackward11.png
-	attack1 0
 	delay   12
-	frame	data/chars/seiya/attackbackward1.png
+	frame	data/chars/seiya/attackbackward1.png	
 	
 anim freespecial4 # Attaque arrière (à partir d'un cancel)
 	flipframe 1
 	offset	45 134
+	fastattack 1
 	bbox 21 22 51 112
 	hitflash flashbig
 	delay	5
@@ -433,13 +440,15 @@ sound   data/chars/seiya/17-back_kick.wav
 	frame	data/chars/seiya/attackbackward4.png
 	frame	data/chars/seiya/attackbackward5.png
 	frame	data/chars/seiya/attackbackward6.png
-	attack1 55 35 84 29 20 1 0 0 5 12
+	attack1 55 35 84 29 20 0 0 0 5 12
 	frame	data/chars/seiya/attackbackward7.png
+	attack1 0
 	frame	data/chars/seiya/attackbackward8.png
+	attack1 55 35 84 29 20 1 0 0 5 12
 	frame	data/chars/seiya/attackbackward9.png
+	attack1 0
 	frame	data/chars/seiya/attackbackward10.png
 	frame	data/chars/seiya/attackbackward11.png
-	attack1 0
 	delay   12
 	frame	data/chars/seiya/attackbackward1.png	
 
@@ -604,6 +613,7 @@ anim freespecial2 # Météores de Pégase
 anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	delay	10
 	offset	45 113
+	fastattack 1
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
 	subentity seiya_comet_back
@@ -618,7 +628,7 @@ anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	frame	data/chars/seiya/upspecial5.png
 	frame	data/chars/seiya/upspecial6.png
 	frame	data/chars/seiya/upspecial7.png
-	@cmd	shooter "seiya_comet" 77 80 0 2 0 0
+	@cmd	shooter "seiya_comet" 77 80 0 1 0 0
 	delay 50	
 	frame	data/chars/seiya/upspecial7.png	
 	frame	data/chars/seiya/upspecial7.png
@@ -701,14 +711,12 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
 	sound data/sounds/punch.wav	
 	frame	data/chars/seiya/jumpattack21.png
 	frame	data/chars/seiya/jumpattack22.png
-	frame	data/chars/seiya/jumpattack23.png	
+	frame	data/chars/seiya/jumpattack23.png
+	@cmd 	spawnbind "seiya_aura_air_kick"	"ANI_IDLE" 0 0 0 0 0
 	jumpframe 2 -2 0
 	dropv 4.0 1.0 0.0
 	attack4 62 21 67 26 10 0 0 0 5 12
 	frame	data/chars/seiya/jumpattack24.png
-	summonframe 0 0 0 0 0
-	subentity seiya_aura_air_kick
-	unsummonframe 11
 	frame	data/chars/seiya/jumpattack24.png
 	attack4 0
 
@@ -749,22 +757,26 @@ anim freespecial3 # Saut attaque spéciale météores (déclenchée par une comm
 anim freespecial5 # Uppercut 
 	offset	45 134
 	bbox 21 22 51 112
+	fastattack 1
 	hitflash flashbig
 	delay	5
 	sound data/chars/seiya/03-uppercut2.wav
+	@cmd 	spawnbind "seiya_upper_dust" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/uppercut1.png
+	attack1 55 0 35 84 15 0 0 0 5 12
 	frame	data/chars/seiya/uppercut2.png
 	jumpframe 0 6 1.5
-	delay 25
+	delay 5
+	attack1 0
+	frame	data/chars/seiya/uppercut3.png
 	attack1 55 0 35 84 15 1 0 0 5 12
 	frame	data/chars/seiya/uppercut3.png
-	summonframe 0 0 0 0 0
-	subentity seiya_upper_dust
-	unsummonframe 8
-	frame	data/chars/seiya/uppercut3.png
-	frame	data/chars/seiya/uppercut3.png
-	frame	data/chars/seiya/uppercut3.png
 	attack1 0
+	delay 19
+	frame	data/chars/seiya/uppercut3.png
+	frame	data/chars/seiya/uppercut3.png
+	frame	data/chars/seiya/uppercut3.png
+	frame	data/chars/seiya/uppercut3.png
 	delay   12
 	frame	data/chars/seiya/uppercut2.png
 

@@ -1,12 +1,12 @@
 name		shaka
-health		350
+health		500
 mp 			100
 speed		20
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
-
+dust		round_dustB
 
 icon		data/chars/shaka/icon.png
 
@@ -350,8 +350,9 @@ anim jumpattack # Attaque sautée statique
 	attack1 0
 
 anim special # Défense spéciale Blood Sea
-	delay	25
+	delay	10
 	offset	66 149
+	fastattack 1
 	sound data/chars/shaka/18-lava1.wav
 	summonframe 0 0 0 0 1
 	subentity shaka_blood_seaB
@@ -366,7 +367,6 @@ anim special # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special22.png
 	sound data/chars/shaka/19-lava2.wav
 	frame	data/chars/shaka/special23.png
-	attack1 28 -12 120 180 30 1 0 0 5 12
 	frame	data/chars/shaka/special24.png
 	frame	data/chars/shaka/special25.png
 	frame	data/chars/shaka/special26.png
@@ -374,16 +374,106 @@ anim special # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special28.png
 	frame	data/chars/shaka/special29.png
 	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special31.png
-	frame	data/chars/shaka/special32.png
-	frame	data/chars/shaka/special33.png
-	frame	data/chars/shaka/special34.png
 	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
 
 anim riseattack # Défense spéciale Blood Sea
-	delay	25
+	delay	10
 	offset	66 149
+	fastattack 1
 	sound data/chars/shaka/18-lava1.wav
 	summonframe 0 0 0 0 1
 	subentity shaka_blood_seaB
@@ -398,7 +488,6 @@ anim riseattack # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special22.png
 	sound data/chars/shaka/19-lava2.wav
 	frame	data/chars/shaka/special23.png
-	attack1 28 -12 120 180 30 1 0 0 5 12
 	frame	data/chars/shaka/special24.png
 	frame	data/chars/shaka/special25.png
 	frame	data/chars/shaka/special26.png
@@ -406,12 +495,101 @@ anim riseattack # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special28.png
 	frame	data/chars/shaka/special29.png
 	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special31.png
-	frame	data/chars/shaka/special32.png
-	frame	data/chars/shaka/special33.png
-	frame	data/chars/shaka/special34.png
 	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
 	
 anim special2 #Attaque spéciale Lotus toss
 	range 	250 400
@@ -533,6 +711,7 @@ anim freespecial3 # Shaka hands
 anim freespecial6 # Ten Bu Ho Rin
 	delay	20
 	offset	66 149
+	fastattack 1
 	sound data/chars/shaka/07-loku.wav
 	summonframe 0 0 0 0 1
 	subentity shaka_constellation
@@ -543,25 +722,170 @@ anim freespecial6 # Ten Bu Ho Rin
 	frame	data/chars/shaka/special22.png
 	@cmd 	spawnbind "shaka_budda" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shaka/special23.png
-	attack1 -28 -12 120 180 30 1 0 0 5 12
 	frame	data/chars/shaka/special24.png
-	delay	20
 	frame	data/chars/shaka/special25.png
 	frame	data/chars/shaka/special26.png
 	frame	data/chars/shaka/special27.png
 	frame	data/chars/shaka/special28.png
 	frame	data/chars/shaka/special29.png
 	frame	data/chars/shaka/special30.png
-	frame	data/chars/shaka/special31.png
-	frame	data/chars/shaka/special32.png
-	frame	data/chars/shaka/special33.png
-	frame	data/chars/shaka/special34.png
-	delay	200
-	frame	data/chars/shaka/special35.png
+	delay	8
 	sound data/chars/shaka/02-tenbuhorin.wav
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special35.png
 	attack1 0
-	
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack -333 0 800 260 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack -333 0 800 260 10 1 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+
 	
 anim	block
 	offset	42 128

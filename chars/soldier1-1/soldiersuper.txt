@@ -4,7 +4,7 @@ type	none
 remove   1
 speed	20
 shadow	0
-
+dust		round_dustB
 
 
 

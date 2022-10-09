@@ -6,7 +6,7 @@ type		enemy
 hostile     player npc 
 candamage 	player 
 aimove      chase
-
+dust		round_dustB
 
 icon		data/chars/cassios/icon.png
 
