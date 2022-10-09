@@ -1,9 +1,8 @@
 name	aldebaran_ultraGH_back
 type	panel
-speed	10
 shadow	0
+speed	10
 setlayer 5
-antigravity 100
 animationscript	data/scripts/player.c
 
 anim	idle

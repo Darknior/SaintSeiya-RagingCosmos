@@ -6,7 +6,7 @@ type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
-dust		round_dustB
+dust		fall_dust
 
 icon		data/chars/aldebaran/icon.png
 
@@ -27,6 +27,9 @@ load aldebaran_rundust
 load aldebaran_swing
 load aldebaran_ultraGH
 load aldebaran_ultraGH_back
+load aldebaran_super_lights
+
+
 #----------------------------------------------------------
 anim spawn
 	delay	10
@@ -367,7 +370,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale Taurus homerun
 	delay	5
 	offset	37 163
-	sound data/chars/aldebaran/02-aldebaran_swing.wav
+	sound data/chars/aldebaran/02-swing.wav
 	hitflash flashbig
 	frame	data/chars/aldebaran/special1.png
         summonframe 5 0 0 0 0
@@ -395,7 +398,7 @@ anim special # Défense spéciale Taurus homerun
 anim freespecial2 # Défense spéciale Taurus homerun
 	delay	5
 	offset	37 163
-	sound data/chars/aldebaran/02-aldebaran_swing.wav
+	sound data/chars/aldebaran/02-swing.wav
 	range 	50 80
 	rangea 	0 100
 	hitflash flashbig
@@ -428,7 +431,7 @@ anim special2 #Attaque spéciale Punch combo
 	delay	6
 	offset	42 160
 	#bbox 21 11 38 151
-	sound data/chars/aldebaran/02-aldebaran_swing.wav
+	sound data/chars/aldebaran/02-swing.wav
 	attack1 59 30 55 35 5 0 0 0 12 12
 	frame	data/chars/aldebaran/special21.png
 	attack1 0
@@ -476,7 +479,7 @@ anim riseattack #Attaque spéciale Punch combo
 	delay	6
 	offset	42 160
 	#bbox 21 11 38 151
-	sound data/chars/aldebaran/02-aldebaran_swing.wav
+	sound data/chars/aldebaran/02-swing.wav
 	attack1 59 30 55 35 5 0 0 0 12 12
 	frame	data/chars/aldebaran/special21.png
 	attack1 0
@@ -520,8 +523,9 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	delay	10
 	offset	45 160
 	fastattack 1
+	@cmd 	spawnScreen "aldebaran_super_lights" "ANI_IDLE" 0 0 0 0
 	#bbox 21 16 51 97
-	summonframe 0 0 0 0 1
+	spawnframe 0 0 0 0 1
 	subentity aldebaran_ultraGH_back
 	energycost  20 1 0
 	sound data/chars/aldebaran/77-cosmos.wav

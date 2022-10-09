@@ -67,6 +67,7 @@ load    flashbig        data/chars/misc/flash/flashbig.txt
 #Dust animations
 
 load    round_dustB     data/chars/dust/round_dustB.txt
+load    fall_dust     data/chars/dust/fall_dust.txt
 
 #Players special animations
 
@@ -90,6 +91,7 @@ know    aldebaran_rundust         data/chars/aldebaran/special/aldebaran_rundust
 know    aldebaran_swing           data/chars/aldebaran/special/aldebaran_swing.txt
 know    aldebaran_ultraGH         data/chars/aldebaran/special/aldebaran_ultraGH.txt
 know    aldebaran_ultraGH_back    data/chars/aldebaran/special/aldebaran_ultraGH_back.txt
+know    aldebaran_super_lights    data/chars/aldebaran/special/aldebaran_super_lights.txt
 
 know    gemini_dimension_back  data/chars/gemini/special/gemini_dimension_back.txt
 know    gemini_rundust    data/chars/gemini/special/gemini_rundust.txt
