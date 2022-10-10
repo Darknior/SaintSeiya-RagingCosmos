@@ -494,7 +494,7 @@ anim freespecial6 # Another dimension
 	delay	10
 	offset	66 144
 	fastattack 1
-	sound data/chars/deathmask/77-cosmos.wav
+	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	summonframe 0 0 0 0 1
 	subentity gemini_dimension_back

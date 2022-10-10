@@ -365,7 +365,7 @@ anim freespecial5 # Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
 	fastattack 1
-	sound data/chars/deathmask/77-cosmos.wav
+	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	summonframe 0 0 0 0 1
 	subentity shaka_constellationB
@@ -490,7 +490,7 @@ anim riseattack # Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
 	fastattack 1
-	sound data/chars/deathmask/77-cosmos.wav
+	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	summonframe 0 0 0 0 1
 	subentity shaka_constellationB
@@ -781,7 +781,7 @@ anim freespecial6 # Ten Bu Ho Rin
 	delay	20
 	offset	66 149
 	fastattack 1
-	sound data/chars/deathmask/77-cosmos.wav
+	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	summonframe 0 0 0 0 1
 	subentity shaka_constellation

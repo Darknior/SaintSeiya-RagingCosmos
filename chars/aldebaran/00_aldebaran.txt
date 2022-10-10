@@ -544,7 +544,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	offset	45 160
 	fastattack 1
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
-	sound data/chars/aldebaran/77-cosmos.wav
+	sound data/chars/aldebaran/78-cosmos.wav
 	frame	data/chars/aldebaran/special40.png
 	spawnframe 0 0 0 0 1
 	subentity aldebaran_ultraGH_back

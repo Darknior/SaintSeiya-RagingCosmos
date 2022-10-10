@@ -441,7 +441,7 @@ anim freespecial6 # Meikai ha
 	summonframe 0 0 0 0 1
 	subentity deathmask_constellation
 	hitflash flashbig
-	sound data/chars/deathmask/77-cosmos.wav
+	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	frame	data/chars/deathmask/special1.png
 	frame	data/chars/deathmask/special2.png
