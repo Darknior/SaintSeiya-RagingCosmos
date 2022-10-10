@@ -1,0 +1,71 @@
+name	aldebaran_earthquake
+type	none
+shadow	0
+remove 0
+setlayer 999
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	8
+	offset	193 213
+	drawmethod scale 1 1
+        drawmethod  alpha 1
+        drawmethod  channel 0.99
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake0.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake1.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake2.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake3.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake4.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake5.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake6.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake7.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake8.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake9.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake10.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake11.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake12.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake13.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake14.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake15.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake16.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake17.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake18.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake19.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake20.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake21.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake22.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake24.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake25.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake26.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake27.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake28.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake29.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake31.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake32.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake33.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake34.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake35.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake36.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake37.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake38.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake39.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake40.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake41.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake42.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake43.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake44.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake45.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake46.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake47.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake48.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake49.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake50.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake51.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake52.png
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake53.png
+	@cmd suicide
+	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake53.png
+	
+

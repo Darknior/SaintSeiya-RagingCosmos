@@ -1,0 +1,32 @@
+name	shaka_aura
+type	none
+shadow	0
+remove 0
+setlayer 101
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	89 160
+	drawmethod alpha 1
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura0.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura1.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura2.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura3.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura4.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura5.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura6.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura7.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura8.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura9.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura10.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura11.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura12.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura13.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura14.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura15.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura16.png
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura17.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_aura/shaka_aura17.png

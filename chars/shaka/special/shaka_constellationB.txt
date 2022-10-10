@@ -1,0 +1,45 @@
+name	shaka_constellationB
+type	panel
+shadow	0
+speed 10
+setlayer 1
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	30
+	offset	800 0
+        drawmethod  alpha 6
+        drawmethod  channel 0.20
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.50
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.75
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.99
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.75
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.50
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.20
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation.png

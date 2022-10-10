@@ -25,7 +25,9 @@ animationscript	data/scripts/player.c
 load shaka_lotus
 load shaka_lotus_shot
 load shaka_cosmos
+load shaka_aura
 load shaka_constellation
+load shaka_constellationB
 load shaka_budda
 load shaka_circlesB
 load shaka_circles
@@ -34,6 +36,7 @@ load shaka_blood_seaB
 load shaka_blood_geyser
 load shaka_lotus_petals
 load shaka_hands
+load aldebaran_super_lights
 
 #----------------------------------------------------------
 anim spawn
@@ -96,6 +99,15 @@ anim sleep
 	frame	data/chars/shaka/sleep5.png
 	frame	data/chars/shaka/sleep6.png
 	frame	data/chars/shaka/sleep5.png	
+
+anim turn
+	delay	8
+	offset	74 136
+	cancel 0 3 0 A freespecial4 
+	bbox 51 12 42 131
+	frame	data/chars/shaka/turn1.png
+	frame	data/chars/shaka/turn2.png
+	frame	data/chars/shaka/turn3.png
 	
 anim walk
 	loop	1
@@ -349,13 +361,15 @@ anim jumpattack # Attaque sautée statique
 	frame	data/chars/shaka/jumpattack3.png
 	attack1 0
 
-anim special # Défense spéciale Blood Sea
+anim freespecial5 # Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
 	fastattack 1
-	sound data/chars/shaka/18-lava1.wav
+	sound data/chars/deathmask/77-cosmos.wav
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	summonframe 0 0 0 0 1
-	subentity shaka_blood_seaB
+	subentity shaka_constellationB
+        @cmd 	spawnScreen "shaka_blood_seaB" 0 0 0 0
 	@cmd 	spawnbind "shaka_blood_geyser" "ANI_IDLE" 0 0 0 0 0
 	energycost  15 1 0
 	@cmd 	spawnbind "shaka_circles" "ANI_IDLE" 0 0 0 0 0
@@ -363,10 +377,11 @@ anim special # Défense spéciale Blood Sea
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/shaka/special21.png
 	@cmd 	spawnScreen "shaka_blood_sea" 0 0 0 0
-	sound data/chars/shaka/08-goni.wav
+	sound data/chars/shaka/19-lava1.wav
 	frame	data/chars/shaka/special22.png
-	sound data/chars/shaka/19-lava2.wav
+	sound data/chars/shaka/08-goni.wav
 	frame	data/chars/shaka/special23.png
+	sound data/chars/shaka/18-lava2.wav
 	frame	data/chars/shaka/special24.png
 	frame	data/chars/shaka/special25.png
 	frame	data/chars/shaka/special26.png
@@ -426,6 +441,7 @@ anim special # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special31.png
 	attack1 0
 	frame	data/chars/shaka/special32.png
+	sound data/chars/shaka/11-itoku.wav
 	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special33.png
 	attack1 0
@@ -474,9 +490,11 @@ anim riseattack # Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
 	fastattack 1
-	sound data/chars/shaka/18-lava1.wav
+	sound data/chars/deathmask/77-cosmos.wav
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	summonframe 0 0 0 0 1
-	subentity shaka_blood_seaB
+	subentity shaka_constellationB
+        @cmd 	spawnScreen "shaka_blood_seaB" 0 0 0 0
 	@cmd 	spawnbind "shaka_blood_geyser" "ANI_IDLE" 0 0 0 0 0
 	energycost  15 1 0
 	@cmd 	spawnbind "shaka_circles" "ANI_IDLE" 0 0 0 0 0
@@ -484,10 +502,11 @@ anim riseattack # Défense spéciale Blood Sea
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/shaka/special21.png
 	@cmd 	spawnScreen "shaka_blood_sea" 0 0 0 0
-	sound data/chars/shaka/08-goni.wav
+	sound data/chars/shaka/19-lava1.wav
 	frame	data/chars/shaka/special22.png
-	sound data/chars/shaka/19-lava2.wav
+	sound data/chars/shaka/08-goni.wav
 	frame	data/chars/shaka/special23.png
+	sound data/chars/shaka/18-lava2.wav
 	frame	data/chars/shaka/special24.png
 	frame	data/chars/shaka/special25.png
 	frame	data/chars/shaka/special26.png
@@ -547,6 +566,7 @@ anim riseattack # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special31.png
 	attack1 0
 	frame	data/chars/shaka/special32.png
+	sound data/chars/shaka/11-itoku.wav
 	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special33.png
 	attack1 0
@@ -589,6 +609,55 @@ anim riseattack # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special34.png
 	attack -333 0 800 260 10 1 0 0 0 360
 	frame	data/chars/shaka/special35.png
+	attack1 0
+
+anim special # Défense spéciale Melee
+	delay	7
+	offset	66 144
+	fastattack 1
+	sound data/chars/shaka/01-tenmakosen.wav
+	@cmd 	spawnbind "shaka_aura" "ANI_IDLE" 0 0 0 0 0
+	hitflash flashbig
+	frame	data/chars/shaka/special21.png
+	frame	data/chars/shaka/special22.png
+	frame	data/chars/shaka/special23.png
+	frame	data/chars/shaka/special24.png
+	frame	data/chars/shaka/special25.png
+	frame	data/chars/shaka/special26.png
+	frame	data/chars/shaka/special27.png
+	frame	data/chars/shaka/special28.png
+	frame	data/chars/shaka/special29.png
+	frame	data/chars/shaka/special30.png
+	attack 7 10 119 144 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack 7 10 119 144 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack 7 10 119 144 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack 7 10 119 144 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack 7 10 119 144 10 0 0 0 0 360
+	frame	data/chars/shaka/special33.png
+	attack1 0
+	frame	data/chars/shaka/special34.png
+	attack 7 10 119 144 10 0 0 0 0 360
+	frame	data/chars/shaka/special35.png
+	attack1 0
+	frame	data/chars/shaka/special30.png
+	attack 7 10 119 144 10 0 0 0 0 360
+	frame	data/chars/shaka/special31.png
+	attack1 0
+	frame	data/chars/shaka/special32.png
+	attack 7 10 119 144 10 1 0 0 0 360
+	frame	data/chars/shaka/special33.png
 	attack1 0
 	
 anim special2 #Attaque spéciale Lotus toss
@@ -712,11 +781,13 @@ anim freespecial6 # Ten Bu Ho Rin
 	delay	20
 	offset	66 149
 	fastattack 1
-	sound data/chars/shaka/07-loku.wav
+	sound data/chars/deathmask/77-cosmos.wav
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	summonframe 0 0 0 0 1
 	subentity shaka_constellation
 	hitflash flashbig
 	frame	data/chars/shaka/special21.png
+	sound data/chars/shaka/07-loku.wav
 	@cmd 	spawnbind "shaka_circlesB" "ANI_IDLE" 0 0 0 0 0
 	@cmd 	spawnbind "shaka_cosmos" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shaka/special22.png

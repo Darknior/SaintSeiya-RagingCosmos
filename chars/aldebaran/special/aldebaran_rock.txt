@@ -1,0 +1,52 @@
+name	aldebaran_rock
+type	none
+shadow	0
+layer 7777
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	100 400
+        drawmethod  alpha 6
+        drawmethod  channel 0.99
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock5.png
+	offset	100 390
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock6.png
+	offset	100 380
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock7.png
+	offset	100 370
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock8.png
+	offset	100 360
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock9.png
+	offset	100 350
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock10.png
+	offset	100 340
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock11.png
+	offset	100 330
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock12.png
+	offset	100 320
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock13.png
+	offset	100 310
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock14.png
+	offset	100 300
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock15.png
+	offset	100 290
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock16.png
+	offset	100 280
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock17.png
+	offset	100 270
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock18.png
+	offset	100 260
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock19.png
+	offset	100 250
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock20.png
+	offset	100 240
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock21.png
+	offset	100 230
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock22.png
+	offset	100 220
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock23.png
+	@cmd suicide
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock13.png

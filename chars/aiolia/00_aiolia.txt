@@ -29,6 +29,7 @@ load aiolia_beam
 load aiolia_dash
 load aiolia_plasma
 load aiolia_explosion
+load aldebaran_super_lights
 
 #----------------------------------------------------------
 anim spawn
@@ -422,11 +423,13 @@ anim freespecial6 #ULTRA Lightning Plasma
 	fastattack 1
 	delay	10
 	offset	29 128
-	sound data/chars/aiolia/02-plasma1.wav
 	spawnframe 0 0 0 0 1
 	subentity aiolia_constellation
 	energycost  20 1 0
+	sound data/chars/deathmask/77-cosmos.wav
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	frame	data/chars/aiolia/special1.png
+	sound data/chars/aiolia/02-plasma1.wav
 	frame	data/chars/aiolia/special2.png
 	frame	data/chars/aiolia/special3.png
 	frame	data/chars/aiolia/special4.png

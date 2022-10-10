@@ -61,6 +61,7 @@ load seiya_round_dust
 load seiya_aura_air_kick
 load seiya_aura_air_ryuseiken
 load seiya_aura_ryuseiken
+load aldebaran_super_lights
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -614,12 +615,14 @@ anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	delay	10
 	offset	45 113
 	fastattack 1
+	sound data/chars/deathmask/77-cosmos.wav
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
 	subentity seiya_comet_back
 	energycost  20 1 0
-	sound data/chars/seiya/08-ultra.wav
 	frame	data/chars/seiya/upspecial1.png
+	sound data/chars/seiya/08-ultra.wav
 	frame	data/chars/seiya/upspecial2.png
 	frame	data/chars/seiya/upspecial3.png
 	frame	data/chars/seiya/upspecial4.png

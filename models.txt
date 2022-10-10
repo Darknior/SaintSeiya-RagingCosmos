@@ -91,7 +91,10 @@ know    aldebaran_rundust         data/chars/aldebaran/special/aldebaran_rundust
 know    aldebaran_swing           data/chars/aldebaran/special/aldebaran_swing.txt
 know    aldebaran_ultraGH         data/chars/aldebaran/special/aldebaran_ultraGH.txt
 know    aldebaran_ultraGH_back    data/chars/aldebaran/special/aldebaran_ultraGH_back.txt
+know    aldebaran_earthquake    data/chars/aldebaran/special/aldebaran_earthquake.txt
 know    aldebaran_super_lights    data/chars/aldebaran/special/aldebaran_super_lights.txt
+know    aldebaran_rock    data/chars/aldebaran/special/aldebaran_rock.txt
+know    aldebaran_fist    data/chars/aldebaran/special/aldebaran_fist.txt
 
 know    gemini_dimension_back  data/chars/gemini/special/gemini_dimension_back.txt
 know    gemini_rundust    data/chars/gemini/special/gemini_rundust.txt
@@ -120,6 +123,7 @@ know    shaka_lotus	        data/chars/shaka/special/shaka_lotus.txt
 know    shaka_lotus_shot	data/chars/shaka/special/shaka_lotus_shot.txt
 know    shaka_cosmos    data/chars/shaka/special/shaka_cosmos.txt
 know    shaka_constellation    data/chars/shaka/special/shaka_constellation.txt
+know    shaka_constellationB    data/chars/shaka/special/shaka_constellationB.txt
 know    shaka_budda    data/chars/shaka/special/shaka_budda.txt
 know    shaka_circles   data/chars/shaka/special/shaka_circles.txt
 know    shaka_circlesB    data/chars/shaka/special/shaka_circlesB.txt
@@ -128,6 +132,7 @@ know    shaka_blood_seaB    data/chars/shaka/special/shaka_blood_seaB.txt
 know    shaka_blood_geyser    data/chars/shaka/special/shaka_blood_geyser.txt
 know    shaka_lotus_petals    data/chars/shaka/special/shaka_lotus_petals.txt
 know    shaka_hands    data/chars/shaka/special/shaka_hands.txt
+know    shaka_aura    data/chars/shaka/special/shaka_aura.txt
 
 know    sting  		data/chars/milo/special/sting.txt
 
