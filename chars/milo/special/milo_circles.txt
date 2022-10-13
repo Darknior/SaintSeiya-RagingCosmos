@@ -1,0 +1,21 @@
+name	milo_circles
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	414 417
+	drawmethod alpha 1
+	frame	data/chars/milo/special/milo_circles/milo_circles2.png
+	frame	data/chars/milo/special/milo_circles/milo_circles3.png
+	frame	data/chars/milo/special/milo_circles/milo_circles4.png
+	frame	data/chars/milo/special/milo_circles/milo_circles5.png
+	frame	data/chars/milo/special/milo_circles/milo_circles6.png
+	frame	data/chars/milo/special/milo_circles/milo_circles7.png
+	frame	data/chars/milo/special/milo_circles/milo_circles8.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_circles/milo_circles8.png

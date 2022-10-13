@@ -1,0 +1,56 @@
+name	milo_storm
+type	none
+shadow	0
+remove 0
+setlayer 4521
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	offset	-31 202
+	drawmethod alpha 1
+	sound data/chars/milo/15-needle1.wav
+	delay	20
+	frame	data/chars/milo/special/milo_storm/milo_storm7.png
+	delay	10
+	frame	data/chars/milo/special/milo_storm/milo_storm1.png
+	frame	data/chars/milo/special/milo_storm/milo_storm2.png
+	frame	data/chars/milo/special/milo_storm/milo_storm3.png
+	frame	data/chars/milo/special/milo_storm/milo_storm4.png
+	frame	data/chars/milo/special/milo_storm/milo_storm5.png
+	frame	data/chars/milo/special/milo_storm/milo_storm6.png
+	sound data/chars/milo/15-needle1.wav
+	frame	data/chars/milo/special/milo_storm/milo_storm1.png
+	frame	data/chars/milo/special/milo_storm/milo_storm2.png
+	frame	data/chars/milo/special/milo_storm/milo_storm3.png
+	frame	data/chars/milo/special/milo_storm/milo_storm4.png
+	frame	data/chars/milo/special/milo_storm/milo_storm5.png
+	frame	data/chars/milo/special/milo_storm/milo_storm6.png
+	sound data/chars/milo/15-needle1.wav
+	frame	data/chars/milo/special/milo_storm/milo_storm1.png
+	frame	data/chars/milo/special/milo_storm/milo_storm2.png
+	frame	data/chars/milo/special/milo_storm/milo_storm3.png
+	frame	data/chars/milo/special/milo_storm/milo_storm4.png
+	frame	data/chars/milo/special/milo_storm/milo_storm5.png
+	frame	data/chars/milo/special/milo_storm/milo_storm6.png
+	sound data/chars/milo/15-needle1.wav
+	frame	data/chars/milo/special/milo_storm/milo_storm1.png
+	frame	data/chars/milo/special/milo_storm/milo_storm2.png
+	frame	data/chars/milo/special/milo_storm/milo_storm3.png
+	frame	data/chars/milo/special/milo_storm/milo_storm4.png
+	frame	data/chars/milo/special/milo_storm/milo_storm5.png
+	frame	data/chars/milo/special/milo_storm/milo_storm6.png
+	sound data/chars/milo/15-needle1.wav
+	frame	data/chars/milo/special/milo_storm/milo_storm1.png
+	frame	data/chars/milo/special/milo_storm/milo_storm2.png
+	frame	data/chars/milo/special/milo_storm/milo_storm3.png
+	frame	data/chars/milo/special/milo_storm/milo_storm4.png
+	frame	data/chars/milo/special/milo_storm/milo_storm5.png
+	sound data/chars/milo/15-needle1.wav
+	frame	data/chars/milo/special/milo_storm/milo_storm1.png
+	frame	data/chars/milo/special/milo_storm/milo_storm2.png
+	frame	data/chars/milo/special/milo_storm/milo_storm3.png
+	frame	data/chars/milo/special/milo_storm/milo_storm4.png
+	frame	data/chars/milo/special/milo_storm/milo_storm5.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_storm/milo_storm5.png

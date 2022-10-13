@@ -1,0 +1,24 @@
+name	milo_stingB
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	414 417
+	drawmethod alpha 1
+	frame	data/chars/milo/special/milo_stingB/milo_stingB1.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB2.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB3.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB4.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB5.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB6.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB7.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB8.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB9.png
+	frame	data/chars/milo/special/milo_stingB/milo_stingB10.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_stingB/milo_stingB10.png

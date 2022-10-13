@@ -1,0 +1,17 @@
+name	milo_scorpion
+type	none
+shadow	0
+remove 0
+setlayer 2
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	70
+	offset	400 500
+	drawmethod alpha 1
+        drawmethod scale 0.3 0.3
+	frame	data/chars/milo/special/milo_scorpion/milo_scorpion.png
+	frame	data/chars/milo/special/milo_scorpion/milo_scorpion.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_scorpion/milo_scorpion.png

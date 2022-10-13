@@ -134,7 +134,20 @@ know    shaka_lotus_petals    data/chars/shaka/special/shaka_lotus_petals.txt
 know    shaka_hands    data/chars/shaka/special/shaka_hands.txt
 know    shaka_aura    data/chars/shaka/special/shaka_aura.txt
 
-know    sting  		data/chars/milo/special/sting.txt
+know    milo_blood	        data/chars/milo/special/milo_blood.txt
+know    milo_circles	data/chars/milo/special/milo_circles.txt
+know    milo_flash    data/chars/milo/special/milo_flash.txt
+know    milo_constellation    data/chars/milo/special/milo_constellation.txt
+know    milo_ultra    data/chars/milo/special/milo_ultra.txt
+know    milo_circles   data/chars/milo/special/milo_circles.txt
+know    milo_sting    data/chars/milo/special/milo_sting.txt
+know    milo_stingB    data/chars/milo/special/milo_stingB.txt
+know    milo_stingC    data/chars/milo/special/milo_stingC.txt
+know    milo_storm    data/chars/milo/special/milo_storm.txt
+know    milo_scorpion    data/chars/milo/special/milo_scorpion.txt
+know    milo_antares   data/chars/milo/special/milo_antares.txt
+know    milo_antaresB    data/chars/milo/special/milo_antaresB.txt
+know    milo_antaresC    data/chars/milo/special/milo_antaresC.txt
 
 know    iceray  	data/chars/camus/special/iceray.txt
 know    icecrystal  	data/chars/camus/special/icecrystal.txt
@@ -334,7 +347,7 @@ know    DEATHMASK       data/chars/DEATHMASK/00_DEATHMASK.txt
 
 know    GEMINI          data/chars/GEMINI/00_GEMINI.txt
 
-know    MILO            data/chars/MILO/MILO.txt
+know    MILO            data/chars/MILO/00_MILO.txt
 
 know    saga            data/chars/saga/saga.txt
 

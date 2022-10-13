@@ -1,0 +1,28 @@
+name	milo_antaresC
+type	none
+shadow	0
+remove 0
+setlayer 50
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	offset	-150 173
+	drawmethod alpha 1
+	drawmethod scale 1 1
+	delay	60
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC10.png
+	delay	15
+	sound data/chars/milo/15-needle1.wav
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC1.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC1.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC2.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC3.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC4.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC5.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC6.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC7.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC8.png
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC9.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_antaresC/milo_antaresC9.png

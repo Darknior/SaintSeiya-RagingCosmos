@@ -1,0 +1,17 @@
+name	milo_blood
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	414 417
+	drawmethod alpha 6
+	frame	data/chars/milo/special/milo_blood/milo_blood0.png
+	frame	data/chars/milo/special/milo_blood/milo_blood1.png
+	frame	data/chars/milo/special/milo_blood/milo_blood2.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_blood/milo_blood2.png

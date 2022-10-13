@@ -22,7 +22,22 @@ atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
 
-load sting
+load milo_blood	       
+load milo_circles	
+load milo_flash    
+load milo_constellation    
+load milo_ultra   
+load milo_circles  
+load milo_sting    
+load milo_stingB    
+load milo_stingC    
+load milo_storm    
+load milo_scorpion
+load milo_antares    
+load milo_antaresB
+load milo_antaresC
+
+
 #----------------------------------------------------------
 anim spawn
 	delay	12	
@@ -317,52 +332,128 @@ anim jumpattack # Attaque sautée statique
 	frame	data/chars/milo/jumpattack3.png
 	frame	data/chars/milo/jumpattack4.png
 
-anim special # Défense spéciale sting
-	delay	15
-	offset	62 126
-	sound data/chars/milo/scarlet-needle1.wav
-	summonframe 0 0 0 0
-	subentity sting
-	unsummonframe 6
-	energycost  10 1 0
+anim special # Défense spéciale Scorpion
+	delay	10
+	offset	103 140
+	sound data/chars/aiolia/04-swing.wav
 	hitflash flashbig
-	attack5 -13 -12 150 142 30 1 0 0 5 12
-	dropv 4.0 3.0 0.0
-	frame	data/chars/milo/special1.png
-	frame	data/chars/milo/special2.png
-	frame	data/chars/milo/special3.png
-	frame	data/chars/milo/special4.png
-	frame	data/chars/milo/special5.png
-	frame	data/chars/milo/special6.png
-	attack5 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/milo/special1.png
+	@cmd 	spawnbind "milo_scorpion" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/milo/uppercut1.png
+	sound data/chars/aiolia/15-explosion.wav
+	frame	data/chars/milo/uppercut2.png
+	@cmd 	spawnbind "milo_flash" "ANI_IDLE" 0 0 0 0 0
+	sound data/chars/milo/13-bang.wav
+	attack5 74 1 120 180 30 1 0 0 5 12
+	dropv 	8.0 3 0
+	delay	10
+	frame	data/chars/milo/uppercut3.png
+	delay	80
+	frame	data/chars/milo/uppercut4.png
+	delay	10
+	frame	data/chars/milo/uppercut3.png
+	delay	10
+	frame	data/chars/milo/uppercut2.png
+	delay	10
+	frame	data/chars/milo/uppercut2.png
 	
-anim freespecial2 # Défense spéciale sting
-	delay	15
-	offset	62 126
-	sound data/chars/milo/scarlet-needle1.wav
-	summonframe 0 0 0 0
-	subentity sting
-	unsummonframe 6
-	energycost  10 1 0
-	hitflash flashbig
-	attack5 -13 -12 150 142 30 1 0 0 5 12
-	dropv 4.0 3.0 0.0
-	frame	data/chars/milo/special1.png
-	frame	data/chars/milo/special2.png
-	frame	data/chars/milo/special3.png
-	frame	data/chars/milo/special4.png
-	frame	data/chars/milo/special5.png
-	frame	data/chars/milo/special6.png
-	attack5 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/milo/special1.png
+anim freespecial6 # Ultra Scarlet Needle
+	delay	10
+	offset	44 129
+	fastattack 1
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+	sound data/chars/aldebaran/78-cosmos.wav
+	frame	data/chars/milo/attack41.png
+	spawnframe 0 0 0 0 1
+	subentity milo_constellation
+	energycost  20 1 0
+	frame	data/chars/milo/attack42.png
+	frame	data/chars/milo/attack43.png
+	frame	data/chars/milo/attack44.png
+	frame	data/chars/milo/attack45.png
+	delay   80
+	frame	data/chars/milo/special39.png
+	delay   10
+	frame	data/chars/milo/special39.png
+	sound data/chars/milo/06-scarlet2.wav
+	@cmd 	spawnbind "milo_storm" "ANI_IDLE" 0 0 0 0 0
+	@cmd 	spawnbind "milo_stingC" "ANI_IDLE" 0 0 0 0 0
+	delay   10
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 0 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 41 0 900 182 15 1 0 0 0 50
+	frame	data/chars/milo/special39.png
+	attack1 0
+
 	
 anim special2 # Défense spéciale sting
 	delay	15
 	offset	62 126
 	sound data/chars/milo/scarlet-needle1.wav
 	summonframe 0 0 0 0
-	subentity sting
+	subentity milo_sting
 	unsummonframe 6
 	energycost  10 1 0
 	hitflash flashbig
@@ -383,9 +474,9 @@ anim freespecial3 # Attaque spéciale Aiguille écarlate
 	delay	5
 	offset	46 130
 	bbox 32 16 38 114
-	sound data/chars/milo/scarlet-needle1.wav
+	sound data/chars/milo/10-pierce3.wav
 	summonframe 0 0 0 0
-	subentity sting
+	subentity milo_sting
 	unsummonframe 5
 	energycost  20 1 0
 	hitflash flashbig
@@ -433,7 +524,7 @@ anim riseattack # Défense spéciale sting
 	offset	62 126
 	sound data/chars/milo/scarlet-needle1.wav
 	summonframe 0 0 0 0
-	subentity sting
+	subentity milo_sting
 	unsummonframe 6
 	energycost  10 1 0
 	hitflash flashbig
@@ -453,3 +544,50 @@ anim	block
 	bbox 27 9 38 118
 	frame	data/chars/milo/block1.png
 	frame	data/chars/milo/block2.png
+
+anim freespecial5 # Ultra Antares
+	delay	10
+	offset	41 166
+	fastattack 1
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+	sound data/chars/aldebaran/78-cosmos.wav
+	frame	data/chars/milo/jump1.png
+	sound data/chars/milo/08-antares.wav
+	spawnframe 0 0 0 0 1
+	subentity milo_constellation
+	energycost  20 1 0
+	@cmd 	spawnScreen "milo_antares" 0 0 0 0
+	frame	data/chars/milo/jump1.png
+	offset	41 186
+	frame	data/chars/milo/jump1.png
+	offset	41 206
+	frame	data/chars/milo/jump1.png
+	offset	41 226
+	frame	data/chars/milo/jump1.png
+	offset	41 246
+	frame	data/chars/milo/jump1.png
+	offset	41 266
+	frame	data/chars/milo/jump1.png
+	offset	41 286
+	frame	data/chars/milo/jump2.png
+	frame	data/chars/milo/jumpattack1.png
+	frame	data/chars/milo/jumpattack2.png
+	frame	data/chars/milo/jumpattack3.png
+	frame	data/chars/milo/jumpattack4.png
+	delay   250
+	@cmd 	spawnbind "milo_antaresB" "ANI_IDLE" 0 0 0 0 0
+	@cmd 	spawnbind "milo_antaresC" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/milo/jumpattack4.png
+	delay   10
+	frame	data/chars/milo/jump3.png
+	offset	41 286
+	frame	data/chars/milo/jump3.png
+	offset	41 266
+	frame	data/chars/milo/jump3.png
+	offset	41 246
+	frame	data/chars/milo/jump3.png
+	offset	41 226
+	frame	data/chars/milo/jump3.png
+	offset	41 206
+	frame	data/chars/milo/jump3.png
+	offset	41 186

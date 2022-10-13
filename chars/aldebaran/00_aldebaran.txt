@@ -392,7 +392,7 @@ anim special # Earthquake
 	frame	data/chars/aldebaran/attack65.png
 	frame	data/chars/aldebaran/attack66.png
 	frame	data/chars/aldebaran/attack65.png
-	frame	data/chars/aldebaran/attack66.png
+	quakeframe	data/chars/aldebaran/attack66.png 3 5
 	frame	data/chars/aldebaran/attack65.png
 	sound data/chars/aldebaran/08-earthquake.wav
 	frame	data/chars/aldebaran/attack66.png

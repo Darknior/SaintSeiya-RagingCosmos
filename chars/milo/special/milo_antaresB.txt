@@ -1,0 +1,30 @@
+name	milo_antaresB
+type	none
+shadow	0
+remove 0
+setlayer 4521
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	offset	55 305
+	drawmethod alpha 1
+	delay	10
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB1.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB1.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB2.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB3.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB4.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB5.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB6.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB7.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB8.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB9.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB10.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB11.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB12.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB13.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB14.png
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB15.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_antaresB/milo_antaresB15.png

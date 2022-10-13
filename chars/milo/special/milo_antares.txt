@@ -1,0 +1,31 @@
+name	milo_antares
+type	panel
+shadow	0
+speed 10
+setlayer 78944
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	16
+	offset	2950 -1100
+        drawmethod  alpha 1
+	drawmethod scale 0.15 0.15
+	frame	data/chars/milo/special/milo_antares/milo_antares0.png
+	frame	data/chars/milo/special/milo_antares/milo_antares1.png
+	frame	data/chars/milo/special/milo_antares/milo_antares2.png
+	frame	data/chars/milo/special/milo_antares/milo_antares3.png
+	frame	data/chars/milo/special/milo_antares/milo_antares4.png
+	frame	data/chars/milo/special/milo_antares/milo_antares5.png
+	frame	data/chars/milo/special/milo_antares/milo_antares6.png
+	frame	data/chars/milo/special/milo_antares/milo_antares7.png
+	frame	data/chars/milo/special/milo_antares/milo_antares8.png
+	frame	data/chars/milo/special/milo_antares/milo_antares9.png
+	frame	data/chars/milo/special/milo_antares/milo_antares10.png
+	frame	data/chars/milo/special/milo_antares/milo_antares11.png
+	frame	data/chars/milo/special/milo_antares/milo_antares12.png
+	frame	data/chars/milo/special/milo_antares/milo_antares13.png
+	frame	data/chars/milo/special/milo_antares/milo_antares14.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_antares/milo_antares14.png

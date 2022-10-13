@@ -1,0 +1,40 @@
+name	milo_constellation
+type	panel
+shadow	0
+speed 10
+setlayer 5
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	15
+	offset	800 0
+        drawmethod  alpha 6
+        drawmethod  channel 0.20
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.50
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.75
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.99
+	delay	40
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+	delay	15
+        drawmethod  alpha 6
+        drawmethod  channel 0.75
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.50
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.20
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_constellation/milo_constellation.png

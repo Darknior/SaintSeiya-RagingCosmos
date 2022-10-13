@@ -1,0 +1,21 @@
+name	milo_sting
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+lifespan 1
+
+anim	idle
+	loop	0
+	delay	10
+	offset	255 350
+	#drawmethod scale 0.5 0.5
+	drawmethod alpha 1
+	frame	data/chars/milo/special/milo_sting/sting1.png
+	frame	data/chars/milo/special/milo_sting/sting2.png
+	frame	data/chars/milo/special/milo_sting/sting3.png
+	frame	data/chars/milo/special/milo_sting/sting4.png
+	frame	data/chars/milo/special/milo_sting/sting5.png
+	frame	data/chars/milo/special/milo_sting/sting6.png
+	frame	data/chars/milo/special/milo_sting/sting7.png
+	frame	data/chars/milo/special/milo_sting/sting8.png

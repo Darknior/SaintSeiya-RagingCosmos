@@ -1,0 +1,23 @@
+name	milo_flash
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	348 404
+	drawmethod alpha 1
+	frame	data/chars/milo/special/milo_flash/milo_flash1.png
+	frame	data/chars/milo/special/milo_flash/milo_flash2.png
+	frame	data/chars/milo/special/milo_flash/milo_flash3.png
+	frame	data/chars/milo/special/milo_flash/milo_flash4.png
+	frame	data/chars/milo/special/milo_flash/milo_flash5.png
+	frame	data/chars/milo/special/milo_flash/milo_flash6.png
+	frame	data/chars/milo/special/milo_flash/milo_flash7.png
+	frame	data/chars/milo/special/milo_flash/milo_flash8.png
+	frame	data/chars/milo/special/milo_flash/milo_flash9.png
+	@cmd suicide
+	frame	data/chars/milo/special/milo_flash/milo_flash9.png
