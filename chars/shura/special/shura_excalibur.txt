@@ -1,0 +1,29 @@
+name	shura_excalibur
+type	none
+shadow	0
+layer 7777
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	280 750
+        drawmethod  alpha 1
+	drawmethod scale 0.4 0.4
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur2.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur3.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur4.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur6.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur7.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur8.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur9.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur2.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur3.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur4.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur6.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur7.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur8.png
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur9.png
+	@cmd suicide
+	frame	data/chars/shura/special/shura_excalibur/shura_excalibur9.png

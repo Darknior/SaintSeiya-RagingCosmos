@@ -1,0 +1,49 @@
+name	aiolia_dash
+type	none
+shadow	0
+setlayer 666
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	287 273
+	drawmethod scale 0.8 0.8
+	drawmethod alpha 1
+        drawmethod  channel 0.50
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash1.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash2.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash3.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash4.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash5.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash6.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash7.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash8.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash9.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash10.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash11.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash12.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash13.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash14.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash15.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash16.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash17.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash18.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash19.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash20.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash21.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash22.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash24.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash25.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash26.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash27.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash28.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash29.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash31.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash32.png
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash33.png
+	@cmd suicide
+	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash33.png
+
+

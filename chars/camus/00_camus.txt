@@ -22,8 +22,12 @@ atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
 
-load iceray
-load icecrystal
+load camus_iceray
+load camus_icecrystal
+load camus_constellation
+load camus_lights
+load camus_ice_star
+
 #----------------------------------------------------------
 anim spawn
 	delay	15
@@ -301,7 +305,7 @@ anim special # Défense spéciale Ice pike
 	energycost  10 1 0
 	hitflash flashbig
 	summonframe 0 0 0 0
-	subentity icecrystal
+	subentity camus_icecrystal
 	unsummonframe 11
 	attack5 0 12 200 142 30 1 0 0 5 12
 	dropv 4.0 3.0 0.0
@@ -319,21 +323,19 @@ anim special # Défense spéciale Ice pike
 	attack5 0
 	frame	data/chars/camus/special1.png
 	
-anim freespecial2 # Défense spéciale icecrystal
-	delay	15
+anim freespecial3 #Camus ice star
+	fastattack 1
+	forcedirection -1
+	range 200 400
+	delay	10
 	offset	70 154
-	sound data/chars/camus/02.wav
-	energycost  10 1 0
-	hitflash flashbig
-	summonframe 0 0 0 0
-	subentity icecrystal
-	unsummonframe 11
-	attack5 0 12 200 142 30 1 0 0 5 12
-	dropv 4.0 3.0 0.0
+	energycost  15 1 0
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png
 	frame	data/chars/camus/special3.png
 	frame	data/chars/camus/special4.png
+	sound data/chars/camus/04-ice_star.wav
+	@cmd	shooter "camus_ice_star" 0 80 0 2 0 0
 	frame	data/chars/camus/special5.png
 	frame	data/chars/camus/special6.png
 	frame	data/chars/camus/special7.png
@@ -341,7 +343,15 @@ anim freespecial2 # Défense spéciale icecrystal
 	frame	data/chars/camus/special9.png
 	frame	data/chars/camus/special10.png
 	frame	data/chars/camus/special11.png
-	attack5 0
+	frame	data/chars/camus/special10.png
+	frame	data/chars/camus/special9.png
+	frame	data/chars/camus/special8.png
+	frame	data/chars/camus/special7.png
+	frame	data/chars/camus/special6.png
+	frame	data/chars/camus/special5.png
+	frame	data/chars/camus/special4.png
+	frame	data/chars/camus/special3.png
+	frame	data/chars/camus/special2.png
 	frame	data/chars/camus/special1.png
 	
 anim special2 # Défense spéciale icecrystal
@@ -351,7 +361,7 @@ anim special2 # Défense spéciale icecrystal
 	energycost  10 1 0
 	hitflash flashbig
 	summonframe 0 0 0 0
-	subentity icecrystal
+	subentity camus_icecrystal
 	unsummonframe 11
 	attack5 0 12 200 142 30 1 0 0 5 12
 	dropv 4.0 3.0 0.0
@@ -369,33 +379,131 @@ anim special2 # Défense spéciale icecrystal
 	attack5 0
 	frame	data/chars/camus/special1.png
 	
-anim freespecial3 # Attaque spéciale Aurora Exécution
-	range 	130 300
-	rangea 	0 100
+anim freespecial6 # Aurora execution ( haut + bouton special)
 	delay	10
-	offset	56 143
-	bbox 41 16 38 127
-	sound data/chars/camus/02.wav
-	summonframe 8 0 0 0
-	subentity iceray
-	unsummonframe 10
+	offset	76 143
+	fastattack 1
+	@cmd 	spawnScreen "camus_lights" 0 0 0 0
+	sound data/chars/camus/05-constellation.wav
+	frame	data/chars/camus/special29.png
+	spawnframe 0 0 0 0 1
+	subentity camus_constellation
 	energycost  20 1 0
-	hitflash flashbig
-	forcedirection -1
-	attack5 60 16 55 83 10 0 0 0 5 12
 	frame	data/chars/camus/special21.png
 	frame	data/chars/camus/special22.png
 	frame	data/chars/camus/special23.png
+	delay	10
 	frame	data/chars/camus/special24.png
 	frame	data/chars/camus/special25.png
 	frame	data/chars/camus/special26.png
-	frame	data/chars/camus/special27.png
+	frame	data/chars/camus/special27.png	
 	frame	data/chars/camus/special28.png
-	attack5 0	
-	delay	50	
 	frame	data/chars/camus/special29.png
-	frame	data/chars/camus/special29.png	
-	frame	data/chars/camus/special29.png	
+	sound data/chars/camus/03-aurora_execution.wav
+	frame	data/chars/camus/special29.png
+	@cmd 	spawnbind "camus_iceray" "ANI_IDLE" 0 0 0 1 0
+	delay   7
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special29.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special29.png
+	attack1 0
+	frame	data/chars/camus/special28.png
+	attack1 41 66 900 182 15 0 0 0 0 50
+	frame	data/chars/camus/special27.png
+	attack1 0
+	frame	data/chars/camus/special26.png
+	attack1 41 66 900 182 15 12 0 0 0 50
+	frame	data/chars/camus/special25.png
+	attack1 0
+	frame	data/chars/camus/special24.png
+	attack1 41 66 900 182 15 12 0 0 0 50
+	frame	data/chars/camus/special23.png
+	attack1 0
+	frame	data/chars/camus/special22.png
+	attack1 41 66 900 182 15 12 0 0 0 50
+	frame	data/chars/camus/special21.png
+	attack1 0
 	
 anim riseattack # Défense spéciale icecrystal
 	delay	10
@@ -404,7 +512,7 @@ anim riseattack # Défense spéciale icecrystal
 	energycost  10 1 0
 	hitflash flashbig
 	summonframe 0 0 0 0
-	subentity icecrystal
+	subentity camus_icecrystal
 	unsummonframe 11
 	attack5 0 12 200 142 30 1 0 0 5 12
 	dropv 4.0 3.0 0.0

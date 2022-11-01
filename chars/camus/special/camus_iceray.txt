@@ -1,0 +1,43 @@
+name	camus_iceray
+type	none
+shadow	0
+remove 0
+setlayer 150
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	8 250
+	drawmethod scale 0.9 0.9
+	drawmethod alpha 1
+	frame	data/chars/camus/special/camus_iceray/iceray1.png
+	frame	data/chars/camus/special/camus_iceray/iceray2.png
+	frame	data/chars/camus/special/camus_iceray/iceray3.png
+	frame	data/chars/camus/special/camus_iceray/iceray4.png
+	frame	data/chars/camus/special/camus_iceray/iceray5.png
+	frame	data/chars/camus/special/camus_iceray/iceray6.png
+	frame	data/chars/camus/special/camus_iceray/iceray7.png
+	frame	data/chars/camus/special/camus_iceray/iceray4.png
+	frame	data/chars/camus/special/camus_iceray/iceray5.png
+	frame	data/chars/camus/special/camus_iceray/iceray6.png
+	frame	data/chars/camus/special/camus_iceray/iceray7.png
+	frame	data/chars/camus/special/camus_iceray/iceray4.png
+	frame	data/chars/camus/special/camus_iceray/iceray5.png
+	frame	data/chars/camus/special/camus_iceray/iceray6.png
+	frame	data/chars/camus/special/camus_iceray/iceray7.png
+	frame	data/chars/camus/special/camus_iceray/iceray4.png
+	frame	data/chars/camus/special/camus_iceray/iceray5.png
+	frame	data/chars/camus/special/camus_iceray/iceray6.png
+	frame	data/chars/camus/special/camus_iceray/iceray7.png
+	frame	data/chars/camus/special/camus_iceray/iceray4.png
+	frame	data/chars/camus/special/camus_iceray/iceray5.png
+	frame	data/chars/camus/special/camus_iceray/iceray6.png
+	frame	data/chars/camus/special/camus_iceray/iceray7.png
+	frame	data/chars/camus/special/camus_iceray/iceray4.png
+	frame	data/chars/camus/special/camus_iceray/iceray5.png
+	frame	data/chars/camus/special/camus_iceray/iceray6.png
+	frame	data/chars/camus/special/camus_iceray/iceray7.png
+	@cmd suicide
+	frame	data/chars/camus/special/camus_iceray/iceray7.png

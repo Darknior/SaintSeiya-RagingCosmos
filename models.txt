@@ -149,8 +149,19 @@ know    milo_antares   data/chars/milo/special/milo_antares.txt
 know    milo_antaresB    data/chars/milo/special/milo_antaresB.txt
 know    milo_antaresC    data/chars/milo/special/milo_antaresC.txt
 
-know    iceray  	data/chars/camus/special/iceray.txt
-know    icecrystal  	data/chars/camus/special/icecrystal.txt
+know    shura_circle   data/chars/shura/special/shura_circle.txt
+know    shura_rundust  data/chars/shura/special/shura_rundust.txt
+know    shura_slashB   data/chars/shura/special/shura_slashB.txt
+know    shura_slashA   data/chars/shura/special/shura_slashA.txt
+know    shura_constellation   data/chars/shura/special/shura_constellation.txt
+know    shura_excalibur   data/chars/shura/special/shura_excalibur.txt
+
+know    camus_iceray  	data/chars/camus/special/camus_iceray.txt
+know    camus_icecrystal  	data/chars/camus/special/camus_icecrystal.txt
+know    camus_constellation  	data/chars/camus/special/camus_constellation.txt
+know    camus_lights  	data/chars/camus/special/camus_lights.txt
+know    camus_ice_star  	data/chars/camus/special/camus_ice_star.txt
+
 
 know    rosefield  	data/chars/aphrodite/special/rosefield.txt
 
@@ -341,7 +352,7 @@ know    pescisuper2     data/chars/APHRODITE/pescisuper2.txt
 know    pescisuper3     data/chars/APHRODITE/pescisuper3.txt
 know    APHRODITE       data/chars/APHRODITE/00_APHRODITE.txt
 
-know    CAMUS           data/chars/CAMUS/CAMUS.txt
+know    CAMUS           data/chars/CAMUS/00_CAMUS.txt
 
 know    DEATHMASK       data/chars/DEATHMASK/00_DEATHMASK.txt
 
@@ -352,7 +363,7 @@ know    MILO            data/chars/MILO/00_MILO.txt
 know    saga            data/chars/saga/saga.txt
 
 know    SHAKA           data/chars/SHAKA/00_SHAKA.txt
-know    SHURA           data/chars/SHURA/shura2.txt
+know    SHURA           data/chars/SHURA/00_shura.txt
 
 know    CUBE            data/chars/CUBE/CUBE.txt
 

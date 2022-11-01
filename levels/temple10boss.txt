@@ -3,6 +3,8 @@ music       data/music/MSC-tragic.ogg
 panel       data/bgs/temple10/temple10_panel.png 
 bglayer     data/bgs/temple10/temple10_back.png        0.9 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple10/temple10_bglayer.png      0.3 1 0 0 0 0 1 9999 1 0
+fglayer     data/bgs/temple10/temple10_cloudA.png        -150 -0.4 0 0 -200 0 0 -1 -1 1 1 0 0 0 0 0 1
+fglayer     data/bgs/temple10/temple10_cloudB.png        -25 -0.4 0 0 -200 0 0 -1 -1 1 1 0 0 0 0 0 1
 
 
 order       a
@@ -20,7 +22,7 @@ spawn1      60 30
 
 #-------------------------------------
 
-spawn           shura2
+spawn           shura
 boss 			1
 coords          650 390
 at              0
