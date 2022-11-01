@@ -1,0 +1,31 @@
+name	shura_explosion
+type	none
+shadow	0
+speed 10
+setlayer 566
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	12
+	offset	350 500
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	sound data/chars/shura/05-slash.wav
+	frame	data/chars/shura/special/shura_explosion/shura_explosion1.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion2.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion3.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion4.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion5.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion6.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion7.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion8.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion9.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion10.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion11.png
+	frame	data/chars/shura/special/shura_explosion/shura_explosion12.png
+	@cmd suicide
+	frame	data/chars/shura/special/shura_explosion/shura_explosion12.png
+
+

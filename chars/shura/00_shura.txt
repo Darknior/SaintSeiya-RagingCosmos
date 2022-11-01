@@ -28,11 +28,13 @@ load shura_slashB
 load shura_slashA
 load shura_constellation
 load shura_excalibur
+load shura_explosion
+load shura_excaliburB
 
 #----------------------------------------------------------
 anim spawn
 	delay	10
-	offset	70 130
+	offset	78 131
 	frame	data/chars/shura/spawn1.png
 	sound data/chars/shura/09-laugh.wav
 	frame	data/chars/shura/spawn2.png
@@ -352,19 +354,57 @@ anim freespecial6 #Ultra Excalibur
 	energycost  15 1 0
 	@cmd 	spawnbind "shura_excalibur" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shura/special0.png
+	@cmd spawnScreen "shura_excaliburB" 0 0 0 0
 	sound data/chars/shura/03-excalibur.wav
-	delay	10
+	delay	5
 	energycost  20 1 0
 	frame	data/chars/shura/special1.png
+	@cmd 	spawnbind "shura_explosion" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shura/special2.png
 	@cmd 	spawnbind "shura_slashB" "ANI_IDLE" 0 0 0 0 0
-	sound data/chars/shura/05-slash.wav
-	@cmd	shooter "shura_rundust" 0 80 0 2 0 0
 	frame	data/chars/shura/special3.png
+	attack 0
 	frame	data/chars/shura/special4.png
+	attack -300 0 800 480 5 0 0 0 10 50
 	frame	data/chars/shura/special5.png
+	attack 0
 	frame	data/chars/shura/special6.png
+	attack -300 0 800 480 5 0 0 0 10 50
 	frame	data/chars/shura/special7.png
+	attack 0
 	frame	data/chars/shura/special8.png
+	attack -300 0 800 480 5 0 0 0 10 50
 	frame	data/chars/shura/special9.png
+	attack 0
+	frame	data/chars/shura/special9.png
+	attack -300 0 800 480 5 0 0 0 10 50
+	frame	data/chars/shura/special9.png
+	attack 0
+	frame	data/chars/shura/special9.png
+	attack -300 0 800 480 5 0 0 0 10 50
+	frame	data/chars/shura/special9.png
+	attack 0
+	frame	data/chars/shura/special9.png
+	attack -300 0 800 480 5 0 0 0 10 50
+	frame	data/chars/shura/special9.png
+	attack 0
+	frame	data/chars/shura/special9.png
+	attack -300 0 800 480 5 0 0 0 10 50
+	frame	data/chars/shura/special9.png
+	attack 0
+	frame	data/chars/shura/special9.png
+	attack -300 0 800 480 5 0 0 0 10 50
+	frame	data/chars/shura/special9.png
+	attack 0
+	frame	data/chars/shura/special9.png
+	attack -300 0 800 480 5 0 0 0 10 50
+	frame	data/chars/shura/special9.png
+	attack 0
+	frame	data/chars/shura/special9.png
+	attack -300 0 800 480 5 0 0 0 10 50
+	frame	data/chars/shura/special9.png
+	attack 0
+	frame	data/chars/shura/special9.png
+	attack -300 0 800 480 5 0 0 0 10 50
 	frame	data/chars/shura/special10.png
+	attack 0

@@ -155,6 +155,8 @@ know    shura_slashB   data/chars/shura/special/shura_slashB.txt
 know    shura_slashA   data/chars/shura/special/shura_slashA.txt
 know    shura_constellation   data/chars/shura/special/shura_constellation.txt
 know    shura_excalibur   data/chars/shura/special/shura_excalibur.txt
+know    shura_explosion   data/chars/shura/special/shura_explosion.txt
+know    shura_excaliburB   data/chars/shura/special/shura_excaliburB.txt
 
 know    camus_iceray  	data/chars/camus/special/camus_iceray.txt
 know    camus_icecrystal  	data/chars/camus/special/camus_icecrystal.txt
