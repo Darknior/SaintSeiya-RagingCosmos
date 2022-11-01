@@ -30,6 +30,7 @@ load shura_constellation
 load shura_excalibur
 load shura_explosion
 load shura_excaliburB
+load shura_dash
 
 #----------------------------------------------------------
 anim spawn
@@ -40,6 +41,7 @@ anim spawn
 	frame	data/chars/shura/spawn2.png
 	@cmd spawnDialog "dialog_shura1" 200 100
 	frame	data/chars/shura/spawn3.png
+	sound data/chars/shura/04-cloack.wav
 	frame	data/chars/shura/spawn4.png
 	frame	data/chars/shura/spawn5.png
 	frame	data/chars/shura/spawn6.png
@@ -95,15 +97,17 @@ anim runattack # Attaque en courant
 	frame	data/chars/shura/runattack1.png
 	frame	data/chars/shura/runattack2.png
 	frame	data/chars/shura/runattack3.png
+	@cmd 	spawnbind "shura_dash" "ANI_IDLE" 0 0 0 0 0
 	attack2 66 21 88 40 20 1 0 0 5 12
 	frame	data/chars/shura/runattack4.png
-	frame	data/chars/shura/runattack1.png
+	frame	data/chars/shura/attack13.png
 	attack2 0
 	@cmd	dasher 0 0 0 1
 	delay	10
-	frame	data/chars/shura/runattack1.png
+	frame	data/chars/shura/attack14.png
 	attack 79 15 80 68 0 0 0 0 0 0
-	frame	data/chars/shura/runattack4.png
+	bbox 82 21 50 110
+	frame	data/chars/shura/attack15.png
 	
 anim freespecial # Attaque en courant
 	delay	10
@@ -116,15 +120,16 @@ anim freespecial # Attaque en courant
 	frame	data/chars/shura/runattack1.png
 	frame	data/chars/shura/runattack2.png
 	frame	data/chars/shura/runattack3.png
+	@cmd 	spawnbind "shura_dash" "ANI_IDLE" 0 0 0 0 0
 	attack2 60 20 88 40 20 1 0 0 5 12
 	frame	data/chars/shura/runattack4.png
 	frame	data/chars/shura/runattack1.png
 	attack2 0
 	@cmd	dasher 0 0 0 1
 	delay	10
-	frame	data/chars/shura/runattack1.png
-	attack 80 14 70 52 0 0 0 0 0 0
-	frame	data/chars/shura/runattack4.png
+	frame	data/chars/shura/attack14.png
+	attack 79 15 80 68 0 0 0 0 0 0
+	frame	data/chars/shura/attack15.png
 	
 anim pain # Up
 	delay	5

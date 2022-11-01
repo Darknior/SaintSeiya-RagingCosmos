@@ -157,12 +157,14 @@ know    shura_constellation   data/chars/shura/special/shura_constellation.txt
 know    shura_excalibur   data/chars/shura/special/shura_excalibur.txt
 know    shura_explosion   data/chars/shura/special/shura_explosion.txt
 know    shura_excaliburB   data/chars/shura/special/shura_excaliburB.txt
+know    shura_dash   data/chars/shura/special/shura_dash.txt
 
 know    camus_iceray  	data/chars/camus/special/camus_iceray.txt
 know    camus_icecrystal  	data/chars/camus/special/camus_icecrystal.txt
 know    camus_constellation  	data/chars/camus/special/camus_constellation.txt
 know    camus_lights  	data/chars/camus/special/camus_lights.txt
 know    camus_ice_star  	data/chars/camus/special/camus_ice_star.txt
+know    camus_dash  	data/chars/camus/special/camus_dash.txt
 
 
 know    rosefield  	data/chars/aphrodite/special/rosefield.txt

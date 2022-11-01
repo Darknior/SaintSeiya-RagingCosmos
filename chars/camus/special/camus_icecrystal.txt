@@ -10,6 +10,7 @@ anim	idle
 	offset	106 410
 	drawmethod scale 0.5 0.5
 	drawmethod alpha 1
+	sound data/chars/camus/06-ice_peak.wav
 	frame	data/chars/camus/special/camus_icecrystal/icecrystal1.png
 	frame	data/chars/camus/special/camus_icecrystal/icecrystal2.png
 	frame	data/chars/camus/special/camus_icecrystal/icecrystal3.png
