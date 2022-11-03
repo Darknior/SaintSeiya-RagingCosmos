@@ -1,7 +1,7 @@
 name	gemini_melee
 type	none
 shadow	0
-layer 1
+setlayer 200
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -11,7 +11,8 @@ anim	idle
 	offset	304 314
 	drawmethod scale 0.9 0.9
         drawmethod  alpha 1
-	frame	data/chars/gemini/special/gemini_melee/melee_gemini2.png
+	sound data/chars/gemini/06-melee.wav
+	quakeframe	data/chars/gemini/special/gemini_melee/melee_gemini2.png 30 4
 	frame	data/chars/gemini/special/gemini_melee/melee_gemini3.png
 	frame	data/chars/gemini/special/gemini_melee/melee_gemini4.png
 	frame	data/chars/gemini/special/gemini_melee/melee_gemini5.png

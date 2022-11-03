@@ -8,7 +8,7 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
-	delay	8
+	delay	6
 	offset	193 213
 	drawmethod scale 1 1
         drawmethod  alpha 1

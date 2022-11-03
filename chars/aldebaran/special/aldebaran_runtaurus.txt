@@ -1,7 +1,7 @@
 name	aldebaran_runtaurus
 type	none
 shadow	0
-layer 2
+setlayer 2
 lifespan 1
 
 anim	idle

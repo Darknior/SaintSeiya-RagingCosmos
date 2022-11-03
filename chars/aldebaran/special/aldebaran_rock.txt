@@ -1,7 +1,7 @@
 name	aldebaran_rock
 type	none
 shadow	0
-layer 7777
+setlayer 7777
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -11,7 +11,7 @@ anim	idle
 	offset	100 400
         drawmethod  alpha 6
         drawmethod  channel 0.99
-	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock5.png
+	quakeframe	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock5.png 17 7
 	offset	100 390
 	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock6.png
 	offset	100 380

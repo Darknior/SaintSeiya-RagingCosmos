@@ -101,6 +101,7 @@ know    gemini_rundust    data/chars/gemini/special/gemini_rundust.txt
 know    gemini_multihits  data/chars/gemini/special/gemini_multihits.txt
 know    gemini_melee      data/chars/gemini/special/gemini_melee.txt
 know    gemini_ultra      data/chars/gemini/special/gemini_ultra.txt
+know    gemini_clones      data/chars/gemini/special/gemini_clones.txt
 
 know    deathmask_circles         data/chars/deathmask/special/deathmask_circles.txt
 know    deathmask_hands         	data/chars/deathmask/special/deathmask_hands.txt

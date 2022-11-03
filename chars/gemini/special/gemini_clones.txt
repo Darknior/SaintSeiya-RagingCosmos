@@ -1,0 +1,39 @@
+name	gemini_clones
+type	none
+shadow	0
+remove 0
+setlayer 166
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	15
+	offset	250 184
+	drawmethod alpha 6
+        drawmethod  channel 0.99
+	sound data/chars/gemini/05-rise.wav
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones1.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones2.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones3.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones4.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones5.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones6.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones6.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones5.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones4.png
+	sound data/chars/gemini/05-rise.wav
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones3.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones2.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones1.png
+	@cmd suicide
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones1.png

@@ -1,7 +1,7 @@
 name	aldebaran_swing
 type	none
 shadow	0
-layer 997
+setlayer 157
 antigravity 100
 animationscript	data/scripts/player.c
 

@@ -1,7 +1,7 @@
 name	aldebaran_rundust
 type	none
 shadow	0
-layer 7777
+setlayer 150
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -11,7 +11,7 @@ anim	idle
 	offset	-20 186
         drawmethod  alpha 1
         drawmethod  channel 0.73
-	frame	data/chars/aldebaran/special/aldebaran_rundust/rundust0.png
+	quakeframe	data/chars/aldebaran/special/aldebaran_rundust/rundust0.png 8 6
 	frame	data/chars/aldebaran/special/aldebaran_rundust/rundust1.png
 	frame	data/chars/aldebaran/special/aldebaran_rundust/rundust2.png
 	frame	data/chars/aldebaran/special/aldebaran_rundust/rundust3.png

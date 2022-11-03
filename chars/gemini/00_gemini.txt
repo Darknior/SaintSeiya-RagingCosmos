@@ -28,6 +28,7 @@ load gemini_rundust
 load gemini_multihits
 load gemini_ultra
 load aldebaran_super_lights
+load gemini_clones
 
 #----------------------------------------------------------
 anim spawn
@@ -313,9 +314,9 @@ anim special # Défense spéciale Melee
 	offset	66 144
 	fastattack 1
 	sound data/chars/gemini/02-ahah.wav
-	summonframe 0 0 0 0 0
+        @cmd 	spawnbind "gemini_clones" "ANI_IDLE" 0 0 0 1 0
+	summonframe 10 0 0 0 0
 	subentity gemini_melee
-	unsummonframe 20
 	hitflash flashbig
 	frame	data/chars/gemini/special1.png
 	frame	data/chars/gemini/special2.png
@@ -366,6 +367,47 @@ anim special # Défense spéciale Melee
         attack1 0
 	frame	data/chars/gemini/special10.png
 	attack1 -337 -237 800 480 30 1 0 0 0 400
+	frame	data/chars/gemini/special5.png
+        attack1 0
+	frame	data/chars/gemini/special6.png
+	attack1 -337 -237 800 480 30 0 0 0 0 400
+	frame	data/chars/gemini/special7.png
+        attack1 0
+	frame	data/chars/gemini/special8.png
+	attack1 -337 -237 800 480 30 0 0 0 0 400
+	frame	data/chars/gemini/special9.png
+        attack1 0
+	frame	data/chars/gemini/special10.png
+	attack1 -337 -237 800 480 30 1 0 0 0 400
+	frame	data/chars/gemini/special10.png
+        attack1 0
+	frame	data/chars/gemini/special10.png
+	attack1 -337 -237 800 480 30 0 0 0 0 400
+	frame	data/chars/gemini/special5.png
+        attack1 0
+	frame	data/chars/gemini/special6.png
+	attack1 -337 -237 800 480 30 0 0 0 0 400
+	frame	data/chars/gemini/special7.png
+        attack1 0
+	frame	data/chars/gemini/special8.png
+	attack1 -337 -237 800 480 30 0 0 0 0 400
+	frame	data/chars/gemini/special9.png
+        attack1 0
+	frame	data/chars/gemini/special10.png
+	attack1 -337 -237 800 480 30 1 0 0 0 400
+	frame	data/chars/gemini/special5.png
+        attack1 0
+	frame	data/chars/gemini/special6.png
+	attack1 -337 -237 800 480 30 0 0 0 0 400
+	frame	data/chars/gemini/special7.png
+        attack1 0
+	frame	data/chars/gemini/special8.png
+	attack1 -337 -237 800 480 30 0 0 0 0 400
+	frame	data/chars/gemini/special9.png
+        attack1 0
+	delay	50
+	frame	data/chars/gemini/special5.png
+	attack1 0
 	
 anim special2 #Attaque spéciale Punch combo
 	fastattack 1
