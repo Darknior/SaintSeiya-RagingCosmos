@@ -25,8 +25,7 @@ animationscript	data/scripts/player.c
 load milo_blood	       
 load milo_circles	
 load milo_flash    
-load milo_constellation    
-load milo_ultra   
+load milo_constellation     
 load milo_circles  
 load milo_sting    
 load milo_stingB    
