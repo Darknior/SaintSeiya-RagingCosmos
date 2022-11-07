@@ -1,17 +1,17 @@
 name	deathmask_spirit
 type	none
+remove	0
 shadow	0
-setlayer 333
-antigravity 100
-lifespan 1.5
+animationscript data/scripts/player.c
 
 anim	idle
+	followanim 1
+	followcond 1
 	loop	0
 	delay	5
 	offset	116 164
-	drawmethod scale 1 1
 	drawmethod alpha 1
-	attack 86 124 162 66 0 0 0 0 0 0
+	attack 86 124 162 66 0 0 1 0 0 0
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit0.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit1.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit2.png
@@ -37,5 +37,53 @@ anim	idle
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit22.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit23.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit24.png
-	attack 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit25.png
+	@cmd suicide
+	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit25.png
+
+anim	follow1
+@script
+{
+	void self	= getlocalvar("self");
+	void target	= getentityproperty(self, "opponent");
+
+	//DETECTS IF THE CURRENT TARGET ALREADY IS IN A FALLING INSTANCE
+	//IF YES, SUICIDE. IF NOT, PROCEED NORMALLY
+	if(frame == 0){
+		if(getentityproperty(target, "aiflag", "falling")){killentity(self);}
+	}
+
+	//SCRIPT USED TO MOVE THE "SPRIRIT HANDS" TO THE SAME TARGET'S POSITION
+	if(frame <= 1){
+		int Tb = getentityproperty(target, "base");
+		int Tx = getentityproperty(target, "x");
+		int Tz = getentityproperty(target, "z");
+
+		stop();
+		changeentityproperty(self, "base", Tb);
+		changeentityproperty(self, "position", Tx, Tz+1, Tb);
+	}
+}
+@end_script
+	loop	1
+	delay	2
+	offset	79 128
+	hitfx	data/sounds/none.wav
+	frame	data/chars/deathmask/special/deathmask_hands/hands1.png #THIS FRAME IS DISCARDED BY THE ENGINE DURING FOLLOW
+	delay	90
+	attack 86 124 162 66 0 0 1 0 0 0
+	stun 5
+	frame	data/chars/deathmask/special/deathmask_hands/hands1.png #FREEZE THE OPPONENT
+	hitfx	data/sounds/beat1.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	stun 0
+	frame	data/chars/deathmask/special/deathmask_hands/hands1.png #DISABLE THE ATTACK BOX
+	delay	45
+	attack 86 124 162 66 0 1 1 0 0 0
+	stun 0
+	frame	data/chars/deathmask/special/deathmask_hands/hands2.png #ATTACK AGAIN TO THROW AWAY THE OPPONENT
+	attack 0 0 0 0 0 0 0 0 0 0
+	stun 0
+	frame	data/chars/deathmask/special/deathmask_hands/hands2.png #DISABLE THE ATTACK BOX AGAIN
+	@cmd suicide
+	frame	data/chars/deathmask/special/deathmask_hands/hands1.png #ERASE THE ENTITY
