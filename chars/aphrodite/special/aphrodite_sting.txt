@@ -1,0 +1,24 @@
+name	aphrodite_sting
+type	none
+shadow	0
+remove 0
+setlayer 4521
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	offset	-7 212
+	drawmethod alpha 1
+	sound data/chars/milo/15-needle1.wav
+	delay	20
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm07.png
+	delay	8
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm00.png
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm01.png
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm02.png
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm03.png
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm04.png
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm05.png
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm06.png
+	@cmd suicide
+	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm06.png

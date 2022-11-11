@@ -22,7 +22,20 @@ atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
 
-load rosefield
+load aphrodite_rosefield
+load aphrodite_rose_explosion
+load aphrodite_constellation
+load aphrodite_big_roses
+load aphrodite_big_roses_white
+load aphrodite_rose_shot
+load aphrodite_white_rose_shot
+load aphrodite_sting
+load aphrodite_ultra
+load camus_lights
+load shaka_lotus_petals
+load aiolia_explosion
+load aiolia_lionstar
+
 #----------------------------------------------------------
 anim spawn
 	delay	15
@@ -302,44 +315,49 @@ anim special # Défense spéciale carnivore roses
 	sound data/chars/aphrodite/02.wav
 	energycost  10 1 0
 	hitflash flashbig
-	frame	data/chars/aphrodite/special1.png
+        @cmd 	spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/aphrodite/special2.png
-	frame	data/chars/aphrodite/special3.png
-	frame	data/chars/aphrodite/special4.png
-	frame	data/chars/aphrodite/special5.png
+	frame	data/chars/aphrodite/special6.png
+        @cmd 	spawnbind "aiolia_explosion" "ANI_IDLE" 0 0 0 0 0
 	attack5 -50 3 200 142 30 1 0 0 5 12
 	dropv 4.0 3.0 0.0
-	frame	data/chars/aphrodite/special6.png
-	frame	data/chars/aphrodite/special7.png
-	frame	data/chars/aphrodite/special8.png
-	frame	data/chars/aphrodite/special9.png
-	frame	data/chars/aphrodite/special10.png
-	frame	data/chars/aphrodite/special11.png
+	frame	data/chars/aphrodite/special12.png
+        @cmd 	spawnbind "aphrodite_rose_explosion" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/aphrodite/special13.png
+	frame	data/chars/aphrodite/special14.png
+	delay	200
+	frame	data/chars/aphrodite/special15.png
 	attack5 0
 	frame	data/chars/aphrodite/special1.png
 	
-anim freespecial2 # Défense spéciale carnivore roses
+anim freespecial2 #Blue Rose shot
+	fastattack 1
+	forcedirection -1
+	range 200 400
 	delay	10
-	offset	45 144
-	sound data/chars/aphrodite/02.wav
-	energycost  10 1 0
-	hitflash flashbig
+	offset	59 144
+	energycost  15 1 0
+	frame	data/chars/aphrodite/special15.png
+        @cmd 	spawnbind "aphrodite_big_roses" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/aphrodite/special14.png
+	frame	data/chars/aphrodite/special13.png
+	frame	data/chars/aphrodite/special12.png
+	attack5 0
+	frame	data/chars/aphrodite/special11.png
+	frame	data/chars/aphrodite/special10.png
+	frame	data/chars/aphrodite/special9.png
+	frame	data/chars/aphrodite/special8.png
+	frame	data/chars/aphrodite/special7.png
+	frame	data/chars/aphrodite/special6.png
 	frame	data/chars/aphrodite/special1.png
 	frame	data/chars/aphrodite/special2.png
 	frame	data/chars/aphrodite/special3.png
-	frame	data/chars/aphrodite/special4.png
-	frame	data/chars/aphrodite/special5.png
-	attack5 -50 3 200 142 30 1 0 0 5 12
-	dropv 4.0 3.0 0.0
-	frame	data/chars/aphrodite/special6.png
-	frame	data/chars/aphrodite/special7.png
-	frame	data/chars/aphrodite/special8.png
-	frame	data/chars/aphrodite/special9.png
-	frame	data/chars/aphrodite/special10.png
-	frame	data/chars/aphrodite/special11.png
-	attack5 0
-	frame	data/chars/aphrodite/special1.png
-	
+	frame	data/chars/aphrodite/special0.png
+	@cmd	shooter "aphrodite_rose_shot" 0 80 0 4 0 0
+	frame	data/chars/aphrodite/special0.png
+	sound data/chars/aiolia/08-lionstar.wav
+	frame	data/chars/aphrodite/special0.png
+
 anim special2 # Défense spéciale carnivore roses
 	delay	10
 	offset	45 144
@@ -370,7 +388,7 @@ anim freespecial3 # Attaque spéciale Rosefield
 	bbox 12 16 38 127
 	sound data/chars/aphrodite/02.wav
 	summonframe 8 0 0 0
-	subentity rosefield
+	subentity aphrodite_rosefield
 	unsummonframe 10
 	energycost  20 1 0
 	hitflash flashbig
@@ -382,12 +400,48 @@ anim freespecial3 # Attaque spéciale Rosefield
 	frame	data/chars/aphrodite/special24.png
 	frame	data/chars/aphrodite/special25.png
 	frame	data/chars/aphrodite/special26.png
+	@cmd 	spawnScreen "aphrodite_ultra" 0 0 0 0
 	frame	data/chars/aphrodite/special27.png
 	attack5 0
 	delay	50
 	frame	data/chars/aphrodite/special21.png
 	frame	data/chars/aphrodite/special21.png
 	frame	data/chars/aphrodite/special21.png
+
+anim freespecial6 # Ultra Bloody rose
+	delay	10
+	offset	44 129
+	fastattack 1
+	@cmd 	spawnScreen "aphrodite_ultra" 0 0 0 0
+	sound data/chars/aldebaran/78-cosmos.wav
+	spawnframe 0 0 0 0 1
+	subentity aphrodite_constellation
+	energycost  20 1 0
+        @cmd 	spawnbind "aphrodite_big_roses_white" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/aphrodite/special15.png
+	sound data/chars/aphrodite/03.wav
+	frame	data/chars/aphrodite/special14.png
+	frame	data/chars/aphrodite/special13.png
+	frame	data/chars/aphrodite/special12.png
+	frame	data/chars/aphrodite/special11.png
+	frame	data/chars/aphrodite/special10.png
+	frame	data/chars/aphrodite/special9.png
+	frame	data/chars/aphrodite/special8.png
+	frame	data/chars/aphrodite/special7.png
+	frame	data/chars/aphrodite/special6.png
+	frame	data/chars/aphrodite/special1.png
+	frame	data/chars/aphrodite/special2.png
+	frame	data/chars/aphrodite/special3.png
+	frame	data/chars/aphrodite/special4.png
+	frame	data/chars/aphrodite/special5.png
+	frame	data/chars/aphrodite/special0.png
+	@cmd	shooter "aphrodite_white_rose_shot" 0 80 0 4 0 0
+	delay	2
+	frame	data/chars/aphrodite/special0.png
+	@cmd 	spawnbind "aphrodite_sting" "ANI_IDLE" 0 0 0 0 0
+	delay	100
+	frame	data/chars/aphrodite/special0.png
+
 	
 anim riseattack # Défense spéciale carnivore roses
 	delay	10

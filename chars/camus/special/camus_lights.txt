@@ -8,7 +8,7 @@ lifespan 3.6
 
 anim	idle
 	loop	1
-	delay	10
+	delay	3
 	offset	800 0
 	drawmethod alpha 1
         drawmethod  channel 0.5
@@ -32,3 +32,15 @@ anim	idle
 	frame	data/chars/camus/special/camus_lights/camus_lights17.png
 	frame	data/chars/camus/special/camus_lights/camus_lights18.png
 	frame	data/chars/camus/special/camus_lights/camus_lights19.png
+	frame	data/chars/camus/special/camus_lights/camus_lights20.png
+	frame	data/chars/camus/special/camus_lights/camus_lights21.png
+	frame	data/chars/camus/special/camus_lights/camus_lights22.png
+	frame	data/chars/camus/special/camus_lights/camus_lights23.png
+	frame	data/chars/camus/special/camus_lights/camus_lights24.png
+	frame	data/chars/camus/special/camus_lights/camus_lights25.png
+	frame	data/chars/camus/special/camus_lights/camus_lights26.png
+	frame	data/chars/camus/special/camus_lights/camus_lights27.png
+	frame	data/chars/camus/special/camus_lights/camus_lights28.png
+	frame	data/chars/camus/special/camus_lights/camus_lights29.png
+	frame	data/chars/camus/special/camus_lights/camus_lights30.png
+	frame	data/chars/camus/special/camus_lights/camus_lights31.png

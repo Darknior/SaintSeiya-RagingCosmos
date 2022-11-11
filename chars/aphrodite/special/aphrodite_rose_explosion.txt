@@ -1,0 +1,46 @@
+name	aphrodite_rose_explosion
+type	none
+shadow	0
+remove 0
+setlayer 266
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	238 275
+	drawmethod alpha 1
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion55.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion56.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion57.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion58.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion59.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion60.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion61.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion62.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion63.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion64.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion65.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion66.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion67.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion68.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion69.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion70.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion71.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion72.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion73.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion74.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion75.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion76.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion77.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion78.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion79.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion80.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion81.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion82.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion83.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion84.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion85.png
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion86.png
+	@cmd suicide
+	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion86.png

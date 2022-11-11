@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	080
 	@cmd setVar "line1" "I'm Afrodite, the knight of the"
 	@cmd setVar "line2" "fishes, it's a real miracle that"
 	@cmd setVar "line3" "you made it to the twelfth house!!"

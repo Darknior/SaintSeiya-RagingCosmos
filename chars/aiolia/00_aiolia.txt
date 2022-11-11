@@ -392,7 +392,6 @@ anim special # Défense spéciale Lion homerun
 anim freespecial2 # Défense spéciale Lion homerun
 	delay	10
 	offset	134 184
-	sound data/chars/aiolia/04-swing.wav
 	range 	50 80
 	rangea 	0 100
 	hitflash flashbig

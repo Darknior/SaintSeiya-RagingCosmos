@@ -166,8 +166,16 @@ know    camus_lights  	data/chars/camus/special/camus_lights.txt
 know    camus_ice_star  	data/chars/camus/special/camus_ice_star.txt
 know    camus_dash  	data/chars/camus/special/camus_dash.txt
 
-
-know    rosefield  	data/chars/aphrodite/special/rosefield.txt
+know    aphrodite_rosefield  	data/chars/aphrodite/special/aphrodite_rosefield.txt
+know    aphrodite_rose_explosion  	data/chars/aphrodite/special/aphrodite_rose_explosion.txt
+know    aphrodite_lotus_petals  	data/chars/aphrodite/special/aphrodite_lotus_petals.txt
+know    aphrodite_big_roses  	data/chars/aphrodite/special/aphrodite_big_roses.txt
+know    aphrodite_big_roses_white  	data/chars/aphrodite/special/aphrodite_big_roses_white.txt
+know    aphrodite_rose_shot  	data/chars/aphrodite/special/aphrodite_rose_shot.txt
+know    aphrodite_white_rose_shot  	data/chars/aphrodite/special/aphrodite_white_rose_shot.txt
+know    aphrodite_sting  	data/chars/aphrodite/special/aphrodite_sting.txt
+know    aphrodite_constellation  	data/chars/aphrodite/special/aphrodite_constellation.txt
+know    aphrodite_ultra  	data/chars/aphrodite/special/aphrodite_ultra.txt
 
 know    knife  		data/chars/great_pope/special/knife.txt
 

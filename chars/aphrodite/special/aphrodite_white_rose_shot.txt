@@ -1,0 +1,34 @@
+name	aphrodite_white_rose_shot
+type	none
+candamage player
+shadow	0
+setlayer 100
+antigravity 100
+remove 0
+lifespan  6
+
+anim	idle
+	fastattack 1
+	loop	1
+	delay	4
+	offset	-50 35
+	drawmethod alpha 1
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose1.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose2.png
+	attack1 0
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose3.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose1.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose2.png
+	attack1 0
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose3.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose1.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose2.png
+	attack1 0
+	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose3.png
+	attack1 0 0 150 150 10 0 0 0 12 12

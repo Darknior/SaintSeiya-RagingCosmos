@@ -10,7 +10,8 @@ anim	idle
 	delay	5
 	offset	318 642
 	drawmethod alpha 1
-	frame	data/chars/aiolia/special/aiolia_explosion/aiolia_explosion1.png
+	sound data/chars/aiolia/04-swing.wav
+	quakeframe	data/chars/aiolia/special/aiolia_explosion/aiolia_explosion1.png 40 8
 	frame	data/chars/aiolia/special/aiolia_explosion/aiolia_explosion2.png
 	frame	data/chars/aiolia/special/aiolia_explosion/aiolia_explosion3.png
 	frame	data/chars/aiolia/special/aiolia_explosion/aiolia_explosion4.png

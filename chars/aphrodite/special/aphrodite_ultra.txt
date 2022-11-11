@@ -1,0 +1,47 @@
+name	aphrodite_ultra
+type	panel
+shadow	0
+speed 10
+setlayer 666
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	8
+	offset	800 0
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra0.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra1.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra2.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra3.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra4.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra5.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra6.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra7.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra8.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra9.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra10.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra11.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra12.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra13.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra14.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra15.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra16.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra17.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra18.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra19.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra20.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra21.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra22.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra24.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra25.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra26.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra27.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra28.png
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra29.png
+	@cmd suicide
+	frame	data/chars/aphrodite/special/aphrodite_ultra/aphrodite_ultra29.png
+
+
