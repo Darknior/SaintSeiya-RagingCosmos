@@ -1,0 +1,28 @@
+name	marin_eagle
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+lifespan  6
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	10
+	offset	15 80
+	drawmethod alpha 1
+	attack5 0 0 200 150 20 0 0 0 0 20
+	frame	data/chars/marin/special/eagle1.png
+	attack5 0	
+	frame	data/chars/marin/special/eagle2.png
+	attack5 0 0 200 150 20 0 0 0 0 20
+	frame	data/chars/marin/special/eagle3.png
+	attack5 0	
+	frame	data/chars/marin/special/eagle4.png
+	attack5 0 0 200 150 20 0 0 0 0 20	
+	frame	data/chars/marin/special/eagle5.png
+	attack5 0	
+	frame	data/chars/marin/special/eagle6.png	
+	attack5 0 0 200 150 20 0 0 0 0 20	
+

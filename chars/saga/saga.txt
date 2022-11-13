@@ -23,7 +23,7 @@ atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
 
-load dimension_back
+#load dimension_back
 #----------------------------------------------------------
 anim spawn
 	delay	20

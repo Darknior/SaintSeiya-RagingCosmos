@@ -1,0 +1,45 @@
+name	marin_multipunch
+type	none
+candamage player
+shadow	0
+setlayer 100
+antigravity 100
+remove 0
+lifespan  6
+
+anim	idle
+	fastattack 1
+	loop	1
+	delay	4
+	offset	72 80
+	drawmethod alpha 1
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/marin/special/multipunch1.png
+	attack1 0
+	frame	data/chars/marin/special/multipunch2.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/marin/special/multipunch3.png
+	attack1 0
+	frame	data/chars/marin/special/multipunch4.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/marin/special/multipunch5.png
+	attack1 0
+	frame	data/chars/marin/special/multipunch6.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/marin/special/multipunch7.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/marin/special/multipunch8.png
+	attack1 0
+	frame	data/chars/marin/special/multipunch9.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/marin/special/multipunch10.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/marin/special/multipunch11.png
+	attack1 0
+	frame	data/chars/marin/special/multipunch12.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/marin/special/multipunch13.png
+	attack1 0
+	frame	data/chars/marin/special/multipunch14.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/marin/special/multipunch15.png

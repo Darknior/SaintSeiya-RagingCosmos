@@ -1,0 +1,400 @@
+name		marin
+health		400
+mp 			100
+type		enemy
+
+hostile     player npc 
+candamage 	player npc
+aimove      chase
+
+gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
+riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
+makeinv		2 0	# Invincible après respawn X sec / Clignote
+
+speed		20	# Vitesse de déplacement
+running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	7 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5.5	# Hauteur du saut
+antigravity	-15	# Augmente la gravité pour redescendre plus vite 1/100
+
+noquake 	0 1	# Secoue l'ecran qd on tombe au sol
+
+typemp 		1 	# Gagne de mp en tapant des ennemis 
+mprate 		1   # Nombre de mp gagnés par coup
+
+
+blockodds 	1	# Permet de pouvoir bloquer les attaques
+holdblock 	2	# Permet de pouvoir maintenir la parade
+nodieblink 	1	# Ne clignote pas quand tu meurs
+weaploss  	2	# On ne perd son arme qu' à notre mort
+modelflag 	0	# L'animation et la liste d'armes sont copiées
+death 		1   # Active l'animation de mort
+
+sleepwait 	1000 #Temps en centisecondes avant de jouer l'anim sleep
+
+atchain 	1 2 3 4 5 # Attaque combo de base (anim attack 1, puis 2...)
+
+icon       	data/chars/marin/icon.png
+
+#weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 marin
+
+
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+script	data/scripts/blink_select.c
+
+com  a2  	freespecial 	#Explosion du Cosmos
+com  F a2  	freespecial2 	#Météores de Pégase
+com  U a2  	freespecial6 	#Comète de Pégase
+com  D F a1 freespecial5 	#Uppercut
+
+load marin_eagle
+load marin_multipunch
+#----------------------------------------------------------
+anim spawn
+	delay	10
+	offset	144 122
+	frame	data/chars/marin/spawn1.png
+	frame	data/chars/marin/spawn2.png
+	frame	data/chars/marin/spawn3.png
+	frame	data/chars/marin/spawn1.png
+	frame	data/chars/marin/spawn2.png
+	frame	data/chars/marin/spawn3.png
+	frame	data/chars/marin/spawn1.png
+	frame	data/chars/marin/spawn2.png
+	frame	data/chars/marin/spawn3.png
+	frame	data/chars/marin/spawn4.png
+	frame	data/chars/marin/spawn5.png
+	frame	data/chars/marin/spawn6.png
+	frame	data/chars/marin/spawn7.png
+	frame	data/chars/marin/spawn8.png
+	frame	data/chars/marin/spawn9.png
+	frame	data/chars/marin/spawn10.png
+	
+anim idle
+	loop 1
+	delay	10
+	offset	25 110
+	bbox 0 7 52 108
+	frame	data/chars/marin/idle1.png
+	frame	data/chars/marin/idle2.png
+	frame	data/chars/marin/idle3.png
+	frame	data/chars/marin/idle4.png
+	frame	data/chars/marin/idle5.png
+	frame	data/chars/marin/idle6.png
+	frame	data/chars/marin/idle5.png
+	frame	data/chars/marin/idle4.png
+	frame	data/chars/marin/idle3.png
+	frame	data/chars/marin/idle2.png
+
+anim sleep
+	loop 1
+	delay	10
+	offset	32 115
+	bbox 0 7 52 108
+	frame	data/chars/marin/sleep1.png
+	frame	data/chars/marin/sleep2.png
+	frame	data/chars/marin/sleep3.png
+	frame	data/chars/marin/sleep4.png
+	
+anim walk
+	loop	1
+	delay	14
+	offset	23 112
+	bbox 2 4 47 112
+	frame	data/chars/marin/walk1.png
+	frame	data/chars/marin/walk2.png
+	frame	data/chars/marin/walk3.png
+	frame	data/chars/marin/walk4.png
+	frame	data/chars/marin/walk5.png
+	frame	data/chars/marin/walk6.png
+	frame	data/chars/marin/walk7.png
+	frame	data/chars/marin/walk8.png	
+
+anim run
+	loop	1
+	delay	10
+	offset	53 115
+	bbox 32 3 51 112
+	frame	data/chars/marin/run1.png
+	frame	data/chars/marin/run2.png
+	frame	data/chars/marin/run3.png
+	frame	data/chars/marin/run4.png
+	frame	data/chars/marin/run5.png
+	frame	data/chars/marin/run6.png
+	frame	data/chars/marin/run7.png
+	
+anim runattack # Attaque en courant
+	delay	6
+	offset	30 115
+	bbox 2 3 51 112
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/marin/runattack1.png
+	frame	data/chars/marin/runattack2.png
+	frame	data/chars/marin/runattack3.png
+	attack2 31 43 86 25 20 1 0 0 5 12
+	frame	data/chars/marin/runattack5.png
+	frame	data/chars/marin/runattack6.png
+	frame	data/chars/marin/runattack7.png
+	attack2 0 0 0 0 0 0 0 0 0 0
+	@cmd	dasher 0 0 0 1
+	delay	12
+	frame	data/chars/marin/runattack2.png
+	frame	data/chars/marin/runattack1.png
+
+anim get
+	delay	1
+	offset	25 113
+	bbox 2 16 52 99
+	frame	data/chars/marin/get1.png
+	frame	data/chars/marin/get2.png
+	frame	data/chars/marin/get3.png
+	frame	data/chars/marin/get2.png
+	frame	data/chars/marin/get1.png
+
+anim attack1 # Attaque combo 1
+	delay	5
+	offset	23 112
+	bbox 2 7 51 108
+	frame	data/chars/marin/attack1.png
+	attack1 29 20 67 26 10 0 0 0 5 12
+	frame	data/chars/marin/attack2.png
+	frame	data/chars/marin/attack3.png
+	attack1 0
+	frame	data/chars/marin/attack1.png
+	
+anim attack2 # Attaque combo 2
+	delay	5
+	offset	23 112
+	bbox 2 7 51 108
+	frame	data/chars/marin/attack21.png
+	attack1 32 21 67 26 10 0 0 0 5 12
+	frame	data/chars/marin/attack22.png
+	frame	data/chars/marin/attack23.png
+	frame	data/chars/marin/attack23.png
+	attack1 0
+	
+anim attack3 # Attaque combo 3
+	delay	7
+	offset	23 112
+	bbox 2 3 51 112
+	frame	data/chars/marin/attack31.png
+	frame	data/chars/marin/attack32.png
+	frame	data/chars/marin/attack33.png
+	frame	data/chars/marin/attack34.png
+	attack1 32 21 67 26 10 0 0 0 5 12
+	frame	data/chars/marin/attack35.png
+	frame	data/chars/marin/attack36.png
+	frame	data/chars/marin/attack37.png
+	frame	data/chars/marin/attack38.png	
+	
+anim attack4 # Attaque combo 4
+	delay	7
+	offset	45 115
+	bbox 21 7 51 112
+	hitflash flashmedium
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/marin/attack41.png
+	frame	data/chars/marin/attack42.png
+	attack1 42 40 67 26 10 0 0 0 5 12
+	frame	data/chars/marin/attack43.png
+	frame	data/chars/marin/attack44.png
+	frame	data/chars/marin/attack45.png
+	frame	data/chars/marin/attack46.png
+	
+anim attack5 # Attaque combo 5
+	delay	5
+	offset	52 115
+	bbox 21 7 51 112
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/marin/attack51.png
+	frame	data/chars/marin/attack52.png
+	attack1 62 21 67 26 20 1 0 0 5 12
+	frame	data/chars/marin/attack53.png
+	frame	data/chars/marin/attack54.png
+	frame	data/chars/marin/attack52.png
+	
+anim special # Multi punch combo
+	delay	10
+	offset	31 119
+	sound data/chars/marin/02.wav
+	summonframe 0 120 0 0
+	subentity marin_multipunch
+	unsummonframe 10
+	energycost  10 1 0
+	hitflash flashbig
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/marin/special21.png
+	frame	data/chars/marin/special22.png
+	attack5 28 -61 120 180 30 0 0 0 5 12
+	frame	data/chars/marin/special23.png
+	frame	data/chars/marin/special24.png
+	frame	data/chars/marin/special25.png
+	frame	data/chars/marin/special26.png
+	attack5 0
+	frame	data/chars/marin/special27.png
+	frame	data/chars/marin/special28.png
+	frame	data/chars/marin/special29.png
+	frame	data/chars/marin/special30.png
+	frame	data/chars/marin/special31.png	
+	
+anim freespecial # Multi punch combo
+	delay	10
+	offset	31 119
+	sound data/chars/marin/02.wav
+	summonframe 0 0 0 0
+	subentity marin_multipunch
+	unsummonframe 10
+	energycost  10 1 0
+	hitflash flashbig
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/marin/special21.png
+	frame	data/chars/marin/special22.png
+	attack5 28 -61 120 180 30 1 0 0 5 12
+	frame	data/chars/marin/special23.png
+	frame	data/chars/marin/special24.png
+	frame	data/chars/marin/special25.png
+	frame	data/chars/marin/special26.png
+	attack5 0
+	frame	data/chars/marin/special27.png
+	frame	data/chars/marin/special28.png
+	frame	data/chars/marin/special29.png
+	frame	data/chars/marin/special30.png
+	frame	data/chars/marin/special31.png
+	
+anim freespecial2 # Eagle projectile
+	delay	10
+	offset	31 115
+	sound data/chars/marin/02.wav
+	range 	130 300
+	rangea 	0 100	
+	#summonframe 0 0 0 0 0
+	#subentity constellation
+	#unsummonframe 27
+	energycost  20 1 0
+	hitflash flashbig
+	attack5 -8 -64 100 180 10 1 0 0 5 12
+	frame	data/chars/marin/special1.png
+	frame	data/chars/marin/special2.png
+	frame	data/chars/marin/special3.png
+	frame	data/chars/marin/special4.png
+	attack5 -8 -57 100 180 10 1 0 0 5 12
+	@cmd	shooter "marin_eagle" 77 40 0 3 0 0
+	frame	data/chars/marin/special3.png
+	frame	data/chars/marin/special2.png	
+
+anim jump # Saut Statique
+	delay	10
+	offset	25 115
+	bbox -1 1 51 97
+	cancel 0 8 0 A2 freespecial3
+	frame	data/chars/marin/jump1.png
+	frame	data/chars/marin/jump2.png
+	frame	data/chars/marin/jump3.png
+	frame	data/chars/marin/jump2.png
+	frame	data/chars/marin/jump1.png
+	
+anim jumpdelay # Animation de saut intermédiaire
+	delay	10
+	offset	25 115
+	bbox -1 1 51 97
+	frame	data/chars/marin/jump1.png
+
+anim jumpland # Aterrissage du saut
+	delay	8
+	offset	24 112
+	bbox 2 3 51 112
+	frame	data/chars/marin/get1.png
+	frame	data/chars/marin/get2.png
+	frame	data/chars/marin/get3.png
+	frame	data/chars/marin/get2.png
+	frame	data/chars/marin/get1.png
+	
+anim jumpattack #Attaque sautée statique
+	delay	5
+	offset	25 115
+	bbox -1 1 51 97
+	sound data/sounds/punch.wav
+	frame	data/chars/marin/jumpattack1.png
+	frame	data/chars/marin/jumpattack2.png
+	dropv 4.0 1.0 0.0
+	attack4 32 33 67 26 10 1 0 0 5 12
+	frame	data/chars/marin/jumpattack3.png
+	frame	data/chars/marin/jumpattack3.png
+	attack4 0
+	
+anim pain
+	offset	51 113
+	bbox 28 0 51 112
+	#move	-5
+	delay	5
+	frame	data/chars/marin/pain1.png
+	frame	data/chars/marin/pain2.png
+	frame	data/chars/marin/pain3.png
+	frame	data/chars/marin/pain2.png
+	frame	data/chars/marin/pain1.png
+	
+anim pain2
+	offset	24 112
+	bbox 11 2 36 112
+	#move	-5
+	delay	5
+	frame	data/chars/marin/pain21.png
+	frame	data/chars/marin/pain22.png
+	frame	data/chars/marin/pain23.png
+	frame	data/chars/marin/pain22.png
+	frame	data/chars/marin/pain21.png
+	
+anim fall
+	offset	67 115
+	delay	10
+	landframe 6
+	frame	data/chars/marin/fall1.png
+	frame	data/chars/marin/fall2.png
+	frame	data/chars/marin/fall3.png
+	frame	data/chars/marin/fall4.png
+	frame	data/chars/marin/fall5.png
+	frame	data/chars/marin/fall6.png
+	frame	data/chars/marin/fall7.png
+	frame	data/chars/marin/fall8.png	
+
+anim fall7
+	offset	67 115
+	delay	-1000
+	frame	data/chars/marin/fall1.png
+	frame	data/chars/marin/fall2.png
+	frame	data/chars/marin/fall3.png
+	frame	data/chars/marin/fall4.png
+
+anim rise
+	delay	10
+	offset	93 115
+	jumpframe 0 0 0	
+	frame	data/chars/marin/rise1.png
+	frame	data/chars/marin/rise2.png
+	frame	data/chars/marin/rise3.png
+	frame	data/chars/marin/rise4.png
+
+#anim death
+#	offset	114 110
+#	delay	10
+#	landframe 6
+#	frame	data/chars/marin/death1.png
+#	frame	data/chars/marin/death2.png
+#	frame	data/chars/marin/death3.png
+#	frame	data/chars/marin/death4.png
+#	frame	data/chars/marin/death5.png
+#	frame	data/chars/marin/death6.png	
+	
+anim	block
+	loop	0
+	delay	5
+	offset	26 112
+	bbox 0 0 51 112
+	frame	data/chars/marin/block1.png
+	frame	data/chars/marin/block2.png
+	frame	data/chars/marin/block3.png
