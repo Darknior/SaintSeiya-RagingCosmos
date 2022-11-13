@@ -177,6 +177,9 @@ know    aphrodite_sting  	data/chars/aphrodite/special/aphrodite_sting.txt
 know    aphrodite_constellation  	data/chars/aphrodite/special/aphrodite_constellation.txt
 know    aphrodite_ultra  	data/chars/aphrodite/special/aphrodite_ultra.txt
 
+know    marin_eagle   		data/chars/marin/special/marin_eagle.txt
+know    marin_multipunch   	data/chars/marin/special/marin_multipunch.txt
+
 know    knife  		data/chars/great_pope/special/knife.txt
 
 know    columnT  	data/chars/jaki/special/columnT.txt
@@ -317,6 +320,7 @@ load    WNARMA6         data/chars/WOLF-NACHI/WNARMA6.txt
 
 ## EAGLE / MARIN
 
+load    marin     		data/chars/marin/marin.txt
 load    EAGLE-MARIN     data/chars/EAGLE-MARIN/EAGLE-MARIN.txt
 load    EMARMA0         data/chars/EAGLE-MARIN/EMARMA0.txt
 load    EMARMA1         data/chars/EAGLE-MARIN/EMARMA1.txt
