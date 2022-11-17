@@ -27,7 +27,7 @@ mprate 		1   # Nombre de mp gagnés par coup
 
 blockodds 	1	# Permet de pouvoir bloquer les attaques
 holdblock 	2	# Permet de pouvoir maintenir la parade
-nodieblink 	1	# Ne clignote pas quand tu meurs
+nodieblink 	3	# Ne clignote pas quand tu meurs
 weaploss  	2	# On ne perd son arme qu' à notre mort
 modelflag 	0	# L'animation et la liste d'armes sont copiées
 death 		1   # Active l'animation de mort
@@ -379,16 +379,16 @@ anim rise
 	frame	data/chars/marin/rise3.png
 	frame	data/chars/marin/rise4.png
 
-#anim death
-#	offset	114 110
-#	delay	10
-#	landframe 6
-#	frame	data/chars/marin/death1.png
-#	frame	data/chars/marin/death2.png
-#	frame	data/chars/marin/death3.png
-#	frame	data/chars/marin/death4.png
-#	frame	data/chars/marin/death5.png
-#	frame	data/chars/marin/death6.png	
+anim death
+	offset	28 113
+	delay	10
+	frame	data/chars/marin/death1.png
+	frame	data/chars/marin/death2.png
+	frame	data/chars/marin/death3.png
+	frame	data/chars/marin/death4.png
+	frame	data/chars/marin/death3.png
+	frame	data/chars/marin/death2.png
+	frame	data/chars/marin/death1.png
 	
 anim	block
 	loop	0
