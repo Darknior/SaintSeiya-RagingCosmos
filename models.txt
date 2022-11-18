@@ -176,6 +176,7 @@ know    aphrodite_white_rose_shot  	data/chars/aphrodite/special/aphrodite_white
 know    aphrodite_sting  	data/chars/aphrodite/special/aphrodite_sting.txt
 know    aphrodite_constellation  	data/chars/aphrodite/special/aphrodite_constellation.txt
 know    aphrodite_ultra  	data/chars/aphrodite/special/aphrodite_ultra.txt
+know    aphrodite_poissons 	data/chars/aphrodite/special/aphrodite_poissons.txt
 
 know    marin_eagle   		data/chars/marin/special/marin_eagle.txt
 know    marin_multipunch   	data/chars/marin/special/marin_multipunch.txt

@@ -30,6 +30,7 @@ load aphrodite_big_roses_white
 load aphrodite_rose_shot
 load aphrodite_white_rose_shot
 load aphrodite_sting
+load aphrodite_poissons
 load aphrodite_ultra
 load camus_lights
 load shaka_lotus_petals
@@ -39,7 +40,7 @@ load aiolia_lionstar
 #----------------------------------------------------------
 anim spawn
 	delay	15
-	offset	46 144
+	offset	44 158
 	frame	data/chars/aphrodite/spawn1.png
 	@cmd spawnDialog "dialog_aphrodite1" 200 100
 	frame	data/chars/aphrodite/spawn1.png
@@ -337,6 +338,7 @@ anim freespecial2 #Blue Rose shot
 	delay	10
 	offset	59 144
 	energycost  15 1 0
+        @cmd 	spawnbind "aphrodite_poissons" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/aphrodite/special15.png
         @cmd 	spawnbind "aphrodite_big_roses" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/aphrodite/special14.png
@@ -356,6 +358,7 @@ anim freespecial2 #Blue Rose shot
 	@cmd	shooter "aphrodite_rose_shot" 0 80 0 4 0 0
 	frame	data/chars/aphrodite/special0.png
 	sound data/chars/aiolia/08-lionstar.wav
+	delay	100
 	frame	data/chars/aphrodite/special0.png
 
 anim special2 # Défense spéciale carnivore roses
@@ -386,27 +389,56 @@ anim freespecial3 # Attaque spéciale Rosefield
 	delay	10
 	offset	30 143
 	bbox 12 16 38 127
-	sound data/chars/aphrodite/02.wav
-	summonframe 8 0 0 0
+	sound data/chars/aphrodite/05-jump.wav
+	summonframe 11 0 0 0
 	subentity aphrodite_rosefield
-	unsummonframe 10
 	energycost  20 1 0
 	hitflash flashbig
 	forcedirection -1
 	attack5 41 16 55 83 10 0 0 0 5 12
 	frame	data/chars/aphrodite/special21.png
 	frame	data/chars/aphrodite/special22.png
+	sound data/chars/aphrodite/04-Pirhana_Rose.wav
+	delay	6
+	offset	30 153
 	frame	data/chars/aphrodite/special23.png
+	offset	30 163
+	frame	data/chars/aphrodite/special23.png
+	offset	30 173
+	frame	data/chars/aphrodite/special23.png
+	offset	30 183
+	frame	data/chars/aphrodite/special23.png
+	offset	30 193
+	frame	data/chars/aphrodite/special23.png
+	offset	30 203
+	frame	data/chars/aphrodite/special23.png
+	delay	10
 	frame	data/chars/aphrodite/special24.png
 	frame	data/chars/aphrodite/special25.png
 	frame	data/chars/aphrodite/special26.png
 	@cmd 	spawnScreen "aphrodite_ultra" 0 0 0 0
+	delay	100
 	frame	data/chars/aphrodite/special27.png
 	attack5 0
-	delay	50
-	frame	data/chars/aphrodite/special21.png
-	frame	data/chars/aphrodite/special21.png
-	frame	data/chars/aphrodite/special21.png
+	delay	10
+	frame	data/chars/aphrodite/special26.png
+	frame	data/chars/aphrodite/special25.png
+	frame	data/chars/aphrodite/special24.png
+	delay	6
+	offset	30 193
+	frame	data/chars/aphrodite/special23.png
+	offset	30 183
+	frame	data/chars/aphrodite/special23.png
+	offset	30 173
+	frame	data/chars/aphrodite/special23.png
+	offset	30 163
+	frame	data/chars/aphrodite/special23.png
+	offset	30 153
+	frame	data/chars/aphrodite/special23.png
+	offset	30 143
+	frame	data/chars/aphrodite/special22.png
+	delay	150
+	frame	data/chars/aphrodite/idle1.png
 
 anim freespecial6 # Ultra Bloody rose
 	delay	10

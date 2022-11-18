@@ -3,13 +3,13 @@ type	none
 shadow	0
 nolife 	 1
 setlayer 1
-lifespan 2
 candamage player
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
 	delay	10
-	offset	14 32
+	offset	-69 30
 	attack1 31 0 100 30 30 1 0 0 0 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield1.png
 	attack1 0
@@ -39,6 +39,10 @@ anim	idle
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield14.png
 	attack1 31 0 800 30 30 1 0 0 0 0
+	delay	300
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
 	attack1 0
-	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield16.png	
+	delay	10
+	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
+	@cmd suicide
+	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png	
