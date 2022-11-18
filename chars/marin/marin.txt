@@ -136,6 +136,7 @@ anim runattack # Attaque en courant
 	frame	data/chars/marin/runattack2.png
 	frame	data/chars/marin/runattack3.png
 	attack2 31 43 86 25 20 1 0 0 5 12
+	frame	data/chars/marin/runattack4.png	
 	frame	data/chars/marin/runattack5.png
 	frame	data/chars/marin/runattack6.png
 	frame	data/chars/marin/runattack7.png

@@ -180,6 +180,8 @@ know    aphrodite_ultra  	data/chars/aphrodite/special/aphrodite_ultra.txt
 know    marin_eagle   		data/chars/marin/special/marin_eagle.txt
 know    marin_multipunch   	data/chars/marin/special/marin_multipunch.txt
 
+know    shaina_venom   		data/chars/shaina/special/shaina_venom.txt
+
 know    knife  		data/chars/great_pope/special/knife.txt
 
 know    columnT  	data/chars/jaki/special/columnT.txt
@@ -329,6 +331,9 @@ load    EMARMA3         data/chars/EAGLE-MARIN/EMARMA3.txt
 load    EMARMA4         data/chars/EAGLE-MARIN/EMARMA4.txt
 load    EMARMA5         data/chars/EAGLE-MARIN/EMARMA5.txt
 load    EMARMA6         data/chars/EAGLE-MARIN/EMARMA6.txt
+
+load    shaina     		data/chars/shaina/shaina.txt
+
 
 ## PNJ ##
 

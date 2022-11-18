@@ -41,7 +41,9 @@ completebg 1
 
 
 -------------------------------------
-
+spawn shaina
+coords	580 400
+at 0
 
 
 spawn soldier1

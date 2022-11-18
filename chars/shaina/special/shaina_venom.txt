@@ -1,0 +1,22 @@
+name	shaina_venom
+type	none
+shadow	0
+setlayer 778
+antigravity 100
+
+anim	idle
+	loop	1
+	delay	5
+	offset	170 78
+	drawmethod alpha 1
+	frame	data/chars/shaina/special/venom1.png
+	frame	data/chars/shaina/special/venom2.png
+	frame	data/chars/shaina/special/venom3.png
+	frame	data/chars/shaina/special/venom4.png
+	frame	data/chars/shaina/special/venom5.png
+	frame	data/chars/shaina/special/venom6.png
+	frame	data/chars/shaina/special/venom7.png
+	frame	data/chars/shaina/special/venom8.png
+	frame	data/chars/shaina/special/venom9.png
+	frame	data/chars/shaina/special/venom10.png
+	frame	data/chars/shaina/special/venom11.png
