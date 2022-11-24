@@ -36,6 +36,7 @@ void main()
 	if(getglobalvar("dialog_entity") == NULL()){setglobalvar("dialog_entity", self);}
 
 	//SET CHANNEL OPACITIY
+	changedrawmethod(NULL(), "enabled", 1);
 	changedrawmethod(NULL(), "channelr", channel);
 	changedrawmethod(NULL(), "channelg", channel);
 	changedrawmethod(NULL(), "channelb", channel);
@@ -61,6 +62,7 @@ void main()
 	if(line1 != NULL()){
 		yText = lineStart;
 		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
+		changedrawmethod(NULL(), "enabled", 0);
 		drawsprite(getglobalvar(portName), xPortrait, yPortrait, spriteLayer);
 		drawstring(xText, yText, font, line1, textLayer);yText = yText+lineAdd;
 		drawstring(xText, yText, font, line2, textLayer);yText = yText+lineAdd;

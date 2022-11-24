@@ -12,62 +12,66 @@ completebg  0        # Ecran de fin de niveau personnalisé data/bgs/complete.gi
 #blockratio 1        # Si activé, au lieu de 0 on subi 1/4 des dégâts d'origine
 #mpblock    1        # Défini que la parade consume les MP avant la vitalité
 
+## CAUTION!! THE COMMANDS BELOW WILL CHANGE THE LIFE BAR SCRIPT TOO
 
-lbarsize    100 10 
-mpbarsize   670 7 
-olbarsize   670 8 
+lbarsize    150 9 1 1 0 -500 -500 1 -500
+mpbarsize   100 9 1 1 0 -500 -500 1 -500
+olbarsize   75 9 1 1 0 -500 -500 1 -500
+timeloc     136 5 21 20 0
 
-
-p1score     40  11
-p1lifen     145 23
-p1lifex     -100 -100
-p1life      40  21
-p1mp        40  35
-p1icon      5   20
+p1score     57  33 999 999 57  43
+p1lifex     160 70 7
+p1lifen     169 70
+p1life      6  68
+p1mp        6  93
+p1icon      7   7
 p1smenu     100 999 -1000 -1000 -1000 -1000
 p1namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
-p2score     40  48
-p2lifen     145 59
-p2life      40  58
-p2mp        40  67
-p2icon      -5  -12
+p2score     257  33 999 999 257  43
+p2lifex     360 70 7
+p2lifen     369 70
+p2life      206  68
+p2mp        206  93
+p2icon      207   7
 p2smenu     200 999 -10000 -10000 -10000 -10000
 p2namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
-p3score     520 11
-p3lifen     800 23
-p3life      520 21
-p3mp        520 35
-p3icon      475 -46
+p3score     457  33 999 999 457  43
+p3lifex     560 70 7
+p3lifen     569 70
+p3life      406  68
+p3mp        406  93
+p3icon      407   7
 p3smenu     300 999 -10000 -10000 -10000 -10000
 p3namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
-p4score     520 48
-p4lifen     800 59
-p4life      520 58
-p4mp        520 67
-p4icon      475 -12
+p4score     657  33 999 999 657  43
+p4lifex     760 70 7
+p4lifen     769 70
+p4life      606  68
+p4mp        606  93
+p4icon      607   7
 p4smenu     400 999 -10000 -10000 -10000 -10000
 p4namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
+e1name      35 131
+e1life      6  140
+e1icon      7  115
 
-e1name      41 448
-e1life      40 460
-e1icon      3  442
+e2name      235 131
+e2life      206 140
+e2icon      207 115
 
-e2name      41 448
-e2life      40 460
-e2icon      3  442
+e3name      435 131
+e3life      406 140
+e3icon      407 115
 
-e3name      41 448
-e3life      40 460
-e3icon      3  442
+e4name      635 131
+e4life      606 140
+e4icon      607 115
 
-e4name      41 448
-e4life      40 460
-e4icon      3  442
-
+## END OF THE COMMANDS USED BY LIFE BAR SCRIPT
 
 ##-----------------------------------------------------
 ##-----------------------------------------------------

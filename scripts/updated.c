@@ -68,18 +68,18 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
       counter2 = setlocalvar("counter2",1); // turn on the variable, blocking a new spawn to be made
 	}	
 
-if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
-  {counter3 = setlocalvar("counter3",0); }
-	if((openborvariant("in_options")) &&(counter3!=1)) // Check the variable to avoid double spawn
-		{void subent;
-		loadmodel("options"); // name of the entity to be loaded
-        clearspawnentry(); // clean the spawn entry
-		setspawnentry("name", "options"); // define the entity to be spawn
-		setspawnentry("coords", 1,0,-1); // set the position of the entity
-		subent=spawn();  //  spawn the entity
-		changeentityproperty(subent, "position", 1,0,-1); //for safe, set again the position
-		counter3 = setlocalvar("counter3",1); // turn on the variable, blocking a new spawn to be made
-	}
+// if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
+//   {counter3 = setlocalvar("counter3",0); }
+// 	if((openborvariant("in_options")) &&(counter3!=1)) // Check the variable to avoid double spawn
+// 		{void subent;
+// 		loadmodel("options"); // name of the entity to be loaded
+//         clearspawnentry(); // clean the spawn entry
+// 		setspawnentry("name", "options"); // define the entity to be spawn
+// 		setspawnentry("coords", 1,0,-1); // set the position of the entity
+// 		subent=spawn();  //  spawn the entity
+// 		changeentityproperty(subent, "position", 1,0,-1); //for safe, set again the position
+// 		counter3 = setlocalvar("counter3",1); // turn on the variable, blocking a new spawn to be made
+// 	}
 
 	if(openborvariant("in_titlescreen")){
 
@@ -115,6 +115,11 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 		//SET THE "CLEARALL" FLAG TO 1
 		if(getglobalvar("clearAll") == NULL()){setglobalvar("clearAll", 1);}
 		menuScreen();
+	}
+
+	//IN LEVEL
+	if(openborvariant("in_level")){
+		drawOverlay();
 	}
 	
 }// MAIN END
@@ -152,4 +157,87 @@ void menuScreen()
 	drawscreen(getglobalvar("screen"), 0, 0, openborconstant("MAX_INT"));
 	drawspriteq(vScreen, 0, openborconstant("MIN_INT"), openborconstant("MAX_INT"), 0, 0);
 	clearspriteq();
+}
+
+void drawOverlay()
+{//Draw image for overlay effect in lifebar
+	void player1 = getplayerproperty(0, "entity");
+	void player2 = getplayerproperty(1, "entity");
+	void player3 = getplayerproperty(2, "entity");
+	void player4 = getplayerproperty(3, "entity");
+	
+	if(!openborvariant("pause")){
+		overlayFunction(player1, 0);
+		overlayFunction(player2, 1);
+		overlayFunction(player3, 2);
+		overlayFunction(player4, 3);
+	}
+}
+
+void overlayFunction(void player, int pIndex)
+{//Script used to reduce code size
+
+	//USED FOR PLAYERS ALREADY IN-GAME
+	if(player != NULL()){
+		void type	= getentityproperty(player, "type");
+		int exists	= getentityproperty(player, "exists");
+		
+		//DETECTS IF THE DEFINED PLAYER IS IN-GAME AND ALIVE
+		if(exists){
+			void target	= getentityproperty(player, "opponent");
+			int noLife	= getentityproperty(target, "nolife");
+			int mHealth	= getentityproperty(target, "maxhealth");
+			int xPos	= 6;
+			int xDif	= 200;
+			int xAdd	= xDif*pIndex;
+			int yPos1	= 6;
+			int yPos2	= 114;
+			int yAdd1	= 63;
+			int yAdd2	= 78;
+			int yAdd3	= 27;
+			int yText1	= 54;
+			int yText2	= 79;
+			int layer1	= 10000;
+			int layer2	= 60000;
+
+			//LOAD ASSETS
+			if(getglobalvar("charIcon1") == NULL()){setglobalvar("charIcon1", loadsprite("data/sprites/charicon1.png"));}
+			if(getglobalvar("charIcon2") == NULL()){setglobalvar("charIcon2", loadsprite("data/sprites/charicon2.png"));}
+			if(getglobalvar("lifebar1") == NULL()){setglobalvar("lifebar1", loadsprite("data/sprites/lifebar1.png"));}
+			if(getglobalvar("lifebar2") == NULL()){setglobalvar("lifebar2", loadsprite("data/sprites/lifebar2.png"));}
+			if(getglobalvar("mpbar") == NULL()){setglobalvar("mpbar", loadsprite("data/sprites/mpbar.png"));}
+
+			//PLAYERS
+			setdrawmethod(NULL(),0,256,256,0,0,0,0);
+			drawsprite(getglobalvar("charIcon1"), xPos+xAdd, yPos1, layer1); //PLAYER CHARACTER ICON OVERLAY
+			setdrawmethod(NULL(),1,256,256,0,0,0,2);
+			drawsprite(getglobalvar("lifebar1"), xPos+xAdd, yPos1+yAdd1, layer2); //PLAYER LIFEBAR OVERLAY
+			drawsprite(getglobalvar("mpbar"), xPos+xAdd, yPos1+yAdd2, layer2); //PLAYER MPBAR OVERLAY
+			drawstring(xPos+xAdd, yPos1+yText1, 0, "energy", layer1);
+			drawstring(xPos+xAdd, yPos1+yText2, 0, "cosmos", layer1);
+			
+			//OPPONENTS
+			if(target != NULL()){
+				if(type == openborconstant("TYPE_PLAYER")){
+					if(!noLife){ //ENEMIES
+						setdrawmethod(NULL(),0,256,256,0,0,0,0);
+						drawsprite(getglobalvar("charIcon2"), xPos+xAdd, yPos2, layer1); //OPPONENT CHARACTER ICON OVERLAY
+						setdrawmethod(NULL(),1,256,256,0,0,0,2);
+						drawsprite(getglobalvar("lifebar2"), xPos+xAdd, yPos2+yAdd3, layer2); //OPPONENT LIFEBAR OVERLAY
+					}
+				}
+			}
+		}
+	}
+	else //USED FOR PLAYERS JOINING IN A GAME
+	if(getplayerproperty(pIndex, "joining")){
+		int xPos	= 6;
+		int xDif	= 200;
+		int xAdd	= xDif*pIndex;
+		int yPos1	= 6;
+		int layer1	= 10000;
+
+		setdrawmethod(NULL(),0,256,256,0,0,0,0);
+		drawsprite(getglobalvar("charIcon1"), xPos+xAdd, yPos1, layer1); //PLAYER CHARACTER ICON OVERLAY
+	}
 }
