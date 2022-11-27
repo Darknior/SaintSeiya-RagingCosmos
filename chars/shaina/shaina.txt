@@ -38,12 +38,15 @@ atchain 	1 2 3 4 5 6# Attaque combo de base (anim attack 1, puis 2...)
 
 icon       	data/chars/shaina/icon.png
 
+## CUSTOM BOSS LIFEBAR
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+nolife 1
+ondrawscript	data/scripts/lifebar.c
+
 #weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 shaina
 
 
 animationscript	data/scripts/player.c
-ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
-script	data/scripts/blink_select.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Météores de Pégase

@@ -6,7 +6,7 @@ load dialogbox
 
 anim idle
 	delay 	2
-	offset    100 0
+	offset    100 15
 	summonframe 0 0 0 0 0
 	custentity dialogbox
 	delay	  500	

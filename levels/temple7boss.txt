@@ -24,7 +24,7 @@ at          0
 
 #spawn       libra2
 #alias       WEAPON
-#coords      640 425
+#coords      640 325
 #at          0
 
 #spawn       libra3
@@ -39,7 +39,7 @@ at          0
 
 #spawn       libra5
 #alias       WEAPON
-#coords      760 425
+#coords      760 325
 #at          0
 
 #spawn       libra6
@@ -53,6 +53,7 @@ at          0
 #at          0
 
 spawn           cube
+alias       Hyoga____Ice____Coffin
 boss 			1
 coords          650 400
 at              0
@@ -64,7 +65,7 @@ at              0
 
 spawn           balance_dialog
 flip			1
-coords          300 50
+coords          300 115
 at              1
 
 group 1 1
@@ -73,7 +74,7 @@ at 0
 spawn           balance_dialog2
 boss 			1
 flip			1
-coords          300 50
+coords          300 115
 at              1
 
 wait

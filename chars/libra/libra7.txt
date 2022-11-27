@@ -13,7 +13,7 @@ typeshot	  0
 anim	idle
 	loop	1
 	delay	20
-	offset	25 6
+	offset	250 90
 
 
 	bbox.position.x -2

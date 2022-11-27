@@ -12,6 +12,7 @@ anim	idle
 	loop	1
 	delay	4
 	offset	-50 35
+        hitflash aphrodite_rose_explosion
 	drawmethod alpha 1
 	attack1 0 0 150 150 10 0 0 0 12 12
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose1.png

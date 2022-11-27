@@ -214,6 +214,7 @@ know    arma0-3         data/chars/LIBRA/arma0-3.txt
 know    arma0-4         data/chars/LIBRA/arma0-4.txt
 
 load    cassios        data/chars/cassios/cassios.txt
+load    cassiosp        data/chars/cassios/cassiosp.txt
 load    cassios_rescue  data/chars/cassios/cassios_rescue.txt
 
 ## PEGASUS / SEIYA
@@ -387,7 +388,7 @@ know    saga            data/chars/saga/saga.txt
 know    SHAKA           data/chars/SHAKA/00_SHAKA.txt
 know    SHURA           data/chars/SHURA/00_shura.txt
 
-know    CUBE            data/chars/CUBE/CUBE.txt
+know    cube            data/chars/CUBE/CUBE.txt
 
 know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
 

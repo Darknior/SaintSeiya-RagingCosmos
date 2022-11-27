@@ -13,10 +13,10 @@ void main()
 	int yPos			= y-openborvariant("ypos");
 	int portraitLeft	= xPos+21;
 	int portraitRight	= xPos+302;
-	int yPortrait		= yPos+12;
+	int yPortrait		= yPos+27;
 	int textLeft		= xPos+27;
 	int textRight		= xPos+114;
-	int lineStart		= yPos+18;
+	int lineStart		= yPos+33;
 	int lineAdd			= 18;
 	int textLayer		= 1001;
 	int spriteLayer		= 1000000001;
@@ -26,7 +26,7 @@ void main()
 	int boxWidth		= 376;
 	int boHeight		= 91;
 	int xBox			= xPos+12;
-	int yBox			= yPos+5;
+	int yBox			= yPos+20;
 	int font			= 5;
 	int xPortrait;
 	int xText;

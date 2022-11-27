@@ -10,6 +10,11 @@ dust		round_dustB
 
 icon		data/chars/saga/icon.png
 
+## CUSTOM BOSS LIFEBAR
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+nolife 1
+ondrawscript	data/scripts/lifebar.c
+
 gfxshadow	1
 hitenemy    1 0
 blockodds 	1

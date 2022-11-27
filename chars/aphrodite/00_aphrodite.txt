@@ -18,6 +18,11 @@ escapehits  2
 nodieblink 	3
 falldie		2
 
+## CUSTOM BOSS LIFEBAR
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+nolife 1
+ondrawscript	data/scripts/lifebar.c
+
 atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
@@ -310,7 +315,7 @@ anim jumpattack # Attaque sautée statique
 	attack1 57 76 98 45 10 1 0 0 5 12
 	frame	data/chars/aphrodite/jumpattack2.png
 
-anim special # Défense spéciale carnivore roses
+anim special # Défense spéciale rose explosion
 	delay	10
 	offset	45 144
 	sound data/chars/aphrodite/02.wav
@@ -337,6 +342,7 @@ anim freespecial2 #Blue Rose shot
 	range 200 400
 	delay	10
 	offset	59 144
+	hitflash flashmedium
 	energycost  15 1 0
         @cmd 	spawnbind "aphrodite_poissons" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/aphrodite/special15.png

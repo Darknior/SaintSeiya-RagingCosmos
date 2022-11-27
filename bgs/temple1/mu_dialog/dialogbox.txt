@@ -6,7 +6,7 @@ setlayer 200
 
 
 anim idle
-	offset   100 0
+	offset   100 15
 	drawmethod  alpha 6
 	drawmethod channel 0.75	
 	frame data/bgs/temple1/mu_dialog/dialogbox.png

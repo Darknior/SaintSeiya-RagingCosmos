@@ -10,6 +10,7 @@ anim	idle
 	loop	0
 	delay	10
 	offset	-69 30
+        hitflash aphrodite_rose_explosion
 	attack1 31 0 100 30 30 1 0 0 0 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield1.png
 	attack1 0
