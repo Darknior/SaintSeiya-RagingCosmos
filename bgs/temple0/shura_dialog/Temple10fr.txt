@@ -1,0 +1,38 @@
+TEMPLE10:
+-INTRO-
+
+Shiryu:
+Te voilà chevalier!
+Pourquoi ne nous a tu pas combattus à l'intérieur de ton temple?
+
+Shura:
+Je suis Shura, chevalier d'or du capricorne!Je suis
+le plus fidèle serviteur d'Athéna!
+
+Shura:
+Crois-tu vraiment que j'aurais pris le risque de salir
+la statue d'Athéna à l'intérieur de mon temple?
+
+Shiryu:
+Comment peux-tu dire des bêtises pareilles! Saori Kido est
+la réincarnation d'Athéna! Tu te trompes d'enemi, nous essayoons de la sauver!
+
+Shura:
+Vous êtes des usurpateurs avec votre fausse Athéna! Vous méritez la
+mort pour dire autant de blasphèmes!
+
+END OF LEVEL
+
+Shiryu:
+Tu ne me laisses pas le choix, le seul moyen de te vaincre est d'utiliser la technique
+interdite de l'ultime dragon!
+
+Shura:
+La technique de l'ultime dragon? C'est ridicule, tu vas te sacrifier pour me battre?
+
+Shiryu:
+Oui je te l'avais bien dit... Je peux mourir dans ce combat...
+mais saches une chose...
+un dragon ne meurt jamais seul!!
+
+Cinematic in Webm

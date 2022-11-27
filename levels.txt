@@ -76,6 +76,17 @@ e4icon      607 115
 ##-----------------------------------------------------
 ##-----------------------------------------------------
 
+set         Temple_0_Tremi
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           378 484
+file        data/levels/temple0.txt
+
 set         Temple_1_Mu
 maxplayers  1
 lives       1
