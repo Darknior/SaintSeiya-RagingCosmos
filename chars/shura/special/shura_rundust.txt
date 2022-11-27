@@ -2,7 +2,7 @@ name	shura_rundust
 type	none
 candamage player
 shadow	0
-setlayer 9500
+setlayer 70
 antigravity 100
 remove 0
 animationscript	data/scripts/player.c

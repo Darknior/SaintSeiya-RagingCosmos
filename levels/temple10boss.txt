@@ -3,9 +3,9 @@ music       data/music/MSC-tragic.ogg
 panel       data/bgs/temple10/temple10_panel.png 
 bglayer     data/bgs/temple10/temple10_back.png        0.9 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple10/temple10_bglayer.png      0.3 1 0 0 0 0 1 9999 1 0
-fglayer     data/bgs/temple10/temple10_cloudA.png        -150 -0.4 0 0 -200 0 0 -1 -1 1 1 0 0 0 0 0 1
-fglayer     data/bgs/temple10/temple10_cloudB.png        -25 -0.4 0 0 -200 0 0 -1 -1 1 1 0 0 0 0 0 1
-
+fglayer     data/bgs/temple10/temple10_cloudA.png        -150 -0.4 0 0 -200 0 0 -1 -1 1 1 0 0 0 0 1
+fglayer     data/bgs/temple10/temple10_cloudB.png        -25 -0.4 0 0 -200 0 0 -1 -1 1 1 0 0 0 0 2
+bgspeed 1 0
 
 order       a
 direction   both
