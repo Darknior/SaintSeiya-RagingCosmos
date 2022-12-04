@@ -1,8 +1,17 @@
+#import "data/scripts/lifebar.c"
+
 void main()
+{
+	drawCube();
+	lifeBar();
+}
+
+void drawCube()
 {
 	void self = getlocalvar("self");
 	void rightSprite;
 	void leftSprite;
+	float time	= openborvariant("elapsed_time");
 	float xPos	= openborvariant("xpos");
 	float yPos	= openborvariant("ypos");
 	float offsetX = 232;
@@ -59,19 +68,14 @@ void main()
 	//DRAW SPRITES ONLY IF THE CUBE IS "ALIVE"
 	if(!dead){
 
-		//WHITE BLINK EFFECT AT EVERY DAMAGE DURING THE "PAIN" ANIMATION
+		//SHAKE EFFECT AT EVERY DAMAGE DURING THE "PAIN" ANIMATION
 		if(getentityproperty(self, "aiflag", "inpain")){
-			changedrawmethod(NULL(), "enabled", 1);
-			changedrawmethod(NULL(), "tintmode", 1);
-			changedrawmethod(NULL(), "tintcolor", rgbcolor(0xDD, 0xDD, 0xDD)); //WHITE COLOR
-		}
-		else
-		{
-			changedrawmethod(NULL(), "enabled", 0);
+			if(time%2 == 0){sprX = sprX+2;}
 		}
 
 		//DRAW ALL SPRITES
 		float zFix = 35;
+		changedrawmethod(NULL(), "enabled", 0);
 		drawsprite(rightSprite, sprX, sprY, Pz+zFix);
 		drawsprite(leftSprite, sprX, sprY, Pz+zFix);
 
@@ -81,7 +85,7 @@ void main()
 
 		if(damageL == NULL()){txt1 = 0;}else{txt1 = damageL;}
 		if(damageR == NULL()){txt2 = 0;}else{txt2 = damageR;}
-		// drawstring(textX-100, textY, 0, txt1, layer);
-		// drawstring(textX+100, textY, 0, txt2, layer);
+		drawstring(textX-100, textY, 0, txt1, layer);
+		drawstring(textX+100, textY, 0, txt2, layer);
 	}
 }

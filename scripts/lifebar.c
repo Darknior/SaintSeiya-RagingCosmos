@@ -1,4 +1,9 @@
 void main()
+{
+	lifeBar();
+}
+
+void lifeBar()
 {//Script used to manage bosses hud properties
 	void self	= getlocalvar("self");
 	int dead	= getentityproperty(self, "dead");
