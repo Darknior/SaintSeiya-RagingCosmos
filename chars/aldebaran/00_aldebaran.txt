@@ -37,6 +37,7 @@ load aldebaran_super_lights
 load aldebaran_rock
 load aldebaran_fist
 load camus_lights
+load shaina electricity
 
 #----------------------------------------------------------
 anim spawn
@@ -672,6 +673,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 anim	block
 	offset	37 164
 	bbox 19 13 38 151
+        block.flash shaina electricity
 	frame	data/chars/aldebaran/block1.png
 	frame	data/chars/aldebaran/block2.png
 	frame	data/chars/aldebaran/block3.png	

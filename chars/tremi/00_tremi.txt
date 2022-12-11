@@ -55,7 +55,10 @@ load tremi_multiarrow
 anim spawn
 	delay	30
 	offset	141 120
-	frame	data/chars/tremi/spawn1.png
+	@cmd spawnFade "in" 0 0 0 10000000001 0.25
+	frame	data/chars/tremi/spawn0.png
+	@cmd spawnDialog "dialog_tremi1" 200 100
+	frame	data/chars/tremi/spawn0.png
 	frame	data/chars/tremi/spawn1.png
 	delay	10
 	frame	data/chars/tremi/spawn2.png	

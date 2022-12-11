@@ -1,0 +1,65 @@
+name			dialog_tremi1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 -15
+	@cmd setVar "lockButton" 1
+	frame	data/chars/dialogs/empty.png
+
+		delay	500
+	@cmd setVar "line1" "Welcome to the sanctuary Miss Kido."
+	@cmd setVar "line2" "We were waiting for you..."
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "tremi1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "We have to meet the Great Pope!"
+	@cmd setVar "line2" "I want to reason with him before it's"
+	@cmd setVar "line3" "too late and a war breaks out!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "athena1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "The only way to get to the Pope's"
+	@cmd setVar "line2" "chamber is to take these stairs and"
+	@cmd setVar "line3" "cross the 12 houses of the zodiac..."
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "tremi1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "However..."
+	@cmd setVar "line2" ""
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "tremi1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "You won't ever reach the first house!!"
+	@cmd setVar "line2" "Ahaha!!"
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "tremi1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png
