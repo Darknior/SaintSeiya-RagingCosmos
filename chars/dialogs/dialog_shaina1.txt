@@ -1,0 +1,41 @@
+name			dialog_shaina1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 -15
+	@cmd setVar "lockButton" 0
+	frame	data/chars/dialogs/empty.png
+
+		delay	400
+	@cmd setVar "line1" "How dare you come here to the"
+	@cmd setVar "line2" "sanctuary! We both have a revenge"
+	@cmd setVar "line3" "to take;  it's my student cassios "
+	@cmd setVar "line4" "who deserved the pegasus armor!"
+	@cmd setVar "portraitName" "shaina1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Saina of Ophiuchus! interesting to"
+	@cmd setVar "line2" "see some silver knights around"
+	@cmd setVar "line3" "Here! I see that your resentment is"
+	@cmd setVar "line4" "tenacious!"
+	@cmd setVar "portraitName" "seiya3"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

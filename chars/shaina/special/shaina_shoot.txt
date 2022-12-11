@@ -13,7 +13,7 @@ anim	idle
         hitflash shaina_electricity
 	drawmethod alpha 1
 	attack 20 8 50 50 15 12 0 0 0 20
-	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-34.png
+	quakeframe	data/chars/shaina/special/shaina_shoot/shaina_shoot-34.png 13 5
 	attack 0
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-35.png
 	attack 20 8 50 50 15 12 0 0 0 20

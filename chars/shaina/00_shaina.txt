@@ -65,7 +65,10 @@ load aldebaran_fist
 anim spawn
 	delay	10
 	offset	41 128
+	@cmd spawnFade "in" 0 0 0 10000000001 0.25
+	frame	data/chars/shaina/spawn1.png
 	sound data/chars/shaina/03-welcome.wav
+	@cmd spawnDialog "dialog_shaina1" 200 100
 	frame	data/chars/shaina/spawn1.png
 	frame	data/chars/shaina/spawn2.png
 	frame	data/chars/shaina/spawn3.png

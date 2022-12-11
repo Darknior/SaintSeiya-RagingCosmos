@@ -3,7 +3,6 @@ music		data/music/Heated_Saints.ogg
 
 panel		data/bgs/ROOMS/temple6.png 
 
-frontpanel                   data/bgs/ROOMS/templerock6.png
 
 background                 data/bgs/ROOMS/sky003.png
 
