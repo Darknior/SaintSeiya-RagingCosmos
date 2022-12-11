@@ -2,21 +2,24 @@ name	shaina_venom
 type	none
 shadow	0
 setlayer 778
+remove 0
 antigravity 100
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
-	delay	5
-	offset	170 78
+	delay	8
+	offset	170 161
+        hitflash shaina_electricity
 	drawmethod alpha 1
-	frame	data/chars/shaina/special/venom1.png
-	frame	data/chars/shaina/special/venom2.png
-	frame	data/chars/shaina/special/venom3.png
-	frame	data/chars/shaina/special/venom4.png
-	frame	data/chars/shaina/special/venom5.png
-	frame	data/chars/shaina/special/venom6.png
-	frame	data/chars/shaina/special/venom7.png
-	frame	data/chars/shaina/special/venom8.png
-	frame	data/chars/shaina/special/venom9.png
-	frame	data/chars/shaina/special/venom10.png
-	frame	data/chars/shaina/special/venom11.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-54.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-55.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-56.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-57.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-58.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-59.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-60.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-61.png
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-62.png
+	@cmd suicide
+	frame	data/chars/shaina/special/shaina_venom/shaina_venom-62.png

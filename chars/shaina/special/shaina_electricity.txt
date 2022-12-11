@@ -1,0 +1,30 @@
+name	shaina_electricity
+type	none
+shadow	0
+setlayer 778
+remove 0
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	8
+	offset	51 251
+	drawmethod alpha 1
+	sound data/chars/shaina/06-storm.wav
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-20.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-21.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-22.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-23.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-24.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-25.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-26.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-27.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-28.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-29.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-30.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-31.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-32.png
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-33.png
+	@cmd suicide
+	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-33.png

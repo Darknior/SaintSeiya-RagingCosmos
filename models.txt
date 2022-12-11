@@ -182,6 +182,9 @@ know    marin_eagle   		data/chars/marin/special/marin_eagle.txt
 know    marin_multipunch   	data/chars/marin/special/marin_multipunch.txt
 
 know    shaina_venom   		data/chars/shaina/special/shaina_venom.txt
+know    shaina_storm   		data/chars/shaina/special/shaina_storm.txt
+know    shaina_shoot   		data/chars/shaina/special/shaina_shoot.txt
+know    shaina_electricity   		data/chars/shaina/special/shaina_electricity.txt
 
 know    knife  		data/chars/great_pope/special/knife.txt
 
@@ -324,7 +327,7 @@ load    WNARMA6         data/chars/WOLF-NACHI/WNARMA6.txt
 
 ## EAGLE / MARIN
 
-load    marin     		data/chars/marin/marin.txt
+load    marin     		data/chars/marin/00_marin.txt
 load    EAGLE-MARIN     data/chars/EAGLE-MARIN/EAGLE-MARIN.txt
 load    EMARMA0         data/chars/EAGLE-MARIN/EMARMA0.txt
 load    EMARMA1         data/chars/EAGLE-MARIN/EMARMA1.txt
@@ -334,7 +337,7 @@ load    EMARMA4         data/chars/EAGLE-MARIN/EMARMA4.txt
 load    EMARMA5         data/chars/EAGLE-MARIN/EMARMA5.txt
 load    EMARMA6         data/chars/EAGLE-MARIN/EMARMA6.txt
 
-load    shaina     		data/chars/shaina/shaina.txt
+load    shaina     		data/chars/shaina/00_shaina.txt
 
 
 ## PNJ ##

@@ -1,5 +1,5 @@
 
-music		data/music/music5.bor
+music		data/music/Heated_Saints.ogg
 
 panel		data/bgs/ROOMS/temple6.png 
 

@@ -1,0 +1,44 @@
+name	shaina_shoot
+type	none
+shadow	0
+setlayer 778
+remove 0
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	8
+	offset	0 -30
+        hitflash shaina_electricity
+	drawmethod alpha 1
+	attack 20 8 50 50 15 12 0 0 0 20
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-34.png
+	attack 0
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-35.png
+	attack 20 8 50 50 15 12 0 0 0 20
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-36.png
+	attack 0
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-37.png
+	attack 20 8 50 50 15 12 0 0 0 20
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-38.png
+	attack 0
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-39.png
+	attack 20 8 50 50 15 12 0 0 0 20
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-40.png
+	attack 0
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-41.png
+	attack 20 8 50 50 15 12 0 0 0 20
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-42.png
+	attack 0
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-43.png
+	attack 20 8 50 50 15 12 0 0 0 20
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-44.png
+	attack 0
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-45.png
+	attack 20 8 50 50 15 12 0 0 0 20
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-46.png
+	attack 0
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-47.png
+	@cmd suicide
+	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-47.png

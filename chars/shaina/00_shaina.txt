@@ -10,6 +10,7 @@ aimove      chase
 gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
+dust		round_dustB
 
 speed		20	# Vitesse de déplacement
 running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -54,10 +55,17 @@ com  U a2  	freespecial6 	#Comète de Pégase
 com  D F a1 freespecial5 	#Uppercut
 
 load shaina_venom
+load shaina_storm
+load shaina_electricity
+load shaina_shoot
+load aldebaran_earthquake
+load aldebaran_fist
+
 #----------------------------------------------------------
 anim spawn
 	delay	10
 	offset	41 128
+	sound data/chars/shaina/03-welcome.wav
 	frame	data/chars/shaina/spawn1.png
 	frame	data/chars/shaina/spawn2.png
 	frame	data/chars/shaina/spawn3.png
@@ -126,7 +134,8 @@ anim runattack # Attaque en courant
 	frame	data/chars/shaina/runattack1.png
 	attack2 34 68 86 25 20 1 0 0 5 12
 	frame	data/chars/shaina/runattack2.png
-	frame	data/chars/shaina/runattack3.png		frame	data/chars/shaina/runattack4.png
+	frame	data/chars/shaina/runattack3.png		
+        frame	data/chars/shaina/runattack4.png
 	attack2 0 0 0 0 0 0 0 0 0 0
 	@cmd	dasher 0 0 0 1
 	delay	12
@@ -210,16 +219,17 @@ anim attack6 # Attaque combo 6
 	delay	5
 	offset	52 132
 	bbox 39 20 51 112
-	hitflash flashbig
+	hitflash shaina_electricity
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/shaina/attack61.png
 	frame	data/chars/shaina/attack62.png
 	attack1 52 56 100 26 20 1 0 0 5 12
 	frame	data/chars/shaina/attack63.png
 	frame	data/chars/shaina/attack64.png
+	sound data/chars/shaina/02-laugh.wav
 	frame	data/chars/shaina/attack65.png
 	
-anim special # Multi punch combo
+anim special2 # Multi punch combo
 	delay	10
 	offset	31 132
 	sound data/chars/shaina/02.wav
@@ -244,17 +254,15 @@ anim special # Multi punch combo
 	frame	data/chars/shaina/special23.png
 	
 anim freespecial2 # Attaque spéciale Venin du Serpent
-	range 	130 300
-	rangea 	0 100
+	range 	80 189
+	rangea 	0 70
 	delay	5
 	offset	31 130
 	bbox 32 16 38 114
-	sound data/chars/shaina/10-pierce3.wav
-	summonframe 0 0 0 0
-	subentity shaina_venom
-	unsummonframe 11
+	sound data/chars/shaina/04-rush.wav
+	@cmd 	spawnbind "shaina_venom" "ANI_IDLE" 0 0 0 0 0
 	energycost  20 1 0
-	hitflash flashbig
+	hitflash shaina_electricity
 	forcedirection -1
 	@cmd	dasher 4 0 0 1
 	attack5 60 16 55 83 10 0 0 0 5 12
@@ -277,6 +285,23 @@ anim freespecial2 # Attaque spéciale Venin du Serpent
 	frame	data/chars/shaina/special24.png
 	frame	data/chars/shaina/special23.png
 	frame	data/chars/shaina/special23.png	
+
+anim freespecial3 #Cobra shoot
+	fastattack 1
+	forcedirection -1
+	range 190 300
+	delay	15
+	offset	43 131
+	energycost  15 1 0
+	sound data/chars/shura/08-sword.wav
+	frame	data/chars/shaina/attack31.png
+	frame	data/chars/shaina/attack32.png
+	frame	data/chars/shaina/attack33.png
+	frame	data/chars/shaina/attack34.png
+	@cmd	shooter "shaina_shoot" 0 80 0 2 0 0
+	frame	data/chars/shaina/attack35.png
+	frame	data/chars/shaina/attack36.png
+	frame	data/chars/shaina/attack37.png
 
 anim jump # Saut Statique
 	delay	10
@@ -390,3 +415,36 @@ anim	block
 	frame	data/chars/shaina/block1.png
 	frame	data/chars/shaina/block2.png
 	frame	data/chars/shaina/block3.png
+
+
+anim special # Cobra Storm
+	delay	10
+	offset	22 138
+	sound data/chars/shaina/02-swing.wav
+        hitflash shaina_electricity
+	frame	data/chars/shaina/special1.png
+	@cmd 	spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 0 0 1 0	  
+	frame	data/chars/shaina/special1.png
+	frame	data/chars/shaina/special2.png
+	frame	data/chars/shaina/special3.png
+	attack5 -28 -12 120 180 30 1 0 0 5 12
+        dot 0 800 1 10 50
+	dropv 	8.0 3 0	
+	sound data/chars/aldebaran/09-earthquake2.wav
+	frame	data/chars/shaina/special4.png
+	delay	20
+	frame	data/chars/shaina/special5.png
+	@cmd 	spawnbind "shaina_storm" "ANI_IDLE" 0 0 0 1 0	
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	sound data/chars/aldebaran/08-earthquake.wav
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
+	frame	data/chars/shaina/special6.png
