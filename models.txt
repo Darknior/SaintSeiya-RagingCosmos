@@ -184,7 +184,10 @@ know    marin_multipunch   	data/chars/marin/special/marin_multipunch.txt
 know    shaina_venom   		data/chars/shaina/special/shaina_venom.txt
 know    shaina_storm   		data/chars/shaina/special/shaina_storm.txt
 know    shaina_shoot   		data/chars/shaina/special/shaina_shoot.txt
-know    shaina_electricity   		data/chars/shaina/special/shaina_electricity.txt
+know    shaina_electricity  data/chars/shaina/special/shaina_electricity.txt
+
+know    tremi_arrow   		data/chars/tremi/special/tremi_arrow.txt
+know    tremi_multiarrow   	data/chars/tremi/special/tremi_multiarrow.txt
 
 know    knife  		data/chars/great_pope/special/knife.txt
 
@@ -338,7 +341,7 @@ load    EMARMA5         data/chars/EAGLE-MARIN/EMARMA5.txt
 load    EMARMA6         data/chars/EAGLE-MARIN/EMARMA6.txt
 
 load    shaina     		data/chars/shaina/00_shaina.txt
-
+load    tremi     		data/chars/tremi/tremi.txt
 
 ## PNJ ##
 

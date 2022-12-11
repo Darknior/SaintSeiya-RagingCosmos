@@ -1,0 +1,45 @@
+name	tremi_multiarrow
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+lifespan  6
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	10
+	offset	0 20
+	drawmethod alpha 1
+	attack5 0 0 100 50 20 0 0 0 0 20
+	frame	data/chars/tremi/special/multiarrow1.png
+	attack5 0
+	frame	data/chars/tremi/special/multiarrow2.png
+	attack5 0 0 100 50 20 0 0 0 0 20
+	frame	data/chars/tremi/special/multiarrow3.png
+	attack5 0
+	frame	data/chars/tremi/special/multiarrow4.png
+	attack5 0 0 100 50 20 0 0 0 0 20
+	frame	data/chars/tremi/special/multiarrow5.png
+	attack5 0
+	frame	data/chars/tremi/special/multiarrow6.png
+	attack5 0 0 100 50 20 0 0 0 0 20
+	frame	data/chars/tremi/special/multiarrow7.png
+	attack5 0
+	frame	data/chars/tremi/special/multiarrow8.png
+	attack5 0 0 100 50 20 0 0 0 0 20
+	frame	data/chars/tremi/special/multiarrow9.png
+	attack5 0
+	frame	data/chars/tremi/special/multiarrow10.png
+	attack5 0 0 100 50 20 0 0 0 0 20
+	frame	data/chars/tremi/special/multiarrow11.png
+	attack5 0
+	frame	data/chars/tremi/special/multiarrow12.png
+	attack5 0 0 100 50 20 0 0 0 0 20
+	frame	data/chars/tremi/special/multiarrow13.png
+	attack5 0
+	frame	data/chars/tremi/special/multiarrow14.png
+	attack5 0 0 100 50 20 0 0 0 0 20
+	frame	data/chars/tremi/special/multiarrow15.png
+	attack5 0
