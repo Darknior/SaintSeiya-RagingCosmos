@@ -353,6 +353,7 @@ know    rock01          data/chars/OBJ/rock01.txt
 know    roccia2         data/chars/OBJ/roccia2.txt
 know    rock02          data/chars/OBJ/rock02.txt
 
+
 #Enemies
 
 know    malesoldier     data/chars/malesoldier/malesoldier.txt
@@ -371,6 +372,12 @@ know    SOLDIER3        data/chars/SOLDIER3/SOLDIER3.txt
 know    SOLDIER4        data/chars/SOLDIER4/SOLDIER4.txt
 know 	jaki			data/chars/jaki/jaki.txt
 
+#MISC
+
+know    horloge-flame   data/chars/misc/horloge-flame.txt
+know    horloge-segment   data/chars/misc/horloge-segment.txt
+know    horloge-belier   data/chars/misc/horloge-belier.txt
+know    horloge-taureau   data/chars/misc/horloge-taureau.txt
 
 ## GOLD KINGHTS ##
 

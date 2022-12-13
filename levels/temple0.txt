@@ -23,6 +23,18 @@ spawn1      60 30
 
 #-------------------------------------
 
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-belier
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
 spawn           tremi
 boss 			1
 coords          650 390

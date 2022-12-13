@@ -12,7 +12,7 @@ order	a
 
 direction both
 
-settime 0
+settime 90
 
 cameratype 0
 
@@ -25,6 +25,18 @@ spawn1  400 30
 
 #-------------------------------------
 
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-belier
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
 spawn mu
 coords	594 319
 at 0
@@ -32,7 +44,7 @@ at 0
 spawn mu_dialog
 health 400051
 flip 1
-coords	400 51
+coords	400 0
 at 0
 
 group 1 1

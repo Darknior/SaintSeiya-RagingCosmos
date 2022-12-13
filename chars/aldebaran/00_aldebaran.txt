@@ -41,11 +41,12 @@ load shaina electricity
 
 #----------------------------------------------------------
 anim spawn
-	delay	10
 	offset	231 162
 	@cmd spawnFade "in" 0 0 0 10000000001 0.25
         sound data/chars/aldebaran/04-voice1.wav
+	delay	100
 	frame	data/chars/aldebaran/spawn8.png
+	delay	10
 	frame	data/chars/aldebaran/spawn7.png
 	frame	data/chars/aldebaran/spawn6.png
 	frame	data/chars/aldebaran/spawn5.png

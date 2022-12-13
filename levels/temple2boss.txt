@@ -4,7 +4,7 @@ panel           data/bgs/temple2/templeboss.png
 
 order           a
 direction       both
-settime         0
+settime         60
 
 cameratype      0
 light        256 -44
@@ -15,6 +15,18 @@ at        0
 spawn1          60 30
 
 #-- BOSS -----------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-taureau
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
 
 spawn           aldebaran
 health		500

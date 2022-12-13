@@ -14,7 +14,7 @@ shadowalpha     6
 at        0
 direction right
 
-settime 0
+settime 100
 
 order	a
 
@@ -34,7 +34,6 @@ noshare 1
 credits 1
 cansave 0
 nodebug 1
-notime 1
 nosave 1
 blocked 1
 nosame 1
@@ -44,6 +43,18 @@ completebg 1
 
 
 -------------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-taureau
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
 
 spawn       temple2roadcolumns
 coords      0 0

@@ -17,7 +17,7 @@ completebg  0        # Ecran de fin de niveau personnalisé data/bgs/complete.gi
 lbarsize    150 9 1 1 0 -500 -500 1 -500
 mpbarsize   100 9 1 1 0 -500 -500 1 -500
 olbarsize   75 9 1 1 0 -500 -500 1 -500
-timeloc     136 5 21 20 0
+timeloc     138 52 21 20 1
 
 p1score     57  33 999 999 57  43
 p1lifex     160 70 7

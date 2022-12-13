@@ -14,7 +14,7 @@ anim spawn
 anim idle
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog1.png
@@ -24,7 +24,7 @@ anim idle
 anim follow1
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog2.png
@@ -34,7 +34,7 @@ anim follow1
 anim follow2
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog3.png
@@ -44,7 +44,7 @@ anim follow2
 anim follow3
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog4.png
@@ -54,7 +54,7 @@ anim follow3
 anim follow4
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog5.png
@@ -64,7 +64,7 @@ anim follow4
 anim follow5
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog6.png
@@ -74,7 +74,7 @@ anim follow5
 anim follow6
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog7.png
@@ -84,7 +84,7 @@ anim follow6
 anim follow7
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog8.png
@@ -94,7 +94,7 @@ anim follow7
 anim follow8
     loop 1
 	delay     2
-	offset    0 0
+	offset    0 -115
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog9.png
