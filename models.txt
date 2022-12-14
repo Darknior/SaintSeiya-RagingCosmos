@@ -231,15 +231,7 @@ load    seiya           data/chars/seiya/00_seiya.txt
 
 ## DRAGON / SHIRYU
 
-know    dragonsuper     data/chars/DRAGON-SHIRYU/dragonsuper.txt
-load    DRAGON-SHIRYU   data/chars/DRAGON-SHIRYU/DRAGON-SHIRYU.txt
-load    DSARMA0         data/chars/DRAGON-SHIRYU/DSARMA0.txt
-load    DSARMA1         data/chars/DRAGON-SHIRYU/DSARMA1.txt
-load    DSARMA2         data/chars/DRAGON-SHIRYU/DSARMA2.txt
-load    DSARMA3         data/chars/DRAGON-SHIRYU/DSARMA3.txt
-load    DSARMA4         data/chars/DRAGON-SHIRYU/DSARMA4.txt
-load    DSARMA5         data/chars/DRAGON-SHIRYU/DSARMA5.txt
-load    DSARMA6         data/chars/DRAGON-SHIRYU/DSARMA6.txt
+load    shiryu           data/chars/shiryu/00_shiryu.txt
 
 ## CYGNUS - HYOGA
 
