@@ -1,0 +1,28 @@
+name	shiryu_dragon_water
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+offscreenkill 635
+lifespan  6
+
+anim	idle
+	loop	1 4 6
+	fastattack 1
+	delay	5
+	offset	340 215
+	drawmethod alpha 1
+	attack5 264 140 160 80 20 0 0 0 0 20
+	frame	data/chars/shiryu/special/shiryu_dragon_water/dragon_water1.png
+	attack5 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/shiryu/special/shiryu_dragon_water/dragon_water2.png
+	attack5 264 140 160 80 20 0 0 0 0 20
+	frame	data/chars/shiryu/special/shiryu_dragon_water/dragon_water3.png
+	attack5 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/shiryu/special/shiryu_dragon_water/dragon_water4.png
+	delay	20
+	attack5 264 140 160 80 20 0 0 0 0 20
+	frame	data/chars/shiryu/special/shiryu_dragon_water/dragon_water5.png
+	attack5 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/shiryu/special/shiryu_dragon_water/dragon_water6.png

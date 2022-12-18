@@ -94,7 +94,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  shiryu
+skipselect  seiya
 z           378 484
 file        data/levels/temple1.txt
 
@@ -105,7 +105,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  shiryu
 z           378 484
 file        data/levels/temple2.txt
 
