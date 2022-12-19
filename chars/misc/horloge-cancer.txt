@@ -1,4 +1,4 @@
-name	horloge-belier
+name	horloge-cancer
 type    panel
 shadow    0
 setlayer 8000
@@ -9,12 +9,13 @@ subject_to_gravity 0
 subject_to_obstacle 0
 subject_to_platform 0
 
+
 anim	idle
 	loop	1
-	delay	10
-	offset	34 18
+	delay	2000
+	offset	34 17
 	drawmethod scale 1 1
 	drawmethod alpha 6
         drawmethod channel 0.99
-	frame	data/chars/misc/horloge-constellations/belier.png
-	frame	data/chars/misc/horloge-constellations/belier.png	
+	frame	data/chars/misc/horloge-constellations/cancer.png
+	frame	data/chars/misc/horloge-constellations/cancer.png

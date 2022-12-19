@@ -4,7 +4,7 @@ panel           data/bgs/temple5/layer2.png
 offscreenkill 10000
 order           a
 direction       both
-settime         0
+settime         99
 
 cameratype      0
 light           256 -44
@@ -16,6 +16,22 @@ spawn1          60 30
 
 
 #-- LEVEL -----------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-lion
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
 
 spawn       temple5columns
 coords      0 0

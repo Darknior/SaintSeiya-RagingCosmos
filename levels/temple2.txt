@@ -56,6 +56,10 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
+spawn       time-is-up
+coords      368 89
+at          0
+
 spawn       temple2roadcolumns
 coords      0 0
 at          0

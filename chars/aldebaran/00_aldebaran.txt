@@ -674,7 +674,6 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 anim	block
 	offset	37 164
 	bbox 19 13 38 151
-        block.flash shaina electricity
 	frame	data/chars/aldebaran/block1.png
 	frame	data/chars/aldebaran/block2.png
 	frame	data/chars/aldebaran/block3.png	

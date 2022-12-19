@@ -4,7 +4,7 @@ panel           data/bgs/temple7/temple7_ground.png
 
 order           a
 direction       both
-settime         0
+settime         99
 
 cameratype      0
 light           256 -44
@@ -17,6 +17,22 @@ spawn1      60 30
 load cube       3
 load libra_box  3
 #-------------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-balance
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
 
 spawn       temple7columns
 coords      0 0

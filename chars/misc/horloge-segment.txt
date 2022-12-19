@@ -1,7 +1,7 @@
 name	horloge-segment
 type    panel
 shadow    0
-setlayer 1
+setlayer 7000
 speed 10
 no_adjust_base  0
 noquake        1 1
@@ -16,5 +16,5 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 6
         drawmethod channel 0.99
-	frame	data/chars/misc/horloge-segment/belier.png
-	frame	data/chars/misc/horloge-segment/belier.png	
+	frame	data/chars/misc/horloge-segment/horloge-segment.png
+	frame	data/chars/misc/horloge-segment/horloge-segment.png	
