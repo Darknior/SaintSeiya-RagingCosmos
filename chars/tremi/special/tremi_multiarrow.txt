@@ -11,35 +11,36 @@ anim	idle
 	fastattack 1
 	delay	6
 	offset	0 20
+        hitflash tremi_arrow_pierce
 	drawmethod alpha 1
 	attack5 0 0 100 50 20 0 0 0 0 20
-	frame	data/chars/tremi/special/multiarrow1.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow1.png
 	attack5 0
-	frame	data/chars/tremi/special/multiarrow2.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow2.png
 	attack5 0 0 100 50 20 0 0 0 0 20
-	frame	data/chars/tremi/special/multiarrow3.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow3.png
 	attack5 0
-	frame	data/chars/tremi/special/multiarrow4.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow4.png
 	attack5 0 0 100 50 20 0 0 0 0 20
-	frame	data/chars/tremi/special/multiarrow5.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow5.png
 	attack5 0
-	frame	data/chars/tremi/special/multiarrow6.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow6.png
 	attack5 0 0 100 50 20 0 0 0 0 20
-	frame	data/chars/tremi/special/multiarrow7.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow7.png
 	attack5 0
-	frame	data/chars/tremi/special/multiarrow8.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow8.png
 	attack5 0 0 100 50 20 0 0 0 0 20
-	frame	data/chars/tremi/special/multiarrow9.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow9.png
 	attack5 0
-	frame	data/chars/tremi/special/multiarrow10.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow10.png
 	attack5 0 0 100 50 20 0 0 0 0 20
-	frame	data/chars/tremi/special/multiarrow11.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow11.png
 	attack5 0
-	frame	data/chars/tremi/special/multiarrow12.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow12.png
 	attack5 0 0 100 50 20 0 0 0 0 20
-	frame	data/chars/tremi/special/multiarrow13.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow13.png
 	attack5 0
-	frame	data/chars/tremi/special/multiarrow14.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow14.png
 	attack5 0 0 100 50 20 0 0 0 0 20
-	frame	data/chars/tremi/special/multiarrow15.png
+	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow15.png
 	attack5 0

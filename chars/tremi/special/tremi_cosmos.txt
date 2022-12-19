@@ -1,0 +1,28 @@
+name	tremi_cosmos
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	66 113
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos1.png
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos1.png
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos1.png
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos1.png
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos1.png
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos6.png
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos7.png
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos8.png
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos8.png
+	@cmd suicide
+	frame	data/chars/tremi/special/tremi_cosmos/tremi_cosmos8.png
+
+
+
+

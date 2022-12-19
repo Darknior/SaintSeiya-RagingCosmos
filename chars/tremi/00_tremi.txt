@@ -51,6 +51,12 @@ animationscript	data/scripts/player.c
 script	data/scripts/blink_select.c
 
 load tremi_multiarrow
+load tremi_dash
+load tremi_circle
+load tremi_arrow_pierce
+load tremi_cosmos
+load tremi_slash
+
 #----------------------------------------------------------
 anim spawn
 	delay	250
@@ -136,10 +142,12 @@ anim runattack # Attaque en courant
 	delay	6
 	offset	50 119
 	bbox 18 7 52 112
+	hitflash tremi_slash
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	frame	data/chars/tremi/runattack1.png
 	frame	data/chars/tremi/runattack2.png
+	@cmd 	spawnbind "tremi_dash" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/tremi/runattack3.png
 	attack2 31 43 86 25 20 1 0 0 5 12
 	frame	data/chars/tremi/runattack4.png
@@ -148,8 +156,13 @@ anim runattack # Attaque en courant
 	attack2 0 0 0 0 0 0 0 0 0 0
 	@cmd	dasher 0 0 0 1
 	delay	12
-	frame	data/chars/tremi/runattack2.png
-	frame	data/chars/tremi/runattack1.png
+	frame	data/chars/tremi/runattack7.png
+	frame	data/chars/tremi/runattack8.png
+	frame	data/chars/tremi/runattack9.png
+	frame	data/chars/tremi/runattack10.png
+	frame	data/chars/tremi/runattack11.png
+	frame	data/chars/tremi/runattack12.png
+	frame	data/chars/tremi/runattack13.png
 
 anim get
 	delay	1
@@ -234,7 +247,54 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/tremi/attack64.png
 	frame	data/chars/tremi/attack65.png	
 	
-anim special # Arrow defense
+anim special # tremi Jumping
+	delay	5
+	offset	80 141
+	sound data/chars/tremi/04-skywalk.wav
+	hitflash tremi_slash
+	frame	data/chars/tremi/jump1.png
+	offset	80 161
+	frame	data/chars/tremi/jump1.png
+	offset	80 181
+	frame	data/chars/tremi/jump1.png
+	offset	80 201
+	frame	data/chars/tremi/jump2.png
+	offset	80 221
+	frame	data/chars/tremi/jump3.png
+	offset	80 241
+	frame	data/chars/tremi/jump4.png
+	attack5 74 1 120 180 30 1 0 0 5 12
+	dropv 	8.0 3 0
+	delay	10
+	frame	data/chars/tremi/jumpattack10.png
+	delay	10
+	frame	data/chars/tremi/jumpattack11.png
+	@cmd 	spawnbind "tremi_circle" "ANI_IDLE" 0 0 0 0 0
+	delay	10
+	frame	data/chars/tremi/jumpattack12.png
+	delay	10
+	frame	data/chars/tremi/jumpattack13.png
+	delay	10
+	frame	data/chars/tremi/jumpattack14.png
+	frame	data/chars/tremi/jumpattack15.png
+	frame	data/chars/tremi/jumpattack16.png
+	delay	10
+	frame	data/chars/tremi/jumpattack17.png
+	delay	10
+	frame	data/chars/tremi/jumpattack18.png
+	delay	5
+	offset	80 221
+	frame	data/chars/tremi/jump3.png
+	offset	80 201
+	frame	data/chars/tremi/jump3.png
+	offset	80 181
+	frame	data/chars/tremi/jump3.png
+	offset	80 161
+	frame	data/chars/tremi/jump3.png
+	offset	80 141
+	frame	data/chars/tremi/jump3.png
+
+anim special3 # Arrow defense
 	delay	10
 	offset	52 119
 	sound data/chars/tremi/02.wav
@@ -286,8 +346,8 @@ anim freespecial # Arrow defense
 	
 anim freespecial2 # Multi arrow projectile
 	delay	10
-	offset	46 119
-	sound data/chars/tremi/02.wav
+	offset	82 117
+	sound data/chars/tremi/03-special.wav
 	range 	130 300
 	rangea 	0 100
 	#summonframe 0 0 0 0 0
@@ -296,6 +356,7 @@ anim freespecial2 # Multi arrow projectile
 	energycost  20 1 0
 	hitflash flashbig
 	attack5 -8 -64 100 180 10 1 0 0 5 12
+	@cmd 	spawnbind "tremi_cosmos" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/tremi/special21.png
 	frame	data/chars/tremi/special22.png
 	frame	data/chars/tremi/special23.png
@@ -305,7 +366,34 @@ anim freespecial2 # Multi arrow projectile
 	attack5 28 -57 100 180 10 1 0 0 5 12
 	@cmd	shooter "tremi_multiarrow" 77 60 0 3 0 0
 	frame	data/chars/tremi/special27.png
+	delay	70
 	frame	data/chars/tremi/special28.png	
+
+anim freespecial3 # Attaque en courant
+	delay	6
+	offset	50 119
+	hitflash tremi_slash
+	bbox 18 7 52 112
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/tremi/runattack1.png
+	frame	data/chars/tremi/runattack2.png
+	@cmd 	spawnbind "tremi_dash" "ANI_IDLE" 0 0 0 1 0
+	frame	data/chars/tremi/runattack3.png
+	attack2 31 43 86 25 20 1 0 0 5 12
+	frame	data/chars/tremi/runattack4.png
+	frame	data/chars/tremi/runattack5.png
+	frame	data/chars/tremi/runattack6.png
+	attack2 0 0 0 0 0 0 0 0 0 0
+	@cmd	dasher 0 0 0 1
+	delay	12
+	frame	data/chars/tremi/runattack7.png
+	frame	data/chars/tremi/runattack8.png
+	frame	data/chars/tremi/runattack9.png
+	frame	data/chars/tremi/runattack10.png
+	frame	data/chars/tremi/runattack11.png
+	frame	data/chars/tremi/runattack12.png
+	frame	data/chars/tremi/runattack13.png
 
 anim jump # Saut Statique
 	delay	8
@@ -373,7 +461,7 @@ anim pain2
 	frame	data/chars/tremi/pain21.png
 	
 anim fall
-	offset	83 119
+	offset	87 119
 	delay	10
 	landframe 4
 	frame	data/chars/tremi/fall1.png
@@ -381,14 +469,17 @@ anim fall
 	frame	data/chars/tremi/fall3.png
 	frame	data/chars/tremi/fall4.png
 	frame	data/chars/tremi/fall5.png
+	frame	data/chars/tremi/fall6.png
 
 anim fall7
-	offset	83 119
+	offset	85 119
 	delay	-1000
 	frame	data/chars/tremi/fall1.png
 	frame	data/chars/tremi/fall2.png
 	frame	data/chars/tremi/fall3.png
 	frame	data/chars/tremi/fall4.png
+	frame	data/chars/tremi/fall5.png
+	frame	data/chars/tremi/fall6.png
 
 anim rise
 	delay	10

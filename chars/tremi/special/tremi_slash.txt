@@ -1,0 +1,35 @@
+name	tremi_slash
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	183 85
+	drawmethod scale 1 1
+	drawmethod alpha 1
+        sound data/chars/tremi/05-slash.wav
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-0.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-1.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-2.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-3.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-4.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-5.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-6.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-7.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-8.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-9.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-10.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-11.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-12.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-13.png
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-14.png
+	@cmd suicide
+	frame	data/chars/tremi/special/tremi_slash/tremi_slash-14.png
+
+
+
+

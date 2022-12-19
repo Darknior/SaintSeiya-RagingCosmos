@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	500
+		delay	80
 	@cmd setVar "line1" "Welcome to the sanctuary Miss Kido."
 	@cmd setVar "line2" "We were waiting for you..."
 	@cmd setVar "line3" ""

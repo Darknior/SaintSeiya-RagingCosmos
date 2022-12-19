@@ -38,6 +38,7 @@ load aldebaran_rock
 load aldebaran_fist
 load camus_lights
 load shaina electricity
+load aphrodite_rose_explosion
 
 #----------------------------------------------------------
 anim spawn
@@ -672,6 +673,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 
 
 anim	block
+	hitflash aphrodite_rose_explosion
 	offset	37 164
 	bbox 19 13 38 151
 	frame	data/chars/aldebaran/block1.png

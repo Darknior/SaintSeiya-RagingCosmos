@@ -189,7 +189,12 @@ know    shaina_shoot   		data/chars/shaina/special/shaina_shoot.txt
 know    shaina_electricity   		data/chars/shaina/special/shaina_electricity.txt
 
 know    tremi_arrow   		data/chars/tremi/special/tremi_arrow.txt
+know    tremi_arrow_pierce   		data/chars/tremi/special/tremi_arrow_pierce.txt
 know    tremi_multiarrow   	data/chars/tremi/special/tremi_multiarrow.txt
+know    tremi_dash   	data/chars/tremi/special/tremi_dash.txt
+know    tremi_circle   	data/chars/tremi/special/tremi_circle.txt
+know    tremi_cosmos   	data/chars/tremi/special/tremi_cosmos.txt
+know    tremi_slash   	data/chars/tremi/special/tremi_slash.txt
 
 know    knife  		data/chars/great_pope/special/knife.txt
 
