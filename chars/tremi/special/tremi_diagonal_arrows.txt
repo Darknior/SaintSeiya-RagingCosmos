@@ -1,0 +1,54 @@
+name	tremi_diagonal_arrows
+type	none
+shadow	0
+remove 0
+setlayer 1
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	0 76
+	drawmethod scale 3 3
+	drawmethod alpha 1
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows0.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows1.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows2.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows3.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows4.png
+	drawmethod scale 2.5 2.5
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows0.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows1.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows2.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows3.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows4.png
+	drawmethod scale 2 2
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows0.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows1.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows2.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows3.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows4.png
+	drawmethod scale 1.75 1.75
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows0.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows1.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows2.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows3.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows4.png
+	drawmethod scale 1.5 1.5
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows0.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows1.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows2.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows3.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows4.png
+	drawmethod scale 1 1
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows0.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows1.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows2.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows3.png
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows4.png
+	@cmd suicide
+	frame	data/chars/tremi/special/tremi_diagonal_arrows/tremi_diagonal_arrows4.png
+
+
+
+

@@ -18,7 +18,7 @@ anim idle
 	@cmd setVar "line2" "We were waiting for you..."
 	@cmd setVar "line3" ""
 	@cmd setVar "line4" ""
-	@cmd setVar "portraitName" "tremi1"
+	@cmd setVar "portraitName" "tremi3"
 	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
 
@@ -26,7 +26,7 @@ anim idle
 	@cmd setVar "line2" "I want to reason with him before it's"
 	@cmd setVar "line3" "too late and a war breaks out!"
 	@cmd setVar "line4" ""
-	@cmd setVar "portraitName" "athena1"
+	@cmd setVar "portraitName" "athena3"
 	@cmd setVar "portraitSide" "left"
 	frame	data/chars/dialogs/textbox.png
 
@@ -34,7 +34,7 @@ anim idle
 	@cmd setVar "line2" "chamber is to take these stairs and"
 	@cmd setVar "line3" "cross the 12 houses of the zodiac..."
 	@cmd setVar "line4" ""
-	@cmd setVar "portraitName" "tremi1"
+	@cmd setVar "portraitName" "tremi3"
 	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
 
@@ -42,15 +42,15 @@ anim idle
 	@cmd setVar "line2" ""
 	@cmd setVar "line3" ""
 	@cmd setVar "line4" ""
-	@cmd setVar "portraitName" "tremi1"
+	@cmd setVar "portraitName" "tremi3"
 	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
 
-	@cmd setVar "line1" "You won't ever reach the first house!!"
-	@cmd setVar "line2" "Ahaha!!"
+	@cmd setVar "line1" "You won't ever reach the first"
+	@cmd setVar "line2" "house!! Ahaha!!"
 	@cmd setVar "line3" ""
 	@cmd setVar "line4" ""
-	@cmd setVar "portraitName" "tremi1"
+	@cmd setVar "portraitName" "tremi3"
 	@cmd setVar "portraitSide" "right"
 	frame	data/chars/dialogs/textbox.png
 
