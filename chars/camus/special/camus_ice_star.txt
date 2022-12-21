@@ -5,6 +5,7 @@ shadow	0
 setlayer 100
 antigravity 100
 remove 0
+didhitscript	data/scripts/camus_ice.c
 animationscript	data/scripts/player.c
 
 anim	idle
