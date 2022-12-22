@@ -20,12 +20,6 @@ order	a
 
 spawn1  60 30
 
-\\rock 3
-
-
-
-
-
 
 nofadeout 0
 disablehof 1

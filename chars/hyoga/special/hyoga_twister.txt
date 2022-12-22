@@ -1,0 +1,48 @@
+name	hyoga_twister
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+offscreenkill 635
+lifespan  1
+
+anim	idle
+	loop	1 4 6
+	fastattack 1
+	delay	10
+	offset	50 180
+	drawmethod alpha 1
+	dropv 	2.5 0.2 0
+	attack5 0 110 90 80 10 1 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_twister/twister1.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_twister/twister2.png
+	dropv 	2.5 0.2 0
+	attack5 0 110 90 80 10 1 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_twister/twister3.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_twister/twister4.png
+	dropv 	2.5 0.2 0
+	attack5 0 110 90 80 10 1 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_twister/twister5.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_twister/twister6.png
+	dropv 	2.5 0.2 0
+	attack5 0 110 90 80 10 1 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_twister/twister7.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_twister/twister8.png
+	dropv 	2.5 0.2 0
+	attack5 0 110 90 80 10 1 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_twister/twister9.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_twister/twister10.png
+	dropv 	2.5 0.2 0
+	attack5 0 110 90 80 10 1 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_twister/twister11.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_twister/twister12.png
+	attack5 0 110 90 80 10 1 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_twister/twister13.png
+	attack5 0

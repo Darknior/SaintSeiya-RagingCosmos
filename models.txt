@@ -93,6 +93,12 @@ know    shiryu_dragon          data/chars/shiryu/special/shiryu_dragon.txt
 know    shiryu_dragon_uppercut data/chars/shiryu/special/shiryu_dragon_uppercut.txt
 know    shiryu_dragon_water	   data/chars/shiryu/special/shiryu_dragon_water.txt
 
+know    hyoga_aura            data/chars/hyoga/special/hyoga_aura.txt
+know    hyoga_cygnus          data/chars/hyoga/special/hyoga_cygnus.txt
+know    hyoga_twister         data/chars/hyoga/special/hyoga_twister.txt
+know    hyoga_frozenray       data/chars/hyoga/special/hyoga_frozenray.txt
+know    hyoga_frozenray_up    data/chars/hyoga/special/hyoga_frozenray_up.txt
+
 know    aldebaran_runtaurus       data/chars/aldebaran/special/aldebaran_runtaurus.txt
 know    aldebaran_rundust         data/chars/aldebaran/special/aldebaran_rundust.txt
 know    aldebaran_swing           data/chars/aldebaran/special/aldebaran_swing.txt
@@ -240,14 +246,7 @@ load    shiryu           data/chars/shiryu/00_shiryu.txt
 
 ## CYGNUS - HYOGA
 
-load    CYGNUS-HYOGA    data/chars/CYGNUS-HYOGA/CYGNUS-HYOGA.txt
-load    CHARMA0         data/chars/CYGNUS-HYOGA/CHARMA0.txt
-load    CHARMA1         data/chars/CYGNUS-HYOGA/CHARMA1.txt
-load    CHARMA2         data/chars/CYGNUS-HYOGA/CHARMA2.txt
-load    CHARMA3         data/chars/CYGNUS-HYOGA/CHARMA3.txt
-load    CHARMA4         data/chars/CYGNUS-HYOGA/CHARMA4.txt
-load    CHARMA5         data/chars/CYGNUS-HYOGA/CHARMA5.txt
-load    CHARMA6         data/chars/CYGNUS-HYOGA/CHARMA6.txt
+load    hyoga           data/chars/hyoga/00_hyoga.txt
 
 ## ANDROMEDA / SHUN
 

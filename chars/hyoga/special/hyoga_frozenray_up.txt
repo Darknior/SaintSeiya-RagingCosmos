@@ -1,0 +1,52 @@
+name	hyoga_frozenray_up
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+lifespan  6
+animationscript		data/scripts/escript.c
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	5
+	offset	0 95
+	drawmethod rotate 270
+	drawmethod fliprotate 1
+	drawmethod alpha 1
+	attack5 0 20 508 150 20 0 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray1.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray2.png
+	attack5 0 20 508 150 20 0 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray3.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray4.png
+	attack5 0 20 508 150 20 0 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray5.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray6.png
+	attack5 0 20 508 150 20 0 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray7.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray8.png
+	attack5 0 20 508 150 20 0 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray9.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray10.png
+	attack5 0 20 400 130 20 1 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray11.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray12.png
+	freeze 0 20 400 130 20 0 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray13.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray14.png
+	freeze 0 20 400 130 20 0 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray15.png
+	attack5 0
+	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray16.png
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif

@@ -450,23 +450,23 @@ anim grabattack #Saisie Coup de genou X2
 	delay	7
 	offset	39 130
 	bbox 21 15 51 115
-	attack3 62 21 47 26 10 0 0 0 5 12
+	attack3 42 31 47 26 10 0 0 0 5 12
 	frame	data/chars/shiryu/grabattack1.png
 	frame	data/chars/shiryu/grabattack2.png
-	frame	data/chars/shiryu/grabattack3.png	
+	frame	data/chars/shiryu/grabattack3.png
 	attack3 0
 	
 anim grabattack2 #Saisie Coup finisher
 	delay	6
 	offset	39 130
 	bbox 21 15 51 115
-	attack3 62 21 90 26 10 0 0 0 0 0
+	attack3 32 21 80 26 10 0 0 0 0 0
 	frame	data/chars/shiryu/grabattack21.png
 	frame	data/chars/shiryu/grabattack22.png
-	attack3 0	
-	attack3 62 21 90 26 15 1 0 0 0 0	
+	attack3 0
 	frame	data/chars/shiryu/grabattack23.png
 	frame	data/chars/shiryu/grabattack24.png
+	attack3 32 81 90 26 15 1 0 0 0 0
 	frame	data/chars/shiryu/grabattack25.png
 	frame	data/chars/shiryu/grabattack26.png
 	attack3 0
@@ -489,7 +489,7 @@ sound   data/chars/shiryu/23-projection2.wav
 	summonframe 0 0 0 0 0
 	subentity shiryu_round_dust
 	unsummonframe 15
-	offset	114 110
+	offset	114 130
 	frame	data/chars/shiryu/rise1.png
 	frame	data/chars/shiryu/rise2.png
 	frame	data/chars/shiryu/rise3.png

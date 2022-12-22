@@ -127,7 +127,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  hyoga
 z           385 484
 file        data/levels/temple4.txt
 

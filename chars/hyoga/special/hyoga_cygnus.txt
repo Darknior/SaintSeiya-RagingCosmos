@@ -1,0 +1,33 @@
+name	hyoga_cygnus
+type	none
+shadow	0
+setlayer 99
+antigravity 100
+remove 1
+lifespan  3
+animationscript		data/scripts/escript.c
+
+anim	idle
+	loop	1
+	delay	8
+	offset	0 57
+	bbox 0 40 104 22
+	followanim 1
+	followcond 1	
+	drawmethod alpha 1
+	freeze 0 40 104 22 30 0 0 0 0 20
+	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus1.png
+	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus2.png
+	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus3.png
+	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus4.png
+	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus5.png
+	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus6.png
+	
+anim	follow1
+	loop	1
+	delay	3
+	offset	15 11
+	frame	data/chars/misc/empty.gif	
+	@cmd	suicide	
+	frame	data/chars/misc/empty.gif
+	
