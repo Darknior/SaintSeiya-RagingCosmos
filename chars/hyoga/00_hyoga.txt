@@ -728,7 +728,6 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
 	frame	data/chars/hyoga/jumpattack21.png
 	frame	data/chars/hyoga/jumpattack22.png
 	frame	data/chars/hyoga/jumpattack23.png
-	@cmd 	spawnbind "hyoga_aura_air_kick"	"ANI_IDLE" 0 0 0 0 0
 	jumpframe 2 -2 0
 	dropv 4.0 1.0 0.0
 	attack4 62 21 67 26 10 0 0 0 5 12
