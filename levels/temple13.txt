@@ -47,6 +47,22 @@ completebg 1
 
 -------------------------------------
 
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-poissons
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
+
 spawn       temple13roadcolumns
 coords      0 0
 at          0

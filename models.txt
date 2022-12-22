@@ -200,7 +200,15 @@ know    shaina_shoot   		data/chars/shaina/special/shaina_shoot.txt
 know    shaina_electricity   		data/chars/shaina/special/shaina_electricity.txt
 
 know    tremi_arrow   		data/chars/tremi/special/tremi_arrow.txt
+know    tremi_arrow_pierce   		data/chars/tremi/special/tremi_arrow_pierce.txt
+know    tremi_arrow_pierceB   		data/chars/tremi/special/tremi_arrow_pierceB.txt
 know    tremi_multiarrow   	data/chars/tremi/special/tremi_multiarrow.txt
+know    tremi_dash   	data/chars/tremi/special/tremi_dash.txt
+know    tremi_circle   	data/chars/tremi/special/tremi_circle.txt
+know    tremi_cosmos   	data/chars/tremi/special/tremi_cosmos.txt
+know    tremi_slash   	data/chars/tremi/special/tremi_slash.txt
+know    tremi_skull   	data/chars/tremi/special/tremi_skull.txt
+know    tremi_diagonal_arrows  	data/chars/tremi/special/tremi_diagonal_arrows.txt
 
 know    knife  		data/chars/great_pope/special/knife.txt
 
@@ -374,6 +382,17 @@ know    horloge-flame   data/chars/misc/horloge-flame.txt
 know    horloge-segment   data/chars/misc/horloge-segment.txt
 know    horloge-belier   data/chars/misc/horloge-belier.txt
 know    horloge-taureau   data/chars/misc/horloge-taureau.txt
+know    horloge-gemeau   data/chars/misc/horloge-gemeau.txt
+know    horloge-cancer   data/chars/misc/horloge-cancer.txt
+know    horloge-lion   data/chars/misc/horloge-lion.txt
+know    horloge-vierge   data/chars/misc/horloge-vierge.txt
+know    horloge-balance   data/chars/misc/horloge-balance.txt
+know    horloge-scorpion   data/chars/misc/horloge-scorpion.txt
+know    horloge-sagitaire   data/chars/misc/horloge-sagitaire.txt
+know    horloge-capricorne   data/chars/misc/horloge-capricorne.txt
+know    horloge-verseau   data/chars/misc/horloge-verseau.txt
+know    horloge-poissons   data/chars/misc/horloge-poissons.txt
+know    time-is-up   data/chars/misc/time-is-up.txt
 
 ## GOLD KINGHTS ##
 

@@ -1,0 +1,26 @@
+name	tremi_arrow_pierce
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	183 85
+	drawmethod scale 1 1
+	drawmethod alpha 1
+        sound data/chars/tremi/02-pierce.wav
+	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce4.png
+	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce5.png
+	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce6.png
+	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce7.png
+	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce8.png
+	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce9.png
+	@cmd suicide
+	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce9.png
+
+
+
+

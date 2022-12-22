@@ -1,0 +1,28 @@
+name	tremi_skull
+type	none
+shadow	0
+remove 0
+setlayer 1
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	86 113
+	drawmethod scale 1 1
+	drawmethod alpha 1
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull1.png
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull2.png
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull3.png
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull1.png
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull2.png
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull3.png
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull1.png
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull2.png
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull3.png
+	@cmd suicide
+	frame	data/chars/tremi/special/tremi_skull/tremi_skull3.png
+
+
+
+

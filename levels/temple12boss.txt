@@ -53,6 +53,22 @@ at              0
 
 #-- LEVEL ANIMATIONS -----------------------
 
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-poissons
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
+
 load temple12_columns 3
 
 spawn           temple12_columns

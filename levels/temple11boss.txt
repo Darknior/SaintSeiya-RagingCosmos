@@ -20,6 +20,23 @@ at        0
 spawn1  60 30
 
 -------------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-verseau
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
+
 spawn temple11columns
 coords	0 0
 at 0

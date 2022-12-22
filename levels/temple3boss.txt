@@ -7,7 +7,7 @@ bglayer     data/bgs/temple3/layer4.png   	0.13 1 -30 0 0 0 1 1 1 0
 
 order           a
 direction       both
-settime         0
+settime         99
 
 cameratype      0
 light           100 -100
@@ -37,6 +37,22 @@ at              0
 spawn           temple3_grid
 coords          1200 -120
 at              0
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-gemeau
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
 
 
 #-- BOSS ----------------------------------------------

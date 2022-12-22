@@ -59,6 +59,7 @@ void blinkDamage()
 	int tintMode;
 	float time			= openborvariant("elapsed_time");
 	float poisonTime	= getentityvar(self, "poisonTime");
+	float iceTime		= getentityvar(self, "iceTime");
 	float time;
 	float rate;
 	
@@ -73,14 +74,31 @@ void blinkDamage()
 		changedrawmethod(self, "enabled", 1);
 		changedrawmethod(self, "tintmode", tintMode);
 		changedrawmethod(self, "tintcolor", rgbcolor(time*rate, 0x00, time*rate));
-	}
-	else
+	}else
+
+	//ICE EFFECT
+	if(iceTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 1;
+		rate		= 2.5;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0xFF));
+	}else
+
+	//BLINK RESET
 	{
-		//BLINK RESET
-		if(animation != openborconstant("ANI_PICK")){ //IS NOT IN THE SELECT ANIMATION??
-			if(poisonTime != NULL()){
+		//IS NOT IN THE SELECT ANIMATION??
+		if(animation != openborconstant("ANI_PICK")){
+			if(	poisonTime != NULL()	||
+				iceTime != NULL()		){
+				
 				if(getdrawmethod(self, "enabled")){
 					blinkReset("poisonTime");
+					blinkReset("iceTime");
 				}
 			}
 		}

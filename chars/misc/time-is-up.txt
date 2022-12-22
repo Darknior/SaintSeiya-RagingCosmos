@@ -1,0 +1,25 @@
+name	time-is-up
+type    panel
+shadow    0
+setlayer 8000
+speed 10
+no_adjust_base  0
+noquake        1 1
+subject_to_gravity 0
+subject_to_obstacle 0
+subject_to_platform 0
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	19500
+	offset	124 -140
+	drawmethod scale 1 1
+	drawmethod alpha 6
+        drawmethod channel 0.99
+	frame	data/chars/misc/time-is-up/empty-time.png
+	delay	400
+	frame	data/chars/misc/time-is-up/time-is-up.png
+	frame	data/chars/misc/time-is-up/time-is-up.png
+	@cmd suicide
+	frame	data/chars/misc/time-is-up/time-is-up.png

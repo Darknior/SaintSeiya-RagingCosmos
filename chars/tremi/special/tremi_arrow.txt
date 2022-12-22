@@ -11,6 +11,7 @@ anim	idle
 	loop	1
 	delay	3
 	offset	15 11
+        hitflash tremi_arrow_pierce
 	followanim 1
 	followcond 1
 	bbox 0 0 28 22
@@ -18,9 +19,9 @@ anim	idle
 	attack5 0 0 28 22 15 0 0 0 0 20
 	drawmethod rotate 45
 	drawmethod fliprotate 1
-	frame	data/chars/tremi/special/tremi_arrow1.png
-	frame	data/chars/tremi/special/tremi_arrow2.png
-	frame	data/chars/tremi/special/tremi_arrow3.png
+	frame	data/chars/tremi/special/tremi_arrow/tremi_arrow1.png
+	frame	data/chars/tremi/special/tremi_arrow/tremi_arrow2.png
+	frame	data/chars/tremi/special/tremi_arrow/tremi_arrow3.png
 	attack5 0
 	
 anim	follow1

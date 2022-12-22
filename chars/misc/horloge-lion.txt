@@ -1,0 +1,21 @@
+name	horloge-lion
+type    panel
+shadow    0
+setlayer 8000
+speed 10
+no_adjust_base  0
+noquake        1 1
+subject_to_gravity 0
+subject_to_obstacle 0
+subject_to_platform 0
+
+
+anim	idle
+	loop	1
+	delay	2000
+	offset	34 17
+	drawmethod scale 1 1
+	drawmethod alpha 6
+        drawmethod channel 0.99
+	frame	data/chars/misc/horloge-constellations/lion.png
+	frame	data/chars/misc/horloge-constellations/lion.png

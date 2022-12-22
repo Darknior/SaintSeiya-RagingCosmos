@@ -5,7 +5,7 @@ panel		data/bgs/temple8/layer2.png
 
 order	    a
 direction   both
-settime     0
+settime     99
 cameratype      0
 light           100 -100
 at              0
@@ -17,6 +17,22 @@ spawn1      60 30
 
 
 #-------------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-scorpion
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
 
 spawn           milo
 boss 			1
