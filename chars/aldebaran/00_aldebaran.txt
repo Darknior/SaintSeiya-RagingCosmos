@@ -25,6 +25,7 @@ ondrawscript	data/scripts/lifebar.c
 
 atchain 1 1 2 3 4 5
 
+didhitscript	data/scripts/aldebaran_gold.c
 animationscript	data/scripts/player.c
 
 load aldebaran_runtaurus
