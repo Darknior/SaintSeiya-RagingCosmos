@@ -4,6 +4,7 @@ shadow	0
 remove 0
 setlayer 99
 antigravity 100
+didhitscript	data/scripts/tint_silver.c
 lifespan  6
 
 anim	idle

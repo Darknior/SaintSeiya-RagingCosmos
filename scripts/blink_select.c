@@ -61,6 +61,12 @@ void blinkDamage()
 	float poisonTime	= getentityvar(self, "poisonTime");
 	float iceTime		= getentityvar(self, "iceTime");
 	float goldTime		= getentityvar(self, "goldTime");
+	float purpleTime	= getentityvar(self, "purpleTime");
+	float redTime		= getentityvar(self, "redTime");
+	float greenTime		= getentityvar(self, "greenTime");
+	float silverTime	= getentityvar(self, "silverTime");
+	float pinkTime		= getentityvar(self, "pinkTime");
+	float whiteTime		= getentityvar(self, "whiteTime");
 	float time;
 	float rate;
 	
@@ -87,7 +93,7 @@ void blinkDamage()
 		//APPLY EFFECTS
 		changedrawmethod(self, "enabled", 1);
 		changedrawmethod(self, "tintmode", tintMode);
-		changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0xFF));
+		changedrawmethod(self, "tintcolor", rgbcolor(0x33, 0xFF, 0xFF));
 	}else
 
 	//GOLD EFFECT
@@ -103,18 +109,108 @@ void blinkDamage()
 		changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0xFF, 0x00));
 	}else
 
+	//PURPLE EFFECT
+	if(purpleTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 6;
+		rate		= 2.5;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(0x7F, 0x00, 0xFF));
+	}else
+
+	//RED EFFECT
+	if(redTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 6;
+		rate		= 2.5;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
+	}else
+
+	//GREEN EFFECT
+	if(greenTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 6;
+		rate		= 2.5;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0xFF, 0x00));
+	}else
+
+	//SILVER EFFECT
+	if(silverTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 6;
+		rate		= 2.5;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(0xE0, 0xE0, 0xE0));
+	}else
+
+	//PINK EFFECT
+	if(pinkTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 6;
+		rate		= 2.5;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x66, 0xB2));
+	}else
+
+	//WHITE EFFECT
+	if(whiteTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 6;
+		rate		= 2.5;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0xFF, 0xCC));
+	}else
+
 	//BLINK RESET
 	{
 		//IS NOT IN THE SELECT ANIMATION??
 		if(animation != openborconstant("ANI_PICK")){
 			if(	poisonTime != NULL()	||
 				iceTime != NULL()		||
-				goldTime != NULL()		){
+				goldTime != NULL()		||
+				purpleTime != NULL()	||
+				redTime != NULL()		||
+				greenTime != NULL()		||
+				silverTime != NULL()	||
+				pinkTime != NULL()		||
+				whiteTime != NULL()		){
 				
 				if(getdrawmethod(self, "enabled")){
 					blinkReset("poisonTime");
 					blinkReset("iceTime");
 					blinkReset("goldTime");
+					blinkReset("purpleTime");
+					blinkReset("redTime");
+					blinkReset("greenTime");
+					blinkReset("silverTime");
+					blinkReset("pinkTime");
+					blinkReset("whiteTime");
 				}
 			}
 		}

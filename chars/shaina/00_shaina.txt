@@ -43,6 +43,7 @@ icon       	data/chars/shaina/icon.png
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
+didhitscript	data/scripts/tint_purple.c
 
 #weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 shaina
 

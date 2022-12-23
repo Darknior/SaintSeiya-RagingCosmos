@@ -317,7 +317,7 @@ anim special # Défense spéciale Ice pike
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
-	attack5 0 12 200 142 30 1 0 0 5 12
+	freeze  56 28 36 15 0 5
 	dropv 4.0 3.0 0.0
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png
@@ -373,7 +373,7 @@ anim special2 # Défense spéciale icecrystal
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
-	attack5 0 12 200 142 30 1 0 0 5 12
+	freeze  56 28 36 15 0 5
 	dropv 4.0 3.0 0.0
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png
@@ -524,7 +524,7 @@ anim riseattack # Défense spéciale icecrystal
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
-	attack5 0 12 200 142 30 1 0 0 5 12
+	freeze  56 28 36 15 0 5
 	dropv 4.0 3.0 0.0
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png

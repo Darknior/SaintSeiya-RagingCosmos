@@ -32,11 +32,11 @@ anim	idle
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star6.png
 	attack1 0 0 150 150 10 1 0 0 12 12
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star7.png
-	attack1 0 0 150 150 10 1 0 0 12 12
-	frame	data/chars/camus/special/camus_ice_star/camus_ice_star8.png
 	attack1 0
-	frame	data/chars/camus/special/camus_ice_star/camus_ice_star9.png
+	frame	data/chars/camus/special/camus_ice_star/camus_ice_star8.png
 	attack1 200 150 150 150 10 0 0 0 12 12
+	frame	data/chars/camus/special/camus_ice_star/camus_ice_star9.png
+	attack1 0
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star10.png
 	attack1 200 150 150 150 10 0 0 0 12 12
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star11.png

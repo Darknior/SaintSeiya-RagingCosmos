@@ -26,6 +26,7 @@ ondrawscript	data/scripts/lifebar.c
 atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
+didhitscript	data/scripts/aldebaran_gold.c
 
 load shaka_lotus
 load shaka_lotus_shot

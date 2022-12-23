@@ -6,6 +6,7 @@ setlayer 0
 antigravity 100
 lifespan  1
 animationscript		data/scripts/escript.c
+didhitscript	data/scripts/tint_silver.c
 
 anim	idle
 	loop	1

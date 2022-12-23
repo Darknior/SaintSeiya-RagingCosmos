@@ -13,6 +13,7 @@ void iceEffect(){
 		anim == openborconstant("ANI_SPECIAL")		||
 		anim == openborconstant("ANI_SPECIAL2")		||
 		anim == openborconstant("ANI_RUNATTACK")	||
+		anim == openborconstant("ANI_RISEATTACK")	||
 		anim == openborconstant("ANI_FREESPECIAL")	||
 		anim == openborconstant("ANI_FREESPECIAL6")	){
 		
