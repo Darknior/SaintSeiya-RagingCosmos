@@ -5,6 +5,7 @@ nolife 	 1
 setlayer 1
 candamage player
 animationscript	data/scripts/player.c
+didhitscript	data/scripts/tint_red.c
 
 anim	idle
 	loop	0
