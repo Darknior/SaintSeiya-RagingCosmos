@@ -57,7 +57,7 @@ at          0
 #-- BOSS -----------------------------------
 
 spawn           aiolia
-health          1
+health          500
 coords          650 390
 at              0
 

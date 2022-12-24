@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		fall_dust
+bflash aldebaran_block
 
 icon		data/chars/aldebaran/icon.png
 
@@ -14,7 +15,7 @@ gfxshadow	1
 hitenemy    1 0
 blockodds 	1
 noquake 	1 1
-escapehits  1
+escapehits  2
 nodieblink 	3
 death 		1
 
@@ -40,6 +41,7 @@ load aldebaran_fist
 load camus_lights
 load shaina electricity
 load aphrodite_rose_explosion
+load aldebaran_block
 
 #----------------------------------------------------------
 anim spawn

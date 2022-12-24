@@ -11,7 +11,7 @@ anim	idle
 	delay	16
 	offset	2950 -1100
         drawmethod  alpha 1
-	drawmethod scale 0.15 0.15
+	drawmethod scale 0.5 0.5
 	frame	data/chars/milo/special/milo_antares/milo_antares0.png
 	frame	data/chars/milo/special/milo_antares/milo_antares1.png
 	frame	data/chars/milo/special/milo_antares/milo_antares2.png

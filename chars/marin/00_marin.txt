@@ -7,6 +7,9 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 
+dust		round_dustB
+bflash tremi_block
+
 gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
@@ -55,6 +58,8 @@ com  D F a1 freespecial5 	#Uppercut
 
 load marin_eagle
 load marin_multipunch
+load tremi_block
+
 #----------------------------------------------------------
 anim spawn
 	delay	10

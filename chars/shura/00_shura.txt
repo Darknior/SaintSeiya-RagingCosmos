@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		round_dustB
+bflash aldebaran_block
 
 icon		data/chars/shura/icon.png
 
@@ -37,6 +38,7 @@ load shura_excalibur
 load shura_explosion
 load shura_excaliburB
 load shura_dash
+load aldebaran_block
 
 #----------------------------------------------------------
 anim spawn

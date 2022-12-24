@@ -1,12 +1,12 @@
 name		camus
-health		50
+health		500
 mp 			100
 speed		20
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
-
+bflash camus_block
 
 icon		data/chars/camus/icon.png
 
@@ -34,6 +34,7 @@ load camus_constellation
 load camus_lights
 load camus_ice_star
 load camus_dash
+load camus_block
 
 #----------------------------------------------------------
 anim spawn

@@ -6,6 +6,7 @@ type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
+bflash aldebaran_block
 
 
 icon		data/chars/great_pope/icon.png
@@ -30,6 +31,8 @@ didhitscript	data/scripts/aldebaran_gold.c
 
 load knife
 load saga
+load aldebaran_block
+
 #----------------------------------------------------------
 anim spawn
 	delay	15

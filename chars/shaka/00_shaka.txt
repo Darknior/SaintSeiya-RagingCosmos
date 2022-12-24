@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		round_dustB
+bflash aldebaran_block
 
 icon		data/chars/shaka/icon.png
 
@@ -43,6 +44,7 @@ load shaka_blood_geyser
 load shaka_lotus_petals
 load shaka_hands
 load aldebaran_super_lights
+load aldebaran_block
 
 #----------------------------------------------------------
 anim spawn
