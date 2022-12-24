@@ -12,7 +12,7 @@ anim	idle
 	drawmethod scale 1 1
 	delay	60
 	frame	data/chars/milo/special/milo_antaresC/milo_antaresC10.png
-	delay	15
+	delay	20
 	sound data/chars/milo/15-needle1.wav
 	frame	data/chars/milo/special/milo_antaresC/milo_antaresC1.png
 	frame	data/chars/milo/special/milo_antaresC/milo_antaresC1.png

@@ -572,92 +572,92 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	delay   5
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	sound data/chars/aldebaran/07-ultraGH2.wav
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png

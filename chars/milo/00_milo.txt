@@ -392,66 +392,66 @@ anim freespecial6 # Ultra Scarlet Needle
 	delay   10
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
-	attack1 41 0 900 182 15 0 0 0 0 50
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 0 0 0 0 50
+	attack1 57 13 900 50 15 0 0 0 0 30
+	frame	data/chars/milo/special39.png
+	attack1 0
+	frame	data/chars/milo/special39.png
+	attack1 57 13 900 50 15 0 0 0 0 30
 	frame	data/chars/milo/special39.png
 	attack1 0
 	frame	data/chars/milo/special39.png
@@ -569,7 +569,6 @@ anim freespecial5 # Ultra Antares
 	spawnframe 0 0 0 0 1
 	subentity milo_constellation
 	energycost  20 1 0
-	@cmd 	spawnScreen "milo_antares" 0 0 0 0
 	frame	data/chars/milo/jump1.png
 	offset	41 186
 	frame	data/chars/milo/jump1.png
@@ -586,11 +585,65 @@ anim freespecial5 # Ultra Antares
 	frame	data/chars/milo/jumpattack1.png
 	frame	data/chars/milo/jumpattack2.png
 	frame	data/chars/milo/jumpattack3.png
+	@cmd 	spawnbind "milo_antares" "ANI_IDLE" 0 0 0 0 0
+	delay   150
 	frame	data/chars/milo/jumpattack4.png
-	delay   250
+	attack1 0
+	delay   10
 	@cmd 	spawnbind "milo_antaresB" "ANI_IDLE" 0 0 0 0 0
 	@cmd 	spawnbind "milo_antaresC" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
+	frame	data/chars/milo/jumpattack4.png
+	attack1 100 100 300 300 50 0 0 0 0 30
+	frame	data/chars/milo/jumpattack4.png
+	attack1 0
 	delay   10
 	frame	data/chars/milo/jump3.png
 	offset	41 286
