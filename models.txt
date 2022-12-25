@@ -97,6 +97,7 @@ know    aldebaran_earthquake    data/chars/aldebaran/special/aldebaran_earthquak
 know    aldebaran_super_lights    data/chars/aldebaran/special/aldebaran_super_lights.txt
 know    aldebaran_rock    data/chars/aldebaran/special/aldebaran_rock.txt
 know    aldebaran_fist    data/chars/aldebaran/special/aldebaran_fist.txt
+know    aldebaran_multi    data/chars/aldebaran/special/aldebaran_multi.txt
 know    aldebaran_block    data/chars/aldebaran/special/aldebaran_block.txt
 
 know    gemini_dimension_back  data/chars/gemini/special/gemini_dimension_back.txt
