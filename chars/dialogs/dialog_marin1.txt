@@ -1,0 +1,49 @@
+name			dialog_marin1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	0 -15
+	@cmd setVar "lockButton" 0
+	frame	data/chars/dialogs/empty.png
+
+		delay	600
+	@cmd setVar "line1" "You will never reach the room of"
+	@cmd setVar "line2" "the Pope! The road is covered with"
+	@cmd setVar "line3" "poisonous roses... Their perfume"
+	@cmd setVar "line4" "will get the better of you quickly..."
+	@cmd setVar "portraitName" "marin1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "Marin... eagle knight... You"
+	@cmd setVar "line2" "know very well that even if I"
+	@cmd setVar "line3" "have to give up my life,"
+	@cmd setVar "line4" "I will move forward!"
+	@cmd setVar "portraitName" "seiya3"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "In that case don't be stupid..."
+	@cmd setVar "line2" "Only the female knights' mask"
+	@cmd setVar "line3" "protects from the demonic scent..."
+	@cmd setVar "line4" "But to get it... you have to kill me..."
+	@cmd setVar "portraitName" "marin1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	@cmd suicide
+	frame	data/chars/dialogs/textbox.png

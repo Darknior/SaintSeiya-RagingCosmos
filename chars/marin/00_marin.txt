@@ -69,9 +69,11 @@ load marin_swing
 anim spawn
 	delay	10
 	offset	144 122
+	@cmd spawnFade "in" 0 0 0 10000000001 0.25
 	frame	data/chars/marin/spawn1.png
 	frame	data/chars/marin/spawn2.png
 	frame	data/chars/marin/spawn3.png
+	@cmd spawnDialog "dialog_marin1" 200 100
 	frame	data/chars/marin/spawn1.png
 	frame	data/chars/marin/spawn2.png
 	frame	data/chars/marin/spawn3.png

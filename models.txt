@@ -58,6 +58,7 @@ load    dialog_great_pope3 data/chars/dialogs/dialog_great_pope3.txt
 load    dialog_great_pope4 data/chars/dialogs/dialog_great_pope4.txt
 load    dialog_shaina1 data/chars/dialogs/dialog_shaina1.txt
 load    dialog_tremi1 data/chars/dialogs/dialog_tremi1.txt
+load    dialog_marin1 data/chars/dialogs/dialog_marin1.txt
 load    dialog_wait       data/chars/dialogs/dialog_wait.txt
 load	fade              data/chars/dialogs/fade.txt
 
