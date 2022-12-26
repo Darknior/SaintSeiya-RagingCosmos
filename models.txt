@@ -99,6 +99,9 @@ know    hyoga_twister         data/chars/hyoga/special/hyoga_twister.txt
 know    hyoga_frozenray       data/chars/hyoga/special/hyoga_frozenray.txt
 know    hyoga_frozenray_up    data/chars/hyoga/special/hyoga_frozenray_up.txt
 
+know    shun_aura             data/chars/shun/special/shun_aura.txt
+know    shun_stream           data/chars/shun/special/shun_stream.txt
+
 know    aldebaran_runtaurus       data/chars/aldebaran/special/aldebaran_runtaurus.txt
 know    aldebaran_rundust         data/chars/aldebaran/special/aldebaran_rundust.txt
 know    aldebaran_swing           data/chars/aldebaran/special/aldebaran_swing.txt
@@ -263,14 +266,7 @@ load    hyoga           data/chars/hyoga/00_hyoga.txt
 
 ## ANDROMEDA / SHUN
 
-load    ANDROMEDA-SHUN  data/chars/ANDROMEDA-SHUN/ANDROMEDA-SHUN.txt
-load    ASARMA0         data/chars/ANDROMEDA-SHUN/ASARMA0.txt
-load    ASARMA1         data/chars/ANDROMEDA-SHUN/ASARMA1.txt
-load    ASARMA2         data/chars/ANDROMEDA-SHUN/ASARMA2.txt
-load    ASARMA3         data/chars/ANDROMEDA-SHUN/ASARMA3.txt
-load    ASARMA4         data/chars/ANDROMEDA-SHUN/ASARMA4.txt
-load    ASARMA5         data/chars/ANDROMEDA-SHUN/ASARMA5.txt
-load    ASARMA6         data/chars/ANDROMEDA-SHUN/ASARMA6.txt
+load    shun           data/chars/shun/00_shun.txt
 
 ## PHOENIX / IKKI
 
@@ -342,14 +338,6 @@ load    WNARMA6         data/chars/WOLF-NACHI/WNARMA6.txt
 ## EAGLE / MARIN
 
 load    marin     		data/chars/marin/00_marin.txt
-load    EAGLE-MARIN     data/chars/EAGLE-MARIN/EAGLE-MARIN.txt
-load    EMARMA0         data/chars/EAGLE-MARIN/EMARMA0.txt
-load    EMARMA1         data/chars/EAGLE-MARIN/EMARMA1.txt
-load    EMARMA2         data/chars/EAGLE-MARIN/EMARMA2.txt
-load    EMARMA3         data/chars/EAGLE-MARIN/EMARMA3.txt
-load    EMARMA4         data/chars/EAGLE-MARIN/EMARMA4.txt
-load    EMARMA5         data/chars/EAGLE-MARIN/EMARMA5.txt
-load    EMARMA6         data/chars/EAGLE-MARIN/EMARMA6.txt
 
 load    shaina     		data/chars/shaina/00_shaina.txt
 load    tremi     		data/chars/tremi/00_tremi.txt

@@ -1,0 +1,51 @@
+name	shun_stream
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+lifespan  6
+animationscript		data/scripts/escript.c
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	10
+	offset	203 80
+	drawmethod alpha 1
+	attack5 155 7 146 150 20 0 0 0 0 20
+	frame	data/chars/shun/special/shun_stream/stream1.png
+	attack5 0
+	frame	data/chars/shun/special/shun_stream/stream2.png
+	attack5 155 7 146 150 20 0 0 0 0 20
+	frame	data/chars/shun/special/shun_stream/stream3.png
+	attack5 0
+	frame	data/chars/shun/special/shun_stream/stream4.png
+	attack5 155 7 146 150 20 0 0 0 0 20
+	frame	data/chars/shun/special/shun_stream/stream5.png
+	attack5 0
+	frame	data/chars/shun/special/shun_stream/stream6.png
+	attack5 155 7 146 150 20 0 0 0 0 20
+	frame	data/chars/shun/special/shun_stream/stream7.png
+	attack5 0
+	frame	data/chars/shun/special/shun_stream/stream8.png
+	attack5 155 7 146 150 20 0 0 0 0 20
+	frame	data/chars/shun/special/shun_stream/stream9.png
+	attack5 0
+	frame	data/chars/shun/special/shun_stream/stream10.png
+	attack5 155 7 146 150 20 0 0 0 0 20
+	frame	data/chars/shun/special/shun_stream/stream11.png
+	attack5 0
+	frame	data/chars/shun/special/shun_stream/stream12.png
+	attack5 155 7 146 150 20 1 0 0 0 20
+	frame	data/chars/shun/special/shun_stream/stream13.png
+	attack5 0
+	frame	data/chars/shun/special/shun_stream/stream14.png
+	attack5 155 7 146 150 20 1 0 0 0 20
+	frame	data/chars/shun/special/shun_stream/stream15.png
+	attack5 0
+	frame	data/chars/shun/special/shun_stream/stream16.png
+	attack5 155 7 146 150 20 1 0 0 0 20
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide	
+	frame	data/chars/misc/empty.gif

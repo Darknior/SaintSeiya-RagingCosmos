@@ -809,7 +809,6 @@ anim pain2
 anim fall
 	landframe 6
 	offset	69 142
-
 	delay	10
 	frame	data/chars/hyoga/fall1.png
 	frame	data/chars/hyoga/fall2.png
