@@ -341,6 +341,7 @@ anim freespecial3 #Camus ice star
 	delay	10
 	offset	70 154
 	energycost  15 1 0
+	bbox 47 28 50 130
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png
 	frame	data/chars/camus/special3.png

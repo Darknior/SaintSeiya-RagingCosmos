@@ -404,7 +404,6 @@ anim freespecial3 # Attaque spéciale Rosefield
 	energycost  20 1 0
 	hitflash flashbig
 	forcedirection -1
-	attack5 41 16 55 83 10 0 0 0 5 12
 	frame	data/chars/aphrodite/special21.png
 	frame	data/chars/aphrodite/special22.png
 	sound data/chars/aphrodite/04-Pirhana_Rose.wav

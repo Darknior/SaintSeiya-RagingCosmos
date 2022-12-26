@@ -63,6 +63,7 @@ load tremi_skull
 load gemini_multihits
 load tremi_diagonal_arrows
 load tremi_block
+load milo_blood
 
 #----------------------------------------------------------
 anim spawn
