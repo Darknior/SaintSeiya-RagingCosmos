@@ -1,0 +1,45 @@
+name	marin_stormC
+type	none
+shadow	0
+remove 0
+setlayer 666
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	7
+	offset	170 175
+	drawmethod alpha 1
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-35.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-34.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-33.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-32.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-31.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-30.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-29.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-28.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-27.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-26.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-25.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-24.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-23.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-22.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-21.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-20.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-19.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-20.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-21.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-22.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-24.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-25.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-26.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-27.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-28.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-29.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-31.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-32.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-33.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-34.png
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-35.png
+	@cmd suicide
+	frame	data/chars/marin/special/marin_stormC//marin_stormC-35.png

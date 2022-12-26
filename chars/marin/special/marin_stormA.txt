@@ -1,0 +1,31 @@
+name	marin_stormA
+type	none
+candamage player
+shadow	0
+setlayer 100
+antigravity 100
+remove 0
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	7
+	offset	72 220
+	drawmethod alpha 1
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-1.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-2.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-3.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-4.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-5.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-6.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-7.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-8.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-9.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-10.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-11.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-12.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-13.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-14.png
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-15.png
+	@cmd suicide
+	frame	data/chars/marin/special/marin_stormA/marin_stormA-15.png

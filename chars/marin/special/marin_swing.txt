@@ -1,0 +1,25 @@
+name	marin_swing
+type	none
+shadow	0
+setlayer 157
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	95 90
+        drawmethod  alpha 1
+        drawmethod  channel 0.53
+        sound data/chars/marin/02-swing.wav
+	frame	data/chars/marin/special/marin_swing/marin_swing-0.png
+	frame	data/chars/marin/special/marin_swing/marin_swing-1.png
+	frame	data/chars/marin/special/marin_swing/marin_swing-2.png
+	frame	data/chars/marin/special/marin_swing/marin_swing-3.png
+	frame	data/chars/marin/special/marin_swing/marin_swing-4.png
+	frame	data/chars/marin/special/marin_swing/marin_swing-5.png
+	frame	data/chars/marin/special/marin_swing/marin_swing-6.png
+	frame	data/chars/marin/special/marin_swing/marin_swing-7.png
+	frame	data/chars/marin/special/marin_swing/marin_swing-8.png
+	@cmd suicide
+	frame	data/chars/marin/special/marin_swing/marin_swing-8.png

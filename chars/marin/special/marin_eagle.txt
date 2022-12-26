@@ -5,24 +5,66 @@ remove 0
 setlayer 99
 antigravity 100
 lifespan  6
+didhitscript	data/scripts/camus_ice.c
 
 anim	idle
 	loop	1
 	fastattack 1
-	delay	10
+	delay	8
 	offset	15 80
 	drawmethod alpha 1
+	sound data/chars/marin/05-eagle.wav
 	attack5 0 0 200 150 20 0 0 0 0 20
-	frame	data/chars/marin/special/eagle1.png
+	frame	data/chars/marin/special/marin_eagle/eagle1.png
 	attack5 0	
-	frame	data/chars/marin/special/eagle2.png
+	frame	data/chars/marin/special/marin_eagle/eagle2.png
 	attack5 0 0 200 150 20 0 0 0 0 20
-	frame	data/chars/marin/special/eagle3.png
+	frame	data/chars/marin/special/marin_eagle/eagle3.png
 	attack5 0	
-	frame	data/chars/marin/special/eagle4.png
+	frame	data/chars/marin/special/marin_eagle/eagle4.png
 	attack5 0 0 200 150 20 0 0 0 0 20	
-	frame	data/chars/marin/special/eagle5.png
+	frame	data/chars/marin/special/marin_eagle/eagle5.png
 	attack5 0	
-	frame	data/chars/marin/special/eagle6.png	
+	frame	data/chars/marin/special/marin_eagle/eagle6.png	
+	attack5 0 0 200 150 20 0 0 0 0 20	
+	frame	data/chars/marin/special/marin_eagle/eagle2.png
+	attack5 0 0 200 150 20 0 0 0 0 20
+	frame	data/chars/marin/special/marin_eagle/eagle3.png
+	attack5 0	
+	frame	data/chars/marin/special/marin_eagle/eagle4.png
+	attack5 0 0 200 150 20 0 0 0 0 20	
+	frame	data/chars/marin/special/marin_eagle/eagle5.png
+	attack5 0	
+	frame	data/chars/marin/special/marin_eagle/eagle6.png	
+	attack5 0 0 200 150 20 0 0 0 0 20	
+	frame	data/chars/marin/special/marin_eagle/eagle2.png
+	attack5 0 0 200 150 20 0 0 0 0 20
+	frame	data/chars/marin/special/marin_eagle/eagle3.png
+	attack5 0	
+	frame	data/chars/marin/special/marin_eagle/eagle4.png
+	attack5 0 0 200 150 20 0 0 0 0 20	
+	frame	data/chars/marin/special/marin_eagle/eagle5.png
+	attack5 0	
+	frame	data/chars/marin/special/marin_eagle/eagle6.png	
+	attack5 0 0 200 150 20 0 0 0 0 20	
+	frame	data/chars/marin/special/marin_eagle/eagle2.png
+	attack5 0 0 200 150 20 0 0 0 0 20
+	frame	data/chars/marin/special/marin_eagle/eagle3.png
+	attack5 0	
+	frame	data/chars/marin/special/marin_eagle/eagle4.png
+	attack5 0 0 200 150 20 0 0 0 0 20	
+	frame	data/chars/marin/special/marin_eagle/eagle5.png
+	attack5 0	
+	frame	data/chars/marin/special/marin_eagle/eagle6.png	
+	attack5 0 0 200 150 20 0 0 0 0 20
+	frame	data/chars/marin/special/marin_eagle/eagle2.png
+	attack5 0 0 200 150 20 0 0 0 0 20
+	frame	data/chars/marin/special/marin_eagle/eagle3.png
+	attack5 0	
+	frame	data/chars/marin/special/marin_eagle/eagle4.png
+	attack5 0 0 200 150 20 0 0 0 0 20	
+	frame	data/chars/marin/special/marin_eagle/eagle5.png
+	attack5 0	
+	frame	data/chars/marin/special/marin_eagle/eagle6.png	
 	attack5 0 0 200 150 20 0 0 0 0 20	
 

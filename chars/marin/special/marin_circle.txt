@@ -1,0 +1,26 @@
+name	marin_circle
+type	none
+candamage player
+shadow	0
+setlayer 100
+antigravity 100
+remove 0
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	6
+	offset	100 210
+	drawmethod alpha 1
+	frame	data/chars/marin/special/marin_circle/marin_circle-0.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-1.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-2.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-3.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-4.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-5.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-6.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-7.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-8.png
+	frame	data/chars/marin/special/marin_circle/marin_circle-9.png
+	@cmd suicide
+	frame	data/chars/marin/special/marin_circle/marin_circle-9.png

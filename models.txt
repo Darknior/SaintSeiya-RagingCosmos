@@ -201,6 +201,10 @@ know    aphrodite_poissons 	data/chars/aphrodite/special/aphrodite_poissons.txt
 
 know    marin_eagle   		data/chars/marin/special/marin_eagle.txt
 know    marin_multipunch   	data/chars/marin/special/marin_multipunch.txt
+know    marin_stormA   	data/chars/marin/special/marin_stormA.txt
+know    marin_stormC   	data/chars/marin/special/marin_stormC.txt
+know    marin_circle   	data/chars/marin/special/marin_circle.txt
+know    marin_swing   	data/chars/marin/special/marin_swing.txt
 
 know    shaina_venom   		data/chars/shaina/special/shaina_venom.txt
 know    shaina_storm   		data/chars/shaina/special/shaina_storm.txt

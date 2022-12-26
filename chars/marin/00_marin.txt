@@ -50,6 +50,7 @@ ondrawscript	data/scripts/lifebar.c
 
 
 animationscript	data/scripts/player.c
+didhitscript	data/scripts/tint_silver.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Météores de Pégase
@@ -59,6 +60,10 @@ com  D F a1 freespecial5 	#Uppercut
 load marin_eagle
 load marin_multipunch
 load tremi_block
+load marin_stormA
+load marin_stormC
+load marin_circle
+load marin_swing
 
 #----------------------------------------------------------
 anim spawn
@@ -73,6 +78,7 @@ anim spawn
 	frame	data/chars/marin/spawn1.png
 	frame	data/chars/marin/spawn2.png
 	frame	data/chars/marin/spawn3.png
+	sound data/chars/marin/09-cloack.wav
 	frame	data/chars/marin/spawn4.png
 	frame	data/chars/marin/spawn5.png
 	frame	data/chars/marin/spawn6.png
@@ -138,8 +144,10 @@ anim runattack # Attaque en courant
 	delay	6
 	offset	30 115
 	bbox 2 3 51 112
+        hitflash marin_swing
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
+        @cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/marin/runattack1.png
 	frame	data/chars/marin/runattack2.png
 	frame	data/chars/marin/runattack3.png
@@ -220,6 +228,7 @@ anim attack5 # Attaque combo 5
 	bbox 21 7 51 112
 	hitflash flashbig
 	attack1 0 0 0 0 0 0 0 0 0 0
+        @cmd 	spawnbind "marin_circle" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/marin/attack51.png
 	frame	data/chars/marin/attack52.png
 	attack1 62 21 67 26 20 1 0 0 5 12
@@ -227,16 +236,43 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/marin/attack54.png
 	frame	data/chars/marin/attack52.png
 	
-anim special # Multi punch combo
+anim special # Eagle homerun
+	delay	10
+	offset	24 112
+	sound data/chars/marin/04-storm.wav
+        hitflash marin_swing
+	@cmd 	spawnbind "marin_stormC" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/marin/pain22.png
+	sound data/chars/marin/06-launch.wav
+	sound data/chars/marin/15-explosion.wav
+	frame	data/chars/marin/pain22.png
+	sound data/chars/marin/01.wav
+	attack5 74 1 120 180 30 1 0 0 5 12
+	dropv 	8.0 3 0
+	delay	40
+	frame	data/chars/marin/pain21.png
+	delay	10
+	offset	51 113
+	frame	data/chars/marin/pain1.png
+	frame	data/chars/marin/pain2.png
+	frame	data/chars/marin/pain3.png
+	frame	data/chars/marin/pain3.png
+	delay	40
+        frame	data/chars/marin/pain3.png
+	attack5 0
+        frame	data/chars/marin/pain2.png
+
+anim special2 # Multi punch combo
 	delay	10
 	offset	31 119
-	sound data/chars/marin/02.wav
+	sound data/chars/marin/03-multi.wav
 	summonframe 0 120 0 0
 	subentity marin_multipunch
 	unsummonframe 10
 	energycost  10 1 0
 	hitflash flashbig
 	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/marin/special21.png
 	frame	data/chars/marin/special22.png
 	attack5 28 -61 120 180 30 0 0 0 5 12
@@ -254,13 +290,14 @@ anim special # Multi punch combo
 anim freespecial # Multi punch combo
 	delay	10
 	offset	31 119
-	sound data/chars/marin/02.wav
+	sound data/chars/marin/03-multi.wav
 	summonframe 0 0 0 0
 	subentity marin_multipunch
 	unsummonframe 10
 	energycost  10 1 0
 	hitflash flashbig
 	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/marin/special21.png
 	frame	data/chars/marin/special22.png
 	attack5 28 -61 120 180 30 1 0 0 5 12
@@ -278,6 +315,7 @@ anim freespecial # Multi punch combo
 anim freespecial2 # Eagle projectile
 	delay	10
 	offset	31 115
+        hitflash marin_swing
 	sound data/chars/marin/02.wav
 	range 	130 300
 	rangea 	0 100	
@@ -292,8 +330,10 @@ anim freespecial2 # Eagle projectile
 	frame	data/chars/marin/special3.png
 	frame	data/chars/marin/special4.png
 	attack5 -8 -57 100 180 10 1 0 0 5 12
-	@cmd	shooter "marin_eagle" 77 40 0 3 0 0
+	@cmd	shooter "marin_eagle" 77 40 0 1.5 0 0
+        @cmd	shooter "marin_stormA" 77 40 0 1 0 0
 	frame	data/chars/marin/special3.png
+	delay	100
 	frame	data/chars/marin/special2.png	
 
 anim jump # Saut Statique

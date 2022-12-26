@@ -14,32 +14,32 @@ anim	idle
 	offset	72 80
 	drawmethod alpha 1
 	attack1 0 0 150 150 10 0 0 0 12 12
-	frame	data/chars/marin/special/multipunch1.png
+	frame	data/chars/marin/special/marin_multi/multipunch1.png
 	attack1 0
-	frame	data/chars/marin/special/multipunch2.png
+	frame	data/chars/marin/special/marin_multi/multipunch2.png
 	attack1 0 0 150 150 10 0 0 0 12 12
-	frame	data/chars/marin/special/multipunch3.png
+	frame	data/chars/marin/special/marin_multi/multipunch3.png
 	attack1 0
-	frame	data/chars/marin/special/multipunch4.png
+	frame	data/chars/marin/special/marin_multi/multipunch4.png
 	attack1 0 0 150 150 10 0 0 0 12 12
-	frame	data/chars/marin/special/multipunch5.png
+	frame	data/chars/marin/special/marin_multi/multipunch5.png
 	attack1 0
-	frame	data/chars/marin/special/multipunch6.png
+	frame	data/chars/marin/special/marin_multi/multipunch6.png
 	attack1 0 0 150 150 10 1 0 0 12 12
-	frame	data/chars/marin/special/multipunch7.png
+	frame	data/chars/marin/special/marin_multi/multipunch7.png
 	attack1 0 0 150 150 10 1 0 0 12 12
-	frame	data/chars/marin/special/multipunch8.png
+	frame	data/chars/marin/special/marin_multi/multipunch8.png
 	attack1 0
-	frame	data/chars/marin/special/multipunch9.png
+	frame	data/chars/marin/special/marin_multi/multipunch9.png
 	attack1 0 0 150 150 10 0 0 0 12 12
-	frame	data/chars/marin/special/multipunch10.png
+	frame	data/chars/marin/special/marin_multi/multipunch10.png
 	attack1 0 0 150 150 10 0 0 0 12 12
-	frame	data/chars/marin/special/multipunch11.png
+	frame	data/chars/marin/special/marin_multi/multipunch11.png
 	attack1 0
-	frame	data/chars/marin/special/multipunch12.png
+	frame	data/chars/marin/special/marin_multi/multipunch12.png
 	attack1 0 0 150 150 10 0 0 0 12 12
-	frame	data/chars/marin/special/multipunch13.png
+	frame	data/chars/marin/special/marin_multi/multipunch13.png
 	attack1 0
-	frame	data/chars/marin/special/multipunch14.png
+	frame	data/chars/marin/special/marin_multi/multipunch14.png
 	attack1 0 0 150 150 10 0 0 0 12 12
-	frame	data/chars/marin/special/multipunch15.png
+	frame	data/chars/marin/special/marin_multi/multipunch15.png
