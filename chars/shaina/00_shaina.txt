@@ -11,6 +11,7 @@ gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
 dust		round_dustB
+bflash tremi_block
 
 speed		20	# Vitesse de déplacement
 running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -43,6 +44,7 @@ icon       	data/chars/shaina/icon.png
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
+didhitscript	data/scripts/tint_purple.c
 
 #weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 shaina
 
@@ -60,6 +62,7 @@ load shaina_electricity
 load shaina_shoot
 load aldebaran_earthquake
 load aldebaran_fist
+load tremi_block
 
 #----------------------------------------------------------
 anim spawn

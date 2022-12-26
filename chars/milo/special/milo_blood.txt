@@ -7,9 +7,11 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
-	delay	5
-	offset	414 417
+	delay	15
+	offset	0 40
 	drawmethod alpha 6
+        drawmethod  channel 0.99
+        sound data/chars/tremi/02-pierce.wav
 	frame	data/chars/milo/special/milo_blood/milo_blood0.png
 	frame	data/chars/milo/special/milo_blood/milo_blood1.png
 	frame	data/chars/milo/special/milo_blood/milo_blood2.png

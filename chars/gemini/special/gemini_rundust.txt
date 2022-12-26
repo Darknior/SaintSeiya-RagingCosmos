@@ -1,7 +1,7 @@
 name	gemini_rundust
 type	none
 shadow	0
-layer 2
+layer 20
 antigravity 100
 animationscript	data/scripts/player.c
 

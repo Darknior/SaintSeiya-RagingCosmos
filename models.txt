@@ -108,6 +108,8 @@ know    aldebaran_earthquake    data/chars/aldebaran/special/aldebaran_earthquak
 know    aldebaran_super_lights    data/chars/aldebaran/special/aldebaran_super_lights.txt
 know    aldebaran_rock    data/chars/aldebaran/special/aldebaran_rock.txt
 know    aldebaran_fist    data/chars/aldebaran/special/aldebaran_fist.txt
+know    aldebaran_multi    data/chars/aldebaran/special/aldebaran_multi.txt
+know    aldebaran_block    data/chars/aldebaran/special/aldebaran_block.txt
 
 know    gemini_dimension_back  data/chars/gemini/special/gemini_dimension_back.txt
 know    gemini_rundust    data/chars/gemini/special/gemini_rundust.txt
@@ -159,6 +161,7 @@ know    milo_stingC    data/chars/milo/special/milo_stingC.txt
 know    milo_storm    data/chars/milo/special/milo_storm.txt
 know    milo_scorpion    data/chars/milo/special/milo_scorpion.txt
 know    milo_antares   data/chars/milo/special/milo_antares.txt
+know    milo_antaresA    data/chars/milo/special/milo_antaresA.txt
 know    milo_antaresB    data/chars/milo/special/milo_antaresB.txt
 know    milo_antaresC    data/chars/milo/special/milo_antaresC.txt
 
@@ -178,6 +181,7 @@ know    camus_constellation  	data/chars/camus/special/camus_constellation.txt
 know    camus_lights  	data/chars/camus/special/camus_lights.txt
 know    camus_ice_star  	data/chars/camus/special/camus_ice_star.txt
 know    camus_dash  	data/chars/camus/special/camus_dash.txt
+know    camus_block  	data/chars/camus/special/camus_block.txt
 
 know    aphrodite_rosefield  	data/chars/aphrodite/special/aphrodite_rosefield.txt
 know    aphrodite_rose_explosion  	data/chars/aphrodite/special/aphrodite_rose_explosion.txt
@@ -209,6 +213,7 @@ know    tremi_cosmos   	data/chars/tremi/special/tremi_cosmos.txt
 know    tremi_slash   	data/chars/tremi/special/tremi_slash.txt
 know    tremi_skull   	data/chars/tremi/special/tremi_skull.txt
 know    tremi_diagonal_arrows  	data/chars/tremi/special/tremi_diagonal_arrows.txt
+know    tremi_block  	data/chars/tremi/special/tremi_block.txt
 
 know    knife  		data/chars/great_pope/special/knife.txt
 

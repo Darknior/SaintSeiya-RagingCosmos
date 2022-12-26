@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		round_dustB
+bflash aldebaran_block
 
 icon		data/chars/aiolia/icon.png
 
@@ -22,6 +23,7 @@ death 		1
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
+didhitscript	data/scripts/aldebaran_gold.c
 
 atchain 1 1 2 3 4 5
 
@@ -35,6 +37,8 @@ load aiolia_dash
 load aiolia_plasma
 load aiolia_explosion
 load aldebaran_super_lights
+load aldebaran_block
+load aldebaran_swing
 
 #----------------------------------------------------------
 anim spawn
@@ -142,7 +146,7 @@ anim run
 anim runattack # Attaque en courant
 	delay	10
 	offset	50 136
-	bbox 31 17 38 117
+        hitflash aldebaran_swing
 	sound data/chars/aiolia/01-roar.wav
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
@@ -164,7 +168,7 @@ anim runattack # Attaque en courant
 anim freespecial # Attaque en courant
 	delay	10
 	offset	50 136
-	bbox 31 17 38 117
+        hitflash aldebaran_swing
 	sound data/chars/aiolia/01-roar.wav
 	forcedirection -1
 	range 	80 175
@@ -423,7 +427,6 @@ anim freespecial2 # Défense spéciale Lion homerun
         frame	data/chars/aiolia/melee8.png
 	
 anim freespecial6 #ULTRA Lightning Plasma
-	range 	70 100
 	fastattack 1
 	delay	10
 	offset	29 128
@@ -437,55 +440,83 @@ anim freespecial6 #ULTRA Lightning Plasma
 	frame	data/chars/aiolia/special2.png
 	frame	data/chars/aiolia/special3.png
 	frame	data/chars/aiolia/special4.png
+	delay   5
 	frame	data/chars/aiolia/special5.png
+	attack1 0
 	@cmd spawnScreen "aiolia_plasma" 0 0 0 0
 	frame	data/chars/aiolia/special6.png
-
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special6.png
 	attack1 0 0 800 480 2 0 0 0 12 480
 	frame	data/chars/aiolia/special7.png
 	attack1 0
 	frame	data/chars/aiolia/special8.png
-
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
+	attack1 0 0 800 480 2 0 0 0 12 480
+	frame	data/chars/aiolia/special7.png
+	attack1 0
+	frame	data/chars/aiolia/special8.png
 	attack1 0 0 800 480 10 1 0 0 12 480 #LAST HIT, NUMBER 10
 	frame	data/chars/aiolia/special7.png
 	attack1 0

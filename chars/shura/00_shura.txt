@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		round_dustB
+bflash aldebaran_block
 
 icon		data/chars/shura/icon.png
 
@@ -26,6 +27,7 @@ ondrawscript	data/scripts/lifebar.c
 atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
+didhitscript	data/scripts/aldebaran_gold.c
 
 load shura_circle
 load shura_rundust
@@ -36,6 +38,7 @@ load shura_excalibur
 load shura_explosion
 load shura_excaliburB
 load shura_dash
+load aldebaran_block
 
 #----------------------------------------------------------
 anim spawn

@@ -1,12 +1,12 @@
 name		camus
-health		50
+health		500
 mp 			100
 speed		20
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
-
+bflash camus_block
 
 icon		data/chars/camus/icon.png
 
@@ -25,6 +25,7 @@ ondrawscript	data/scripts/lifebar.c
 
 atchain 1 1 2 3 4 5
 
+didhitscript	data/scripts/camus_ice.c
 animationscript	data/scripts/player.c
 
 load camus_iceray
@@ -33,6 +34,7 @@ load camus_constellation
 load camus_lights
 load camus_ice_star
 load camus_dash
+load camus_block
 
 #----------------------------------------------------------
 anim spawn
@@ -316,7 +318,7 @@ anim special # Défense spéciale Ice pike
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
-	attack5 0 12 200 142 30 1 0 0 5 12
+	freeze  56 28 36 15 0 5
 	dropv 4.0 3.0 0.0
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png
@@ -372,7 +374,7 @@ anim special2 # Défense spéciale icecrystal
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
-	attack5 0 12 200 142 30 1 0 0 5 12
+	freeze  56 28 36 15 0 5
 	dropv 4.0 3.0 0.0
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png
@@ -523,7 +525,7 @@ anim riseattack # Défense spéciale icecrystal
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
-	attack5 0 12 200 142 30 1 0 0 5 12
+	freeze  56 28 36 15 0 5
 	dropv 4.0 3.0 0.0
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png

@@ -7,7 +7,7 @@ gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
 dust		round_dustB # Default "dust entity" using the native "Dust" function
-
+bflash tremi_block
 speed		20	# Vitesse de déplacement
 running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
@@ -811,8 +811,9 @@ anim pain2
 	frame	data/chars/seiya/pain21.png
 	
 anim fall
+        landframe 1
 	offset	114 110
-	delay	10
+	delay	-1000
 	frame	data/chars/seiya/fall1.png
 	frame	data/chars/seiya/fall2.png
 	delay	30
@@ -820,6 +821,7 @@ anim fall
 	frame	data/chars/seiya/fall4.png
 
 anim fall7
+        landframe 1
 	offset	114 110
 	delay	-1000
 	frame	data/chars/seiya/fall1.png
@@ -829,9 +831,14 @@ anim fall7
 	frame	data/chars/seiya/fall4.png
 
 anim rise
-	delay	10
+	delay	6
 	offset	114 110
 	jumpframe 0 0 0	
+	frame	data/chars/seiya/fall2.png
+	frame	data/chars/seiya/fall3.png
+	delay	85
+	frame	data/chars/seiya/fall4.png
+	delay	10
 	frame	data/chars/seiya/rise1.png
 	frame	data/chars/seiya/rise2.png
 	frame	data/chars/seiya/rise1.png

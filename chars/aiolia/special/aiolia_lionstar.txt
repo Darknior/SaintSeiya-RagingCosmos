@@ -5,7 +5,8 @@ shadow	0
 setlayer 100
 antigravity 100
 remove 0
-lifespan  6
+didhitscript	data/scripts/aldebaran_gold.c
+animationscript	data/scripts/player.c
 
 anim	idle
 	fastattack 1
@@ -32,4 +33,102 @@ anim	idle
 	attack1 0 0 150 150 10 1 0 0 12 12
 	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar8.png
 	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar9.png
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar0.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar1.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar2.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar3.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar4.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar5.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar6.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar7.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar8.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar9.png
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar0.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar1.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar2.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar3.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar4.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar5.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar6.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar7.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar8.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar9.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar0.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar1.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar2.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar3.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar4.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar5.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar6.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar7.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar8.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar9.png
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar0.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar1.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar2.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar3.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar4.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar5.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar6.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar7.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar8.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar9.png
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar0.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar1.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar2.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar3.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar4.png
+	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar5.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar6.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar7.png
+	attack1 0 0 150 150 10 1 0 0 12 12
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar8.png
+	attack1 0
+	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar9.png
+	@cmd suicide
 	frame	data/chars/aiolia/special/aiolia_lionstar/aiolia_lionstar9.png

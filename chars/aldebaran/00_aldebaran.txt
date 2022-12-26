@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		fall_dust
+bflash aldebaran_block
 
 icon		data/chars/aldebaran/icon.png
 
@@ -14,7 +15,7 @@ gfxshadow	1
 hitenemy    1 0
 blockodds 	1
 noquake 	1 1
-escapehits  1
+escapehits  2
 nodieblink 	3
 death 		1
 
@@ -25,6 +26,7 @@ ondrawscript	data/scripts/lifebar.c
 
 atchain 1 1 2 3 4 5
 
+didhitscript	data/scripts/aldebaran_gold.c
 animationscript	data/scripts/player.c
 
 load aldebaran_runtaurus
@@ -36,9 +38,10 @@ load aldebaran_ultraGH_back
 load aldebaran_super_lights
 load aldebaran_rock
 load aldebaran_fist
+load aldebaran_multi
 load camus_lights
-load shaina electricity
-load aphrodite_rose_explosion
+load aldebaran_block
+load milo_blood
 
 #----------------------------------------------------------
 anim spawn
@@ -163,18 +166,18 @@ anim run
 anim runattack # Attaque en courant
 	delay	7
 	offset	37 164
-	bbox 21 13 38 151
+        hitflash aldebaran_swing
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	@cmd 	spawnbind "aldebaran_runtaurus" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/10-dash.wav
-	frame	data/chars/aldebaran/runattack1.png
+	quakeframe	data/chars/aldebaran/runattack1.png 17 7
         summonframe 0 0 0 0 0
         subentity aldebaran_rundust
 	unsummonframe 20
 	frame	data/chars/aldebaran/runattack2.png
 	frame	data/chars/aldebaran/runattack3.png
-	attack2 60 40 55 83 20 1 0 0 5 12
+	attack2 60 40 55 83 20 1 0 0 5 20
 	frame	data/chars/aldebaran/runattack4.png
 	frame	data/chars/aldebaran/runattack5.png
 	frame	data/chars/aldebaran/runattack6.png
@@ -189,20 +192,20 @@ anim runattack # Attaque en courant
 anim freespecial # Attaque en courant
 	delay	7
 	offset	37 164
-	bbox 21 13 38 151
 	forcedirection -1
+        hitflash aldebaran_swing
 	range 	80 175
 	rangea 	0 100
 	@cmd	dasher 3.5 0 0 1
 	@cmd 	spawnbind "aldebaran_runtaurus" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/10-dash.wav
-	frame	data/chars/aldebaran/runattack1.png
+	quakeframe	data/chars/aldebaran/runattack1.png 17 7
         summonframe 0 0 0 0 0
         subentity aldebaran_rundust
 	unsummonframe 20
 	frame	data/chars/aldebaran/runattack2.png
 	frame	data/chars/aldebaran/runattack3.png
-	attack2 60 40 55 83 20 1 0 0 5 12
+	attack2 60 40 55 83 20 1 0 0 5 20
 	frame	data/chars/aldebaran/runattack4.png
 	frame	data/chars/aldebaran/runattack5.png
 	frame	data/chars/aldebaran/runattack6.png
@@ -382,7 +385,7 @@ anim special # Earthquake
 	delay	10
 	offset	37 163
 	sound data/chars/aldebaran/02-swing.wav
-	hitflash flashbig
+        hitflash aldebaran_swing
 	frame	data/chars/aldebaran/attack60.png
 	@cmd 	spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 0 0 1 0	  
 	frame	data/chars/aldebaran/attack61.png
@@ -424,11 +427,8 @@ anim freespecial2 # Défense spéciale Taurus homerun
 	sound data/chars/aldebaran/02-swing.wav
 	range 	50 80
 	rangea 	0 100
-	hitflash flashbig
-	frame	data/chars/aldebaran/special1.png
-        summonframe 5 0 0 0 0
-        subentity aldebaran_swing
-	unsummonframe 14
+	hitflash aldebaran_swing
+	quakeframe	data/chars/aldebaran/special1.png 17 7
 	frame	data/chars/aldebaran/special2.png
 	frame	data/chars/aldebaran/special3.png
 	attack5 -28 -12 120 180 30 1 0 0 5 12
@@ -450,10 +450,11 @@ anim freespecial2 # Défense spéciale Taurus homerun
 anim special2 #Attaque spéciale Punch combo
 	fastattack 1
 	forcedirection -1
+        hitflash flashbig
 	energycost 20 2 5
 	delay	6
 	offset	42 160
-	#bbox 21 11 38 151
+	@cmd 	spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/02-swing.wav
 	attack1 59 30 55 35 5 0 0 0 12 12
 	frame	data/chars/aldebaran/special21.png
@@ -498,10 +499,11 @@ anim special2 #Attaque spéciale Punch combo
 anim riseattack #Attaque spéciale Punch combo
 	fastattack 1
 	forcedirection -1
+        hitflash flashbig
 	#energycost 20 2 5
 	delay	6
 	offset	42 160
-	#bbox 21 11 38 151
+	@cmd 	spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/02-swing.wav
 	attack1 59 30 55 35 5 0 0 0 12 12
 	frame	data/chars/aldebaran/special21.png
@@ -569,111 +571,108 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	delay   5
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	sound data/chars/aldebaran/07-ultraGH2.wav
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 0 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
 	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 0 0 0 0 50
-	frame	data/chars/aldebaran/special54.png
-	attack1 0
-	frame	data/chars/aldebaran/special55.png
-	attack1 41 66 900 182 15 12 0 0 0 50
-	frame	data/chars/aldebaran/special52.png
-	attack1 0
-	frame	data/chars/aldebaran/special53.png
-	attack1 41 66 900 182 15 12 0 0 0 50
+	attack1 51 -29 900 182 15 0 0 0 0 50
 	frame	data/chars/aldebaran/special54.png
 	attack1 0
 	frame	data/chars/aldebaran/special55.png
 	attack1 41 66 900 182 15 12 0 0 0 50
 	frame	data/chars/aldebaran/special52.png
 	attack1 0
-
-
+	frame	data/chars/aldebaran/special53.png
+	attack1 41 66 900 182 15 12 0 0 0 50
+	frame	data/chars/aldebaran/special54.png
+	attack1 0
+	frame	data/chars/aldebaran/special55.png
+	attack1 41 66 900 182 15 12 0 0 0 50
+	frame	data/chars/aldebaran/special52.png
+	attack1 0
 
 anim	block
-	hitflash aphrodite_rose_explosion
 	offset	37 164
 	bbox 19 13 38 151
 	frame	data/chars/aldebaran/block1.png

@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		round_dustB
+bflash aldebaran_block
 
 icon		data/chars/gemini/icon.png
 
@@ -22,6 +23,7 @@ death 		1
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
+didhitscript	data/scripts/aldebaran_gold.c
 
 atchain 1 1 2 3 4 5
 
@@ -34,6 +36,9 @@ load gemini_multihits
 load gemini_ultra
 load aldebaran_super_lights
 load gemini_clones
+load aldebaran_multi
+load aldebaran_swing
+load aldebaran_block
 
 #----------------------------------------------------------
 anim spawn
@@ -106,7 +111,7 @@ anim run
 anim runattack # Attaque en courant
 	delay	7
 	offset	94 144
-	bbox 78 9 38 137
+	hitflash aldebaran_swing
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
         summonframe 0 0 0 0 0
@@ -115,7 +120,7 @@ anim runattack # Attaque en courant
 	frame	data/chars/gemini/runattack1.png
 	sound data/chars/gemini/04-dash.wav
 	frame	data/chars/gemini/runattack2.png
-	attack2 115 40 62 61 20 1 0 0 5 12
+	attack2 115 40 62 61 20 1 0 0 5 20
 	frame	data/chars/gemini/runattack3.png
 	frame	data/chars/gemini/runattack3.png
 	frame	data/chars/gemini/runattack3.png
@@ -129,7 +134,7 @@ anim runattack # Attaque en courant
 anim freespecial # Attaque en courant
 	delay	7
 	offset	94 144
-	bbox 78 9 38 137
+	hitflash aldebaran_swing
 	forcedirection -1
 	range 	80 175
 	rangea 	0 100
@@ -140,7 +145,7 @@ anim freespecial # Attaque en courant
 	frame	data/chars/gemini/runattack1.png
 	sound data/chars/gemini/04-dash.wav
 	frame	data/chars/gemini/runattack2.png
-	attack2 115 40 62 61 20 1 0 0 5 12
+	attack2 115 40 62 61 20 1 0 0 5 20
 	frame	data/chars/gemini/runattack3.png
 	frame	data/chars/gemini/runattack3.png
 	frame	data/chars/gemini/runattack3.png
@@ -421,6 +426,7 @@ anim special2 #Attaque spéciale Punch combo
 	delay	6
 	offset	66 144
 	bbox 21 11 38 151
+	@cmd 	spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/gemini/11-multihits.wav
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
@@ -435,19 +441,7 @@ anim special2 #Attaque spéciale Punch combo
 	frame	data/chars/gemini/special24.png
 	attack1 59 8 98 48 5 0 0 0 12 12
 	frame	data/chars/gemini/special25.png
-	attack1 0	
-	frame	data/chars/gemini/special26.png
-	attack1 70 39 77 44 5 0 0 0 12 12
-	frame	data/chars/gemini/special21.png
-	attack1 0	
-	frame	data/chars/gemini/special22.png
-	attack1 59 30 97 35 5 0 0 0 12 12
-	frame	data/chars/gemini/special23.png
-	attack1 0	
-	frame	data/chars/gemini/special24.png
-	attack1 59 8 98 48 5 0 0 0 12 12
-	frame	data/chars/gemini/special25.png
-	attack1 0	
+	attack1 0
 	frame	data/chars/gemini/special26.png
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
@@ -455,13 +449,25 @@ anim special2 #Attaque spéciale Punch combo
 	frame	data/chars/gemini/special22.png
 	attack1 59 30 97 35 5 0 0 0 12 12
 	frame	data/chars/gemini/special23.png
-	attack1 0	
+	attack1 0
 	frame	data/chars/gemini/special24.png
 	attack1 59 8 98 48 5 0 0 0 12 12
 	frame	data/chars/gemini/special25.png
-	attack1 0	
+	attack1 0
 	frame	data/chars/gemini/special26.png
-	attack1 0	
+	attack1 70 39 77 44 5 0 0 0 12 12
+	frame	data/chars/gemini/special21.png
+	attack1 0
+	frame	data/chars/gemini/special22.png
+	attack1 59 30 97 35 5 0 0 0 12 12
+	frame	data/chars/gemini/special23.png
+	attack1 0
+	frame	data/chars/gemini/special24.png
+	attack1 59 8 98 48 5 0 0 0 12 12
+	frame	data/chars/gemini/special25.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/gemini/special26.png
+	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/gemini/special26.png	
 	offset	116 150
 	delay	10
@@ -470,6 +476,7 @@ anim special2 #Attaque spéciale Punch combo
 	attack1 59 25 83 55 5 1 0 0 12 12
 	dropv 3.0 3.0 0.0	
 	frame	data/chars/gemini/special29.png
+	attack 172 35 50 50 20 12 0 0 0 20
 	frame	data/chars/gemini/special30.png
 	attack1 0
 	frame	data/chars/gemini/special31.png
@@ -484,6 +491,7 @@ anim freespecial2 # Attaque spéciale Punch combo
 	delay	6
 	offset	66 144
 	bbox 21 11 38 151
+	@cmd 	spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/gemini/11-multihits.wav
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
@@ -533,6 +541,7 @@ anim freespecial2 # Attaque spéciale Punch combo
 	attack1 59 25 83 55 5 1 0 0 12 12
 	dropv 3.0 3.0 0.0	
 	frame	data/chars/gemini/special29.png
+	attack 172 35 50 50 20 12 0 0 0 20
 	frame	data/chars/gemini/special30.png
 	attack1 0
 	frame	data/chars/gemini/special31.png

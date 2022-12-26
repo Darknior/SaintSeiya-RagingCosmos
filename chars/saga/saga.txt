@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		round_dustB
+bflash aldebaran_block
 
 icon		data/chars/saga/icon.png
 
@@ -27,6 +28,9 @@ boss 		1
 atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
+didhitscript	data/scripts/aldebaran_gold.c
+
+load aldebaran_block
 
 #load dimension_back
 #----------------------------------------------------------

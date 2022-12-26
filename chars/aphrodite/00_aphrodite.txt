@@ -7,6 +7,7 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		round_dustB
+bflash aldebaran_block
 
 icon		data/chars/aphrodite/icon.png
 
@@ -26,6 +27,7 @@ ondrawscript	data/scripts/lifebar.c
 atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
+didhitscript	data/scripts/tint_red.c
 
 load aphrodite_rosefield
 load aphrodite_rose_explosion
@@ -41,6 +43,7 @@ load camus_lights
 load shaka_lotus_petals
 load aiolia_explosion
 load aiolia_lionstar
+load aldebaran_block
 
 #----------------------------------------------------------
 anim spawn
