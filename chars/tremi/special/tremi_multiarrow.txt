@@ -4,7 +4,7 @@ shadow	0
 remove 0
 setlayer 99
 antigravity 100
-didhitscript	data/scripts/tint_silver.c
+didhitscript	data/scripts/tint_red.c
 lifespan  6
 
 anim	idle
@@ -12,7 +12,7 @@ anim	idle
 	fastattack 1
 	delay	6
 	offset	0 20
-        hitflash tremi_arrow_pierce
+        hitflash milo_blood
 	drawmethod alpha 1
 	attack5 0 0 100 50 20 0 0 0 0 20
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow1.png

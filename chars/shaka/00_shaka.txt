@@ -27,7 +27,7 @@ ondrawscript	data/scripts/lifebar.c
 atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
-didhitscript	data/scripts/aldebaran_gold.c
+didhitscript	data/scripts/tint_red.c
 
 load shaka_lotus
 load shaka_lotus_shot
@@ -43,6 +43,7 @@ load shaka_blood_seaB
 load shaka_blood_geyser
 load shaka_lotus_petals
 load shaka_hands
+load shaka_flame
 load aldebaran_super_lights
 load aldebaran_block
 
@@ -372,6 +373,7 @@ anim jumpattack # Attaque sautée statique
 anim freespecial5 # Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
+        hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
@@ -381,7 +383,6 @@ anim freespecial5 # Défense spéciale Blood Sea
 	@cmd 	spawnbind "shaka_blood_geyser" "ANI_IDLE" 0 0 0 0 0
 	energycost  15 1 0
 	@cmd 	spawnbind "shaka_circles" "ANI_IDLE" 0 0 0 0 0
-	hitflash flashbig
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/shaka/special21.png
 	@cmd 	spawnScreen "shaka_blood_sea" 0 0 0 0
@@ -497,6 +498,7 @@ anim freespecial5 # Défense spéciale Blood Sea
 anim riseattack # Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
+        hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
@@ -506,7 +508,6 @@ anim riseattack # Défense spéciale Blood Sea
 	@cmd 	spawnbind "shaka_blood_geyser" "ANI_IDLE" 0 0 0 0 0
 	energycost  15 1 0
 	@cmd 	spawnbind "shaka_circles" "ANI_IDLE" 0 0 0 0 0
-	hitflash flashbig
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/shaka/special21.png
 	@cmd 	spawnScreen "shaka_blood_sea" 0 0 0 0
@@ -767,6 +768,7 @@ anim freespecial3 # Shaka hands
 	summonframe 0 0 0 0 0
 	subentity shaka_cosmos
 	unsummonframe 15
+	bbox 39 15 50 130
 	frame	data/chars/shaka/special21.png
 	frame	data/chars/shaka/special22.png
 	frame	data/chars/shaka/special23.png
@@ -788,12 +790,12 @@ anim freespecial3 # Shaka hands
 anim freespecial6 # Ten Bu Ho Rin
 	delay	20
 	offset	66 149
+        hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	summonframe 0 0 0 0 1
 	subentity shaka_constellation
-	hitflash flashbig
 	frame	data/chars/shaka/special21.png
 	sound data/chars/shaka/07-loku.wav
 	@cmd 	spawnbind "shaka_circlesB" "ANI_IDLE" 0 0 0 0 0

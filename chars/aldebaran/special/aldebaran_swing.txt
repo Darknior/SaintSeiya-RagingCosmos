@@ -8,19 +8,18 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	1
 	delay	10
-	offset	17 160
+	offset	95 90
         drawmethod  alpha 1
         drawmethod  channel 0.53
         sound data/chars/aldebaran/11-crush.wav
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing0.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing1.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing2.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing3.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing4.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing5.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing6.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing7.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing8.png
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing9.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-0.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-1.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-2.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-3.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-4.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-5.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-6.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-7.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-8.png
 	@cmd suicide
-	frame	data/chars/aldebaran/special/aldebaran_swing/swing9.png
+	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-8.png

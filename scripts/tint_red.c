@@ -17,6 +17,7 @@ void redEffect(){
 		anim == openborconstant("ANI_RISEATTACK")	||
 		anim == openborconstant("ANI_FREESPECIAL2")	||
 		anim == openborconstant("ANI_FREESPECIAL3")	||
+		anim == openborconstant("ANI_FREESPECIAL3")	||
 		anim == openborconstant("ANI_FREESPECIAL5")	||
 		anim == openborconstant("ANI_FREESPECIAL6")	){
 		

@@ -430,6 +430,7 @@ anim freespecial6 #ULTRA Lightning Plasma
 	fastattack 1
 	delay	10
 	offset	29 128
+        hitflash flashbig
 	spawnframe 0 0 0 0 1
 	subentity aiolia_constellation
 	energycost  20 1 0
@@ -529,6 +530,7 @@ anim freespecial3 #Lion star shot
 	delay	10
 	offset	35 128
 	energycost  15 1 0
+	bbox 13 7 50 120
 	frame	data/chars/aiolia/special21.png
 	frame	data/chars/aiolia/special22.png
 	frame	data/chars/aiolia/special23.png

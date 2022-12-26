@@ -6,13 +6,13 @@ setlayer 0
 antigravity 100
 lifespan  1
 animationscript		data/scripts/escript.c
-didhitscript	data/scripts/tint_silver.c
+didhitscript	data/scripts/tint_red.c
 
 anim	idle
 	loop	1
 	delay	3
 	offset	15 11
-        hitflash tremi_arrow_pierce
+        hitflash milo_blood
 	followanim 1
 	followcond 1
 	bbox 0 0 28 22

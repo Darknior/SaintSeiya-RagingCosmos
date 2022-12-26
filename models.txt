@@ -138,6 +138,7 @@ know    shaka_blood_geyser    data/chars/shaka/special/shaka_blood_geyser.txt
 know    shaka_lotus_petals    data/chars/shaka/special/shaka_lotus_petals.txt
 know    shaka_hands    data/chars/shaka/special/shaka_hands.txt
 know    shaka_aura    data/chars/shaka/special/shaka_aura.txt
+know    shaka_flame    data/chars/shaka/special/shaka_flame.txt
 
 know    milo_blood	        data/chars/milo/special/milo_blood.txt
 know    milo_circles	data/chars/milo/special/milo_circles.txt

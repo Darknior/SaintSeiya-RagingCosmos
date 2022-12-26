@@ -300,6 +300,7 @@ anim freespecial3 #Cobra shoot
 	offset	43 131
 	energycost  15 1 0
 	sound data/chars/shura/08-sword.wav
+	bbox 25 29 50 100
 	frame	data/chars/shaina/attack31.png
 	frame	data/chars/shaina/attack32.png
 	frame	data/chars/shaina/attack33.png
