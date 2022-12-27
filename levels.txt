@@ -160,7 +160,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  shiryu
 z           400 484
 file        data/levels/temple4boss.txt
 
@@ -215,7 +215,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  shiryu
 z           355 470
 file        data/levels/temple7BOSS.txt
 
@@ -226,7 +226,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  hyoga
 z           378 484
 file        data/levels/temple8BOSS.txt
 
@@ -250,7 +250,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  shiryu
 z           378 484
 file        data/levels/temple10BOSS.txt
 
@@ -261,7 +261,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  hyoga
 z           378 484
 file        data/levels/temple11BOSS.txt
 
@@ -272,7 +272,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  shun
 z           378 484
 file        data/levels/temple12BOSS.txt
 
