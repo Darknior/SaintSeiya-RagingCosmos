@@ -134,7 +134,6 @@ anim run
 anim runattack # Attaque en courant
 	delay	6
 	offset	30 115
-	bbox 2 3 51 112
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	frame	data/chars/shaina/runattack1.png
@@ -264,7 +263,6 @@ anim freespecial2 # Attaque spéciale Venin du Serpent
 	rangea 	0 70
 	delay	5
 	offset	31 130
-	bbox 32 16 38 114
 	sound data/chars/shaina/04-rush.wav
 	@cmd 	spawnbind "shaina_venom" "ANI_IDLE" 0 0 0 0 0
 	energycost  20 1 0

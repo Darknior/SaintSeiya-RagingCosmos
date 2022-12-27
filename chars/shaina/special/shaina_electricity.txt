@@ -9,7 +9,7 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	1
 	delay	8
-	offset	51 251
+	offset	51 200
 	drawmethod alpha 1
 	sound data/chars/shaina/06-storm.wav
 	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-20.png
