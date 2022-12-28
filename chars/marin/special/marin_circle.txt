@@ -12,6 +12,7 @@ anim	idle
 	delay	6
 	offset	100 210
 	drawmethod alpha 1
+	sound data/chars/marin/01-storm.wav
 	frame	data/chars/marin/special/marin_circle/marin_circle-0.png
 	frame	data/chars/marin/special/marin_circle/marin_circle-1.png
 	frame	data/chars/marin/special/marin_circle/marin_circle-2.png

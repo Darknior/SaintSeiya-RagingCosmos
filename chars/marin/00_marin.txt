@@ -241,14 +241,13 @@ anim attack5 # Attaque combo 5
 anim special # Eagle homerun
 	delay	10
 	offset	24 112
-	sound data/chars/marin/04-storm.wav
+	sound data/chars/marin/01-explosion.wav
         hitflash marin_swing
 	@cmd 	spawnbind "marin_stormC" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/marin/pain22.png
-	sound data/chars/marin/06-launch.wav
-	sound data/chars/marin/15-explosion.wav
+	sound data/chars/marin/01-hurl.wav
 	frame	data/chars/marin/pain22.png
-	sound data/chars/marin/01.wav
+	sound data/chars/marin/06-launch.wav
 	attack5 74 1 120 180 30 1 0 0 5 12
 	dropv 	8.0 3 0
 	delay	40
@@ -265,12 +264,11 @@ anim special # Eagle homerun
         frame	data/chars/marin/pain2.png
 
 anim special2 # Multi punch combo
-	delay	10
+	delay	15
 	offset	31 119
-	sound data/chars/marin/03-multi.wav
+	sound data/chars/marin/01-multi2.wav
 	summonframe 0 120 0 0
-	subentity marin_multipunch
-	unsummonframe 10
+	@cmd 	spawnbind "marin_multipunch" "ANI_IDLE" 0 0 0 0 0
 	energycost  10 1 0
 	hitflash flashbig
 	attack 0 0 0 0 0 0 0 0 0 0
@@ -286,24 +284,12 @@ anim special2 # Multi punch combo
 	frame	data/chars/marin/special27.png
 	frame	data/chars/marin/special28.png
 	frame	data/chars/marin/special29.png
-	frame	data/chars/marin/special30.png
-	frame	data/chars/marin/special31.png	
-	
-anim freespecial # Multi punch combo
-	delay	10
-	offset	31 119
-	sound data/chars/marin/03-multi.wav
-	summonframe 0 0 0 0
-	subentity marin_multipunch
-	unsummonframe 10
-	energycost  10 1 0
-	hitflash flashbig
-	attack 0 0 0 0 0 0 0 0 0 0
 	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/marin/special21.png
+        frame	data/chars/marin/special21.png
 	frame	data/chars/marin/special22.png
-	attack5 28 -61 120 180 30 1 0 0 5 12
+	attack5 28 -61 120 180 30 0 0 0 5 12
 	frame	data/chars/marin/special23.png
+	@cmd 	spawnbind "marin_multipunch" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/marin/special24.png
 	frame	data/chars/marin/special25.png
 	frame	data/chars/marin/special26.png
@@ -312,13 +298,50 @@ anim freespecial # Multi punch combo
 	frame	data/chars/marin/special28.png
 	frame	data/chars/marin/special29.png
 	frame	data/chars/marin/special30.png
-	frame	data/chars/marin/special31.png
+	frame	data/chars/marin/special31.png	
+	
+anim freespecial # Multi punch combo
+	delay	15
+	offset	31 119
+	sound data/chars/marin/01-multi2.wav
+	summonframe 0 120 0 0
+	@cmd 	spawnbind "marin_multipunch" "ANI_IDLE" 0 0 0 0 0
+	energycost  10 1 0
+	hitflash flashbig
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/marin/special21.png
+	frame	data/chars/marin/special22.png
+	attack5 28 -61 120 180 30 0 0 0 5 12
+	frame	data/chars/marin/special23.png
+	frame	data/chars/marin/special24.png
+	frame	data/chars/marin/special25.png
+	frame	data/chars/marin/special26.png
+	attack5 0
+	frame	data/chars/marin/special27.png
+	frame	data/chars/marin/special28.png
+	frame	data/chars/marin/special29.png
+	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
+        frame	data/chars/marin/special21.png
+	frame	data/chars/marin/special22.png
+	attack5 28 -61 120 180 30 0 0 0 5 12
+	frame	data/chars/marin/special23.png
+	@cmd 	spawnbind "marin_multipunch" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/marin/special24.png
+	frame	data/chars/marin/special25.png
+	frame	data/chars/marin/special26.png
+	attack5 0
+	frame	data/chars/marin/special27.png
+	frame	data/chars/marin/special28.png
+	frame	data/chars/marin/special29.png
+	frame	data/chars/marin/special30.png
+	frame	data/chars/marin/special31.png	
 	
 anim freespecial2 # Eagle projectile
 	delay	10
 	offset	31 115
         hitflash marin_swing
-	sound data/chars/marin/02.wav
+	sound data/chars/marin/01-eagle_shoot.wav
 	range 	130 300
 	rangea 	0 100	
 	#summonframe 0 0 0 0 0
@@ -335,7 +358,7 @@ anim freespecial2 # Eagle projectile
 	@cmd	shooter "marin_eagle" 77 40 0 1.5 0 0
         @cmd	shooter "marin_stormA" 77 40 0 1 0 0
 	frame	data/chars/marin/special3.png
-	delay	100
+	delay	150
 	frame	data/chars/marin/special2.png	
 
 anim jump # Saut Statique

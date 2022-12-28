@@ -5,13 +5,13 @@ shadow	0
 setlayer 100
 antigravity 100
 remove 0
-lifespan  6
+animationscript	data/scripts/player.c
 
 anim	idle
 	fastattack 1
 	loop	1
-	delay	4
-	offset	72 80
+	delay	8
+	offset	-18 80
 	drawmethod alpha 1
 	attack1 0 0 150 150 10 0 0 0 12 12
 	frame	data/chars/marin/special/marin_multi/multipunch1.png
@@ -42,4 +42,6 @@ anim	idle
 	attack1 0
 	frame	data/chars/marin/special/marin_multi/multipunch14.png
 	attack1 0 0 150 150 10 0 0 0 12 12
+	frame	data/chars/marin/special/marin_multi/multipunch15.png
+	@cmd suicide
 	frame	data/chars/marin/special/marin_multi/multipunch15.png
