@@ -1,5 +1,5 @@
 
-music		data/music/music2.bor
+music		data/music/ikki3.ogg
 
 panel		data/bgs/ROOMS/temple3.png 
 
@@ -11,7 +11,7 @@ cameratype 1
 
 direction right
 
-settime 0
+settime 99
 
 order	a
 
@@ -31,7 +31,7 @@ noshare 1
 credits 1
 cansave 0
 nodebug 1
-notime 1
+notime 0
 nosave 1
 blocked 1
 nosame 1
@@ -45,6 +45,22 @@ completebg 1
 #spawn kiki
 #coords  -200 400
 #at 0
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-gemeau
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
 
 spawn jaki
 coords	550 390

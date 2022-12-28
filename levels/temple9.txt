@@ -13,7 +13,7 @@ cameratype 1
 
 direction right
 
-settime 0
+settime 99
 
 order	a
 
@@ -45,7 +45,21 @@ completebg 1
 -------------------------------------
 
 
+spawn       horloge-segment
+coords      368 89
+at          0
 
+spawn       horloge-sagitaire
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
 
 spawn roccia1
 alias ROCKS

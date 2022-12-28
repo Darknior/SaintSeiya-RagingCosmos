@@ -45,7 +45,7 @@ spawn       horloge-segment
 coords      368 89
 at          0
 
-spawn       horloge-cancer
+spawn       horloge-vierge
 coords      368 89
 at          0
 

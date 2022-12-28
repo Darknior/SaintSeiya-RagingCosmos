@@ -76,7 +76,7 @@ e4icon      607 115
 ##-----------------------------------------------------
 ##-----------------------------------------------------
 
-set         Temple_0_Tremi
+set         Temple_1_Road_Tremi
 maxplayers  1
 lives       1
 credits     10
@@ -87,7 +87,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple0.txt
 
-set         Temple_1_Mu
+set         Temple_1_BOSS_Mu
 maxplayers  1
 lives       1
 credits     10
@@ -98,7 +98,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple1.txt
 
-set         Temple_2-Road
+set         Temple_2_Road
 maxplayers  1
 lives       1
 credits     10
@@ -109,7 +109,7 @@ skipselect  shiryu
 z           378 484
 file        data/levels/temple2.txt
 
-set         Temple_2_Taureau
+set         Temple_2_BOSS_Taureau
 maxplayers  4
 lives       1
 credits     10
@@ -120,7 +120,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple2boss.txt
 
-set         Temple_4_Jaki
+set         Temple_3_Road
 maxplayers  1
 lives       1
 credits     10
@@ -129,9 +129,9 @@ disablehof  0
 typemp      0
 skipselect  hyoga
 z           385 484
-file        data/levels/temple4.txt
+file        data/levels/temple3.txt
 
-set         Temple_3_Gemeaux
+set         Temple_3_BOSS_Gemeaux
 maxplayers  1
 lives       1
 credits     10
@@ -142,7 +142,7 @@ skipselect  shun
 z           378 484
 file        data/levels/temple3boss.txt
 
-set         Temple_4-Road
+set         Temple_4_Road_Jaki
 maxplayers  1
 lives       1
 credits     10
@@ -153,7 +153,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple4.txt
 
-set         Temple_4_Cancer
+set         Temple_4_BOSS_Cancer
 maxplayers  1
 lives       1
 credits     10
@@ -164,7 +164,7 @@ skipselect  shiryu
 z           400 484
 file        data/levels/temple4boss.txt
 
-set         Temple_5_Cassios
+set         Temple_5_Road_Cassios
 maxplayers  1
 lives       1
 credits     10
@@ -175,7 +175,7 @@ skipselect  cassiosp
 z           384 484
 file        data/levels/temple5.txt
 
-set         Temple_5_Lion
+set         Temple_5_BOSS_Lion
 maxplayers  1
 lives       1
 credits     10
@@ -186,7 +186,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple5boss.txt
 
-set         Temple_6_Shaina
+set         Temple_6_Road_Shaina
 maxplayers  1
 lives       1
 credits     10
@@ -197,7 +197,7 @@ skipselect  seiya
 z           390 484
 file        data/levels/temple6.txt
 
-set         Temple_6_Vierge
+set         Temple_6_BOSS_Vierge
 maxplayers  1
 lives       1
 credits     10
@@ -208,7 +208,7 @@ skipselect  seiya
 z           390 484
 file        data/levels/temple6boss.txt
 
-set         Temple_7_Balance
+set         Temple_7_BOSS_Balance
 maxplayers  1
 lives       1
 credits     10
@@ -219,7 +219,18 @@ skipselect  shiryu
 z           355 470
 file        data/levels/temple7BOSS.txt
 
-set         Temple_8_Scorpion
+set         Temple_8_Road_Shaina
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           390 484
+file        data/levels/temple8.txt
+
+set         Temple_8_BOSS_Scorpion
 maxplayers  1
 lives       1
 credits     10
@@ -230,9 +241,18 @@ skipselect  hyoga
 z           378 484
 file        data/levels/temple8BOSS.txt
 
-## 09 Sagittaire
+set         Temple_9_Sagitarius Temple
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           390 484
+file        data/levels/temple9.txt
 
-set         Temple_10-Road
+set         Temple_10_Road
 maxplayers  1
 lives       1
 credits     10
@@ -243,7 +263,7 @@ skipselect  seiya
 z           490 990
 file        data/levels/temple10.txt
 
-set         Temple_10_Capricorne
+set         Temple_10_BOSS_Capricorne
 maxplayers  1
 lives       1
 credits     10
@@ -254,7 +274,18 @@ skipselect  shiryu
 z           378 484
 file        data/levels/temple10BOSS.txt
 
-set         Temple_11_Verseau
+set         Temple_11_Road
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           490 990
+file        data/levels/temple11.txt
+
+set         Temple_11_BOSS_Verseau
 maxplayers  1
 lives       1
 credits     10
@@ -265,7 +296,18 @@ skipselect  hyoga
 z           378 484
 file        data/levels/temple11BOSS.txt
 
-set         Temple_12_Poissons
+set         Temple_12_Road
+maxplayers  1
+lives       1
+credits     10
+cansave     2
+disablehof  0
+typemp      0
+skipselect  seiya
+z           378 484
+file        data/levels/temple12.txt
+
+set         Temple_12_BOSS_Poissons
 maxplayers  1
 lives       1
 credits     10
@@ -287,7 +329,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple13.txt
 
-set         Temple_13_Grand_Pope
+set         Temple_13_BOSS_Grand_Pope
 maxplayers  1
 lives       1
 credits     10

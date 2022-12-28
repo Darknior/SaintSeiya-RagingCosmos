@@ -14,7 +14,7 @@ shadowalpha     6
 at        0
 direction right
 
-settime 0
+settime 99
 
 order	a
 
@@ -24,6 +24,22 @@ wall		497 809 -500 -500 3307 2837 324 400 # Mur 1 le long de la falaise
 wall		3824 800 0 0 693 693 308 306		# Mur 2 à droite du temple
 
 -------------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-capricorne
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       time-is-up
+coords      368 89
+at          0
 
 wait
 at 100

@@ -31,7 +31,7 @@ noshare 1
 credits 1
 cansave 0
 nodebug 1
-notime 1
+notime 0
 nosave 1
 blocked 1
 nosame 1
