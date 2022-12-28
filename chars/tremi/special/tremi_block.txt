@@ -8,7 +8,7 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	1
 	delay	4
-	offset	5 31
+	offset	7 26
         drawmethod  alpha 1
         drawmethod  channel 0.53
 	frame	data/chars/tremi/special/tremi_block/tremi_block-0.png

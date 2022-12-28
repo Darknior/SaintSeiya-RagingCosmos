@@ -6,8 +6,8 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
-	delay	8
-	offset	68 205
+	delay	4
+	offset	98 205
 	drawmethod alpha 1
 frame	data/chars/seiya/special/seiya_dash_dust/dash_dust0.png
 frame	data/chars/seiya/special/seiya_dash_dust/dash_dust1.png

@@ -6,7 +6,7 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
-	delay	8
+	delay	5
 	offset	140 159
 	drawmethod alpha 1
 frame	data/chars/seiya/special/seiya_down_dust/down_dust0.png

@@ -27,6 +27,19 @@ anim	idle
 	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
 	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
 	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
+	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png
         drawmethod  alpha 6
         drawmethod  channel 0.75
 	frame	data/chars/seiya/special/seiya_comet_back/comet_back1.png

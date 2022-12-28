@@ -6,7 +6,7 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
-	delay	30
+	delay	15
 	offset	45 130
 	drawmethod alpha 1
 	frame	data/chars/seiya/special/seiya_aura_air_kick/seiya_aura_air_kick1.png

@@ -79,15 +79,15 @@ know    seiya_aura_air_kick            data/chars/seiya/special/seiya_aura_air_k
 know    seiya_aura_air_ryuseiken            data/chars/seiya/special/seiya_aura_air_ryuseiken.txt
 know    seiya_aura_ryuseiken            data/chars/seiya/special/seiya_aura_ryuseiken.txt
 know    seiya_constellation   data/chars/seiya/special/seiya_constellation.txt
-know    seiya_pegasus         data/chars/seiya/special/seiya_pegasus.txt
 know    seiya_meteor          data/chars/seiya/special/seiya_meteor.txt
 know    seiya_meteord         data/chars/seiya/special/seiya_meteord.txt
-know    seiya_comet           data/chars/seiya/special/seiya_comet.txt
 know    seiya_comet_back      data/chars/seiya/special/seiya_comet_back.txt
 know    seiya_dash_dust       data/chars/seiya/special/seiya_dash_dust.txt
 know    seiya_down_dust       data/chars/seiya/special/seiya_down_dust.txt
 know    seiya_upper_dust      data/chars/seiya/special/seiya_upper_dust.txt
 know    seiya_round_dust      data/chars/seiya/special/seiya_round_dust.txt
+know    seiya_lights      data/chars/seiya/special/seiya_lights.txt
+know    seiya_seiya_meteor_flash      data/chars/seiya/special/seiya_meteor_flash.txt
 
 know    shiryu_aura            data/chars/shiryu/special/shiryu_aura.txt
 know    shiryu_dragon          data/chars/shiryu/special/shiryu_dragon.txt

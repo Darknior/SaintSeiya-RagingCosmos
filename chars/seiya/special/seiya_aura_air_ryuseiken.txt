@@ -6,8 +6,8 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
-	delay	30
-	offset	80 200
+	delay	13
+	offset	69 171
 	drawmethod alpha 1
 	frame	data/chars/seiya/special/seiya_aura_air_ryuseiken/aura_air_ryuseiken0.png
 	frame	data/chars/seiya/special/seiya_aura_air_ryuseiken/aura_air_ryuseiken1.png
