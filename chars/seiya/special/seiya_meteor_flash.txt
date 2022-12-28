@@ -21,15 +21,6 @@ anim	idle
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-7.png
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-8.png
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-9.png
-        frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-1.png
-	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-2.png
-	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-3.png
-	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-4.png
-	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-5.png
-	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-6.png
-	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-7.png
-	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-8.png
-	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-9.png
 	@cmd suicide
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-9.png
 
