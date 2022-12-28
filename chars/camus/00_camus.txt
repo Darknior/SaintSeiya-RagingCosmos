@@ -27,6 +27,7 @@ atchain 1 1 2 3 4 5
 
 didhitscript	data/scripts/camus_ice.c
 animationscript	data/scripts/player.c
+script	data/scripts/blink_select.c
 
 load camus_iceray
 load camus_icecrystal

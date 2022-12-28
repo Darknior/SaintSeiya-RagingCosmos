@@ -15,6 +15,7 @@ icon		data/chars/saga/icon.png
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
+script	data/scripts/blink_select.c
 
 gfxshadow	1
 hitenemy    1 0

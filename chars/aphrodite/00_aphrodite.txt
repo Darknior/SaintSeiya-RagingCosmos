@@ -28,6 +28,7 @@ atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/tint_red.c
+script	data/scripts/blink_select.c
 
 load aphrodite_rosefield
 load aphrodite_rose_explosion

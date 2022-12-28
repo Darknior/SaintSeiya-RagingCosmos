@@ -20,7 +20,7 @@ gfxshadow 1
 palette data/chars/SOLDIER1-1/COLOR1.png
 dust		round_dustB
 \\subject_to_wall 0
-
+script	data/scripts/blink_select.c
 subject_to_screen 0
 
 load soldiersuper

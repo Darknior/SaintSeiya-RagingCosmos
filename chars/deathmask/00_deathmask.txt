@@ -28,6 +28,7 @@ atchain 1 1 2 3 4 5
 
 didhitscript	data/scripts/deathmask_poison.c
 animationscript	data/scripts/player.c
+script	data/scripts/blink_select.c
 
 load deathmask_hands
 load deathmask_claw

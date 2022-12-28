@@ -26,6 +26,7 @@ ondrawscript	data/scripts/lifebar.c
 
 atchain 1 1 2 3 4 5
 
+script	data/scripts/blink_select.c
 didhitscript	data/scripts/aldebaran_gold.c
 animationscript	data/scripts/player.c
 

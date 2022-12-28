@@ -26,6 +26,7 @@ death 		1
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
+script	data/scripts/blink_select.c
 
 atchain 1 1 2 3 4 5
 

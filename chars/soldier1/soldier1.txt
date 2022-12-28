@@ -18,7 +18,7 @@ blocked 1
 noquake 1 1
 gfxshadow	1
 dust		round_dustB
-
+script	data/scripts/blink_select.c
 \\subject_to_wall 0
 
 subject_to_screen 0
