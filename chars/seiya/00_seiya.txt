@@ -42,6 +42,7 @@ icon       	data/chars/seiya/icon.png
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/blink_select.c
+didhitscript	data/scripts/camus_ice.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Météores de Pégase
