@@ -36,6 +36,7 @@ load camus_lights
 load camus_ice_star
 load camus_dash
 load camus_block
+load marin_swing
 
 #----------------------------------------------------------
 anim spawn
@@ -98,6 +99,7 @@ anim runattack # Attaque en courant
 	delay	7
 	offset	46 130
 	bbox 32 16 38 114
+        hitflash marin_swing
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	frame	data/chars/camus/runattack1.png
@@ -119,18 +121,20 @@ anim freespecial # Attaque en courant
 	delay	7
 	offset	46 130
 	bbox 32 16 38 114
+        hitflash marin_swing
 	range 	80 150
 	rangea 	0 100
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	frame	data/chars/camus/runattack1.png
 	frame	data/chars/camus/runattack2.png
-	attack2 60 33 97 33 20 1 0 0 5 12
+	attack2 60 33 97 33 20 1 0 0 5 18
 	dropv 4.0 2.0 0.0
 	@cmd 	spawnbind "camus_dash" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/camus/runattack3.png
 	frame	data/chars/camus/runattack3.png
 	frame	data/chars/camus/runattack3.png
+	attack 60 30 100 30 20 1 0 0 5 18
 	frame	data/chars/camus/runattack3.png
 	attack2 0
 	@cmd	dasher 0 0 0 1
@@ -261,7 +265,7 @@ anim attack5 # Attaque combo 5
 	delay	12
 	offset	27 142
 	bbox 20 63 38 84
-	hitflash flashbig
+        hitflash marin_swing
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/camus/attack51.png
 	frame	data/chars/camus/attack52.png
@@ -315,7 +319,7 @@ anim special # Défense spéciale Ice pike
 	offset	70 154
 	sound data/chars/camus/07-icewall.wav
 	energycost  10 1 0
-	hitflash flashbig
+        hitflash marin_swing
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
@@ -328,6 +332,7 @@ anim special # Défense spéciale Ice pike
 	frame	data/chars/camus/special5.png
 	frame	data/chars/camus/special6.png
 	frame	data/chars/camus/special7.png
+	freeze  56 28 36 15 0 5
 	frame	data/chars/camus/special8.png
 	frame	data/chars/camus/special9.png
 	frame	data/chars/camus/special10.png
@@ -372,7 +377,7 @@ anim special2 # Défense spéciale icecrystal
 	offset	70 154
 	sound data/chars/camus/07-icewall.wav
 	energycost  10 1 0
-	hitflash flashbig
+        hitflash marin_swing
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
@@ -385,6 +390,7 @@ anim special2 # Défense spéciale icecrystal
 	frame	data/chars/camus/special5.png
 	frame	data/chars/camus/special6.png
 	frame	data/chars/camus/special7.png
+	freeze  56 28 36 15 0 5
 	frame	data/chars/camus/special8.png
 	frame	data/chars/camus/special9.png
 	frame	data/chars/camus/special10.png
@@ -506,15 +512,15 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
 	frame	data/chars/camus/special27.png
 	attack1 0
 	frame	data/chars/camus/special26.png
-	attack1 41 66 900 182 15 12 0 0 0 50
+	attack1 41 66 900 182 15 0 0 0 0 50
 	frame	data/chars/camus/special25.png
 	attack1 0
 	frame	data/chars/camus/special24.png
-	attack1 41 66 900 182 15 12 0 0 0 50
+	attack1 41 66 900 182 15 0 0 0 0 50
 	frame	data/chars/camus/special23.png
 	attack1 0
 	frame	data/chars/camus/special22.png
-	attack1 41 66 900 182 15 12 0 0 0 50
+	freeze  41 66 900 182 0 18
 	frame	data/chars/camus/special21.png
 	attack1 0
 	
@@ -523,7 +529,7 @@ anim riseattack # Défense spéciale icecrystal
 	offset	70 154
 	sound data/chars/camus/07-icewall.wav
 	energycost  10 1 0
-	hitflash flashbig
+        hitflash marin_swing
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
 	unsummonframe 11
@@ -536,6 +542,7 @@ anim riseattack # Défense spéciale icecrystal
 	frame	data/chars/camus/special5.png
 	frame	data/chars/camus/special6.png
 	frame	data/chars/camus/special7.png
+	freeze  56 28 36 15 0 5
 	frame	data/chars/camus/special8.png
 	frame	data/chars/camus/special9.png
 	frame	data/chars/camus/special10.png
