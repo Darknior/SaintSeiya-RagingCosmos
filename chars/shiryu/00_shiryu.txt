@@ -41,7 +41,7 @@ icon       	data/chars/shiryu/icon.png
 
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
-script	data/scripts/blink_select.c
+script	data/scripts/entity_effects.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Fureur du Dragon

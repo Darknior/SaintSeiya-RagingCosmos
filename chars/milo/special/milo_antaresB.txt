@@ -5,7 +5,7 @@ remove 0
 setlayer 4521
 hitflash milo_blood
 animationscript	data/scripts/player.c
-didhitscript	data/scripts/tint_red.c
+didhitscript	data/scripts/didhit/tint_red.c
 
 anim	idle
 	loop	0

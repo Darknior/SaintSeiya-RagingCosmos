@@ -25,9 +25,9 @@ ondrawscript	data/scripts/lifebar.c
 
 atchain 1 1 2 3 4 5
 
-didhitscript	data/scripts/camus_ice.c
+didhitscript	data/scripts/didhit/tint_ice.c
 animationscript	data/scripts/player.c
-script	data/scripts/blink_select.c
+script	data/scripts/entity_effects.c
 
 load camus_iceray
 load camus_icecrystal

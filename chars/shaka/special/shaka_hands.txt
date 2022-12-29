@@ -4,7 +4,7 @@ shadow	0
 setlayer 333
 antigravity 100
 lifespan 1.5
-didhitscript	data/scripts/aldebaran_gold.c
+didhitscript	data/scripts/didhit/tint_gold.c
 
 anim	idle
 	loop	0

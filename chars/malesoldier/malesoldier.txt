@@ -5,7 +5,7 @@ type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
-script	data/scripts/blink_select.c
+script	data/scripts/entity_effects.c
 
 
 icon		data/chars/malesoldier/icon.png

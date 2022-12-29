@@ -22,7 +22,7 @@ makeinv 4 0
 weapons       PIARMA0 PIARMA1 PIARMA2 PIARMA3 PIARMA4 PIARMA5 PIARMA6   PHOENIX-IKKI
 
 load ikkisuper
-script	data/scripts/blink_select.c
+script	data/scripts/entity_effects.c
 
 
 com  d  -> s  freespecial

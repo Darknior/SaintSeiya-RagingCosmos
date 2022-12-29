@@ -4,7 +4,7 @@ shadow	0
 setlayer 150
 antigravity 100
 animationscript	data/scripts/player.c
-didhitscript	data/scripts/aldebaran_gold.c
+didhitscript	data/scripts/didhit/tint_gold.c
 
 anim	idle
 	loop	1

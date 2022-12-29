@@ -1,5 +1,5 @@
 void main()
-{//Turn on/off generic blink effects according to global variables, works with any feature
+{//Turn on/off generic effects according to global variables
 	
 	if(openborvariant("in_selectscreen")){
 		blinkSelect();

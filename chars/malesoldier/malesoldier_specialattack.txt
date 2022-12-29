@@ -8,7 +8,7 @@ aimove      chase
 dust		round_dustB
 
 icon		data/chars/malesoldier/icon.png
-script	data/scripts/blink_select.c
+script	data/scripts/entity_effects.c
 
 gfxshadow	1
 hitenemy    1 0

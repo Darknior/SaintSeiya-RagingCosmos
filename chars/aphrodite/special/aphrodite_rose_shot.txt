@@ -6,7 +6,7 @@ setlayer 100
 antigravity 100
 remove 0
 lifespan  6
-didhitscript	data/scripts/tint_red.c
+didhitscript	data/scripts/didhit/tint_red.c
 
 anim	idle
 	fastattack 1

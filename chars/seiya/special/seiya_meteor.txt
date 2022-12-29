@@ -4,7 +4,7 @@ shadow	0
 setlayer 99
 antigravity 100
 animationscript	data/scripts/player.c
-didhitscript	data/scripts/camus_ice.c
+didhitscript	data/scripts/didhit/tint_ice.c
 fastattack 1
 
 anim	idle

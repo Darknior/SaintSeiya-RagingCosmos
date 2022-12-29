@@ -26,8 +26,8 @@ ondrawscript	data/scripts/lifebar.c
 
 atchain 1 1 2 3 4 5
 
-script	data/scripts/blink_select.c
-didhitscript	data/scripts/aldebaran_gold.c
+script	data/scripts/entity_effects.c
+didhitscript	data/scripts/didhit/tint_gold.c
 animationscript	data/scripts/player.c
 
 load aldebaran_runtaurus

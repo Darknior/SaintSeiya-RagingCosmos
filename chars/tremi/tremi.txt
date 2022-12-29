@@ -43,7 +43,7 @@ icon       	data/chars/tremi/icon.png
 
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
-script	data/scripts/blink_select.c
+script	data/scripts/entity_effects.c
 
 load tremi_multiarrow
 #----------------------------------------------------------

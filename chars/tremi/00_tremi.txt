@@ -47,10 +47,10 @@ icon       	data/chars/tremi/icon.png
 
 #weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 tremi
 
-script	data/scripts/blink_select.c
+script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
-script	data/scripts/blink_select.c
-didhitscript	data/scripts/tint_silver.c
+script	data/scripts/entity_effects.c
+didhitscript	data/scripts/didhit/tint_silver.c
 
 load tremi_multiarrow
 load tremi_dash

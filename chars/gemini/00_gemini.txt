@@ -23,8 +23,8 @@ death 		1
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
-didhitscript	data/scripts/aldebaran_gold.c
-script	data/scripts/blink_select.c
+didhitscript	data/scripts/didhit/tint_gold.c
+script	data/scripts/entity_effects.c
 
 atchain 1 1 2 3 4 5
 

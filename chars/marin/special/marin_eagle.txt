@@ -5,7 +5,7 @@ remove 0
 setlayer 99
 antigravity 100
 lifespan  6
-didhitscript	data/scripts/camus_ice.c
+didhitscript	data/scripts/didhit/tint_ice.c
 
 anim	idle
 	loop	1

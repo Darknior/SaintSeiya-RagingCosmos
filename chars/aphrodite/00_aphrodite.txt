@@ -27,8 +27,8 @@ ondrawscript	data/scripts/lifebar.c
 atchain 1 1 2 3 4 5
 
 animationscript	data/scripts/player.c
-didhitscript	data/scripts/tint_red.c
-script	data/scripts/blink_select.c
+didhitscript	data/scripts/didhit/tint_red.c
+script	data/scripts/entity_effects.c
 
 load aphrodite_rosefield
 load aphrodite_rose_explosion

@@ -4,7 +4,7 @@ shadow	0
 candamage player
 setlayer 150
 antigravity 100
-didhitscript	data/scripts/camus_ice.c
+didhitscript	data/scripts/didhit/tint_ice.c
 
 anim	idle
 	loop	0
