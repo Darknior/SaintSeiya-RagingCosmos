@@ -64,6 +64,7 @@ load seiya_aura_ryuseiken
 load aldebaran_super_lights
 load seiya_lights
 load seiya_meteor_flash
+load marin_swing
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -256,6 +257,7 @@ anim runattack # Attaque en courant
 	delay	8
 	offset	30 111
 	fastattack 1
+	hitflash marin_swing
 	bbox 11 0 51 112
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
@@ -376,7 +378,7 @@ anim attackboth # Attaque arrière (bouton saut + attaque)
 	offset	45 134
 	fastattack 1
 	bbox 21 22 51 112
-	hitflash flashbig
+	hitflash marin_swing
 	delay	5
 sound   data/chars/seiya/17-back_kick.wav
 	frame	data/chars/seiya/attackbackward1.png
@@ -775,6 +777,7 @@ anim jumpforward #Attaque sautée vers l'avant
 anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
 	delay	5
 	offset	45 112
+	hitflash marin_swing
 	fastattack 1
 	bbox 21 0 51 112
 	sound data/sounds/punch.wav	
@@ -831,7 +834,7 @@ anim freespecial5 # Uppercut
 	offset	45 134
 	bbox 21 22 51 112
 	fastattack 1
-	hitflash flashbig
+	hitflash marin_swing
 	delay	5
 	sound data/chars/seiya/03-uppercut2.wav
 	@cmd 	spawnbind "seiya_upper_dust" "ANI_IDLE" 0 0 0 0 0

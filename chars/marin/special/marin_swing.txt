@@ -10,7 +10,7 @@ anim	idle
 	delay	10
 	offset	95 90
         drawmethod  alpha 1
-        drawmethod  channel 0.53
+        drawmethod  scale 0.5 0.5
         sound data/chars/marin/02-swing.wav
 	frame	data/chars/marin/special/marin_swing/marin_swing-0.png
 	frame	data/chars/marin/special/marin_swing/marin_swing-1.png

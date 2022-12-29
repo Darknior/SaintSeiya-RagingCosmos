@@ -10,6 +10,7 @@ anim	idle
 	delay	10
 	offset	95 90
         drawmethod  alpha 1
+        drawmethod  scale 0.5 0.5
         drawmethod  channel 0.53
         sound data/chars/aldebaran/11-crush.wav
 	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-0.png
