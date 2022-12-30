@@ -158,8 +158,9 @@ void blinkDamage()
 		//APPLY EFFECTS
 		changedrawmethod(self, "enabled", 1);
 		changedrawmethod(self, "tintmode", tintMode);
-		changedrawmethod(self, "tintcolor", rgbcolor(0xE0, 0xE0, 0xE0));
+		changedrawmethod(self, "tintcolor", rgbcolor(time*rate, 0x00, time*rate));
 	}else
+
 
 	//PINK EFFECT
 	if(pinkTime > time && !dead){

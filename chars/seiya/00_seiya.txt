@@ -42,7 +42,7 @@ icon       	data/chars/seiya/icon.png
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
-didhitscript	data/scripts/didhit/tint_ice.c
+didhitscript	data/scripts/didhit/tint_silver.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Météores de Pégase
@@ -263,19 +263,20 @@ anim runattack # Attaque en courant
 	@cmd	dasher 3.5 0 0 1
 sound   data/chars/seiya/07-forward_punch.wav
 	frame	data/chars/seiya/runattack1.png
+	attack 5 13 90 55 15 12 0 0 0 20
 	frame	data/chars/seiya/runattack2.png
 	@cmd 	spawnbind "seiya_dash_dust" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/runattack3.png
-	attack2 31 13 55 83 15 12 0 0 0 20
+	attack2 5 13 90 55 15 0 0 0 0 20
 	frame	data/chars/seiya/runattack4.png
 	attack2 0
 	frame	data/chars/seiya/runattack5.png
-	attack2 31 13 55 83 15 0 0 0 0 20
+	attack2 5 13 90 55 15 12 0 0 0 20
 	frame	data/chars/seiya/runattack4.png
 	attack2 0
 	frame	data/chars/seiya/runattack5.png
-	attack2 31 13 51 83 15 15 0 0 0 0
-	attack2 31 13 51 83 15 15 0 0 0 0
+	attack2 5 13 90 55 15 0 0 0 0 20
+	attack2 5 13 90 55 15 0 0 0 0 20
 	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/seiya/runattack3.png
