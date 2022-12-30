@@ -1,0 +1,33 @@
+name	shiryu_lights
+type	panel
+shadow	0
+speed 10
+setlayer 2500
+antigravity 100
+lifespan 3.6
+
+anim	idle
+	loop	1
+	delay	10
+	offset	800 0
+	drawmethod alpha 1
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-0.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-1.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-2.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-3.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-4.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-5.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-6.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-7.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-8.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-9.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-10.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-11.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-12.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-13.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-14.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-15.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-16.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-17.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-18.png
+	frame	data/chars/shiryu/special/shiryu_lights/shiryu_lights-19.png

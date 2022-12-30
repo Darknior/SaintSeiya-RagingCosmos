@@ -158,7 +158,7 @@ void blinkDamage()
 		//APPLY EFFECTS
 		changedrawmethod(self, "enabled", 1);
 		changedrawmethod(self, "tintmode", tintMode);
-		changedrawmethod(self, "tintcolor", rgbcolor(time*rate, 0x00, time*rate));
+		changedrawmethod(self, "tintcolor", rgbcolor(0x66, time*rate, 0x66));
 	}else
 
 

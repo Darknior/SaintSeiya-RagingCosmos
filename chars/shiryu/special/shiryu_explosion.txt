@@ -1,0 +1,50 @@
+name	shiryu_explosion
+type	none
+shadow	0
+remove 0
+setlayer 1
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	243 564
+	drawmethod alpha 1
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-1.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-2.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-3.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-4.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-5.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-6.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-7.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-8.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-9.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-10.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-11.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-12.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-13.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-14.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-15.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-16.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-17.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-18.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-19.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-20.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-21.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-22.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-24.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-25.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-26.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-27.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-28.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-29.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-31.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-32.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-33.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-34.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-35.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-36.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-37.png
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-38.png
+	@cmd suicide
+	frame	data/chars/shiryu/special/shiryu_explosion/shiryu_explosion-38.png

@@ -1,0 +1,45 @@
+name	shiryu_big_dragon
+type	none
+shadow	0
+remove 0
+setlayer 90
+antigravity 100
+offscreenkill 635
+lifespan  6
+
+anim	idle
+	loop	1 6 8
+	fastattack 1
+	delay	15
+	drawmethod alpha 1
+	drawmethod fliprotate 1	
+	offset	650 102
+        sound   data/chars/shiryu/01-dragon.wav
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
+	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
+

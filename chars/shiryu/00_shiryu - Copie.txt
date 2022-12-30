@@ -50,17 +50,14 @@ com  D F a1 freespecial5 	#Uppercut Colère du Dragon
 
 load shiryu_aura
 load shiryu_dragon
+load shiryu_dragon_uppercut
 load shiryu_dragon_water
-load shiryu_explosion
-load shiryu_uppercut
-load shiryu_big_dragon
-load shiryu_cosmos
 #load shiryu_constellation
 #load shiryu_pegasus
 #load shiryu_meteor
 #load shiryu_meteord
 #load shiryu_comet
-load seiya_comet_back
+#load shiryu_comet_back
 #load shiryu_down_dust
 #load shiryu_dash_dust
 #load shiryu_upper_dust
@@ -69,7 +66,6 @@ load seiya_comet_back
 #load shiryu_aura_air_ryuseiken
 #load shiryu_aura_ryuseiken
 #load aldebaran_super_lights
-load shiryu_lights
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -542,7 +538,6 @@ anim freespecial2 # Fureur du Dragon
 	frame	data/chars/shiryu/special29.png
 	frame	data/chars/shiryu/special30.png
 	frame	data/chars/shiryu/special31.png
-	@cmd 	spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
 	attack5 0 -50 100 180 10 1 0 0 5 12
 	@cmd	shooter "shiryu_dragon" 77 80 0 3 0 0
 	frame	data/chars/shiryu/special32.png
@@ -554,37 +549,63 @@ anim freespecial2 # Fureur du Dragon
 	frame	data/chars/shiryu/special38.png
 
 anim freespecial6 # Cascade du Dragon ( haut + bouton special)
-	delay	13
-	offset	47 130
+	delay	18
+	offset	90 158
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
-	@cmd 	spawnScreen "shiryu_lights" 0 0 0 0
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
-	subentity seiya_comet_back
+	subentity shiryu_comet_back
 	energycost  20 1 0
-        sound   data/chars/shiryu/01-shoryuha.wav
-	frame	data/chars/shiryu/special21.png
-	frame	data/chars/shiryu/special22.png
-	frame	data/chars/shiryu/special23.png
-	frame	data/chars/shiryu/special24.png
-	frame	data/chars/shiryu/special25.png
-	frame	data/chars/shiryu/special26.png
-	frame	data/chars/shiryu/special27.png
-	frame	data/chars/shiryu/special28.png
-	frame	data/chars/shiryu/special29.png
-	frame	data/chars/shiryu/special30.png
-	frame	data/chars/shiryu/special31.png
-	@cmd 	spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
-	attack5 0 -50 100 180 10 1 0 0 5 12
-	@cmd	shooter "shiryu_big_dragon" 77 80 0 2 0 0
-	frame	data/chars/shiryu/special32.png
-	frame	data/chars/shiryu/special33.png
-	frame	data/chars/shiryu/special34.png
-	frame	data/chars/shiryu/special35.png
-	frame	data/chars/shiryu/special36.png
-	frame	data/chars/shiryu/special37.png
-	frame	data/chars/shiryu/special38.png	
+	frame	data/chars/shiryu/upspecial1.png
+	sound data/chars/shiryu/08-ultra.wav
+	frame	data/chars/shiryu/upspecial2.png
+	frame	data/chars/shiryu/upspecial3.png
+	frame	data/chars/shiryu/upspecial4.png
+	sound data/chars/shiryu/08-ultra2.wav
+	frame	data/chars/shiryu/upspecial5.png
+	frame	data/chars/shiryu/upspecial6.png
+	frame	data/chars/shiryu/upspecial7.png
+	@cmd	shooter "shiryu_dragon_water" 77 0 0 0 0 0
+	frame	data/chars/shiryu/upspecial8.png
+	frame	data/chars/shiryu/upspecial9.png
+	frame	data/chars/shiryu/upspecial10.png
+	frame	data/chars/shiryu/upspecial11.png
+	frame	data/chars/shiryu/upspecial12.png
+	frame	data/chars/shiryu/upspecial13.png
+	frame	data/chars/shiryu/upspecial14.png
+	frame	data/chars/shiryu/upspecial15.png
+	frame	data/chars/shiryu/upspecial16.png
+	frame	data/chars/shiryu/upspecial17.png
+	frame	data/chars/shiryu/upspecial18.png
+	frame	data/chars/shiryu/upspecial19.png
+	frame	data/chars/shiryu/upspecial20.png
+	frame	data/chars/shiryu/upspecial21.png
+	frame	data/chars/shiryu/upspecial22.png
+	frame	data/chars/shiryu/upspecial23.png
+	frame	data/chars/shiryu/upspecial24.png
+	frame	data/chars/shiryu/upspecial25.png
+	frame	data/chars/shiryu/upspecial26.png
+	frame	data/chars/shiryu/upspecial27.png
+	frame	data/chars/shiryu/upspecial28.png
+	frame	data/chars/shiryu/upspecial29.png
+	frame	data/chars/shiryu/upspecial30.png
+	delay	15	
+	frame	data/chars/shiryu/upspecial23.png	
+	frame	data/chars/shiryu/upspecial22.png	
+	frame	data/chars/shiryu/upspecial21.png	
+	frame	data/chars/shiryu/upspecial20.png	
+	frame	data/chars/shiryu/upspecial19.png	
+	frame	data/chars/shiryu/upspecial18.png
+	frame	data/chars/shiryu/upspecial17.png
+	frame	data/chars/shiryu/upspecial16.png	
+	frame	data/chars/shiryu/upspecial15.png	
+	frame	data/chars/shiryu/upspecial14.png	
+	frame	data/chars/shiryu/upspecial13.png	
+	frame	data/chars/shiryu/upspecial12.png
+	frame	data/chars/shiryu/upspecial11.png
+	frame	data/chars/shiryu/upspecial10.png	
 	
 anim jump # Saut Statique
 	delay	10
@@ -694,31 +715,22 @@ anim freespecial5 # Uppercut Colère du Dragon
 	delay	5
 	sound data/chars/shiryu/03-uppercut2.wav
 	frame	data/chars/shiryu/uppercut1.png
-	attack1 59 63 50 84 20 0 0 0 0 20
+	attack1 59 63 50 84 30 1 0 0 5 12
 	frame	data/chars/shiryu/uppercut2.png
 	delay 5
 	attack1 0
 	frame	data/chars/shiryu/uppercut3.png
-	attack1 59 63 50 84 20 0 0 0 0 20
+	attack1 59 63 50 84 30 1 0 0 5 12
 	frame	data/chars/shiryu/uppercut4.png
-	@cmd 	spawnbind "shiryu_uppercut" "ANI_IDLE" 0 0 0 1 0
 	attack1 0
+	@cmd	shooter2 "shiryu_dragon_uppercut" 77 95 0 4
 	delay 10
 	frame	data/chars/shiryu/uppercut5.png
-	attack1 59 63 50 84 20 12 0 0 0 20
-	dropv 	6.0 2 0
 	frame	data/chars/shiryu/uppercut6.png
-	attack1 0
 	frame	data/chars/shiryu/uppercut7.png
-	attack1 59 63 50 84 20 0 0 0 0 20
 	frame	data/chars/shiryu/uppercut8.png
-	attack1 0
 	frame	data/chars/shiryu/uppercut9.png
-	attack1 59 63 50 84 20 12 0 0 0 20
-	dropv 	6.0 2 0
 	frame	data/chars/shiryu/uppercut10.png
-	attack1 0
-	delay 60
 	frame	data/chars/shiryu/uppercut11.png
 
 anim pain

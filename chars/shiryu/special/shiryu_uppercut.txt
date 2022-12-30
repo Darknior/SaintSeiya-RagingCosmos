@@ -1,0 +1,41 @@
+name	shiryu_uppercut
+type	none
+shadow	0
+remove 0
+setlayer 500
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	38 200
+	drawmethod alpha 1
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-0.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-1.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-2.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-3.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-4.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-5.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-6.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-7.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-8.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-9.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-10.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-11.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-12.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-13.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-14.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-15.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-16.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-17.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-18.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-19.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-20.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-21.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-22.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-24.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-25.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-26.png
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-27.png
+	@cmd suicide
+	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-27.png

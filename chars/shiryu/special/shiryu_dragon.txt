@@ -2,7 +2,7 @@ name	shiryu_dragon
 type	none
 shadow	0
 remove 0
-setlayer 99
+setlayer 90
 antigravity 100
 offscreenkill 635
 lifespan  6
@@ -10,23 +10,24 @@ lifespan  6
 anim	idle
 	loop	1 6 8
 	fastattack 1
-	delay	5
-	offset	530 70
-	attack5 530 20 105 80 20 0 0 0 0 20
-	frame	data/chars/shiryu/special/shiryu_dragon/dragon1.png
+	delay	15
+	drawmethod alpha 1
+	drawmethod fliprotate 1	
+	offset	250 102
+        sound   data/chars/shiryu/01-dragon.wav
 	attack5 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/shiryu/special/shiryu_dragon/dragon2.png
-	attack5 530 20 105 80 20 0 0 0 0 20
-	frame	data/chars/shiryu/special/shiryu_dragon/dragon3.png
+	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-2.png
+	attack5 150 51 330 90 20 0 0 0 0 35
+	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-3.png
 	attack5 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/shiryu/special/shiryu_dragon/dragon4.png
-	attack5 530 20 105 80 20 0 0 0 0 20
-	frame	data/chars/shiryu/special/shiryu_dragon/dragon5.png
+	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-4.png
+	attack5 150 51 330 90 20 0 0 0 0 35
+	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-5.png
 	attack5 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/shiryu/special/shiryu_dragon/dragon6.png
+	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
 	delay	20	
-	attack5 0 20 635 80 50 1 0 0 0 20
-	frame	data/chars/shiryu/special/shiryu_dragon/dragon7.png
+	attack5 150 51 330 90 50 1 0 0 0 35
+	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
 	attack5 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/shiryu/special/shiryu_dragon/dragon8.png
+	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-8.png
 
