@@ -540,32 +540,10 @@ anim freespecial2 # Météores de Pégase
 	frame	data/chars/seiya/special39.png
 	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0	
 	frame	data/chars/seiya/special40.png
-	sound data/chars/seiya/01-pegasus_shoot.wav
 	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
 	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0		
 	attack5 0
-	@cmd	dasher 5 0 0 1
-	attack4 90 40 55 83 40 1 0 0 5 12
-	frame	data/chars/seiya/special42.png
-	offset 100 147
-	frame	data/chars/seiya/special44.png
-	offset	31 116
-	frame	data/chars/seiya/special42.png
-	offset 100 147
-	frame	data/chars/seiya/special44.png
-	offset	31 116
-	frame	data/chars/seiya/special43.png
-	offset 100 147
-	frame	data/chars/seiya/special44.png
-	offset	31 116
-	frame	data/chars/seiya/special43.png
-	offset 100 147
-	frame	data/chars/seiya/special44.png
-	attack4 0
-	@cmd	dasher 0 0 0 1
-	offset	31 116
-	frame	data/chars/seiya/special42.png
 
 anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	delay	10
@@ -640,10 +618,6 @@ anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
 	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
-	frame	data/chars/seiya/special35.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0
-	frame	data/chars/seiya/special36.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
 	frame	data/chars/seiya/special37.png
 	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
 	frame	data/chars/seiya/special38.png

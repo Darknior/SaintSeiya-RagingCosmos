@@ -60,7 +60,7 @@ load shiryu_cosmos
 #load shiryu_meteor
 #load shiryu_meteord
 #load shiryu_comet
-load seiya_comet_back
+load shiryu_constellation
 #load shiryu_down_dust
 #load shiryu_dash_dust
 #load shiryu_upper_dust
@@ -561,7 +561,7 @@ anim freespecial6 # Cascade du Dragon ( haut + bouton special)
 	@cmd 	spawnScreen "shiryu_lights" 0 0 0 0
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
-	subentity seiya_comet_back
+	subentity shiryu_constellation
 	energycost  20 1 0
         sound   data/chars/shiryu/01-shoryuha.wav
 	frame	data/chars/shiryu/special21.png
