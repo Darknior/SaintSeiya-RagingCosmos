@@ -9,5 +9,6 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL"), "green", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL2"), "green", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL3"), "green", 1);
+	tintEffect(openborconstant("ANI_FREESPECIAL5"), "green", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "green", 1);
 }

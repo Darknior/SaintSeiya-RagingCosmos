@@ -42,6 +42,7 @@ icon       	data/chars/shiryu/icon.png
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
+didhitscript	data/scripts/didhit/tint_green.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Fureur du Dragon
@@ -577,7 +578,7 @@ anim freespecial6 # Cascade du Dragon ( haut + bouton special)
 	frame	data/chars/shiryu/special31.png
 	@cmd 	spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
 	attack5 0 -50 100 180 10 1 0 0 5 12
-	@cmd	shooter "shiryu_big_dragon" 77 80 0 2 0 0
+	@cmd	shooter "shiryu_big_dragon" 77 80 0 1.5 0 0
 	frame	data/chars/shiryu/special32.png
 	frame	data/chars/shiryu/special33.png
 	frame	data/chars/shiryu/special34.png
@@ -748,7 +749,7 @@ anim pain2
 anim fall
 	landframe 7
 	offset	114 130
-	delay	10
+	delay	-1000
 	frame	data/chars/shiryu/fall1.png
 	frame	data/chars/shiryu/fall2.png
 	frame	data/chars/shiryu/fall3.png
@@ -759,6 +760,7 @@ anim fall
 	frame	data/chars/shiryu/fall8.png
 	
 anim fall7
+        landframe 1
 	offset	114 130
 	delay	-1000
 	frame	data/chars/shiryu/fall1.png

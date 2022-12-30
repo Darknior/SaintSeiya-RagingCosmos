@@ -97,17 +97,17 @@ void blinkDamage()
 	}else
 
 	//GOLD EFFECT
-	if(goldTime > time && !dead){
+	if(goldTime > time){
 		
-		//GET NEW VALUES
-		tintMode	= 6;
-		rate		= 2.5;
-		
-		//APPLY EFFECTS
-		changedrawmethod(self, "enabled", 1);
-		changedrawmethod(self, "tintmode", tintMode);
-		changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0xFF, 0x00));
-	}else
+        //GET NEW VALUES
+        tintMode    = 1;
+        rate        = 5.5;
+
+        //APPLY EFFECTS
+        changedrawmethod(self, "enabled", 1);
+        changedrawmethod(self, "tintmode", tintMode);
+        changedrawmethod(self, "tintcolor", rgbcolor(time*rate, time*rate, 0x00));
+    }else
 
 	//PURPLE EFFECT
 	if(purpleTime > time && !dead){
@@ -136,31 +136,31 @@ void blinkDamage()
 	}else
 
 	//GREEN EFFECT
-	if(greenTime > time && !dead){
+	if(greenTime > time){
 		
 		//GET NEW VALUES
-		tintMode	= 6;
+		tintMode	= 1;
 		rate		= 2.5;
 		
 		//APPLY EFFECTS
 		changedrawmethod(self, "enabled", 1);
 		changedrawmethod(self, "tintmode", tintMode);
-		changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0xFF, 0x00));
+		changedrawmethod(self, "tintcolor", rgbcolor(0x00, time*rate, 0x00));
+
 	}else
 
-	//SILVER EFFECT
-	if(silverTime > time && !dead){
-		
-		//GET NEW VALUES
-		tintMode	= 6;
-		rate		= 2.5;
-		
-		//APPLY EFFECTS
-		changedrawmethod(self, "enabled", 1);
-		changedrawmethod(self, "tintmode", tintMode);
-		changedrawmethod(self, "tintcolor", rgbcolor(0x66, time*rate, 0x66));
-	}else
+//SILVER EFFECT
+    if(silverTime > time){
 
+        //GET NEW VALUES
+        tintMode    = 1;
+        rate        = 5.5;
+
+        //APPLY EFFECTS
+        changedrawmethod(self, "enabled", 1);
+        changedrawmethod(self, "tintmode", tintMode);
+        changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, time*rate));
+    }else
 
 	//PINK EFFECT
 	if(pinkTime > time && !dead){

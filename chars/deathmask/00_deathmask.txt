@@ -1,5 +1,5 @@
 name		deathmask
-health		150
+health		900
 mp 			100
 speed		20
 type		enemy

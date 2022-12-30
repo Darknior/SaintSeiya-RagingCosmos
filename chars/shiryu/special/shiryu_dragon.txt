@@ -6,6 +6,7 @@ setlayer 90
 antigravity 100
 offscreenkill 635
 lifespan  6
+didhitscript	data/scripts/didhit/tint_green.c
 
 anim	idle
 	loop	1 6 8
