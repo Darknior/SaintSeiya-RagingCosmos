@@ -7,10 +7,10 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
-	delay	10
+	delay	8
 	offset	95 90
         drawmethod  alpha 1
-        drawmethod  scale 0.5 0.5
+        drawmethod  scale 0.3 0.3
         sound data/chars/marin/02-swing.wav
 	frame	data/chars/marin/special/marin_swing/marin_swing-0.png
 	frame	data/chars/marin/special/marin_swing/marin_swing-1.png
