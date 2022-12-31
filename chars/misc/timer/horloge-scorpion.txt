@@ -1,4 +1,4 @@
-name	horloge-capricorne
+name	horloge-scorpion
 type    panel
 shadow    0
 setlayer 8000
@@ -13,9 +13,9 @@ subject_to_platform 0
 anim	idle
 	loop	1
 	delay	2000
-	offset	35 17
+	offset	34 17
 	drawmethod scale 1 1
 	drawmethod alpha 6
         drawmethod channel 0.99
-	frame	data/chars/misc/horloge-constellations/capricorne.png
-	frame	data/chars/misc/horloge-constellations/capricorne.png
+	frame	data/chars/misc/timer/horloge-constellations/scorpion.png
+	frame	data/chars/misc/timer/horloge-constellations/scorpion.png

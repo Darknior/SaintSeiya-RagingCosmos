@@ -47,6 +47,7 @@ load shaka_hands
 load shaka_flame
 load aldebaran_super_lights
 load aldebaran_block
+load aphrodite_rose_explosion
 
 #----------------------------------------------------------
 anim spawn
@@ -674,6 +675,7 @@ anim special2 #Attaque spéciale Lotus toss
 	range 	250 400
 	rangea 	0 100
 	energycost  20 1 0
+        hitflash aphrodite_rose_explosion
 	delay	15
 	offset	92 129
 	bbox 46 16 38 133
@@ -721,6 +723,7 @@ anim freespecial2 # Attaque spéciale Lotus toss
 	delay	15
 	offset	92 129
 	bbox 46 16 38 133
+        hitflash aphrodite_rose_explosion
 	sound data/chars/shaka/16-lotus.wav
 	energycost  20 1 0
 	summonframe 0 0 0 0

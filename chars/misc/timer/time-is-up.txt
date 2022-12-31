@@ -17,9 +17,9 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 6
         drawmethod channel 0.99
-	frame	data/chars/misc/time-is-up/empty-time.png
+	frame	data/chars/misc/timer/time-is-up/empty-time.png
 	delay	400
-	frame	data/chars/misc/time-is-up/time-is-up.png
-	frame	data/chars/misc/time-is-up/time-is-up.png
+	frame	data/chars/misc/timer/time-is-up/time-is-up.png
+	frame	data/chars/misc/timer/time-is-up/time-is-up.png
 	@cmd suicide
-	frame	data/chars/misc/time-is-up/time-is-up.png
+	frame	data/chars/misc/timer/time-is-up/time-is-up.png

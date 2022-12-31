@@ -383,21 +383,21 @@ know 	jaki			data/chars/jaki/jaki.txt
 
 #MISC
 
-know    horloge-flame   data/chars/misc/horloge-flame.txt
-know    horloge-segment   data/chars/misc/horloge-segment.txt
-know    horloge-belier   data/chars/misc/horloge-belier.txt
-know    horloge-taureau   data/chars/misc/horloge-taureau.txt
-know    horloge-gemeau   data/chars/misc/horloge-gemeau.txt
-know    horloge-cancer   data/chars/misc/horloge-cancer.txt
-know    horloge-lion   data/chars/misc/horloge-lion.txt
-know    horloge-vierge   data/chars/misc/horloge-vierge.txt
-know    horloge-balance   data/chars/misc/horloge-balance.txt
-know    horloge-scorpion   data/chars/misc/horloge-scorpion.txt
-know    horloge-sagitaire   data/chars/misc/horloge-sagitaire.txt
-know    horloge-capricorne   data/chars/misc/horloge-capricorne.txt
-know    horloge-verseau   data/chars/misc/horloge-verseau.txt
-know    horloge-poissons   data/chars/misc/horloge-poissons.txt
-know    time-is-up   data/chars/misc/time-is-up.txt
+know    horloge-flame   data/chars/misc/timer/horloge-flame.txt
+know    horloge-segment   data/chars/misc/timer/horloge-segment.txt
+know    horloge-belier   data/chars/misc/timer/horloge-belier.txt
+know    horloge-taureau   data/chars/misc/timer/horloge-taureau.txt
+know    horloge-gemeau   data/chars/misc/timer/horloge-gemeau.txt
+know    horloge-cancer   data/chars/misc/timer/horloge-cancer.txt
+know    horloge-lion   data/chars/misc/timer/horloge-lion.txt
+know    horloge-vierge   data/chars/misc/timer/horloge-vierge.txt
+know    horloge-balance   data/chars/misc/timer/horloge-balance.txt
+know    horloge-scorpion   data/chars/misc/timer/horloge-scorpion.txt
+know    horloge-sagitaire   data/chars/misc/timer/horloge-sagitaire.txt
+know    horloge-capricorne   data/chars/misc/timer/horloge-capricorne.txt
+know    horloge-verseau   data/chars/misc/timer/horloge-verseau.txt
+know    horloge-poissons   data/chars/misc/timer/horloge-poissons.txt
+know    time-is-up   data/chars/misc/timer/time-is-up.txt
 
 ## GOLD KINGHTS ##
 

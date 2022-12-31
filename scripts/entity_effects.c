@@ -112,15 +112,15 @@ void blinkDamage()
 	//PURPLE EFFECT
 	if(purpleTime > time && !dead){
 		
-		//GET NEW VALUES
-		tintMode	= 6;
-		rate		= 2.5;
-		
-		//APPLY EFFECTS
-		changedrawmethod(self, "enabled", 1);
-		changedrawmethod(self, "tintmode", tintMode);
-		changedrawmethod(self, "tintcolor", rgbcolor(0x7F, 0x00, 0xFF));
-	}else
+        //GET NEW VALUES
+        tintMode    = 2;
+        rate        = 5.5;
+
+        //APPLY EFFECTS
+        changedrawmethod(self, "enabled", 1);
+        changedrawmethod(self, "tintmode", tintMode);
+        changedrawmethod(self, "tintcolor", rgbcolor(time*rate, 0x00, time*rate));
+    }else
 
 	//RED EFFECT
 	if(redTime > time){

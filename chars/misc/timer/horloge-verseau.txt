@@ -1,4 +1,4 @@
-name	horloge-poissons
+name	horloge-verseau
 type    panel
 shadow    0
 setlayer 8000
@@ -17,5 +17,5 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 6
         drawmethod channel 0.99
-	frame	data/chars/misc/horloge-constellations/poissons.png
-	frame	data/chars/misc/horloge-constellations/poissons.png
+	frame	data/chars/misc/timer/horloge-constellations/verseau.png
+	frame	data/chars/misc/timer/horloge-constellations/verseau.png

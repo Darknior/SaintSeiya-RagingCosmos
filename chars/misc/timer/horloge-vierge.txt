@@ -1,4 +1,4 @@
-name	horloge-scorpion
+name	horloge-vierge
 type    panel
 shadow    0
 setlayer 8000
@@ -17,5 +17,5 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 6
         drawmethod channel 0.99
-	frame	data/chars/misc/horloge-constellations/scorpion.png
-	frame	data/chars/misc/horloge-constellations/scorpion.png
+	frame	data/chars/misc/timer/horloge-constellations/vierge.png
+	frame	data/chars/misc/timer/horloge-constellations/vierge.png

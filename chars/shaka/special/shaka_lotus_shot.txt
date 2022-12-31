@@ -6,6 +6,8 @@ setlayer 2
 remove 0
 lifespan  2
 animationscript	data/scripts/player.c
+didhitscript	data/scripts/didhit/tint_red.c
+hitflash aphrodite_rose_explosion
 
 anim	idle
 	landframe 1

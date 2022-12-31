@@ -17,5 +17,5 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 6
         drawmethod channel 0.99
-	frame	data/chars/misc/horloge-constellations/gemeau.png
-	frame	data/chars/misc/horloge-constellations/gemeau.png
+	frame	data/chars/misc/timer/horloge-constellations/gemeau.png
+	frame	data/chars/misc/timer/horloge-constellations/gemeau.png
