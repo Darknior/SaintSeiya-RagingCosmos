@@ -198,7 +198,7 @@ anim pain2 # Down
 	frame	data/chars/deathmask/pain22.png
 
 anim fall
-	delay	10
+	delay	-1000
 	offset	92 126
 	landframe 4
 	frame	data/chars/deathmask/fall1.png
@@ -207,6 +207,16 @@ anim fall
 	frame	data/chars/deathmask/fall4.png
 	frame	data/chars/deathmask/fall5.png
 	
+anim fall7
+	delay	-1000
+	offset	92 126
+	landframe 4
+	frame	data/chars/deathmask/fall1.png
+	frame	data/chars/deathmask/fall2.png
+	frame	data/chars/deathmask/fall3.png
+	frame	data/chars/deathmask/fall4.png
+	frame	data/chars/deathmask/fall5.png
+
 anim death
 	delay	10
 	offset	92 126
@@ -346,6 +356,7 @@ anim special # Défense spéciale circles
 	unsummonframe 22
 	energycost  10 1 0
 	hitflash flashbig
+	bbox 9 29 50 140
 	frame	data/chars/deathmask/special1.png
 	frame	data/chars/deathmask/special1.png
 	delay 30
@@ -366,6 +377,7 @@ anim freespecial2 # Défense spéciale circles
 	unsummonframe 5
 	energycost  10 1 0
 	hitflash flashbig
+	bbox 9 29 50 140
 	frame	data/chars/deathmask/special1.png
 	frame	data/chars/deathmask/special1.png
 	delay 30
@@ -386,6 +398,7 @@ anim special2 # Défense spéciale circles
 	unsummonframe 5
 	energycost  10 1 0
 	hitflash flashbig
+	bbox 9 29 50 140
 	frame	data/chars/deathmask/special1.png
 	frame	data/chars/deathmask/special1.png
 	delay 30
@@ -406,6 +419,7 @@ anim riseattack # Défense spéciale circles
 	unsummonframe 5
 	energycost  10 1 0
 	hitflash flashbig
+	bbox 9 29 50 140
 	frame	data/chars/deathmask/special1.png
 	frame	data/chars/deathmask/special1.png
 	delay 30

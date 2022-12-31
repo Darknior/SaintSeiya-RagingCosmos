@@ -161,9 +161,17 @@ anim pain2 # Down
 	frame	data/chars/shura/pain1.png
 
 anim fall
-	delay	10
+	delay	-1000
 	offset	132 126
-	landframe 4
+	landframe 2
+	frame	data/chars/shura/fall1.png
+	frame	data/chars/shura/fall2.png
+	frame	data/chars/shura/fall3.png
+
+anim fall7
+	delay	-1000
+	offset	132 126
+	landframe 2
 	frame	data/chars/shura/fall1.png
 	frame	data/chars/shura/fall2.png
 	frame	data/chars/shura/fall3.png

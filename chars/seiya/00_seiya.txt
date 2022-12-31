@@ -873,17 +873,16 @@ anim pain2
 	frame	data/chars/seiya/pain21.png
 	
 anim fall
-        landframe 1
+        landframe 5
 	offset	114 110
-	delay	-1000
+	delay	50
 	frame	data/chars/seiya/fall1.png
 	frame	data/chars/seiya/fall2.png
-	delay	30
 	frame	data/chars/seiya/fall3.png
 	frame	data/chars/seiya/fall4.png
 
 anim fall7
-        landframe 1
+        landframe 5
 	offset	114 110
 	delay	-1000
 	frame	data/chars/seiya/fall1.png

@@ -700,6 +700,7 @@ anim freespecial5 # Uppercut Colère du Dragon
 	delay 5
 	attack1 0
 	frame	data/chars/shiryu/uppercut3.png
+	sound data/chars/shiryu/01-uppercut3.wav
 	attack1 59 63 50 84 20 0 0 0 0 20
 	frame	data/chars/shiryu/uppercut4.png
 	@cmd 	spawnbind "shiryu_uppercut" "ANI_IDLE" 0 0 0 1 0

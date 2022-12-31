@@ -123,24 +123,25 @@ void blinkDamage()
 	}else
 
 	//RED EFFECT
-	if(redTime > time && !dead){
+	if(redTime > time){
 		
 		//GET NEW VALUES
-		tintMode	= 6;
-		rate		= 2.5;
-		
-		//APPLY EFFECTS
-		changedrawmethod(self, "enabled", 1);
-		changedrawmethod(self, "tintmode", tintMode);
-		changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
-	}else
+        tintMode    = 2;
+        rate        = 5.5;
+
+        //APPLY EFFECTS
+        changedrawmethod(self, "enabled", 1);
+        changedrawmethod(self, "tintmode", tintMode);
+        changedrawmethod(self, "tintcolor", rgbcolor(time*rate, 0x00, 0x00));
+    }else
+
 
 	//GREEN EFFECT
 	if(greenTime > time){
 		
 		//GET NEW VALUES
-		tintMode	= 1;
-		rate		= 2.5;
+		tintMode	= 6;
+		rate		= 5.5;
 		
 		//APPLY EFFECTS
 		changedrawmethod(self, "enabled", 1);
