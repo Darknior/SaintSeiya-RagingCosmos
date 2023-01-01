@@ -264,20 +264,24 @@ anim runattack # Attaque en courant
 	@cmd	dasher 3.5 0 0 1
 sound   data/chars/seiya/07-forward_punch.wav
 	frame	data/chars/seiya/runattack1.png
-	attack 5 13 90 55 15 12 0 0 0 20
+	attack 5 13 90 55 15 0 0 0 0 20
+	dropv 	3.0 2 0
 	frame	data/chars/seiya/runattack2.png
+	attack2 0
 	@cmd 	spawnbind "seiya_dash_dust" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/runattack3.png
-	attack2 5 13 90 55 15 0 0 0 0 20
+	attack2 5 13 90 55 15 12 0 0 0 20
+	dropv 	3.0 2 0
 	frame	data/chars/seiya/runattack4.png
 	attack2 0
 	frame	data/chars/seiya/runattack5.png
 	attack2 5 13 90 55 15 12 0 0 0 20
+	dropv 	3.0 2 0
 	frame	data/chars/seiya/runattack4.png
 	attack2 0
 	frame	data/chars/seiya/runattack5.png
-	attack2 5 13 90 55 15 0 0 0 0 20
-	attack2 5 13 90 55 15 0 0 0 0 20
+	attack2 5 13 90 55 15 12 0 0 0 20
+	dropv 	3.0 2 0
 	@cmd	dasher 0 0 0 1
 	delay	12
 	frame	data/chars/seiya/runattack3.png
@@ -392,7 +396,6 @@ sound   data/chars/seiya/17-back_kick.wav
 	attack1 -9 84 50 50 8 0 0 0 0 0
 	frame	data/chars/seiya/attackbackward2.png
 	attack1 0
-	attack 0 0 0 0 0 0 0 0 0 0
 	bbox 40 22 51 112
 	frame	data/chars/seiya/attackbackward3.png
 	attack1 -10 8 130 65 8 0 0 0 0 0
@@ -400,6 +403,7 @@ sound   data/chars/seiya/17-back_kick.wav
 	attack1 0
 	frame	data/chars/seiya/attackbackward5.png
 	attack1 6 8 150 65 8 12 0 0 0 0
+	dropv 	3.5 1 0
 	bbox 53 22 51 112
 	frame	data/chars/seiya/attackbackward6.png
 	attack1 0
@@ -414,6 +418,7 @@ sound   data/chars/seiya/17-back_kick.wav
 	attack1 0
 	frame	data/chars/seiya/attackbackward11.png
 	attack1 -21 8 130 65 8 12 0 0 0 0
+	dropv 	3.5 1 0
 	delay   12
 	frame	data/chars/seiya/attackbackward1.png	
 	
