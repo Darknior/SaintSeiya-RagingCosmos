@@ -109,6 +109,8 @@ know    hyoga_frozenray_up    data/chars/hyoga/special/hyoga_frozenray_up.txt
 know    shun_aura             data/chars/shun/special/shun_aura.txt
 know    shun_stream           data/chars/shun/special/shun_stream.txt
 
+know    ikki_aura           data/chars/ikki/special/ikki_aura.txt
+
 know    aldebaran_runtaurus       data/chars/aldebaran/special/aldebaran_runtaurus.txt
 know    aldebaran_rundust         data/chars/aldebaran/special/aldebaran_rundust.txt
 know    aldebaran_swing           data/chars/aldebaran/special/aldebaran_swing.txt
@@ -282,15 +284,7 @@ load    shun           data/chars/shun/00_shun.txt
 
 ## PHOENIX / IKKI
 
-know    ikkisuper       data/chars/PHOENIX-IKKI/ikkisuper.txt
-load    PHOENIX-IKKI    data/chars/PHOENIX-IKKI/PHOENIX-IKKI.txt
-load    PIARMA0         data/chars/PHOENIX-IKKI/PIARMA0.txt
-load    PIARMA1         data/chars/PHOENIX-IKKI/PIARMA1.txt
-load    PIARMA2         data/chars/PHOENIX-IKKI/PIARMA2.txt
-load    PIARMA3         data/chars/PHOENIX-IKKI/PIARMA3.txt
-load    PIARMA4         data/chars/PHOENIX-IKKI/PIARMA4.txt
-load    PIARMA5         data/chars/PHOENIX-IKKI/PIARMA5.txt
-load    PIARMA6         data/chars/PHOENIX-IKKI/PIARMA6.txt
+load    ikki           data/chars/ikki/00_ikki.txt
 
 ## UNICORN / JABU
 

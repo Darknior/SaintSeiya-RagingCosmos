@@ -1,0 +1,839 @@
+   name		ikki
+health		400
+mp 			100
+type		player
+
+gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
+riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
+makeinv		2 0	# Invincible après respawn X sec / Clignote
+dust		round_dustB # Default "dust entity" using the native "Dust" function
+bflash tremi_block
+speed		20	# Vitesse de déplacement
+running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	7 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5.5	# Hauteur du saut
+antigravity	-15	# Augmente la gravité pour redescendre plus vite 1/100
+
+noquake 	0 1	# Secoue l'ecran qd on tombe au sol
+
+typemp 		1 	# Gagne de mp en tapant des ennemis 
+mprate 		1   # Nombre de mp gagnés par coup
+
+
+blockodds 	1	# Permet de pouvoir bloquer les attaques
+holdblock 	2	# Permet de pouvoir maintenir la parade
+nodieblink 	1	# Ne clignote pas quand tu meurs
+weaploss  	2	# On ne perd son arme qu' à notre mort
+modelflag 	0	# L'animation et la liste d'armes sont copiées
+death 		1   # Active l'animation de mort
+nolife		1	# Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
+
+sleepwait 	1000 #Temps en centisecondes avant de jouer l'anim sleep
+
+atchain 	1 2 3 4 5 6# Attaque combo de base (anim attack 1, puis 2...)
+
+icon       	data/chars/ikki/icon.png
+
+#weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 ikki
+
+
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+script	data/scripts/entity_effects.c
+didhitscript	data/scripts/didhit/tint_silver.c
+
+com  a2  	freespecial 	#Explosion du Cosmos
+com  F a2  	freespecial2 	#Météores de Pégase
+com  U a2  	freespecial6 	#Comète de Pégase
+com  D F a1 freespecial5 	#Uppercut
+
+load ikki_aura
+load aldebaran_super_lights
+
+#----------------------------------------------------------
+anim	waiting # Animation d'attente dans l'écran de sélection
+	loop 1
+	delay	40
+	offset	59 226
+	frame	data/chars/ikki/waiting.png
+
+anim	select  # Personnage sélectionné
+	delay	10
+	offset	59 226
+	sound data/chars/select.wav
+	frame	data/chars/ikki/select1.png
+	frame	data/chars/ikki/select2.png
+	frame	data/chars/ikki/select3.png
+	frame	data/chars/ikki/select4.png
+	frame	data/chars/ikki/select5.png
+	frame	data/chars/ikki/select6.png
+	frame	data/chars/ikki/select7.png
+	frame	data/chars/ikki/select8.png
+	frame	data/chars/ikki/select9.png
+	frame	data/chars/ikki/select10.png
+	frame	data/chars/ikki/select11.png
+	frame	data/chars/ikki/select12.png
+	frame	data/chars/ikki/select13.png
+	frame	data/chars/ikki/select14.png
+	frame	data/chars/ikki/select15.png
+	frame	data/chars/ikki/select16.png
+	frame	data/chars/ikki/select17.png
+	frame	data/chars/ikki/select18.png
+	frame	data/chars/ikki/select19.png
+	frame	data/chars/ikki/select20.png
+	frame	data/chars/ikki/select21.png
+	frame	data/chars/ikki/select22.png
+	frame	data/chars/ikki/select23.png
+	frame	data/chars/ikki/select24.png
+	frame	data/chars/ikki/select25.png
+	frame	data/chars/ikki/select26.png
+	frame	data/chars/ikki/select27.png
+	frame	data/chars/ikki/select28.png
+	frame	data/chars/ikki/select29.png
+	frame	data/chars/ikki/select30.png
+	frame	data/chars/ikki/select31.png
+	frame	data/chars/ikki/select32.png
+	frame	data/chars/ikki/select33.png
+	frame	data/chars/ikki/select34.png
+	frame	data/chars/ikki/select35.png
+	frame	data/chars/ikki/select36.png
+	frame	data/chars/ikki/select37.png
+	frame	data/chars/ikki/select38.png
+	frame	data/chars/ikki/select39.png
+	frame	data/chars/ikki/select40.png
+	frame	data/chars/ikki/select41.png
+	frame	data/chars/ikki/select42.png
+	frame	data/chars/ikki/select43.png
+	frame	data/chars/ikki/select44.png
+	frame	data/chars/ikki/select45.png
+	frame	data/chars/ikki/select46.png
+	frame	data/chars/ikki/select47.png
+	frame	data/chars/ikki/select48.png
+	frame	data/chars/ikki/select49.png
+	frame	data/chars/ikki/select50.png
+	frame	data/chars/ikki/select51.png
+	frame	data/chars/ikki/select52.png	
+	frame	data/chars/ikki/select51.png
+	frame	data/chars/ikki/select50.png
+	frame	data/chars/ikki/select49.png
+	frame	data/chars/ikki/select48.png
+	frame	data/chars/ikki/select47.png	
+	delay 150
+	frame	data/chars/ikki/select46.png
+
+anim spawn # Animation de 1ère apparition du personnage
+	delay	10
+	offset	98 208
+	frame	data/chars/ikki/spawn1.png
+	frame	data/chars/ikki/spawn2.png
+	frame	data/chars/ikki/spawn3.png
+	frame	data/chars/ikki/spawn4.png
+	frame	data/chars/ikki/spawn5.png
+	frame	data/chars/ikki/spawn6.png
+	frame	data/chars/ikki/spawn7.png
+	frame	data/chars/ikki/spawn8.png
+	frame	data/chars/ikki/spawn9.png
+	frame	data/chars/ikki/spawn10.png
+	frame	data/chars/ikki/spawn11.png
+	frame	data/chars/ikki/spawn12.png
+	frame	data/chars/ikki/spawn13.png
+	frame	data/chars/ikki/spawn14.png
+	frame	data/chars/ikki/spawn15.png
+	frame	data/chars/ikki/spawn16.png
+	frame	data/chars/ikki/spawn17.png
+	frame	data/chars/ikki/spawn18.png
+	frame	data/chars/ikki/spawn19.png
+	frame	data/chars/ikki/spawn20.png
+	frame	data/chars/ikki/spawn21.png
+	frame	data/chars/ikki/spawn22.png
+	frame	data/chars/ikki/spawn23.png
+	frame	data/chars/ikki/spawn24.png
+	frame	data/chars/ikki/spawn25.png
+	frame	data/chars/ikki/spawn26.png
+	frame	data/chars/ikki/spawn27.png
+	frame	data/chars/ikki/spawn28.png
+	frame	data/chars/ikki/spawn29.png
+	frame	data/chars/ikki/spawn30.png
+	frame	data/chars/ikki/spawn31.png
+	frame	data/chars/ikki/spawn32.png
+	frame	data/chars/ikki/spawn33.png
+	frame	data/chars/ikki/spawn34.png
+	frame	data/chars/ikki/spawn35.png
+	frame	data/chars/ikki/spawn36.png
+	frame	data/chars/ikki/spawn37.png
+	frame	data/chars/ikki/spawn38.png
+	frame	data/chars/ikki/spawn39.png
+	frame	data/chars/ikki/spawn40.png
+	
+anim idle
+	loop 1
+	delay	15
+	offset	45 137
+	bbox 21 17 51 120
+	frame	data/chars/ikki/idle1.png
+	frame	data/chars/ikki/idle2.png
+	frame	data/chars/ikki/idle3.png
+	frame	data/chars/ikki/idle4.png
+	frame	data/chars/ikki/idle5.png
+	frame	data/chars/ikki/idle6.png
+	
+anim sleep # Animation configurée après 10s d'idle 
+	loop 1
+	delay	25
+	offset	94 195
+	bbox 62 75 51 120
+	frame	data/chars/ikki/sleep1.png
+	frame	data/chars/ikki/sleep2.png
+	frame	data/chars/ikki/sleep3.png
+	frame	data/chars/ikki/sleep4.png
+	frame	data/chars/ikki/sleep5.png
+	frame	data/chars/ikki/sleep6.png
+	frame	data/chars/ikki/sleep7.png
+	frame	data/chars/ikki/sleep8.png
+	frame	data/chars/ikki/sleep9.png
+	frame	data/chars/ikki/sleep10.png
+	frame	data/chars/ikki/sleep11.png
+	frame	data/chars/ikki/sleep12.png
+	frame	data/chars/ikki/sleep13.png
+	frame	data/chars/ikki/sleep14.png
+	frame	data/chars/ikki/sleep15.png
+	frame	data/chars/ikki/sleep16.png
+	frame	data/chars/ikki/sleep17.png
+	frame	data/chars/ikki/sleep18.png
+	frame	data/chars/ikki/sleep3.png
+	frame	data/chars/ikki/sleep2.png
+	
+anim victory # Animation de victoire contre un boss
+	delay	25
+	offset	28 137
+	bbox 21 17 51 120
+	frame	data/chars/ikki/victory1.png
+	frame	data/chars/ikki/victory2.png
+sound   data/chars/ikki/10-yatta.wav
+	frame	data/chars/ikki/victory3.png
+	frame	data/chars/ikki/victory4.png
+	frame	data/chars/ikki/victory5.png
+	frame	data/chars/ikki/victory6.png
+	frame	data/chars/ikki/victory7.png
+	frame	data/chars/ikki/victory8.png
+	frame	data/chars/ikki/victory9.png
+	frame	data/chars/ikki/victory4.png
+	frame	data/chars/ikki/victory5.png
+	frame	data/chars/ikki/victory10.png
+	
+anim turn
+	delay	10
+	offset	39 137
+	bbox 14 17 51 120
+	cancel 0 3 0 A freespecial4
+	frame	data/chars/ikki/turn.png
+	
+anim walk
+	loop	1
+	delay	14
+	offset	45 140
+	bbox 21 17 51 120
+	frame	data/chars/ikki/walk1.png
+	frame	data/chars/ikki/walk2.png
+	frame	data/chars/ikki/walk3.png
+	frame	data/chars/ikki/walk4.png
+	frame	data/chars/ikki/walk5.png
+	frame	data/chars/ikki/walk6.png
+	frame	data/chars/ikki/walk7.png
+	frame	data/chars/ikki/walk8.png	
+
+anim dodge
+	delay	8
+	offset	55 206
+	bbox 35 76 51 120
+	jumpframe 2 1.8 0
+sound   data/chars/ikki/06-jump1.wav
+	frame	data/chars/ikki/jump1.png
+	frame	data/chars/ikki/jump2.png
+	frame	data/chars/ikki/jump3.png
+	frame	data/chars/ikki/jump4.png
+	frame	data/chars/ikki/jump1.png
+	frame	data/chars/ikki/get2.png
+	
+anim run
+	loop	1
+	delay	8
+	offset	80 137
+	bbox 73 17 51 120
+sound   data/chars/ikki/20-run1.wav
+	frame	data/chars/ikki/run1.png
+	frame	data/chars/ikki/run2.png
+	frame	data/chars/ikki/run3.png
+	frame	data/chars/ikki/run4.png
+sound   data/chars/ikki/20-run2.wav
+	frame	data/chars/ikki/run5.png
+	frame	data/chars/ikki/run6.png
+	frame	data/chars/ikki/run7.png
+	frame	data/chars/ikki/run8.png
+	
+anim runattack # Attaque en courant
+	delay	7
+	offset	61 160
+	bbox 29 40 51 120
+	fastattack 1
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+sound   data/chars/ikki/07-forward_punch.wav
+	frame	data/chars/ikki/runattack1.png
+	frame	data/chars/ikki/runattack2.png
+	summonframe 0 0 0 0 0
+	subentity ikki_dash_dust
+	unsummonframe 11
+	frame	data/chars/ikki/runattack3.png
+	frame	data/chars/ikki/runattack4.png
+	attack2 61 60 80 66 10 0 0 0 5 12
+	frame	data/chars/ikki/runattack5.png
+	frame	data/chars/ikki/runattack6.png
+	attack2 61 63 78 33 20 1 0 0 5 12
+	frame	data/chars/ikki/runattack7.png
+	frame	data/chars/ikki/runattack8.png
+	attack2 0 0 0 0 0 0 0 0 0 0
+	@cmd	dasher 0 0 0 1
+	delay	12
+	frame	data/chars/ikki/runattack9.png
+
+anim  runjump
+	delay	6
+	offset	55 206
+	bbox 35 76 51 120
+	cancel 0 8 0 A2 freespecial3 
+sound   data/chars/ikki/06-jump1.wav
+	frame	data/chars/ikki/forwardjump1.png
+	frame	data/chars/ikki/forwardjump2.png
+	frame	data/chars/ikki/forwardjump3.png
+	frame	data/chars/ikki/forwardjump4.png
+
+anim get
+	delay	5
+	offset	27 139
+	bbox 2 19 51 120
+	frame	data/chars/ikki/get1.png
+	frame	data/chars/ikki/get2.png
+	frame	data/chars/ikki/get2.png
+	frame	data/chars/ikki/get1.png
+
+anim attack1 # Attaque combo 1
+	delay	5
+	offset	39 136
+	bbox 20 17 51 120
+	frame	data/chars/ikki/attack1.png
+	frame	data/chars/ikki/attack2.png
+	frame	data/chars/ikki/attack3.png
+	attack1 54 33 67 26 10 0 0 0 5 12
+	frame	data/chars/ikki/attack4.png
+	attack1 0
+	frame	data/chars/ikki/attack2.png
+	
+anim attack2 # Attaque combo 2
+	delay	5
+	offset	39 136
+	bbox 20 17 51 120
+	frame	data/chars/ikki/attack21.png
+	frame	data/chars/ikki/attack22.png
+	dropv 4.0 1.0 0.0
+	attack1 52 41 67 26 10 0 0 0 5 12
+	frame	data/chars/ikki/attack23.png
+	frame	data/chars/ikki/attack24.png
+	attack1 0
+	
+anim attack3 # Attaque combo 3
+	delay	7
+	offset	39 136
+	bbox 20 17 51 120
+	frame	data/chars/ikki/attack31.png
+	frame	data/chars/ikki/attack32.png
+	dropv 4.0 1.0 0.0
+	attack1 62 41 67 26 10 0 0 0 5 12
+	frame	data/chars/ikki/attack33.png
+	frame	data/chars/ikki/attack34.png
+	frame	data/chars/ikki/attack35.png
+	
+anim attack4 # Attaque combo 4
+	delay	7
+	offset	39 140
+	bbox 10 17 51 120
+	hitflash flashmedium
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attack41.png
+	frame	data/chars/ikki/attack42.png
+	attack1 62 65 67 26 10 0 0 0 5 12
+	frame	data/chars/ikki/attack43.png
+	frame	data/chars/ikki/attack44.png
+	frame	data/chars/ikki/attack45.png
+	
+anim attack5 # Attaque combo 5
+	delay	5
+	offset	39 140
+	bbox 10 17 51 120
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attack51.png
+	frame	data/chars/ikki/attack52.png
+	frame	data/chars/ikki/attack53.png
+	frame	data/chars/ikki/attack54.png
+	attack1 62 56 87 26 10 0 0 0 5 12
+	frame	data/chars/ikki/attack55.png
+	
+anim attack6 # Attaque combo 6
+	delay	5
+	offset	39 140
+	bbox 10 17 51 120
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attack61.png
+	frame	data/chars/ikki/attack62.png
+	frame	data/chars/ikki/attack63.png
+	frame	data/chars/ikki/attack64.png
+	frame	data/chars/ikki/attack65.png
+	attack1 53 21 67 60 20 1 0 0 5 12
+	frame	data/chars/ikki/attack66.png
+	
+anim attackbackward # Attaque arrière (Arrière + attaque)
+	flipframe 1
+	offset	104 140
+	bbox 88 20 51 120
+	fastattack 1
+	hitflash flashbig
+	delay	5
+sound   data/chars/ikki/17-back_kick.wav
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attackbackward1.png
+	summonframe 0 0 0 0 0
+	subentity ikki_down_dust
+	unsummonframe 12
+	frame	data/chars/ikki/attackbackward2.png
+	frame	data/chars/ikki/attackbackward3.png
+	attack1 93 67 84 29 20 0 0 0 5 12
+	frame	data/chars/ikki/attackbackward4.png
+	attack1 0
+	frame	data/chars/ikki/attackbackward4.png
+	attack1 93 63 84 29 20 1 0 0 5 12
+	frame	data/chars/ikki/attackbackward5.png
+	attack1 0
+	frame	data/chars/ikki/attackbackward4.png
+	frame	data/chars/ikki/attackbackward2.png
+	delay   12
+	frame	data/chars/ikki/attackbackward1.png
+
+anim attackboth # Attaque arrière (bouton saut + attaque)
+	flipframe 1
+	offset	104 140
+	bbox 88 20 51 120
+	fastattack 1
+	hitflash flashbig
+	delay	5
+sound   data/chars/ikki/17-back_kick.wav
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attackbackward1.png
+	summonframe 0 0 0 0 0
+	subentity ikki_down_dust
+	unsummonframe 12
+	frame	data/chars/ikki/attackbackward2.png
+	frame	data/chars/ikki/attackbackward3.png
+	attack1 93 67 84 29 20 0 0 0 5 12
+	frame	data/chars/ikki/attackbackward4.png
+	attack1 0
+	frame	data/chars/ikki/attackbackward4.png
+	attack1 93 63 84 29 20 1 0 0 5 12
+	frame	data/chars/ikki/attackbackward5.png
+	attack1 0
+	frame	data/chars/ikki/attackbackward4.png
+	frame	data/chars/ikki/attackbackward2.png
+	delay   12
+	frame	data/chars/ikki/attackbackward1.png
+	
+anim freespecial4 # Attaque arrière (à partir d'un cancel)
+	flipframe 1
+	offset	104 140
+	bbox 88 20 51 120
+	fastattack 1
+	hitflash flashbig
+	delay	5
+sound   data/chars/ikki/17-back_kick.wav
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attackbackward1.png
+	summonframe 0 0 0 0 0
+	subentity ikki_down_dust
+	unsummonframe 12
+	frame	data/chars/ikki/attackbackward2.png
+	frame	data/chars/ikki/attackbackward3.png
+	attack1 93 67 84 29 20 0 0 0 5 12
+	frame	data/chars/ikki/attackbackward4.png
+	attack1 0
+	frame	data/chars/ikki/attackbackward4.png
+	attack1 93 63 84 29 20 1 0 0 5 12
+	frame	data/chars/ikki/attackbackward5.png
+	attack1 0
+	frame	data/chars/ikki/attackbackward4.png
+	frame	data/chars/ikki/attackbackward2.png
+	delay   12
+	frame	data/chars/ikki/attackbackward1.png
+
+anim grab
+	delay	7
+	offset	45 136
+	bbox 21 17 51 120
+	frame	data/chars/ikki/grab1.png
+	frame	data/chars/ikki/grab2.png
+	
+anim grabattack #Saisie Coup de genou X2
+	delay	7
+	offset	45 137
+	bbox 21 17 51 120
+	frame	data/chars/ikki/grabattack1.png
+	frame	data/chars/ikki/grabattack2.png
+	attack3 40 60 47 26 10 0 0 0 5 12
+	frame	data/chars/ikki/grabattack3.png
+	attack3 0
+	
+anim grabattack2 #Saisie Coup finisher
+	delay	6
+	offset	82 154
+	bbox 55 25 51 120
+	frame	data/chars/ikki/grabattack21.png
+	frame	data/chars/ikki/grabattack22.png
+	frame	data/chars/ikki/grabattack23.png
+	frame	data/chars/ikki/grabattack24.png
+	attack3 62 51 90 26 15 1 0 0 0 0
+	frame	data/chars/ikki/grabattack25.png
+	attack3 0
+	frame	data/chars/ikki/grabattack24.png
+	
+anim throw #Projection en arrière
+	delay	10
+	offset	123 155
+	bbox 86 35 51 120
+	throw 7 7
+	throwdamage 20
+sound   data/chars/ikki/23-projection1.wav
+	frame	data/chars/ikki/grabbackward1.png
+	frame	data/chars/ikki/grabbackward2.png
+sound   data/chars/ikki/23-projection2.wav
+	frame	data/chars/ikki/grabbackward3.png
+	frame	data/chars/ikki/grabbackward4.png
+	frame	data/chars/ikki/grabbackward5.png
+	frame	data/chars/ikki/grabbackward6.png
+	
+anim freespecial # Défense spéciale explosion du cosmos
+	delay	12
+	offset	99 185
+	summonframe 0 0 0 0
+	subentity ikki_aura
+	unsummonframe 7
+	energycost  10 1 0
+	hitflash flashbig
+	sound data/chars/ikki/00-cosmos.wav
+	frame	data/chars/ikki/special1.png
+	frame	data/chars/ikki/special2.png
+	attack5 35 8 120 180 30 1 0 0 5 12
+	frame	data/chars/ikki/special3.png
+	frame	data/chars/ikki/special4.png
+	frame	data/chars/ikki/special5.png
+	frame	data/chars/ikki/special6.png
+	attack5 0
+	frame	data/chars/ikki/special7.png
+	frame	data/chars/ikki/special8.png
+	
+anim freespecial2 # Météores de Pégase
+	delay	10
+	offset	45 136
+	summonframe 0 0 0 0 0
+	subentity ikki_aura_ryuseiken
+	energycost  20 1 0
+	hitflash flashbig
+	attack5 18 9 100 131 10 1 0 0 5 12
+	sound data/chars/ikki/02.wav
+	frame	data/chars/ikki/special21.png
+	frame	data/chars/ikki/special22.png
+	frame	data/chars/ikki/special23.png
+	frame	data/chars/ikki/special24.png
+	frame	data/chars/ikki/special25.png
+	frame	data/chars/ikki/special26.png
+	frame	data/chars/ikki/special27.png
+	frame	data/chars/ikki/special28.png
+	frame	data/chars/ikki/special29.png
+	frame	data/chars/ikki/special30.png
+	frame	data/chars/ikki/special31.png
+	frame	data/chars/ikki/special32.png
+	frame	data/chars/ikki/special33.png
+	@cmd	shooter "ikki_meteor" 77 80 0 3 0 0
+	frame	data/chars/ikki/special34.png
+	offset	31 123
+	frame	data/chars/ikki/special35.png
+
+
+anim freespecial6 # Comète de Pégase ( haut + bouton special)
+	delay	10
+	offset	60 178
+	fastattack 1
+	sound data/chars/deathmask/78-cosmos.wav
+	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+	#bbox 21 16 51 97
+	summonframe 0 0 0 0 1
+	subentity ikki_comet_back
+	energycost  20 1 0
+	frame	data/chars/ikki/upspecial1.png
+	sound data/chars/ikki/08-ultra.wav
+	frame	data/chars/ikki/upspecial2.png
+	frame	data/chars/ikki/upspecial3.png
+	frame	data/chars/ikki/upspecial4.png
+	sound data/chars/ikki/08-ultra2.wav
+	delay	10
+	frame	data/chars/ikki/upspecial5.png
+	frame	data/chars/ikki/upspecial6.png
+	frame	data/chars/ikki/upspecial7.png
+	@cmd	shooter "ikki_comet" 77 80 0 1 0 0
+	delay 50
+	frame	data/chars/ikki/upspecial8.png
+	frame	data/chars/ikki/upspecial9.png
+	frame	data/chars/ikki/upspecial10.png
+	frame	data/chars/ikki/upspecial11.png
+	frame	data/chars/ikki/upspecial12.png
+	frame	data/chars/ikki/upspecial13.png
+	frame	data/chars/ikki/upspecial14.png
+	frame	data/chars/ikki/upspecial15.png
+	frame	data/chars/ikki/upspecial16.png
+	frame	data/chars/ikki/upspecial17.png
+	frame	data/chars/ikki/upspecial18.png
+	frame	data/chars/ikki/upspecial19.png
+	
+anim jump # Saut Statique
+	delay	10
+	offset	55 206
+	bbox 35 76 51 120
+	cancel 0 8 0 A2 freespecial3
+	sound data/chars/ikki/06-jump1.wav
+	frame	data/chars/ikki/jump1.png
+	frame	data/chars/ikki/jump2.png
+	frame	data/chars/ikki/jump3.png
+	frame	data/chars/ikki/jump4.png
+	frame	data/chars/ikki/jump5.png
+	frame	data/chars/ikki/jump6.png
+	frame	data/chars/ikki/jump7.png
+	frame	data/chars/ikki/jump8.png
+	frame	data/chars/ikki/jump9.png
+	frame	data/chars/ikki/jump10.png
+	
+anim forwardjump # Saut vers l'avant
+	delay	8
+	offset	55 206
+	bbox 35 76 51 120
+	cancel 0 8 0 A2 freespecial3
+	sound data/chars/ikki/06-jump1.wav
+	frame	data/chars/ikki/jump5.png
+	frame	data/chars/ikki/forwardjump1.png
+	frame	data/chars/ikki/forwardjump2.png
+	frame	data/chars/ikki/forwardjump3.png
+	frame	data/chars/ikki/forwardjump4.png
+	frame	data/chars/ikki/jump7.png	
+
+anim jumpdelay # Animation de saut intermédiaire
+	delay	10
+	offset	55 206
+	bbox 35 76 51 120
+	frame	data/chars/ikki/jump1.png
+
+anim jumpland # Aterrissage du saut
+	delay	8
+	offset	27 139
+	bbox 2 19 51 120
+	sound data/chars/ikki/06-jump2.wav
+	frame	data/chars/ikki/get1.png
+	frame	data/chars/ikki/get2.png
+	frame	data/chars/ikki/get2.png
+	frame	data/chars/ikki/get1.png
+	
+anim jumpattack #Attaque sautée statique
+	delay	5
+	offset	55 206
+	bbox 35 76 51 120
+	sound data/sounds/punch.wav
+	frame	data/chars/ikki/jumpattack1.png
+	frame	data/chars/ikki/jumpattack2.png
+	dropv 4.0 1.0 0.0
+	attack4 62 78 83 76 10 1 0 0 5 12
+	frame	data/chars/ikki/jumpattack3.png
+	frame	data/chars/ikki/jumpattack3.png
+	attack4 0
+	
+anim jumpforward #Attaque sautée vers l'avant
+	delay	5
+	offset	55 206
+	bbox 35 76 51 120
+	sound data/sounds/punch.wav
+	frame	data/chars/ikki/jumpforward1.png
+	frame	data/chars/ikki/jumpforward2.png
+	frame	data/chars/ikki/jumpforward3.png
+	dropv 4.0 1.0 0.0
+	attack4 62 121 107 40 10 1 0 0 5 12
+	frame	data/chars/ikki/jumpforward4.png
+	attack4 0
+	
+anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
+	delay	5
+	offset	55 206
+	bbox 35 76 51 120
+	sound data/sounds/punch.wav
+	frame	data/chars/ikki/jumpattack21.png
+	frame	data/chars/ikki/jumpattack22.png
+	frame	data/chars/ikki/jumpattack23.png
+	jumpframe 2 -2 0
+	dropv 4.0 1.0 0.0
+	attack4 52 121 67 36 10 0 0 0 5 12
+	frame	data/chars/ikki/jumpattack24.png
+	frame	data/chars/ikki/jumpattack24.png
+	attack4 0
+
+anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
+	delay	5
+	offset	55 206
+	bbox 35 76 51 120
+	sound data/sounds/punch.wav
+	frame	data/chars/ikki/jumpattack31.png
+	dropv 4.0 1.0 0.0
+	attack4 65 91 67 60 10 1 0 0 5 12
+	frame	data/chars/ikki/jumpattack32.png
+	frame	data/chars/ikki/jumpattack32.png
+	attack4 0
+	
+anim freespecial3 # Saut attaque spéciale météores (déclenchée par une commande cancel A2)
+	delay	5
+	offset	55 206
+	bbox 35 76 51 120
+	energycost  5 1 0
+	sound data/chars/ikki/19-air_special.wav
+	frame	data/chars/ikki/jumpspecial1.png
+	frame	data/chars/ikki/jumpspecial2.png
+	frame	data/chars/ikki/jumpspecial3.png
+	frame	data/chars/ikki/jumpspecial4.png
+	delay	10
+	@cmd	shooter2 "ikki_meteord" 17 95 2 -2
+	frame	data/chars/ikki/jumpspecial5.png
+	summonframe 0 0 0 0 0
+	subentity ikki_aura_air_ryuseiken
+	unsummonframe 5
+	sound data/chars/ikki/19-air_special3.wav
+	frame	data/chars/ikki/jumpspecial6.png
+	frame	data/chars/ikki/jumpspecial7.png
+	frame	data/chars/ikki/jumpspecial8.png
+	frame	data/chars/ikki/jumpspecial9.png
+	
+anim freespecial5 # Uppercut
+	offset	45 150
+	bbox 21 38 51 112
+	fastattack 1
+	hitflash flashbig
+	delay	5
+	sound data/chars/ikki/03-uppercut2.wav
+	frame	data/chars/ikki/uppercut1.png
+	attack1 55 0 35 84 15 0 0 0 5 12
+	frame	data/chars/ikki/uppercut2.png
+	delay 5
+	attack1 0
+	frame	data/chars/ikki/uppercut3.png
+	attack1 55 0 35 84 15 1 0 0 5 12
+	frame	data/chars/ikki/uppercut3.png
+	attack1 0
+	delay 19
+	frame	data/chars/ikki/uppercut3.png
+	frame	data/chars/ikki/uppercut3.png
+	frame	data/chars/ikki/uppercut4.png
+	frame	data/chars/ikki/uppercut4.png
+	delay   12
+	frame	data/chars/ikki/uppercut2.png
+
+anim pain
+	offset	45 137
+	bbox 21 17 51 120
+	#move	-5
+	delay	5
+	frame	data/chars/ikki/pain1.png
+	frame	data/chars/ikki/pain2.png
+	frame	data/chars/ikki/pain3.png
+	frame	data/chars/ikki/pain2.png
+	frame	data/chars/ikki/pain1.png
+	
+anim pain2
+	offset	45 137
+	bbox 21 17 51 120
+	#move	-5
+	delay	5
+	frame	data/chars/ikki/pain21.png
+	frame	data/chars/ikki/pain22.png
+	frame	data/chars/ikki/pain23.png
+	frame	data/chars/ikki/pain22.png
+	frame	data/chars/ikki/pain21.png
+	
+anim fall
+	landframe 5
+	offset	114 139
+	delay	-1000
+	frame	data/chars/ikki/fall1.png
+	frame	data/chars/ikki/fall2.png
+	delay	30
+	frame	data/chars/ikki/fall3.png
+	frame	data/chars/ikki/fall4.png
+	frame	data/chars/ikki/fall5.png
+	frame	data/chars/ikki/fall6.png
+
+anim fall7
+	landframe 5
+	offset	114 139
+	delay	-1000
+	frame	data/chars/ikki/fall1.png
+	frame	data/chars/ikki/fall2.png
+	delay	30
+	frame	data/chars/ikki/fall3.png
+	frame	data/chars/ikki/fall4.png
+	frame	data/chars/ikki/fall5.png
+	frame	data/chars/ikki/fall6.png	
+
+anim rise
+	delay	10
+	offset	86 139
+	jumpframe 0 0 0	
+	delay	10
+	frame	data/chars/ikki/rise1.png
+	frame	data/chars/ikki/rise2.png
+	frame	data/chars/ikki/rise1.png
+	frame	data/chars/ikki/rise2.png
+	frame	data/chars/ikki/rise3.png
+	frame	data/chars/ikki/rise4.png
+	frame	data/chars/ikki/rise5.png
+
+anim death
+	offset	143 139
+	delay	10
+	landframe 6
+	sound data/chars/ikki/20-hurt.wav
+	frame	data/chars/ikki/death1.png
+	frame	data/chars/ikki/death2.png
+	frame	data/chars/ikki/death3.png
+	frame	data/chars/ikki/death4.png
+	frame	data/chars/ikki/death5.png
+	frame	data/chars/ikki/death6.png
+	frame	data/chars/ikki/death7.png
+	frame	data/chars/ikki/death8.png
+	frame	data/chars/ikki/death9.png
+	frame	data/chars/ikki/death10.png
+	frame	data/chars/ikki/death11.png
+	frame	data/chars/ikki/death12.png
+	frame	data/chars/ikki/death13.png
+	frame	data/chars/ikki/death14.png
+	frame	data/chars/ikki/death15.png
+	
+anim	block
+	loop	0
+	delay	5
+	offset	26 139
+	bbox 0 27 51 112
+	frame	data/chars/ikki/block1.png
+	frame	data/chars/ikki/block2.png
+	frame	data/chars/ikki/block3.png
