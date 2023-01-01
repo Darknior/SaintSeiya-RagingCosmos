@@ -32,8 +32,8 @@ animationscript	data/scripts/player.c
 
 load aldebaran_runtaurus
 load aldebaran_rundust
+load blue_swing
 load aldebaran_earthquake
-load aldebaran_swing
 load aldebaran_ultraGH
 load aldebaran_ultraGH_back
 load aldebaran_super_lights
@@ -43,6 +43,7 @@ load aldebaran_multi
 load camus_lights
 load aldebaran_block
 load milo_blood
+load blue_swing
 
 #----------------------------------------------------------
 anim spawn
@@ -167,7 +168,7 @@ anim run
 anim runattack # Attaque en courant
 	delay	7
 	offset	37 164
-        hitflash aldebaran_swing
+        hitflash blue_swing
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 	@cmd 	spawnbind "aldebaran_runtaurus" "ANI_IDLE" 0 0 0 1 0
@@ -194,7 +195,7 @@ anim freespecial # Attaque en courant
 	delay	7
 	offset	37 164
 	forcedirection -1
-        hitflash aldebaran_swing
+        hitflash blue_swing
 	range 	80 175
 	rangea 	0 100
 	@cmd	dasher 3.5 0 0 1
@@ -386,7 +387,7 @@ anim special # Earthquake
 	delay	10
 	offset	37 163
 	sound data/chars/aldebaran/02-swing.wav
-        hitflash aldebaran_swing
+        hitflash blue_swing
 	frame	data/chars/aldebaran/attack60.png
 	@cmd 	spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 0 0 1 0	  
 	frame	data/chars/aldebaran/attack61.png
@@ -428,7 +429,7 @@ anim freespecial2 # Défense spéciale Taurus homerun
 	sound data/chars/aldebaran/02-swing.wav
 	range 	50 80
 	rangea 	0 100
-	hitflash aldebaran_swing
+	hitflash blue_swing
 	quakeframe	data/chars/aldebaran/special1.png 17 7
 	frame	data/chars/aldebaran/special2.png
 	frame	data/chars/aldebaran/special3.png

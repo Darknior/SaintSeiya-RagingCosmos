@@ -7,9 +7,10 @@ anim	idle
 	loop	0
 	delay	3
 	offset	69 73
-	drawmethod scale 0.3 0.3
+	drawmethod scale 0.4 0.4
 	drawmethod alpha 1
 	#drawmethod channel 0.8	
+        sound data/chars/misc/flash/flashmedium.wav
 	frame	data/chars/misc/flash/flashmedium/flashmedium1.png
 	frame	data/chars/misc/flash/flashmedium/flashmedium2.png
 	frame	data/chars/misc/flash/flashmedium/flashmedium3.png

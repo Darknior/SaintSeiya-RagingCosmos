@@ -5,6 +5,7 @@ void main()
 	tintEffect(openborconstant("ANI_IDLE"), "gold", 1);
 	tintEffect(openborconstant("ANI_RUNATTACK"), "gold", 1);
 	tintEffect(openborconstant("ANI_SPECIAL"), "gold", 1);
+     tintEffect(openborconstant("ANI_ATTACK5"), "gold", 1);
      tintEffect(openborconstant("ANI_RISEATTACK"), "gold", 1);
 	tintEffect(openborconstant("ANI_SPECIAL2"), "gold", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL"), "gold", 1);

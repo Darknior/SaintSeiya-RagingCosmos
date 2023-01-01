@@ -6,21 +6,21 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
-	delay	4
-	offset	98 205
+	delay	7
+	offset	200 450
 	drawmethod alpha 1
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust0.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust1.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust2.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust3.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust4.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust5.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust6.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust7.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust8.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust9.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust10.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust11.png
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust12.png
+	drawmethod scale 0.3 0.3
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-0.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-1.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-2.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-3.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-4.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-5.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-6.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-7.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-8.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-9.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-10.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-11.png
 @cmd suicide
-frame	data/chars/seiya/special/seiya_dash_dust/dash_dust12.png
+frame	data/chars/seiya/special/seiya_dash_dust/seiya_dash_dust-11.png

@@ -1,7 +1,7 @@
 name	round_dustB
 type	none
 shadow	0
-layer 1
+setlayer 1
 antigravity 100
 #lifespan 1
 animationscript	data/scripts/player.c

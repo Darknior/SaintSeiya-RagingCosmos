@@ -7,8 +7,9 @@ anim	idle
 	loop	0
 	delay	3
 	offset	69 73
-	drawmethod scale 0.3 0.3
+	drawmethod scale 0.4 0.4
 	drawmethod alpha 1
+        sound data/chars/misc/flash/flashbig.wav
 	frame	data/chars/misc/flash/flashbig/flashbig1.png
 	frame	data/chars/misc/flash/flashbig/flashbig2.png
 	frame	data/chars/misc/flash/flashbig/flashbig3.png

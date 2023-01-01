@@ -66,11 +66,14 @@ load	fade              data/chars/dialogs/fade.txt
 load    flash           data/chars/misc/flash/flash.txt
 load    flashmedium     data/chars/misc/flash/flashmedium.txt
 load    flashbig        data/chars/misc/flash/flashbig.txt
+load    blue_swing        data/chars/misc/flash/blue_swing.txt
+load    yellow_swing        data/chars/misc/flash/yellow_swing.txt
 
 #Dust animations
 
 load    round_dustB     data/chars/dust/round_dustB.txt
 load    fall_dust     data/chars/dust/fall_dust.txt
+load    kick_dust     data/chars/dust/kick_dust.txt
 
 #Players special animations
 

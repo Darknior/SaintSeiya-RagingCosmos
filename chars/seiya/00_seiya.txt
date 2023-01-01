@@ -62,6 +62,7 @@ load seiya_aura_air_kick
 load seiya_aura_air_ryuseiken
 load seiya_aura_ryuseiken
 load aldebaran_super_lights
+load aldebaran_swing
 load seiya_lights
 load seiya_meteor_flash
 load marin_swing
@@ -257,7 +258,7 @@ anim runattack # Attaque en courant
 	delay	8
 	offset	30 111
 	fastattack 1
-	hitflash marin_swing
+	hitflash blue_swing
 	bbox 11 0 51 112
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
@@ -311,6 +312,7 @@ anim attack1 # Attaque combo 1
 	delay	4
 	offset	45 119
 	bbox 21 7 51 112
+	hitflash flash
 	frame	data/chars/seiya/attack1.png
 	attack1 62 21 67 26 10 0 0 0 5 12
 	frame	data/chars/seiya/attack2.png
@@ -323,6 +325,7 @@ anim attack2 # Attaque combo 2
 	delay	5
 	offset	45 119
 	bbox 21 7 51 112
+	hitflash flash
 	frame	data/chars/seiya/attack21.png
 	frame	data/chars/seiya/attack22.png
 	frame	data/chars/seiya/attack23.png
@@ -335,6 +338,7 @@ anim attack3 # Attaque combo 3
 	delay	5
 	offset	45 119
 	bbox 21 7 51 112
+	hitflash flashmedium
 	frame	data/chars/seiya/attack31.png
 	frame	data/chars/seiya/attack32.png
 	dropv 4.0 1.0 0.0
@@ -365,6 +369,7 @@ anim attack5 # Attaque combo 5
 	dropv 4.0 1.0 0.0
 	attack1 62 21 67 26 20 1 0 0 5 12
 	frame	data/chars/seiya/attack54.png
+	@cmd 	spawnbind "kick_dust" 0 0 0 0 0
 	frame	data/chars/seiya/attack55.png
 	attack1 0
 	frame	data/chars/seiya/attack56.png
@@ -379,7 +384,7 @@ anim attackboth # Attaque arrière (bouton saut + attaque)
 	offset	45 134
 	fastattack 1
 	bbox 21 22 51 112
-	hitflash marin_swing
+	hitflash blue_swing
 	delay	5
 sound   data/chars/seiya/17-back_kick.wav
 	frame	data/chars/seiya/attackbackward1.png
@@ -752,7 +757,7 @@ anim jumpforward #Attaque sautée vers l'avant
 anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
 	delay	5
 	offset	45 112
-	hitflash marin_swing
+	hitflash blue_swing
 	fastattack 1
 	bbox 21 0 51 112
 	sound data/sounds/punch.wav	
@@ -809,7 +814,7 @@ anim freespecial5 # Uppercut
 	offset	45 134
 	bbox 21 22 51 112
 	fastattack 1
-	hitflash marin_swing
+	hitflash blue_swing
 	delay	5
 	sound data/chars/seiya/03-uppercut2.wav
 	@cmd 	spawnbind "seiya_upper_dust" "ANI_IDLE" 0 0 0 0 0
