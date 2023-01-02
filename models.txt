@@ -79,7 +79,6 @@ load    kick_dust     data/chars/dust/kick_dust.txt
 
 know    seiya_aura            data/chars/seiya/special/seiya_aura.txt
 know    seiya_aura_air_kick            data/chars/seiya/special/seiya_aura_air_kick.txt
-know    seiya_aura_air_ryuseiken            data/chars/seiya/special/seiya_aura_air_ryuseiken.txt
 know    seiya_aura_ryuseiken            data/chars/seiya/special/seiya_aura_ryuseiken.txt
 know    seiya_constellation   data/chars/seiya/special/seiya_constellation.txt
 know    seiya_meteor          data/chars/seiya/special/seiya_meteor.txt
