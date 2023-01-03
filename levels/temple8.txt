@@ -1,5 +1,5 @@
 
-music		data/music/music1.bor
+music		data/music/cascade-gelee.ogg
 
 panel		data/bgs/ROOMS/temple8.png 
 
