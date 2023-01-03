@@ -1,0 +1,40 @@
+name	blood_ground_medium
+type	none
+shadow	0
+remove 0
+setlayer 1
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	15
+	offset	80 0
+	drawmethod alpha 6
+        drawmethod  channel 0.99
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-0.png
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-1.png
+	delay	150
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+	delay	150
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+	delay	20
+        drawmethod  channel 0.90
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+        drawmethod  channel 0.80
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+        drawmethod  channel 0.70
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+        drawmethod  channel 0.60
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+        drawmethod  channel 0.50
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+        drawmethod  channel 0.40
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+        drawmethod  channel 0.30
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+        drawmethod  channel 0.20
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+        drawmethod  channel 0.10
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
+	@cmd suicide
+	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png

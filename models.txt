@@ -75,6 +75,11 @@ load    round_dustB     data/chars/dust/round_dustB.txt
 load    fall_dust     data/chars/dust/fall_dust.txt
 load    kick_dust     data/chars/dust/kick_dust.txt
 
+#Blood animations
+
+load    blood_ground_big     data/chars/misc/blood/blood_ground_big.txt
+load    blood_ground_medium     data/chars/misc/blood/blood_ground_medium.txt
+
 #Players special animations
 
 know    seiya_aura            data/chars/seiya/special/seiya_aura.txt

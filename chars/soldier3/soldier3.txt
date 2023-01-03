@@ -13,6 +13,7 @@ aimove           Chase
 \\aggression       5
 hitenemy          0 0
 blockodds 1
+death 		1
 nodieblink 0
 blocked 1
 gfxshadow 1
@@ -21,6 +22,11 @@ script	data/scripts/entity_effects.c
 \\subject_to_wall 0
 
 subject_to_screen 0
+
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+
+load blood_ground_big
 
 
 
@@ -175,8 +181,15 @@ frame	data/chars/SOLDIER3/04.png
 frame	data/chars/SOLDIER3/04.png
 frame	data/chars/SOLDIER3/04.png
 
-
-
+anim death	
+delay	10
+offset	120 195
+frame	data/chars/SOLDIER3/03.png
+frame	data/chars/SOLDIER3/03.png
+@cmd 	spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
+frame	data/chars/SOLDIER3/04.png
+frame	data/chars/SOLDIER3/04.png
+frame	data/chars/SOLDIER3/04.png
 
 
 anim rise

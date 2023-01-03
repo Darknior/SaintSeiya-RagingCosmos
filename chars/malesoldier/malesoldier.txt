@@ -5,7 +5,10 @@ type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
+death 1
 script	data/scripts/entity_effects.c
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 
 
 icon		data/chars/malesoldier/icon.png
@@ -18,6 +21,7 @@ noquake 1 1
 
 atchain 1 1 2
 dust		round_dustB
+load blood_ground_big
 
 #----------------------------------------------------------
 anim spawn
@@ -151,3 +155,17 @@ anim	block
 	bbox 29 10 35 115
 	frame	data/chars/malesoldier/block1.png
 	frame	data/chars/malesoldier/block2.png
+
+anim death
+	delay	10
+	offset	118 125
+	frame	data/chars/malesoldier/fall1.png
+	frame	data/chars/malesoldier/fall2.png
+	frame	data/chars/malesoldier/fall3.png
+	frame	data/chars/malesoldier/fall4.png
+	frame	data/chars/malesoldier/fall5.png
+	frame	data/chars/malesoldier/fall6.png
+        @cmd 	spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/malesoldier/fall7.png
+	frame	data/chars/malesoldier/fall7.png
+	frame	data/chars/malesoldier/fall7.png

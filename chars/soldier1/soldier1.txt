@@ -13,16 +13,19 @@ aimove           Chase
 \\aggression       5
 hitenemy          0 0
 blockodds 1
+death 1
 nodieblink 0
 blocked 1
 noquake 1 1
 gfxshadow	1
 dust		round_dustB
 script	data/scripts/entity_effects.c
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 \\subject_to_wall 0
 
 subject_to_screen 0
-
+load blood_ground_medium
 
 
 anim	block
@@ -48,7 +51,15 @@ frame	data/chars/SOLDIER1/04.png
 
 
 
-
+anim death	
+delay	10
+offset	100 180
+frame	data/chars/soldier1/05.png
+frame	data/chars/soldier1/06.png
+@cmd 	spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
+frame	data/chars/soldier1/07.png
+frame	data/chars/soldier1/07.png
+frame	data/chars/soldier1/07.png
 
 
 anim idle

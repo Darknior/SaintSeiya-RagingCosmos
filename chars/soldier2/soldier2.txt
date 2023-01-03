@@ -13,6 +13,7 @@ aimove           Chase
 \\aggression       5
 hitenemy          0 0
 blockodds 1
+death 1
 nodieblink 0
 blocked 1
 noquake 1 1
@@ -23,6 +24,8 @@ dust		round_dustB
 
 subject_to_screen 0
 script	data/scripts/entity_effects.c
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 
 
 anim	block
@@ -32,7 +35,7 @@ loop	0
 \\sound data/chars/SOLDIER2/KO.wav
 	delay	10
 
-
+load blood_ground_medium
 
 dropv 4 1 0
 	bbox.position.x 71
@@ -143,7 +146,15 @@ frame	data/chars/SOLDIER2/07.png
 frame	data/chars/SOLDIER2/07.png
 
 
-
+anim death	
+delay	10
+offset	100 180
+frame	data/chars/soldier2/05.png
+frame	data/chars/soldier2/06.png
+@cmd 	spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
+frame	data/chars/soldier2/07.png
+frame	data/chars/soldier2/07.png
+frame	data/chars/soldier2/07.png
 
 
 anim rise
