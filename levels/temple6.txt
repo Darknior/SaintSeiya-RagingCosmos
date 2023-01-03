@@ -57,11 +57,6 @@ spawn       time-is-up
 coords      368 89
 at          0
 
-spawn shaina
-coords	580 400
-at 0
-
-
 spawn soldier1
 alias SOLDIER
 coords	850 100

@@ -62,7 +62,7 @@ spawn       time-is-up
 coords      368 89
 at          0
 
-spawn jaki
+spawn shaina
 coords	550 390
 at 0
 

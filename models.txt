@@ -234,6 +234,8 @@ know    tremi_skull   	data/chars/tremi/special/tremi_skull.txt
 know    tremi_diagonal_arrows  	data/chars/tremi/special/tremi_diagonal_arrows.txt
 know    tremi_block  	data/chars/tremi/special/tremi_block.txt
 
+know    sirius_ray 		data/chars/sirius/special/sirius_ray.txt
+
 know    knife  		data/chars/great_pope/special/knife.txt
 
 know    columnT  	data/chars/jaki/special/columnT.txt
@@ -349,6 +351,7 @@ load    marin     		data/chars/marin/00_marin.txt
 
 load    shaina     		data/chars/shaina/00_shaina.txt
 load    tremi     		data/chars/tremi/00_tremi.txt
+load    sirius     		data/chars/sirius/00_sirius.txt
 
 
 ## PNJ ##

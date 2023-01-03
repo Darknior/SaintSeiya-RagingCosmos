@@ -58,6 +58,11 @@ spawn       time-is-up
 coords      368 89
 at          0
 
+spawn sirius
+boss 1
+coords  740 450
+at 0
+
 spawn kiki2
 alias KIKI
 item libra2

@@ -1,0 +1,26 @@
+name	sirius_ray
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+lifespan  6
+didhitscript	data/scripts/didhit/tint_poison.c
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	8
+	offset	460 32
+	drawmethod alpha 1
+	sound data/chars/sirius/05-ray.wav
+	attack5 311 0 200 63 20 0 0 0 0 20
+	frame	data/chars/sirius/special/sirius_ray/ray1.png
+	attack5 0
+	frame	data/chars/sirius/special/sirius_ray/ray2.png
+	attack5 311 0 200 63 20 0 0 0 0 20
+	frame	data/chars/sirius/special/sirius_ray/ray3.png
+	attack5 0
+	frame	data/chars/sirius/special/sirius_ray/ray4.png
+
+
