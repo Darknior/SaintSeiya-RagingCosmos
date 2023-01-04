@@ -1,0 +1,30 @@
+name Grapea
+type		item
+score 0
+shadow	0
+nolife	1
+
+animationscript data/scripts/drago.c
+
+
+anim idle 
+	delay 4
+	offset     238 177
+	bbox 0 0 0 0
+	@script
+	   void self = getlocalvar("self");
+	    if(frame==1){
+	      	killentity(self);
+	    }
+	    
+	 @end_script
+	@cmd grapeaspawn 0 0 0
+	frame data/chars/misc/empty.gif
+	frame data/chars/misc/empty.gif
+	frame data/chars/misc/empty.gif
+	frame data/chars/misc/empty.gif
+	frame data/chars/misc/empty.gif
+	frame data/chars/misc/empty.gif
+	
+
+		

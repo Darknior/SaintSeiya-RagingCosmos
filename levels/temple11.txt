@@ -1,9 +1,8 @@
 
-music		data/music/music4.bor
+music		data/music/ikki2.ogg
 
 panel		data/bgs/ROOMS/temple11.png 
 
-frontpanel                   data/bgs/ROOMS/templerock11.png
 
 background                 data/bgs/ROOMS/sky002.png
 
@@ -60,7 +59,7 @@ at          0
 
 spawn kiki2
 alias KIKI
-item libra7
+item apple
 coords	850 390
 at 400
 

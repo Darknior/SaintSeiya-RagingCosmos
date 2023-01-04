@@ -282,7 +282,7 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
-z           490 990
+z           390 484
 file        data/levels/temple11.txt
 
 set         Temple_11_BOSS_Verseau

@@ -1,0 +1,29 @@
+name	BananaFF
+health	55
+#score		2500
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+
+
+anim idle
+
+	loop		1
+	 offset     240 206
+
+	
+	bbox	223 190 32 16
+	delay	100
+	frame	data/chars/misc/food/bananaFF01.gif
+	delay   4
+	frame	data/chars/misc/food/bananaFF02.gif
+	frame	data/chars/misc/food/bananaFF01.gif
+	frame	data/chars/misc/food/bananaFF02.gif
+	frame	data/chars/misc/food/bananaFF01.gif
+	frame	data/chars/misc/food/bananaFF02.gif
+	frame	data/chars/misc/food/bananaFF01.gif
+	frame	data/chars/misc/food/bananaFF02.gif
+	frame	data/chars/misc/food/bananaFF01.gif
+	frame	data/chars/misc/food/bananaFF02.gif
+	frame	data/chars/misc/food/bananaFF01.gif

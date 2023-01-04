@@ -524,3 +524,14 @@ load    temple13roadcolumns      data/bgs/temple13-road/temple13roadcolumns.txt
 ## TEMPLE 13 FINAL
 
 load    temple13columns      data/bgs/temple13/temple13columns.txt
+
+#Food
+load	apple		data/chars/misc/food/apple.txt
+load	macaff		data/chars/misc/food/macaff.txt
+load	bananaff		data/chars/misc/food/bananaff.txt
+load	grape		data/chars/misc/food/grape.txt
+load	abacaxiff		data/chars/misc/food/abacaxiff.txt
+load	cerejacc		data/chars/misc/food/cerejacc.txt
+load	limaocc		data/chars/misc/food/limaocc.txt
+load	laranjaff		data/chars/misc/food/laranjaff.txt
+

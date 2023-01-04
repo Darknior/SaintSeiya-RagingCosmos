@@ -1,0 +1,25 @@
+name	Apple
+health	22
+#score		2500
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+
+anim idle
+	loop	1
+	delay	100
+	 offset     238 177
+	bbox	223 165 32 16
+	frame	data/chars/misc/food/apple01.gif
+      delay   4
+	frame	data/chars/misc/food/apple02.gif
+	frame	data/chars/misc/food/apple01.gif
+	frame	data/chars/misc/food/apple02.gif
+	frame	data/chars/misc/food/apple01.gif
+	frame	data/chars/misc/food/apple02.gif
+	frame	data/chars/misc/food/apple01.gif
+	frame	data/chars/misc/food/apple02.gif
+	frame	data/chars/misc/food/apple01.gif
+	frame	data/chars/misc/food/apple02.gif
+	frame	data/chars/misc/food/apple01.gif
