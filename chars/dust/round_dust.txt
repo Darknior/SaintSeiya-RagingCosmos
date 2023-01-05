@@ -1,0 +1,31 @@
+name	round_dust
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+#lifespan 1
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	4
+	offset	99 27
+	drawmethod scale 0.8 0.8
+        drawmethod  alpha 1
+	frame	data/chars/dust/round_dust/round_dust1.png
+	frame	data/chars/dust/round_dust/round_dust2.png
+	frame	data/chars/dust/round_dust/round_dust3.png
+	frame	data/chars/dust/round_dust/round_dust4.png
+	frame	data/chars/dust/round_dust/round_dust5.png
+	frame	data/chars/dust/round_dust/round_dust6.png
+	frame	data/chars/dust/round_dust/round_dust7.png
+	frame	data/chars/dust/round_dust/round_dust8.png
+	frame	data/chars/dust/round_dust/round_dust9.png
+	frame	data/chars/dust/round_dust/round_dust10.png
+	frame	data/chars/dust/round_dust/round_dust11.png
+	frame	data/chars/dust/round_dust/round_dust12.png
+	frame	data/chars/dust/round_dust/round_dust13.png
+	frame	data/chars/dust/round_dust/round_dust14.png
+	frame	data/chars/dust/round_dust/round_dust15.png
+	@cmd suicide # SUICIDE FRAME, THIS WAY YOU DON'T NEED TO CALCULATE THE LIFESPAN TIME
+	frame	data/chars/dust/round_dust/round_dust15.png

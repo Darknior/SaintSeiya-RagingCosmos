@@ -9,7 +9,7 @@ makeinv		2 0	# Invincible après respawn X sec / Clignote
 dust		round_dustB # Default "dust entity" using the native "Dust" function
 bflash tremi_block
 speed		15	# Vitesse de déplacement
-running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+running 	35 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
 jumpmove 	7 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed 	12	# Vitesse du saut
@@ -44,7 +44,7 @@ ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
 didhitscript	data/scripts/didhit/tint_silver.c
 
-com  D U a1 	freespecial1 	#Roue de melee
+com  D U a1 	freespecial 	#Roue de melee
 com  F a2  	freespecial2 	#Météores de Pégase
 com  a2  	freespecial3 	#Explosion du Cosmos
 com  B a1  	freespecial4 	#Manchette arriere
@@ -208,7 +208,7 @@ anim turn
 	delay	8
 	offset	36 116
 	bbox 21 0 51 112
-	cancel 0 3 0 A freespecial4 
+	cancel 0 3 0 A freespecial4
 	frame	data/chars/seiya/turn1.png
 	frame	data/chars/seiya/turn2.png
 	frame	data/chars/seiya/turn3.png
@@ -227,9 +227,11 @@ anim walk
 	frame	data/chars/seiya/walk7.png
 
 anim dodge
-	delay	8
+	delay	10
 	offset	45 137
 	bbox 21 14 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	jumpframe 2.5 1.8 0
 sound   data/chars/seiya/06-jump1.wav
 	frame	data/chars/seiya/jump1.png
@@ -493,12 +495,17 @@ anim throw #Projection en arrière
 	throw 7 7
 	throwdamage 20
 sound   data/chars/seiya/23-projection1.wav
+	summonframe 0 0 0 0
+	subentity dash_dust
 	frame	data/chars/seiya/grabbackward1.png
 	frame	data/chars/seiya/grabbackward2.png
 sound   data/chars/seiya/23-projection2.wav
 	frame	data/chars/seiya/grabbackward3.png
+	attack -27 9 100 70 8 1 1 0 0 30
 	frame	data/chars/seiya/grabbackward4.png
+	attack -52 19 100 70 8 1 1 0 0 0
 	frame	data/chars/seiya/grabbackward5.png
+	attack -63 7 120 70 8 1 1 0 0 30
 	frame	data/chars/seiya/grabbackward6.png
 	offset	114 110
 	frame	data/chars/seiya/rise1.png

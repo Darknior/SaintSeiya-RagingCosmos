@@ -1,6 +1,6 @@
 
 name	KIKI2
-health	10
+health	100
 speed	7
 type	enemy
 
@@ -22,7 +22,10 @@ gfxshadow 1
 
 subject_to_screen 0
 
-
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+script	data/scripts/entity_effects.c
+didhitscript	data/scripts/didhit/tint_silver.c
 
 anim DEATH
 
@@ -84,6 +87,7 @@ offset	54 92
 dropv 4 1 0
 
 frame	data/chars/KIKI2/04.png
+@cmd    spawn01 "bananaff" 0 30 0 0
 frame	data/chars/KIKI2/04.png
 
 

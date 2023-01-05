@@ -72,8 +72,10 @@ load    yellow_swing        data/chars/misc/flash/yellow_swing.txt
 #Dust animations
 
 load    round_dustB     data/chars/dust/round_dustB.txt
+load    round_dust     data/chars/dust/round_dust.txt
 load    fall_dust     data/chars/dust/fall_dust.txt
 load    kick_dust     data/chars/dust/kick_dust.txt
+load    dash_dust     data/chars/dust/dash_dust.txt
 
 #Blood animations
 
