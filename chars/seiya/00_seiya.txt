@@ -501,11 +501,8 @@ sound   data/chars/seiya/23-projection1.wav
 	frame	data/chars/seiya/grabbackward2.png
 sound   data/chars/seiya/23-projection2.wav
 	frame	data/chars/seiya/grabbackward3.png
-	attack -27 9 100 70 8 1 1 0 0 30
 	frame	data/chars/seiya/grabbackward4.png
-	attack -52 19 100 70 8 1 1 0 0 0
 	frame	data/chars/seiya/grabbackward5.png
-	attack -63 7 120 70 8 1 1 0 0 30
 	frame	data/chars/seiya/grabbackward6.png
 	offset	114 110
 	frame	data/chars/seiya/rise1.png
