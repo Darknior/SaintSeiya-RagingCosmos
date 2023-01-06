@@ -8,13 +8,13 @@ riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
 dust		round_dustB # Default "dust entity" using the native "Dust" function
 bflash tremi_block
-speed		20	# Vitesse de déplacement
-running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+speed		15	# Vitesse de déplacement
+running 	35 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
 jumpmove 	7 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed 	12	# Vitesse du saut
 jumpheight 	5.5	# Hauteur du saut
-antigravity	-15	# Augmente la gravité pour redescendre plus vite 1/100
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 
 noquake 	0 1	# Secoue l'ecran qd on tombe au sol
 
@@ -42,6 +42,7 @@ icon       	data/chars/hyoga/icon.png
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
+didhitscript	data/scripts/didhit/tint_silver.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Météores de Pégase
@@ -53,8 +54,8 @@ load hyoga_cygnus
 load hyoga_twister
 load hyoga_frozenray
 load hyoga_frozenray_up
-
-load aldebaran_super_lights
+load hyoga_constellation
+load camus_lights
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -251,6 +252,8 @@ anim dodge
 	delay	8
 	offset	63 140
 	bbox 34 18 51 112
+	summonframe 0 0 0 0
+	subentity round_dust
 	jumpframe 2 1.8 0
 sound   data/chars/hyoga/06-jump1.wav
 	frame	data/chars/hyoga/jump1.png
@@ -302,6 +305,8 @@ anim  runjump
 	delay	6
 	offset	55 140
 	bbox 35 14 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	cancel 0 8 0 A2 freespecial3 
 sound   data/chars/hyoga/06-jump1.wav
 	frame	data/chars/hyoga/jump11.png
@@ -512,6 +517,8 @@ anim throw #Projection en arrière
 	bbox 21 28 51 112
 	throw 7 7
 	throwdamage 20
+	summonframe 0 0 0 0
+	subentity dash_dust
 sound   data/chars/hyoga/23-projection1.wav
 	frame	data/chars/hyoga/grabbackward1.png
 	frame	data/chars/hyoga/grabbackward2.png
@@ -528,6 +535,7 @@ sound   data/chars/hyoga/23-projection2.wav
 	frame	data/chars/hyoga/rise3.png
 	frame	data/chars/hyoga/rise4.png
 	frame	data/chars/hyoga/rise5.png	
+
 anim freespecial # Défense spéciale explosion du cosmos
 	delay	5
 	offset	35 141
@@ -561,7 +569,7 @@ anim freespecial2 # Attaque du Cygne (2 projectiles)
 	energycost  20 1 0
 	hitflash flashbig
 	attack5 -8 -29 100 180 10 1 0 0 5 12
-	sound data/chars/hyoga/02.wav
+	sound data/chars/hyoga/01-shooter.wav
 	frame	data/chars/hyoga/special21.png
 	frame	data/chars/hyoga/special22.png
 	frame	data/chars/hyoga/special23.png
@@ -572,25 +580,25 @@ anim freespecial2 # Attaque du Cygne (2 projectiles)
 	frame	data/chars/hyoga/special27.png
 	frame	data/chars/hyoga/special28.png
 	@cmd	shooter "hyoga_cygnus" 77 80 0 3 0 0
+        @cmd	shooter "marin_stormA" 77 40 0 1 0 0
 	@cmd	shooter2 "hyoga_cygnus" 77 65 2 -1
 	frame	data/chars/hyoga/special28.png
 
 anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
-	delay	20
+	delay	10
 	offset	45 148
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
-	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+	@cmd 	spawnScreen "camus_lights" 0 0 0 0
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
-	subentity hyoga_comet_back
+	subentity hyoga_constellation
 	energycost  20 1 0
 	frame	data/chars/hyoga/upspecial1.png
-	sound data/chars/hyoga/08-ultra.wav
 	frame	data/chars/hyoga/upspecial2.png
+	sound data/chars/deathmask/01-cygnus.wav
 	frame	data/chars/hyoga/upspecial3.png
 	frame	data/chars/hyoga/upspecial4.png
-	sound data/chars/hyoga/08-ultra2.wav
 	frame	data/chars/hyoga/upspecial5.png
 	frame	data/chars/hyoga/upspecial6.png
 	@cmd	shooter2 "hyoga_frozenray_up" 0 0 0 4		
@@ -605,6 +613,7 @@ anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
 	frame	data/chars/hyoga/upspecial14.png
 	frame	data/chars/hyoga/upspecial15.png
 	frame	data/chars/hyoga/upspecial16.png
+	sound data/chars/hyoga/02.wav
 	frame	data/chars/hyoga/upspecial17.png
 	frame	data/chars/hyoga/upspecial18.png
 	frame	data/chars/hyoga/upspecial19.png
@@ -616,7 +625,6 @@ anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
 	frame	data/chars/hyoga/upspecial22.png	
 	frame	data/chars/hyoga/upspecial22.png	
 	frame	data/chars/hyoga/upspecial22.png	
-	@cmd	shooter "hyoga_frozenray" 0 80 0 0 0 0	
 	frame	data/chars/hyoga/special22.png
 	frame	data/chars/hyoga/special22.png	
 	frame	data/chars/hyoga/special22.png	
@@ -646,6 +654,8 @@ anim jump # Saut Statique
 	delay	8
 	offset	55 140
 	bbox 21 14 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	cancel 0 8 0 A2 freespecial3
 	sound data/chars/hyoga/06-jump1.wav
 	frame	data/chars/hyoga/jump1.png
@@ -664,6 +674,8 @@ anim forwardjump # Saut vers l'avant
 	delay	6
 	offset	55 140
 	bbox 21 14 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	cancel 0 8 0 A2 freespecial3
 	sound data/chars/hyoga/06-jump1.wav
 	frame	data/chars/hyoga/jump11.png
@@ -688,6 +700,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	55 140
 	bbox 21 14 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	sound data/chars/hyoga/06-jump2.wav
 	frame	data/chars/hyoga/get1.png
 	frame	data/chars/hyoga/get2.png
@@ -698,6 +712,8 @@ anim jumpattack #Attaque sautée statique
 	delay	5
 	offset	55 140
 	bbox 21 14 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	sound data/sounds/punch.wav	
 	frame	data/chars/hyoga/jumpattack1.png
 	frame	data/chars/hyoga/jumpattack2.png
@@ -711,6 +727,8 @@ anim jumpforward #Attaque sautée vers l'avant
 	delay	5
 	offset	55 140
 	bbox 21 14 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	sound data/sounds/punch.wav	
 	frame	data/chars/hyoga/jumpforward1.png
 	frame	data/chars/hyoga/jumpforward2.png

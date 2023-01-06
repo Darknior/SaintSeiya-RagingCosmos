@@ -2,7 +2,7 @@ name	aldebaran_super_lights
 type	panel
 shadow	0
 speed 10
-setlayer 9999
+setlayer 2000
 antigravity 100
 lifespan 3.6
 

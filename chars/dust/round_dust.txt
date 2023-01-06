@@ -9,7 +9,7 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	0
 	delay	4
-	offset	99 27
+	offset	99 17
 	drawmethod scale 0.8 0.8
         drawmethod  alpha 1
 	frame	data/chars/dust/round_dust/round_dust1.png

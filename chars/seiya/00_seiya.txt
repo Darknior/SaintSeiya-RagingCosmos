@@ -296,6 +296,8 @@ anim  runjump
 	bbox 21 14 51 97
 	cancel 0 8 0 A2 freespecial3 
 sound   data/chars/seiya/06-jump1.wav
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/seiya/forwardjump1.png
 	frame	data/chars/seiya/forwardjump2.png
 	frame	data/chars/seiya/forwardjump3.png
@@ -745,6 +747,8 @@ anim jump # Saut Statique
 	offset	45 137
 	bbox 21 14 51 97
 	cancel 0 8 0 A2 freespecial3 
+	summonframe 0 0 0 0
+	subentity round_dust
 	sound data/chars/seiya/06-jump1.wav	
 	frame	data/chars/seiya/jump1.png
 	frame	data/chars/seiya/jump2.png
@@ -759,6 +763,8 @@ anim forwardjump # Saut vers l'avant
 	offset	45 137
 	bbox 21 14 51 97
 	cancel 0 8 0 A2 freespecial3 	
+	summonframe 0 0 0 0
+	subentity round_dust
 	sound data/chars/seiya/06-jump1.wav
 	frame	data/chars/seiya/forwardjump1.png
 	frame	data/chars/seiya/forwardjump2.png
@@ -779,6 +785,8 @@ anim jumpland # Aterrissage du saut
 	delay	7
 	offset	45 112
 	bbox 21 0 51 112
+	summonframe 0 0 0 0
+	subentity round_dust
 	sound data/chars/seiya/06-jump2.wav
 	frame	data/chars/seiya/get1.png
 	frame	data/chars/seiya/get2.png
@@ -790,6 +798,8 @@ anim jumpattack #Attaque sautée statique
 	offset	45 112
 	hitflash flashbig
 	bbox 21 0 51 112
+	summonframe 0 0 0 0
+	subentity round_dust
 	sound data/sounds/punch.wav	
 	frame	data/chars/seiya/jumpattack1.png
 	frame	data/chars/seiya/jumpattack2.png
@@ -804,7 +814,9 @@ anim jumpforward #Attaque sautée vers l'avant
 	offset	45 112
 	hitflash blue_swing
 	bbox 21 0 51 112
-	sound data/sounds/punch.wav	
+	sound data/sounds/punch.wav
+	summonframe 0 0 0 0
+	subentity round_dust	
 	frame	data/chars/seiya/jumpforward1.png
 	attack4 75 42 67 26 10 1 0 0 10 12
 	dropv 4.0 1.0 0.0

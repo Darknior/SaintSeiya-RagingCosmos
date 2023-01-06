@@ -11,7 +11,7 @@ anim	idle
 	loop	1
 	fastattack 1
 	delay	5
-	offset	0 95
+	offset	-40 95
 	drawmethod rotate 270
 	drawmethod fliprotate 1
 	drawmethod alpha 1

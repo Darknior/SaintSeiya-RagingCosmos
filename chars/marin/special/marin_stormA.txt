@@ -10,8 +10,9 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	0
 	delay	7
-	offset	72 220
+	offset	72 200
 	drawmethod alpha 1
+        drawmethod  scale 0.6 0.6
 	sound data/chars/marin/01-storm.wav
 	frame	data/chars/marin/special/marin_stormA/marin_stormA-1.png
 	frame	data/chars/marin/special/marin_stormA/marin_stormA-2.png

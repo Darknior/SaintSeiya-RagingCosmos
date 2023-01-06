@@ -114,6 +114,7 @@ know    hyoga_cygnus          data/chars/hyoga/special/hyoga_cygnus.txt
 know    hyoga_twister         data/chars/hyoga/special/hyoga_twister.txt
 know    hyoga_frozenray       data/chars/hyoga/special/hyoga_frozenray.txt
 know    hyoga_frozenray_up    data/chars/hyoga/special/hyoga_frozenray_up.txt
+know    hyoga_constellation    data/chars/hyoga/special/hyoga_constellation.txt
 
 know    shun_aura             data/chars/shun/special/shun_aura.txt
 know    shun_stream           data/chars/shun/special/shun_stream.txt

@@ -4,14 +4,13 @@ shadow	0
 remove 0
 setlayer 99
 antigravity 100
-lifespan  6
-animationscript		data/scripts/escript.c
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
 	fastattack 1
 	delay	3
-	offset	0 95
+	offset	30 87
 	drawmethod alpha 1
 	attack5 0 20 508 150 20 0 0 0 0 20
 	frame	data/chars/hyoga/special/hyoga_frozenray/frozenray1.png
