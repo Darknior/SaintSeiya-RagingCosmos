@@ -1,29 +1,54 @@
 name	seiya_constellation
-type	none
+type	panel
 shadow	0
-setlayer 1
-antigravity 100
+speed	10
+setlayer 5
 animationscript	data/scripts/player.c
 
 anim	idle
-	loop	1
-	delay	30
-	offset	120 200
+	delay	10
+	offset	800 0
 	drawmethod scale 1 1
-	drawmethod alpha 6
-	drawmethod channel 0.55
-	frame	data/chars/seiya/special/seiya_constellation/constellation1.png
-	drawmethod alpha 6
-	drawmethod channel 0.85
-	frame	data/chars/seiya/special/seiya_constellation/constellation2.png
-	frame	data/chars/seiya/special/seiya_constellation/constellation3.png
-	frame	data/chars/seiya/special/seiya_constellation/constellation4.png
-	frame	data/chars/seiya/special/seiya_constellation/constellation4.png
-	frame	data/chars/seiya/special/seiya_constellation/constellation4.png
-	frame	data/chars/seiya/special/seiya_constellation/constellation3.png
-	drawmethod alpha 6
-	drawmethod channel 0.55
-	frame	data/chars/seiya/special/seiya_constellation/constellation2.png
-	frame	data/chars/seiya/special/seiya_constellation/constellation1.png
+        drawmethod  alpha 6
+        drawmethod  channel 0.1
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.2
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.3
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.4
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.5
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.6
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.7
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.8
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.9
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.99
+	delay	300
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+	delay	10
+        drawmethod  channel 0.9
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.8
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.7
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.6
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.5
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.4
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.3
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.2
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
+        drawmethod  channel 0.1
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png
 	@cmd suicide
-	frame	data/chars/seiya/special/seiya_constellation/constellation1.png
+	frame	data/chars/seiya/special/seiya_constellation/seiya_constellation.png

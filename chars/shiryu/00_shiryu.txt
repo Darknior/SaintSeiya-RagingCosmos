@@ -8,13 +8,13 @@ riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
 dust		round_dustB # Default "dust entity" using the native "Dust" function
 bflash tremi_block
-speed		20	# Vitesse de déplacement
-running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+speed		15	# Vitesse de déplacement
+running 	35 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
 jumpmove 	7 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed 	12	# Vitesse du saut
 jumpheight 	5.5	# Hauteur du saut
-antigravity	-15	# Augmente la gravité pour redescendre plus vite 1/100
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 
 noquake 	0 1	# Secoue l'ecran qd on tombe au sol
 

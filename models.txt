@@ -90,7 +90,7 @@ know    seiya_aura_ryuseiken            data/chars/seiya/special/seiya_aura_ryus
 know    seiya_constellation   data/chars/seiya/special/seiya_constellation.txt
 know    seiya_meteor          data/chars/seiya/special/seiya_meteor.txt
 know    seiya_meteord         data/chars/seiya/special/seiya_meteord.txt
-know    seiya_comet_back      data/chars/seiya/special/seiya_comet_back.txt
+know    seiya_pegasus      data/chars/seiya/special/seiya_pegasus.txt
 know    seiya_dash_dust       data/chars/seiya/special/seiya_dash_dust.txt
 know    seiya_down_dust       data/chars/seiya/special/seiya_down_dust.txt
 know    seiya_upper_dust      data/chars/seiya/special/seiya_upper_dust.txt
@@ -115,6 +115,8 @@ know    hyoga_twister         data/chars/hyoga/special/hyoga_twister.txt
 know    hyoga_frozenray       data/chars/hyoga/special/hyoga_frozenray.txt
 know    hyoga_frozenray_up    data/chars/hyoga/special/hyoga_frozenray_up.txt
 know    hyoga_constellation    data/chars/hyoga/special/hyoga_constellation.txt
+know    hyoga_diamonds    data/chars/hyoga/special/hyoga_diamonds.txt
+know    hyoga_diamonds_up    data/chars/hyoga/special/hyoga_diamonds_up.txt
 
 know    shun_aura             data/chars/shun/special/shun_aura.txt
 know    shun_stream           data/chars/shun/special/shun_stream.txt

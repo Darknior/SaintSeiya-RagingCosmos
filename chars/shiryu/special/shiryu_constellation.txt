@@ -1,53 +1,54 @@
 name	shiryu_constellation
 type	panel
-speed	10
 shadow	0
+speed	10
 setlayer 5
-antigravity 100
 animationscript	data/scripts/player.c
 
 anim	idle
-	delay	15
+	delay	10
 	offset	800 0
 	drawmethod scale 1 1
         drawmethod  alpha 6
-        drawmethod  channel 0.25
+        drawmethod  channel 0.1
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.50
+        drawmethod  channel 0.2
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.75
+        drawmethod  channel 0.3
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-        drawmethod  alpha 6
+        drawmethod  channel 0.4
+	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.5
+	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.6
+	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.7
+	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.8
+	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.9
+	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
         drawmethod  channel 0.99
+	delay	200
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+	delay	10
+        drawmethod  channel 0.9
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.8
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.7
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.6
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.5
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.4
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.3
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
+        drawmethod  channel 0.2
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.75
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.50
-	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.25
+        drawmethod  channel 0.1
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png
 	@cmd suicide
 	frame	data/chars/shiryu/special/shiryu_constellation/shiryu_constellation.png

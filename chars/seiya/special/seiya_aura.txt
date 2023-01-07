@@ -10,7 +10,7 @@ anim	idle
 	delay	4
 	offset	85 232
 	drawmethod alpha 1
-	quakeframe	data/chars/seiya/special/seiya_aura/aura1.png 24 3
+	data/chars/seiya/special/seiya_aura/aura1.png
 	frame	data/chars/seiya/special/seiya_aura/aura2.png
 	frame	data/chars/seiya/special/seiya_aura/aura3.png
 	frame	data/chars/seiya/special/seiya_aura/aura4.png

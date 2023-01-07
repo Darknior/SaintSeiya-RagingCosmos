@@ -55,7 +55,7 @@ load seiya_aura
 load seiya_constellation
 load seiya_meteor
 load seiya_meteord
-load seiya_comet_back
+load seiya_constellation
 load seiya_down_dust
 load seiya_dash_dust
 load seiya_upper_dust
@@ -613,7 +613,7 @@ anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	@cmd 	spawnScreen "seiya_lights" 0 0 0 0
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
-	subentity seiya_comet_back
+	subentity seiya_constellation
 	energycost  20 1 0
 	delay	10
 	offset	31 116

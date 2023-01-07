@@ -55,6 +55,8 @@ load hyoga_twister
 load hyoga_frozenray
 load hyoga_frozenray_up
 load hyoga_constellation
+load hyoga_diamonds
+load hyoga_diamonds_up
 load camus_lights
 
 #----------------------------------------------------------
@@ -561,30 +563,38 @@ anim freespecial # Défense spéciale explosion du cosmos
 	frame	data/chars/hyoga/special13.png
 	frame	data/chars/hyoga/special14.png
 	
-anim freespecial2 # Attaque du Cygne (2 projectiles)
-	delay	10
-	offset	45 151
-	summonframe 0 0 0 0 0
-	subentity hyoga_aura_ryuseiken
-	energycost  20 1 0
+anim freespecial2 # Diamond Dust (2 projectiles)
+	delay	5
+	offset	35 141
+	energycost  10 1 0
 	hitflash flashbig
-	attack5 -8 -29 100 180 10 1 0 0 5 12
-	sound data/chars/hyoga/01-shooter.wav
+	sound data/chars/hyoga/01.wav
+        delay	10
+	offset	45 151
 	frame	data/chars/hyoga/special21.png
 	frame	data/chars/hyoga/special22.png
 	frame	data/chars/hyoga/special23.png
 	frame	data/chars/hyoga/special24.png
 	frame	data/chars/hyoga/special25.png
-	attack5 -8 -30 100 180 10 1 0 0 5 12
 	frame	data/chars/hyoga/special26.png
 	frame	data/chars/hyoga/special27.png
+	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 1 0	
 	frame	data/chars/hyoga/special28.png
-	@cmd	shooter "hyoga_cygnus" 77 80 0 3 0 0
-        @cmd	shooter "marin_stormA" 77 40 0 1 0 0
-	@cmd	shooter2 "hyoga_cygnus" 77 65 2 -1
+	@cmd	shooter "hyoga_diamonds" 0 0 0 1.4 0 0
+        @cmd	shooter "hyoga_cygnus" 77 40 0 1.45 0 0
+	@cmd	shooter2 "hyoga_cygnus" 77 65 1.5 0.5 0 0
+	delay	150
 	frame	data/chars/hyoga/special28.png
+	delay	6
+	frame	data/chars/hyoga/special27.png
+	frame	data/chars/hyoga/special26.png
+	frame	data/chars/hyoga/special25.png
+	frame	data/chars/hyoga/special24.png
+	frame	data/chars/hyoga/special23.png
+	frame	data/chars/hyoga/special22.png
+	frame	data/chars/hyoga/special21.png
 
-anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
+anim freespecial6 # Aurora Thunder Attack ( haut + bouton special)
 	delay	10
 	offset	45 148
 	fastattack 1
@@ -596,11 +606,13 @@ anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
 	energycost  20 1 0
 	frame	data/chars/hyoga/upspecial1.png
 	frame	data/chars/hyoga/upspecial2.png
-	sound data/chars/deathmask/01-cygnus.wav
+	sound data/chars/hyoga/01-cygnus.wav
 	frame	data/chars/hyoga/upspecial3.png
 	frame	data/chars/hyoga/upspecial4.png
 	frame	data/chars/hyoga/upspecial5.png
 	frame	data/chars/hyoga/upspecial6.png
+	sound data/chars/hyoga/01-icepunch.wav
+	@cmd	shooter "hyoga_diamonds_up" -50 -200 0 0 3
 	@cmd	shooter2 "hyoga_frozenray_up" 0 0 0 4		
 	frame	data/chars/hyoga/upspecial7.png
 	frame	data/chars/hyoga/upspecial8.png	
@@ -609,6 +621,8 @@ anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
 	frame	data/chars/hyoga/upspecial11.png
 	frame	data/chars/hyoga/upspecial12.png
 	frame	data/chars/hyoga/upspecial13.png
+	sound data/chars/hyoga/01-icepunch.wav
+	@cmd	shooter "hyoga_diamonds_up" -50 -200 0 0 3
 	@cmd	shooter2 "hyoga_frozenray_up" 0 0 0 4		
 	frame	data/chars/hyoga/upspecial14.png
 	frame	data/chars/hyoga/upspecial15.png
@@ -618,7 +632,10 @@ anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
 	frame	data/chars/hyoga/upspecial18.png
 	frame	data/chars/hyoga/upspecial19.png
 	frame	data/chars/hyoga/upspecial20.png
-	@cmd	shooter "hyoga_frozenray" 0 80 0 0 0 0	
+	sound data/chars/hyoga/01-icepunch.wav
+	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 1 0	
+	@cmd	shooter2 "hyoga_frozenray" 0 80 0 0
+	@cmd	shooter "hyoga_diamonds" 0 0 0 1.8 0 0	
 	frame	data/chars/hyoga/upspecial21.png
 	frame	data/chars/hyoga/upspecial22.png
 	frame	data/chars/hyoga/upspecial22.png	
@@ -634,7 +651,10 @@ anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
 	frame	data/chars/hyoga/special26.png
 	frame	data/chars/hyoga/special27.png
 	frame	data/chars/hyoga/special28.png
-	@cmd	shooter "hyoga_frozenray" 0 80 0 0 0 0
+	sound data/chars/hyoga/01-icepunch.wav
+	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 1 0	
+	@cmd	shooter2 "hyoga_frozenray" 0 80 0 0
+	@cmd	shooter "hyoga_diamonds" 0 0 0 1.8 0 0
 	frame	data/chars/hyoga/special28.png	
 	frame	data/chars/hyoga/special28.png	
 	frame	data/chars/hyoga/special28.png	
@@ -645,7 +665,10 @@ anim freespecial6 # Tonnerre de l'Aurore ( haut + bouton special)
 	frame	data/chars/hyoga/special26.png
 	frame	data/chars/hyoga/special27.png
 	frame	data/chars/hyoga/special28.png	
-	@cmd	shooter "hyoga_frozenray" 0 80 0 0 0 0
+	sound data/chars/hyoga/01-icepunch.wav
+	@cmd 	spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 1 0	
+	@cmd	shooter2 "hyoga_frozenray" 0 80 0 0
+	@cmd	shooter "hyoga_diamonds" 0 0 0 1.8 0 0
 	frame	data/chars/hyoga/special28.png		
 	frame	data/chars/hyoga/special28.png		
 	frame	data/chars/hyoga/special28.png		

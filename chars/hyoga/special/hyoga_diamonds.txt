@@ -1,0 +1,36 @@
+name	hyoga_diamonds
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	10
+	offset	400 217
+	drawmethod alpha 1
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-13.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-14.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-15.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-16.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-17.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-18.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-19.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-20.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-21.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-22.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-23.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-24.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-25.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-26.png
+        frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-27.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-28.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-29.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-30.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-31.png
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-32.png	
+	@cmd	suicide	
+	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-32.png
