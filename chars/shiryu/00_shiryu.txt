@@ -531,6 +531,7 @@ anim freespecial2 # Fureur du Dragon
 	energycost  20 1 0
 	hitflash flashbig
 	attack5 -8 -50 100 180 10 1 0 0 5 12
+	@cmd 	spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 1 0
         sound   data/chars/shiryu/01-shoryuha.wav
 	frame	data/chars/shiryu/special21.png
 	frame	data/chars/shiryu/special22.png
@@ -564,6 +565,7 @@ anim freespecial6 # Cascade du Dragon ( haut + bouton special)
 	summonframe 0 0 0 0 1
 	subentity shiryu_constellation
 	energycost  20 1 0
+	@cmd 	spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 1 0
         sound   data/chars/shiryu/01-shoryuha.wav
 	frame	data/chars/shiryu/special21.png
 	frame	data/chars/shiryu/special22.png
@@ -578,7 +580,7 @@ anim freespecial6 # Cascade du Dragon ( haut + bouton special)
 	frame	data/chars/shiryu/special31.png
 	@cmd 	spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
 	attack5 0 -50 100 180 10 1 0 0 5 12
-	@cmd	shooter "shiryu_big_dragon" 77 80 0 1.5 0 0
+	@cmd	shooter "shiryu_big_dragon" 77 80 0 2 0 0
 	frame	data/chars/shiryu/special32.png
 	frame	data/chars/shiryu/special33.png
 	frame	data/chars/shiryu/special34.png

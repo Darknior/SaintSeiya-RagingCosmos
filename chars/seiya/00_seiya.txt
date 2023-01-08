@@ -548,6 +548,7 @@ anim freespecial2 # Météores de Pégase
 	attack5 -8 -64 100 180 10 1 0 0 5 12
 	sound data/chars/seiya/02.wav
 	@cmd 	spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
+	@cmd 	spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/special21.png
 	frame	data/chars/seiya/special22.png
 	frame	data/chars/seiya/special23.png
@@ -621,6 +622,7 @@ anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	hitflash flashbig
 	attack5 -8 -64 100 180 10 1 0 0 5 12
 	sound data/chars/seiya/02.wav
+	@cmd 	spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
 	@cmd 	spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/special21.png
 	frame	data/chars/seiya/special22.png

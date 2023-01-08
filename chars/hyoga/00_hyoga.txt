@@ -44,10 +44,13 @@ ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
 didhitscript	data/scripts/didhit/tint_silver.c
 
-com  a2  	freespecial 	#Explosion du Cosmos
-com  F a2  	freespecial2 	#Météores de Pégase
-com  U a2  	freespecial6 	#Comète de Pégase
-com  D F a1 freespecial5 	#Uppercut
+com  D U a1 	freespecial 	#Roue de melee
+com  F a2  	freespecial2 	#Diamond Dust (2 projectiles)
+com  a2  	freespecial3 	#Explosion du Cosmos
+com  B a1  	freespecial4 	#Manchette arriere
+com  D F a1  	freespecial5 	#Uppercut
+com  U a2  	freespecial6 	#Aurora Thunder Attack ( haut + bouton special)
+
 
 load hyoga_aura
 load hyoga_cygnus
@@ -55,6 +58,7 @@ load hyoga_twister
 load hyoga_frozenray
 load hyoga_frozenray_up
 load hyoga_constellation
+load seiya_dash_dust
 load hyoga_diamonds
 load hyoga_diamonds_up
 load camus_lights
@@ -288,9 +292,7 @@ anim runattack # Attaque en courant
 sound   data/chars/hyoga/07-forward_punch.wav
 	frame	data/chars/hyoga/runattack1.png
 	frame	data/chars/hyoga/runattack2.png
-	summonframe 0 0 0 0 0
-	subentity hyoga_dash_dust
-	unsummonframe 11
+	@cmd 	spawnbind "seiya_dash_dust" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/hyoga/runattack3.png
 	attack2 50 40 70 40 20 1 0 0 5 12
 	frame	data/chars/hyoga/runattack4.png
@@ -401,89 +403,87 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/hyoga/attack54.png
 	frame	data/chars/hyoga/attack55.png
 
-anim attackbackward # Attaque arrière (Arrière + attaque)
+anim freespecial # Attaque arrière (saut + attaque)
 	flipframe 1
 	offset	45 140
 	bbox 21 28 51 112
 	fastattack 1
-	hitflash flashbig
-	delay	8
-sound   data/chars/hyoga/17-back_kick.wav
-	attack1 0 0 0 0 0 0 0 0 0 0
+	hitflash blue_swing
+	delay	5
+sound   data/chars/seiya/17-back_kick.wav
+	@cmd 	spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/hyoga/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity hyoga_down_dust
-	unsummonframe 12
-	frame	data/chars/hyoga/attackbackward1.png
+	attack -14 93 130 50 15 0 0 0 0 20
 	frame	data/chars/hyoga/attackbackward2.png
+	attack1 0
 	frame	data/chars/hyoga/attackbackward3.png
-	attack1 55 35 84 29 20 0 0 0 5 12
+	attack1 0 64 130 50 15 1 0 0 0 20
+	bbox 61 22 50 120
 	frame	data/chars/hyoga/attackbackward4.png
 	attack1 0
 	frame	data/chars/hyoga/attackbackward5.png
+	attack 14 20 130 50 15 0 0 0 0 20
 	frame	data/chars/hyoga/attackbackward6.png
-	attack1 55 69 127 29 20 1 0 0 5 12
+	attack1 0
 	frame	data/chars/hyoga/attackbackward7.png
+	attack 51 41 130 50 15 1 0 0 0 20
+	bbox 90 23 50 120
 	frame	data/chars/hyoga/attackbackward8.png
-	attack1 0 0 0 0 0 0 0 0 0 0
+	attack1 0
 	delay   12
+	bbox 26 21 50 120
 	frame	data/chars/hyoga/attackbackward1.png	
 
 anim attackboth # Attaque arrière (bouton saut + attaque)
 	flipframe 1
-	offset	45 134
+	offset	45 140
+	bbox 21 28 51 112
 	fastattack 1
-	bbox 21 22 51 112
-	hitflash flashbig
-	delay	8
-sound   data/chars/hyoga/17-back_kick.wav
-	attack1 0 0 0 0 0 0 0 0 0 0
+	hitflash blue_swing
+	delay	5
+sound   data/chars/seiya/17-back_kick.wav
+	@cmd 	spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/hyoga/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity hyoga_down_dust
-	unsummonframe 12
-	frame	data/chars/hyoga/attackbackward1.png
+	attack -14 93 130 50 15 0 0 0 0 20
 	frame	data/chars/hyoga/attackbackward2.png
+	attack1 0
 	frame	data/chars/hyoga/attackbackward3.png
-	attack1 55 35 84 29 20 0 0 0 5 12
+	attack1 0 64 130 50 15 1 0 0 0 20
+	bbox 61 22 50 120
 	frame	data/chars/hyoga/attackbackward4.png
 	attack1 0
 	frame	data/chars/hyoga/attackbackward5.png
+	attack 14 20 130 50 15 0 0 0 0 20
 	frame	data/chars/hyoga/attackbackward6.png
-	attack1 55 69 127 29 20 1 0 0 5 12
+	attack1 0
 	frame	data/chars/hyoga/attackbackward7.png
+	attack 51 41 130 50 15 1 0 0 0 20
+	bbox 90 23 50 120
 	frame	data/chars/hyoga/attackbackward8.png
-	attack1 0 0 0 0 0 0 0 0 0 0
+	attack1 0
 	delay   12
-	frame	data/chars/hyoga/attackbackward1.png
+	bbox 26 21 50 120
+	frame	data/chars/hyoga/attackbackward1.png	
 	
 anim freespecial4 # Attaque arrière (à partir d'un cancel)
-	flipframe 1
-	offset	45 134
-	fastattack 1
-	bbox 21 22 51 112
-	hitflash flashbig
+        offset	146 118
+	hitflash flashmedium	
+	delay	4
+        sound   data/chars/seiya/01-backpunch.wav
+	frame	data/chars/hyoga/attackbackward10.png
+	delay	10
+	frame	data/chars/hyoga/attackbackward11.png
+	delay	15
+	attack 20 36 60 50 30 1 0 0 0 30
+	dropv 	3.5 1 0
+	frame	data/chars/hyoga/attackbackward12.png
 	delay	8
-sound   data/chars/hyoga/17-back_kick.wav
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/hyoga/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity hyoga_down_dust
-	unsummonframe 12
-	frame	data/chars/hyoga/attackbackward1.png
-	frame	data/chars/hyoga/attackbackward2.png
-	frame	data/chars/hyoga/attackbackward3.png
-	attack1 55 35 84 29 20 0 0 0 5 12
-	frame	data/chars/hyoga/attackbackward4.png
+	attack 20 36 60 50 30 1 0 0 0 30
+	frame	data/chars/hyoga/attackbackward13.png
 	attack1 0
-	frame	data/chars/hyoga/attackbackward5.png
-	frame	data/chars/hyoga/attackbackward6.png
-	attack1 55 69 127 29 20 1 0 0 5 12
-	frame	data/chars/hyoga/attackbackward7.png
-	frame	data/chars/hyoga/attackbackward8.png
-	attack1 0 0 0 0 0 0 0 0 0 0
-	delay   12
-	frame	data/chars/hyoga/attackbackward1.png	
+	bbox 64 29 50 120
+	frame	data/chars/hyoga/attackbackward14.png
+	frame	data/chars/hyoga/attackbackward15.png
 
 anim grab
 	delay	5
@@ -538,12 +538,10 @@ sound   data/chars/hyoga/23-projection2.wav
 	frame	data/chars/hyoga/rise4.png
 	frame	data/chars/hyoga/rise5.png	
 
-anim freespecial # Défense spéciale explosion du cosmos
+anim freespecial3 # Défense spéciale explosion du cosmos
 	delay	5
 	offset	35 141
-	summonframe 0 0 0 0
-	subentity hyoga_aura
-	unsummonframe 7
+	@cmd 	spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
 	energycost  10 1 0
 	hitflash flashbig
 	sound data/chars/hyoga/00-cosmos.wav
@@ -571,6 +569,7 @@ anim freespecial2 # Diamond Dust (2 projectiles)
 	sound data/chars/hyoga/01.wav
         delay	10
 	offset	45 151
+	@cmd 	spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/hyoga/special21.png
 	frame	data/chars/hyoga/special22.png
 	frame	data/chars/hyoga/special23.png
@@ -604,6 +603,7 @@ anim freespecial6 # Aurora Thunder Attack ( haut + bouton special)
 	summonframe 0 0 0 0 1
 	subentity hyoga_constellation
 	energycost  20 1 0
+	@cmd 	spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/hyoga/upspecial1.png
 	frame	data/chars/hyoga/upspecial2.png
 	sound data/chars/hyoga/01-cygnus.wav
@@ -809,18 +809,14 @@ anim freespecial5 # Uppercut
 	fastattack 1
 	hitflash flashbig
 	delay	5
-	sound data/chars/hyoga/03-uppercut2.wav
-	attack1 0 0 0 0 0 0 0 0 0 0
+	sound data/chars/hyoga/01-twister.wav
 	frame	data/chars/hyoga/uppercut1.png
-	attack1 55 0 35 84 15 0 0 0 5 12
+	sound data/chars/seiya/03-uppercut2.wav
 	frame	data/chars/hyoga/uppercut2.png
 	delay 5
-	attack1 0
 	frame	data/chars/hyoga/uppercut3.png
-	attack1 55 0 35 84 15 1 0 0 5 12
-	@cmd	shooter "hyoga_twister" 77 0 0 0 0 0	
+	@cmd	shooter "hyoga_twister" 47 0 0 0 0 0	
 	frame	data/chars/hyoga/uppercut4.png
-	attack1 0
 	delay 19
 	frame	data/chars/hyoga/uppercut5.png
 	frame	data/chars/hyoga/uppercut6.png
