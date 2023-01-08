@@ -521,23 +521,16 @@ anim freespecial3 # Défense spéciale explosion du cosmos
 	energycost  10 1 0
 	hitflash flashbig
 	sound data/chars/seiya/00-cosmos.wav
+	bbox 9 0 50 120
 	frame	data/chars/seiya/special1.png
 	frame	data/chars/seiya/special2.png
-	attack5 -28 -61 120 180 30 1 0 0 5 12
 	frame	data/chars/seiya/special3.png
-	attack5 0
 	frame	data/chars/seiya/special4.png
-	attack5 -28 -61 120 180 30 1 0 0 5 12
 	frame	data/chars/seiya/special3.png
-	attack5 0
 	frame	data/chars/seiya/special4.png
-	attack5 -28 -61 120 180 30 1 0 0 5 12
 	frame	data/chars/seiya/special3.png
-	attack5 0
 	frame	data/chars/seiya/special4.png
-	attack5 -28 -61 120 180 30 1 0 0 5 12
 	frame	data/chars/seiya/special3.png
-	attack5 0
 	frame	data/chars/seiya/special2.png
 	
 anim freespecial2 # Météores de Pégase

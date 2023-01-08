@@ -71,6 +71,7 @@ load shiryu_constellation
 #load shiryu_aura_ryuseiken
 #load aldebaran_super_lights
 load shiryu_lights
+load shiryu_dash
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -215,6 +216,8 @@ anim dodge
 	delay	8
 	offset	37 128
 	bbox 16 13 51 115
+	summonframe 0 0 0 0
+	subentity round_dust	
 	jumpframe 2 1.8 0
 sound   data/chars/shiryu/06-jump1.wav
 	frame	data/chars/shiryu/jump1.png
@@ -242,12 +245,12 @@ sound   data/chars/shiryu/20-run2.wav
 	frame	data/chars/shiryu/run8.png
 	
 anim runattack # Attaque en courant
-	delay	7
+	delay	9
 	offset	39 128
 	bbox 21 13 51 115
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
-sound   data/chars/shiryu/07_forward_punch.wav
+        sound   data/chars/seiya/07-forward_punch.wav
 	frame	data/chars/shiryu/runattack1.png
 	frame	data/chars/shiryu/runattack2.png
 	summonframe 0 0 0 0 0
@@ -256,6 +259,7 @@ sound   data/chars/shiryu/07_forward_punch.wav
 	frame	data/chars/shiryu/runattack3.png
 	frame	data/chars/shiryu/runattack4.png
 	attack2 31 13 55 83 20 1 0 0 5 12
+	@cmd 	spawnbind "shiryu_dash" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/shiryu/runattack5.png
 	frame	data/chars/shiryu/runattack6.png
 	frame	data/chars/shiryu/runattack7.png
@@ -268,6 +272,8 @@ anim  runjump
 	delay	6
 	offset	37 146
 	bbox 16 13 51 115
+	summonframe 0 0 0 0
+	subentity round_dust	
 	cancel 0 8 0 A2 freespecial3
 sound   data/chars/shiryu/06-jump1.wav
 	frame	data/chars/shiryu/forwardjump1.png
@@ -593,6 +599,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	37 128
 	bbox 16 13 51 115
+	summonframe 0 0 0 0
+	subentity round_dust	
 	cancel 0 8 0 A2 freespecial3
 	sound data/chars/shiryu/06-jump1.wav
 	frame	data/chars/shiryu/jump1.png
@@ -607,6 +615,8 @@ anim forwardjump # Saut vers l'avant
 	offset	37 146
 	bbox 16 13 51 115
 	cancel 0 8 0 A2 freespecial3
+	summonframe 0 0 0 0
+	subentity round_dust	
 	sound data/chars/shiryu/06-jump1.wav
 	frame	data/chars/shiryu/forwardjump1.png
 	frame	data/chars/shiryu/forwardjump2.png
@@ -627,6 +637,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	30 129
 	bbox 5 17 51 112
+	summonframe 0 0 0 0
+	subentity round_dust	
 	sound data/chars/shiryu/06-jump2.wav
 	frame	data/chars/shiryu/get1.png
 	frame	data/chars/shiryu/get2.png
@@ -638,6 +650,8 @@ anim jumpattack #Attaque sautée statique
 	delay	5
 	offset	37 128
 	bbox 16 13 51 80
+	summonframe 0 0 0 0
+	subentity round_dust	
 	sound data/sounds/punch.wav
 	frame	data/chars/shiryu/jumpattack1.png
 	frame	data/chars/shiryu/jumpattack2.png
@@ -652,6 +666,8 @@ anim jumpforward #Attaque sautée vers l'avant
 	offset	50 128
 	bbox 16 13 51 115
 	sound data/sounds/punch.wav
+	summonframe 0 0 0 0
+	subentity round_dust	
 	frame	data/chars/shiryu/jumpforward1.png
 	frame	data/chars/shiryu/jumpforward2.png
 	dropv 4.0 1.0 0.0

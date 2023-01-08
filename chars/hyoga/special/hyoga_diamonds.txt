@@ -1,10 +1,12 @@
 name	hyoga_diamonds
 type	none
+candamage enemy npc
 shadow	0
 remove 0
 setlayer 99
 antigravity 100
 animationscript	data/scripts/player.c
+didhitscript	data/scripts/didhit/tint_ice.c
 
 anim	idle
 	loop	1
@@ -13,23 +15,41 @@ anim	idle
 	offset	400 217
 	drawmethod alpha 1
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-13.png
+	attack1 244 105 300 80 5 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-14.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-15.png
+	attack1 244 105 300 80 5 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-16.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-17.png
+	freeze 244 105 300 80 5 3.5 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-18.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-19.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-20.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-21.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-22.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-23.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-24.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-25.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-26.png
+        attack1 0
         frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-27.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-28.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-29.png
+	freeze 244 105 300 80 5 3.5 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-30.png
+        attack1 0
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-31.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-32.png	
 	@cmd	suicide	

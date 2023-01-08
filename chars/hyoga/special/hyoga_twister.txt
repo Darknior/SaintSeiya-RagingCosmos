@@ -1,6 +1,6 @@
 name	hyoga_twister
 type	none
-candamage player
+candamage enemy npc
 shadow	0
 setlayer 100
 antigravity 100
@@ -14,14 +14,12 @@ anim	idle
 	delay	10
 	offset	50 180
 	drawmethod alpha 1
-	attack1 0
 	frame	data/chars/hyoga/special/hyoga_twister/twister1.png
-	freeze  56 28 36 15 0 5
 	frame	data/chars/hyoga/special/hyoga_twister/twister2.png
-	attack1 0
 	frame	data/chars/hyoga/special/hyoga_twister/twister3.png
 	frame	data/chars/hyoga/special/hyoga_twister/twister4.png
 	frame	data/chars/hyoga/special/hyoga_twister/twister5.png
+	freeze 23 51 50 120 10 3.5 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_twister/twister6.png
 	frame	data/chars/hyoga/special/hyoga_twister/twister7.png
 	frame	data/chars/hyoga/special/hyoga_twister/twister8.png

@@ -545,9 +545,9 @@ anim freespecial3 # Défense spéciale explosion du cosmos
 	energycost  10 1 0
 	hitflash flashbig
 	sound data/chars/hyoga/00-cosmos.wav
+	bbox 7 23 50 120
 	frame	data/chars/hyoga/special1.png
 	frame	data/chars/hyoga/special2.png
-	attack5 -21 -38 120 180 30 1 0 0 5 12
 	frame	data/chars/hyoga/special3.png
 	frame	data/chars/hyoga/special4.png
 	frame	data/chars/hyoga/special5.png
@@ -562,8 +562,8 @@ anim freespecial3 # Défense spéciale explosion du cosmos
 	frame	data/chars/hyoga/special14.png
 	
 anim freespecial2 # Diamond Dust (2 projectiles)
-	delay	5
-	offset	35 141
+	delay	10
+	offset	45 151
 	energycost  10 1 0
 	hitflash flashbig
 	sound data/chars/hyoga/01.wav
@@ -790,7 +790,7 @@ anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
 	frame	data/chars/hyoga/jumpattack33.png
 	attack4 0
 	
-anim freespecial3 # Saut attaque spéciale flashkick
+anim special3 # Saut attaque spéciale flashkick
 	delay	5
 	offset	55 140
 	bbox 21 14 51 97
@@ -811,10 +811,13 @@ anim freespecial5 # Uppercut
 	delay	5
 	sound data/chars/hyoga/01-twister.wav
 	frame	data/chars/hyoga/uppercut1.png
+	attack1 23 51 50 120 10 0 0 0 0 30
 	sound data/chars/seiya/03-uppercut2.wav
 	frame	data/chars/hyoga/uppercut2.png
+	attack1 0
 	delay 5
 	frame	data/chars/hyoga/uppercut3.png
+	attack1 23 51 50 120 10 0 0 0 0 30
 	@cmd	shooter "hyoga_twister" 47 0 0 0 0 0	
 	frame	data/chars/hyoga/uppercut4.png
 	delay 19

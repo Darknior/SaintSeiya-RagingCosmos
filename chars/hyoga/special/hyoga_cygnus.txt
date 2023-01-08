@@ -15,7 +15,6 @@ anim	idle
 	followanim 1
 	followcond 1	
 	drawmethod alpha 1
-	freeze 0 40 104 22 30 0 0 0 0 20
 	sound data/chars/hyoga/01-cygnus.wav
 	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus1.png
 	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus2.png

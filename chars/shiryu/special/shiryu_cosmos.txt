@@ -9,7 +9,6 @@ anim	idle
 	delay	8
 	offset	61 116
 	drawmethod alpha 1
-	offset	61 116
 	frame	data/chars/shiryu/special/shiryu_cosmos/shiryu_cosmos-1.png
 	frame	data/chars/shiryu/special/shiryu_cosmos/shiryu_cosmos-2.png
 	frame	data/chars/shiryu/special/shiryu_cosmos/shiryu_cosmos-3.png
