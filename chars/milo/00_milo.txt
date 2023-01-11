@@ -45,7 +45,7 @@ load milo_antaresA
 load milo_antaresB
 load milo_antaresC
 load aldebaran_block
-
+load aldebaran_aura
 
 #----------------------------------------------------------
 anim spawn
@@ -373,6 +373,7 @@ anim freespecial6 # Ultra Scarlet Needle
 	hitflash milo_blood
 	fastattack 1
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/78-cosmos.wav
 	frame	data/chars/milo/attack41.png
 	spawnframe 0 0 0 0 1
@@ -564,6 +565,7 @@ anim freespecial5 # Ultra Antares
 	hitflash milo_blood
 	fastattack 1
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/78-cosmos.wav
 	frame	data/chars/milo/jump1.png
 	sound data/chars/milo/08-antares.wav

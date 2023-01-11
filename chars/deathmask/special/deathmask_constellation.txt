@@ -1,38 +1,54 @@
 name	deathmask_constellation
 type	panel
 shadow	0
-speed 10
+speed	10
 setlayer 5
 animationscript	data/scripts/player.c
 
 anim	idle
-	loop	0
-	delay	15
+	delay	10
 	offset	800 0
+	drawmethod scale 1 1
         drawmethod  alpha 6
-        drawmethod  channel 0.20
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.50
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.75
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-        drawmethod  alpha 6
+        drawmethod  channel 0.1
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.2
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.3
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.4
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.5
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.6
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.7
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.8
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.9
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
         drawmethod  channel 0.99
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.75
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.50
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.20
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
+	delay	150
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+	delay	10
+        drawmethod  channel 0.9
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.8
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.7
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.6
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.5
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.4
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.3
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.2
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
+        drawmethod  channel 0.1
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png
 	@cmd suicide
-	frame	data/chars/deathmask/special/deathmask_constellation/constellation.png
+	frame	data/chars/deathmask/special/deathmask_constellation/deathmask_constellation.png

@@ -40,6 +40,7 @@ load shura_explosion
 load shura_excaliburB
 load shura_dash
 load aldebaran_block
+load aldebaran_aura
 
 #----------------------------------------------------------
 anim spawn
@@ -370,6 +371,7 @@ anim freespecial6 #Ultra Excalibur
 	forcedirection -1
 	delay	10
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/shura/special0.png
 	@cmd 	spawnScreen "shura_constellation" 0 0 0 0
 	sound data/chars/aldebaran/78-cosmos.wav

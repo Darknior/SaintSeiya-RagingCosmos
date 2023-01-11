@@ -2,7 +2,7 @@ name	gemini_dimension_back
 type	panel
 shadow	0
 speed 10
-setlayer 1
+setlayer 3
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -14,31 +14,6 @@ anim	idle
 	delay	15
 	offset	800 0
 	drawmethod scale 1 1
-        drawmethod  alpha 6
-        drawmethod  channel 0.20
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.50
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.75
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.99
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.75
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.50
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
-        drawmethod  alpha 6
-        drawmethod  channel 0.20
-	frame	data/chars/gemini/special/gemini_dimension_back/constellation.png
         drawmethod  alpha 1
 	drawmethod scale 1 1
 	frame	data/chars/gemini/special/gemini_dimension_back/dimension_back0.png

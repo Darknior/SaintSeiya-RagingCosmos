@@ -35,6 +35,7 @@ load shaka_lotus_shot
 load shaka_cosmos
 load shaka_aura
 load shaka_constellation
+load shaka_constellationA
 load shaka_constellationB
 load shaka_budda
 load shaka_circlesB
@@ -48,6 +49,7 @@ load shaka_flame
 load aldebaran_super_lights
 load aldebaran_block
 load aphrodite_rose_explosion
+load aldebaran_aura
 
 #----------------------------------------------------------
 anim spawn
@@ -379,8 +381,10 @@ anim freespecial5 # Défense spéciale Blood Sea
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	summonframe 0 0 0 0 1
 	subentity shaka_constellationB
+        @cmd 	spawnScreen "shaka_constellationB" 0 0 0 0
         @cmd 	spawnScreen "shaka_blood_seaB" 0 0 0 0
 	@cmd 	spawnbind "shaka_blood_geyser" "ANI_IDLE" 0 0 0 0 0
 	energycost  15 1 0
@@ -497,15 +501,17 @@ anim freespecial5 # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special35.png
 	attack1 0
 
-anim riseattack # Défense spéciale Blood Sea
+anim riseattack# Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
         hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	summonframe 0 0 0 0 1
 	subentity shaka_constellationB
+        @cmd 	spawnScreen "shaka_constellationB" 0 0 0 0
         @cmd 	spawnScreen "shaka_blood_seaB" 0 0 0 0
 	@cmd 	spawnbind "shaka_blood_geyser" "ANI_IDLE" 0 0 0 0 0
 	energycost  15 1 0
@@ -622,7 +628,7 @@ anim riseattack # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special35.png
 	attack1 0
 
-anim special # Défense spéciale Melee
+anim special# Défense spéciale Melee
 	delay	7
 	offset	66 144
 	fastattack 1
@@ -797,16 +803,17 @@ anim freespecial6 # Ten Bu Ho Rin
         hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
+        @cmd 	spawnScreen "shaka_constellationA" 0 0 0 0
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
-	summonframe 0 0 0 0 1
-	subentity shaka_constellation
-	frame	data/chars/shaka/special21.png
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/shaka/07-loku.wav
 	@cmd 	spawnbind "shaka_circlesB" "ANI_IDLE" 0 0 0 0 0
 	@cmd 	spawnbind "shaka_cosmos" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shaka/special22.png
 	@cmd 	spawnbind "shaka_budda" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shaka/special23.png
+	frame	data/chars/shaka/special21.png
+        @cmd 	spawnScreen "shaka_constellation" 0 0 0 0
 	frame	data/chars/shaka/special24.png
 	frame	data/chars/shaka/special25.png
 	frame	data/chars/shaka/special26.png

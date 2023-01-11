@@ -33,6 +33,7 @@ animationscript	data/scripts/player.c
 load aldebaran_runtaurus
 load aldebaran_rundust
 load blue_swing
+load aldebaran_aura
 load aldebaran_earthquake
 load aldebaran_ultraGH
 load aldebaran_ultraGH_back
@@ -388,6 +389,7 @@ anim special # Earthquake
 	offset	37 163
 	sound data/chars/aldebaran/02-swing.wav
         hitflash blue_swing
+	@cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/aldebaran/attack60.png
 	@cmd 	spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 0 0 1 0	  
 	frame	data/chars/aldebaran/attack61.png
@@ -550,6 +552,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	delay	10
 	offset	45 160
 	fastattack 1
+	@cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 0 0
 	@cmd 	spawnScreen "camus_lights" 0 0 0 0
 	sound data/chars/aldebaran/78-cosmos.wav
 	frame	data/chars/aldebaran/special40.png

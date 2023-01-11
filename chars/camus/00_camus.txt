@@ -37,6 +37,7 @@ load camus_ice_star
 load camus_dash
 load camus_block
 load marin_swing
+load aldebaran_aura
 
 #----------------------------------------------------------
 anim spawn
@@ -408,6 +409,7 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
 	spawnframe 0 0 0 0 1
 	subentity camus_constellation
 	energycost  20 1 0
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/camus/special21.png
 	frame	data/chars/camus/special22.png
 	frame	data/chars/camus/special23.png

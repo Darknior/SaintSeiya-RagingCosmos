@@ -41,6 +41,7 @@ load aldebaran_super_lights
 load aldebaran_block
 load aldebaran_multi
 load aldebaran_swing
+load aldebaran_aura
 
 #----------------------------------------------------------
 anim spawn
@@ -435,6 +436,7 @@ anim freespecial6 #ULTRA Lightning Plasma
 	energycost  20 1 0
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/aiolia/special1.png
 	sound data/chars/aiolia/02-plasma1.wav
 	frame	data/chars/aiolia/special2.png

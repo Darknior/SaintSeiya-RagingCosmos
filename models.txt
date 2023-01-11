@@ -124,6 +124,7 @@ know    shun_stream           data/chars/shun/special/shun_stream.txt
 
 know    ikki_aura           data/chars/ikki/special/ikki_aura.txt
 
+know    aldebaran_aura            data/chars/aldebaran/special/aldebaran_aura.txt
 know    aldebaran_runtaurus       data/chars/aldebaran/special/aldebaran_runtaurus.txt
 know    aldebaran_rundust         data/chars/aldebaran/special/aldebaran_rundust.txt
 know    aldebaran_swing           data/chars/aldebaran/special/aldebaran_swing.txt
@@ -142,6 +143,7 @@ know    gemini_multihits  data/chars/gemini/special/gemini_multihits.txt
 know    gemini_melee      data/chars/gemini/special/gemini_melee.txt
 know    gemini_ultra      data/chars/gemini/special/gemini_ultra.txt
 know    gemini_clones      data/chars/gemini/special/gemini_clones.txt
+know    gemini_constellation      data/chars/gemini/special/gemini_constellation.txt
 
 know    deathmask_circles         data/chars/deathmask/special/deathmask_circles.txt
 know    deathmask_hands         	data/chars/deathmask/special/deathmask_hands.txt
@@ -164,6 +166,7 @@ know    shaka_lotus	        data/chars/shaka/special/shaka_lotus.txt
 know    shaka_lotus_shot	data/chars/shaka/special/shaka_lotus_shot.txt
 know    shaka_cosmos    data/chars/shaka/special/shaka_cosmos.txt
 know    shaka_constellation    data/chars/shaka/special/shaka_constellation.txt
+know    shaka_constellationA    data/chars/shaka/special/shaka_constellationA.txt
 know    shaka_constellationB    data/chars/shaka/special/shaka_constellationB.txt
 know    shaka_budda    data/chars/shaka/special/shaka_budda.txt
 know    shaka_circles   data/chars/shaka/special/shaka_circles.txt

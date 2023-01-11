@@ -1,4 +1,4 @@
-name	shaka_constellationB
+name	shaka_constellationA
 type	panel
 shadow	0
 speed	10
@@ -29,7 +29,7 @@ anim	idle
         drawmethod  channel 0.9
 	frame	data/chars/shaka/special/shaka_constellationA/shaka_constellation.png
         drawmethod  channel 0.99
-	delay	300
+	delay	700
 	frame	data/chars/shaka/special/shaka_constellationA/shaka_constellation.png
 	delay	10
         drawmethod  channel 0.9

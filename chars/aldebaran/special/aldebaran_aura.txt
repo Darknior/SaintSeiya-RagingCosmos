@@ -1,0 +1,38 @@
+name	aldebaran_aura
+type	none
+shadow	0
+setlayer 778
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	4
+	offset	85 232
+	drawmethod alpha 1
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-0.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-1.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-2.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-3.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-4.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-5.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-6.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-7.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-8.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-9.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-10.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-11.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-0.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-1.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-2.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-3.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-4.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-5.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-6.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-7.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-8.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-9.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-10.png
+	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-11.png
+        @cmd suicide
+        frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-11.png

@@ -37,9 +37,11 @@ load gemini_multihits
 load gemini_ultra
 load aldebaran_super_lights
 load gemini_clones
+load gemini_constellation
 load aldebaran_multi
 load aldebaran_swing
 load aldebaran_block
+load aldebaran_aura
 
 #----------------------------------------------------------
 anim spawn
@@ -552,7 +554,9 @@ anim freespecial6 # Another dimension
 	offset	66 144
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
+	@cmd 	spawnScreen "gemini_constellation" 0 0 0 0
 	summonframe 0 0 0 0 1
 	subentity gemini_dimension_back
 	hitflash flashbig

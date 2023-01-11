@@ -45,6 +45,7 @@ load shaka_lotus_petals
 load aiolia_explosion
 load aiolia_lionstar
 load aldebaran_block
+load aldebaran_aura
 
 #----------------------------------------------------------
 anim spawn
@@ -454,6 +455,7 @@ anim freespecial6 # Ultra Bloody rose
 	offset	44 129
 	fastattack 1
 	@cmd 	spawnScreen "aphrodite_ultra" 0 0 0 0
+        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/78-cosmos.wav
 	spawnframe 0 0 0 0 1
 	subentity aphrodite_constellation
