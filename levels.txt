@@ -98,7 +98,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple1.txt
 
-set         Temple_2_Road
+set         Temple_2_Road-Seiya
 maxplayers  1
 lives       1
 credits     10
@@ -186,14 +186,14 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple5boss.txt
 
-set         Temple_6_Road
+set         Temple_6_Road-Shiryu
 maxplayers  1
 lives       1
 credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  shiryu
 z           390 484
 file        data/levels/temple6.txt
 
@@ -274,7 +274,7 @@ skipselect  shiryu
 z           378 484
 file        data/levels/temple10BOSS.txt
 
-set         Temple_11_Road
+set         Temple_11_Road-Hyoga
 maxplayers  1
 lives       1
 credits     10
