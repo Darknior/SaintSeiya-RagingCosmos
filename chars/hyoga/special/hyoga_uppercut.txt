@@ -1,0 +1,31 @@
+name	hyoga_uppercut
+type	none
+candamage enemy npc
+shadow	0
+remove 0
+setlayer 150
+antigravity 100
+animationscript	data/scripts/player.c
+didhitscript	data/scripts/didhit/tint_ice.c
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	12
+	offset	100 254
+	drawmethod alpha 1
+	drawmethod scale 0.5 0.5
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-0.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-1.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-2.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-3.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-4.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-5.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-6.png
+        frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-7.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-8.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-9.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-10.png
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-11.png
+	@cmd	suicide	
+	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-11.png

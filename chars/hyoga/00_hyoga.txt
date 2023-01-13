@@ -62,6 +62,7 @@ load seiya_dash_dust
 load hyoga_diamonds
 load hyoga_diamonds_up
 load camus_lights
+load hyoga_uppercut
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -810,6 +811,7 @@ anim freespecial5 # Uppercut
 	hitflash flashbig
 	delay	5
 	sound data/chars/hyoga/01-twister.wav
+	@cmd 	spawnbind "hyoga_uppercut" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/hyoga/uppercut1.png
 	attack1 23 51 50 120 10 0 0 0 0 30
 	sound data/chars/seiya/03-uppercut2.wav
