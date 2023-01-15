@@ -105,7 +105,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  seiya
+skipselect  ikki
 z           378 484
 file        data/levels/temple2.txt
 
@@ -186,7 +186,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple5boss.txt
 
-set         Temple_6_Road-Shiryu
+set         Temple_6_Road-Asterion
 maxplayers  1
 lives       1
 credits     10

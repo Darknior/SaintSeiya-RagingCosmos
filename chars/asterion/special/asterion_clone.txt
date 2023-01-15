@@ -1,0 +1,28 @@
+name	asterion_clone
+type	none
+shadow	0
+setlayer 0
+antigravity 100
+lifespan  1
+animationscript		data/scripts/escript.c
+
+anim	idle
+	delay	10
+	offset	40 127
+	frame	data/chars/asterion/special38.png
+	frame	data/chars/asterion/special39.png
+	frame	data/chars/asterion/special40.png
+	frame	data/chars/asterion/special41.png
+	frame	data/chars/asterion/special42.png
+	@cmd	shooter2 "asterion_lightball" 77 75 2 -3
+	frame	data/chars/asterion/special43.png
+	frame	data/chars/asterion/special44.png
+	frame	data/chars/asterion/special45.png
+	frame	data/chars/asterion/special46.png
+	frame	data/chars/asterion/special47.png
+	frame	data/chars/asterion/special48.png
+	frame	data/chars/asterion/special49.png	
+	frame	data/chars/asterion/special25.png	
+	frame	data/chars/asterion/special38.png	
+
+	

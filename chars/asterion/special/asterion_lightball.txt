@@ -1,0 +1,39 @@
+name	asterion_lightball
+type	none
+candamage player obstacle
+shadow	0
+setlayer 0
+antigravity 100
+lifespan  1
+animationscript		data/scripts/escript.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	50 50
+	followanim 1
+	followcond 1
+	drawmethod alpha 1
+	bbox 10 10 80 80
+	attack5 10 10 80 80 15 0 0 0 0 20
+	drawmethod rotate 45
+	drawmethod fliprotate 1
+	frame	data/chars/asterion/special/asterion_lightball/lightball1.png
+	frame	data/chars/asterion/special/asterion_lightball/lightball2.png
+	frame	data/chars/asterion/special/asterion_lightball/lightball3.png
+	frame	data/chars/asterion/special/asterion_lightball/lightball4.png
+	frame	data/chars/asterion/special/asterion_lightball/lightball5.png
+	frame	data/chars/asterion/special/asterion_lightball/lightball6.png
+	frame	data/chars/asterion/special/asterion_lightball/lightball7.png
+	frame	data/chars/asterion/special/asterion_lightball/lightball8.png
+	attack5 0
+	
+anim	follow1
+	loop	1
+	delay	3
+	offset	15 11
+	frame	data/chars/misc/empty.gif	
+	@cmd	suicide	
+	frame	data/chars/misc/empty.gif
+
+	

@@ -57,6 +57,10 @@ spawn       time-is-up
 coords      368 89
 at          0
 
+spawn asterion
+coords	650 400
+at 0
+
 spawn soldier1
 alias SOLDIER
 coords	850 100

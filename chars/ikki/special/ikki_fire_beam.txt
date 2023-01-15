@@ -1,0 +1,28 @@
+name	ikki_fire_beam
+type	panel
+shadow	0
+speed 10
+setlayer 2000
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	800 -100
+	drawmethod alpha 1
+        drawmethod  channel 0.5
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-0.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-1.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-2.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-3.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-4.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-5.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-6.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-7.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-8.png
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-9.png
+        @cmd suicide
+	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-9.png
+
+

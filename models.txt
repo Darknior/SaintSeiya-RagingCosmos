@@ -124,6 +124,11 @@ know    shun_aura             data/chars/shun/special/shun_aura.txt
 know    shun_stream           data/chars/shun/special/shun_stream.txt
 
 know    ikki_aura           data/chars/ikki/special/ikki_aura.txt
+know    ikki_auraB           data/chars/ikki/special/ikki_auraB.txt
+know    ikki_shooter           data/chars/ikki/special/ikki_shooter.txt
+know    ikki_constellation           data/chars/ikki/special/ikki_constellation.txt
+know    ikki_lights           data/chars/ikki/special/ikki_lights.txt
+know    ikki_fire_beam           data/chars/ikki/special/ikki_fire_beam.txt
 
 know    aldebaran_aura            data/chars/aldebaran/special/aldebaran_aura.txt
 know    aldebaran_runtaurus       data/chars/aldebaran/special/aldebaran_runtaurus.txt
@@ -251,6 +256,9 @@ know    tremi_block  	data/chars/tremi/special/tremi_block.txt
 
 know    sirius_ray 		data/chars/sirius/special/sirius_ray.txt
 
+know    asterion_clone 	data/chars/asterion/special/asterion_clone.txt
+know    asterion_lightball 	data/chars/asterion/special/asterion_lightball.txt
+
 know    knife  		data/chars/great_pope/special/knife.txt
 
 know    columnT  	data/chars/jaki/special/columnT.txt
@@ -363,7 +371,7 @@ load    WNARMA6         data/chars/WOLF-NACHI/WNARMA6.txt
 ## EAGLE / MARIN
 
 load    marin     		data/chars/marin/00_marin.txt
-
+load    asterion     	data/chars/asterion/00_asterion.txt
 load    shaina     		data/chars/shaina/00_shaina.txt
 load    tremi     		data/chars/tremi/00_tremi.txt
 load    sirius     		data/chars/sirius/00_sirius.txt

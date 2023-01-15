@@ -1,0 +1,38 @@
+name	ikki_shooter
+type	none
+shadow	0
+remove 0
+setlayer 99
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	8
+	offset	30 87
+	drawmethod alpha 1
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-1.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-2.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-3.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-4.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-5.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-6.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-7.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-8.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-9.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-10.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-12.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-13.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-14.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-15.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-16.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-17.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-18.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-19.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-20.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-21.png
+	frame	data/chars/ikki/special/ikki_shooter/ikki_shooter-22.png
+	frame	data/chars/misc/empty.gif	
+	@cmd	suicide	
+	frame	data/chars/misc/empty.gif

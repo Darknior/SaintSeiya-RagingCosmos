@@ -1,0 +1,37 @@
+name	ikki_auraB
+type	none
+shadow	0
+setlayer 778
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	12
+	offset	107 206
+	drawmethod alpha 1
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-0.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-1.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-2.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-3.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-4.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-5.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-6.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-7.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-8.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-9.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-10.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-11.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-12.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-13.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-14.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-15.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-16.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-17.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-18.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-19.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-20.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-21.png
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-22.png
+        @cmd suicide
+	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-22.png
