@@ -497,6 +497,7 @@ anim throw #Projection en arrière
 sound   data/chars/seiya/23-projection1.wav
 	summonframe 0 0 0 0
 	subentity dash_dust
+        throwframewait 3
 	frame	data/chars/seiya/grabbackward1.png
 	frame	data/chars/seiya/grabbackward2.png
 sound   data/chars/seiya/23-projection2.wav
@@ -504,7 +505,7 @@ sound   data/chars/seiya/23-projection2.wav
 	frame	data/chars/seiya/grabbackward4.png
 	frame	data/chars/seiya/grabbackward5.png
 	frame	data/chars/seiya/grabbackward6.png
-	throw 100 100
+	throw 0.1 0.1
 	throwdamage 20
 	offset	114 110
 	frame	data/chars/seiya/rise1.png

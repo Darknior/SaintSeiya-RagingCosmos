@@ -8,7 +8,7 @@ aimove      chase
 death 1
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
-ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+#ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 
 
 icon		data/chars/malesoldier/icon.png

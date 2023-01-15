@@ -193,7 +193,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  shiryu
+skipselect  ikki
 z           390 484
 file        data/levels/temple6.txt
 
@@ -296,7 +296,7 @@ skipselect  hyoga
 z           378 484
 file        data/levels/temple11BOSS.txt
 
-set         Temple_12_Road
+set         Temple_12_Road_June
 maxplayers  1
 lives       1
 credits     10

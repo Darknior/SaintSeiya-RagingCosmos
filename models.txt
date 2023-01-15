@@ -367,6 +367,7 @@ load    marin     		data/chars/marin/00_marin.txt
 load    shaina     		data/chars/shaina/00_shaina.txt
 load    tremi     		data/chars/tremi/00_tremi.txt
 load    sirius     		data/chars/sirius/00_sirius.txt
+load    june     		data/chars/june/00_june.txt
 
 
 ## PNJ ##
