@@ -323,7 +323,7 @@ anim grabattack2 # Attaque au corps à corps finisher
 	frame	data/chars/jaki/grabattack24.png
 	@cmd position 2 21 32 1 0
 	frame	data/chars/jaki/grabattack24.png
-	@cmd depost
+	#@cmd depost
 	@cmd throw 12 2 -1 -2.5 0 0
 	frame	data/chars/jaki/grabattack24.png
 	@cmd clearL	

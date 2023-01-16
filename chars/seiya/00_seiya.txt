@@ -40,7 +40,7 @@ icon       	data/chars/seiya/icon.png
 
 
 animationscript	data/scripts/player.c
-ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+#ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
 didhitscript	data/scripts/didhit/tint_silver.c
 
@@ -490,24 +490,37 @@ anim grabattack2 #Saisie Coup finisher
 	attack3 0
 	frame	data/chars/seiya/grabattack23.png
 	
-anim throw #Projection en arrière
-	delay	10
+anim grabbackward #Projection en arrière
+	landframe 6
+	delay	24
 	offset	110 124
-	bbox 21 7 51 112
+	@cmd grabStart
 sound   data/chars/seiya/23-projection1.wav
 	summonframe 0 0 0 0
 	subentity dash_dust
-        throwframewait 3
+        #throwframewait 3
+	@cmd position 0 15 15 0 0
 	frame	data/chars/seiya/grabbackward1.png
+	@cmd position 0 10 20 0 0
 	frame	data/chars/seiya/grabbackward2.png
+	delay	10
 sound   data/chars/seiya/23-projection2.wav
+	@cmd position 0 10 25 0 0
+	@cmd leaper -1 4 1
 	frame	data/chars/seiya/grabbackward3.png
+	@cmd position 1 -20 10 0 1
 	frame	data/chars/seiya/grabbackward4.png
+	@cmd position 2 -45 5 0 0
 	frame	data/chars/seiya/grabbackward5.png
+	delay -1000
+	@cmd position 3 -65 0 0 0
 	frame	data/chars/seiya/grabbackward6.png
-	throw 0.1 0.1
-	throwdamage 20
+	delay	20
+	@cmd position 3 -65 0 0 0
+	frame	data/chars/seiya/grabbackward6.png
+	delay	10
 	offset	114 110
+	@cmd slam 20 2 -2 2 0 0
 	frame	data/chars/seiya/rise1.png
 	frame	data/chars/seiya/rise2.png
 	frame	data/chars/seiya/rise3.png

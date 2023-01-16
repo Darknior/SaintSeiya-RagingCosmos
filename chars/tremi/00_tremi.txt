@@ -40,6 +40,7 @@ sleepwait 	1000 #Temps en centisecondes avant de jouer l'anim sleep
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
+#ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 
 atchain 	1 2 3 4 5 6# Attaque combo de base (anim attack 1, puis 2...)
 
@@ -66,6 +67,7 @@ load tremi_block
 load milo_blood
 
 #----------------------------------------------------------
+
 anim spawn
 	delay	250
 	offset	141 120
@@ -569,10 +571,24 @@ anim fall
 anim fall7
 	offset	85 119
 	delay	-1000
-	landframe 4
+	#landframe 4
 	frame	data/chars/tremi/fall1.png
 	frame	data/chars/tremi/fall2.png
 	frame	data/chars/tremi/fall3.png
+	frame	data/chars/tremi/fall4.png
+	frame	data/chars/tremi/fall5.png
+	frame	data/chars/tremi/fall6.png
+
+anim fall8
+	offset	87 119
+	delay	10
+	frame	data/chars/tremi/fall4.png
+	frame	data/chars/tremi/fall5.png
+	frame	data/chars/tremi/fall6.png
+
+anim fall9
+	offset	87 119
+	delay	10
 	frame	data/chars/tremi/fall4.png
 	frame	data/chars/tremi/fall5.png
 	frame	data/chars/tremi/fall6.png
