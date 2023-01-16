@@ -1,0 +1,44 @@
+name	ikki_fire
+type	none
+shadow	0
+setlayer 778
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	107 136
+	drawmethod alpha 1
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-0.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-1.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-2.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-3.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-4.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-5.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-6.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-7.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-8.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-9.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-10.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-11.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-12.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-13.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-14.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-15.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-16.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-17.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-18.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-19.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-20.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-21.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-22.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-23.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-24.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-25.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-26.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-27.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-28.png
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-29.png
+        @cmd suicide
+	frame	data/chars/ikki/special/ikki_fire/ikki_fire-29.png

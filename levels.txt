@@ -105,7 +105,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  ikki
+skipselect  seiya
 z           378 484
 file        data/levels/temple2.txt
 
@@ -274,14 +274,14 @@ skipselect  shiryu
 z           378 484
 file        data/levels/temple10BOSS.txt
 
-set         Temple_11_Road-Hyoga
+set         Temple_11_Road-ikki
 maxplayers  1
 lives       1
 credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  hyoga
+skipselect  ikki
 z           390 484
 file        data/levels/temple11.txt
 

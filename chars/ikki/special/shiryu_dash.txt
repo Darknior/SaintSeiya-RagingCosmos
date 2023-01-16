@@ -1,0 +1,27 @@
+name	shiryu_dash
+type	none
+shadow	0
+speed 10
+setlayer 100
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	4
+	offset	500 700
+        drawmethod  alpha 1
+	drawmethod scale 0.2 0.2
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-0.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-1.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-2.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-3.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-4.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-5.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-6.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-7.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-8.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-9.png
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-10.png
+	@cmd suicide
+	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-10.png

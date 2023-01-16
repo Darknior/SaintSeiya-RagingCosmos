@@ -129,6 +129,8 @@ know    ikki_shooter           data/chars/ikki/special/ikki_shooter.txt
 know    ikki_constellation           data/chars/ikki/special/ikki_constellation.txt
 know    ikki_lights           data/chars/ikki/special/ikki_lights.txt
 know    ikki_fire_beam           data/chars/ikki/special/ikki_fire_beam.txt
+know    ikki_impact           data/chars/ikki/special/ikki_impact.txt
+know    ikki_fire           data/chars/ikki/special/ikki_fire.txt
 
 know    aldebaran_aura            data/chars/aldebaran/special/aldebaran_aura.txt
 know    aldebaran_runtaurus       data/chars/aldebaran/special/aldebaran_runtaurus.txt

@@ -1,0 +1,37 @@
+name	ikki_impact
+type	none
+shadow	0
+setlayer 778
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	85 232
+	drawmethod alpha 1
+	drawmethod scale 0.3 0.3
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-0.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-1.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-2.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-3.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-4.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-5.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-6.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-7.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-8.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-9.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-10.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-11.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-12.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-13.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-14.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-15.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-16.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-17.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-18.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-19.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-20.png
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-21.png
+        @cmd suicide
+	frame	data/chars/ikki/special/ikki_impact/ikki_impact-21.png
