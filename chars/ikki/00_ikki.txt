@@ -58,7 +58,7 @@ load ikki_constellation
 load ikki_shooter
 load ikki_impact
 load ikki_fire_beam
-load marin_stormA
+load ikki_storm
 load ikki_fire
 
 #----------------------------------------------------------
@@ -577,7 +577,7 @@ anim freespecial2 # Hoyoku Tensho
 	frame	data/chars/ikki/sleep7.png
 	frame	data/chars/ikki/sleep8.png
 	frame	data/chars/ikki/sleep9.png
-	@cmd	shooter "marin_stormA" 30 0 0 1.5 0 0
+	@cmd	shooter "ikki_storm" 30 0 0 1.5 0 0
 	frame	data/chars/ikki/sleep10.png
 	frame	data/chars/ikki/sleep11.png
 	frame	data/chars/ikki/sleep12.png
@@ -601,7 +601,7 @@ anim freespecial2 # Hoyoku Tensho
 	frame	data/chars/ikki/special31.png
 	frame	data/chars/ikki/special32.png
 	frame	data/chars/ikki/special33.png
-	@cmd	shooter "marin_stormA" 30 0 0 1.5 0 0
+	@cmd	shooter "ikki_storm" 30 0 0 1.5 0 0
 	@cmd	shooter "ikki_shooter" 77 50 0 3 0 0
 	frame	data/chars/ikki/special34.png
 	frame	data/chars/ikki/special35.png
