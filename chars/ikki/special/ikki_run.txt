@@ -1,0 +1,23 @@
+name	ikki_run
+type	none
+shadow	0
+setlayer 778
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	8
+	offset	220 260
+	drawmethod alpha 1
+	drawmethod scale 0.7 0.7
+	frame	data/chars/ikki/special/ikki_run/ikki_run-0.png
+	frame	data/chars/ikki/special/ikki_run/ikki_run-1.png
+	frame	data/chars/ikki/special/ikki_run/ikki_run-2.png
+	frame	data/chars/ikki/special/ikki_run/ikki_run-3.png
+	frame	data/chars/ikki/special/ikki_run/ikki_run-4.png
+	frame	data/chars/ikki/special/ikki_run/ikki_run-5.png
+	frame	data/chars/ikki/special/ikki_run/ikki_run-6.png
+	frame	data/chars/ikki/special/ikki_run/ikki_run-7.png
+        @cmd suicide
+	frame	data/chars/ikki/special/ikki_run/ikki_run-7.png

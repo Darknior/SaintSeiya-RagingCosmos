@@ -8,9 +8,9 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	0
 	delay	5
-	offset	85 232
+	offset	85 400
 	drawmethod alpha 1
-	drawmethod scale 0.3 0.3
+	drawmethod scale 0.4 0.4
 	frame	data/chars/ikki/special/ikki_impact/ikki_impact-0.png
 	frame	data/chars/ikki/special/ikki_impact/ikki_impact-1.png
 	frame	data/chars/ikki/special/ikki_impact/ikki_impact-2.png

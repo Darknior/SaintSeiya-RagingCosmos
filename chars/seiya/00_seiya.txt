@@ -551,65 +551,80 @@ anim freespecial2 # Météores de Pégase
 	delay	10
 	offset	31 116
 	energycost  20 1 0
-	hitflash flashbig
-	attack5 -8 -64 100 180 10 1 0 0 5 12
+	hitflash marin_swing
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	sound data/chars/seiya/02.wav
 	@cmd 	spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/special21.png
 	frame	data/chars/seiya/special22.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special23.png
 	frame	data/chars/seiya/special24.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special25.png
 	frame	data/chars/seiya/special26.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special27.png
 	frame	data/chars/seiya/special28.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special29.png
 	frame	data/chars/seiya/special30.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special31.png
 	frame	data/chars/seiya/special32.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	sound data/chars/seiya/09-ultra2.wav
 	frame	data/chars/seiya/special33.png
 	frame	data/chars/seiya/special34.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	offset	31 123
 	frame	data/chars/seiya/special35.png
 	@cmd 	spawnbind "seiya_aura_ryuseiken" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/special36.png
 	frame	data/chars/seiya/special37.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0	
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0		
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0		
 	frame	data/chars/seiya/special37.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0	
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0		
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0		
 	attack5 0
 
 anim freespecial6 # Comète de Pégase ( haut + bouton special)
@@ -625,103 +640,118 @@ anim freespecial6 # Comète de Pégase ( haut + bouton special)
 	delay	10
 	offset	31 116
 	energycost  20 1 0
-	hitflash flashbig
-	attack5 -8 -64 100 180 10 1 0 0 5 12
+	hitflash marin_swing
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	sound data/chars/seiya/02.wav
 	@cmd 	spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/special21.png
 	frame	data/chars/seiya/special22.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special23.png
 	frame	data/chars/seiya/special24.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special25.png
 	frame	data/chars/seiya/special26.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special27.png
 	frame	data/chars/seiya/special28.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special29.png
 	frame	data/chars/seiya/special30.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special31.png
 	frame	data/chars/seiya/special32.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/seiya/special33.png
 	frame	data/chars/seiya/special34.png
+	attack5 -8 -64 100 180 10 1 0 0 5 30
+	dropv 	3 5
 	offset	31 123
 	frame	data/chars/seiya/special35.png
 	sound data/chars/seiya/09-ultra2.wav
 	frame	data/chars/seiya/special36.png
 	@cmd 	spawnbind "seiya_aura_ryuseiken" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/seiya/special37.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0	
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0		
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0		
 	frame	data/chars/seiya/special37.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0	
 	frame	data/chars/seiya/special40.png
 	@cmd spawnScreen "seiya_meteor_flash" 0 0 0 0
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special37.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0
 	frame	data/chars/seiya/special40.png	
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0	
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0		
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0		
 	frame	data/chars/seiya/special37.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0
 	frame	data/chars/seiya/special40.png
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special38.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0	
 	frame	data/chars/seiya/special39.png
-	@cmd	shooter "seiya_meteor" 77 60 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 60 0 3 0 0	
 	frame	data/chars/seiya/special40.png
 	sound data/chars/seiya/01-pegasus_shoot.wav
-	@cmd	shooter "seiya_meteor" 77 80 0 3 0 0	
+	@cmd	shooter "seiya_meteor" 47 80 0 3 0 0	
 	frame	data/chars/seiya/special41.png
-	@cmd	shooter "seiya_meteor" 77 100 0 3 0 0		
+	@cmd	shooter "seiya_meteor" 47 100 0 3 0 0		
 	attack5 0
 	@cmd	dasher 8 0 0 1
 	attack4 90 40 55 83 40 1 0 0 0 30

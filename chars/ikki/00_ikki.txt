@@ -47,6 +47,7 @@ didhitscript	data/scripts/didhit/tint_red.c
 
 com  F a2  	freespecial6 	#Phoenix Genmaken
 com  a2  	freespecial3 	#Explosion du Cosmos
+com  B a1  	freespecial4 	#Coup de pied arriere
 com  D F a1 freespecial5 	#Uppercut
 com  U a2  	freespecial2 	#Hoyoku Tensho
 
@@ -57,9 +58,12 @@ load ikki_lights
 load ikki_constellation
 load ikki_shooter
 load ikki_impact
+load ikki_run
 load ikki_fire_beam
 load ikki_storm
 load ikki_fire
+load ikki_uppercutB
+load shaka_flame
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -286,33 +290,34 @@ sound   data/chars/ikki/20-run2.wav
 	
 anim runattack # Attaque en courant
 	delay	7
-	offset	324 220
+	offset	48 160
 	bbox 29 40 51 120
+        hitflash shaka_flame
 	fastattack 1
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 sound   data/chars/ikki/07-forward_punch.wav
-	frame	data/chars/ikki/runattack20.png
-	frame	data/chars/ikki/runattack21.png
-	attack 336 109 50 50 15 0 0 0 0 30
-	frame	data/chars/ikki/runattack22.png
+	attack 100 60 50 50 15 0 0 0 0 30
+	frame	data/chars/ikki/runattack4.png
+	@cmd 	spawnbind "ikki_run" "ANI_IDLE" 0 0 0 1 0
+	frame	data/chars/ikki/runattack5.png
+	attack 100 60 50 50 15 1 0 0 0 30
+	frame	data/chars/ikki/runattack6.png
 	attack 0
-	frame	data/chars/ikki/runattack23.png
-	attack 336 109 50 50 15 1 0 0 0 30
-	frame	data/chars/ikki/runattack24.png
+	frame	data/chars/ikki/runattack7.png
+	attack 100 60 50 50 15 1 0 0 0 30
+	frame	data/chars/ikki/runattack7.png
 	attack 0
-	frame	data/chars/ikki/runattack25.png
-	attack 336 109 50 50 15 0 0 0 0 30
-	frame	data/chars/ikki/runattack26.png
+	frame	data/chars/ikki/runattack7.png
+	attack 100 60 50 50 15 1 0 0 0 30
+	frame	data/chars/ikki/runattack8.png
 	attack 0
-	frame	data/chars/ikki/runattack27.png
-	attack 336 109 50 50 15 1 0 0 0 30
+	frame	data/chars/ikki/runattack9.png
+	attack 100 60 50 50 15 0 0 0 0 30
 	@cmd	dasher 0 0 0 1
 	delay	12
-	frame	data/chars/ikki/runattack28.png
-	frame	data/chars/ikki/runattack29.png
-	frame	data/chars/ikki/runattack30.png
-	frame	data/chars/ikki/runattack31.png
+	frame	data/chars/ikki/runattack9.png
+
 
 anim  runjump
 	delay	6
@@ -413,85 +418,79 @@ anim attack6 # Attaque combo 6
 	frame	data/chars/ikki/attack66.png
 	
 anim attackbackward # Attaque arrière (Arrière + attaque)
-	flipframe 1
-	offset	104 140
-	bbox 88 20 51 120
+	offset	82 140
 	fastattack 1
 	hitflash flashbig
 	delay	5
 sound   data/chars/ikki/17-back_kick.wav
-	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attackbackward0.png
 	frame	data/chars/ikki/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity ikki_down_dust
-	unsummonframe 12
+	attack1 0
 	frame	data/chars/ikki/attackbackward2.png
+	attack1 -14 63 100 70 20 1 0 0 5 30
 	frame	data/chars/ikki/attackbackward3.png
-	attack1 93 67 84 29 20 0 0 0 5 12
-	frame	data/chars/ikki/attackbackward4.png
 	attack1 0
 	frame	data/chars/ikki/attackbackward4.png
-	attack1 93 63 84 29 20 1 0 0 5 12
+	attack1 -14 63 100 70 20 1 0 0 5 30
 	frame	data/chars/ikki/attackbackward5.png
 	attack1 0
 	frame	data/chars/ikki/attackbackward4.png
+	attack1 -14 63 100 70 20 1 0 0 5 30
+	frame	data/chars/ikki/attackbackward3.png
+	attack1 0
 	frame	data/chars/ikki/attackbackward2.png
-	delay   12
 	frame	data/chars/ikki/attackbackward1.png
+	frame	data/chars/ikki/attackbackward0.png
 
 anim attackboth # Attaque arrière (bouton saut + attaque)
-	flipframe 1
-	offset	104 140
-	bbox 88 20 51 120
+	offset	82 140
 	fastattack 1
 	hitflash flashbig
 	delay	5
 sound   data/chars/ikki/17-back_kick.wav
-	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attackbackward0.png
 	frame	data/chars/ikki/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity ikki_down_dust
-	unsummonframe 12
+	attack1 0
 	frame	data/chars/ikki/attackbackward2.png
+	attack1 -14 63 100 70 20 1 0 0 5 30
 	frame	data/chars/ikki/attackbackward3.png
-	attack1 93 67 84 29 20 0 0 0 5 12
-	frame	data/chars/ikki/attackbackward4.png
 	attack1 0
 	frame	data/chars/ikki/attackbackward4.png
-	attack1 93 63 84 29 20 1 0 0 5 12
+	attack1 -14 63 100 70 20 1 0 0 5 30
 	frame	data/chars/ikki/attackbackward5.png
 	attack1 0
 	frame	data/chars/ikki/attackbackward4.png
+	attack1 -14 63 100 70 20 1 0 0 5 30
+	frame	data/chars/ikki/attackbackward3.png
+	attack1 0
 	frame	data/chars/ikki/attackbackward2.png
-	delay   12
 	frame	data/chars/ikki/attackbackward1.png
+	frame	data/chars/ikki/attackbackward0.png
 	
 anim freespecial4 # Attaque arrière (à partir d'un cancel)
-	flipframe 1
-	offset	104 140
-	bbox 88 20 51 120
+	offset	82 140
 	fastattack 1
 	hitflash flashbig
 	delay	5
 sound   data/chars/ikki/17-back_kick.wav
-	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attackbackward0.png
 	frame	data/chars/ikki/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity ikki_down_dust
-	unsummonframe 12
+	attack1 0
 	frame	data/chars/ikki/attackbackward2.png
+	attack1 -14 63 100 70 20 1 0 0 5 30
 	frame	data/chars/ikki/attackbackward3.png
-	attack1 93 67 84 29 20 0 0 0 5 12
-	frame	data/chars/ikki/attackbackward4.png
 	attack1 0
 	frame	data/chars/ikki/attackbackward4.png
-	attack1 93 63 84 29 20 1 0 0 5 12
+	attack1 -14 63 100 70 20 1 0 0 5 30
 	frame	data/chars/ikki/attackbackward5.png
 	attack1 0
 	frame	data/chars/ikki/attackbackward4.png
+	attack1 -14 63 100 70 20 1 0 0 5 30
+	frame	data/chars/ikki/attackbackward3.png
+	attack1 0
 	frame	data/chars/ikki/attackbackward2.png
-	delay   12
 	frame	data/chars/ikki/attackbackward1.png
+	frame	data/chars/ikki/attackbackward0.png
 
 anim grab
 	delay	7
@@ -559,67 +558,107 @@ anim freespecial3 # Défense spéciale explosion du cosmos
 	frame	data/chars/ikki/special8.png
 	
 anim freespecial2 # Hoyoku Tensho
-	delay	12
+	delay	10
 	offset	90 195
 	summonframe 0 0 0 0 1
 	subentity ikki_constellation
 	energycost  20 1 0
-	hitflash flashbig
-	attack5 18 9 100 131 10 1 0 0 5 12
+	hitflash shaka_flame
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	@cmd 	spawnbind "ikki_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/ikki/sleep1.png
 	frame	data/chars/ikki/sleep2.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/sleep3.png
 	frame	data/chars/ikki/sleep4.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/sleep5.png
 	@cmd 	spawnbind "ikki_auraB" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/ikki/sleep6.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/sleep7.png
 	frame	data/chars/ikki/sleep8.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/sleep9.png
 	@cmd	shooter "ikki_storm" 30 0 0 1.5 0 0
 	frame	data/chars/ikki/sleep10.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/sleep11.png
 	frame	data/chars/ikki/sleep12.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/sleep4.png
 	frame	data/chars/ikki/sleep3.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/sleep2.png
 	delay	10
 	offset	73 136
 	sound data/chars/ikki/02.wav
 	frame	data/chars/ikki/special21.png
 	frame	data/chars/ikki/special22.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/special23.png
 	frame	data/chars/ikki/special24.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/special25.png
 	frame	data/chars/ikki/special26.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/special27.png
 	frame	data/chars/ikki/special28.png
+	attack5 35 66 100 131 10 1 0 0 5 12
+	dropv 	3 5
 	frame	data/chars/ikki/special29.png
 	@cmd 	spawnScreen "ikki_lights" 0 0 0 0
 	frame	data/chars/ikki/special30.png
 	frame	data/chars/ikki/special31.png
 	frame	data/chars/ikki/special32.png
+	attack -40 23 800 50 10 0 0 0 0 30
 	frame	data/chars/ikki/special33.png
+	attack 0
 	@cmd	shooter "ikki_storm" 30 0 0 1.5 0 0
 	@cmd	shooter "ikki_shooter" 77 50 0 3 0 0
 	frame	data/chars/ikki/special34.png
+	attack -40 54 800 50 10 0 0 0 0 30
 	frame	data/chars/ikki/special35.png
+	attack 0
 	frame	data/chars/ikki/special34.png
+	attack -40 89 800 50 10 0 0 0 0 30
 	frame	data/chars/ikki/special35.png
+	attack 0
 	frame	data/chars/ikki/special34.png
+	attack -40 23 800 50 10 0 0 0 0 30
 	@cmd 	spawnScreen "ikki_fire_beam" 0 0 0 0
 	frame	data/chars/ikki/special35.png
+	attack 0
 	frame	data/chars/ikki/special34.png
+	attack -40 54 800 50 10 0 0 0 0 30
+	frame	data/chars/ikki/special35.png
+	attack 0
+	frame	data/chars/ikki/special34.png
+	attack -40 89 800 50 10 0 0 0 0 30
 	frame	data/chars/ikki/special35.png
 	frame	data/chars/ikki/special34.png
+	attack -40 23 800 50 10 1 0 0 0 30
 	frame	data/chars/ikki/special35.png
+	attack 0
 	frame	data/chars/ikki/special34.png
+	attack -40 54 800 50 10 1 0 0 0 30
 	frame	data/chars/ikki/special35.png
+	attack 0
 	frame	data/chars/ikki/special34.png
+	attack -40 89 800 50 10 1 0 0 0 30
 	frame	data/chars/ikki/special35.png
-	frame	data/chars/ikki/special34.png
-	frame	data/chars/ikki/special35.png
+	attack 0
 	frame	data/chars/ikki/special34.png
 
 
@@ -627,7 +666,7 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
 	delay	10
 	offset	60 178
 	fastattack 1
-        hitflash ikki_impact
+        hitflash shaka_flame
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "ikki_lights" 0 0 0 0
 	#bbox 21 16 51 97
@@ -643,30 +682,30 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
 	frame	data/chars/ikki/upspecial2.png
 	sound data/chars/ikki/01.wav
 	@cmd	dasher 6 0 0 1
-	attack 25 60 90 40 20 1 1 0 80 30
-        stun 3
+	attack 25 60 90 40 20 0 1 0 80 30
+	@cmd 	spawnbind "ikki_impact" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/ikki/upspecial3.png
 	attack 0
 	frame	data/chars/ikki/upspecial4.png
-	attack 25 60 90 40 20 1 1 0 80 30
+	attack 25 60 90 40 20 0 1 0 80 30
         stun 3
 	sound data/chars/ikki/08-ultra2.wav
 	delay	10
 	frame	data/chars/ikki/upspecial5.png
 	attack 0
 	frame	data/chars/ikki/upspecial6.png
-	attack 25 60 90 40 20 1 1 0 80 30
+	attack 25 60 90 40 20 0 1 0 80 30
         stun 3
 	frame	data/chars/ikki/upspecial7.png
 	attack 0
 	delay 10
 	frame	data/chars/ikki/upspecial8.png
-	attack 25 60 90 40 20 1 1 0 80 30
+	attack 25 60 90 40 20 0 1 0 80 30
         stun 3
 	frame	data/chars/ikki/upspecial9.png
 	attack 0
 	frame	data/chars/ikki/upspecial10.png
-	attack 25 60 90 40 20 1 1 0 80 30
+	attack 25 60 90 40 20 0 1 0 80 30
         stun 3
 	@cmd	dasher 0 0 0 1
 	frame	data/chars/ikki/upspecial11.png
@@ -812,12 +851,12 @@ anim freespecial7 # Saut attaque spéciale météores (déclenchée par une comm
 	
 anim freespecial5 # Uppercut
 	offset	45 150
-	bbox 21 38 51 112
 	fastattack 1
-	hitflash flashbig
+        hitflash shaka_flame
 	delay	5
 	sound data/chars/ikki/03-uppercut2.wav
 	frame	data/chars/ikki/uppercut1.png
+	@cmd 	spawnbind "ikki_uppercutB" "ANI_IDLE" 0 0 0 1 0
 	attack1 55 0 35 84 15 0 0 0 5 12
 	frame	data/chars/ikki/uppercut2.png
 	delay 5
