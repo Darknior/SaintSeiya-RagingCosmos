@@ -139,6 +139,7 @@ anim	select  # Personnage sélectionné
 anim spawn # Animation de 1ère apparition du personnage
 	delay	10
 	offset	98 208
+        sound   data/chars/ikki/01-fire.wav
 	frame	data/chars/ikki/spawn1.png
 	frame	data/chars/ikki/spawn2.png
 	frame	data/chars/ikki/spawn3.png
@@ -296,7 +297,7 @@ anim runattack # Attaque en courant
 	fastattack 1
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
-sound   data/chars/ikki/07-forward_punch.wav
+        sound   data/chars/ikki/01-dash.wav
 	attack 100 60 50 50 15 0 0 0 0 30
 	frame	data/chars/ikki/runattack4.png
 	@cmd 	spawnbind "ikki_run" "ANI_IDLE" 0 0 0 1 0
@@ -566,6 +567,7 @@ anim freespecial2 # Hoyoku Tensho
 	hitflash shaka_flame
 	attack5 35 66 100 131 10 1 0 0 5 12
 	dropv 	3 5
+        sound   data/chars/ikki/01-phoenix.wav
 	@cmd 	spawnbind "ikki_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/ikki/sleep1.png
 	frame	data/chars/ikki/sleep2.png
@@ -854,7 +856,7 @@ anim freespecial5 # Uppercut
 	fastattack 1
         hitflash shaka_flame
 	delay	5
-	sound data/chars/ikki/03-uppercut2.wav
+	sound data/chars/ikki/01-uppercut.wav
 	frame	data/chars/ikki/uppercut1.png
 	@cmd 	spawnbind "ikki_uppercutB" "ANI_IDLE" 0 0 0 1 0
 	attack1 55 0 35 84 15 0 0 0 5 12
