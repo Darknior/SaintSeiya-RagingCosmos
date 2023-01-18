@@ -150,7 +150,7 @@ void blinkDamage()
 
 	}else
 
-//SILVER EFFECT
+	//SILVER EFFECT
     if(silverTime > time){
 
         //GET NEW VALUES
@@ -223,6 +223,17 @@ void blinkReset(void varReset)
 {//Reset any blink effect and all used variables
 	void self = getlocalvar("self");
 
-	//GLOBAL RESET
-	if(varReset != NULL()){setentityvar(self, varReset, NULL());}changedrawmethod(self, "reset", 1);
+	//VARIABLE RESET
+	if(varReset != NULL()){
+		setentityvar(self, varReset, NULL());
+	}
+
+	//GENMAKEN RESET
+	if(getentityvar(self, "genmaken") != NULL()){
+		damageentity(self, self, 0, 1, openborconstant("ATK_NORMAL"));
+		setentityvar(self, "genmaken", NULL());
+	}
+
+	//DRAWMETHOD RESET
+	changedrawmethod(self, "reset", 1);
 }
