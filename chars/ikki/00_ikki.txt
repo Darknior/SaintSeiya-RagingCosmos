@@ -13,7 +13,7 @@ running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplille
 
 jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed 	12	# Vitesse du saut
-jumpheight 	5.5	# Hauteur du saut
+jumpheight 	5	# Hauteur du saut
 antigravity	-15	# Augmente la gravité pour redescendre plus vite 1/100
 
 noquake 	0 1	# Secoue l'ecran qd on tombe au sol
@@ -321,17 +321,23 @@ anim runattack # Attaque en courant
 
 
 anim  runjump
-	delay	6
+	delay	8
 	offset	55 206
 	bbox 35 76 51 120
 	summonframe 0 0 0 0
 	subentity round_dust	
 	cancel 0 8 0 A2 freespecial3 
 sound   data/chars/ikki/06-jump1.wav
+	frame	data/chars/ikki/jumpforward1.png
 	frame	data/chars/ikki/forwardjump1.png
 	frame	data/chars/ikki/forwardjump2.png
 	frame	data/chars/ikki/forwardjump3.png
 	frame	data/chars/ikki/forwardjump4.png
+	frame	data/chars/ikki/jump5.png
+	frame	data/chars/ikki/jump6.png
+	frame	data/chars/ikki/jump7.png
+	frame	data/chars/ikki/jumpforward2.png
+	frame	data/chars/ikki/jumpforward3.png
 
 anim get
 	delay	5
@@ -753,7 +759,10 @@ anim forwardjump # Saut vers l'avant
 	frame	data/chars/ikki/forwardjump2.png
 	frame	data/chars/ikki/forwardjump3.png
 	frame	data/chars/ikki/forwardjump4.png
-	frame	data/chars/ikki/jump7.png	
+	frame	data/chars/ikki/jump5.png
+	frame	data/chars/ikki/jump6.png
+	frame	data/chars/ikki/jump7.png
+	frame	data/chars/ikki/jump8.png
 
 anim jumpdelay # Animation de saut intermédiaire
 	delay	10
