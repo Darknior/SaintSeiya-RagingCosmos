@@ -581,6 +581,7 @@ anim freespecial2 # Hoyoku Tensho
 	dropv 	3 5
 	frame	data/chars/ikki/sleep3.png
 	frame	data/chars/ikki/sleep4.png
+	sound data/chars/ikki/01-flapB.wav
 	attack5 35 66 100 131 10 1 0 0 5 12
 	dropv 	3 5
 	frame	data/chars/ikki/sleep5.png
@@ -646,6 +647,7 @@ anim freespecial2 # Hoyoku Tensho
 	frame	data/chars/ikki/special34.png
 	attack -40 23 800 50 10 0 0 0 0 30
 	@cmd 	spawnScreen "ikki_fire_beam" 0 0 0 0
+	sound data/chars/ikki/01-flapA.wav
 	frame	data/chars/ikki/special35.png
 	attack 0
 	frame	data/chars/ikki/special34.png
@@ -671,7 +673,7 @@ anim freespecial2 # Hoyoku Tensho
 
 
 anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
-	delay	10
+	delay	30
 	offset	60 178
 	fastattack 1
         hitflash shaka_flame
@@ -682,13 +684,14 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
 	summonframe 0 0 0 0 0
 	subentity ikki_auraB
 	frame	data/chars/ikki/upspecial1.png
+	sound data/chars/ikki/01-genmaken.wav
 	frame	data/chars/ikki/upspecial2.png
 	frame	data/chars/ikki/upspecial1.png
 	frame	data/chars/ikki/upspecial2.png
 	frame	data/chars/ikki/upspecial1.png
+	delay	10
 	@cmd 	spawnbind "ikki_fire" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/ikki/upspecial2.png
-	sound data/chars/ikki/01.wav
 	@cmd	dasher 6 0 0 1
 	attack6 25 60 90 40 20 0 1 0 80 30
 		stun 3
@@ -707,7 +710,6 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
         stun 3
 	frame	data/chars/ikki/upspecial7.png
 	#attack 0
-	delay 10
 	frame	data/chars/ikki/upspecial8.png
 	attack6 25 60 90 40 20 0 1 0 80 30
         stun 3
@@ -720,6 +722,7 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
 	frame	data/chars/ikki/upspecial11.png
 	frame	data/chars/ikki/upspecial12.png
 	frame	data/chars/ikki/upspecial13.png
+        delay 20
 	frame	data/chars/ikki/upspecial14.png
 	frame	data/chars/ikki/upspecial15.png
 	frame	data/chars/ikki/upspecial16.png
