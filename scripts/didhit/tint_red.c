@@ -24,19 +24,40 @@ void genmaken()
 		void anim	= getentityproperty(self, "animationID");
 		void atk	= getlocalvar("attacktype");
 		int blocked	= getlocalvar("blocked");
+		int dead	= getentityproperty(target, "dead");
 
-		if(!blocked){
+		if(!blocked && !dead){
 			if(anim == openborconstant("ANI_FREESPECIAL6")){
 				if(atk == openborconstant("ATK_NORMAL6")){
 
 					//GET NEW VALUES
+					void vSpawn1;
+					void vSpawn2;
 					void target		= getlocalvar("damagetaker");
 					int tintMode	= 2;
+					int Px			= getentityproperty(target, "x");
+					int Py			= getentityproperty(target, "y");
+					int Pz			= getentityproperty(target, "z");
 					
 					//APPLY EFFECTS
 					changedrawmethod(target, "enabled", 1);
 					changedrawmethod(target, "tintmode", tintMode);
 					changedrawmethod(target, "tintcolor", rgbcolor(0xDD, 0x00, 0x00));
+
+					//UPPER FLAME SPAWN
+					clearspawnentry();
+					setspawnentry("name", "shaka_flame");
+					vSpawn1 = spawn();
+					changeentityproperty(vSpawn1, "animation", openborconstant("ANI_FOLLOW1"));
+					changeentityproperty(vSpawn1, "position", Px, Pz+1, Py+60);
+
+					//GOUND FLAME SPAWN
+					clearspawnentry();
+					setspawnentry("name", "ikki_fire");
+					vSpawn2 = spawn();
+					changeentityproperty(vSpawn2, "position", Px, Pz+1, Py);
+
+					//SET THE GENMAKEN VARIABLE TO ON
 					setentityvar(target, "genmaken", 1);
 				}
 			}
