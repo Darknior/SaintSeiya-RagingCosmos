@@ -35,6 +35,7 @@ void genmaken()
 					void vSpawn2;
 					void target		= getlocalvar("damagetaker");
 					int tintMode	= 2;
+					int dir			= getentityproperty(self, "direction");
 					int Px			= getentityproperty(target, "x");
 					int Py			= getentityproperty(target, "y");
 					int Pz			= getentityproperty(target, "z");
@@ -50,12 +51,14 @@ void genmaken()
 					vSpawn1 = spawn();
 					changeentityproperty(vSpawn1, "animation", openborconstant("ANI_FOLLOW1"));
 					changeentityproperty(vSpawn1, "position", Px, Pz+1, Py+60);
+					changeentityproperty(vSpawn1, "direction", dir);
 
 					//GOUND FLAME SPAWN
 					clearspawnentry();
 					setspawnentry("name", "ikki_fire");
 					vSpawn2 = spawn();
 					changeentityproperty(vSpawn2, "position", Px, Pz+1, Py);
+					changeentityproperty(vSpawn2, "direction", dir);
 
 					//SET THE GENMAKEN VARIABLE TO ON
 					setentityvar(target, "genmaken", 1);
