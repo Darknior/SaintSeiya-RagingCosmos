@@ -244,9 +244,9 @@ sound   data/chars/seiya/06-jump1.wav
 anim run
 	loop	1
 	delay	8
-	offset	62 114
-	bbox 54 0 51 112
-sound   data/chars/seiya/20-run1.wav
+	offset	57 113
+	bbox 35 0 51 112
+        sound   data/chars/seiya/20-run1.wav
 	frame	data/chars/seiya/run1.png
 	frame	data/chars/seiya/run2.png
 	frame	data/chars/seiya/run3.png
@@ -256,6 +256,8 @@ sound   data/chars/seiya/20-run2.wav
 	frame	data/chars/seiya/run6.png
 	frame	data/chars/seiya/run7.png
 	frame	data/chars/seiya/run8.png
+
+
 	
 anim runattack # Attaque en courant
 	delay	8
@@ -547,11 +549,13 @@ sound   data/chars/seiya/23-projection2.wav
 	@cmd leaper -1 4 1
 	frame	data/chars/seiya/grabbackward3.png
 	@cmd position 1 -20 10 0 1
+	attack -41 14 150 50 5 1 0 0 0 30
 	frame	data/chars/seiya/grabbackward4.png
 	@cmd position 2 -45 5 0 0
 	frame	data/chars/seiya/grabbackward5.png
 	delay -1000
 	@cmd position 3 -65 0 0 0
+	attack -83 74 150 50 5 1 0 0 0 30
 	frame	data/chars/seiya/grabbackward6.png
 	delay	20
 	@cmd position 3 -65 0 0 0
@@ -559,8 +563,10 @@ sound   data/chars/seiya/23-projection2.wav
 	delay	10
 	offset	114 110
 	@cmd slam 20 2 -2 2 0 0
+	attack -150 39 150 50 5 1 0 0 0 30
 	frame	data/chars/seiya/rise1.png
 	frame	data/chars/seiya/rise2.png
+	attack -200 50 150 50 5 1 0 0 0 30
 	frame	data/chars/seiya/rise3.png
 	frame	data/chars/seiya/rise4.png
 	frame	data/chars/seiya/rise5.png	
