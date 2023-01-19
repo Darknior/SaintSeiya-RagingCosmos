@@ -28,6 +28,5 @@ anim	idle
 	frame	data/chars/hyoga/special/hyoga_twister/twister11.png
 	frame	data/chars/hyoga/special/hyoga_twister/twister12.png
 	frame	data/chars/hyoga/special/hyoga_twister/twister13.png
-	attack5 0
 	@cmd suicide
 	frame	data/chars/hyoga/special/hyoga_twister/twister13.png

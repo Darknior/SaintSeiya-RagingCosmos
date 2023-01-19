@@ -117,6 +117,7 @@ know    hyoga_frozenray       data/chars/hyoga/special/hyoga_frozenray.txt
 know    hyoga_frozenray_up    data/chars/hyoga/special/hyoga_frozenray_up.txt
 know    hyoga_constellation    data/chars/hyoga/special/hyoga_constellation.txt
 know    hyoga_diamonds    data/chars/hyoga/special/hyoga_diamonds.txt
+know    hyoga_diamondsB    data/chars/hyoga/special/hyoga_diamondsB.txt
 know    hyoga_diamonds_up    data/chars/hyoga/special/hyoga_diamonds_up.txt
 know    hyoga_uppercut    data/chars/hyoga/special/hyoga_uppercut.txt
 
