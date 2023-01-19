@@ -1,19 +1,24 @@
 name		cassios
-health		400
+
+health		3000
 mp 			100
-speed		20
+speed		12	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type		enemy
 hostile     player npc 
 candamage 	player 
 aimove      chase
-dust		round_dustB
-
+dust		fall_dust
 icon		data/chars/cassios/icon.png
 
 ##GRAB
 grabdistance 		50 
 grabfinish 			1 
-
 gfxshadow	1
 hitenemy    1 0
 blockodds 	1
@@ -25,11 +30,13 @@ death 		1
 ## CUSTOM BOSS LIFEBAR
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
-ondrawscript	data/scripts/lifebar.c
+
+script	data/scripts/entity_effects.c
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 
 atchain 1 2 3 4 5 6
 
-animationscript	data/scripts/player.c
 
 #----------------------------------------------------------
 anim spawn
@@ -238,6 +245,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	46 211
 	bbox 37 19 35 121
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/cassios/jump1.png
 	frame	data/chars/cassios/jump2.png
 	frame	data/chars/cassios/jump3.png
@@ -254,6 +263,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	59 183
 	bbox 34 19 57 172
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/cassios/get1.png
 	frame	data/chars/cassios/get2.png
 	frame	data/chars/cassios/get3.png

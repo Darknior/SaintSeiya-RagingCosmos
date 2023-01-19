@@ -1,4 +1,5 @@
 name		shun
+
 health		400
 mp 			100
 type		player
@@ -6,8 +7,10 @@ type		player
 gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
+
 dust		round_dustB # Default "dust entity" using the native "Dust" function
 bflash tremi_block
+
 speed		15	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 

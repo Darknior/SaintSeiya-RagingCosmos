@@ -1,5 +1,5 @@
 name		shaina
-health		400
+health		3000
 mp 			100
 type		enemy
 
@@ -14,12 +14,12 @@ dust		round_dustB
 bflash tremi_block
 
 speed		20	# Vitesse de déplacement
-running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
-jumpmove 	7 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed 	12	# Vitesse du saut
-jumpheight 	5.5	# Hauteur du saut
-antigravity	-15	# Augmente la gravité pour redescendre plus vite 1/100
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 
 noquake 	0 1	# Secoue l'ecran qd on tombe au sol
 
@@ -316,6 +316,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	31 132
 	bbox 3 1 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	cancel 0 8 0 A2 freespecial3
 	frame	data/chars/shaina/jump1.png
 	frame	data/chars/shaina/jump2.png
@@ -333,6 +335,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	34 132
 	bbox 5 30 52 102
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/shaina/get1.png
 	frame	data/chars/shaina/get2.png
 	frame	data/chars/shaina/get3.png

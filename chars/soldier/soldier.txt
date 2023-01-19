@@ -1,6 +1,13 @@
 name	SOLDIER
+
 health	20
-speed	20
+speed		10	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type	enemy
 
 icon	data/chars/SOLDIER/icon.png
@@ -17,7 +24,9 @@ gfxshadow	1
 nodieblink 0
 blocked 1
 noquake 1 1
+
 dust		round_dustB
+bflash tremi_block
 
 subject_to_screen 0
 

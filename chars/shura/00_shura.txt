@@ -1,11 +1,19 @@
 name		Shura
-health		3000
+
+health		5000
 mp 			100
-speed		20
+speed		20	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
+
 dust		round_dustB
 bflash aldebaran_block
 
@@ -240,6 +248,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	80 142
 	bbox 58 17 38 80
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/shura/jump1.png
 	frame	data/chars/shura/jump2.png
 	frame	data/chars/shura/jump1.png
@@ -254,6 +264,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	70 140
 	bbox 54 30 38 106
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/shura/get0.png
 	frame	data/chars/shura/get1.png
 	frame	data/chars/shura/get2.png

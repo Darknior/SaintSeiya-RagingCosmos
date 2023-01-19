@@ -1,7 +1,13 @@
-
 name	SOLDIER1-1
+
 health	50
-speed	10
+speed		10	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type	enemy
 
 icon	data/chars/SOLDIER1-1/icon.png
@@ -19,7 +25,10 @@ death 1
 noquake 1 1
 gfxshadow 1
 palette data/chars/SOLDIER1-1/COLOR1.png
+
+bflash tremi_block
 dust		round_dustB
+
 \\subject_to_wall 0
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c

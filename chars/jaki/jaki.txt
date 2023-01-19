@@ -1,12 +1,20 @@
 name		jaki
-health		400
+
+health		3000
 mp 			100
-speed		20
+dust		fall_dust # Default "dust entity" using the native "Dust" function
+bflash tremi_block
 type		enemy
 hostile     player npc 
 candamage 	player 
 aimove      chase
+speed		12	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 
 icon		data/chars/jaki/icon.png
 
@@ -25,12 +33,12 @@ death 		1
 ## CUSTOM BOSS LIFEBAR
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
-ondrawscript	data/scripts/lifebar.c
+
 script	data/scripts/entity_effects.c
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 
 atchain 1 1 2 3 4 5
-
-animationscript	data/scripts/player.c
 
 load columnT
 
@@ -244,6 +252,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	37 182
 	bbox 12 10 57 122
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/jaki/jump1.png
 	frame	data/chars/jaki/jump2.png
 	frame	data/chars/jaki/jump3.png
@@ -260,6 +270,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	59 183
 	bbox 34 19 57 172
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/jaki/get1.png
 	frame	data/chars/jaki/get2.png
 	frame	data/chars/jaki/get3.png

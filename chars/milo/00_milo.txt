@@ -1,11 +1,18 @@
 name		milo
-health		100
+health		3000
 mp 			100
-speed		20
+speed		20	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
+
 dust		round_dustB
 bflash aldebaran_block
 
@@ -310,6 +317,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	41 166
 	bbox 24 34 38 92
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/milo/jump1.png
 	frame	data/chars/milo/jump2.png
 	frame	data/chars/milo/jump3.png
@@ -328,6 +337,8 @@ anim jumpland # Aterrissage du saut
 	delay	12
 	offset	44 129
 	bbox 32 15 38 114
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/milo/get1.png
 	frame	data/chars/milo/get2.png
 	frame	data/chars/milo/get1.png

@@ -1,11 +1,22 @@
 name		malesoldier
+
 health		50
-speed		20
+speed		15	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
 death 1
+
+dust		round_dustB # Default "dust entity" using the native "Dust" function
+bflash tremi_block
+
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
 #ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
@@ -20,7 +31,6 @@ nodieblink 0
 noquake 1 1
 
 atchain 1 1 2
-dust		round_dustB
 load blood_ground_big
 
 #----------------------------------------------------------
@@ -121,6 +131,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	44 130
 	bbox 29 10 35 71
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/malesoldier/jump1.png
 	frame	data/chars/malesoldier/jump2.png
 	frame	data/chars/malesoldier/jump3.png
@@ -137,6 +149,8 @@ anim jumpland # Aterrissage du saut
 	delay	12
 	offset	44 125
 	bbox 29 10 35 115
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/malesoldier/get.png
 	
 anim jumpattack #Attaque sautée statique

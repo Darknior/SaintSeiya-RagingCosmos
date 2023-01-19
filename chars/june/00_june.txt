@@ -1,8 +1,9 @@
 name		june
-health		400
-mp 			100
-type		enemy
 
+health		3000
+mp 			100
+
+type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
@@ -14,13 +15,13 @@ gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
 
-speed		20	# Vitesse de déplacement
-running 	45 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+speed		19	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
-jumpmove 	7 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed 	12	# Vitesse du saut
-jumpheight 	5.5	# Hauteur du saut
-antigravity	-15	# Augmente la gravité pour redescendre plus vite 1/100
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 
 noquake 	0 1	# Secoue l'ecran qd on tombe au sol
 
@@ -395,6 +396,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	31 125
 	bbox 19 4 51 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	cancel 0 8 0 A2 freespecial3
 	frame	data/chars/june/jump1.png
 	frame	data/chars/june/jump2.png
@@ -412,6 +415,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	35 124
 	bbox 13 15 51 110
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/june/get1.png
 	frame	data/chars/june/get2.png
 	frame	data/chars/june/get2.png

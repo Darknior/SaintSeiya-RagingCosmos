@@ -1,7 +1,13 @@
-
 name	SOLDIER3
+
 health	80
-speed	7
+speed		7	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type	enemy
 
 icon	data/chars/SOLDIER3/icon.png
@@ -17,12 +23,16 @@ death 		1
 nodieblink 0
 blocked 1
 gfxshadow 1
+
+bflash tremi_block
 dust		fall_dust
-script	data/scripts/entity_effects.c
+
+
 \\subject_to_wall 0
 
 subject_to_screen 0
 
+script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 

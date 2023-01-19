@@ -1,11 +1,13 @@
 name		sirius
-health		400
+
+health		3000
 mp 			100
 type		enemy
 
 hostile     player npc 
 candamage 	player npc
 aimove      chase
+
 dust		round_dustB
 bflash sirius_block
 
@@ -13,13 +15,13 @@ gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
 
-speed		16	# Vitesse de déplacement
-running 	36 5 3	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+speed		17	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
-jumpmove 	7 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed 	12	# Vitesse du saut
-jumpheight 	5.5	# Hauteur du saut
-antigravity	-15	# Augmente la gravité pour redescendre plus vite 1/100
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 
 noquake 	0 1	# Secoue l'ecran qd on tombe au sol
 
@@ -287,6 +289,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	28 130
 	bbox 5 7 52 112
+	summonframe 0 0 0 0
+	subentity round_dust
 	cancel 0 8 0 A2 freespecial3
 	frame	data/chars/sirius/jump1.png
 	frame	data/chars/sirius/jump2.png
@@ -305,6 +309,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	46 129
 	bbox 18 18 52 112
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/sirius/get1.png
 	frame	data/chars/sirius/get2.png
 	frame	data/chars/sirius/get3.png

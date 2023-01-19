@@ -1,7 +1,13 @@
 name		camus
-health		500
+health		5000
 mp 			100
-speed		20
+speed		20	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+dust		round_dustB # Default "dust entity" using the native "Dust" function
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type		enemy
 hostile     player npc 
 candamage 	player npc
@@ -281,6 +287,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	45 132
 	bbox 30 1 38 94
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/camus/jump1.png
 	frame	data/chars/camus/jump2.png
 	frame	data/chars/camus/jump3.png
@@ -301,6 +309,8 @@ anim jumpland # Aterrissage du saut
 	delay	12
 	offset	44 129
 	bbox 32 32 38 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/camus/get1.png
 	frame	data/chars/camus/get2.png
 	frame	data/chars/camus/get1.png

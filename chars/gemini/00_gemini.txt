@@ -1,7 +1,13 @@
 name		gemini
-health		1000
+health		5000
 mp 			100
-speed		20
+speed		20	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type		enemy
 hostile     player npc 
 candamage 	player npc
@@ -286,6 +292,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	75 171
 	bbox 59 40 35 71
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/gemini/jump1.png
 	frame	data/chars/gemini/jump2.png
 	frame	data/chars/gemini/jump3.png
@@ -304,6 +312,8 @@ anim jumpland # Aterrissage du saut
 	delay	8
 	offset	75 171
 	bbox 59 73 35 71
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/gemini/get1.png
 	frame	data/chars/gemini/get2.png
 	frame	data/chars/gemini/get3.png

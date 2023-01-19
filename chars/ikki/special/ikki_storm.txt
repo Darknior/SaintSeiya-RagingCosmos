@@ -1,6 +1,6 @@
 name	ikki_storm
 type	none
-candamage player
+candamage enemy npc
 shadow	0
 setlayer 100
 antigravity 100

@@ -1,11 +1,19 @@
 name		saga
-health		500
+health		5000
 mp 			100
-speed		20
+speed		20	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
+
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
+
 dust		round_dustB
 bflash aldebaran_block
 
@@ -279,6 +287,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	52 135
 	bbox 37 2 38 96
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/saga/jump1.png
 	frame	data/chars/saga/jump2.png
 	frame	data/chars/saga/jump3.png
@@ -297,6 +307,8 @@ anim jumpland # Aterrissage du saut
 	delay	10
 	offset	35 137
 	bbox 15 2 38 137
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/saga/get1.png
 	frame	data/chars/saga/get2.png
 	frame	data/chars/saga/get1.png

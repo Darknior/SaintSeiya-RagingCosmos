@@ -1,13 +1,19 @@
 name		great_pope
-health		50
+
+health		1000
 mp 			100
-speed		20
+speed		20	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
 type		enemy
 hostile     player npc 
 candamage 	player npc
 aimove      chase
 bflash aldebaran_block
-
+dust		round_dustB # Default "dust entity" using the native "Dust" function
 
 icon		data/chars/great_pope/icon.png
 
@@ -271,6 +277,8 @@ anim jump # Saut Statique
 	delay	10
 	offset	81 152
 	bbox 58 31 38 96
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/great_pope/jump1.png
 	frame	data/chars/great_pope/jump2.png
 	frame	data/chars/great_pope/jump3.png
@@ -289,6 +297,8 @@ anim jumpland # Aterrissage du saut
 	delay	12
 	offset	79 142
 	bbox 63 42 38 97
+	summonframe 0 0 0 0
+	subentity round_dust
 	frame	data/chars/great_pope/get1.png
 	frame	data/chars/great_pope/get2.png
 	frame	data/chars/great_pope/get1.png
