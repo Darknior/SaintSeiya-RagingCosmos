@@ -516,28 +516,24 @@ anim grabattack2 #Saisie Coup finisher
 	
 anim throw #Projection en arrière
 	delay	10
-	offset	45 140
-	bbox 21 28 51 112
+	offset	92 120
+	bbox 55 8 51 112
 	throw 7 7
 	throwdamage 20
 	summonframe 0 0 0 0
 	subentity dash_dust
 sound   data/chars/hyoga/23-projection1.wav
-	frame	data/chars/hyoga/grabbackward1.png
-	frame	data/chars/hyoga/grabbackward2.png
+	frame	data/chars/hyoga/grab10.png
+	frame	data/chars/hyoga/grab11.png
 sound   data/chars/hyoga/23-projection2.wav
-	frame	data/chars/hyoga/grabbackward3.png
-	frame	data/chars/hyoga/grabbackward4.png
-	frame	data/chars/hyoga/grabbackward5.png
-	summonframe 0 0 0 0 0
-	subentity hyoga_round_dust
-	unsummonframe 15
-	offset	113 139
-	frame	data/chars/hyoga/rise1.png
-	frame	data/chars/hyoga/rise2.png
-	frame	data/chars/hyoga/rise3.png
-	frame	data/chars/hyoga/rise4.png
-	frame	data/chars/hyoga/rise5.png	
+	frame	data/chars/hyoga/grab12.png
+	attack -100 0 180 60 5 1 0 0 0 30
+	frame	data/chars/hyoga/grab13.png
+	delay	30
+	frame	data/chars/hyoga/grab14.png
+	delay	10
+	attack -200 50 180 60 5 1 0 0 0 30
+	frame	data/chars/hyoga/grab10.png	
 
 anim freespecial3 # Défense spéciale explosion du cosmos
 	delay	5
