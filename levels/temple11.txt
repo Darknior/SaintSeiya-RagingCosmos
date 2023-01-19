@@ -57,11 +57,6 @@ spawn       time-is-up
 coords      368 89
 at          0
 
-spawn kiki2
-alias KIKI
-item apple
-coords	850 390
-at 400
 
 spawn soldier1
 alias SOLDIER

@@ -4,6 +4,7 @@ void main()
 {
 	tintEffect(openborconstant("ANI_IDLE"), "red", 1);
 	tintEffect(openborconstant("ANI_RUNATTACK"), "red", 1);
+	tintEffect(openborconstant("ANI_ATTACKBOTH"), "red", 1);
 	tintEffect(openborconstant("ANI_SPECIAL"), "red", 1);
 	tintEffect(openborconstant("ANI_SPECIAL2"), "red", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL"), "red", 1);

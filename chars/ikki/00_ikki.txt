@@ -44,12 +44,12 @@ ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
 didhitscript	data/scripts/didhit/tint_red.c
 
-
-com  F a2  	freespecial6 	#Phoenix Genmaken
+com  D U a1 	freespecial 	#Melee
+com  U a2  	freespecial2 	#Hoyoku Tensho
 com  a2  	freespecial3 	#Explosion du Cosmos
 com  B a1  	freespecial4 	#Coup de pied arriere
 com  D F a1 freespecial5 	#Uppercut
-com  U a2  	freespecial2 	#Hoyoku Tensho
+com  F a2  	freespecial6 	#Phoenix Genmaken
 
 
 load ikki_aura
@@ -137,7 +137,7 @@ anim	select  # Personnage sélectionné
 	frame	data/chars/ikki/select46.png
 
 anim spawn # Animation de 1ère apparition du personnage
-	delay	10
+	delay	8
 	offset	98 208
         sound   data/chars/ikki/01-fire.wav
 	frame	data/chars/ikki/spawn1.png
@@ -449,30 +449,64 @@ sound   data/chars/ikki/17-back_kick.wav
 	frame	data/chars/ikki/attackbackward1.png
 	frame	data/chars/ikki/attackbackward0.png
 
-anim attackboth # Attaque arrière (bouton saut + attaque)
-	offset	82 140
+anim attackboth # Attaque Melee (bouton saut + attaque)
+	offset	72 196
 	fastattack 1
-	hitflash flashbig
+	hitflash shaka_flame
 	delay	5
-sound   data/chars/ikki/17-back_kick.wav
-	frame	data/chars/ikki/attackbackward0.png
-	frame	data/chars/ikki/attackbackward1.png
+        sound   data/chars/ikki/01-knee.wav
+	frame	data/chars/ikki/melee1.png
 	attack1 0
-	frame	data/chars/ikki/attackbackward2.png
-	attack1 -14 63 100 70 20 1 0 0 5 30
-	frame	data/chars/ikki/attackbackward3.png
+	frame	data/chars/ikki/melee2.png
+        sound   data/chars/ikki/01-flapB.wav
+	attack1 32 19 100 120 20 0 0 0 5 30
+	frame	data/chars/ikki/melee3.png
+	delay	10
 	attack1 0
-	frame	data/chars/ikki/attackbackward4.png
-	attack1 -14 63 100 70 20 1 0 0 5 30
-	frame	data/chars/ikki/attackbackward5.png
+	frame	data/chars/ikki/melee4.png
+	attack1 32 19 100 120 20 1 0 0 5 30
+	frame	data/chars/ikki/melee5.png
 	attack1 0
-	frame	data/chars/ikki/attackbackward4.png
-	attack1 -14 63 100 70 20 1 0 0 5 30
-	frame	data/chars/ikki/attackbackward3.png
+	frame	data/chars/ikki/melee6.png
+	attack1 32 19 100 120 20 1 0 0 5 30
+	frame	data/chars/ikki/melee7.png
 	attack1 0
-	frame	data/chars/ikki/attackbackward2.png
-	frame	data/chars/ikki/attackbackward1.png
-	frame	data/chars/ikki/attackbackward0.png
+	frame	data/chars/ikki/melee8.png
+	attack1 32 19 100 120 20 1 0 0 5 30
+	frame	data/chars/ikki/melee9.png
+	attack1 0
+	delay	5
+	frame	data/chars/ikki/melee3.png
+	frame	data/chars/ikki/melee2.png
+
+anim freespecial # Attaque Melee (bouton saut + attaque)
+	offset	72 196
+	fastattack 1
+	hitflash shaka_flame
+	delay	5
+        sound   data/chars/ikki/01-knee.wav
+	frame	data/chars/ikki/melee1.png
+	attack1 0
+	frame	data/chars/ikki/melee2.png
+	attack1 32 19 100 120 20 0 0 0 5 30
+	frame	data/chars/ikki/melee3.png
+	delay	10
+	attack1 0
+	frame	data/chars/ikki/melee4.png
+	attack1 32 19 100 120 20 1 0 0 5 30
+	frame	data/chars/ikki/melee5.png
+	attack1 0
+	frame	data/chars/ikki/melee6.png
+	attack1 32 19 100 120 20 1 0 0 5 30
+	frame	data/chars/ikki/melee7.png
+	attack1 0
+	frame	data/chars/ikki/melee8.png
+	attack1 32 19 100 120 20 1 0 0 5 30
+	frame	data/chars/ikki/melee9.png
+	attack1 0
+	delay	5
+	frame	data/chars/ikki/melee3.png
+	frame	data/chars/ikki/melee2.png
 	
 anim freespecial4 # Attaque arrière (à partir d'un cancel)
 	offset	82 140
@@ -501,8 +535,9 @@ sound   data/chars/ikki/17-back_kick.wav
 
 anim grab
 	delay	7
-	offset	45 136
-	bbox 21 17 51 120
+	offset	49 166
+	bbox 21 46 51 120
+	frame	data/chars/ikki/grab0.png
 	frame	data/chars/ikki/grab1.png
 	frame	data/chars/ikki/grab2.png
 	
@@ -512,37 +547,42 @@ anim grabattack #Saisie Coup de genou X2
 	bbox 21 17 51 120
 	frame	data/chars/ikki/grabattack1.png
 	frame	data/chars/ikki/grabattack2.png
-	attack3 40 60 47 26 10 0 0 0 5 12
+	attack3 40 60 80 26 10 0 0 0 5 12
 	frame	data/chars/ikki/grabattack3.png
 	attack3 0
 	
 anim grabattack2 #Saisie Coup finisher
 	delay	6
-	offset	82 154
-	bbox 55 25 51 120
-	frame	data/chars/ikki/grabattack21.png
-	frame	data/chars/ikki/grabattack22.png
-	frame	data/chars/ikki/grabattack23.png
-	frame	data/chars/ikki/grabattack24.png
-	attack3 62 51 90 26 15 1 0 0 0 0
-	frame	data/chars/ikki/grabattack25.png
+	offset	64 169
+	bbox 39 48 51 120
+	frame	data/chars/ikki/grab3.png
+	frame	data/chars/ikki/grab4.png
+	frame	data/chars/ikki/grab6.png
+	frame	data/chars/ikki/grab5.png
+	attack3 47 51 80 40 15 1 0 0 0 0
+	frame	data/chars/ikki/grab5.png
 	attack3 0
-	frame	data/chars/ikki/grabattack24.png
+	frame	data/chars/ikki/grab5.png
+	frame	data/chars/ikki/grab5.png
 	
 anim throw #Projection en arrière
 	delay	10
-	offset	123 155
-	bbox 86 35 51 120
+	offset	64 169
+	bbox 47 50 51 120
 	throw 7 7
 	throwdamage 20
 sound   data/chars/ikki/23-projection1.wav
-	frame	data/chars/ikki/grabbackward1.png
-	frame	data/chars/ikki/grabbackward2.png
+	frame	data/chars/ikki/grab3.png
+	frame	data/chars/ikki/grab4.png
 sound   data/chars/ikki/23-projection2.wav
-	frame	data/chars/ikki/grabbackward3.png
-	frame	data/chars/ikki/grabbackward4.png
-	frame	data/chars/ikki/grabbackward5.png
-	frame	data/chars/ikki/grabbackward6.png
+	attack -83 0 200 50 5 1 0 0 0 30
+	frame	data/chars/ikki/grab6.png
+	frame	data/chars/ikki/grab5.png
+	attack -150 50 200 50 5 1 0 0 0 30
+	frame	data/chars/ikki/grab5.png
+	frame	data/chars/ikki/grab5.png
+	attack -200 100 200 50 5 1 0 0 0 30
+	frame	data/chars/ikki/grab5.png
 	
 anim freespecial3 # Défense spéciale explosion du cosmos
 	delay	12
