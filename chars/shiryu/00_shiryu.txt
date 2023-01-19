@@ -501,8 +501,9 @@ anim throw #Projection en arrière
 	delay	10
 	offset	102 130
 	bbox 62 15 51 115
-	throw 7 7
+	throw 10 7
 	throwdamage 20
+        throwframewait 4
 sound   data/chars/shiryu/23-projection1.wav
 	frame	data/chars/shiryu/grabbackward1.png
 	frame	data/chars/shiryu/grabbackward2.png
@@ -510,14 +511,19 @@ sound   data/chars/shiryu/23-projection2.wav
 	frame	data/chars/shiryu/grabbackward3.png
 	frame	data/chars/shiryu/grabbackward4.png
 	frame	data/chars/shiryu/grabbackward5.png
+	delay	50
+	attack -83 0 200 50 5 1 0 0 0 30
 	frame	data/chars/shiryu/grabbackward6.png
 	summonframe 0 0 0 0 0
 	subentity shiryu_round_dust
 	unsummonframe 15
 	offset	114 130
+	delay	10
 	frame	data/chars/shiryu/rise1.png
+	attack -150 50 200 50 5 1 0 0 0 30
 	frame	data/chars/shiryu/rise2.png
 	frame	data/chars/shiryu/rise3.png
+	attack -200 79 200 50 5 1 0 0 0 30
 	frame	data/chars/shiryu/rise4.png
 	
 anim freespecial3 # Défense spéciale explosion du cosmos
