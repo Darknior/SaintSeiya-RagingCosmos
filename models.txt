@@ -125,6 +125,7 @@ know    shun_stream           data/chars/shun/special/shun_stream.txt
 
 know    ikki_aura           data/chars/ikki/special/ikki_aura.txt
 know    ikki_auraB           data/chars/ikki/special/ikki_auraB.txt
+know    ikki_auraC         data/chars/ikki/special/ikki_auraC.txt
 know    ikki_shooter           data/chars/ikki/special/ikki_shooter.txt
 know    ikki_constellation           data/chars/ikki/special/ikki_constellation.txt
 know    ikki_lights           data/chars/ikki/special/ikki_lights.txt
