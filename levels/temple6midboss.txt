@@ -1,0 +1,57 @@
+music       data/music/MSC-tragic.ogg
+
+panel       data/bgs/temple6_midboss/temple10_panel.png 
+bglayer     data/bgs/temple6_midboss/temple10_back.png        0.9 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple6_midboss/temple10_bglayer.png      0.3 1 0 1 0 0 1 9999 1 0
+fglayer     data/bgs/temple6_midboss/temple10_cloudB.png        -25 -0.4 0 0 -200 0 0 -1 -1 1 1 0 0 0 0 1
+bgspeed 1 0
+
+order       a
+direction   both
+settime     99
+
+cameratype  0
+light       256 -100
+at          0
+shadowalpha 2
+at          0
+
+spawn1      60 30
+
+
+#-------------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-vierge
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       volcano_flame
+coords      0 0
+at          0
+
+spawn           shiva
+boss 			1
+coords          650 390
+at              0
+
+spawn           agora
+boss 			1
+coords          450 420
+at              0
+
+group			1 1
+at				0
+
+spawn           dialog_wait
+flip            1
+boss			1
+coords          1 1
+at              0

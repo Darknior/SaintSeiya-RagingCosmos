@@ -1,0 +1,29 @@
+name	agora_plasma
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+
+anim	idle
+	loop	0
+	delay	10
+	offset	92 600
+	fastattack 1
+	drawmethod alpha 6
+	drawmethod channel 0.5
+	attack5 0 0 180 600 10 0 0 0 0 20
+	frame	data/chars/agora/special/agora_plasma/plasma1.png
+	attack5 0
+	frame	data/chars/agora/special/agora_plasma/plasma2.png
+	attack5 0 0 180 600 10 0 0 0 0 20
+	frame	data/chars/agora/special/agora_plasma/plasma3.png
+	attack5 0
+	frame	data/chars/agora/special/agora_plasma/plasma4.png
+	attack5 0 0 180 600 10 0 0 0 0 20
+	frame	data/chars/agora/special/agora_plasma/plasma5.png
+	attack5 0
+	frame	data/chars/agora/special/agora_plasma/plasma6.png
+	attack5 0 0 180 600 10 1 0 0 0 20
+	frame	data/chars/agora/special/agora_plasma/plasma7.png
+	attack5 0
+	frame	data/chars/agora/special/agora_plasma/plasma8.png

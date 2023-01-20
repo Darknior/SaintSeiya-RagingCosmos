@@ -267,6 +267,11 @@ know    sirius_ray 		data/chars/sirius/special/sirius_ray.txt
 know    asterion_clone 	data/chars/asterion/special/asterion_clone.txt
 know    asterion_lightball 	data/chars/asterion/special/asterion_lightball.txt
 
+know    shiva_lotus	    data/chars/shiva/special/shiva_lotus.txt
+
+know    agora_lotus	    data/chars/agora/special/agora_lotus.txt
+know    agora_plasma	data/chars/agora/special/agora_plasma.txt
+
 know    knife  		data/chars/great_pope/special/knife.txt
 
 know    columnT  	data/chars/jaki/special/columnT.txt
@@ -384,7 +389,8 @@ load    shaina     		data/chars/shaina/00_shaina.txt
 load    tremi     		data/chars/tremi/00_tremi.txt
 load    sirius     		data/chars/sirius/00_sirius.txt
 load    june     		data/chars/june/00_june.txt
-
+load    shiva     		data/chars/shiva/00_shiva.txt
+load    agora     		data/chars/agora/00_agora.txt
 
 ## PNJ ##
 
@@ -465,9 +471,7 @@ know    great_pope      data/chars/great_pope/great_pope.txt
 #-- LEVELS --------------------------------------------------------------------------
 
 ## TEMPLE 1
-
 load    mu                  data/bgs/temple1/mu/mu.txt
-
 ## Dialogs
 load    dialogdelay     	data/bgs/temple1/mu_dialog/dialogdelay.txt
 know 	dialogbox0			data/bgs/temple1/mu_dialog/dialogbox0.txt
@@ -495,20 +499,16 @@ know 	aphrodite_dialog2	data/bgs/temple12/aphrodite_dialog/aphrodite_dialog2.txt
 
 
 ## TEMPLE 2 ROAD
-
 load    temple2roadcolumns      data/bgs/temple2-road/temple2roadcolumns.txt
 
 ## TEMPLE 3
-
 know    temple3_columns     data/bgs/temple3/columns/temple3_columns.txt
 know    temple3_grid        data/bgs/temple3/grid/temple3_grid.txt
 
 ## TEMPLE 4 ROAD
-
 load    temple4roadcolumns      data/bgs/temple4-road/temple4roadcolumns.txt
 
 ## TEMPLE 4
-
 know    temple4_columns     data/bgs/temple4/columns/temple4_columns.txt
 know    temple4_heads       data/bgs/temple4/heads/temple4_heads.txt
 know    temple4_wallheads   data/bgs/temple4/heads/temple4_wallheads.txt
@@ -517,39 +517,34 @@ know    temple4_faces02     data/bgs/temple4/faces/temple4_faces02.txt
 know    temple4_faces03     data/bgs/temple4/faces/temple4_faces03.txt
 
 ## TEMPLE 5
-
 load    flame               data/bgs/temple5/flame/flame.txt
 load    temple5columns      data/bgs/temple5/temple5columns.txt
 
-## TEMPLE 6
+## TEMPLE 6 MIDBOSS
+load    volcano_flame      data/bgs/temple6_midboss/volcano_flame.txt
 
+## TEMPLE 6
 load    temple6columns      data/bgs/temple6/temple6columns.txt
 
 ## TEMPLE 7
-
 load    temple7columns      data/bgs/temple7/temple7columns.txt
 
 ## TEMPLE 10 ROAD
-
 load    temple10roadcolumns      data/bgs/temple10-road/temple10roadcolumns.txt
 
 ## TEMPLE 11
-
 load    temple11columns      data/bgs/temple11/temple11columns.txt
 
 ## TEMPLE 12
-
 know    temple12_columns     data/bgs/temple12/columns/temple12_columns.txt
 know    temple12_Roses01     data/bgs/temple12/Roses/temple12_Roses01.txt
 know    temple12_Roses02     data/bgs/temple12/Roses/temple12_Roses02.txt
 know    temple12_Roses03     data/bgs/temple12/Roses/temple12_Roses03.txt
 
 ## TEMPLE 13 ROAD
-
 load    temple13roadcolumns      data/bgs/temple13-road/temple13roadcolumns.txt
 
 ## TEMPLE 13 FINAL
-
 load    temple13columns      data/bgs/temple13/temple13columns.txt
 
 #Food

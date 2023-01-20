@@ -1,0 +1,20 @@
+name	agora_lotus
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+
+anim	idle
+	loop	0
+	delay	15
+	offset	106 182
+	#drawmethod scale 0.5 0.5
+	drawmethod alpha 6
+	drawmethod channel 0.5
+	frame	data/chars/agora/special/agora_lotus/lotus1.png
+	frame	data/chars/agora/special/agora_lotus/lotus2.png
+	frame	data/chars/agora/special/agora_lotus/lotus3.png
+	frame	data/chars/agora/special/agora_lotus/lotus4.png
+	frame	data/chars/agora/special/agora_lotus/lotus5.png
+	frame	data/chars/agora/special/agora_lotus/lotus6.png
+	frame	data/chars/agora/special/agora_lotus/lotus7.png

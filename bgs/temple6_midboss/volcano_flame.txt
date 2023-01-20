@@ -1,0 +1,87 @@
+name	volcano_flame
+type	none
+shadow	0
+setlayer 1
+
+anim	idle
+	loop	1
+	delay	9
+	offset	1000 60
+	drawmethod alpha 1
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-0.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-1.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-2.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-3.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-4.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-5.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-6.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-7.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-8.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-9.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-10.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-11.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-12.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-13.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-14.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-15.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-16.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-17.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-18.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-19.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-20.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-21.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-22.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-24.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-25.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-26.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-27.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-28.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-29.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-31.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-32.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-33.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-34.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-35.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-36.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-37.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-38.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-39.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-40.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-41.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-42.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-43.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-44.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-45.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-46.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-47.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-48.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-49.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-50.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-51.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-52.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-53.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-54.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-55.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-56.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-57.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-58.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-59.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-60.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-61.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-62.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-63.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-64.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-65.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-66.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-67.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-68.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-69.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-70.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-71.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-72.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-73.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-74.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-75.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-76.png
+	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-77.png
+
