@@ -109,6 +109,7 @@ know    shiryu_lights	   data/chars/shiryu/special/shiryu_lights.txt
 know    shiryu_cosmos	   data/chars/shiryu/special/shiryu_cosmos.txt
 know    shiryu_constellation	   data/chars/shiryu/special/shiryu_constellation.txt
 know    shiryu_dash	   data/chars/shiryu/special/shiryu_dash.txt
+know    shiryu_whirl	   data/chars/shiryu/special/shiryu_whirl.txt
 
 know    hyoga_aura            data/chars/hyoga/special/hyoga_aura.txt
 know    hyoga_cygnus          data/chars/hyoga/special/hyoga_cygnus.txt

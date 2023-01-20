@@ -60,6 +60,7 @@ load shiryu_dragon_water
 load shiryu_explosion
 load shiryu_uppercut
 load shiryu_big_dragon
+load shiryu_whirl
 load shiryu_cosmos
 #load shiryu_constellation
 #load shiryu_pegasus
@@ -400,68 +401,77 @@ anim attackboth # Attaque arrière (bouton saut + attaque)
 	offset	39 130
 	bbox 21 15 51 115
 	hitflash flashbig
-	delay	5
+	delay	7
 sound   data/chars/shiryu/17-back_kick.wav
+	flipframe 1
+	fastattack 1
+	offset	60 130
+	bbox 21 15 51 115
+	hitflash flashbig
+	delay	7
+        sound   data/chars/shiryu/17-back_kick.wav
+	attack1 0
 	frame	data/chars/shiryu/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity shiryu_down_dust
-	unsummonframe 12
-	attack -10 96 100 35 5 0 0 0 0 20
+	attack1 0
 	frame	data/chars/shiryu/attackbackward2.png
 	bbox 43 31 50 100
+	attack 7 28 120 35 5 0 0 0 0 30
 	frame	data/chars/shiryu/attackbackward3.png
-	attack 0 28 100 35 5 1 0 0 0 20
+	attack1 0
+	@cmd 	spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/shiryu/attackbackward4.png
-	attack1 55 35 84 29 5 0 0 0 5 12
+	attack1 55 35 84 29 5 1 0 0 0 30
 	frame	data/chars/shiryu/attackbackward5.png
-	attack 0 23 100 35 5 1 0 0 0 20
-	frame	data/chars/shiryu/attackbackward6.png
 	attack1 0
+	frame	data/chars/shiryu/attackbackward6.png
+	attack 9 23 120 35 5 1 0 0 0 30
 	frame	data/chars/shiryu/attackbackward7.png
-	attack1 40 35 100 29 5 0 0 0 5 20
 	frame	data/chars/shiryu/attackbackward8.png
+	attack1 10 35 120 29 5 1 0 0 0 30
 	frame	data/chars/shiryu/attackbackward6.png
 	attack1 0
-	attack 0 33 100 35 5 1 0 0 0 20
 	frame	data/chars/shiryu/attackbackward4.png
+	attack 10 33 120 35 5 1 1 0 0 30
 	frame	data/chars/shiryu/attackbackward3.png
 	delay   12
 	bbox 16 29 50 100
+	attack1 0
 	frame	data/chars/shiryu/attackbackward1.png	
 	
 anim freespecial # Attaque arrière (à partir d'un cancel)
 	flipframe 1
 	fastattack 1
-	offset	39 130
+	offset	60 130
 	bbox 21 15 51 115
 	hitflash flashbig
-	delay	5
-sound   data/chars/shiryu/17-back_kick.wav
+	delay	7
+        sound   data/chars/shiryu/17-back_kick.wav
+	attack1 0
 	frame	data/chars/shiryu/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity shiryu_down_dust
-	unsummonframe 12
-	attack -10 96 100 35 5 0 0 0 0 20
+	attack1 0
 	frame	data/chars/shiryu/attackbackward2.png
 	bbox 43 31 50 100
+	attack 7 28 120 35 5 0 0 0 0 30
 	frame	data/chars/shiryu/attackbackward3.png
-	attack 0 28 100 35 5 1 0 0 0 20
+	attack1 0
+	@cmd 	spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/shiryu/attackbackward4.png
-	attack1 55 35 84 29 5 0 0 0 5 12
+	attack1 55 35 84 29 5 1 0 0 0 30
 	frame	data/chars/shiryu/attackbackward5.png
-	attack 0 23 100 35 5 1 0 0 0 20
-	frame	data/chars/shiryu/attackbackward6.png
 	attack1 0
+	frame	data/chars/shiryu/attackbackward6.png
+	attack 9 23 120 35 5 1 0 0 0 30
 	frame	data/chars/shiryu/attackbackward7.png
-	attack1 40 35 100 29 5 0 0 0 5 20
 	frame	data/chars/shiryu/attackbackward8.png
+	attack1 10 35 120 29 5 1 0 0 0 30
 	frame	data/chars/shiryu/attackbackward6.png
 	attack1 0
-	attack 0 33 100 35 5 1 0 0 0 20
 	frame	data/chars/shiryu/attackbackward4.png
+	attack 10 33 120 35 5 1 1 0 0 30
 	frame	data/chars/shiryu/attackbackward3.png
 	delay   12
 	bbox 16 29 50 100
+	attack1 0
 	frame	data/chars/shiryu/attackbackward1.png		
 
 anim grab
@@ -555,24 +565,31 @@ anim freespecial2 # Fureur du Dragon
 	summonframe 0 0 0 0 0
 	subentity shiryu_aura_ryuseiken
 	energycost  20 1 0
+	fastattack 1
 	hitflash flashbig
-	attack5 -8 -50 100 180 10 1 0 0 5 12
 	@cmd 	spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 1 0
         sound   data/chars/shiryu/01-shoryuha.wav
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/shiryu/special21.png
 	frame	data/chars/shiryu/special22.png
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/shiryu/special23.png
 	frame	data/chars/shiryu/special24.png
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/shiryu/special25.png
 	frame	data/chars/shiryu/special26.png
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/shiryu/special27.png
 	frame	data/chars/shiryu/special28.png
 	frame	data/chars/shiryu/special29.png
 	frame	data/chars/shiryu/special30.png
 	frame	data/chars/shiryu/special31.png
 	@cmd 	spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
-	attack5 0 -50 100 180 10 1 0 0 5 12
-	@cmd	shooter "shiryu_dragon" 77 80 0 3 0 0
+	@cmd	shooter "shiryu_dragon" 77 80 0 1.5 0 0
 	frame	data/chars/shiryu/special32.png
 	frame	data/chars/shiryu/special33.png
 	frame	data/chars/shiryu/special34.png
@@ -592,20 +609,29 @@ anim freespecial6 # Rozan Shoryuha ( haut + bouton special)
 	subentity shiryu_constellation
 	energycost  20 1 0
 	@cmd 	spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 1 0
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
         sound   data/chars/shiryu/01-shoryuha.wav
 	frame	data/chars/shiryu/special21.png
 	frame	data/chars/shiryu/special22.png
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/shiryu/special23.png
 	frame	data/chars/shiryu/special24.png
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/shiryu/special25.png
 	frame	data/chars/shiryu/special26.png
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/shiryu/special27.png
 	frame	data/chars/shiryu/special28.png
+	attack5 -4 -7 100 140 5 1 0 0 5 30
+	dropv 	3 5
 	frame	data/chars/shiryu/special29.png
 	frame	data/chars/shiryu/special30.png
 	frame	data/chars/shiryu/special31.png
 	@cmd 	spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
-	attack5 0 -50 100 180 10 1 0 0 5 12
 	@cmd	shooter "shiryu_big_dragon" 77 80 0 2 0 0
 	frame	data/chars/shiryu/special32.png
 	frame	data/chars/shiryu/special33.png
