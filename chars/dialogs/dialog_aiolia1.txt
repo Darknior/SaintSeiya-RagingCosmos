@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 0
 	frame	data/chars/dialogs/empty.png
 
-		delay	100
+		delay	50
 	@cmd setVar "line1" "Aiolia! I'm happy to see you! We"
 	@cmd setVar "line2" "can count on you to help us,"
 	@cmd setVar "line3" "right?"

@@ -1,6 +1,6 @@
 name		june
 
-health		3000
+health		500
 mp 			100
 
 type		enemy

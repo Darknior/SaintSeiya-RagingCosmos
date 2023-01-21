@@ -1,5 +1,5 @@
 name		milo
-health		3000
+health		700
 mp 			100
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -357,6 +357,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale Scorpion
 	delay	10
 	offset	103 140
+	energycost  15 1 0
 	sound data/chars/aiolia/04-swing.wav
 	hitflash flashbig
 	@cmd 	spawnbind "milo_scorpion" "ANI_IDLE" 0 0 0 0 0
@@ -381,6 +382,7 @@ anim special # Défense spéciale Scorpion
 anim freespecial6 # Ultra Scarlet Needle
 	delay	10
 	offset	44 129
+	energycost  50 1 0
 	hitflash milo_blood
 	fastattack 1
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
@@ -573,6 +575,7 @@ anim	block
 anim freespecial5 # Ultra Antares
 	delay	10
 	offset	41 166
+	energycost  50 1 0
 	hitflash milo_blood
 	fastattack 1
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0

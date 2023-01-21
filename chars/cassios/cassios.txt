@@ -1,7 +1,7 @@
 name		cassios
 
-health		3000
-mp 			100
+health		500
+mp 			50
 speed		12	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 

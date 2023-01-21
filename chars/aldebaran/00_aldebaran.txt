@@ -1,5 +1,5 @@
 name		aldebaran
-health		5000
+health		700
 mp 			100
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -397,6 +397,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Earthquake
 	delay	10
 	offset	37 163
+	energycost  20 1 0
 	sound data/chars/aldebaran/02-swing.wav
         hitflash blue_swing
 	@cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 0 0
@@ -568,7 +569,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	frame	data/chars/aldebaran/special40.png
 	spawnframe 0 0 0 0 1
 	subentity aldebaran_ultraGH_back
-	energycost  20 1 0
+	energycost  50 1 0
 	frame	data/chars/aldebaran/special41.png
 	frame	data/chars/aldebaran/special42.png
 	frame	data/chars/aldebaran/special43.png

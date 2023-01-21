@@ -1,5 +1,5 @@
 name		tremi
-health		3000
+health		500
 mp 			100
 type		enemy
 
@@ -260,6 +260,7 @@ anim attack5 # Attaque combo 5
 anim special # tremi Jumping
 	delay	5
 	offset	80 141
+	energycost  25 1 0
 	sound data/chars/tremi/04-skywalk.wav
 	hitflash tremi_slash
 	frame	data/chars/tremi/jump1.png
@@ -307,6 +308,7 @@ anim special # tremi Jumping
 anim special3 # Arrow defense
 	delay	10
 	offset	52 119
+	energycost  25 1 0
 	fastattack 1
 	sound data/chars/tremi/02.wav
 	summonframe 0 120 0 0
@@ -376,6 +378,7 @@ anim special3 # Arrow defense
 anim freespecial # Arrow defense
 	delay	10
 	offset	52 119
+	energycost  25 1 0
 	fastattack 1
 	sound data/chars/tremi/02.wav
 	summonframe 0 120 0 0

@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 0
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "Die Seiya! Lightning plasma..."
 	@cmd setVar "line2" ""
 	@cmd setVar "line3" ""

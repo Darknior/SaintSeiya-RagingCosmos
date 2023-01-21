@@ -564,7 +564,7 @@ anim freespecial2 # Fureur du Dragon
 	offset	47 130
 	summonframe 0 0 0 0 0
 	subentity shiryu_aura_ryuseiken
-	energycost  20 1 0
+	energycost  25 1 0
 	fastattack 1
 	hitflash flashbig
 	@cmd 	spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 1 0
@@ -607,7 +607,7 @@ anim freespecial6 # Rozan Shoryuha ( haut + bouton special)
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
 	subentity shiryu_constellation
-	energycost  20 1 0
+	energycost  50 1 0
 	@cmd 	spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 1 0
 	attack5 -4 -7 100 140 5 1 0 0 5 30
 	dropv 	3 5

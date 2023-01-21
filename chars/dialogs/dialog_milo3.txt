@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "You will die Hyoga! No one has been"
 	@cmd setVar "line2" "able to survive multiple scorpion"
 	@cmd setVar "line3" "stings so far; receive the last"

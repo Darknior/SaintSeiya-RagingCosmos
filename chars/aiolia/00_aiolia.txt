@@ -1,5 +1,5 @@
 name		aiolia
-health		5000
+health		700
 mp 			100
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -443,7 +443,7 @@ anim freespecial6 #ULTRA Lightning Plasma
 	fastattack 1
 	spawnframe 0 0 0 0 1
 	subentity aiolia_constellation
-	energycost  20 1 0
+	energycost  50 1 0
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
         @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
@@ -540,7 +540,7 @@ anim freespecial3 #Lion star shot
 	range 200 400
 	delay	10
 	offset	35 128
-	energycost  15 1 0
+	energycost  20 1 0
 	bbox 13 7 50 120
 	frame	data/chars/aiolia/special21.png
 	frame	data/chars/aiolia/special22.png

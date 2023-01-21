@@ -1,5 +1,5 @@
 name		camus
-health		5000
+health		700
 mp 			100
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -329,7 +329,7 @@ anim special # Défense spéciale Ice pike
 	delay	15
 	offset	70 154
 	sound data/chars/camus/07-icewall.wav
-	energycost  10 1 0
+	energycost  25 1 0
         hitflash marin_swing
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
@@ -357,7 +357,7 @@ anim freespecial3 #Camus ice star
 	range 200 400
 	delay	10
 	offset	70 154
-	energycost  15 1 0
+	energycost  25 1 0
 	bbox 47 28 50 130
 	frame	data/chars/camus/special1.png
 	frame	data/chars/camus/special2.png
@@ -387,7 +387,7 @@ anim special2 # Défense spéciale icecrystal
 	delay	10
 	offset	70 154
 	sound data/chars/camus/07-icewall.wav
-	energycost  10 1 0
+	energycost  25 1 0
         hitflash marin_swing
 	summonframe 0 0 0 0
 	subentity camus_icecrystal
@@ -418,7 +418,7 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
 	frame	data/chars/camus/special29.png
 	spawnframe 0 0 0 0 1
 	subentity camus_constellation
-	energycost  20 1 0
+	energycost  50 1 0
         @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/camus/special21.png
 	frame	data/chars/camus/special22.png

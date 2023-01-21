@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "You are quite resistant; but, do"
 	@cmd setVar "line2" "you think you can resist the "
 	@cmd setVar "line3" "bloody corpion stings Hyoga? "

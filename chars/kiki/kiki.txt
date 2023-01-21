@@ -1,6 +1,6 @@
 
 name	KIKI
-health	500
+health	20
 speed	20
 type	npc
 

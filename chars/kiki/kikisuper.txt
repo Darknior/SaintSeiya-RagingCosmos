@@ -1,5 +1,5 @@
 name	kikisuper
-health	90
+health	30
 type	none
 remove   1
 speed	25

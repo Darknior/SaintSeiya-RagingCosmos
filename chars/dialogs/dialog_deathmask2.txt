@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "You guys are tougher than I"
 	@cmd setVar "line2" "thought! Let's continue this fight in"
 	@cmd setVar "line3" "the realm of the dead! By the waves"

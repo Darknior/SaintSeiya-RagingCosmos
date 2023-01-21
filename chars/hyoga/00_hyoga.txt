@@ -540,7 +540,6 @@ anim freespecial3 # Défense spéciale explosion du cosmos
 	delay	5
 	offset	35 141
 	@cmd 	spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
-	energycost  10 1 0
 	hitflash flashbig
 	sound data/chars/hyoga/00-cosmos.wav
 	bbox 7 23 50 120
@@ -562,7 +561,7 @@ anim freespecial3 # Défense spéciale explosion du cosmos
 anim freespecial2 # Diamond Dust (2 projectiles)
 	delay	10
 	offset	45 151
-	energycost  10 1 0
+	energycost  25 1 0
 	fastattack 1
 	hitflash flashbig
 	sound data/chars/hyoga/01.wav
@@ -601,13 +600,13 @@ anim freespecial2 # Diamond Dust (2 projectiles)
 anim freespecial6 # Aurora Thunder Attack ( haut + bouton special)
 	delay	10
 	offset	45 148
+	energycost  50 1 0
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "camus_lights" 0 0 0 0
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
 	subentity hyoga_constellation
-	energycost  20 1 0
 	@cmd 	spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/hyoga/upspecial1.png
 	frame	data/chars/hyoga/upspecial2.png

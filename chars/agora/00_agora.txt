@@ -37,7 +37,7 @@ death 		1   # Active l'animation de mort
 sleepwait 	1000 #Temps en centisecondes avant de jouer l'anim sleep
 
 ## CUSTOM BOSS LIFEBAR
-lifebarstatus 50 9 1 1 0 -500 -500 1 -500
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 ondrawscript	data/scripts/lifebar.c
 

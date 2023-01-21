@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 0
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "You will never reach the room of"
 	@cmd setVar "line2" "the Pope! The road is covered with"
 	@cmd setVar "line3" "poisonous roses... Their perfume"

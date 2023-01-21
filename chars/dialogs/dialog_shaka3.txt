@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "Without your 5 senses, your body"
 	@cmd setVar "line2" "is just a piece of meat now..."
 	@cmd setVar "line3" ""

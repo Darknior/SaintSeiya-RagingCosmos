@@ -1,5 +1,5 @@
 name		deathmask
-health		5000
+health		700
 mp 			100
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -365,7 +365,7 @@ anim special # Défense spéciale circles
 	summonframe 0 0 0 0
 	subentity deathmask_melee
 	unsummonframe 22
-	energycost  10 1 0
+	energycost  25 1 0
 	hitflash flashbig
 	bbox 9 29 50 140
 	frame	data/chars/deathmask/special1.png
@@ -386,7 +386,7 @@ anim freespecial2 # Défense spéciale circles
 	summonframe 0 0 0 0
 	subentity deathmask_melee
 	unsummonframe 5
-	energycost  10 1 0
+	energycost  25 1 0
 	hitflash flashbig
 	bbox 9 29 50 140
 	frame	data/chars/deathmask/special1.png
@@ -407,7 +407,7 @@ anim special2 # Défense spéciale circles
 	summonframe 0 0 0 0
 	subentity deathmask_melee
 	unsummonframe 5
-	energycost  10 1 0
+	energycost  25 1 0
 	hitflash flashbig
 	bbox 9 29 50 140
 	frame	data/chars/deathmask/special1.png
@@ -428,7 +428,7 @@ anim riseattack # Défense spéciale circles
 	summonframe 0 0 0 0
 	subentity deathmask_melee
 	unsummonframe 5
-	energycost  10 1 0
+	energycost  25 1 0
 	hitflash flashbig
 	bbox 9 29 50 140
 	frame	data/chars/deathmask/special1.png
@@ -455,7 +455,7 @@ anim freespecial3 # Spirit hands
 	range 200 400
 	delay	10
 	offset	35 128
-	energycost  15 1 0
+	energycost  25 1 0
 	sound data/chars/deathmask/05-spirit.wav
 	bbox 28 14 50 120
 	frame	data/chars/deathmask/attack1.png
@@ -471,6 +471,7 @@ anim freespecial3 # Spirit hands
 anim freespecial6 # Meikai ha
 	delay	50
 	offset	36 173
+	energycost  50 1 0
 	fastattack 1
 	summonframe 0 0 0 0 1
 	subentity deathmask_constellation

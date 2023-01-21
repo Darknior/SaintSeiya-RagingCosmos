@@ -1,5 +1,5 @@
 name		shaina
-health		3000
+health		700
 mp 			100
 type		enemy
 
@@ -300,7 +300,7 @@ anim freespecial3 #Cobra shoot
 	range 190 300
 	delay	15
 	offset	43 131
-	energycost  15 1 0
+	energycost  20 1 0
 	sound data/chars/shaina/13-claw3.wav
 	bbox 25 29 50 100
 	frame	data/chars/shaina/attack31.png

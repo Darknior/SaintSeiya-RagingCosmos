@@ -1,5 +1,5 @@
 name		saga
-health		5000
+health		800
 mp 			100
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur

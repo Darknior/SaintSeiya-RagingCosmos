@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "It's time to put an end to this fight"
 	@cmd setVar "line2" "phoenix! You will receive the"
 	@cmd setVar "line3" "treasure of heaven."

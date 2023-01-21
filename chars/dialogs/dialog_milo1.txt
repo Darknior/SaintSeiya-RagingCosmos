@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	80
+		delay	50
 	@cmd setVar "line1" "Welcome Bronze Knight!"
 	@cmd setVar "line2" ""
 	@cmd setVar "line3" ""

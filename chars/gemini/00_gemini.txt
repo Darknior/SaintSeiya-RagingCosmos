@@ -1,5 +1,5 @@
 name		gemini
-health		5000
+health		700
 mp 			100
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -336,6 +336,7 @@ anim special # Défense spéciale Melee
 	delay	7
 	offset	66 144
 	fastattack 1
+	energycost  25 1 0
 	sound data/chars/gemini/02-ahah.wav
         @cmd 	spawnbind "gemini_clones" "ANI_IDLE" 0 0 0 1 0
 	summonframe 10 0 0 0 0
@@ -435,7 +436,7 @@ anim special # Défense spéciale Melee
 anim special2 #Attaque spéciale Punch combo
 	fastattack 1
 	forcedirection -1
-	energycost  20 1 0
+	energycost  25 1 0
 	delay	6
 	offset	66 144
 	bbox 21 11 38 151
@@ -500,7 +501,7 @@ anim freespecial2 # Attaque spéciale Punch combo
 	hitflash flashbig
 	fastattack 1
 	forcedirection -1
-	energycost  20 1 0
+	energycost  25 1 0
 	delay	6
 	offset	66 144
 	bbox 21 11 38 151
@@ -562,6 +563,7 @@ anim freespecial2 # Attaque spéciale Punch combo
 anim freespecial6 # Another dimension
 	delay	10
 	offset	66 144
+	energycost  50 1 0
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
         @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0

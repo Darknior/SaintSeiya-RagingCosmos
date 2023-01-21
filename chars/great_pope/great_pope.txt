@@ -1,7 +1,7 @@
 name		great_pope
 
-health		1000
-mp 			100
+health		700
+mp 			50
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)

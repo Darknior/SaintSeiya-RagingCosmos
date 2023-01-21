@@ -1,6 +1,6 @@
 name		marin
 
-health		3000
+health		500
 mp 			100
 type		enemy
 
@@ -243,6 +243,7 @@ anim attack5 # Attaque combo 5
 anim special # Eagle homerun
 	delay	10
 	offset	24 112
+	energycost  10 1 0
 	sound data/chars/marin/01-explosion.wav
         hitflash marin_swing
 	@cmd 	spawnbind "marin_stormC" "ANI_IDLE" 0 0 0 0 0
@@ -349,7 +350,7 @@ anim freespecial2 # Eagle projectile
 	#summonframe 0 0 0 0 0
 	#subentity constellation
 	#unsummonframe 27
-	energycost  20 1 0
+	energycost  25 1 0
 	hitflash flashbig
 	attack5 -8 -64 100 180 10 1 0 0 5 12
 	frame	data/chars/marin/special1.png

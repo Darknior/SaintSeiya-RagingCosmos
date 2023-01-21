@@ -1,6 +1,6 @@
 
 name	KIKI2
-health	100
+health	30
 speed	7
 type	enemy
 

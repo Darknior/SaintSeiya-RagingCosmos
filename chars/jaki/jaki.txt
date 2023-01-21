@@ -1,7 +1,7 @@
 name		jaki
 
-health		3000
-mp 			100
+health		500
+mp 			50
 dust		fall_dust # Default "dust entity" using the native "Dust" function
 bflash tremi_block
 type		enemy

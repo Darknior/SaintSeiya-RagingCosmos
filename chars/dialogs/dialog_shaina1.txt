@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 0
 	frame	data/chars/dialogs/empty.png
 
-		delay	400
+		delay	50
 	@cmd setVar "line1" "How dare you come here to the"
 	@cmd setVar "line2" "sanctuary! We both have a revenge"
 	@cmd setVar "line3" "to take;  it's my student cassios "

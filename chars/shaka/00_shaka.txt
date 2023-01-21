@@ -1,5 +1,5 @@
 name		shaka
-health		5000
+health		700
 mp 			100
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -388,6 +388,7 @@ anim jumpattack # Attaque sautée statique
 anim freespecial5 # Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
+	energycost  50 1 0
         hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
@@ -515,6 +516,7 @@ anim freespecial5 # Défense spéciale Blood Sea
 anim riseattack# Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
+	energycost  50 1 0
         hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
@@ -642,6 +644,7 @@ anim riseattack# Défense spéciale Blood Sea
 anim special# Défense spéciale Melee
 	delay	7
 	offset	66 144
+	energycost  20 1 0
 	fastattack 1
 	sound data/chars/shaka/01-tenmakosen.wav
 	@cmd 	spawnbind "shaka_aura" "ANI_IDLE" 0 0 0 0 0
@@ -811,6 +814,7 @@ anim freespecial3 # Shaka hands
 anim freespecial6 # Ten Bu Ho Rin
 	delay	20
 	offset	66 149
+	energycost  50 1 0
         hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav

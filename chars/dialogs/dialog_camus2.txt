@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "This time it's the end, I'm going"
 	@cmd setVar "line2" "to use my ultimate ice technique,"
 	@cmd setVar "line3" "the one that reaches the coldest"

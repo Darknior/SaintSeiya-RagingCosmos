@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "What? He managed to hit all my"
 	@cmd setVar "line2" "vital points! Without the specific"
 	@cmd setVar "line3" "resistance of my armor I would be"

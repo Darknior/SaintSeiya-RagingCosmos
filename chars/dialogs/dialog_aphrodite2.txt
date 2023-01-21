@@ -13,7 +13,7 @@ anim idle
 	@cmd setVar "lockButton" 1
 	frame	data/chars/dialogs/empty.png
 
-		delay	600
+		delay	50
 	@cmd setVar "line1" "Farewell Shun! You will suffer my"
 	@cmd setVar "line2" "most fearsome attack, the evil white"
 	@cmd setVar "line3" "rose! This rose will absorb your"

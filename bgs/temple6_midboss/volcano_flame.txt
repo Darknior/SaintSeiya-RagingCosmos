@@ -1,7 +1,7 @@
 name	volcano_flame
 type	none
 shadow	0
-setlayer 1
+setlayer -1000
 
 anim	idle
 	loop	1
