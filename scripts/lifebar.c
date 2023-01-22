@@ -20,13 +20,14 @@ void lifeBar()
 		int yIcon	= yLife-46;
 		int layer1	= 10000;
 		int layer2	= 60000;
+		int layer3	= 50000;
 
 		//LOAD ASSETS
 		if(getglobalvar("charIcon3") == NULL()){setglobalvar("charIcon3", loadsprite("data/sprites/charicon3.png"));}
 		if(getglobalvar("lifebar3") == NULL()){setglobalvar("lifebar3", loadsprite("data/sprites/lifebar3.png"));}			
 
 		//ADJUST BOSSES HUD POSITION
-		changeentityproperty(self, "lifeposition", xLife, yLife);
+		changeentityproperty(self, "lifeposition", 9999, 9999);
 		changeentityproperty(self, "nameposition", xName, yName);
 		changeentityproperty(self, "iconposition", xIcon, yIcon);
 
@@ -34,6 +35,19 @@ void lifeBar()
 		drawsprite(getglobalvar("charIcon3"), xLife, yLife-47, layer1); //BOSS CHARACTER ICON OVERLAY
 		setdrawmethod(NULL(),1,256,256,0,0,0,2);
 		drawsprite(getglobalvar("lifebar3"), xLife, yLife+1, layer2); //BOSS LIFEBAR OVERLAY
+
+		//DRAW CUSTOM LIFE BARS
+		int maxLife	= getentityproperty(self, "maxhealth");
+		int life	= getentityproperty(self, "health");
+		float xSize	= 300; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER LIFE)
+		float ySize	= 9; //BAR HEIGHT INCREASE FACTOR, MORE VALUE IS MORE SIZE
+
+		//LIFE BAR
+		if(life > 0){
+			life	= (life*xSize)/(maxLife); //CALCULATE REMAINING LIFE BAR SIZE
+			maxLife	= (maxLife*xSize)/(maxLife); //CALCULATE MAX LIFE BAR SIZE
+			drawbox(xLife+1, yLife+1, life, ySize, layer3, rgbcolor(255,255,255), 0); //YELLOW BAR, LIFE REMAINING
+		}
 	}
 	else
 	{

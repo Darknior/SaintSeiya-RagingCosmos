@@ -186,7 +186,6 @@ void overlayFunction(void player, int pIndex)
 		if(exists){
 			void target	= getentityproperty(player, "opponent");
 			int noLife	= getentityproperty(target, "nolife");
-			int mHealth	= getentityproperty(target, "maxhealth");
 			int xPos	= 6;
 			int xDif	= 200;
 			int xAdd	= xDif*pIndex;
@@ -199,6 +198,7 @@ void overlayFunction(void player, int pIndex)
 			int yText2	= 79;
 			int layer1	= 10000;
 			int layer2	= 60000;
+			int layer3	= 50000;
 
 			//LOAD ASSETS
 			if(getglobalvar("charIcon1") == NULL()){setglobalvar("charIcon1", loadsprite("data/sprites/charicon1.png"));}
@@ -207,7 +207,7 @@ void overlayFunction(void player, int pIndex)
 			if(getglobalvar("lifebar2") == NULL()){setglobalvar("lifebar2", loadsprite("data/sprites/lifebar2.png"));}
 			if(getglobalvar("mpbar") == NULL()){setglobalvar("mpbar", loadsprite("data/sprites/mpbar.png"));}
 
-			//PLAYERS
+			//PLAYERS OVERLAY
 			setdrawmethod(NULL(),0,256,256,0,0,0,0);
 			drawsprite(getglobalvar("charIcon1"), xPos+xAdd, yPos1, layer1); //PLAYER CHARACTER ICON OVERLAY
 			setdrawmethod(NULL(),1,256,256,0,0,0,2);
@@ -215,15 +215,59 @@ void overlayFunction(void player, int pIndex)
 			drawsprite(getglobalvar("mpbar"), xPos+xAdd, yPos1+yAdd2, layer2); //PLAYER MPBAR OVERLAY
 			drawstring(xPos+xAdd, yPos1+yText1, 0, "energy", layer1);
 			drawstring(xPos+xAdd, yPos1+yText2, 0, "cosmos", layer1);
+
+			//DRAW CUSTOM LIFE BARS
+			int pIndex		= getentityproperty(player, "playerindex");
+			int maxPLife	= getentityproperty(player, "maxhealth");
+			int maxELife	= getentityproperty(target, "maxhealth");
+			int pLife		= getentityproperty(player, "health");
+			int eLife		= getentityproperty(target, "health");
+			int maxMp		= getentityproperty(player, "maxmp");
+			int mp			= getentityproperty(player, "mp");
+			int xPLife		= 7;
+			int xELife		= 7;
+			int xMp			= 7;
+			int yPLife		= 69;
+			int yELife		= 141;
+			int yMp			= 94;
+			int xDif		= 200;
+			int xAdd		= xDif*pIndex;
+			float xLSize	= 150; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER LIFE)
+			float xESize	= 75; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (ENEMY LIFE)
+			float xMSize	= 100; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER MP)
+			float ySize		= 9; //BAR HEIGHT INCREASE FACTOR, MORE VALUE IS MORE SIZE
+
+			//PLAYERS
+			if(pLife > 0){
+
+				//LIFE BAR
+				pLife		= (pLife*xLSize)/(maxPLife); //CALCULATE REMAINING LIFE BAR SIZE
+				maxPLife	= (maxPLife*xLSize)/(maxPLife); //CALCULATE MAX LIFE BAR SIZE
+				drawbox(xPLife+xAdd, yPLife, pLife, ySize, layer3, rgbcolor(255,255,255), 0); //YELLOW BAR, LIFE REMAINING
+				
+				//MP BAR
+				mp			= (mp*xMSize)/(maxMp); //CALCULATE REMAINING LIFE BAR SIZE
+				maxMp		= (maxMp*xMSize)/(maxMp); //CALCULATE MAX LIFE BAR SIZE
+				drawbox(xMp+xAdd, yMp, mp, ySize, layer3, rgbcolor(255,255,255), 0); //YELLOW BAR, LIFE REMAINING
+			}
 			
 			//OPPONENTS
 			if(target != NULL()){
 				if(type == openborconstant("TYPE_PLAYER")){
 					if(!noLife){ //ENEMIES
+
+						//OPPONENTS OVERLAY
 						setdrawmethod(NULL(),0,256,256,0,0,0,0);
 						drawsprite(getglobalvar("charIcon2"), xPos+xAdd, yPos2, layer1); //OPPONENT CHARACTER ICON OVERLAY
 						setdrawmethod(NULL(),1,256,256,0,0,0,2);
 						drawsprite(getglobalvar("lifebar2"), xPos+xAdd, yPos2+yAdd3, layer2); //OPPONENT LIFEBAR OVERLAY
+
+						//LIFE BAR
+						if(pLife > 0){
+							eLife		= (eLife*xESize)/(maxELife); //CALCULATE REMAINING LIFE BAR SIZE
+							maxELife	= (maxELife*xESize)/(maxELife); //CALCULATE MAX LIFE BAR SIZE
+							drawbox(xELife+xAdd, yELife, eLife, ySize, layer3, rgbcolor(255,255,255), 0); //YELLOW BAR, LIFE REMAINING
+						}
 					}
 				}
 			}
