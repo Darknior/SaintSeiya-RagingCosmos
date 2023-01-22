@@ -72,6 +72,23 @@ void mpcost( int Cost)
     changeentityproperty(self, "mp", MP-Cost); //Spend!
 }
 
+void keyLoop(void key, int frame)
+{//Loops defined frame if defined key is held
+	void self	= getlocalvar("self");
+	int iPIndex	= getentityproperty(self,"playerindex");
+
+	if(playerkeys(iPIndex, 0, key)){updateframe(self, frame);}
+}
+
+void addMp(int add)
+{//Add mp according to the defined amount
+	void self = getlocalvar("self");
+  int maxMp = getentityproperty(self, "maxmp");
+  int mp    = getentityproperty(self, "mp");
+
+	if(mp < maxMp){changeentityproperty(self, "mp", mp+add);}
+}
+
 void aniLimit(void Ani, int Frame, int Limit)
 {// Change current animation if MP falls below limit
     void self = getlocalvar("self");
