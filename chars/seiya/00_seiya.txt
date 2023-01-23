@@ -244,8 +244,8 @@ sound   data/chars/seiya/06-jump1.wav
 anim run
 	loop	1 3 8
 	delay	8
-	offset	48 128
-	bbox 21 13 51 115
+	offset	45 112
+	bbox 23 -1 51 115
     sound   data/chars/seiya/20-run1.wav
 	frame	data/chars/seiya/run1.png
 	frame	data/chars/seiya/run2.png
