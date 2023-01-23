@@ -408,63 +408,63 @@ anim attack5 # Attaque combo 5
 anim freespecial # Attaque arrière (saut + attaque)
 	flipframe 1
 	offset	45 140
-	bbox 21 28 51 112
+	bbox 	21 28 51 112
 	fastattack 1
 	hitflash blue_swing
 	delay	5
-sound   data/chars/seiya/17-back_kick.wav
+	sound   data/chars/seiya/17-back_kick.wav
 	@cmd 	spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/hyoga/attackbackward1.png
-	attack -14 93 130 50 15 0 0 0 0 20
+	attack 	-14 93 130 50 15 0 0 0 0 20
 	frame	data/chars/hyoga/attackbackward2.png
 	attack1 0
 	frame	data/chars/hyoga/attackbackward3.png
 	attack1 0 64 130 50 15 1 0 0 0 20
-	bbox 61 22 50 120
+	bbox 	61 22 50 120
 	frame	data/chars/hyoga/attackbackward4.png
 	attack1 0
 	frame	data/chars/hyoga/attackbackward5.png
-	attack 14 20 130 50 15 0 0 0 0 20
+	attack 	14 20 130 50 15 0 0 0 0 20
 	frame	data/chars/hyoga/attackbackward6.png
 	attack1 0
 	frame	data/chars/hyoga/attackbackward7.png
-	attack 51 41 130 50 15 1 0 0 0 20
-	bbox 90 23 50 120
+	attack 	51 41 130 50 15 1 0 0 0 20
+	bbox 	90 23 50 120
 	frame	data/chars/hyoga/attackbackward8.png
 	attack1 0
 	delay   12
-	bbox 26 21 50 120
+	bbox 	26 21 50 120
 	frame	data/chars/hyoga/attackbackward1.png	
 
 anim attackboth # Attaque arrière (bouton saut + attaque)
 	flipframe 1
 	offset	45 140
-	bbox 21 28 51 112
+	bbox 	21 28 51 112
 	fastattack 1
 	hitflash blue_swing
 	delay	5
-sound   data/chars/seiya/17-back_kick.wav
+	sound   data/chars/seiya/17-back_kick.wav
 	@cmd 	spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/hyoga/attackbackward1.png
-	attack -14 93 130 50 15 0 0 0 0 20
+	attack 	-14 93 130 50 15 0 0 0 0 20
 	frame	data/chars/hyoga/attackbackward2.png
 	attack1 0
 	frame	data/chars/hyoga/attackbackward3.png
 	attack1 0 64 130 50 15 1 0 0 0 20
-	bbox 61 22 50 120
+	bbox 	61 22 50 120
 	frame	data/chars/hyoga/attackbackward4.png
 	attack1 0
 	frame	data/chars/hyoga/attackbackward5.png
-	attack 14 20 130 50 15 0 0 0 0 20
+	attack 	14 20 130 50 15 0 0 0 0 20
 	frame	data/chars/hyoga/attackbackward6.png
 	attack1 0
 	frame	data/chars/hyoga/attackbackward7.png
-	attack 51 41 130 50 15 1 0 0 0 20
-	bbox 90 23 50 120
+	attack 	51 41 130 50 15 1 0 0 0 20
+	bbox 	90 23 50 120
 	frame	data/chars/hyoga/attackbackward8.png
 	attack1 0
 	delay   12
-	bbox 26 21 50 120
+	bbox 	26 21 50 120
 	frame	data/chars/hyoga/attackbackward1.png	
 	
 anim freespecial4 # Attaque arrière (à partir d'un cancel)

@@ -402,14 +402,14 @@ anim attackboth # Attaque arrière (bouton saut + attaque)
 	bbox 21 15 51 115
 	hitflash flashbig
 	delay	7
-sound   data/chars/shiryu/17-back_kick.wav
+	sound   data/chars/shiryu/17-back_kick.wav
 	flipframe 1
 	fastattack 1
 	offset	60 130
 	bbox 21 15 51 115
 	hitflash flashbig
 	delay	7
-        sound   data/chars/shiryu/17-back_kick.wav
+    sound   data/chars/shiryu/17-back_kick.wav
 	attack1 0
 	frame	data/chars/shiryu/attackbackward1.png
 	attack1 0
@@ -445,34 +445,35 @@ anim freespecial # Attaque arrière (à partir d'un cancel)
 	bbox 21 15 51 115
 	hitflash flashbig
 	delay	7
-        sound   data/chars/shiryu/17-back_kick.wav
+    sound   data/chars/shiryu/17-back_kick.wav
 	attack1 0
 	frame	data/chars/shiryu/attackbackward1.png
 	attack1 0
 	frame	data/chars/shiryu/attackbackward2.png
-	bbox 43 31 50 100
-	attack 7 28 120 35 5 0 0 0 0 30
+	bbox 	43 31 50 100
+	attack 	7 28 120 35 5 0 0 0 0 30
 	frame	data/chars/shiryu/attackbackward3.png
 	attack1 0
 	@cmd 	spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/shiryu/attackbackward4.png
-	attack1 55 35 84 29 5 1 0 0 0 30
-	frame	data/chars/shiryu/attackbackward5.png
-	attack1 0
-	frame	data/chars/shiryu/attackbackward6.png
-	attack 9 23 120 35 5 1 0 0 0 30
-	frame	data/chars/shiryu/attackbackward7.png
-	frame	data/chars/shiryu/attackbackward8.png
-	attack1 10 35 120 29 5 1 0 0 0 30
-	frame	data/chars/shiryu/attackbackward6.png
-	attack1 0
-	frame	data/chars/shiryu/attackbackward4.png
-	attack 10 33 120 35 5 1 1 0 0 30
+#	attack1 55 35 84 29 5 1 0 0 0 30
+#	frame	data/chars/shiryu/attackbackward5.png
+#	attack1 0
+#	frame	data/chars/shiryu/attackbackward6.png
+#	attack 	9 23 120 35 5 1 0 0 0 30
+#	frame	data/chars/shiryu/attackbackward7.png
+#	frame	data/chars/shiryu/attackbackward8.png
+#	attack1 10 35 120 29 5 1 0 0 0 30
+#	frame	data/chars/shiryu/attackbackward6.png
+#	attack1 0
+#	frame	data/chars/shiryu/attackbackward4.png
+	attack 	10 33 120 35 5 1 1 0 0 30
 	frame	data/chars/shiryu/attackbackward3.png
-	delay   12
-	bbox 16 29 50 100
+#	delay   12
+	delay   6
+	bbox 	16 29 50 100
 	attack1 0
-	frame	data/chars/shiryu/attackbackward1.png		
+	frame	data/chars/shiryu/attackbackward1.png
 
 anim grab
 	delay	7

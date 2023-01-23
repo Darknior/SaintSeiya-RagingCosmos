@@ -426,11 +426,12 @@ anim attack6 # Attaque combo 6
 	frame	data/chars/ikki/attack66.png
 	
 anim attackbackward # Attaque arrière (Arrière + attaque)
+	flipframe 1
 	offset	82 140
 	fastattack 1
 	hitflash flashbig
 	delay	5
-sound   data/chars/ikki/17-back_kick.wav
+	sound   data/chars/ikki/17-back_kick.wav
 	frame	data/chars/ikki/attackbackward0.png
 	frame	data/chars/ikki/attackbackward1.png
 	attack1 0
