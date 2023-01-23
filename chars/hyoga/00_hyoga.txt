@@ -341,7 +341,7 @@ anim attack1 # Attaque combo 1
 	offset	45 140
 	bbox 21 28 51 112
 	frame	data/chars/hyoga/attack1.png
-	attack1 62 44 67 26 10 0 0 0 5 12
+	attack1 62 44 67 26 10 0 0 0 10 12
 	frame	data/chars/hyoga/attack2.png
 	frame	data/chars/hyoga/attack3.png
 	frame	data/chars/hyoga/attack2.png
@@ -356,7 +356,7 @@ anim attack2 # Attaque combo 2
 	frame	data/chars/hyoga/attack22.png
 	frame	data/chars/hyoga/attack23.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 5 12
+	attack1 62 21 67 26 10 0 0 0 10 12
 	frame	data/chars/hyoga/attack24.png
 	frame	data/chars/hyoga/attack25.png
 	frame	data/chars/hyoga/attack26.png
@@ -371,7 +371,7 @@ anim attack3 # Attaque combo 3
 	frame	data/chars/hyoga/attack31.png
 	frame	data/chars/hyoga/attack32.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 5 12
+	attack1 62 21 67 26 10 0 0 0 10 12
 	frame	data/chars/hyoga/attack33.png
 	frame	data/chars/hyoga/attack34.png
 	frame	data/chars/hyoga/attack35.png
@@ -385,7 +385,7 @@ anim attack4 # Attaque combo 4
 	frame	data/chars/hyoga/attack41.png
 	frame	data/chars/hyoga/attack42.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 5 12
+	attack1 62 21 67 26 10 0 0 0 10 12
 	frame	data/chars/hyoga/attack43.png
 	frame	data/chars/hyoga/attack44.png
 	frame	data/chars/hyoga/attack45.png
@@ -401,7 +401,7 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/hyoga/attack51.png
 	frame	data/chars/hyoga/attack52.png
 	frame	data/chars/hyoga/attack53.png
-	attack1 62 53 67 37 20 1 0 0 5 12
+	attack1 62 53 67 37 20 1 0 0 10 12
 	frame	data/chars/hyoga/attack54.png
 	frame	data/chars/hyoga/attack55.png
 
@@ -539,24 +539,21 @@ sound   data/chars/hyoga/23-projection2.wav
 anim freespecial3 # Défense spéciale explosion du cosmos
 	delay	5
 	offset	35 141
-	@cmd 	spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
 	hitflash flashbig
 	sound data/chars/hyoga/00-cosmos.wav
 	bbox 7 23 50 120
 	frame	data/chars/hyoga/special1.png
 	frame	data/chars/hyoga/special2.png
 	frame	data/chars/hyoga/special3.png
+	@cmd 	spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/hyoga/special4.png
 	frame	data/chars/hyoga/special5.png
-	frame	data/chars/hyoga/special6.png
-	frame	data/chars/hyoga/special7.png
-	frame	data/chars/hyoga/special8.png
-	frame	data/chars/hyoga/special9.png
-	frame	data/chars/hyoga/special10.png
-	frame	data/chars/hyoga/special11.png
-	frame	data/chars/hyoga/special12.png
-	frame	data/chars/hyoga/special13.png
-	frame	data/chars/hyoga/special14.png
+	frame	data/chars/hyoga/special3.png
+	frame	data/chars/hyoga/special4.png
+	frame	data/chars/hyoga/special5.png
+	@cmd addMp 1.5
+	@cmd keyLoop "attack2" 3
+	frame	data/chars/hyoga/special3.png
 	
 anim freespecial2 # Diamond Dust (2 projectiles)
 	delay	10

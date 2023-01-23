@@ -312,7 +312,7 @@ anim attack1 # Attaque combo 1
 	offset	39 130
 	bbox 21 15 51 115
 	frame	data/chars/shiryu/attack1.png
-	attack1 62 21 67 26 10 0 0 0 5 12
+	attack1 62 21 67 26 10 0 0 0 10 12
 	frame	data/chars/shiryu/attack2.png
 	frame	data/chars/shiryu/attack3.png
 	frame	data/chars/shiryu/attack4.png
@@ -329,7 +329,7 @@ anim attack2 # Attaque combo 2
 	frame	data/chars/shiryu/attack22.png
 	frame	data/chars/shiryu/attack23.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 5 12
+	attack1 62 21 67 26 10 0 0 0 10 12
 	frame	data/chars/shiryu/attack24.png
 	frame	data/chars/shiryu/attack25.png
 	attack1 0
@@ -341,7 +341,7 @@ anim attack3 # Attaque combo 3
 	frame	data/chars/shiryu/attack31.png
 	frame	data/chars/shiryu/attack32.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 5 12
+	attack1 62 21 67 26 10 0 0 0 10 12
 	frame	data/chars/shiryu/attack33.png
 	attack1 0
 	
@@ -353,7 +353,7 @@ anim attack4 # Attaque combo 4
 	frame	data/chars/shiryu/attack41.png
 	frame	data/chars/shiryu/attack42.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 5 12
+	attack1 62 21 67 26 10 0 0 0 10 12
 	frame	data/chars/shiryu/attack43.png
 	frame	data/chars/shiryu/attack44.png
 	frame	data/chars/shiryu/attack45.png
@@ -368,7 +368,7 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/shiryu/attack52.png
 	frame	data/chars/shiryu/attack53.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 20 1 0 0 5 12
+	attack1 62 21 67 26 20 1 0 0 10 12
 	frame	data/chars/shiryu/attack54.png
 	frame	data/chars/shiryu/attack55.png
 	attack1 0
@@ -540,9 +540,6 @@ sound   data/chars/shiryu/23-projection2.wav
 anim freespecial3 # Défense spéciale explosion du cosmos
 	delay	10
 	offset	42 156
-	summonframe 0 0 0 0
-	subentity shiryu_aura
-	unsummonframe 7
 	energycost  10 1 0
 	hitflash flashbig
 	sound data/chars/shiryu/00-cosmos.wav
@@ -553,12 +550,13 @@ anim freespecial3 # Défense spéciale explosion du cosmos
 	frame	data/chars/shiryu/special4.png
 	frame	data/chars/shiryu/special5.png
 	frame	data/chars/shiryu/special6.png
+	@cmd 	spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shiryu/special7.png
 	frame	data/chars/shiryu/special8.png
-	attack5 0
-	frame	data/chars/shiryu/special5.png
-	frame	data/chars/shiryu/special4.png
-	frame	data/chars/shiryu/special3.png
+	frame	data/chars/shiryu/special7.png
+	@cmd addMp 1.5
+	@cmd keyLoop "attack2" 6
+	frame	data/chars/shiryu/special6.png
 	
 anim freespecial2 # Fureur du Dragon
 	delay	10
