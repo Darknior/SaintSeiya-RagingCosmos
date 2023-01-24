@@ -6,7 +6,8 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 dust		round_dustB
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 icon		data/chars/malesoldier/icon.png
 script	data/scripts/entity_effects.c
 

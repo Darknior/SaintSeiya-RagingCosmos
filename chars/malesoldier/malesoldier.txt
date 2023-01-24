@@ -13,7 +13,8 @@ hostile     player npc
 candamage 	player npc
 aimove      chase
 death 1
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 dust		round_dustB # Default "dust entity" using the native "Dust" function
 bflash tremi_block
 

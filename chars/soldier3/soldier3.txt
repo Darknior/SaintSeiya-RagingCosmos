@@ -23,7 +23,8 @@ death 		1
 nodieblink 0
 blocked 1
 gfxshadow 1
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 bflash tremi_block
 dust		fall_dust
 

@@ -24,17 +24,20 @@ noquake 	1 1
 escapehits  1
 nodieblink 	3
 death 		1
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 
 ## CUSTOM BOSS LIFEBAR
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
+
+animationscript	data/scripts/player.c
 ondrawscript	data/scripts/lifebar.c
 didhitscript	data/scripts/didhit/tint_gold.c
 script	data/scripts/entity_effects.c
 
 atchain 1 1 2 3 4 5
 
-animationscript	data/scripts/player.c
 
 load gemini_melee
 load gemini_dimension_back

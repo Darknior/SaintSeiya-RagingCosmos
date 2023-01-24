@@ -5,7 +5,8 @@ remove   1
 speed	20
 shadow	0
 dust		round_dustB
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 
 
 anim idle

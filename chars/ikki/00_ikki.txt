@@ -611,7 +611,7 @@ anim freespecial2 # Hoyoku Tensho
 	offset	90 195
 	summonframe 0 0 0 0 1
 	subentity ikki_constellation
-	energycost  25 1 0
+	energycost  50 1 0
 	hitflash shaka_flame
 	attack5 35 66 100 131 10 1 0 0 5 12
 	dropv 	3 5
@@ -722,7 +722,7 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
 	sound data/chars/deathmask/78-cosmos.wav
 	@cmd 	spawnScreen "ikki_lights" 0 0 0 0
 	#bbox 21 16 51 97
-	energycost  50 1 0
+	energycost  25 1 0
 	summonframe 0 0 0 0 0
 	subentity ikki_auraB
 	frame	data/chars/ikki/upspecial1.png

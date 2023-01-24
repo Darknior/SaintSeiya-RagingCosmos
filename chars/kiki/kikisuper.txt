@@ -4,7 +4,8 @@ type	none
 remove   1
 speed	25
 shadow	0
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 
 
 

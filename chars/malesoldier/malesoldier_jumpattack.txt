@@ -17,7 +17,8 @@ nodieblink 0
 noquake 1 1
 
 atchain 1 1 2
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 defense all 0	  # Invulnérable à toutes les attaques
 defense normal4 1 # Vulnérable aux attaques sautées
 

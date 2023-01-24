@@ -24,7 +24,8 @@ gfxshadow	1
 nodieblink 0
 blocked 1
 noquake 1 1
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 dust		round_dustB
 bflash tremi_block
 
@@ -33,6 +34,7 @@ subject_to_screen 0
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+
 palette data/chars/SOLDIER1-1/COLOR1.png
 
 load blood_ground_medium

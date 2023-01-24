@@ -29,11 +29,14 @@ noquake 	1 1
 escapehits  2
 nodieblink 	3
 death 		1
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 
 ## CUSTOM BOSS LIFEBAR
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 
+didhitscript	data/scripts/didhit/tint_silver.c
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c

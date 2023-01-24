@@ -24,14 +24,17 @@ noquake 	1 1
 escapehits  2
 nodieblink 	3
 falldie		2
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 
 ## CUSTOM BOSS LIFEBAR
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
-ondrawscript	data/scripts/lifebar.c
+
 
 atchain 1 1 2 3 4 5
 
+ondrawscript	data/scripts/lifebar.c
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_red.c
 script	data/scripts/entity_effects.c
@@ -54,6 +57,7 @@ load aldebaran_block
 load aldebaran_aura
 
 #----------------------------------------------------------
+
 anim spawn
 	delay	15
 	offset	44 158

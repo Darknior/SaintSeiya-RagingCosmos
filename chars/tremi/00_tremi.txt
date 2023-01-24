@@ -40,7 +40,7 @@ sleepwait 	1000 #Temps en centisecondes avant de jouer l'anim sleep
 ## CUSTOM BOSS LIFEBAR
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
-ondrawscript	data/scripts/lifebar.c
+
 #ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 
 atchain 	1 2 3 4 5 6# Attaque combo de base (anim attack 1, puis 2...)
@@ -49,6 +49,7 @@ icon       	data/chars/tremi/icon.png
 
 #weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 tremi
 
+ondrawscript	data/scripts/lifebar.c
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
 script	data/scripts/entity_effects.c

@@ -33,13 +33,14 @@ nodieblink 	3	# Ne clignote pas quand tu meurs
 weaploss  	2	# On ne perd son arme qu' à notre mort
 modelflag 	0	# L'animation et la liste d'armes sont copiées
 death 		1   # Active l'animation de mort
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 sleepwait 	1000 #Temps en centisecondes avant de jouer l'anim sleep
 
 ## CUSTOM BOSS LIFEBAR
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
-ondrawscript	data/scripts/lifebar.c
+
 
 atchain 	1 2 3 4 5 # Attaque combo de base (anim attack 1, puis 2...)
 
@@ -47,9 +48,9 @@ icon       	data/chars/agora/icon.png
 
 #weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 agora
 
+ondrawscript	data/scripts/lifebar.c
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
-script	data/scripts/entity_effects.c
 didhitscript	data/scripts/didhit/tint_silver.c
 
 load agora_lotus
