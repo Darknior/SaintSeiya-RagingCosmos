@@ -34,422 +34,424 @@ lifebarstatus 300 9 1 1 0 -500 -500 1 -500
 nolife 1
 
 
-atchain 1 1 2 3 4 5
-
 ondrawscript	data/scripts/lifebar.c
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_gold.c
 
-load shura_circle
-load shura_rundust
-load shura_slashB
-load shura_slashA
-load shura_constellation
-load shura_excalibur
-load shura_explosion
-load shura_excaliburB
-load shura_dash
-load aldebaran_block
-load aldebaran_aura
 
-#----------------------------------------------------------
-anim spawn
+
+
+
+
+anim	attack1
+	loop	0
+	delay	8
+	offset	72 153
+	bbox	63 39 17 117
+	frame	data/chars/shura/atk1.png
+	attack	73 53 59 67 8 0 0 0 0 0
+	delay	15
+	frame	data/chars/shura/atk2.png
+	delay	8
+	frame	data/chars/shura/atk1.png
+		
+anim	attack2
+	loop	0
+	delay	6
+	offset	67 153
+	bbox	64 35 17 118
+	frame	data/chars/shura/atk3.png
+	bbox	61 35 17 118
+	offset	60 153
+	frame	data/chars/shura/atk4.png
+	bbox	54 35 17 118
+	offset	43 153
+	frame	data/chars/shura/atk5.png
+	bbox	54 35 17 118
+	offset	39 153
 	delay	10
-	offset	78 131
-	frame	data/chars/shura/spawn1.png
-	sound data/chars/shura/09-laugh.wav
-	frame	data/chars/shura/spawn2.png
-	@cmd spawnDialog "dialog_shura1" 200 100
-	frame	data/chars/shura/spawn3.png
-	sound data/chars/shura/04-cloack.wav
-	frame	data/chars/shura/spawn4.png
-	frame	data/chars/shura/spawn5.png
-	frame	data/chars/shura/spawn6.png
-	frame	data/chars/shura/spawn7.png
-	frame	data/chars/shura/spawn8.png
-	frame	data/chars/shura/spawn9.png
-	frame	data/chars/shura/spawn10.png
-	frame	data/chars/shura/spawn11.png
-	frame	data/chars/shura/spawn12.png
-	frame	data/chars/shura/spawn13.png
-	frame	data/chars/shura/spawn14.png
-	frame	data/chars/shura/spawn15.png
-	frame	data/chars/shura/spawn16.png
-
-anim idle
+	attack	65 61 77 67 10 0 0 0 0 0
+	frame	data/chars/shura/atk6.png
+	bbox	54 35 17 118
+	offset	43 153
+	delay	6
+	frame	data/chars/shura/atk5.png
+	bbox	61 35 17 118
+	offset	60 153
+	frame	data/chars/shura/atk4.png
+	bbox	64 35 17 118
+	offset	67 153
+	frame	data/chars/shura/atk3.png
+		
+anim	attack3
+	loop	0
+	delay	6
+	offset	71 154
+	bbox	76 60 13 95
+	frame	data/chars/shura/atk7.png
+	bbox	65 57 13 95
+	offset	59 151
+	frame	data/chars/shura/atk11.png
+	sound	data/chars/shura/cut.wav
+	frame	data/chars/shura/atk8.png
+	frame	data/chars/shura/atk11.png
+	attack	72 43 96 110 15 1 1 0 0 0
+	frame	data/chars/shura/atk9.png
+	frame	data/chars/shura/atk11.png
+	bbox	57 73 13 95
+	offset	52 167
+	frame	data/chars/shura/atk10.png
+	bbox	65 57 13 95
+	offset	59 151
+	frame	data/chars/shura/atk11.png
+		
+anim	fall
+	loop	0
+	sound	data/voices/anddie2.wav
+	delay	15
+	offset	75 157
+	frame	data/chars/shura/fall1.png
+	offset	71 160
+	frame	data/chars/shura/fall2.png
+	attack	20 133 30 27 7 1 0 0 0 0
+	offset	71 151
+	frame	data/chars/shura/fall3.png
+		
+anim	freespecial
+	loop	0
+	sound	data/chars/shura/escalibur.wav
+	delay	5
+	offset	67 226
+	frame	data/chars/shura/fsp0.png
+	frame	data/chars/shura/fsp1.png
+	frame	data/chars/shura/fsp2.png
+	delay	2
+	attack	43 51 70 78 30 1 0 1 0 50
+	frame	data/chars/shura/fsp2a.png
+	attack	43 90 70 78 30 1 0 1 0 50
+	frame	data/chars/shura/fsp3.png
+	attack	45 90 70 78 30 1 0 1 0 50
+	frame	data/chars/shura/fsp3a.png
+	attack	50 109 70 78 30 1 0 1 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	94 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp5.png
+	attack	94 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	123 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp6.png
+	attack	123 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	144 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp7.png
+	attack	144 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	161 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp8.png
+	attack	161 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	177 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp9.png
+	attack	177 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	194 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp10.png
+	attack	194 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	212 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp11.png
+	attack	212 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	263 76 62 131 30 1 0 1 0 50
+	frame	data/chars/shura/fsp12.png
+	attack	263 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	290 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp13.png
+	attack	290 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	316 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp14.png
+	attack	316 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	343 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp15.png
+	attack	343 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	374 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp16.png
+	attack	374 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	396 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp17.png
+	attack	396 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	425 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp18.png
+	attack	425 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	451 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp19.png
+	attack	451 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	479 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp20.png
+	attack	479 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	506 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp21.png
+	attack	506 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	532 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp22.png
+	attack	532 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	561 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp23.png
+	attack	561 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp4.png
+	attack	590 76 62 131 30 1 1 0 0 50
+	frame	data/chars/shura/fsp24.png
+	frame	data/chars/shura/fsp4.png
+	frame	data/chars/shura/fsp25.png
+	frame	data/chars/shura/fsp4.png
+		
+anim	get
+	loop	0
+	delay	8
+	offset	79 154
+	frame	data/chars/shura/get1.png
+	delay	12
+	offset	79 154
+	frame	data/chars/shura/get2.png
+	delay	8
+	offset	79 154
+	frame	data/chars/shura/get1.png
+		
+anim	grab
+	loop	0
+	delay	18
+	offset	67 226
+	bbox	50 111 13 116
+	frame	data/chars/shura/fsp4.png
+	bbox	64 36 14 117
+	offset	81 151
+	frame	data/chars/shura/grab1.png
+		
+anim	grabattack
+	loop	0
+	delay	8
+	offset	67 153
+	bbox	65 35 14 117
+	frame	data/chars/shura/atk3.png
+	offset	60 153
+	bbox	65 35 14 117
+	frame	data/chars/shura/atk4.png
+	offset	43 153
+	attack	61 41 54 111 15 1 0 0 0 0
+	bbox	65 35 14 117
+	frame	data/chars/shura/atk5.png
+	offset	60 153
+	bbox	65 35 14 117
+	frame	data/chars/shura/atk4.png
+	offset	67 153
+	frame	data/chars/shura/atk3.png
+		
+anim	grabattack2
+	loop	0
+	delay	10
+	offset	39 249
+	bbox	22 133 15 116
+	frame	data/chars/shura/grat1.png
+	frame	data/chars/shura/grat2.png
+	sound	data/chars/shura/morra.wav
+	delay	5
+	frame	data/chars/shura/grat2a.png
+	frame	data/chars/shura/grat3.png
+	attack	47 101 82 151 15 1 0 0 0 0
+	frame	data/chars/shura/grat4.png
+	frame	data/chars/shura/grat3.png
+	attack	47 101 82 151 15 1 0 0 0 0
+	frame	data/chars/shura/grat5.png
+	frame	data/chars/shura/grat3.png
+	attack	47 101 82 151 15 1 0 0 0 0
+	frame	data/chars/shura/grat6.png
+	frame	data/chars/shura/grat3.png
+	frame	data/chars/shura/grat7.png
+	frame	data/chars/shura/grat3.png
+	frame	data/chars/shura/grat8.png
+	frame	data/chars/shura/grat3.png
+	frame	data/chars/shura/grat2.png
+	frame	data/chars/shura/grat1.png
+		
+anim	idle
 	loop	1
-	delay	40
-	offset	70 134
-	bbox 48 17 38 117
-	frame	data/chars/shura/idle0.png
-	delay	10
-	frame	data/chars/shura/idle1.png	
+	delay	45
+	offset	35 143
+	bbox	13 14 22 93
+	delay	45
+	frame	data/chars/shura/idle1.png
+	bbox	13 14 22 93
+	offset	35 143
 	frame	data/chars/shura/idle2.png
 	frame	data/chars/shura/idle3.png
-	frame	data/chars/shura/idle4.png
-	
-
-anim walk
-	loop	1
-	delay	15
-	offset	70 131
-	bbox 48 16 38 117
-	frame	data/chars/shura/walk1.png
-	frame	data/chars/shura/walk2.png
-	frame	data/chars/shura/walk3.png
-	frame	data/chars/shura/walk4.png
-	
-anim run
-	loop	1
-	delay	15
-	offset	70 132
-	bbox 57 19 38 117
-	frame	data/chars/shura/run1.png
-	frame	data/chars/shura/run2.png
-	frame	data/chars/shura/run3.png
-	
-anim runattack # Attaque en courant
-	delay	10
-	offset	70 132
-	bbox 47 17 38 117
-	forcedirection -1
-	@cmd	dasher 3.5 0 0 1
-	frame	data/chars/shura/runattack1.png
-	frame	data/chars/shura/runattack2.png
-	frame	data/chars/shura/runattack3.png
-	@cmd 	spawnbind "shura_dash" "ANI_IDLE" 0 0 0 0 0
-	attack2 66 21 88 40 20 1 0 0 5 12
-	frame	data/chars/shura/runattack4.png
-	frame	data/chars/shura/attack13.png
-	attack2 0
-	@cmd	dasher 0 0 0 1
-	delay	10
-	frame	data/chars/shura/attack14.png
-	attack 79 15 80 68 0 0 0 0 0 0
-	bbox 82 21 50 110
-	frame	data/chars/shura/attack15.png
-	
-anim freespecial # Attaque en courant
-	delay	10
-	offset	70 132
-	bbox 46 17 38 117
-	forcedirection -1
-	range 	80 175
-	rangea 	0 100	
-	@cmd	dasher 3.5 0 0 1
-	frame	data/chars/shura/runattack1.png
-	frame	data/chars/shura/runattack2.png
-	frame	data/chars/shura/runattack3.png
-	@cmd 	spawnbind "shura_dash" "ANI_IDLE" 0 0 0 0 0
-	attack2 60 20 88 40 20 1 0 0 5 12
-	frame	data/chars/shura/runattack4.png
-	frame	data/chars/shura/runattack1.png
-	attack2 0
-	@cmd	dasher 0 0 0 1
-	delay	10
-	frame	data/chars/shura/attack14.png
-	attack 79 15 80 68 0 0 0 0 0 0
-	frame	data/chars/shura/attack15.png
-	
-anim pain # Up
-	delay	5
-	offset	70 132
-	bbox 54 17 38 117
-	frame	data/chars/shura/pain1.png
-	frame	data/chars/shura/pain2.png
-	frame	data/chars/shura/pain3.png
-	frame	data/chars/shura/pain2.png
-	frame	data/chars/shura/pain1.png
-	
-anim pain2 # Down
-	delay	5
-	offset	70 132
-	bbox 57 17 38 117
-	frame	data/chars/shura/pain1.png
-	frame	data/chars/shura/pain2.png
-	frame	data/chars/shura/pain3.png
-	frame	data/chars/shura/pain2.png
-	frame	data/chars/shura/pain1.png
-
-anim fall
-	delay	-1000
-	offset	132 126
-	landframe 2
-	frame	data/chars/shura/fall1.png
-	frame	data/chars/shura/fall2.png
-	frame	data/chars/shura/fall3.png
-
-anim fall7
-	delay	-1000
-	offset	132 126
-	landframe 2
-	frame	data/chars/shura/fall1.png
-	frame	data/chars/shura/fall2.png
-	frame	data/chars/shura/fall3.png
-	
-anim death
-	delay	15
-	offset	132 126
-	frame	data/chars/shura/death1.png
-	frame	data/chars/shura/death2.png
-	frame	data/chars/shura/death3.png
-
-anim rise
-	offset	83 139
-	delay	10
-	frame	data/chars/shura/rise1.png
-	frame	data/chars/shura/rise2.png
-	frame	data/chars/shura/rise3.png	
-
-anim attack1 # Attaque combo 1
-	delay	5
-	offset	70 134
-	bbox 53 17 38 117
-	frame	data/chars/shura/attack1.png
-	frame	data/chars/shura/attack2.png
-	attack 95 23 65 34 0 0 0 0 0 0
-	frame	data/chars/shura/attack3.png
-	attack1 0
-
-anim attack2 # Attaque combo 2
-	delay	5
-	offset	70 133
-	bbox 51 17 38 117
-	frame	data/chars/shura/attack4.png
-	frame	data/chars/shura/attack6.png
-	attack 79 15 80 50 0 0 0 0 0 0
-	frame	data/chars/shura/attack7.png
-	attack1 0
-	frame	data/chars/shura/attack8.png	
-
-anim attack3 # Attaque combo 3
-	delay	10
-	offset	70 132
-	bbox 61 17 38 117
-	frame	data/chars/shura/attack9.png
-	frame	data/chars/shura/attack10.png
-	frame	data/chars/shura/attack11.png
-	attack 110 11 80 80 0 0 0 0 0 0
-	frame	data/chars/shura/attack12.png
-	attack1 0
-
-	
-anim attack4 # Attaque combo 4
-	delay	10
-	offset	70 134
-	bbox 85 17 38 117
-	hitflash flashmedium
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/shura/attack13.png
-	frame	data/chars/shura/attack14.png
-	attack 86 24 80 80 0 12 0 0 0 0
-	frame	data/chars/shura/attack15.png
-	attack1 0
-
-anim jump # Saut Statique
-	delay	10
-	offset	80 142
-	bbox 58 17 38 80
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/shura/jump1.png
-	frame	data/chars/shura/jump2.png
-	frame	data/chars/shura/jump1.png
-	
-anim jumpdelay # Animation de saut intermédiaire
-	delay	10
-	offset	80 142
-	bbox 58 17 38 80
-	frame	data/chars/shura/jump2.png
-
-anim jumpland # Aterrissage du saut
-	delay	8
-	offset	70 140
-	bbox 54 30 38 106
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/shura/get0.png
-	frame	data/chars/shura/get1.png
-	frame	data/chars/shura/get2.png
-	frame	data/chars/shura/get1.png
-	frame	data/chars/shura/get0.png
-	
-anim jumpattack # Attaque sautée statique
-	delay	10
-	offset	80 146
-	bbox 52 17 38 80
-	sound data/sounds/punch.wav	
-	frame	data/chars/shura/jumpattack1.png
-	dropv 4.0 1.0 0.0
-	attack1 77 82 75 46 10 1 0 0 5 12
-	frame	data/chars/shura/jumpattack2.png
-	attack1 0
+	frame	data/chars/shura/idle2.png
 		
-anim	block
-	offset	84 134
-	bbox 53 17 38 117
-	frame	data/chars/shura/block1.png
-	frame	data/chars/shura/block2.png
-	frame	data/chars/shura/block1.png
-
-anim special # Shura Jumping Stone
-	delay	5
-	offset	80 141
-	energycost  25 1 0
-	sound data/chars/shura/01-jumping_stone.wav
-	hitflash flashbig
+anim	jump
+	loop	0
+	delay	10
+	bbox	24 30 12 108
+	offset	31 155
 	frame	data/chars/shura/jump1.png
-	offset	80 161
-	frame	data/chars/shura/jump1.png
-	offset	80 181
-	frame	data/chars/shura/jump1.png
-	offset	80 201
-	frame	data/chars/shura/jump1.png
-	offset	80 221
-	frame	data/chars/shura/jump1.png
-	offset	80 241
+	delay	15
+	bbox	24 15 12 99
+	offset	35 135
 	frame	data/chars/shura/jump2.png
-	@cmd 	spawnbind "shura_circle" "ANI_IDLE" 0 0 0 0 0
-	attack5 74 1 120 180 30 1 0 0 5 12
-	dropv 	8.0 3 0
-	delay	10
-	frame	data/chars/shura/special21.png
-	delay	10
-	frame	data/chars/shura/special22.png
-	delay	10
-	frame	data/chars/shura/special23.png
-	delay	10
-	frame	data/chars/shura/special24.png
-	delay	10
-	frame	data/chars/shura/special25.png
-	frame	data/chars/shura/special26.png
+	bbox	13 18 14 114
+	offset	29 142
+	frame	data/chars/shura/jump3.png
+		
+anim	jumpattack
+	loop	0
+	delay	7
+	offset	69 119
+	bbox	54 45 15 73
+	frame	data/chars/shura/jat1.png
+	attack	49 65 93 31 10 1 1 0 0 0
+	offset	71 107
+	bbox	47 45 15 73
+	frame	data/chars/shura/jat2.png
+		
+anim	jumpattack2
+	loop	0
 	delay	5
-	offset	80 221
-	frame	data/chars/shura/jump3.png
-	offset	80 201
-	frame	data/chars/shura/jump3.png
-	offset	80 181
-	frame	data/chars/shura/jump3.png
-	offset	80 161
-	frame	data/chars/shura/jump3.png
-	offset	80 141
-	frame	data/chars/shura/jump3.png
-
-anim freespecial2 #sword shoot
-	fastattack 1
-	forcedirection -1
-	energycost  20 1 0
-	range 300 400
-	delay	10
-	offset	78 219
-	energycost  15 1 0
-	sound data/chars/shura/08-sword.wav
-	bbox 56 95 40 130
-	frame	data/chars/shura/special0.png
-	frame	data/chars/shura/special9.png
-	frame	data/chars/shura/special8.png
-	@cmd 	spawnbind "shura_slashA" "ANI_IDLE" 0 0 0 0 0
-	@cmd	shooter "shura_rundust" 0 80 0 2 0 0
-	frame	data/chars/shura/special7.png
-	frame	data/chars/shura/special6.png
-	frame	data/chars/shura/special5.png
-	frame	data/chars/shura/special4.png
-	frame	data/chars/shura/special3.png
-	frame	data/chars/shura/special2.png
-	frame	data/chars/shura/special1.png
-	frame	data/chars/shura/special10.png
-
-anim freespecial3 #sword shoot
-	fastattack 1
-	forcedirection -1
-	energycost  20 1 0
-	range 200 300
-	delay	10
-	offset	78 219
-	energycost  15 1 0
-	sound data/chars/shura/08-sword.wav
-	bbox 58 95 40 130
-	frame	data/chars/shura/special0.png
-	frame	data/chars/shura/special1.png
-	frame	data/chars/shura/special2.png
-	@cmd 	spawnbind "shura_slashB" "ANI_IDLE" 0 0 0 0 0
-	@cmd	shooter "shura_rundust" 0 80 0 2 0 0
-	frame	data/chars/shura/special3.png
-	frame	data/chars/shura/special4.png
-	frame	data/chars/shura/special5.png
-	frame	data/chars/shura/special6.png
-	frame	data/chars/shura/special7.png
-	frame	data/chars/shura/special8.png
-	frame	data/chars/shura/special9.png
-	frame	data/chars/shura/special10.png
-
-anim freespecial6 #Ultra Excalibur
-	fastattack 1
-	forcedirection -1
-	energycost  50 1 0
-	delay	10
-	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
-        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
-	frame	data/chars/shura/special0.png
-	@cmd 	spawnScreen "shura_constellation" 0 0 0 0
-	sound data/chars/aldebaran/78-cosmos.wav
-	delay	100
-	offset	78 219
-	energycost  15 1 0
-	@cmd 	spawnbind "shura_excalibur" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/shura/special0.png
-	@cmd spawnScreen "shura_excaliburB" 0 0 0 0
-	sound data/chars/shura/03-excalibur.wav
+	offset	69 117
+	bbox	31 86 71 13
+	frame	data/chars/shura/fall1.png
+	bbox	25 56 27 43
+	sound	data/chars/shura/pedra.wav
+	offset	54 106
+	frame	data/chars/shura/jatt2.png
+	delay	4
+	attack	61 19 79 126 20 1 0 0 0 0
+	offset	54 106
+	frame	data/chars/shura/jatt3.png
 	delay	5
-	energycost  20 1 0
-	frame	data/chars/shura/special1.png
-	@cmd 	spawnbind "shura_explosion" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/shura/special2.png
-	@cmd 	spawnbind "shura_slashB" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/shura/special3.png
-	attack 0
-	frame	data/chars/shura/special4.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special5.png
-	attack 0
-	frame	data/chars/shura/special6.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special7.png
-	attack 0
-	frame	data/chars/shura/special8.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special9.png
-	attack 0
-	frame	data/chars/shura/special9.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special9.png
-	attack 0
-	frame	data/chars/shura/special9.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special9.png
-	attack 0
-	frame	data/chars/shura/special9.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special9.png
-	attack 0
-	frame	data/chars/shura/special9.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special9.png
-	attack 0
-	frame	data/chars/shura/special9.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special9.png
-	attack 0
-	frame	data/chars/shura/special9.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special9.png
-	attack 0
-	frame	data/chars/shura/special9.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special9.png
-	attack 0
-	frame	data/chars/shura/special9.png
-	attack -300 0 800 480 5 0 0 0 10 50
-	frame	data/chars/shura/special10.png
-	attack 0
+	bbox	47 94 16 69
+	offset	68 165
+	frame	data/chars/shura/jatt4.png
+	delay	4
+	attack	35 7 129 146 20 1 0 0 0 0
+	offset	68 165
+	frame	data/chars/shura/jatt5.png
+	delay	5
+	bbox	67 97 37 34
+	offset	94 133
+	frame	data/chars/shura/jatt6.png
+	delay	4
+	attack	8 11 111 90 20 1 0 0 0 0
+	offset	94 133
+	frame	data/chars/shura/jatt7.png
+	delay	4
+	bbox	54 50 66 16
+	offset	101 88
+	frame	data/chars/shura/jatt8.png
+	bbox	65 17 28 34
+	offset	72 79
+	frame	data/chars/shura/jatt9.png
+	offset	29 142
+	frame	data/chars/shura/jump3.png
+		
+anim	land
+	loop	0
+	delay	10
+	offset	79 154
+	frame	data/chars/shura/get1.png
+		
+anim	pain
+	loop	0
+	bbox	51 47 46 103
+	delay	10
+	offset	81 152
+	frame	data/chars/shura/pain1.png
+	bbox	51 47 46 103
+	offset	81 152
+	frame	data/chars/shura/pain2.png
+		
+anim	rise
+	loop	0
+	offset	79 154
+	delay	25
+	frame	data/chars/shura/get2.png
+	offset	79 154
+	frame	data/chars/shura/get1.png
+		
+anim	special
+	loop	0
+	delay	5
+	sound	data/chars/shura/excalibur.wav
+	offset	51 241
+	frame	data/chars/shura/sp1.png
+	frame	data/chars/shura/sp2.png
+	attack	16 94 156 147 45 1 0 0 0 50
+	frame	data/chars/shura/sp3.png
+	frame	data/chars/shura/sp4.png
+	attack	53 36 222 206 45 1 0 0 0 50
+	frame	data/chars/shura/sp5.png
+	frame	data/chars/shura/sp6.png
+	attack	122 36 311 206 45 1 0 0 0 50
+	frame	data/chars/shura/sp7.png
+	frame	data/chars/shura/sp8.png
+	attack	183 36 311 206 45 1 0 0 0 50
+	frame	data/chars/shura/sp9.png
+	frame	data/chars/shura/sp10.png
+	attack	264 36 311 206 45 1 0 0 0 50
+	frame	data/chars/shura/sp11.png
+	frame	data/chars/shura/sp12.png
+	attack	337 36 311 206 45 1 0 0 0 50
+	frame	data/chars/shura/sp13.png
+	frame	data/chars/shura/sp14.png
+	attack	454 25 252 216 45 1 0 0 0 50
+	frame	data/chars/shura/sp15.png
+	frame	data/chars/shura/sp16.png
+	attack	525 31 182 210 45 1 0 0 0 50
+	frame	data/chars/shura/sp17.png
+	frame	data/chars/shura/sp18.png
+	frame	data/chars/shura/sp19.png
+	frame	data/chars/shura/sp20.png
+	frame	data/chars/shura/sp21.png
+		
+anim	throw
+	loop	0
+	delay	12
+	offset	40 249
+	frame	data/chars/shura/grat2.png
+	offset	40 249
+	frame	data/chars/shura/grat3.png
+	offset	40 249
+	frame	data/chars/shura/grat2.png
+		
+anim	walk
+	loop	1
+	delay	15
+	bbox	66 34 18 117
+	offset	79 151
+	frame	data/chars/shura/wlk1.png
+	offset	79 151
+	frame	data/chars/shura/wlk2.png
+	offset	79 150
+	frame	data/chars/shura/wlk3.png
+	offset	79 151
+	frame	data/chars/shura/wlk4.png
+	offset	79 151
+	frame	data/chars/shura/wlk5.png
+	offset	79 151
+	frame	data/chars/shura/wlk6.png
+	offset	79 150
+	frame	data/chars/shura/wlk7.png
+	offset	79 151
+	frame	data/chars/shura/wlk8.png
+		
+#|edited by openBor Stats v 0.56
+		

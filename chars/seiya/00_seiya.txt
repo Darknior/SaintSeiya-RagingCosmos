@@ -165,7 +165,8 @@ anim idle
 	frame	data/chars/seiya/idle9.png
 	frame	data/chars/seiya/idle10.png
 	frame	data/chars/seiya/idle11.png
-	
+
+
 anim sleep # Animation configurée après 10s d'idle 
 	loop 1
 	delay	25
