@@ -1,0 +1,353 @@
+name		mu
+health		3000
+mp 			100
+speed		20
+type		enemy
+hostile     player npc 
+candamage 	player npc
+aimove      chase
+dust		round_dustB
+bflash aldebaran_block
+
+icon		data/chars/mu/icon.png
+
+gfxshadow	1
+hitenemy    1 0
+blockodds 	1
+noquake 	1 1
+escapehits  1
+nodieblink 	3
+death 		1
+
+## CUSTOM BOSS LIFEBAR
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+nolife 1
+ondrawscript	data/scripts/lifebar.c
+didhitscript	data/scripts/didhit/tint_gold.c
+script	data/scripts/entity_effects.c
+
+atchain 1 1 2 3 4 5
+
+animationscript	data/scripts/player.c
+
+load mu_ram
+load aldebaran_super_lights
+load aldebaran_block
+load aldebaran_multi
+load aldebaran_swing
+
+#----------------------------------------------------------
+anim spawn
+	delay	15
+	offset	51 124
+	frame	data/chars/mu/spawn1.png
+	frame	data/chars/mu/spawn2.png
+	frame	data/chars/mu/spawn3.png
+	frame	data/chars/mu/spawn4.png
+	frame	data/chars/mu/spawn5.png
+	frame	data/chars/mu/spawn6.png
+	frame	data/chars/mu/spawn7.png
+	frame	data/chars/mu/spawn8.png
+	frame	data/chars/mu/spawn9.png
+	frame	data/chars/mu/spawn10.png
+	frame	data/chars/mu/spawn11.png
+	frame	data/chars/mu/spawn12.png
+	frame	data/chars/mu/spawn13.png
+	frame	data/chars/mu/spawn14.png
+	frame	data/chars/mu/spawn15.png
+	frame	data/chars/mu/spawn16.png
+	frame	data/chars/mu/spawn17.png
+	frame	data/chars/mu/spawn18.png
+	frame	data/chars/mu/spawn19.png
+	frame	data/chars/mu/spawn20.png
+	frame	data/chars/mu/spawn21.png
+	frame	data/chars/mu/spawn22.png
+	frame	data/chars/mu/spawn23.png
+	frame	data/chars/mu/spawn24.png
+	frame	data/chars/mu/spawn25.png
+	frame	data/chars/mu/spawn26.png
+	frame	data/chars/mu/spawn27.png
+	frame	data/chars/mu/spawn28.png	
+
+anim idle
+	loop	1
+	delay	18
+	offset	45 123
+	bbox 28 4 38 120
+	frame	data/chars/mu/idle1.png
+	frame	data/chars/mu/idle2.png
+	frame	data/chars/mu/idle3.png
+	frame	data/chars/mu/idle4.png
+	
+anim turn
+	delay	12
+	offset	40 123
+	bbox 21 4 38 120
+	frame	data/chars/mu/turn.png
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	72 125
+	bbox 48 2 38 123
+	frame	data/chars/mu/walk1.png
+	frame	data/chars/mu/walk2.png
+	frame	data/chars/mu/walk3.png
+	frame	data/chars/mu/walk4.png
+	
+anim run
+	loop	1
+	delay	15
+	offset	100 125
+	bbox 91 5 38 120
+	frame	data/chars/mu/run1.png
+	frame	data/chars/mu/run2.png
+	frame	data/chars/mu/run3.png
+	frame	data/chars/mu/run4.png
+	frame	data/chars/mu/run5.png
+	frame	data/chars/mu/run6.png
+	
+anim runattack # Attaque en courant
+	delay	10
+	offset	72 121
+	bbox 53 4 38 120
+	hitflash aldebaran_swing
+	sound data/chars/mu/01-roar.wav
+	fastattack 1
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/mu/runattack1.png
+	frame	data/chars/mu/runattack2.png
+	attack2 72 40 88 40 10 0 0 0 5 12
+	frame	data/chars/mu/runattack3.png
+	frame	data/chars/mu/runattack4.png
+	frame	data/chars/mu/runattack5.png
+	attack2 60 40 88 40 20 1 0 0 5 12
+	frame	data/chars/mu/runattack6.png
+	frame	data/chars/mu/runattack7.png
+	attack2 0
+	@cmd	dasher 0 0 0 1
+	frame	data/chars/mu/runattack1.png
+	
+anim freespecial # Attaque en courant
+	delay	10
+	offset	72 121
+	bbox 53 4 38 120
+	hitflash aldebaran_swing
+	sound data/chars/mu/01-roar.wav
+	forcedirection -1
+	range 	80 175
+	rangea 	0 100
+	fastattack 1
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/mu/runattack1.png
+	frame	data/chars/mu/runattack2.png
+	attack2 72 40 88 40 10 0 0 0 5 12
+	frame	data/chars/mu/runattack3.png
+	frame	data/chars/mu/runattack4.png
+	frame	data/chars/mu/runattack5.png
+	attack2 60 40 88 40 20 1 0 0 5 12
+	frame	data/chars/mu/runattack6.png
+	frame	data/chars/mu/runattack7.png
+	attack2 0
+	@cmd	dasher 0 0 0 1
+	frame	data/chars/mu/runattack1.png
+	
+anim pain # Up
+	delay	7
+	offset	45 129
+	bbox 28 9 38 120
+	frame	data/chars/mu/pain1.png
+	frame	data/chars/mu/pain2.png
+	frame	data/chars/mu/pain2.png
+	frame	data/chars/mu/pain1.png
+	
+anim pain2 # Down
+	delay	7
+	offset	58 121
+	bbox 45 4 38 120
+	frame	data/chars/mu/pain21.png
+	frame	data/chars/mu/pain22.png
+	frame	data/chars/mu/pain22.png
+	frame	data/chars/mu/pain21.png
+
+anim fall
+	delay	50
+	offset	70 125
+	landframe 4
+	frame	data/chars/mu/fall1.png
+	frame	data/chars/mu/fall2.png
+	frame	data/chars/mu/fall3.png
+	frame	data/chars/mu/fall4.png
+	frame	data/chars/mu/fall5.png
+	frame	data/chars/mu/fall6.png
+	
+anim death
+	delay	15
+	offset	70 125
+	frame	data/chars/mu/fall1.png
+	frame	data/chars/mu/fall2.png
+	frame	data/chars/mu/fall3.png
+	frame	data/chars/mu/fall4.png
+	frame	data/chars/mu/fall5.png
+	frame	data/chars/mu/fall6.png
+
+anim rise
+	offset	70 123
+	delay	10
+	frame	data/chars/mu/rise1.png
+	frame	data/chars/mu/rise2.png
+	frame	data/chars/mu/rise3.png
+
+anim attack1 # Attaque combo 1
+	delay	5
+	offset	86 123
+	bbox 68 4 38 120
+	frame	data/chars/mu/attack1.png
+	attack1 87 37 72 25 10 0 0 0 5 12
+	frame	data/chars/mu/attack2.png
+	frame	data/chars/mu/attack3.png
+
+anim attack2 # Attaque combo 2
+	delay	5
+	offset	63 123
+	bbox 66 4 38 120
+	frame	data/chars/mu/attack21.png
+	frame	data/chars/mu/attack22.png
+	attack1 71 27 70 29 10 0 0 0 5 12
+	frame	data/chars/mu/attack23.png
+	frame	data/chars/mu/attack24.png	
+
+anim attack3 # Attaque combo 3
+	delay	10
+	offset	83 125
+	bbox 67 5 38 120
+	frame	data/chars/mu/attack31.png
+	attack1 83 96 78 30 10 0 0 0 5 12
+	frame	data/chars/mu/attack32.png
+	frame	data/chars/mu/attack33.png
+	frame	data/chars/mu/attack34.png
+	
+anim attack4 # Attaque combo 4
+	delay	10
+	offset	109 123
+	bbox 110 4 38 120
+	hitflash flashmedium
+	frame	data/chars/mu/attack41.png
+	frame	data/chars/mu/attack42.png
+	attack1 110 25 67 45 10 0 0 0 5 12
+	frame	data/chars/mu/attack43.png
+	frame	data/chars/mu/attack44.png
+	
+anim attack5 # Attaque combo 5
+	delay	8
+	offset	67 124
+	bbox 52 4 38 120
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mu/attack51.png
+	frame	data/chars/mu/attack52.png
+	attack1 67 17 120 56 20 1 0 0 5 12
+	dropv 4.0 1.0 0.0
+	frame	data/chars/mu/attack53.png
+	frame	data/chars/mu/attack54.png
+	frame	data/chars/mu/attack55.png
+
+anim jump # Saut Statique
+	delay	10
+	offset	87 161
+	bbox 67 39 38 80
+	frame	data/chars/mu/jump1.png
+	frame	data/chars/mu/jump2.png
+	frame	data/chars/mu/jump3.png
+	frame	data/chars/mu/jump4.png
+	
+anim jumpdelay # Animation de saut intermédiaire
+	delay	10
+	offset	87 161
+	bbox 67 39 38 80
+	frame	data/chars/mu/jump4.png
+
+anim jumpland # Aterrissage du saut
+	delay	8
+	offset	45 123
+	bbox 28 4 38 120
+	frame	data/chars/mu/get1.png
+	frame	data/chars/mu/get2.png
+	frame	data/chars/mu/get3.png
+	frame	data/chars/mu/get2.png
+	frame	data/chars/mu/get1.png
+	
+anim jumpattack # Attaque sautée statique
+	delay	10
+	offset	99 161
+	bbox 86 39 38 80
+	sound data/sounds/punch.wav
+	frame	data/chars/mu/jumpattack1.png
+	frame	data/chars/mu/jumpattack2.png
+	attack1 99 55 94 30 10 1 0 0 5 12
+	frame	data/chars/mu/jumpattack3.png
+	
+anim special # Défense spéciale Cristal Wall
+	delay	10
+	offset	69 132
+	sound data/chars/mu/04-swing.wav
+	hitflash flashbig
+	frame	data/chars/mu/special1.png
+	sound data/chars/mu/15-explosion.wav
+	frame	data/chars/mu/special2.png
+	sound data/chars/mu/01.wav
+	attack5 10 1 120 150 30 1 0 0 5 12
+	dropv 8.0 3.0 0.0
+	delay	40
+	frame	data/chars/mu/special3.png
+	delay	10
+	frame	data/chars/mu/special4.png
+	frame	data/chars/mu/special5.png
+	frame	data/chars/mu/special6.png
+
+anim special2 #Attaque spéciale Ram Rush
+	fastattack 1
+	forcedirection -1
+	delay	10
+	offset	116 124
+	energycost  15 1 0
+	frame	data/chars/mu/special21.png
+	frame	data/chars/mu/special22.png
+	frame	data/chars/mu/special23.png
+	frame	data/chars/mu/special24.png
+	sound data/chars/mu/08-lionstar.wav
+	@cmd	shooter "mu_ram" 0 50 0 2 0 0
+	frame	data/chars/mu/special25.png
+	frame	data/chars/mu/special26.png
+	frame	data/chars/mu/special27.png
+	frame	data/chars/mu/special28.png
+	frame	data/chars/mu/special29.png	
+
+anim freespecial2 #Attaque spéciale Ram Rush
+	fastattack 1
+	forcedirection -1
+	range 200 400
+	delay	10
+	offset	116 124
+	energycost  15 1 0
+	frame	data/chars/mu/special21.png
+	frame	data/chars/mu/special22.png
+	frame	data/chars/mu/special23.png
+	frame	data/chars/mu/special24.png
+	sound data/chars/mu/08-lionstar.wav
+	@cmd	shooter "mu_ram" 0 50 0 2 0 0
+	frame	data/chars/mu/special25.png
+	frame	data/chars/mu/special26.png
+	frame	data/chars/mu/special27.png
+	frame	data/chars/mu/special28.png
+	frame	data/chars/mu/special29.png	
+
+anim	block
+	offset	76 121
+	bbox 55 4 38 120
+	frame	data/chars/mu/block1.png
+	frame	data/chars/mu/block2.png
+	frame	data/chars/mu/block3.png

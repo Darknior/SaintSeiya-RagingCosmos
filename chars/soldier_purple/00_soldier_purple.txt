@@ -1,0 +1,236 @@
+name	SOLDIER2
+
+health	50
+speed		15	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
+
+type	enemy
+
+icon	data/chars/soldier_purple/icon.png
+hostile          player npc 
+candamage player npc
+\\aimove           Wander
+aimove           Chase
+\\aimove           Avoid
+\\aggression       5
+hitenemy          0 0
+blockodds 1
+death 1
+nodieblink 0
+blocked 1
+noquake 1 1
+gfxshadow 1
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
+bflash tremi_block
+dust		round_dustB
+
+\\subject_to_wall 0
+
+subject_to_screen 0
+script	data/scripts/entity_effects.c
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+
+
+anim	block
+loop	0
+	offset	110 180
+
+\\sound data/chars/soldier_purple/KO.wav
+	delay	10
+
+load blood_ground_medium
+
+dropv 4 1 0
+	bbox.position.x 71
+	bbox.position.y 57
+	bbox.size.x 84
+	bbox.size.y 133
+frame	data/chars/soldier_purple/04.png
+frame	data/chars/soldier_purple/04.png
+frame	data/chars/soldier_purple/04.png
+frame	data/chars/soldier_purple/04.png
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	110 180
+dropv 4 1 0
+	bbox.position.x 62
+	bbox.position.y 57
+	bbox.size.x 93
+	bbox.size.y 132
+frame	data/chars/soldier_purple/01.png
+
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	110 180
+
+
+	bbox.position.x 66
+	bbox.position.y 62
+	bbox.size.x 90
+	bbox.size.y 125
+frame	data/chars/soldier_purple/09.png
+frame	data/chars/soldier_purple/10.png
+frame	data/chars/soldier_purple/11.png
+frame	data/chars/soldier_purple/12.png
+
+
+
+
+anim BACKWALK
+
+	loop	1
+	delay	15
+	offset	110 180
+
+
+dropv 4 1 0
+	bbox.position.x 42
+	bbox.position.y 64
+	bbox.size.x 99
+	bbox.size.y 121
+frame	data/chars/soldier_purple/13.png
+frame	data/chars/soldier_purple/14.png
+frame	data/chars/soldier_purple/15.png
+frame	data/chars/soldier_purple/16.png
+
+
+
+      
+ 
+
+
+anim pain
+    loop	0
+	
+	delay	10
+offset	110 180
+
+	bbox.position.x 62
+	bbox.position.y 57
+	bbox.size.x 93
+	bbox.size.y 132
+
+frame	data/chars/soldier_purple/05.png
+frame	data/chars/soldier_purple/05.png
+
+
+        
+
+anim fall
+
+    loop	0
+	
+	delay	10
+offset	110 180
+
+dropv 4 1 0
+frame	data/chars/soldier_purple/06.png
+frame	data/chars/soldier_purple/06.png
+frame	data/chars/soldier_purple/06.png
+frame	data/chars/soldier_purple/06.png
+frame	data/chars/soldier_purple/06.png
+frame	data/chars/soldier_purple/06.png
+frame	data/chars/soldier_purple/06.png
+frame	data/chars/soldier_purple/06.png
+frame	data/chars/soldier_purple/07.png
+frame	data/chars/soldier_purple/07.png
+frame	data/chars/soldier_purple/07.png
+
+
+anim death	
+delay	10
+offset	100 180
+frame	data/chars/soldier_purple/05.png
+frame	data/chars/soldier_purple/06.png
+@cmd 	spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
+frame	data/chars/soldier_purple/07.png
+frame	data/chars/soldier_purple/07.png
+frame	data/chars/soldier_purple/07.png
+
+
+anim rise
+        loop	0
+	offset	110 180
+	delay	10
+
+
+
+dropv 4 1 0
+frame	data/chars/soldier_purple/08.png
+
+
+	
+
+
+anim attack1
+
+
+	loop	0
+	delay	10
+offset	110 180
+
+
+dropv 4 1 0
+
+	bbox.position.x 58
+	bbox.position.y 59
+	bbox.size.x 94
+	bbox.size.y 133
+	attack.damage.force 10
+	attack.position.x 147
+	attack.position.y 58
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.size.x 36
+	attack.size.y 133
+frame	data/chars/soldier_purple/03.png
+
+
+
+
+
+anim attack2
+
+
+
+anim attack3
+	
+
+
+
+anim jump
+	
+
+    
+
+
+anim jumpattack
+	
+
+
+
+
+
+
+
+

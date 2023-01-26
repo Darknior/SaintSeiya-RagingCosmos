@@ -1,5 +1,5 @@
 
-music		data/music/music4.bor
+music		data/music/ikki2.ogg
 
 panel		data/bgs/ROOMS/temple5.png 
 

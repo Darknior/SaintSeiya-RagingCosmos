@@ -1,0 +1,440 @@
+name		jaki
+
+health		500
+mp 			50
+dust		fall_dust # Default "dust entity" using the native "Dust" function
+bflash tremi_block
+type		enemy
+hostile     player npc 
+candamage 	player 
+aimove      chase
+speed		12	# Vitesse de déplacement
+running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+
+jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed 	12	# Vitesse du saut
+jumpheight 	5	# Hauteur du saut
+antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
+
+icon		data/chars/jaki/icon.png
+
+##GRAB
+grabdistance 		50 
+grabfinish 			1 
+
+gfxshadow	1
+hitenemy    1 0
+blockodds 	1
+noquake 	1 1
+escapehits  2
+nodieblink 	3
+death 		1
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
+
+## CUSTOM BOSS LIFEBAR
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+nolife 1
+
+didhitscript	data/scripts/didhit/tint_silver.c
+script	data/scripts/entity_effects.c
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/lifebar.c
+
+atchain 1 1 2 3 4 5
+
+load columnT
+
+#----------------------------------------------------------
+anim spawn
+	delay	40
+	offset	48 182
+	frame	data/chars/jaki/spawn1.png
+	frame	data/chars/jaki/spawn2.png
+	frame	data/chars/jaki/spawn3.png
+	frame	data/chars/jaki/spawn4.png
+	frame	data/chars/jaki/spawn5.png
+
+anim idle
+	loop	1
+	delay	25
+	offset	48 182
+	bbox 21 10 57 172
+	frame	data/chars/jaki/idle1.png
+	frame	data/chars/jaki/idle2.png
+	frame	data/chars/jaki/idle3.png
+	frame	data/chars/jaki/idle4.png
+	frame	data/chars/jaki/idle5.png
+	frame	data/chars/jaki/idle4.png
+	frame	data/chars/jaki/idle3.png
+	frame	data/chars/jaki/idle2.png
+	
+anim sleep
+	loop	1
+	delay	25
+	offset	48 179
+	bbox 21 10 57 172
+	frame	data/chars/jaki/sleep1.png
+	frame	data/chars/jaki/sleep2.png
+	frame	data/chars/jaki/sleep3.png
+	frame	data/chars/jaki/sleep4.png
+	frame	data/chars/jaki/sleep5.png
+	frame	data/chars/jaki/sleep6.png
+	frame	data/chars/jaki/sleep7.png
+	frame	data/chars/jaki/sleep8.png
+	frame	data/chars/jaki/sleep9.png
+	frame	data/chars/jaki/sleep10.png
+	frame	data/chars/jaki/sleep11.png
+	
+anim walk
+	loop	1
+	delay	15
+	offset	48 182
+	bbox 21 10 57 172
+	frame	data/chars/jaki/walk1.png
+	frame	data/chars/jaki/walk2.png
+	frame	data/chars/jaki/walk3.png
+	frame	data/chars/jaki/walk4.png
+	frame	data/chars/jaki/walk5.png
+	frame	data/chars/jaki/walk6.png
+	
+anim run
+	loop	1
+	delay	15
+	offset	95 182
+	bbox 59 10 57 172
+	frame	data/chars/jaki/run1.png
+	frame	data/chars/jaki/run2.png
+	frame	data/chars/jaki/run3.png
+	frame	data/chars/jaki/run4.png
+	frame	data/chars/jaki/run5.png
+	frame	data/chars/jaki/run6.png
+	frame	data/chars/jaki/run7.png
+	
+anim runattack # Attaque en courant
+	delay	7
+	offset	95 182
+	bbox 59 10 57 172
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/jaki/runattack1.png
+	frame	data/chars/jaki/runattack2.png
+	attack2 95 66 62 61 20 1 0 0 5 12
+	frame	data/chars/jaki/runattack3.png
+	frame	data/chars/jaki/runattack3.png
+	frame	data/chars/jaki/runattack4.png
+	frame	data/chars/jaki/runattack4.png
+	attack2 0
+	@cmd	dasher 0 0 0 1
+	delay	12
+	frame	data/chars/jaki/runattack2.png
+	
+anim freespecial # Attaque en courant
+	delay	7
+	offset	95 182
+	bbox 59 10 57 172
+	range 	80 175
+	rangea 	0 100
+	forcedirection -1
+	@cmd	dasher 3.5 0 0 1
+	frame	data/chars/jaki/runattack1.png
+	frame	data/chars/jaki/runattack2.png
+	attack2 95 66 62 61 20 1 0 0 5 12
+	frame	data/chars/jaki/runattack3.png
+	frame	data/chars/jaki/runattack3.png
+	frame	data/chars/jaki/runattack4.png
+	frame	data/chars/jaki/runattack4.png
+	attack2 0
+	@cmd	dasher 0 0 0 1
+	delay	12
+	frame	data/chars/jaki/runattack2.png
+	
+anim pain # Up
+	delay	5
+	offset	62 181
+	bbox 34 10 57 172
+	frame	data/chars/jaki/pain1.png
+	frame	data/chars/jaki/pain2.png
+	frame	data/chars/jaki/pain3.png
+	frame	data/chars/jaki/pain2.png
+	
+anim pain2 # Down
+	delay	5
+	offset	49 182
+	bbox 24 10 57 172
+	frame	data/chars/jaki/pain21.png
+	frame	data/chars/jaki/pain22.png
+	frame	data/chars/jaki/pain23.png
+	frame	data/chars/jaki/pain22.png	
+
+anim fall
+	delay	10
+	offset	146 182
+	landframe 5
+	frame	data/chars/jaki/fall1.png
+	frame	data/chars/jaki/fall2.png
+	frame	data/chars/jaki/fall3.png
+	frame	data/chars/jaki/fall4.png
+	frame	data/chars/jaki/fall5.png
+	frame	data/chars/jaki/fall6.png
+	
+anim death
+	delay	40
+	offset	60 180
+	frame	data/chars/jaki/death1.png
+	frame	data/chars/jaki/death2.png
+	frame	data/chars/jaki/death3.png
+	frame	data/chars/jaki/death4.png
+	frame	data/chars/jaki/death5.png
+
+anim rise
+	offset	146 182
+	delay	10
+	frame	data/chars/jaki/rise1.png
+	frame	data/chars/jaki/rise2.png
+	frame	data/chars/jaki/rise3.png
+
+anim attack1 # Attaque combo 1
+	delay	5
+	offset	48 182
+	bbox 21 10 57 172
+	frame	data/chars/jaki/attack1.png
+	frame	data/chars/jaki/attack2.png
+	frame	data/chars/jaki/attack3.png
+	attack1 104 53 73 67 10 0 0 0 5 12
+	frame	data/chars/jaki/attack4.png	
+
+anim attack2 # Attaque combo 2
+	delay	5
+	offset	48 182
+	bbox 21 10 57 172
+	frame	data/chars/jaki/attack21.png
+	frame	data/chars/jaki/attack22.png
+	attack1 57 77 88 50 10 0 0 0 5 12
+	frame	data/chars/jaki/attack23.png
+	frame	data/chars/jaki/attack24.png	
+
+anim attack3 # Attaque combo 3
+	delay	10
+	offset	48 182
+	bbox 21 10 57 172
+	frame	data/chars/jaki/attack31.png
+	frame	data/chars/jaki/attack32.png
+
+	frame	data/chars/jaki/attack33.png
+	frame	data/chars/jaki/attack34.png
+	attack1 61 54 82 72 10 0 0 0 5 12
+	frame	data/chars/jaki/attack35.png
+	
+anim attack4 # Attaque combo 4
+	delay	8
+	offset	48 182
+	bbox 21 10 57 172
+	hitflash flashmedium
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/attack41.png
+	frame	data/chars/jaki/attack42.png
+	attack1 98 106 84 48 10 0 0 0 5 12
+	frame	data/chars/jaki/attack43.png
+	frame	data/chars/jaki/attack43.png
+	
+anim attack5 # Attaque combo 5
+	delay	10
+	offset	48 182
+	bbox 21 10 57 172
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/attack51.png
+	frame	data/chars/jaki/attack52.png
+	frame	data/chars/jaki/attack53.png
+	attack1 78 96 111 48 10 1 0 0 5 12
+	frame	data/chars/jaki/attack54.png
+	frame	data/chars/jaki/attack53.png
+
+anim jump # Saut Statique
+	delay	10
+	offset	37 182
+	bbox 12 10 57 122
+	summonframe 0 0 0 0
+	subentity round_dust
+	frame	data/chars/jaki/jump1.png
+	frame	data/chars/jaki/jump2.png
+	frame	data/chars/jaki/jump3.png
+	frame	data/chars/jaki/jump2.png
+	frame	data/chars/jaki/jump1.png
+	
+anim jumpdelay # Animation de saut intermédiaire
+	delay	10
+	offset	37 182
+	bbox 12 10 57 122
+	frame	data/chars/jaki/jump2.png
+
+anim jumpland # Aterrissage du saut
+	delay	8
+	offset	59 183
+	bbox 34 19 57 172
+	summonframe 0 0 0 0
+	subentity round_dust
+	frame	data/chars/jaki/get1.png
+	frame	data/chars/jaki/get2.png
+	frame	data/chars/jaki/get3.png
+	frame	data/chars/jaki/get2.png
+	frame	data/chars/jaki/get1.png
+	
+anim jumpattack # Attaque sautée statique
+	delay	12
+	offset	37 182
+	bbox 12 10 57 122
+	sound data/sounds/punch.wav
+	frame	data/chars/jaki/jumpattack1.png
+	frame	data/chars/jaki/jumpattack2.png
+	attack1 13 58 115 67 10 1 0 0 5 12
+	frame	data/chars/jaki/jumpattack3.png
+	
+anim grab
+	delay	8
+	offset	48 180
+	bbox 21 10 57 172
+	frame	data/chars/jaki/grab.png
+	
+anim grabbed
+	delay	5
+	offset	49 180
+	bbox 24 19 57 172
+	frame	data/chars/jaki/pain21.png
+	frame	data/chars/jaki/pain22.png
+	frame	data/chars/jaki/pain23.png
+
+anim grabattack # Attaque au corps à corps
+	delay	10
+	offset	48 180
+	bbox 21 10 57 172
+	sound data/sounds/punch.wav
+	frame	data/chars/jaki/grabattack1.png
+	frame	data/chars/jaki/grabattack2.png
+	attack1 87 62 50 63 5 0 0 0 0 0
+	frame	data/chars/jaki/grabattack3.png
+	frame	data/chars/jaki/grabattack4.png
+	frame	data/chars/jaki/grabattack5.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/grabattack6.png
+	attack1 38 62 50 63 5 0 0 0 0 0
+	frame	data/chars/jaki/grabattack7.png
+	frame	data/chars/jaki/grabattack8.png
+
+anim grabattack2 # Attaque au corps à corps finisher
+	delay	20
+	offset	48 180
+	bbox 21 10 57 172
+	sound data/sounds/punch.wav
+	@cmd grabStart
+	@cmd position 0 41 85 1 0
+	frame	data/chars/jaki/grabattack21.png
+	@cmd position 0 4 135 1 0
+	frame	data/chars/jaki/grabattack22.png
+	@cmd position 0 3 126 1 0
+	frame	data/chars/jaki/grabattack23.png
+	@cmd position 0 38 56 1 0
+	frame	data/chars/jaki/grabattack24.png
+	@cmd position 2 21 32 1 0
+	frame	data/chars/jaki/grabattack24.png
+	#@cmd depost
+	@cmd throw 12 2 -1 -2.5 0 0
+	frame	data/chars/jaki/grabattack24.png
+	@cmd clearL	
+	frame	data/chars/jaki/grabattack24.png
+	
+anim special # Défense spéciale
+	delay	10
+	offset	104 241
+	sound data/chars/jaki/02.wav
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special1.png
+	frame	data/chars/jaki/special2.png
+	attack1 105 128 188 60 10 0 0 0 0 0
+	frame	data/chars/jaki/special5.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special2.png
+	frame	data/chars/jaki/special3.png
+	frame	data/chars/jaki/special4.png
+	attack1 105 128 188 60 10 0 0 0 0 0
+	frame	data/chars/jaki/special5.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special6.png
+	frame	data/chars/jaki/special7.png
+	frame	data/chars/jaki/special8.png
+	attack1 105 116 224 68 20 1 0 0 0 0
+	frame	data/chars/jaki/special9.png
+	
+anim special2 #Défense spéciale 
+	delay	10
+	offset	104 241
+	sound data/chars/jaki/02.wav
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special1.png
+	frame	data/chars/jaki/special2.png
+	attack1 105 128 188 60 10 0 0 0 0 0
+	frame	data/chars/jaki/special5.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special2.png
+	frame	data/chars/jaki/special3.png
+	frame	data/chars/jaki/special4.png
+	attack1 105 128 188 60 10 0 0 0 0 0
+	frame	data/chars/jaki/special5.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special6.png
+	frame	data/chars/jaki/special7.png
+	frame	data/chars/jaki/special8.png
+	attack1 105 116 224 68 20 1 0 0 0 0
+	frame	data/chars/jaki/special9.png
+
+anim freespecial2 # Attaque spéciale column launcher
+	range 	175 275
+	rangea 	0 100
+	hitflash flashbig
+	energycost  20 1 0
+	delay	10
+	bbox 75 69 57 172
+	offset	104 241
+	sound data/chars/jaki/02.wav
+	frame	data/chars/jaki/special1.png
+	frame	data/chars/jaki/special2.png
+	frame	data/chars/jaki/special6.png
+	frame	data/chars/jaki/special7.png
+	frame	data/chars/jaki/special8.png
+	attack1 105 116 224 68 20 1 0 0 0 0
+	frame	data/chars/jaki/special9.png
+	attack1 0
+	@cmd tosser3 "columnT" 0 80 0 6 3 0	
+	frame	data/chars/jaki/special21.png
+	
+anim riseattack	#Défense spéciale
+	delay	10
+	offset	104 241
+	sound data/chars/jaki/02.wav
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special1.png
+	frame	data/chars/jaki/special2.png
+	attack1 105 128 188 60 10 0 0 0 0 0
+	frame	data/chars/jaki/special5.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special2.png
+	frame	data/chars/jaki/special3.png
+	frame	data/chars/jaki/special4.png
+	attack1 105 128 188 60 10 0 0 0 0 0
+	frame	data/chars/jaki/special5.png
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jaki/special6.png
+	frame	data/chars/jaki/special7.png
+	frame	data/chars/jaki/special8.png
+	attack1 105 116 224 68 20 1 0 0 0 0
+	frame	data/chars/jaki/special9.png
+	
+anim	block
+	offset	48 180
+	bbox 21 10 57 172
+	frame	data/chars/jaki/block1.png
+	frame	data/chars/jaki/block2.png

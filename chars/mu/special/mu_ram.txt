@@ -1,0 +1,24 @@
+name	mu_ram
+type	none
+candamage player
+shadow	0
+setlayer 100
+antigravity 100
+remove 0
+didhitscript	data/scripts/didhit/tint_gold.c
+animationscript	data/scripts/player.c
+
+anim	idle
+	fastattack 1
+	loop	1
+	delay	10
+	offset	72 80
+	drawmethod alpha 1
+	attack1 14 0 220 133 10 0 0 0 12 12
+	frame	data/chars/mu/special/mu_ram/ram1.png
+	attack1 0
+	frame	data/chars/mu/special/mu_ram/ram2.png
+	attack1 14 0 220 133 10 0 0 0 12 12
+	frame	data/chars/mu/special/mu_ram/ram3.png
+	attack1 0
+	frame	data/chars/mu/special/mu_ram/ram4.png

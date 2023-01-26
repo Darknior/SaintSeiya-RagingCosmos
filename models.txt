@@ -315,9 +315,9 @@ know    arma0-4         data/chars/LIBRA/arma0-4.txt
 ## PNJ ##
 
 know    NPC-PLAYER      data/chars/OBJ/NPC-PLAYER.txt
-know    kikisuper       data/chars/KIKI/kikisuper.txt
-know    KIKI            data/chars/KIKI/KIKI.txt
-know    KIKI2           data/chars/KIKI2/KIKI2.txt
+know    kikisuper       data/chars/KIKI/00_kikisuper.txt
+know    KIKI            data/chars/KIKI/00_KIKI.txt
+know    KIKI2           data/chars/KIKI2/00_KIKI2.txt
 know    roccia1         data/chars/OBJ/roccia1.txt
 know    rock01          data/chars/OBJ/rock01.txt
 know    roccia2         data/chars/OBJ/roccia2.txt
@@ -351,23 +351,22 @@ load    ikki           data/chars/ikki/00_ikki.txt
 
 ## SANCTUARY SOLDIERS ##
 
-know    malesoldier     data/chars/malesoldier/malesoldier.txt
-know    malesoldier     			data/chars/malesoldier/malesoldier.txt
+know    malesoldier     data/chars/soldier_blue/00_soldier_blue.txt
 know    malesoldier_attackcombo 	data/chars/malesoldier/malesoldier_attackcombo.txt
 know    malesoldier_jumpattack  	data/chars/malesoldier/malesoldier_jumpattack.txt
 know    malesoldier_specialattack	data/chars/malesoldier/malesoldier_specialattack.txt
 know    malesoldier_runattack		data/chars/malesoldier/malesoldier_runattack.txt
 know    malesoldier_defense_all		data/chars/malesoldier/malesoldier_defense_all.txt
-know    soldiersuper    data/chars/SOLDIER1-1/soldiersuper.txt
-know    SOLDIER         data/chars/SOLDIER/SOLDIER.txt
-know    SOLDIER1        data/chars/SOLDIER1/SOLDIER1.txt
-know    SOLDIER1-1      data/chars/SOLDIER1-1/SOLDIER1-1.txt
-know    SOLDIER2        data/chars/SOLDIER2/SOLDIER2.txt
-know    SOLDIER3        data/chars/SOLDIER3/SOLDIER3.txt
-know 	jaki			data/chars/jaki/jaki.txt
-know    cassios        data/chars/cassios/cassios.txt
-know    cassiosp        data/chars/cassios/cassiosp.txt
-know    cassios_rescue  data/chars/cassios/cassios_rescue.txt
+know    soldiersuper    data/chars/soldier_yellow_B/soldiersuper.txt
+know    SOLDIER         data/chars/soldier_white/00_soldier_white.txt
+know    SOLDIER1        data/chars/soldier_yellow/00_soldier_yellow.txt
+know    SOLDIER1-1      data/chars/soldier_yellow_B/00_soldier_yellow_B.txt
+know    SOLDIER2        data/chars/soldier_purple/00_soldier_purple.txt
+know    SOLDIER3        data/chars/soldier_big/00_soldier_big.txt
+know 	jaki			data/chars/jaki/00_jaki.txt
+know    cassios        data/chars/cassios/00_cassios.txt
+know    cassiosp        data/chars/cassios/00_cassiosp.txt
+know    cassios_rescue  data/chars/cassios/00_cassios_rescue.txt
 
 ## SILVER SAINTS ##
 
@@ -382,6 +381,7 @@ know    agora     		data/chars/agora/00_agora.txt
 
 ## GOLD KINGHTS ##
 
+know    MU       data/chars/ALDEBARAN/00_MU.txt
 know    ALDEBARAN       data/chars/ALDEBARAN/00_ALDEBARAN.txt
 know    AIOLIA          data/chars/AIOLIA/00_AIOLIA.txt
 know    APHRODITE       data/chars/APHRODITE/00_APHRODITE.txt

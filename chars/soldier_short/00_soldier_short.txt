@@ -1,0 +1,173 @@
+name		soldier_short
+health		50
+speed		20
+type		enemy
+hostile     player npc 
+candamage 	player npc
+aimove      chase
+death 1
+script	data/scripts/entity_effects.c
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
+
+
+icon		data/chars/soldier_short/icon.png
+
+gfxshadow	1
+hitenemy    1 0
+blockodds 	1
+nodieblink  1
+noquake 1 1
+
+atchain 1 1 2
+dust		round_dustB
+load blood_ground_big
+
+#----------------------------------------------------------
+anim spawn
+	delay	10
+	offset	33 109
+	frame	data/chars/soldier_short/spawn.png
+	frame	data/chars/soldier_short/spawn.png
+
+anim follow1 #Entrée en jeu custom
+	delay	10
+	offset	60 123
+	bbox 38 10 43 80
+	jumpframe 0 3 1.5 0
+	frame	data/chars/soldier_short/jump1.png
+	frame	data/chars/soldier_short/jump2.png
+	frame	data/chars/soldier_short/jump3.png
+	frame	data/chars/soldier_short/jump2.png
+	frame	data/chars/soldier_short/jump1.png
+
+anim idle
+	loop	1
+	delay	25
+	offset	37 109
+	bbox 22 10 43 99
+	frame	data/chars/soldier_short/idle1.png
+	frame	data/chars/soldier_short/idle2.png
+	frame	data/chars/soldier_short/idle3.png
+	frame	data/chars/soldier_short/idle2.png	
+
+anim walk
+	loop	1
+	delay	15
+	offset	68 101
+	bbox 68 10 50 91
+	frame	data/chars/soldier_short/run1.png
+	frame	data/chars/soldier_short/run2.png
+	frame	data/chars/soldier_short/run3.png
+	frame	data/chars/soldier_short/run4.png
+	frame	data/chars/soldier_short/run5.png
+	frame	data/chars/soldier_short/run6.png	
+	
+anim rise
+	loop	1
+	delay	15
+	offset	65 125
+	bbox 49 10 50 115
+	frame	data/chars/soldier_short/run1.png
+	frame	data/chars/soldier_short/run2.png
+	frame	data/chars/soldier_short/run3.png
+	frame	data/chars/soldier_short/run4.png
+	frame	data/chars/soldier_short/run5.png
+	frame	data/chars/soldier_short/run6.png		
+	
+anim pain
+	delay	5
+	offset	37 109
+	bbox 22 0 43 109
+	frame	data/chars/soldier_short/pain1.png
+	frame	data/chars/soldier_short/pain2.png
+	frame	data/chars/soldier_short/pain3.png
+	frame	data/chars/soldier_short/pain2.png
+	frame	data/chars/soldier_short/pain1.png
+
+anim fall
+	delay	10
+	offset	73 110
+	frame	data/chars/soldier_short/fall1.png
+	frame	data/chars/soldier_short/fall2.png
+	frame	data/chars/soldier_short/fall3.png
+	frame	data/chars/soldier_short/fall4.png
+	frame	data/chars/soldier_short/fall5.png
+	frame	data/chars/soldier_short/fall6.png
+
+anim rise
+	offset	73 109
+	delay	10
+	frame	data/chars/soldier_short/rise1.png
+	frame	data/chars/soldier_short/rise2.png
+	frame	data/chars/soldier_short/rise3.png
+
+anim attack1
+	delay	10
+	offset	37 109
+	bbox 22 10 43 99
+	frame	data/chars/soldier_short/attack1.png
+	attack1 42 19 63 25 10 0 0 0 5 12
+	frame	data/chars/soldier_short/attack2.png
+
+anim attack2
+	delay	10
+	offset	37 109
+	bbox 22 10 43 99
+	frame	data/chars/soldier_short/attack21.png
+	frame	data/chars/soldier_short/attack22.png
+	attack1 37 70 66 40 20 1 0 0 5 12
+	frame	data/chars/soldier_short/attack23.png
+
+anim jump # Saut Statique
+	delay	10
+	offset	60 123
+	bbox 38 10 43 80
+	frame	data/chars/soldier_short/jump1.png
+	frame	data/chars/soldier_short/jump2.png
+	frame	data/chars/soldier_short/jump3.png
+	frame	data/chars/soldier_short/jump2.png
+	frame	data/chars/soldier_short/jump1.png
+	
+anim jumpdelay # Animation de saut intermédiaire
+	delay	10
+	offset	44 130
+	bbox 29 10 35 71
+	frame	data/chars/soldier_short/jump2.png
+
+anim jumpland # Aterrissage du saut
+	delay	10
+	offset	44 125
+	bbox 29 10 35 115
+	frame	data/chars/soldier_short/get1.png
+	frame	data/chars/soldier_short/get2.png
+	
+anim jumpattack #Attaque sautée statique
+	delay	10
+	offset	60 123
+	bbox 38 10 43 80
+	sound data/sounds/punch.wav
+	frame	data/chars/soldier_short/jumpattack1.png
+	frame	data/chars/soldier_short/jumpattack2.png
+	attack1 62 52 86 37 10 1 0 0 5 12
+	frame	data/chars/soldier_short/jumpattack3.png
+	
+anim	block
+	offset	37 109
+	bbox 22 10 43 99
+	frame	data/chars/soldier_short/block1.png
+	frame	data/chars/soldier_short/block2.png
+
+anim death
+	delay	10
+	offset	118 125
+	frame	data/chars/soldier_short/fall1.png
+	frame	data/chars/soldier_short/fall2.png
+	frame	data/chars/soldier_short/fall3.png
+	frame	data/chars/soldier_short/fall4.png
+	frame	data/chars/soldier_short/fall5.png
+        @cmd 	spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0	
+	frame	data/chars/soldier_short/fall6.png
+	frame	data/chars/soldier_short/fall6.png
+	frame	data/chars/soldier_short/fall6.png
+	frame	data/chars/soldier_short/fall6.png
