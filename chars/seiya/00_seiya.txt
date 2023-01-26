@@ -320,20 +320,21 @@ anim get
 	frame	data/chars/seiya/get1.png
 
 anim attack1 # Attaque combo 1
-	delay	4
+	delay	6
 	offset	45 119
 	bbox 21 7 51 112
 	hitflash flash
 	frame	data/chars/seiya/attack1.png
-	attack1 62 21 67 26 10 0 0 0 10 12
+	attack1 62 21 67 26 10 0 0 0 12 20
 	frame	data/chars/seiya/attack2.png
+	attack1 62 21 67 26 10 0 0 0 12 20
 	frame	data/chars/seiya/attack3.png
+	delay	4
 	frame	data/chars/seiya/attack2.png
 	attack1 0
-	frame	data/chars/seiya/attack1.png
 	
 anim attack2 # Attaque combo 2
-	delay	5
+	delay	7
 	offset	45 119
 	bbox 21 7 51 112
 	hitflash flash
@@ -341,36 +342,36 @@ anim attack2 # Attaque combo 2
 	frame	data/chars/seiya/attack22.png
 	frame	data/chars/seiya/attack23.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 10 12
+	attack1 62 21 67 26 10 0 0 0 12 20
 	frame	data/chars/seiya/attack24.png
 	attack1 0
 	
 anim attack3 # Attaque combo 3
-	delay	5
+	delay	7
 	offset	45 119
 	bbox 21 7 51 112
 	hitflash flashmedium
 	frame	data/chars/seiya/attack31.png
 	frame	data/chars/seiya/attack32.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 10 12
+	attack1 62 21 67 26 10 0 0 0 12 20
 	frame	data/chars/seiya/attack33.png
 	attack1 0
 	
 anim attack4 # Attaque combo 4
-	delay	6
+	delay	7
 	offset	45 119
 	bbox 21 7 51 112
 	hitflash flashmedium
 	frame	data/chars/seiya/attack41.png
 	frame	data/chars/seiya/attack42.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 10 12
+	attack1 62 21 67 26 10 0 0 0 12 20
 	frame	data/chars/seiya/attack43.png
 	attack1 0
 	
 anim attack5 # Attaque combo 5
-	delay	6
+	delay	7
 	offset	45 119
 	bbox 21 7 51 112
 	hitflash flashbig
@@ -378,7 +379,7 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/seiya/attack52.png
 	frame	data/chars/seiya/attack53.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 20 1 0 0 10 12
+	attack1 62 21 67 26 20 1 0 0 12 20
 	frame	data/chars/seiya/attack54.png
 	@cmd 	spawnbind "kick_dust" 0 0 0 0 0
 	frame	data/chars/seiya/attack55.png

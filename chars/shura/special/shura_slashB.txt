@@ -1,0 +1,30 @@
+name	shura_slashB
+type	none
+shadow	0
+setlayer 7777
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	5
+	offset	194 274
+        drawmethod  alpha 1
+        drawmethod  channel 0.73
+	sound data/chars/shura/02-slash.wav
+	quakeframe   data/chars/shura/special/shura_slashB/shura_slashB12.png 13 5
+	frame	data/chars/shura/special/shura_slashB/shura_slashB13.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB14.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB15.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB16.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB17.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB18.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB19.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB20.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB21.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB22.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB23.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB24.png
+	frame	data/chars/shura/special/shura_slashB/shura_slashB25.png
+	@cmd suicide
+	frame	data/chars/shura/special/shura_slashB/shura_slashB25.png

@@ -16,13 +16,14 @@ maxfollows 50
 
 #------------------------
 
-#Animated Title and Select screens
+## Animated Title and Select screens ##
 load    bgselect        data/bgs/select/bgselect.txt
 load    bgtitle         data/bgs/title/bgtitle.txt
 load    cursor_a        data/bgs/select/cursor_a.txt
 load    cursor_b        data/bgs/select/cursor_b.txt
 
-#Dialogs
+## Dialogs ##
+
 load    dialog_aldebaran1 data/chars/dialogs/dialog_aldebaran1.txt
 load    dialog_aldebaran2 data/chars/dialogs/dialog_aldebaran2.txt
 load    dialog_aldebaran3 data/chars/dialogs/dialog_aldebaran3.txt
@@ -63,6 +64,7 @@ load    dialog_wait       data/chars/dialogs/dialog_wait.txt
 load	fade              data/chars/dialogs/fade.txt
 
 #Flash animations
+
 load    flash           data/chars/misc/flash/flash.txt
 load    flashmedium     data/chars/misc/flash/flashmedium.txt
 load    flashbig        data/chars/misc/flash/flashbig.txt
@@ -276,14 +278,22 @@ know    knife  		data/chars/great_pope/special/knife.txt
 
 know    columnT  	data/chars/jaki/special/columnT.txt
 
+
+## ITEMS ##
+
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt
 know    life            data/chars/OBJ/life.txt
-know    NPC-PLAYER      data/chars/OBJ/NPC-PLAYER.txt
+know	apple		data/chars/misc/food/apple.txt
+know	macaff		data/chars/misc/food/macaff.txt
+know	bananaff		data/chars/misc/food/bananaff.txt
+know	grape		data/chars/misc/food/grape.txt
+know	abacaxiff		data/chars/misc/food/abacaxiff.txt
+know	cerejacc		data/chars/misc/food/cerejacc.txt
+know	limaocc		data/chars/misc/food/limaocc.txt
+know	laranjaff		data/chars/misc/food/laranjaff.txt
 
-know    kikisuper       data/chars/KIKI/kikisuper.txt
-load    KIKI            data/chars/KIKI/KIKI.txt
-load    KIKI2           data/chars/KIKI2/KIKI2.txt
+## BALANCE  ##
 
 know    libra1          data/chars/LIBRA/libra1.txt
 know    libra2          data/chars/LIBRA/libra2.txt
@@ -302,121 +312,16 @@ know    arma0-2         data/chars/LIBRA/arma0-2.txt
 know    arma0-3         data/chars/LIBRA/arma0-3.txt
 know    arma0-4         data/chars/LIBRA/arma0-4.txt
 
-load    cassios        data/chars/cassios/cassios.txt
-load    cassiosp        data/chars/cassios/cassiosp.txt
-load    cassios_rescue  data/chars/cassios/cassios_rescue.txt
-
-## PEGASUS / SEIYA
-
-load    seiya           data/chars/seiya/00_seiya.txt
-
-## DRAGON / SHIRYU
-
-load    shiryu           data/chars/shiryu/00_shiryu.txt
-
-## CYGNUS - HYOGA
-
-load    hyoga           data/chars/hyoga/00_hyoga.txt
-
-## ANDROMEDA / SHUN
-
-load    shun           data/chars/shun/00_shun.txt
-
-## PHOENIX / IKKI
-
-load    ikki           data/chars/ikki/00_ikki.txt
-
-## UNICORN / JABU
-
-load    UNICORN-JABU    data/chars/UNICORN-JABU/UNICORN-JABU.txt
-load    UJARMA0         data/chars/UNICORN-JABU/UJARMA0.txt
-load    UJARMA1         data/chars/UNICORN-JABU/UJARMA1.txt
-load    UJARMA2         data/chars/UNICORN-JABU/UJARMA2.txt
-load    UJARMA3         data/chars/UNICORN-JABU/UJARMA3.txt
-load    UJARMA4         data/chars/UNICORN-JABU/UJARMA4.txt
-load    UJARMA5         data/chars/UNICORN-JABU/UJARMA5.txt
-load    UJARMA6         data/chars/UNICORN-JABU/UJARMA6.txt
-
-## HYDRA / ICHI
-
-load    HYDRA-ICHI      data/chars/HYDRA-ICHI/HYDRA-ICHI.txt
-load    HIARMA0         data/chars/HYDRA-ICHI/HIARMA0.txt
-load    HIARMA1         data/chars/HYDRA-ICHI/HIARMA1.txt
-load    HIARMA2         data/chars/HYDRA-ICHI/HIARMA2.txt
-load    HIARMA3         data/chars/HYDRA-ICHI/HIARMA3.txt
-load    HIARMA4         data/chars/HYDRA-ICHI/HIARMA4.txt
-load    HIARMA5         data/chars/HYDRA-ICHI/HIARMA5.txt
-load    HIARMA6         data/chars/HYDRA-ICHI/HIARMA6.txt
-
-## BEAR / GEKI
-
-load    BEAR-GEKI       data/chars/BEAR-GEKI/BEAR-GEKI.txt
-load    BGARMA0         data/chars/BEAR-GEKI/BGARMA0.txt
-load    BGARMA1         data/chars/BEAR-GEKI/BGARMA1.txt
-load    BGARMA2         data/chars/BEAR-GEKI/BGARMA2.txt
-load    BGARMA3         data/chars/BEAR-GEKI/BGARMA3.txt
-load    BGARMA4         data/chars/BEAR-GEKI/BGARMA4.txt
-load    BGARMA5         data/chars/BEAR-GEKI/BGARMA5.txt
-load    BGARMA6         data/chars/BEAR-GEKI/BGARMA6.txt
-
-## LIONET / BAN
-
-load    LIONET-BAN      data/chars/LIONET-BAN/LIONET-BAN.txt
-load    LBARMA0         data/chars/LIONET-BAN/LBARMA0.txt
-load    LBARMA1         data/chars/LIONET-BAN/LBARMA1.txt
-load    LBARMA2         data/chars/LIONET-BAN/LBARMA2.txt
-load    LBARMA3         data/chars/LIONET-BAN/LBARMA3.txt
-load    LBARMA4         data/chars/LIONET-BAN/LBARMA4.txt
-load    LBARMA5         data/chars/LIONET-BAN/LBARMA5.txt
-load    LBARMA6         data/chars/LIONET-BAN/LBARMA6.txt
-
-## WOLF / NACHI
-
-load    WOLF-NACHI      data/chars/WOLF-NACHI/WOLF-NACHI.txt
-load    WNARMA0         data/chars/WOLF-NACHI/WNARMA0.txt
-load    WNARMA1         data/chars/WOLF-NACHI/WNARMA1.txt
-load    WNARMA2         data/chars/WOLF-NACHI/WNARMA2.txt
-load    WNARMA3         data/chars/WOLF-NACHI/WNARMA3.txt
-load    WNARMA4         data/chars/WOLF-NACHI/WNARMA4.txt
-load    WNARMA5         data/chars/WOLF-NACHI/WNARMA5.txt
-load    WNARMA6         data/chars/WOLF-NACHI/WNARMA6.txt
-
-## EAGLE / MARIN
-
-load    marin     		data/chars/marin/00_marin.txt
-load    asterion     	data/chars/asterion/00_asterion.txt
-load    shaina     		data/chars/shaina/00_shaina.txt
-load    tremi     		data/chars/tremi/00_tremi.txt
-load    sirius     		data/chars/sirius/00_sirius.txt
-load    june     		data/chars/june/00_june.txt
-load    shiva     		data/chars/shiva/00_shiva.txt
-load    agora     		data/chars/agora/00_agora.txt
-
 ## PNJ ##
 
+know    NPC-PLAYER      data/chars/OBJ/NPC-PLAYER.txt
+know    kikisuper       data/chars/KIKI/kikisuper.txt
+know    KIKI            data/chars/KIKI/KIKI.txt
+know    KIKI2           data/chars/KIKI2/KIKI2.txt
 know    roccia1         data/chars/OBJ/roccia1.txt
 know    rock01          data/chars/OBJ/rock01.txt
 know    roccia2         data/chars/OBJ/roccia2.txt
 know    rock02          data/chars/OBJ/rock02.txt
-
-
-#Enemies
-
-know    malesoldier     data/chars/malesoldier/malesoldier.txt
-know    malesoldier     			data/chars/malesoldier/malesoldier.txt
-know    malesoldier_attackcombo 	data/chars/malesoldier/malesoldier_attackcombo.txt
-know    malesoldier_jumpattack  	data/chars/malesoldier/malesoldier_jumpattack.txt
-know    malesoldier_specialattack	data/chars/malesoldier/malesoldier_specialattack.txt
-know    malesoldier_runattack		data/chars/malesoldier/malesoldier_runattack.txt
-know    malesoldier_defense_all		data/chars/malesoldier/malesoldier_defense_all.txt
-know    soldiersuper    data/chars/SOLDIER1-1/soldiersuper.txt
-know    SOLDIER         data/chars/SOLDIER/SOLDIER.txt
-know    SOLDIER1        data/chars/SOLDIER1/SOLDIER1.txt
-know    SOLDIER1-1      data/chars/SOLDIER1-1/SOLDIER1-1.txt
-know    SOLDIER2        data/chars/SOLDIER2/SOLDIER2.txt
-know    SOLDIER3        data/chars/SOLDIER3/SOLDIER3.txt
-know    SOLDIER4        data/chars/SOLDIER4/SOLDIER4.txt
-know 	jaki			data/chars/jaki/jaki.txt
 
 #MISC
 
@@ -436,44 +341,69 @@ know    horloge-verseau   data/chars/misc/timer/horloge-verseau.txt
 know    horloge-poissons   data/chars/misc/timer/horloge-poissons.txt
 know    time-is-up   data/chars/misc/timer/time-is-up.txt
 
+## BRONZE SAINTS ##
+
+load    seiya           data/chars/seiya/00_seiya.txt
+load    shiryu           data/chars/shiryu/00_shiryu.txt
+load    hyoga           data/chars/hyoga/00_hyoga.txt
+load    shun           data/chars/shun/00_shun.txt
+load    ikki           data/chars/ikki/00_ikki.txt
+
+## SANCTUARY SOLDIERS ##
+
+know    malesoldier     data/chars/malesoldier/malesoldier.txt
+know    malesoldier     			data/chars/malesoldier/malesoldier.txt
+know    malesoldier_attackcombo 	data/chars/malesoldier/malesoldier_attackcombo.txt
+know    malesoldier_jumpattack  	data/chars/malesoldier/malesoldier_jumpattack.txt
+know    malesoldier_specialattack	data/chars/malesoldier/malesoldier_specialattack.txt
+know    malesoldier_runattack		data/chars/malesoldier/malesoldier_runattack.txt
+know    malesoldier_defense_all		data/chars/malesoldier/malesoldier_defense_all.txt
+know    soldiersuper    data/chars/SOLDIER1-1/soldiersuper.txt
+know    SOLDIER         data/chars/SOLDIER/SOLDIER.txt
+know    SOLDIER1        data/chars/SOLDIER1/SOLDIER1.txt
+know    SOLDIER1-1      data/chars/SOLDIER1-1/SOLDIER1-1.txt
+know    SOLDIER2        data/chars/SOLDIER2/SOLDIER2.txt
+know    SOLDIER3        data/chars/SOLDIER3/SOLDIER3.txt
+know 	jaki			data/chars/jaki/jaki.txt
+know    cassios        data/chars/cassios/cassios.txt
+know    cassiosp        data/chars/cassios/cassiosp.txt
+know    cassios_rescue  data/chars/cassios/cassios_rescue.txt
+
+## SILVER SAINTS ##
+
+know    marin     		data/chars/marin/00_marin.txt
+know    asterion     	data/chars/asterion/00_asterion.txt
+know    shaina     		data/chars/shaina/00_shaina.txt
+know    tremi     		data/chars/tremi/00_tremi.txt
+know    sirius     		data/chars/sirius/00_sirius.txt
+know    june     		data/chars/june/00_june.txt
+know    shiva     		data/chars/shiva/00_shiva.txt
+know    agora     		data/chars/agora/00_agora.txt
+
 ## GOLD KINGHTS ##
 
 know    ALDEBARAN       data/chars/ALDEBARAN/00_ALDEBARAN.txt
-
-know    leonesuper      data/chars/AIOLIA/leonesuper.txt
 know    AIOLIA          data/chars/AIOLIA/00_AIOLIA.txt
-
-know    pescisuper1     data/chars/APHRODITE/pescisuper1.txt
-know    pescisuper2     data/chars/APHRODITE/pescisuper2.txt
-know    pescisuper3     data/chars/APHRODITE/pescisuper3.txt
 know    APHRODITE       data/chars/APHRODITE/00_APHRODITE.txt
-
 know    CAMUS           data/chars/CAMUS/00_CAMUS.txt
-
 know    DEATHMASK       data/chars/DEATHMASK/00_DEATHMASK.txt
-
 know    GEMINI          data/chars/GEMINI/00_GEMINI.txt
-
 know    MILO            data/chars/MILO/00_MILO.txt
-
 know    saga            data/chars/saga/saga.txt
-
 know    SHAKA           data/chars/SHAKA/00_SHAKA.txt
 know    SHURA           data/chars/SHURA/00_shura.txt
-
 know    cube            data/chars/CUBE/CUBE.txt
-
 know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
-
 know    great_pope      data/chars/great_pope/great_pope.txt
 
 
 #-- LEVELS --------------------------------------------------------------------------
 
 ## TEMPLE 1
-load    mu                  data/bgs/temple1/mu/mu.txt
+know    mu                  data/bgs/temple1/mu/mu.txt
+
 ## Dialogs
-load    dialogdelay     	data/bgs/temple1/mu_dialog/dialogdelay.txt
+know    dialogdelay     	data/bgs/temple1/mu_dialog/dialogdelay.txt
 know 	dialogbox0			data/bgs/temple1/mu_dialog/dialogbox0.txt
 know 	dialogbox			data/bgs/temple1/mu_dialog/dialogbox.txt
 know 	mu_dialog			data/bgs/temple1/mu_dialog/mu_dialog.txt
@@ -499,14 +429,14 @@ know 	aphrodite_dialog2	data/bgs/temple12/aphrodite_dialog/aphrodite_dialog2.txt
 
 
 ## TEMPLE 2 ROAD
-load    temple2roadcolumns      data/bgs/temple2-road/temple2roadcolumns.txt
+know    temple2roadcolumns      data/bgs/temple2-road/temple2roadcolumns.txt
 
 ## TEMPLE 3
 know    temple3_columns     data/bgs/temple3/columns/temple3_columns.txt
 know    temple3_grid        data/bgs/temple3/grid/temple3_grid.txt
 
 ## TEMPLE 4 ROAD
-load    temple4roadcolumns      data/bgs/temple4-road/temple4roadcolumns.txt
+know    temple4roadcolumns      data/bgs/temple4-road/temple4roadcolumns.txt
 
 ## TEMPLE 4
 know    temple4_columns     data/bgs/temple4/columns/temple4_columns.txt
@@ -517,23 +447,23 @@ know    temple4_faces02     data/bgs/temple4/faces/temple4_faces02.txt
 know    temple4_faces03     data/bgs/temple4/faces/temple4_faces03.txt
 
 ## TEMPLE 5
-load    flame               data/bgs/temple5/flame/flame.txt
-load    temple5columns      data/bgs/temple5/temple5columns.txt
+know    flame               data/bgs/temple5/flame/flame.txt
+know    temple5columns      data/bgs/temple5/temple5columns.txt
 
 ## TEMPLE 6 MIDBOSS
-load    volcano_flame      data/bgs/temple6_midboss/volcano_flame.txt
+know    volcano_flame      data/bgs/temple6_midboss/volcano_flame.txt
 
 ## TEMPLE 6
-load    temple6columns      data/bgs/temple6/temple6columns.txt
+know    temple6columns      data/bgs/temple6/temple6columns.txt
 
 ## TEMPLE 7
-load    temple7columns      data/bgs/temple7/temple7columns.txt
+know    temple7columns      data/bgs/temple7/temple7columns.txt
 
 ## TEMPLE 10 ROAD
-load    temple10roadcolumns      data/bgs/temple10-road/temple10roadcolumns.txt
+know    temple10roadcolumns      data/bgs/temple10-road/temple10roadcolumns.txt
 
 ## TEMPLE 11
-load    temple11columns      data/bgs/temple11/temple11columns.txt
+know    temple11columns      data/bgs/temple11/temple11columns.txt
 
 ## TEMPLE 12
 know    temple12_columns     data/bgs/temple12/columns/temple12_columns.txt
@@ -542,18 +472,10 @@ know    temple12_Roses02     data/bgs/temple12/Roses/temple12_Roses02.txt
 know    temple12_Roses03     data/bgs/temple12/Roses/temple12_Roses03.txt
 
 ## TEMPLE 13 ROAD
-load    temple13roadcolumns      data/bgs/temple13-road/temple13roadcolumns.txt
+know    temple13roadcolumns      data/bgs/temple13-road/temple13roadcolumns.txt
 
 ## TEMPLE 13 FINAL
-load    temple13columns      data/bgs/temple13/temple13columns.txt
+know    temple13columns      data/bgs/temple13/temple13columns.txt
 
-#Food
-load	apple		data/chars/misc/food/apple.txt
-load	macaff		data/chars/misc/food/macaff.txt
-load	bananaff		data/chars/misc/food/bananaff.txt
-load	grape		data/chars/misc/food/grape.txt
-load	abacaxiff		data/chars/misc/food/abacaxiff.txt
-load	cerejacc		data/chars/misc/food/cerejacc.txt
-load	limaocc		data/chars/misc/food/limaocc.txt
-load	laranjaff		data/chars/misc/food/laranjaff.txt
+
 
