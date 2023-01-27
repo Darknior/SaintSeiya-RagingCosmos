@@ -6,7 +6,7 @@ setlayer 99
 antigravity 100
 lifespan  6
 animationscript		data/scripts/escript.c
-
+nolife 1
 anim	idle
 	loop	1
 	fastattack 1

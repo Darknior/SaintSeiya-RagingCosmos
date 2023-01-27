@@ -7,7 +7,7 @@ setlayer 99
 antigravity 100
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_ice.c
-
+nolife 1
 anim	idle
 	loop	1
 	fastattack 1

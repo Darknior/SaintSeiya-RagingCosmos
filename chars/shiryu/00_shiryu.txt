@@ -540,7 +540,6 @@ sound   data/chars/shiryu/23-projection2.wav
 anim freespecial3 # Défense spéciale explosion du cosmos
 	delay	10
 	offset	42 156
-	energycost  10 1 0
 	hitflash flashbig
 	sound data/chars/shiryu/00-cosmos.wav
 	bbox 15 46 50 110

@@ -292,7 +292,7 @@ credits     10
 cansave     2
 disablehof  0
 typemp      0
-skipselect  ikki
+skipselect  hyoga
 z           390 484
 file        data/levels/temple11.txt
 

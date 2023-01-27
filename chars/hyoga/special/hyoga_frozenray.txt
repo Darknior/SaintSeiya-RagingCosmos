@@ -6,7 +6,7 @@ remove 0
 setlayer 99
 antigravity 100
 animationscript	data/scripts/player.c
-
+nolife 1
 anim	idle
 	loop	1
 	fastattack 1

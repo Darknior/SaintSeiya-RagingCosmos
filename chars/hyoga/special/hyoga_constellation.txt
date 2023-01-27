@@ -4,7 +4,7 @@ shadow	0
 speed	10
 setlayer 5
 animationscript	data/scripts/player.c
-
+nolife 1
 anim	idle
 	delay	10
 	offset	800 0

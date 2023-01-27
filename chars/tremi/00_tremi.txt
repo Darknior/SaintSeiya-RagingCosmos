@@ -129,7 +129,7 @@ anim walk
 	loop	1
 	delay	14
 	offset	46 119
-	bbox 18 7 52 112
+	bbox 24 0 50 120
 	frame	data/chars/tremi/walk1.png
 	frame	data/chars/tremi/walk2.png
 	frame	data/chars/tremi/walk3.png
@@ -143,7 +143,7 @@ anim run
 	loop	1
 	delay	10
 	offset	72 119
-	bbox 36 7 52 112
+	bbox 45 7 52 112
 	frame	data/chars/tremi/run1.png
 	frame	data/chars/tremi/run2.png
 	frame	data/chars/tremi/run3.png

@@ -1,0 +1,41 @@
+name	hyoga_dash
+type	none
+candamage enemy npc
+shadow	0
+remove 0
+setlayer 150
+antigravity 100
+animationscript	data/scripts/player.c
+didhitscript	data/scripts/didhit/tint_ice.c
+
+anim	idle
+	loop	1
+	fastattack 1
+	delay	6
+	offset	90 180
+	drawmethod alpha 1
+	drawmethod scale 0.5 0.5
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-0.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-1.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-2.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-3.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-4.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-5.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-6.png
+        frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-7.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-8.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-9.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-10.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-11.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-12.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-13.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-14.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-15.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-16.png
+        frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-17.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-18.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-19.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-20.png
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-21.png
+	@cmd	suicide	
+	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-21.png

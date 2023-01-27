@@ -64,6 +64,8 @@ load hyoga_diamondsB
 load hyoga_diamonds_up
 load camus_lights
 load hyoga_uppercut
+load hyoga_dash
+load hyoga_tornadoB
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -291,10 +293,10 @@ anim runattack # Attaque en courant
 	bbox 9 28 51 112
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
-sound   data/chars/hyoga/07-forward_punch.wav
+sound   data/chars/hyoga/01-dash.wav
 	frame	data/chars/hyoga/runattack1.png
 	frame	data/chars/hyoga/runattack2.png
-	@cmd 	spawnbind "seiya_dash_dust" "ANI_IDLE" 0 0 0 0 0
+	@cmd 	spawnbind "hyoga_dash" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/hyoga/runattack3.png
 	attack2 50 40 70 40 20 1 0 0 5 12
 	frame	data/chars/hyoga/runattack4.png
@@ -868,7 +870,7 @@ anim freespecial5 # Uppercut
 	delay 5
 	frame	data/chars/hyoga/uppercut3.png
 	attack1 23 51 50 120 10 0 0 0 0 30
-	@cmd	shooter "hyoga_twister" 47 0 0 0 0 0	
+	@cmd	shooter "hyoga_tornadoB" 47 0 0 0 0 0	
 	frame	data/chars/hyoga/uppercut4.png
 	delay 19
 	frame	data/chars/hyoga/uppercut5.png

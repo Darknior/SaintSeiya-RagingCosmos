@@ -123,6 +123,8 @@ know    hyoga_diamonds    data/chars/hyoga/special/hyoga_diamonds.txt
 know    hyoga_diamondsB    data/chars/hyoga/special/hyoga_diamondsB.txt
 know    hyoga_diamonds_up    data/chars/hyoga/special/hyoga_diamonds_up.txt
 know    hyoga_uppercut    data/chars/hyoga/special/hyoga_uppercut.txt
+know    hyoga_dash    data/chars/hyoga/special/hyoga_dash.txt
+know    hyoga_tornadoB           data/chars/hyoga/special/hyoga_tornadoB.txt
 
 know    shun_aura             data/chars/shun/special/shun_aura.txt
 know    shun_stream           data/chars/shun/special/shun_stream.txt
@@ -139,6 +141,7 @@ know    ikki_fire           data/chars/ikki/special/ikki_fire.txt
 know    ikki_storm           data/chars/ikki/special/ikki_storm.txt
 know    ikki_run           data/chars/ikki/special/ikki_run.txt
 know    ikki_uppercutB           data/chars/ikki/special/ikki_uppercutB.txt
+
 
 know    aldebaran_aura            data/chars/aldebaran/special/aldebaran_aura.txt
 know    aldebaran_runtaurus       data/chars/aldebaran/special/aldebaran_runtaurus.txt

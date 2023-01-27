@@ -1,0 +1,41 @@
+name	hyoga_tornado
+type	none
+candamage enemy npc
+shadow	0
+setlayer 100
+antigravity 100
+remove 0
+didhitscript	data/scripts/didhit/tint_ice.c
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	fastattack 1
+	delay	10
+	offset	50 180
+	drawmethod alpha 1
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-0.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-1.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-2.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-3.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-4.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-5.png
+	freeze 23 51 50 120 10 3.5 0 0 0 30
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-6.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-7.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-8.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-9.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-10.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-11.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-12.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-13.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-14.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-15.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-16.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-17.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-18.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-19.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-20.png
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-21.png
+	@cmd suicide
+	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-21.png

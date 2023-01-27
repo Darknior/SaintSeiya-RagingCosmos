@@ -2,7 +2,7 @@ name	hyoga_diamonds
 type	none
 candamage enemy npc
 shadow	0
-remove 0
+nolife 1
 setlayer 99
 antigravity 100
 animationscript	data/scripts/player.c
