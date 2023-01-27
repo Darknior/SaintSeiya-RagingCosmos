@@ -7,6 +7,9 @@ antigravity 100
 remove 0
 animationscript	data/scripts/player.c
 
+## CUSTOM BOSS LIFEBAR
+nolife 1
+
 anim	idle
 	fastattack 1
 	loop	1

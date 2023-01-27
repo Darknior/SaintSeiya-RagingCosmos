@@ -1,6 +1,7 @@
 name		shaka
 health		700
 mp 			100
+mprate 		1   # Nombre de mp gagnés par coup
 speed		20	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
@@ -391,7 +392,7 @@ anim jumpattack # Attaque sautée statique
 anim freespecial5 # Défense spéciale Blood Sea
 	delay	10
 	offset	66 149
-	energycost  50 1 0
+	energycost  50 1
         hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
@@ -402,7 +403,6 @@ anim freespecial5 # Défense spéciale Blood Sea
         @cmd 	spawnScreen "shaka_constellationB" 0 0 0 0
         @cmd 	spawnScreen "shaka_blood_seaB" 0 0 0 0
 	@cmd 	spawnbind "shaka_blood_geyser" "ANI_IDLE" 0 0 0 0 0
-	energycost  15 1 0
 	@cmd 	spawnbind "shaka_circles" "ANI_IDLE" 0 0 0 0 0
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/shaka/special21.png
@@ -519,7 +519,7 @@ anim freespecial5 # Défense spéciale Blood Sea
 anim special# Défense spéciale Melee
 	delay	7
 	offset	66 144
-	energycost  20 1 0
+	energycost  20 1
 	fastattack 1
 	sound data/chars/shaka/01-tenmakosen.wav
 	@cmd 	spawnbind "shaka_aura" "ANI_IDLE" 0 0 0 0 0
@@ -569,13 +569,12 @@ anim special# Défense spéciale Melee
 anim special2 #Attaque spéciale Lotus toss
 	range 	250 400
 	rangea 	0 100
-	energycost  20 1 0
+	energycost  20 1
         hitflash aphrodite_rose_explosion
 	delay	15
 	offset	92 129
 	bbox 46 16 38 133
 	sound data/chars/shaka/16-lotus.wav
-	energycost  20 1 0
 	summonframe 0 0 0 0
 	subentity shaka_lotus
         unsummonframe 10
@@ -614,13 +613,12 @@ anim special2 #Attaque spéciale Lotus toss
 anim freespecial2 # Attaque spéciale Lotus toss
 	range 	250 400
 	rangea 	0 100
-	energycost  20 1 0
+	energycost  20 1
 	delay	15
 	offset	92 129
 	bbox 46 16 38 133
         hitflash aphrodite_rose_explosion
 	sound data/chars/shaka/16-lotus.wav
-	energycost  20 1 0
 	summonframe 0 0 0 0
         unsummonframe 10
 	subentity shaka_lotus
@@ -662,7 +660,7 @@ anim freespecial3 # Shaka hands
 	range 200 400
 	delay	10
 	offset	66 149
-	energycost  15 1 0
+	energycost  15 1
 	sound data/chars/deathmask/05-spirit.wav
 	summonframe 0 0 0 0 0
 	subentity shaka_cosmos
@@ -689,7 +687,7 @@ anim freespecial3 # Shaka hands
 anim freespecial6 # Ten Bu Ho Rin
 	delay	20
 	offset	66 149
-	energycost  50 1 0
+	energycost  50 1
         hitflash shaka_flame
 	fastattack 1
 	sound data/chars/deathmask/78-cosmos.wav
