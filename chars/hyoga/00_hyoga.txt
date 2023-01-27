@@ -66,6 +66,7 @@ load camus_lights
 load hyoga_uppercut
 load hyoga_dash
 load hyoga_tornadoB
+load marin_stormA
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
