@@ -49,7 +49,7 @@ com  F a2  	freespecial2 	#Météores de Pégase
 com  a2  	freespecial3 	#Explosion du Cosmos
 com  B a1  	freespecial4 	#Manchette arriere
 com  D F a1  	freespecial5 	#Uppercut
-com  U a2  	freespecial6 	#Comète de Pégase
+com  D F a2  	freespecial6 	#Comète de Pégase
 
 load seiya_aura
 load seiya_constellation
@@ -227,6 +227,68 @@ anim walk
 	frame	data/chars/seiya/walk6.png
 	frame	data/chars/seiya/walk7.png
 
+anim up
+	loop	1
+	delay	14
+	cancel 0 8 0 A1 freespecial7 
+	offset	45 112
+	bbox 21 0 51 112
+	frame	data/chars/seiya/walk1.png
+	frame	data/chars/seiya/walk2.png
+	frame	data/chars/seiya/walk3.png
+	frame	data/chars/seiya/walk4.png
+	frame	data/chars/seiya/walk5.png
+	frame	data/chars/seiya/walk6.png
+	frame	data/chars/seiya/walk7.png
+
+anim freespecial7
+	delay	7
+	offset	45 119
+	bbox 21 7 51 112
+	hitflash flashmedium
+        sound   data/sounds/punch.wav
+	frame	data/chars/seiya/attack41.png
+	frame	data/chars/seiya/attack42.png
+	dropv 4.0 1.0 0.0
+	attack1 62 21 67 26 10 0 0 0 12 20
+	frame	data/chars/seiya/attack43.png
+	frame	data/chars/seiya/attack42.png
+	frame	data/chars/seiya/attack41.png
+	attack1 0
+
+anim down
+	loop	1
+	delay	14
+	cancel 0 8 0 A1 freespecial8 
+	offset	45 112
+	bbox 21 0 51 112
+	frame	data/chars/seiya/walk1.png
+	frame	data/chars/seiya/walk2.png
+	frame	data/chars/seiya/walk3.png
+	frame	data/chars/seiya/walk4.png
+	frame	data/chars/seiya/walk5.png
+	frame	data/chars/seiya/walk6.png
+	frame	data/chars/seiya/walk7.png
+
+anim freespecial8
+	delay	7
+	offset	37 141
+	bbox 21 29 51 112
+	hitflash flashmedium
+	frame	data/chars/seiya/slide.png
+	frame	data/chars/seiya/slide0.png
+        sound   data/sounds/punch.wav
+	frame	data/chars/seiya/slide1.png
+	dropv 4.0 1.0 0.0
+	attack1 62 114 67 26 10 0 0 0 12 20
+	frame	data/chars/seiya/slide2.png
+	frame	data/chars/seiya/slide3.png
+	frame	data/chars/seiya/slide4.png
+	frame	data/chars/seiya/slide5.png
+	frame	data/chars/seiya/slide6.png
+	frame	data/chars/seiya/slide.png
+	attack1 0
+
 anim dodge
 	delay	10
 	offset	45 137
@@ -393,7 +455,7 @@ anim attack5 # Attaque combo 5
 anim attackbackward # Attaque arrière (Arrière + attaque)
         offset	107 148
 	hitflash flashmedium	
-	delay	4
+	delay	6
         sound   data/chars/seiya/01-backpunch.wav
 	frame	data/chars/seiya/attackbackward20.png
 	delay	10
@@ -487,7 +549,7 @@ sound   data/chars/seiya/17-back_kick.wav
 	frame	data/chars/seiya/attackbackward1.png	
 	
 anim freespecial4 # Attaque arrière (à partir d'un cancel)
-        offset	107 148
+        offset	105 147
 	hitflash flashmedium	
 	delay	4
         sound   data/chars/seiya/01-backpunch.wav

@@ -21,8 +21,6 @@ subject_to_screen 1 # ne peut pas aller hors ecran
 
 #subject_to_wall 0
 
-subject_to_screen 0
-
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c

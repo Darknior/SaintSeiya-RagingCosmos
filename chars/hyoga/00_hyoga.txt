@@ -340,11 +340,11 @@ anim get
 	frame	data/chars/hyoga/get1.png
 
 anim attack1 # Attaque combo 1
-	delay	5
+	delay	6
 	offset	45 140
 	bbox 21 28 51 112
 	frame	data/chars/hyoga/attack1.png
-	attack1 62 44 67 26 10 0 0 0 10 12
+	attack1 62 44 67 26 10 0 0 0 12 20
 	frame	data/chars/hyoga/attack2.png
 	frame	data/chars/hyoga/attack3.png
 	frame	data/chars/hyoga/attack2.png
@@ -352,15 +352,15 @@ anim attack1 # Attaque combo 1
 	frame	data/chars/hyoga/attack1.png
 	
 anim attack2 # Attaque combo 2
-	delay	5
+	delay	6
 	offset	70 140
 	bbox 41 28 51 112
 	frame	data/chars/hyoga/attack21.png
 	frame	data/chars/hyoga/attack22.png
 	frame	data/chars/hyoga/attack23.png
-	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 10 12
 	frame	data/chars/hyoga/attack24.png
+	attack1 62 21 67 26 10 0 0 0 12 20
+	dropv 4.0 1.0 0.0
 	frame	data/chars/hyoga/attack25.png
 	frame	data/chars/hyoga/attack26.png
 	frame	data/chars/hyoga/attack27.png
@@ -374,7 +374,7 @@ anim attack3 # Attaque combo 3
 	frame	data/chars/hyoga/attack31.png
 	frame	data/chars/hyoga/attack32.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 10 12
+	attack1 62 21 67 26 10 0 0 0 12 20
 	frame	data/chars/hyoga/attack33.png
 	frame	data/chars/hyoga/attack34.png
 	frame	data/chars/hyoga/attack35.png
@@ -388,7 +388,7 @@ anim attack4 # Attaque combo 4
 	frame	data/chars/hyoga/attack41.png
 	frame	data/chars/hyoga/attack42.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 10 12
+	attack1 62 21 67 26 10 0 0 0 12 20
 	frame	data/chars/hyoga/attack43.png
 	frame	data/chars/hyoga/attack44.png
 	frame	data/chars/hyoga/attack45.png
@@ -396,17 +396,17 @@ anim attack4 # Attaque combo 4
 	attack1 0
 	
 anim attack5 # Attaque combo 5
-	delay	5
-	offset	45 140
+	delay	7
+	offset	35 140
 	bbox 21 28 51 112
-	hitflash flashbig
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/hyoga/attack51.png
-	frame	data/chars/hyoga/attack52.png
-	frame	data/chars/hyoga/attack53.png
-	attack1 62 53 67 37 20 1 0 0 10 12
-	frame	data/chars/hyoga/attack54.png
-	frame	data/chars/hyoga/attack55.png
+	frame	data/chars/hyoga/attack31.png
+	frame	data/chars/hyoga/attack32.png
+	dropv 4.0 1.0 0.0
+	attack1 62 21 67 26 10 1 0 0 12 20
+	frame	data/chars/hyoga/attack33.png
+	frame	data/chars/hyoga/attack34.png
+	frame	data/chars/hyoga/attack35.png
+	attack1 0
 
 anim freespecial # Attaque arrière (saut + attaque)
 	flipframe 1
