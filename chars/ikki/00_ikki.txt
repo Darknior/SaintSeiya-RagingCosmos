@@ -186,7 +186,7 @@ anim idle
 	loop 1
 	delay	15
 	offset	45 137
-	bbox 21 17 51 120
+	bbox 30 17 30 120
 	frame	data/chars/ikki/idle1.png
 	frame	data/chars/ikki/idle2.png
 	frame	data/chars/ikki/idle3.png
@@ -241,7 +241,7 @@ sound   data/chars/ikki/10-yatta.wav
 anim turn
 	delay	10
 	offset	39 137
-	bbox 14 17 51 120
+	bbox 25 17 30 120
 	cancel 0 3 0 A freespecial4
 	frame	data/chars/ikki/turn.png
 	
@@ -249,7 +249,7 @@ anim walk
 	loop	1
 	delay	14
 	offset	45 140
-	bbox 21 17 51 120
+	bbox 23 17 30 120
 	frame	data/chars/ikki/walk1.png
 	frame	data/chars/ikki/walk2.png
 	frame	data/chars/ikki/walk3.png
@@ -259,10 +259,71 @@ anim walk
 	frame	data/chars/ikki/walk7.png
 	frame	data/chars/ikki/walk8.png	
 
+anim up
+	cancel 0 8 0 A1 freespecial7 
+	loop	1
+	delay	14
+	offset	45 140
+	bbox 25 17 30 120
+	frame	data/chars/ikki/walk1.png
+	frame	data/chars/ikki/walk2.png
+	frame	data/chars/ikki/walk3.png
+	frame	data/chars/ikki/walk4.png
+	frame	data/chars/ikki/walk5.png
+	frame	data/chars/ikki/walk6.png
+	frame	data/chars/ikki/walk7.png
+	frame	data/chars/ikki/walk8.png
+
+anim freespecial7
+        sound   data/sounds/punch.wav
+	delay	6
+	offset	39 140
+	bbox 22 21 30 120
+	hitflash flashbig
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ikki/attack61.png
+	frame	data/chars/ikki/attack62.png
+	frame	data/chars/ikki/attack63.png
+	frame	data/chars/ikki/attack64.png
+	attack1 53 21 67 60 10 0 0 0 12 20
+	frame	data/chars/ikki/attack65.png
+	frame	data/chars/ikki/attack66.png
+
+anim down
+	cancel 0 8 0 A1 freespecial8 
+	loop	1
+	delay	14
+	offset	45 140
+	bbox 21 17 30 120
+	frame	data/chars/ikki/walk1.png
+	frame	data/chars/ikki/walk2.png
+	frame	data/chars/ikki/walk3.png
+	frame	data/chars/ikki/walk4.png
+	frame	data/chars/ikki/walk5.png
+	frame	data/chars/ikki/walk6.png
+	frame	data/chars/ikki/walk7.png
+	frame	data/chars/ikki/walk8.png
+
+anim freespecial8
+	delay	7
+	offset	39 117
+	bbox 20 36 30 80
+	hitflash flashmedium
+	frame	data/chars/ikki/slide0.png
+        sound   data/sounds/punch.wav
+	frame	data/chars/ikki/slide1.png
+	dropv 4.0 1.0 0.0
+	attack1 44 66 67 26 10 0 0 0 12 20
+	frame	data/chars/ikki/slide2.png
+	frame	data/chars/ikki/slide3.png
+	frame	data/chars/ikki/slide1.png
+	frame	data/chars/ikki/slide0.png
+	attack1 0
+
 anim dodge
 	delay	8
 	offset	55 206
-	bbox 35 76 51 120
+	bbox 48 76 30 120
 	summonframe 0 0 0 0
 	subentity round_dust	
 	jumpframe 2 1.8 0
@@ -278,7 +339,7 @@ anim run
 	loop	1
 	delay	8
 	offset	80 137
-	bbox 73 17 51 120
+	bbox 76 17 30 120
 sound   data/chars/ikki/20-run1.wav
 	frame	data/chars/ikki/run1.png
 	frame	data/chars/ikki/run2.png
@@ -352,7 +413,7 @@ anim get
 anim attack1 # Attaque combo 1
 	delay	6
 	offset	39 136
-	bbox 20 17 51 120
+	bbox 20 17 30 120
 	frame	data/chars/ikki/attack3.png
 	frame	data/chars/ikki/attack2.png
 	frame	data/chars/ikki/attack1.png
@@ -364,7 +425,7 @@ anim attack1 # Attaque combo 1
 anim attack2 # Attaque combo 2
 	delay	7
 	offset	39 136
-	bbox 20 17 51 120
+	bbox 25 17 30 120
 	frame	data/chars/ikki/attack21.png
 	frame	data/chars/ikki/attack22.png
 	frame	data/chars/ikki/attack23.png
@@ -376,7 +437,7 @@ anim attack2 # Attaque combo 2
 anim attack3 # Attaque combo 3
 	delay	7
 	offset	39 136
-	bbox 20 17 51 120
+	bbox 34 17 30 120
 	frame	data/chars/ikki/attack31.png
 	frame	data/chars/ikki/attack32.png
 	dropv 4.0 1.0 0.0
@@ -387,7 +448,7 @@ anim attack3 # Attaque combo 3
 anim attack4 # Attaque combo 4
 	delay	7
 	offset	39 140
-	bbox 10 17 51 120
+	bbox 25 21 30 120
 	hitflash flashmedium
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/ikki/attack41.png
@@ -400,7 +461,7 @@ anim attack4 # Attaque combo 4
 anim attack5 # Attaque combo 5
 	delay	7
 	offset	39 140
-	bbox 10 17 51 120
+	bbox 20 20 30 120
 	hitflash flashbig
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/ikki/attack51.png
@@ -413,9 +474,9 @@ anim attack5 # Attaque combo 5
 anim attack6 # Attaque combo 6
 	delay	6
 	offset	39 140
-	bbox 10 17 51 120
 	hitflash flashbig
 	attack1 0 0 0 0 0 0 0 0 0 0
+	bbox 21 20 30 120
 	frame	data/chars/ikki/attack61.png
 	frame	data/chars/ikki/attack62.png
 	frame	data/chars/ikki/attack63.png
@@ -540,7 +601,7 @@ sound   data/chars/ikki/17-back_kick.wav
 anim grab
 	delay	7
 	offset	49 166
-	bbox 21 46 51 120
+	bbox 42 46 30 120
 	frame	data/chars/ikki/grab0.png
 	frame	data/chars/ikki/grab1.png
 	frame	data/chars/ikki/grab2.png
@@ -774,7 +835,7 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
 anim jump # Saut Statique
 	delay	10
 	offset	55 206
-	bbox 35 76 51 120
+	bbox 49 76 30 120
 	cancel 0 8 0 A2 freespecial3
 	summonframe 0 0 0 0
 	subentity round_dust	
@@ -793,7 +854,7 @@ anim jump # Saut Statique
 anim forwardjump # Saut vers l'avant
 	delay	8
 	offset	55 206
-	bbox 35 76 51 120
+	bbox 43 76 30 100
 	cancel 0 8 0 A2 freespecial3
 	summonframe 0 0 0 0
 	subentity round_dust	
@@ -883,27 +944,6 @@ anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
 	frame	data/chars/ikki/jumpattack32.png
 	attack4 0
 	
-anim freespecial7 # Saut attaque spéciale météores (déclenchée par une commande cancel A2)
-	delay	5
-	offset	55 206
-	bbox 35 76 51 120
-	energycost  5 1 0
-	sound data/chars/ikki/19-air_special.wav
-	frame	data/chars/ikki/jumpspecial1.png
-	frame	data/chars/ikki/jumpspecial2.png
-	frame	data/chars/ikki/jumpspecial3.png
-	frame	data/chars/ikki/jumpspecial4.png
-	delay	10
-	@cmd	shooter2 "ikki_meteord" 17 95 2 -2
-	frame	data/chars/ikki/jumpspecial5.png
-	summonframe 0 0 0 0 0
-	subentity ikki_aura_air_ryuseiken
-	unsummonframe 5
-	sound data/chars/ikki/19-air_special3.wav
-	frame	data/chars/ikki/jumpspecial6.png
-	frame	data/chars/ikki/jumpspecial7.png
-	frame	data/chars/ikki/jumpspecial8.png
-	frame	data/chars/ikki/jumpspecial9.png
 	
 anim freespecial5 # Uppercut
 	offset	45 150

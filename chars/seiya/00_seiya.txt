@@ -49,7 +49,7 @@ com  F a2  	freespecial2 	#Météores de Pégase
 com  a2  	freespecial3 	#Explosion du Cosmos
 com  B a1  	freespecial4 	#Manchette arriere
 com  D F a1  	freespecial5 	#Uppercut
-com  D F a2  	freespecial6 	#Comète de Pégase
+com  U a2  	freespecial6 	#Comète de Pégase
 
 load seiya_aura
 load seiya_constellation
@@ -153,7 +153,7 @@ anim idle
 	loop 1
 	delay	10
 	offset	45 112
-	bbox 21 0 51 112
+	bbox 34 0 30 112
 	frame	data/chars/seiya/idle1.png
 	frame	data/chars/seiya/idle2.png
 	frame	data/chars/seiya/idle3.png
@@ -218,7 +218,7 @@ anim walk
 	loop	1
 	delay	14
 	offset	45 112
-	bbox 21 0 51 112
+	bbox 34 0 30 112
 	frame	data/chars/seiya/walk1.png
 	frame	data/chars/seiya/walk2.png
 	frame	data/chars/seiya/walk3.png
@@ -232,7 +232,7 @@ anim up
 	delay	14
 	cancel 0 8 0 A1 freespecial7 
 	offset	45 112
-	bbox 21 0 51 112
+	bbox 33 0 30 112
 	frame	data/chars/seiya/walk1.png
 	frame	data/chars/seiya/walk2.png
 	frame	data/chars/seiya/walk3.png
@@ -261,7 +261,7 @@ anim down
 	delay	14
 	cancel 0 8 0 A1 freespecial8 
 	offset	45 112
-	bbox 21 0 51 112
+	bbox 35 0 30 112
 	frame	data/chars/seiya/walk1.png
 	frame	data/chars/seiya/walk2.png
 	frame	data/chars/seiya/walk3.png
@@ -271,11 +271,10 @@ anim down
 	frame	data/chars/seiya/walk7.png
 
 anim freespecial8
-	delay	7
-	offset	37 141
-	bbox 21 29 51 112
+	delay	6
+	offset	37 148
+	bbox 30 48 30 100
 	hitflash flashmedium
-	frame	data/chars/seiya/slide.png
 	frame	data/chars/seiya/slide0.png
         sound   data/sounds/punch.wav
 	frame	data/chars/seiya/slide1.png
@@ -286,7 +285,7 @@ anim freespecial8
 	frame	data/chars/seiya/slide4.png
 	frame	data/chars/seiya/slide5.png
 	frame	data/chars/seiya/slide6.png
-	frame	data/chars/seiya/slide.png
+	frame	data/chars/seiya/slide0.png
 	attack1 0
 
 anim dodge
@@ -308,11 +307,11 @@ anim run
 	loop	1 3 8
 	delay	8
 	offset	45 112
-	bbox 23 -1 51 115
+	bbox 35 -1 30 115
     sound   data/chars/seiya/20-run1.wav
 	frame	data/chars/seiya/run1.png
 	frame	data/chars/seiya/run2.png
-	bbox 34 13 51 115
+	bbox 54 0 30 115
 	frame	data/chars/seiya/run3.png
 	frame	data/chars/seiya/run4.png
 	sound   data/chars/seiya/20-run2.wav
@@ -326,7 +325,7 @@ anim runattack # Attaque en courant
 	offset	30 111
 	fastattack 1
 	hitflash blue_swing
-	bbox 11 0 51 112
+	bbox 20 0 30 112
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
 sound   data/chars/seiya/07-forward_punch.wav
@@ -357,7 +356,7 @@ sound   data/chars/seiya/07-forward_punch.wav
 anim  runjump
 	delay	6
 	offset	45 137
-	bbox 21 14 51 97
+	bbox 35 14 30 97
 	cancel 0 8 0 A2 freespecial3 
 sound   data/chars/seiya/06-jump1.wav
 	summonframe 0 0 0 0
@@ -384,7 +383,7 @@ anim get
 anim attack1 # Attaque combo 1
 	delay	6
 	offset	45 119
-	bbox 21 7 51 112
+	bbox 36 7 30 112
 	hitflash flash
 	frame	data/chars/seiya/attack1.png
 	attack1 62 21 67 26 10 0 0 0 12 20
@@ -398,7 +397,7 @@ anim attack1 # Attaque combo 1
 anim attack2 # Attaque combo 2
 	delay	7
 	offset	45 119
-	bbox 21 7 51 112
+	bbox 26 7 30 112
 	hitflash flash
 	frame	data/chars/seiya/attack21.png
 	frame	data/chars/seiya/attack22.png
@@ -411,7 +410,7 @@ anim attack2 # Attaque combo 2
 anim attack3 # Attaque combo 3
 	delay	7
 	offset	45 119
-	bbox 21 7 51 112
+	bbox 38 7 30 112
 	hitflash flashmedium
 	frame	data/chars/seiya/attack31.png
 	frame	data/chars/seiya/attack32.png
@@ -423,7 +422,7 @@ anim attack3 # Attaque combo 3
 anim attack4 # Attaque combo 4
 	delay	7
 	offset	45 119
-	bbox 21 7 51 112
+	bbox 19 7 30 112
 	hitflash flashmedium
 	frame	data/chars/seiya/attack41.png
 	frame	data/chars/seiya/attack42.png
@@ -435,13 +434,13 @@ anim attack4 # Attaque combo 4
 anim attack5 # Attaque combo 5
 	delay	7
 	offset	45 119
-	bbox 21 7 51 112
+	bbox 42 7 30 112
 	hitflash flashbig
 	frame	data/chars/seiya/attack51.png
 	frame	data/chars/seiya/attack52.png
 	frame	data/chars/seiya/attack53.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 20 1 0 0 12 20
+	attack1 64 37 67 26 20 1 0 0 12 20
 	frame	data/chars/seiya/attack54.png
 	@cmd 	spawnbind "kick_dust" 0 0 0 0 0
 	frame	data/chars/seiya/attack55.png
@@ -650,7 +649,7 @@ anim freespecial3 # Défense spéciale explosion du cosmos
 	frame	data/chars/seiya/special4.png
 	frame	data/chars/seiya/special3.png
 	frame	data/chars/seiya/special4.png
-	@cmd addMp 1.5
+	@cmd addMp 2
 	@cmd keyLoop "attack2" 2
 	frame	data/chars/seiya/special2.png
 	
@@ -886,7 +885,7 @@ anim freespecial6 # Comète de Pégase ( haut + bouton special)
 anim jump # Saut Statique
 	delay	10
 	offset	45 137
-	bbox 21 14 51 97
+	bbox 39 14 30 97
 	cancel 0 8 0 A2 freespecial3 
 	summonframe 0 0 0 0
 	subentity round_dust
