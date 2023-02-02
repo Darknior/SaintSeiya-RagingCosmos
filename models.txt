@@ -128,6 +128,12 @@ know    hyoga_tornadoB           data/chars/hyoga/special/hyoga_tornadoB.txt
 
 know    shun_aura             data/chars/shun/special/shun_aura.txt
 know    shun_stream           data/chars/shun/special/shun_stream.txt
+know    shun_chain          data/chars/shun/special/shun_chain.txt
+know    shun_chainB          data/chars/shun/special/shun_chainB.txt
+know    shun_chainC          data/chars/shun/special/shun_chainC.txt
+know    shun_lights          data/chars/shun/special/shun_lights.txt
+know    shun_impact         data/chars/shun/special/shun_impact.txt
+know    shun_constellation           data/chars/shun/special/shun_constellation.txt
 
 know    ikki_aura           data/chars/ikki/special/ikki_aura.txt
 know    ikki_auraB           data/chars/ikki/special/ikki_auraB.txt

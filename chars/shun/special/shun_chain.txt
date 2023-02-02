@@ -1,0 +1,39 @@
+name	shun_chain
+type	panel
+shadow	0
+speed 10
+setlayer 778
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	850 -300
+	drawmethod alpha 1
+	drawmethod scale 1 1
+	sound data/chars/shun/01-chain.wav
+	frame	data/chars/shun/special/shun_chain/shun_chain-0.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-1.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-2.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-3.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-4.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-5.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-6.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-7.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-8.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-9.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-10.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-11.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-12.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-13.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-14.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-15.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-16.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-17.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-18.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-19.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-20.png
+	frame	data/chars/shun/special/shun_chain/shun_chain-21.png
+        @cmd suicide
+	frame	data/chars/shun/special/shun_chain/shun_chain-21.png

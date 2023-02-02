@@ -45,6 +45,7 @@ icon       	data/chars/shun/icon.png
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
+didhitscript	data/scripts/didhit/tint_purple.c
 
 com  a2  	freespecial 	#Explosion du Cosmos
 com  F a2  	freespecial2 	#Météores de Pégase
@@ -53,8 +54,12 @@ com  D F a1 freespecial5 	#Uppercut
 
 load shun_aura
 load shun_stream
-
-load aldebaran_super_lights
+load shun_chain
+load shun_chainB
+load shun_chainC
+load shun_impact
+load shun_constellation
+load shun_lights
 
 #----------------------------------------------------------
 anim	waiting # Animation d'attente dans l'écran de sélection
@@ -618,6 +623,7 @@ anim freespecial2 # Courant Nébulaire
 	hitflash flashbig
 	attack5 127 -29 100 180 10 1 0 0 5 12
 	sound data/chars/shun/02.wav
+	@cmd 	spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shun/special31.png
 	frame	data/chars/shun/special32.png
 	frame	data/chars/shun/special33.png
@@ -653,79 +659,125 @@ anim freespecial2 # Courant Nébulaire
 
 anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
 	delay	10
-	offset	175 135
+	offset	203 310
 	fastattack 1
+        hitflash shun_impact
 	sound data/chars/deathmask/78-cosmos.wav
-	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
 	#bbox 21 16 51 97
 	summonframe 0 0 0 0 1
-	subentity shun_comet_back
+	subentity shun_constellation
 	energycost  20 1 0
-	frame	data/chars/shun/upspecial1.png
+	@cmd 	spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
+	frame	data/chars/shun/special1.png
 	sound data/chars/shun/08-ultra.wav
-	frame	data/chars/shun/upspecial2.png
-	frame	data/chars/shun/upspecial3.png
-	frame	data/chars/shun/upspecial4.png
+	frame	data/chars/shun/special2.png
+	frame	data/chars/shun/special3.png
+	attack5 104 255 200 65 10 1 0 0 5 30
+	dropv 	3 5
+	frame	data/chars/shun/special4.png
 	sound data/chars/shun/08-ultra2.wav
-	frame	data/chars/shun/upspecial5.png
-	frame	data/chars/shun/upspecial6.png
-	frame	data/chars/shun/upspecial7.png
-	frame	data/chars/shun/upspecial8.png
-	frame	data/chars/shun/upspecial9.png
-	frame	data/chars/shun/upspecial10.png
-	frame	data/chars/shun/upspecial11.png
-	frame	data/chars/shun/upspecial12.png
-	frame	data/chars/shun/upspecial13.png
-	frame	data/chars/shun/upspecial14.png
-	frame	data/chars/shun/upspecial15.png
-	frame	data/chars/shun/upspecial16.png
-	frame	data/chars/shun/upspecial17.png
-	frame	data/chars/shun/upspecial18.png
-	frame	data/chars/shun/upspecial19.png
-	frame	data/chars/shun/upspecial20.png
-	frame	data/chars/shun/upspecial21.png
-	frame	data/chars/shun/upspecial22.png
-	frame	data/chars/shun/upspecial23.png
-	frame	data/chars/shun/upspecial24.png
-	frame	data/chars/shun/upspecial25.png
-	frame	data/chars/shun/upspecial26.png
-	frame	data/chars/shun/upspecial27.png
-	frame	data/chars/shun/upspecial28.png
-	frame	data/chars/shun/upspecial29.png
-	frame	data/chars/shun/upspecial30.png
-	frame	data/chars/shun/upspecial31.png	
-	frame	data/chars/shun/upspecial32.png
-	frame	data/chars/shun/upspecial33.png
-	frame	data/chars/shun/upspecial34.png
-	frame	data/chars/shun/upspecial35.png
-	frame	data/chars/shun/upspecial36.png
-	frame	data/chars/shun/upspecial37.png
-	frame	data/chars/shun/upspecial38.png
-	@cmd	shooter "shun_stream" 0 80 3 3 0 0
-	frame	data/chars/shun/upspecial39.png
-	frame	data/chars/shun/upspecial40.png
-	frame	data/chars/shun/upspecial41.png
-	frame	data/chars/shun/upspecial42.png
-	frame	data/chars/shun/upspecial43.png
-	frame	data/chars/shun/upspecial44.png
-	frame	data/chars/shun/upspecial45.png
-	frame	data/chars/shun/upspecial46.png
-	frame	data/chars/shun/upspecial47.png
-	frame	data/chars/shun/upspecial48.png
-	frame	data/chars/shun/upspecial49.png
-	frame	data/chars/shun/upspecial11.png
-	frame	data/chars/shun/upspecial10.png
-	frame	data/chars/shun/upspecial9.png
-	frame	data/chars/shun/upspecial8.png
-	frame	data/chars/shun/upspecial7.png
-	frame	data/chars/shun/upspecial6.png
-	frame	data/chars/shun/upspecial5.png
-	frame	data/chars/shun/upspecial4.png
-	frame	data/chars/shun/upspecial3.png
-	frame	data/chars/shun/upspecial2.png
-	frame	data/chars/shun/upspecial1.png	
-	frame	data/chars/shun/upspecial50.png
-	frame	data/chars/shun/upspecial51.png
+	frame	data/chars/shun/special5.png
+	attack5 104 255 200 65 10 1 0 0 5 30
+	dropv 	3 5
+	frame	data/chars/shun/special6.png
+	frame	data/chars/shun/special7.png
+	attack5 104 255 200 65 10 1 0 0 5 30
+	dropv 	3 5
+	frame	data/chars/shun/special8.png
+	frame	data/chars/shun/special9.png
+	attack5 104 255 200 65 10 1 0 0 5 30
+	dropv 	3 5
+	frame	data/chars/shun/special10.png
+	frame	data/chars/shun/special11.png
+	attack5 104 255 200 65 10 1 0 0 5 30
+	dropv 	3 5
+	frame	data/chars/shun/special12.png
+	frame	data/chars/shun/special13.png
+	frame	data/chars/shun/special15.png
+	sound data/chars/shun/01.wav
+	frame	data/chars/shun/special16.png
+	frame	data/chars/shun/special17.png
+	frame	data/chars/shun/special18.png
+	frame	data/chars/shun/special19.png
+	@cmd 	spawnScreen "shun_chain" 0 0 0 0
+	frame	data/chars/shun/special20.png
+	attack 50 200 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special21.png
+        attack 0
+	frame	data/chars/shun/special22.png
+	attack 50 235 1000 35 5 0 0 0 0 30
+	@cmd 	spawnScreen "shun_lights" 0 0 0 0
+	frame	data/chars/shun/special23.png
+        attack 0
+	frame	data/chars/shun/special24.png
+	attack 50 276 1000 35 5 0 0 0 0 30
+	@cmd 	spawnScreen "shun_chainB" 0 0 0 0
+	frame	data/chars/shun/special25.png
+        attack 0
+	frame	data/chars/shun/special26.png
+	attack 50 200 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+	attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 235 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+	@cmd 	spawnScreen "shun_chainC" 0 0 0 0
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 276 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 200 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 235 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 276 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 200 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+	@cmd 	spawnScreen "shun_chain" 0 0 0 0
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 235 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 276 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+        attack 0
+	frame	data/chars/shun/special19.png
+	@cmd 	spawnScreen "shun_chainB" 0 0 0 0
+	attack 50 200 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 235 1000 35 5 0 0 0 0 30
+	frame	data/chars/shun/special19.png
+        attack 0
+	frame	data/chars/shun/special19.png
+	attack 50 276 1000 35 5 0 0 0 0 30
+	delay	10
+	frame	data/chars/shun/special13.png
+	@cmd 	spawnScreen "shun_chainC" 0 0 0 0
+	frame	data/chars/shun/special12.png
+	frame	data/chars/shun/special11.png
+	frame	data/chars/shun/special10.png
+	frame	data/chars/shun/special9.png
+	frame	data/chars/shun/special8.png
+	frame	data/chars/shun/special7.png
+	frame	data/chars/shun/special6.png
+	frame	data/chars/shun/special5.png
+	frame	data/chars/shun/special4.png
+	frame	data/chars/shun/special3.png
+	frame	data/chars/shun/special2.png
+	frame	data/chars/shun/special1.png
 	
 anim jump # Saut Statique
 	delay	10
