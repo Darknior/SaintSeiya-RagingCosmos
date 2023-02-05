@@ -1,0 +1,47 @@
+name	shun_storm
+type	none
+shadow	0
+setlayer 1
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	5
+	offset	100 371
+	drawmethod alpha 1
+	drawmethod scale 1 1
+	frame	data/chars/shun/special/shun_storm/shun_storm-0.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-1.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-2.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-3.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-4.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-5.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-6.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-7.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-8.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-9.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-10.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-11.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-12.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-21.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-22.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-23.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-24.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-25.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-26.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-27.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-28.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-29.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-30.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-31.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-32.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-33.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-34.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-35.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-36.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-37.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-38.png
+	frame	data/chars/shun/special/shun_storm/shun_storm-39.png
+        @cmd suicide
+	frame	data/chars/shun/special/shun_storm/shun_storm-39.png

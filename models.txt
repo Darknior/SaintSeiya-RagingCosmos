@@ -133,7 +133,9 @@ know    shun_chainB          data/chars/shun/special/shun_chainB.txt
 know    shun_chainC          data/chars/shun/special/shun_chainC.txt
 know    shun_lights          data/chars/shun/special/shun_lights.txt
 know    shun_impact         data/chars/shun/special/shun_impact.txt
+know    shun_impactE         data/chars/shun/special/shun_impactE.txt
 know    shun_constellation           data/chars/shun/special/shun_constellation.txt
+know    shun_storm         data/chars/shun/special/shun_storm.txt
 
 know    ikki_aura           data/chars/ikki/special/ikki_aura.txt
 know    ikki_auraB           data/chars/ikki/special/ikki_auraB.txt
@@ -271,7 +273,7 @@ know    tremi_cosmos   	data/chars/tremi/special/tremi_cosmos.txt
 know    tremi_slash   	data/chars/tremi/special/tremi_slash.txt
 know    tremi_skull   	data/chars/tremi/special/tremi_skull.txt
 know    tremi_diagonal_arrows  	data/chars/tremi/special/tremi_diagonal_arrows.txt
-know    tremi_block  	data/chars/tremi/special/tremi_block.txt
+load    tremi_block  	data/chars/tremi/special/tremi_block.txt
 
 know    sirius_ray 		data/chars/sirius/special/sirius_ray.txt
 
