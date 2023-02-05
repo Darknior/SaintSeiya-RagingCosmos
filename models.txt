@@ -392,7 +392,7 @@ know    agora     		data/chars/agora/00_agora.txt
 
 ## GOLD KINGHTS ##
 
-know    MU       data/chars/ALDEBARAN/00_MU.txt
+know    MU              data/chars/MU/00_MU.txt
 know    ALDEBARAN       data/chars/ALDEBARAN/00_ALDEBARAN.txt
 know    AIOLIA          data/chars/AIOLIA/00_AIOLIA.txt
 know    APHRODITE       data/chars/APHRODITE/00_APHRODITE.txt
