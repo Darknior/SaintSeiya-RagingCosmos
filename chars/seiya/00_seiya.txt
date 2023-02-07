@@ -470,7 +470,6 @@ anim attackbackward # Attaque arrière (Arrière + attaque)
 	frame	data/chars/seiya/attackbackward20.png
 
 anim attackboth # Attaque arrière (bouton saut + attaque)
-	flipframe 1
 	offset	45 134
 	fastattack 1
 	bbox 21 22 51 112
@@ -509,7 +508,6 @@ sound   data/chars/seiya/17-back_kick.wav
 	frame	data/chars/seiya/attackbackward1.png	
 
 anim freespecial # Roue de melee
-	flipframe 1
 	offset	45 134
 	fastattack 1
 	bbox 21 22 51 112

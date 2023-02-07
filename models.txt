@@ -133,6 +133,7 @@ know    shun_chainB          data/chars/shun/special/shun_chainB.txt
 know    shun_chainC          data/chars/shun/special/shun_chainC.txt
 know    shun_lights          data/chars/shun/special/shun_lights.txt
 know    shun_impact         data/chars/shun/special/shun_impact.txt
+know    shun_impactD         data/chars/shun/special/shun_impactD.txt
 know    shun_impactE         data/chars/shun/special/shun_impactE.txt
 know    shun_constellation           data/chars/shun/special/shun_constellation.txt
 know    shun_storm         data/chars/shun/special/shun_storm.txt

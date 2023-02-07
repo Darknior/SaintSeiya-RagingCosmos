@@ -363,7 +363,7 @@ anim attack1 # Attaque combo 1
 	attack1 0
 	frame	data/chars/shun/attack6.png
 	frame	data/chars/shun/attack7.png
-	
+
 anim attack2 # Attaque combo 2
 	delay	5
 	offset	40 131
@@ -377,17 +377,7 @@ anim attack2 # Attaque combo 2
 	frame	data/chars/shun/attack26.png
 	frame	data/chars/shun/attack27.png
 	
-anim attack3 # Attaque combo 3
-	delay	7
-	offset	45 134
-	bbox 21 28 51 112
-	frame	data/chars/shun/attack31.png
-	frame	data/chars/shun/attack32.png
-	attack1 0 21 140 122 10 0 0 0 5 12
-	frame	data/chars/shun/attack33.png
-	frame	data/chars/shun/attack34.png
-	frame	data/chars/shun/attack35.png
-	frame	data/chars/shun/attack36.png
+
 	
 anim attack4 # Attaque combo 4
 	delay	5
