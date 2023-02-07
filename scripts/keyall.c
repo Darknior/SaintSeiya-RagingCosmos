@@ -15,16 +15,16 @@ void menuSelect(int player)
 
 			//THE CURRENT HIGHLIGHTED CHARACTER IS NOT CONFIRMED YET?? EXECUTE ALL TASKS BELOW
 			if(ani != openborconstant("ANI_PICK")){
-				float time  = openborvariant("elapsed_time"); //CURRENT TIME
-				int column  = getglobalvar("previewCol"+player); //DEFAULT COLUMN VALUE
-				int line	   = getglobalvar("previewLine"+player); //DEFAULT LINE VALUE
+				float time	= openborvariant("elapsed_time"); //CURRENT TIME
+				int column	= getglobalvar("previewCol"+player); //DEFAULT COLUMN VALUE
+				int line	= getglobalvar("previewLine"+player); //DEFAULT LINE VALUE
 				int maxCols;
 				int maxLines;
-				int add     = 1;
+				int add		= 1;
 
 				//STORY MODE
-				if(openborvariant("current_set") == 13){
-					maxCols  = 1;
+				if(openborvariant("current_set") <= 2){
+					maxCols		= 1;
 					maxLines	= 1;
 
 					//USED FOR LEFT-RIGHT KEYS
@@ -68,21 +68,21 @@ void changeModel(int player)
 		if(ani != openborconstant("ANI_PICK")){ //THE CURRENT HIGHLIGHTED CHARACTER IS NOT CONFIRMED YET?? EXECUTE ALL TASKS BELOW
 
 			//USED TO TRANSLATE MODELS - STORY MODE
-			if(openborvariant("current_set") == 13){
+			if(openborvariant("current_set") <= 2){
 				if(getglobalvar("previewLine"+player) == 0){
-					if(getglobalvar("previewCol"+player) == 0){setglobalvar("previewModel"+player, "DRAGON-SHIRYU");}else
-					if(getglobalvar("previewCol"+player) == 1){setglobalvar("previewModel"+player, "CYGNUS-HYOGA");}
+					if(getglobalvar("previewCol"+player) == 0){setglobalvar("previewModel"+player, "shiryu");}else
+					if(getglobalvar("previewCol"+player) == 1){setglobalvar("previewModel"+player, "hyoga");}
 				}else
 
 				if(getglobalvar("previewLine"+player) == 1){
-					if(getglobalvar("previewCol"+player) == 0){setglobalvar("previewModel"+player, "ANDROMEDA-SHUN");}else
+					if(getglobalvar("previewCol"+player) == 0){setglobalvar("previewModel"+player, "shun");}else
 					if(getglobalvar("previewCol"+player) == 1){setglobalvar("previewModel"+player, "seiya");}
-					if(getglobalvar("previewCol"+player) == 2){setglobalvar("previewModel"+player, "PHOENIX-IKKI");}
+					if(getglobalvar("previewCol"+player) == 2){setglobalvar("previewModel"+player, "ikki");}
 				}
 			}
 			
 			//CHANGE CURRENT MODEL PREVIEW ACCORDING TO THE HIGHLIGHTED CHARACTER WHEN ANY DIRECTION IS PRESSED
-			if(playerkeys(player, 0, "moveleft")	||
+			if(	playerkeys(player, 0, "moveleft")	||
 				playerkeys(player, 0, "moveright")	||
 				playerkeys(player, 0, "moveup")		||
 				playerkeys(player, 0, "movedown")	){

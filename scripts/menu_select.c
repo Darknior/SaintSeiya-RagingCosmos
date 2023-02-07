@@ -3,7 +3,7 @@ void main()
 	void self = getlocalvar("self");
 	
 	if(openborvariant("in_selectscreen")){
-		if(openborvariant("current_set") == 13){drawStory();}
+		if(openborvariant("current_set") <= 2){drawStory();}
 	}
 	
 	if(!openborvariant("in_selectscreen")){killentity(self);}
@@ -98,11 +98,11 @@ void storyInfo(void vName, int pIndex)
 		int yMove = 125;	//DIFERRENCE BETWEEN PLAYER'S PORTRAITS LINES
 
 		if(getlocalvar("cursor"+pNumber) != NULL()){
-			if(vName == "seiya"){			changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase, yBase, 0);}
-			if(vName == "DRAGON-SHIRYU"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase-(xMove/2), yBase-yMove, 0);}
-			if(vName == "CYGNUS-HYOGA"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase+(xMove/2), yBase-yMove, 0);}
-			if(vName == "ANDROMEDA-SHUN"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase-xMove, yBase, 0);}
-			if(vName == "PHOENIX-IKKI"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase+xMove, yBase, 0);}
+			if(vName == "seiya"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase, yBase, 0);}
+			if(vName == "shiryu"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase-(xMove/2), yBase-yMove, 0);}
+			if(vName == "hyoga"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase+(xMove/2), yBase-yMove, 0);}
+			if(vName == "shun"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase-xMove, yBase, 0);}
+			if(vName == "ikki"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase+xMove, yBase, 0);}
 		}
 
 		//CALCULATE LINES AND COLUMNS FOR CHARACTER'S INFO POSITION
