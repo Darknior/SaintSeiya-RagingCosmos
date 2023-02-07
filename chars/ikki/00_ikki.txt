@@ -285,7 +285,8 @@ anim freespecial7
 	frame	data/chars/ikki/attack62.png
 	frame	data/chars/ikki/attack63.png
 	frame	data/chars/ikki/attack64.png
-	attack1 53 21 67 60 10 0 0 0 12 20
+	attack1 53 21 67 60 10 1 0 0 12 20
+	dropv 	5.0 0.5
 	frame	data/chars/ikki/attack65.png
 	frame	data/chars/ikki/attack66.png
 
@@ -313,7 +314,8 @@ anim freespecial8
         sound   data/sounds/punch.wav
 	frame	data/chars/ikki/slide1.png
 	dropv 4.0 1.0 0.0
-	attack1 44 66 67 26 10 0 0 0 12 20
+	attack1 44 66 67 26 10 1 0 0 12 20
+	dropv 	5.0 0.5
 	frame	data/chars/ikki/slide2.png
 	frame	data/chars/ikki/slide3.png
 	frame	data/chars/ikki/slide1.png

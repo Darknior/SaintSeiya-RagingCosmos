@@ -246,11 +246,13 @@ anim freespecial7
 	frame	data/chars/shun/attackbackward3.png
 	frame	data/chars/shun/attackbackward4.png
 	frame	data/chars/shun/attackbackward5.png
-	attack1 41 51 84 29 20 0 0 0 5 12
+	attack1 41 51 84 29 20 1 0 0 5 12
+	dropv 	5.0 0.5
 	frame	data/chars/shun/attackbackward6.png
 	attack1 0
 	frame	data/chars/shun/attackbackward7.png
 	attack1 41 52 100 29 20 1 0 0 5 12
+	dropv 	5.0 0.5
 	frame	data/chars/shun/attackbackward8.png
 	attack1 0
 	delay   12
@@ -280,6 +282,7 @@ anim freespecial8
 	frame	data/chars/shun/slide1.png
 	dropv 4.0 1.0 0.0
 	attack1 82 60 95 55 10 1 0 0 12 20
+	dropv 	5.0 0.5
 	frame	data/chars/shun/slide2.png
 	frame	data/chars/shun/slide1.png
 	frame	data/chars/shun/slide0.png

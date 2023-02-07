@@ -283,7 +283,8 @@ anim freespecial7
         sound   data/sounds/punch.wav
 	frame	data/chars/hyoga/attack42.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 12 20
+	attack1 62 21 67 26 10 1 0 0 12 20
+	dropv 	5.0 0.5
 	frame	data/chars/hyoga/attack43.png
 	frame	data/chars/hyoga/attack44.png
 	frame	data/chars/hyoga/attack45.png
@@ -315,7 +316,8 @@ anim freespecial8
         sound   data/sounds/punch.wav
 	frame	data/chars/hyoga/attack52.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 12 20
+	attack1 62 21 67 26 10 1 0 0 12 20
+	dropv 	5.0 0.5
 	frame	data/chars/hyoga/attack53.png
 	frame	data/chars/hyoga/attack54.png
 	frame	data/chars/hyoga/attack55.png

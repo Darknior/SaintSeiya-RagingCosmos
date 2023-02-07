@@ -250,7 +250,8 @@ anim freespecial7
 	frame	data/chars/seiya/attack41.png
 	frame	data/chars/seiya/attack42.png
 	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 0 0 0 12 20
+	attack1 62 21 67 26 10 1 0 0 12 20
+	dropv 	5.0 0.5
 	frame	data/chars/seiya/attack43.png
 	frame	data/chars/seiya/attack42.png
 	frame	data/chars/seiya/attack41.png
@@ -279,7 +280,8 @@ anim freespecial8
         sound   data/sounds/punch.wav
 	frame	data/chars/seiya/slide1.png
 	dropv 4.0 1.0 0.0
-	attack1 62 114 67 26 10 0 0 0 12 20
+	attack1 62 114 67 26 10 1 0 0 12 20
+	dropv 	5.0 0.5
 	frame	data/chars/seiya/slide2.png
 	frame	data/chars/seiya/slide3.png
 	frame	data/chars/seiya/slide4.png
