@@ -180,6 +180,7 @@ dropv 4 1 0
 	attack.reaction.fall.velocity.z 0.0
 	attack.size.x 0
 	attack.size.y 0
+	bbox 58 65 85 130
 frame	data/chars/soldier_big/03.png
 frame	data/chars/soldier_big/03.png
 frame	data/chars/soldier_big/03.png

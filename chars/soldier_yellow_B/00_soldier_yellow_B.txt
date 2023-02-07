@@ -151,6 +151,7 @@ anim fall
 offset	110 180
 
 dropv 4 1 0
+	bbox 65 56 52 120
 frame	data/chars/soldier_yellow_B/06.png
 frame	data/chars/soldier_yellow_B/06.png
 frame	data/chars/soldier_yellow_B/06.png

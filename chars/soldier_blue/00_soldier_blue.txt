@@ -95,6 +95,7 @@ anim pain
 anim fall
 	delay	10
 	offset	118 125
+	bbox 55 24 50 100
 	frame	data/chars/soldier_blue/fall1.png
 	frame	data/chars/soldier_blue/fall2.png
 	frame	data/chars/soldier_blue/fall3.png

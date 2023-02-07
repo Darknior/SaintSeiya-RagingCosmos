@@ -137,6 +137,7 @@ anim fall
 offset	110 180
 
 dropv 4 1 0
+	bbox 65 68 50 120
 frame	data/chars/soldier_white/06.png
 frame	data/chars/soldier_white/06.png
 frame	data/chars/soldier_white/06.png
