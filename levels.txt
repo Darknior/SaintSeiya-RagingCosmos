@@ -420,8 +420,14 @@ cansave     2
 disablehof  0
 typemp      0
 skipselect  seiya
+
+branch      temple0
 z           378 484
 file        data/levels/temple0.txt
+
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_1_BOSS_Mu-Seiya
 maxplayers  1
