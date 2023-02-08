@@ -24,7 +24,7 @@ noquake 	0 1	# Secoue l'ecran qd on tombe au sol
 typemp 		1 	# Gagne de mp en tapant des ennemis 
 mprate 		1   # Nombre de mp gagnés par coup
 
-blockback 1            # permet de bloquer les attaques qui arrivent derriere
+blockback 	1	# permet de bloquer les attaques qui arrivent derriere
 blockodds 	1	# Permet de pouvoir bloquer les attaques
 holdblock 	2	# Permet de pouvoir maintenir la parade
 nodieblink 	1	# Ne clignote pas quand tu meurs
@@ -454,28 +454,28 @@ anim attack4 # Attaque combo 4
 
 anim attackbackward # Attaque arrière (Arrière + attaque)
 	offset	52 146
-	bbox 29 42 35 107
 	fastattack 1
-	hitflash flashbig
-	delay	7
-sound   data/chars/shun/17-back_kick.wav
+	hitflash flashmedium
+	delay	6
+	sound   data/chars/shun/03-uppercut.wav
 	frame	data/chars/shun/backattack0.png
+	delay	10
 	frame	data/chars/shun/backattack1.png
-	attack -34 59 85 85 10 1 0 0 15 30
-	frame	data/chars/shun/backattack2.png
+	delay	15
+#	attack  -34 59 85 85 10 1 0 0 15 30
+	attack  20 36 60 50 30 12 0 0 0 30
+	dropv 	3.5 1 0
 	frame	data/chars/shun/backattack3.png
-	frame	data/chars/shun/backattack4.png
-	frame	data/chars/shun/backattack3.png
-	attack1 0
-	frame	data/chars/shun/backattack2.png
+	delay	8
 	frame	data/chars/shun/backattack1.png
 	attack1 0
-	delay   12
+#	bbox 	29 42 35 107
+	bbox 	64 29 50 120
 	frame	data/chars/shun/backattack0.png
 
 anim attackboth # Attaque arrière (bouton saut + attaque)
 	offset	203 310
-	fastattack 1
+	#fastattack 1
 	hitflash shun_impactE
 	delay	4
 	attack1 0 0 0 0 0 0 0 0 0 0
@@ -514,23 +514,23 @@ anim attackboth # Attaque arrière (bouton saut + attaque)
 	
 anim freespecial4 # Attaque arrière (à partir d'un cancel)
 	offset	52 146
-	bbox 29 42 35 107
 	fastattack 1
-	hitflash flashbig
-	delay	7
-sound   data/chars/shun/17-back_kick.wav
+	hitflash flashmedium
+	delay	6
+	sound   data/chars/shun/03-uppercut.wav
 	frame	data/chars/shun/backattack0.png
+	delay	10
 	frame	data/chars/shun/backattack1.png
-	attack -34 59 85 85 10 1 0 0 15 30
-	frame	data/chars/shun/backattack2.png
+	delay	15
+#	attack  -34 59 85 85 10 1 0 0 15 30
+	attack  20 36 60 50 30 12 0 0 0 30
+	dropv 	3.5 1 0
 	frame	data/chars/shun/backattack3.png
-	frame	data/chars/shun/backattack4.png
-	frame	data/chars/shun/backattack3.png
-	attack1 0
-	frame	data/chars/shun/backattack2.png
+	delay	8
 	frame	data/chars/shun/backattack1.png
 	attack1 0
-	delay   12
+#	bbox 	29 42 35 107
+	bbox 	64 29 50 120
 	frame	data/chars/shun/backattack0.png
 
 anim grab
@@ -992,10 +992,10 @@ anim death
 	frame	data/chars/shun/death6.png
 	
 anim	block
-	loop 1 15 18
-	delay	4
 	offset	56 148
-	bbox 26 44 51 107
+	bbox 	26 44 51 107
+	loop 	1 14
+	delay	4
 	frame	data/chars/shun/sleep19.png
 	frame	data/chars/shun/sleep20.png
 	frame	data/chars/shun/sleep21.png
@@ -1007,13 +1007,12 @@ anim	block
 	frame	data/chars/shun/sleep27.png
 	frame	data/chars/shun/sleep28.png
 	frame	data/chars/shun/sleep29.png
-	delay	12
 	frame	data/chars/shun/sleep30.png
 	frame	data/chars/shun/sleep31.png
 	frame	data/chars/shun/sleep32.png
+	delay	10
 	frame	data/chars/shun/sleep33.png
 	frame	data/chars/shun/sleep34.png
 	frame	data/chars/shun/sleep35.png	
-	frame	data/chars/shun/sleep34.png	
 	
 	
