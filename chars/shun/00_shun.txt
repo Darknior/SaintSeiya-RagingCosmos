@@ -8,8 +8,8 @@ gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
 riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
 makeinv		2 0	# Invincible après respawn X sec / Clignote
 
-dust		round_dustB # Default "dust entity" using the native "Dust" function
-bflash shun_impactE
+dust		round_dustB  # Default "dust entity" using the native "Dust" function
+bflash 		shun_impactD # Impact effect when the character is hit
 
 speed		15	# Vitesse de déplacement
 running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
@@ -59,7 +59,7 @@ load shun_chain
 load shun_chainB
 load shun_chainC
 load shun_impact
-load shun_impactE
+load shun_impactD
 load shun_constellation
 load shun_lights
 load shun_storm
