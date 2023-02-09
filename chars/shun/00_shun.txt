@@ -416,7 +416,7 @@ anim attack3 # Attaque combo 3
 	frame	data/chars/shun/attack16.png
 	frame	data/chars/shun/attack17.png
 	frame	data/chars/shun/attack18.png
-	attack1 110 100 80 50 5 0 0 0 0 20
+	attack1 110 100 80 50 5 0 1 0 0 20
 	frame	data/chars/shun/attack19.png
 	attack1 0
 	frame	data/chars/shun/attack20.png
@@ -432,7 +432,7 @@ anim attack4 # Attaque combo 4
 	frame	data/chars/shun/attack16.png
 	frame	data/chars/shun/attack22.png
 	frame	data/chars/shun/attack23.png
-	attack1 79 100 80 50 5 0 0 0 15 10
+	attack1 79 100 80 50 5 0 1 0 15 10
 	frame	data/chars/shun/attack24.png
 	attack1 0
 	frame	data/chars/shun/attack25.png
@@ -448,12 +448,12 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/shun/attack28.png
 	frame	data/chars/shun/attack29.png
 	frame	data/chars/shun/attack30.png
-	attack1 19 100 160 50 5 1 0 0 0 20
+	attack1 19 100 160 50 5 1 1 0 0 20
 	dropv 	3.5 1 0
 	frame	data/chars/shun/attack31.png
 	attack1 0
 	frame	data/chars/shun/attack32.png
-	attack1 19 100 160 50 5 1 0 0 0 20
+	attack1 19 100 160 50 5 1 1 0 0 20
 	dropv 	3.5 1 0
 	frame	data/chars/shun/attack33.png
 	attack1 0
