@@ -35,7 +35,7 @@ nolife		1	# Needed when a player hits another, once the heroes icons are bigger 
 
 sleepwait 	1000 #Temps en centisecondes avant de jouer l'anim sleep
 
-atchain 	1 2 3 4 # Attaque combo de base (anim attack 1, puis 2...)
+atchain 	1 2 3 4 5# Attaque combo de base (anim attack 1, puis 2...)
 
 icon       	data/chars/shun/icon.png
 
@@ -373,84 +373,91 @@ anim get
 	frame	data/chars/shun/get2.png
 	frame	data/chars/shun/get1.png
 
-anim attack1 # Attaque combo 1
-	delay	5
-	offset	32 131
-	bbox 15 28 51 107
-	frame	data/chars/shun/attack1.png
-	frame	data/chars/shun/attack2.png
-	attack1 62 44 95 26 5 0 0 0 5 12
-	frame	data/chars/shun/attack3.png
-	frame	data/chars/shun/attack4.png
-	frame	data/chars/shun/attack5.png
-	attack1 0
-	frame	data/chars/shun/attack6.png
 	
+anim attack1 # Attaque combo 1
+	delay	4
+	offset	90 199
+	bbox 79 92 35 107
+	frame	data/chars/shun/attack6.png
+	frame	data/chars/shun/attack7.png
+	attack1 88 115 87 20 5 0 0 0 12 20
+	frame	data/chars/shun/attack8.png
+	attack1 0
+	frame	data/chars/shun/attack9.png
+	delay	3
+	frame	data/chars/shun/attack10.png
+	frame	data/chars/shun/attack11.png
+	frame	data/chars/shun/attack12.png
+	attack1 82 115 80 20 5 0 0 0 0 20
+	frame	data/chars/shun/attack13.png
+	attack1 0
+	frame	data/chars/shun/attack14.png
+	frame	data/chars/shun/attack15.png
+
 anim attack2 # Attaque combo 2
 	delay	5
-	offset	40 131
-	bbox 15 28 51 107
-	frame	data/chars/shun/attack21.png
-	frame	data/chars/shun/attack22.png
-	frame	data/chars/shun/attack23.png
-	attack1 62 28 180 26 5 0 0 0 5 12
-	frame	data/chars/shun/attack24.png
-	frame	data/chars/shun/attack25.png
-	frame	data/chars/shun/attack26.png
-	frame	data/chars/shun/attack27.png
-
+	offset	74 196
+	bbox 54 96 35 100
+	frame	data/chars/shun/attack0.png
+	frame	data/chars/shun/attack1.png
+	frame	data/chars/shun/attack2.png
+	attack1 59 100 120 26 5 0 0 0 5 20
+	frame	data/chars/shun/attack3.png
+	attack1 0
+	frame	data/chars/shun/attack4.png
+	frame	data/chars/shun/attack5.png
+	frame	data/chars/shun/attack1.png
 	
 	
 anim attack3 # Attaque combo 3
 	delay	5
-	offset	32 131
-	bbox 15 28 51 107
-	fastattack 1
-	hitflash flashbig
-        sound   data/chars/shun/01-chain.wav
-	frame	data/chars/shun/attack41.png
-	frame	data/chars/shun/attack42.png
-	attack1 62 53 150 80 5 0 0 0 12 20
-	frame	data/chars/shun/attack43.png
+	offset	93 196
+	hitflash flashmedium
+	frame	data/chars/shun/attack16.png
+	frame	data/chars/shun/attack17.png
+	frame	data/chars/shun/attack18.png
+	attack1 110 100 80 50 5 0 0 0 0 20
+	frame	data/chars/shun/attack19.png
 	attack1 0
-	frame	data/chars/shun/attack44.png
-	frame	data/chars/shun/attack45.png
-	frame	data/chars/shun/attack46.png
-	attack 36 68 200 80 5 0 0 0 12 30
-	frame	data/chars/shun/attack47.png
-	attack1 0
-	frame	data/chars/shun/attack48.png
-	frame	data/chars/shun/attack49.png
-	frame	data/chars/shun/attack50.png
-	attack 77 70 230 70 5 0 0 0 12 30
-	frame	data/chars/shun/attack51.png
-	frame	data/chars/shun/attack52.png
+	frame	data/chars/shun/attack20.png
+	delay	3
+	frame	data/chars/shun/attack21.png
+	frame	data/chars/shun/attack22.png
+
 	
 anim attack4 # Attaque combo 4
 	delay	5
-	offset	45 140
-	bbox 21 28 51 112
-	hitflash shun_impact
-	frame	data/chars/shun/attack61.png
-	frame	data/chars/shun/attack62.png
-	frame	data/chars/shun/attack63.png
-	frame	data/chars/shun/attack64.png
-	frame	data/chars/shun/attack65.png
-	attack1 62 37 250 100 20 1 0 0 5 12
-	frame	data/chars/shun/attack66.png
-	frame	data/chars/shun/attack67.png
-	frame	data/chars/shun/attack68.png
-	frame	data/chars/shun/attack69.png
-	frame	data/chars/shun/attack70.png
-	frame	data/chars/shun/attack71.png
-	frame	data/chars/shun/attack72.png
-	frame	data/chars/shun/attack73.png
-	frame	data/chars/shun/attack74.png
-	frame	data/chars/shun/attack75.png
-	frame	data/chars/shun/attack76.png
-	frame	data/chars/shun/attack77.png
-	frame	data/chars/shun/attack78.png
-	frame	data/chars/shun/attack79.png
+	offset	93 196
+	hitflash flashmedium
+	frame	data/chars/shun/attack16.png
+	frame	data/chars/shun/attack22.png
+	frame	data/chars/shun/attack23.png
+	attack1 79 100 80 50 5 0 0 0 15 10
+	frame	data/chars/shun/attack24.png
+	attack1 0
+	frame	data/chars/shun/attack25.png
+	frame	data/chars/shun/attack26.png
+	frame	data/chars/shun/attack27.png
+
+anim attack5 # Attaque combo 5
+	delay	5
+	offset	39 196
+	hitflash flashbig
+	summonframe 0 0 0 0
+	subentity dash_dust
+	frame	data/chars/shun/attack28.png
+	frame	data/chars/shun/attack29.png
+	frame	data/chars/shun/attack30.png
+	attack1 19 100 160 50 5 1 0 0 0 20
+	dropv 	3.5 1 0
+	frame	data/chars/shun/attack31.png
+	attack1 0
+	frame	data/chars/shun/attack32.png
+	attack1 19 100 160 50 5 1 0 0 0 20
+	dropv 	3.5 1 0
+	frame	data/chars/shun/attack33.png
+	attack1 0
+
 
 anim attackbackward # Attaque arrière (Arrière + attaque)
 	offset	52 146
