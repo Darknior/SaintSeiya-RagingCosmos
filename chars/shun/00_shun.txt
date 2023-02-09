@@ -457,20 +457,20 @@ anim attackbackward # Attaque arrière (Arrière + attaque)
 	fastattack 1
 	hitflash flashmedium
 	delay	6
-	sound   data/chars/shun/03-uppercut.wav
+        sound   data/chars/seiya/01-backpunch.wav
 	frame	data/chars/shun/backattack0.png
 	delay	10
 	frame	data/chars/shun/backattack1.png
 	delay	15
 #	attack  -34 59 85 85 10 1 0 0 15 30
-	attack  20 36 60 50 30 12 0 0 0 30
+	attack 6 36 60 50 30 12 0 0 0 30
 	dropv 	3.5 1 0
 	frame	data/chars/shun/backattack3.png
 	delay	8
 	frame	data/chars/shun/backattack1.png
 	attack1 0
 #	bbox 	29 42 35 107
-	bbox 	64 29 50 120
+	bbox 	29 29 35 120
 	frame	data/chars/shun/backattack0.png
 
 anim attackboth # Attaque arrière (bouton saut + attaque)
@@ -517,20 +517,20 @@ anim freespecial4 # Attaque arrière (à partir d'un cancel)
 	fastattack 1
 	hitflash flashmedium
 	delay	6
-	sound   data/chars/shun/03-uppercut.wav
+        sound   data/chars/seiya/01-backpunch.wav
 	frame	data/chars/shun/backattack0.png
 	delay	10
 	frame	data/chars/shun/backattack1.png
 	delay	15
 #	attack  -34 59 85 85 10 1 0 0 15 30
-	attack  20 36 60 50 30 12 0 0 0 30
+	attack 6 36 60 50 30 12 0 0 0 30
 	dropv 	3.5 1 0
 	frame	data/chars/shun/backattack3.png
 	delay	8
 	frame	data/chars/shun/backattack1.png
 	attack1 0
 #	bbox 	29 42 35 107
-	bbox 	64 29 50 120
+	bbox 	29 29 35 120
 	frame	data/chars/shun/backattack0.png
 
 anim grab
@@ -586,7 +586,6 @@ sound   data/chars/shun/23-projection2.wav
 	frame	data/chars/shun/grabbackward2.png
 	delay	15
 	frame	data/chars/shun/grabbackward3.png
-	attack -200 5 200 50 5 1 0 0 0 30
 	frame	data/chars/shun/grabbackward2.png	
 
 	

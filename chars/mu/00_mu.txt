@@ -1,4 +1,4 @@
-name		mu
+name		mu2
 health		3000
 mp 			100
 speed		20

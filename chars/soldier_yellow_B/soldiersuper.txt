@@ -24,7 +24,7 @@ dropv 4 1 0
 	attack.reaction.fall.velocity.z 0.0
 	attack.size.x 92
 	attack.size.y 24
-frame	data/chars/SOLDIER1-1/16.png
+frame	data/chars/soldier_yellow_B/16.png
 
 
 

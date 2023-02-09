@@ -612,13 +612,12 @@ sound   data/chars/seiya/23-projection2.wav
 	@cmd leaper -1 4 1
 	frame	data/chars/seiya/grabbackward3.png
 	@cmd position 1 -20 10 0 1
-	attack -41 14 150 50 5 1 0 0 0 30
 	frame	data/chars/seiya/grabbackward4.png
 	@cmd position 2 -45 5 0 0
 	frame	data/chars/seiya/grabbackward5.png
 	delay -1000
 	@cmd position 3 -65 0 0 0
-	attack -83 74 150 50 5 1 0 0 0 30
+	attack -219 104 150 20 5 1 0 0 0 30
 	frame	data/chars/seiya/grabbackward6.png
 	delay	20
 	@cmd position 3 -65 0 0 0
@@ -626,7 +625,6 @@ sound   data/chars/seiya/23-projection2.wav
 	delay	10
 	offset	114 110
 	@cmd slam 20 2 -2 2 0 0
-	attack -150 39 150 50 5 1 0 0 0 30
 	frame	data/chars/seiya/rise1.png
 	frame	data/chars/seiya/rise2.png
 	attack -200 50 150 50 5 1 0 0 0 30

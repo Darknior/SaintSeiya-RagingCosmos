@@ -364,11 +364,11 @@ load    ikki           data/chars/ikki/00_ikki.txt
 ## SANCTUARY SOLDIERS ##
 
 know    malesoldier     data/chars/soldier_blue/00_soldier_blue.txt
-know    malesoldier_attackcombo 	data/chars/malesoldier/malesoldier_attackcombo.txt
-know    malesoldier_jumpattack  	data/chars/malesoldier/malesoldier_jumpattack.txt
-know    malesoldier_specialattack	data/chars/malesoldier/malesoldier_specialattack.txt
-know    malesoldier_runattack		data/chars/malesoldier/malesoldier_runattack.txt
-know    malesoldier_defense_all		data/chars/malesoldier/malesoldier_defense_all.txt
+know    malesoldier_attackcombo 	data/chars/soldier_blue/malesoldier_attackcombo.txt
+know    malesoldier_jumpattack  	data/chars/soldier_blue/malesoldier_jumpattack.txt
+know    malesoldier_specialattack	data/chars/soldier_blue/malesoldier_specialattack.txt
+know    malesoldier_runattack		data/chars/soldier_blue/malesoldier_runattack.txt
+know    malesoldier_defense_all		data/chars/soldier_blue/malesoldier_defense_all.txt
 know    soldiersuper    data/chars/soldier_yellow_B/soldiersuper.txt
 know    SOLDIER         data/chars/soldier_white/00_soldier_white.txt
 know    SOLDIER1        data/chars/soldier_yellow/00_soldier_yellow.txt
@@ -393,7 +393,7 @@ know    agora     		data/chars/agora/00_agora.txt
 
 ## GOLD KINGHTS ##
 
-know    MU              data/chars/MU/00_MU.txt
+know    MU2              data/chars/MU/00_MU.txt
 know    ALDEBARAN       data/chars/ALDEBARAN/00_ALDEBARAN.txt
 know    AIOLIA          data/chars/AIOLIA/00_AIOLIA.txt
 know    APHRODITE       data/chars/APHRODITE/00_APHRODITE.txt
