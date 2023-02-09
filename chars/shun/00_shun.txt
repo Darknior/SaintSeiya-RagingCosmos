@@ -449,12 +449,12 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/shun/attack29.png
 	frame	data/chars/shun/attack30.png
 	attack1 19 100 160 50 5 1 1 0 0 20
-	dropv 	3.5 1 0
+	dropv 	5.0 0.5
 	frame	data/chars/shun/attack31.png
 	attack1 0
 	frame	data/chars/shun/attack32.png
 	attack1 19 100 160 50 5 1 1 0 0 20
-	dropv 	3.5 1 0
+	dropv 	5.0 0.5
 	frame	data/chars/shun/attack33.png
 	attack1 0
 
