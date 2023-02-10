@@ -12,7 +12,7 @@ anim	idle
 	offset	850 -300
 	drawmethod alpha 1
 	drawmethod scale 1 1
-	sound data/chars/shun/01-chain2.wav
+	sound data/chars/shun/sounds/01-chain2.wav
 	frame	data/chars/shun/special/shun_chain/shun_chain-0.png
 	frame	data/chars/shun/special/shun_chain/shun_chain-1.png
 	frame	data/chars/shun/special/shun_chain/shun_chain-2.png

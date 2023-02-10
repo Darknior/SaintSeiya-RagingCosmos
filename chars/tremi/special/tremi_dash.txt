@@ -12,7 +12,7 @@ anim	idle
 	drawmethod scale 0.8 0.8
 	drawmethod alpha 1
         drawmethod  channel 0.50
-	sound data/chars/camus/02-dash.wav
+	sound data/chars/camus/sounds/02-dash.wav
 	frame	data/chars/camus/special/camus_dash/camus_dash0.png
 	frame	data/chars/camus/special/camus_dash/camus_dash1.png
 	frame	data/chars/camus/special/camus_dash/camus_dash2.png

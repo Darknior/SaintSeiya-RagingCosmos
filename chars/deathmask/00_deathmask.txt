@@ -155,7 +155,7 @@ anim runattack # Attaque en courant
 	dot 0 800 1 10 50
 	dropv 4.0 2.0 0.0
 	frame	data/chars/deathmask/runattack3.png
-	sound data/chars/deathmask/10-slash.wav
+	sound data/chars/deathmask/sounds/10-slash.wav
 	frame	data/chars/deathmask/runattack3.png
 	frame	data/chars/deathmask/runattack4.png
 	frame	data/chars/deathmask/runattack4.png
@@ -182,7 +182,7 @@ anim freespecial # Attaque en courant
 	dot 0 800 1 10 50
 	dropv 4.0 2.0 0.0
 	frame	data/chars/deathmask/runattack3.png
-	sound data/chars/deathmask/10-slash.wav
+	sound data/chars/deathmask/sounds/10-slash.wav
 	frame	data/chars/deathmask/runattack3.png
 	frame	data/chars/deathmask/runattack4.png
 	frame	data/chars/deathmask/runattack4.png
@@ -364,7 +364,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale circles
 	delay	15
 	offset	37 169
-	sound data/chars/deathmask/07-ahah2.wav
+	sound data/chars/deathmask/sounds/07-ahah2.wav
 	summonframe 0 0 0 0
 	subentity deathmask_melee
 	unsummonframe 22
@@ -385,7 +385,7 @@ anim special # Défense spéciale circles
 anim freespecial2 # Défense spéciale circles
 	delay	15
 	offset	37 169
-	sound data/chars/deathmask/07-ahah2.wav
+	sound data/chars/deathmask/sounds/07-ahah2.wav
 	summonframe 0 0 0 0
 	subentity deathmask_melee
 	unsummonframe 5
@@ -406,7 +406,7 @@ anim freespecial2 # Défense spéciale circles
 anim special2 # Défense spéciale circles
 	delay	15
 	offset	37 169
-	sound data/chars/deathmask/07-ahah2.wav
+	sound data/chars/deathmask/sounds/07-ahah2.wav
 	summonframe 0 0 0 0
 	subentity deathmask_melee
 	unsummonframe 5
@@ -427,7 +427,7 @@ anim special2 # Défense spéciale circles
 anim riseattack # Défense spéciale circles
 	delay	15
 	offset	37 169
-	sound data/chars/deathmask/07-ahah2.wav
+	sound data/chars/deathmask/sounds/07-ahah2.wav
 	summonframe 0 0 0 0
 	subentity deathmask_melee
 	unsummonframe 5
@@ -459,7 +459,7 @@ anim freespecial3 # Spirit hands
 	delay	10
 	offset	35 128
 	energycost  25 1 0
-	sound data/chars/deathmask/05-spirit.wav
+	sound data/chars/deathmask/sounds/05-spirit.wav
 	bbox 28 14 50 120
 	frame	data/chars/deathmask/attack1.png
 	frame	data/chars/deathmask/attack2.png
@@ -479,14 +479,14 @@ anim freespecial6 # Meikai ha
 	summonframe 0 0 0 0 1
 	subentity deathmask_constellation
 	hitflash flashbig
-	sound data/chars/deathmask/78-cosmos.wav
+	sound data/chars/deathmask/sounds/78-cosmos.wav
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
         @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/deathmask/special1.png
 	frame	data/chars/deathmask/special2.png
 	delay	10
 	frame	data/chars/deathmask/special2.png
-	sound data/chars/deathmask/09-mekai3.wav
+	sound data/chars/deathmask/sounds/09-mekai3.wav
 	@cmd 	spawnbind "deathmask_circles" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/deathmask/special2.png
 	delay	10

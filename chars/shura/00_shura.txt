@@ -93,7 +93,7 @@ anim	attack3
 	bbox	65 57 13 95
 	offset	59 151
 	frame	data/chars/shura/atk11.png
-	sound	data/chars/shura/cut.wav
+	sound	data/chars/shura/sounds/cut.wav
 	frame	data/chars/shura/atk8.png
 	frame	data/chars/shura/atk11.png
 	attack	72 43 96 110 15 1 1 0 0 0
@@ -120,7 +120,7 @@ anim	fall
 		
 anim	freespecial
 	loop	0
-	sound	data/chars/shura/escalibur.wav
+	sound	data/chars/shura/sounds/escalibur.wav
 	delay	5
 	offset	67 226
 	frame	data/chars/shura/fsp0.png
@@ -265,7 +265,7 @@ anim	grabattack2
 	bbox	22 133 15 116
 	frame	data/chars/shura/grat1.png
 	frame	data/chars/shura/grat2.png
-	sound	data/chars/shura/morra.wav
+	sound	data/chars/shura/sounds/morra.wav
 	delay	5
 	frame	data/chars/shura/grat2a.png
 	frame	data/chars/shura/grat3.png
@@ -330,7 +330,7 @@ anim	jumpattack2
 	bbox	31 86 71 13
 	frame	data/chars/shura/fall1.png
 	bbox	25 56 27 43
-	sound	data/chars/shura/pedra.wav
+	sound	data/chars/shura/sounds/pedra.wav
 	offset	54 106
 	frame	data/chars/shura/jatt2.png
 	delay	4
@@ -390,7 +390,7 @@ anim	rise
 anim	special
 	loop	0
 	delay	5
-	sound	data/chars/shura/excalibur.wav
+	sound	data/chars/shura/sounds/excalibur.wav
 	offset	51 241
 	frame	data/chars/shura/sp1.png
 	frame	data/chars/shura/sp2.png

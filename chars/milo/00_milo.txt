@@ -71,7 +71,7 @@ anim spawn
 	frame	data/chars/milo/spawn1.png
 	frame	data/chars/milo/spawn2.png
 	frame	data/chars/milo/spawn3.png
-	sound data/chars/milo/laugh.wav
+	sound data/chars/milo/sounds/laugh.wav
 	frame	data/chars/milo/spawn1.png
 	frame	data/chars/milo/spawn2.png
 	frame	data/chars/milo/spawn3.png	
@@ -368,7 +368,7 @@ anim special # Défense spéciale Scorpion
 	sound data/chars/aiolia/15-explosion.wav
 	frame	data/chars/milo/uppercut2.png
 	@cmd 	spawnbind "milo_flash" "ANI_IDLE" 0 0 0 0 0
-	sound data/chars/milo/13-bang.wav
+	sound data/chars/milo/sounds/13-bang.wav
 	attack5 74 1 120 180 30 1 0 0 5 12
 	dropv 	8.0 3 0
 	delay	10
@@ -404,7 +404,7 @@ anim freespecial6 # Ultra Scarlet Needle
 	frame	data/chars/milo/special39.png
 	delay   10
 	frame	data/chars/milo/special39.png
-	sound data/chars/milo/06-scarlet2.wav
+	sound data/chars/milo/sounds/06-scarlet2.wav
 	@cmd 	spawnbind "milo_storm" "ANI_IDLE" 0 0 0 0 0
 	@cmd 	spawnbind "milo_stingC" "ANI_IDLE" 0 0 0 0 0
 	delay   10
@@ -482,7 +482,7 @@ anim special2 # Défense spéciale sting
 	delay	15
 	offset	62 126
 	hitflash milo_blood
-	sound data/chars/milo/scarlet-needle1.wav
+	sound data/chars/milo/sounds/scarlet-needle1.wav
 	summonframe 0 0 0 0
 	subentity milo_sting
 	unsummonframe 6
@@ -505,7 +505,7 @@ anim freespecial3 # Attaque spéciale Aiguille écarlate
 	offset	46 130
 	bbox 32 16 38 114
 	hitflash milo_blood
-	sound data/chars/milo/10-pierce3.wav
+	sound data/chars/milo/sounds/10-pierce3.wav
 	summonframe 0 0 0 0
 	subentity milo_sting
 	unsummonframe 5
@@ -529,7 +529,7 @@ anim freespecial3 # Attaque spéciale Aiguille écarlate
 	attack5 60 16 55 83 10 0 0 0 5 12
 	frame	data/chars/milo/special30.png
 	attack5 0
-	sound data/chars/milo/scarlet-needle2.wav
+	sound data/chars/milo/sounds/scarlet-needle2.wav
 	frame	data/chars/milo/special31.png
 	attack5 24 56 150 32 10 0 0 0 5 12
 	frame	data/chars/milo/special32.png
@@ -552,7 +552,7 @@ anim freespecial3 # Attaque spéciale Aiguille écarlate
 anim riseattack # Défense spéciale sting
 	delay	15
 	offset	62 126
-	sound data/chars/milo/scarlet-needle1.wav
+	sound data/chars/milo/sounds/scarlet-needle1.wav
 	summonframe 0 0 0 0
 	subentity milo_sting
 	unsummonframe 6
@@ -585,7 +585,7 @@ anim freespecial5 # Ultra Antares
         @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
 	sound data/chars/aldebaran/78-cosmos.wav
 	frame	data/chars/milo/jump1.png
-	sound data/chars/milo/08-antares.wav
+	sound data/chars/milo/sounds/08-antares.wav
 	spawnframe 0 0 0 0 1
 	subentity milo_constellation
 	energycost  20 1 0

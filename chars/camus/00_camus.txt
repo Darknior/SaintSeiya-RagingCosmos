@@ -52,7 +52,7 @@ load aldebaran_aura
 anim spawn
 	delay	15
 	offset	67 128
-	sound data/chars/camus/01-greetings.wav
+	sound data/chars/camus/sounds/01-greetings.wav
 	frame	data/chars/camus/spawn3.png
 	@cmd spawnDialog "dialog_camus1" 200 100
 	frame	data/chars/camus/spawn3.png
@@ -331,7 +331,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale Ice pike
 	delay	15
 	offset	70 154
-	sound data/chars/camus/07-icewall.wav
+	sound data/chars/camus/sounds/07-icewall.wav
 	energycost  25 1 0
         hitflash marin_swing
 	summonframe 0 0 0 0
@@ -366,7 +366,7 @@ anim freespecial3 #Camus ice star
 	frame	data/chars/camus/special2.png
 	frame	data/chars/camus/special3.png
 	frame	data/chars/camus/special4.png
-	sound data/chars/camus/10-shoot.wav
+	sound data/chars/camus/sounds/10-shoot.wav
 	@cmd	shooter "camus_ice_star" 0 80 0 2 0 0
 	frame	data/chars/camus/special5.png
 	frame	data/chars/camus/special6.png
@@ -389,7 +389,7 @@ anim freespecial3 #Camus ice star
 anim special2 # Défense spéciale icecrystal
 	delay	10
 	offset	70 154
-	sound data/chars/camus/07-icewall.wav
+	sound data/chars/camus/sounds/07-icewall.wav
 	energycost  25 1 0
         hitflash marin_swing
 	summonframe 0 0 0 0
@@ -417,7 +417,7 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
 	offset	76 143
 	fastattack 1
 	@cmd 	spawnScreen "camus_lights" 0 0 0 0
-	sound data/chars/camus/05-constellation.wav
+	sound data/chars/camus/sounds/05-constellation.wav
 	frame	data/chars/camus/special29.png
 	spawnframe 0 0 0 0 1
 	subentity camus_constellation
@@ -433,7 +433,7 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
 	frame	data/chars/camus/special27.png	
 	frame	data/chars/camus/special28.png
 	frame	data/chars/camus/special29.png
-	sound data/chars/camus/03-aurora_execution.wav
+	sound data/chars/camus/sounds/03-aurora_execution.wav
 	frame	data/chars/camus/special29.png
 	@cmd 	spawnbind "camus_iceray" "ANI_IDLE" 0 0 0 1 0
 	delay   7
@@ -541,7 +541,7 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
 anim riseattack # Défense spéciale icecrystal
 	delay	10
 	offset	70 154
-	sound data/chars/camus/07-icewall.wav
+	sound data/chars/camus/sounds/07-icewall.wav
 	energycost  10 1 0
         hitflash marin_swing
 	summonframe 0 0 0 0

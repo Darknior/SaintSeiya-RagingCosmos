@@ -77,70 +77,70 @@ anim	select  # Personnage sélectionné
 	delay	10
 	offset	59 226
 	sound data/chars/select.wav
-	frame	data/chars/ikki/select1.png
-	frame	data/chars/ikki/select2.png
-	frame	data/chars/ikki/select3.png
-	frame	data/chars/ikki/select4.png
-	frame	data/chars/ikki/select5.png
-	frame	data/chars/ikki/select6.png
-	frame	data/chars/ikki/select7.png
-	frame	data/chars/ikki/select8.png
-	frame	data/chars/ikki/select9.png
-	frame	data/chars/ikki/select10.png
-	frame	data/chars/ikki/select11.png
-	frame	data/chars/ikki/select12.png
-	frame	data/chars/ikki/select13.png
-	frame	data/chars/ikki/select14.png
-	frame	data/chars/ikki/select15.png
-	frame	data/chars/ikki/select16.png
-	frame	data/chars/ikki/select17.png
-	frame	data/chars/ikki/select18.png
-	frame	data/chars/ikki/select19.png
-	frame	data/chars/ikki/select20.png
-	frame	data/chars/ikki/select21.png
-	frame	data/chars/ikki/select22.png
-	frame	data/chars/ikki/select23.png
-	frame	data/chars/ikki/select24.png
-	frame	data/chars/ikki/select25.png
-	frame	data/chars/ikki/select26.png
-	frame	data/chars/ikki/select27.png
-	frame	data/chars/ikki/select28.png
-	frame	data/chars/ikki/select29.png
-	frame	data/chars/ikki/select30.png
-	frame	data/chars/ikki/select31.png
-	frame	data/chars/ikki/select32.png
-	frame	data/chars/ikki/select33.png
-	frame	data/chars/ikki/select34.png
-	frame	data/chars/ikki/select35.png
-	frame	data/chars/ikki/select36.png
-	frame	data/chars/ikki/select37.png
-	frame	data/chars/ikki/select38.png
-	frame	data/chars/ikki/select39.png
-	frame	data/chars/ikki/select40.png
-	frame	data/chars/ikki/select41.png
-	frame	data/chars/ikki/select42.png
-	frame	data/chars/ikki/select43.png
-	frame	data/chars/ikki/select44.png
-	frame	data/chars/ikki/select45.png
-	frame	data/chars/ikki/select46.png
-	frame	data/chars/ikki/select47.png
-	frame	data/chars/ikki/select48.png
-	frame	data/chars/ikki/select49.png
-	frame	data/chars/ikki/select50.png
-	frame	data/chars/ikki/select51.png
-	frame	data/chars/ikki/select52.png	
-	frame	data/chars/ikki/select51.png
-	frame	data/chars/ikki/select50.png
-	frame	data/chars/ikki/select49.png
-	frame	data/chars/ikki/select48.png
-	frame	data/chars/ikki/select47.png	
+	frame	data/chars/ikki/select/select1.png
+	frame	data/chars/ikki/select/select2.png
+	frame	data/chars/ikki/select/select3.png
+	frame	data/chars/ikki/select/select4.png
+	frame	data/chars/ikki/select/select5.png
+	frame	data/chars/ikki/select/select6.png
+	frame	data/chars/ikki/select/select7.png
+	frame	data/chars/ikki/select/select8.png
+	frame	data/chars/ikki/select/select9.png
+	frame	data/chars/ikki/select/select10.png
+	frame	data/chars/ikki/select/select11.png
+	frame	data/chars/ikki/select/select12.png
+	frame	data/chars/ikki/select/select13.png
+	frame	data/chars/ikki/select/select14.png
+	frame	data/chars/ikki/select/select15.png
+	frame	data/chars/ikki/select/select16.png
+	frame	data/chars/ikki/select/select17.png
+	frame	data/chars/ikki/select/select18.png
+	frame	data/chars/ikki/select/select19.png
+	frame	data/chars/ikki/select/select20.png
+	frame	data/chars/ikki/select/select21.png
+	frame	data/chars/ikki/select/select22.png
+	frame	data/chars/ikki/select/select23.png
+	frame	data/chars/ikki/select/select24.png
+	frame	data/chars/ikki/select/select25.png
+	frame	data/chars/ikki/select/select26.png
+	frame	data/chars/ikki/select/select27.png
+	frame	data/chars/ikki/select/select28.png
+	frame	data/chars/ikki/select/select29.png
+	frame	data/chars/ikki/select/select30.png
+	frame	data/chars/ikki/select/select31.png
+	frame	data/chars/ikki/select/select32.png
+	frame	data/chars/ikki/select/select33.png
+	frame	data/chars/ikki/select/select34.png
+	frame	data/chars/ikki/select/select35.png
+	frame	data/chars/ikki/select/select36.png
+	frame	data/chars/ikki/select/select37.png
+	frame	data/chars/ikki/select/select38.png
+	frame	data/chars/ikki/select/select39.png
+	frame	data/chars/ikki/select/select40.png
+	frame	data/chars/ikki/select/select41.png
+	frame	data/chars/ikki/select/select42.png
+	frame	data/chars/ikki/select/select43.png
+	frame	data/chars/ikki/select/select44.png
+	frame	data/chars/ikki/select/select45.png
+	frame	data/chars/ikki/select/select46.png
+	frame	data/chars/ikki/select/select47.png
+	frame	data/chars/ikki/select/select48.png
+	frame	data/chars/ikki/select/select49.png
+	frame	data/chars/ikki/select/select50.png
+	frame	data/chars/ikki/select/select51.png
+	frame	data/chars/ikki/select/select52.png	
+	frame	data/chars/ikki/select/select51.png
+	frame	data/chars/ikki/select/select50.png
+	frame	data/chars/ikki/select/select49.png
+	frame	data/chars/ikki/select/select48.png
+	frame	data/chars/ikki/select/select47.png	
 	delay 150
-	frame	data/chars/ikki/select46.png
+	frame	data/chars/ikki/select/select46.png
 
 anim spawn # Animation de 1ère apparition du personnage
 	delay	8
 	offset	98 208
-        sound   data/chars/ikki/01-fire.wav
+        sound   data/chars/ikki/sounds/01-fire.wav
 	frame	data/chars/ikki/spawn1.png
 	frame	data/chars/ikki/spawn2.png
 	frame	data/chars/ikki/spawn3.png
@@ -226,7 +226,7 @@ anim victory # Animation de victoire contre un boss
 	bbox 21 17 51 120
 	frame	data/chars/ikki/victory1.png
 	frame	data/chars/ikki/victory2.png
-sound   data/chars/ikki/10-yatta.wav
+sound   data/chars/ikki/sounds/10-yatta.wav
 	frame	data/chars/ikki/victory3.png
 	frame	data/chars/ikki/victory4.png
 	frame	data/chars/ikki/victory5.png
@@ -329,7 +329,7 @@ anim dodge
 	summonframe 0 0 0 0
 	subentity round_dust	
 	jumpframe 2 1.8 0
-sound   data/chars/ikki/06-jump1.wav
+sound   data/chars/ikki/sounds/06-jump1.wav
 	frame	data/chars/ikki/jump1.png
 	frame	data/chars/ikki/jump2.png
 	frame	data/chars/ikki/jump3.png
@@ -342,12 +342,12 @@ anim run
 	delay	8
 	offset	80 137
 	bbox 76 17 30 120
-sound   data/chars/ikki/20-run1.wav
+sound   data/chars/ikki/sounds/20-run1.wav
 	frame	data/chars/ikki/run1.png
 	frame	data/chars/ikki/run2.png
 	frame	data/chars/ikki/run3.png
 	frame	data/chars/ikki/run4.png
-sound   data/chars/ikki/20-run2.wav
+sound   data/chars/ikki/sounds/20-run2.wav
 	frame	data/chars/ikki/run5.png
 	frame	data/chars/ikki/run6.png
 	frame	data/chars/ikki/run7.png
@@ -361,7 +361,7 @@ anim runattack # Attaque en courant
 	fastattack 1
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
-        sound   data/chars/ikki/01-dash.wav
+        sound   data/chars/ikki/sounds/01-dash.wav
 	attack 100 60 50 50 15 0 0 0 0 30
 	frame	data/chars/ikki/runattack4.png
 	@cmd 	spawnbind "ikki_run" "ANI_IDLE" 0 0 0 1 0
@@ -391,7 +391,7 @@ anim  runjump
 	summonframe 0 0 0 0
 	subentity round_dust	
 	cancel 0 8 0 A2 freespecial3 
-sound   data/chars/ikki/06-jump1.wav
+sound   data/chars/ikki/sounds/06-jump1.wav
 	frame	data/chars/ikki/jumpforward1.png
 	frame	data/chars/ikki/forwardjump1.png
 	frame	data/chars/ikki/forwardjump2.png
@@ -493,7 +493,7 @@ anim attackbackward # Attaque arrière (Arrière + attaque)
 	fastattack 1
 	hitflash flashbig
 	delay	5
-	sound   data/chars/ikki/17-back_kick.wav
+	sound   data/chars/ikki/sounds/17-back_kick.wav
 	frame	data/chars/ikki/attackbackward0.png
 	frame	data/chars/ikki/attackbackward1.png
 	attack1 0
@@ -520,7 +520,7 @@ anim attackboth # Attaque Melee (bouton saut + attaque)
 	summonframe 0 0 0 0 0
 	subentity ikki_auraC
 	delay	5
-        sound   data/chars/ikki/01-knee.wav
+        sound   data/chars/ikki/sounds/01-knee.wav
 	frame	data/chars/ikki/melee1.png
 	attack1 0
 	frame	data/chars/ikki/melee2.png
@@ -551,7 +551,7 @@ anim freespecial # Attaque Melee (bouton saut + attaque)
 	summonframe 0 0 0 0 0
 	subentity ikki_auraC
 	delay	5
-        sound   data/chars/ikki/01-knee.wav
+        sound   data/chars/ikki/sounds/01-knee.wav
 	frame	data/chars/ikki/melee1.png
 	attack1 0
 	frame	data/chars/ikki/melee2.png
@@ -580,7 +580,7 @@ anim freespecial4 # Attaque arrière (à partir d'un cancel)
 	fastattack 1
 	hitflash flashbig
 	delay	5
-sound   data/chars/ikki/17-back_kick.wav
+sound   data/chars/ikki/sounds/17-back_kick.wav
 	frame	data/chars/ikki/attackbackward0.png
 	frame	data/chars/ikki/attackbackward1.png
 	attack1 0
@@ -638,10 +638,10 @@ anim throw #Projection en arrière
 	bbox 47 50 51 120
 	throw 7 7
 	throwdamage 20
-sound   data/chars/ikki/23-projection1.wav
+sound   data/chars/ikki/sounds/23-projection1.wav
 	frame	data/chars/ikki/grab3.png
 	frame	data/chars/ikki/grab4.png
-sound   data/chars/ikki/23-projection2.wav
+sound   data/chars/ikki/sounds/23-projection2.wav
 	attack -83 0 200 50 5 1 0 0 0 30
 	frame	data/chars/ikki/grab6.png
 	frame	data/chars/ikki/grab5.png
@@ -677,7 +677,7 @@ anim freespecial2 # Hoyoku Tensho
 	hitflash shaka_flame
 	attack5 35 66 100 131 10 1 0 0 5 12
 	dropv 	3 5
-        sound   data/chars/ikki/01-phoenix.wav
+        sound   data/chars/ikki/sounds/01-phoenix.wav
 	@cmd 	spawnbind "ikki_aura" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/ikki/sleep1.png
 	frame	data/chars/ikki/sleep2.png

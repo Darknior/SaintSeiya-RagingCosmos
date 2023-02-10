@@ -13,7 +13,7 @@ anim	idle
 	offset	89 237
 	drawmethod alpha 1
         drawmethod  scale 1 1
-	sound data/chars/marin/01-uppercutB.wav
+	sound data/chars/marin/sounds/01-uppercutB.wav
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-0.png
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-1.png
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-2.png
