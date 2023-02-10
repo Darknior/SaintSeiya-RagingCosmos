@@ -76,139 +76,140 @@ e4icon      607 115
 ##-----------------------------------------------------
 ##-----------------------------------------------------
 
-set         Story_Mode_(Solo)
+set         Story_Mode
 
 maxplayers  4
-lives       1
+#nosame      1        # Empèche de choisir les mm personnages
+
+lives       4
 credits     10
-cansave     2
+noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partagés
+cansave     2        # Sauvegarde complète, progression et vies
 
 disablehof  0        # Masque l'écran de Hall of fame
 typemp      0        # Type de récupération de la magie (0/1/2)
 
+select data/select-pegasus.txt
 
 #-- Temple 1 Belier (INTRO) --
-select data/select-pegasus.txt
 z           378 484
 file        data/levels/temple0.txt
-scene    data/bgs/temple1/temple01_intro.txt
-z       378 484
-file    data/levels/temple1.txt
-
+scene       data/bgs/temple1/temple01_intro.txt
+z           378 484
+file        data/levels/temple1.txt
 
 #-- Temple 2 Taurus (Aldébaran du Taureau) --
 
-#select data/select-pegasus.txt
-z       390 480
-file    data/levels/temple2.txt
-scene   data/scenes/temple2.txt
-z       435 435
-file    data/levels/temple2BOSS.txt
+z           390 480
+file        data/levels/temple2.txt
+scene       data/scenes/temple2.txt
+z           435 435
+file        data/levels/temple2BOSS.txt
 
 #-- Temple 3 Gemini (l'Illusion de Saga le Gemeaux) --
 
-skipselect ANDROMEDA-SHUN
-z       390 480
-file    data/levels/temple3.txt
-scene   data/scenes/temple3.txt
-z       435 435
-file    data/levels/temple3BOSS.txt
+#skipselect ANDROMEDA-SHUN
+z           390 480
+file        data/levels/temple3.txt
+scene       data/scenes/temple3.txt
+z           435 435
+file        data/levels/temple3BOSS.txt
 
 #-- Temple 4 Cancer (Deathmask du Cancer) --
 
-skipselect DRAGON-SHIRYU
-z       390 480
-scene   data/scenes/temple4.txt
-file    data/levels/temple4.txt
-z       435 435
-file    data/levels/temple4BOSS.txt
+#skipselect DRAGON-SHIRYU
+z           390 480
+scene       data/scenes/temple4.txt
+file        data/levels/temple4.txt
+z           435 435
+file        data/levels/temple4BOSS.txt
 
 #-- Temple 5 Leo (Aiolia du Lion) --
 
-skipselect PEGASUS-SEIYA
-z       390 480
-file    data/levels/temple5.txt
-scene   data/scenes/temple5.txt
-z       435 435
-file    data/levels/temple5BOSS.txt
+#skipselect PEGASUS-SEIYA
+z           390 480
+file        data/levels/temple5.txt
+scene       data/scenes/temple5.txt
+z           435 435
+file        data/levels/temple5BOSS.txt
 
 #-- Temple 6 Virgo (Shaka de la Vierge) --
 
-skipselect PHOENIX-IKKI
-z       390 480
-file    data/levels/temple6.txt
-scene   data/scenes/temple6.txt
-z       435 435
-file    data/levels/temple6BOSS.txt
+#skipselect PHOENIX-IKKI
+z           390 480
+file        data/levels/temple6.txt
+scene       data/scenes/temple6.txt
+z           435 435
+file        data/levels/temple6BOSS.txt
 
 #-- Temple 7 Libra (Balance, casser le cerceuil de glace) --
 
-skipselect DRAGON-SHIRYU
-scene   data/scenes/temple7.txt
-z       355 470
-file    data/levels/temple7BOSS.txt
+#skipselect DRAGON-SHIRYU
+scene       data/scenes/temple7.txt
+z           355 470
+file        data/levels/temple7BOSS.txt
 
 #-- Temple 8 Scorpius (Milo du Scorpion) --
 
-skipselect CYGNUS-HYOGA
-z       390 480
-file    data/levels/temple8.txt
-scene   data/scenes/temple8.txt
-z       435 435
-file    data/levels/temple8BOSS.txt
+#skipselect CYGNUS-HYOGA
+z           390 480
+file        data/levels/temple8.txt
+scene       data/scenes/temple8.txt
+z           435 435
+file        data/levels/temple8BOSS.txt
 
 #-- Temple 9 Sagitarius (Les épreuves du Sagittaire) --
 
-skipselect     ## TOUS LES PERSONNAGES AU CHOIX
-select  data/select-team.txt
-scene   data/scenes/temple9.txt
-z       320 320
-file    data/levels/temple9.txt
+#skipselect     ## TOUS LES PERSONNAGES AU CHOIX
+select      data/select-team.txt
+scene       data/scenes/temple9.txt
+z           320 320
+file        data/levels/temple9.txt
 
 #-- Temple 10 Capricornus (Shura du Capricorne) --
 
-skipselect DRAGON-SHIRYU
-z       390 480
-file    data/levels/temple10.txt
-scene   data/scenes/temple10.txt
-z       435 435
-file    data/levels/temple10BOSS.txt
+#skipselect DRAGON-SHIRYU
+z           390 480
+file        data/levels/temple10.txt
+scene       data/scenes/temple10.txt
+z           435 435
+file        data/levels/temple10BOSS.txt
 
 #-- Temple 11 Aquarius (Camus du Verseau) --
 
-skipselect CYGNUS-HYOGA
-z       390 480
-file    data/levels/temple11.txt
-scene   data/scenes/temple11.txt
-z       435 435
-file    data/levels/temple11BOSS.txt
+#skipselect CYGNUS-HYOGA
+z           390 480
+file        data/levels/temple11.txt
+scene       data/scenes/temple11.txt
+z           435 435
+file        data/levels/temple11BOSS.txt
 
 #-- Temple 12 Pisces (Aphrodite des poissons) --
 
-skipselect ANDROMEDA-SHUN
-z       390 480
-file    data/levels/temple12.txt
-scene   data/scenes/temple12.txt
-z       435 435
-file    data/levels/temple12BOSS.txt
+#skipselect ANDROMEDA-SHUN
+z           390 480
+file        data/levels/temple12.txt
+scene       data/scenes/temple12.txt
+z           435 435
+file        data/levels/temple12BOSS.txt
 
 #-- Temple final: Gand Pope Gemini (Gemeaux) --
 
-skipselect PEGASUS-SEIYA
-z       420 420
-file    data/levels/templefiori.txt
-scene   data/scenes/temple13.txt
-z       430 430
-file    data/levels/temple13BOSS.txt
+#skipselect PEGASUS-SEIYA
+z           420 420
+file        data/levels/templefiori.txt
+scene       data/scenes/temple13.txt
+z           430 430
+file        data/levels/temple13BOSS.txt
 
 #-- ENDING --
 
-scene   data/scenes/end.txt
+scene       data/scenes/end.txt
 end
 
 ##-----------------------------------------------------
 
-set         Story_Mode_(Multi)
+set         Training
 
 maxplayers  4
 #nosame      1        # Empèche de choisir les mm personnages
@@ -216,195 +217,19 @@ maxplayers  4
 lives       1
 credits     10
 noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partagés
-
 cansave     2        # Sauvegarde complète, progression et vies
 
 disablehof  0        # Masque l'écran de Hall of fame
 typemp      0        # Type de récupération de la magie (0/1/2)
 
+select data/select-pegasus.txt
 
-scene   data/scenes/scene_tremi.txt
-
-#-- Temple 1 Belier (INTRO) --
-
-scene   data/scenes/scene_taurus.txt
-z       378 484
-file    data/levels/temple1.txt
 
 #-- Temple 2 Taurus (Toro) --
 
-z       390 480
-file    data/levels/temple2.txt
-scene   data/scenes/temple2.txt
-z       435 435
-file    data/levels/temple2BOSS.txt
+z       378 484
+file    data/levels/training.txt
 
-#-- Temple 3 Gemini (Gemeaux) --
-
-skipselect 
-select  data/select-all.txt
-z       390 480
-file    data/levels/temple3.txt
-scene   data/scenes/temple3.txt
-z       435 435
-file    data/levels/temple3BOSS.txt
-
-#-- Temple 4 Cancer (Cancer) --
-
-skipselect 
-select  data/select-all.txt
-z       390 480
-scene   data/scenes/temple4.txt
-file    data/levels/temple4.txt
-z       435 435
-file    data/levels/temple4BOSS.txt
-
-#-- Temple 5 Leo (Lion) --
-
-skipselect 
-select  data/select-all.txt
-z       390 480
-file    data/levels/temple5.txt
-scene   data/scenes/temple5.txt
-z       435 435
-file    data/levels/temple5BOSS.txt
-
-#-- Temple 6 Virgo (Vierge) --
-
-skipselect 
-select  data/select-all.txt
-z       390 480
-file    data/levels/temple6.txt
-scene   data/scenes/temple6.txt
-z       435 435
-file    data/levels/temple6BOSS.txt
-
-#-- Temple 7 Libra (Balance) --
-
-skipselect 
-select  data/select-all.txt
-scene   data/scenes/temple7.txt
-z       355 470
-file    data/levels/temple7BOSS.txt
-
-#-- Temple 8 Scorpius (Scorpion) --
-
-skipselect 
-select  data/select-all.txt
-z       390 480
-file    data/levels/temple8.txt
-scene   data/scenes/temple8.txt
-z       435 435
-file    data/levels/temple8BOSS.txt
-
-#-- Temple 9 Sagitarius (Sagitaire) --
-
-skipselect 
-select  data/select-all.txt
-scene   data/scenes/temple9.txt
-z       320 320
-file    data/levels/temple9.txt
-
-#-- Temple 10 Capricornus (Capricorne) --
-
-skipselect 
-select  data/select-all.txt
-z       390 480
-file    data/levels/temple10.txt
-scene   data/scenes/temple10.txt
-z       435 435
-file    data/levels/temple10BOSS.txt
-
-#-- Temple 11 Aquarius (Verseau) --
-
-skipselect 
-select  data/select-all.txt
-z       390 480
-file    data/levels/temple11.txt
-scene   data/scenes/temple11.txt
-z       435 435
-file    data/levels/temple11BOSS.txt
-
-#-- Temple 12 Pisces (Poisson) --
-
-skipselect 
-select  data/select-all.txt
-z       390 480
-file    data/levels/temple12.txt
-scene   data/scenes/temple12.txt
-z       435 435
-file    data/levels/temple12BOSS.txt
-
-#-- Temple final: Gand Pope Gemini (Gemeaux) --
-
-skipselect 
-select  data/select-all.txt
-z       420 420
-file    data/levels/templefiori.txt
-scene   data/scenes/temple13.txt
-z       430 430
-file    data/levels/templefinalBOSS.txt
-
-#-- ENDING --
-
-scene   data/scenes/end.txt
-end
-
-##-----------------------------------------------------
-
-set         Boss_Rush
-
-maxplayers  4
-#nosame      1        # Empèche de choisir les mm personnages
-
-lives       5
-credits     5
-noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partagés
-
-cansave     2        # Sauvegarde complète, progression et vies
-disablehof  0        # Masque l'écran de Hall of fame
-typemp      0        # Type de récupération de la magie (0/1/2)
-
-# TEMPORARILY DISABLED UNTIL ALL PLAYABLE CHARACTERS (INCLUDING BOSSES) ARE AVAILABLE
-#skipselect 
-#select  data/select-all.txt
-
-z       435 435
-file    data/levels/temple2BOSS.txt
-next
-z       435 435
-file    data/levels/temple3BOSS.txt
-next
-z       435 435
-file    data/levels/temple4BOSS.txt
-next
-z       435 435
-file    data/levels/temple5BOSS.txt
-next
-z       435 435
-file    data/levels/temple6BOSS.txt
-next
-z       355 470
-file    data/levels/temple7BOSS.txt
-next
-z       435 435
-file    data/levels/temple8BOSS.txt
-next
-z       435 435
-file    data/levels/temple10BOSS.txt
-next
-z       435 435
-file    data/levels/temple11BOSS.txt
-next
-z       435 435
-file    data/levels/temple12BOSS.txt
-next
-z       430 430
-file    data/levels/templefinalBOSS.txt
-next
-
-scene   data/scenes/end.txt
-end
 
 ##-----------------------------------------------------
 ##-----------------------------------------------------

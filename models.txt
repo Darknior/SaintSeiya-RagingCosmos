@@ -376,7 +376,7 @@ know    SOLDIER1-1      data/chars/soldier_yellow_B/00_soldier_yellow_B.txt
 know    SOLDIER2        data/chars/soldier_purple/00_soldier_purple.txt
 know    SOLDIER3        data/chars/soldier_big/00_soldier_big.txt
 know 	jaki			data/chars/jaki/00_jaki.txt
-know    cassios        data/chars/cassios/00_cassios.txt
+know    cassios         data/chars/cassios/00_cassios.txt
 know    cassiosp        data/chars/cassios/00_cassiosp.txt
 know    cassios_rescue  data/chars/cassios/00_cassios_rescue.txt
 
@@ -407,6 +407,10 @@ know    SHURA           data/chars/SHURA/00_shura.txt
 know    cube            data/chars/CUBE/CUBE.txt
 know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
 know    great_pope      data/chars/great_pope/great_pope.txt
+
+## TRAINING ##
+
+know    SOLDIERTRAINING data/chars/soldier_purple/00_soldier_purple_training.txt
 
 
 #-- LEVELS --------------------------------------------------------------------------
