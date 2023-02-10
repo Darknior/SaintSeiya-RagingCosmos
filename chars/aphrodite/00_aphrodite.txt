@@ -337,7 +337,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale rose explosion
 	delay	10
 	offset	45 144
-	sound data/chars/aphrodite/02.wav
+	sound data/chars/aphrodite/sounds/02.wav
 	energycost  25 1 0
 	hitflash flashbig
         @cmd 	spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 0 0 0 0
@@ -389,7 +389,7 @@ anim freespecial2 #Blue Rose shot
 anim special2 # Défense spéciale carnivore roses
 	delay	10
 	offset	45 144
-	sound data/chars/aphrodite/02.wav
+	sound data/chars/aphrodite/sounds/02.wav
 	energycost  20 1 0
 	hitflash flashbig
 	frame	data/chars/aphrodite/special1.png
@@ -414,7 +414,7 @@ anim freespecial3 # Attaque spéciale Rosefield
 	delay	10
 	offset	30 143
 	bbox 12 16 38 127
-	sound data/chars/aphrodite/05-jump.wav
+	sound data/chars/aphrodite/sounds/05-jump.wav
 	summonframe 11 0 0 0
 	subentity aphrodite_rosefield
 	energycost  20 1 0
@@ -422,7 +422,7 @@ anim freespecial3 # Attaque spéciale Rosefield
 	forcedirection -1
 	frame	data/chars/aphrodite/special21.png
 	frame	data/chars/aphrodite/special22.png
-	sound data/chars/aphrodite/04-Pirhana_Rose.wav
+	sound data/chars/aphrodite/sounds/04-Pirhana_Rose.wav
 	delay	6
 	offset	30 153
 	frame	data/chars/aphrodite/special23.png
@@ -476,7 +476,7 @@ anim freespecial6 # Ultra Bloody rose
 	energycost  50 1 0
         @cmd 	spawnbind "aphrodite_big_roses_white" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/aphrodite/special15.png
-	sound data/chars/aphrodite/03.wav
+	sound data/chars/aphrodite/sounds/03.wav
 	frame	data/chars/aphrodite/special14.png
 	frame	data/chars/aphrodite/special13.png
 	frame	data/chars/aphrodite/special12.png
@@ -503,7 +503,7 @@ anim freespecial6 # Ultra Bloody rose
 anim riseattack # Défense spéciale carnivore roses
 	delay	10
 	offset	45 144
-	sound data/chars/aphrodite/02.wav
+	sound data/chars/aphrodite/sounds/02.wav
 	energycost  10 1 0
 	hitflash flashbig
 	frame	data/chars/aphrodite/special1.png

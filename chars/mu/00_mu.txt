@@ -113,7 +113,7 @@ anim runattack # Attaque en courant
 	offset	72 121
 	bbox 53 4 38 120
 	hitflash aldebaran_swing
-	sound data/chars/mu/01-roar.wav
+	sound data/chars/mu/sounds/01-roar.wav
 	fastattack 1
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
@@ -135,7 +135,7 @@ anim freespecial # Attaque en courant
 	offset	72 121
 	bbox 53 4 38 120
 	hitflash aldebaran_swing
-	sound data/chars/mu/01-roar.wav
+	sound data/chars/mu/sounds/01-roar.wav
 	forcedirection -1
 	range 	80 175
 	rangea 	0 100
@@ -293,12 +293,12 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale Cristal Wall
 	delay	10
 	offset	69 132
-	sound data/chars/mu/04-swing.wav
+	sound data/chars/mu/sounds/04-swing.wav
 	hitflash flashbig
 	frame	data/chars/mu/special1.png
-	sound data/chars/mu/15-explosion.wav
+	sound data/chars/mu/sounds/15-explosion.wav
 	frame	data/chars/mu/special2.png
-	sound data/chars/mu/01.wav
+	sound data/chars/mu/sounds/01.wav
 	attack5 10 1 120 150 30 1 0 0 5 12
 	dropv 8.0 3.0 0.0
 	delay	40
@@ -318,7 +318,7 @@ anim special2 #Attaque spéciale Ram Rush
 	frame	data/chars/mu/special22.png
 	frame	data/chars/mu/special23.png
 	frame	data/chars/mu/special24.png
-	sound data/chars/mu/08-lionstar.wav
+	sound data/chars/mu/sounds/08-lionstar.wav
 	@cmd	shooter "mu_ram" 0 50 0 2 0 0
 	frame	data/chars/mu/special25.png
 	frame	data/chars/mu/special26.png
@@ -337,7 +337,7 @@ anim freespecial2 #Attaque spéciale Ram Rush
 	frame	data/chars/mu/special22.png
 	frame	data/chars/mu/special23.png
 	frame	data/chars/mu/special24.png
-	sound data/chars/mu/08-lionstar.wav
+	sound data/chars/mu/sounds/08-lionstar.wav
 	@cmd	shooter "mu_ram" 0 50 0 2 0 0
 	frame	data/chars/mu/special25.png
 	frame	data/chars/mu/special26.png

@@ -15,7 +15,7 @@ anim	idle
 	drawmethod alpha 1
 	drawmethod fliprotate 1	
 	offset	650 102
-        sound   data/chars/shiryu/01-dragon.wav
+        sound   data/chars/shiryu/sounds/01-dragon.wav
 	attack1 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
 	attack1 0

@@ -69,7 +69,7 @@ anim spawn
 	frame	data/chars/gemini/spawn10.png
 	frame	data/chars/gemini/spawn11.png
 	frame	data/chars/gemini/spawn12.png
-	sound data/chars/gemini/03-ahah.wav
+	sound data/chars/gemini/sounds/03-ahah.wav
 	frame	data/chars/gemini/spawn13.png
 	@cmd spawnDialog "dialog_gemini1" 200 100
 	frame	data/chars/gemini/spawn14.png
@@ -130,7 +130,7 @@ anim runattack # Attaque en courant
         subentity gemini_rundust
 	unsummonframe 20
 	frame	data/chars/gemini/runattack1.png
-	sound data/chars/gemini/04-dash.wav
+	sound data/chars/gemini/sounds/04-dash.wav
 	frame	data/chars/gemini/runattack2.png
 	attack2 115 40 62 61 20 1 0 0 5 20
 	frame	data/chars/gemini/runattack3.png
@@ -155,7 +155,7 @@ anim freespecial # Attaque en courant
         subentity gemini_rundust
 	unsummonframe 20
 	frame	data/chars/gemini/runattack1.png
-	sound data/chars/gemini/04-dash.wav
+	sound data/chars/gemini/sounds/04-dash.wav
 	frame	data/chars/gemini/runattack2.png
 	attack2 115 40 62 61 20 1 0 0 5 20
 	frame	data/chars/gemini/runattack3.png
@@ -340,7 +340,7 @@ anim special # Défense spéciale Melee
 	offset	66 144
 	fastattack 1
 	energycost  25 1 0
-	sound data/chars/gemini/02-ahah.wav
+	sound data/chars/gemini/sounds/02-ahah.wav
         @cmd 	spawnbind "gemini_clones" "ANI_IDLE" 0 0 0 1 0
 	summonframe 10 0 0 0 0
 	subentity gemini_melee
@@ -444,7 +444,7 @@ anim special2 #Attaque spéciale Punch combo
 	offset	66 144
 	bbox 21 11 38 151
 	@cmd 	spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
-	sound data/chars/gemini/11-multihits.wav
+	sound data/chars/gemini/sounds/11-multihits.wav
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
 	summonframe 0 0 0 0 0
@@ -509,7 +509,7 @@ anim freespecial2 # Attaque spéciale Punch combo
 	offset	66 144
 	bbox 21 11 38 151
 	@cmd 	spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
-	sound data/chars/gemini/11-multihits.wav
+	sound data/chars/gemini/sounds/11-multihits.wav
 	attack1 70 39 77 44 5 0 0 0 12 12
 	frame	data/chars/gemini/special21.png
 	summonframe 0 0 0 0 0
@@ -576,7 +576,7 @@ anim freespecial6 # Another dimension
 	subentity gemini_dimension_back
 	hitflash flashbig
 	frame	data/chars/gemini/special1.png
-	sound data/chars/gemini/01-dimension.wav
+	sound data/chars/gemini/sounds/01-dimension.wav
 	@cmd 	spawnbind "gemini_ultra" "ANI_IDLE" 0 0 0 1 0
 	frame	data/chars/gemini/special2.png
 	frame	data/chars/gemini/special3.png
@@ -655,7 +655,7 @@ anim riseattack	#Teleportation
 	frame	data/chars/gemini/riseattack3.png
 	frame	data/chars/gemini/riseattack4.png
 	frame	data/chars/gemini/riseattack6.png
-	sound data/chars/gemini/05-rise.wav
+	sound data/chars/gemini/sounds/05-rise.wav
 	frame	data/chars/gemini/riseattack6.png
 	frame	data/chars/gemini/riseattack7.png
 	frame	data/chars/gemini/riseattack8.png

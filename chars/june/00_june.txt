@@ -76,7 +76,7 @@ anim spawn
 	frame	data/chars/june/spawn1.png
 	frame	data/chars/june/spawn2.png
 	frame	data/chars/june/spawn3.png
-	sound data/chars/june/09-cloack.wav
+	sound data/chars/june/sounds/09-cloack.wav
 	frame	data/chars/june/spawn4.png
 	frame	data/chars/june/spawn5.png
 	frame	data/chars/june/spawn6.png
@@ -306,12 +306,12 @@ anim attack5 # Attaque combo 5
 anim special # Vine Mill
 	delay	10
 	offset	111 124
-	sound data/chars/june/01-explosion.wav
+	sound data/chars/june/sounds/01-explosion.wav
 	fastattack 1
 	frame	data/chars/june/special1.png
-	sound data/chars/june/01-hurl.wav
+	sound data/chars/june/sounds/01-hurl.wav
 	frame	data/chars/june/special2.png
-	sound data/chars/june/06-launch.wav
+	sound data/chars/june/sounds/06-launch.wav
 	attack5 42 24 150 100 10 0 0 0 5 12
 	frame	data/chars/june/special3.png
 	frame	data/chars/june/special4.png
@@ -335,7 +335,7 @@ anim special # Vine Mill
 anim special2 # Vine Prison
 	delay	15
 	offset	96 124
-	sound data/chars/june/01-multi2.wav
+	sound data/chars/june/sounds/01-multi2.wav
 	followanim 1
 	followcond 2
 	energycost  10 1 0
@@ -378,7 +378,7 @@ anim follow1 # Vine Prison follow
 anim freespecial2 # Vine Prison
 	delay	15
 	offset	96 124
-	sound data/chars/june/01-multi2.wav
+	sound data/chars/june/sounds/01-multi2.wav
 	range 	80 150
 	rangea 	0 100
 	followanim 1

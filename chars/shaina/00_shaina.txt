@@ -71,11 +71,11 @@ anim spawn
 	delay	10
 	offset	41 128
 	@cmd spawnFade "in" 0 0 0 10000000001 0.25
-	sound data/chars/shaina/10-laugh2.wav
+	sound data/chars/shaina/sounds/10-laugh2.wav
 	frame	data/chars/shaina/spawn1.png
 	@cmd spawnDialog "dialog_shaina1" 200 100
 	frame	data/chars/shaina/spawn1.png
-	sound data/chars/shaina/06-storm.wav
+	sound data/chars/shaina/sounds/06-storm.wav
 	frame	data/chars/shaina/spawn2.png
 	frame	data/chars/shaina/spawn3.png
 	frame	data/chars/shaina/spawn4.png
@@ -234,13 +234,13 @@ anim attack6 # Attaque combo 6
 	attack1 52 56 100 26 20 1 0 0 5 12
 	frame	data/chars/shaina/attack63.png
 	frame	data/chars/shaina/attack64.png
-	sound data/chars/shaina/02-laugh.wav
+	sound data/chars/shaina/sounds/02-laugh.wav
 	frame	data/chars/shaina/attack65.png
 	
 anim special2 # Multi punch combo
 	delay	10
 	offset	31 132
-	sound data/chars/shaina/02.wav
+	sound data/chars/shaina/sounds/02.wav
 	summonframe 0 120 0 0
 	subentity shaina_multipunch
 	unsummonframe 10
@@ -266,7 +266,7 @@ anim freespecial2 # Attaque spéciale Venin du Serpent
 	rangea 	0 70
 	delay	5
 	offset	31 130
-	sound data/chars/shaina/04-rush.wav
+	sound data/chars/shaina/sounds/04-rush.wav
 	@cmd 	spawnbind "shaina_venom" "ANI_IDLE" 0 0 0 0 0
 	energycost  20 1 0
 	hitflash shaina_electricity
@@ -274,7 +274,7 @@ anim freespecial2 # Attaque spéciale Venin du Serpent
 	@cmd	dasher 4 0 0 1
 	attack5 60 16 55 83 10 0 0 0 5 12
 	frame	data/chars/shaina/special21.png
-	sound data/chars/shaina/04-rush.wav
+	sound data/chars/shaina/sounds/04-rush.wav
 	frame	data/chars/shaina/special22.png
 	frame	data/chars/shaina/special23.png
 	frame	data/chars/shaina/special24.png
@@ -290,7 +290,7 @@ anim freespecial2 # Attaque spéciale Venin du Serpent
 	frame	data/chars/shaina/special28.png
 	attack5 0
 	frame	data/chars/shaina/special24.png
-	sound data/chars/shaina/02-laugh.wav
+	sound data/chars/shaina/sounds/02-laugh.wav
 	frame	data/chars/shaina/special24.png
 	frame	data/chars/shaina/special23.png
 	frame	data/chars/shaina/special23.png	
@@ -302,7 +302,7 @@ anim freespecial3 #Cobra shoot
 	delay	15
 	offset	43 131
 	energycost  20 1 0
-	sound data/chars/shaina/13-claw3.wav
+	sound data/chars/shaina/sounds/13-claw3.wav
 	bbox 25 29 50 100
 	frame	data/chars/shaina/attack31.png
 	frame	data/chars/shaina/attack32.png
@@ -434,7 +434,7 @@ anim	block
 anim special # Cobra Storm
 	delay	10
 	offset	22 138
-	sound data/chars/shaina/12-claw2.wav
+	sound data/chars/shaina/sounds/12-claw2.wav
         hitflash shaina_electricity
 	frame	data/chars/shaina/special1.png
 	@cmd 	spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 0 0 1 0	  

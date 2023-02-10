@@ -88,16 +88,13 @@ typemp      0        # Type de récupération de la magie (0/1/2)
 
 
 #-- Temple 1 Belier (INTRO) --
-
-scene   data/scenes/prologue.txt
-scene   data/bgs/temple1/temple01_part1.txt
-scene   data/bgs/temple1/temple01_part2.txt
-scene   data/bgs/temple1/temple01_intro.txt
-scene   data/bgs/temple1/temple01_intro_dialogs.txt
+select data/select-pegasus.txt
+z           378 484
+file        data/levels/temple0.txt
+scene    data/bgs/temple1/temple01_intro.txt
 z       378 484
 file    data/levels/temple1.txt
-scene   data/bgs/temple1/temple01_end_dialogs.txt
-scene   data/bgs/temple1/temple01_part3.txt
+
 
 #-- Temple 2 Taurus (Aldébaran du Taureau) --
 

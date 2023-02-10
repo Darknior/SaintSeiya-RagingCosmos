@@ -14,7 +14,7 @@ anim	idle
         hitflash shaka_flame
 	drawmethod alpha 1
         drawmethod  scale 0.6 0.6
-	sound data/chars/marin/01-storm.wav
+	sound data/chars/marin/sounds/01-storm.wav
 	frame	data/chars/ikki/special/ikki_storm/marin_stormA-0.png
 	frame	data/chars/ikki/special/ikki_storm/marin_stormA-1.png
 	attack 100 100 100 100 2 0 0 0 0 30

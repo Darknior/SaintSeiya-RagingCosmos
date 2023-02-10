@@ -262,7 +262,7 @@ anim special # tremi Jumping
 	delay	5
 	offset	80 141
 	energycost  25 1 0
-	sound data/chars/tremi/04-skywalk.wav
+	sound data/chars/tremi/sounds/04-skywalk.wav
 	hitflash tremi_slash
 	frame	data/chars/tremi/jump1.png
 	offset	80 161
@@ -311,7 +311,7 @@ anim special3 # Arrow defense
 	offset	52 119
 	energycost  25 1 0
 	fastattack 1
-	sound data/chars/tremi/02.wav
+	sound data/chars/tremi/sounds/02.wav
 	summonframe 0 120 0 0
 	subentity tremi_multipunch
 	unsummonframe 10
@@ -363,7 +363,7 @@ anim special3 # Arrow defense
 	attack5 38 -61 157 180 15 0 0 0 0 40
 	frame	data/chars/tremi/special2.png
 	attack5 0
-	sound data/chars/tremi/06-laugh.wav
+	sound data/chars/tremi/sounds/06-laugh.wav
 	frame	data/chars/tremi/special3.png
 	frame	data/chars/tremi/special4.png
 	frame	data/chars/tremi/special5.png
@@ -381,7 +381,7 @@ anim freespecial # Arrow defense
 	offset	52 119
 	energycost  25 1 0
 	fastattack 1
-	sound data/chars/tremi/02.wav
+	sound data/chars/tremi/sounds/02.wav
 	summonframe 0 120 0 0
 	subentity tremi_multipunch
 	unsummonframe 10
@@ -433,7 +433,7 @@ anim freespecial # Arrow defense
 	attack5 38 -61 157 180 15 0 0 0 0 40
 	frame	data/chars/tremi/special2.png
 	attack5 0
-	sound data/chars/tremi/06-laugh.wav
+	sound data/chars/tremi/sounds/06-laugh.wav
 	frame	data/chars/tremi/special3.png
 	frame	data/chars/tremi/special4.png
 	frame	data/chars/tremi/special5.png
@@ -450,7 +450,7 @@ anim freespecial # Arrow defense
 anim freespecial2 # Multi arrow projectile
 	delay	10
 	offset	82 117
-	sound data/chars/tremi/03-special.wav
+	sound data/chars/tremi/sounds/03-special.wav
 	range 	130 300
 	rangea 	0 100
 	#summonframe 0 0 0 0 0

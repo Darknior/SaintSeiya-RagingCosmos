@@ -407,11 +407,11 @@ anim freespecial6 # Défense spéciale Blood Sea
 	attack1 0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/shaka/special21.png
 	@cmd 	spawnScreen "shaka_blood_sea" 0 0 0 0
-	sound data/chars/shaka/19-lava1.wav
+	sound data/chars/shaka/sounds/19-lava1.wav
 	frame	data/chars/shaka/special22.png
-	sound data/chars/shaka/08-goni.wav
+	sound data/chars/shaka/sounds/08-goni.wav
 	frame	data/chars/shaka/special23.png
-	sound data/chars/shaka/18-lava2.wav
+	sound data/chars/shaka/sounds/18-lava2.wav
 	frame	data/chars/shaka/special24.png
 	frame	data/chars/shaka/special25.png
 	frame	data/chars/shaka/special26.png
@@ -457,7 +457,7 @@ anim freespecial6 # Défense spéciale Blood Sea
 	frame	data/chars/shaka/special30.png
 	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special31.png
-	sound data/chars/shaka/07-loku.wav
+	sound data/chars/shaka/sounds/07-loku.wav
 	attack1 0
 	frame	data/chars/shaka/special32.png
 	attack -333 0 800 260 10 0 0 0 0 360
@@ -521,7 +521,7 @@ anim special# Défense spéciale Melee
 	offset	66 144
 	energycost  20 1
 	fastattack 1
-	sound data/chars/shaka/01-tenmakosen.wav
+	sound data/chars/shaka/sounds/01-tenmakosen.wav
 	@cmd 	spawnbind "shaka_aura" "ANI_IDLE" 0 0 0 0 0
 	hitflash flashbig
 	frame	data/chars/shaka/special21.png
@@ -574,7 +574,7 @@ anim special2 #Attaque spéciale Lotus toss
 	delay	15
 	offset	92 129
 	bbox 46 16 38 133
-	sound data/chars/shaka/16-lotus.wav
+	sound data/chars/shaka/sounds/16-lotus.wav
 	summonframe 0 0 0 0
 	subentity shaka_lotus
         unsummonframe 10
@@ -618,7 +618,7 @@ anim freespecial2 # Attaque spéciale Lotus toss
 	offset	92 129
 	bbox 46 16 38 133
         hitflash aphrodite_rose_explosion
-	sound data/chars/shaka/16-lotus.wav
+	sound data/chars/shaka/sounds/16-lotus.wav
 	summonframe 0 0 0 0
         unsummonframe 10
 	subentity shaka_lotus
@@ -694,7 +694,7 @@ anim freespecial5 # Ten Bu Ho Rin
         @cmd 	spawnScreen "shaka_constellationA" 0 0 0 0
 	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
         @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
-	sound data/chars/shaka/13-blood.wav
+	sound data/chars/shaka/sounds/13-blood.wav
 	@cmd 	spawnbind "shaka_circlesB" "ANI_IDLE" 0 0 0 0 0
 	@cmd 	spawnbind "shaka_cosmos" "ANI_IDLE" 0 0 0 0 0
 	frame	data/chars/shaka/special22.png
@@ -817,7 +817,7 @@ anim freespecial5 # Ten Bu Ho Rin
 	frame	data/chars/shaka/special35.png
 	attack1 0
 	frame	data/chars/shaka/special30.png
-	sound data/chars/shaka/02-tenbuhorin.wav
+	sound data/chars/shaka/sounds/02-tenbuhorin.wav
 	attack -333 0 800 260 10 0 0 0 0 360
 	frame	data/chars/shaka/special31.png
 	attack1 0
