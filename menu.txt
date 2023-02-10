@@ -2,7 +2,7 @@ disablekey screenshot
 
 renamekey  attack   Attack
 renamekey  jump     Jump
-renamekey  special  Special
-renamekey  attack2  Block
-renamekey  attack3  Pick_Up
-renamekey  attack4  Back_Attack
+renamekey  special  Block
+renamekey  attack2  Special
+renamekey  attack3  Back_Attack
+renamekey  attack4  Pick_Up
