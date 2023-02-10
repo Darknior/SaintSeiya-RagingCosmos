@@ -23,7 +23,6 @@ noquake     0 1     # Secoue l'ecran qd on tombe au sol
 typemp      1       # Gagne de mp en tapant des ennemis
 mprate      1       # Nombre de mp gagnés par coup
 
-
 blockodds   1       # Permet de pouvoir bloquer les attaques
 holdblock   2       # Permet de pouvoir maintenir la parade
 nodieblink  1       # Ne clignote pas quand tu meurs
@@ -36,22 +35,12 @@ sleepwait   1000    #Temps en centisecondes avant de jouer l'anim sleep
 
 atchain     1 2 3 4 5 # Attaque combo de base (anim attack 1, puis 2...)
 
-icon        data/chars/shiryu/icones/icon.png
-
 #weapons    PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 shiryu
-
 
 animationscript     data/scripts/player.c
 ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c
 script              data/scripts/entity_effects.c
 didhitscript        data/scripts/didhit/tint_green.c
-
-com  D U a1         freespecial     # Roue de melee
-com  F a2           freespecial2    # Fureur du Dragon
-com  a2             freespecial3    # Explosion du Cosmos
-com  B a1           freespecial4    # Manchette arriere
-com  D F a1         freespecial5    # Uppercut Colère du Dragon
-com  U a2           freespecial6    # Rozan Shoryuha
 
 load blue_swing
 load shiryu_aura
@@ -66,11 +55,31 @@ load shiryu_constellation
 load shiryu_lights
 load shiryu_dash
 
-#colourselect 1
-#palette     data/chars/shiryu/palettes/palette3.png
+
+#-- PALETTES --------------------------------------------------------
+
+icon         data/chars/shiryu/palettes/icon1.png 1
+colourselect 1
+palette      data/chars/shiryu/palettes/palette2.png
 #remap       data/chars/shiryu/palettes/palette1.png data/chars/shiryu/palettes/palette2.png data/chars/shiryu/palettes/palette3.png data/chars/shiryu/palettes/palette4.png # 14 Possible MAX
 
-#----------------------------------------------------------
+#-- ATTAQUES --------------------------------------------------------
+
+#    a1 + j         attackboth
+com  d u a1         freespecial     # Roue de melee
+#    b + a1         attackbackward
+com  a3             freespecial4    # Manchette arriere
+
+com  d f a1         freespecial5    # Uppercut Colère du Dragon
+
+com  a2             freespecial3    # Explosion du Cosmos
+com  f a2           freespecial2    # Fureur du Dragon
+com  f + a2         freespecial2    # Fureur du Dragon
+com  u a2           freespecial6    # Rozan Shoryuha
+com  u + a2         freespecial6    # Rozan Shoryuha
+
+
+#-- ANIMATIONS -------------------------------------------------------
 
 anim    waiting # Animation d'attente dans l'écran de sélection
     loop     1
