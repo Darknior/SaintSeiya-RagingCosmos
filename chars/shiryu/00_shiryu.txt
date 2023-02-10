@@ -65,14 +65,15 @@ palette      data/chars/shiryu/palettes/palette2.png
 
 #-- ATTAQUES --------------------------------------------------------
 
-#    a1 + j         attackboth
-com  d u a1         freespecial     # Roue de melee
-#    b + a1         attackbackward
-com  a3             freespecial4    # Manchette arriere
+#    b + a1         attackbackward  # Manchette arrière
+com  a3             freespecial4    # Manchette arrière
 
-com  d f a1         freespecial5    # Uppercut Colère du Dragon
+com  d f a1         freespecial5    # Colère du Dragon (Uppercut)
+#    a1 + j         attackboth      # Roue de melée
+com  a2             freespecial     # Roue de melée
 
-com  a2             freespecial3    # Explosion du Cosmos
+com  a4             freespecial3    # Explosion du Cosmos (Recharge)
+
 com  f a2           freespecial2    # Fureur du Dragon
 com  f + a2         freespecial2    # Fureur du Dragon
 com  u a2           freespecial6    # Rozan Shoryuha
@@ -204,7 +205,7 @@ anim    turn    # Demi-tour
     delay    10
     offset   42 129
     bbox     28 9 30 120
-    cancel   0 3 0 A freespecial4
+    cancel   0 3 0 A freespecial4   # Manchette arrière
     frame    data/chars/shiryu/turn.png
 
 anim    walk    # Marche
@@ -440,7 +441,7 @@ anim    attack5 # Attaque combo 5
     frame    data/chars/shiryu/attack56.png
     frame    data/chars/shiryu/attack57.png
 
-anim    attackbackward # Attaque arrière (Arrière + attaque)
+anim    attackbackward  # Attaque arrière native (b + a1)
     offset   93 130
     bbox     61 15 51 115
     hitflash flashbig
@@ -459,7 +460,25 @@ anim    attackbackward # Attaque arrière (Arrière + attaque)
     attack1  0
     frame    data/chars/shiryu/attack67.png
 
-anim    attackboth # Attaque arrière (bouton saut + attaque)
+anim    freespecial4    # Attaque arrière (a3)
+    offset	 105 147
+    hitflash flashmedium
+    delay	 4
+    sound    data/chars/shiryu/17-back_kick.wav
+    frame	 data/chars/shiryu/attackbackward20.png
+    delay	 10
+    frame	 data/chars/shiryu/attackbackward21.png
+    delay	 15
+    attack   20 36 60 50 30 12 0 0 0 30
+    dropv 	 3.5 1 0
+    frame	 data/chars/shiryu/attackbackward22.png
+    delay	 8
+    frame	 data/chars/shiryu/attackbackward21.png
+    attack1  0
+    bbox     64 29 50 120
+    frame	 data/chars/shiryu/attackbackward20.png
+
+anim    attackboth  # Attaque de mêlée native (j + a1)
     flipframe  1
     fastattack 1
     offset   39 130
@@ -502,7 +521,14 @@ anim    attackboth # Attaque arrière (bouton saut + attaque)
     attack1  0
     frame    data/chars/shiryu/attackbackward1.png
 
-anim     freespecial # Attaque arrière (à partir d'un cancel)
+anim    freespecial  # Attaque de mêlée (a2)
+    flipframe  1
+    fastattack 1
+    offset   39 130
+    bbox     21 15 51 115
+    hitflash flashbig
+    delay    7
+    sound    data/chars/shiryu/sounds/17-back_kick.wav
     flipframe  1
     fastattack 1
     offset   60 130
@@ -520,9 +546,20 @@ anim     freespecial # Attaque arrière (à partir d'un cancel)
     attack1  0
     @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/shiryu/attackbackward4.png
+    attack1  55 35 84 29 5 1 0 0 0 30
+    frame    data/chars/shiryu/attackbackward5.png
+    attack1  0
+    frame    data/chars/shiryu/attackbackward6.png
+    attack   9 23 120 35 5 1 0 0 0 30
+    frame    data/chars/shiryu/attackbackward7.png
+    frame    data/chars/shiryu/attackbackward8.png
+    attack1  10 35 120 29 5 1 0 0 0 30
+    frame    data/chars/shiryu/attackbackward6.png
+    attack1  0
+    frame    data/chars/shiryu/attackbackward4.png
     attack   10 33 120 35 5 1 1 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
-    delay    6
+    delay    12
     bbox     16 29 50 100
     attack1  0
     frame    data/chars/shiryu/attackbackward1.png

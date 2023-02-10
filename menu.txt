@@ -5,4 +5,4 @@ renamekey  jump     Jump
 renamekey  special  Block
 renamekey  attack2  Special
 renamekey  attack3  Back_Attack
-renamekey  attack4  Pick_Up
+renamekey  attack4  Charge
