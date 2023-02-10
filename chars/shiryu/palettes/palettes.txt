@@ -1,0 +1,75 @@
+ 
+## Red Shiryu
+
+Armor 1 : 2f0101 (Darker)
+Armor 2 : 490303
+Armor 3 : 6f0505
+Armor 4 : b23f3f
+Armor 5 : e0a3a3 (Lighter)
+
+Cloth 1 : 1e7e56
+Cloth 2 : 3ea178
+Cloth 3 : 72c5a3
+Cloth 4 : c6efde
+
+Divers 1 : 979797
+Divers 2 : d9d9d9
+Divers 3 : fff90a
+
+Hair 1 : 000726
+Hair 2 : 2b1e4d
+Hair 3 : 4d3285
+
+Belt 1 : afa81b
+Belt 2 : e9e429
+Belt 3 : fff90a
+
+## Black Shiryu
+
+Armor 1 : 0c0c0c (Darker)
+Armor 2 : 1a313d
+Armor 3 : 384858
+Armor 4 : 6e7d8a
+Armor 5 : a7bbc4 (Lighter)
+
+Cloth 1 : 2c2454
+Cloth 2 : 223768
+Cloth 3 : 3c548c
+Cloth 4 : 677eb4
+
+Divers 1 : 596a6d
+Divers 2 : 9fb8bc
+Divers 3 : d1eef3
+
+Hair 1 : 000726
+Hair 2 : 122265
+Hair 3 : 394a92
+
+Belt 1 : 4f6379
+Belt 2 : 6086ce
+Belt 3 : d1eef3
+
+## Gold Shiryu
+
+Armor 1 : 000000 (Darker)
+Armor 2 : 3a2f05
+Armor 3 : c37107
+Armor 4 : e6b300
+Armor 5 : fdf3cf (Lighter)
+
+Cloth 1 : 131c2d
+Cloth 2 : 293a54
+Cloth 3 : 39547d
+Cloth 4 : 526e99
+
+Divers 1 : dfa00d
+Divers 2 : f8e1aa
+Divers 3 : f1ebc1
+
+Hair 1 : 000726
+Hair 2 : 2b1e4d
+Hair 3 : 4d3285
+
+Belt 1 : c0a807
+Belt 2 : e7ce27
+Belt 3 : fddc01
