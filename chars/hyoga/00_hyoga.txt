@@ -43,6 +43,7 @@ animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
 didhitscript	data/scripts/didhit/tint_silver.c
+ondeathscript	data/scripts/timer_reset.c
 
 com  D U a1 	freespecial 	#Roue de melee
 com  F a2  	freespecial2 	#Diamond Dust (2 projectiles)

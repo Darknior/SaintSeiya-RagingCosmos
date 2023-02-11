@@ -1,0 +1,2 @@
+music           data/music/menu.bor 1
+background      data/bgs/select.png

@@ -89,7 +89,8 @@ cansave     2        # Sauvegarde complète, progression et vies
 disablehof  0        # Masque l'écran de Hall of fame
 typemp      0        # Type de récupération de la magie (0/1/2)
 
-select data/select-pegasus.txt
+skipselect
+select data/select-all.txt
 
 #-- Temple 1 Belier (INTRO) --
 z           378 484
@@ -212,9 +213,9 @@ end
 set         Training
 
 maxplayers  4
-#nosame      1        # Empèche de choisir les mm personnages
+#nosame     1        # Empèche de choisir les mm personnages
 
-lives       1
+lives       2
 credits     10
 noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partagés
 cansave     2        # Sauvegarde complète, progression et vies
@@ -222,14 +223,18 @@ cansave     2        # Sauvegarde complète, progression et vies
 disablehof  0        # Masque l'écran de Hall of fame
 typemp      0        # Type de récupération de la magie (0/1/2)
 
-select data/select-pegasus.txt
-
+skipselect
+select data/select-all.txt
 
 #-- Temple 2 Taurus (Toro) --
 
+branch      training
 z       378 484
 file    data/levels/training.txt
 
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 ##-----------------------------------------------------
 ##-----------------------------------------------------

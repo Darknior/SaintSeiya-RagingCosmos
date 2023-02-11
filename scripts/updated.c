@@ -120,6 +120,7 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 	//IN LEVEL
 	if(openborvariant("in_level")){
 		drawOverlay();
+		timeOver();
 	}
 	
 }// MAIN END
@@ -286,6 +287,30 @@ void overlayFunction(void player, int pIndex)
 	}
 }
 
+void timeOver()
+{//Draw time over message and reset the current branch
+	void branch	= openborvariant("current_branch");
+	float reset	= getglobalvar("reseTimer");
+	float time	= openborvariant("elapsed_time");
+
+	//DRAW THE TIME OVER MESSAGE
+	if(reset != NULL()){
+		void str	= "time_over";
+		float hRes	= openborvariant("hresolution");
+		float vRes	= openborvariant("vresolution");
+		int font	= 0;
+		int layer	= 1001;
+
+		drawstring((hRes-strwidth(str, font))/2, vRes/2, font, str, layer);
+	}
+
+	//RESET THE CURRENT LEVEL
+	if(time > reset){
+		setglobalvar("reseTimer", NULL());
+		changeopenborvariant("game_time", 0);
+		jumptobranch(branch, 1);
+	}
+}
 
 // Import functions.
 #import "data/scripts/common/effect_tint.c"
