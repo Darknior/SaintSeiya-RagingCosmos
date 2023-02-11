@@ -43,6 +43,7 @@ animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
 script	data/scripts/entity_effects.c
 didhitscript	data/scripts/didhit/tint_red.c
+ondeathscript	data/scripts/timer_reset.c
 
 com  D U a1 	freespecial 	#Melee
 com  U a2  	freespecial2 	#Hoyoku Tensho

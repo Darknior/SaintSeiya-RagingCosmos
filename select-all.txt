@@ -1,3 +1,2 @@
 music           data/music/menu.bor 1
 background      data/bgs/select.png
-allowselect     seiya DRAGON-SHIRYU CYGNUS-HYOGA ANDROMEDA-SHUN PHOENIX-IKKI BEAR-GEKI EAGLE-MARIN HYDRA-ICHI LIONET-BAN WOLF-NACHI UNICORN-JABU aldebaran 

@@ -41,6 +41,7 @@ animationscript     data/scripts/player.c
 ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c
 script              data/scripts/entity_effects.c
 didhitscript        data/scripts/didhit/tint_green.c
+ondeathscript	data/scripts/timer_reset.c
 
 load blue_swing
 load shiryu_aura
