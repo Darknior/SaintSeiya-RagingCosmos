@@ -27,7 +27,7 @@ blockodds   1       # Permet de pouvoir bloquer les attaques
 holdblock   2       # Permet de pouvoir maintenir la parade
 nodieblink  1       # Ne clignote pas quand tu meurs
 weaploss    2       # On ne perd son arme qu' à notre mort
-modelflag   0       # L'animation et la liste d'armes sont copiées
+modelflag   3       # L'animation et la liste d'armes sont copiées
 death       1       # Active l'animation de mort
 nolife      1       # Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
 
