@@ -565,14 +565,14 @@ anim    freespecial  # Attaque de mêlée (a2)
     attack1  0
     frame    data/chars/shiryu/attackbackward1.png
 
-anim    grab
+anim    grab        # Choppe
     delay    7
     offset   39 130
     bbox     39 15 30 115
     frame    data/chars/shiryu/grab1.png
     frame    data/chars/shiryu/grab2.png
 
-anim    grabattack #Saisie Coup de genou X2
+anim    grabattack # Choppe, Coup de genou X2
     delay    7
     offset   39 130
     bbox     21 15 51 115
@@ -582,7 +582,7 @@ anim    grabattack #Saisie Coup de genou X2
     frame    data/chars/shiryu/grabattack3.png
     attack3  0
 
-anim    grabattack2 #Saisie Coup finisher
+anim    grabattack2 # Choppe, Coup finisher
     delay    6
     offset   39 130
     bbox     21 15 51 115
@@ -598,7 +598,7 @@ anim    grabattack2 #Saisie Coup finisher
     attack3  0
     frame    data/chars/shiryu/grabattack27.png
 
-anim    throw #Projection en arrière
+anim    throw   # Choppe, Projection en arrière
     delay    10
     offset   102 130
     bbox     62 15 51 115
@@ -727,7 +727,7 @@ anim    freespecial6 # Rozan Shoryuha (haut + bouton special)
     frame    data/chars/shiryu/special37.png
     frame    data/chars/shiryu/special38.png
 
-anim    jump # Saut Statique
+anim    jump        # Saut Statique
     delay    10
     offset   37 128
     bbox     16 13 51 115
@@ -759,13 +759,13 @@ anim    forwardjump # Saut vers l'avant
     frame    data/chars/shiryu/forwardjump7.png
     frame    data/chars/shiryu/forwardjump8.png
 
-anim    jumpdelay # Animation de saut intermédiaire
+anim    jumpdelay   # Animation de saut intermédiaire
     delay    10
     offset   37 130
     bbox     16 13 51 115
     frame    data/chars/shiryu/jump1.png
 
-anim    jumpland # Aterrissage du saut
+anim    jumpland    # Aterrissage du saut
     delay    8
     offset   30 129
     bbox     5 17 51 112
@@ -778,7 +778,7 @@ anim    jumpland # Aterrissage du saut
     frame    data/chars/shiryu/get2.png
     frame    data/chars/shiryu/get1.png
 
-anim    jumpattack #Attaque sautée statique
+anim    jumpattack  # Attaque sautée statique
     delay    5
     offset   37 128
     bbox     16 13 51 80
@@ -793,7 +793,7 @@ anim    jumpattack #Attaque sautée statique
     frame    data/chars/shiryu/jumpattack3.png
     attack4  0
 
-anim    jumpforward #Attaque sautée vers l'avant
+anim    jumpforward # Attaque sautée vers l'avant
     delay    5
     offset   50 128
     bbox     16 13 51 115
@@ -807,7 +807,7 @@ anim    jumpforward #Attaque sautée vers l'avant
     frame    data/chars/shiryu/jumpforward3.png
     attack4  0
 
-anim    jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
+anim    jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     delay    5
     offset   50 128
     bbox     16 13 51 115
@@ -822,7 +822,7 @@ anim    jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/shiryu/jumpattack23.png
     attack4  0
 
-anim    jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
+anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     delay    5
     offset   50 132
     bbox     16 13 51 115
