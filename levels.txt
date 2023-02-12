@@ -208,6 +208,12 @@ file        data/levels/temple13BOSS.txt
 scene       data/scenes/end.txt
 end
 
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+
+##-----------------------------------------------------
 ##-----------------------------------------------------
 
 set         Training
@@ -229,12 +235,13 @@ select data/select-all.txt
 #-- Temple 2 Taurus (Toro) --
 
 branch      training
-z       378 484
-file    data/levels/training.txt
+z           378 484
+file        data/levels/training.txt
 
 branch      gameover
 scene       data/scenes/gameover.txt
 end
+
 
 ##-----------------------------------------------------
 ##-----------------------------------------------------

@@ -37,11 +37,13 @@ atchain     1 2 3 4 5 # Attaque combo de base (anim attack 1, puis 2...)
 
 #weapons    PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 shiryu
 
-animationscript     data/scripts/player.c
-ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c
-script              data/scripts/entity_effects.c
-didhitscript        data/scripts/didhit/tint_green.c
-ondeathscript	data/scripts/timer_reset.c
+
+ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
+
+animationscript     data/scripts/player.c                 #
+script              data/scripts/entity_effects.c         #
+didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite
+ondeathscript	    data/scripts/timer_reset.c            # Mort du Timer à zéro
 
 load blue_swing
 load shiryu_aura
