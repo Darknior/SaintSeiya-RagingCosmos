@@ -29,7 +29,7 @@ blockodds 	1	# Permet de pouvoir bloquer les attaques
 holdblock 	2	# Permet de pouvoir maintenir la parade
 nodieblink 	1	# Ne clignote pas quand tu meurs
 weaploss  	2	# On ne perd son arme qu' à notre mort
-modelflag 	0	# L'animation et la liste d'armes sont copiées
+modelflag 	3	# L'animation et la liste d'armes sont copiées
 death 		1   # Active l'animation de mort
 nolife		1	# Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
 
@@ -184,7 +184,7 @@ anim victory # Animation de victoire contre un boss
 	offset	32 135
 	frame	data/chars/shun/victory1.png
 	frame	data/chars/shun/victory2.png
-sound   data/chars/shun/10-yatta.wav
+sound   data/chars/shun/sounds/10-yatta.wav
 	frame	data/chars/shun/victory3.png
 	frame	data/chars/shun/victory4.png
 	frame	data/chars/shun/victory5.png
@@ -233,31 +233,22 @@ anim up
 	frame	data/chars/shun/walk7.png
 
 anim freespecial7
-	offset	41 131
-	bbox 15 28 51 107
-	fastattack 1
-	hitflash flashmedium
-	delay	6
         sound   data/sounds/punch.wav
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/shun/attackbackward1.png
-	summonframe 0 0 0 0 0
-	subentity shun_down_dust
-	unsummonframe 12
-	frame	data/chars/shun/attackbackward3.png
-	frame	data/chars/shun/attackbackward4.png
-	frame	data/chars/shun/attackbackward5.png
-	attack1 41 51 84 29 20 1 0 0 5 12
+	delay	6
+	offset	93 196
+	hitflash flashmedium
+	frame	data/chars/shun/attack16.png
+	frame	data/chars/shun/attack22.png
+	frame	data/chars/shun/attack23.png
+	delay	12
+	attack1 79 100 80 50 5 1 1 0 15 10
 	dropv 	5.0 0.5
-	frame	data/chars/shun/attackbackward6.png
+	frame	data/chars/shun/attack24.png
+	delay	6
 	attack1 0
-	frame	data/chars/shun/attackbackward7.png
-	attack1 41 52 100 29 20 1 0 0 5 12
-	dropv 	5.0 0.5
-	frame	data/chars/shun/attackbackward8.png
-	attack1 0
-	delay   12
-	frame	data/chars/shun/attackbackward1.png
+	frame	data/chars/shun/attack25.png
+	frame	data/chars/shun/attack26.png
+	frame	data/chars/shun/attack27.png
 
 anim down
 	cancel 0 8 0 A1 freespecial8 
@@ -275,16 +266,18 @@ anim down
 
 anim freespecial8
 	delay	9
-	offset	85 120
-	bbox 71 20 30 100
+	offset	64 112
+	bbox 50 34 30 75
 	hitflash flashmedium
 	frame	data/chars/shun/slide0.png
         sound   data/sounds/punch.wav
 	frame	data/chars/shun/slide1.png
-	dropv 4.0 1.0 0.0
-	attack1 82 60 95 55 10 1 0 0 12 20
+	delay	14
+	attack1 60 60 80 55 10 1 0 0 12 20
 	dropv 	5.0 0.5
 	frame	data/chars/shun/slide2.png
+	delay	9
+	frame	data/chars/shun/slide3.png
 	frame	data/chars/shun/slide1.png
 	frame	data/chars/shun/slide0.png
 
@@ -296,7 +289,7 @@ anim dodge
 	summonframe 0 0 0 0
 	subentity round_dust
 	jumpframe 2 1.8 0
-sound   data/chars/shun/06-jump1.wav
+sound   data/chars/shun/sounds/06-jump1.wav
 	frame	data/chars/shun/jump0.png
 	frame	data/chars/shun/jump1.png
 	frame	data/chars/shun/jump2.png
@@ -311,12 +304,12 @@ anim run
 	delay	8
 	offset	62 132
 	bbox 39 28 51 104
-sound   data/chars/shun/20-run1.wav
+sound   data/chars/shun/sounds/20-run1.wav
 	frame	data/chars/shun/run1.png
 	frame	data/chars/shun/run2.png
 	frame	data/chars/shun/run3.png
 	frame	data/chars/shun/run4.png
-sound   data/chars/shun/20-run2.wav
+sound   data/chars/shun/sounds/20-run2.wav
 	frame	data/chars/shun/run5.png
 	frame	data/chars/shun/run6.png
 	
@@ -327,7 +320,7 @@ anim runattack # Attaque en courant
 hitflash shun_impact
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
-        sound   data/chars/shun/01-chain.wav
+        sound   data/chars/shun/sounds/01-chain.wav
 	frame	data/chars/shun/runattack1.png
 	frame	data/chars/shun/runattack2.png
 	summonframe 0 0 0 0 0
@@ -351,7 +344,7 @@ anim  runjump
 	summonframe 0 0 0 0
 	subentity round_dust
 	cancel 0 8 0 A2 freespecial3 
-sound   data/chars/shun/06-jump1.wav
+sound   data/chars/shun/sounds/06-jump1.wav
 	frame	data/chars/shun/jump1.png
 	frame	data/chars/shun/forwardjump1.png
 	frame	data/chars/shun/forwardjump2.png
@@ -381,8 +374,10 @@ anim attack1 # Attaque combo 1
 	bbox 79 92 35 107
 	frame	data/chars/shun/attack6.png
 	frame	data/chars/shun/attack7.png
-	attack1 88 115 87 20 5 0 0 0 12 20
+	delay	10
+	attack1 104 115 65 20 5 0 0 0 12 20
 	frame	data/chars/shun/attack8.png
+	delay	4
 	attack1 0
 	frame	data/chars/shun/attack9.png
 	delay	3
@@ -402,8 +397,10 @@ anim attack2 # Attaque combo 2
 	frame	data/chars/shun/attack0.png
 	frame	data/chars/shun/attack1.png
 	frame	data/chars/shun/attack2.png
-	attack1 59 100 120 26 5 0 0 0 5 20
+	delay	12
+	attack1 80 100 100 26 5 0 0 0 5 20
 	frame	data/chars/shun/attack3.png
+	delay	5
 	attack1 0
 	frame	data/chars/shun/attack4.png
 	frame	data/chars/shun/attack5.png
@@ -411,30 +408,35 @@ anim attack2 # Attaque combo 2
 	
 	
 anim attack3 # Attaque combo 3
-	delay	5
+        sound   data/sounds/punch.wav
+	delay	6
 	offset	93 196
 	hitflash flashmedium
 	frame	data/chars/shun/attack16.png
 	frame	data/chars/shun/attack17.png
 	frame	data/chars/shun/attack18.png
-	attack1 110 100 80 50 5 0 1 0 0 20
+	delay	12
+	attack1 108 100 50 50 5 0 0 0 15 20
 	frame	data/chars/shun/attack19.png
+	delay	3
 	attack1 0
 	frame	data/chars/shun/attack20.png
-	delay	3
 	frame	data/chars/shun/attack21.png
 	frame	data/chars/shun/attack22.png
 
 	
 anim attack4 # Attaque combo 4
-	delay	5
+        sound   data/sounds/punch.wav
+	delay	6
 	offset	93 196
 	hitflash flashmedium
 	frame	data/chars/shun/attack16.png
 	frame	data/chars/shun/attack22.png
 	frame	data/chars/shun/attack23.png
-	attack1 79 100 80 50 5 0 1 0 15 10
+	delay	12
+	attack1 93 100 65 50 5 0 0 0 15 20
 	frame	data/chars/shun/attack24.png
+	delay	3
 	attack1 0
 	frame	data/chars/shun/attack25.png
 	frame	data/chars/shun/attack26.png
@@ -449,7 +451,7 @@ anim attack5 # Attaque combo 5
 	frame	data/chars/shun/attack28.png
 	frame	data/chars/shun/attack29.png
 	frame	data/chars/shun/attack30.png
-	attack1 19 100 160 50 5 1 1 0 0 20
+	attack1 55 100 120 50 5 1 1 0 0 20
 	dropv 	5.0 0.5
 	frame	data/chars/shun/attack31.png
 	attack1 0
@@ -554,7 +556,6 @@ anim grabattack #Saisie Coup de genou X2
 	bbox 21 22 51 112
 	hitflash flashmedium
 	delay	5
-sound   data/chars/shun/17-back_kick.wav
 	frame	data/chars/shun/attackbackward1.png
 	frame	data/chars/shun/attackbackward3.png
 	frame	data/chars/shun/attackbackward4.png
@@ -586,10 +587,10 @@ throwframewait 3
 	summonframe 0 0 0 0 0
 	subentity round_dust
 	unsummonframe 5	
-sound   data/chars/shun/23-projection1.wav
+sound   data/chars/shun/sounds/23-projection1.wav
 	frame	data/chars/shun/grabbackward1.png
 	frame	data/chars/shun/grabbackward4.png
-sound   data/chars/shun/23-projection2.wav
+sound   data/chars/shun/sounds/23-projection2.wav
 	delay	15
 	frame	data/chars/shun/grabbackward2.png
 	delay	15
