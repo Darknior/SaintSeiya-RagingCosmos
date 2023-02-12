@@ -45,7 +45,7 @@ ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
 
 animationscript     data/scripts/player.c                 #
 script              data/scripts/entity_effects.c         #
-didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite
+didhitscript        data/scripts/didhit/tint_silver.c      # Effets de teinte sur sprite
 ondeathscript       data/scripts/timer_reset.c            # Mort du Timer à zéro
 
 
@@ -643,7 +643,6 @@ sound   data/chars/seiya/sounds/23-projection2.wav
     frame    data/chars/seiya/grabbackward5.png
     delay -1000
     @cmd position 3 -65 0 0 0
-    attack -219 104 150 20 5 1 0 0 0 30
     frame    data/chars/seiya/grabbackward6.png
     delay    20
     @cmd position 3 -65 0 0 0
@@ -653,7 +652,6 @@ sound   data/chars/seiya/sounds/23-projection2.wav
     @cmd slam 20 2 -2 2 0 0
     frame    data/chars/seiya/rise1.png
     frame    data/chars/seiya/rise2.png
-    attack -200 50 150 50 5 1 0 0 0 30
     frame    data/chars/seiya/rise3.png
     frame    data/chars/seiya/rise4.png
     frame    data/chars/seiya/rise5.png
