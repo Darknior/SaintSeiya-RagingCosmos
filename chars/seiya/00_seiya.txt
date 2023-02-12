@@ -45,7 +45,7 @@ ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
 
 animationscript     data/scripts/player.c                 #
 script              data/scripts/entity_effects.c         #
-didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite
+didhitscript        data/scripts/didhit/tint_silver.c     # Effets de teinte sur sprite : GRISE
 ondeathscript       data/scripts/timer_reset.c            # Mort du Timer à zéro
 
 
@@ -598,21 +598,26 @@ anim grab
     frame    data/chars/seiya/grab.png
 
 anim grabattack #Saisie Coup de genou X2
-    delay    7
-    offset    38 114
-    bbox 21 0 35 114
-    attack3 62 21 47 26 10 0 0 0 5 12
-    frame    data/chars/seiya/grabattack.png
-    attack3 0
+    delay    6
+    offset    45 119
+    bbox 42 7 30 112
+    hitflash flashmedium
+    frame    data/chars/seiya/attack51.png
+    frame    data/chars/seiya/attack52.png
+	attack 53 38 40 30 5 0 0 0 12 20
+    frame    data/chars/seiya/attack53.png
+    frame    data/chars/seiya/attack51.png
+
 
 anim grabattack2 #Saisie Coup finisher
     delay    6
     offset    38 114
     bbox 21 0 35 114
+    hitflash flashbig
     frame    data/chars/seiya/grabattack21.png
     frame    data/chars/seiya/grabattack22.png
     frame    data/chars/seiya/grabattack23.png
-    attack3 62 21 90 26 15 1 0 0 0 0
+    attack3 62 21 90 26 15 1 0 0 0 20
     frame    data/chars/seiya/grabattack24.png
     frame    data/chars/seiya/grabattack25.png
     frame    data/chars/seiya/grabattack26.png
@@ -643,7 +648,6 @@ sound   data/chars/seiya/sounds/23-projection2.wav
     frame    data/chars/seiya/grabbackward5.png
     delay -1000
     @cmd position 3 -65 0 0 0
-    attack -219 104 150 20 5 1 0 0 0 30
     frame    data/chars/seiya/grabbackward6.png
     delay    20
     @cmd position 3 -65 0 0 0
@@ -653,7 +657,6 @@ sound   data/chars/seiya/sounds/23-projection2.wav
     @cmd slam 20 2 -2 2 0 0
     frame    data/chars/seiya/rise1.png
     frame    data/chars/seiya/rise2.png
-    attack -200 50 150 50 5 1 0 0 0 30
     frame    data/chars/seiya/rise3.png
     frame    data/chars/seiya/rise4.png
     frame    data/chars/seiya/rise5.png

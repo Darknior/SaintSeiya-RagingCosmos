@@ -26,7 +26,8 @@ noquake 	0 1	# Secoue l'ecran qd on tombe au sol
 typemp 		1 	# Gagne de mp en tapant des ennemis 
 mprate 		1   # Nombre de mp gagnés par coup
 
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 blockodds 	1	# Permet de pouvoir bloquer les attaques
 holdblock 	2	# Permet de pouvoir maintenir la parade
 nodieblink 	3	# Ne clignote pas quand tu meurs

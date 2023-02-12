@@ -29,7 +29,7 @@ nodieblink  1           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
 modelflag   3           # Masque la petite barre de vie si on frappe un autre joueur
 death       1           # Active l'animation de mort
-nolife      1           # Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
+nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
@@ -46,8 +46,8 @@ ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
 
 animationscript     data/scripts/player.c                 #
 script              data/scripts/entity_effects.c         #
-didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite
-ondeathscript        data/scripts/timer_reset.c            # Mort du Timer à zéro
+didhitscript        data/scripts/didhit/tint_red.c        # Effets de teinte sur sprite : ROUGE
+ondeathscript       data/scripts/timer_reset.c            # Mort du Timer à zéro
 
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------

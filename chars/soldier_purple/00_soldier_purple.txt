@@ -32,7 +32,6 @@ dust		round_dustB
 
 \\subject_to_wall 0
 
-subject_to_screen 0
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c

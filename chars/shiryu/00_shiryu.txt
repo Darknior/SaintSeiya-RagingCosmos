@@ -46,7 +46,7 @@ ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
 
 animationscript     data/scripts/player.c                 #
 script              data/scripts/entity_effects.c         #
-didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite
+didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite : VERTE
 ondeathscript	    data/scripts/timer_reset.c            # Mort du Timer à zéro
 
 
@@ -413,14 +413,14 @@ anim    attack2 # Attaque combo 2
 
 anim    attack3 # Attaque combo 3
     delay    7
-    offset   39 130
-    bbox     35 15 30 115
+    offset   57 128
+	bbox 34 29 35 100
     frame    data/chars/shiryu/attack31.png
     frame    data/chars/shiryu/attack32.png
-    dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 0 0 0 10 12
+	attack 78 52 60 20 5 0 0 0 12 20
+	bbox 68 30 35 100
     frame    data/chars/shiryu/attack33.png
-    attack1  0
+
 
 anim    attack4 # Attaque combo 4
     delay    7
@@ -584,29 +584,28 @@ anim    grab        # Choppe
 
 anim    grabattack # Choppe, Coup de genou X2
     delay    7
-    offset   39 130
-    bbox     21 15 51 115
-    attack3  42 31 47 26 10 0 0 0 5 12
-    frame    data/chars/shiryu/grabattack1.png
-    frame    data/chars/shiryu/grabattack2.png
-    frame    data/chars/shiryu/grabattack3.png
-    attack3  0
+    offset   57 128
+    hitflash flashmedium
+	bbox 34 29 35 100
+    frame    data/chars/shiryu/attack31.png
+    frame    data/chars/shiryu/attack32.png
+	attack 78 52 60 20 5 0 0 0 12 20
+	bbox 68 30 35 100
+    frame    data/chars/shiryu/attack33.png
 
 anim    grabattack2 # Choppe, Coup finisher
-    delay    6
+    delay    7
     offset   39 130
-    bbox     21 15 51 115
-    attack3  32 21 80 26 10 0 0 0 0 0
-    frame    data/chars/shiryu/grabattack21.png
-    frame    data/chars/shiryu/grabattack22.png
-    attack3  0
-    frame    data/chars/shiryu/grabattack23.png
-    frame    data/chars/shiryu/grabattack24.png
-    attack3  32 81 90 26 15 1 0 0 0 0
-    frame    data/chars/shiryu/grabattack25.png
-    frame    data/chars/shiryu/grabattack26.png
-    attack3  0
-    frame    data/chars/shiryu/grabattack27.png
+    bbox     33 15 30 115
+    hitflash flashbig
+    frame    data/chars/shiryu/attack41.png
+    frame    data/chars/shiryu/attack42.png
+    dropv    4.0 1.0 0.0
+    attack1  62 21 67 26 10 1 0 0 10 12
+    frame    data/chars/shiryu/attack43.png
+    frame    data/chars/shiryu/attack44.png
+    frame    data/chars/shiryu/attack45.png
+    attack1  0
 
 anim    throw   # Choppe, Projection en arrière
     delay    10
@@ -629,7 +628,6 @@ anim    throw   # Choppe, Projection en arrière
     unsummonframe  15
     offset   114 130
     delay    10
-    attack   -200 110 185 20 0 0 0 0 0 0
     frame    data/chars/shiryu/rise1.png
     frame    data/chars/shiryu/rise2.png
     frame    data/chars/shiryu/rise3.png

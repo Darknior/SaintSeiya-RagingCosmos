@@ -45,7 +45,7 @@ ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
 
 animationscript     data/scripts/player.c                 #
 script              data/scripts/entity_effects.c         #
-didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite
+didhitscript        data/scripts/didhit/tint_silver.c     # Effets de teinte sur sprite : GRISE
 ondeathscript       data/scripts/timer_reset.c            # Mort du Timer à zéro
 
 
