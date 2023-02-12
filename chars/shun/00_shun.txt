@@ -23,6 +23,7 @@ noquake     0 1         # Secoue l’écran qd on tombe au sol
 typemp      1           # Gagne de mp en tapant des ennemis
 mprate      1           # Nombre de mp gagnés par coup
 
+blockback   1           # Permet de bloquer les attaques qui arrivent derriere
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
 nodieblink  1           # Ne clignote pas quand tu meurs
@@ -66,7 +67,7 @@ load shun_storm
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/shun/palettes/icon1.png 1
+icon         data/chars/shun/palettes/icon1.png 0
 colourselect 1
 palette      data/chars/shun/palettes/palette1.png
 #remap       data/chars/shun/palettes/palette1.png  # 14 Possible MAX

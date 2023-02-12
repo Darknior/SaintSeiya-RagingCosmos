@@ -71,7 +71,7 @@ load agora_plasma
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/agora/palettes/icon1.png 1
+icon         data/chars/agora/palettes/icon1.png 0
 colourselect 1
 palette      data/chars/agora/palettes/palette1.png
 #remap       data/chars/agora/palettes/palette1.png
