@@ -598,21 +598,26 @@ anim grab
     frame    data/chars/seiya/grab.png
 
 anim grabattack #Saisie Coup de genou X2
-    delay    7
-    offset    38 114
-    bbox 21 0 35 114
-    attack3 62 21 47 26 10 0 0 0 5 12
-    frame    data/chars/seiya/grabattack.png
-    attack3 0
+    delay    6
+    offset    45 119
+    bbox 42 7 30 112
+    hitflash flashmedium
+    frame    data/chars/seiya/attack51.png
+    frame    data/chars/seiya/attack52.png
+	attack 53 38 40 30 5 0 0 0 12 20
+    frame    data/chars/seiya/attack53.png
+    frame    data/chars/seiya/attack51.png
+
 
 anim grabattack2 #Saisie Coup finisher
     delay    6
     offset    38 114
     bbox 21 0 35 114
+    hitflash flashbig
     frame    data/chars/seiya/grabattack21.png
     frame    data/chars/seiya/grabattack22.png
     frame    data/chars/seiya/grabattack23.png
-    attack3 62 21 90 26 15 1 0 0 0 0
+    attack3 62 21 90 26 15 1 0 0 0 20
     frame    data/chars/seiya/grabattack24.png
     frame    data/chars/seiya/grabattack25.png
     frame    data/chars/seiya/grabattack26.png
