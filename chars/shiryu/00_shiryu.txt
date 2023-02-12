@@ -3,40 +3,44 @@ health      400
 mp          100
 type        player
 
-gfxshadow   1 4     # Possède une ombre moderne basée sur la lumière du niveau
-riseinv     1 1     # Invincible après une chute X sec / Clignote pas
-makeinv     2 0     # Invincible après respawn X sec / Clignote
 
-dust        round_dustB # Default "dust entity" using the native "Dust" function
-bflash      tremi_block
+#-- GENERAL CONFIG --------------------------------------------------
 
-speed       15      # Vitesse de déplacement
-running     35 5 3 1 1    # Vitesse de course / Hauteur de saut / Longueur multiplilleur
+gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
+riseinv     1 1         # Invincible après une chute X sec / Clignote pas
+makeinv     2 0         # Invincible après respawn X sec / Clignote
 
-jumpmove    0 0     # Peut se déplacer en plein saut (Toute dir. 7 7)
-jumpspeed   12      # Vitesse du saut
-jumpheight  5.5     # Hauteur du saut
-antigravity -40     # Augmente la gravité pour redescendre plus vite 1/100
+speed       15          # Vitesse de déplacement
+running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur
 
-noquake     0 1     # Secoue l'ecran qd on tombe au sol
+jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
+jumpspeed   12          # Vitesse du saut
+jumpheight  5.5         # Hauteur du saut
+antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
-typemp      1       # Gagne de mp en tapant des ennemis
-mprate      1       # Nombre de mp gagnés par coup
+noquake     0 1         # Secoue l’écran qd on tombe au sol
 
-blockodds   1       # Permet de pouvoir bloquer les attaques
-holdblock   2       # Permet de pouvoir maintenir la parade
-nodieblink  1       # Ne clignote pas quand tu meurs
-weaploss    2       # On ne perd son arme qu' à notre mort
-modelflag   3       # L'animation et la liste d'armes sont copiées
-death       1       # Active l'animation de mort
-nolife      1       # Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
+typemp      1           # Gagne de mp en tapant des ennemis
+mprate      1           # Nombre de mp gagnés par coup
 
-sleepwait   1000    #Temps en centisecondes avant de jouer l'anim sleep
+blockodds   1           # Permet de pouvoir bloquer les attaques
+holdblock   2           # Permet de pouvoir maintenir la parade
+nodieblink  1           # Ne clignote pas quand tu meurs
+weaploss    2           # On ne perd son arme qu' à notre mort
+modelflag   3           # Masque la petite barre de vie si on frappe un autre joueur
+death       1           # Active l'animation de mort
+nolife      1           # Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
+sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 
-atchain     1 2 3 4 5 # Attaque combo de base (anim attack 1, puis 2...)
+atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
-#weapons    PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 shiryu
+dust        round_dustB # Effet de poussière par defaut (animation)
+bflash      tremi_block # Flash pendant un blocage (animation)
 
+#weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 agora
+
+
+#-- SCRIPTS ---------------------------------------------------------
 
 ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
 
@@ -44,6 +48,9 @@ animationscript     data/scripts/player.c                 #
 script              data/scripts/entity_effects.c         #
 didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite
 ondeathscript	    data/scripts/timer_reset.c            # Mort du Timer à zéro
+
+
+#-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load blue_swing
 load shiryu_aura
@@ -65,6 +72,7 @@ icon         data/chars/shiryu/palettes/icon1.png 1
 colourselect 1
 palette      data/chars/shiryu/palettes/palette2.png
 #remap       data/chars/shiryu/palettes/palette1.png data/chars/shiryu/palettes/palette2.png data/chars/shiryu/palettes/palette3.png data/chars/shiryu/palettes/palette4.png # 14 Possible MAX
+
 
 #-- ATTAQUES --------------------------------------------------------
 

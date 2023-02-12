@@ -221,7 +221,7 @@ set         Training
 maxplayers  4
 #nosame     1        # Empèche de choisir les mm personnages
 
-lives       2
+lives       4
 credits     10
 noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partagés
 cansave     2        # Sauvegarde complète, progression et vies
