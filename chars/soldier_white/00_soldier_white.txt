@@ -29,7 +29,6 @@ subject_to_screen 1 # ne peut pas aller hors ecran
 dust		round_dustB
 bflash tremi_block
 
-subject_to_screen 0
 
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c

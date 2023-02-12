@@ -17,7 +17,7 @@ hostile          none
 #hostile        npc obstacle
 
 candamage        npc
-aimove           Chase
+aimove           wander
 #aimove         Wander
 
 
@@ -33,10 +33,7 @@ offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1 # ne peut pas aller hors ecran
 bflash tremi_block
 dust		round_dustB
-
-\\subject_to_wall 0
-
-subject_to_screen 0
+subject_to_wall 1
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
 ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c

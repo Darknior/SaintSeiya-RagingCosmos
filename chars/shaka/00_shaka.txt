@@ -16,7 +16,8 @@ aimove      chase
 
 dust		round_dustB
 bflash aldebaran_block
-
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 1 # ne peut pas aller hors ecran
 icon		data/chars/shaka/icon.png
 
 gfxshadow	1
@@ -26,8 +27,7 @@ noquake 	1 1
 escapehits  1
 nodieblink 	3
 death 		1
-ondrawscript	data/scripts/lifebar.c
-script	data/scripts/entity_effects.c
+
 
 ## CUSTOM BOSS LIFEBAR
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
