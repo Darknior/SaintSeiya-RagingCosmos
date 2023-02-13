@@ -19,8 +19,7 @@ hostile          none
 candamage        npc
 aimove           wander
 #aimove         Wander
-
-
+jugglepoints 5
 \\aggression     5
 hitenemy         0 0
 blockodds        1
@@ -29,6 +28,7 @@ nodieblink       0
 blocked          1
 noquake          1 1
 gfxshadow        1
+
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1 # ne peut pas aller hors ecran
 bflash tremi_block
