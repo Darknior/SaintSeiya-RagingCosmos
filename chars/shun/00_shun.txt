@@ -20,8 +20,7 @@ antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 
-typemp      1           # Gagne de mp en tapant des ennemis
-mprate      1           # Nombre de mp gagnés par coup
+mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
 blockback   1           # Permet de bloquer les attaques qui arrivent derrière : SPÉCIAL !!
 blockodds   1           # Permet de pouvoir bloquer les attaques
@@ -317,8 +316,6 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/shun/jump2.png
     frame    data/chars/shun/jump3.png
     frame    data/chars/shun/jump5.png
-#    delay    12
-#    frame    data/chars/shun/jump6.png
 
 anim run
     loop     1
@@ -364,7 +361,6 @@ anim  runjump
     bbox     68 35 51 107
     summonframe     0 0 0 0
     subentity       round_dust
-    cancel   0 8 0 A2 freespecial3
     sound    data/chars/shun/sounds/06-jump1.wav
     frame    data/chars/shun/jump1.png
     frame    data/chars/shun/forwardjump1.png
@@ -426,7 +422,6 @@ anim attack2 # Attaque combo 2
     frame    data/chars/shun/attack5.png
     frame    data/chars/shun/attack1.png
 
-
 anim attack3 # Attaque combo 3
         sound   data/sounds/punch.wav
     delay    6
@@ -443,7 +438,6 @@ anim attack3 # Attaque combo 3
     frame    data/chars/shun/attack20.png
     frame    data/chars/shun/attack21.png
     frame    data/chars/shun/attack22.png
-
 
 anim attack4 # Attaque combo 4
         sound   data/sounds/punch.wav
@@ -481,8 +475,7 @@ anim attack5 # Attaque combo 5
     frame    data/chars/shun/attack33.png
     attack1 0
 
-
-anim attackbackward # Attaque arrière (Arrière + attaque)
+anim    attackbackward  # Attaque arrière native (b + a1)
     fastattack 1
     offset   52 146
     hitflash flashmedium
@@ -500,7 +493,7 @@ anim attackbackward # Attaque arrière (Arrière + attaque)
     bbox     29 29 35 120
     frame    data/chars/shun/backattack0.png
 
-anim freespecial4 # Attaque arrière (à partir d'un cancel)
+anim    freespecial4   # Attaque arrière (a3)
     fastattack 1
     offset   52 146
     hitflash flashmedium
@@ -611,24 +604,21 @@ sound   data/chars/shun/sounds/23-projection2.wav
     frame    data/chars/shun/grabbackward3.png
     frame    data/chars/shun/grabbackward2.png
 
-
-anim freespecial3 # Défense spéciale explosion du cosmos
+anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     delay    10
-    offset    174 135
-    #fastattack 1
-    #cancel 0 8 0 A2 freespecial3
+    offset   174 135
     hitflash flashbig
-    sound data/chars/seiya/00-cosmos.wav
-    bbox 152 18 35 120
+    bbox     152 18 35 120
     frame    data/chars/shun/upspecial1.png
     frame    data/chars/shun/upspecial2.png
     @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/upspecial3.png
+    sound    data/chars/shun/sounds/00-cosmos.wav
     frame    data/chars/shun/upspecial4.png
     frame    data/chars/shun/upspecial5.png
     frame    data/chars/shun/upspecial4.png
-    @cmd addMp 2
-    @cmd keyLoop "attack2" 2
+    @cmd     addMp 2
+    @cmd     keyLoop "attack4" 2    # Loope l'animation à la frame 2 + addMp
     frame    data/chars/shun/upspecial3.png
 
 anim freespecial2 # Courant Nébulaire
@@ -796,28 +786,26 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     frame    data/chars/shun/special2.png
     frame    data/chars/shun/special1.png
 
-anim jump # Saut Statique
+anim    jump    # Saut Statique
     delay    10
-    offset    87 171
-    bbox 68 35 51 107
-    summonframe 0 0 0 0
-    subentity round_dust
-    cancel 0 8 0 A2 freespecial3
-    sound data/chars/shun/sounds/06-jump1.wav
+    offset   87 171
+    bbox     68 35 51 107
+    summonframe  0 0 0 0
+    subentity    round_dust
+    sound    data/chars/shun/sounds/06-jump1.wav
     frame    data/chars/shun/jump1.png
     frame    data/chars/shun/jump2.png
     frame    data/chars/shun/jump3.png
     frame    data/chars/shun/jump4.png
     frame    data/chars/shun/jump5.png
 
-anim forwardjump # Saut vers l'avant
+anim    forwardjump # Saut vers l'avant
     delay    10
-    offset    87 171
-    bbox 68 35 51 107
-    summonframe 0 0 0 0
-    subentity round_dust
-    cancel 0 8 0 A2 freespecial3
-    sound data/chars/shun/sounds/06-jump1.wav
+    offset   87 171
+    bbox     68 35 51 107
+    summonframe  0 0 0 0
+    subentity    round_dust
+    sound    data/chars/shun/sounds/06-jump1.wav
     frame    data/chars/shun/forwardjump1.png
     frame    data/chars/shun/forwardjump2.png
     frame    data/chars/shun/forwardjump3.png

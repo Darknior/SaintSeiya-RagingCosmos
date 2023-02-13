@@ -1,0 +1,27 @@
+name    seiya_roll
+type    none
+shadow    0
+setlayer 778
+animationscript    data/scripts/player.c
+
+anim    idle
+    loop    0
+    delay    5
+    offset    167 237
+    drawmethod alpha 1
+    drawmethod scale 0.6 0.6
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll0.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll1.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll2.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll3.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll4.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll5.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll6.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll7.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll8.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll9.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll10.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll11.png
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll12.png
+    @cmd suicide
+    frame    data/chars/seiya/special/seiya_roll/seiya_roll12.png

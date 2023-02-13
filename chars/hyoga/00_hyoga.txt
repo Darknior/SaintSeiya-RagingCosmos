@@ -19,8 +19,7 @@ antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 
-typemp      1           # Gagne de mp en tapant des ennemis
-mprate      1           # Nombre de mp gagnés par coup
+mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
@@ -57,7 +56,7 @@ load hyoga_twister
 load hyoga_frozenray
 load hyoga_frozenray_up
 load hyoga_constellation
-load seiya_dash_dust
+load hyoga_roll
 load hyoga_diamonds
 load hyoga_diamondsB
 load hyoga_diamonds_up
@@ -406,8 +405,7 @@ anim  runjump
     bbox 35 14 51 97
     summonframe 0 0 0 0
     subentity round_dust
-    cancel 0 8 0 A2 freespecial3
-sound   data/chars/hyoga/sounds/06-jump1.wav
+    sound   data/chars/hyoga/sounds/06-jump1.wav
     frame    data/chars/hyoga/jump11.png
     frame    data/chars/hyoga/forwardjump1.png
     frame    data/chars/hyoga/forwardjump2.png
@@ -543,24 +541,28 @@ anim freespecial4 # Attaque arrière (a3)
 
 anim    attackboth  # Attaque de mêlée native (j + a1)
     fastattack 1
+    energycost  10 0 0
     offset   45 140
     bbox     21 28 51 112
     hitflash blue_swing
     delay    8
     sound    data/chars/seiya/sounds/17-back_kick.wav
-    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 0 0 0 0
     frame    data/chars/hyoga/attackbackward1.png
-    attack   -14 93 130 50 15 0 0 0 0 20
+    attack1  -14 93 130 50 15 0 0 0 0 20
     frame    data/chars/hyoga/attackbackward2.png
+    attack1  0
     frame    data/chars/hyoga/attackbackward3.png
     attack1  0 64 130 50 15 1 0 0 0 20
     bbox     61 22 50 120
     frame    data/chars/hyoga/attackbackward4.png
+    attack1  0
     frame    data/chars/hyoga/attackbackward5.png
-    attack   14 20 130 50 15 0 0 0 0 20
+    attack1  14 20 130 50 15 0 0 0 0 20
     frame    data/chars/hyoga/attackbackward6.png
+    attack1  0
     frame    data/chars/hyoga/attackbackward7.png
-    attack   51 41 130 50 15 1 0 0 0 20
+    attack1  51 41 130 50 15 1 0 0 0 20
     bbox     90 23 50 120
     frame    data/chars/hyoga/attackbackward8.png
     delay    12
@@ -569,24 +571,28 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
 
 anim    freespecial # Attaque de mêlée (a2)
     fastattack 1
+    energycost  10 0 0
     offset   45 140
     bbox     21 28 51 112
     hitflash blue_swing
     delay    8
     sound    data/chars/seiya/sounds/17-back_kick.wav
-    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 0 0 0 0
     frame    data/chars/hyoga/attackbackward1.png
-    attack   -14 93 130 50 15 0 0 0 0 20
+    attack1  -14 93 130 50 15 0 0 0 0 20
     frame    data/chars/hyoga/attackbackward2.png
+    attack1  0
     frame    data/chars/hyoga/attackbackward3.png
     attack1  0 64 130 50 15 1 0 0 0 20
     bbox     61 22 50 120
     frame    data/chars/hyoga/attackbackward4.png
+    attack1  0
     frame    data/chars/hyoga/attackbackward5.png
-    attack   14 20 130 50 15 0 0 0 0 20
+    attack1  14 20 130 50 15 0 0 0 0 20
     frame    data/chars/hyoga/attackbackward6.png
+    attack1  0
     frame    data/chars/hyoga/attackbackward7.png
-    attack   51 41 130 50 15 1 0 0 0 20
+    attack1  51 41 130 50 15 1 0 0 0 20
     bbox     90 23 50 120
     frame    data/chars/hyoga/attackbackward8.png
     delay    12
@@ -649,23 +655,23 @@ sound   data/chars/hyoga/sounds/23-projection2.wav
     attack -200 50 180 60 5 1 0 0 0 30
     frame    data/chars/hyoga/grab10.png
 
-anim freespecial3 # Défense spéciale explosion du cosmos
+anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     delay    5
-    offset    35 141
+    offset   35 141
     hitflash flashbig
-    sound data/chars/hyoga/sounds/00-cosmos.wav
-    bbox 7 23 50 120
+    bbox     7 23 50 120
     frame    data/chars/hyoga/special1.png
     frame    data/chars/hyoga/special2.png
     frame    data/chars/hyoga/special3.png
     @cmd     spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/special4.png
+    sound    data/chars/hyoga/sounds/00-cosmos.wav
     frame    data/chars/hyoga/special5.png
     frame    data/chars/hyoga/special3.png
     frame    data/chars/hyoga/special4.png
     frame    data/chars/hyoga/special5.png
-    @cmd addMp 1.5
-    @cmd keyLoop "attack2" 3
+    @cmd     addMp 2
+    @cmd     keyLoop "attack4" 3    # Loope l'animation à la frame 3 + addMp
     frame    data/chars/hyoga/special3.png
 
 anim freespecial2 # Diamond Dust (2 projectiles)
@@ -841,7 +847,6 @@ anim jump # Saut Statique
     bbox 21 14 51 97
     summonframe 0 0 0 0
     subentity round_dust
-    cancel 0 8 0 A2 freespecial3
     sound data/chars/hyoga/sounds/06-jump1.wav
     frame    data/chars/hyoga/jump1.png
     frame    data/chars/hyoga/jump2.png
@@ -861,7 +866,6 @@ anim forwardjump # Saut vers l'avant
     bbox 21 14 51 97
     summonframe 0 0 0 0
     subentity round_dust
-    cancel 0 8 0 A2 freespecial3
     sound data/chars/hyoga/sounds/06-jump1.wav
     frame    data/chars/hyoga/jump11.png
     frame    data/chars/hyoga/forwardjump1.png

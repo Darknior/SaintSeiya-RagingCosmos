@@ -20,8 +20,7 @@ antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 
-typemp      1           # Gagne de mp en tapant des ennemis
-mprate      1           # Nombre de mp gagnés par coup
+mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
@@ -361,7 +360,6 @@ anim    runjump
     bbox     16 13 30 115
     summonframe  0 0 0 0
     subentity    round_dust
-    cancel   0 8 0 A2 freespecial3
     sound    data/chars/shiryu/sounds/06-jump1.wav
     frame    data/chars/shiryu/forwardjump1.png
     frame    data/chars/shiryu/forwardjump2.png
@@ -487,7 +485,7 @@ anim    freespecial4    # Attaque arrière (a3)
 
 anim    attackboth  # Attaque de mêlée native (j + a1)
     fastattack 1
-    flipframe 0
+    energycost  10 0 0
     offset   39 130
     bbox     21 15 51 115
     hitflash flashbig
@@ -496,46 +494,41 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     frame    data/chars/shiryu/attackbackward1.png
     frame    data/chars/shiryu/attackbackward2.png
     bbox     43 31 50 100
-    attack   7 28 120 35 5 0 0 0 0 30
+    attack1   7 28 120 35 5 0 0 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
+    attack1  0
     @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/shiryu/attackbackward4.png
     attack1  55 35 84 29 5 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward5.png
+    attack1  0
     frame    data/chars/shiryu/attackbackward6.png
-    attack   9 23 120 35 5 1 0 0 0 30
+    attack1  9 23 120 35 5 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward7.png
+    attack1  0
     frame    data/chars/shiryu/attackbackward8.png
     attack1  10 35 120 29 5 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward6.png
+    attack1  0
     frame    data/chars/shiryu/attackbackward4.png
-    attack   10 33 120 35 5 1 1 0 0 30
+    attack1  10 33 120 35 5 1 1 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     delay    12
     bbox     16 29 50 100
     frame    data/chars/shiryu/attackbackward1.png
 
 anim    freespecial  # Attaque de mêlée (a2)
-    flipframe  1
     fastattack 1
+    energycost  10 0 0
     offset   39 130
     bbox     21 15 51 115
     hitflash flashbig
     delay    7
     sound    data/chars/shiryu/sounds/17-back_kick.wav
-    flipframe  1
-    fastattack 1
-    offset   60 130
-    bbox     21 15 51 115
-    hitflash flashbig
-    delay    7
-    sound    data/chars/shiryu/sounds/17-back_kick.wav
-    attack1  0
     frame    data/chars/shiryu/attackbackward1.png
-    attack1  0
     frame    data/chars/shiryu/attackbackward2.png
     bbox     43 31 50 100
-    attack   7 28 120 35 5 0 0 0 0 30
+    attack1   7 28 120 35 5 0 0 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     attack1  0
     @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
@@ -544,18 +537,18 @@ anim    freespecial  # Attaque de mêlée (a2)
     frame    data/chars/shiryu/attackbackward5.png
     attack1  0
     frame    data/chars/shiryu/attackbackward6.png
-    attack   9 23 120 35 5 1 0 0 0 30
+    attack1  9 23 120 35 5 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward7.png
+    attack1  0
     frame    data/chars/shiryu/attackbackward8.png
     attack1  10 35 120 29 5 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward6.png
     attack1  0
     frame    data/chars/shiryu/attackbackward4.png
-    attack   10 33 120 35 5 1 1 0 0 30
+    attack1  10 33 120 35 5 1 1 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     delay    12
     bbox     16 29 50 100
-    attack1  0
     frame    data/chars/shiryu/attackbackward1.png
 
 anim    grab        # Choppe
@@ -616,11 +609,10 @@ anim    throw   # Choppe, Projection en arrière
     frame    data/chars/shiryu/rise3.png
     frame    data/chars/shiryu/rise4.png
 
-anim    freespecial3 # Spécial: Explosion du cosmos
+anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     delay    10
     offset   42 156
     hitflash flashbig
-    sound    data/chars/shiryu/sounds/00-cosmos.wav
     bbox     15 46 50 110
     frame    data/chars/shiryu/special1.png
     frame    data/chars/shiryu/special2.png
@@ -630,10 +622,11 @@ anim    freespecial3 # Spécial: Explosion du cosmos
     frame    data/chars/shiryu/special6.png
     @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shiryu/special7.png
+    sound    data/chars/shiryu/sounds/00-cosmos.wav
     frame    data/chars/shiryu/special8.png
     frame    data/chars/shiryu/special7.png
-    @cmd     addMp 1.5
-    @cmd     keyLoop "attack2" 6
+    @cmd     addMp 2
+    @cmd     keyLoop "attack4" 6    # Loope l'animation à la frame 6 + addMp
     frame    data/chars/shiryu/special6.png
 
 anim    freespecial2 # Fureur du Dragon
@@ -724,7 +717,6 @@ anim    jump        # Saut Statique
     bbox     16 13 51 115
     summonframe  0 0 0 0
     subentity    round_dust
-    cancel   0 8 0 A2 freespecial3
     sound    data/chars/shiryu/sounds/06-jump1.wav
     frame    data/chars/shiryu/jump1.png
     frame    data/chars/shiryu/jump2.png
@@ -737,7 +729,6 @@ anim    forwardjump # Saut vers l'avant
     delay    6
     offset   37 146
     bbox     16 13 51 115
-    cancel   0 8 0 A2 freespecial3
     summonframe  0 0 0 0
     subentity    round_dust
     sound    data/chars/shiryu/sounds/06-jump1.wav

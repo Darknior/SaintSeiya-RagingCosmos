@@ -87,7 +87,7 @@ noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partag�
 cansave     2        # Sauvegarde complète, progression et vies
 
 disablehof  0        # Masque l'écran de Hall of fame
-typemp      0        # Type de récupération de la magie (0/1/2)
+typemp      1        # Type de récupération de la magie (0 Time /1 Enemy /2 Items)
 
 skipselect
 select data/select-all.txt
@@ -227,7 +227,7 @@ noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partag�
 cansave     2        # Sauvegarde complète, progression et vies
 
 disablehof  0        # Masque l'écran de Hall of fame
-typemp      0        # Type de récupération de la magie (0/1/2)
+typemp      1        # Type de récupération de la magie (0 Time /1 Enemy /2 Items)
 
 skipselect
 select data/select-all.txt
@@ -252,7 +252,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 
 branch      temple0
@@ -269,7 +269,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           378 484
 file        data/levels/temple1.txt
@@ -280,7 +280,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  hyoga
 z           378 484
 file        data/levels/temple2.txt
@@ -291,7 +291,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           378 484
 file        data/levels/temple2boss.txt
@@ -302,7 +302,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  shiryu
 z           385 484
 file        data/levels/temple3.txt
@@ -313,7 +313,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  shun
 z           378 484
 file        data/levels/temple3boss.txt
@@ -324,7 +324,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           378 484
 file        data/levels/temple4.txt
@@ -335,7 +335,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  shiryu
 z           400 484
 file        data/levels/temple4boss.txt
@@ -346,7 +346,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           384 484
 file        data/levels/temple5.txt
@@ -357,7 +357,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           378 484
 file        data/levels/temple5boss.txt
@@ -368,7 +368,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  ikki
 z           390 484
 file        data/levels/temple6.txt
@@ -379,7 +379,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  ikki
 z           390 484
 file        data/levels/temple6midboss.txt
@@ -390,7 +390,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  ikki
 z           390 484
 file        data/levels/temple6boss.txt
@@ -401,7 +401,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  shiryu
 z           355 470
 file        data/levels/temple7BOSS.txt
@@ -412,7 +412,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           390 484
 file        data/levels/temple8.txt
@@ -423,7 +423,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  hyoga
 z           378 484
 file        data/levels/temple8BOSS.txt
@@ -434,7 +434,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  hyoga
 z           390 484
 file        data/levels/temple9.txt
@@ -445,7 +445,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           490 990
 file        data/levels/temple10.txt
@@ -456,7 +456,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  shiryu
 z           378 484
 file        data/levels/temple10BOSS.txt
@@ -467,7 +467,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  ikki
 z           390 484
 file        data/levels/temple11.txt
@@ -478,7 +478,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  hyoga
 z           378 484
 file        data/levels/temple11BOSS.txt
@@ -489,7 +489,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           378 484
 file        data/levels/temple12.txt
@@ -500,7 +500,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  shun
 z           378 484
 file        data/levels/temple12BOSS.txt
@@ -511,7 +511,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           378 484
 file        data/levels/temple13.txt
@@ -522,7 +522,7 @@ lives       1
 credits     10
 cansave     2
 disablehof  0
-typemp      0
+typemp      1
 skipselect  seiya
 z           378 430
 file        data/levels/temple13BOSS.txt

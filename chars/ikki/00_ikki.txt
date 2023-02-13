@@ -20,8 +20,7 @@ antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 
-typemp      1           # Gagne de mp en tapant des ennemis
-mprate      1           # Nombre de mp gagnés par coup
+mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
@@ -411,12 +410,11 @@ anim runattack # Attaque en courant
 
 anim  runjump
     delay    8
-    offset    55 206
-    bbox 35 76 51 120
+    offset   55 206
+    bbox     35 76 51 120
     summonframe 0 0 0 0
-    subentity round_dust
-    cancel 0 8 0 A2 freespecial3
-sound   data/chars/ikki/sounds/06-jump1.wav
+    subentity   round_dust
+    sound    data/chars/ikki/sounds/06-jump1.wav
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/forwardjump1.png
     frame    data/chars/ikki/forwardjump2.png
@@ -430,8 +428,8 @@ sound   data/chars/ikki/sounds/06-jump1.wav
 
 anim get
     delay    5
-    offset    27 139
-    bbox 2 19 51 120
+    offset   27 139
+    bbox     2 19 51 120
     frame    data/chars/ikki/get1.png
     frame    data/chars/ikki/get2.png
     frame    data/chars/ikki/get2.png
@@ -511,7 +509,6 @@ anim attack6 # Attaque combo 6
     frame    data/chars/ikki/attack66.png
 
 anim    attackbackward  # Attaque arrière native (b + a1)
-#    flipframe 1
     fastattack 1
     offset   82 140
     hitflash flashbig
@@ -533,7 +530,6 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     frame    data/chars/ikki/attackbackward0.png
 
 anim    freespecial4    # Attaque arrière (a3)
-#    flipframe 1
     fastattack 1
     offset   82 140
     hitflash flashbig
@@ -556,55 +552,65 @@ anim    freespecial4    # Attaque arrière (a3)
 
 anim    attackboth  # Attaque de mêlée native (j + a1)
     fastattack  1
-    summonframe 0 0 0 0 0
-    subentity   ikki_auraC
+    energycost  10 0 0
     offset   80 165
     hitflash shaka_flame
+    summonframe 0 0 0 0 0
+    subentity   ikki_auraC
     delay    5
     sound    data/chars/ikki/sounds/01-knee.wav
     frame    data/chars/ikki/melee1.png
     frame    data/chars/ikki/melee2.png
     attack1  32 19 100 120 20 0 0 0 5 30
     frame    data/chars/ikki/melee3.png
+    attack1  0
     delay    10
     frame    data/chars/ikki/melee4.png
     attack1  32 19 100 120 20 1 0 0 5 30
     frame    data/chars/ikki/melee5.png
+    attack1  0
     frame    data/chars/ikki/melee6.png
     attack1  32 19 100 120 20 1 0 0 5 30
     frame    data/chars/ikki/melee7.png
+    attack1  0
     frame    data/chars/ikki/melee8.png
     attack1  32 19 100 120 20 1 0 0 5 30
     frame    data/chars/ikki/melee9.png
     delay    5
     frame    data/chars/ikki/melee3.png
     frame    data/chars/ikki/melee2.png
+    frame    data/chars/ikki/melee1.png
 
 anim    freespecial    # Attaque de mêlée (a2)
     fastattack  1
-    summonframe 0 0 0 0 0
-    subentity   ikki_auraC
+    energycost  10 0 0
     offset   80 165
     hitflash shaka_flame
+    summonframe 0 0 0 0 0
+    subentity   ikki_auraC
     delay    5
     sound    data/chars/ikki/sounds/01-knee.wav
     frame    data/chars/ikki/melee1.png
     frame    data/chars/ikki/melee2.png
     attack1  32 19 100 120 20 0 0 0 5 30
     frame    data/chars/ikki/melee3.png
+    attack1  0
     delay    10
     frame    data/chars/ikki/melee4.png
     attack1  32 19 100 120 20 1 0 0 5 30
     frame    data/chars/ikki/melee5.png
+    attack1  0
     frame    data/chars/ikki/melee6.png
     attack1  32 19 100 120 20 1 0 0 5 30
     frame    data/chars/ikki/melee7.png
+    attack1  0
     frame    data/chars/ikki/melee8.png
     attack1  32 19 100 120 20 1 0 0 5 30
     frame    data/chars/ikki/melee9.png
     delay    5
     frame    data/chars/ikki/melee3.png
     frame    data/chars/ikki/melee2.png
+    frame    data/chars/ikki/melee1.png
 
 anim grab
     delay    7
@@ -656,21 +662,21 @@ sound   data/chars/ikki/sounds/23-projection2.wav
     frame    data/chars/ikki/grab5.png
     frame    data/chars/ikki/grab5.png
 
-anim freespecial3 # Défense spéciale explosion du cosmos
+anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     delay    12
-    offset    99 185
+    offset   99 185
     hitflash flashbig
-    sound data/chars/ikki/sounds/00-cosmos.wav
-    bbox 70 56 50 130
+    bbox     70 56 50 130
     frame    data/chars/ikki/special1.png
     frame    data/chars/ikki/special2.png
     @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/ikki/special3.png
+    sound    data/chars/ikki/sounds/00-cosmos.wav
     frame    data/chars/ikki/special4.png
     frame    data/chars/ikki/special5.png
     frame    data/chars/ikki/special6.png
-    @cmd addMp 1.5
-    @cmd keyLoop "attack2" 2
+    @cmd     addMp 2
+    @cmd     keyLoop "attack4" 2    # Loope l'animation à la frame 2 + addMp
     frame    data/chars/ikki/special1.png
 
 anim freespecial2 # Hoyoku Tensho
@@ -841,12 +847,11 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
 
 anim jump # Saut Statique
     delay    10
-    offset    55 206
-    bbox 49 76 30 120
-    cancel 0 8 0 A2 freespecial3
-    summonframe 0 0 0 0
-    subentity round_dust
-    sound data/chars/ikki/sounds/06-jump1.wav
+    offset   55 206
+    bbox     49 76 30 120
+    summonframe  0 0 0 0
+    subentity    round_dust
+    sound    data/chars/ikki/sounds/06-jump1.wav
     frame    data/chars/ikki/jump1.png
     frame    data/chars/ikki/jump2.png
     frame    data/chars/ikki/jump3.png
@@ -860,12 +865,11 @@ anim jump # Saut Statique
 
 anim forwardjump # Saut vers l'avant
     delay    8
-    offset    55 206
-    bbox 43 76 30 100
-    cancel 0 8 0 A2 freespecial3
-    summonframe 0 0 0 0
-    subentity round_dust
-    sound data/chars/ikki/sounds/06-jump1.wav
+    offset   55 206
+    bbox     43 76 30 100
+    summonframe  0 0 0 0
+    subentity    round_dust
+    sound    data/chars/ikki/sounds/06-jump1.wav
     frame    data/chars/ikki/jump5.png
     frame    data/chars/ikki/forwardjump1.png
     frame    data/chars/ikki/forwardjump2.png

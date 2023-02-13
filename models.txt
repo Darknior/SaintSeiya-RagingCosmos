@@ -61,95 +61,96 @@ load    dialog_shaina1 data/chars/dialogs/dialog_shaina1.txt
 load    dialog_tremi1 data/chars/dialogs/dialog_tremi1.txt
 load    dialog_marin1 data/chars/dialogs/dialog_marin1.txt
 load    dialog_wait       data/chars/dialogs/dialog_wait.txt
-load	fade              data/chars/dialogs/fade.txt
+load    fade              data/chars/dialogs/fade.txt
 
-#Flash animations
+# Flash animations
 
 load    flash           data/chars/misc/flash/flash.txt
 load    flashmedium     data/chars/misc/flash/flashmedium.txt
 load    flashbig        data/chars/misc/flash/flashbig.txt
-load    blue_swing        data/chars/misc/flash/blue_swing.txt
-load    yellow_swing        data/chars/misc/flash/yellow_swing.txt
+load    blue_swing      data/chars/misc/flash/blue_swing.txt
+load    yellow_swing    data/chars/misc/flash/yellow_swing.txt
 
-#Dust animations
+# Dust animations
 
 load    round_dustB     data/chars/dust/round_dustB.txt
-load    round_dust     data/chars/dust/round_dust.txt
-load    fall_dust     data/chars/dust/fall_dust.txt
-load    kick_dust     data/chars/dust/kick_dust.txt
-load    dash_dust     data/chars/dust/dash_dust.txt
+load    round_dust      data/chars/dust/round_dust.txt
+load    fall_dust       data/chars/dust/fall_dust.txt
+load    kick_dust       data/chars/dust/kick_dust.txt
+load    dash_dust       data/chars/dust/dash_dust.txt
 
-#Blood animations
+# Blood animations
 
-load    blood_ground_big     data/chars/misc/blood/blood_ground_big.txt
-load    blood_ground_medium     data/chars/misc/blood/blood_ground_medium.txt
+load    blood_ground_big       data/chars/misc/blood/blood_ground_big.txt
+load    blood_ground_medium    data/chars/misc/blood/blood_ground_medium.txt
 
-#Players special animations
+# Players special animations
 
-know    seiya_aura            data/chars/seiya/special/seiya_aura.txt
-know    seiya_aura_air_kick            data/chars/seiya/special/seiya_aura_air_kick.txt
-know    seiya_aura_ryuseiken            data/chars/seiya/special/seiya_aura_ryuseiken.txt
-know    seiya_constellation   data/chars/seiya/special/seiya_constellation.txt
-know    seiya_meteor          data/chars/seiya/special/seiya_meteor.txt
-know    seiya_meteord         data/chars/seiya/special/seiya_meteord.txt
-know    seiya_pegasus      data/chars/seiya/special/seiya_pegasus.txt
-know    seiya_dash_dust       data/chars/seiya/special/seiya_dash_dust.txt
-know    seiya_down_dust       data/chars/seiya/special/seiya_down_dust.txt
-know    seiya_upper_dust      data/chars/seiya/special/seiya_upper_dust.txt
-know    seiya_round_dust      data/chars/seiya/special/seiya_round_dust.txt
-know    seiya_lights      data/chars/seiya/special/seiya_lights.txt
-know    seiya_seiya_meteor_flash      data/chars/seiya/special/seiya_meteor_flash.txt
+know    seiya_aura             data/chars/seiya/special/seiya_aura.txt
+know    seiya_aura_air_kick    data/chars/seiya/special/seiya_aura_air_kick.txt
+know    seiya_aura_ryuseiken   data/chars/seiya/special/seiya_aura_ryuseiken.txt
+know    seiya_constellation    data/chars/seiya/special/seiya_constellation.txt
+know    seiya_meteor           data/chars/seiya/special/seiya_meteor.txt
+know    seiya_meteord          data/chars/seiya/special/seiya_meteord.txt
+know    seiya_pegasus          data/chars/seiya/special/seiya_pegasus.txt
+know    seiya_dash_dust        data/chars/seiya/special/seiya_dash_dust.txt
+know    seiya_roll             data/chars/seiya/special/seiya_roll.txt
+know    seiya_upper_dust       data/chars/seiya/special/seiya_upper_dust.txt
+know    seiya_round_dust       data/chars/seiya/special/seiya_round_dust.txt
+know    seiya_lights           data/chars/seiya/special/seiya_lights.txt
+know    seiya_seiya_meteor_flash  data/chars/seiya/special/seiya_meteor_flash.txt
 
 know    shiryu_aura            data/chars/shiryu/special/shiryu_aura.txt
 know    shiryu_dragon          data/chars/shiryu/special/shiryu_dragon.txt
 know    shiryu_dragon_uppercut data/chars/shiryu/special/shiryu_dragon_uppercut.txt
-know    shiryu_dragon_water	   data/chars/shiryu/special/shiryu_dragon_water.txt
-know    shiryu_explosion	   data/chars/shiryu/special/shiryu_explosion.txt
-know    shiryu_uppercut	   data/chars/shiryu/special/shiryu_uppercut.txt
-know    shiryu_big_dragon	   data/chars/shiryu/special/shiryu_big_dragon.txt
-know    shiryu_lights	   data/chars/shiryu/special/shiryu_lights.txt
-know    shiryu_cosmos	   data/chars/shiryu/special/shiryu_cosmos.txt
-know    shiryu_constellation	   data/chars/shiryu/special/shiryu_constellation.txt
-know    shiryu_dash	   data/chars/shiryu/special/shiryu_dash.txt
-know    shiryu_whirl	   data/chars/shiryu/special/shiryu_whirl.txt
+know    shiryu_dragon_water    data/chars/shiryu/special/shiryu_dragon_water.txt
+know    shiryu_explosion       data/chars/shiryu/special/shiryu_explosion.txt
+know    shiryu_uppercut        data/chars/shiryu/special/shiryu_uppercut.txt
+know    shiryu_big_dragon      data/chars/shiryu/special/shiryu_big_dragon.txt
+know    shiryu_lights          data/chars/shiryu/special/shiryu_lights.txt
+know    shiryu_cosmos          data/chars/shiryu/special/shiryu_cosmos.txt
+know    shiryu_constellation   data/chars/shiryu/special/shiryu_constellation.txt
+know    shiryu_dash            data/chars/shiryu/special/shiryu_dash.txt
+know    shiryu_whirl           data/chars/shiryu/special/shiryu_whirl.txt
 
-know    hyoga_aura            data/chars/hyoga/special/hyoga_aura.txt
-know    hyoga_cygnus          data/chars/hyoga/special/hyoga_cygnus.txt
-know    hyoga_twister         data/chars/hyoga/special/hyoga_twister.txt
-know    hyoga_frozenray       data/chars/hyoga/special/hyoga_frozenray.txt
-know    hyoga_frozenray_up    data/chars/hyoga/special/hyoga_frozenray_up.txt
+know    hyoga_aura             data/chars/hyoga/special/hyoga_aura.txt
+know    hyoga_cygnus           data/chars/hyoga/special/hyoga_cygnus.txt
+know    hyoga_twister          data/chars/hyoga/special/hyoga_twister.txt
+know    hyoga_frozenray        data/chars/hyoga/special/hyoga_frozenray.txt
+know    hyoga_frozenray_up     data/chars/hyoga/special/hyoga_frozenray_up.txt
 know    hyoga_constellation    data/chars/hyoga/special/hyoga_constellation.txt
-know    hyoga_diamonds    data/chars/hyoga/special/hyoga_diamonds.txt
-know    hyoga_diamondsB    data/chars/hyoga/special/hyoga_diamondsB.txt
-know    hyoga_diamonds_up    data/chars/hyoga/special/hyoga_diamonds_up.txt
-know    hyoga_uppercut    data/chars/hyoga/special/hyoga_uppercut.txt
-know    hyoga_dash    data/chars/hyoga/special/hyoga_dash.txt
-know    hyoga_tornadoB           data/chars/hyoga/special/hyoga_tornadoB.txt
+know    hyoga_diamonds         data/chars/hyoga/special/hyoga_diamonds.txt
+know    hyoga_diamondsB        data/chars/hyoga/special/hyoga_diamondsB.txt
+know    hyoga_diamonds_up      data/chars/hyoga/special/hyoga_diamonds_up.txt
+know    hyoga_uppercut         data/chars/hyoga/special/hyoga_uppercut.txt
+know    hyoga_dash             data/chars/hyoga/special/hyoga_dash.txt
+know    hyoga_tornadoB         data/chars/hyoga/special/hyoga_tornadoB.txt
+know    hyoga_roll             data/chars/hyoga/special/hyoga_roll.txt
 
-know    shun_aura             data/chars/shun/special/shun_aura.txt
-know    shun_stream           data/chars/shun/special/shun_stream.txt
-know    shun_chain          data/chars/shun/special/shun_chain.txt
-know    shun_chainB          data/chars/shun/special/shun_chainB.txt
-know    shun_chainC          data/chars/shun/special/shun_chainC.txt
-know    shun_lights          data/chars/shun/special/shun_lights.txt
-know    shun_impact         data/chars/shun/special/shun_impact.txt
-know    shun_impactD         data/chars/shun/special/shun_impactD.txt
-know    shun_impactE         data/chars/shun/special/shun_impactE.txt
-know    shun_constellation           data/chars/shun/special/shun_constellation.txt
-know    shun_storm         data/chars/shun/special/shun_storm.txt
+know    shun_aura              data/chars/shun/special/shun_aura.txt
+know    shun_stream            data/chars/shun/special/shun_stream.txt
+know    shun_chain             data/chars/shun/special/shun_chain.txt
+know    shun_chainB            data/chars/shun/special/shun_chainB.txt
+know    shun_chainC            data/chars/shun/special/shun_chainC.txt
+know    shun_lights            data/chars/shun/special/shun_lights.txt
+know    shun_impact            data/chars/shun/special/shun_impact.txt
+know    shun_impactD           data/chars/shun/special/shun_impactD.txt
+know    shun_impactE           data/chars/shun/special/shun_impactE.txt
+know    shun_constellation     data/chars/shun/special/shun_constellation.txt
+know    shun_storm             data/chars/shun/special/shun_storm.txt
 
-know    ikki_aura           data/chars/ikki/special/ikki_aura.txt
-know    ikki_auraB           data/chars/ikki/special/ikki_auraB.txt
-know    ikki_auraC         data/chars/ikki/special/ikki_auraC.txt
+know    ikki_aura              data/chars/ikki/special/ikki_aura.txt
+know    ikki_auraB             data/chars/ikki/special/ikki_auraB.txt
+know    ikki_auraC             data/chars/ikki/special/ikki_auraC.txt
 know    ikki_shooter           data/chars/ikki/special/ikki_shooter.txt
-know    ikki_constellation           data/chars/ikki/special/ikki_constellation.txt
-know    ikki_lights           data/chars/ikki/special/ikki_lights.txt
-know    ikki_fire_beam           data/chars/ikki/special/ikki_fire_beam.txt
-know    ikki_impact           data/chars/ikki/special/ikki_impact.txt
-know    ikki_fire           data/chars/ikki/special/ikki_fire.txt
-know    ikki_storm           data/chars/ikki/special/ikki_storm.txt
-know    ikki_run           data/chars/ikki/special/ikki_run.txt
-know    ikki_uppercutB           data/chars/ikki/special/ikki_uppercutB.txt
+know    ikki_constellation     data/chars/ikki/special/ikki_constellation.txt
+know    ikki_lights            data/chars/ikki/special/ikki_lights.txt
+know    ikki_fire_beam         data/chars/ikki/special/ikki_fire_beam.txt
+know    ikki_impact            data/chars/ikki/special/ikki_impact.txt
+know    ikki_fire              data/chars/ikki/special/ikki_fire.txt
+know    ikki_storm             data/chars/ikki/special/ikki_storm.txt
+know    ikki_run               data/chars/ikki/special/ikki_run.txt
+know    ikki_uppercutB         data/chars/ikki/special/ikki_uppercutB.txt
 
 
 know    aldebaran_aura            data/chars/aldebaran/special/aldebaran_aura.txt
@@ -174,13 +175,13 @@ know    gemini_clones      data/chars/gemini/special/gemini_clones.txt
 know    gemini_constellation      data/chars/gemini/special/gemini_constellation.txt
 
 know    deathmask_circles         data/chars/deathmask/special/deathmask_circles.txt
-know    deathmask_hands         	data/chars/deathmask/special/deathmask_hands.txt
+know    deathmask_hands             data/chars/deathmask/special/deathmask_hands.txt
 know    deathmask_constellation      data/chars/deathmask/special/deathmask_constellation.txt
 know    deathmask_thunder      data/chars/deathmask/special/deathmask_thunder.txt
-know    deathmask_spiral        	data/chars/deathmask/special/deathmask_spiral.txt
-know    deathmask_claw        	data/chars/deathmask/special/deathmask_claw.txt
-know    deathmask_melee        	data/chars/deathmask/special/deathmask_melee.txt
-know    deathmask_spirit       	data/chars/deathmask/special/deathmask_spirit.txt
+know    deathmask_spiral            data/chars/deathmask/special/deathmask_spiral.txt
+know    deathmask_claw            data/chars/deathmask/special/deathmask_claw.txt
+know    deathmask_melee            data/chars/deathmask/special/deathmask_melee.txt
+know    deathmask_spirit           data/chars/deathmask/special/deathmask_spirit.txt
 
 know    aiolia_lionstar        data/chars/aiolia/special/aiolia_lionstar.txt
 know    aiolia_multihit        data/chars/aiolia/special/aiolia_multihit.txt
@@ -190,8 +191,8 @@ know    aiolia_plasma        data/chars/aiolia/special/aiolia_plasma.txt
 know    aiolia_constellation        data/chars/aiolia/special/aiolia_constellation.txt
 know    aiolia_explosion        data/chars/aiolia/special/aiolia_explosion.txt
 
-know    shaka_lotus	        data/chars/shaka/special/shaka_lotus.txt
-know    shaka_lotus_shot	data/chars/shaka/special/shaka_lotus_shot.txt
+know    shaka_lotus            data/chars/shaka/special/shaka_lotus.txt
+know    shaka_lotus_shot    data/chars/shaka/special/shaka_lotus_shot.txt
 know    shaka_cosmos    data/chars/shaka/special/shaka_cosmos.txt
 know    shaka_constellation    data/chars/shaka/special/shaka_constellation.txt
 know    shaka_constellationA    data/chars/shaka/special/shaka_constellationA.txt
@@ -207,8 +208,8 @@ know    shaka_hands    data/chars/shaka/special/shaka_hands.txt
 know    shaka_aura    data/chars/shaka/special/shaka_aura.txt
 know    shaka_flame    data/chars/shaka/special/shaka_flame.txt
 
-know    milo_blood	        data/chars/milo/special/milo_blood.txt
-know    milo_circles	data/chars/milo/special/milo_circles.txt
+know    milo_blood            data/chars/milo/special/milo_blood.txt
+know    milo_circles    data/chars/milo/special/milo_circles.txt
 know    milo_flash    data/chars/milo/special/milo_flash.txt
 know    milo_constellation    data/chars/milo/special/milo_constellation.txt
 know    milo_circles   data/chars/milo/special/milo_circles.txt
@@ -232,63 +233,63 @@ know    shura_explosion   data/chars/shura/special/shura_explosion.txt
 know    shura_excaliburB   data/chars/shura/special/shura_excaliburB.txt
 know    shura_dash   data/chars/shura/special/shura_dash.txt
 
-know    camus_iceray  	data/chars/camus/special/camus_iceray.txt
-know    camus_icecrystal  	data/chars/camus/special/camus_icecrystal.txt
-know    camus_constellation  	data/chars/camus/special/camus_constellation.txt
-know    camus_lights  	data/chars/camus/special/camus_lights.txt
-know    camus_ice_star  	data/chars/camus/special/camus_ice_star.txt
-know    camus_dash  	data/chars/camus/special/camus_dash.txt
-know    camus_block  	data/chars/camus/special/camus_block.txt
+know    camus_iceray      data/chars/camus/special/camus_iceray.txt
+know    camus_icecrystal      data/chars/camus/special/camus_icecrystal.txt
+know    camus_constellation      data/chars/camus/special/camus_constellation.txt
+know    camus_lights      data/chars/camus/special/camus_lights.txt
+know    camus_ice_star      data/chars/camus/special/camus_ice_star.txt
+know    camus_dash      data/chars/camus/special/camus_dash.txt
+know    camus_block      data/chars/camus/special/camus_block.txt
 
-know    aphrodite_rosefield  	data/chars/aphrodite/special/aphrodite_rosefield.txt
-know    aphrodite_rose_explosion  	data/chars/aphrodite/special/aphrodite_rose_explosion.txt
-know    aphrodite_lotus_petals  	data/chars/aphrodite/special/aphrodite_lotus_petals.txt
-know    aphrodite_big_roses  	data/chars/aphrodite/special/aphrodite_big_roses.txt
-know    aphrodite_big_roses_white  	data/chars/aphrodite/special/aphrodite_big_roses_white.txt
-know    aphrodite_rose_shot  	data/chars/aphrodite/special/aphrodite_rose_shot.txt
-know    aphrodite_white_rose_shot  	data/chars/aphrodite/special/aphrodite_white_rose_shot.txt
-know    aphrodite_sting  	data/chars/aphrodite/special/aphrodite_sting.txt
-know    aphrodite_constellation  	data/chars/aphrodite/special/aphrodite_constellation.txt
-know    aphrodite_ultra  	data/chars/aphrodite/special/aphrodite_ultra.txt
-know    aphrodite_poissons 	data/chars/aphrodite/special/aphrodite_poissons.txt
+know    aphrodite_rosefield      data/chars/aphrodite/special/aphrodite_rosefield.txt
+know    aphrodite_rose_explosion      data/chars/aphrodite/special/aphrodite_rose_explosion.txt
+know    aphrodite_lotus_petals      data/chars/aphrodite/special/aphrodite_lotus_petals.txt
+know    aphrodite_big_roses      data/chars/aphrodite/special/aphrodite_big_roses.txt
+know    aphrodite_big_roses_white      data/chars/aphrodite/special/aphrodite_big_roses_white.txt
+know    aphrodite_rose_shot      data/chars/aphrodite/special/aphrodite_rose_shot.txt
+know    aphrodite_white_rose_shot      data/chars/aphrodite/special/aphrodite_white_rose_shot.txt
+know    aphrodite_sting      data/chars/aphrodite/special/aphrodite_sting.txt
+know    aphrodite_constellation      data/chars/aphrodite/special/aphrodite_constellation.txt
+know    aphrodite_ultra      data/chars/aphrodite/special/aphrodite_ultra.txt
+know    aphrodite_poissons     data/chars/aphrodite/special/aphrodite_poissons.txt
 
-know    marin_eagle   		data/chars/marin/special/marin_eagle.txt
-know    marin_multipunch   	data/chars/marin/special/marin_multipunch.txt
-know    marin_stormA   	data/chars/marin/special/marin_stormA.txt
-know    marin_stormC   	data/chars/marin/special/marin_stormC.txt
-know    marin_circle   	data/chars/marin/special/marin_circle.txt
-know    marin_swing   	data/chars/marin/special/marin_swing.txt
+know    marin_eagle           data/chars/marin/special/marin_eagle.txt
+know    marin_multipunch       data/chars/marin/special/marin_multipunch.txt
+know    marin_stormA       data/chars/marin/special/marin_stormA.txt
+know    marin_stormC       data/chars/marin/special/marin_stormC.txt
+know    marin_circle       data/chars/marin/special/marin_circle.txt
+know    marin_swing       data/chars/marin/special/marin_swing.txt
 
-know    shaina_venom   		data/chars/shaina/special/shaina_venom.txt
-know    shaina_storm   		data/chars/shaina/special/shaina_storm.txt
-know    shaina_shoot   		data/chars/shaina/special/shaina_shoot.txt
-know    shaina_electricity   		data/chars/shaina/special/shaina_electricity.txt
+know    shaina_venom           data/chars/shaina/special/shaina_venom.txt
+know    shaina_storm           data/chars/shaina/special/shaina_storm.txt
+know    shaina_shoot           data/chars/shaina/special/shaina_shoot.txt
+know    shaina_electricity           data/chars/shaina/special/shaina_electricity.txt
 
-know    tremi_arrow   		data/chars/tremi/special/tremi_arrow.txt
-know    tremi_arrow_pierce   		data/chars/tremi/special/tremi_arrow_pierce.txt
-know    tremi_arrow_pierceB   		data/chars/tremi/special/tremi_arrow_pierceB.txt
-know    tremi_multiarrow   	data/chars/tremi/special/tremi_multiarrow.txt
-know    tremi_dash   	data/chars/tremi/special/tremi_dash.txt
-know    tremi_circle   	data/chars/tremi/special/tremi_circle.txt
-know    tremi_cosmos   	data/chars/tremi/special/tremi_cosmos.txt
-know    tremi_slash   	data/chars/tremi/special/tremi_slash.txt
-know    tremi_skull   	data/chars/tremi/special/tremi_skull.txt
-know    tremi_diagonal_arrows  	data/chars/tremi/special/tremi_diagonal_arrows.txt
-load    tremi_block  	data/chars/tremi/special/tremi_block.txt
+know    tremi_arrow           data/chars/tremi/special/tremi_arrow.txt
+know    tremi_arrow_pierce           data/chars/tremi/special/tremi_arrow_pierce.txt
+know    tremi_arrow_pierceB           data/chars/tremi/special/tremi_arrow_pierceB.txt
+know    tremi_multiarrow       data/chars/tremi/special/tremi_multiarrow.txt
+know    tremi_dash       data/chars/tremi/special/tremi_dash.txt
+know    tremi_circle       data/chars/tremi/special/tremi_circle.txt
+know    tremi_cosmos       data/chars/tremi/special/tremi_cosmos.txt
+know    tremi_slash       data/chars/tremi/special/tremi_slash.txt
+know    tremi_skull       data/chars/tremi/special/tremi_skull.txt
+know    tremi_diagonal_arrows      data/chars/tremi/special/tremi_diagonal_arrows.txt
+load    tremi_block      data/chars/tremi/special/tremi_block.txt
 
-know    sirius_ray 		data/chars/sirius/special/sirius_ray.txt
+know    sirius_ray         data/chars/sirius/special/sirius_ray.txt
 
-know    asterion_clone 	data/chars/asterion/special/asterion_clone.txt
-know    asterion_lightball 	data/chars/asterion/special/asterion_lightball.txt
+know    asterion_clone     data/chars/asterion/special/asterion_clone.txt
+know    asterion_lightball     data/chars/asterion/special/asterion_lightball.txt
 
-know    shiva_lotus	    data/chars/shiva/special/shiva_lotus.txt
+know    shiva_lotus        data/chars/shiva/special/shiva_lotus.txt
 
-know    agora_lotus	    data/chars/agora/special/agora_lotus.txt
-know    agora_plasma	data/chars/agora/special/agora_plasma.txt
+know    agora_lotus        data/chars/agora/special/agora_lotus.txt
+know    agora_plasma    data/chars/agora/special/agora_plasma.txt
 
-know    knife  		data/chars/great_pope/special/knife.txt
+know    knife          data/chars/great_pope/special/knife.txt
 
-know    columnT  	data/chars/jaki/special/columnT.txt
+know    columnT      data/chars/jaki/special/columnT.txt
 
 
 ## ITEMS ##
@@ -296,14 +297,14 @@ know    columnT  	data/chars/jaki/special/columnT.txt
 know    energy          data/chars/OBJ/energy.txt
 know    cosmo           data/chars/OBJ/cosmo.txt
 know    life            data/chars/OBJ/life.txt
-know	apple		data/chars/misc/food/apple.txt
-know	macaff		data/chars/misc/food/macaff.txt
-know	bananaff		data/chars/misc/food/bananaff.txt
-know	grape		data/chars/misc/food/grape.txt
-know	abacaxiff		data/chars/misc/food/abacaxiff.txt
-know	cerejacc		data/chars/misc/food/cerejacc.txt
-know	limaocc		data/chars/misc/food/limaocc.txt
-know	laranjaff		data/chars/misc/food/laranjaff.txt
+know    apple        data/chars/misc/food/apple.txt
+know    macaff        data/chars/misc/food/macaff.txt
+know    bananaff        data/chars/misc/food/bananaff.txt
+know    grape        data/chars/misc/food/grape.txt
+know    abacaxiff        data/chars/misc/food/abacaxiff.txt
+know    cerejacc        data/chars/misc/food/cerejacc.txt
+know    limaocc        data/chars/misc/food/limaocc.txt
+know    laranjaff        data/chars/misc/food/laranjaff.txt
 
 ## BALANCE  ##
 
@@ -364,32 +365,32 @@ load    ikki           data/chars/ikki/00_ikki.txt
 ## SANCTUARY SOLDIERS ##
 
 know    malesoldier     data/chars/soldier_blue/00_soldier_blue.txt
-know    malesoldier_attackcombo 	data/chars/soldier_blue/malesoldier_attackcombo.txt
-know    malesoldier_jumpattack  	data/chars/soldier_blue/malesoldier_jumpattack.txt
-know    malesoldier_specialattack	data/chars/soldier_blue/malesoldier_specialattack.txt
-know    malesoldier_runattack		data/chars/soldier_blue/malesoldier_runattack.txt
-know    malesoldier_defense_all		data/chars/soldier_blue/malesoldier_defense_all.txt
+know    malesoldier_attackcombo     data/chars/soldier_blue/malesoldier_attackcombo.txt
+know    malesoldier_jumpattack      data/chars/soldier_blue/malesoldier_jumpattack.txt
+know    malesoldier_specialattack    data/chars/soldier_blue/malesoldier_specialattack.txt
+know    malesoldier_runattack        data/chars/soldier_blue/malesoldier_runattack.txt
+know    malesoldier_defense_all        data/chars/soldier_blue/malesoldier_defense_all.txt
 know    soldiersuper    data/chars/soldier_yellow_B/soldiersuper.txt
 know    SOLDIER         data/chars/soldier_white/00_soldier_white.txt
 know    SOLDIER1        data/chars/soldier_yellow/00_soldier_yellow.txt
 know    SOLDIER1-1      data/chars/soldier_yellow_B/00_soldier_yellow_B.txt
 know    SOLDIER2        data/chars/soldier_purple/00_soldier_purple.txt
 know    SOLDIER3        data/chars/soldier_big/00_soldier_big.txt
-know 	jaki			data/chars/jaki/00_jaki.txt
+know     jaki            data/chars/jaki/00_jaki.txt
 know    cassios         data/chars/cassios/00_cassios.txt
 know    cassiosp        data/chars/cassios/00_cassiosp.txt
 know    cassios_rescue  data/chars/cassios/00_cassios_rescue.txt
 
 ## SILVER SAINTS ##
 
-know    marin     		data/chars/marin/00_marin.txt
-know    asterion     	data/chars/asterion/00_asterion.txt
-know    shaina     		data/chars/shaina/00_shaina.txt
-know    tremi     		data/chars/tremi/00_tremi.txt
-know    sirius     		data/chars/sirius/00_sirius.txt
-know    june     		data/chars/june/00_june.txt
-know    shiva     		data/chars/shiva/00_shiva.txt
-know    agora     		data/chars/agora/00_agora.txt
+know    marin             data/chars/marin/00_marin.txt
+know    asterion         data/chars/asterion/00_asterion.txt
+know    shaina             data/chars/shaina/00_shaina.txt
+know    tremi             data/chars/tremi/00_tremi.txt
+know    sirius             data/chars/sirius/00_sirius.txt
+know    june             data/chars/june/00_june.txt
+know    shiva             data/chars/shiva/00_shiva.txt
+know    agora             data/chars/agora/00_agora.txt
 
 ## GOLD KINGHTS ##
 
@@ -419,29 +420,29 @@ know    SOLDIERTRAINING data/chars/soldier_purple/00_soldier_purple_training.txt
 know    mu                  data/bgs/temple1/mu/mu.txt
 
 ## Dialogs
-know    dialogdelay     	data/bgs/temple1/mu_dialog/dialogdelay.txt
-know 	dialogbox0			data/bgs/temple1/mu_dialog/dialogbox0.txt
-know 	dialogbox			data/bgs/temple1/mu_dialog/dialogbox.txt
-know 	mu_dialog			data/bgs/temple1/mu_dialog/mu_dialog.txt
-know 	temple2_dialogbox	data/bgs/temple2/aldebaran_dialog/temple2_dialogbox.txt
-know 	aldebaran_dialog	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
-know 	aldebaran_dialog2	data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
-know 	gemini_dialog	data/bgs/temple3/gemini_dialog/gemini_dialog.txt
-know 	gemini_dialog2	data/bgs/temple3/gemini_dialog/gemini_dialog2.txt
-know 	aiolia_dialog	data/bgs/temple5/aiolia_dialog/aiolia_dialog.txt
-know 	aiolia_dialog2	data/bgs/temple5/aiolia_dialog/aiolia_dialog2.txt
-know 	shaka_dialog	data/bgs/temple6/shaka_dialog/shaka_dialog.txt
-know 	shaka_dialog	data/bgs/temple6/shaka_dialog/shaka_dialog2.txt
-know 	balance_dialog	data/bgs/temple7/balance_dialog/balance_dialog.txt
-know 	balance_dialog	data/bgs/temple7/balance_dialog/balance_dialog2.txt
-know 	milo_dialog	data/bgs/temple8/milo_dialog/milo_dialog.txt
-know 	milo_dialog	data/bgs/temple8/milo_dialog/milo_dialog2.txt
-know 	shura_dialog	data/bgs/temple10/shura_dialog/shura_dialog.txt
-know 	shura_dialog	data/bgs/temple10/shura_dialog/shura_dialog2.txt
-know 	camus_dialog	data/bgs/temple11/camus_dialog/camus_dialog.txt
-know 	camus_dialog	data/bgs/temple11/camus_dialog/camus_dialog2.txt
-know 	aphrodite_dialog	data/bgs/temple12/aphrodite_dialog/aphrodite_dialog.txt
-know 	aphrodite_dialog2	data/bgs/temple12/aphrodite_dialog/aphrodite_dialog2.txt
+know    dialogdelay         data/bgs/temple1/mu_dialog/dialogdelay.txt
+know     dialogbox0            data/bgs/temple1/mu_dialog/dialogbox0.txt
+know     dialogbox            data/bgs/temple1/mu_dialog/dialogbox.txt
+know     mu_dialog            data/bgs/temple1/mu_dialog/mu_dialog.txt
+know     temple2_dialogbox    data/bgs/temple2/aldebaran_dialog/temple2_dialogbox.txt
+know     aldebaran_dialog    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
+know     aldebaran_dialog2    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
+know     gemini_dialog    data/bgs/temple3/gemini_dialog/gemini_dialog.txt
+know     gemini_dialog2    data/bgs/temple3/gemini_dialog/gemini_dialog2.txt
+know     aiolia_dialog    data/bgs/temple5/aiolia_dialog/aiolia_dialog.txt
+know     aiolia_dialog2    data/bgs/temple5/aiolia_dialog/aiolia_dialog2.txt
+know     shaka_dialog    data/bgs/temple6/shaka_dialog/shaka_dialog.txt
+know     shaka_dialog    data/bgs/temple6/shaka_dialog/shaka_dialog2.txt
+know     balance_dialog    data/bgs/temple7/balance_dialog/balance_dialog.txt
+know     balance_dialog    data/bgs/temple7/balance_dialog/balance_dialog2.txt
+know     milo_dialog    data/bgs/temple8/milo_dialog/milo_dialog.txt
+know     milo_dialog    data/bgs/temple8/milo_dialog/milo_dialog2.txt
+know     shura_dialog    data/bgs/temple10/shura_dialog/shura_dialog.txt
+know     shura_dialog    data/bgs/temple10/shura_dialog/shura_dialog2.txt
+know     camus_dialog    data/bgs/temple11/camus_dialog/camus_dialog.txt
+know     camus_dialog    data/bgs/temple11/camus_dialog/camus_dialog2.txt
+know     aphrodite_dialog    data/bgs/temple12/aphrodite_dialog/aphrodite_dialog.txt
+know     aphrodite_dialog2    data/bgs/temple12/aphrodite_dialog/aphrodite_dialog2.txt
 
 
 ## TEMPLE 2 ROAD
