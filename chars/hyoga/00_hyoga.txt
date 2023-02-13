@@ -285,11 +285,11 @@ anim walk
     frame    data/chars/hyoga/walk9.png
 
 anim up
-    loop    1
+    loop     1
     delay    14
-    cancel 0 8 0 A1 freespecial7
-    offset    47 140
-    bbox 33 28 30 112
+    cancel   0 8 0 A1 freespecial7  # Coup de pied haut
+    offset   47 140
+    bbox     33 28 30 112
     frame    data/chars/hyoga/walk1.png
     frame    data/chars/hyoga/walk2.png
     frame    data/chars/hyoga/walk3.png
@@ -300,29 +300,28 @@ anim up
     frame    data/chars/hyoga/walk8.png
     frame    data/chars/hyoga/walk9.png
 
-anim freespecial7
+anim freespecial7   # Coup de pied haut
     delay    7
-    offset    30 140
-    bbox 21 28 51 112
+    offset   30 140
+    bbox     21 28 51 112
     hitflash flashmedium
     frame    data/chars/hyoga/attack41.png
-        sound   data/sounds/punch.wav
+    sound    data/sounds/punch.wav
     frame    data/chars/hyoga/attack42.png
-    dropv 4.0 1.0 0.0
-    attack1 62 21 67 26 10 1 0 0 12 20
-    dropv     5.0 0.5
+    dropv    4.0 1.0 0.0
+    attack1  62 21 67 26 10 1 0 0 12 20
+    dropv    5.0 0.5
     frame    data/chars/hyoga/attack43.png
     frame    data/chars/hyoga/attack44.png
     frame    data/chars/hyoga/attack45.png
     frame    data/chars/hyoga/attack46.png
-    attack1 0
 
 anim down
-    loop    1
+    loop     1
     delay    14
-    cancel 0 8 0 A1 freespecial8
-    offset    47 140
-    bbox 34 28 30 112
+    cancel   0 8 0 A1 freespecial8  # Balayette
+    offset   47 140
+    bbox     34 28 30 112
     frame    data/chars/hyoga/walk1.png
     frame    data/chars/hyoga/walk2.png
     frame    data/chars/hyoga/walk3.png
@@ -333,50 +332,47 @@ anim down
     frame    data/chars/hyoga/walk8.png
     frame    data/chars/hyoga/walk9.png
 
-anim freespecial8
+anim freespecial8       # Balayette
     delay    7
-    offset    44 150
-    bbox 26 39 35 112
+    offset   44 150
+    bbox     26 39 35 112
     hitflash flashmedium
     frame    data/chars/hyoga/slide0.png
-        sound   data/sounds/punch.wav
+    sound    data/sounds/punch.wav
     frame    data/chars/hyoga/slide1.png
     frame    data/chars/hyoga/slide2.png
-    attack1 48 125 67 26 10 1 0 0 12 20
-    dropv     5.0 0.5
+    attack1  48 125 67 26 10 1 0 0 12 20
+    dropv    5.0 0.5
     frame    data/chars/hyoga/slide3.png
     frame    data/chars/hyoga/slide4.png
-    attack1 0
     frame    data/chars/hyoga/slide0.png
 
-
-anim dodge
+anim dodge    # Esquive Haut / Bas (u u / d d)
     delay    8
-    offset    63 140
-    bbox 34 18 51 112
-    summonframe 0 0 0 0
-    subentity round_dust
-    jumpframe 2 1.8 0
-sound   data/chars/hyoga/sounds/06-jump1.wav
+    offset   63 140
+    bbox     34 18 51 112
+    summonframe     0 0 0 0
+    subentity       round_dust
+    jumpframe       2 1.8 0
+    sound    data/chars/hyoga/sounds/06-jump1.wav
     frame    data/chars/hyoga/jump1.png
     frame    data/chars/hyoga/jump2.png
     frame    data/chars/hyoga/jump3.png
     frame    data/chars/hyoga/jump4.png
     frame    data/chars/hyoga/jump1.png
-    frame    data/chars/hyoga/get2.png
 
 anim run
-    loop    1 3 8
+    loop     1 3 8
     delay    8
-    offset    45 112
+    offset   45 112
     bbox     35 -1 30 115
-    sound   data/chars/hyoga/sounds/20-run1.wav
+    sound    data/chars/hyoga/sounds/20-run1.wav
     frame    data/chars/hyoga/run1.png
     frame    data/chars/hyoga/run2.png
     bbox     54 0 30 115
     frame    data/chars/hyoga/run3.png
     frame    data/chars/hyoga/run4.png
-    sound   data/chars/hyoga/sounds/20-run2.wav
+    sound    data/chars/hyoga/sounds/20-run2.wav
     frame    data/chars/hyoga/run5.png
     frame    data/chars/hyoga/run6.png
     frame    data/chars/hyoga/run7.png
@@ -507,87 +503,95 @@ anim attack5 # Attaque combo 5
     frame    data/chars/hyoga/attack35.png
     attack1 0
 
-anim freespecial # Attaque arrière (saut + attaque)
-    flipframe 1
-    offset    45 140
-    bbox     21 28 51 112
-    fastattack 1
-    hitflash blue_swing
-    delay    5
-    sound   data/chars/seiya/sounds/17-back_kick.wav
-    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/hyoga/attackbackward1.png
-    attack     -14 93 130 50 15 0 0 0 0 20
-    frame    data/chars/hyoga/attackbackward2.png
-    attack1 0
-    frame    data/chars/hyoga/attackbackward3.png
-    attack1 0 64 130 50 15 1 0 0 0 20
-    bbox     61 22 50 120
-    frame    data/chars/hyoga/attackbackward4.png
-    attack1 0
-    frame    data/chars/hyoga/attackbackward5.png
-    attack     14 20 130 50 15 0 0 0 0 20
-    frame    data/chars/hyoga/attackbackward6.png
-    attack1 0
-    frame    data/chars/hyoga/attackbackward7.png
-    attack     51 41 130 50 15 1 0 0 0 20
-    bbox     90 23 50 120
-    frame    data/chars/hyoga/attackbackward8.png
-    attack1 0
-    delay   12
-    bbox     26 21 50 120
-    frame    data/chars/hyoga/attackbackward1.png
-
-anim attackboth # Attaque arrière (bouton saut + attaque)
-    flipframe 1
-    offset    45 140
-    bbox     21 28 51 112
-    fastattack 1
-    hitflash blue_swing
-    delay    5
-    sound   data/chars/seiya/sounds/17-back_kick.wav
-    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/hyoga/attackbackward1.png
-    attack     -14 93 130 50 15 0 0 0 0 20
-    frame    data/chars/hyoga/attackbackward2.png
-    attack1 0
-    frame    data/chars/hyoga/attackbackward3.png
-    attack1 0 64 130 50 15 1 0 0 0 20
-    bbox     61 22 50 120
-    frame    data/chars/hyoga/attackbackward4.png
-    attack1 0
-    frame    data/chars/hyoga/attackbackward5.png
-    attack     14 20 130 50 15 0 0 0 0 20
-    frame    data/chars/hyoga/attackbackward6.png
-    attack1 0
-    frame    data/chars/hyoga/attackbackward7.png
-    attack     51 41 130 50 15 1 0 0 0 20
-    bbox     90 23 50 120
-    frame    data/chars/hyoga/attackbackward8.png
-    attack1 0
-    delay   12
-    bbox     26 21 50 120
-    frame    data/chars/hyoga/attackbackward1.png
-
-anim freespecial4 # Attaque arrière (à partir d'un cancel)
-        offset    146 118
+anim attackbackward # Attaque arrière native (b + a1)
+    offset   146 118
     hitflash flashmedium
-    delay    4
-        sound   data/chars/seiya/sounds/01-backpunch.wav
+    delay    5
+    sound    data/chars/seiya/sounds/01-backpunch.wav
     frame    data/chars/hyoga/attackbackward10.png
     delay    10
     frame    data/chars/hyoga/attackbackward11.png
     delay    15
-    attack 20 36 60 50 30 1 0 0 0 30
-    dropv     3.5 1 0
+    attack   20 36 60 50 30 1 0 0 0 30
+    dropv    3.5 1 0
     frame    data/chars/hyoga/attackbackward12.png
     delay    8
-    attack 20 36 60 50 30 1 0 0 0 30
+    attack   20 36 60 50 30 1 0 0 0 30
     frame    data/chars/hyoga/attackbackward13.png
-    attack1 0
-    bbox 64 29 50 120
+    bbox     64  29 50 120
     frame    data/chars/hyoga/attackbackward14.png
     frame    data/chars/hyoga/attackbackward15.png
+
+anim freespecial4 # Attaque arrière (a3)
+    offset   146 118
+    hitflash flashmedium
+    delay    5
+    sound    data/chars/seiya/sounds/01-backpunch.wav
+    frame    data/chars/hyoga/attackbackward10.png
+    delay    10
+    frame    data/chars/hyoga/attackbackward11.png
+    delay    15
+    attack   20 36 60 50 30 1 0 0 0 30
+    dropv    3.5 1 0
+    frame    data/chars/hyoga/attackbackward12.png
+    delay    8
+    attack   20 36 60 50 30 1 0 0 0 30
+    frame    data/chars/hyoga/attackbackward13.png
+    bbox     64  29 50 120
+    frame    data/chars/hyoga/attackbackward14.png
+    frame    data/chars/hyoga/attackbackward15.png
+
+anim    attackboth  # Attaque de mêlée native (j + a1)
+    fastattack 1
+    offset   45 140
+    bbox     21 28 51 112
+    hitflash blue_swing
+    delay    8
+    sound    data/chars/seiya/sounds/17-back_kick.wav
+    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/hyoga/attackbackward1.png
+    attack   -14 93 130 50 15 0 0 0 0 20
+    frame    data/chars/hyoga/attackbackward2.png
+    frame    data/chars/hyoga/attackbackward3.png
+    attack1  0 64 130 50 15 1 0 0 0 20
+    bbox     61 22 50 120
+    frame    data/chars/hyoga/attackbackward4.png
+    frame    data/chars/hyoga/attackbackward5.png
+    attack   14 20 130 50 15 0 0 0 0 20
+    frame    data/chars/hyoga/attackbackward6.png
+    frame    data/chars/hyoga/attackbackward7.png
+    attack   51 41 130 50 15 1 0 0 0 20
+    bbox     90 23 50 120
+    frame    data/chars/hyoga/attackbackward8.png
+    delay    12
+    bbox     26 21 50 120
+    frame    data/chars/hyoga/attackbackward1.png
+
+anim    freespecial # Attaque de mêlée (a2)
+    fastattack 1
+    offset   45 140
+    bbox     21 28 51 112
+    hitflash blue_swing
+    delay    8
+    sound    data/chars/seiya/sounds/17-back_kick.wav
+    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/hyoga/attackbackward1.png
+    attack   -14 93 130 50 15 0 0 0 0 20
+    frame    data/chars/hyoga/attackbackward2.png
+    frame    data/chars/hyoga/attackbackward3.png
+    attack1  0 64 130 50 15 1 0 0 0 20
+    bbox     61 22 50 120
+    frame    data/chars/hyoga/attackbackward4.png
+    frame    data/chars/hyoga/attackbackward5.png
+    attack   14 20 130 50 15 0 0 0 0 20
+    frame    data/chars/hyoga/attackbackward6.png
+    frame    data/chars/hyoga/attackbackward7.png
+    attack   51 41 130 50 15 1 0 0 0 20
+    bbox     90 23 50 120
+    frame    data/chars/hyoga/attackbackward8.png
+    delay    12
+    bbox     26 21 50 120
+    frame    data/chars/hyoga/attackbackward1.png
 
 anim grab
     delay    5

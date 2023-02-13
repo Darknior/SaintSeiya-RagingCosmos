@@ -256,7 +256,7 @@ anim walk
 anim up
     loop     1
     delay    14
-    cancel   0 8 0 A1 freespecial7
+    cancel   0 8 0 A1 freespecial7  # Coup de pied haut
     offset   45 112
     bbox     33 0 30 112
     frame    data/chars/seiya/walk1.png
@@ -267,7 +267,7 @@ anim up
     frame    data/chars/seiya/walk6.png
     frame    data/chars/seiya/walk7.png
 
-anim freespecial7
+anim freespecial7   # Coup de pied haut
     delay    7
     offset   45 119
     bbox     21 7 51 112
@@ -281,12 +281,11 @@ anim freespecial7
     frame    data/chars/seiya/attack43.png
     frame    data/chars/seiya/attack42.png
     frame    data/chars/seiya/attack41.png
-    attack1  0
 
 anim down
     loop     1
     delay    14
-    cancel   0 8 0 A1 freespecial8
+    cancel   0 8 0 A1 freespecial8  # Balayette
     offset   45 112
     bbox     35 0 30 112
     frame    data/chars/seiya/walk1.png
@@ -297,7 +296,7 @@ anim down
     frame    data/chars/seiya/walk6.png
     frame    data/chars/seiya/walk7.png
 
-anim freespecial8
+anim freespecial8   # Balayette
     delay    6
     offset   37 148
     bbox     30 48 30 100
@@ -314,22 +313,21 @@ anim freespecial8
     frame    data/chars/seiya/slide5.png
     frame    data/chars/seiya/slide6.png
     frame    data/chars/seiya/slide0.png
-    attack1  0
 
-anim dodge
-    delay    10
-    offset    45 137
-    bbox 21 14 51 97
-    summonframe 0 0 0 0
-    subentity round_dust
-    jumpframe 2.5 1.8 0
-sound   data/chars/seiya/sounds/06-jump1.wav
+anim dodge  # Esquive Haut / Bas (u u / d d)
+    delay    8
+    offset   45 137
+    bbox     21 14 51 97
+    summonframe     0 0 0 0
+    subentity       round_dust
+    jumpframe       2.5 1.8 0
+    sound    data/chars/seiya/sounds/06-jump1.wav
     frame    data/chars/seiya/jump1.png
     frame    data/chars/seiya/jump2.png
     frame    data/chars/seiya/jump3.png
     frame    data/chars/seiya/jump4.png
     frame    data/chars/seiya/jump1.png
-    frame    data/chars/seiya/get3.png
+#    frame    data/chars/seiya/get3.png
 
 anim run
     loop    1 3 8
@@ -479,117 +477,110 @@ anim attack5 # Attaque combo 5
     frame    data/chars/seiya/attack59.png
     frame    data/chars/seiya/attack60.png
 
-anim attackbackward # Attaque arrière (Arrière + attaque)
-        offset    107 148
+anim attackbackward # Attaque arrière native (b + a1)
+    offset   107 148
     hitflash flashmedium
     delay    6
-        sound   data/chars/seiya/sounds/01-backpunch.wav
+    sound    data/chars/seiya/sounds/01-backpunch.wav
     frame    data/chars/seiya/attackbackward20.png
     delay    10
     frame    data/chars/seiya/attackbackward21.png
     delay    15
-    attack 20 36 60 50 30 12 0 0 0 30
-    dropv     3.5 1 0
+    attack   20 36 60 50 30 12 0 0 0 30
+    dropv    3.5 1 0
     frame    data/chars/seiya/attackbackward22.png
     delay    8
     frame    data/chars/seiya/attackbackward21.png
-    attack1 0
-    bbox 64 29 50 120
+    bbox     64 29 50 120
     frame    data/chars/seiya/attackbackward20.png
 
-anim attackboth # Attaque arrière (bouton saut + attaque)
-    offset    45 134
-    fastattack 1
-    bbox 21 22 51 112
-    hitflash blue_swing
-    delay    5
-sound   data/chars/seiya/sounds/17-back_kick.wav
-    frame    data/chars/seiya/attackbackward1.png
-    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
-    attack1 -9 84 50 50 8 0 0 0 0 0
-    frame    data/chars/seiya/attackbackward2.png
-    attack1 0
-    bbox 40 22 51 112
-    frame    data/chars/seiya/attackbackward3.png
-    attack1 -10 8 130 65 8 0 0 0 0 0
-    frame    data/chars/seiya/attackbackward4.png
-    attack1 0
-    frame    data/chars/seiya/attackbackward5.png
-    attack1 6 8 150 65 8 1 0 0 0 0
-    dropv     3.5 1 0
-    bbox 53 22 51 112
-    frame    data/chars/seiya/attackbackward6.png
-    attack1 0
-    frame    data/chars/seiya/attackbackward7.png
-    attack1 4 8 130 65 8 0 0 0 0 0
-    frame    data/chars/seiya/attackbackward8.png
-    attack1 0
-    frame    data/chars/seiya/attackbackward9.png
-    attack1 26 31 130 65 8 0 0 0 0 0
-    bbox 66 22 51 112
-    frame    data/chars/seiya/attackbackward10.png
-    attack1 0
-    frame    data/chars/seiya/attackbackward11.png
-    attack1 -21 8 130 65 8 1 0 0 0 0
-    dropv     3.5 1 0
-    delay   12
-    frame    data/chars/seiya/attackbackward1.png
-
-anim freespecial # Roue de melee
-    offset    45 134
-    fastattack 1
-    bbox 21 22 51 112
-    hitflash blue_swing
-    delay    5
-sound   data/chars/seiya/sounds/17-back_kick.wav
-    frame    data/chars/seiya/attackbackward1.png
-    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
-    attack1 -9 84 50 50 8 0 0 0 0 0
-    frame    data/chars/seiya/attackbackward2.png
-    attack1 0
-    bbox 40 22 51 112
-    frame    data/chars/seiya/attackbackward3.png
-    attack1 -10 8 130 65 8 0 0 0 0 0
-    frame    data/chars/seiya/attackbackward4.png
-    attack1 0
-    frame    data/chars/seiya/attackbackward5.png
-    attack1 6 8 150 65 8 1 0 0 0 0
-    dropv     3.5 1 0
-    bbox 53 22 51 112
-    frame    data/chars/seiya/attackbackward6.png
-    attack1 0
-    frame    data/chars/seiya/attackbackward7.png
-    attack1 4 8 130 65 8 0 0 0 0 0
-    frame    data/chars/seiya/attackbackward8.png
-    attack1 0
-    frame    data/chars/seiya/attackbackward9.png
-    attack1 26 31 130 65 8 0 0 0 0 0
-    bbox 66 22 51 112
-    frame    data/chars/seiya/attackbackward10.png
-    attack1 0
-    frame    data/chars/seiya/attackbackward11.png
-    attack1 -21 8 130 65 8 1 0 0 0 0
-    dropv     3.5 1 0
-    delay   12
-    frame    data/chars/seiya/attackbackward1.png
-
-anim freespecial4 # Attaque arrière (à partir d'un cancel)
-        offset    105 147
+anim freespecial4 # Attaque arrière (a3)
+    offset   105 147
     hitflash flashmedium
     delay    4
-        sound   data/chars/seiya/sounds/01-backpunch.wav
+    sound    data/chars/seiya/sounds/01-backpunch.wav
     frame    data/chars/seiya/attackbackward20.png
     delay    10
     frame    data/chars/seiya/attackbackward21.png
     delay    15
-    attack 20 36 60 50 30 12 0 0 0 30
-    dropv     3.5 1 0
+    attack   20 36 60 50 30 12 0 0 0 30
+    dropv    3.5 1 0
     frame    data/chars/seiya/attackbackward22.png
     delay    8
     frame    data/chars/seiya/attackbackward21.png
-    attack1 0
-    bbox 64 29 50 120
+    bbox     64 29 50 120
     frame    data/chars/seiya/attackbackward20.png
+
+anim    attackboth # Attaque de mêlée native (j + a1)
+    fastattack  1
+    offset   45 134
+    bbox     21 22 51 112
+    hitflash blue_swing
+    delay    5
+    sound    data/chars/seiya/sounds/17-back_kick.wav
+    frame    data/chars/seiya/attackbackward1.png
+    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
+    attack1  -9 84 50 50 8 0 0 0 0 0
+    frame    data/chars/seiya/attackbackward2.png
+    bbox     40 22 51 112
+    frame    data/chars/seiya/attackbackward3.png
+    attack1  -10 8 130 65 8 0 0 0 0 0
+    frame    data/chars/seiya/attackbackward4.png
+    frame    data/chars/seiya/attackbackward5.png
+    attack1  6 8 150 65 8 1 0 0 0 0
+    dropv    3.5 1 0
+    bbox     53 22 51 112
+    frame    data/chars/seiya/attackbackward6.png
+    frame    data/chars/seiya/attackbackward7.png
+    attack1  4 8 130 65 8 0 0 0 0 0
+    frame    data/chars/seiya/attackbackward8.png
+    frame    data/chars/seiya/attackbackward9.png
+    attack1  26 31 130 65 8 0 0 0 0 0
+    bbox     66 22 51 112
+    frame    data/chars/seiya/attackbackward10.png
+    frame    data/chars/seiya/attackbackward11.png
+    attack1  -21 8 130 65 8 1 0 0 0 0
+    dropv    3.5 1 0
+    delay    12
+    frame    data/chars/seiya/attackbackward1.png
+
+anim    freespecial # Attaque de mêlée (a2)
+    offset    45 134
+    fastattack 1
+    bbox 21 22 51 112
+    hitflash blue_swing
+    delay    5
+sound   data/chars/seiya/sounds/17-back_kick.wav
+    frame    data/chars/seiya/attackbackward1.png
+    @cmd     spawnbind "seiya_down_dust" "ANI_IDLE" 0 0 0 0 0
+    attack1 -9 84 50 50 8 0 0 0 0 0
+    frame    data/chars/seiya/attackbackward2.png
+    attack1 0
+    bbox 40 22 51 112
+    frame    data/chars/seiya/attackbackward3.png
+    attack1 -10 8 130 65 8 0 0 0 0 0
+    frame    data/chars/seiya/attackbackward4.png
+    attack1 0
+    frame    data/chars/seiya/attackbackward5.png
+    attack1 6 8 150 65 8 1 0 0 0 0
+    dropv     3.5 1 0
+    bbox 53 22 51 112
+    frame    data/chars/seiya/attackbackward6.png
+    attack1 0
+    frame    data/chars/seiya/attackbackward7.png
+    attack1 4 8 130 65 8 0 0 0 0 0
+    frame    data/chars/seiya/attackbackward8.png
+    attack1 0
+    frame    data/chars/seiya/attackbackward9.png
+    attack1 26 31 130 65 8 0 0 0 0 0
+    bbox 66 22 51 112
+    frame    data/chars/seiya/attackbackward10.png
+    attack1 0
+    frame    data/chars/seiya/attackbackward11.png
+    attack1 -21 8 130 65 8 1 0 0 0 0
+    dropv     3.5 1 0
+    delay   12
+    frame    data/chars/seiya/attackbackward1.png
 
 anim grab
     delay    7

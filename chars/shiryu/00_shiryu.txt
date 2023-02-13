@@ -258,7 +258,6 @@ anim    freespecial7    # Coup de pied haut
     frame    data/chars/shiryu/attack43.png
     frame    data/chars/shiryu/attack44.png
     frame    data/chars/shiryu/attack45.png
-    attack1  0
 
 anim    down
     cancel   0 8 0 A1 freespecial8  # Balayette
@@ -286,7 +285,6 @@ anim    freespecial8    # Balayette
     dropv    5.0 0.5
     frame    data/chars/shiryu/slide2.png
     frame    data/chars/shiryu/slide3.png
-    attack1  0
 
 anim    dodge   # Esquive Haut / Bas (u u / d d)
     delay    8
@@ -468,7 +466,6 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     frame    data/chars/shiryu/attack64.png
     frame    data/chars/shiryu/attack65.png
     frame    data/chars/shiryu/attack66.png
-    attack1  0
     frame    data/chars/shiryu/attack67.png
 
 anim    freespecial4    # Attaque arrière (a3)
@@ -485,51 +482,37 @@ anim    freespecial4    # Attaque arrière (a3)
     frame	 data/chars/shiryu/attackbackward22.png
     delay	 8
     frame	 data/chars/shiryu/attackbackward21.png
-    attack1  0
     bbox     64 29 50 120
     frame	 data/chars/shiryu/attackbackward20.png
 
 anim    attackboth  # Attaque de mêlée native (j + a1)
-    flipframe  1
     fastattack 1
+    flipframe 0
     offset   39 130
     bbox     21 15 51 115
     hitflash flashbig
     delay    7
     sound    data/chars/shiryu/sounds/17-back_kick.wav
-    flipframe  1
-    fastattack 1
-    offset   60 130
-    bbox     21 15 51 115
-    hitflash flashbig
-    delay    7
-    sound    data/chars/shiryu/sounds/17-back_kick.wav
-    attack1  0
     frame    data/chars/shiryu/attackbackward1.png
-    attack1  0
     frame    data/chars/shiryu/attackbackward2.png
     bbox     43 31 50 100
     attack   7 28 120 35 5 0 0 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
-    attack1  0
     @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/shiryu/attackbackward4.png
     attack1  55 35 84 29 5 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward5.png
-    attack1  0
     frame    data/chars/shiryu/attackbackward6.png
     attack   9 23 120 35 5 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward7.png
     frame    data/chars/shiryu/attackbackward8.png
     attack1  10 35 120 29 5 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward6.png
-    attack1  0
     frame    data/chars/shiryu/attackbackward4.png
     attack   10 33 120 35 5 1 1 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     delay    12
     bbox     16 29 50 100
-    attack1  0
     frame    data/chars/shiryu/attackbackward1.png
 
 anim    freespecial  # Attaque de mêlée (a2)
