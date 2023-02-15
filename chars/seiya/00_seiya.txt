@@ -944,6 +944,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     offset   31 119
     hitflash flashbig
     bbox     9 0 50 120
+	    sound    data/chars/seiya/sounds/cosmos.wav
     frame    data/chars/seiya/special1.png
     frame    data/chars/seiya/special2.png
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
