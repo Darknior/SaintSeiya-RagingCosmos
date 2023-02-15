@@ -589,6 +589,18 @@ anim    jumpland # Aterrissage du saut
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get1.png
+	
+anim    land # Aterrissage du saut
+    delay    7
+    offset   45 112
+    bbox     21 0 51 112
+    summonframe  0 0 0 0
+    subentity    round_dust
+    sound    data/chars/seiya/sounds/06-jump2.wav
+    frame    data/chars/seiya/get1.png
+    frame    data/chars/seiya/get2.png
+    frame    data/chars/seiya/get2.png
+    frame    data/chars/seiya/get1.png
 
 anim    jumpattack # Attaque sautée statique
     delay    5

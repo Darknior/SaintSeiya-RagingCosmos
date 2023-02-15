@@ -7,8 +7,8 @@ disablehof   1
 typemp       2
 #nodebug      1
 #versusdamage 1
-#blockratio   1
-#mpblock      1
+blockratio 2
+autoland 1
 
 maxattacks 6
 maxfollows 50
