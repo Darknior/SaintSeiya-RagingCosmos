@@ -475,6 +475,32 @@ anim attack5 # Attaque combo 5
     frame    data/chars/shun/attack33.png
     attack1 0
 
+anim chargeattack
+        sound   data/sounds/punch.wav
+    delay    6
+    offset    33 132
+    hitflash flashmedium
+    frame    data/chars/shun/attack41.png
+    frame    data/chars/shun/attack42.png
+    frame    data/chars/shun/attack43.png
+    delay    12
+	attack1 93 100 65 50 5 0 0 0 15 20
+    frame    data/chars/shun/attack44.png
+    delay    3
+	attack1 0
+    frame    data/chars/shun/attack45.png
+    frame    data/chars/shun/attack46.png
+    frame    data/chars/shun/attack47.png
+	frame    data/chars/shun/attack48.png
+    frame    data/chars/shun/attack49.png
+    frame    data/chars/shun/attack50.png
+    delay    12
+	attack1 93 100 65 50 5 0 0 0 15 20
+    frame    data/chars/shun/attack51.png
+    delay    3
+	attack1 0
+    frame    data/chars/shun/attack52.png
+
 anim    attackbackward  # Attaque arrière native (b + a1)
     fastattack 1
     offset   52 146

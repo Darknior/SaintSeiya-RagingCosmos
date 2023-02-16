@@ -148,7 +148,7 @@ void throw(int damage, int type, int Vx, int Vy, int Vz, int face)
 		damageentity(target, self, 0, dropType, atkType);
 
 		changeentityproperty(target, "direction", vDir);
-		changeentityproperty(target, "aiflag", "projectile", 1);
+		changeentityproperty(target, "aiflag", "projectile", 2);
 		changeentityproperty(target, "damage_on_landing", damage); //RESET PROJECTILE STATUS TO 0 WHEN FALL ON THE GROUND, TOTAL DAMAGE
 		finishGrab(Vx, Vy, Vz); //EXECUTE ALL NECESSARY TASKS TO END THE GRAB MOVE (ANTIWALL, UNBIND AND TOSSENTITY)
 		setentityvar(self, "grabbed", NULL()); //CLEAR ENTITYVAR

@@ -14,8 +14,7 @@ type    enemy
 icon    data/chars/soldier_purple/icon.png
 
 hostile          none
-
-candamage        npc
+projectilehit enemy
 aimove           wander
 jugglepoints     5
 hitenemy         0 0
@@ -50,6 +49,7 @@ bbox.position.x 71
 bbox.position.y 57
 bbox.size.x 84
 bbox.size.y 133
+	bbox 78 68 40 115
 frame    data/chars/soldier_purple/04.png
 frame    data/chars/soldier_purple/04.png
 frame    data/chars/soldier_purple/04.png
@@ -63,20 +63,14 @@ anim idle
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox.position.x 62
-    bbox.position.y 57
-    bbox.size.x 93
-    bbox.size.y 132
+	bbox 87 63 40 120
     frame    data/chars/soldier_purple/01.png
 
 anim walk
     loop    1
     delay    15
     offset    110 180
-    bbox.position.x 66
-    bbox.position.y 62
-    bbox.size.x 90
-    bbox.size.y 125
+	bbox 99 71 35 111
     frame    data/chars/soldier_purple/09.png
     frame    data/chars/soldier_purple/10.png
     frame    data/chars/soldier_purple/11.png
@@ -87,10 +81,7 @@ anim BACKWALK
     delay    15
     offset    110 180
     dropv 4 1 0
-    bbox.position.x 42
-    bbox.position.y 64
-    bbox.size.x 99
-    bbox.size.y 121
+	bbox 70 70 35 110
     frame    data/chars/soldier_purple/13.png
     frame    data/chars/soldier_purple/14.png
     frame    data/chars/soldier_purple/15.png
@@ -100,10 +91,7 @@ anim pain
     loop    0
     delay    10
     offset    110 180
-    bbox.position.x 62
-    bbox.position.y 57
-    bbox.size.x 93
-    bbox.size.y 132
+	bbox 76 71 35 110
     frame    data/chars/soldier_purple/05.png
     frame    data/chars/soldier_purple/05.png
 
@@ -121,6 +109,7 @@ anim fall
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
+	bbox 42 152 110 30
     frame    data/chars/soldier_purple/07.png
     frame    data/chars/soldier_purple/07.png
     frame    data/chars/soldier_purple/07.png
@@ -147,6 +136,7 @@ anim attack1
     delay    10
     offset    110 180
     dropv 4 1 0
+	bbox 58 59 94 133
     bbox.position.x 58
     bbox.position.y 59
     bbox.size.x 94

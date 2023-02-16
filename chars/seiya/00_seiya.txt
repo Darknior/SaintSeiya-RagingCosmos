@@ -18,7 +18,7 @@ jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 noquake     0 1         # Secoue l’écran qd on tombe au sol
-
+blockratio 1
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
 blockodds   1           # Permet de pouvoir bloquer les attaques
@@ -588,6 +588,18 @@ anim    jumpland # Aterrissage du saut
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get1.png
+	
+anim    land # Aterrissage du saut
+    delay    7
+    offset   45 112
+    bbox     21 0 51 112
+    summonframe  0 0 0 0
+    subentity    round_dust
+    sound    data/chars/seiya/sounds/06-jump2.wav
+    frame    data/chars/seiya/get1.png
+    frame    data/chars/seiya/get2.png
+    frame    data/chars/seiya/get2.png
+    frame    data/chars/seiya/get1.png
 
 anim    jumpattack # Attaque sautée statique
     delay    5
@@ -931,6 +943,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     offset   31 119
     hitflash flashbig
     bbox     9 0 50 120
+	    sound    data/chars/seiya/sounds/cosmos.wav
     frame    data/chars/seiya/special1.png
     frame    data/chars/seiya/special2.png
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0

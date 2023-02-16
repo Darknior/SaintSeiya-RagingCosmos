@@ -645,12 +645,10 @@ sound   data/chars/hyoga/sounds/23-projection1.wav
     frame    data/chars/hyoga/grab11.png
 sound   data/chars/hyoga/sounds/23-projection2.wav
     frame    data/chars/hyoga/grab12.png
-    attack -100 0 180 60 5 1 0 0 0 30
     frame    data/chars/hyoga/grab13.png
     delay    30
     frame    data/chars/hyoga/grab14.png
     delay    10
-    attack -200 50 180 60 5 1 0 0 0 30
     frame    data/chars/hyoga/grab10.png
 
 anim    freespecial3    # Explosion du cosmos (Récupération des MP)
