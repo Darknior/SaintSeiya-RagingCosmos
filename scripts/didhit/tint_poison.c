@@ -1,4 +1,4 @@
-#import "data/scripts/didhit/tint_main.h"
+#import "data/scripts/didhit/main.h"
 
 void main()
 {
