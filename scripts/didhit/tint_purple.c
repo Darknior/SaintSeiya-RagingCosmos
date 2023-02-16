@@ -1,4 +1,4 @@
-#import "data/scripts/didhit/tint_main.h"
+#import "data/scripts/didhit/main.h"
 
 void main()
 {
@@ -12,4 +12,5 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL3"), "purple", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL5"), "purple", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "purple", 1);
+	autoLand();
 }

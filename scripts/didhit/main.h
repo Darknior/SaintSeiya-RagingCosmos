@@ -1,4 +1,5 @@
-void tintEffect(void vAnim, void effect, int duration){
+void tintEffect(void vAnim, void effect, int duration)
+{
 	void self	= getlocalvar("self");
 	void target	= getlocalvar("damagetaker");
 	void cAnim	= getentityproperty(self, "animationID"); //CURRENT ANIMATION
@@ -11,5 +12,13 @@ void tintEffect(void vAnim, void effect, int duration){
 			float limit = 200*mult;
 			setentityvar(target, effect+"Time", time+limit);
 		}
+	}
+}
+
+void autoLand()
+{//Enable native autoland function in any knockdown hit
+
+	if(getlocalvar("drop")){
+		changeentityproperty(getlocalvar("damagetaker"), "aiflag", "projectile", 2);
 	}
 }

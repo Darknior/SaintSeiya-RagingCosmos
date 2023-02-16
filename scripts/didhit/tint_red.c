@@ -1,4 +1,4 @@
-#import "data/scripts/didhit/tint_main.h"
+#import "data/scripts/didhit/main.h"
 
 void main()
 {
@@ -13,6 +13,7 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL5"), "red", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "red", 1);
 	genmaken();
+	autoLand();
 }
 
 void genmaken()

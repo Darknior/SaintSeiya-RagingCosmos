@@ -1,4 +1,4 @@
-#import "data/scripts/didhit/tint_main.h"
+#import "data/scripts/didhit/main.h"
 
 void main()
 {
@@ -11,6 +11,7 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL"), "ice", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL5"), "ice", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "ice", 1);
+	autoLand();
 
 	if(getlocalvar("attacktype") == openborconstant("ATK_FREEZE")){
 		if(!getlocalvar("blocked")){
