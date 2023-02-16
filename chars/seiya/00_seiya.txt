@@ -18,11 +18,9 @@ jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 noquake     0 1         # Secoue l’écran qd on tombe au sol
-blockratio 1
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
-blockodds   1           # Permet de pouvoir bloquer les attaques
-holdblock   2           # Permet de pouvoir maintenir la parade
+holdblock   1           # Permet de pouvoir maintenir la parade
 nodieblink  1           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
 modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")

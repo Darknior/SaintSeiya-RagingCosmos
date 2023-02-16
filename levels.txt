@@ -9,8 +9,6 @@ notime      0        # Masque le compteur de temps
 #blocked    1        # Détermine les bords de l'écran comme des murs solide
 #noslow     1        # Désactive l'effet ralenti quand le boss meurt
 completebg  0        # Ecran de fin de niveau personnalisé data/bgs/complete.gif
-#blockratio 1        # Si activé, au lieu de 0 on subi 1/4 des dégâts d'origine
-#mpblock    1        # Défini que la parade consume les MP avant la vitalité
 
 ## CAUTION!! THE COMMANDS BELOW WILL CHANGE THE LIFE BAR SCRIPT TOO
 

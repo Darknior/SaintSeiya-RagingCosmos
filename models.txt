@@ -1,15 +1,12 @@
 
+ajspecial 1
+blockratio 1
+mpblock 1
+autoland 1
 nodropen 
 spdirection  1 1 1 1
-cansave      2
-nofadeout    0
-disablehof   1
-typemp       2
 #nodebug      1
 #versusdamage 1
-blockratio 2
-autoland 1
-
 maxattacks 6
 maxfollows 50
 
