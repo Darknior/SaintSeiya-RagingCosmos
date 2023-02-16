@@ -69,9 +69,9 @@ load marin_stormA
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/hyoga/palettes/icon1.png 0
+icon         data/chars/hyoga/palettes/icon1.png 1
 colourselect 1
-palette      data/chars/hyoga/palettes/palette1.png
+palette      data/chars/hyoga/palettes/palette3.png
 #remap       data/chars/hyoga/palettes/palette1.png  # 14 Possible MAX
 
 
@@ -360,52 +360,50 @@ anim dodge    # Esquive Haut / Bas (u u / d d)
     frame    data/chars/hyoga/jump4.png
     frame    data/chars/hyoga/jump1.png
 
-anim run
-    loop     1 3 8
+anim    run
+    loop     1 1
     delay    8
-    offset   45 112
-    bbox     35 -1 30 115
-    sound    data/chars/hyoga/sounds/20-run1.wav
+    offset   48 128
+    bbox     34 13 51 115
     frame    data/chars/hyoga/run1.png
+    sound    data/chars/hyoga/sounds/20-run1.wav
     frame    data/chars/hyoga/run2.png
-    bbox     54 0 30 115
     frame    data/chars/hyoga/run3.png
     frame    data/chars/hyoga/run4.png
     sound    data/chars/hyoga/sounds/20-run2.wav
     frame    data/chars/hyoga/run5.png
     frame    data/chars/hyoga/run6.png
     frame    data/chars/hyoga/run7.png
-    frame    data/chars/hyoga/run8.png
 
 anim runattack # Attaque en courant
-    delay    7
-    offset    45 140
-    bbox 18 28 30 112
     forcedirection -1
-    @cmd    dasher 3.5 0 0 1
-sound   data/chars/hyoga/sounds/01-dash.wav
+    delay    7
+    offset   45 140
+    bbox     18 28 30 112
+    @cmd     dasher 3.5 0 0 1
+    sound    data/chars/hyoga/sounds/01-dash.wav
     frame    data/chars/hyoga/runattack1.png
     frame    data/chars/hyoga/runattack2.png
     @cmd     spawnbind "hyoga_dash" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/hyoga/runattack3.png
-    attack2 50 40 70 40 20 1 0 0 5 12
+    attack2  50 40 70 40 20 1 0 0 5 12
     frame    data/chars/hyoga/runattack4.png
     frame    data/chars/hyoga/runattack5.png
     frame    data/chars/hyoga/runattack6.png
     frame    data/chars/hyoga/runattack7.png
-    attack2 0 0 0 0 0 0 0 0 0 0
-    @cmd    dasher 0 0 0 1
+    attack2  0 0 0 0 0 0 0 0 0 0
+    @cmd     dasher 0 0 0 1
     delay    12
     frame    data/chars/hyoga/runattack3.png
     frame    data/chars/hyoga/runattack2.png
 
 anim  runjump
     delay    6
-    offset    55 140
-    bbox 35 14 51 97
-    summonframe 0 0 0 0
-    subentity round_dust
-    sound   data/chars/hyoga/sounds/06-jump1.wav
+    offset   55 140
+    bbox     35 14 51 97
+    summonframe  0 0 0 0
+    subentity    round_dust
+    sound    data/chars/hyoga/sounds/06-jump1.wav
     frame    data/chars/hyoga/jump11.png
     frame    data/chars/hyoga/forwardjump1.png
     frame    data/chars/hyoga/forwardjump2.png
@@ -420,8 +418,8 @@ anim  runjump
 
 anim get
     delay    5
-    offset    45 140
-    bbox 21 28 51 112
+    offset   45 140
+    bbox     21 28 51 112
     frame    data/chars/hyoga/get1.png
     frame    data/chars/hyoga/get2.png
     frame    data/chars/hyoga/get2.png
@@ -429,114 +427,114 @@ anim get
 
 anim attack1 # Attaque combo 1
     delay    6
-    offset    45 140
-    bbox 30 28 35 112
+    offset   45 140
+    bbox     30 28 35 112
     frame    data/chars/hyoga/attack1.png
-    attack1 62 44 67 26 10 0 0 0 12 20
+    attack1  62 44 67 26 10 0 0 0 12 20
     frame    data/chars/hyoga/attack2.png
     delay    6
     frame    data/chars/hyoga/attack3.png
     frame    data/chars/hyoga/attack2.png
-    attack1 0
+    attack1  0
     frame    data/chars/hyoga/attack1.png
 
 anim attack2 # Attaque combo 2
     delay    6
-    offset    70 140
-    bbox 55 28 35 112
+    offset   70 140
+    bbox     55 28 35 112
     frame    data/chars/hyoga/attack21.png
     frame    data/chars/hyoga/attack22.png
-    attack1 62 48 67 26 10 0 0 0 12 20
+    attack1  62 48 67 26 10 0 0 0 12 20
     frame    data/chars/hyoga/attack23.png
     frame    data/chars/hyoga/attack24.png
     delay    4
-    attack 106 37 100 35 0 0 0 0 0 0
-    bbox 123 28 35 110
+    attack   106 37 100 35 0 0 0 0 0 0
+    bbox     123 28 35 110
     frame    data/chars/hyoga/attack25.png
     frame    data/chars/hyoga/attack26.png
     frame    data/chars/hyoga/attack27.png
     frame    data/chars/hyoga/attack28.png
-    attack1 0
+    attack1  0
 
 anim attack3 # Attaque combo 3
     delay    6
-    offset    35 140
-    bbox 12 28 35 112
+    offset   35 140
+    bbox     12 28 35 112
     frame    data/chars/hyoga/attack31.png
     frame    data/chars/hyoga/attack32.png
-    attack 44 55 75 40 0 0 0 0 0 0
+    attack   44 55 75 40 0 0 0 0 0 0
     frame    data/chars/hyoga/attack33.png
     frame    data/chars/hyoga/attack34.png
     delay    12
-    attack1 62 21 67 26 10 0 0 0 12 20
+    attack1  62 21 67 26 10 0 0 0 12 20
     frame    data/chars/hyoga/attack35.png
-    attack1 0
+    attack1  0
 
 anim attack4 # Attaque combo 4
     delay    7
-    offset    30 140
+    offset   30 140
     hitflash flashmedium
     frame    data/chars/hyoga/attack41.png
     frame    data/chars/hyoga/attack42.png
     delay    12
-    attack1 50 31 67 50 10 0 0 0 12 20
+    attack1  50 31 67 50 10 0 0 0 12 20
     frame    data/chars/hyoga/attack43.png
     delay    6
     frame    data/chars/hyoga/attack44.png
     frame    data/chars/hyoga/attack45.png
     frame    data/chars/hyoga/attack46.png
-    attack1 0
+    attack1  0
 
 anim attack5 # Attaque combo 5
     delay    7
-    offset    35 140
+    offset   35 140
     hitflash flashbig
     frame    data/chars/hyoga/attack31.png
     frame    data/chars/hyoga/attack32.png
     delay    12
-    attack1 62 50 67 26 10 1 0 0 12 20
+    attack1  62 50 67 26 10 1 0 0 12 20
     frame    data/chars/hyoga/attack33.png
     delay    6
     frame    data/chars/hyoga/attack34.png
     frame    data/chars/hyoga/attack35.png
-    attack1 0
+    attack1  0
 
-anim attackbackward # Attaque arrière native (b + a1)
+anim    attackbackward  # Attaque arrière native (b + a1)
+    jugglecost 1
     offset   146 118
     hitflash flashmedium
-    delay    5
-    sound    data/chars/seiya/sounds/01-backpunch.wav
+    delay    6
+    sound    data/chars/hyoga/sounds/01-08-backward_kick.wav
     frame    data/chars/hyoga/attackbackward10.png
     delay    10
     frame    data/chars/hyoga/attackbackward11.png
+    frame    data/chars/hyoga/attackbackward12.png
     delay    15
     attack   20 36 60 50 30 1 0 0 0 30
     dropv    3.5 1 0
-    frame    data/chars/hyoga/attackbackward12.png
-    delay    8
-    attack   20 36 60 50 30 1 0 0 0 30
     frame    data/chars/hyoga/attackbackward13.png
-    bbox     64  29 50 120
+    delay    8
     frame    data/chars/hyoga/attackbackward14.png
+    bbox     64  29 50 120
     frame    data/chars/hyoga/attackbackward15.png
 
-anim freespecial4 # Attaque arrière (a3)
+anim    freespecial4    # Attaque arrière (a3)
+    jugglecost 1
     offset   146 118
     hitflash flashmedium
-    delay    5
-    sound    data/chars/seiya/sounds/01-backpunch.wav
+    delay    6
+    sound    data/chars/hyoga/sounds/01-08-backward_kick.wav
     frame    data/chars/hyoga/attackbackward10.png
     delay    10
     frame    data/chars/hyoga/attackbackward11.png
+    frame    data/chars/hyoga/attackbackward12.png
     delay    15
     attack   20 36 60 50 30 1 0 0 0 30
     dropv    3.5 1 0
-    frame    data/chars/hyoga/attackbackward12.png
-    delay    8
-    attack   20 36 60 50 30 1 0 0 0 30
     frame    data/chars/hyoga/attackbackward13.png
-    bbox     64  29 50 120
+    delay    8
     frame    data/chars/hyoga/attackbackward14.png
+    bbox     64  29 50 120
     frame    data/chars/hyoga/attackbackward15.png
 
 anim    attackboth  # Attaque de mêlée native (j + a1)
