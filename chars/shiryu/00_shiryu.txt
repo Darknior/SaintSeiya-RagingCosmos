@@ -302,8 +302,9 @@ anim    runattack # Attaque en courant
     hitflash blue_swing
     forcedirection -1
     @cmd     dasher 3.5 0 0 1
-    sound    data/chars/shiryu/sounds/07-forward_punch.wav
+	sound    data/chars/shiryu/sounds/dash.wav
     frame    data/chars/shiryu/runattack1.png
+    sound    data/chars/shiryu/sounds/07-forward_punch.wav
     frame    data/chars/shiryu/runattack2.png
     attack2  31 13 55 83 10 0 0 0 5 12
     summonframe    0 0 0 0 0
@@ -354,28 +355,26 @@ anim    get
 #//Basic Attacks animations/////////////////////////////////////////////////
 
 anim    attack1 # Attaque combo 1
-    delay    3
+    delay    5
     offset   39 130
     bbox     31 15 30 115
     frame    data/chars/shiryu/attack1.png
-    attack1  62 21 67 26 10 0 0 0 10 12
     frame    data/chars/shiryu/attack2.png
+	attack 70 34 60 20 6 0 0 0 12 20
     frame    data/chars/shiryu/attack3.png
     frame    data/chars/shiryu/attack4.png
     frame    data/chars/shiryu/attack5.png
-    attack1  0
     frame    data/chars/shiryu/attack6.png
     frame    data/chars/shiryu/attack7.png
 
 anim    attack2 # Attaque combo 2
-    delay    5
+    delay    6
     offset   39 135
     bbox     26 15 30 120
     frame    data/chars/shiryu/attack21.png
     frame    data/chars/shiryu/attack22.png
     frame    data/chars/shiryu/attack23.png
-    dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 0 0 0 10 12
+    attack1  62 21 67 26 5 0 0 0 12 20
     frame    data/chars/shiryu/attack24.png
     frame    data/chars/shiryu/attack25.png
     attack1  0
@@ -386,7 +385,7 @@ anim    attack3 # Attaque combo 3
 	bbox 34 29 35 100
     frame    data/chars/shiryu/attack31.png
     frame    data/chars/shiryu/attack32.png
-	attack 78 52 60 20 5 0 0 0 12 20
+	attack 78 52 60 20 5 0 1 0 12 20
 	bbox 68 30 35 100
     frame    data/chars/shiryu/attack33.png
 
@@ -394,12 +393,10 @@ anim    attack3 # Attaque combo 3
 anim    attack4 # Attaque combo 4
     delay    7
     offset   39 130
-    bbox     33 15 30 115
     hitflash flashmedium
     frame    data/chars/shiryu/attack41.png
     frame    data/chars/shiryu/attack42.png
-    dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 0 0 0 10 12
+    attack1  62 21 67 26 6 0 1 0 10 12
     frame    data/chars/shiryu/attack43.png
     frame    data/chars/shiryu/attack44.png
     frame    data/chars/shiryu/attack45.png
@@ -408,13 +405,12 @@ anim    attack4 # Attaque combo 4
 anim    attack5 # Attaque combo 5
     delay    5
     offset   39 130
-    bbox     30 15 30 115
     hitflash flashbig
     frame    data/chars/shiryu/attack51.png
     frame    data/chars/shiryu/attack52.png
+    sound    data/chars/shiryu/sounds/kick.wav
     frame    data/chars/shiryu/attack53.png
-    dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 20 1 0 0 10 12
+    attack1  62 21 67 26 6 1 1 0 10 12
     frame    data/chars/shiryu/attack54.png
     frame    data/chars/shiryu/attack55.png
     attack1  0
