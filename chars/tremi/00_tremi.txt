@@ -3,58 +3,59 @@ health		500
 mp 			100
 type		enemy
 
-hostile     player npc 
-candamage 	player npc
-aimove      chase
+#-- GENERAL CONFIG --------------------------------------------------
 
-dust		round_dustB
-bflash tremi_block
+hostile     player npc  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression 0            # valeur positive + agressif / valeur negative - aggressif
 
-gfxshadow	1 4	# Possède une ombre moderne basée sur la lumière du niveau
-riseinv 	1 1	# Invincible après une chute X sec / Clignote pas
-makeinv		2 0	# Invincible après respawn X sec / Clignote
+gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
+riseinv     1 1         # Invincible après une chute X sec / Clignote pas
+makeinv     2 0         # Invincible après respawn X sec / Clignote
 
-speed		17	# Vitesse de déplacement
-running 	35 5 3 1 1	# Vitesse de course / Hauteur de saut / Longueur multiplilleur
+speed       15          # Vitesse de déplacement
+running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
+jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
+jumpspeed   12          # Vitesse du saut
+jumpheight  5.5         # Hauteur du saut
+antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
-jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
-jumpspeed 	12	# Vitesse du saut
-jumpheight 	5	# Hauteur du saut
-antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
+noquake     0 1         # Secoue l’écran qd on tombe au sol / enemi ne tremble pas
+mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
-noquake 	0 1	# Secoue l'ecran qd on tombe au sol
+holdblock   1           # Permet de pouvoir maintenir la parade
+nodieblink  1           # Ne clignote pas quand tu meurs
+weaploss    2           # On ne perd son arme qu' à notre mort
+modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")
+death       1           # Active l'animation de mort
+nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
+sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 
-typemp 		1 	# Gagne de mp en tapant des ennemis 
-mprate 		1   # Nombre de mp gagnés par coup
+atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
+dust        round_dustB # Effet de poussière quand on tombe (animation)
+bflash      tremi_block # Flash pendant un blocage (animation)
 
-blockodds 	1	# Permet de pouvoir bloquer les attaques
-holdblock 	2	# Permet de pouvoir maintenir la parade
-nodieblink 	3	# Ne clignote pas quand tu meurs
-weaploss  	2	# On ne perd son arme qu' à notre mort
-modelflag 	0	# L'animation et la liste d'armes sont copiées
-death 		1   # Active l'animation de mort
+hitenemy    1 0          # peut toucher d autres ennemis / air et sol
+blockodds 	1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
-subject_to_screen 1 # ne peut pas aller hors ecran
-sleepwait 	1000 #Temps en centisecondes avant de jouer l'anim sleep
+subject_to_screen 1      # ne peut pas aller hors ecran
 
-## CUSTOM BOSS LIFEBAR
+#-- LIFEBAR ---------------------------------------------------------
+
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500
-nolife 1
 
-#ondrawscript	data/scripts/_debugs/DEBUG_GRAB.c
-
-atchain 	1 2 3 4 5 6# Attaque combo de base (anim attack 1, puis 2...)
-
-icon       	data/chars/tremi/icon.png
-
-#weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 tremi
+#-- SCRIPTS ---------------------------------------------------------
 
 ondrawscript	data/scripts/lifebar.c
+didhitscript	data/scripts/didhit/tint_silver.c
 script	data/scripts/entity_effects.c
 animationscript	data/scripts/player.c
-script	data/scripts/entity_effects.c
-didhitscript	data/scripts/didhit/tint_silver.c
+
+#-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load tremi_multiarrow
 load tremi_dash
@@ -69,7 +70,19 @@ load tremi_diagonal_arrows
 load tremi_block
 load milo_blood
 
-#----------------------------------------------------------
+#-- PALETTES --------------------------------------------------------
+
+icon		data/chars/tremi/icon.png 0
+colourselect 1
+palette      data/chars/tremi/idle1.png
+#remap       data/chars/tremi/palettes/palette1.png  # 14 Possible MAX
+
+#-- ANIMATIONS -------------------------------------------------------
+
+#// Select animations /////////////////////////////////////////////////
+
+
+#// Static animations /////////////////////////////////////////////////
 
 anim spawn
 	delay	250
