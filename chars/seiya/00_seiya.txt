@@ -11,7 +11,7 @@ makeinv     2 0         # Invincible après respawn X sec / Clignote
 
 speed       15          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
-jugglepoints 4
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
@@ -358,7 +358,7 @@ anim runattack  # Attaque en courant
     frame    data/chars/seiya/runattack2.png
 
 anim get
-    delay    1
+    delay    6
     offset   45 112
     bbox     21 0 51 112
     frame    data/chars/seiya/get1.png
@@ -587,15 +587,24 @@ anim    jumpland # Aterrissage du saut
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get1.png
 	
-anim    land # Aterrissage du saut
-    delay    7
+anim    land #  atterissage safe au sol (haut+ jump pendant la projection)
+    flipframe 1
+    delay    6
+    offset   45 137
+    bbox     21 14 51 97
+    summonframe     0 0 0 0
+    subentity       round_dust
+    sound    data/chars/seiya/sounds/17-back_kick.wav
+    frame    data/chars/seiya/forwardjump5.png
+    frame    data/chars/seiya/forwardjump4.png
+    frame    data/chars/seiya/forwardjump3.png
+    frame    data/chars/seiya/forwardjump2.png
+    frame    data/chars/seiya/forwardjump1.png
+    delay    6
     offset   45 112
     bbox     21 0 51 112
-    summonframe  0 0 0 0
-    subentity    round_dust
-    sound    data/chars/seiya/sounds/06-jump2.wav
-    frame    data/chars/seiya/get1.png
     frame    data/chars/seiya/get2.png
+    frame    data/chars/seiya/get3.png
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get1.png
 
