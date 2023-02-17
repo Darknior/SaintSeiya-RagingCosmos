@@ -211,20 +211,24 @@ anim fall
 	delay	-1000
 	offset	92 126
 	landframe 4
+	bbox 7 50 100 80
 	frame	data/chars/deathmask/fall1.png
 	frame	data/chars/deathmask/fall2.png
 	frame	data/chars/deathmask/fall3.png
 	frame	data/chars/deathmask/fall4.png
+	bbox 7 91 100 35
 	frame	data/chars/deathmask/fall5.png
 	
 anim fall7
 	delay	-1000
 	offset	92 126
 	landframe 4
+	bbox 7 50 100 80
 	frame	data/chars/deathmask/fall1.png
 	frame	data/chars/deathmask/fall2.png
 	frame	data/chars/deathmask/fall3.png
 	frame	data/chars/deathmask/fall4.png
+	bbox 7 90 100 35
 	frame	data/chars/deathmask/fall5.png
 
 anim death

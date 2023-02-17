@@ -356,10 +356,12 @@ anim fall
 	offset	95 127
 	delay	10
 	landframe 5
+	bbox 40 26 75 100
 	frame	data/chars/sirius/fall1.png
 	frame	data/chars/sirius/fall2.png
 	frame	data/chars/sirius/fall3.png
 	frame	data/chars/sirius/fall4.png
+	bbox 0 97 120 35
 	frame	data/chars/sirius/fall5.png
 	frame	data/chars/sirius/fall6.png
 
@@ -367,10 +369,12 @@ anim fall7
 	offset	95 127
 	delay	-1000
 	landframe 5
+	bbox 40 26 75 100
 	frame	data/chars/sirius/fall1.png
 	frame	data/chars/sirius/fall2.png
 	frame	data/chars/sirius/fall3.png
 	frame	data/chars/sirius/fall4.png
+	bbox 0 100 120 35
 	frame	data/chars/sirius/fall5.png
 	frame	data/chars/sirius/fall6.png
 

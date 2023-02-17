@@ -215,11 +215,13 @@ anim fall
 	delay	10
 	offset	121 127
 	landframe 5
+	bbox 44 26 80 100
 	frame	data/chars/shaka/fall1.png
 	frame	data/chars/shaka/fall2.png
 	frame	data/chars/shaka/fall3.png
 	frame	data/chars/shaka/fall4.png
 	frame	data/chars/shaka/fall5.png
+	bbox 0 95 120 35
 	frame	data/chars/shaka/fall6.png
 	
 anim death

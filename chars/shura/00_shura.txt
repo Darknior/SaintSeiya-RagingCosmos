@@ -111,11 +111,12 @@ anim	fall
 	sound	data/voices/anddie2.wav
 	delay	15
 	offset	75 157
+	bbox 22 57 100 100
 	frame	data/chars/shura/fall1.png
 	offset	71 160
 	frame	data/chars/shura/fall2.png
-	attack	20 133 30 27 7 1 0 0 0 0
 	offset	71 151
+	bbox 25 122 120 35
 	frame	data/chars/shura/fall3.png
 		
 anim	freespecial

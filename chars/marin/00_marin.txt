@@ -436,9 +436,11 @@ anim fall
 	offset	67 115
 	delay	10
 	landframe 6
+	bbox 32 38 75 75
 	frame	data/chars/marin/fall1.png
 	frame	data/chars/marin/fall2.png
 	frame	data/chars/marin/fall3.png
+	bbox 0 79 110 35
 	frame	data/chars/marin/fall4.png
 	frame	data/chars/marin/fall5.png
 	frame	data/chars/marin/fall6.png
@@ -448,9 +450,11 @@ anim fall
 anim fall7
 	offset	67 115
 	delay	-1000
+	bbox 32 38 75 75
 	frame	data/chars/marin/fall1.png
 	frame	data/chars/marin/fall2.png
 	frame	data/chars/marin/fall3.png
+	bbox 0 80 110 35
 	frame	data/chars/marin/fall4.png
 
 anim rise

@@ -188,6 +188,7 @@ frame	data/chars/soldier_big/03.png
 frame	data/chars/soldier_big/03.png
 frame	data/chars/soldier_big/03.png
 frame	data/chars/soldier_big/03.png
+	bbox 29 150 165 50
 frame	data/chars/soldier_big/04.png
 frame	data/chars/soldier_big/04.png
 frame	data/chars/soldier_big/04.png

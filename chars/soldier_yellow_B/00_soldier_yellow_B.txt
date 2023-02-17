@@ -160,6 +160,7 @@ frame	data/chars/soldier_yellow_B/06.png
 frame	data/chars/soldier_yellow_B/06.png
 frame	data/chars/soldier_yellow_B/06.png
 frame	data/chars/soldier_yellow_B/06.png
+	bbox 29 147 120 35
 frame	data/chars/soldier_yellow_B/07.png
 frame	data/chars/soldier_yellow_B/07.png
 frame	data/chars/soldier_yellow_B/07.png

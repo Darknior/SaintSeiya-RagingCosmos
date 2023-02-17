@@ -102,6 +102,7 @@ anim fall
 	frame	data/chars/soldier_blue/fall4.png
 	frame	data/chars/soldier_blue/fall5.png
 	frame	data/chars/soldier_blue/fall6.png
+	bbox 23 92 100 35
 	frame	data/chars/soldier_blue/fall7.png
 
 anim rise

@@ -151,9 +151,11 @@ anim fall
 	delay	10
 	offset	146 199
 	landframe 5
+	bbox 13 29 150 170
 	frame	data/chars/cassios/fall1.png
 	frame	data/chars/cassios/fall2.png
 	frame	data/chars/cassios/fall3.png
+	bbox 0 150 200 50
 	frame	data/chars/cassios/fall4.png
 	frame	data/chars/cassios/fall5.png
 	frame	data/chars/cassios/fall6.png

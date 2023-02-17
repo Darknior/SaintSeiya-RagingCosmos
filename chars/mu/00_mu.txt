@@ -177,10 +177,12 @@ anim fall
 	delay	50
 	offset	70 125
 	landframe 4
+	bbox 40 50 75 75
 	frame	data/chars/mu/fall1.png
 	frame	data/chars/mu/fall2.png
 	frame	data/chars/mu/fall3.png
 	frame	data/chars/mu/fall4.png
+	bbox 0 85 120 40
 	frame	data/chars/mu/fall5.png
 	frame	data/chars/mu/fall6.png
 	

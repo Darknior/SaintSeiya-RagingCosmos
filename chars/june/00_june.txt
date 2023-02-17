@@ -465,22 +465,26 @@ anim fall
 	offset	106 124
 	delay	10
 	landframe 6
+	bbox 35 50 75 75
 	frame	data/chars/june/fall1.png
 	frame	data/chars/june/fall2.png
 	frame	data/chars/june/fall3.png
 	frame	data/chars/june/fall4.png
 	frame	data/chars/june/fall5.png
+	bbox 7 90 100 35
 	frame	data/chars/june/fall6.png
 	frame	data/chars/june/fall7.png
 
 anim fall7
 	offset	106 124
 	delay	-1000
+	bbox 35 50 75 75
 	frame	data/chars/june/fall1.png
 	frame	data/chars/june/fall2.png
 	frame	data/chars/june/fall3.png
 	frame	data/chars/june/fall4.png
 	frame	data/chars/june/fall5.png
+	bbox 7 90 100 35
 	frame	data/chars/june/fall6.png
 	frame	data/chars/june/fall7.png
 

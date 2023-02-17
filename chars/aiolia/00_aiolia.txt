@@ -226,10 +226,14 @@ anim fall
 	delay	50
 	offset	124 135
 	landframe 4
+	bbox 110 11 45 120
 	frame	data/chars/aiolia/fall1.png
+	bbox 45 80 100 50
 	frame	data/chars/aiolia/fall2.png
+	bbox 25 56 120 45
 	frame	data/chars/aiolia/fall3.png
 	frame	data/chars/aiolia/fall4.png
+	bbox 21 100 120 40
 	frame	data/chars/aiolia/fall5.png
 	
 anim death

@@ -250,8 +250,10 @@ anim fall
 	delay	10
 	offset	118 164
 	landframe 7
+	bbox 85 14 60 150
 	frame	data/chars/aldebaran/fall1.png
 	frame	data/chars/aldebaran/fall2.png
+	bbox 8 104 160 60
 	frame	data/chars/aldebaran/fall3.png
 	frame	data/chars/aldebaran/fall4.png
 	frame	data/chars/aldebaran/fall5.png

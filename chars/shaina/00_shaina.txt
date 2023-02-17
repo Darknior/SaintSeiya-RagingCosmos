@@ -386,16 +386,19 @@ anim fall
 	offset	89 130
 	delay	10
 	landframe 5
+	bbox 34 44 85 85
 	frame	data/chars/shaina/fall1.png
 	frame	data/chars/shaina/fall2.png
 	frame	data/chars/shaina/fall3.png
 	frame	data/chars/shaina/fall4.png
+	bbox 0 95 100 35
 	frame	data/chars/shaina/fall5.png
 	frame	data/chars/shaina/fall6.png
 
 anim fall7
 	offset	89 130
 	delay	-1000
+	bbox 34 44 85 85
 	frame	data/chars/shaina/fall1.png
 	frame	data/chars/shaina/fall2.png
 	frame	data/chars/shaina/fall3.png

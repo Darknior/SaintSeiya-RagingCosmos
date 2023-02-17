@@ -171,8 +171,10 @@ anim fall
 	delay	10
 	offset	146 182
 	landframe 5
+	bbox 78 32 70 150
 	frame	data/chars/jaki/fall1.png
 	frame	data/chars/jaki/fall2.png
+	bbox 0 131 150 50
 	frame	data/chars/jaki/fall3.png
 	frame	data/chars/jaki/fall4.png
 	frame	data/chars/jaki/fall5.png

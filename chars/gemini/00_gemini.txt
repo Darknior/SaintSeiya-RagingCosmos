@@ -188,10 +188,12 @@ anim fall
 	delay	10
 	offset	146 144
 	landframe 4
+	bbox 12 50 100 100
 	frame	data/chars/gemini/fall1.png
 	frame	data/chars/gemini/fall2.png
 	frame	data/chars/gemini/fall3.png
 	frame	data/chars/gemini/fall4.png
+	bbox 30 106 130 40
 	frame	data/chars/gemini/fall5.png
 	
 anim death

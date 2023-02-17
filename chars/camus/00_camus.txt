@@ -174,10 +174,12 @@ anim fall
 	delay	10
 	offset	97 127
 	landframe 4
+	bbox 0 47 120 80
 	frame	data/chars/camus/fall1.png
 	frame	data/chars/camus/fall2.png
 	frame	data/chars/camus/fall3.png
 	frame	data/chars/camus/fall4.png
+	bbox 0 88 120 40
 	frame	data/chars/camus/fall5.png
 	
 anim death
