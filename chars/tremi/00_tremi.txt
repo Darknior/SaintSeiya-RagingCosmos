@@ -571,7 +571,7 @@ anim fall
 	offset	87 119
 	delay	10
 	landframe 4
-	bbox 25 19 75 100
+	bbox 25 19 100 100
 	frame	data/chars/tremi/fall1.png
 	frame	data/chars/tremi/fall2.png
 	frame	data/chars/tremi/fall3.png
@@ -584,6 +584,7 @@ anim fall7
 	offset	85 119
 	delay	-1000
 	#landframe 4
+	bbox 25 18 100 100
 	frame	data/chars/tremi/fall1.png
 	frame	data/chars/tremi/fall2.png
 	frame	data/chars/tremi/fall3.png
@@ -592,19 +593,6 @@ anim fall7
 	frame	data/chars/tremi/fall5.png
 	frame	data/chars/tremi/fall6.png
 
-anim fall8
-	offset	87 119
-	delay	10
-	frame	data/chars/tremi/fall4.png
-	frame	data/chars/tremi/fall5.png
-	frame	data/chars/tremi/fall6.png
-
-anim fall9
-	offset	87 119
-	delay	10
-	frame	data/chars/tremi/fall4.png
-	frame	data/chars/tremi/fall5.png
-	frame	data/chars/tremi/fall6.png
 
 anim rise
 	delay	10

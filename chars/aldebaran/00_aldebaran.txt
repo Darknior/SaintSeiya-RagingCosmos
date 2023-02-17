@@ -8,6 +8,7 @@ jumpmove 	0 0	# Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed 	12	# Vitesse du saut
 jumpheight 	5	# Hauteur du saut
 antigravity	-40	# Augmente la gravité pour redescendre plus vite 1/100
+jugglepoints     5
 type		enemy
 hostile     player npc 
 candamage 	player npc
@@ -249,7 +250,7 @@ anim pain2 # Down
 anim fall
 	delay	10
 	offset	118 164
-	landframe 7
+    landframe 7
 	bbox 85 14 60 150
 	frame	data/chars/aldebaran/fall1.png
 	frame	data/chars/aldebaran/fall2.png

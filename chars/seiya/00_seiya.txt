@@ -951,7 +951,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     offset   31 119
     hitflash flashbig
     bbox     9 0 50 120
-	    sound    data/chars/seiya/sounds/cosmos.wav
+	sound    data/chars/seiya/sounds/cosmos.wav
     frame    data/chars/seiya/special1.png
     frame    data/chars/seiya/special2.png
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
@@ -1026,6 +1026,7 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
     frame    data/chars/seiya/uppercut2.png
 
 anim    freespecial6    # Comète de Pégase ( ULTRA, haut + bouton special a2)
+    jugglecost 10
     delay    10
     offset   31 116
     fastattack  1
