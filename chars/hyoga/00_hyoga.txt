@@ -596,7 +596,8 @@ anim jumpland # Aterrissage du saut
     frame    data/chars/hyoga/get2.png
     frame    data/chars/hyoga/get1.png
 	
-anim land # Aterrissage du saut
+
+anim  land #  atterissage safe au sol (haut+ jump pendant la projection)
     flipframe 1
     delay    5
     offset    55 140
