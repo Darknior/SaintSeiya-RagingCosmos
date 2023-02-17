@@ -429,7 +429,7 @@ anim attack3 # Attaque combo 3
     frame    data/chars/ikki/attack31.png
     frame    data/chars/ikki/attack32.png
     dropv 4.0 1.0 0.0
-    attack1 62 41 67 26 6 0 0 0 12 20
+    attack1 62 41 67 26 6 0 1 0 12 20
     frame    data/chars/ikki/attack33.png
 
 

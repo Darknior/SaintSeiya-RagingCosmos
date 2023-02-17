@@ -410,7 +410,7 @@ anim    attack3    # Attaque combo 3
     frame    data/chars/seiya/attack31.png
     frame    data/chars/seiya/attack32.png
     dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 0 0 0 12 20
+    attack1  62 21 67 26 10 0 1 0 12 20
     frame    data/chars/seiya/attack33.png
     attack1  0
 
@@ -423,7 +423,7 @@ anim    attack4    # Attaque combo 4
     frame    data/chars/seiya/attack41.png
     frame    data/chars/seiya/attack42.png
     dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 0 0 0 12 20
+    attack1  62 21 67 26 10 0 1 0 12 20
     frame    data/chars/seiya/attack43.png
     attack1  0
 
@@ -435,9 +435,10 @@ anim    attack5    # Attaque combo 5
     hitflash flashbig
     frame    data/chars/seiya/attack51.png
     frame    data/chars/seiya/attack52.png
+	sound    data/chars/seiya/sounds/kick.wav
     frame    data/chars/seiya/attack53.png
     dropv    4.0 1.0 0.0
-    attack1  64 37 67 26 20 1 0 0 12 20
+    attack1  64 37 67 26 20 1 1 0 12 20
     frame    data/chars/seiya/attack54.png
     @cmd     spawnbind "kick_dust" 0 0 0 0 0
     frame    data/chars/seiya/attack55.png

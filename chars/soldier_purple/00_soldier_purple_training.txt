@@ -15,7 +15,7 @@ icon    data/chars/soldier_purple/icon.png
 
 hostile          none
 projectilehit enemy
-aimove           wander
+aimove           chase
 jugglepoints     5
 hitenemy         0 0
 blockodds        1
