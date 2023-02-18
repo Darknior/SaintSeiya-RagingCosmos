@@ -303,21 +303,19 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/seiya/jump1.png
 
 anim run
-    loop     1 3 8
+    loop     1 1
     delay    8
-    offset   45 112
-    bbox     35 -1 30 115
-    sound    data/chars/seiya/sounds/20-run1.wav
+    offset   48 128
+    bbox     34 13 51 115
     frame    data/chars/seiya/run1.png
+    sound    data/chars/seiya/sounds/20-run1.wav
     frame    data/chars/seiya/run2.png
-    bbox     54 0 30 115
     frame    data/chars/seiya/run3.png
     frame    data/chars/seiya/run4.png
     sound    data/chars/seiya/sounds/20-run2.wav
     frame    data/chars/seiya/run5.png
     frame    data/chars/seiya/run6.png
     frame    data/chars/seiya/run7.png
-    frame    data/chars/seiya/run8.png
 
 anim runattack  # Attaque en courant
     fastattack  1
