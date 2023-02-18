@@ -12,7 +12,7 @@ order	a
 
 direction both
 
-settime 90
+settime 100
 
 cameratype 0
 
