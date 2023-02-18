@@ -57,7 +57,7 @@ load blood_ground_big
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars//soldier_stick/icon.png 0
-palette      data/chars/soldier_stick/01.png
+palette      data/chars/soldier_stick/idle1.png
 #remap       data/chars/soldier_stick/palette1.png  # 14 Possible MAX
 
 #-- ANIMATIONS -------------------------------------------------------

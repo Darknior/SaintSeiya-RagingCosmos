@@ -56,9 +56,9 @@ load blood_ground_medium
 
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars/soldier_yellowB/icon.png 0
-palette      data/chars/soldier_yellowB/01.png
-#remap       data/chars/soldier_yellowB/palette1.png  # 14 Possible MAX
+icon		data/chars/soldier_yellow_B/icon.png 0
+palette      data/chars/soldier_yellow_B/01.png
+#remap       data/chars/soldier_yellow_B/palette1.png  # 14 Possible MAX
 
 #-- ANIMATIONS -------------------------------------------------------
 

@@ -58,7 +58,7 @@ load blood_ground_big
 
 icon		data/chars//soldier_blue/icon.png 0
 palette      data/chars/soldier_blue/01.png
-#remap       data/chars/soldier_blue/palette1.png  # 14 Possible MAX
+#remap       data/chars/soldier_blue/idle1.png  # 14 Possible MAX
 
 #-- ANIMATIONS -------------------------------------------------------
 

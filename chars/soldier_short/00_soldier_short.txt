@@ -57,7 +57,7 @@ load blood_ground_big
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars//soldier_short/icon.png 0
-palette      data/chars/soldier_short/01.png
+palette      data/chars/soldier_short/idle1.png
 #remap       data/chars/soldier_short/palette1.png  # 14 Possible MAX
 
 #-- ANIMATIONS -------------------------------------------------------
