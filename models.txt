@@ -1,7 +1,5 @@
 
 ajspecial 1
-blockratio 1
-mpblock 1
 autoland 1
 nodropen 
 spdirection  1 1 1 1
