@@ -1,14 +1,9 @@
 
 loadingbg   1 -1000 -1000 -1000 -1000 -1000 -1000
-nofadeout   0
-nodebug     1        # Desactive le menu Debug des options
-
-settime     0        # Pas de limite de temps par niveau
-notime      0        # Masque le compteur de temps
 
 #blocked    1        # Détermine les bords de l'écran comme des murs solide
 #noslow     1        # Désactive l'effet ralenti quand le boss meurt
-completebg  0        # Ecran de fin de niveau personnalisé data/bgs/complete.gif
+#completebg  0        # Ecran de fin de niveau personnalisé data/bgs/complete.gif
 
 ## CAUTION!! THE COMMANDS BELOW WILL CHANGE THE LIFE BAR SCRIPT TOO
 

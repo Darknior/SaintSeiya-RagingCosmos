@@ -12,7 +12,7 @@ anim	idle
 	offset	800 0
 	drawmethod scale 1 1
 	drawmethod alpha 1
-        quakeframe	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-1.png 9 8
+    frame   data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-1.png
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-2.png
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-3.png
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-4.png

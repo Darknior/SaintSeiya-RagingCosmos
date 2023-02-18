@@ -84,8 +84,6 @@ anim idle
 anim        block
 loop	0
 	offset	110 180
-
-\\sound data/chars/soldier_purple/KO.wav
 	delay	10
 
 
