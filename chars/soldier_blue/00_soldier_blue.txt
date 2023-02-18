@@ -7,15 +7,15 @@ type enemy
 hostile     player  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
 aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression 0            # valeur positive + agressif / valeur negative - aggressif
+aggression -50            # valeur positive + agressif / valeur negative - aggressif
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
 
-speed       15          # Vitesse de déplacement
+speed       12          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
-jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
+jugglepoints 5          # Nombre de fois que l on peut etre combo dans les airs
 jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
 jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
@@ -29,7 +29,7 @@ nodieblink  1           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
 modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")
 death       1           # Active l'animation de mort
-nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
+nolife      0           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 
 atchain     1 1 2 # Attaque combo de base (anim attack 1, puis 2...)
@@ -38,7 +38,7 @@ dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
 hitenemy    0 0          # peut toucher d autres ennemis / air et sol
-blockodds 	1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+blockodds 	10            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
@@ -57,7 +57,7 @@ load blood_ground_big
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars//soldier_blue/icon.png 0
-palette      data/chars/soldier_blue/01.png
+palette      data/chars/soldier_blue/idle1.png
 #remap       data/chars/soldier_blue/idle1.png  # 14 Possible MAX
 
 #-- ANIMATIONS -------------------------------------------------------
