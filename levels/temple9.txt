@@ -26,19 +26,10 @@ order	a
 
 
 
-nofadeout 1
-disablehof 0
-lives 4
-noshare 1
-credits 1
-cansave 0
-nodebug 1
-notime 1
+nofadeout 0
 nosave 1
 blocked 1
-nosame 1
 noslow 1
-completebg 1
 
 
 

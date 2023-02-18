@@ -18,12 +18,6 @@ settime 100
 
 order	a
 
-spawn1  60 30
-
-\\rock 3
-
-
-
 
 
 

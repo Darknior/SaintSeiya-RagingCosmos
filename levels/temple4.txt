@@ -14,26 +14,15 @@ shadowalpha     6
 at        0
 direction right
 
-settime 0
+settime 100
 
 order	a
 
-spawn1  60 30
-
 
 nofadeout 0
-disablehof 1
-lives 4
-noshare 1
-credits 1
-cansave 0
-nodebug 1
-notime 1
 nosave 1
 blocked 1
-nosame 1
 noslow 1
-completebg 1
 
 
 
