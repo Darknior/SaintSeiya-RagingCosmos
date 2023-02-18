@@ -77,7 +77,6 @@ load aldebaran_aura
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars/aphrodite/icon.png 0
-colourselect 1
 palette      data/chars/aphrodite/idle1.png
 #remap       data/chars/aphrodite/palettes/palette1.png  # 14 Possible MAX
 

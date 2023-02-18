@@ -69,7 +69,6 @@ load shaka_flame
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/ikki/palettes/icon1.png 0
-colourselect 1
 palette      data/chars/ikki/palettes/palette1.png
 #remap       data/chars/ikki/palettes/palette1.png  # 14 Possible MAX
 

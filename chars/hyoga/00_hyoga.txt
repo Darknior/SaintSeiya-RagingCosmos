@@ -70,7 +70,6 @@ load marin_stormA
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/hyoga/palettes/icon1.png 1
-colourselect 1
 palette      data/chars/hyoga/palettes/palette3.png
 #remap       data/chars/hyoga/palettes/palette1.png  # 14 Possible MAX
 

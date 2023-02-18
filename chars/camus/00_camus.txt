@@ -70,7 +70,6 @@ load aldebaran_aura
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars/camus/icon.png 0
-colourselect 1
 palette      data/chars/camus/idle1.png
 #remap       data/chars/camus/palettes/palette1.png  # 14 Possible MAX
 

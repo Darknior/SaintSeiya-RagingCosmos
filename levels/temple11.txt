@@ -16,14 +16,12 @@ order	a
 
 
 
-\\rock 3
 
 
 
 
 
 
-nofadeout 0
 nosave 1
 blocked 1
 noslow 1

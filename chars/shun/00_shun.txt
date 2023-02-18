@@ -67,7 +67,6 @@ load shun_storm
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/shun/palettes/icon1.png 0
-colourselect 1
 palette      data/chars/shun/palettes/palette1.png
 #remap       data/chars/shun/palettes/palette1.png  # 14 Possible MAX
 

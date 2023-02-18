@@ -1,5 +1,4 @@
 name	LIFE
-lifen 1
 
 
 type	item

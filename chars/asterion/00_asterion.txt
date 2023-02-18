@@ -63,7 +63,6 @@ load asterion_lightball
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars/asterion/icon.png 0
-colourselect 1
 palette      data/chars/asterion/idle1.png
 #remap       data/chars/asterion/palettes/palette1.png  # 14 Possible MAX
 

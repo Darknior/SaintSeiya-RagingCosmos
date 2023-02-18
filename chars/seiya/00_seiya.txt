@@ -68,7 +68,6 @@ load marin_swing
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/seiya/palettes/icon1.png 0
-colourselect 1
 palette      data/chars/seiya/palettes/palette1.png
 #remap       data/chars/seiya/palettes/palette1.png  # 14 Possible MAX
 

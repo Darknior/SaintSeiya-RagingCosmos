@@ -61,7 +61,6 @@ animationscript	data/scripts/player.c
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars/cassios/icon.png 0
-colourselect 1
 palette      data/chars/cassios/idle1.png
 #remap       data/chars/cassios/palettes/palette1.png  # 14 Possible MAX
 
