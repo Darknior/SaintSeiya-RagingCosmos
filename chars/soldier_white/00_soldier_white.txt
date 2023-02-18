@@ -4,7 +4,7 @@ type enemy
 
 #-- GENERAL CONFIG --------------------------------------------------
 
-hostile     enemy  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+hostile     player  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
 aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression 0            # valeur positive + agressif / valeur negative - aggressif
