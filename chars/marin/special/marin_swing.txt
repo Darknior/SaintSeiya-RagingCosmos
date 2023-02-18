@@ -11,7 +11,7 @@ anim	idle
 	offset	95 90
         drawmethod  alpha 1
         drawmethod  scale 0.3 0.3
-        sound data/chars/marin/02-swing.wav
+        sound data/chars/marin/sounds/02-swing.wav
 	frame	data/chars/marin/special/marin_swing/marin_swing-0.png
 	frame	data/chars/marin/special/marin_swing/marin_swing-1.png
 	frame	data/chars/marin/special/marin_swing/marin_swing-2.png

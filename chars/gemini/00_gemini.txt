@@ -74,7 +74,6 @@ load aldebaran_aura
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars/gemini/icon.png 0
-colourselect 1
 palette      data/chars/gemini/idle1.png
 #remap       data/chars/gemini/palettes/palette1.png  # 14 Possible MAX
 

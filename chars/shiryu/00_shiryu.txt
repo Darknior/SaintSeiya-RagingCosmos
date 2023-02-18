@@ -67,7 +67,6 @@ load shiryu_dash
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/shiryu/palettes/icon1.png 1
-colourselect 1
 palette      data/chars/shiryu/palettes/palette2.png
 #remap       data/chars/shiryu/palettes/palette1.png data/chars/shiryu/palettes/palette2.png data/chars/shiryu/palettes/palette3.png data/chars/shiryu/palettes/palette4.png # 14 Possible MAX
 

@@ -68,7 +68,6 @@ load marin_swing
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars/aiolia/icon.png 0
-colourselect 1
 palette      data/chars/aiolia/idle1.png
 #remap       data/chars/aiolia/palettes/palette1.png  # 14 Possible MAX
 

@@ -43,5 +43,5 @@ anim	idle
 	frame	data/chars/shun/special/shun_storm/shun_storm-37.png
 	frame	data/chars/shun/special/shun_storm/shun_storm-38.png
 	frame	data/chars/shun/special/shun_storm/shun_storm-39.png
-        @cmd suicide
+    @cmd suicide
 	frame	data/chars/shun/special/shun_storm/shun_storm-39.png

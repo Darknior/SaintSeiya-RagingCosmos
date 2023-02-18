@@ -64,7 +64,6 @@ load aldebaran_aura
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars/deathmask/icon.png 0
-colourselect 1
 palette      data/chars/deathmask/idle1.png
 #remap       data/chars/deathmask/palettes/palette1.png  # 14 Possible MAX
 

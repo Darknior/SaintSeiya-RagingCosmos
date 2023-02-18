@@ -13,7 +13,7 @@ anim	idle
 	offset	72 257
 	drawmethod alpha 1
         drawmethod  scale 0.6 0.6
-	sound data/chars/marin/01-storm.wav
+	sound data/chars/marin/sounds/01-storm.wav
 	frame	data/chars/marin/special/marin_stormA/marin_stormA-1.png
 	frame	data/chars/marin/special/marin_stormA/marin_stormA-2.png
 	frame	data/chars/marin/special/marin_stormA/marin_stormA-3.png

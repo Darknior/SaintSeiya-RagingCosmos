@@ -62,7 +62,6 @@ animationscript	data/scripts/player.c
 #-- PALETTES --------------------------------------------------------
 
 icon		data/chars/shura/icon.png 0
-colourselect 1
 palette      data/chars/shura/idle1.png
 #remap       data/chars/shura/palettes/palette1.png  # 14 Possible MAX
 

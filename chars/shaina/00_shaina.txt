@@ -16,7 +16,7 @@ makeinv     2 0         # Invincible après respawn X sec / Clignote
 
 speed       15          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
-jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
+jugglepoints 5          # Nombre de fois que l on peut etre combo dans les airs
 jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
 jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
@@ -67,10 +67,9 @@ load tremi_block
 
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars/aiolia/icon.png 0
-colourselect 1
-palette      data/chars/aiolia/idle1.png
-#remap       data/chars/aiolia/palettes/palette1.png  # 14 Possible MAX
+icon		data/chars/shaina/icon.png 0
+palette      data/chars/shaina/idle1.png
+#remap       data/chars/shaina/palettes/palette1.png  # 14 Possible MAX
 
 #-- ANIMATIONS -------------------------------------------------------
 
@@ -151,6 +150,7 @@ anim runattack # Attaque en courant
 	offset	30 115
 	forcedirection -1
 	@cmd	dasher 3.5 0 0 1
+	bbox 0 38 75 75
 	frame	data/chars/shaina/runattack1.png
 	attack2 34 68 86 25 20 1 0 0 5 12
 	frame	data/chars/shaina/runattack2.png
