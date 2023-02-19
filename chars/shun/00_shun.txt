@@ -22,7 +22,7 @@ jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
-defense     all 1 0 0 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
+defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 blockback   1           # Permet de bloquer les attaques qui arrivent derrière : SPÉCIAL !!
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
@@ -311,6 +311,7 @@ anim runattack # Attaque en courant
     delay    7
     offset   49 134
     bbox     15 28 51 107
+	fastattack 1
     hitflash        shun_impact
     forcedirection  -1
     @cmd     dasher 3.5 0 0 1
@@ -321,15 +322,20 @@ anim runattack # Attaque en courant
     subentity       dash_dust
     unsummonframe   11
     frame    data/chars/shun/runattack3.png
-    attack2  50 40 182 40 20 1 0 0 5 12
+	attack 50 40 182 40 20 1 0 0 5 30
     frame    data/chars/shun/runattack4.png
+    attack 0
     frame    data/chars/shun/runattack5.png
     frame    data/chars/shun/runattack6.png
+	attack 50 20 200 40 5 1 0 0 12 30
     frame    data/chars/shun/runattack7.png
+	attack 0
     @cmd     dasher 0 0 0 1
     frame    data/chars/shun/runattack8.png
     frame    data/chars/shun/runattack9.png
+	attack 50 60 230 40 5 1 0 0 0 30
     frame    data/chars/shun/runattack10.png
+	attack 0
 
 anim get
     delay    5
@@ -1079,7 +1085,7 @@ anim freespecial8   # Balayette
     sound    data/sounds/punch.wav
     frame    data/chars/shun/slide1.png
     delay    14
-    attack1  60 60 80 55 10 1 0 0 12 20
+	attack1 63 72 80 55 10 1 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/shun/slide2.png
     delay    9
