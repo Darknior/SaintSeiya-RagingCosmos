@@ -357,6 +357,8 @@ anim    run
     frame    data/chars/hyoga/run7.png
 
 anim runattack # Attaque en courant
+	jugglecost  2
+	energycost  5 1 0
     forcedirection -1
     delay    7
     offset   45 140
@@ -369,6 +371,7 @@ anim runattack # Attaque en courant
     @cmd     spawnbind "hyoga_dash" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/hyoga/runattack3.png
     attack2  50 40 70 40 20 1 0 0 5 12
+	dropv    3.0 2 0
     frame    data/chars/hyoga/runattack4.png
     frame    data/chars/hyoga/runattack5.png
     frame    data/chars/hyoga/runattack6.png
@@ -410,6 +413,7 @@ anim get
 #//Basic Attacks animations/////////////////////////////////////////////////
 
 anim attack1 # Attaque combo 1
+    jugglecost  1
     delay    6
     offset   45 140
     bbox     30 28 35 112
@@ -422,6 +426,7 @@ anim attack1 # Attaque combo 1
     frame    data/chars/hyoga/attack1.png
 
 anim attack2 # Attaque combo 2
+    jugglecost  1
     delay    6
     offset   70 140
     bbox     55 28 35 112
@@ -438,6 +443,7 @@ anim attack2 # Attaque combo 2
     frame    data/chars/hyoga/attack28.png
 
 anim attack3 # Attaque combo 3
+    jugglecost  1
     delay    6
     offset   35 140
     bbox     12 28 35 112
@@ -451,6 +457,7 @@ anim attack3 # Attaque combo 3
     attack1  0
 
 anim attack4 # Attaque combo 4
+    jugglecost  1
     delay    7
     offset   30 140
     hitflash flashmedium
@@ -466,6 +473,7 @@ anim attack4 # Attaque combo 4
     attack1  0
 
 anim attack5 # Attaque combo 5
+    jugglecost  1
     delay    7
     offset   35 140
     hitflash flashbig
@@ -801,6 +809,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     frame    data/chars/hyoga/attackbackward15.png
 	
 anim    attackboth  # Attaque de mêlée native (j + a1)
+    jugglecost  2
     fastattack 1
     energycost  10 0 0
     offset   45 140
@@ -831,6 +840,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     frame    data/chars/hyoga/attackbackward1.png
 
 anim special3 # Saut attaque spéciale flashkick
+    jugglecost  2
     delay    5
     offset    55 140
     bbox 21 14 51 97
@@ -846,6 +856,7 @@ anim special3 # Saut attaque spéciale flashkick
 
 
 anim    freespecial # Attaque de mêlée (a2)
+    jugglecost  2
     fastattack 1
     energycost  10 0 0
     offset   45 140
@@ -876,6 +887,7 @@ anim    freespecial # Attaque de mêlée (a2)
     frame    data/chars/hyoga/attackbackward1.png
 
 anim freespecial2 # Diamond Dust (2 projectiles)
+    jugglecost  2
     delay    10
     offset    45 151
     energycost  25 1 0
@@ -958,6 +970,7 @@ anim    freespecial4    # Attaque arrière (a3)
 
 
 anim freespecial5 # Uppercut 
+    jugglecost  2
     offset    39 141
     bbox 21 28 51 112
     fastattack 1
@@ -980,6 +993,7 @@ anim freespecial5 # Uppercut
     frame    data/chars/hyoga/uppercut6.png
 	
 anim freespecial6 # Aurora Thunder Attack ( haut + bouton special)
+    jugglecost  3
     delay    10
     offset    45 148
     energycost  50 1 0
@@ -1108,6 +1122,7 @@ anim freespecial6 # Aurora Thunder Attack ( haut + bouton special)
     frame    data/chars/hyoga/special28.png
 	
 anim freespecial7   # Coup de pied haut
+    jugglecost  1
     delay    7
     offset   30 140
     bbox     21 28 51 112
@@ -1125,6 +1140,7 @@ anim freespecial7   # Coup de pied haut
 
 
 anim freespecial8       # Balayette
+    jugglecost  1
     delay    7
     offset   44 150
     bbox     26 39 35 112

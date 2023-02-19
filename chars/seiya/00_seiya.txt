@@ -323,6 +323,7 @@ anim run
 anim runattack  # Attaque en courant
     fastattack  1
     jugglecost  2
+	energycost  5 1 0
     forcedirection -1
     delay    8
     offset   30 111

@@ -356,6 +356,8 @@ anim run
     frame    data/chars/ikki/run8.png
 
 anim runattack # Attaque en courant
+	jugglecost  2
+	energycost  5 1 0
     delay    7
     offset    48 160
     bbox 29 40 51 120
@@ -370,14 +372,17 @@ anim runattack # Attaque en courant
     @cmd     spawnbind "ikki_run" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/ikki/runattack5.png
     attack 100 60 50 50 15 1 0 0 0 30
+	dropv    3.0 2 0
     frame    data/chars/ikki/runattack6.png
     attack 0
     frame    data/chars/ikki/runattack7.png
     attack 100 60 50 50 15 1 0 0 0 30
+	dropv    3.0 2 0
     frame    data/chars/ikki/runattack7.png
     attack 0
     frame    data/chars/ikki/runattack7.png
     attack 100 60 50 50 15 1 0 0 0 30
+	dropv    3.0 2 0
     frame    data/chars/ikki/runattack8.png
     attack 0
     frame    data/chars/ikki/runattack9.png
@@ -399,6 +404,7 @@ anim get
 #//Basic Attacks animations/////////////////////////////////////////////////
 
 anim attack1 # Attaque combo 1
+    jugglecost  1
     delay    6
     offset    39 136
     bbox 20 17 30 120
@@ -411,6 +417,7 @@ anim attack1 # Attaque combo 1
 
 
 anim attack2 # Attaque combo 2
+    jugglecost  1
     delay    6
     offset    39 136
     bbox 25 17 30 120
@@ -423,6 +430,7 @@ anim attack2 # Attaque combo 2
     attack1 0
 
 anim attack3 # Attaque combo 3
+    jugglecost  1
     delay    6
     offset    39 136
     bbox 34 17 30 120
@@ -434,6 +442,7 @@ anim attack3 # Attaque combo 3
 
 
 anim attack4 # Attaque combo 4
+    jugglecost  1
     delay    6
     offset    39 140
     hitflash flashmedium
@@ -446,6 +455,7 @@ anim attack4 # Attaque combo 4
     frame    data/chars/ikki/attack45.png
 
 anim attack5 # Attaque combo 5
+    jugglecost  1
     delay    6
     offset    39 140
     hitflash flashbig
@@ -458,6 +468,7 @@ anim attack5 # Attaque combo 5
     frame    data/chars/ikki/attack55.png
 
 anim attack6 # Attaque combo 6
+    jugglecost  1
     delay    6
     offset    39 140
     hitflash flashbig
@@ -766,6 +777,7 @@ anim    block
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
 anim    attackbackward  # Attaque arrière native (b + a1)
+    jugglecost  1
     fastattack 1
     offset   82 140
     hitflash flashbig
@@ -788,6 +800,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
 
 
 anim    attackboth  # Attaque de mêlée native (j + a1)
+    jugglecost  2
     fastattack  1
     energycost  10 0 0
     offset   80 165
@@ -819,6 +832,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     frame    data/chars/ikki/melee1.png
 
 anim    freespecial    # Attaque de mêlée (a2)
+    jugglecost  1
     fastattack  1
     energycost  10 0 0
     offset   80 165
@@ -850,6 +864,7 @@ anim    freespecial    # Attaque de mêlée (a2)
     frame    data/chars/ikki/melee1.png
 
 anim freespecial2 # Hoyoku Tensho
+    jugglecost  2
     delay    10
     offset    90 195
     summonframe 0 0 0 0 1
@@ -975,6 +990,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     frame    data/chars/ikki/special1.png
 
 anim    freespecial4    # Attaque arrière (a3)
+    jugglecost  1
     fastattack 1
     offset   82 140
     hitflash flashbig
@@ -996,9 +1012,10 @@ anim    freespecial4    # Attaque arrière (a3)
     frame    data/chars/ikki/attackbackward0.png
 
 anim freespecial5 # Uppercut
+    jugglecost  2
     offset    45 150
     fastattack 1
-        hitflash shaka_flame
+    hitflash shaka_flame
     delay    10
     sound data/chars/ikki/sounds/01-uppercut.wav
     frame    data/chars/ikki/uppercut1.png
@@ -1024,6 +1041,7 @@ anim freespecial5 # Uppercut
     frame    data/chars/ikki/uppercut2.png
 	
 anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
+    jugglecost  3
     delay    30
     offset    60 178
     fastattack 1
@@ -1082,6 +1100,7 @@ anim freespecial6 # Phoenix Genmaken ( haut + bouton special)
     frame    data/chars/ikki/upspecial19.png
 	
 anim freespecial7   # Coup de pied haut
+    jugglecost  1
     sound    data/sounds/punch.wav
     delay    6
     offset   39 140
@@ -1099,6 +1118,7 @@ anim freespecial7   # Coup de pied haut
 
 
 anim freespecial8   # Balayette
+    jugglecost  1
     delay    7
     offset   34 110
     bbox     32 30 30 80

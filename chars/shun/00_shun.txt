@@ -308,6 +308,8 @@ anim run
     frame    data/chars/shun/run6.png
 
 anim runattack # Attaque en courant
+	jugglecost  2
+	energycost  5 1 0
     delay    7
     offset   49 134
     bbox     15 28 51 107
@@ -323,17 +325,20 @@ anim runattack # Attaque en courant
     unsummonframe   11
     frame    data/chars/shun/runattack3.png
 	attack 50 40 182 40 20 1 0 0 5 30
+	dropv    3.0 2 0
     frame    data/chars/shun/runattack4.png
     attack 0
     frame    data/chars/shun/runattack5.png
     frame    data/chars/shun/runattack6.png
 	attack 50 20 200 40 5 1 0 0 12 30
+	dropv    3.0 2 0
     frame    data/chars/shun/runattack7.png
 	attack 0
     @cmd     dasher 0 0 0 1
     frame    data/chars/shun/runattack8.png
     frame    data/chars/shun/runattack9.png
 	attack 50 60 230 40 5 1 0 0 0 30
+	dropv    3.0 2 0
     frame    data/chars/shun/runattack10.png
 	attack 0
 
@@ -350,6 +355,7 @@ anim get
 #//Basic Attacks animations/////////////////////////////////////////////////
 
 anim attack1 # Attaque combo 1
+    jugglecost  1
     delay    5
     offset    90 199
     bbox 79 92 35 107
@@ -367,6 +373,7 @@ anim attack1 # Attaque combo 1
     frame    data/chars/shun/attack14.png
 
 anim attack2 # Attaque combo 2
+    jugglecost  1
     delay    5
     offset    74 196
     bbox 54 96 35 100
@@ -383,7 +390,8 @@ anim attack2 # Attaque combo 2
     frame    data/chars/shun/attack1.png
 
 anim attack3 # Attaque combo 3
-        sound   data/sounds/punch.wav
+    jugglecost  1
+    sound   data/sounds/punch.wav
     delay    6
     offset    93 196
     hitflash flashmedium
@@ -399,6 +407,7 @@ anim attack3 # Attaque combo 3
     frame    data/chars/shun/attack22.png
 
 anim attack4 # Attaque combo 4
+    jugglecost  1
     sound   data/sounds/punch.wav
     delay    6
     offset    93 196
@@ -416,6 +425,7 @@ anim attack4 # Attaque combo 4
     frame    data/chars/shun/attack27.png
 
 anim attack5 # Attaque combo 5
+    jugglecost  1
     delay    5
     offset    39 196
     hitflash flashbig
@@ -761,6 +771,7 @@ anim    block
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
 anim    attackbackward  # Attaque arrière native (b + a1)
+    jugglecost  1
     fastattack 1
     offset   52 146
     hitflash flashmedium
@@ -780,6 +791,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
 
 
 anim    attackboth  # Attaque de mêlée native (j + a1)
+    jugglecost  2
     fastattack 1
     offset   203 310
     hitflash shun_impactE
@@ -819,6 +831,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     frame    data/chars/shun/uppercut12.png
 
 anim freespecial2 # Courant Nébulaire
+    jugglecost  2
     delay    10
     offset    175 136
     summonframe 0 0 0 0 0
@@ -880,6 +893,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     frame    data/chars/shun/upspecial3.png
 
 anim    freespecial4   # Attaque arrière (a3)
+    jugglecost  1
     fastattack 1
     offset   52 146
     hitflash flashmedium
@@ -898,6 +912,7 @@ anim    freespecial4   # Attaque arrière (a3)
     frame    data/chars/shun/backattack0.png
 
 anim freespecial5 # Uppercut
+    jugglecost  2
     offset    203 310
     fastattack 1
     hitflash shun_impactE
@@ -937,6 +952,7 @@ anim freespecial5 # Uppercut
     frame    data/chars/shun/uppercut12.png
 	
 anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
+    jugglecost  3
     delay    10
     offset    203 310
     fastattack 1
@@ -1059,6 +1075,7 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     frame    data/chars/shun/special1.png
 	
 anim freespecial7   # Coup de pied haut
+    jugglecost  1
     sound    data/sounds/punch.wav
     delay    6
     offset   93 196
@@ -1077,6 +1094,7 @@ anim freespecial7   # Coup de pied haut
 
 
 anim freespecial8   # Balayette
+    jugglecost  1
     delay    9
     offset   64 112
     bbox     50 34 30 75

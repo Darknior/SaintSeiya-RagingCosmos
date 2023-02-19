@@ -297,6 +297,8 @@ anim    run
     frame    data/chars/shiryu/run7.png
 
 anim    runattack # Attaque en courant
+	jugglecost  2
+	energycost  5 1 0
     delay    5
     offset   39 128
     bbox     16 13 30 115
@@ -308,6 +310,7 @@ anim    runattack # Attaque en courant
     sound    data/chars/shiryu/sounds/07-forward_punch.wav
     frame    data/chars/shiryu/runattack2.png
     attack2  31 13 55 83 10 0 0 0 5 12
+	dropv    3.0 2 0
     summonframe    0 0 0 0 0
     subentity      shiryu_dash_dust
     unsummonframe  11
@@ -315,12 +318,14 @@ anim    runattack # Attaque en courant
     attack2  0
     frame    data/chars/shiryu/runattack4.png
     attack2  31 13 55 83 20 1 0 0 5 12
+	dropv    3.0 2 0
     @cmd     spawnbind "shiryu_dash" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/shiryu/runattack5.png
     attack2  0
     delay    10
     frame    data/chars/shiryu/runattack6.png
     attack2  31 13 55 83 20 1 0 0 5 12
+	dropv    3.0 2 0
     frame    data/chars/shiryu/runattack7.png
     attack2  0
     @cmd     dasher 0 0 0 1
@@ -356,6 +361,7 @@ anim    get
 #//Basic Attacks animations/////////////////////////////////////////////////
 
 anim    attack1 # Attaque combo 1
+	jugglecost  1
     delay    5
     offset   39 130
     bbox     31 15 30 115
@@ -369,6 +375,7 @@ anim    attack1 # Attaque combo 1
     frame    data/chars/shiryu/attack7.png
 
 anim    attack2 # Attaque combo 2
+	jugglecost  1
     delay    6
     offset   39 135
     bbox     26 15 30 120
@@ -381,6 +388,7 @@ anim    attack2 # Attaque combo 2
     attack1  0
 
 anim    attack3 # Attaque combo 3
+	jugglecost  1
     delay    7
     offset   57 128
 	bbox 34 29 35 100
@@ -392,6 +400,7 @@ anim    attack3 # Attaque combo 3
 
 
 anim    attack4 # Attaque combo 4
+	jugglecost  1
     delay    7
     offset   39 130
     hitflash flashmedium
@@ -404,6 +413,7 @@ anim    attack4 # Attaque combo 4
     attack1  0
 
 anim    attack5 # Attaque combo 5
+	jugglecost  1
     delay    5
     offset   39 130
     hitflash flashbig
@@ -713,6 +723,7 @@ anim    block
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
 anim    attackbackward  # Attaque arrière native (b + a1)
+	jugglecost  1
     offset   93 130
     bbox     61 15 51 115
     hitflash flashbig
@@ -731,6 +742,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     frame    data/chars/shiryu/attack67.png
 	
 anim    attackboth  # Attaque de mêlée native (j + a1)
+	jugglecost  2
     fastattack 1
     energycost  10 0 0
     offset   39 130
@@ -765,6 +777,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     frame    data/chars/shiryu/attackbackward1.png
 
 anim    freespecial  # Attaque de mêlée (Bouton special, a2)
+	jugglecost  2
     fastattack 1
     energycost  10 0 0
     offset   39 130
@@ -799,6 +812,7 @@ anim    freespecial  # Attaque de mêlée (Bouton special, a2)
     frame    data/chars/shiryu/attackbackward1.png
 
 anim    freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)
+	jugglecost  2
     delay    10
     offset   47 130
     summonframe  0 0 0 0 0
@@ -861,6 +875,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
 	
 	
 anim    freespecial4    # Attaque arrière (a3)
+	jugglecost  1
     offset	 105 147
     hitflash flashmedium
     delay	 4
@@ -879,6 +894,7 @@ anim    freespecial4    # Attaque arrière (a3)
 
 
 anim    freespecial5 # Uppercut (Bas, Avant, a1)
+	jugglecost  2
     offset   44 156
     bbox     16 41 51 115
     fastattack  1
@@ -916,6 +932,7 @@ anim    freespecial5 # Uppercut (Bas, Avant, a1)
 	
 	
 anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
+	jugglecost  3
     delay    13
     offset   47 130
     fastattack  1
@@ -959,6 +976,7 @@ anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     frame    data/chars/shiryu/special38.png
 	
 anim    freespecial7    # Coup de pied haut
+    jugglecost  1
     sound    data/sounds/punch.wav
     delay    7
     offset   39 130
@@ -975,6 +993,7 @@ anim    freespecial7    # Coup de pied haut
 
 
 anim    freespecial8    # Balayette
+    jugglecost  1
     delay    10
     offset   22 127
     bbox     -4 54 51 75
