@@ -1,0 +1,29 @@
+name        fall_dust
+type        none
+shadow      0
+setlayer    100
+antigravity 100
+#lifespan   1
+animationscript    data/scripts/player.c
+
+anim    idle
+    loop     0
+    delay    10
+    offset   180 59
+    drawmethod  scale 1 1
+    drawmethod  alpha 1
+    drawmethod  channel 0.99
+    frame    data/chars/misc/dust/fall_dust/fall_dust0.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust1.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust2.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust3.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust4.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust5.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust6.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust7.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust8.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust9.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust10.png
+    frame    data/chars/misc/dust/fall_dust/fall_dust11.png
+    @cmd     suicide # SUICIDE FRAME, THIS WAY YOU DON'T NEED TO CALCULATE THE LIFESPAN TIME
+    frame    data/chars/misc/dust/fall_dust/fall_dust11.png
