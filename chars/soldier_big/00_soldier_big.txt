@@ -21,7 +21,7 @@ jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol / enemi ne tremble pas
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
-defense     all 1 0 0 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
+defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 holdblock   1           # Permet de pouvoir maintenir la parade
 nodieblink  1           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
@@ -30,7 +30,7 @@ death       1           # Active l'animation de mort
 nolife      0           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 
-atchain     1           # Attaque combo de base (anim attack 1, puis 2...)
+atchain     0           # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
@@ -40,9 +40,9 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
 aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+aggression  -150           # Valeur positive + agressif / valeur negative - aggressif
 
-hitenemy    1 0          # peut toucher d autres ennemis / air et sol
+hitenemy    0 0          # peut toucher d autres ennemis / air et sol
 blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
@@ -66,7 +66,7 @@ load blood_ground_big
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/soldier_big/palettes/icon.png 0
+icon         data/chars/soldier_big/palettes/icon1.png 0
 palette      data/chars/soldier_big/palettes/palette1.png
 #remap       data/chars/soldier_big/palettes/palette1.png  # 14 Possible MAX
 
