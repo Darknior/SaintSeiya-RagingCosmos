@@ -1,14 +1,10 @@
-name		milo
-health		700
-mp 			100
-type		enemy
+name        milo
+health      700
+mp          100
+type        enemy
+
 
 #-- GENERAL CONFIG --------------------------------------------------
-
-hostile     player npc  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression 0            # valeur positive + agressif / valeur negative - aggressif
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
@@ -38,27 +34,41 @@ atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
-blockodds 	1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
+
 #-- LIFEBAR ---------------------------------------------------------
 
-lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom comme Boss
+
 
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript	data/scripts/lifebar.c
-didhitscript	data/scripts/didhit/tint_red.c
-script	data/scripts/entity_effects.c
-animationscript	data/scripts/player.c
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+ondrawscript        data/scripts/lifebar.c              # Barre de vie directement pleine
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               #
+didhitscript        data/scripts/didhit/tint_red.c     # Effets de teinte sur sprite : ROUGE
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
-load milo_blood	       
-load milo_circles	
+load milo_blood
+load milo_circles
 load milo_flash    
 load milo_constellation     
 load milo_circles  
@@ -74,11 +84,13 @@ load milo_antaresC
 load aldebaran_block
 load aldebaran_aura
 
+
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars/milo/icon.png 0
-palette      data/chars/milo/idle1.png
-#remap       data/chars/milo/palettes/palette1.png  # 14 Possible MAX
+icon         data/chars/milo/palettes/icon1.png 0
+palette      data/chars/milo/palettes/palette1.png
+#remap       data/chars/milo/palettes/palettes/palette1.png  # 14 Possible MAX
+
 
 #-- ANIMATIONS -------------------------------------------------------
 
@@ -88,623 +100,623 @@ palette      data/chars/milo/idle1.png
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-	delay	12	
-	offset	127 139
-	@cmd spawnFade "in" 0 0 0 10000000001 0.25
-	frame	data/chars/milo/spawn1.png
-	frame	data/chars/milo/spawn2.png
-	frame	data/chars/milo/spawn3.png	
-	frame	data/chars/milo/spawn1.png
-	frame	data/chars/milo/spawn2.png
-	frame	data/chars/milo/spawn3.png
-	frame	data/chars/milo/spawn1.png
-	frame	data/chars/milo/spawn2.png
-	frame	data/chars/milo/spawn3.png
-	sound data/chars/milo/sounds/laugh.wav
-	frame	data/chars/milo/spawn1.png
-	frame	data/chars/milo/spawn2.png
-	frame	data/chars/milo/spawn3.png	
-	frame	data/chars/milo/spawn4.png
-	frame	data/chars/milo/spawn5.png
-	frame	data/chars/milo/spawn6.png
-	frame	data/chars/milo/spawn7.png
-	frame	data/chars/milo/spawn8.png
-	frame	data/chars/milo/spawn9.png
-	frame	data/chars/milo/spawn10.png
-	frame	data/chars/milo/spawn11.png
-	frame	data/chars/milo/spawn12.png
-	frame	data/chars/milo/spawn13.png
-	frame	data/chars/milo/spawn14.png
-	frame	data/chars/milo/spawn15.png
-	@cmd spawnDialog "dialog_milo1" 200 100
-	frame	data/chars/milo/spawn15.png
+    delay    12
+    offset   127 139
+    @cmd     spawnFade "in" 0 0 0 10000000001 0.25
+    frame    data/chars/milo/spawn1.png
+    frame    data/chars/milo/spawn2.png
+    frame    data/chars/milo/spawn3.png
+    frame    data/chars/milo/spawn1.png
+    frame    data/chars/milo/spawn2.png
+    frame    data/chars/milo/spawn3.png
+    frame    data/chars/milo/spawn1.png
+    frame    data/chars/milo/spawn2.png
+    frame    data/chars/milo/spawn3.png
+    sound    data/chars/milo/sounds/laugh.wav
+    frame    data/chars/milo/spawn1.png
+    frame    data/chars/milo/spawn2.png
+    frame    data/chars/milo/spawn3.png
+    frame    data/chars/milo/spawn4.png
+    frame    data/chars/milo/spawn5.png
+    frame    data/chars/milo/spawn6.png
+    frame    data/chars/milo/spawn7.png
+    frame    data/chars/milo/spawn8.png
+    frame    data/chars/milo/spawn9.png
+    frame    data/chars/milo/spawn10.png
+    frame    data/chars/milo/spawn11.png
+    frame    data/chars/milo/spawn12.png
+    frame    data/chars/milo/spawn13.png
+    frame    data/chars/milo/spawn14.png
+    frame    data/chars/milo/spawn15.png
+    @cmd spawnDialog "dialog_milo1" 200 100
+    frame    data/chars/milo/spawn15.png
 
 anim idle
-	loop	1
-	delay	20
-	offset	44 126
-	bbox 32 6 38 120
-	frame	data/chars/milo/idle1.png
-	frame	data/chars/milo/idle2.png
-	frame	data/chars/milo/idle3.png
-	frame	data/chars/milo/idle4.png
-	frame	data/chars/milo/idle5.png
-	frame	data/chars/milo/idle4.png
-	frame	data/chars/milo/idle3.png
-	frame	data/chars/milo/idle2.png
-	
+    loop    1
+    delay    20
+    offset    44 126
+    bbox 32 6 38 120
+    frame    data/chars/milo/idle1.png
+    frame    data/chars/milo/idle2.png
+    frame    data/chars/milo/idle3.png
+    frame    data/chars/milo/idle4.png
+    frame    data/chars/milo/idle5.png
+    frame    data/chars/milo/idle4.png
+    frame    data/chars/milo/idle3.png
+    frame    data/chars/milo/idle2.png
+
 anim walk
-	loop	1
-	delay	10
-	offset	44 126
-	bbox 32 6 38 120
-	frame	data/chars/milo/walk1.png
-	frame	data/chars/milo/walk2.png
-	frame	data/chars/milo/walk3.png
-	frame	data/chars/milo/walk4.png
-	frame	data/chars/milo/walk5.png
-	frame	data/chars/milo/walk6.png
-	
+    loop    1
+    delay    10
+    offset    44 126
+    bbox 32 6 38 120
+    frame    data/chars/milo/walk1.png
+    frame    data/chars/milo/walk2.png
+    frame    data/chars/milo/walk3.png
+    frame    data/chars/milo/walk4.png
+    frame    data/chars/milo/walk5.png
+    frame    data/chars/milo/walk6.png
+
 anim run
-	loop	1
-	delay	15
-	offset	65 130
-	bbox 49 22 50 108
-	frame	data/chars/milo/run1.png
-	frame	data/chars/milo/run2.png
-	frame	data/chars/milo/run3.png
-	frame	data/chars/milo/run4.png
-	frame	data/chars/milo/run5.png
-	
+    loop    1
+    delay    15
+    offset    65 130
+    bbox 49 22 50 108
+    frame    data/chars/milo/run1.png
+    frame    data/chars/milo/run2.png
+    frame    data/chars/milo/run3.png
+    frame    data/chars/milo/run4.png
+    frame    data/chars/milo/run5.png
+
 anim runattack # Attaque en courant
-	delay	7
-	offset	46 130
-	bbox 32 16 38 114
-	hitflash milo_blood
-	forcedirection -1
-	@cmd	dasher 3.5 0 0 1
-	frame	data/chars/milo/runattack1.png
-	frame	data/chars/milo/runattack2.png
-	attack2 60 25 88 38 20 1 0 0 5 12
-	dropv 4.0 2.0 0.0
-	frame	data/chars/milo/runattack3.png
-	frame	data/chars/milo/runattack3.png
-	frame	data/chars/milo/runattack3.png
-	frame	data/chars/milo/runattack3.png
-	attack2 0
-	@cmd	dasher 0 0 0 1
-	delay	12
-	frame	data/chars/milo/runattack2.png
-	frame	data/chars/milo/runattack1.png
-	
+    delay    7
+    offset    46 130
+    bbox 32 16 38 114
+    hitflash milo_blood
+    forcedirection -1
+    @cmd    dasher 3.5 0 0 1
+    frame    data/chars/milo/runattack1.png
+    frame    data/chars/milo/runattack2.png
+    attack2 60 25 88 38 20 1 0 0 5 12
+    dropv 4.0 2.0 0.0
+    frame    data/chars/milo/runattack3.png
+    frame    data/chars/milo/runattack3.png
+    frame    data/chars/milo/runattack3.png
+    frame    data/chars/milo/runattack3.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/milo/runattack2.png
+    frame    data/chars/milo/runattack1.png
+
 anim freespecial # Attaque en courant
-	delay	7
-	offset	46 130
-	hitflash milo_blood
-	bbox 32 16 38 114
-	range 	80 150
-	forcedirection -1
-	@cmd	dasher 3.5 0 0 1
-	frame	data/chars/milo/runattack1.png
-	frame	data/chars/milo/runattack2.png
-	attack2 60 25 88 38 20 1 0 0 5 12
-	dropv 4.0 2.0 0.0
-	frame	data/chars/milo/runattack3.png
-	frame	data/chars/milo/runattack3.png
-	frame	data/chars/milo/runattack3.png
-	frame	data/chars/milo/runattack3.png
-	attack2 0
-	@cmd	dasher 0 0 0 1
-	delay	12
-	frame	data/chars/milo/runattack2.png
-	frame	data/chars/milo/runattack1.png
-	
+    delay    7
+    offset    46 130
+    hitflash milo_blood
+    bbox 32 16 38 114
+    range     80 150
+    forcedirection -1
+    @cmd    dasher 3.5 0 0 1
+    frame    data/chars/milo/runattack1.png
+    frame    data/chars/milo/runattack2.png
+    attack2 60 25 88 38 20 1 0 0 5 12
+    dropv 4.0 2.0 0.0
+    frame    data/chars/milo/runattack3.png
+    frame    data/chars/milo/runattack3.png
+    frame    data/chars/milo/runattack3.png
+    frame    data/chars/milo/runattack3.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/milo/runattack2.png
+    frame    data/chars/milo/runattack1.png
+
 anim pain # Up
-	delay	10
-	offset	36 127
-	bbox 18 16 38 114
-	frame	data/chars/milo/pain1.png
-	frame	data/chars/milo/pain2.png
-	frame	data/chars/milo/pain1.png
-	
+    delay    10
+    offset    36 127
+    bbox 18 16 38 114
+    frame    data/chars/milo/pain1.png
+    frame    data/chars/milo/pain2.png
+    frame    data/chars/milo/pain1.png
+
 anim pain2 # Down
-	delay	10
-	offset	31 127
-	bbox 19 16 38 114
-	frame	data/chars/milo/pain21.png
-	frame	data/chars/milo/pain22.png
-	frame	data/chars/milo/pain21.png	
+    delay    10
+    offset    31 127
+    bbox 19 16 38 114
+    frame    data/chars/milo/pain21.png
+    frame    data/chars/milo/pain22.png
+    frame    data/chars/milo/pain21.png
 
 anim fall
-	delay	10
-	offset	92 126
-	landframe 4
-	bbox 27 50 80 80
-	frame	data/chars/milo/fall1.png
-	frame	data/chars/milo/fall2.png
-	frame	data/chars/milo/fall3.png
-	frame	data/chars/milo/fall4.png
-	bbox 0 93 120 35
-	frame	data/chars/milo/fall5.png
-	
+    delay    10
+    offset    92 126
+    landframe 4
+    bbox 27 50 80 80
+    frame    data/chars/milo/fall1.png
+    frame    data/chars/milo/fall2.png
+    frame    data/chars/milo/fall3.png
+    frame    data/chars/milo/fall4.png
+    bbox 0 93 120 35
+    frame    data/chars/milo/fall5.png
+
 anim death
-	delay	15
-	offset	92 126
-	frame	data/chars/milo/fall1.png
-	frame	data/chars/milo/fall2.png
-	frame	data/chars/milo/fall3.png
-	frame	data/chars/milo/fall4.png
-	frame	data/chars/milo/fall5.png
-	offset	95 130
-	frame	data/chars/milo/rise1.png
-	frame	data/chars/milo/rise2.png
-	frame	data/chars/milo/rise3.png
-	frame	data/chars/milo/rise4.png
-	frame	data/chars/milo/rise5.png
-	@cmd spawnDialog "dialog_milo2" 200 100	
-	frame	data/chars/milo/rise5.png
-	@cmd spawnDialog "dialog_milo3" 200 100	
-	frame	data/chars/milo/rise5.png
-	offset	47 127
-	frame	data/chars/milo/death1.png
-	frame	data/chars/milo/death2.png
-	frame	data/chars/milo/death3.png
-	frame	data/chars/milo/death4.png
-	frame	data/chars/milo/death5.png
-	frame	data/chars/milo/death6.png
-	frame	data/chars/milo/death7.png
-	frame	data/chars/milo/death8.png
-	frame	data/chars/milo/death9.png
-	@cmd spawnDialog "dialog_milo4" 200 100	
-	frame	data/chars/milo/death8.png
-	frame	data/chars/milo/death9.png
-	frame	data/chars/milo/death8.png
-	frame	data/chars/milo/death9.png
-	frame	data/chars/milo/death8.png
-	frame	data/chars/milo/death9.png	
-	frame	data/chars/milo/death8.png
-	frame	data/chars/milo/death9.png
-	frame	data/chars/milo/death8.png
-	frame	data/chars/milo/death9.png	
+    delay    15
+    offset    92 126
+    frame    data/chars/milo/fall1.png
+    frame    data/chars/milo/fall2.png
+    frame    data/chars/milo/fall3.png
+    frame    data/chars/milo/fall4.png
+    frame    data/chars/milo/fall5.png
+    offset    95 130
+    frame    data/chars/milo/rise1.png
+    frame    data/chars/milo/rise2.png
+    frame    data/chars/milo/rise3.png
+    frame    data/chars/milo/rise4.png
+    frame    data/chars/milo/rise5.png
+    @cmd spawnDialog "dialog_milo2" 200 100
+    frame    data/chars/milo/rise5.png
+    @cmd spawnDialog "dialog_milo3" 200 100
+    frame    data/chars/milo/rise5.png
+    offset    47 127
+    frame    data/chars/milo/death1.png
+    frame    data/chars/milo/death2.png
+    frame    data/chars/milo/death3.png
+    frame    data/chars/milo/death4.png
+    frame    data/chars/milo/death5.png
+    frame    data/chars/milo/death6.png
+    frame    data/chars/milo/death7.png
+    frame    data/chars/milo/death8.png
+    frame    data/chars/milo/death9.png
+    @cmd spawnDialog "dialog_milo4" 200 100
+    frame    data/chars/milo/death8.png
+    frame    data/chars/milo/death9.png
+    frame    data/chars/milo/death8.png
+    frame    data/chars/milo/death9.png
+    frame    data/chars/milo/death8.png
+    frame    data/chars/milo/death9.png
+    frame    data/chars/milo/death8.png
+    frame    data/chars/milo/death9.png
+    frame    data/chars/milo/death8.png
+    frame    data/chars/milo/death9.png
 
 anim rise
-	offset	95 130
-	delay	10
-	frame	data/chars/milo/rise1.png
-	frame	data/chars/milo/rise2.png
-	frame	data/chars/milo/rise3.png
-	frame	data/chars/milo/rise4.png
-	frame	data/chars/milo/rise5.png	
+    offset    95 130
+    delay    10
+    frame    data/chars/milo/rise1.png
+    frame    data/chars/milo/rise2.png
+    frame    data/chars/milo/rise3.png
+    frame    data/chars/milo/rise4.png
+    frame    data/chars/milo/rise5.png
 
 anim attack1 # Attaque combo 1
-	delay	5
-	offset	47 126
-	bbox 32 16 38 114
-	frame	data/chars/milo/attack1.png
-	attack1 56 26 66 25 10 0 0 0 5 12
-	frame	data/chars/milo/attack2.png
-	frame	data/chars/milo/attack2.png
-	attack1 0
-	frame	data/chars/milo/attack1.png
+    delay    5
+    offset    47 126
+    bbox 32 16 38 114
+    frame    data/chars/milo/attack1.png
+    attack1 56 26 66 25 10 0 0 0 5 12
+    frame    data/chars/milo/attack2.png
+    frame    data/chars/milo/attack2.png
+    attack1 0
+    frame    data/chars/milo/attack1.png
 
 anim attack2 # Attaque combo 2
-	delay	5
-	offset	47 130
-	bbox 32 16 38 114
-	frame	data/chars/milo/attack21.png
-	frame	data/chars/milo/attack22.png
-	frame	data/chars/milo/attack23.png
-	attack1 59 44 81 29 10 0 0 0 5 12
-	frame	data/chars/milo/attack24.png
-	frame	data/chars/milo/attack24.png
-	attack1 0
-	frame	data/chars/milo/attack23.png	
+    delay    5
+    offset    47 130
+    bbox 32 16 38 114
+    frame    data/chars/milo/attack21.png
+    frame    data/chars/milo/attack22.png
+    frame    data/chars/milo/attack23.png
+    attack1 59 44 81 29 10 0 0 0 5 12
+    frame    data/chars/milo/attack24.png
+    frame    data/chars/milo/attack24.png
+    attack1 0
+    frame    data/chars/milo/attack23.png
 
 anim attack3 # Attaque combo 3
-	delay	5
-	offset	38 130
-	bbox 17 16 38 114
-	frame	data/chars/milo/attack31.png
-	frame	data/chars/milo/attack32.png
-	attack1 46 23 69 41 10 0 0 0 5 12
-	frame	data/chars/milo/attack33.png
-	frame	data/chars/milo/attack33.png
-	attack1 0
-	frame	data/chars/milo/attack32.png
-	
+    delay    5
+    offset    38 130
+    bbox 17 16 38 114
+    frame    data/chars/milo/attack31.png
+    frame    data/chars/milo/attack32.png
+    attack1 46 23 69 41 10 0 0 0 5 12
+    frame    data/chars/milo/attack33.png
+    frame    data/chars/milo/attack33.png
+    attack1 0
+    frame    data/chars/milo/attack32.png
+
 anim attack4 # Attaque combo 4
-	delay	5
-	offset	44 129
-	bbox 25 6 38 123
-	hitflash milo_blood
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/milo/attack41.png
-	frame	data/chars/milo/attack42.png
-	frame	data/chars/milo/attack43.png
-	frame	data/chars/milo/attack44.png
-	frame	data/chars/milo/attack45.png
-	attack1 58 34 83 26 10 0 0 0 5 12
-	frame	data/chars/milo/attack46.png
-	frame	data/chars/milo/attack47.png
-	frame	data/chars/milo/attack48.png
-	attack1 0
-	frame	data/chars/milo/attack49.png
-	
+    delay    5
+    offset    44 129
+    bbox 25 6 38 123
+    hitflash milo_blood
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/milo/attack41.png
+    frame    data/chars/milo/attack42.png
+    frame    data/chars/milo/attack43.png
+    frame    data/chars/milo/attack44.png
+    frame    data/chars/milo/attack45.png
+    attack1 58 34 83 26 10 0 0 0 5 12
+    frame    data/chars/milo/attack46.png
+    frame    data/chars/milo/attack47.png
+    frame    data/chars/milo/attack48.png
+    attack1 0
+    frame    data/chars/milo/attack49.png
+
 anim attack5 # Attaque combo 5
-	delay	12
-	offset	46 126
-	bbox 32 6 38 120
-	hitflash milo_blood
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/milo/attack51.png
-	frame	data/chars/milo/attack52.png
-	frame	data/chars/milo/attack53.png
-	frame	data/chars/milo/attack54.png
-	attack1 67 44 92 30 20 1 0 0 5 12
-	dropv 4.0 1.0 0.0
-	frame	data/chars/milo/attack55.png
-	frame	data/chars/milo/attack56.png
-	attack1 0
-	frame	data/chars/milo/attack54.png
+    delay    12
+    offset    46 126
+    bbox 32 6 38 120
+    hitflash milo_blood
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/milo/attack51.png
+    frame    data/chars/milo/attack52.png
+    frame    data/chars/milo/attack53.png
+    frame    data/chars/milo/attack54.png
+    attack1 67 44 92 30 20 1 0 0 5 12
+    dropv 4.0 1.0 0.0
+    frame    data/chars/milo/attack55.png
+    frame    data/chars/milo/attack56.png
+    attack1 0
+    frame    data/chars/milo/attack54.png
 
 anim jump # Saut Statique
-	delay	10
-	offset	41 166
-	bbox 24 34 38 92
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/milo/jump1.png
-	frame	data/chars/milo/jump2.png
-	frame	data/chars/milo/jump3.png
-	frame	data/chars/milo/jump4.png
-	frame	data/chars/milo/jump5.png
-	
+    delay    10
+    offset    41 166
+    bbox 24 34 38 92
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/milo/jump1.png
+    frame    data/chars/milo/jump2.png
+    frame    data/chars/milo/jump3.png
+    frame    data/chars/milo/jump4.png
+    frame    data/chars/milo/jump5.png
+
 anim jumpdelay # Animation de saut intermédiaire
-	loop 	1
-	delay	10
-	offset	41 166
-	bbox 24 34 38 92
-	frame	data/chars/milo/jump4.png
-	frame	data/chars/milo/jump5.png
+    loop     1
+    delay    10
+    offset    41 166
+    bbox 24 34 38 92
+    frame    data/chars/milo/jump4.png
+    frame    data/chars/milo/jump5.png
 
 anim jumpland # Aterrissage du saut
-	delay	12
-	offset	44 129
-	bbox 32 15 38 114
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/milo/get1.png
-	frame	data/chars/milo/get2.png
-	frame	data/chars/milo/get1.png
-	
+    delay    12
+    offset    44 129
+    bbox 32 15 38 114
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/milo/get1.png
+    frame    data/chars/milo/get2.png
+    frame    data/chars/milo/get1.png
+
 anim jumpattack # Attaque sautée statique
-	delay	10
-	offset	41 121
-	bbox 24 0 38 92
-	sound data/sounds/punch.wav
-	frame	data/chars/milo/jumpattack1.png
-	frame	data/chars/milo/jumpattack2.png
-	attack1 57 21 67 74 10 1 0 0 5 12
-	frame	data/chars/milo/jumpattack3.png
-	frame	data/chars/milo/jumpattack4.png
+    delay    10
+    offset    41 121
+    bbox 24 0 38 92
+    sound data/sounds/punch.wav
+    frame    data/chars/milo/jumpattack1.png
+    frame    data/chars/milo/jumpattack2.png
+    attack1 57 21 67 74 10 1 0 0 5 12
+    frame    data/chars/milo/jumpattack3.png
+    frame    data/chars/milo/jumpattack4.png
 
 anim special # Défense spéciale Scorpion
-	delay	10
-	offset	103 140
-	energycost  15 1 0
-	sound data/chars/milo/04-swing.wav
-	hitflash flashbig
-	@cmd 	spawnbind "milo_scorpion" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/milo/uppercut1.png
-	sound data/chars/milo/15-explosion.wav
-	frame	data/chars/milo/uppercut2.png
-	@cmd 	spawnbind "milo_flash" "ANI_IDLE" 0 0 0 0 0
-	sound data/chars/milo/sounds/13-bang.wav
-	attack5 74 1 120 180 30 1 0 0 5 12
-	dropv 	8.0 3 0
-	delay	10
-	frame	data/chars/milo/uppercut3.png
-	delay	80
-	frame	data/chars/milo/uppercut4.png
-	delay	10
-	frame	data/chars/milo/uppercut3.png
-	delay	10
-	frame	data/chars/milo/uppercut2.png
-	delay	10
-	frame	data/chars/milo/uppercut2.png
-	
-anim freespecial6 # Ultra Scarlet Needle
-	delay	10
-	offset	44 129
-	energycost  50 1 0
-	hitflash milo_blood
-	fastattack 1
-	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
-        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
-	sound data/chars/aldebaran/78-cosmos.wav
-	frame	data/chars/milo/attack41.png
-	spawnframe 0 0 0 0 1
-	subentity milo_constellation
-	energycost  20 1 0
-	frame	data/chars/milo/attack42.png
-	@cmd 	spawnbind "milo_antaresA" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/milo/attack43.png
-	frame	data/chars/milo/attack44.png
-	frame	data/chars/milo/attack45.png
-	delay   80
-	frame	data/chars/milo/special39.png
-	delay   10
-	frame	data/chars/milo/special39.png
-	sound data/chars/milo/sounds/06-scarlet2.wav
-	@cmd 	spawnbind "milo_storm" "ANI_IDLE" 0 0 0 0 0
-	@cmd 	spawnbind "milo_stingC" "ANI_IDLE" 0 0 0 0 0
-	delay   10
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 57 13 900 50 15 0 0 0 0 30
-	frame	data/chars/milo/special39.png
-	attack1 0
-	frame	data/chars/milo/special39.png
-	attack1 41 0 900 182 15 1 0 0 0 50
-	frame	data/chars/milo/special39.png
-	attack1 0
+    delay    10
+    offset    103 140
+    energycost  15 1 0
+    sound data/chars/milo/04-swing.wav
+    hitflash flashbig
+    @cmd     spawnbind "milo_scorpion" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/milo/uppercut1.png
+    sound data/chars/milo/15-explosion.wav
+    frame    data/chars/milo/uppercut2.png
+    @cmd     spawnbind "milo_flash" "ANI_IDLE" 0 0 0 0 0
+    sound data/chars/milo/sounds/13-bang.wav
+    attack5 74 1 120 180 30 1 0 0 5 12
+    dropv     8.0 3 0
+    delay    10
+    frame    data/chars/milo/uppercut3.png
+    delay    80
+    frame    data/chars/milo/uppercut4.png
+    delay    10
+    frame    data/chars/milo/uppercut3.png
+    delay    10
+    frame    data/chars/milo/uppercut2.png
+    delay    10
+    frame    data/chars/milo/uppercut2.png
 
-	
+anim freespecial6 # Ultra Scarlet Needle
+    delay    10
+    offset    44 129
+    energycost  50 1 0
+    hitflash milo_blood
+    fastattack 1
+    @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
+        @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
+    sound data/chars/aldebaran/78-cosmos.wav
+    frame    data/chars/milo/attack41.png
+    spawnframe 0 0 0 0 1
+    subentity milo_constellation
+    energycost  20 1 0
+    frame    data/chars/milo/attack42.png
+    @cmd     spawnbind "milo_antaresA" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/milo/attack43.png
+    frame    data/chars/milo/attack44.png
+    frame    data/chars/milo/attack45.png
+    delay   80
+    frame    data/chars/milo/special39.png
+    delay   10
+    frame    data/chars/milo/special39.png
+    sound data/chars/milo/sounds/06-scarlet2.wav
+    @cmd     spawnbind "milo_storm" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "milo_stingC" "ANI_IDLE" 0 0 0 0 0
+    delay   10
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 57 13 900 50 15 0 0 0 0 30
+    frame    data/chars/milo/special39.png
+    attack1 0
+    frame    data/chars/milo/special39.png
+    attack1 41 0 900 182 15 1 0 0 0 50
+    frame    data/chars/milo/special39.png
+    attack1 0
+
+
 anim special2 # Défense spéciale sting
-	delay	15
-	offset	62 126
-	hitflash milo_blood
-	sound data/chars/milo/sounds/scarlet-needle1.wav
-	summonframe 0 0 0 0
-	subentity milo_sting
-	unsummonframe 6
-	energycost  10 1 0
-	attack5 -13 -12 150 142 30 1 0 0 5 12
-	dropv 4.0 3.0 0.0
-	frame	data/chars/milo/special1.png
-	frame	data/chars/milo/special2.png
-	frame	data/chars/milo/special3.png
-	frame	data/chars/milo/special4.png
-	frame	data/chars/milo/special5.png
-	frame	data/chars/milo/special6.png
-	attack5 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/milo/special1.png
-	
+    delay    15
+    offset    62 126
+    hitflash milo_blood
+    sound data/chars/milo/sounds/scarlet-needle1.wav
+    summonframe 0 0 0 0
+    subentity milo_sting
+    unsummonframe 6
+    energycost  10 1 0
+    attack5 -13 -12 150 142 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/milo/special1.png
+    frame    data/chars/milo/special2.png
+    frame    data/chars/milo/special3.png
+    frame    data/chars/milo/special4.png
+    frame    data/chars/milo/special5.png
+    frame    data/chars/milo/special6.png
+    attack5 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/milo/special1.png
+
 anim freespecial3 # Attaque spéciale Aiguille écarlate
-	range 	130 300
-	rangea 	0 100
-	delay	5
-	offset	46 130
-	bbox 32 16 38 114
-	hitflash milo_blood
-	sound data/chars/milo/sounds/10-pierce3.wav
-	summonframe 0 0 0 0
-	subentity milo_sting
-	unsummonframe 5
-	energycost  20 1 0
-	forcedirection -1
-	@cmd	dasher 4 0 0 1
-	attack5 60 16 55 83 10 0 0 0 5 12
-	frame	data/chars/milo/special21.png
-	frame	data/chars/milo/special22.png
-	frame	data/chars/milo/special23.png
-	frame	data/chars/milo/special24.png
-	frame	data/chars/milo/special25.png
-	attack5 60 16 55 83 10 0 0 0 5 12
-	frame	data/chars/milo/special26.png
-	attack5 0
-	frame	data/chars/milo/special27.png
-	attack5 60 16 55 83 10 0 0 0 5 12
-	frame	data/chars/milo/special28.png
-	attack5 0
-	frame	data/chars/milo/special29.png
-	attack5 60 16 55 83 10 0 0 0 5 12
-	frame	data/chars/milo/special30.png
-	attack5 0
-	sound data/chars/milo/sounds/scarlet-needle2.wav
-	frame	data/chars/milo/special31.png
-	attack5 24 56 150 32 10 0 0 0 5 12
-	frame	data/chars/milo/special32.png
-	attack5 0
-	frame	data/chars/milo/special33.png
-	attack5 34 70 290 10 10 0 0 0 5 12
-	frame	data/chars/milo/special34.png
-	attack5 0
-	frame	data/chars/milo/special35.png
-	attack5 60 10 69 83 10 1 0 0 5 12
-	frame	data/chars/milo/special36.png
-	attack5 0
-	frame	data/chars/milo/special37.png
-	attack5 60 10 69 83 10 1 0 0 5 12
-	dropv 4.0 2.0 0.0
-	frame	data/chars/milo/special38.png
-	attack5 0
-	frame	data/chars/milo/special39.png	
-	
+    range     130 300
+    rangea     0 100
+    delay    5
+    offset    46 130
+    bbox 32 16 38 114
+    hitflash milo_blood
+    sound data/chars/milo/sounds/10-pierce3.wav
+    summonframe 0 0 0 0
+    subentity milo_sting
+    unsummonframe 5
+    energycost  20 1 0
+    forcedirection -1
+    @cmd    dasher 4 0 0 1
+    attack5 60 16 55 83 10 0 0 0 5 12
+    frame    data/chars/milo/special21.png
+    frame    data/chars/milo/special22.png
+    frame    data/chars/milo/special23.png
+    frame    data/chars/milo/special24.png
+    frame    data/chars/milo/special25.png
+    attack5 60 16 55 83 10 0 0 0 5 12
+    frame    data/chars/milo/special26.png
+    attack5 0
+    frame    data/chars/milo/special27.png
+    attack5 60 16 55 83 10 0 0 0 5 12
+    frame    data/chars/milo/special28.png
+    attack5 0
+    frame    data/chars/milo/special29.png
+    attack5 60 16 55 83 10 0 0 0 5 12
+    frame    data/chars/milo/special30.png
+    attack5 0
+    sound data/chars/milo/sounds/scarlet-needle2.wav
+    frame    data/chars/milo/special31.png
+    attack5 24 56 150 32 10 0 0 0 5 12
+    frame    data/chars/milo/special32.png
+    attack5 0
+    frame    data/chars/milo/special33.png
+    attack5 34 70 290 10 10 0 0 0 5 12
+    frame    data/chars/milo/special34.png
+    attack5 0
+    frame    data/chars/milo/special35.png
+    attack5 60 10 69 83 10 1 0 0 5 12
+    frame    data/chars/milo/special36.png
+    attack5 0
+    frame    data/chars/milo/special37.png
+    attack5 60 10 69 83 10 1 0 0 5 12
+    dropv 4.0 2.0 0.0
+    frame    data/chars/milo/special38.png
+    attack5 0
+    frame    data/chars/milo/special39.png
+
 anim riseattack # Défense spéciale sting
-	delay	15
-	offset	62 126
-	sound data/chars/milo/sounds/scarlet-needle1.wav
-	summonframe 0 0 0 0
-	subentity milo_sting
-	unsummonframe 6
-	energycost  10 1 0
-	hitflash milo_blood
-	attack5 -13 -12 150 142 30 1 0 0 5 12
-	dropv 4.0 3.0 0.0
-	frame	data/chars/milo/special1.png
-	frame	data/chars/milo/special2.png
-	frame	data/chars/milo/special3.png
-	frame	data/chars/milo/special4.png
-	frame	data/chars/milo/special5.png
-	frame	data/chars/milo/special6.png
-	attack5 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/milo/special1.png		
-	
-anim	block
-	offset	46 127
-	bbox 27 9 38 118
-	frame	data/chars/milo/block1.png
-	frame	data/chars/milo/block2.png
+    delay    15
+    offset    62 126
+    sound data/chars/milo/sounds/scarlet-needle1.wav
+    summonframe 0 0 0 0
+    subentity milo_sting
+    unsummonframe 6
+    energycost  10 1 0
+    hitflash milo_blood
+    attack5 -13 -12 150 142 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/milo/special1.png
+    frame    data/chars/milo/special2.png
+    frame    data/chars/milo/special3.png
+    frame    data/chars/milo/special4.png
+    frame    data/chars/milo/special5.png
+    frame    data/chars/milo/special6.png
+    attack5 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/milo/special1.png
+
+anim    block
+    offset    46 127
+    bbox 27 9 38 118
+    frame    data/chars/milo/block1.png
+    frame    data/chars/milo/block2.png
 
 anim freespecial5 # Ultra Antares
-	delay	10
-	offset	41 166
-	energycost  50 1 0
-	hitflash milo_blood
-	fastattack 1
-	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
-        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
-	sound data/chars/aldebaran/78-cosmos.wav
-	frame	data/chars/milo/jump1.png
-	sound data/chars/milo/sounds/08-antares.wav
-	spawnframe 0 0 0 0 1
-	subentity milo_constellation
-	energycost  20 1 0
-	frame	data/chars/milo/jump1.png
-	offset	41 186
-	frame	data/chars/milo/jump1.png
-	offset	41 206
-	frame	data/chars/milo/jump1.png
-	offset	41 226
-	frame	data/chars/milo/jump1.png
-	offset	41 246
-	frame	data/chars/milo/jump1.png
-	offset	41 266
-	frame	data/chars/milo/jump1.png
-	offset	41 286
-	frame	data/chars/milo/jump2.png
-	frame	data/chars/milo/jumpattack1.png
-	frame	data/chars/milo/jumpattack2.png
-	frame	data/chars/milo/jumpattack3.png
-	@cmd 	spawnbind "milo_antares" "ANI_IDLE" 0 0 0 0 0
-	delay   150
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	delay   10
-	@cmd 	spawnbind "milo_antaresB" "ANI_IDLE" 0 0 0 0 0
-	@cmd 	spawnbind "milo_antaresC" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	frame	data/chars/milo/jumpattack4.png
-	attack1 100 100 300 300 50 0 0 0 0 30
-	frame	data/chars/milo/jumpattack4.png
-	attack1 0
-	delay   10
-	frame	data/chars/milo/jump3.png
-	offset	41 286
-	frame	data/chars/milo/jump3.png
-	offset	41 266
-	frame	data/chars/milo/jump3.png
-	offset	41 246
-	frame	data/chars/milo/jump3.png
-	offset	41 226
-	frame	data/chars/milo/jump3.png
-	offset	41 206
-	frame	data/chars/milo/jump3.png
-	offset	41 186
+    delay    10
+    offset    41 166
+    energycost  50 1 0
+    hitflash milo_blood
+    fastattack 1
+    @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
+        @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
+    sound data/chars/aldebaran/78-cosmos.wav
+    frame    data/chars/milo/jump1.png
+    sound data/chars/milo/sounds/08-antares.wav
+    spawnframe 0 0 0 0 1
+    subentity milo_constellation
+    energycost  20 1 0
+    frame    data/chars/milo/jump1.png
+    offset    41 186
+    frame    data/chars/milo/jump1.png
+    offset    41 206
+    frame    data/chars/milo/jump1.png
+    offset    41 226
+    frame    data/chars/milo/jump1.png
+    offset    41 246
+    frame    data/chars/milo/jump1.png
+    offset    41 266
+    frame    data/chars/milo/jump1.png
+    offset    41 286
+    frame    data/chars/milo/jump2.png
+    frame    data/chars/milo/jumpattack1.png
+    frame    data/chars/milo/jumpattack2.png
+    frame    data/chars/milo/jumpattack3.png
+    @cmd     spawnbind "milo_antares" "ANI_IDLE" 0 0 0 0 0
+    delay   150
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    delay   10
+    @cmd     spawnbind "milo_antaresB" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "milo_antaresC" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    frame    data/chars/milo/jumpattack4.png
+    attack1 100 100 300 300 50 0 0 0 0 30
+    frame    data/chars/milo/jumpattack4.png
+    attack1 0
+    delay   10
+    frame    data/chars/milo/jump3.png
+    offset    41 286
+    frame    data/chars/milo/jump3.png
+    offset    41 266
+    frame    data/chars/milo/jump3.png
+    offset    41 246
+    frame    data/chars/milo/jump3.png
+    offset    41 226
+    frame    data/chars/milo/jump3.png
+    offset    41 206
+    frame    data/chars/milo/jump3.png
+    offset    41 186

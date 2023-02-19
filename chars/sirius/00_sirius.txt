@@ -1,14 +1,10 @@
-name		sirius
-health		500
-mp 			100
-type		enemy
+name        sirius
+health      500
+mp          100
+type        enemy
+
 
 #-- GENERAL CONFIG --------------------------------------------------
-
-hostile     player npc  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression 0            # valeur positive + agressif / valeur negative - aggressif
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
@@ -22,6 +18,7 @@ jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol / enemi ne tremble pas
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
@@ -38,31 +35,46 @@ atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
-blockodds 	1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
+
 #-- LIFEBAR ---------------------------------------------------------
 
-lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom pour Boss via Script
+
 
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript	data/scripts/lifebar.c
-didhitscript	data/scripts/didhit/tint_silver.c
-script	data/scripts/entity_effects.c
-animationscript	data/scripts/player.c
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+ondrawscript        data/scripts/lifebar.c              # Barre de vie des Boss
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
+didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite : OR
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load sirius_ray
 
+
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars/sirius/icon.png 0
-palette      data/chars/sirius/idle1.png
+icon         data/chars/sirius/palettes/icon1.png 0
+palette      data/chars/sirius/palettes/palette1.png
 #remap       data/chars/sirius/palettes/palette1.png  # 14 Possible MAX
 
 #-- ANIMATIONS -------------------------------------------------------
@@ -73,356 +85,356 @@ palette      data/chars/sirius/idle1.png
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-	delay	18
-	offset	53 141
-	frame	data/chars/sirius/spawn1.png
-	frame	data/chars/sirius/spawn2.png
-	frame	data/chars/sirius/spawn3.png
-	frame	data/chars/sirius/spawn4.png
-	frame	data/chars/sirius/spawn5.png
-	frame	data/chars/sirius/spawn6.png
-	frame	data/chars/sirius/spawn7.png
-	frame	data/chars/sirius/spawn8.png
-	frame	data/chars/sirius/spawn9.png
-	frame	data/chars/sirius/spawn10.png
-	frame	data/chars/sirius/spawn11.png
-	frame	data/chars/sirius/spawn12.png
-	frame	data/chars/sirius/spawn13.png
-	frame	data/chars/sirius/spawn14.png
-	frame	data/chars/sirius/spawn15.png
-	frame	data/chars/sirius/spawn16.png
-	frame	data/chars/sirius/spawn17.png
-	frame	data/chars/sirius/spawn18.png
-	frame	data/chars/sirius/spawn19.png
-	frame	data/chars/sirius/spawn20.png
-	frame	data/chars/sirius/spawn21.png
-	frame	data/chars/sirius/spawn22.png
-	frame	data/chars/sirius/spawn21.png
-	frame	data/chars/sirius/spawn22.png
-	
+    delay    18
+    offset    53 141
+    frame    data/chars/sirius/spawn1.png
+    frame    data/chars/sirius/spawn2.png
+    frame    data/chars/sirius/spawn3.png
+    frame    data/chars/sirius/spawn4.png
+    frame    data/chars/sirius/spawn5.png
+    frame    data/chars/sirius/spawn6.png
+    frame    data/chars/sirius/spawn7.png
+    frame    data/chars/sirius/spawn8.png
+    frame    data/chars/sirius/spawn9.png
+    frame    data/chars/sirius/spawn10.png
+    frame    data/chars/sirius/spawn11.png
+    frame    data/chars/sirius/spawn12.png
+    frame    data/chars/sirius/spawn13.png
+    frame    data/chars/sirius/spawn14.png
+    frame    data/chars/sirius/spawn15.png
+    frame    data/chars/sirius/spawn16.png
+    frame    data/chars/sirius/spawn17.png
+    frame    data/chars/sirius/spawn18.png
+    frame    data/chars/sirius/spawn19.png
+    frame    data/chars/sirius/spawn20.png
+    frame    data/chars/sirius/spawn21.png
+    frame    data/chars/sirius/spawn22.png
+    frame    data/chars/sirius/spawn21.png
+    frame    data/chars/sirius/spawn22.png
+
 anim idle
-	loop 1
-	delay	10
-	offset	35 129
-	bbox 18 17 52 112
-	frame	data/chars/sirius/idle1.png
-	frame	data/chars/sirius/idle2.png
-	frame	data/chars/sirius/idle3.png
-	frame	data/chars/sirius/idle2.png
+    loop 1
+    delay    10
+    offset    35 129
+    bbox 18 17 52 112
+    frame    data/chars/sirius/idle1.png
+    frame    data/chars/sirius/idle2.png
+    frame    data/chars/sirius/idle3.png
+    frame    data/chars/sirius/idle2.png
 
 anim sleep
-	loop 1 3 6
-	delay	10
-	offset	52 119
-	bbox 27 7 52 112
-	frame	data/chars/sirius/sleep1.png
-	frame	data/chars/sirius/sleep2.png
-	frame	data/chars/sirius/sleep3.png
-	frame	data/chars/sirius/sleep4.png
-	frame	data/chars/sirius/sleep5.png
-	frame	data/chars/sirius/sleep6.png
-	
+    loop 1 3 6
+    delay    10
+    offset    52 119
+    bbox 27 7 52 112
+    frame    data/chars/sirius/sleep1.png
+    frame    data/chars/sirius/sleep2.png
+    frame    data/chars/sirius/sleep3.png
+    frame    data/chars/sirius/sleep4.png
+    frame    data/chars/sirius/sleep5.png
+    frame    data/chars/sirius/sleep6.png
+
 anim walk
-	loop	1
-	delay	14
-	offset	46 130
-	bbox 18 18 52 112
-	frame	data/chars/sirius/walk1.png
-	frame	data/chars/sirius/walk2.png
-	frame	data/chars/sirius/walk3.png
-	frame	data/chars/sirius/walk4.png
-	frame	data/chars/sirius/walk5.png
-	frame	data/chars/sirius/walk6.png
-	frame	data/chars/sirius/walk7.png
-	frame	data/chars/sirius/walk8.png
-	frame	data/chars/sirius/walk9.png
-	frame	data/chars/sirius/walk10.png	
+    loop    1
+    delay    14
+    offset    46 130
+    bbox 18 18 52 112
+    frame    data/chars/sirius/walk1.png
+    frame    data/chars/sirius/walk2.png
+    frame    data/chars/sirius/walk3.png
+    frame    data/chars/sirius/walk4.png
+    frame    data/chars/sirius/walk5.png
+    frame    data/chars/sirius/walk6.png
+    frame    data/chars/sirius/walk7.png
+    frame    data/chars/sirius/walk8.png
+    frame    data/chars/sirius/walk9.png
+    frame    data/chars/sirius/walk10.png
 
 anim run
-	loop	1
-	delay	10
-	offset	69 119
-	bbox 58 7 52 112
-	frame	data/chars/sirius/run1.png
-	frame	data/chars/sirius/run2.png
-	frame	data/chars/sirius/run3.png
-	frame	data/chars/sirius/run4.png
-	frame	data/chars/sirius/run5.png
-	frame	data/chars/sirius/run6.png
-	frame	data/chars/sirius/run7.png
-	frame	data/chars/sirius/run8.png
-	
+    loop    1
+    delay    10
+    offset    69 119
+    bbox 58 7 52 112
+    frame    data/chars/sirius/run1.png
+    frame    data/chars/sirius/run2.png
+    frame    data/chars/sirius/run3.png
+    frame    data/chars/sirius/run4.png
+    frame    data/chars/sirius/run5.png
+    frame    data/chars/sirius/run6.png
+    frame    data/chars/sirius/run7.png
+    frame    data/chars/sirius/run8.png
+
 anim runattack # Attaque en courant
-	delay	8
-	offset	34 135
-	bbox 14 24 52 112
-	fastattack 1
-	hitflash sirius_slash
-	forcedirection -1
-	@cmd	dasher 2.5 0 0 1
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/sirius/runattack1.png
-	frame	data/chars/sirius/runattack2.png
-	attack2 31 43 60 51 10 0 0 0 5 12
-	frame	data/chars/sirius/runattack3.png
-	attack2 0
-	frame	data/chars/sirius/runattack4.png
-	attack2 41 114 97 25 20 1 0 0 5 12
-	frame	data/chars/sirius/runattack5.png
-	frame	data/chars/sirius/runattack5.png
-	frame	data/chars/sirius/runattack6.png
-	attack2 0
-	@cmd	dasher 0 0 0 1
-	delay	12
-	frame	data/chars/sirius/runattack7.png
+    delay    8
+    offset    34 135
+    bbox 14 24 52 112
+    fastattack 1
+    hitflash sirius_slash
+    forcedirection -1
+    @cmd    dasher 2.5 0 0 1
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/sirius/runattack1.png
+    frame    data/chars/sirius/runattack2.png
+    attack2 31 43 60 51 10 0 0 0 5 12
+    frame    data/chars/sirius/runattack3.png
+    attack2 0
+    frame    data/chars/sirius/runattack4.png
+    attack2 41 114 97 25 20 1 0 0 5 12
+    frame    data/chars/sirius/runattack5.png
+    frame    data/chars/sirius/runattack5.png
+    frame    data/chars/sirius/runattack6.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/sirius/runattack7.png
 
 anim get
-	delay	1
-	offset	46 129
-	bbox 18 18 52 112
-	frame	data/chars/sirius/get1.png
-	frame	data/chars/sirius/get2.png
-	frame	data/chars/sirius/get3.png
-	frame	data/chars/sirius/get2.png
-	frame	data/chars/sirius/get1.png
+    delay    1
+    offset    46 129
+    bbox 18 18 52 112
+    frame    data/chars/sirius/get1.png
+    frame    data/chars/sirius/get2.png
+    frame    data/chars/sirius/get3.png
+    frame    data/chars/sirius/get2.png
+    frame    data/chars/sirius/get1.png
 
 anim attack1 # Attaque combo 1
-	delay	5
-	offset	42 127
-	bbox 18 18 52 112
-	frame	data/chars/sirius/attack1.png
-	attack1 29 34 67 26 10 0 0 0 5 12
-	frame	data/chars/sirius/attack2.png
-	frame	data/chars/sirius/attack3.png
-	attack1 0
-	frame	data/chars/sirius/attack4.png
-	
+    delay    5
+    offset    42 127
+    bbox 18 18 52 112
+    frame    data/chars/sirius/attack1.png
+    attack1 29 34 67 26 10 0 0 0 5 12
+    frame    data/chars/sirius/attack2.png
+    frame    data/chars/sirius/attack3.png
+    attack1 0
+    frame    data/chars/sirius/attack4.png
+
 anim attack2 # Attaque combo 2
-	delay	5
-	offset	42 127
-	bbox 18 18 52 112
-	frame	data/chars/sirius/attack21.png
-	frame	data/chars/sirius/attack22.png
-	attack1 52 28 67 26 10 0 0 0 5 12
-	frame	data/chars/sirius/attack23.png
-	frame	data/chars/sirius/attack24.png
-	attack1 0
-	
+    delay    5
+    offset    42 127
+    bbox 18 18 52 112
+    frame    data/chars/sirius/attack21.png
+    frame    data/chars/sirius/attack22.png
+    attack1 52 28 67 26 10 0 0 0 5 12
+    frame    data/chars/sirius/attack23.png
+    frame    data/chars/sirius/attack24.png
+    attack1 0
+
 anim attack3 # Attaque combo 3
-	delay	7
-	offset	42 127
-	bbox 18 18 52 112
-	frame	data/chars/sirius/attack31.png
-	frame	data/chars/sirius/attack32.png
-	frame	data/chars/sirius/attack33.png
-	attack1 42 41 73 26 10 0 0 0 5 12
-	frame	data/chars/sirius/attack34.png
-	
+    delay    7
+    offset    42 127
+    bbox 18 18 52 112
+    frame    data/chars/sirius/attack31.png
+    frame    data/chars/sirius/attack32.png
+    frame    data/chars/sirius/attack33.png
+    attack1 42 41 73 26 10 0 0 0 5 12
+    frame    data/chars/sirius/attack34.png
+
 anim attack4 # Attaque combo 4
-	delay	7
-	offset	22 130
-	bbox 0 18 52 112
-	hitflash flashmedium
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/sirius/attack41.png
-	frame	data/chars/sirius/attack42.png
-	attack1 32 60 62 46 10 0 0 0 5 12
-	frame	data/chars/sirius/attack43.png
-	frame	data/chars/sirius/attack44.png
-	
+    delay    7
+    offset    22 130
+    bbox 0 18 52 112
+    hitflash flashmedium
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/sirius/attack41.png
+    frame    data/chars/sirius/attack42.png
+    attack1 32 60 62 46 10 0 0 0 5 12
+    frame    data/chars/sirius/attack43.png
+    frame    data/chars/sirius/attack44.png
+
 anim attack5 # Attaque combo 5
-	delay	5
-	offset	48 131
-	bbox 18 20 52 112
-	hitflash flashbig
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/sirius/attack51.png
-	frame	data/chars/sirius/attack52.png
-	frame	data/chars/sirius/attack53.png
-	attack1 48 0 67 65 20 1 0 0 5 12
-	frame	data/chars/sirius/attack54.png
-	attack1 0
-	frame	data/chars/sirius/attack55.png
-	frame	data/chars/sirius/attack56.png
-	
+    delay    5
+    offset    48 131
+    bbox 18 20 52 112
+    hitflash flashbig
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/sirius/attack51.png
+    frame    data/chars/sirius/attack52.png
+    frame    data/chars/sirius/attack53.png
+    attack1 48 0 67 65 20 1 0 0 5 12
+    frame    data/chars/sirius/attack54.png
+    attack1 0
+    frame    data/chars/sirius/attack55.png
+    frame    data/chars/sirius/attack56.png
+
 anim special # Defense spéciale Great Mountain Smasher
-	delay	10
-	offset	35 147
-	sound data/chars/sirius/04-skywalk.wav
-	fastattack 1
-	hitflash sirius_slash
-	frame	data/chars/sirius/special1.png
-	frame	data/chars/sirius/special2.png
-	frame	data/chars/sirius/special3.png
-	attack5 45 57 91 30 15 0 0 0 5 12
-	frame	data/chars/sirius/special4.png
-	frame	data/chars/sirius/special5.png
-	attack5 0
-	frame	data/chars/sirius/special6.png
-	frame	data/chars/sirius/special7.png
-	frame	data/chars/sirius/special8.png
-	attack5 35 0 50 79 15 0 0 0 5 12
-	frame	data/chars/sirius/special9.png
-	frame	data/chars/sirius/special10.png
-	attack5 0
-	frame	data/chars/sirius/special11.png
-	frame	data/chars/sirius/special12.png
-	attack5 33 40 65 57 20 1 0 0 5 12
-	dropv 	6.0 3 0		
-	frame	data/chars/sirius/special13.png
-	frame	data/chars/sirius/special14.png
-	frame	data/chars/sirius/special15.png
+    delay    10
+    offset    35 147
+    sound data/chars/sirius/04-skywalk.wav
+    fastattack 1
+    hitflash sirius_slash
+    frame    data/chars/sirius/special1.png
+    frame    data/chars/sirius/special2.png
+    frame    data/chars/sirius/special3.png
+    attack5 45 57 91 30 15 0 0 0 5 12
+    frame    data/chars/sirius/special4.png
+    frame    data/chars/sirius/special5.png
+    attack5 0
+    frame    data/chars/sirius/special6.png
+    frame    data/chars/sirius/special7.png
+    frame    data/chars/sirius/special8.png
+    attack5 35 0 50 79 15 0 0 0 5 12
+    frame    data/chars/sirius/special9.png
+    frame    data/chars/sirius/special10.png
+    attack5 0
+    frame    data/chars/sirius/special11.png
+    frame    data/chars/sirius/special12.png
+    attack5 33 40 65 57 20 1 0 0 5 12
+    dropv     6.0 3 0
+    frame    data/chars/sirius/special13.png
+    frame    data/chars/sirius/special14.png
+    frame    data/chars/sirius/special15.png
 
 anim freespecial2 # 2X Ray projectile
-	delay	10
-	offset	49 127
-	sound data/chars/sirius/03-special.wav
-	range 	130 300
-	rangea 	0 100
-	energycost  20 1 0
-	hitflash flashbig
-	attack5 -8 -50 100 180 10 1 0 0 5 12
-	frame	data/chars/sirius/special21.png
-	frame	data/chars/sirius/special22.png
-	frame	data/chars/sirius/special23.png
-	frame	data/chars/sirius/special24.png
-	frame	data/chars/sirius/special25.png
-	frame	data/chars/sirius/special26.png
-	frame	data/chars/sirius/special27.png
-	frame	data/chars/sirius/special28.png
-	@cmd	shooter "sirius_ray" 77 77 0 5 0 0
-	frame	data/chars/sirius/special29.png
-	frame	data/chars/sirius/special30.png
-	delay	20	
-	frame	data/chars/sirius/special31.png
-	frame	data/chars/sirius/special32.png
-	@cmd	shooter "sirius_ray" 77 77 0 5 0 0
-	frame	data/chars/sirius/special32.png
-	frame	data/chars/sirius/special32.png	
+    delay    10
+    offset    49 127
+    sound data/chars/sirius/03-special.wav
+    range     130 300
+    rangea     0 100
+    energycost  20 1 0
+    hitflash flashbig
+    attack5 -8 -50 100 180 10 1 0 0 5 12
+    frame    data/chars/sirius/special21.png
+    frame    data/chars/sirius/special22.png
+    frame    data/chars/sirius/special23.png
+    frame    data/chars/sirius/special24.png
+    frame    data/chars/sirius/special25.png
+    frame    data/chars/sirius/special26.png
+    frame    data/chars/sirius/special27.png
+    frame    data/chars/sirius/special28.png
+    @cmd    shooter "sirius_ray" 77 77 0 5 0 0
+    frame    data/chars/sirius/special29.png
+    frame    data/chars/sirius/special30.png
+    delay    20
+    frame    data/chars/sirius/special31.png
+    frame    data/chars/sirius/special32.png
+    @cmd    shooter "sirius_ray" 77 77 0 5 0 0
+    frame    data/chars/sirius/special32.png
+    frame    data/chars/sirius/special32.png
 
 anim jump # Saut Statique
-	delay	10
-	offset	28 130
-	bbox 5 7 52 112
-	summonframe 0 0 0 0
-	subentity round_dust
-	cancel 0 8 0 A2 freespecial3
-	frame	data/chars/sirius/jump1.png
-	frame	data/chars/sirius/jump2.png
-	frame	data/chars/sirius/jump3.png
-	frame	data/chars/sirius/jump4.png
-	frame	data/chars/sirius/jump5.png
-	frame	data/chars/sirius/jump6.png
-	
+    delay    10
+    offset    28 130
+    bbox 5 7 52 112
+    summonframe 0 0 0 0
+    subentity round_dust
+    cancel 0 8 0 A2 freespecial3
+    frame    data/chars/sirius/jump1.png
+    frame    data/chars/sirius/jump2.png
+    frame    data/chars/sirius/jump3.png
+    frame    data/chars/sirius/jump4.png
+    frame    data/chars/sirius/jump5.png
+    frame    data/chars/sirius/jump6.png
+
 anim jumpdelay # Animation de saut intermédiaire
-	delay	10
-	offset	28 130
-	bbox 5 7 52 112
-	frame	data/chars/sirius/jump1.png
+    delay    10
+    offset    28 130
+    bbox 5 7 52 112
+    frame    data/chars/sirius/jump1.png
 
 anim jumpland # Aterrissage du saut
-	delay	8
-	offset	46 129
-	bbox 18 18 52 112
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/sirius/get1.png
-	frame	data/chars/sirius/get2.png
-	frame	data/chars/sirius/get3.png
-	frame	data/chars/sirius/get2.png
-	frame	data/chars/sirius/get1.png
-	
+    delay    8
+    offset    46 129
+    bbox 18 18 52 112
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/sirius/get1.png
+    frame    data/chars/sirius/get2.png
+    frame    data/chars/sirius/get3.png
+    frame    data/chars/sirius/get2.png
+    frame    data/chars/sirius/get1.png
+
 anim jumpattack #Attaque sautée statique
-	delay	5
-	offset	28 130
-	bbox 5 7 52 112
-	sound data/sounds/punch.wav
-	frame	data/chars/sirius/jumpattack1.png
-	frame	data/chars/sirius/jumpattack2.png
-	dropv 4.0 1.0 0.0
-	attack4 32 67 67 26 10 1 0 0 5 12
-	frame	data/chars/sirius/jumpattack3.png
-	frame	data/chars/sirius/jumpattack3.png
-	attack4 0
-	
+    delay    5
+    offset    28 130
+    bbox 5 7 52 112
+    sound data/sounds/punch.wav
+    frame    data/chars/sirius/jumpattack1.png
+    frame    data/chars/sirius/jumpattack2.png
+    dropv 4.0 1.0 0.0
+    attack4 32 67 67 26 10 1 0 0 5 12
+    frame    data/chars/sirius/jumpattack3.png
+    frame    data/chars/sirius/jumpattack3.png
+    attack4 0
+
 anim pain
-	offset	35 129
-	bbox 18 17 52 112
-	delay	5
-	frame	data/chars/sirius/pain1.png
-	frame	data/chars/sirius/pain2.png
-	frame	data/chars/sirius/pain3.png
-	frame	data/chars/sirius/pain2.png
-	frame	data/chars/sirius/pain1.png
-	
+    offset    35 129
+    bbox 18 17 52 112
+    delay    5
+    frame    data/chars/sirius/pain1.png
+    frame    data/chars/sirius/pain2.png
+    frame    data/chars/sirius/pain3.png
+    frame    data/chars/sirius/pain2.png
+    frame    data/chars/sirius/pain1.png
+
 anim pain2
-	offset	38 127
-	bbox 18 17 52 112
-	#move	-5
-	delay	5
-	frame	data/chars/sirius/pain21.png
-	frame	data/chars/sirius/pain22.png
-	frame	data/chars/sirius/pain23.png
-	frame	data/chars/sirius/pain22.png
-	frame	data/chars/sirius/pain21.png
-	
+    offset    38 127
+    bbox 18 17 52 112
+    #move    -5
+    delay    5
+    frame    data/chars/sirius/pain21.png
+    frame    data/chars/sirius/pain22.png
+    frame    data/chars/sirius/pain23.png
+    frame    data/chars/sirius/pain22.png
+    frame    data/chars/sirius/pain21.png
+
 anim fall
-	offset	95 127
-	delay	10
-	landframe 5
-	bbox 40 26 75 100
-	frame	data/chars/sirius/fall1.png
-	frame	data/chars/sirius/fall2.png
-	frame	data/chars/sirius/fall3.png
-	frame	data/chars/sirius/fall4.png
-	bbox 0 97 120 35
-	frame	data/chars/sirius/fall5.png
-	frame	data/chars/sirius/fall6.png
+    offset    95 127
+    delay    10
+    landframe 5
+    bbox 40 26 75 100
+    frame    data/chars/sirius/fall1.png
+    frame    data/chars/sirius/fall2.png
+    frame    data/chars/sirius/fall3.png
+    frame    data/chars/sirius/fall4.png
+    bbox 0 97 120 35
+    frame    data/chars/sirius/fall5.png
+    frame    data/chars/sirius/fall6.png
 
 anim fall7
-	offset	95 127
-	delay	-1000
-	landframe 5
-	bbox 40 26 75 100
-	frame	data/chars/sirius/fall1.png
-	frame	data/chars/sirius/fall2.png
-	frame	data/chars/sirius/fall3.png
-	frame	data/chars/sirius/fall4.png
-	bbox 0 100 120 35
-	frame	data/chars/sirius/fall5.png
-	frame	data/chars/sirius/fall6.png
+    offset    95 127
+    delay    -1000
+    landframe 5
+    bbox 40 26 75 100
+    frame    data/chars/sirius/fall1.png
+    frame    data/chars/sirius/fall2.png
+    frame    data/chars/sirius/fall3.png
+    frame    data/chars/sirius/fall4.png
+    bbox 0 100 120 35
+    frame    data/chars/sirius/fall5.png
+    frame    data/chars/sirius/fall6.png
 
 anim rise
-	delay	10
-	offset	95 127
-	jumpframe 0 0 0	
-	frame	data/chars/sirius/rise1.png
-	frame	data/chars/sirius/rise2.png
-	frame	data/chars/sirius/rise3.png
-	frame	data/chars/sirius/rise4.png	
+    delay    10
+    offset    95 127
+    jumpframe 0 0 0
+    frame    data/chars/sirius/rise1.png
+    frame    data/chars/sirius/rise2.png
+    frame    data/chars/sirius/rise3.png
+    frame    data/chars/sirius/rise4.png
 
 anim death
-	offset	95 127
-	delay	10
-	frame	data/chars/sirius/death1.png
-	frame	data/chars/sirius/death2.png
-	frame	data/chars/sirius/death3.png
-	frame	data/chars/sirius/death4.png
-	frame	data/chars/sirius/death5.png
-	frame	data/chars/sirius/death6.png
-	frame	data/chars/sirius/death7.png
-	frame	data/chars/sirius/death8.png
-	frame	data/chars/sirius/death9.png
-	frame	data/chars/sirius/death10.png
-	frame	data/chars/sirius/death11.png
-	frame	data/chars/sirius/death12.png
-	frame	data/chars/sirius/death13.png
-	
-anim	block
-	loop	0
-	delay	5
-	offset	38 129
-	bbox 18 17 52 112
-	frame	data/chars/sirius/block1.png
-	frame	data/chars/sirius/block2.png
-	frame	data/chars/sirius/block3.png
+    offset    95 127
+    delay    10
+    frame    data/chars/sirius/death1.png
+    frame    data/chars/sirius/death2.png
+    frame    data/chars/sirius/death3.png
+    frame    data/chars/sirius/death4.png
+    frame    data/chars/sirius/death5.png
+    frame    data/chars/sirius/death6.png
+    frame    data/chars/sirius/death7.png
+    frame    data/chars/sirius/death8.png
+    frame    data/chars/sirius/death9.png
+    frame    data/chars/sirius/death10.png
+    frame    data/chars/sirius/death11.png
+    frame    data/chars/sirius/death12.png
+    frame    data/chars/sirius/death13.png
+
+anim    block
+    loop    0
+    delay    5
+    offset    38 129
+    bbox 18 17 52 112
+    frame    data/chars/sirius/block1.png
+    frame    data/chars/sirius/block2.png
+    frame    data/chars/sirius/block3.png

@@ -1,13 +1,9 @@
-name    SOLDIERTRAINING
-health          1000
-type enemy
+name        SOLDIERTRAINING
+health      60
+type        enemy
+
 
 #-- GENERAL CONFIG --------------------------------------------------
-
-hostile     none  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression -10            # valeur positive + agressif / valeur negative - aggressif
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
@@ -21,6 +17,7 @@ jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol / enemi ne tremble pas
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
@@ -32,33 +29,47 @@ death       1           # Active l'animation de mort
 nolife      0           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 
-atchain     1  # Attaque combo de base (anim attack 1, puis 2...)
+atchain     1           # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
-hitenemy    1 0          # peut toucher d autres ennemis / air et sol
-blockodds 	10            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     none        # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   none        # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      avoid       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  -50         # Valeur positive + agressif / valeur negative - aggressif
+
+hitenemy    0 0          # peut toucher d'autres ennemis / air et sol
+blockodds   10           # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
+
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript    data/scripts/_debugs/DEBUG_GRAB.c
-didhitscript	data/scripts/didhit/tint_silver.c
-script	data/scripts/entity_effects.c
-animationscript	data/scripts/player.c
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
+didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite : ARGENT
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load blood_ground_medium
 
+
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars//soldier_purple/icon.png 0
-palette      data/chars/soldier_purple/01.png
-#remap       data/chars/soldier_purple/palette1.png  # 14 Possible MAX
+icon         data/chars/soldier_purple/palettes/icon1.png 0
+palette      data/chars/soldier_purple/palettes/palette1.png
+#remap       data/chars/soldier_purple/palettes/palette1.png  # 14 Possible MAX
+
 
 #-- ANIMATIONS -------------------------------------------------------
 
@@ -67,79 +78,70 @@ palette      data/chars/soldier_purple/01.png
 
 #// Static animations /////////////////////////////////////////////////
 
-anim idle
-    loop    1
+anim    idle
+    loop     1
     delay    10
-    offset    110 180
-    dropv 4 1 0
-	bbox 87 63 40 120
+    offset   110 180
+    dropv    4 1 0
+    bbox     87 63 40 120
     frame    data/chars/soldier_purple/01.png
-
-
-
 
 
 #// Block animations /////////////////////////////////////////////////
 
-anim        block
-loop	0
-	offset	110 180
-
+anim    block
+    loop     0
+    offset     110 180
 \\sound data/chars/soldier_purple/KO.wav
-	delay	10
-
-
-dropv 4 1 0
-	bbox.position.x 71
-	bbox.position.y 57
-	bbox.size.x 84
-	bbox.size.y 133
-frame	data/chars/soldier_purple/04.png
-frame	data/chars/soldier_purple/04.png
-frame	data/chars/soldier_purple/04.png
-frame	data/chars/soldier_purple/04.png
+    delay     10
+    dropv    4 1 0
+    bbox     71 57 84 133
+    frame     data/chars/soldier_purple/04.png
+    frame     data/chars/soldier_purple/04.png
+    frame     data/chars/soldier_purple/04.png
+    frame     data/chars/soldier_purple/04.png
 
 
 #// Walk/Run animations /////////////////////////////////////////////////
 
-
-anim walk
-    loop    1
+anim    walk
+    loop     1
     delay    15
-    offset    110 180
-	bbox 99 71 35 111
+    offset   110 180
+    bbox     99 71 35 111
     frame    data/chars/soldier_purple/09.png
     frame    data/chars/soldier_purple/10.png
     frame    data/chars/soldier_purple/11.png
     frame    data/chars/soldier_purple/12.png
 
-anim BACKWALK
-    loop    1
+anim    BACKWALK
+    loop     1
     delay    15
-    offset    110 180
-    dropv 4 1 0
-	bbox 70 70 35 110
+    offset   110 180
+    dropv    4 1 0
+    bbox     70 70 35 110
     frame    data/chars/soldier_purple/13.png
     frame    data/chars/soldier_purple/14.png
     frame    data/chars/soldier_purple/15.png
     frame    data/chars/soldier_purple/16.png
 
+
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
-anim pain
-    loop    0
+anim    pain
+    loop     0
     delay    10
-    offset    110 180
-	bbox 76 71 35 110
+    offset   110 180
+    bbox     76 71 35 110
     frame    data/chars/soldier_purple/05.png
     frame    data/chars/soldier_purple/05.png
 
-anim fall
-    loop    0
+anim    fall
+    loop     0
     delay    10
-    offset    110 180
-    dropv 4 1 0
-    bbox 65 65 50 120
+    offset   110 180
+    dropv    4 1 0
+    bbox     65 65 50 120
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
@@ -148,14 +150,14 @@ anim fall
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
-	bbox 42 152 110 30
+    bbox     42 152 110 30
     frame    data/chars/soldier_purple/07.png
     frame    data/chars/soldier_purple/07.png
     frame    data/chars/soldier_purple/07.png
 
-anim death
+anim    death
     delay    10
-    offset    100 180
+    offset   100 180
     frame    data/chars/soldier_purple/05.png
     frame    data/chars/soldier_purple/06.png
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
@@ -163,21 +165,22 @@ anim death
     frame    data/chars/soldier_purple/07.png
     frame    data/chars/soldier_purple/07.png
 
-anim rise
+anim    rise
     loop    0
     offset    110 180
     delay    10
     dropv 4 1 0
     frame    data/chars/soldier_purple/08.png
-	
-#//Basic Attacks animations/////////////////////////////////////////////////
 
-anim attack1
+
+#// Basic Attacks animations /////////////////////////////////////////////////
+
+anim    attack1
     loop    0
     delay    10
     offset    110 180
     dropv 4 1 0
-	bbox 58 59 94 133
+    bbox 58 59 94 133
     bbox.position.x 58
     bbox.position.y 59
     bbox.size.x 94
@@ -192,15 +195,16 @@ anim attack1
     attack.size.y 133
     frame    data/chars/soldier_purple/03.png
 
-anim attack2
+anim    attack2
 
 
-anim attack3
-
-#//Jump animations/////////////////////////////////////////////////
-
-anim jump
+anim    attack3
 
 
-anim jumpattack
+#// Jump animations /////////////////////////////////////////////////
+
+anim    jump
+
+
+anim    jumpattack
 

@@ -18,15 +18,15 @@ jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
-
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
 nodieblink  1           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
-modelflag   3           # Masque la petite barre de vie si on frappe un autre joueur
+modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")
 death       1           # Active l'animation de mort
 nolife      1           # Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
@@ -41,11 +41,12 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
-animationscript     data/scripts/player.c                 #
-script              data/scripts/entity_effects.c         # Permet d avoir un effet de teinte uand on est attaqué
-didhitscript        data/scripts/didhit/tint_green.c      # Effets de teinte sur sprite : VERTE
-ondeathscript	    data/scripts/timer_reset.c            # Mort du Timer à zéro
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
+didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite : OR
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------

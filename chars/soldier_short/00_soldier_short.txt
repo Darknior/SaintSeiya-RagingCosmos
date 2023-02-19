@@ -1,13 +1,9 @@
-name		soldier_short
-health		50
-type enemy
+name        soldier_short
+health      50
+type        enemy
+
 
 #-- GENERAL CONFIG --------------------------------------------------
-
-hostile     enemy  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression 0            # valeur positive + agressif / valeur negative - aggressif
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
@@ -21,6 +17,7 @@ jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol / enemi ne tremble pas
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
@@ -37,28 +34,42 @@ atchain     1 1 2 # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player      # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
-blockodds 	1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+blockodds   10           # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
+
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript    data/scripts/_debugs/DEBUG_GRAB.c
-didhitscript	data/scripts/didhit/tint_silver.c
-script	data/scripts/entity_effects.c
-animationscript	data/scripts/player.c
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
+didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite : ARGENT
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load blood_ground_big
 
+
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars//soldier_short/icon.png 0
-palette      data/chars/soldier_short/idle1.png
-#remap       data/chars/soldier_short/palette1.png  # 14 Possible MAX
+icon         data/chars/soldier_short/palettes/icon1.png 0
+palette      data/chars/soldier_short/palettes/palette1.png
+#remap       data/chars/soldier_short/palettes/palette1.png  # 14 Possible MAX
+
 
 #-- ANIMATIONS -------------------------------------------------------
 
@@ -68,149 +79,149 @@ palette      data/chars/soldier_short/idle1.png
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-	delay	10
-	offset	33 109
-	frame	data/chars/soldier_short/spawn.png
-	frame	data/chars/soldier_short/spawn.png
+    delay    10
+    offset    33 109
+    frame    data/chars/soldier_short/spawn.png
+    frame    data/chars/soldier_short/spawn.png
 
 anim follow1 #Entrée en jeu custom
-	delay	10
-	offset	60 123
-	bbox 38 10 43 80
-	jumpframe 0 3 1.5 0
-	frame	data/chars/soldier_short/jump1.png
-	frame	data/chars/soldier_short/jump2.png
-	frame	data/chars/soldier_short/jump3.png
-	frame	data/chars/soldier_short/jump2.png
-	frame	data/chars/soldier_short/jump1.png
+    delay    10
+    offset    60 123
+    bbox 38 10 43 80
+    jumpframe 0 3 1.5 0
+    frame    data/chars/soldier_short/jump1.png
+    frame    data/chars/soldier_short/jump2.png
+    frame    data/chars/soldier_short/jump3.png
+    frame    data/chars/soldier_short/jump2.png
+    frame    data/chars/soldier_short/jump1.png
 
 anim idle
-	loop	1
-	delay	25
-	offset	37 109
-	bbox 22 10 43 99
-	frame	data/chars/soldier_short/idle1.png
-	frame	data/chars/soldier_short/idle2.png
-	frame	data/chars/soldier_short/idle3.png
-	frame	data/chars/soldier_short/idle2.png	
+    loop    1
+    delay    25
+    offset    37 109
+    bbox 22 10 43 99
+    frame    data/chars/soldier_short/idle1.png
+    frame    data/chars/soldier_short/idle2.png
+    frame    data/chars/soldier_short/idle3.png
+    frame    data/chars/soldier_short/idle2.png
 
 anim walk
-	loop	1
-	delay	15
-	offset	68 101
-	bbox 68 10 50 91
-	frame	data/chars/soldier_short/run1.png
-	frame	data/chars/soldier_short/run2.png
-	frame	data/chars/soldier_short/run3.png
-	frame	data/chars/soldier_short/run4.png
-	frame	data/chars/soldier_short/run5.png
-	frame	data/chars/soldier_short/run6.png	
-	
+    loop    1
+    delay    15
+    offset    68 101
+    bbox 68 10 50 91
+    frame    data/chars/soldier_short/run1.png
+    frame    data/chars/soldier_short/run2.png
+    frame    data/chars/soldier_short/run3.png
+    frame    data/chars/soldier_short/run4.png
+    frame    data/chars/soldier_short/run5.png
+    frame    data/chars/soldier_short/run6.png
+
 anim rise
-	loop	1
-	delay	15
-	offset	65 125
-	bbox 49 10 50 115
-	frame	data/chars/soldier_short/run1.png
-	frame	data/chars/soldier_short/run2.png
-	frame	data/chars/soldier_short/run3.png
-	frame	data/chars/soldier_short/run4.png
-	frame	data/chars/soldier_short/run5.png
-	frame	data/chars/soldier_short/run6.png		
-	
+    loop    1
+    delay    15
+    offset    65 125
+    bbox 49 10 50 115
+    frame    data/chars/soldier_short/run1.png
+    frame    data/chars/soldier_short/run2.png
+    frame    data/chars/soldier_short/run3.png
+    frame    data/chars/soldier_short/run4.png
+    frame    data/chars/soldier_short/run5.png
+    frame    data/chars/soldier_short/run6.png
+
 anim pain
-	delay	5
-	offset	37 109
-	bbox 22 0 43 109
-	frame	data/chars/soldier_short/pain1.png
-	frame	data/chars/soldier_short/pain2.png
-	frame	data/chars/soldier_short/pain3.png
-	frame	data/chars/soldier_short/pain2.png
-	frame	data/chars/soldier_short/pain1.png
+    delay    5
+    offset    37 109
+    bbox 22 0 43 109
+    frame    data/chars/soldier_short/pain1.png
+    frame    data/chars/soldier_short/pain2.png
+    frame    data/chars/soldier_short/pain3.png
+    frame    data/chars/soldier_short/pain2.png
+    frame    data/chars/soldier_short/pain1.png
 
 anim fall
-	delay	10
-	offset	73 110
-	frame	data/chars/soldier_short/fall1.png
-	frame	data/chars/soldier_short/fall2.png
-	frame	data/chars/soldier_short/fall3.png
-	frame	data/chars/soldier_short/fall4.png
-	frame	data/chars/soldier_short/fall5.png
-	frame	data/chars/soldier_short/fall6.png
+    delay    10
+    offset    73 110
+    frame    data/chars/soldier_short/fall1.png
+    frame    data/chars/soldier_short/fall2.png
+    frame    data/chars/soldier_short/fall3.png
+    frame    data/chars/soldier_short/fall4.png
+    frame    data/chars/soldier_short/fall5.png
+    frame    data/chars/soldier_short/fall6.png
 
 anim rise
-	offset	73 109
-	delay	10
-	frame	data/chars/soldier_short/rise1.png
-	frame	data/chars/soldier_short/rise2.png
-	frame	data/chars/soldier_short/rise3.png
+    offset    73 109
+    delay    10
+    frame    data/chars/soldier_short/rise1.png
+    frame    data/chars/soldier_short/rise2.png
+    frame    data/chars/soldier_short/rise3.png
 
 anim attack1
-	delay	10
-	offset	37 109
-	bbox 22 10 43 99
-	frame	data/chars/soldier_short/attack1.png
-	attack1 42 19 63 25 10 0 0 0 5 12
-	frame	data/chars/soldier_short/attack2.png
+    delay    10
+    offset    37 109
+    bbox 22 10 43 99
+    frame    data/chars/soldier_short/attack1.png
+    attack1 42 19 63 25 10 0 0 0 5 12
+    frame    data/chars/soldier_short/attack2.png
 
 anim attack2
-	delay	10
-	offset	37 109
-	bbox 22 10 43 99
-	frame	data/chars/soldier_short/attack21.png
-	frame	data/chars/soldier_short/attack22.png
-	attack1 37 70 66 40 20 1 0 0 5 12
-	frame	data/chars/soldier_short/attack23.png
+    delay    10
+    offset    37 109
+    bbox 22 10 43 99
+    frame    data/chars/soldier_short/attack21.png
+    frame    data/chars/soldier_short/attack22.png
+    attack1 37 70 66 40 20 1 0 0 5 12
+    frame    data/chars/soldier_short/attack23.png
 
 anim jump # Saut Statique
-	delay	10
-	offset	60 123
-	bbox 38 10 43 80
-	frame	data/chars/soldier_short/jump1.png
-	frame	data/chars/soldier_short/jump2.png
-	frame	data/chars/soldier_short/jump3.png
-	frame	data/chars/soldier_short/jump2.png
-	frame	data/chars/soldier_short/jump1.png
-	
+    delay    10
+    offset    60 123
+    bbox 38 10 43 80
+    frame    data/chars/soldier_short/jump1.png
+    frame    data/chars/soldier_short/jump2.png
+    frame    data/chars/soldier_short/jump3.png
+    frame    data/chars/soldier_short/jump2.png
+    frame    data/chars/soldier_short/jump1.png
+
 anim jumpdelay # Animation de saut intermédiaire
-	delay	10
-	offset	44 130
-	bbox 29 10 35 71
-	frame	data/chars/soldier_short/jump2.png
+    delay    10
+    offset    44 130
+    bbox 29 10 35 71
+    frame    data/chars/soldier_short/jump2.png
 
 anim jumpland # Aterrissage du saut
-	delay	10
-	offset	44 125
-	bbox 29 10 35 115
-	frame	data/chars/soldier_short/get1.png
-	frame	data/chars/soldier_short/get2.png
-	
+    delay    10
+    offset    44 125
+    bbox 29 10 35 115
+    frame    data/chars/soldier_short/get1.png
+    frame    data/chars/soldier_short/get2.png
+
 anim jumpattack #Attaque sautée statique
-	delay	10
-	offset	60 123
-	bbox 38 10 43 80
-	sound data/sounds/punch.wav
-	frame	data/chars/soldier_short/jumpattack1.png
-	frame	data/chars/soldier_short/jumpattack2.png
-	attack1 62 52 86 37 10 1 0 0 5 12
-	frame	data/chars/soldier_short/jumpattack3.png
-	
-anim	block
-	offset	37 109
-	bbox 22 10 43 99
-	frame	data/chars/soldier_short/block1.png
-	frame	data/chars/soldier_short/block2.png
+    delay    10
+    offset    60 123
+    bbox 38 10 43 80
+    sound data/sounds/punch.wav
+    frame    data/chars/soldier_short/jumpattack1.png
+    frame    data/chars/soldier_short/jumpattack2.png
+    attack1 62 52 86 37 10 1 0 0 5 12
+    frame    data/chars/soldier_short/jumpattack3.png
+
+anim    block
+    offset    37 109
+    bbox 22 10 43 99
+    frame    data/chars/soldier_short/block1.png
+    frame    data/chars/soldier_short/block2.png
 
 anim death
-	delay	10
-	offset	118 125
-	frame	data/chars/soldier_short/fall1.png
-	frame	data/chars/soldier_short/fall2.png
-	frame	data/chars/soldier_short/fall3.png
-	frame	data/chars/soldier_short/fall4.png
-	frame	data/chars/soldier_short/fall5.png
-        @cmd 	spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0	
-	frame	data/chars/soldier_short/fall6.png
-	frame	data/chars/soldier_short/fall6.png
-	frame	data/chars/soldier_short/fall6.png
-	frame	data/chars/soldier_short/fall6.png
+    delay    10
+    offset    118 125
+    frame    data/chars/soldier_short/fall1.png
+    frame    data/chars/soldier_short/fall2.png
+    frame    data/chars/soldier_short/fall3.png
+    frame    data/chars/soldier_short/fall4.png
+    frame    data/chars/soldier_short/fall5.png
+        @cmd     spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/soldier_short/fall6.png
+    frame    data/chars/soldier_short/fall6.png
+    frame    data/chars/soldier_short/fall6.png
+    frame    data/chars/soldier_short/fall6.png

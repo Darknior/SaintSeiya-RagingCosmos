@@ -1,13 +1,9 @@
-name		malesoldier_jumpattack
-health		60
-type enemy
+name        malesoldier_jumpattack
+health      30
+type        enemy
+
 
 #-- GENERAL CONFIG --------------------------------------------------
-
-hostile     player  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression -50            # valeur positive + agressif / valeur negative - aggressif
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
@@ -37,33 +33,48 @@ atchain     1 1 2 # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player      # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  -50         # Valeur positive + agressif / valeur negative - aggressif
+
 hitenemy    0 0          # peut toucher d autres ennemis / air et sol
-blockodds 	10            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+blockodds   10           # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
+
 #-- SPECIFIC ---------------------------------------------------------
 
-defense all 0	  # Invulnérable à toutes les attaques
-defense normal4 1 # Vulnérable aux attaques sautées
+defense all 0      # Invulnérable à toutes les attaques
+defense normal4 1  # Vulnérable aux attaques sautées
+
 
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript    data/scripts/_debugs/DEBUG_GRAB.c
-didhitscript	data/scripts/didhit/tint_silver.c
-script	data/scripts/entity_effects.c
-animationscript	data/scripts/player.c
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
+didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite : ARGENT
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load blood_ground_big
 
+
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars//soldier_blue/icon.png 0
-palette      data/chars/soldier_blue/idle1.png
-#remap       data/chars/soldier_blue/idle1.png  # 14 Possible MAX
+icon        data/chars//soldier_blue/palettes/icon1.png 0
+palette      data/chars/soldier_blue/palettes/palette1.png
+#remap       data/chars/soldier_blue/palettes/palette1.png  # 14 Possible MAX
+
 
 #-- ANIMATIONS -------------------------------------------------------
 
@@ -73,164 +84,164 @@ palette      data/chars/soldier_blue/idle1.png
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-	delay	10
-	offset	44 125
-	frame	data/chars/soldier_blue/idle1.png
-	frame	data/chars/soldier_blue/idle2.png
-	frame	data/chars/soldier_blue/idle3.png
-	frame	data/chars/soldier_blue/idle2.png	
+    delay    10
+    offset    44 125
+    frame    data/chars/soldier_blue/idle1.png
+    frame    data/chars/soldier_blue/idle2.png
+    frame    data/chars/soldier_blue/idle3.png
+    frame    data/chars/soldier_blue/idle2.png
 
 anim follow1 #Entrée en jeu custom
-	delay	10
-	offset	44 130
-	bbox 29 10 35 71
-	jumpframe 0 3 1.5 0	
-	frame	data/chars/soldier_blue/jump1.png
-	frame	data/chars/soldier_blue/jump2.png
-	frame	data/chars/soldier_blue/jump3.png
-	frame	data/chars/soldier_blue/jump2.png
-	frame	data/chars/soldier_blue/jump1.png
+    delay    10
+    offset    44 130
+    bbox 29 10 35 71
+    jumpframe 0 3 1.5 0
+    frame    data/chars/soldier_blue/jump1.png
+    frame    data/chars/soldier_blue/jump2.png
+    frame    data/chars/soldier_blue/jump3.png
+    frame    data/chars/soldier_blue/jump2.png
+    frame    data/chars/soldier_blue/jump1.png
 
 anim idle
-	loop	1
-	delay	25
-	offset	44 125
-	bbox 29 10 35 115
-	frame	data/chars/soldier_blue/idle1.png
-	frame	data/chars/soldier_blue/idle2.png
-	frame	data/chars/soldier_blue/idle3.png
-	frame	data/chars/soldier_blue/idle2.png	
+    loop    1
+    delay    25
+    offset    44 125
+    bbox 29 10 35 115
+    frame    data/chars/soldier_blue/idle1.png
+    frame    data/chars/soldier_blue/idle2.png
+    frame    data/chars/soldier_blue/idle3.png
+    frame    data/chars/soldier_blue/idle2.png
 
 #// Walk/Run animations /////////////////////////////////////////////////
 
 anim walk
-	loop	1
-	delay	15
-	offset	65 125
-	bbox 49 10 50 115
-	frame	data/chars/soldier_blue/run1.png
-	frame	data/chars/soldier_blue/run2.png
-	frame	data/chars/soldier_blue/run3.png
-	frame	data/chars/soldier_blue/run4.png
+    loop    1
+    delay    15
+    offset    65 125
+    bbox 49 10 50 115
+    frame    data/chars/soldier_blue/run1.png
+    frame    data/chars/soldier_blue/run2.png
+    frame    data/chars/soldier_blue/run3.png
+    frame    data/chars/soldier_blue/run4.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim rise
-	loop	1
-	delay	15
-	offset	65 125
-	bbox 49 10 50 115
-	frame	data/chars/soldier_blue/run1.png
-	frame	data/chars/soldier_blue/run2.png
-	frame	data/chars/soldier_blue/run3.png
-	frame	data/chars/soldier_blue/run4.png
+    loop    1
+    delay    15
+    offset    65 125
+    bbox 49 10 50 115
+    frame    data/chars/soldier_blue/run1.png
+    frame    data/chars/soldier_blue/run2.png
+    frame    data/chars/soldier_blue/run3.png
+    frame    data/chars/soldier_blue/run4.png
 
 anim pain
-	delay	5
-	offset	44 125
-	bbox 29 10 35 115
-	frame	data/chars/soldier_blue/pain1.png
-	frame	data/chars/soldier_blue/pain2.png
-	frame	data/chars/soldier_blue/pain1.png
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    frame    data/chars/soldier_blue/pain1.png
+    frame    data/chars/soldier_blue/pain2.png
+    frame    data/chars/soldier_blue/pain1.png
 
 anim fall
-	delay	10
-	offset	118 125
-	bbox 55 24 50 100
-	frame	data/chars/soldier_blue/fall1.png
-	frame	data/chars/soldier_blue/fall2.png
-	frame	data/chars/soldier_blue/fall3.png
-	frame	data/chars/soldier_blue/fall4.png
-	frame	data/chars/soldier_blue/fall5.png
-	frame	data/chars/soldier_blue/fall6.png
-	bbox 23 92 100 35
-	frame	data/chars/soldier_blue/fall7.png
-	
+    delay    10
+    offset    118 125
+    bbox 55 24 50 100
+    frame    data/chars/soldier_blue/fall1.png
+    frame    data/chars/soldier_blue/fall2.png
+    frame    data/chars/soldier_blue/fall3.png
+    frame    data/chars/soldier_blue/fall4.png
+    frame    data/chars/soldier_blue/fall5.png
+    frame    data/chars/soldier_blue/fall6.png
+    bbox 23 92 100 35
+    frame    data/chars/soldier_blue/fall7.png
+
 anim death
-	delay	10
-	offset	118 125
-	frame	data/chars/soldier_blue/fall1.png
-	frame	data/chars/soldier_blue/fall2.png
-	frame	data/chars/soldier_blue/fall3.png
-	frame	data/chars/soldier_blue/fall4.png
-	frame	data/chars/soldier_blue/fall5.png
-	frame	data/chars/soldier_blue/fall6.png
-    @cmd 	spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
-	frame	data/chars/soldier_blue/fall7.png
-	frame	data/chars/soldier_blue/fall7.png
-	frame	data/chars/soldier_blue/fall7.png
+    delay    10
+    offset    118 125
+    frame    data/chars/soldier_blue/fall1.png
+    frame    data/chars/soldier_blue/fall2.png
+    frame    data/chars/soldier_blue/fall3.png
+    frame    data/chars/soldier_blue/fall4.png
+    frame    data/chars/soldier_blue/fall5.png
+    frame    data/chars/soldier_blue/fall6.png
+    @cmd     spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/soldier_blue/fall7.png
+    frame    data/chars/soldier_blue/fall7.png
+    frame    data/chars/soldier_blue/fall7.png
 
 anim rise
-	offset	118 125
-	delay	10
-	frame	data/chars/soldier_blue/rise1.png
-	frame	data/chars/soldier_blue/rise2.png
-	frame	data/chars/soldier_blue/rise3.png
+    offset    118 125
+    delay    10
+    frame    data/chars/soldier_blue/rise1.png
+    frame    data/chars/soldier_blue/rise2.png
+    frame    data/chars/soldier_blue/rise3.png
 
 #//Basic Attacks animations/////////////////////////////////////////////////
 
 anim attack1
-	delay	10
-	offset	44 125
-	bbox 30 10 35 115
-	frame	data/chars/soldier_blue/attack1.png
-	attack1 65 26 63 25 10 0 0 0 5 12
-	frame	data/chars/soldier_blue/attack2.png
-	frame	data/chars/soldier_blue/attack3.png
+    delay    10
+    offset    44 125
+    bbox 30 10 35 115
+    frame    data/chars/soldier_blue/attack1.png
+    attack1 65 26 63 25 10 0 0 0 5 12
+    frame    data/chars/soldier_blue/attack2.png
+    frame    data/chars/soldier_blue/attack3.png
 
 anim attack2
-	delay	10
-	offset	44 125
-	bbox 30 10 35 115
-	frame	data/chars/soldier_blue/attack21.png
-	attack1 65 88 86 29 10 1 0 0 5 12
-	frame	data/chars/soldier_blue/attack22.png
-	frame	data/chars/soldier_blue/attack23.png
+    delay    10
+    offset    44 125
+    bbox 30 10 35 115
+    frame    data/chars/soldier_blue/attack21.png
+    attack1 65 88 86 29 10 1 0 0 5 12
+    frame    data/chars/soldier_blue/attack22.png
+    frame    data/chars/soldier_blue/attack23.png
 
 #//Jump animations/////////////////////////////////////////////////
 
 anim jump # Saut Statique
-	delay	10
-	offset	44 130
-	bbox 29 10 35 71
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/soldier_blue/jump1.png
-	frame	data/chars/soldier_blue/jump2.png
-	frame	data/chars/soldier_blue/jump3.png
-	frame	data/chars/soldier_blue/jump2.png
-	frame	data/chars/soldier_blue/jump1.png
-	
+    delay    10
+    offset    44 130
+    bbox 29 10 35 71
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/soldier_blue/jump1.png
+    frame    data/chars/soldier_blue/jump2.png
+    frame    data/chars/soldier_blue/jump3.png
+    frame    data/chars/soldier_blue/jump2.png
+    frame    data/chars/soldier_blue/jump1.png
+
 anim jumpdelay # Animation de saut intermédiaire
-	delay	10
-	offset	44 130
-	bbox 29 10 35 71
-	frame	data/chars/soldier_blue/jump2.png
+    delay    10
+    offset    44 130
+    bbox 29 10 35 71
+    frame    data/chars/soldier_blue/jump2.png
 
 anim jumpland # Aterrissage du saut
-	delay	12
-	offset	44 125
-	bbox 29 10 35 115
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/soldier_blue/get.png
-	
+    delay    12
+    offset    44 125
+    bbox 29 10 35 115
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/soldier_blue/get.png
+
 anim jumpattack #Attaque sautée statique
-	delay	10
-	offset	44 130
-	bbox 29 10 35 71
-	sound data/sounds/punch.wav	
-	frame	data/chars/soldier_blue/jumpattack1.png
-	dropv 4.0 1.0 0.0
-	attack1 62 21 67 26 10 1 0 0 5 12
-	frame	data/chars/soldier_blue/jumpattack2.png
-	attack1 0
-	
+    delay    10
+    offset    44 130
+    bbox 29 10 35 71
+    sound data/sounds/punch.wav
+    frame    data/chars/soldier_blue/jumpattack1.png
+    dropv 4.0 1.0 0.0
+    attack1 62 21 67 26 10 1 0 0 5 12
+    frame    data/chars/soldier_blue/jumpattack2.png
+    attack1 0
+
 #// Block animations /////////////////////////////////////////////////
 
-anim	block
-	offset	44 125
-	bbox 29 10 35 115
-	frame	data/chars/soldier_blue/block1.png
-	frame	data/chars/soldier_blue/block2.png
+anim    block
+    offset    44 125
+    bbox 29 10 35 115
+    frame    data/chars/soldier_blue/block1.png
+    frame    data/chars/soldier_blue/block2.png
 

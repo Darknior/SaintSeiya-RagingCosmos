@@ -1,263 +1,247 @@
+name        kiki
+health      20
+speed       20
+type        npc
 
-name	KIKI
-health	20
-speed	20
-type	npc
 
-icon	data/chars/KIKI/icon.png
-hostile          enemy
-\\aimove           Wander
-aimove           Chase 
-\\aimove           Avoid
-aggression      10 
-hitenemy          0 0
-blockodds 1
-nodieblink 0
-blocked 1
-noquake 1 1
-gfxshadow 1
+#-- GENERAL CONFIG --------------------------------------------------
+
+gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
+riseinv     1 1         # Invincible après une chute X sec / Clignote pas
+makeinv     2 0         # Invincible après respawn X sec / Clignote
+
+speed       15          # Vitesse de déplacement
+running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
+jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
+jumpspeed   12          # Vitesse du saut
+jumpheight  5.5         # Hauteur du saut
+antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
+
+noquake     0 1         # Secoue l’écran qd on tombe au sol / enemi ne tremble pas
+mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
+
+holdblock   1           # Permet de pouvoir maintenir la parade
+nodieblink  1           # Ne clignote pas quand tu meurs
+weaploss    2           # On ne perd son arme qu' à notre mort
+modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")
+death       1           # Active l'animation de mort
+nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
+sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
+
+atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
+
+dust        round_dustB # Effet de poussière quand on tombe (animation)
+bflash      tremi_block # Flash pendant un blocage (animation)
+
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+
+hitenemy    1 0          # peut toucher d autres ennemis / air et sol
+blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
-subject_to_screen 1 # ne peut pas aller hors ecran
-
-\\subject_to_wall 0
+subject_to_screen 1      # ne peut pas aller hors ecran
 
 
-load kikisuper
-
-anim	block
-loop	0
-	offset	207 174
+#-- LIFEBAR ---------------------------------------------------------
 
 
-	delay	10
+#-- SCRIPTS ---------------------------------------------------------
+
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+ondrawscript        data/scripts/lifebar.c              # Barre de vie directement pleine
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               #
+didhitscript        data/scripts/didhit/tint_silver.c     # Effets de teinte sur sprite
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 
-dropv 4 1 0
-	
-	bbox.position.x 188
-	bbox.position.y 106
-	bbox.size.x 33
-	bbox.size.y 76
-move -80
-frame	data/chars/KIKI/06.png
-frame	data/chars/KIKI/07.png
-frame	data/chars/KIKI/06-1.png
-frame	data/chars/KIKI/null.png
+#-- EFFECTS ANIMATIONS ----------------------------------------------
 
 
 
+#-- PALETTES --------------------------------------------------------
+
+icon        data/chars/kiki/palettes/icon1.png 0
+palette     data/chars/kiki/palettes/palette1.png
+#remap      data/chars/kiki/palettes/palettes/palette1.png  # 14 Possible MAX
 
 
+#-- ANIMATIONS -------------------------------------------------------
+
+#// Select animations /////////////////////////////////////////////////
 
 
+#// Static animations /////////////////////////////////////////////////
 
+anim    block
+    loop    0
+    offset    207 174
+    delay    10
+    dropv 4 1 0
+    bbox 22 8 38 151
+    bbox.position.x 188
+    bbox.position.y 106
+    bbox.size.x 33
+    bbox.size.y 76
+    move -80
+    frame    data/chars/kiki/06.png
+    frame    data/chars/kiki/07.png
+    frame    data/chars/kiki/06-1.png
+    frame    data/chars/kiki/null.png
 
 anim idle
-	loop	1
-	delay	10
-	offset	207 174
-
-dropv 4 1 0
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.size.x 0
-	attack.size.y 0
-	bbox.position.x 190
-	bbox.position.y 105
-	bbox.size.x 31
-	bbox.size.y 77
-frame	data/chars/KIKI/01.png
-
-
+    loop    1
+    delay    10
+    offset    207 174
+    dropv 4 1 0
+    attack.damage.force 0
+    attack.position.x 0
+    attack.position.y 0
+    attack.size.x 0
+    attack.size.y 0
+    bbox.position.x 190
+    bbox.position.y 105
+    bbox.size.x 31
+    bbox.size.y 77
+    frame    data/chars/kiki/01.png
 
 anim walk
-	loop	1
-	delay	15
-	offset	207 174
-dropv 4 1 0
-	bbox.position.x 186
-	bbox.position.y 107
-	bbox.size.x 41
-	bbox.size.y 76
-frame	data/chars/KIKI/02.png
-frame	data/chars/KIKI/03.png
-frame	data/chars/KIKI/04.png
-frame	data/chars/KIKI/05.png
-
-
-
+    loop    1
+    delay    15
+    offset    207 174
+    dropv 4 1 0
+    bbox.position.x 186
+    bbox.position.y 107
+    bbox.size.x 41
+    bbox.size.y 76
+    frame    data/chars/kiki/02.png
+    frame    data/chars/kiki/03.png
+    frame    data/chars/kiki/04.png
+    frame    data/chars/kiki/05.png
 
 anim BACKWALK
-	loop	1
-	delay	15
-	offset	514 174
-dropv 4 1 0
-	bbox.position.x 496
-	bbox.position.y 108
-	bbox.size.x 35
-	bbox.size.y 73
-frame	data/chars/KIKI/18.png
-frame	data/chars/KIKI/19.png
-frame	data/chars/KIKI/20.png
-frame	data/chars/KIKI/21.png
-
-
-
-
-      
- 
-
+    loop    1
+    delay    15
+    offset    514 174
+    dropv 4 1 0
+    bbox.position.x 496
+    bbox.position.y 108
+    bbox.size.x 35
+    bbox.size.y 73
+    frame    data/chars/kiki/18.png
+    frame    data/chars/kiki/19.png
+    frame    data/chars/kiki/20.png
+    frame    data/chars/kiki/21.png
 
 anim pain
-    loop	0
-	
-	delay	6
-offset	207 174
-
-dropv 4 1 0
-
-frame	data/chars/KIKI/08.png
-frame	data/chars/KIKI/08.png
-move -80
-frame	data/chars/KIKI/06.png
-frame	data/chars/KIKI/07.png
-frame	data/chars/KIKI/06-1.png
-frame	data/chars/KIKI/null.png
-
-
-        
+    loop    0
+    delay    6
+    offset    207 174
+    dropv 4 1 0
+    frame    data/chars/kiki/08.png
+    frame    data/chars/kiki/08.png
+    move -80
+    frame    data/chars/kiki/06.png
+    frame    data/chars/kiki/07.png
+    frame    data/chars/kiki/06-1.png
+    frame    data/chars/kiki/null.png
 
 anim fall
-
-    loop	0
-	
-	delay	10
-offset	207 174
-
-dropv 4 1 0
-frame	data/chars/KIKI/09.png
-frame	data/chars/KIKI/09.png
-frame	data/chars/KIKI/09.png
-frame	data/chars/KIKI/09.png
-frame	data/chars/KIKI/09.png
-frame	data/chars/KIKI/09.png
-frame	data/chars/KIKI/09.png
-frame	data/chars/KIKI/09.png
-frame	data/chars/KIKI/10.png
-frame	data/chars/KIKI/10.png
-frame	data/chars/KIKI/10.png
-move -80
-frame	data/chars/KIKI/06.png
-frame	data/chars/KIKI/07.png
-frame	data/chars/KIKI/06-1.png
-frame	data/chars/KIKI/null.png
-
-
-
-
+    loop    0
+    delay    10
+    offset    207 174
+    dropv 4 1 0
+    frame    data/chars/kiki/09.png
+    frame    data/chars/kiki/09.png
+    frame    data/chars/kiki/09.png
+    frame    data/chars/kiki/09.png
+    frame    data/chars/kiki/09.png
+    frame    data/chars/kiki/09.png
+    frame    data/chars/kiki/09.png
+    frame    data/chars/kiki/09.png
+    frame    data/chars/kiki/10.png
+    frame    data/chars/kiki/10.png
+    frame    data/chars/kiki/10.png
+    move -80
+    frame    data/chars/kiki/06.png
+    frame    data/chars/kiki/07.png
+    frame    data/chars/kiki/06-1.png
+    frame    data/chars/kiki/null.png
 
 anim rise
-        loop	0
-	offset	207 174
-	delay	10
-
-
-
-dropv 4 1 0
-move -80
-frame	data/chars/KIKI/11.png
-frame	data/chars/KIKI/11-1.png
-frame	data/chars/KIKI/null.png
-frame	data/chars/KIKI/06-1.png
-frame	data/chars/KIKI/07.png
-frame	data/chars/KIKI/06.png
-
-
-	
-
+    loop    0
+    offset    207 174
+    delay    10
+    dropv 4 1 0
+    move -80
+    frame    data/chars/kiki/11.png
+    frame    data/chars/kiki/11-1.png
+    frame    data/chars/kiki/null.png
+    frame    data/chars/kiki/06-1.png
+    frame    data/chars/kiki/07.png
+    frame    data/chars/kiki/06.png
 
 anim attack1
-
-range -50 50
-	loop	0
-	delay	10
-offset	207 174
-
-
-
-	dropv 4 1 0
-	
-	bbox.position.x 179
-	bbox.position.y 108
-	bbox.size.x 30
-	bbox.size.y 72
-	attack.damage.force 10
-	attack.position.x 205
-	attack.position.y 108
-	attack.size.x 27
-	attack.size.y 72
-frame	data/chars/KIKI/12.png
-
-
-
-
-
+    range -50 50
+    loop    0
+    delay    10
+    offset    207 174
+    dropv 4 1 0
+    bbox.position.x 179
+    bbox.position.y 108
+    bbox.size.x 30
+    bbox.size.y 72
+    attack.damage.force 10
+    attack.position.x 205
+    attack.position.y 108
+    attack.size.x 27
+    attack.size.y 72
+    frame    data/chars/kiki/12.png
 
 anim attack2
-
-range -650 650
-	loop	0
-	delay	10
-offset	207 174
-
-custknife	kikisuper
-	throwframe	6
-
-	dropv 4 1 0
-	
-	bbox.position.x 191
-	bbox.position.y 109
-	bbox.size.x 32
-	bbox.size.y 71
-	attack.damage.force 0
-	attack.position.x 0
-	attack.position.y 0
-	attack.reaction.fall.velocity.x 1.0
-	attack.reaction.fall.velocity.y 4.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.size.x 0
-	attack.size.y 0
-frame	data/chars/KIKI/14.png
-frame	data/chars/KIKI/14-1.png
-frame	data/chars/KIKI/15.png
-frame	data/chars/KIKI/16.png
-frame	data/chars/KIKI/16.png
-frame	data/chars/KIKI/17-1.png
-frame	data/chars/KIKI/17.png
-frame	data/chars/KIKI/17.png
-frame	data/chars/KIKI/17.png
-
-
-
+    range -650 650
+    loop    0
+    delay    10
+    offset    207 174
+    custknife    kikisuper
+    throwframe    6
+    dropv 4 1 0
+    bbox.position.x 191
+    bbox.position.y 109
+    bbox.size.x 32
+    bbox.size.y 71
+    attack.damage.force 0
+    attack.position.x 0
+    attack.position.y 0
+    attack.reaction.fall.velocity.x 1.0
+    attack.reaction.fall.velocity.y 4.0
+    attack.reaction.fall.velocity.z 0.0
+    attack.size.x 0
+    attack.size.y 0
+    frame    data/chars/kiki/14.png
+    frame    data/chars/kiki/14-1.png
+    frame    data/chars/kiki/15.png
+    frame    data/chars/kiki/16.png
+    frame    data/chars/kiki/16.png
+    frame    data/chars/kiki/17-1.png
+    frame    data/chars/kiki/17.png
+    frame    data/chars/kiki/17.png
+    frame    data/chars/kiki/17.png
 
 
 anim attack3
 
 
 anim jump
-	
-
-    
 
 
 anim jumpattack
-	
-
-
-
-
-
-
-
 

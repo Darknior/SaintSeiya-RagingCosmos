@@ -3,12 +3,8 @@ health      400
 mp          100
 type        enemy
 
-#-- GENERAL CONFIG --------------------------------------------------
 
-hostile     player npc  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression 0            # valeur positive + agressif / valeur negative - aggressif
+#-- GENERAL CONFIG --------------------------------------------------
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
@@ -38,22 +34,35 @@ atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
-blockodds 	1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
+
 #-- LIFEBAR ---------------------------------------------------------
 
-lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom comme Boss
 
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript	data/scripts/lifebar.c
-didhitscript	data/scripts/didhit/tint_gold.c
-script	data/scripts/entity_effects.c
-animationscript	data/scripts/player.c
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+ondrawscript        data/scripts/lifebar.c              # Barre de vie directement pleine
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               #
+didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
@@ -64,7 +73,6 @@ load agora_plasma
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/agora/palettes/icon1.png 0
-colourselect 1
 palette      data/chars/agora/palettes/palette1.png
 #remap       data/chars/agora/palettes/palette1.png
 

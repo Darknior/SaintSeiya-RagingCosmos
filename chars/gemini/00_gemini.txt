@@ -1,14 +1,9 @@
-name		gemini
-health		700
-mp 			100
-type		enemy
+name        gemini
+health      700
+mp          100
+type        enemy
 
 #-- GENERAL CONFIG --------------------------------------------------
-
-hostile     player npc  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression 0            # valeur positive + agressif / valeur negative - aggressif
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
@@ -38,25 +33,38 @@ atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
-blockodds 	1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
+
 #-- LIFEBAR ---------------------------------------------------------
 
-lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom comme Boss
+
 
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript	data/scripts/lifebar.c
-didhitscript	data/scripts/didhit/tint_gold.c
-script	data/scripts/entity_effects.c
-animationscript	data/scripts/player.c
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+ondrawscript        data/scripts/lifebar.c              # Barre de vie directement pleine
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               #
+didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
-
 
 load gemini_melee
 load gemini_dimension_back
@@ -71,11 +79,13 @@ load aldebaran_swing
 load aldebaran_block
 load aldebaran_aura
 
+
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars/gemini/icon.png 0
-palette      data/chars/gemini/idle1.png
-#remap       data/chars/gemini/palettes/palette1.png  # 14 Possible MAX
+icon         data/chars/gemini/palettes/icon1.png 0
+palette      data/chars/gemini/palettes/palette1.png
+#remap       data/chars/gemini/palettes/palettes/palette1.png  # 14 Possible MAX
+
 
 #-- ANIMATIONS -------------------------------------------------------
 
@@ -85,629 +95,629 @@ palette      data/chars/gemini/idle1.png
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-	delay	20
-	offset	69 176
-	@cmd spawnFade "in" 0 0 0 10000000001 0.25
-	frame	data/chars/gemini/spawn1.png
-	frame	data/chars/gemini/spawn2.png
-	frame	data/chars/gemini/spawn3.png
-	frame	data/chars/gemini/spawn4.png
-	frame	data/chars/gemini/spawn5.png
-	frame	data/chars/gemini/spawn6.png
-	frame	data/chars/gemini/spawn7.png
-	frame	data/chars/gemini/spawn8.png
-	frame	data/chars/gemini/spawn9.png
-	frame	data/chars/gemini/spawn10.png
-	frame	data/chars/gemini/spawn11.png
-	frame	data/chars/gemini/spawn12.png
-	sound data/chars/gemini/sounds/03-ahah.wav
-	frame	data/chars/gemini/spawn13.png
-	@cmd spawnDialog "dialog_gemini1" 200 100
-	frame	data/chars/gemini/spawn14.png
-	frame	data/chars/gemini/spawn15.png
-	frame	data/chars/gemini/spawn16.png
-	frame	data/chars/gemini/spawn17.png
-	frame	data/chars/gemini/spawn18.png
-	frame	data/chars/gemini/spawn18.png
+    delay    20
+    offset    69 176
+    @cmd spawnFade "in" 0 0 0 10000000001 0.25
+    frame    data/chars/gemini/spawn1.png
+    frame    data/chars/gemini/spawn2.png
+    frame    data/chars/gemini/spawn3.png
+    frame    data/chars/gemini/spawn4.png
+    frame    data/chars/gemini/spawn5.png
+    frame    data/chars/gemini/spawn6.png
+    frame    data/chars/gemini/spawn7.png
+    frame    data/chars/gemini/spawn8.png
+    frame    data/chars/gemini/spawn9.png
+    frame    data/chars/gemini/spawn10.png
+    frame    data/chars/gemini/spawn11.png
+    frame    data/chars/gemini/spawn12.png
+    sound data/chars/gemini/sounds/03-ahah.wav
+    frame    data/chars/gemini/spawn13.png
+    @cmd spawnDialog "dialog_gemini1" 200 100
+    frame    data/chars/gemini/spawn14.png
+    frame    data/chars/gemini/spawn15.png
+    frame    data/chars/gemini/spawn16.png
+    frame    data/chars/gemini/spawn17.png
+    frame    data/chars/gemini/spawn18.png
+    frame    data/chars/gemini/spawn18.png
 
 anim idle
-	loop	1
-	delay	25
-	offset	66 144
-	bbox 46 13 38 137
-	frame	data/chars/gemini/idle1.png
-	frame	data/chars/gemini/idle2.png
-	frame	data/chars/gemini/idle3.png
-	frame	data/chars/gemini/idle4.png
-	frame	data/chars/gemini/idle5.png
+    loop    1
+    delay    25
+    offset    66 144
+    bbox 46 13 38 137
+    frame    data/chars/gemini/idle1.png
+    frame    data/chars/gemini/idle2.png
+    frame    data/chars/gemini/idle3.png
+    frame    data/chars/gemini/idle4.png
+    frame    data/chars/gemini/idle5.png
 
 anim turn
-	delay	12
-	offset	60 144
-	cancel 0 3 0 A freespecial4 
-	bbox 39 11 42 139
-	frame	data/chars/gemini/turn1.png
-	frame	data/chars/gemini/turn2.png
-	frame	data/chars/gemini/turn3.png
-	
+    delay    12
+    offset    60 144
+    cancel 0 3 0 A freespecial4
+    bbox 39 11 42 139
+    frame    data/chars/gemini/turn1.png
+    frame    data/chars/gemini/turn2.png
+    frame    data/chars/gemini/turn3.png
+
 anim walk
-	loop	1
-	delay	15
-	offset	117 150
-	bbox 102 18 38 132
-	frame	data/chars/gemini/walk1.png
-	frame	data/chars/gemini/walk2.png
-	frame	data/chars/gemini/walk3.png
-	frame	data/chars/gemini/walk4.png
-	frame	data/chars/gemini/walk5.png
-	frame	data/chars/gemini/walk6.png
-	
+    loop    1
+    delay    15
+    offset    117 150
+    bbox 102 18 38 132
+    frame    data/chars/gemini/walk1.png
+    frame    data/chars/gemini/walk2.png
+    frame    data/chars/gemini/walk3.png
+    frame    data/chars/gemini/walk4.png
+    frame    data/chars/gemini/walk5.png
+    frame    data/chars/gemini/walk6.png
+
 anim run
-	loop	1
-	delay	15
-	offset	117 150
-	bbox 102 18 38 132
-	frame	data/chars/gemini/run1.png
-	frame	data/chars/gemini/run2.png
-	frame	data/chars/gemini/run3.png
-	
+    loop    1
+    delay    15
+    offset    117 150
+    bbox 102 18 38 132
+    frame    data/chars/gemini/run1.png
+    frame    data/chars/gemini/run2.png
+    frame    data/chars/gemini/run3.png
+
 anim runattack # Attaque en courant
-	delay	7
-	offset	94 144
-	hitflash aldebaran_swing
-	forcedirection -1
-	@cmd	dasher 3.5 0 0 1
+    delay    7
+    offset    94 144
+    hitflash aldebaran_swing
+    forcedirection -1
+    @cmd    dasher 3.5 0 0 1
         summonframe 0 0 0 0 0
         subentity gemini_rundust
-	unsummonframe 20
-	frame	data/chars/gemini/runattack1.png
-	sound data/chars/gemini/sounds/04-dash.wav
-	frame	data/chars/gemini/runattack2.png
-	attack2 115 40 62 61 20 1 0 0 5 20
-	frame	data/chars/gemini/runattack3.png
-	frame	data/chars/gemini/runattack3.png
-	frame	data/chars/gemini/runattack3.png
-	frame	data/chars/gemini/runattack3.png
-	attack2 0 
-	@cmd	dasher 0 0 0 1
-	delay	12
-	frame	data/chars/gemini/runattack2.png
-	frame	data/chars/gemini/runattack1.png
-	
+    unsummonframe 20
+    frame    data/chars/gemini/runattack1.png
+    sound data/chars/gemini/sounds/04-dash.wav
+    frame    data/chars/gemini/runattack2.png
+    attack2 115 40 62 61 20 1 0 0 5 20
+    frame    data/chars/gemini/runattack3.png
+    frame    data/chars/gemini/runattack3.png
+    frame    data/chars/gemini/runattack3.png
+    frame    data/chars/gemini/runattack3.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/gemini/runattack2.png
+    frame    data/chars/gemini/runattack1.png
+
 anim freespecial # Attaque en courant
-	delay	7
-	offset	94 144
-	hitflash aldebaran_swing
-	forcedirection -1
-	range 	80 175
-	rangea 	0 100
-	@cmd	dasher 3.5 0 0 1
+    delay    7
+    offset    94 144
+    hitflash aldebaran_swing
+    forcedirection -1
+    range     80 175
+    rangea     0 100
+    @cmd    dasher 3.5 0 0 1
         summonframe 0 0 0 0 0
         subentity gemini_rundust
-	unsummonframe 20
-	frame	data/chars/gemini/runattack1.png
-	sound data/chars/gemini/sounds/04-dash.wav
-	frame	data/chars/gemini/runattack2.png
-	attack2 115 40 62 61 20 1 0 0 5 20
-	frame	data/chars/gemini/runattack3.png
-	frame	data/chars/gemini/runattack3.png
-	frame	data/chars/gemini/runattack3.png
-	frame	data/chars/gemini/runattack3.png
-	attack2 0
-	@cmd	dasher 0 0 0 1
-	delay	12
-	frame	data/chars/gemini/runattack2.png
-	frame	data/chars/gemini/runattack1.png
-	
+    unsummonframe 20
+    frame    data/chars/gemini/runattack1.png
+    sound data/chars/gemini/sounds/04-dash.wav
+    frame    data/chars/gemini/runattack2.png
+    attack2 115 40 62 61 20 1 0 0 5 20
+    frame    data/chars/gemini/runattack3.png
+    frame    data/chars/gemini/runattack3.png
+    frame    data/chars/gemini/runattack3.png
+    frame    data/chars/gemini/runattack3.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/gemini/runattack2.png
+    frame    data/chars/gemini/runattack1.png
+
 anim pain # Up
-	delay	5
-	offset	58 170
-	bbox 46 33 38 137
-	frame	data/chars/gemini/pain1.png
-	frame	data/chars/gemini/pain2.png
-	frame	data/chars/gemini/pain1.png	
-	
+    delay    5
+    offset    58 170
+    bbox 46 33 38 137
+    frame    data/chars/gemini/pain1.png
+    frame    data/chars/gemini/pain2.png
+    frame    data/chars/gemini/pain1.png
+
 anim pain2 # Down
-	delay	5
-	offset	42 150
-	bbox 25 18 38 132
-	frame	data/chars/gemini/pain21.png
-	frame	data/chars/gemini/pain22.png
-	frame	data/chars/gemini/pain21.png	
+    delay    5
+    offset    42 150
+    bbox 25 18 38 132
+    frame    data/chars/gemini/pain21.png
+    frame    data/chars/gemini/pain22.png
+    frame    data/chars/gemini/pain21.png
 
 anim fall
-	delay	10
-	offset	146 144
-	landframe 4
-	bbox 12 50 100 100
-	frame	data/chars/gemini/fall1.png
-	frame	data/chars/gemini/fall2.png
-	frame	data/chars/gemini/fall3.png
-	frame	data/chars/gemini/fall4.png
-	bbox 30 106 130 40
-	frame	data/chars/gemini/fall5.png
-	
+    delay    10
+    offset    146 144
+    landframe 4
+    bbox 12 50 100 100
+    frame    data/chars/gemini/fall1.png
+    frame    data/chars/gemini/fall2.png
+    frame    data/chars/gemini/fall3.png
+    frame    data/chars/gemini/fall4.png
+    bbox 30 106 130 40
+    frame    data/chars/gemini/fall5.png
+
 anim death
-	delay	40
-	offset	146 144
-	frame	data/chars/gemini/fall1.png
-	frame	data/chars/gemini/fall2.png
-	frame	data/chars/gemini/fall3.png
-	frame	data/chars/gemini/fall4.png
-	frame	data/chars/gemini/fall5.png
-	offset	146 144
-	frame	data/chars/gemini/rise1.png
-	frame	data/chars/gemini/rise2.png
-	frame	data/chars/gemini/rise3.png
-	frame	data/chars/gemini/rise4.png
-	frame	data/chars/gemini/rise5.png
-	@cmd spawnDialog "dialog_gemini2" 200 100
-	offset	90 150
-	frame	data/chars/gemini/death1.png
-	@cmd spawnDialog "dialog_gemini3" 200 100
-	frame	data/chars/gemini/death1.png
-	frame	data/chars/gemini/death2.png
-	offset	90 126
-	frame	data/chars/gemini/death3.png
-	delay	150
-	frame	data/chars/gemini/death3.png
-	delay	10
-	offset	69 176
-	frame	data/chars/gemini/spawn5.png
-	frame	data/chars/gemini/spawn4.png
-	frame	data/chars/gemini/spawn3.png
-	frame	data/chars/gemini/spawn2.png
-	frame	data/chars/gemini/spawn1.png
+    delay    40
+    offset    146 144
+    frame    data/chars/gemini/fall1.png
+    frame    data/chars/gemini/fall2.png
+    frame    data/chars/gemini/fall3.png
+    frame    data/chars/gemini/fall4.png
+    frame    data/chars/gemini/fall5.png
+    offset    146 144
+    frame    data/chars/gemini/rise1.png
+    frame    data/chars/gemini/rise2.png
+    frame    data/chars/gemini/rise3.png
+    frame    data/chars/gemini/rise4.png
+    frame    data/chars/gemini/rise5.png
+    @cmd spawnDialog "dialog_gemini2" 200 100
+    offset    90 150
+    frame    data/chars/gemini/death1.png
+    @cmd spawnDialog "dialog_gemini3" 200 100
+    frame    data/chars/gemini/death1.png
+    frame    data/chars/gemini/death2.png
+    offset    90 126
+    frame    data/chars/gemini/death3.png
+    delay    150
+    frame    data/chars/gemini/death3.png
+    delay    10
+    offset    69 176
+    frame    data/chars/gemini/spawn5.png
+    frame    data/chars/gemini/spawn4.png
+    frame    data/chars/gemini/spawn3.png
+    frame    data/chars/gemini/spawn2.png
+    frame    data/chars/gemini/spawn1.png
 
 anim rise
-	offset	146 144
-	delay	10
-	frame	data/chars/gemini/rise1.png
-	frame	data/chars/gemini/rise2.png
-	frame	data/chars/gemini/rise3.png
-	frame	data/chars/gemini/rise4.png
-	frame	data/chars/gemini/rise5.png
+    offset    146 144
+    delay    10
+    frame    data/chars/gemini/rise1.png
+    frame    data/chars/gemini/rise2.png
+    frame    data/chars/gemini/rise3.png
+    frame    data/chars/gemini/rise4.png
+    frame    data/chars/gemini/rise5.png
 
 anim attack1 # Attaque combo 1
-	delay	5
-	offset	129 144
-	bbox 108 13 38 137
-	frame	data/chars/gemini/attack1.png
-	attack1 132 27 60 25 10 0 0 0 5 12
-	frame	data/chars/gemini/attack2.png
-	frame	data/chars/gemini/attack1.png
+    delay    5
+    offset    129 144
+    bbox 108 13 38 137
+    frame    data/chars/gemini/attack1.png
+    attack1 132 27 60 25 10 0 0 0 5 12
+    frame    data/chars/gemini/attack2.png
+    frame    data/chars/gemini/attack1.png
 
 anim attack2 # Attaque combo 2
-	delay	5
-	offset	129 144
-	bbox 108 13 38 137
-	frame	data/chars/gemini/attack21.png
-	attack1 132 27 60 25 10 0 0 0 5 12
-	frame	data/chars/gemini/attack22.png
-	frame	data/chars/gemini/attack23.png
+    delay    5
+    offset    129 144
+    bbox 108 13 38 137
+    frame    data/chars/gemini/attack21.png
+    attack1 132 27 60 25 10 0 0 0 5 12
+    frame    data/chars/gemini/attack22.png
+    frame    data/chars/gemini/attack23.png
 
 anim attack3 # Attaque combo 3
-	delay	10
-	offset	129 144
-	bbox 108 13 38 137
-	frame	data/chars/gemini/attack31.png
-	attack1 109 57 82 42 10 0 0 0 5 12
-	frame	data/chars/gemini/attack32.png
-	frame	data/chars/gemini/attack32.png
-	attack1 0
-	frame	data/chars/gemini/attack31.png
-	
+    delay    10
+    offset    129 144
+    bbox 108 13 38 137
+    frame    data/chars/gemini/attack31.png
+    attack1 109 57 82 42 10 0 0 0 5 12
+    frame    data/chars/gemini/attack32.png
+    frame    data/chars/gemini/attack32.png
+    attack1 0
+    frame    data/chars/gemini/attack31.png
+
 anim attack4 # Attaque combo 4
-	delay	5
-	offset	115 142
-	bbox 99 23 38 126
-	hitflash flashmedium
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/gemini/attack41.png
-	frame	data/chars/gemini/attack42.png
-	attack1 120 109 71 43 10 0 0 0 5 12
-	frame	data/chars/gemini/attack43.png
-	frame	data/chars/gemini/attack43.png
-	attack1 0
-	frame	data/chars/gemini/attack41.png
-	
+    delay    5
+    offset    115 142
+    bbox 99 23 38 126
+    hitflash flashmedium
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/gemini/attack41.png
+    frame    data/chars/gemini/attack42.png
+    attack1 120 109 71 43 10 0 0 0 5 12
+    frame    data/chars/gemini/attack43.png
+    frame    data/chars/gemini/attack43.png
+    attack1 0
+    frame    data/chars/gemini/attack41.png
+
 anim attack5 # Attaque combo 5
-	delay	12
-	offset	129 144
-	bbox 108 13 38 137
-	hitflash flashbig
-	frame	data/chars/gemini/attack51.png
-	frame	data/chars/gemini/attack52.png
-	attack1 120 31 87 26 20 1 0 0 5 12
-	dropv 4.0 1.0 0.0
-	frame	data/chars/gemini/attack53.png
-	frame	data/chars/gemini/attack54.png
-	attack1 0
+    delay    12
+    offset    129 144
+    bbox 108 13 38 137
+    hitflash flashbig
+    frame    data/chars/gemini/attack51.png
+    frame    data/chars/gemini/attack52.png
+    attack1 120 31 87 26 20 1 0 0 5 12
+    dropv 4.0 1.0 0.0
+    frame    data/chars/gemini/attack53.png
+    frame    data/chars/gemini/attack54.png
+    attack1 0
 
 anim jump # Saut Statique
-	delay	10
-	offset	75 171
-	bbox 59 40 35 71
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/gemini/jump1.png
-	frame	data/chars/gemini/jump2.png
-	frame	data/chars/gemini/jump3.png
-	frame	data/chars/gemini/jump4.png
-	frame	data/chars/gemini/jump3.png
-	frame	data/chars/gemini/jump2.png
-	frame	data/chars/gemini/jump1.png
-	
+    delay    10
+    offset    75 171
+    bbox 59 40 35 71
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/gemini/jump1.png
+    frame    data/chars/gemini/jump2.png
+    frame    data/chars/gemini/jump3.png
+    frame    data/chars/gemini/jump4.png
+    frame    data/chars/gemini/jump3.png
+    frame    data/chars/gemini/jump2.png
+    frame    data/chars/gemini/jump1.png
+
 anim jumpdelay # Animation de saut intermédiaire
-	delay	10
-	offset	75 171
-	bbox 59 40 35 71
-	frame	data/chars/gemini/jump2.png
+    delay    10
+    offset    75 171
+    bbox 59 40 35 71
+    frame    data/chars/gemini/jump2.png
 
 anim jumpland # Aterrissage du saut
-	delay	8
-	offset	75 171
-	bbox 59 73 35 71
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/gemini/get1.png
-	frame	data/chars/gemini/get2.png
-	frame	data/chars/gemini/get3.png
-	frame	data/chars/gemini/get2.png
-	frame	data/chars/gemini/get1.png
-	
+    delay    8
+    offset    75 171
+    bbox 59 73 35 71
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/gemini/get1.png
+    frame    data/chars/gemini/get2.png
+    frame    data/chars/gemini/get3.png
+    frame    data/chars/gemini/get2.png
+    frame    data/chars/gemini/get1.png
+
 anim jumpattack # Attaque sautée statique
-	delay	8
-	offset	75 171
-	bbox 59 40 35 71
-	sound data/sounds/punch.wav
-	frame	data/chars/gemini/jumpattack1.png
-	frame	data/chars/gemini/jumpattack2.png
-	attack1 62 90 87 26 10 1 0 0 5 12
-	frame	data/chars/gemini/jumpattack3.png
-	frame	data/chars/gemini/jumpattack4.png
-	attack1 0
+    delay    8
+    offset    75 171
+    bbox 59 40 35 71
+    sound data/sounds/punch.wav
+    frame    data/chars/gemini/jumpattack1.png
+    frame    data/chars/gemini/jumpattack2.png
+    attack1 62 90 87 26 10 1 0 0 5 12
+    frame    data/chars/gemini/jumpattack3.png
+    frame    data/chars/gemini/jumpattack4.png
+    attack1 0
 
 anim special # Défense spéciale Melee
-	delay	7
-	offset	66 144
-	fastattack 1
-	energycost  25 1 0
-	sound data/chars/gemini/sounds/02-ahah.wav
-        @cmd 	spawnbind "gemini_clones" "ANI_IDLE" 0 0 0 1 0
-	summonframe 10 0 0 0 0
-	subentity gemini_melee
-	hitflash flashbig
-	frame	data/chars/gemini/special1.png
-	frame	data/chars/gemini/special2.png
-	frame	data/chars/gemini/special3.png
-	frame	data/chars/gemini/special4.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    delay    7
+    offset    66 144
+    fastattack 1
+    energycost  25 1 0
+    sound data/chars/gemini/sounds/02-ahah.wav
+        @cmd     spawnbind "gemini_clones" "ANI_IDLE" 0 0 0 1 0
+    summonframe 10 0 0 0 0
+    subentity gemini_melee
+    hitflash flashbig
+    frame    data/chars/gemini/special1.png
+    frame    data/chars/gemini/special2.png
+    frame    data/chars/gemini/special3.png
+    frame    data/chars/gemini/special4.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special10.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special10.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 10 1 0 0 0 400
-	frame	data/chars/gemini/special10.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 10 1 0 0 0 400
+    frame    data/chars/gemini/special10.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 10 1 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 10 1 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 10 1 0 0 0 400
-	frame	data/chars/gemini/special10.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 10 1 0 0 0 400
+    frame    data/chars/gemini/special10.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 10 1 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 10 1 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 10 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 10 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	delay	50
-	frame	data/chars/gemini/special5.png
-	attack1 0
-	
+    delay    50
+    frame    data/chars/gemini/special5.png
+    attack1 0
+
 anim special2 #Attaque spéciale Punch combo
-	fastattack 1
-	forcedirection -1
-	energycost  25 1 0
-	delay	6
-	offset	66 144
-	bbox 21 11 38 151
-	@cmd 	spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
-	sound data/chars/gemini/sounds/11-multihits.wav
-	attack1 70 39 77 44 5 0 0 0 12 12
-	frame	data/chars/gemini/special21.png
-	summonframe 0 0 0 0 0
-	subentity gemini_multihits
-	unsummonframe 20
-	attack1 0
-	frame	data/chars/gemini/special22.png
-	attack1 59 30 97 35 5 0 0 0 12 12
-	frame	data/chars/gemini/special23.png
-	attack1 0
-	frame	data/chars/gemini/special24.png
-	attack1 59 8 98 48 5 0 0 0 12 12
-	frame	data/chars/gemini/special25.png
-	attack1 0
-	frame	data/chars/gemini/special26.png
-	attack1 70 39 77 44 5 0 0 0 12 12
-	frame	data/chars/gemini/special21.png
-	attack1 0
-	frame	data/chars/gemini/special22.png
-	attack1 59 30 97 35 5 0 0 0 12 12
-	frame	data/chars/gemini/special23.png
-	attack1 0
-	frame	data/chars/gemini/special24.png
-	attack1 59 8 98 48 5 0 0 0 12 12
-	frame	data/chars/gemini/special25.png
-	attack1 0
-	frame	data/chars/gemini/special26.png
-	attack1 70 39 77 44 5 0 0 0 12 12
-	frame	data/chars/gemini/special21.png
-	attack1 0
-	frame	data/chars/gemini/special22.png
-	attack1 59 30 97 35 5 0 0 0 12 12
-	frame	data/chars/gemini/special23.png
-	attack1 0
-	frame	data/chars/gemini/special24.png
-	attack1 59 8 98 48 5 0 0 0 12 12
-	frame	data/chars/gemini/special25.png
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/gemini/special26.png
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/gemini/special26.png	
-	offset	116 150
-	delay	10
-	frame	data/chars/gemini/special27.png
-	frame	data/chars/gemini/special28.png
-	attack1 59 25 83 55 5 1 0 0 12 12
-	dropv 3.0 3.0 0.0	
-	frame	data/chars/gemini/special29.png
-	attack 172 35 50 50 20 12 0 0 0 20
-	frame	data/chars/gemini/special30.png
-	attack1 0
-	frame	data/chars/gemini/special31.png
+    fastattack 1
+    forcedirection -1
+    energycost  25 1 0
+    delay    6
+    offset    66 144
+    bbox 21 11 38 151
+    @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
+    sound data/chars/gemini/sounds/11-multihits.wav
+    attack1 70 39 77 44 5 0 0 0 12 12
+    frame    data/chars/gemini/special21.png
+    summonframe 0 0 0 0 0
+    subentity gemini_multihits
+    unsummonframe 20
+    attack1 0
+    frame    data/chars/gemini/special22.png
+    attack1 59 30 97 35 5 0 0 0 12 12
+    frame    data/chars/gemini/special23.png
+    attack1 0
+    frame    data/chars/gemini/special24.png
+    attack1 59 8 98 48 5 0 0 0 12 12
+    frame    data/chars/gemini/special25.png
+    attack1 0
+    frame    data/chars/gemini/special26.png
+    attack1 70 39 77 44 5 0 0 0 12 12
+    frame    data/chars/gemini/special21.png
+    attack1 0
+    frame    data/chars/gemini/special22.png
+    attack1 59 30 97 35 5 0 0 0 12 12
+    frame    data/chars/gemini/special23.png
+    attack1 0
+    frame    data/chars/gemini/special24.png
+    attack1 59 8 98 48 5 0 0 0 12 12
+    frame    data/chars/gemini/special25.png
+    attack1 0
+    frame    data/chars/gemini/special26.png
+    attack1 70 39 77 44 5 0 0 0 12 12
+    frame    data/chars/gemini/special21.png
+    attack1 0
+    frame    data/chars/gemini/special22.png
+    attack1 59 30 97 35 5 0 0 0 12 12
+    frame    data/chars/gemini/special23.png
+    attack1 0
+    frame    data/chars/gemini/special24.png
+    attack1 59 8 98 48 5 0 0 0 12 12
+    frame    data/chars/gemini/special25.png
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/gemini/special26.png
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/gemini/special26.png
+    offset    116 150
+    delay    10
+    frame    data/chars/gemini/special27.png
+    frame    data/chars/gemini/special28.png
+    attack1 59 25 83 55 5 1 0 0 12 12
+    dropv 3.0 3.0 0.0
+    frame    data/chars/gemini/special29.png
+    attack 172 35 50 50 20 12 0 0 0 20
+    frame    data/chars/gemini/special30.png
+    attack1 0
+    frame    data/chars/gemini/special31.png
 
 anim freespecial2 # Attaque spéciale Punch combo
-	range 	50 80
-	rangea 	0 100
-	hitflash flashbig
-	fastattack 1
-	forcedirection -1
-	energycost  25 1 0
-	delay	6
-	offset	66 144
-	bbox 21 11 38 151
-	@cmd 	spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
-	sound data/chars/gemini/sounds/11-multihits.wav
-	attack1 70 39 77 44 5 0 0 0 12 12
-	frame	data/chars/gemini/special21.png
-	summonframe 0 0 0 0 0
-	subentity gemini_multihits
-	unsummonframe 20
-	attack1 0
-	frame	data/chars/gemini/special22.png
-	attack1 59 30 97 35 5 0 0 0 12 12
-	frame	data/chars/gemini/special23.png
-	attack1 0
-	frame	data/chars/gemini/special24.png
-	attack1 59 8 98 48 5 0 0 0 12 12
-	frame	data/chars/gemini/special25.png
-	attack1 0	
-	frame	data/chars/gemini/special26.png
-	attack1 70 39 77 44 5 0 0 0 12 12
-	frame	data/chars/gemini/special21.png
-	attack1 0	
-	frame	data/chars/gemini/special22.png
-	attack1 59 30 97 35 5 0 0 0 12 12
-	frame	data/chars/gemini/special23.png
-	attack1 0	
-	frame	data/chars/gemini/special24.png
-	attack1 59 8 98 48 5 0 0 0 12 12
-	frame	data/chars/gemini/special25.png
-	attack1 0	
-	frame	data/chars/gemini/special26.png
-	attack1 70 39 77 44 5 0 0 0 12 12
-	frame	data/chars/gemini/special21.png
-	attack1 0
-	frame	data/chars/gemini/special22.png
-	attack1 59 30 97 35 5 0 0 0 12 12
-	frame	data/chars/gemini/special23.png
-	attack1 0	
-	frame	data/chars/gemini/special24.png
-	attack1 59 8 98 48 5 0 0 0 12 12
-	frame	data/chars/gemini/special25.png
-	attack1 0	
-	frame	data/chars/gemini/special26.png
-	attack1 0	
-	frame	data/chars/gemini/special26.png	
-	offset	116 150
-	delay	10
-	frame	data/chars/gemini/special27.png
-	frame	data/chars/gemini/special28.png
-	attack1 59 25 83 55 5 1 0 0 12 12
-	dropv 3.0 3.0 0.0	
-	frame	data/chars/gemini/special29.png
-	attack 172 35 50 50 20 12 0 0 0 20
-	frame	data/chars/gemini/special30.png
-	attack1 0
-	frame	data/chars/gemini/special31.png
+    range     50 80
+    rangea     0 100
+    hitflash flashbig
+    fastattack 1
+    forcedirection -1
+    energycost  25 1 0
+    delay    6
+    offset    66 144
+    bbox 21 11 38 151
+    @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
+    sound data/chars/gemini/sounds/11-multihits.wav
+    attack1 70 39 77 44 5 0 0 0 12 12
+    frame    data/chars/gemini/special21.png
+    summonframe 0 0 0 0 0
+    subentity gemini_multihits
+    unsummonframe 20
+    attack1 0
+    frame    data/chars/gemini/special22.png
+    attack1 59 30 97 35 5 0 0 0 12 12
+    frame    data/chars/gemini/special23.png
+    attack1 0
+    frame    data/chars/gemini/special24.png
+    attack1 59 8 98 48 5 0 0 0 12 12
+    frame    data/chars/gemini/special25.png
+    attack1 0
+    frame    data/chars/gemini/special26.png
+    attack1 70 39 77 44 5 0 0 0 12 12
+    frame    data/chars/gemini/special21.png
+    attack1 0
+    frame    data/chars/gemini/special22.png
+    attack1 59 30 97 35 5 0 0 0 12 12
+    frame    data/chars/gemini/special23.png
+    attack1 0
+    frame    data/chars/gemini/special24.png
+    attack1 59 8 98 48 5 0 0 0 12 12
+    frame    data/chars/gemini/special25.png
+    attack1 0
+    frame    data/chars/gemini/special26.png
+    attack1 70 39 77 44 5 0 0 0 12 12
+    frame    data/chars/gemini/special21.png
+    attack1 0
+    frame    data/chars/gemini/special22.png
+    attack1 59 30 97 35 5 0 0 0 12 12
+    frame    data/chars/gemini/special23.png
+    attack1 0
+    frame    data/chars/gemini/special24.png
+    attack1 59 8 98 48 5 0 0 0 12 12
+    frame    data/chars/gemini/special25.png
+    attack1 0
+    frame    data/chars/gemini/special26.png
+    attack1 0
+    frame    data/chars/gemini/special26.png
+    offset    116 150
+    delay    10
+    frame    data/chars/gemini/special27.png
+    frame    data/chars/gemini/special28.png
+    attack1 59 25 83 55 5 1 0 0 12 12
+    dropv 3.0 3.0 0.0
+    frame    data/chars/gemini/special29.png
+    attack 172 35 50 50 20 12 0 0 0 20
+    frame    data/chars/gemini/special30.png
+    attack1 0
+    frame    data/chars/gemini/special31.png
 
 anim freespecial6 # Another dimension
-	delay	10
-	offset	66 144
-	energycost  50 1 0
-	fastattack 1
-	sound data/chars/deathmask/78-cosmos.wav
-        @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
-	@cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
-	@cmd 	spawnScreen "gemini_constellation" 0 0 0 0
-	summonframe 0 0 0 0 1
-	subentity gemini_dimension_back
-	hitflash flashbig
-	frame	data/chars/gemini/special1.png
-	sound data/chars/gemini/sounds/01-dimension.wav
-	@cmd 	spawnbind "gemini_ultra" "ANI_IDLE" 0 0 0 1 0
-	frame	data/chars/gemini/special2.png
-	frame	data/chars/gemini/special3.png
-	frame	data/chars/gemini/special4.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    delay    10
+    offset    66 144
+    energycost  50 1 0
+    fastattack 1
+    sound data/chars/deathmask/78-cosmos.wav
+        @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
+    @cmd     spawnScreen "gemini_constellation" 0 0 0 0
+    summonframe 0 0 0 0 1
+    subentity gemini_dimension_back
+    hitflash flashbig
+    frame    data/chars/gemini/special1.png
+    sound data/chars/gemini/sounds/01-dimension.wav
+    @cmd     spawnbind "gemini_ultra" "ANI_IDLE" 0 0 0 1 0
+    frame    data/chars/gemini/special2.png
+    frame    data/chars/gemini/special3.png
+    frame    data/chars/gemini/special4.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special10.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special10.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special10.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special10.png
         attack1 0
-	frame	data/chars/gemini/special4.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    frame    data/chars/gemini/special4.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special10.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special10.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special5.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special5.png
         attack1 0
-	frame	data/chars/gemini/special6.png
-	attack1 -337 -237 800 480 30 0 0 0 0 400
-	frame	data/chars/gemini/special7.png
+    frame    data/chars/gemini/special6.png
+    attack1 -337 -237 800 480 30 0 0 0 0 400
+    frame    data/chars/gemini/special7.png
         attack1 0
-	frame	data/chars/gemini/special8.png
-	attack1 -337 -237 800 480 30 1 0 0 0 400
-	frame	data/chars/gemini/special9.png
+    frame    data/chars/gemini/special8.png
+    attack1 -337 -237 800 480 30 1 0 0 0 400
+    frame    data/chars/gemini/special9.png
         attack1 0
-	frame	data/chars/gemini/special10.png
-	attack1 -337 -237 800 480 30 1 0 0 0 400
-	frame	data/chars/gemini/special10.png
+    frame    data/chars/gemini/special10.png
+    attack1 -337 -237 800 480 30 1 0 0 0 400
+    frame    data/chars/gemini/special10.png
         attack1 0
-	
-anim riseattack	#Teleportation
-	jumpframe	2 0 0 0
-	loop	0
-	delay	5
-	offset	66 144
-	frame	data/chars/gemini/riseattack1.png
-	frame	data/chars/gemini/riseattack2.png
-	frame	data/chars/gemini/riseattack3.png
-	frame	data/chars/gemini/riseattack4.png
-	frame	data/chars/gemini/riseattack6.png
-	sound data/chars/gemini/sounds/05-rise.wav
-	frame	data/chars/gemini/riseattack6.png
-	frame	data/chars/gemini/riseattack7.png
-	frame	data/chars/gemini/riseattack8.png
-	move	20
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	move	0
-	frame	data/chars/gemini/riseattack8.png
-	frame	data/chars/gemini/riseattack7.png
-	frame	data/chars/gemini/riseattack6.png
-	frame	data/chars/gemini/riseattack5.png
-	frame	data/chars/gemini/riseattack1.png
-	
-anim	block
-	offset	66 144
-	bbox 46 13 38 137
-	frame	data/chars/gemini/block1.png
-	frame	data/chars/gemini/block2.png
+
+anim riseattack    #Teleportation
+    jumpframe    2 0 0 0
+    loop    0
+    delay    5
+    offset    66 144
+    frame    data/chars/gemini/riseattack1.png
+    frame    data/chars/gemini/riseattack2.png
+    frame    data/chars/gemini/riseattack3.png
+    frame    data/chars/gemini/riseattack4.png
+    frame    data/chars/gemini/riseattack6.png
+    sound data/chars/gemini/sounds/05-rise.wav
+    frame    data/chars/gemini/riseattack6.png
+    frame    data/chars/gemini/riseattack7.png
+    frame    data/chars/gemini/riseattack8.png
+    move    20
+    frame    data/chars/misc/empty.gif
+    frame    data/chars/misc/empty.gif
+    frame    data/chars/misc/empty.gif
+    frame    data/chars/misc/empty.gif
+    frame    data/chars/misc/empty.gif
+    frame    data/chars/misc/empty.gif
+    move    0
+    frame    data/chars/gemini/riseattack8.png
+    frame    data/chars/gemini/riseattack7.png
+    frame    data/chars/gemini/riseattack6.png
+    frame    data/chars/gemini/riseattack5.png
+    frame    data/chars/gemini/riseattack1.png
+
+anim    block
+    offset    66 144
+    bbox 46 13 38 137
+    frame    data/chars/gemini/block1.png
+    frame    data/chars/gemini/block2.png

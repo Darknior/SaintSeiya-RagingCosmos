@@ -1,14 +1,10 @@
-name		june
-health		500
-mp 			100
-type		enemy
+name        june
+health      500
+mp          100
+type        enemy
+
 
 #-- GENERAL CONFIG --------------------------------------------------
-
-hostile     player npc  # determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage 	player npc  # determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression 0            # valeur positive + agressif / valeur negative - aggressif
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
@@ -38,30 +34,46 @@ atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
-blockodds 	1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
+
 #-- LIFEBAR ---------------------------------------------------------
 
-lifebarstatus 300 9 1 1 0 -500 -500 1 -500
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom comme Boss
+
 
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript	data/scripts/lifebar.c
-didhitscript	data/scripts/didhit/tint_gold.c
-script	data/scripts/entity_effects.c
-animationscript	data/scripts/player.c
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+ondrawscript        data/scripts/lifebar.c              # Barre de vie directement pleine
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               #
+didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
+
 #-- PALETTES --------------------------------------------------------
 
-icon		data/chars/june/icon.png 0
-palette      data/chars/june/idle1.png
-#remap       data/chars/june/palettes/palette1.png  # 14 Possible MAX
+icon         data/chars/june/palettes/icon1.png 0
+palette      data/chars/june/palettes/palette1.png
+#remap       data/chars/june/palettes/palettes/palette1.png  # 14 Possible MAX
+
 
 #-- ANIMATIONS -------------------------------------------------------
 
@@ -71,461 +83,461 @@ palette      data/chars/june/idle1.png
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-	delay	15
-	offset	121 125
-	frame	data/chars/june/spawn1.png
-	frame	data/chars/june/spawn2.png
-	frame	data/chars/june/spawn3.png
-	frame	data/chars/june/spawn2.png
-	frame	data/chars/june/spawn1.png
-	frame	data/chars/june/spawn2.png
-	frame	data/chars/june/spawn3.png
-	frame	data/chars/june/spawn2.png
-	frame	data/chars/june/spawn1.png
-	frame	data/chars/june/spawn2.png
-	frame	data/chars/june/spawn3.png
-	sound data/chars/june/sounds/09-cloack.wav
-	frame	data/chars/june/spawn4.png
-	frame	data/chars/june/spawn5.png
-	frame	data/chars/june/spawn6.png
-	frame	data/chars/june/spawn7.png
-	frame	data/chars/june/spawn8.png
-	frame	data/chars/june/spawn9.png
-	frame	data/chars/june/spawn10.png
-	frame	data/chars/june/spawn11.png
-	frame	data/chars/june/spawn12.png
-	frame	data/chars/june/spawn13.png
-	frame	data/chars/june/spawn14.png
-	frame	data/chars/june/spawn15.png
-	frame	data/chars/june/spawn16.png
-	frame	data/chars/june/spawn17.png
-	frame	data/chars/june/spawn18.png
-	frame	data/chars/june/spawn19.png
-	frame	data/chars/june/spawn20.png
-	
+    delay    15
+    offset    121 125
+    frame    data/chars/june/select/spawn1.png
+    frame    data/chars/june/select/spawn2.png
+    frame    data/chars/june/select/spawn3.png
+    frame    data/chars/june/select/spawn2.png
+    frame    data/chars/june/select/spawn1.png
+    frame    data/chars/june/select/spawn2.png
+    frame    data/chars/june/select/spawn3.png
+    frame    data/chars/june/select/spawn2.png
+    frame    data/chars/june/select/spawn1.png
+    frame    data/chars/june/select/spawn2.png
+    frame    data/chars/june/select/spawn3.png
+    sound    data/chars/june/sounds/09-cloack.wav
+    frame    data/chars/june/select/spawn4.png
+    frame    data/chars/june/select/spawn5.png
+    frame    data/chars/june/select/spawn6.png
+    frame    data/chars/june/select/spawn7.png
+    frame    data/chars/june/select/spawn8.png
+    frame    data/chars/june/select/spawn9.png
+    frame    data/chars/june/select/spawn10.png
+    frame    data/chars/june/select/spawn11.png
+    frame    data/chars/june/select/spawn12.png
+    frame    data/chars/june/select/spawn13.png
+    frame    data/chars/june/select/spawn14.png
+    frame    data/chars/june/select/spawn15.png
+    frame    data/chars/june/select/spawn16.png
+    frame    data/chars/june/select/spawn17.png
+    frame    data/chars/june/select/spawn18.png
+    frame    data/chars/june/select/spawn19.png
+    frame    data/chars/june/select/spawn20.png
+
 anim idle
-	loop 1
-	delay	10
-	offset	35 124
-	bbox 13 15 51 110
-	frame	data/chars/june/idle1.png
-	frame	data/chars/june/idle2.png
-	frame	data/chars/june/idle3.png
-	frame	data/chars/june/idle4.png
-	frame	data/chars/june/idle3.png
-	frame	data/chars/june/idle2.png
+    loop 1
+    delay    10
+    offset    35 124
+    bbox 13 15 51 110
+    frame    data/chars/june/idle1.png
+    frame    data/chars/june/idle2.png
+    frame    data/chars/june/idle3.png
+    frame    data/chars/june/idle4.png
+    frame    data/chars/june/idle3.png
+    frame    data/chars/june/idle2.png
 
 anim sleep
-	loop 1 6 12
-	delay	20
-	offset	51 126
-	bbox 26 17 51 110
-	frame	data/chars/june/sleep1.png
-	frame	data/chars/june/sleep2.png
-	frame	data/chars/june/sleep1.png
-	frame	data/chars/june/sleep2.png
-	frame	data/chars/june/sleep1.png
-	frame	data/chars/june/sleep2.png
-	frame	data/chars/june/sleep3.png
-	frame	data/chars/june/sleep5.png
-	frame	data/chars/june/sleep5.png
-	frame	data/chars/june/sleep6.png
-	frame	data/chars/june/sleep5.png
-	frame	data/chars/june/sleep4.png
-	
+    loop 1 6 12
+    delay    20
+    offset    51 126
+    bbox 26 17 51 110
+    frame    data/chars/june/sleep1.png
+    frame    data/chars/june/sleep2.png
+    frame    data/chars/june/sleep1.png
+    frame    data/chars/june/sleep2.png
+    frame    data/chars/june/sleep1.png
+    frame    data/chars/june/sleep2.png
+    frame    data/chars/june/sleep3.png
+    frame    data/chars/june/sleep5.png
+    frame    data/chars/june/sleep5.png
+    frame    data/chars/june/sleep6.png
+    frame    data/chars/june/sleep5.png
+    frame    data/chars/june/sleep4.png
+
 anim walk
-	loop	1
-	delay	14
-	offset	35 124
-	bbox 13 9 51 115
-	frame	data/chars/june/walk1.png
-	frame	data/chars/june/walk2.png
-	frame	data/chars/june/walk3.png
-	frame	data/chars/june/walk4.png
-	frame	data/chars/june/walk5.png
-	frame	data/chars/june/walk6.png
+    loop    1
+    delay    14
+    offset    35 124
+    bbox 13 9 51 115
+    frame    data/chars/june/walk1.png
+    frame    data/chars/june/walk2.png
+    frame    data/chars/june/walk3.png
+    frame    data/chars/june/walk4.png
+    frame    data/chars/june/walk5.png
+    frame    data/chars/june/walk6.png
 
 anim run
-	loop	1
-	delay	10
-	offset	53 124
-	bbox 32 28 51 97
-	frame	data/chars/june/run1.png
-	frame	data/chars/june/run2.png
-	frame	data/chars/june/run3.png
-	frame	data/chars/june/run4.png
-	frame	data/chars/june/run5.png
-	frame	data/chars/june/run6.png
-	
+    loop    1
+    delay    10
+    offset    53 124
+    bbox 32 28 51 97
+    frame    data/chars/june/run1.png
+    frame    data/chars/june/run2.png
+    frame    data/chars/june/run3.png
+    frame    data/chars/june/run4.png
+    frame    data/chars/june/run5.png
+    frame    data/chars/june/run6.png
+
 anim runattack # Attaque en courant
-	delay	6
-	offset	52 170
-	bbox 28 59 51 112
-	hitflash june_swing
-	forcedirection -1
-	range 	150 250
-	rangea 	0 100	
-	@cmd	dasher 3.5 0 0 1
-	attack1 0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/june/runattack1.png
-	frame	data/chars/june/runattack2.png
-	frame	data/chars/june/runattack3.png
-	attack2 52 59 120 112 20 1 0 0 5 12
-	frame	data/chars/june/runattack4.png
-	frame	data/chars/june/runattack5.png
-	frame	data/chars/june/runattack6.png
-	frame	data/chars/june/runattack7.png
-	frame	data/chars/june/runattack8.png
-	frame	data/chars/june/runattack9.png
-	attack2 0
-	@cmd	dasher 0 0 0 1
-	delay	12
-	frame	data/chars/june/runattack10.png
-	frame	data/chars/june/runattack11.png
+    delay    6
+    offset    52 170
+    bbox 28 59 51 112
+    hitflash june_swing
+    forcedirection -1
+    range     150 250
+    rangea     0 100
+    @cmd    dasher 3.5 0 0 1
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/june/runattack1.png
+    frame    data/chars/june/runattack2.png
+    frame    data/chars/june/runattack3.png
+    attack2 52 59 120 112 20 1 0 0 5 12
+    frame    data/chars/june/runattack4.png
+    frame    data/chars/june/runattack5.png
+    frame    data/chars/june/runattack6.png
+    frame    data/chars/june/runattack7.png
+    frame    data/chars/june/runattack8.png
+    frame    data/chars/june/runattack9.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/june/runattack10.png
+    frame    data/chars/june/runattack11.png
 
 anim get
-	delay	1
-	offset	25 113
-	bbox 2 16 52 99
-	frame	data/chars/june/get1.png
-	frame	data/chars/june/get2.png
-	frame	data/chars/june/get2.png
-	frame	data/chars/june/get1.png
+    delay    1
+    offset    25 113
+    bbox 2 16 52 99
+    frame    data/chars/june/get1.png
+    frame    data/chars/june/get2.png
+    frame    data/chars/june/get2.png
+    frame    data/chars/june/get1.png
 
 anim attack1 # Attaque combo 1
-	delay	5
-	offset	45 124
-	bbox 13 9 51 115
-	frame	data/chars/june/attack1.png
-	attack1 45 0 90 93 10 0 0 0 5 12
-	frame	data/chars/june/attack2.png
-	frame	data/chars/june/attack3.png
-	attack1 0
-	frame	data/chars/june/attack4.png
-	frame	data/chars/june/attack5.png
-	
+    delay    5
+    offset    45 124
+    bbox 13 9 51 115
+    frame    data/chars/june/attack1.png
+    attack1 45 0 90 93 10 0 0 0 5 12
+    frame    data/chars/june/attack2.png
+    frame    data/chars/june/attack3.png
+    attack1 0
+    frame    data/chars/june/attack4.png
+    frame    data/chars/june/attack5.png
+
 anim attack2 # Attaque combo 2
-	delay	3
-	offset	56 123
-	bbox 34 15 51 110
-	frame	data/chars/june/attack21.png
-	frame	data/chars/june/attack22.png
-	frame	data/chars/june/attack23.png
-	frame	data/chars/june/attack24.png
-	frame	data/chars/june/attack25.png
-	attack1 57 21 150 104 10 0 0 0 5 12
-	frame	data/chars/june/attack26.png
-	frame	data/chars/june/attack27.png
-	frame	data/chars/june/attack28.png
-	frame	data/chars/june/attack29.png
-	frame	data/chars/june/attack30.png
-	frame	data/chars/june/attack31.png
-	frame	data/chars/june/attack32.png
-	attack1 0
-	frame	data/chars/june/attack33.png
-	frame	data/chars/june/attack34.png
-	frame	data/chars/june/attack35.png
-	
+    delay    3
+    offset    56 123
+    bbox 34 15 51 110
+    frame    data/chars/june/attack21.png
+    frame    data/chars/june/attack22.png
+    frame    data/chars/june/attack23.png
+    frame    data/chars/june/attack24.png
+    frame    data/chars/june/attack25.png
+    attack1 57 21 150 104 10 0 0 0 5 12
+    frame    data/chars/june/attack26.png
+    frame    data/chars/june/attack27.png
+    frame    data/chars/june/attack28.png
+    frame    data/chars/june/attack29.png
+    frame    data/chars/june/attack30.png
+    frame    data/chars/june/attack31.png
+    frame    data/chars/june/attack32.png
+    attack1 0
+    frame    data/chars/june/attack33.png
+    frame    data/chars/june/attack34.png
+    frame    data/chars/june/attack35.png
+
 anim attack3 # Attaque combo 3
-	delay	3
-	offset	150 133
-	bbox 127 26 51 110
-	fastattack 1
-	frame	data/chars/june/attack41.png
-	frame	data/chars/june/attack42.png
-	frame	data/chars/june/attack43.png
-	frame	data/chars/june/attack44.png
-	frame	data/chars/june/attack45.png
-	frame	data/chars/june/attack46.png
-	attack1 150 33 190 100 10 0 0 0 5 12
-	frame	data/chars/june/attack47.png
-	frame	data/chars/june/attack48.png
-	frame	data/chars/june/attack49.png
-	frame	data/chars/june/attack50.png
-	frame	data/chars/june/attack51.png
-	frame	data/chars/june/attack52.png
-	attack1 0
-	frame	data/chars/june/attack53.png
-	attack1 0 33 190 100 10 0 0 0 5 12
-	frame	data/chars/june/attack54.png
-	frame	data/chars/june/attack55.png
-	frame	data/chars/june/attack56.png
-	frame	data/chars/june/attack57.png
-	frame	data/chars/june/attack58.png
-	frame	data/chars/june/attack59.png
-	frame	data/chars/june/attack60.png
-	frame	data/chars/june/attack61.png
-	frame	data/chars/june/attack62.png
-	frame	data/chars/june/attack63.png
-	
+    delay    3
+    offset    150 133
+    bbox 127 26 51 110
+    fastattack 1
+    frame    data/chars/june/attack41.png
+    frame    data/chars/june/attack42.png
+    frame    data/chars/june/attack43.png
+    frame    data/chars/june/attack44.png
+    frame    data/chars/june/attack45.png
+    frame    data/chars/june/attack46.png
+    attack1 150 33 190 100 10 0 0 0 5 12
+    frame    data/chars/june/attack47.png
+    frame    data/chars/june/attack48.png
+    frame    data/chars/june/attack49.png
+    frame    data/chars/june/attack50.png
+    frame    data/chars/june/attack51.png
+    frame    data/chars/june/attack52.png
+    attack1 0
+    frame    data/chars/june/attack53.png
+    attack1 0 33 190 100 10 0 0 0 5 12
+    frame    data/chars/june/attack54.png
+    frame    data/chars/june/attack55.png
+    frame    data/chars/june/attack56.png
+    frame    data/chars/june/attack57.png
+    frame    data/chars/june/attack58.png
+    frame    data/chars/june/attack59.png
+    frame    data/chars/june/attack60.png
+    frame    data/chars/june/attack61.png
+    frame    data/chars/june/attack62.png
+    frame    data/chars/june/attack63.png
+
 anim attack4 # Attaque combo 4
-	delay	3
-	offset	94 174
-	bbox 71 68 51 108
-	hitflash flashmedium
-	fastattack 1
-	frame	data/chars/june/attack71.png
-	frame	data/chars/june/attack72.png
-	attack1 89 24 150 120 10 0 0 0 5 12
-	frame	data/chars/june/attack73.png
-	frame	data/chars/june/attack74.png
-	frame	data/chars/june/attack75.png
-	frame	data/chars/june/attack76.png
-	frame	data/chars/june/attack77.png
-	frame	data/chars/june/attack78.png
-	frame	data/chars/june/attack79.png
-	frame	data/chars/june/attack80.png
-	frame	data/chars/june/attack81.png
-	frame	data/chars/june/attack82.png
-	frame	data/chars/june/attack83.png
-	attack1 0
-	frame	data/chars/june/attack84.png
-	frame	data/chars/june/attack85.png
-	frame	data/chars/june/attack86.png
-	frame	data/chars/june/attack87.png
-	frame	data/chars/june/attack88.png
-	attack1 89 82 60 40 10 0 0 0 5 12
-	frame	data/chars/june/attack89.png
-	frame	data/chars/june/attack90.png
-	frame	data/chars/june/attack91.png
-	frame	data/chars/june/attack92.png
-	
+    delay    3
+    offset    94 174
+    bbox 71 68 51 108
+    hitflash flashmedium
+    fastattack 1
+    frame    data/chars/june/attack71.png
+    frame    data/chars/june/attack72.png
+    attack1 89 24 150 120 10 0 0 0 5 12
+    frame    data/chars/june/attack73.png
+    frame    data/chars/june/attack74.png
+    frame    data/chars/june/attack75.png
+    frame    data/chars/june/attack76.png
+    frame    data/chars/june/attack77.png
+    frame    data/chars/june/attack78.png
+    frame    data/chars/june/attack79.png
+    frame    data/chars/june/attack80.png
+    frame    data/chars/june/attack81.png
+    frame    data/chars/june/attack82.png
+    frame    data/chars/june/attack83.png
+    attack1 0
+    frame    data/chars/june/attack84.png
+    frame    data/chars/june/attack85.png
+    frame    data/chars/june/attack86.png
+    frame    data/chars/june/attack87.png
+    frame    data/chars/june/attack88.png
+    attack1 89 82 60 40 10 0 0 0 5 12
+    frame    data/chars/june/attack89.png
+    frame    data/chars/june/attack90.png
+    frame    data/chars/june/attack91.png
+    frame    data/chars/june/attack92.png
+
 anim attack5 # Attaque combo 5
-	delay	3
-	offset	69 123
-	bbox 48 15 51 110
-	hitflash flashbig
-	frame	data/chars/june/attack101.png
-	frame	data/chars/june/attack102.png
-	frame	data/chars/june/attack103.png
-	frame	data/chars/june/attack104.png
-	attack1 -8 21 240 81 20 1 0 0 5 12
-	frame	data/chars/june/attack105.png
-	frame	data/chars/june/attack106.png
-	frame	data/chars/june/attack107.png
-	frame	data/chars/june/attack108.png
-	frame	data/chars/june/attack109.png
-	attack1 0
-	frame	data/chars/june/attack110.png
-	frame	data/chars/june/attack111.png
-	frame	data/chars/june/attack112.png
-	frame	data/chars/june/attack113.png
-	
+    delay    3
+    offset    69 123
+    bbox 48 15 51 110
+    hitflash flashbig
+    frame    data/chars/june/attack101.png
+    frame    data/chars/june/attack102.png
+    frame    data/chars/june/attack103.png
+    frame    data/chars/june/attack104.png
+    attack1 -8 21 240 81 20 1 0 0 5 12
+    frame    data/chars/june/attack105.png
+    frame    data/chars/june/attack106.png
+    frame    data/chars/june/attack107.png
+    frame    data/chars/june/attack108.png
+    frame    data/chars/june/attack109.png
+    attack1 0
+    frame    data/chars/june/attack110.png
+    frame    data/chars/june/attack111.png
+    frame    data/chars/june/attack112.png
+    frame    data/chars/june/attack113.png
+
 anim special # Vine Mill
-	delay	10
-	offset	111 124
-	sound data/chars/june/sounds/01-explosion.wav
-	fastattack 1
-	frame	data/chars/june/special1.png
-	sound data/chars/june/sounds/01-hurl.wav
-	frame	data/chars/june/special2.png
-	sound data/chars/june/sounds/06-launch.wav
-	attack5 42 24 150 100 10 0 0 0 5 12
-	frame	data/chars/june/special3.png
-	frame	data/chars/june/special4.png
-	frame	data/chars/june/special5.png
-	frame	data/chars/june/special6.png
-	frame	data/chars/june/special7.png
-	attack5 0
-	frame	data/chars/june/special8.png
-	frame	data/chars/june/special9.png
-	frame	data/chars/june/special10.png
-	attack5 42 24 150 100 30 1 0 0 5 12
-	dropv 4.0 3.0 0.0
-	frame	data/chars/june/special11.png
-	frame	data/chars/june/special12.png
-	frame	data/chars/june/special13.png
-	frame	data/chars/june/special14.png
-	frame	data/chars/june/special15.png
-	frame	data/chars/june/special16.png
-	frame	data/chars/june/special17.png
+    delay    10
+    offset    111 124
+    sound data/chars/june/sounds/01-explosion.wav
+    fastattack 1
+    frame    data/chars/june/special1.png
+    sound data/chars/june/sounds/01-hurl.wav
+    frame    data/chars/june/special2.png
+    sound data/chars/june/sounds/06-launch.wav
+    attack5 42 24 150 100 10 0 0 0 5 12
+    frame    data/chars/june/special3.png
+    frame    data/chars/june/special4.png
+    frame    data/chars/june/special5.png
+    frame    data/chars/june/special6.png
+    frame    data/chars/june/special7.png
+    attack5 0
+    frame    data/chars/june/special8.png
+    frame    data/chars/june/special9.png
+    frame    data/chars/june/special10.png
+    attack5 42 24 150 100 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/june/special11.png
+    frame    data/chars/june/special12.png
+    frame    data/chars/june/special13.png
+    frame    data/chars/june/special14.png
+    frame    data/chars/june/special15.png
+    frame    data/chars/june/special16.png
+    frame    data/chars/june/special17.png
 
 anim special2 # Vine Prison
-	delay	15
-	offset	96 124
-	sound data/chars/june/sounds/01-multi2.wav
-	followanim 1
-	followcond 2
-	energycost  10 1 0
-	hitflash flashbig
-	frame	data/chars/june/special21.png
-	frame	data/chars/june/special22.png
-	attack5 38 46 250 79 30 0 0 0 5 12
-	frame	data/chars/june/special23.png
-	frame	data/chars/june/special24.png
-	frame	data/chars/june/special25.png
-	frame	data/chars/june/special26.png
-	
+    delay    15
+    offset    96 124
+    sound data/chars/june/sounds/01-multi2.wav
+    followanim 1
+    followcond 2
+    energycost  10 1 0
+    hitflash flashbig
+    frame    data/chars/june/special21.png
+    frame    data/chars/june/special22.png
+    attack5 38 46 250 79 30 0 0 0 5 12
+    frame    data/chars/june/special23.png
+    frame    data/chars/june/special24.png
+    frame    data/chars/june/special25.png
+    frame    data/chars/june/special26.png
+
 anim follow1 # Vine Prison follow
-	delay	15
-	offset	96 124
-	fastattack 1
-	hitflash flashbig
-	attack5 109 25 150 100 20 0 0 0 5 12
-	frame	data/chars/june/special27.png
-	frame	data/chars/june/special28.png
-	frame	data/chars/june/special29.png
-	attack5 0
-	frame	data/chars/june/special28.png
-	attack5 109 25 150 100 20 0 0 0 5 12
-	frame	data/chars/june/special27.png
-	frame	data/chars/june/special28.png
-	frame	data/chars/june/special29.png
-	attack5 0
-	frame	data/chars/june/special28.png
-	attack5 109 25 150 100 30 1 0 0 5 12
-	frame	data/chars/june/special27.png
-	frame	data/chars/june/special28.png
-	frame	data/chars/june/special29.png
-	attack5 0
-	frame	data/chars/june/special28.png
-	frame	data/chars/june/special27.png
-	frame	data/chars/june/special25.png
-	frame	data/chars/june/special26.png
-	
+    delay    15
+    offset    96 124
+    fastattack 1
+    hitflash flashbig
+    attack5 109 25 150 100 20 0 0 0 5 12
+    frame    data/chars/june/special27.png
+    frame    data/chars/june/special28.png
+    frame    data/chars/june/special29.png
+    attack5 0
+    frame    data/chars/june/special28.png
+    attack5 109 25 150 100 20 0 0 0 5 12
+    frame    data/chars/june/special27.png
+    frame    data/chars/june/special28.png
+    frame    data/chars/june/special29.png
+    attack5 0
+    frame    data/chars/june/special28.png
+    attack5 109 25 150 100 30 1 0 0 5 12
+    frame    data/chars/june/special27.png
+    frame    data/chars/june/special28.png
+    frame    data/chars/june/special29.png
+    attack5 0
+    frame    data/chars/june/special28.png
+    frame    data/chars/june/special27.png
+    frame    data/chars/june/special25.png
+    frame    data/chars/june/special26.png
+
 anim freespecial2 # Vine Prison
-	delay	15
-	offset	96 124
-	sound data/chars/june/sounds/01-multi2.wav
-	range 	80 150
-	rangea 	0 100
-	followanim 1
-	followcond 2
-	energycost  10 1 0
-	hitflash flashbig
-	frame	data/chars/june/special21.png
-	frame	data/chars/june/special22.png
-	attack5 38 46 250 79 30 0 0 0 5 12
-	frame	data/chars/june/special23.png
-	frame	data/chars/june/special24.png
-	frame	data/chars/june/special25.png
-	frame	data/chars/june/special26.png
-	
+    delay    15
+    offset    96 124
+    sound data/chars/june/sounds/01-multi2.wav
+    range     80 150
+    rangea     0 100
+    followanim 1
+    followcond 2
+    energycost  10 1 0
+    hitflash flashbig
+    frame    data/chars/june/special21.png
+    frame    data/chars/june/special22.png
+    attack5 38 46 250 79 30 0 0 0 5 12
+    frame    data/chars/june/special23.png
+    frame    data/chars/june/special24.png
+    frame    data/chars/june/special25.png
+    frame    data/chars/june/special26.png
+
 anim jump # Saut Statique
-	delay	10
-	offset	31 125
-	bbox 19 4 51 97
-	summonframe 0 0 0 0
-	subentity round_dust
-	cancel 0 8 0 A2 freespecial3
-	frame	data/chars/june/jump1.png
-	frame	data/chars/june/jump2.png
-	frame	data/chars/june/jump3.png
-	frame	data/chars/june/jump4.png
-	frame	data/chars/june/jump5.png
-	
+    delay    10
+    offset    31 125
+    bbox 19 4 51 97
+    summonframe 0 0 0 0
+    subentity round_dust
+    cancel 0 8 0 A2 freespecial3
+    frame    data/chars/june/jump1.png
+    frame    data/chars/june/jump2.png
+    frame    data/chars/june/jump3.png
+    frame    data/chars/june/jump4.png
+    frame    data/chars/june/jump5.png
+
 anim jumpdelay # Animation de saut intermédiaire
-	delay	10
-	offset	31 125
-	bbox 19 4 51 97
-	frame	data/chars/june/jump1.png
+    delay    10
+    offset    31 125
+    bbox 19 4 51 97
+    frame    data/chars/june/jump1.png
 
 anim jumpland # Aterrissage du saut
-	delay	8
-	offset	35 124
-	bbox 13 15 51 110
-	summonframe 0 0 0 0
-	subentity round_dust
-	frame	data/chars/june/get1.png
-	frame	data/chars/june/get2.png
-	frame	data/chars/june/get2.png
-	frame	data/chars/june/get1.png
-	
+    delay    8
+    offset    35 124
+    bbox 13 15 51 110
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/june/get1.png
+    frame    data/chars/june/get2.png
+    frame    data/chars/june/get2.png
+    frame    data/chars/june/get1.png
+
 anim jumpattack #Attaque sautée statique
-	delay	5
-	offset	70 149
-	bbox 57 55 51 97
-	sound data/sounds/punch.wav
-	frame	data/chars/june/jumpattack1.png
-	frame	data/chars/june/jumpattack2.png
-	attack4 5 100 130 80 10 1 0 0 5 12
-	frame	data/chars/june/jumpattack3.png
-	frame	data/chars/june/jumpattack4.png
-	frame	data/chars/june/jumpattack5.png
-	frame	data/chars/june/jumpattack6.png
-	frame	data/chars/june/jumpattack7.png
-	frame	data/chars/june/jumpattack8.png
-	frame	data/chars/june/jumpattack9.png
-	frame	data/chars/june/jumpattack10.png
-	
+    delay    5
+    offset    70 149
+    bbox 57 55 51 97
+    sound data/sounds/punch.wav
+    frame    data/chars/june/jumpattack1.png
+    frame    data/chars/june/jumpattack2.png
+    attack4 5 100 130 80 10 1 0 0 5 12
+    frame    data/chars/june/jumpattack3.png
+    frame    data/chars/june/jumpattack4.png
+    frame    data/chars/june/jumpattack5.png
+    frame    data/chars/june/jumpattack6.png
+    frame    data/chars/june/jumpattack7.png
+    frame    data/chars/june/jumpattack8.png
+    frame    data/chars/june/jumpattack9.png
+    frame    data/chars/june/jumpattack10.png
+
 anim pain
-	offset	49 124
-	bbox 17 15 51 110
-	delay	5
-	frame	data/chars/june/pain1.png
-	frame	data/chars/june/pain2.png
-	frame	data/chars/june/pain3.png
-	frame	data/chars/june/pain2.png
-	frame	data/chars/june/pain1.png
-	
+    offset    49 124
+    bbox 17 15 51 110
+    delay    5
+    frame    data/chars/june/pain1.png
+    frame    data/chars/june/pain2.png
+    frame    data/chars/june/pain3.png
+    frame    data/chars/june/pain2.png
+    frame    data/chars/june/pain1.png
+
 anim pain2
-	offset	42 124
-	bbox 17 15 51 110
-	#move	-5
-	delay	5
-	frame	data/chars/june/pain21.png
-	frame	data/chars/june/pain22.png
-	frame	data/chars/june/pain23.png
-	frame	data/chars/june/pain22.png
-	frame	data/chars/june/pain21.png
-	
+    offset    42 124
+    bbox 17 15 51 110
+    #move    -5
+    delay    5
+    frame    data/chars/june/pain21.png
+    frame    data/chars/june/pain22.png
+    frame    data/chars/june/pain23.png
+    frame    data/chars/june/pain22.png
+    frame    data/chars/june/pain21.png
+
 anim fall
-	offset	106 124
-	delay	10
-	landframe 6
-	bbox 35 50 75 75
-	frame	data/chars/june/fall1.png
-	frame	data/chars/june/fall2.png
-	frame	data/chars/june/fall3.png
-	frame	data/chars/june/fall4.png
-	frame	data/chars/june/fall5.png
-	bbox 7 90 100 35
-	frame	data/chars/june/fall6.png
-	frame	data/chars/june/fall7.png
+    offset    106 124
+    delay    10
+    landframe 6
+    bbox 35 50 75 75
+    frame    data/chars/june/fall1.png
+    frame    data/chars/june/fall2.png
+    frame    data/chars/june/fall3.png
+    frame    data/chars/june/fall4.png
+    frame    data/chars/june/fall5.png
+    bbox 7 90 100 35
+    frame    data/chars/june/fall6.png
+    frame    data/chars/june/fall7.png
 
 anim fall7
-	offset	106 124
-	delay	-1000
-	bbox 35 50 75 75
-	frame	data/chars/june/fall1.png
-	frame	data/chars/june/fall2.png
-	frame	data/chars/june/fall3.png
-	frame	data/chars/june/fall4.png
-	frame	data/chars/june/fall5.png
-	bbox 7 90 100 35
-	frame	data/chars/june/fall6.png
-	frame	data/chars/june/fall7.png
+    offset    106 124
+    delay    -1000
+    bbox 35 50 75 75
+    frame    data/chars/june/fall1.png
+    frame    data/chars/june/fall2.png
+    frame    data/chars/june/fall3.png
+    frame    data/chars/june/fall4.png
+    frame    data/chars/june/fall5.png
+    bbox 7 90 100 35
+    frame    data/chars/june/fall6.png
+    frame    data/chars/june/fall7.png
 
 anim rise
-	delay	10
-	offset	106 124
-	jumpframe 0 0 0
-	frame	data/chars/june/rise1.png
-	frame	data/chars/june/rise2.png
-	frame	data/chars/june/rise3.png
-	frame	data/chars/june/rise4.png
-	frame	data/chars/june/rise5.png	
+    delay    10
+    offset    106 124
+    jumpframe 0 0 0
+    frame    data/chars/june/rise1.png
+    frame    data/chars/june/rise2.png
+    frame    data/chars/june/rise3.png
+    frame    data/chars/june/rise4.png
+    frame    data/chars/june/rise5.png
 
 anim death
-	offset	49 124
-	delay	10
-	frame	data/chars/june/pain1.png
-	frame	data/chars/june/pain2.png
-	frame	data/chars/june/pain3.png
-	offset	106 124
-	frame	data/chars/june/fall1.png
-	frame	data/chars/june/fall2.png
-	frame	data/chars/june/fall3.png
-	frame	data/chars/june/fall4.png
-	frame	data/chars/june/fall5.png
-	frame	data/chars/june/fall6.png
-	frame	data/chars/june/fall7.png
-	
-anim	block
-	loop	0
-	delay	5
-	offset	29 122
-	bbox 13 15 51 110
-	frame	data/chars/june/block1.png
-	frame	data/chars/june/block2.png
-	frame	data/chars/june/block3.png
+    offset    49 124
+    delay    10
+    frame    data/chars/june/pain1.png
+    frame    data/chars/june/pain2.png
+    frame    data/chars/june/pain3.png
+    offset    106 124
+    frame    data/chars/june/fall1.png
+    frame    data/chars/june/fall2.png
+    frame    data/chars/june/fall3.png
+    frame    data/chars/june/fall4.png
+    frame    data/chars/june/fall5.png
+    frame    data/chars/june/fall6.png
+    frame    data/chars/june/fall7.png
+
+anim    block
+    loop    0
+    delay    5
+    offset    29 122
+    bbox 13 15 51 110
+    frame    data/chars/june/block1.png
+    frame    data/chars/june/block2.png
+    frame    data/chars/june/block3.png

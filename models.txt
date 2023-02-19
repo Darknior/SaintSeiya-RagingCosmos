@@ -325,9 +325,8 @@ know    arma0-4         data/chars/LIBRA/arma0-4.txt
 ## PNJ ##
 
 know    NPC-PLAYER      data/chars/OBJ/NPC-PLAYER.txt
-know    kikisuper       data/chars/KIKI/00_kikisuper.txt
-know    KIKI            data/chars/KIKI/00_KIKI.txt
-know    KIKI2           data/chars/KIKI2/00_KIKI2.txt
+#know    KIKI            data/chars/KIKI/00_KIKI.txt
+know    KIKI2           data/chars/KIKI/00_KIKI2.txt
 know    roccia1         data/chars/OBJ/roccia1.txt
 know    rock01          data/chars/OBJ/rock01.txt
 know    roccia2         data/chars/OBJ/roccia2.txt
@@ -354,26 +353,30 @@ know    time-is-up   data/chars/misc/timer/time-is-up.txt
 ## BRONZE SAINTS ##
 
 load    seiya           data/chars/seiya/00_seiya.txt
-load    shiryu           data/chars/shiryu/00_shiryu.txt
+load    shiryu          data/chars/shiryu/00_shiryu.txt
 load    hyoga           data/chars/hyoga/00_hyoga.txt
-load    shun           data/chars/shun/00_shun.txt
-load    ikki           data/chars/ikki/00_ikki.txt
+load    shun            data/chars/shun/00_shun.txt
+load    ikki            data/chars/ikki/00_ikki.txt
 
 ## SANCTUARY SOLDIERS ##
 
-know    malesoldier     data/chars/soldier_blue/00_soldier_blue.txt
+know    malesoldier                 data/chars/soldier_blue/00_soldier_blue.txt
 know    malesoldier_attackcombo     data/chars/soldier_blue/malesoldier_attackcombo.txt
 know    malesoldier_jumpattack      data/chars/soldier_blue/malesoldier_jumpattack.txt
-know    malesoldier_specialattack    data/chars/soldier_blue/malesoldier_specialattack.txt
-know    malesoldier_runattack        data/chars/soldier_blue/malesoldier_runattack.txt
-know    malesoldier_defense_all        data/chars/soldier_blue/malesoldier_defense_all.txt
-know    soldiersuper    data/chars/soldier_yellow_B/soldiersuper.txt
-know    SOLDIER         data/chars/soldier_white/00_soldier_white.txt
-know    SOLDIER1        data/chars/soldier_yellow/00_soldier_yellow.txt
-know    SOLDIER1-1      data/chars/soldier_yellow_B/00_soldier_yellow_B.txt
+know    malesoldier_specialattack   data/chars/soldier_blue/malesoldier_specialattack.txt
+know    malesoldier_runattack       data/chars/soldier_blue/malesoldier_runattack.txt
+know    malesoldier_defense_all     data/chars/soldier_blue/malesoldier_defense_all.txt
+
+know    SOLDIER         data/chars/soldier_base/00_soldier_white.txt
+know    SOLDIER1        data/chars/soldier_base/00_soldier_yellow.txt
+know    SOLDIER1-1      data/chars/soldier_base/00_soldier_yellow_B.txt
+
 know    SOLDIER2        data/chars/soldier_purple/00_soldier_purple.txt
+know    SOLDIERTRAINING data/chars/soldier_purple/00_soldier_purple_training.txt
+
 know    SOLDIER3        data/chars/soldier_big/00_soldier_big.txt
-know     jaki            data/chars/jaki/00_jaki.txt
+
+know    jaki            data/chars/jaki/00_jaki.txt
 know    cassios         data/chars/cassios/00_cassios.txt
 know    cassiosp        data/chars/cassios/00_cassiosp.txt
 know    cassios_rescue  data/chars/cassios/00_cassios_rescue.txt
@@ -405,10 +408,6 @@ know    SHURA           data/chars/SHURA/00_shura.txt
 know    cube            data/chars/CUBE/CUBE.txt
 know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
 know    great_pope      data/chars/great_pope/great_pope.txt
-
-## TRAINING ##
-
-know    SOLDIERTRAINING data/chars/soldier_purple/00_soldier_purple_training.txt
 
 
 #-- LEVELS --------------------------------------------------------------------------
