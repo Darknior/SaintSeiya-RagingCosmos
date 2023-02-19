@@ -1,7 +1,8 @@
 name        seiya
-health        400
-mp             100
+health      400
+mp          100
 type        player
+
 
 #-- GENERAL CONFIG --------------------------------------------------
 
@@ -11,16 +12,17 @@ makeinv     2 0         # Invincible après respawn X sec / Clignote
 
 speed       15          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
-jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
+
 jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
-defense     all 1 0 0 0 0 0.25 0       # The value of 0.25 means 1/4 of the total damage
+defense     all 1 0 0 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 holdblock   1           # Permet de pouvoir maintenir la parade
 nodieblink  1           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
@@ -39,11 +41,12 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 #-- SCRIPTS ---------------------------------------------------------
 
-ondrawscript        data/scripts/_debugs/DEBUG_GRAB.c     # DEBUG GRAB
-animationscript     data/scripts/player.c                 #
-script              data/scripts/entity_effects.c         # Permet d avoir un effet de teinte uand on est attaqué
-didhitscript        data/scripts/didhit/tint_silver.c     # Effets de teinte quand on attaque un ennemi : GRISE
-ondeathscript       data/scripts/timer_reset.c            # Mort du Timer à zéro
+ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c    # DEBUG GRAB
+
+script              data/scripts/entity_effects.c       # Permet d avoir un effet de teinte uand on est attaqué
+animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
+didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite : ROUGE
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
