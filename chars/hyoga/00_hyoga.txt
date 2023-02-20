@@ -110,7 +110,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     frame    data/chars/hyoga/waiting4.png
 
 anim    select  # Personnage sélectionné
-    delay    10
+    delay    2
     offset   59 226
     sound    data/chars/sounds/select-long.wav
     frame    data/chars/hyoga/select/select1.png
@@ -169,7 +169,6 @@ anim    select  # Personnage sélectionné
     frame    data/chars/hyoga/select/select54.png
     frame    data/chars/hyoga/select/select55.png
     frame    data/chars/hyoga/select/select56.png
-    delay 150
     frame    data/chars/hyoga/select/select56.png
 
 #// Static animations /////////////////////////////////////////////////

@@ -105,7 +105,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     frame    data/chars/shun/waiting2.png
 
 anim    select  # Personnage sélectionné
-    delay    10
+    delay    2
     offset   52 229
     sound    data/chars/sounds/select-long.wav
     frame    data/chars/shun/select/select1.png
@@ -150,7 +150,6 @@ anim    select  # Personnage sélectionné
     frame    data/chars/shun/select/select40.png
     frame    data/chars/shun/select/select41.png
     frame    data/chars/shun/select/select42.png
-    delay    150
     frame    data/chars/shun/select/select42.png
 	
 #// Static animations /////////////////////////////////////////////////

@@ -104,7 +104,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     frame    data/chars/shiryu/waiting2.png
 
 anim    select  # Personnage sélectionné
-    delay    10
+    delay    2
     offset   55 211
     sound    data/chars/sounds/select-long.wav
     frame    data/chars/shiryu/select/select1.png
@@ -142,7 +142,6 @@ anim    select  # Personnage sélectionné
     frame    data/chars/shiryu/select/select33.png
     frame    data/chars/shiryu/select/select34.png
     frame    data/chars/shiryu/select/select35.png
-    delay    150
     frame    data/chars/shiryu/select/select35.png
 
 #// Static animations /////////////////////////////////////////////////

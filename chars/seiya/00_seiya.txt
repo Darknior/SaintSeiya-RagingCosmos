@@ -108,7 +108,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     frame    data/chars/seiya/waiting2.png
 
 anim    select  # Personnage sélectionné
-    delay    10
+    delay    2
     offset   59 226
     sound    data/chars/sounds/select-long.wav
     frame    data/chars/seiya/select/select1.png
@@ -162,7 +162,6 @@ anim    select  # Personnage sélectionné
     frame    data/chars/seiya/select/select49.png
     frame    data/chars/seiya/select/select50.png
     frame    data/chars/seiya/select/select51.png
-    delay    150
     frame    data/chars/seiya/select/select51.png
 
 
