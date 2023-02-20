@@ -42,12 +42,14 @@ void menuSelect(int player)
 
 					//USED FOR UP-DOWN KEYS
 					if(playerkeys(player, 0, "moveup")){ //SELECT DESIRED OPTION
+						playsample(openborconstant("SAMPLE_BEEP"), 0, 120, 120, 100, 0);
 						if(line > 0 && line <= maxLines){setglobalvar("previewLine"+player, line-add);}
 						if(line == 0){setglobalvar("previewLine"+player, maxLines);}
 						if(column == 2){setglobalvar("previewCol"+player, maxCols);}
 					}else
 					
 					if(playerkeys(player, 0, "movedown")){ //SELECT DESIRED OPTION
+						playsample(openborconstant("SAMPLE_BEEP"), 0, 120, 120, 100, 0);
 						if(line >= 0 && line < maxLines){setglobalvar("previewLine"+player, line+add);}
 						if(line == maxLines){setglobalvar("previewLine"+player, 0);}
 						if(column == 2){setglobalvar("previewCol"+player, maxCols);}
