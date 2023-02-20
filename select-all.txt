@@ -1,2 +1,2 @@
-music           data/music/menu.bor 1
-background      data/bgs/select.png
+music           data/music/prologue.ogg 1
+background      data/bgs/select/select.png
