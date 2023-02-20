@@ -447,8 +447,8 @@ anim jumpattack #Attaque sautée statique
     sound data/sounds/punch.wav
     frame    data/chars/marin/jumpattack1.png
     frame    data/chars/marin/jumpattack2.png
-    dropv 4.0 1.0 0.0
     attack4 32 33 67 26 10 1 0 0 5 12
+	dropv    4.0 1.0 0.0
     frame    data/chars/marin/jumpattack3.png
     frame    data/chars/marin/jumpattack3.png
     attack4 0

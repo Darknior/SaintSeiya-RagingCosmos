@@ -393,6 +393,7 @@ anim jumpattack # Attaque sautée statique
     frame    data/chars/gemini/jumpattack1.png
     frame    data/chars/gemini/jumpattack2.png
     attack1 62 90 87 26 10 1 0 0 5 12
+    dropv    6.0 2.0 0.0
     frame    data/chars/gemini/jumpattack3.png
     frame    data/chars/gemini/jumpattack4.png
     attack1 0

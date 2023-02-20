@@ -371,6 +371,7 @@ anim jumpattack # Attaque sautée statique
     frame    data/chars/aiolia/jumpattack1.png
     dropv 4.0 1.0 0.0
     attack1 62 51 75 26 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
     frame    data/chars/aiolia/jumpattack2.png
     attack1 0
 

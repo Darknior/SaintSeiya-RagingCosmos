@@ -343,6 +343,7 @@ anim jumpattack # Attaque sautée statique
     sound data/sounds/punch.wav
     frame    data/chars/cassios/jumpattack1.png
     attack1 62 32 111 96 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
     frame    data/chars/cassios/jumpattack2.png
 
 anim grab

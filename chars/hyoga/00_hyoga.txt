@@ -635,8 +635,8 @@ anim jumpattack #Attaque sautée statique
     sound data/sounds/punch.wav
     frame    data/chars/hyoga/jumpattack1.png
     frame    data/chars/hyoga/jumpattack2.png
-    dropv 4.0 1.0 0.0
     attack4 62 51 67 26 10 1 0 0 5 12
+	dropv    4.0 1.0 0.0
     frame    data/chars/hyoga/jumpattack3.png
     frame    data/chars/hyoga/jumpattack4.png
     attack4 0
@@ -650,8 +650,8 @@ anim jumpforward #Attaque sautée vers l'avant
     sound data/sounds/punch.wav
     frame    data/chars/hyoga/jumpforward1.png
     frame    data/chars/hyoga/jumpforward2.png
-    dropv 4.0 1.0 0.0
     attack4 62 21 67 26 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
     frame    data/chars/hyoga/jumpforward3.png
     frame    data/chars/hyoga/jumpforward4.png
     attack4 0
@@ -665,8 +665,8 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/hyoga/jumpattack22.png
     frame    data/chars/hyoga/jumpattack23.png
     jumpframe 2 -2 0
-    dropv 4.0 1.0 0.0
     attack4 62 21 67 26 10 0 0 0 5 12
+	dropv 4.0 1.0 0.0
     frame    data/chars/hyoga/jumpattack24.png
     frame    data/chars/hyoga/jumpattack25.png
     attack4 0
@@ -677,8 +677,8 @@ anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
     bbox 21 14 51 97
     sound data/sounds/punch.wav
     frame    data/chars/hyoga/jumpattack31.png
-    dropv 4.0 1.0 0.0
     attack4 62 21 67 26 10 1 0 0 5 12
+	dropv    7.0 1.0 0.0
     frame    data/chars/hyoga/jumpattack32.png
     frame    data/chars/hyoga/jumpattack33.png
     frame    data/chars/hyoga/jumpattack32.png

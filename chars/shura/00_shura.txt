@@ -379,6 +379,7 @@ anim    jumpattack
     bbox    54 45 15 73
     frame    data/chars/shura/jat1.png
     attack    49 65 93 31 10 1 1 0 0 0
+	dropv    4.0 1.0 0.0
     offset    71 107
     bbox    47 45 15 73
     frame    data/chars/shura/jat2.png

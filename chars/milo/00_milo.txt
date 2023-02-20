@@ -419,6 +419,7 @@ anim jumpattack # Attaque sautée statique
     frame    data/chars/milo/jumpattack1.png
     frame    data/chars/milo/jumpattack2.png
     attack1 57 21 67 74 10 1 0 0 5 12
+	dropv    4.0 1.0 0.0
     frame    data/chars/milo/jumpattack3.png
     frame    data/chars/milo/jumpattack4.png
 

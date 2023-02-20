@@ -558,21 +558,22 @@ anim jump # Saut Statique
     frame    data/chars/ikki/jump10.png
 
 anim forwardjump # Saut vers l'avant
-    delay    8
+    delay    10
     offset   55 206
-    bbox     43 76 30 100
+    bbox     49 76 30 120
     summonframe  0 0 0 0
     subentity    round_dust
     sound    data/chars/ikki/sounds/06-jump1.wav
-    frame    data/chars/ikki/jump5.png
-    frame    data/chars/ikki/forwardjump1.png
-    frame    data/chars/ikki/forwardjump2.png
-    frame    data/chars/ikki/forwardjump3.png
-    frame    data/chars/ikki/forwardjump4.png
+    frame    data/chars/ikki/jump1.png
+    frame    data/chars/ikki/jump2.png
+    frame    data/chars/ikki/jump3.png
+    frame    data/chars/ikki/jump4.png
     frame    data/chars/ikki/jump5.png
     frame    data/chars/ikki/jump6.png
     frame    data/chars/ikki/jump7.png
     frame    data/chars/ikki/jump8.png
+    frame    data/chars/ikki/jump9.png
+    frame    data/chars/ikki/jump10.png
 	
 anim  runjump
     delay    8
@@ -631,8 +632,8 @@ anim jumpattack #Attaque sautée statique
     subentity round_dust
     frame    data/chars/ikki/jumpattack1.png
     frame    data/chars/ikki/jumpattack2.png
-    dropv 4.0 1.0 0.0
     attack4 62 78 83 76 10 1 0 0 5 12
+	dropv    4.0 1.0 0.0
     frame    data/chars/ikki/jumpattack3.png
     frame    data/chars/ikki/jumpattack3.png
     attack4 0
@@ -647,8 +648,8 @@ anim jumpforward #Attaque sautée vers l'avant
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/jumpforward2.png
     frame    data/chars/ikki/jumpforward3.png
-    dropv 4.0 1.0 0.0
     attack4 62 121 107 40 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
     frame    data/chars/ikki/jumpforward4.png
     attack4 0
 
@@ -661,8 +662,8 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/ikki/jumpattack22.png
     frame    data/chars/ikki/jumpattack23.png
     jumpframe 2 -2 0
-    dropv 4.0 1.0 0.0
     attack4 52 121 67 36 10 0 0 0 5 12
+	dropv    4.0 1.0 0.0
     frame    data/chars/ikki/jumpattack24.png
     frame    data/chars/ikki/jumpattack24.png
     attack4 0
@@ -673,8 +674,8 @@ anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
     bbox 35 76 51 120
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpattack31.png
-    dropv 4.0 1.0 0.0
     attack4 65 91 67 60 10 1 0 0 5 12
+	dropv    7.0 1.0 0.0
     frame    data/chars/ikki/jumpattack32.png
     frame    data/chars/ikki/jumpattack32.png
     attack4 0

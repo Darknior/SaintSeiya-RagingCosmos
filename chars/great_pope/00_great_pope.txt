@@ -379,6 +379,7 @@ anim jumpattack # Attaque sautée statique
     sound data/sounds/punch.wav
     frame    data/chars/great_pope/jumpattack1.png
     attack1 57 76 98 45 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
     frame    data/chars/great_pope/jumpattack2.png
 
 anim special # Défense spéciale 

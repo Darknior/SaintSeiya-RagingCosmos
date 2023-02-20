@@ -1,4 +1,4 @@
-name        KIKI
+name        KIKI2
 health      30
 type        enemy
 

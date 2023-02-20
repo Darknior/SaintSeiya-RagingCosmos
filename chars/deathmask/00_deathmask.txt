@@ -421,8 +421,8 @@ anim jumpattack # Attaque sautée statique
     frame    data/chars/deathmask/jumpattack1.png
     frame    data/chars/deathmask/jumpattack2.png
     frame    data/chars/deathmask/jumpattack3.png
-    dropv 4.0 1.0 0.0
     attack1 62 21 67 26 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
     frame    data/chars/deathmask/jumpattack4.png
     frame    data/chars/deathmask/jumpattack5.png
 

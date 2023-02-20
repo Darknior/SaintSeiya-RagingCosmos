@@ -557,20 +557,19 @@ anim    jump    # Saut Statique
     frame    data/chars/seiya/jump1.png
 
 anim    forwardjump # Saut vers l'avant
-    delay    6
+    delay    10
     offset   45 137
-    bbox     21 14 51 97
+    bbox     39 14 30 97
     summonframe     0 0 0 0
     subentity       round_dust
     sound    data/chars/seiya/sounds/06-jump1.wav
-    frame    data/chars/seiya/forwardjump1.png
-    frame    data/chars/seiya/forwardjump2.png
-    frame    data/chars/seiya/forwardjump3.png
-    frame    data/chars/seiya/forwardjump4.png
-    frame    data/chars/seiya/forwardjump5.png
-    frame    data/chars/seiya/forwardjump6.png
-    frame    data/chars/seiya/forwardjump7.png
-    frame    data/chars/seiya/forwardjump8.png
+    frame    data/chars/seiya/jump1.png
+    frame    data/chars/seiya/jump2.png
+    frame    data/chars/seiya/jump3.png
+    frame    data/chars/seiya/jump4.png
+    frame    data/chars/seiya/jump3.png
+    frame    data/chars/seiya/jump2.png
+    frame    data/chars/seiya/jump1.png
 
 anim    jumpdelay # Animation de saut intermédiaire
     delay    10
@@ -637,7 +636,7 @@ anim    jumpforward # Attaque sautée vers l'avant
     subentity    round_dust
     frame    data/chars/seiya/jumpforward1.png
     attack4  75 42 67 26 10 1 0 0 10 12
-    dropv    4.0 1.0 0.0
+    dropv    6.0 2.0 0.0
     frame    data/chars/seiya/jumpforward2.png
     frame    data/chars/seiya/jumpforward2.png
     attack4  0
@@ -673,7 +672,7 @@ anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack31.png
     attack4  73 21 67 35 10 1 0 0 10 12
-    dropv 4  1 0.0
+    dropv    7.0 1.0 0.0
     frame    data/chars/seiya/jumpattack32.png
     frame    data/chars/seiya/jumpattack32.png
     attack4  0

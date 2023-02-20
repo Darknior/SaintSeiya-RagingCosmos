@@ -586,8 +586,8 @@ anim jumpattack #Attaque sautée statique
      sound data/sounds/punch.wav
      frame     data/chars/tremi/jumpattack1.png
      frame     data/chars/tremi/jumpattack2.png
-     dropv 4.0 1.0 0.0
      attack4 32 67 67 26 10 1 0 0 5 12
+	 dropv    4.0 1.0 0.0
      @cmd     shooter2 "tremi_arrow" 17 95 2 -2
      frame     data/chars/tremi/jumpattack3.png
      frame     data/chars/tremi/jumpattack3.png

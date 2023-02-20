@@ -391,6 +391,7 @@ anim jumpattack # Attaque sautée statique
     frame    data/chars/camus/jumpattack1.png
     frame    data/chars/camus/jumpattack2.png
     attack1 57 44 80 48 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
     frame    data/chars/camus/jumpattack3.png
 
 anim special # Défense spéciale Ice pike

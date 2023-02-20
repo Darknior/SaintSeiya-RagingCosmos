@@ -458,6 +458,7 @@ anim jumpattack # Attaque sautée statique
     frame    data/chars/aldebaran/jumpattack.png
     dropv 4.0 1.0 0.0
     attack1 62 21 67 26 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
     frame    data/chars/aldebaran/jumpattack.png
     attack1 0
 

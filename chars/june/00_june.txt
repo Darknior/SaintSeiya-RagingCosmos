@@ -471,6 +471,7 @@ anim jumpattack #Attaque sautée statique
     frame    data/chars/june/jumpattack1.png
     frame    data/chars/june/jumpattack2.png
     attack4 5 100 130 80 10 1 0 0 5 12
+	dropv    4.0 1.0 0.0
     frame    data/chars/june/jumpattack3.png
     frame    data/chars/june/jumpattack4.png
     frame    data/chars/june/jumpattack5.png
