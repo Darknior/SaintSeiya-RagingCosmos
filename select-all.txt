@@ -1,2 +1,2 @@
 music           data/music/prologue.ogg 1
-background      data/bgs/select/select.png
+background      data/bgs/select/select0.png

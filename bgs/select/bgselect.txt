@@ -5,31 +5,17 @@ setlayer        -2000
 ondrawscript	data/scripts/menu_select.c
 
 
-anim    idle # CHANGED TO A TRANSPARENT SPRITE TO USE THE SELECT.PNG 24-BIT IMAGE
-    loop    0
-    offset  1 1
-    delay   20
-    frame   data/bgs/select/select0.png
-
-anim    follow1 # PREVIOUS ANIMATION
+anim    idle
     loop    1
     offset  1 1
     delay   20
-    frame   data/bgs/select/select1.png
-    frame   data/bgs/select/select2.png
-    frame   data/bgs/select/select3.png
-    frame   data/bgs/select/select4.png
-    frame   data/bgs/select/select5.png
-    frame   data/bgs/select/select6.png
-    frame   data/bgs/select/select7.png
-    frame   data/bgs/select/select8.png
-    frame   data/bgs/select/select9.png
-    frame   data/bgs/select/select10.png
-    frame   data/bgs/select/select11.png
-    frame   data/bgs/select/select12.png
-    frame   data/bgs/select/select13.png
-    frame   data/bgs/select/select14.png
-    frame   data/bgs/select/select15.png
-    frame   data/bgs/select/select16.png
-    frame   data/bgs/select/select17.png
-    frame   data/bgs/select/select18.png
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
