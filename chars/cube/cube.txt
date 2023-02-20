@@ -1,236 +1,158 @@
-
-name	cube
-health	200
-speed	1
-type	enemy
-subtype	notgrab
-
-icon	data/chars/CUBE/icon.png
-\\hostile          player
-\\aimove           Wander
-\\aimove           Chase
-\\aimove           Avoid
-aggression       500
-hitenemy          0 0
-blockodds 0
-blocked 1
-noquake 1 1
-nodrop 2
-nodieblink 3
-nomove 1 0
-facing 1
-#nolife 1
-subject_to_wall 0
-\\subject_to_hole 0
-\\subject_to_screen 0
-\\subject_to_minz 1
-\\subject_to_maxz 1
-falldie 1
-ondrawscript data/scripts/cube_ondraw.c
-takedamagescript data/scripts/cube_takedamage.c
-
-## CUSTOM BOSS LIFEBAR
-lifebarstatus 300 9 1 1 0 -500 -500 1 -500
-nolife 1
-
-load soldier
-
-anim SPAWN
-loop	0
-	offset	232 325
-
-	delay	1
-
-platform 232 362 -98 -98 110 110 100 1000
-frame	data/chars/CUBE/null.png
-
-
-
-
-
-
-anim DEATH
-loop	0
-	offset	232 325
-
-	delay	15
-
-
-
-
-platform 232 362 -98 -98 110 110 40 1000
-frame	data/chars/CUBE/02.png
-frame	data/chars/CUBE/03.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-frame	data/chars/CUBE/045.png
-
-
-
-anim	block
-loop	0
-	offset	232 325
-
-
-	delay	10
-
-#subentity soldier
-#summonframe 1 -100 0 0 1
-	
-	
-	bbox.position.x 154
-	bbox.position.y 94
-	bbox.size.x 168
-	bbox.size.y 268
-	bbox.size.z.1 30
-frame	data/chars/CUBE/01.png	
-frame	data/chars/CUBE/05.png		
-frame	data/chars/CUBE/01.png
-
-
-
-
-
-
-
-
-
-anim idle
-	loop	1
-	delay	10
-	offset	232 325
-	
-	bbox.position.x 154
-	bbox.position.y 94
-	bbox.size.x 168
-	bbox.size.y 268
-	bbox.size.z.1 30
-	platform 232 362 -98 -98 110 110 100 1000
-frame	data/chars/CUBE/01.png
-	
-
-
-anim walk
-	loop	1
-	delay	10
-	offset	232 325
-	
-	bbox.position.x 154
-	bbox.position.y 94
-	bbox.size.x 168
-	bbox.size.y 268
-	bbox.size.z.1 30
-	platform 232 362 -98 -98 110 110 100 1000
-frame	data/chars/CUBE/01.png
-
-
-
-
-
-
-anim pain
-    loop	0
-	
-	delay	3
-
-#subentity soldier
-#summonframe 1 -200 0 0 1
-offset	232 325
-dropv 4 1 0
-	platform 232 362 -98 -98 110 110 100 1000
-frame	data/chars/CUBE/01.png
-frame	data/chars/CUBE/01.png
-
-
-        
-
-anim fall
-
-
-
-
-
-
-anim rise
-        loop	0
-	offset	232 325
-	delay	10
-
-dropv 4 1 0
-
-frame	data/chars/CUBE/01.png
-frame	data/chars/CUBE/01.png
-
-
-	
-
-
-anim attack1
-
-	
-
-
-
-
-
-
-anim attack2
- 
-
-
-
-
-
-anim attack3
-	
-
-
-
-anim jump
-	
-
-    
-
-
-anim jumpattack
-	
-
-
-
-
-
-
-
+name        cube
+health      200
+type        enemy
+subtype     notgrab
+
+
+#-- GENERAL CONFIG --------------------------------------------------
+
+gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
+speed       1           # Vitesse de déplacement
+noquake     1 1         # Secoue l’écran qd on tombe au sol / enemi ne tremble pas
+
+nodrop      2           # L'entité ne peut pas être renversée au sol
+nodieblink  3           # L'entité joue son animation de mort sans clignoter et ne disparaîtra pas
+nomove      1 0         # L'entité ne se déplace pas du tout, et ne se retourne pas
+facing      1           # L'entité fait toujours face à droite
+falldie     1           # Pas d'animation FALL, l'animation DEATH est jouée juste après le coup final
+subject_to_wall  0      # Les murs n'ont aucun effet sur l'entité
+
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     none        # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+aggression  500         # Valeur positive + agressif / valeur negative - aggressif
+
+hitenemy    0 0         # Peut toucher d autres ennemis / air et sol
+blockodds   0           # Capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+
+
+#-- LIFEBAR ---------------------------------------------------------
+
+lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom pour Boss via Script
+nolife  1                                       # On ne vois pas la barre de Vie
+
+
+#-- SCRIPTS ---------------------------------------------------------
+
+ondrawscript        data/scripts/cube/cube_ondraw.c      # Dessine le cube
+takedamagescript    data/scripts/cube/cube_takedamage.c  # Gestion des dégâts de zone
+
+
+#-- EFFECTS ANIMATIONS ----------------------------------------------
+
+
+#-- PALETTES --------------------------------------------------------
+
+icon         data/chars/cube/palettes/icon.png 0
+palette      data/chars/cube/palettes/palette.png
+
+
+#-- ANIMATIONS -------------------------------------------------------
+
+#// Static animations /////////////////////////////////////////////////
+
+anim    spawn
+    loop     0
+    offset   232 325
+    delay    1
+    platform 232 362 -98 -98 110 110 100 1000
+    frame    data/chars/cube/null.png
+
+anim    death
+    loop     0
+    offset   232 325
+    delay    15
+    platform 232 362 -98 -98 110 110 40 1000
+    frame    data/chars/cube/02.png
+    frame    data/chars/cube/03.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+    frame    data/chars/cube/045.png
+
+anim    block
+    loop     0
+    offset   232 325
+    delay    10
+    bbox     154 94 168 268 30
+    frame    data/chars/cube/01.png
+    frame    data/chars/cube/05.png
+    frame    data/chars/cube/01.png
+
+anim    idle
+    loop     1
+    delay    10
+    offset   232 325
+    bbox     154 94 168 268 30
+    platform 232 362 -98 -98 110 110 100 1000
+    frame    data/chars/cube/01.png
+
+anim    walk
+    loop     1
+    delay    10
+    offset   232 325
+    bbox     154 94 168 268 30
+    platform 232 362 -98 -98 110 110 100 1000
+    frame    data/chars/cube/01.png
+
+anim    pain
+    loop     0
+    delay    3
+    offset   232 325
+    dropv    4 1 0
+    platform 232 362 -98 -98 110 110 100 1000
+    frame    data/chars/cube/01.png
+    frame    data/chars/cube/01.png
+
+anim    fall    # Can't fall
+
+anim    rise
+    loop     0
+    offset   232 325
+    delay    10
+    dropv    4 1 0
+    frame    data/chars/cube/01.png
+    frame    data/chars/cube/01.png
+
+anim    attack1 # Can't attack
+
+anim    attack2
+
+anim    attack3
+
+anim    jump    # Can't jump
+
+anim    jumpattack
 

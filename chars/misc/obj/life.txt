@@ -1,0 +1,14 @@
+name    LIFE
+type    item
+
+
+offscreenkill 9999999
+
+
+anim    idle
+    loop    1
+    delay   10
+    offset  8 14
+    bbox    0 0 16 16
+    frame   data/chars/misc/obj/obj5.png
+    frame   data/chars/misc/obj/obj3.png

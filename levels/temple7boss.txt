@@ -1,6 +1,7 @@
 background      data/bgs/temple7/temple7_back.png      0.4 1 0 0 0 0 1 1 1 0
 panel           data/bgs/temple7/temple7_ground.png
-#frontpanel      data/bgs/temple7/temple7_columns.png
+#frontpanel     data/bgs/temple7/temple7_columns.png
+
 
 order           a
 direction       both
@@ -12,10 +13,11 @@ at              0
 shadowalpha     6
 at              0
 
-spawn1      60 30
+spawn1          60 30
 
 load cube       3
 load libra_box  3
+
 #-------------------------------------
 
 spawn       horloge-segment
@@ -34,66 +36,40 @@ spawn       time-is-up
 coords      368 89
 at          0
 
+
 spawn       temple7columns
 coords      0 0
 at          0
 
-#spawn       libra2
-#alias       WEAPON
-#coords      640 325
-#at          0
+#-------------------------------------
 
-#spawn       libra3
-#alias       WEAPON
-#coords      680 425
-#at          0
-
-#spawn       libra4
-#alias       WEAPON
-#coords      720 425
-#at          0
-
-#spawn       libra5
-#alias       WEAPON
-#coords      760 325
-#at          0
-
-#spawn       libra6
-#alias       WEAPON
-#coords      800 425
-#at          0
-
-#spawn       libra7
-#alias       WEAPON
-#coords      840 425
-#at          0
-
-spawn           cube
+spawn       cube
 alias       Hyoga____Ice____Coffin
-boss 			1
-coords          650 400
-at              0
+boss        1
+coords      650 400
+at          0
 
-spawn           libra_box
-flip			1
-coords          340 412
-at              0
+spawn       libra_box
+flip        1
+coords      340 412
+at          0
 
-spawn           balance_dialog
-flip			1
-coords          300 115
-at              1
+#-------------------------------------
+
+spawn       balance_dialog
+flip        1
+coords      300 115
+at          1
 
 group 1 1
 at 0
 
-spawn           balance_dialog2
-boss 			1
-flip			1
-coords          300 115
-at              1
+spawn       balance_dialog2
+boss        1
+flip        1
+coords      300 115
+at          1
 
 wait
 at          0
 
-#wall        469 518 -1 -2 361 370 191 1284

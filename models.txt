@@ -289,17 +289,17 @@ know    columnT      data/chars/jaki/special/columnT.txt
 
 ## ITEMS ##
 
-know    energy          data/chars/OBJ/energy.txt
-know    cosmo           data/chars/OBJ/cosmo.txt
-know    life            data/chars/OBJ/life.txt
-know    apple        data/chars/misc/food/apple.txt
-know    macaff        data/chars/misc/food/macaff.txt
+know    energy          data/chars/misc/obj/energy.txt
+know    cosmo           data/chars/misc/obj/cosmo.txt
+know    life            data/chars/misc/obj/life.txt
+know    apple           data/chars/misc/food/apple.txt
+know    macaff          data/chars/misc/food/macaff.txt
 know    bananaff        data/chars/misc/food/bananaff.txt
-know    grape        data/chars/misc/food/grape.txt
-know    abacaxiff        data/chars/misc/food/abacaxiff.txt
+know    grape           data/chars/misc/food/grape.txt
+know    abacaxiff       data/chars/misc/food/abacaxiff.txt
 know    cerejacc        data/chars/misc/food/cerejacc.txt
-know    limaocc        data/chars/misc/food/limaocc.txt
-know    laranjaff        data/chars/misc/food/laranjaff.txt
+know    limaocc         data/chars/misc/food/limaocc.txt
+know    laranjaff       data/chars/misc/food/laranjaff.txt
 
 ## BALANCE  ##
 
@@ -320,33 +320,30 @@ know    arma0-2         data/chars/LIBRA/arma0-2.txt
 know    arma0-3         data/chars/LIBRA/arma0-3.txt
 know    arma0-4         data/chars/LIBRA/arma0-4.txt
 
-## PNJ ##
+## TRAPS ##
 
-know    NPC-PLAYER      data/chars/OBJ/NPC-PLAYER.txt
-#know    KIKI            data/chars/KIKI/00_KIKI.txt
-know    KIKI2           data/chars/KIKI/00_KIKI2.txt
-know    roccia1         data/chars/OBJ/roccia1.txt
-know    rock01          data/chars/OBJ/rock01.txt
-know    roccia2         data/chars/OBJ/roccia2.txt
-know    rock02          data/chars/OBJ/rock02.txt
+know    roccia1         data/chars/misc/obj/roccia1.txt
+know    rock01          data/chars/misc/obj/rock01.txt
+know    roccia2         data/chars/misc/obj/roccia2.txt
+know    rock02          data/chars/misc/obj/rock02.txt
 
-#MISC
+## HORLOGE ##
 
-know    horloge-flame   data/chars/misc/timer/horloge-flame.txt
-know    horloge-segment   data/chars/misc/timer/horloge-segment.txt
-know    horloge-belier   data/chars/misc/timer/horloge-belier.txt
-know    horloge-taureau   data/chars/misc/timer/horloge-taureau.txt
-know    horloge-gemeau   data/chars/misc/timer/horloge-gemeau.txt
-know    horloge-cancer   data/chars/misc/timer/horloge-cancer.txt
-know    horloge-lion   data/chars/misc/timer/horloge-lion.txt
-know    horloge-vierge   data/chars/misc/timer/horloge-vierge.txt
-know    horloge-balance   data/chars/misc/timer/horloge-balance.txt
-know    horloge-scorpion   data/chars/misc/timer/horloge-scorpion.txt
+know    horloge-flame       data/chars/misc/timer/horloge-flame.txt
+know    horloge-segment     data/chars/misc/timer/horloge-segment.txt
+know    horloge-belier      data/chars/misc/timer/horloge-belier.txt
+know    horloge-taureau     data/chars/misc/timer/horloge-taureau.txt
+know    horloge-gemeau      data/chars/misc/timer/horloge-gemeau.txt
+know    horloge-cancer      data/chars/misc/timer/horloge-cancer.txt
+know    horloge-lion        data/chars/misc/timer/horloge-lion.txt
+know    horloge-vierge      data/chars/misc/timer/horloge-vierge.txt
+know    horloge-balance     data/chars/misc/timer/horloge-balance.txt
+know    horloge-scorpion    data/chars/misc/timer/horloge-scorpion.txt
 know    horloge-sagitaire   data/chars/misc/timer/horloge-sagitaire.txt
-know    horloge-capricorne   data/chars/misc/timer/horloge-capricorne.txt
-know    horloge-verseau   data/chars/misc/timer/horloge-verseau.txt
-know    horloge-poissons   data/chars/misc/timer/horloge-poissons.txt
-know    time-is-up   data/chars/misc/timer/time-is-up.txt
+know    horloge-capricorne  data/chars/misc/timer/horloge-capricorne.txt
+know    horloge-verseau     data/chars/misc/timer/horloge-verseau.txt
+know    horloge-poissons    data/chars/misc/timer/horloge-poissons.txt
+know    time-is-up          data/chars/misc/timer/time-is-up.txt
 
 ## BRONZE SAINTS ##
 
@@ -403,9 +400,13 @@ know    MILO            data/chars/MILO/00_MILO.txt
 know    saga            data/chars/saga/saga.txt
 know    SHAKA           data/chars/SHAKA/00_SHAKA.txt
 know    SHURA           data/chars/SHURA/00_shura.txt
+know    great_pope      data/chars/great_pope/great_pope.txt
+
+## OTHER ##
+
 know    cube            data/chars/CUBE/CUBE.txt
 know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
-know    great_pope      data/chars/great_pope/great_pope.txt
+know    KIKI2           data/chars/KIKI/00_KIKI2.txt
 
 
 #-- LEVELS --------------------------------------------------------------------------
