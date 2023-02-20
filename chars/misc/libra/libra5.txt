@@ -1,0 +1,20 @@
+name     libra5
+health   0
+type     item
+subtype  weapon
+weapnum  5
+nolife   1
+typeshot 0
+
+
+anim    idle
+    loop     1
+    delay    20
+    offset   10 35
+    bbox.position.x -4
+    bbox.position.y -4
+    bbox.size.x 28
+    bbox.size.y 27
+    frame    data/chars/misc/libra/09.png
+    frame    data/chars/misc/libra/10.png
+

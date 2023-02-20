@@ -29,8 +29,8 @@ anim    spawn
     loop     0
     delay    100
     offset   156 407
-    frame    data/chars/LIBRA/box_empty.png
-    frame    data/chars/LIBRA/box_000.png
+    frame    data/chars/misc/libra/box_empty.png
+    frame    data/chars/misc/libra/box_000.png
 
 anim    idle
     loop     0
@@ -38,27 +38,27 @@ anim    idle
     offset   156 407
     platform 35 35 250 250 30 1000
     @cmd     spawn01 "libra_bright" 0 0 1
-    frame    data/chars/LIBRA/box_000.png
+    frame    data/chars/misc/libra/box_000.png
     delay    20
-    frame    data/chars/LIBRA/box_001.png
-    frame    data/chars/LIBRA/box_002.png
-    frame    data/chars/LIBRA/box_003.png
-    frame    data/chars/LIBRA/box_004.png
-    frame    data/chars/LIBRA/box_005.png
-    frame    data/chars/LIBRA/box_006.png
+    frame    data/chars/misc/libra/box_001.png
+    frame    data/chars/misc/libra/box_002.png
+    frame    data/chars/misc/libra/box_003.png
+    frame    data/chars/misc/libra/box_004.png
+    frame    data/chars/misc/libra/box_005.png
+    frame    data/chars/misc/libra/box_006.png
     delay    300
-    frame    data/chars/LIBRA/box_007.png
+    frame    data/chars/misc/libra/box_007.png
     delay    138
     @cmd     spawn01 "libra_bright" 0 0 1
-    frame    data/chars/LIBRA/box_007.png
+    frame    data/chars/misc/libra/box_007.png
     delay    40
-    frame    data/chars/LIBRA/box_008.png
-    frame    data/chars/LIBRA/box_009.png
+    frame    data/chars/misc/libra/box_008.png
+    frame    data/chars/misc/libra/box_009.png
     delay    300
-    frame    data/chars/LIBRA/box_010.png
+    frame    data/chars/misc/libra/box_010.png
     delay    60
     @cmd     spawn01 "libra_light" 0 0 1
-    frame    data/chars/LIBRA/box_010.png
+    frame    data/chars/misc/libra/box_010.png
     platform 0 0 0 0 0 0
     @cmd     setLayer -3
     @cmd     spawn01 "libra1" -300 0 50
@@ -68,8 +68,8 @@ anim    idle
     @cmd     spawn01 "libra5" 100 0 50
     @cmd     spawn01 "libra6" 200 0 50
     @cmd     spawn01 "libra7" 300 0 50
-    frame    data/chars/LIBRA/box_011.png
+    frame    data/chars/misc/libra/box_011.png
     delay    40
-    frame    data/chars/LIBRA/box_012.png
-    frame    data/chars/LIBRA/box_013.png
+    frame    data/chars/misc/libra/box_012.png
+    frame    data/chars/misc/libra/box_013.png
 

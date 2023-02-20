@@ -301,24 +301,26 @@ know    cerejacc        data/chars/misc/food/cerejacc.txt
 know    limaocc         data/chars/misc/food/limaocc.txt
 know    laranjaff       data/chars/misc/food/laranjaff.txt
 
-## BALANCE  ##
+## ARMORS  ##
 
-know    libra1          data/chars/LIBRA/libra1.txt
-know    libra2          data/chars/LIBRA/libra2.txt
-know    libra3          data/chars/LIBRA/libra3.txt
-know    libra4          data/chars/LIBRA/libra4.txt
-know    libra5          data/chars/LIBRA/libra5.txt
-know    libra6          data/chars/LIBRA/libra6.txt
-know    libra7          data/chars/LIBRA/libra7.txt
+know    sagittarius-cloth   data/chars/misc/sagittarius-cloth/sagittarius-cloth.txt
 
-know    libra_light     data/chars/LIBRA/libra_light.txt
-know    libra_bright    data/chars/LIBRA/libra_bright.txt
-know    libra_box       data/chars/LIBRA/libra_box.txt
+know    libra1          data/chars/misc/libra/libra1.txt
+know    libra2          data/chars/misc/libra/libra2.txt
+know    libra3          data/chars/misc/libra/libra3.txt
+know    libra4          data/chars/misc/libra/libra4.txt
+know    libra5          data/chars/misc/libra/libra5.txt
+know    libra6          data/chars/misc/libra/libra6.txt
+know    libra7          data/chars/misc/libra/libra7.txt
 
-know    arma0-1         data/chars/LIBRA/arma0-1.txt
-know    arma0-2         data/chars/LIBRA/arma0-2.txt
-know    arma0-3         data/chars/LIBRA/arma0-3.txt
-know    arma0-4         data/chars/LIBRA/arma0-4.txt
+know    libra_light     data/chars/misc/libra/libra_light.txt
+know    libra_bright    data/chars/misc/libra/libra_bright.txt
+know    libra_box       data/chars/misc/libra/libra_box.txt
+
+know    arma0-1         data/chars/misc/libra/arma0-1.txt
+know    arma0-2         data/chars/misc/libra/arma0-2.txt
+know    arma0-3         data/chars/misc/libra/arma0-3.txt
+know    arma0-4         data/chars/misc/libra/arma0-4.txt
 
 ## TRAPS ##
 
@@ -378,18 +380,18 @@ know    cassios_rescue  data/chars/cassios/00_cassios_rescue.txt
 
 ## SILVER SAINTS ##
 
-know    marin             data/chars/marin/00_marin.txt
-know    asterion         data/chars/asterion/00_asterion.txt
-know    shaina             data/chars/shaina/00_shaina.txt
-know    tremi             data/chars/tremi/00_tremi.txt
-know    sirius             data/chars/sirius/00_sirius.txt
-know    june             data/chars/june/00_june.txt
-know    shiva             data/chars/shiva/00_shiva.txt
-know    agora             data/chars/agora/00_agora.txt
+know    marin           data/chars/marin/00_marin.txt
+know    asterion        data/chars/asterion/00_asterion.txt
+know    shaina          data/chars/shaina/00_shaina.txt
+know    tremi           data/chars/tremi/00_tremi.txt
+know    sirius          data/chars/sirius/00_sirius.txt
+know    june            data/chars/june/00_june.txt
+know    shiva           data/chars/shiva/00_shiva.txt
+know    agora           data/chars/agora/00_agora.txt
 
 ## GOLD KINGHTS ##
 
-know    MU2              data/chars/MU/00_MU.txt
+know    MU2             data/chars/MU/00_MU.txt
 know    ALDEBARAN       data/chars/ALDEBARAN/00_ALDEBARAN.txt
 know    AIOLIA          data/chars/AIOLIA/00_AIOLIA.txt
 know    APHRODITE       data/chars/APHRODITE/00_APHRODITE.txt
@@ -405,7 +407,6 @@ know    great_pope      data/chars/great_pope/great_pope.txt
 ## OTHER ##
 
 know    cube            data/chars/CUBE/CUBE.txt
-know    SAGITTARIUS-CLOTH   data/chars/SAGITTARIUS-CLOTH/SAGITTARIUS-CLOTH.txt
 know    KIKI2           data/chars/KIKI/00_KIKI2.txt
 
 

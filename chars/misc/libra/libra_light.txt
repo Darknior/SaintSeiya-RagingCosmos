@@ -1,0 +1,59 @@
+name            libra_light
+type            none
+shadow          0
+setlayer        100000000
+
+
+animationscript data/scripts/player.c
+
+
+anim    idle
+    loop     0
+    delay    6
+    offset   800 800
+    drawmethod alpha 6
+    drawmethod channel 0.1
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.2
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.3
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.4
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.5
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.6
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.7
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.8
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.9
+    frame    data/chars/misc/libra/light_000.png
+    delay    24
+    nodrawmethod
+    frame    data/chars/misc/libra/light_000.png
+    delay    6
+    drawmethod channel 0.9
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.8
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.7
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.6
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.5
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.4
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.3
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.2
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0.1
+    frame    data/chars/misc/libra/light_000.png
+    drawmethod channel 0
+    frame    data/chars/misc/libra/light_000.png
+    @cmd suicide
+    frame    data/chars/misc/libra/light_000.png
+
