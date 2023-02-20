@@ -18,7 +18,7 @@ void tintEffect(void vAnim, void effect, int duration)
 void autoLand()
 {//Enable native autoland function in any knockdown hit
 
-	if(getlocalvar("drop")){
+	if(!getlocalvar("blocked") && getlocalvar("drop")){
 		changeentityproperty(getlocalvar("damagetaker"), "aiflag", "projectile", 2);
 	}
 }
