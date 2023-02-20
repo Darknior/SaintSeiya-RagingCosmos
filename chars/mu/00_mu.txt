@@ -87,6 +87,22 @@ palette     data/chars/mu/palettes/palette1.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    18
+    offset   45 123
+    bbox     28 4 38 120
+    frame    data/chars/mu/idle1.png
+    frame    data/chars/mu/idle2.png
+    frame    data/chars/mu/idle3.png
+    frame    data/chars/mu/idle4.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   45 123
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/mu/idle1.png
+
 
 #// Static animations /////////////////////////////////////////////////
 

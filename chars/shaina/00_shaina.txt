@@ -88,6 +88,24 @@ palette      data/chars/shaina/palettes/palette1.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    10
+    offset   30 129
+    bbox     19 21 52 108
+    frame    data/chars/shaina/idle1.png
+    frame    data/chars/shaina/idle2.png
+    frame    data/chars/shaina/idle3.png
+    frame    data/chars/shaina/idle4.png
+    frame    data/chars/shaina/idle3.png
+    frame    data/chars/shaina/idle2.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   30 129
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/shaina/idle1.png
+
 
 #// Static animations /////////////////////////////////////////////////
 

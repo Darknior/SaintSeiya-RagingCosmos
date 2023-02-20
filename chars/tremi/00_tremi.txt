@@ -94,6 +94,28 @@ palette      data/chars/tremi/palettes/palette1.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+     loop 1
+     delay     10
+     offset     46 119
+     bbox 18 7 52 112
+     frame     data/chars/tremi/idle1.png
+     frame     data/chars/tremi/idle2.png
+     frame     data/chars/tremi/idle3.png
+     frame     data/chars/tremi/idle4.png
+     frame     data/chars/tremi/idle5.png
+     frame     data/chars/tremi/idle6.png
+     frame     data/chars/tremi/idle7.png
+     frame     data/chars/tremi/idle8.png
+     frame     data/chars/tremi/idle9.png
+     frame     data/chars/tremi/idle10.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset     46 119
+    sound    data/chars/sounds/select-short.wav
+    frame     data/chars/tremi/idle1.png
+
 
 #// Static animations /////////////////////////////////////////////////
 

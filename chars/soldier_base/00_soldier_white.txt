@@ -75,6 +75,23 @@ palette      data/chars/soldier_base/palettes/palette2.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    10
+    offset   110 180
+    dropv    4 1 0
+    bbox.position.x 62
+    bbox.position.y 57
+    bbox.size.x 93
+    bbox.size.y 132
+    frame    data/chars/soldier_base/01.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   110 180
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/soldier_base/01.png
+
 
 #// Static animations /////////////////////////////////////////////////
 

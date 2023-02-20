@@ -88,6 +88,28 @@ palette      data/chars/aiolia/palettes/palette1.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    10
+    offset   25 110
+    bbox     0 7 52 108
+    frame    data/chars/marin/idle1.png
+    frame    data/chars/marin/idle2.png
+    frame    data/chars/marin/idle3.png
+    frame    data/chars/marin/idle4.png
+    frame    data/chars/marin/idle5.png
+    frame    data/chars/marin/idle6.png
+    frame    data/chars/marin/idle5.png
+    frame    data/chars/marin/idle4.png
+    frame    data/chars/marin/idle3.png
+    frame    data/chars/marin/idle2.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   25 110
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/marin/idle1.png
+
 
 #// Static animations /////////////////////////////////////////////////
 

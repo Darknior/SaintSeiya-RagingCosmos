@@ -86,6 +86,31 @@ palette      data/chars/agora/palettes/palette1.png
 
 #-- ANIMATIONS -------------------------------------------------------
 
+#// Select animations /////////////////////////////////////////////////
+
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    10
+    offset   43 145
+    bbox     16 4 52 141
+    frame    data/chars/agora/idle1.png
+    frame    data/chars/agora/idle2.png
+    frame    data/chars/agora/idle3.png
+    frame    data/chars/agora/idle4.png
+    frame    data/chars/agora/idle5.png
+    frame    data/chars/agora/idle4.png
+    frame    data/chars/agora/idle3.png
+    frame    data/chars/agora/idle2.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   43 145
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/agora/idle1.png
+
+
+#// Static animations /////////////////////////////////////////////////
+
 anim spawn
     delay    18
     offset   43 145

@@ -94,6 +94,45 @@ palette     data/chars/aiolia/palettes/palette1.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    40
+    offset   35 134
+    bbox     19 17 38 117
+    frame    data/chars/aiolia/idle1.png
+    delay    10
+    frame    data/chars/aiolia/idle2.png
+    frame    data/chars/aiolia/idle3.png
+    frame    data/chars/aiolia/idle4.png
+    frame    data/chars/aiolia/idle5.png
+    frame    data/chars/aiolia/idle6.png
+    frame    data/chars/aiolia/idle7.png
+    frame    data/chars/aiolia/idle8.png
+    frame    data/chars/aiolia/idle9.png
+    frame    data/chars/aiolia/idle10.png
+    frame    data/chars/aiolia/idle11.png
+    frame    data/chars/aiolia/idle12.png
+    frame    data/chars/aiolia/idle13.png
+    frame    data/chars/aiolia/idle14.png
+    frame    data/chars/aiolia/idle13.png
+    frame    data/chars/aiolia/idle12.png
+    frame    data/chars/aiolia/idle11.png
+    frame    data/chars/aiolia/idle10.png
+    frame    data/chars/aiolia/idle9.png
+    frame    data/chars/aiolia/idle8.png
+    frame    data/chars/aiolia/idle7.png
+    frame    data/chars/aiolia/idle6.png
+    frame    data/chars/aiolia/idle5.png
+    frame    data/chars/aiolia/idle4.png
+    frame    data/chars/aiolia/idle3.png
+    frame    data/chars/aiolia/idle2.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   35 134
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/aiolia/idle1.png
+
 
 #// Static animations /////////////////////////////////////////////////
 

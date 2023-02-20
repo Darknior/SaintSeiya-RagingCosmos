@@ -81,6 +81,24 @@ palette      data/chars/june/palettes/palette1.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    10
+    offset   35 124
+    bbox     13 15 51 110
+    frame    data/chars/june/idle1.png
+    frame    data/chars/june/idle2.png
+    frame    data/chars/june/idle3.png
+    frame    data/chars/june/idle4.png
+    frame    data/chars/june/idle3.png
+    frame    data/chars/june/idle2.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   35 124
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/june/idle1.png
+
 
 #// Static animations /////////////////////////////////////////////////
 

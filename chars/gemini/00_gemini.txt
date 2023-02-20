@@ -93,6 +93,23 @@ palette      data/chars/gemini/palettes/palette1.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    25
+    offset   66 144
+    bbox     46 13 38 137
+    frame    data/chars/gemini/idle1.png
+    frame    data/chars/gemini/idle2.png
+    frame    data/chars/gemini/idle3.png
+    frame    data/chars/gemini/idle4.png
+    frame    data/chars/gemini/idle5.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   66 144
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/gemini/idle1.png
+
 
 #// Static animations /////////////////////////////////////////////////
 

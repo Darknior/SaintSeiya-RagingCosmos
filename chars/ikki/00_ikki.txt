@@ -106,7 +106,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    10
     offset   59 226
-    sound    data/chars/select.wav
+    sound    data/chars/sounds/select-long.wav
     frame    data/chars/ikki/select/select1.png
     frame    data/chars/ikki/select/select2.png
     frame    data/chars/ikki/select/select3.png

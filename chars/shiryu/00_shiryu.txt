@@ -30,7 +30,7 @@ weaploss    2           # On ne perd son arme qu' à notre mort
 modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")
 death       1           # Active l'animation de mort
 nolife      1           # Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
-sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
+sleepwait   1000        # Temps en centisecondes avant de jouer ldata/chars/select.wav'anim sleep
 
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
@@ -106,7 +106,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    10
     offset   55 211
-    sound    data/chars/select.wav
+    sound    data/chars/sounds/select-long.wav
     frame    data/chars/shiryu/select/select1.png
     frame    data/chars/shiryu/select/select2.png
     frame    data/chars/shiryu/select/select3.png

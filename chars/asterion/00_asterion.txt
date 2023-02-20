@@ -84,6 +84,26 @@ palette      data/chars/asterion/palettes/palette1.png
 
 #// Select animations /////////////////////////////////////////////////
 
+anim    waiting # Animation d'attente dans l'écran de sélection
+    loop     1
+    delay    10
+    offset   49 129
+    bbox     21 17 52 112
+    frame    data/chars/asterion/idle1.png
+    frame    data/chars/asterion/idle2.png
+    frame    data/chars/asterion/idle3.png
+    frame    data/chars/asterion/idle4.png
+    frame    data/chars/asterion/idle5.png
+    frame    data/chars/asterion/idle6.png
+    frame    data/chars/asterion/idle7.png
+    frame    data/chars/asterion/idle8.png
+
+anim    select  # Personnage sélectionné
+    delay    150
+    offset   49 129
+    sound    data/chars/sounds/select-short.wav
+    frame    data/chars/asterion/idle1.png
+
 
 #// Static animations /////////////////////////////////////////////////
 
