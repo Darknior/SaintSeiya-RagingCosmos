@@ -62,7 +62,7 @@ ondrawscript        data/scripts/lifebar.c              # Barre de vie directeme
 
 script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
 animationscript     data/scripts/player.c               #
-didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite
+didhitscript        data/scripts/didhit/tint_purple.c     # Effets de teinte sur sprite
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 

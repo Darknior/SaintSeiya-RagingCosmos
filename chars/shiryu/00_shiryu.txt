@@ -46,7 +46,7 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
 animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
-didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite : OR
+didhitscript        data/scripts/didhit/tint_green.c     # Effets de teinte sur sprite : OR
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 
