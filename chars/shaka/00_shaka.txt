@@ -683,7 +683,7 @@ anim freespecial2 # Attaque spéciale Lotus toss
     summonframe 0 0 0 0
         unsummonframe 10
     subentity shaka_lotus
-    attack1 15 39 100 40 5 0 0 0 12 12
+	attack1 15 39 100 40 5 0 0 0 12 12
     @cmd tosser3 "shaka_lotus_shot" 0 40 0 1 1.3 0
     frame    data/chars/shaka/special1.png
     @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 0 0 0 0
@@ -694,6 +694,7 @@ anim freespecial2 # Attaque spéciale Lotus toss
     @cmd tosser3 "shaka_lotus_shot" 0 50 0 -1 1.3 0
     frame    data/chars/shaka/special4.png
     @cmd tosser3 "shaka_lotus_shot" 0 60 0 1 1.3 0
+	bbox 0 0 0 0
     frame    data/chars/shaka/special5.png
     @cmd tosser3 "shaka_lotus_shot" 0 60 0 -1 1.3 0
     frame    data/chars/shaka/special6.png
@@ -734,6 +735,7 @@ anim freespecial3 # Shaka hands
     @cmd    shooter "shaka_hands" 0 80 0 2 0 0
     frame    data/chars/shaka/special25.png
     frame    data/chars/shaka/special26.png
+	bbox 0 0 0 0
     frame    data/chars/shaka/special27.png
     frame    data/chars/shaka/special28.png
     frame    data/chars/shaka/special29.png

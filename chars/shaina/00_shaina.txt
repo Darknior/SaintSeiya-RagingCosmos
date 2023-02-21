@@ -156,7 +156,7 @@ anim walk
     loop    1
     delay    14
     offset    23 132
-    bbox 2 24 52 108
+    bbox 2 24 45 108
     frame    data/chars/shaina/walk1.png
     frame    data/chars/shaina/walk2.png
     frame    data/chars/shaina/walk3.png
@@ -170,7 +170,7 @@ anim run
     loop    1
     delay    10
     offset    53 132
-    bbox 32 20 78 112
+    bbox 32 72 78 60
     frame    data/chars/shaina/run1.png
     frame    data/chars/shaina/run2.png
     frame    data/chars/shaina/run3.png
@@ -183,11 +183,12 @@ anim runattack # Attaque en courant
     @cmd    dasher 3.5 0 0 1
     bbox 0 38 75 75
     frame    data/chars/shaina/runattack1.png
-    attack2 34 68 86 25 20 1 0 0 5 12
+	attack2 34 68 86 25 20 1 0 0 5 12
     frame    data/chars/shaina/runattack2.png
+	bbox 0 0 0 0
     frame    data/chars/shaina/runattack3.png
         frame    data/chars/shaina/runattack4.png
-    attack2 0 0 0 0 0 0 0 0 0 0
+	attack2 0 0 0 0 0 0 0 0 0 0
     @cmd    dasher 0 0 0 1
     delay    12
     frame    data/chars/shaina/runattack5.png
@@ -289,15 +290,16 @@ anim special2 # Multi punch combo
     unsummonframe 10
     energycost  10 1 0
     hitflash flashbig
-    attack1 0 0 0 0 0 0 0 0 0 0
+	attack1 0 0 0 0 0 0 0 0 0 0
+	bbox 16 25 50 80
     frame    data/chars/shaina/special21.png
     frame    data/chars/shaina/special22.png
-    attack5 28 -61 120 180 30 0 0 0 5 12
+	attack5 28 -61 120 180 30 0 0 0 5 12
     frame    data/chars/shaina/special23.png
     frame    data/chars/shaina/special24.png
     frame    data/chars/shaina/special25.png
     frame    data/chars/shaina/special26.png
-    attack5 0
+	attack5 0
     frame    data/chars/shaina/special27.png
     frame    data/chars/shaina/special28.png
     frame    data/chars/shaina/special24.png
@@ -315,23 +317,24 @@ anim freespecial2 # Attaque spéciale Venin du Serpent
     hitflash shaina_electricity
     forcedirection -1
     @cmd    dasher 4 0 0 1
-    attack5 60 16 55 83 10 0 0 0 5 12
+	bbox 18 15 50 100
     frame    data/chars/shaina/special21.png
     sound data/chars/shaina/sounds/04-rush.wav
     frame    data/chars/shaina/special22.png
     frame    data/chars/shaina/special23.png
+	bbox 0 0 0 0
     frame    data/chars/shaina/special24.png
-    attack5 60 16 79 83 10 0 0 0 5 12
+	attack5 60 16 79 83 10 0 0 0 5 12
     frame    data/chars/shaina/special25.png
-    attack5 0
+	attack5 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shaina/special25.png
-    attack5 60 16 79 83 10 0 0 0 5 12
+	attack5 60 16 79 83 10 0 0 0 5 12
     frame    data/chars/shaina/special26.png
-    attack5 0
+	attack5 0
     frame    data/chars/shaina/special27.png
-    attack5 60 16 55 83 10 0 0 0 5 12
+	attack5 60 16 55 83 10 0 0 0 5 12
     frame    data/chars/shaina/special28.png
-    attack5 0
+	attack5 0
     frame    data/chars/shaina/special24.png
     sound data/chars/shaina/sounds/02-laugh.wav
     frame    data/chars/shaina/special24.png
@@ -350,6 +353,7 @@ anim freespecial3 #Cobra shoot
     frame    data/chars/shaina/attack31.png
     frame    data/chars/shaina/attack32.png
     frame    data/chars/shaina/attack33.png
+	bbox 0 0 0 0
     frame    data/chars/shaina/attack34.png
     @cmd    shooter "shaina_shoot" 0 80 0 2 0 0
     frame    data/chars/shaina/attack35.png
@@ -483,17 +487,19 @@ anim special # Cobra Storm
     offset    22 138
     sound data/chars/shaina/sounds/12-claw2.wav
         hitflash shaina_electricity
+	bbox 12 29 40 100
     frame    data/chars/shaina/special1.png
     @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/shaina/special1.png
     frame    data/chars/shaina/special2.png
     frame    data/chars/shaina/special3.png
-    attack5 -28 -12 120 180 30 1 0 0 5 12
+	attack5 -28 -12 120 180 30 1 0 0 5 12
         dot 0 800 1 10 50
     dropv     8.0 3 0
     sound data/chars/aldebaran/09-earthquake2.wav
     frame    data/chars/shaina/special4.png
     delay    20
+	bbox 0 0 0 0
     frame    data/chars/shaina/special5.png
     @cmd     spawnbind "shaina_storm" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/shaina/special6.png

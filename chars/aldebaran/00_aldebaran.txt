@@ -154,7 +154,7 @@ anim idle
     loop    1
     delay    25
     offset    37 157
-    bbox 19 6 38 151
+    bbox 10 6 50 151
     frame    data/chars/aldebaran/idle1.png
     frame    data/chars/aldebaran/idle2.png
     frame    data/chars/aldebaran/idle3.png
@@ -204,7 +204,7 @@ anim turn
     delay    8
     offset    36 156
     cancel 0 3 0 A freespecial4
-    bbox 16 8 42 150
+    bbox 8 8 50 150
     frame    data/chars/aldebaran/turn1.png
     frame    data/chars/aldebaran/turn2.png
     frame    data/chars/aldebaran/turn3.png
@@ -214,7 +214,7 @@ anim walk
     loop    1
     delay    15
     offset    37 162
-    bbox 19 7 38 156
+    bbox 19 7 45 156
     frame    data/chars/aldebaran/walk1.png
     frame    data/chars/aldebaran/walk2.png
     frame    data/chars/aldebaran/walk3.png
@@ -230,7 +230,7 @@ anim run
     loop    1
     delay    15
     offset    65 161
-    bbox 49 10 50 115
+    bbox 49 10 50 150
     frame    data/chars/aldebaran/run1.png
     frame    data/chars/aldebaran/run2.png
     frame    data/chars/aldebaran/run3.png
@@ -245,18 +245,19 @@ anim runattack # Attaque en courant
     @cmd     spawnbind "aldebaran_runtaurus" "ANI_IDLE" 0 0 0 1 0
     sound data/chars/aldebaran/sounds/10-dash.wav
 	quakeframe 1 7 4
+	bbox 13 14 65 150
     frame    data/chars/aldebaran/runattack1.png 1 7 4
     summonframe 0 0 0 0 0
     subentity aldebaran_rundust
     unsummonframe 20
     frame    data/chars/aldebaran/runattack2.png
     frame    data/chars/aldebaran/runattack3.png
-    attack2 60 40 55 83 20 1 0 0 5 20
+	attack2 60 40 55 83 20 1 0 0 5 20
     frame    data/chars/aldebaran/runattack4.png
     frame    data/chars/aldebaran/runattack5.png
     frame    data/chars/aldebaran/runattack6.png
     frame    data/chars/aldebaran/runattack7.png
-    attack2 0
+	attack2 0 0 0 0 0 0 0 0 0 0
     @cmd    dasher 0 0 0 1
     delay    12
     frame    data/chars/aldebaran/runattack8.png
@@ -296,7 +297,7 @@ anim freespecial # Attaque en courant
 anim pain # Up
     delay    5
     offset    43 159
-    bbox 22 8 38 151
+    bbox 22 8 45 151
     frame    data/chars/aldebaran/pain1.png
     frame    data/chars/aldebaran/pain2.png
     frame    data/chars/aldebaran/pain3.png
@@ -304,7 +305,7 @@ anim pain # Up
 anim pain2 # Down
     delay    5
     offset    43 160
-    bbox 22 15 38 151
+    bbox 22 15 45 151
     frame    data/chars/aldebaran/pain21.png
     frame    data/chars/aldebaran/pain22.png
     frame    data/chars/aldebaran/pain23.png
@@ -426,7 +427,7 @@ anim attack5 # Attaque combo 5
 anim jump # Saut Statique
     delay    10
     offset    44 164
-    bbox 29 10 35 71
+    bbox 29 10 35 150
     summonframe 0 0 0 0
     subentity round_dust
     frame    data/chars/aldebaran/jump1.png
@@ -439,7 +440,7 @@ anim jump # Saut Statique
 anim jumpdelay # Animation de saut intermédiaire
     delay    10
     offset    44 164
-    bbox 29 10 35 71
+    bbox 29 10 35 100
     frame    data/chars/aldebaran/jump2.png
 
 anim jumpland # Aterrissage du saut
@@ -455,14 +456,11 @@ anim jumpland # Aterrissage du saut
 anim jumpattack # Attaque sautée statique
     delay    10
     offset    44 130
-    bbox 29 10 35 71
     sound data/sounds/punch.wav
+	bbox 17 10 75 100
+	attack 73 9 100 60 15 1 0 0 12 20
     frame    data/chars/aldebaran/jumpattack.png
-    dropv 4.0 1.0 0.0
-    attack1 62 21 67 26 10 1 0 0 5 12
-	dropv    6.0 2.0 0.0
     frame    data/chars/aldebaran/jumpattack.png
-    attack1 0
 
 anim special # Earthquake
     delay    10
@@ -514,19 +512,21 @@ anim freespecial2 # Défense spéciale Taurus homerun
     rangea     0 100
     hitflash blue_swing
 	quakeframe 1 7 4
+	bbox 2 17 60 150
     frame    data/chars/aldebaran/special1.png
     frame    data/chars/aldebaran/special2.png
     frame    data/chars/aldebaran/special3.png
-    attack5 -28 -12 120 180 30 1 0 0 5 12
+	attack5 -28 -12 120 180 30 1 0 0 5 12
         dot 0 800 1 10 50
     dropv     8.0 3 0
+	bbox 0 0 0 0
     frame    data/chars/aldebaran/special5.png
     frame    data/chars/aldebaran/special6.png
     frame    data/chars/aldebaran/special7.png
     frame    data/chars/aldebaran/special8.png
     frame    data/chars/aldebaran/special9.png
     frame    data/chars/aldebaran/special10.png
-    attack5 0
+	attack5 0
     frame    data/chars/aldebaran/special11.png
     frame    data/chars/aldebaran/special12.png
     frame    data/chars/aldebaran/special13.png
@@ -635,6 +635,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
     offset    45 160
     fastattack 1
     energycost  50 1 0
+    bbox 2 17 60 150
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 0 0
     @cmd     spawnScreen "camus_lights" 0 0 0 0
     sound data/chars/aldebaran/sounds/78-cosmos.wav
@@ -652,6 +653,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
     frame    data/chars/aldebaran/special48.png
     frame    data/chars/aldebaran/special49.png
     frame    data/chars/aldebaran/special50.png
+	bbox 0 0 0 0
     sound data/chars/aldebaran/sounds/06-ultraGH.wav
     frame    data/chars/aldebaran/special51.png
     @cmd     spawnbind "aldebaran_ultraGH" "ANI_IDLE" 0 0 0 1 0

@@ -192,7 +192,7 @@ anim run
     loop    1
     delay    15
     offset    65 130
-    bbox 49 22 50 108
+    bbox 38 22 50 108
     frame    data/chars/deathmask/run1.png
     frame    data/chars/deathmask/run2.png
     frame    data/chars/deathmask/run3.png
@@ -356,15 +356,15 @@ anim attack3 # Attaque combo 3
 anim attack4 # Attaque combo 4
     delay    5
     offset    55 130
-    bbox 32 16 38 114
+    bbox 46 16 38 114
     hitflash flashmedium
-    attack1 0 0 0 0 0 0 0 0 0 0
+	attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/deathmask/attack41.png
-    attack1 58 34 67 26 10 0 0 0 5 12
+	attack1 58 34 67 26 10 0 0 0 5 12
     frame    data/chars/deathmask/attack42.png
     frame    data/chars/deathmask/attack43.png
     frame    data/chars/deathmask/attack44.png
-    attack1 0
+	attack1 0
     frame    data/chars/deathmask/attack42.png
 
 anim attack5 # Attaque combo 5

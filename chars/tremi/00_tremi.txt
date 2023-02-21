@@ -143,7 +143,7 @@ anim idle
      loop 1
      delay     10
      offset     46 119
-     bbox 18 7 52 112
+     bbox 21 7 52 112
      frame     data/chars/tremi/idle1.png
      frame     data/chars/tremi/idle2.png
      frame     data/chars/tremi/idle3.png
@@ -205,15 +205,16 @@ anim runattack # Attaque en courant
      hitflash tremi_slash
      forcedirection -1
      @cmd     dasher 3.5 0 0 1
+	bbox 25 0 50 120
      frame     data/chars/tremi/runattack1.png
      frame     data/chars/tremi/runattack2.png
      @cmd      spawnbind "tremi_dash" "ANI_IDLE" 0 0 0 1 0
      frame     data/chars/tremi/runattack3.png
-     attack2 31 43 86 25 20 1 0 0 5 12
+	attack2 31 43 86 25 20 1 0 0 5 12
      frame     data/chars/tremi/runattack4.png
      frame     data/chars/tremi/runattack5.png
      frame     data/chars/tremi/runattack6.png
-     attack2 0 0 0 0 0 0 0 0 0 0
+	attack2 0 0 0 0 0 0 0 0 0 0
      @cmd     dasher 0 0 0 1
      delay     12
      frame     data/chars/tremi/runattack7.png
@@ -239,10 +240,10 @@ anim attack1 # Attaque combo 1
      offset     46 119
      bbox 18 7 52 112
      frame     data/chars/tremi/attack1.png
-     attack1 29 34 67 26 10 0 0 0 5 12
      frame     data/chars/tremi/attack2.png
+	attack 30 30 70 30 10 0 0 0 12 20
      frame     data/chars/tremi/attack3.png
-     attack1 0
+	attack1 0 0 0 0 0 0 0 0 0 0
      frame     data/chars/tremi/attack1.png
 
 anim attack2 # Attaque combo 2
@@ -570,7 +571,7 @@ anim jumpdelay # Animation de saut intermédiaire
 anim jumpland # Aterrissage du saut
      delay     8
      offset     24 112
-     bbox 2 3 51 112
+     bbox 12 3 51 112
      summonframe 0 0 0 0
      subentity round_dust
      frame     data/chars/tremi/get1.png
@@ -619,7 +620,7 @@ anim fall
      offset     87 119
      delay     10
      landframe 4
-     bbox 25 19 100 100
+     bbox 50 19 70 100
      frame     data/chars/tremi/fall1.png
      frame     data/chars/tremi/fall2.png
      frame     data/chars/tremi/fall3.png
@@ -632,7 +633,7 @@ anim fall7
      offset     85 119
      delay     -1000
      #landframe 4
-     bbox 25 18 100 100
+     bbox 50 18 70 100
      frame     data/chars/tremi/fall1.png
      frame     data/chars/tremi/fall2.png
      frame     data/chars/tremi/fall3.png

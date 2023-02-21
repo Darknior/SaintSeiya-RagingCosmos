@@ -143,7 +143,7 @@ anim idle
     loop    1
     delay    25
     offset    66 144
-    bbox 46 13 38 137
+    bbox 46 13 45 137
     frame    data/chars/gemini/idle1.png
     frame    data/chars/gemini/idle2.png
     frame    data/chars/gemini/idle3.png
@@ -154,7 +154,7 @@ anim turn
     delay    12
     offset    60 144
     cancel 0 3 0 A freespecial4
-    bbox 39 11 42 139
+    bbox 39 11 45 139
     frame    data/chars/gemini/turn1.png
     frame    data/chars/gemini/turn2.png
     frame    data/chars/gemini/turn3.png
@@ -175,7 +175,7 @@ anim run
     loop    1
     delay    15
     offset    117 150
-    bbox 102 18 38 132
+    bbox 87 34 55 90
     frame    data/chars/gemini/run1.png
     frame    data/chars/gemini/run2.png
     frame    data/chars/gemini/run3.png
@@ -300,18 +300,18 @@ anim rise
 anim attack1 # Attaque combo 1
     delay    5
     offset    129 144
-    bbox 108 13 38 137
+    bbox 108 13 45 137
     frame    data/chars/gemini/attack1.png
-    attack1 132 27 60 25 10 0 0 0 5 12
+	attack1 132 27 60 25 10 0 0 0 5 12
     frame    data/chars/gemini/attack2.png
     frame    data/chars/gemini/attack1.png
 
 anim attack2 # Attaque combo 2
     delay    5
     offset    129 144
-    bbox 108 13 38 137
+    bbox 108 13 45 137
     frame    data/chars/gemini/attack21.png
-    attack1 132 27 60 25 10 0 0 0 5 12
+	attack1 132 27 60 25 10 0 0 0 5 12
     frame    data/chars/gemini/attack22.png
     frame    data/chars/gemini/attack23.png
 
