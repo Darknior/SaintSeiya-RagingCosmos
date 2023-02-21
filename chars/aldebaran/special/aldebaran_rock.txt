@@ -11,7 +11,8 @@ anim	idle
 	offset	100 400
         drawmethod  alpha 6
         drawmethod  channel 0.99
-	quakeframe	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock5.png 17 7
+	quakeframe 1 7 4
+	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock5.png
 	offset	100 390
 	frame	data/chars/aldebaran/special/aldebaran_rock/aldebaran_rock6.png
 	offset	100 380

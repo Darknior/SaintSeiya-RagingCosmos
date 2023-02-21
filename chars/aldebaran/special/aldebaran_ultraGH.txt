@@ -13,7 +13,7 @@ anim	idle
 	drawmethod scale 0.7 0.7
         drawmethod  alpha 1
         drawmethod  channel 0.73
-	quakeframe	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH0.png 18 4
+	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH0.png
 	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH1.png
 	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH2.png
 	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH3.png

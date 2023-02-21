@@ -11,7 +11,7 @@ anim	idle
 	offset	287 273
 	drawmethod scale 0.8 0.8
 	drawmethod alpha 1
-        drawmethod  channel 0.50
+    drawmethod  channel 0.50
 	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash1.png
 	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash2.png
 	frame	data/chars/aiolia/special/aiolia_dash/aiolia_dash3.png

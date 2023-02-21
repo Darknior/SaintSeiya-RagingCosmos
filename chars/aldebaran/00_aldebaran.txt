@@ -244,9 +244,10 @@ anim runattack # Attaque en courant
     @cmd    dasher 3.5 0 0 1
     @cmd     spawnbind "aldebaran_runtaurus" "ANI_IDLE" 0 0 0 1 0
     sound data/chars/aldebaran/sounds/10-dash.wav
-    quakeframe    data/chars/aldebaran/runattack1.png 17 7
-        summonframe 0 0 0 0 0
-        subentity aldebaran_rundust
+	quakeframe 1 7 4
+    frame    data/chars/aldebaran/runattack1.png 1 7 4
+    summonframe 0 0 0 0 0
+    subentity aldebaran_rundust
     unsummonframe 20
     frame    data/chars/aldebaran/runattack2.png
     frame    data/chars/aldebaran/runattack3.png
@@ -273,9 +274,10 @@ anim freespecial # Attaque en courant
     @cmd    dasher 3.5 0 0 1
     @cmd     spawnbind "aldebaran_runtaurus" "ANI_IDLE" 0 0 0 1 0
     sound data/chars/aldebaran/sounds/10-dash.wav
-    quakeframe    data/chars/aldebaran/runattack1.png 17 7
-        summonframe 0 0 0 0 0
-        subentity aldebaran_rundust
+	quakeframe 1 7 4
+    frame    data/chars/aldebaran/runattack1.png
+    summonframe 0 0 0 0 0
+    subentity aldebaran_rundust
     unsummonframe 20
     frame    data/chars/aldebaran/runattack2.png
     frame    data/chars/aldebaran/runattack3.png
@@ -511,7 +513,8 @@ anim freespecial2 # Défense spéciale Taurus homerun
     range     50 80
     rangea     0 100
     hitflash blue_swing
-    quakeframe    data/chars/aldebaran/special1.png 17 7
+	quakeframe 1 7 4
+    frame    data/chars/aldebaran/special1.png
     frame    data/chars/aldebaran/special2.png
     frame    data/chars/aldebaran/special3.png
     attack5 -28 -12 120 180 30 1 0 0 5 12

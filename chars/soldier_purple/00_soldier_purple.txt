@@ -149,7 +149,7 @@ anim BACKWALK
 anim pain
     loop    0
     delay    10
-    offset    110 180
+    offset    106 180
     bbox 76 71 35 110
     frame    data/chars/soldier_purple/05.png
     frame    data/chars/soldier_purple/05.png

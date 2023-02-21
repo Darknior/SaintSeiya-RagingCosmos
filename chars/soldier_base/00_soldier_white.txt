@@ -170,7 +170,7 @@ anim pain
     loop    0
 
     delay    5
-offset    110 180
+offset    102 179
     bbox.position.x 42
     bbox.position.y 64
     bbox.size.x 99
