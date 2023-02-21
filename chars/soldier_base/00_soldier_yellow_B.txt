@@ -9,7 +9,7 @@ gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du n
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
 
-speed       12          # Vitesse de déplacement
+speed       13          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
@@ -34,7 +34,6 @@ atchain     0           # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
-
 
 #-- ENNEMY CONFIG ---------------------------------------------------
 
@@ -68,7 +67,7 @@ load blood_ground_medium
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/soldier_base/palettes/icon1.png 0
-palette      data/chars/soldier_base/palettes/palette1.png
+palette      data/chars/soldier_base/palettes/palette2.png
 #remap       data/chars/soldier_base/palettes/palette1.png  # 14 Possible MAX
 
 
@@ -81,10 +80,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     delay    10
     offset   110 180
     dropv    4 1 0
-    bbox.position.x 62
-    bbox.position.y 57
-    bbox.size.x 93
-    bbox.size.y 132
+	bbox 62 57 93 132
     frame    data/chars/soldier_base/01.png
 
 anim    select  # Personnage sélectionné
@@ -96,57 +92,39 @@ anim    select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
+
 anim    block
     loop    0
     offset    110 180
-    \\sound data/chars/soldier_base/KO.wav
+    #sound data/chars/soldier_base/KO.wav
     delay    10
     dropv 4 1 0
-    bbox.position.x 71
-    bbox.position.y 57
-    bbox.size.x 84
-    bbox.size.y 133
+	bbox 79 55 70 133
     frame    data/chars/soldier_base/04.png
     frame    data/chars/soldier_base/04.png
     frame    data/chars/soldier_base/04.png
     frame    data/chars/soldier_base/04.png
 
-anim death
-    delay    10
-    offset    100 180
-    frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/06.png
-    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/soldier_base/07.png
-    frame    data/chars/soldier_base/07.png
-    frame    data/chars/soldier_base/07.png
 
 anim idle
     loop    1
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox.position.x 62
-    bbox.position.y 57
-    bbox.size.x 93
-    bbox.size.y 132
+	bbox 70 57 80 132
     frame    data/chars/soldier_base/01.png
+
+
 
 anim walk
     loop    1
     delay    15
     offset    110 180
-
-
-    bbox.position.x 66
-    bbox.position.y 62
-    bbox.size.x 90
-    bbox.size.y 125
-frame    data/chars/soldier_base/09.png
-frame    data/chars/soldier_base/10.png
-frame    data/chars/soldier_base/11.png
-frame    data/chars/soldier_base/12.png
-
+	bbox 66 62 90 125
+    frame    data/chars/soldier_base/09.png
+    frame    data/chars/soldier_base/10.png
+    frame    data/chars/soldier_base/11.png
+    frame    data/chars/soldier_base/12.png
 
 
 
@@ -155,102 +133,70 @@ anim BACKWALK
     loop    1
     delay    15
     offset    110 180
-
-
-dropv 4 1 0
-    bbox.position.x 42
-    bbox.position.y 64
-    bbox.size.x 99
-    bbox.size.y 121
-frame    data/chars/soldier_base/17.png
-frame    data/chars/soldier_base/18.png
-frame    data/chars/soldier_base/19.png
-frame    data/chars/soldier_base/20.png
-
-
-
-      
- 
+    dropv 4 1 0
+	bbox 42 64 99 121
+    frame    data/chars/soldier_base/17.png
+    frame    data/chars/soldier_base/18.png
+    frame    data/chars/soldier_base/19.png
+    frame    data/chars/soldier_base/20.png
 
 
 anim pain
     loop    0
+    delay    5
+    offset    102 179
+    bbox 42 64 99 121
+    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_base/05.png
 
-    delay    10
-offset    102 180
-    bbox.position.x 42
-    bbox.position.y 64
-    bbox.size.x 99
-    bbox.size.y 121
-
-frame    data/chars/soldier_base/05.png
-frame    data/chars/soldier_base/05.png
-
-
-        
+   
 
 anim fall
-
     loop    0
-
     delay    10
-offset    110 180
+    offset    110 180
+    dropv 4 1 0
+    bbox 65 68 80 120
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
 
-dropv 4 1 0
-frame    data/chars/soldier_base/06.png
-frame    data/chars/soldier_base/06.png
-frame    data/chars/soldier_base/06.png
-frame    data/chars/soldier_base/06.png
-frame    data/chars/soldier_base/06.png
-frame    data/chars/soldier_base/06.png
-frame    data/chars/soldier_base/06.png
-frame    data/chars/soldier_base/06.png
-frame    data/chars/soldier_base/07.png
-frame    data/chars/soldier_base/07.png
-frame    data/chars/soldier_base/07.png
 
-
-
+anim death
+    delay    10
+    offset    110 180
+    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_base/06.png
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
 
 
 anim rise
-        loop    0
+    loop    0
     offset    110 180
     delay    10
-
-
-
-dropv 4 1 0
-frame    data/chars/soldier_base/08.png
-
-
-
+    dropv 4 1 0
+    frame    data/chars/soldier_base/08.png
 
 
 anim attack1
-
-
     loop    0
     delay    10
-offset    110 180
-
-
-dropv 4 1 0
-
-    bbox.position.x 58
-    bbox.position.y 59
-    bbox.size.x 94
-    bbox.size.y 133
-    attack.damage.force 10
-    attack.position.x 147
-    attack.position.y 58
-    attack.reaction.fall.velocity.x 1.0
-    attack.reaction.fall.velocity.y 4.0
-    attack.reaction.fall.velocity.z 0.0
-    attack.size.x 36
-    attack.size.y 133
-frame    data/chars/soldier_base/03.png
-
+    offset    110 180
+    dropv 4 1 0
+    bbox 70 68 80 120
+	attack 132 80 50 25 0 0 0 0 0 0
+    frame    data/chars/soldier_base/03.png
 
 
 

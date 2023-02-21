@@ -98,7 +98,7 @@ anim idle
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 87 63 40 120
+    bbox 75 66 80 120
     frame    data/chars/soldier_purple/01.png
 
 #// Block animations /////////////////////////////////////////////////
@@ -107,13 +107,8 @@ anim        block
 loop    0
     offset    110 180
     delay    10
-
-
 dropv 4 1 0
-    bbox.position.x 71
-    bbox.position.y 57
-    bbox.size.x 84
-    bbox.size.y 133
+	    bbox 68 57 75 133
 frame    data/chars/soldier_purple/04.png
 frame    data/chars/soldier_purple/04.png
 frame    data/chars/soldier_purple/04.png
@@ -127,7 +122,7 @@ anim walk
     loop    1
     delay    15
     offset    110 180
-    bbox 99 71 35 111
+    bbox 67 71 80 111
     frame    data/chars/soldier_purple/09.png
     frame    data/chars/soldier_purple/10.png
     frame    data/chars/soldier_purple/11.png
@@ -138,7 +133,7 @@ anim BACKWALK
     delay    15
     offset    110 180
     dropv 4 1 0
-    bbox 70 70 35 110
+    bbox 54 70 80 110
     frame    data/chars/soldier_purple/13.png
     frame    data/chars/soldier_purple/14.png
     frame    data/chars/soldier_purple/15.png
@@ -150,7 +145,7 @@ anim pain
     loop    0
     delay    10
     offset    106 180
-    bbox 76 71 35 110
+    bbox 66 76 80 110
     frame    data/chars/soldier_purple/05.png
     frame    data/chars/soldier_purple/05.png
 
@@ -159,7 +154,7 @@ anim fall
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 65 65 50 120
+    bbox 65 65 80 120
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
@@ -197,19 +192,8 @@ anim attack1
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 58 59 94 133
-    bbox.position.x 58
-    bbox.position.y 59
-    bbox.size.x 94
-    bbox.size.y 133
-    attack.damage.force 10
-    attack.position.x 147
-    attack.position.y 58
-    attack.reaction.fall.velocity.x 1.0
-    attack.reaction.fall.velocity.y 4.0
-    attack.reaction.fall.velocity.z 0.0
-    attack.size.x 36
-    attack.size.y 133
+    bbox 65 59 80 133
+	attack 117 83 60 25 5 0 0 0 12 20
     frame    data/chars/soldier_purple/03.png
 
 anim attack2

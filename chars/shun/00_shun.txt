@@ -1083,7 +1083,7 @@ anim freespecial7   # Coup de pied haut
     frame    data/chars/shun/attack22.png
     frame    data/chars/shun/attack23.png
     delay    12
-    attack1  79 100 80 50 5 1 1 0 15 10
+	attack1 79 100 90 50 6 1 1 0 15 25
     dropv    5.0 0.5
     frame    data/chars/shun/attack24.png
     delay    6
@@ -1102,7 +1102,7 @@ anim freespecial8   # Balayette
     sound    data/sounds/punch.wav
     frame    data/chars/shun/slide1.png
     delay    14
-	attack1 63 72 80 55 10 1 0 0 12 20
+	attack1 63 62 80 65 6 1 0 0 12 25
     dropv    5.0 0.5
     frame    data/chars/shun/slide2.png
     delay    9

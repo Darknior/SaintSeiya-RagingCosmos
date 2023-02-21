@@ -79,10 +79,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     loop     1
     delay    10
     offset   120 195
-    bbox.position.x 81
-    bbox.position.y 57
-    bbox.size.x 96
-    bbox.size.y 143
+	bbox 62 57 93 132
     frame    data/chars/soldier_big/01.png
 
 anim    select  # Personnage sélectionné
@@ -98,19 +95,7 @@ anim idle
     loop    1
     delay    10
     offset    120 195
-    dropv 4 1 0
-    attack.damage.force 0
-    attack.position.x 0
-    attack.position.y 0
-    attack.reaction.fall.velocity.x 1.0
-    attack.reaction.fall.velocity.y 4.0
-    attack.reaction.fall.velocity.z 0.0
-    attack.size.x 0
-    attack.size.y 0
-    bbox.position.x 81
-    bbox.position.y 57
-    bbox.size.x 96
-    bbox.size.y 143
+	bbox 82 68 93 132
     frame    data/chars/soldier_big/01.png
 
 
@@ -120,19 +105,7 @@ anim    block
     loop    0
     offset    120 195
     delay    10
-    dropv 4 1 0
-    attack.damage.force 0
-    attack.position.x 0
-    attack.position.y 0
-    attack.reaction.fall.velocity.x 1.0
-    attack.reaction.fall.velocity.y 4.0
-    attack.reaction.fall.velocity.z 0.0
-    attack.size.x 0
-    attack.size.y 0
-    bbox.position.x 68
-    bbox.position.y 42
-    bbox.size.x 111
-    bbox.size.y 161
+	bbox 74 49 95 150
     frame    data/chars/soldier_big/02.png
     frame    data/chars/soldier_big/02.png
     frame    data/chars/soldier_big/02.png
@@ -146,18 +119,13 @@ anim walk
     loop    1
     delay    15
     offset    120 195
-
-
-    bbox.position.x 72
-    bbox.position.y 38
-    bbox.size.x 101
-    bbox.size.y 163
-frame    data/chars/soldier_big/07.png
-frame    data/chars/soldier_big/08.png
-frame    data/chars/soldier_big/09.png
-frame    data/chars/soldier_big/10.png
-frame    data/chars/soldier_big/11.png
-frame    data/chars/soldier_big/12.png
+	bbox 81 49 85 150
+    frame    data/chars/soldier_big/07.png
+    frame    data/chars/soldier_big/08.png
+    frame    data/chars/soldier_big/09.png
+    frame    data/chars/soldier_big/10.png
+    frame    data/chars/soldier_big/11.png
+    frame    data/chars/soldier_big/12.png
 
 
 
@@ -167,27 +135,13 @@ anim BACKWALK
     loop    1
     delay    15
     offset    120 195
-
-
-dropv 4 1 0
-    attack.damage.force 0
-    attack.position.x 0
-    attack.position.y 0
-    attack.reaction.fall.velocity.x 1.0
-    attack.reaction.fall.velocity.y 4.0
-    attack.reaction.fall.velocity.z 0.0
-    attack.size.x 0
-    attack.size.y 0
-    bbox.position.x 78
-    bbox.position.y 42
-    bbox.size.x 99
-    bbox.size.y 160
-frame    data/chars/soldier_big/13.png
-frame    data/chars/soldier_big/14.png
-frame    data/chars/soldier_big/15.png
-frame    data/chars/soldier_big/16.png
-frame    data/chars/soldier_big/17.png
-frame    data/chars/soldier_big/18.png
+	bbox 80 48 85 150
+    frame    data/chars/soldier_big/13.png
+    frame    data/chars/soldier_big/14.png
+    frame    data/chars/soldier_big/15.png
+    frame    data/chars/soldier_big/16.png
+    frame    data/chars/soldier_big/17.png
+    frame    data/chars/soldier_big/18.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
@@ -196,73 +150,48 @@ anim pain
     loop    0
 
     delay    10
-offset    120 195
-    bbox.position.x 62
-    bbox.position.y 57
-    bbox.size.x 93
-    bbox.size.y 132
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
+    offset    120 195
+	bbox 57 68 93 132
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
 
 
         
 
 anim fall
-
     loop    0
-
     delay    10
-offset    120 195
-dropv 4 1 0
-    attack.damage.force 0
-    attack.position.x 0
-    attack.position.y 0
-    attack.reaction.fall.velocity.x 1.0
-    attack.reaction.fall.velocity.y 4.0
-    attack.reaction.fall.velocity.z 0.0
-    attack.size.x 0
-    attack.size.y 0
-    bbox 58 65 85 130
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
+    offset    120 195
+    bbox 66 65 85 130
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
     bbox 29 150 165 50
-frame    data/chars/soldier_big/04.png
-frame    data/chars/soldier_big/04.png
-frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
 
 anim death
-delay    10
-offset    120 195
-frame    data/chars/soldier_big/03.png
-frame    data/chars/soldier_big/03.png
-@cmd     spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
-frame    data/chars/soldier_big/04.png
-frame    data/chars/soldier_big/04.png
-frame    data/chars/soldier_big/04.png
+    delay    10
+    offset    120 195
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    @cmd     spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
 
 
 anim rise
         loop    0
     offset    120 195
     delay    10
-
-
-dropv 4 1 0
-    attack.damage.force 0
-    attack.position.x 0
-    attack.position.y 0
-    attack.reaction.fall.velocity.x 1.0
-    attack.reaction.fall.velocity.y 4.0
-    attack.reaction.fall.velocity.z 0.0
-    attack.size.x 0
-    attack.size.y 0
-frame    data/chars/soldier_big/05.png
+    frame    data/chars/soldier_big/05.png
 
 
 #//Basic Attacks animations/////////////////////////////////////////////////
@@ -272,25 +201,10 @@ anim attack1
 
     loop    0
     delay    10
-offset    120 195
-
-
-
-dropv 4 1 0
-    attack.damage.force 20
-    attack.position.x 126
-    attack.position.y 40
-    attack.reaction.fall.force 1
-    attack.reaction.fall.velocity.x 1.0
-    attack.reaction.fall.velocity.y 4.0
-    attack.reaction.fall.velocity.z 0.0
-    attack.size.x 93
-    attack.size.y 163
-    bbox.position.x 45
-    bbox.position.y 43
-    bbox.size.x 86
-    bbox.size.y 157
-frame    data/chars/soldier_big/06.png
+    offset    120 195
+	bbox 62 49 93 150
+	attack 140 86 80 40 10 0 0 0 12 20
+    frame    data/chars/soldier_big/06.png
 
 
 
