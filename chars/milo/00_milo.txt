@@ -157,7 +157,7 @@ anim idle
     loop    1
     delay    20
     offset    44 126
-    bbox 32 6 38 120
+    bbox 19 6 50 120
     frame    data/chars/milo/idle1.png
     frame    data/chars/milo/idle2.png
     frame    data/chars/milo/idle3.png
@@ -171,7 +171,7 @@ anim walk
     loop    1
     delay    10
     offset    44 126
-    bbox 32 6 38 120
+    bbox 20 6 50 120
     frame    data/chars/milo/walk1.png
     frame    data/chars/milo/walk2.png
     frame    data/chars/milo/walk3.png
@@ -221,13 +221,14 @@ anim freespecial # Attaque en courant
     @cmd    dasher 3.5 0 0 1
     frame    data/chars/milo/runattack1.png
     frame    data/chars/milo/runattack2.png
-    attack2 60 25 88 38 20 1 0 0 5 12
+	attack2 60 25 88 38 20 1 0 0 5 12
     dropv 4.0 2.0 0.0
     frame    data/chars/milo/runattack3.png
     frame    data/chars/milo/runattack3.png
+	bbox 0 0 0 0
     frame    data/chars/milo/runattack3.png
     frame    data/chars/milo/runattack3.png
-    attack2 0
+	attack2 0
     @cmd    dasher 0 0 0 1
     delay    12
     frame    data/chars/milo/runattack2.png
@@ -452,6 +453,7 @@ anim freespecial6 # Ultra Scarlet Needle
     delay    10
     offset    44 129
     energycost  50 1 0
+	bbox 19 6 50 120
     hitflash milo_blood
     fastattack 1
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
@@ -468,6 +470,7 @@ anim freespecial6 # Ultra Scarlet Needle
     frame    data/chars/milo/attack45.png
     delay   80
     frame    data/chars/milo/special39.png
+	bbox 0 0 0 0
     delay   10
     frame    data/chars/milo/special39.png
     sound data/chars/milo/sounds/06-scarlet2.wav
@@ -584,6 +587,7 @@ anim freespecial3 # Attaque spéciale Aiguille écarlate
     frame    data/chars/milo/special23.png
     frame    data/chars/milo/special24.png
     frame    data/chars/milo/special25.png
+	bbox 0 0 0 0
     attack5 60 16 55 83 10 0 0 0 5 12
     frame    data/chars/milo/special26.png
     attack5 0
@@ -647,6 +651,7 @@ anim freespecial5 # Ultra Antares
     energycost  50 1 0
     hitflash milo_blood
     fastattack 1
+	bbox 19 6 50 120
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
         @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
     sound data/chars/aldebaran/78-cosmos.wav
@@ -668,6 +673,7 @@ anim freespecial5 # Ultra Antares
     frame    data/chars/milo/jump1.png
     offset    41 286
     frame    data/chars/milo/jump2.png
+	bbox 0 0 0 0
     frame    data/chars/milo/jumpattack1.png
     frame    data/chars/milo/jumpattack2.png
     frame    data/chars/milo/jumpattack3.png
