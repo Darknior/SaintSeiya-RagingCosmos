@@ -959,8 +959,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     frame    data/chars/seiya/special3.png
     frame    data/chars/seiya/special4.png
     frame    data/chars/seiya/special3.png
-    frame    data/chars/seiya/special4.png
-    @cmd     addMp 2
+    frame    data/chars/seiya/special4.png    @cmd     addMp 2
     @cmd     keyLoop "attack4" 2    # Loope l'animation à la frame 2 + addMp
     frame    data/chars/seiya/special2.png
 
