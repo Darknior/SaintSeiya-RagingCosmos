@@ -8,53 +8,29 @@ Eyes4 : 8da7ad
 
 WHITE : fbfbfe
 
-Armor 1 : 0c0c0c (Darker)
-Armor 2 : 1a313d
-Armor 3 : 384858
-Armor 4 : 6e7d8a
-Armor 5 : a7bbc4 (Lighter)
+Armor 1 : 000000 (Darker)
+Armor 2 : 1f2526
+Armor 3 : 283337
+Armor 4 : 3b4c52
+Armor 5 : 5a7179 (Lighter)
+Armor 6 : 6797a8 / White
 
-000000
-1f2526
-283337
-3b4c52
+Cloth 1 : 000207
+Cloth 2 : 0b1741
+Cloth 3 : 12266b
+Cloth 4 : 1a379c
 
-5a7179
-6797a8 / White
+Divers 1 : 385153
+Divers 2 : 597a7c
+Divers 3 : 81aaac
 
-Cloth 1 : 2c2454
-Cloth 2 : 223768
-Cloth 3 : 3c548c
-Cloth 4 : 677eb4
+Hair 1 : 1a3979
+Hair 2 : 2552ad
+Hair 3 : 306be0
 
-000207
-0b1741
-12266b
-1a379c
-
-Divers 1 : 596a6d
-Divers 2 : 9fb8bc
-Divers 3 : d1eef3
-
-385153
-597a7c
-81aaac
-
-Hair 1 : 000726
-Hair 2 : 122265
-Hair 3 : 394a92
-
-1a3979
-2552ad
-306be0
-
-Belt 1 : 4f6379
-Belt 2 : 6086ce
-Belt 3 : d1eef3
-
-001f26
-003e4b
-006277
+Belt 1 : 001f26
+Belt 2 : 003e4b
+Belt 3 : 006277
 
 Eyes1 : 031334
 Eyes2 : 0b2356
