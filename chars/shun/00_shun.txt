@@ -155,7 +155,7 @@ anim    select  # Personnage sélectionné
 	
 #// Static animations /////////////////////////////////////////////////
 
-anim spawn # Animation de 1ère apparition du personnage
+#anim spawnold # Animation de 1ère apparition du personnage
     delay    20
     offset   32 131
     frame    data/chars/shun/spawn1.png
@@ -170,6 +170,20 @@ anim spawn # Animation de 1ère apparition du personnage
     frame    data/chars/shun/spawn10.png
     frame    data/chars/shun/spawn11.png
     frame    data/chars/shun/spawn12.png
+	
+anim spawn
+    loop     0
+    delay    18
+    offset   32 131
+    bbox     15 28 51 107
+    frame    data/chars/shun/idle1.png
+    frame    data/chars/shun/idle2.png
+    frame    data/chars/shun/idle3.png
+    frame    data/chars/shun/idle4.png
+    frame    data/chars/shun/idle5.png
+    frame    data/chars/shun/idle4.png
+    frame    data/chars/shun/idle3.png
+    frame    data/chars/shun/idle2.png
 
 anim idle
     loop     1
@@ -964,6 +978,7 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     subentity shun_constellation
     energycost  20 1 0
     @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
+	@cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/special1.png
     sound data/chars/shun/sounds/08-ultra.wav
     frame    data/chars/shun/special2.png

@@ -169,7 +169,7 @@ anim    select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
-anim spawn # Animation de 1ère apparition du personnage
+#anim spawnold # Animation de 1ère apparition du personnage
     delay    8
     offset   98 208
     sound    data/chars/ikki/sounds/01-fire.wav
@@ -213,6 +213,18 @@ anim spawn # Animation de 1ère apparition du personnage
     frame    data/chars/ikki/spawn38.png
     frame    data/chars/ikki/spawn39.png
     frame    data/chars/ikki/spawn40.png
+	
+anim spawn
+    loop 0
+    delay    15
+    offset   45 137
+    bbox     30 17 30 120
+    frame    data/chars/ikki/idle1.png
+    frame    data/chars/ikki/idle2.png
+    frame    data/chars/ikki/idle3.png
+    frame    data/chars/ikki/idle4.png
+    frame    data/chars/ikki/idle5.png
+    frame    data/chars/ikki/idle6.png
 
 anim idle
     loop 1
