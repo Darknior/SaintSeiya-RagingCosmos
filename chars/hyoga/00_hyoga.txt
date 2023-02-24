@@ -941,7 +941,7 @@ anim freespecial2 # Diamond Dust (2 projectiles)
     frame    data/chars/hyoga/special21.png
 
 anim    freespecial3    # Explosion du cosmos (Récupération des MP)
-    delay    5
+    delay    9
     offset   35 141
     hitflash flashbig
     bbox     7 23 50 120
@@ -959,7 +959,9 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     frame    data/chars/hyoga/special5.png
     @cmd     addMp 2
     @cmd     keyLoop "attack4" 3    # Loope l'animation à la frame 3 + addMp
+    frame    data/chars/hyoga/special4.png
     frame    data/chars/hyoga/special3.png
+    frame    data/chars/hyoga/special2.png
 
 
 

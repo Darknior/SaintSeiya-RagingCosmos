@@ -844,23 +844,23 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     attack   0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shun/uppercut12.png
 
-anim freespecial2 # Courant Nébulaire
+anim    freespecial2    # Courant Nébulaire
     jugglecost  2
-    delay    10
-    offset    175 136
+    delay       10
+    offset      175 136
     summonframe 0 0 0 0 0
-    subentity shun_aura_ryuseiken
+    subentity   shun_aura_ryuseiken
     energycost  20 1 0
-    hitflash flashbig
-    attack5 127 -29 100 180 10 1 0 0 5 12
-    sound data/chars/shun/sounds/02.wav
+    hitflash    flashbig
+    attack5     127 -29 100 180 10 1 0 0 5 12
+    sound    data/chars/shun/sounds/02.wav
     @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/special31.png
     frame    data/chars/shun/special32.png
     frame    data/chars/shun/special33.png
     frame    data/chars/shun/special34.png
     frame    data/chars/shun/special35.png
-    attack5 -8 -30 100 180 10 1 0 0 5 12
+    attack5  -8 -30 100 180 10 1 0 0 5 12
     frame    data/chars/shun/special36.png
     frame    data/chars/shun/special37.png
     frame    data/chars/shun/special38.png
@@ -875,7 +875,7 @@ anim freespecial2 # Courant Nébulaire
     frame    data/chars/shun/special47.png
     frame    data/chars/shun/special48.png
     frame    data/chars/shun/special49.png
-    @cmd    shooter "shun_stream" 77 80 3 3 0 0
+    @cmd     shooter "shun_stream" 77 80 3 3 0 0
     frame    data/chars/shun/special50.png
     frame    data/chars/shun/special51.png
     frame    data/chars/shun/special52.png
@@ -889,7 +889,7 @@ anim freespecial2 # Courant Nébulaire
     frame    data/chars/shun/special60.png
 
 anim    freespecial3    # Explosion du cosmos (Récupération des MP)
-    delay    10
+    delay    9
     offset   174 135
     hitflash flashbig
     bbox     152 18 35 120
@@ -906,6 +906,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     @cmd     addMp 2
     @cmd     keyLoop "attack4" 2    # Loope l'animation à la frame 2 + addMp
     frame    data/chars/shun/upspecial3.png
+    frame    data/chars/shun/upspecial2.png
 
 anim    freespecial4   # Attaque arrière (a3)
     jugglecost  1

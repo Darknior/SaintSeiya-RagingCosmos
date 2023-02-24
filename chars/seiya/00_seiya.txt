@@ -185,7 +185,7 @@ anim    select  # Personnage sélectionné
     frame    data/chars/seiya/spawn5.png
     frame    data/chars/seiya/spawn6.png
     frame    data/chars/seiya/spawn7.png
-	
+
 anim spawn
     loop     0
     delay    10
@@ -343,7 +343,7 @@ anim run
 anim runattack  # Attaque en courant
     fastattack  1
     jugglecost  2
-	energycost  5 1 0
+    energycost  5 1 0
     forcedirection -1
     delay    8
     offset   30 111
@@ -457,7 +457,7 @@ anim    attack5    # Attaque combo 5
     hitflash flashbig
     frame    data/chars/seiya/attack51.png
     frame    data/chars/seiya/attack52.png
-	sound    data/chars/seiya/sounds/kick.wav
+    sound    data/chars/seiya/sounds/kick.wav
     frame    data/chars/seiya/attack53.png
     dropv    4.0 1.0 0.0
     attack1  64 37 67 26 20 1 1 0 12 20
@@ -479,7 +479,7 @@ anim    grab
     offset   20 115
     bbox     21 0 35 114
     frame    data/chars/seiya/grab1.png
-	frame    data/chars/seiya/grab2.png
+    frame    data/chars/seiya/grab2.png
 
 anim    grabattack # Saisie Coup de genou X2
     delay    6
@@ -609,7 +609,7 @@ anim    jumpland # Aterrissage du saut
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get1.png
-	
+
 anim    land #  atterissage safe au sol (haut+ jump pendant la projection)
     flipframe 1
     delay    6
@@ -889,7 +889,7 @@ anim    freespecial # Attaque de mêlée (Bouton special, a2)
     frame    data/chars/seiya/attackbackward1.png
 
 anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
-	otg 1
+    otg 1
     delay    10
     offset   31 116
     energycost  25 1 0
@@ -898,7 +898,7 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
-	@cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png
     attack5  -8 -64 100 180 10 1 0 0 5 30
@@ -971,22 +971,23 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     attack5  0
 
 anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 (laisser appuyé))
-    delay    10
+    delay    9
     offset   31 119
     hitflash flashbig
     bbox     9 0 50 120
-	sound    data/chars/seiya/sounds/cosmos.wav
+    sound    data/chars/seiya/sounds/cosmos.wav
     frame    data/chars/seiya/special1.png
     frame    data/chars/seiya/special2.png
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
-	@cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
-    sound    data/chars/seiya/sounds/00-cosmos.wav
     frame    data/chars/seiya/special3.png
+    @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
+    sound    data/chars/seiya/sounds/00-cosmos.wav
     frame    data/chars/seiya/special4.png
     frame    data/chars/seiya/special3.png
     frame    data/chars/seiya/special4.png    
-	@cmd     addMp 2
+    @cmd     addMp 2
     @cmd     keyLoop "attack4" 2    # Loope l'animation à la frame 2 + addMp
+    frame    data/chars/seiya/special3.png
     frame    data/chars/seiya/special2.png
 
 anim    freespecial4    # Attaque arrière (a3)
@@ -1052,7 +1053,7 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
 
 anim    freespecial6    # Comète de Pégase ( ULTRA, haut + bouton special a2)
     jugglecost 10
-	otg 1
+    otg 1
     delay    10
     offset   31 116
     fastattack  1
@@ -1069,7 +1070,7 @@ anim    freespecial6    # Comète de Pégase ( ULTRA, haut + bouton special a2)
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
-	@cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png
     attack5  -8 -64 100 180 10 1 0 0 5 30
