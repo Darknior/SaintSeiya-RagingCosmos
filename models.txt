@@ -84,6 +84,8 @@ load    blood_ground_medium    data/chars/misc/blood/blood_ground_medium.txt
 know    seiya_aura             data/chars/seiya/special/seiya_aura.txt
 know    seiya_aura_air_kick    data/chars/seiya/special/seiya_aura_air_kick.txt
 know    seiya_aura_ryuseiken   data/chars/seiya/special/seiya_aura_ryuseiken.txt
+know    seiya_aura_ryuseikenB   data/chars/seiya/special/seiya_aura_ryuseikenB.txt
+know    seiya_aura_ryuseikenC   data/chars/seiya/special/seiya_aura_ryuseikenC.txt
 know    seiya_constellation    data/chars/seiya/special/seiya_constellation.txt
 know    seiya_meteor           data/chars/seiya/special/seiya_meteor.txt
 know    seiya_meteord          data/chars/seiya/special/seiya_meteord.txt

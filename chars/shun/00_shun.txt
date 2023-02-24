@@ -955,7 +955,7 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     delay    10
     offset    203 310
     fastattack 1
-        hitflash shun_impact
+    hitflash shun_impact
     sound data/chars/deathmask/78-cosmos.wav
     #bbox 21 16 51 97
     summonframe 0 0 0 0 1
