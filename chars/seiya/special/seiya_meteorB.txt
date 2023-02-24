@@ -1,4 +1,4 @@
-name	seiya_meteor
+name	seiya_meteorB
 type	none
 shadow	0
 setlayer 99
@@ -13,51 +13,51 @@ anim	idle
 	delay	6
 	offset	200 38
 	drawmethod alpha 1	
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-0.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-1.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-2.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-3.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-4.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-5.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-0.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-1.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-2.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-3.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-4.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-5.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-0.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-1.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-2.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-3.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-4.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-5.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-0.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-1.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-2.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-3.png
-	attack5 200 0 150 70 5 0 0 0 0 20
+	attack5 200 0 150 70 5 12 0 0 0 20
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-4.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-5.png

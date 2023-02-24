@@ -62,6 +62,7 @@ load shiryu_uppercut
 load shiryu_big_dragon
 load shiryu_whirl
 load shiryu_cosmos
+load shiryu_cosmosB
 load shiryu_constellation
 load shiryu_lights
 load shiryu_dash
@@ -835,6 +836,7 @@ anim    freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)
     fastattack   1
     hitflash flashbig
     @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 1 0
+	@cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 1 0
     sound    data/chars/shiryu/sounds/01-shoryuha.wav
     attack5  -4 -7 100 140 5 1 0 0 5 30
     dropv    3 5
@@ -879,6 +881,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     frame    data/chars/shiryu/special5.png
     frame    data/chars/shiryu/special6.png
     @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 0 0
+	@cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shiryu/special7.png
     sound    data/chars/shiryu/sounds/00-cosmos.wav
     frame    data/chars/shiryu/special8.png
@@ -957,6 +960,7 @@ anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     subentity    shiryu_constellation
     energycost   50 1 0
     @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 0 0 0 1 0
+	@cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 1 0
     attack5  -4 -7 100 140 5 1 0 0 5 30
     dropv    3 5
     sound    data/chars/shiryu/sounds/01-shoryuha.wav

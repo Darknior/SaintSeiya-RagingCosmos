@@ -88,6 +88,7 @@ know    seiya_aura_ryuseikenB   data/chars/seiya/special/seiya_aura_ryuseikenB.t
 know    seiya_aura_ryuseikenC   data/chars/seiya/special/seiya_aura_ryuseikenC.txt
 know    seiya_constellation    data/chars/seiya/special/seiya_constellation.txt
 know    seiya_meteor           data/chars/seiya/special/seiya_meteor.txt
+know    seiya_meteorB           data/chars/seiya/special/seiya_meteorB.txt
 know    seiya_meteord          data/chars/seiya/special/seiya_meteord.txt
 know    seiya_pegasus          data/chars/seiya/special/seiya_pegasus.txt
 know    seiya_dash_dust        data/chars/seiya/special/seiya_dash_dust.txt
@@ -106,6 +107,7 @@ know    shiryu_uppercut        data/chars/shiryu/special/shiryu_uppercut.txt
 know    shiryu_big_dragon      data/chars/shiryu/special/shiryu_big_dragon.txt
 know    shiryu_lights          data/chars/shiryu/special/shiryu_lights.txt
 know    shiryu_cosmos          data/chars/shiryu/special/shiryu_cosmos.txt
+know    shiryu_cosmosB          data/chars/shiryu/special/shiryu_cosmosB.txt
 know    shiryu_constellation   data/chars/shiryu/special/shiryu_constellation.txt
 know    shiryu_dash            data/chars/shiryu/special/shiryu_dash.txt
 know    shiryu_whirl           data/chars/shiryu/special/shiryu_whirl.txt

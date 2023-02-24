@@ -55,6 +55,7 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 load seiya_aura
 load seiya_constellation
 load seiya_meteor
+load seiya_meteorB
 load seiya_meteord
 load seiya_constellation
 load seiya_roll
@@ -871,6 +872,7 @@ anim    freespecial # Attaque de mêlée (Bouton special, a2)
     frame    data/chars/seiya/attackbackward1.png
 
 anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
+	otg 1
     delay    10
     offset   31 116
     energycost  25 1 0
@@ -938,17 +940,17 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     frame    data/chars/seiya/special39.png
     @cmd     shooter "seiya_meteor" 47 60 0 3 0 0
     frame    data/chars/seiya/special40.png
-    @cmd     shooter "seiya_meteor" 47 80 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 80 0 3 0 0
     frame    data/chars/seiya/special41.png
-    @cmd     shooter "seiya_meteor" 47 100 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 100 0 3 0 0
     frame    data/chars/seiya/special38.png
-    @cmd     shooter "seiya_meteor" 47 100 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 100 0 3 0 0
     frame    data/chars/seiya/special39.png
-    @cmd     shooter "seiya_meteor" 47 60 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 60 0 3 0 0
     frame    data/chars/seiya/special40.png
-    @cmd     shooter "seiya_meteor" 47 80 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 80 0 3 0 0
     frame    data/chars/seiya/special41.png
-    @cmd     shooter "seiya_meteor" 47 100 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 100 0 3 0 0
     attack5  0
 
 anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 (laisser appuyé))
@@ -1033,6 +1035,7 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
 
 anim    freespecial6    # Comète de Pégase ( ULTRA, haut + bouton special a2)
     jugglecost 10
+	otg 1
     delay    10
     offset   31 116
     fastattack  1
