@@ -22,6 +22,7 @@ jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
+grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 holdblock   1           # Permet de pouvoir maintenir la parade
 nodieblink  1           # Ne clignote pas quand tu meurs
@@ -54,6 +55,7 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 load seiya_aura
 load seiya_constellation
 load seiya_meteor
+load seiya_meteorB
 load seiya_meteord
 load seiya_constellation
 load seiya_roll
@@ -62,6 +64,8 @@ load seiya_upper_dust
 load seiya_round_dust
 load seiya_aura_air_kick
 load seiya_aura_ryuseiken
+load seiya_aura_ryuseikenB
+load seiya_aura_ryuseikenC
 load aldebaran_super_lights
 load aldebaran_swing
 load seiya_lights
@@ -167,7 +171,7 @@ anim    select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
-anim spawn # Animation de 1ère apparition du personnage
+#anim spawnold # Animation de 1ère apparition du personnage
     delay    20
     offset   45 124
     frame    data/chars/seiya/spawn1.png
@@ -181,6 +185,23 @@ anim spawn # Animation de 1ère apparition du personnage
     frame    data/chars/seiya/spawn5.png
     frame    data/chars/seiya/spawn6.png
     frame    data/chars/seiya/spawn7.png
+	
+anim spawn
+    loop     0
+    delay    10
+    offset   45 112
+    bbox     34 0 30 112
+    frame    data/chars/seiya/idle1.png
+    frame    data/chars/seiya/idle2.png
+    frame    data/chars/seiya/idle3.png
+    frame    data/chars/seiya/idle4.png
+    frame    data/chars/seiya/idle5.png
+    frame    data/chars/seiya/idle6.png
+    frame    data/chars/seiya/idle7.png
+    frame    data/chars/seiya/idle8.png
+    frame    data/chars/seiya/idle9.png
+    frame    data/chars/seiya/idle10.png
+    frame    data/chars/seiya/idle11.png
 
 anim idle
     loop     1
@@ -455,9 +476,10 @@ anim    attack5    # Attaque combo 5
 
 anim    grab
     delay    7
-    offset   38 114
+    offset   20 115
     bbox     21 0 35 114
-    frame    data/chars/seiya/grab.png
+    frame    data/chars/seiya/grab1.png
+	frame    data/chars/seiya/grab2.png
 
 anim    grabattack # Saisie Coup de genou X2
     delay    6
@@ -867,6 +889,7 @@ anim    freespecial # Attaque de mêlée (Bouton special, a2)
     frame    data/chars/seiya/attackbackward1.png
 
 anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
+	otg 1
     delay    10
     offset   31 116
     energycost  25 1 0
@@ -875,6 +898,7 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
+	@cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png
     attack5  -8 -64 100 180 10 1 0 0 5 30
@@ -933,17 +957,17 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     frame    data/chars/seiya/special39.png
     @cmd     shooter "seiya_meteor" 47 60 0 3 0 0
     frame    data/chars/seiya/special40.png
-    @cmd     shooter "seiya_meteor" 47 80 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 80 0 3 0 0
     frame    data/chars/seiya/special41.png
-    @cmd     shooter "seiya_meteor" 47 100 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 100 0 3 0 0
     frame    data/chars/seiya/special38.png
-    @cmd     shooter "seiya_meteor" 47 100 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 100 0 3 0 0
     frame    data/chars/seiya/special39.png
-    @cmd     shooter "seiya_meteor" 47 60 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 60 0 3 0 0
     frame    data/chars/seiya/special40.png
-    @cmd     shooter "seiya_meteor" 47 80 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 80 0 3 0 0
     frame    data/chars/seiya/special41.png
-    @cmd     shooter "seiya_meteor" 47 100 0 3 0 0
+    @cmd     shooter "seiya_meteorB" 47 100 0 3 0 0
     attack5  0
 
 anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 (laisser appuyé))
@@ -955,11 +979,13 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     frame    data/chars/seiya/special1.png
     frame    data/chars/seiya/special2.png
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
+	@cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     sound    data/chars/seiya/sounds/00-cosmos.wav
     frame    data/chars/seiya/special3.png
     frame    data/chars/seiya/special4.png
     frame    data/chars/seiya/special3.png
-    frame    data/chars/seiya/special4.png    @cmd     addMp 2
+    frame    data/chars/seiya/special4.png    
+	@cmd     addMp 2
     @cmd     keyLoop "attack4" 2    # Loope l'animation à la frame 2 + addMp
     frame    data/chars/seiya/special2.png
 
@@ -1026,6 +1052,7 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
 
 anim    freespecial6    # Comète de Pégase ( ULTRA, haut + bouton special a2)
     jugglecost 10
+	otg 1
     delay    10
     offset   31 116
     fastattack  1
@@ -1042,6 +1069,7 @@ anim    freespecial6    # Comète de Pégase ( ULTRA, haut + bouton special a2)
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 0 0 0
+	@cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png
     attack5  -8 -64 100 180 10 1 0 0 5 30
@@ -1074,7 +1102,7 @@ anim    freespecial6    # Comète de Pégase ( ULTRA, haut + bouton special a2)
     frame    data/chars/seiya/special35.png
     sound    data/chars/seiya/sounds/09-ultra2.wav
     frame    data/chars/seiya/special36.png
-    @cmd     spawnbind "seiya_aura_ryuseiken" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "seiya_aura_ryuseikenC" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special37.png
     @cmd     shooter "seiya_meteor" 47 80 0 3 0 0
     frame    data/chars/seiya/special38.png

@@ -53,6 +53,7 @@ ondeathscript       data/scripts/timer_reset.c            # Mort du Timer à zé
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load hyoga_aura
+load hyoga_cosmos
 load hyoga_cygnus
 load hyoga_twister
 load hyoga_frozenray
@@ -173,7 +174,7 @@ anim    select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
-anim spawn # Animation de 1ère apparition du personnage
+#anim spawnold # Animation de 1ère apparition du personnage
     delay    20
     offset    27 141
     frame    data/chars/hyoga/spawn1.png
@@ -192,6 +193,19 @@ anim spawn # Animation de 1ère apparition du personnage
     frame    data/chars/hyoga/spawn14.png
     frame    data/chars/hyoga/spawn15.png
     frame    data/chars/hyoga/spawn16.png
+	
+anim spawn
+    loop 0
+    delay    10
+    offset    45 140
+    bbox 29 28 30 112
+    frame    data/chars/hyoga/idle1.png
+    frame    data/chars/hyoga/idle2.png
+    frame    data/chars/hyoga/idle3.png
+    frame    data/chars/hyoga/idle4.png
+    frame    data/chars/hyoga/idle5.png
+    frame    data/chars/hyoga/idle6.png
+    frame    data/chars/hyoga/idle7.png
 
 anim idle
     loop 1
@@ -896,6 +910,7 @@ anim freespecial2 # Diamond Dust (2 projectiles)
         delay    10
     offset    45 151
     @cmd     spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
+	@cmd     spawnbind "hyoga_cosmos" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/special21.png
     frame    data/chars/hyoga/special22.png
     attack5 -8 -27 100 180 10 1 0 0 5 30
@@ -936,6 +951,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     frame    data/chars/hyoga/special3.png
     @cmd     spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/special4.png
+	@cmd     spawnbind "hyoga_cosmos" "ANI_IDLE" 0 0 0 1 0
     sound    data/chars/hyoga/sounds/00-cosmos.wav
     frame    data/chars/hyoga/special5.png
     frame    data/chars/hyoga/special3.png
@@ -1003,6 +1019,7 @@ anim freespecial6 # Aurora Thunder Attack ( haut + bouton special)
     summonframe 0 0 0 0 1
     subentity hyoga_constellation
     @cmd     spawnbind "hyoga_aura" "ANI_IDLE" 0 0 0 1 0
+	@cmd     spawnbind "hyoga_cosmos" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/upspecial1.png
     frame    data/chars/hyoga/upspecial2.png
     attack5 -8 8 100 140 10 1 0 0 5 30

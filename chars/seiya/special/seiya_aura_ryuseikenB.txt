@@ -1,0 +1,17 @@
+name	seiya_aura_ryuseikenB
+type	none
+shadow	0
+setlayer 1
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	10
+	drawmethod alpha 1
+	offset	60 137
+	frame	data/chars/seiya/special/seiya_aura_ryuseiken/aura_ryuseiken1.png
+	frame	data/chars/seiya/special/seiya_aura_ryuseiken/aura_ryuseiken2.png
+	frame	data/chars/seiya/special/seiya_aura_ryuseiken/aura_ryuseiken3.png
+	frame	data/chars/seiya/special/seiya_aura_ryuseiken/aura_ryuseiken4.png
+	@cmd suicide
+	frame	data/chars/seiya/special/seiya_aura_ryuseiken/aura_ryuseiken4.png

@@ -84,8 +84,11 @@ load    blood_ground_medium    data/chars/misc/blood/blood_ground_medium.txt
 know    seiya_aura             data/chars/seiya/special/seiya_aura.txt
 know    seiya_aura_air_kick    data/chars/seiya/special/seiya_aura_air_kick.txt
 know    seiya_aura_ryuseiken   data/chars/seiya/special/seiya_aura_ryuseiken.txt
+know    seiya_aura_ryuseikenB   data/chars/seiya/special/seiya_aura_ryuseikenB.txt
+know    seiya_aura_ryuseikenC   data/chars/seiya/special/seiya_aura_ryuseikenC.txt
 know    seiya_constellation    data/chars/seiya/special/seiya_constellation.txt
 know    seiya_meteor           data/chars/seiya/special/seiya_meteor.txt
+know    seiya_meteorB           data/chars/seiya/special/seiya_meteorB.txt
 know    seiya_meteord          data/chars/seiya/special/seiya_meteord.txt
 know    seiya_pegasus          data/chars/seiya/special/seiya_pegasus.txt
 know    seiya_dash_dust        data/chars/seiya/special/seiya_dash_dust.txt
@@ -104,12 +107,14 @@ know    shiryu_uppercut        data/chars/shiryu/special/shiryu_uppercut.txt
 know    shiryu_big_dragon      data/chars/shiryu/special/shiryu_big_dragon.txt
 know    shiryu_lights          data/chars/shiryu/special/shiryu_lights.txt
 know    shiryu_cosmos          data/chars/shiryu/special/shiryu_cosmos.txt
+know    shiryu_cosmosB          data/chars/shiryu/special/shiryu_cosmosB.txt
 know    shiryu_constellation   data/chars/shiryu/special/shiryu_constellation.txt
 know    shiryu_dash            data/chars/shiryu/special/shiryu_dash.txt
 know    shiryu_whirl           data/chars/shiryu/special/shiryu_whirl.txt
 
 know    hyoga_aura             data/chars/hyoga/special/hyoga_aura.txt
 know    hyoga_cygnus           data/chars/hyoga/special/hyoga_cygnus.txt
+know    hyoga_cosmos           data/chars/hyoga/special/hyoga_cosmos.txt
 know    hyoga_twister          data/chars/hyoga/special/hyoga_twister.txt
 know    hyoga_frozenray        data/chars/hyoga/special/hyoga_frozenray.txt
 know    hyoga_frozenray_up     data/chars/hyoga/special/hyoga_frozenray_up.txt
@@ -127,6 +132,7 @@ know    shun_stream            data/chars/shun/special/shun_stream.txt
 know    shun_chain             data/chars/shun/special/shun_chain.txt
 know    shun_chainB            data/chars/shun/special/shun_chainB.txt
 know    shun_chainC            data/chars/shun/special/shun_chainC.txt
+know    shun_cosmos            data/chars/shun/special/shun_cosmos.txt
 know    shun_lights            data/chars/shun/special/shun_lights.txt
 know    shun_impact            data/chars/shun/special/shun_impact.txt
 know    shun_impactD           data/chars/shun/special/shun_impactD.txt
@@ -137,6 +143,7 @@ know    shun_storm             data/chars/shun/special/shun_storm.txt
 know    ikki_aura              data/chars/ikki/special/ikki_aura.txt
 know    ikki_auraB             data/chars/ikki/special/ikki_auraB.txt
 know    ikki_auraC             data/chars/ikki/special/ikki_auraC.txt
+know    ikki_cosmos             data/chars/ikki/special/ikki_cosmos.txt
 know    ikki_shooter           data/chars/ikki/special/ikki_shooter.txt
 know    ikki_constellation     data/chars/ikki/special/ikki_constellation.txt
 know    ikki_lights            data/chars/ikki/special/ikki_lights.txt

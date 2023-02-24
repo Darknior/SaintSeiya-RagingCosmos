@@ -55,6 +55,7 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 load ikki_aura
 load ikki_auraB
 load ikki_auraC
+load ikki_cosmos
 load ikki_lights
 load ikki_constellation
 load ikki_shooter
@@ -168,7 +169,7 @@ anim    select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
-anim spawn # Animation de 1ère apparition du personnage
+#anim spawnold # Animation de 1ère apparition du personnage
     delay    8
     offset   98 208
     sound    data/chars/ikki/sounds/01-fire.wav
@@ -212,6 +213,18 @@ anim spawn # Animation de 1ère apparition du personnage
     frame    data/chars/ikki/spawn38.png
     frame    data/chars/ikki/spawn39.png
     frame    data/chars/ikki/spawn40.png
+	
+anim spawn
+    loop 0
+    delay    15
+    offset   45 137
+    bbox     30 17 30 120
+    frame    data/chars/ikki/idle1.png
+    frame    data/chars/ikki/idle2.png
+    frame    data/chars/ikki/idle3.png
+    frame    data/chars/ikki/idle4.png
+    frame    data/chars/ikki/idle5.png
+    frame    data/chars/ikki/idle6.png
 
 anim idle
     loop 1
@@ -932,7 +945,9 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     frame    data/chars/ikki/special1.png
     frame    data/chars/ikki/special2.png
     @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 0 0 1 0
+	@cmd     spawnbind "ikki_cosmos" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/ikki/special3.png
+	@cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 0 0 1 0
     sound    data/chars/ikki/sounds/00-cosmos.wav
     frame    data/chars/ikki/special4.png
     frame    data/chars/ikki/special5.png

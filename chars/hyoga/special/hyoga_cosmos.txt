@@ -1,0 +1,17 @@
+name	hyoga_cosmos
+type	none
+shadow	0
+setlayer 10
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	8
+	offset	42 116
+	drawmethod alpha 1
+    frame	data/chars/hyoga/special/hyoga_cosmos/hyoga_cosmos-0.png
+	frame	data/chars/hyoga/special/hyoga_cosmos/hyoga_cosmos-1.png
+	frame	data/chars/hyoga/special/hyoga_cosmos/hyoga_cosmos-2.png
+	frame	data/chars/hyoga/special/hyoga_cosmos/hyoga_cosmos-2.png
+	@cmd suicide
+	frame	data/chars/hyoga/special/hyoga_cosmos/hyoga_cosmos-2.png
