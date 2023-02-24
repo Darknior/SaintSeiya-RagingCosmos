@@ -58,6 +58,7 @@ load shun_stream
 load shun_chain
 load shun_chainB
 load shun_chainC
+load shun_cosmos
 load shun_impact
 load shun_impactD
 load shun_constellation
@@ -883,6 +884,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     frame    data/chars/shun/upspecial2.png
     @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/upspecial3.png
+	@cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
     sound    data/chars/shun/sounds/00-cosmos.wav
     frame    data/chars/shun/upspecial4.png
     frame    data/chars/shun/upspecial5.png
