@@ -7,21 +7,9 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
-	delay	3
+	delay	7
 	offset	85 232
 	drawmethod alpha 1
-	frame	data/chars/ikki/special/ikki_aura/aura1.png
-	frame	data/chars/ikki/special/ikki_aura/aura2.png
-	frame	data/chars/ikki/special/ikki_aura/aura3.png
-	frame	data/chars/ikki/special/ikki_aura/aura4.png
-	frame	data/chars/ikki/special/ikki_aura/aura5.png
-	frame	data/chars/ikki/special/ikki_aura/aura6.png
-	frame	data/chars/ikki/special/ikki_aura/aura7.png
-	frame	data/chars/ikki/special/ikki_aura/aura8.png
-	frame	data/chars/ikki/special/ikki_aura/aura9.png
-	frame	data/chars/ikki/special/ikki_aura/aura10.png
-	frame	data/chars/ikki/special/ikki_aura/aura11.png
-	frame	data/chars/ikki/special/ikki_aura/aura12.png
 	frame	data/chars/ikki/special/ikki_aura/aura1.png
 	frame	data/chars/ikki/special/ikki_aura/aura2.png
 	frame	data/chars/ikki/special/ikki_aura/aura3.png
