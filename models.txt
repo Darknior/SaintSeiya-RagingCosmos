@@ -7,6 +7,7 @@ spdirection  1 1 1 1
 #versusdamage 1
 maxattacks 6
 maxfollows 50
+maxfreespecials 15
 
 
 #------------------------

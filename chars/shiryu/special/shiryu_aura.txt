@@ -1,26 +1,26 @@
-name        shiryu_aura
-type        none
-shadow      0
-setlayer    778
+name	shiryu_aura
+type	none
+shadow	0
+setlayer 778
 antigravity 100
-animationscript    data/scripts/player.c
+animationscript	data/scripts/player.c
 
-anim    idle
-    loop     1
-    delay    7
-    offset   85 232
-    drawmethod  alpha 1
-    frame    data/chars/shiryu/special/shiryu_aura/aura1.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura2.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura3.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura4.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura5.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura6.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura7.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura8.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura9.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura10.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura11.png
-    frame    data/chars/shiryu/special/shiryu_aura/aura12.png
-    @cmd     suicide
-    frame    data/chars/shiryu/special/shiryu_aura/aura12.png
+anim	idle
+	loop	1
+	delay	7
+	offset	94 232
+	drawmethod alpha 1
+	frame	data/chars/shiryu/special/shiryu_aura/aura1.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura2.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura3.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura4.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura5.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura6.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura7.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura8.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura9.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura10.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura11.png
+	frame	data/chars/shiryu/special/shiryu_aura/aura12.png
+    @cmd suicide
+    frame	data/chars/shiryu/special/shiryu_aura/aura12.png
