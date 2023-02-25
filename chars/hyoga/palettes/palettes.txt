@@ -109,9 +109,9 @@ Armor 4 : eb6d10
 Armor 5 : ffcc00 (Lighter)
 Armor 6 : fedd42 / White
 
-Cloth 1 : 090e29 / 191919
-Cloth 2 : 1d2652 / 353434
-Cloth 3 : 384582 / 4e4d4d
+Cloth 1 : 191919
+Cloth 2 : 353434
+Cloth 3 : 4e4d4d
 Cloth 4 : 5f6aa1
 
 Hair 0 : 735218 (portrait)
