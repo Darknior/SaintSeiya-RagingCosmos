@@ -31,24 +31,20 @@ Eyes 0 : 1b3b74 (portrait)
 Eyes 1 : 6875b6
 Eyes 2 : 7ba3e9
 
-Red Eye 1 : 315086
-Red Eye 2 : 853917
-Red Eye 3 : e78b80
-
 
 ## Black Hyoga
 
-Armor 0 : 010c16 (Pas de blanc en Dark)
-Armor 1 : 1e2c38 (Darker)
-Armor 2 : 445462
-Armor 3 : 58768a
-Armor 4 : 8999a4
-Armor 5 : b1bfc9 (Lighter)
+Armor 1 : 000000 (Darker)
+Armor 2 : 1f2526
+Armor 3 : 283337
+Armor 4 : 3b4c52
+Armor 5 : 5a7179 (Lighter)
+Armor 6 : 6797a8 / White
 
-Cloth 1 : 151222 (Couleur claire du pantalon)
-Cloth 2 : 2e2266
-Cloth 3 : 4a3c8b
-Cloth 4 : 7265b1
+Cloth 1 : 000207
+Cloth 2 : 0b1741
+Cloth 3 : 12266b
+Cloth 4 : 1a379c
 
 Hair 0 : 12310f (portrait)
 Hair 0.2 : 295325 (portrait)
@@ -69,10 +65,6 @@ Eyes 1 : 0a3c5c (portrait)
 Eyes 2 : 2d6485
 5f93b3
 
-Red Eye 1 : 391514
-Red Eye 2 : 9c1615
-Red Eye 3 : e0b765
-
 
 ## Gold Hyoga
 
@@ -88,6 +80,8 @@ Cloth 2 : 95b7b9
 Cloth 3 : bdd7d9
 Cloth 4 : f5fdfd
 
+Hair 0 :  (portrait)
+Hair 0.2 :  (portrait)
 Hair 1 : d58d03
 Hair 2 : e6b207
 Hair 3 : fffab2
@@ -96,32 +90,46 @@ Belt 1 : a32904
 Belt 2 : f9ba15
 Belt 3 : fcf5ad
 
+Divers 1 : 6a2903
+Divers 2 : d00c0c
+Divers 3 : ffcc00
+
 Eyes 0 : 2c4569 (portrait)
 Eyes 1 : 526a8e (portrait)
 Eyes 2 : 5775cf
 9eb2ee
 
-Idem Red Eyes
 
-
-##
+## FIRE Hyoga
 
 Armor 1 : 2f0101 (Darker)
 Armor 2 : 490303
 Armor 3 : 6f0505
-Armor 4 : b23f3f
-Armor 5 : e0a3a3 (Lighter)
+Armor 4 : eb6d10
+Armor 5 : ffcc00 (Lighter)
+Armor 6 : fedd42 / White
 
-Cloth 1 : 1e7e56
-Cloth 2 : 3ea178
-Cloth 3 : 72c5a3
-Cloth 4 : c6efde
+Cloth 1 : 090e29 / 191919
+Cloth 2 : 1d2652 / 353434
+Cloth 3 : 384582 / 4e4d4d
+Cloth 4 : 5f6aa1
 
-Hair 1 : 000726
-Hair 2 : 2b1e4d
-Hair 3 : 4d3285
+Hair 0 : 735218 (portrait)
+Hair 0.2 : a85a1e (portrait)
+Hair 1 : dea510
+Hair 2 : ffc300 (peu)
+Hair 3 : fdd64d (peu)
+Hair 4 : f6fe18
 
-Belt 1 : afa81b
-Belt 2 : e9e429
-Belt 3 : fff90a
+Belt 1 : 5a2121
+Belt 2 : a00000
+Belt 3 : ff4000
+
+Divers 1 : 6c2f02
+Divers 2 : e46b13
+Divers 3 : ffe400
+
+Eyes 1 : 391514 (portrait)
+Eyes 2 : 9c1615 (portrait)
+Eyes 3 : dc5835
 
