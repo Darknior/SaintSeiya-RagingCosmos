@@ -77,7 +77,7 @@ load marin_swing
 
 icon         data/chars/seiya/palettes/icon1.png 1
 palette      data/chars/seiya/palettes/palette4.png
-#remap       data/chars/seiya/palettes/palette1.png  # 14 Possible MAX
+remap        data/chars/seiya/palettes/palette1.png data/chars/seiya/palettes/palette2.png data/chars/seiya/palettes/palette3.png data/chars/seiya/palettes/palette4.png  # 14 Possible MAX
 
 
 #-- COMMANDES ATTAQUES SPECIALES-----------------------------------------------
@@ -312,12 +312,12 @@ anim down
     frame    data/chars/seiya/walk7.png
 
 anim dodge  # Esquive Haut / Bas (u u / d d)
+    summonframe  0 0 0 0
+    subentity    round_dust
+    jumpframe    2.5 1.8 0
     delay    8
     offset   45 137
     bbox     21 14 51 97
-    summonframe     0 0 0 0
-    subentity       round_dust
-    jumpframe       2.5 1.8 0
     sound    data/chars/seiya/sounds/06-jump1.wav
     frame    data/chars/seiya/jump1.png
     frame    data/chars/seiya/jump2.png
@@ -390,7 +390,7 @@ anim get
     frame    data/chars/seiya/get1.png
 
 
-#//Basic Attacks animations/////////////////////////////////////////////////
+#// Basic Attacks animations /////////////////////////////////////////////////
 
 anim    attack1 # Attaque combo 1
     jugglecost  1
@@ -472,7 +472,7 @@ anim    attack5    # Attaque combo 5
     frame    data/chars/seiya/attack60.png
 
 
-#//Grab animations/////////////////////////////////////////////////
+#// Grab animations /////////////////////////////////////////////////
 
 anim    grab
     delay    7
@@ -481,7 +481,7 @@ anim    grab
     frame    data/chars/seiya/grab1.png
     frame    data/chars/seiya/grab2.png
 
-anim    grabattack # Saisie Coup de genou X2
+anim    grabattack  # Saisie Coup de genou X2
     delay    6
     offset   45 119
     bbox     42 7 30 112
@@ -508,13 +508,13 @@ anim    grabattack2 # Saisie Coup finisher
     frame    data/chars/seiya/grabattack23.png
 
 anim    grabbackward    # Projection en arrière
-    landframe   6
+    summonframe  0 0 0 0
+    subentity    dash_dust
+    landframe    6
     delay    24
     offset   110 124
     @cmd     grabStart
     sound    data/chars/seiya/sounds/23-projection1.wav
-    summonframe  0 0 0 0
-    subentity    dash_dust
     @cmd     position 0 15 15 0 0
     frame    data/chars/seiya/grabbackward1.png
     @cmd     position 0 10 20 0 0
@@ -544,15 +544,15 @@ anim    grabbackward    # Projection en arrière
     frame    data/chars/seiya/rise5.png
 
 
-#//Jump animations/////////////////////////////////////////////////
+#// Jump animations /////////////////////////////////////////////////
 
 anim  runjump
+    summonframe  0 0 0 0
+    subentity    round_dust
     delay    6
     offset   45 137
     bbox     35 14 30 97
     sound    data/chars/seiya/sounds/06-jump1.wav
-    summonframe 0 0 0 0
-    subentity   round_dust
     frame    data/chars/seiya/forwardjump1.png
     frame    data/chars/seiya/forwardjump2.png
     frame    data/chars/seiya/forwardjump3.png
@@ -563,11 +563,11 @@ anim  runjump
     frame    data/chars/seiya/forwardjump8.png
 
 anim    jump    # Saut Statique
+    summonframe  0 0 0 0
+    subentity    round_dust
     delay    10
     offset   45 137
     bbox     39 14 30 97
-    summonframe     0 0 0 0
-    subentity       round_dust
     sound    data/chars/seiya/sounds/06-jump1.wav
     frame    data/chars/seiya/jump1.png
     frame    data/chars/seiya/jump2.png
@@ -578,11 +578,11 @@ anim    jump    # Saut Statique
     frame    data/chars/seiya/jump1.png
 
 anim    forwardjump # Saut vers l'avant
+    summonframe  0 0 0 0
+    subentity    round_dust
     delay    10
     offset   45 137
     bbox     39 14 30 97
-    summonframe     0 0 0 0
-    subentity       round_dust
     sound    data/chars/seiya/sounds/06-jump1.wav
     frame    data/chars/seiya/jump1.png
     frame    data/chars/seiya/jump2.png
@@ -599,11 +599,11 @@ anim    jumpdelay # Animation de saut intermédiaire
     frame    data/chars/seiya/jump1.png
 
 anim    jumpland # Aterrissage du saut
+    summonframe  0 0 0 0
+    subentity    round_dust
     delay    7
     offset   45 112
     bbox     21 0 51 112
-    summonframe  0 0 0 0
-    subentity    round_dust
     sound    data/chars/seiya/sounds/06-jump2.wav
     frame    data/chars/seiya/get1.png
     frame    data/chars/seiya/get2.png
@@ -611,12 +611,12 @@ anim    jumpland # Aterrissage du saut
     frame    data/chars/seiya/get1.png
 
 anim    land #  atterissage safe au sol (haut+ jump pendant la projection)
-    flipframe 1
+    summonframe  0 0 0 0
+    subentity    round_dust
+    flipframe    1
     delay    6
     offset   45 137
     bbox     21 14 51 97
-    summonframe     0 0 0 0
-    subentity       round_dust
     sound    data/chars/seiya/sounds/17-back_kick.wav
     frame    data/chars/seiya/forwardjump5.png
     frame    data/chars/seiya/forwardjump4.png
@@ -632,12 +632,12 @@ anim    land #  atterissage safe au sol (haut+ jump pendant la projection)
     frame    data/chars/seiya/get1.png
 
 anim    jumpattack # Attaque sautée statique
+    summonframe  0 0 0 0
+    subentity    round_dust
     delay    5
     offset   45 112
     hitflash flashbig
     bbox     21 0 51 112
-    summonframe  0 0 0 0
-    subentity    round_dust
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack1.png
     frame    data/chars/seiya/jumpattack2.png
@@ -648,13 +648,13 @@ anim    jumpattack # Attaque sautée statique
     attack4  0
 
 anim    jumpforward # Attaque sautée vers l'avant
+    summonframe  0 0 0 0
+    subentity    round_dust
     delay    5
     offset   45 112
     hitflash blue_swing
     bbox     21 0 51 112
     sound    data/sounds/punch.wav
-    summonframe  0 0 0 0
-    subentity    round_dust
     frame    data/chars/seiya/jumpforward1.png
     attack4  75 42 67 26 10 1 0 0 10 12
     dropv    6.0 2.0 0.0
@@ -663,10 +663,10 @@ anim    jumpforward # Attaque sautée vers l'avant
     attack4  0
 
 anim    jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
+    fastattack  1
     delay    5
     offset   45 112
     hitflash blue_swing
-    fastattack  1
     bbox     21 0 51 112
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack21.png
@@ -697,6 +697,7 @@ anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/seiya/jumpattack32.png
     frame    data/chars/seiya/jumpattack32.png
     attack4  0
+
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
@@ -735,7 +736,7 @@ anim    fall
     frame    data/chars/seiya/fall3.png
     frame    data/chars/seiya/fall4.png
 
-anim fall7
+anim    fall7
     landframe  5
     offset   114 110
     delay    -1000
@@ -746,9 +747,9 @@ anim fall7
     frame    data/chars/seiya/fall4.png
 
 anim    rise
+    jumpframe  0 0 0
     delay    6
     offset   114 110
-    jumpframe  0 0 0
     frame    data/chars/seiya/fall2.png
     frame    data/chars/seiya/fall3.png
     delay    85
@@ -763,9 +764,9 @@ anim    rise
     frame    data/chars/seiya/rise5.png
 
 anim    death
+    landframe  6
     offset   114 110
     delay    10
-    landframe  6
     sound    data/chars/seiya/sounds/20-hurt.wav
     frame    data/chars/seiya/death1.png
     frame    data/chars/seiya/death2.png
@@ -789,8 +790,7 @@ anim    block
 
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
-
-anim    attackbackward # Attaque arrière native (b + a1)
+anim    attackbackward  # Attaque arrière native (b + a1)
     jugglecost 1
     offset   107 148
     hitflash flashmedium
@@ -1009,10 +1009,10 @@ anim    freespecial4    # Attaque arrière (a3)
     frame    data/chars/seiya/attackbackward20.png
 
 anim    freespecial5    # Uppercut (Bas, Avant, a1)
-    jugglecost 2
+    jugglecost  2
+    fastattack  1
     offset   45 134
     bbox     21 22 51 112
-    fastattack  1
     hitflash blue_swing
     delay    5
     sound    data/chars/seiya/sounds/01-dragonpunch.wav
@@ -1052,17 +1052,16 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
     frame    data/chars/seiya/uppercut2.png
 
 anim    freespecial6    # Comète de Pégase ( ULTRA, haut + bouton special a2)
-    jugglecost 10
-    otg 1
-    delay    10
-    offset   31 116
-    fastattack  1
-    sound    data/chars/deathmask/78-cosmos.wav
-    @cmd     spawnScreen "seiya_lights" 0 0 0 0
-    #bbox    21 16 51 97
+    jugglecost   10
+    fastattack   1
     summonframe  0 0 0 0 1
     subentity    seiya_constellation
     energycost   50 1 0
+    otg 1
+    delay    10
+    offset   31 116
+    sound    data/chars/deathmask/78-cosmos.wav
+    @cmd     spawnScreen "seiya_lights" 0 0 0 0
     delay    10
     offset   31 116
     hitflash marin_swing
@@ -1220,7 +1219,7 @@ anim    freespecial7   # Coup de pied haut (haut+ a1)
     frame    data/chars/seiya/attack41.png
 
 anim    freespecial8   # Balayette (bas+a1)
-    jugglecost 1
+    jugglecost  1
     delay    6
     offset   37 148
     bbox     30 48 30 100
