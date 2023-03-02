@@ -94,6 +94,9 @@ com  u + a2         freespecial6    # ULTRA Rozan Shoryuha
 #    u + a1         freespecial7    # High kick
 #    d + a1         freespecial8    # Slide kick
 
+com  u d a1         freespecial9    # attaque au sol
+com  u d + a1       freespecial9    # attaque au sol
+
 #-- ANIMATIONS -------------------------------------------------------
 
 #// Select animations /////////////////////////////////////////////////
@@ -1040,3 +1043,21 @@ anim    freespecial8    # Balayette
     dropv    5.0 0.5
     frame    data/chars/shiryu/slide2.png
     frame    data/chars/shiryu/slide3.png
+	
+anim    freespecial9    # attaque au sol
+    otg 1
+    jugglecost  1
+    delay    10
+    offset   38 135
+    bbox     -4 54 51 75
+    hitflash flashmedium
+	sound    data/chars/shiryu/sounds/dash.wav
+    frame    data/chars/shiryu/grabattack21.png
+    sound    data/sounds/punch.wav
+    frame    data/chars/shiryu/grabattack22.png
+    frame    data/chars/shiryu/grabattack23.png
+    frame    data/chars/shiryu/grabattack24.png
+	attack 33 100 70 50 5 1 0 0 12 30
+	frame    data/chars/shiryu/grabattack25.png
+    frame    data/chars/shiryu/grabattack26.png
+	frame    data/chars/shiryu/grabattack27.png
