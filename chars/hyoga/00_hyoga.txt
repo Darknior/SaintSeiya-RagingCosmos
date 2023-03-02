@@ -1132,7 +1132,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     frame    data/chars/hyoga/special28.png
     frame    data/chars/hyoga/special28.png
 
-anim    freespecial7   # Coup de pied haut
+anim    freespecial7   # Coup de pied haut (haut+a1)
     jugglecost  1
     delay    7
     offset   30 140
@@ -1149,19 +1149,18 @@ anim    freespecial7   # Coup de pied haut
     frame    data/chars/hyoga/attack45.png
     frame    data/chars/hyoga/attack46.png
 
-anim    freespecial8       # Balayette
+anim    freespecial8       # Balayette (bas+a1)
     jugglecost  1
-    delay    7
-    offset   44 150
-    bbox     26 39 35 112
+    delay    10
+    offset   22 127
+    bbox     -4 54 51 75
     hitflash flashmedium
-    frame    data/chars/hyoga/slide0.png
+    frame    data/chars/hyoga/brush1.png
     sound    data/sounds/punch.wav
-    frame    data/chars/hyoga/slide1.png
-    frame    data/chars/hyoga/slide2.png
-    attack1  48 125 67 26 10 1 0 0 12 20
+    frame    data/chars/hyoga/brush2.png
+    dropv    4.0 1.0 0.0
+    attack1  23 100 100 26 10 1 0 0 12 20
     dropv    5.0 0.5
-    frame    data/chars/hyoga/slide3.png
-    frame    data/chars/hyoga/slide4.png
-    frame    data/chars/hyoga/slide0.png
+    frame    data/chars/hyoga/brush3.png
+    frame    data/chars/hyoga/brush4.png
 
