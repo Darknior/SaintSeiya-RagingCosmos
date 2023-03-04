@@ -1,7 +1,7 @@
 name        dash_dust
 type        none
 shadow      0
-setlayer    100
+setlayer    150
 antigravity 100
 #lifespan   1
 animationscript    data/scripts/player.c

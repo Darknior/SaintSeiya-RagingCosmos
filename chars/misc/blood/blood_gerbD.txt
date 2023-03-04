@@ -1,0 +1,22 @@
+name	blood_gerbD
+type	none
+shadow	0
+remove 0
+setlayer 200
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	9
+	offset	70 100
+	drawmethod alpha 6
+   drawmethod  channel 0.99
+	frame	data/chars/misc/blood/blood_gerbD/blood_gerbD-0.png
+	frame	data/chars/misc/blood/blood_gerbD/blood_gerbD-1.png
+	frame	data/chars/misc/blood/blood_gerbD/blood_gerbD-2.png
+	frame	data/chars/misc/blood/blood_gerbD/blood_gerbD-3.png
+	frame	data/chars/misc/blood/blood_gerbD/blood_gerbD-4.png
+	frame	data/chars/misc/blood/blood_gerbD/blood_gerbD-5.png
+	frame	data/chars/misc/blood/blood_gerbD/blood_gerbD-5.png
+	@cmd suicide
+	frame	data/chars/misc/blood/blood_gerbD/blood_gerbD-5.png

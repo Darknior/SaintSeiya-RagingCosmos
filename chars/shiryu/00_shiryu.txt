@@ -22,6 +22,7 @@ jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
+grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
@@ -66,6 +67,7 @@ load shiryu_cosmosB
 load shiryu_constellation
 load shiryu_lights
 load shiryu_dash
+load blood_gerbD
 
 
 #-- PALETTES --------------------------------------------------------
@@ -93,9 +95,6 @@ com  u + a2         freespecial6    # ULTRA Rozan Shoryuha
 
 #    u + a1         freespecial7    # High kick
 #    d + a1         freespecial8    # Slide kick
-
-com  u d a1         freespecial9    # attaque au sol
-com  u d + a1       freespecial9    # attaque au sol
 
 #-- ANIMATIONS -------------------------------------------------------
 
@@ -447,10 +446,10 @@ anim    attack5 # Attaque combo 5
 
 anim    grab        # Choppe
     delay    7
-    offset   39 130
-    bbox     39 15 30 115
-    frame    data/chars/shiryu/grab1.png
-    frame    data/chars/shiryu/grab2.png
+    offset   21 115
+    bbox     17 5 30 115
+    frame    data/chars/shiryu/grab10.png
+    frame    data/chars/shiryu/grab11.png
 
 anim    grabattack # Choppe, Coup de genou X2
     delay    7
@@ -465,43 +464,58 @@ anim    grabattack # Choppe, Coup de genou X2
 
 anim    grabattack2 # Choppe, Coup finisher
     delay    7
-    offset   39 130
-    bbox     33 15 30 115
+    offset   78 123
     hitflash flashbig
     frame    data/chars/shiryu/attack41.png
     frame    data/chars/shiryu/attack42.png
-    dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 1 0 0 10 12
+	attack 89 16 70 40 0 1 0 0 20 25
     frame    data/chars/shiryu/attack43.png
     frame    data/chars/shiryu/attack44.png
     frame    data/chars/shiryu/attack45.png
-    attack1  0
 
-anim    throw   # Choppe, Projection en arrière
+anim    grabbackward    # Choppe, Projection en arrière
     throwdamage     20
-    throwframewait  4
     delay    10
-    offset   102 130
-    bbox     62 15 51 115
-    throw    10 7
+    offset   143 135
+    bbox     137 26 35 115
+    @cmd     grabStart
     sound    data/chars/shiryu/sounds/23-projection1.wav
-    frame    data/chars/shiryu/grabbackward1.png
-    frame    data/chars/shiryu/grabbackward2.png
+    @cmd     spawnbind "dash_dust" "ANI_IDLE" -30 10 0 1 0
+    frame    data/chars/shiryu/grab12.png
+    @cmd     position 0 10 25 0 0
+    frame    data/chars/shiryu/grab13.png
     sound    data/chars/shiryu/sounds/23-projection2.wav
-    frame    data/chars/shiryu/grabbackward3.png
-    frame    data/chars/shiryu/grabbackward4.png
-    frame    data/chars/shiryu/grabbackward5.png
+    frame    data/chars/shiryu/grab14.png
+    frame    data/chars/shiryu/grab15.png
+	 bbox 0 0 0 0
+    frame    data/chars/shiryu/grab16.png
+    @cmd     slam 100 2 5 2 0 0
+    frame    data/chars/shiryu/grab17.png
     delay    50
-    frame    data/chars/shiryu/grabbackward6.png
-    summonframe    0 0 0 0 0
-    subentity      shiryu_round_dust
-    unsummonframe  15
+    frame    data/chars/shiryu/grab18.png
     offset   114 130
     delay    10
     frame    data/chars/shiryu/rise1.png
     frame    data/chars/shiryu/rise2.png
     frame    data/chars/shiryu/rise3.png
     frame    data/chars/shiryu/rise4.png
+    
+anim    grabforward  # projection en avant
+    delay    9
+    offset   31 124
+    bbox     16 13 30 115
+    @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
+    @cmd     grabStart
+    @cmd     position 0 10 25 0 0
+    frame    data/chars/shiryu/runattack2.png
+    sound    data/chars/shiryu/sounds/dash.wav
+    frame    data/chars/shiryu/runattack3.png
+    @cmd     slam 100 2 -5 2 0 0
+    frame    data/chars/shiryu/runattack4.png
+    frame    data/chars/shiryu/runattack5.png
+    frame    data/chars/shiryu/runattack6.png
+    frame    data/chars/shiryu/runattack7.png
+    frame    data/chars/shiryu/runattack8.png
 
 
 #// Jump animations /////////////////////////////////////////////////
@@ -1036,13 +1050,14 @@ anim    freespecial8    # Balayette (bas+a1)
     frame    data/chars/shiryu/slide2.png
     frame    data/chars/shiryu/slide3.png
 
-anim    freespecial9    # Attaque au sol
+#anim    freespecial9    # Attaque au sol
+anim    attackdown      # attaque au sol
     jugglecost  1
     delay    10
     offset   38 135
     otg      1
     bbox     -4 54 51 75
-    hitflash flashmedium
+    hitflash blood_gerbD
     sound    data/chars/shiryu/sounds/dash.wav
     frame    data/chars/shiryu/grabattack21.png
     sound    data/sounds/punch.wav
@@ -1050,7 +1065,10 @@ anim    freespecial9    # Attaque au sol
     frame    data/chars/shiryu/grabattack23.png
     frame    data/chars/shiryu/grabattack24.png
     attack   33 100 70 50 5 1 0 0 12 30
+    dropv    3 4
     frame    data/chars/shiryu/grabattack25.png
     frame    data/chars/shiryu/grabattack26.png
     frame    data/chars/shiryu/grabattack27.png
+    
+ 
 
