@@ -22,6 +22,7 @@ jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 
+grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
@@ -420,9 +421,9 @@ anim attack1 # Attaque combo 1
     delay    6
     offset    39 136
     bbox 20 17 30 120
-    frame    data/chars/ikki/attack3.png
-    frame    data/chars/ikki/attack2.png
     frame    data/chars/ikki/attack1.png
+    frame    data/chars/ikki/attack2.png
+    frame    data/chars/ikki/attack3.png
     attack1 54 33 67 26 6 0 0 0 12 20
     frame    data/chars/ikki/attack4.png
     attack1 0
@@ -500,36 +501,34 @@ anim attack6 # Attaque combo 6
 
 anim grab
     delay    7
-    offset    49 166
-    bbox 42 46 30 120
-    frame    data/chars/ikki/grab0.png
+    offset    25 130
+    bbox 13 19 30 120
     frame    data/chars/ikki/grab1.png
     frame    data/chars/ikki/grab2.png
 
 anim grabattack #Saisie Coup de genou X2
     delay    7
-    offset    45 137
+    offset    47 136
     hitflash flashmedium
     bbox 21 17 51 120
     frame    data/chars/ikki/grabattack1.png
     frame    data/chars/ikki/grabattack2.png
-    attack3 40 60 80 26 7 0 0 0 5 20
+	 attack 46 50 50 30 8 0 0 0 15 20
     frame    data/chars/ikki/grabattack3.png
-    attack3 0
 
 anim grabattack2 #Saisie Coup finisher
     delay    6
     offset    39 140
     bbox 22 21 30 120
     hitflash flashbig
-    attack1 0 0 0 0 0 0 0 0 0 0
+	 attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/ikki/attack61.png
     frame    data/chars/ikki/attack62.png
     frame    data/chars/ikki/attack63.png
     frame    data/chars/ikki/attack64.png
-    attack1 53 21 67 60 10 1 0 0 12 20
     dropv     5.0 0.5
     frame    data/chars/ikki/attack65.png
+	 attack 23 20 100 50 8 1 0 0 20 20
     frame    data/chars/ikki/attack66.png
 
 anim throw #Projection en arrière
@@ -538,7 +537,7 @@ anim throw #Projection en arrière
     bbox 47 50 51 120
     throw 7 7
     throwdamage 20
-    sound   data/chars/ikki/sounds/23-projection1.wav
+    sound   data/chars/ikki/sounds/grabbackward.wav
     frame    data/chars/ikki/grab3.png
     frame    data/chars/ikki/grab4.png
     sound   data/chars/ikki/sounds/23-projection2.wav
@@ -547,6 +546,21 @@ anim throw #Projection en arrière
     frame    data/chars/ikki/grab5.png
     frame    data/chars/ikki/grab5.png
     frame    data/chars/ikki/grab5.png
+    
+anim    grabforward  # projection en avant
+    delay    9
+    offset    39 136
+    bbox 20 17 30 120
+    @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
+    @cmd     grabStart
+    @cmd     position 0 10 25 0 0
+    frame    data/chars/ikki/attack1.png
+    frame    data/chars/ikki/attack2.png
+    frame    data/chars/ikki/attack3.png
+    sound   data/chars/ikki/sounds/grabforward2.wav
+    @cmd     slam 100 2 -3.5 2 0 0
+    delay    15
+    frame    data/chars/ikki/attack4.png
 
 
 #//Jump animations/////////////////////////////////////////////////

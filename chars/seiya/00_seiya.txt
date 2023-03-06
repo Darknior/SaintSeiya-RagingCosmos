@@ -542,6 +542,20 @@ anim    grabbackward    # Projection en arrière
     frame    data/chars/seiya/rise3.png
     frame    data/chars/seiya/rise4.png
     frame    data/chars/seiya/rise5.png
+    
+anim    grabforward  # projection en avant
+    delay    10
+    offset   45 119
+    bbox     26 7 30 112
+    @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
+    @cmd     grabStart
+    @cmd     position 0 10 25 0 0
+    frame    data/chars/seiya/attack21.png
+    frame    data/chars/seiya/attack22.png
+    frame    data/chars/seiya/attack23.png
+    sound    data/chars/seiya/sounds/kick.wav
+    @cmd     slam 100 2 -3.5 2 0 0
+    frame    data/chars/seiya/attack24.png
 
 
 #// Jump animations /////////////////////////////////////////////////
