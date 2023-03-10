@@ -454,7 +454,7 @@ anim    grab        # Choppe
 
 anim    grabattack # Choppe, Coup de genou X2
     delay    7
-    offset   44 125
+    offset   69 125
     hitflash flashmedium
     bbox     34 29 35 100
     frame    data/chars/shiryu/attack31.png
@@ -465,11 +465,11 @@ anim    grabattack # Choppe, Coup de genou X2
 
 anim    grabattack2 # Choppe, Coup finisher
     delay    7
-    offset   40 127
+    offset   77 127
     hitflash flashbig
     frame    data/chars/shiryu/attack41.png
     frame    data/chars/shiryu/attack42.png
-	attack 89 16 70 40 0 1 0 0 20 25
+	attack 120 4 40 40 0 1 0 0 20 25
     frame    data/chars/shiryu/attack43.png
     frame    data/chars/shiryu/attack44.png
     frame    data/chars/shiryu/attack45.png
