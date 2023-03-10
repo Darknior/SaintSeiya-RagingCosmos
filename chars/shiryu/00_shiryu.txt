@@ -445,26 +445,27 @@ anim    attack5 # Attaque combo 5
 #// Grab animations /////////////////////////////////////////////////
 
 anim    grab        # Choppe
-    delay    7
-    offset   21 115
-    bbox     17 5 30 115
-    frame    data/chars/shiryu/grab10.png
-    frame    data/chars/shiryu/grab11.png
+    delay    8
+    offset   42 147
+    bbox     42 33 30 115
+    frame    data/chars/shiryu/grab1.png
+    frame    data/chars/shiryu/grab2.png
+    frame    data/chars/shiryu/grab3.png
 
 anim    grabattack # Choppe, Coup de genou X2
     delay    7
-    offset   57 128
+    offset   44 125
     hitflash flashmedium
     bbox     34 29 35 100
     frame    data/chars/shiryu/attack31.png
     frame    data/chars/shiryu/attack32.png
-    attack   78 52 60 20 5 0 0 0 12 20
+	attack 98 52 40 20 5 0 0 0 12 20
     bbox     68 30 35 100
     frame    data/chars/shiryu/attack33.png
 
 anim    grabattack2 # Choppe, Coup finisher
     delay    7
-    offset   78 123
+    offset   40 127
     hitflash flashbig
     frame    data/chars/shiryu/attack41.png
     frame    data/chars/shiryu/attack42.png
