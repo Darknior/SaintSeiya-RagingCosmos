@@ -481,18 +481,25 @@ anim    grabbackward    # Choppe, Projection en arrière
     bbox     137 26 35 115
     @cmd     grabStart
     @cmd     spawnbind "dash_dust" "ANI_IDLE" -30 10 0 1 0
+    @cmd     position 0 33 11 -1 0
     frame    data/chars/shiryu/grab12.png
-    @cmd     position 0 10 25 0 0
+    @cmd     position 0 33 14 -1 0
     frame    data/chars/shiryu/grab13.png
+    @cmd     position 0 33 14 -1 0
     sound    data/chars/shiryu/sounds/kick.wav
     frame    data/chars/shiryu/grab14.png
+    @cmd     position 0 33 14 -1 0
     frame    data/chars/shiryu/grab15.png
+    @cmd     position 0 33 14 -1 0
     sound    data/chars/shiryu/sounds/23-projection2.wav
 	 bbox 0 0 0 0
     frame    data/chars/shiryu/grab16.png
-    @cmd     slam 100 2 5 2 0 0
+    @cmd     position 0 -73 21 -1 0
     frame    data/chars/shiryu/grab17.png
-    delay    50
+    @cmd     position 0 -111 21 -1 0
+    frame    data/chars/shiryu/grab18.png
+    @cmd     slam 100 2 5 2 0 0
+    delay    40
     frame    data/chars/shiryu/grab18.png
     offset   114 130
     delay    10
