@@ -52,7 +52,7 @@ subject_to_screen 1      # ne peut pas aller hors ecran
 
 #-- SCRIPTS ---------------------------------------------------------
 
-#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
 
 script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
 animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
