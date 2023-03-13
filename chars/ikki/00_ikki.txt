@@ -1150,20 +1150,18 @@ anim freespecial7   # Coup de pied haut
     frame    data/chars/ikki/attack65.png
     frame    data/chars/ikki/attack66.png
 
-
-anim freespecial8   # Balayette
+anim    freespecial8   # Balayette (bas+a1)
     jugglecost  1
-    delay    7
-    offset   34 110
-    bbox     32 30 30 80
+    delay    10
+    offset   22 127
+    bbox     -4 54 51 75
     hitflash flashmedium
-    frame    data/chars/ikki/slide0.png
+    frame    data/chars/ikki/brush1.png
     sound    data/sounds/punch.wav
-    frame    data/chars/ikki/slide1.png
-    frame    data/chars/ikki/slide2.png
-    bbox     16 30 30 80
-    attack   38 75 60 45 7 1 0 0 12 20
+    frame    data/chars/ikki/brush2.png
+    dropv    4.0 1.0 0.0
+    attack1  23 100 100 26 10 1 0 0 12 20
     dropv    5.0 0.5
-    frame    data/chars/ikki/slide3.png
-    frame    data/chars/ikki/slide1.png
-    frame    data/chars/ikki/slide0.png
+    frame    data/chars/ikki/brush3.png
+    frame    data/chars/ikki/brush4.png
+
