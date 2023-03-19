@@ -114,7 +114,7 @@ anim    select  # Personnage sélectionné
 
 anim spawn
     delay    15
-    offset    67 128
+    offset    66 148
     sound data/chars/camus/sounds/01-greetings.wav
     frame    data/chars/camus/spawn3.png
     @cmd spawnDialog "dialog_camus1" 200 100
@@ -235,7 +235,7 @@ anim pain2 # Down
 
 anim fall
     delay    10
-    offset    97 127
+    offset    97 135
     landframe 4
     bbox 0 47 120 80
     frame    data/chars/camus/fall1.png
@@ -264,14 +264,6 @@ anim death
     frame    data/chars/camus/special23.png
     frame    data/chars/camus/special24.png
     @cmd spawnDialog "dialog_camus2" 200 100
-    frame    data/chars/camus/special25.png
-    offset    110 240
-    frame    data/chars/camus/death1.png
-    frame    data/chars/camus/death2.png
-    frame    data/chars/camus/death3.png
-    frame    data/chars/camus/death4.png
-    frame    data/chars/camus/death5.png
-    frame    data/chars/camus/death6.png
     frame    data/chars/camus/death7.png
     @cmd spawnDialog "dialog_camus3" 200 100
     frame    data/chars/camus/death7.png
@@ -286,7 +278,7 @@ anim rise
 
 anim attack1 # Attaque combo 1
     delay    5
-    offset    56 146
+    offset    56 148
     bbox 35 32 45 114
     frame    data/chars/camus/attack1.png
 	attack1 56 26 66 25 10 0 0 0 5 12
@@ -309,7 +301,7 @@ anim attack2 # Attaque combo 2
 
 anim attack3 # Attaque combo 3
     delay    8
-    offset    56 146
+    offset    56 148
     bbox 32 18 45 129
     frame    data/chars/camus/attack31.png
     frame    data/chars/camus/attack32.png
@@ -322,18 +314,18 @@ anim attack3 # Attaque combo 3
 
 anim attack4 # Attaque combo 4
     delay    5
-    offset    56 146
+    offset    56 150
     bbox 32 18 38 129
     hitflash flashmedium
-    attack1 0 0 0 0 0 0 0 0 0 0
+	attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/camus/attack41.png
     frame    data/chars/camus/attack42.png
     frame    data/chars/camus/attack43.png
-    attack1 49 58 75 26 10 0 0 0 5 12
+	attack1 49 58 75 26 10 0 0 0 5 12
     frame    data/chars/camus/attack45.png
     frame    data/chars/camus/attack45.png
     frame    data/chars/camus/attack44.png
-    attack1 0
+	attack1 0
     frame    data/chars/camus/attack43.png
 
 anim attack5 # Attaque combo 5
@@ -353,7 +345,7 @@ anim attack5 # Attaque combo 5
 
 anim jump # Saut Statique
     delay    10
-    offset    45 132
+    offset    45 146
     bbox 30 1 38 94
     summonframe 0 0 0 0
     subentity round_dust
@@ -385,18 +377,18 @@ anim jumpland # Aterrissage du saut
 
 anim jumpattack # Attaque sautée statique
     delay    10
-    offset    45 132
+    offset    45 129
     bbox 24 0 38 92
     sound data/sounds/punch.wav
     frame    data/chars/camus/jumpattack1.png
     frame    data/chars/camus/jumpattack2.png
-    attack1 57 44 80 48 10 1 0 0 5 12
+	attack1 57 44 80 48 10 1 0 0 5 12
 	dropv    6.0 2.0 0.0
     frame    data/chars/camus/jumpattack3.png
 
 anim special # Défense spéciale Ice pike
     delay    15
-    offset    70 154
+    offset    68 158
     sound data/chars/camus/sounds/07-icewall.wav
     energycost  25 1 0
         hitflash marin_swing
@@ -417,7 +409,7 @@ anim special # Défense spéciale Ice pike
     frame    data/chars/camus/special9.png
     frame    data/chars/camus/special10.png
     frame    data/chars/camus/special11.png
-    attack5 0
+	attack5 0
     frame    data/chars/camus/special1.png
 
 anim freespecial3 #Camus ice star
@@ -425,7 +417,7 @@ anim freespecial3 #Camus ice star
     forcedirection -1
     range 200 400
     delay    10
-    offset    70 154
+    offset    68 158
     energycost  25 1 0
     bbox 47 28 50 130
     frame    data/chars/camus/special1.png
@@ -454,7 +446,7 @@ anim freespecial3 #Camus ice star
 
 anim special2 # Défense spéciale icecrystal
     delay    10
-    offset    70 154
+    offset    68 158
     sound data/chars/camus/sounds/07-icewall.wav
     energycost  25 1 0
         hitflash marin_swing
@@ -482,7 +474,7 @@ anim special2 # Défense spéciale icecrystal
 
 anim freespecial6 # Aurora execution ( haut + bouton special)
     delay    10
-    offset    76 143
+    offset    81 150
     fastattack 1
     @cmd     spawnScreen "camus_lights" 0 0 0 0
     sound data/chars/camus/sounds/05-constellation.wav
@@ -610,7 +602,7 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
 
 anim riseattack # Défense spéciale icecrystal
     delay    10
-    offset    70 154
+    offset    68 158
     sound data/chars/camus/sounds/07-icewall.wav
     energycost  10 1 0
         hitflash marin_swing
@@ -631,7 +623,7 @@ anim riseattack # Défense spéciale icecrystal
     frame    data/chars/camus/special9.png
     frame    data/chars/camus/special10.png
     frame    data/chars/camus/special11.png
-    attack5 0
+	attack5 0
     frame    data/chars/camus/special1.png
 
 anim    block
