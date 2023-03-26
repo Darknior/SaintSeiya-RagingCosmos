@@ -73,7 +73,7 @@ load blood_gerbD
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/shiryu/palettes/icon1.png 1
-palette      data/chars/shiryu/palettes/palette4.png
+palette      data/chars/shiryu/palettes/palette1.png
 remap        data/chars/shiryu/palettes/palette1.png data/chars/shiryu/palettes/palette2.png data/chars/shiryu/palettes/palette3.png data/chars/shiryu/palettes/palette4.png  # 14 Possible MAX
 
 

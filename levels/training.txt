@@ -35,7 +35,12 @@ at          0
 
 spawn       SOLDIERTRAINING
 health      1000
-coords      650 390
+coords      750 290
+at          0
+
+spawn       SOLDIERTRAINING
+health      1000
+coords      750 390
 at          0
 
 group       1 1
