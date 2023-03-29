@@ -49,7 +49,7 @@ script              data/scripts/entity_effects.c         # Permet d avoir un ef
 animationscript     data/scripts/player.c                 # Améliore la maniabilité du joueur
 didhitscript        data/scripts/didhit/tint_purple.c     # Effets de teinte sur sprite : VIOLET
 ondeathscript	    data/scripts/timer_reset.c            # Mort du Timer à zéro
-
+keyscript           data/scripts/commands.c               # Mort du Timer à zéro
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
