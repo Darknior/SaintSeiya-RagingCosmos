@@ -120,6 +120,7 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 	//IN LEVEL
 	if(openborvariant("in_level")){
 		drawOverlay();
+		drawRush();
 		timeOver();
 	}
 	
@@ -338,4 +339,47 @@ void main(){
     // as full screen zooming, place them here.
 
 
+}
+
+void drawRush()
+{//Draw rush counter
+	void player1 = getplayerproperty(0, "entity");
+	void player2 = getplayerproperty(1, "entity");
+	void player3 = getplayerproperty(2, "entity");
+	void player4 = getplayerproperty(3, "entity");
+	
+	if(!openborvariant("in_options")){
+		rushFunction(player1);
+		rushFunction(player2);
+		rushFunction(player3);
+		rushFunction(player4);
+	}
+}
+
+void rushFunction(void player)
+{//Script used to reduce code size
+	
+	if(player != NULL()){
+		float xPos		= openborvariant("xpos");
+		float yPos		= openborvariant("ypos");
+		float screen	= openborvariant("gfx_y_offset");
+		int dir			= getentityproperty(player, "direction");
+		int x			= getentityproperty(player, "x");
+		int y			= getentityproperty(player, "y");
+		int z			= getentityproperty(player, "z");
+		int rush		= getentityproperty(player, "rush_count");
+		int xRight		= 20;
+		int xLeft		= 25;
+		int yDif		= 125;
+		int font		= 0;
+		int layer		= 1001;
+		int minRush		= 2;
+		
+		if(rush >= minRush){
+			if(dir == 1){x = x-xPos-xRight;}
+			if(dir == 0){x = x-xPos-xLeft;}
+			y = z-yPos+screen-y-yDif;
+			drawstring(x, y, font, "COMBO_"+rush, layer);
+		}
+	}
 }
