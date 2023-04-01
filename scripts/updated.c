@@ -368,10 +368,10 @@ void rushFunction(void player)
 		int y			= getentityproperty(player, "y");
 		int z			= getentityproperty(player, "z");
 		int rush		= getentityproperty(player, "rush_count");
-		int xRight		= 20;
-		int xLeft		= 25;
-		int yDif		= 125;
-		int font		= 0;
+		int xRight		= 45;
+		int xLeft		= 55;
+		int yDif		= 130;
+		int font		= 8;
 		int layer		= 1001;
 		int minRush		= 2;
 		
