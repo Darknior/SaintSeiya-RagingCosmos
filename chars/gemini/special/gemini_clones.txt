@@ -20,12 +20,12 @@ anim	idle
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones6.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
-	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
-	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
-	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
-	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
+	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones8.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones7.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones6.png
