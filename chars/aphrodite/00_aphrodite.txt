@@ -81,8 +81,6 @@ load aphrodite_poissons
 load aphrodite_ultra
 load camus_lights
 load shaka_lotus_petals
-load aphrodite_explosion
-load aphrodite_lionstar
 load aldebaran_block
 load aldebaran_aura
 
@@ -407,7 +405,7 @@ anim special # Défense spéciale rose explosion
         @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/aphrodite/special2.png
     frame    data/chars/aphrodite/special6.png
-        @cmd     spawnbind "aphrodite_explosion" "ANI_IDLE" 0 0 0 0 0
+        @cmd     spawnbind "aphrodite_rose_explosion" "ANI_IDLE" 0 0 0 0 0
     attack5 -50 3 200 142 30 1 0 0 5 12
     dropv 4.0 3.0 0.0
     frame    data/chars/aphrodite/special12.png
