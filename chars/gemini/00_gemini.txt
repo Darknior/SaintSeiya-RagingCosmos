@@ -99,10 +99,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     offset   66 144
     bbox     46 13 38 137
     frame    data/chars/gemini/idle1.png
-    frame    data/chars/gemini/idle2.png
-    frame    data/chars/gemini/idle3.png
-    frame    data/chars/gemini/idle4.png
-    frame    data/chars/gemini/idle5.png
+
 
 anim    select  # Personnage sélectionné
     delay    150
@@ -145,10 +142,6 @@ anim idle
     offset    66 144
     bbox 46 13 45 137
     frame    data/chars/gemini/idle1.png
-    frame    data/chars/gemini/idle2.png
-    frame    data/chars/gemini/idle3.png
-    frame    data/chars/gemini/idle4.png
-    frame    data/chars/gemini/idle5.png
 
 anim turn
     delay    12

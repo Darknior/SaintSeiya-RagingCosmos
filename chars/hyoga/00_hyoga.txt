@@ -73,7 +73,7 @@ load marin_stormA
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/hyoga/palettes/icon1.png 1
-palette      data/chars/hyoga/palettes/palette4.png
+palette      data/chars/hyoga/palettes/palette1.png
 remap        data/chars/hyoga/palettes/palette1.png data/chars/hyoga/palettes/palette2.png data/chars/hyoga/palettes/palette3.png data/chars/hyoga/palettes/palette4.png  # 14 Possible MAX
 
 
