@@ -368,8 +368,8 @@ void rushFunction(void player)
 		int y			= getentityproperty(player, "y");
 		int z			= getentityproperty(player, "z");
 		int rush		= getentityproperty(player, "rush_count");
-		int xRight		= 45;
-		int xLeft		= 55;
+		int xRight		= 25;
+		int xLeft		= 25;
 		int yDif		= 130;
 		int font		= 8;
 		int layer		= 1001;
@@ -379,7 +379,7 @@ void rushFunction(void player)
 			if(dir == 1){x = x-xPos-xRight;}
 			if(dir == 0){x = x-xPos-xLeft;}
 			y = z-yPos+screen-y-yDif;
-			drawstring(x, y, font, "COMBO_"+rush, layer);
+			drawstring(x, y, font, rush+"__HITS", layer);
 		}
 	}
 }
