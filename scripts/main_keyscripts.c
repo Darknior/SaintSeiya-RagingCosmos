@@ -44,3 +44,28 @@ void super(void anim)
 		}
 	}
 }
+
+void downAttack(void anim)
+{//Perform super attacks
+	void self	= getlocalvar("self");
+	int valid	= getentityproperty(self, "animvalid", anim);
+	int iPIndex	= getlocalvar("player");
+	
+	if(valid){
+		void target	= findtarget(self, anim);
+
+		if(target != NULL()){
+			if(playerkeys(iPIndex, 1, "attack")){
+				void vAniID	= getentityproperty(self,"animationID");
+				void tAniID	= getentityproperty(target,"animationID");
+
+				if(vAniID == openborconstant("ANI_DOWN")){
+					if(tAniID == openborconstant("ANI_FALL")){
+						changeentityproperty(self, "velocity", 0, 0, 0);
+						performattack(self, anim, 0);
+					}
+				}
+			}
+		}
+	}
+}

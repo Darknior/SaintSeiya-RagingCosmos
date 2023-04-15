@@ -1058,9 +1058,11 @@ anim    freespecial8    # Balayette (bas+a1)
     frame    data/chars/shiryu/slide2.png
     frame    data/chars/shiryu/slide3.png
 
-#anim    freespecial9    # Attaque au sol
-anim    attackdown      # attaque au sol
-    jugglecost  1
+anim    freespecial9    # Attaque au sol
+    range 0 100
+    rangea 0 5
+    rangez -20 20
+    jugglecost  0
     delay    10
     offset   38 135
     otg      1
