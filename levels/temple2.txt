@@ -3,48 +3,51 @@ music		data/music/Pegasus_Fantasy_instrumental.ogg
 
 panel		data/bgs/temple2-road/temple2-road.png 
 frontpanel  data/bgs/temple2-road/layer1.png 
-bglayer  	data/bgs/temple2-road/temple2-sky.png		1 1 0 0 0 0 1 1 1 0
+rackground      data/bgs/temple2-road/temple2-sky.png        1 1 0 0 0 0 1 1 1 0
+bglayer  	data/bgs/temple2-road/temple2-sky.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
 bglayer     data/bgs/temple2-road/temple2-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple2-road/temple2-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
+fglayer  	data/bgs/temple2-road/temple2-skyB.png		 -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+bgspeed 1 0
 
-cameratype 1
 light        256 -44
 at        0
 shadowalpha     6
 at        0
 direction right
 
-settime 100
+settime 0
+
+cameratype 1
 
 order	a
+
+spawn1  60 30
+
+\\rock 3
+
+
 
 
 
 
 nofadeout 0
+disablehof 1
+lives 4
+noshare 1
+credits 1
+cansave 0
+nodebug 1
+notime 1
 nosave 1
 blocked 1
+nosame 1
 noslow 1
+completebg 1
 
 
 
 -------------------------------------
-
-spawn       horloge-segment
-coords      368 89
-at          0
-
-spawn       horloge-taureau
-coords      368 89
-at          0
-
-spawn       horloge-flame
-coords      387 47
-at          0
-
-spawn       time-is-up
-coords      368 89
-at          0
 
 spawn       temple2roadcolumns
 coords      0 0
