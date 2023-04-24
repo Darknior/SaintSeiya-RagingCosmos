@@ -3,10 +3,11 @@ music		data/music/Pegasus_Fantasy_instrumental.ogg
 
 panel		data/bgs/temple2-road/temple2-road.png 
 frontpanel  data/bgs/temple2-road/layer1.png 
-bglayer  	data/bgs/temple2-road/temple2-sky.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
+bglayer  	data/bgs/temple2-road/clouds-back.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
 bglayer     data/bgs/temple2-road/temple2-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple2-road/temple2-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
-fglayer  	data/bgs/temple2-road/temple2-skyB.png		 -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer  	data/bgs/temple2-road/clouds-front.png		 -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer     data/bgs/temple2-road/clouds-road.png        -25 -0.4 0 0 -500 0 0 -1 -1 1 1 0 0 0 0 1
 bgspeed 1 0
 
 light        256 -44
@@ -45,6 +46,7 @@ at          0
 spawn       temple2roadcolumns
 coords      0 0
 at          0
+
 
 spawn malesoldier
 alias SOLDIER

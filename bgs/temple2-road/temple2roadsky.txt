@@ -1,0 +1,12 @@
+name            temple2roadsky
+type            panel
+speedf          -0.7
+setlayer        200
+facing          1
+offscreenkill 10000
+
+anim idle
+    offset      0 0
+    drawmethod  alpha 6
+    drawmethod  channel 0.3
+    frame       data/bgs/temple2-road/clouds-road.png

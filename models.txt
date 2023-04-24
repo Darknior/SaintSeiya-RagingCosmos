@@ -452,6 +452,7 @@ know     aphrodite_dialog2    data/bgs/temple12/aphrodite_dialog/aphrodite_dialo
 
 ## TEMPLE 2 ROAD
 know    temple2roadcolumns      data/bgs/temple2-road/temple2roadcolumns.txt
+know    temple2roadsky      data/bgs/temple2-road/temple2roadsky.txt
 
 ## TEMPLE 3
 know    temple3_columns     data/bgs/temple3/columns/temple3_columns.txt
