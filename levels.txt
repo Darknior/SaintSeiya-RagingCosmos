@@ -365,7 +365,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple5boss.txt
 
-set         Temple_6_Road-Asterion-Ikki
+set         Temple_6_Road-Ikki
 maxplayers  1
 lives       1
 credits     10
@@ -374,7 +374,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  ikki
-z           390 484
+z           330 484
 file        data/levels/temple6.txt
 
 set         Temple_6_Midboss_Shiva_Agora-Ikki

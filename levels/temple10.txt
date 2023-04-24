@@ -1,5 +1,5 @@
 
-music       data/music/MSC-tragic.ogg
+music       data/music/montagnes-rocheuses.ogg
 
 panel		data/bgs/temple10-road/temple10-road.png 
 frontpanel  data/bgs/temple10-road/layer1.png 
