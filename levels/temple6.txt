@@ -1,34 +1,30 @@
 
-music		data/music/Heated_Saints.ogg
+music       data/music/MSC-tragic.ogg
 
-panel		data/bgs/ROOMS/temple6.png 
+panel		data/bgs/temple6-road/temple6-road.png 
+frontpanel  data/bgs/temple6-road/layer1.png 
+background  	data/bgs/temple6-road/temple6-sky.png		1 1 0 0 0 0 1 1 1 0
+rglayer  	data/bgs/temple6-road/clouds-back.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
+bglayer     data/bgs/temple6-road/temple6-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple6-road/temple6-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
+fglayer  	data/bgs/temple6-road/clouds-front.png		 -2000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 
-
-background                 data/bgs/ROOMS/sky003.png
-
+bgspeed 1 0
 cameratype 1
-
+light        256 -44
+at        0
+shadowalpha     6
+at        0
 direction right
 
 settime 99
 
 order	a
 
+spawn1 60 400
 
-
-\\rock 3
-
-
-
-
-
-
-nofadeout 0
-nosave 1
-blocked 1
-noslow 1
-
-
+wall		497 809 -500 -500 3307 2837 324 400 # Mur 1 le long de la falaise
+wall		3824 800 0 0 693 693 308 306		# Mur 2 à droite du temple
 
 -------------------------------------
 
@@ -48,9 +44,21 @@ spawn       time-is-up
 coords      368 89
 at          0
 
-spawn asterion
-coords	650 400
-at 0
+spawn       temple6rain
+coords      0 0
+at          0
+
+spawn       temple6raindrop
+coords      0 0
+at          0
+
+spawn       temple6raindrop2
+coords      0 0
+at          0
+
+spawn       temple6raindrop3
+coords      0 0
+at          0
 
 spawn soldier1
 alias SOLDIER
@@ -192,10 +200,3 @@ at 3800
 
 wait
 at 3800
-
-
-
-
-
-
-

@@ -473,6 +473,12 @@ know    temple4_faces03     data/bgs/temple4/faces/temple4_faces03.txt
 know    flame               data/bgs/temple5/flame/flame.txt
 know    temple5columns      data/bgs/temple5/temple5columns.txt
 
+## TEMPLE 6 ROAD
+know    temple6rain      data/bgs/temple6-road/temple6rain.txt
+know    temple6raindrop      data/bgs/temple6-road/temple6raindrop.txt
+know    temple6raindrop2      data/bgs/temple6-road/temple6raindrop2.txt
+know    temple6raindrop3      data/bgs/temple6-road/temple6raindrop3.txt
+
 ## TEMPLE 6 MIDBOSS
 know    volcano_flame      data/bgs/temple6_midboss/volcano_flame.txt
 
