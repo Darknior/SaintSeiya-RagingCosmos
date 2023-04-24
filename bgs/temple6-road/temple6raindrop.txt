@@ -1,7 +1,6 @@
 name            temple6raindrop
 type            panel
 setlayer        1
-speed 10
 facing          1
 offscreenkill 10000
 

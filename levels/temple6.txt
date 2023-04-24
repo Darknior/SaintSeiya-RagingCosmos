@@ -1,5 +1,5 @@
 
-music       data/music/MSC-tragic.ogg
+music		data/music/7sens.ogg
 
 panel		data/bgs/temple6-road/temple6-road.png 
 frontpanel  data/bgs/temple6-road/layer1.png 
@@ -58,6 +58,66 @@ at          0
 
 spawn       temple6raindrop3
 coords      0 0
+at          0
+
+spawn       temple6raindrop
+coords      800 0
+at          0
+
+spawn       temple6raindrop2
+coords      800 0
+at          0
+
+spawn       temple6raindrop3
+coords      800 0
+at          0
+
+spawn       temple6raindrop
+coords      1600 0
+at          0
+
+spawn       temple6raindrop2
+coords      1600 0
+at          0
+
+spawn       temple6raindrop3
+coords      1600 0
+at          0
+
+spawn       temple6raindrop
+coords      2400 0
+at          0
+
+spawn       temple6raindrop2
+coords      2400 0
+at          0
+
+spawn       temple6raindrop3
+coords      4200 0
+at          0
+
+spawn       temple6raindrop
+coords      4200 0
+at          0
+
+spawn       temple6raindrop2
+coords      4200 0
+at          0
+
+spawn       temple6raindrop3
+coords      4200 0
+at          0
+
+spawn       temple6raindrop
+coords      5000 0
+at          0
+
+spawn       temple6raindrop2
+coords      5000 0
+at          0
+
+spawn       temple6raindrop3
+coords      5000 0
 at          0
 
 spawn soldier1
