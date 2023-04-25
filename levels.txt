@@ -518,7 +518,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shun
-z           378 484
+z           395 484
 file        data/levels/temple12BOSS.txt
 
 set         Temple_13_Road_Marin-Seiya

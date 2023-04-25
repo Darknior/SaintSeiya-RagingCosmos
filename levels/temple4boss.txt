@@ -17,11 +17,11 @@ order           a
 direction       both
 settime         99
 
-cameratype      0
-light           256 -44
-at              0
-shadowalpha     3
-at              0
+light        256 44
+at        0
+shadowalpha 6
+shadowopacity 0
+at        0
 
 
 #-- PLAYERS ---------------------------------

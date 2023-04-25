@@ -18,10 +18,11 @@ direction       both
 settime         0
 
 cameratype      0
-light           256 -44
-at              0
-shadowalpha     2
-at              0
+light        256 44
+at        0
+shadowalpha 6
+shadowopacity 0
+at        0
 
 
 #-- PLAYERS ---------------------------------
