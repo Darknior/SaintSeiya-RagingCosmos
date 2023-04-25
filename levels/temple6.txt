@@ -13,7 +13,8 @@ bgspeed 1 0
 cameratype 1
 light        256 -44
 at        0
-shadowalpha     6
+shadowalpha 6
+shadowopacity 0
 at        0
 direction right
 

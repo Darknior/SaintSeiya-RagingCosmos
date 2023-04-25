@@ -1,7 +1,7 @@
 name            temple6rain
 type            panel
 setlayer        200
-speed 10
+scroll 10
 facing          1
 offscreenkill 10000
 
