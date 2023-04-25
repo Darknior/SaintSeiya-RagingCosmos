@@ -431,7 +431,7 @@ anim special # Défense spéciale circles
     offset    37 169
     sound data/chars/deathmask/sounds/07-ahah2.wav
     summonframe 0 0 0 0
-    subentity deathmask
+    subentity deathmask_melee
     unsummonframe 22
     energycost  25 1 0
     hitflash flashbig
@@ -452,7 +452,7 @@ anim freespecial2 # Défense spéciale circles
     offset    37 169
     sound data/chars/deathmask/sounds/07-ahah2.wav
     summonframe 0 0 0 0
-    subentity deathmask
+    subentity deathmask_melee
     unsummonframe 5
     energycost  25 1 0
     hitflash flashbig
@@ -473,7 +473,7 @@ anim special2 # Défense spéciale circles
     offset    37 169
     sound data/chars/deathmask/sounds/07-ahah2.wav
     summonframe 0 0 0 0
-    subentity deathmask
+    subentity deathmask_melee
     unsummonframe 5
     energycost  25 1 0
     hitflash flashbig
@@ -494,7 +494,7 @@ anim riseattack # Défense spéciale circles
     offset    37 169
     sound data/chars/deathmask/sounds/07-ahah2.wav
     summonframe 0 0 0 0
-    subentity deathmask
+	 subentity deathmask_melee
     unsummonframe 5
     energycost  25 1 0
     hitflash flashbig

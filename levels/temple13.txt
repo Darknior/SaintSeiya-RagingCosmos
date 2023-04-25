@@ -53,7 +53,9 @@ spawn       temple13roadcolumns
 coords      0 0
 at          0
 
-
+spawn marin
+coords	550 390
+at 0
 
 spawn soldier1
 alias SOLDIER

@@ -1,6 +1,6 @@
 name    LIFE
 type    item
-
+health  100
 
 offscreenkill 9999999
 

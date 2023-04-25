@@ -1,5 +1,5 @@
 name    COSMO
-mp      100
+health  100
 type    item
 
 
