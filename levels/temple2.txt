@@ -47,6 +47,11 @@ spawn       temple2roadcolumns
 coords      0 0
 at          0
 
+spawn soldier_basic
+alias Soldat de Base
+coords	800 200
+at 0
+
 
 spawn malesoldier
 alias SOLDIER

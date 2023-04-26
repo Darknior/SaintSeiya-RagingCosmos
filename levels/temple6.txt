@@ -166,11 +166,13 @@ at          0
 spawn soldier1
 alias SOLDIER
 coords	850 100
+item apple
 at 400
 
 spawn soldier3
 alias SOLDIER
 coords	-200 300
+item uvaff
 at 400
 
 spawn soldier2
