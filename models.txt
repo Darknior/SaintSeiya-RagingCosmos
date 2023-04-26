@@ -481,6 +481,7 @@ know    temple6rain      data/bgs/temple6-road/temple6rain.txt
 know    temple6raindrop      data/bgs/temple6-road/temple6raindrop.txt
 know    temple6raindrop2      data/bgs/temple6-road/temple6raindrop2.txt
 know    temple6raindrop3      data/bgs/temple6-road/temple6raindrop3.txt
+know    temple6raindrop4      data/bgs/temple6-road/temple6raindrop4.txt
 
 ## TEMPLE 6 MIDBOSS
 know    volcano_flame      data/bgs/temple6_midboss/volcano_flame.txt

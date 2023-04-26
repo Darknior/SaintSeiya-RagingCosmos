@@ -1,4 +1,4 @@
-name            temple6raindrop3
+name            temple6raindrop4
 type            panel
 setlayer        1
 facing          1
@@ -6,9 +6,9 @@ offscreenkill 10000
 
 anim idle
 	 loop	1
-    offset      0 -170
+    offset      0 -110
     drawmethod  alpha 6
-    drawmethod  channel 0.3
+    drawmethod  channel 0.15
     delay	20
     frame       data/bgs/temple6-road/raindrop/raindrop-1.png
     frame       data/bgs/temple6-road/raindrop/raindrop-2.png

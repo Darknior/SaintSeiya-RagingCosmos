@@ -10,32 +10,15 @@ bglayer     data/bgs/temple6-road/temple6-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
 fglayer  	data/bgs/temple6-road/clouds-front.png		 -2000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 
 # RAIN
-fglayer  	data/bgs/temple6-road/rain/rain-1.png		 200 0 0 0 0 0 0 -1 -1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/rain/rain-2.png		 200 0 0 0 0 0 0 -1 -1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/rain/rain-3.png		 200 0 0 0 0 0 0 -1 -1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/rain/rain-4.png		 200 0 0 0 0 0 0 -1 -1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/rain/rain-5.png		 200 0 0 0 0 0 0 -1 -1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/rain/rain-6.png		 200 0 0 0 0 0 0 -1 -1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/rain/rain-7.png		 200 0 0 0 0 0 0 -1 -1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/rain/rain-8.png		 200 0 0 0 0 0 0 -1 -1 1 6 0 0 0 0 0
+fglayer  	data/bgs/temple6-road/rain/rain-1.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6-road/rain/rain-2.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6-road/rain/rain-3.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6-road/rain/rain-4.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6-road/rain/rain-5.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6-road/rain/rain-6.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6-road/rain/rain-7.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6-road/rain/rain-8.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
 
-# BOTTOM DROPS
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-1.png		 -200 0 0 0 280 0 0 -1 1 1 5 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-2.png		 -200 0 0 0 280 0 0 -1 1 1 5 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-3.png		 -200 0 0 0 280 0 0 -1 1 1 5 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-4.png		 -200 0 0 0 280 0 0 -1 1 1 5 0 0 0 0 0
-
-# MID DROPS
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-1.png		 -200 0 0 0 220 0 0 -1 1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-2.png		 -200 0 0 0 220 0 0 -1 1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-3.png		 -200 0 0 0 220 0 0 -1 1 1 6 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-4.png		 -200 0 0 0 220 0 0 -1 1 1 6 0 0 0 0 0
-
-# UPPER DROPS
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-1.png		 -200 0 0 0 160 0 0 -1 1 1 3 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-2.png		 -200 0 0 0 160 0 0 -1 1 1 3 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-3.png		 -200 0 0 0 160 0 0 -1 1 1 3 0 0 0 0 0
-fglayer  	data/bgs/temple6-road/raindrop/raindrop-4.png		 -200 0 0 0 160 0 0 -1 1 1 3 0 0 0 0 0
 
 updatescript 	data/scripts/updatelevel/temple6_rain.c
 
@@ -75,93 +58,93 @@ spawn       time-is-up
 coords      368 89
 at          0
 
-#spawn       temple6rain
-#coords      0 0
-#at          0
+spawn       temple6raindrop
+coords      0 0
+at          0
 
-#spawn       temple6raindrop
-#coords      0 0
-#at          0
+spawn       temple6raindrop2
+coords      0 0
+at          0
 
-#spawn       temple6raindrop2
-#coords      0 0
-#at          0
+spawn       temple6raindrop3
+coords      0 0
+at          0
 
-#spawn       temple6raindrop3
-#coords      0 0
-#at          0
+spawn       temple6raindrop4
+coords      0 0
+at          0
 
-#spawn       temple6raindrop
-#coords      800 0
-#at          0
+spawn       temple6raindrop
+coords      800 0
+at          0
 
-#spawn       temple6raindrop2
-#coords      800 0
-#at          0
+spawn       temple6raindrop2
+coords      800 0
+at          0
 
-#spawn       temple6raindrop3
-#coords      800 0
-#at          0
+spawn       temple6raindrop3
+coords      800 0
+at          0
 
-#spawn       temple6raindrop
-#coords      1600 0
-#at          0
+spawn       temple6raindrop
+coords      1600 0
+at          0
 
-#spawn       temple6raindrop2
-#coords      1600 0
-#at          0
+spawn       temple6raindrop2
+coords      1600 0
+at          0
 
-#spawn       temple6raindrop3
-#coords      1600 0
-#at          0
+spawn       temple6raindrop3
+coords      1600 0
+at          0
 
-#spawn       temple6raindrop
-#coords      2400 0
-#at          0
+spawn       temple6raindrop
+coords      2400 0
+at          0
 
-#spawn       temple6raindrop2
-#coords      2400 0
-#at          0
+spawn       temple6raindrop2
+coords      2400 0
+at          0
 
-#spawn       temple6raindrop3
-#coords      2400 0
-#at          0
+spawn       temple6raindrop3
+coords      2400 0
+at          0
 
-#spawn       temple6raindrop
-#coords      3200 0
-#at          0
+spawn       temple6raindrop
+coords      3200 0
+at          0
 
-#spawn       temple6raindrop2
-#coords      3200 0
-#at          0
+spawn       temple6raindrop2
+coords      3200 0
+at          0
 
-#spawn       temple6raindrop3
-#coords      3200 0
-#at          0
+spawn       temple6raindrop3
+coords      3200 0
+at          0
 
-#spawn       temple6raindrop
-#coords      4000 0
-#at          0
+spawn       temple6raindrop
+coords      4000 0
+at          0
 
-#spawn       temple6raindrop2
-#coords      4000 0
-#at          0
+spawn       temple6raindrop2
+coords      4000 0
+at          0
 
-#spawn       temple6raindrop3
-#coords      4000 0
-#at          0
+spawn       temple6raindrop3
+coords      4000 0
+at          0
 
-#spawn       temple6raindrop
-#coords      4800 0
-#at          0
+spawn       temple6raindrop
+coords      4800 0
+at          0
 
-#spawn       temple6raindrop2
-#coords      4800 0
-#at          0
+spawn       temple6raindrop2
+coords      4800 0
+at          0
 
-#spawn       temple6raindrop3
-#coords      4800 0
-#at          0
+spawn       temple6raindrop3
+coords      4800 0
+at          0
 
 spawn soldier1
 alias SOLDIER
