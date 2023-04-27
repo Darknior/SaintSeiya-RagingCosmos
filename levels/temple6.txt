@@ -146,6 +146,22 @@ spawn       temple6raindrop3
 coords      4800 0
 at          0
 
+spawn apple
+coords	120 350
+at 0
+
+spawn apple
+coords	240 350
+at 0
+
+spawn apple
+coords	120 400
+at 0
+
+spawn apple
+coords	240 400
+at 0
+
 spawn soldier1
 alias SOLDIER
 coords	850 100

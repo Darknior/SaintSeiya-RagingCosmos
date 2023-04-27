@@ -5,6 +5,7 @@ type		item
 #shadow	0
 gfxshadow 1 3
 nolife	1
+didhitscript data/scripts/didhit/items.c
 
 anim idle
 	loop	1

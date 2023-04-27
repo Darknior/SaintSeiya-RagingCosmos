@@ -1,4 +1,4 @@
-void tintEffect(void vAnim, void effect, int duration)
+void tintEffect(void vAnim, void effect, int duration, int itemType)
 {
 	void self	= getlocalvar("self");
 	void target	= getlocalvar("damagetaker");
@@ -12,6 +12,12 @@ void tintEffect(void vAnim, void effect, int duration)
 			float limit = 200*mult;
 			setentityvar(target, effect+"Time", time+limit);
 		}
+	}
+
+	if(itemType){
+		float mult	= duration;
+		float limit = 200*mult;
+		setentityvar(target, effect+"Time", time+limit);
 	}
 }
 

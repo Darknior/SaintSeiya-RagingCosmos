@@ -67,6 +67,7 @@ void blinkDamage()
 	float silverTime	= getentityvar(self, "silverTime");
 	float pinkTime		= getentityvar(self, "pinkTime");
 	float whiteTime		= getentityvar(self, "whiteTime");
+	float rainbowTime	= getentityvar(self, "rainbowTime");
 	float time;
 	float rate;
 	
@@ -189,6 +190,20 @@ void blinkDamage()
 		changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0xFF, 0xCC));
 	}else
 
+	//RAINBOW EFFECT
+	if(rainbowTime > time && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 1;
+		rate		= 8;
+		
+		//APPLY EFFECTS
+		changedrawmethod(self, "enabled", 1);
+		changedrawmethod(self, "tintmode", tintMode);
+		changedrawmethod(self, "tintcolor", rgbcolor(time*rate, time*rate/2, time*rate/4));
+	}else
+
+
 	//BLINK RESET
 	{
 		//IS NOT IN THE SELECT ANIMATION??
@@ -201,7 +216,8 @@ void blinkDamage()
 				greenTime != NULL()		||
 				silverTime != NULL()	||
 				pinkTime != NULL()		||
-				whiteTime != NULL()		){
+				whiteTime != NULL()		||
+				rainbowTime != NULL()	){
 				
 				if(getdrawmethod(self, "enabled")){
 					blinkReset("poisonTime");
@@ -213,6 +229,7 @@ void blinkDamage()
 					blinkReset("silverTime");
 					blinkReset("pinkTime");
 					blinkReset("whiteTime");
+					blinkReset("rainbowTime");
 				}
 			}
 		}
