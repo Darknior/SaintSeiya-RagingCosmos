@@ -298,18 +298,23 @@ know    columnT      data/chars/jaki/special/columnT.txt
 
 ## ITEMS ##
 
-know    energy          data/chars/misc/obj/energy.txt
-know    cosmo           data/chars/misc/obj/cosmo.txt
-know    life            data/chars/misc/obj/life.txt
-know    apple           data/chars/misc/food/apple.txt
-know    macaff          data/chars/misc/food/macaff.txt
-know    bananaff        data/chars/misc/food/bananaff.txt
-know    grape           data/chars/misc/food/grape.txt
-know    abacaxiff       data/chars/misc/food/abacaxiff.txt
-know    cerejacc        data/chars/misc/food/cerejacc.txt
-know    limaocc         data/chars/misc/food/limaocc.txt
-know    laranjaff       data/chars/misc/food/laranjaff.txt
-know    uvaff       data/chars/misc/food/uvaff.txt
+know    apple           data/chars/misc/items/food/apple.txt
+know    macaff          data/chars/misc/items/food/macaff.txt
+know    bananaff        data/chars/misc/items/food/bananaff.txt
+know    grape           data/chars/misc/items/food/grape.txt
+know    abacaxiff       data/chars/misc/items/food/abacaxiff.txt
+know    cerejacc        data/chars/misc/items/food/cerejacc.txt
+know    limaocc         data/chars/misc/items/food/limaocc.txt
+know    laranjaff       data/chars/misc/items/food/laranjaff.txt
+know    uvaff           data/chars/misc/items/food/uvaff.txt
+
+know    cosmos-bronze   data/chars/misc/items/cosmos/cosmos-bronze.txt
+know    cosmos-silver   data/chars/misc/items/cosmos/cosmos-silver.txt
+know    cosmos-gold     data/chars/misc/items/cosmos/cosmos-gold.txt
+
+know    energy          data/chars/misc/items/obj/energy.txt
+know    cosmo           data/chars/misc/items/obj/cosmo.txt
+know    life            data/chars/misc/items/obj/life.txt
 
 ## ARMORS  ##
 

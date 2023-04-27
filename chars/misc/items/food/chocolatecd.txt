@@ -1,0 +1,27 @@
+name	chocolateCD
+health	22
+#score		2500
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+
+didhitscript 	data/scripts/comida.c
+
+anim idle
+	loop	1
+	delay	100
+	 offset     238 181
+	bbox	223 164 32 16
+	frame	data/chars/misc/items/food/chocolateCD01.gif
+      delay   4
+	frame	data/chars/misc/items/food/chocolateCD02.gif
+	frame	data/chars/misc/items/food/chocolateCD01.gif
+	frame	data/chars/misc/items/food/chocolateCD02.gif
+	frame	data/chars/misc/items/food/chocolateCD01.gif
+	frame	data/chars/misc/items/food/chocolateCD02.gif
+	frame	data/chars/misc/items/food/chocolateCD01.gif
+	frame	data/chars/misc/items/food/chocolateCD02.gif
+	frame	data/chars/misc/items/food/chocolateCD01.gif
+	frame	data/chars/misc/items/food/chocolateCD02.gif
+	frame	data/chars/misc/items/food/chocolateCD01.gif

@@ -1,0 +1,21 @@
+name	cosmos-silver
+health	50
+type		item
+gfxshadow   1 4
+nolife	1
+
+
+anim idle
+	loop	1
+	offset	16 67
+	delay	100
+	bbox	8 3 29 65
+	frame	data/chars/misc/items/cosmos/silver/6.gif
+	delay	15
+	frame	data/chars/misc/items/cosmos/silver/1.gif
+	frame	data/chars/misc/items/cosmos/silver/2.gif
+	frame	data/chars/misc/items/cosmos/silver/3.gif
+	frame	data/chars/misc/items/cosmos/silver/4.gif
+	frame	data/chars/misc/items/cosmos/silver/5.gif
+
+

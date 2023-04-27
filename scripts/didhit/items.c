@@ -2,5 +2,5 @@
 
 void main()
 {
-	tintEffect(NULL(), "rainbow", 2, 1);
+	tintEffect(NULL(), "rainbow", 1.2, 1);
 }

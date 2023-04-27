@@ -1,0 +1,20 @@
+name	cosmos-gold
+health	100
+type		item
+gfxshadow   1 4
+nolife	1
+
+
+anim idle
+	loop	1
+	offset	16 67
+	delay	70
+	bbox	8 3 29 65
+	frame	data/chars/misc/items/cosmos/gold/6.gif
+	delay	15
+	frame	data/chars/misc/items/cosmos/gold/1.gif
+	frame	data/chars/misc/items/cosmos/gold/2.gif
+	frame	data/chars/misc/items/cosmos/gold/3.gif
+	frame	data/chars/misc/items/cosmos/gold/4.gif
+	frame	data/chars/misc/items/cosmos/gold/5.gif
+

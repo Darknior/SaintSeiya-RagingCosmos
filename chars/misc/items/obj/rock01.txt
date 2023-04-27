@@ -1,0 +1,189 @@
+name        rock01
+health      10
+type        none
+remove      1
+speed       20
+shadow      0
+
+
+offscreenkill 9999999999999
+
+
+anim    DEATH
+    loop     0
+    delay    3
+    offset   -300 40
+    dropv    4 1 0
+    movea    -10
+    attack.damage.force 0
+    attack.position.x 0
+    attack.position.y 0
+    attack.reaction.fall.velocity.x 1.0
+    attack.reaction.fall.velocity.y 4.0
+    attack.reaction.fall.velocity.z 0.0
+    attack.size.x 0
+    attack.size.y 0
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+anim    idle
+    loop     1
+    delay    7
+    offset   -300 40
+    dropv    4 1 0
+    bbox.position.x -14
+    bbox.position.y -10
+    bbox.size.x 75
+    bbox.size.y 72
+    attack.damage.force 10
+    attack.position.x 4
+    attack.position.y 4
+    attack.reaction.fall.force 1
+    attack.reaction.fall.velocity.x 1.0
+    attack.reaction.fall.velocity.y 4.0
+    attack.reaction.fall.velocity.z 0.0
+    attack.size.x 40
+    attack.size.y 40
+    frame    data/chars/misc/items/obj/roccia4.png
+    attack.damage.force 0
+    attack.position.x 0
+    attack.position.y 0
+    attack.reaction.fall.force 0
+    attack.size.x 0
+    attack.size.y 0
+    frame    data/chars/misc/items/obj/roccia3.png
+    attack.damage.force 10
+    attack.position.x 1
+    attack.position.y 1
+    attack.reaction.fall.force 1
+    attack.size.x 45
+    attack.size.y 45
+    frame    data/chars/misc/items/obj/roccia2.png
+    attack.damage.force 0
+    attack.position.x 0
+    attack.position.y 0
+    attack.reaction.fall.force 0
+    attack.size.x 0
+    attack.size.y 0
+    frame    data/chars/misc/items/obj/roccia1.png
+
+anim fall
+    loop     0
+    delay    3
+    offset   -300 40
+    dropv    4 1 0
+    movea    -15
+    attack.damage.force 0
+    attack.position.x 0
+    attack.position.y 0
+    attack.reaction.fall.velocity.x 1.0
+    attack.reaction.fall.velocity.y 4.0
+    attack.reaction.fall.velocity.z 0.0
+    attack.size.x 0
+    attack.size.y 0
+    frame    data/chars/misc/items/obj/roccia1.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia4.png
+
+    frame    data/chars/misc/items/obj/roccia1.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia4.png
+
+    frame    data/chars/misc/items/obj/roccia1.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia4.png
+
+    frame    data/chars/misc/items/obj/roccia1.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia4.png
+
+    frame    data/chars/misc/items/obj/roccia1.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia4.png
+
+    frame    data/chars/misc/items/obj/roccia1.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia4.png
+
+    frame    data/chars/misc/items/obj/roccia1.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+
+    frame    data/chars/misc/items/obj/roccia4.png
+    frame    data/chars/misc/items/obj/roccia3.png
+    frame    data/chars/misc/items/obj/roccia2.png
+    frame    data/chars/misc/items/obj/roccia1.png
+

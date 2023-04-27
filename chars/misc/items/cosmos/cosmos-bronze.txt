@@ -1,0 +1,21 @@
+name	cosmos-bronze
+health	25
+type		item
+gfxshadow   1 4
+nolife	1
+
+
+anim idle
+	loop	1
+	offset	16 67
+	delay	85
+	bbox	8 3 29 65
+	frame	data/chars/misc/items/cosmos/bronze/6.gif
+	delay	15
+	frame	data/chars/misc/items/cosmos/bronze/1.gif
+	frame	data/chars/misc/items/cosmos/bronze/2.gif
+	frame	data/chars/misc/items/cosmos/bronze/3.gif
+	frame	data/chars/misc/items/cosmos/bronze/4.gif
+	frame	data/chars/misc/items/cosmos/bronze/5.gif
+
+

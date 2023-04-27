@@ -146,20 +146,52 @@ spawn       temple6raindrop3
 coords      4800 0
 at          0
 
-spawn apple
-coords	120 350
+spawn cosmos-bronze
+coords	60 420
+at 0
+
+spawn cosmos-silver
+coords	190 440
+at 0
+
+spawn cosmos-gold
+coords	300 405
 at 0
 
 spawn apple
-coords	240 350
+coords	280 450
 at 0
 
-spawn apple
+spawn macaff
+coords	180 350
+at 0
+
+spawn bananaff
+coords	350 450
+at 0
+
+spawn grape
+coords	250 450
+at 0
+
+spawn abacaxiff
+coords	110 330
+at 0
+
+spawn cerejacc
+coords	420 400
+at 0
+
+spawn limaocc
+coords	320 350
+at 0
+
+spawn laranjaff
+coords	220 400
+at 0
+
+spawn uvaff
 coords	120 400
-at 0
-
-spawn apple
-coords	240 400
 at 0
 
 spawn soldier1

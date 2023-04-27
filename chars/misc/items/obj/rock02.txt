@@ -1,0 +1,61 @@
+name        rock02
+health      10
+type        none
+remove      1
+speed       20
+shadow      0
+
+
+offscreenkill 9999999999999
+
+
+anim    DEATH
+    loop     0
+    delay    3
+    offset   -325 27
+    dropv    4 1 0
+    frame    data/chars/misc/items/obj/roccia006.png
+    frame    data/chars/misc/items/obj/roccia007.png
+    frame    data/chars/misc/items/obj/roccia008.png
+    frame    data/chars/misc/items/obj/roccia009.png
+    frame    data/chars/misc/items/obj/roccia0010.png
+    frame    data/chars/misc/items/obj/roccia0011.png
+    frame    data/chars/misc/items/obj/roccia0012.png
+    frame    data/chars/misc/items/obj/roccia0013.png
+    frame    data/chars/misc/items/obj/null.png
+
+anim    idle
+    loop     1
+    delay    7
+    offset   -300 40
+    dropv    4 1 0
+    attack.damage.force 10
+    attack.position.x 0
+    attack.position.y 1
+    attack.reaction.fall.force 1
+    attack.reaction.fall.velocity.x 1.0
+    attack.reaction.fall.velocity.y 4.0
+    attack.reaction.fall.velocity.z 0.0
+    attack.size.x 52
+    attack.size.y 45
+    bbox.position.x -10
+    bbox.position.y -18
+    bbox.size.x 73
+    bbox.size.y 83
+    frame    data/chars/misc/items/obj/roccia005.png
+
+anim    fall
+    loop     0
+    delay    3
+    offset   -325 27
+    dropv    4 1 0
+    frame    data/chars/misc/items/obj/roccia006.png
+    frame    data/chars/misc/items/obj/roccia007.png
+    frame    data/chars/misc/items/obj/roccia008.png
+    frame    data/chars/misc/items/obj/roccia009.png
+    frame    data/chars/misc/items/obj/roccia0010.png
+    frame    data/chars/misc/items/obj/roccia0011.png
+    frame    data/chars/misc/items/obj/roccia0012.png
+    frame    data/chars/misc/items/obj/roccia0013.png
+    frame    data/chars/misc/items/obj/null.png
+
