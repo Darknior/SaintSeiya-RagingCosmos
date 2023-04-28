@@ -1,0 +1,11 @@
+name			text
+type			none
+shadow			0
+antigravity		100
+ondrawscript	data/scripts/text.c
+
+anim idle
+	loop	0
+	delay	4
+	offset	1 1
+	frame	data/chars/misc/text/empty.png

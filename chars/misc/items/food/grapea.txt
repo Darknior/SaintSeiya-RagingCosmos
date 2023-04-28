@@ -3,9 +3,8 @@ type		item
 score 0
 shadow	0
 nolife	1
-
-animationscript data/scripts/drago.c
-
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
 
 anim idle 
 	delay 4
@@ -19,6 +18,7 @@ anim idle
 	    
 	 @end_script
 	@cmd grapeaspawn 0 0 0
+	@cmd itemText "ENERGY 50% UP" 0.8 1.5
 	frame data/chars/misc/empty.gif
 	frame data/chars/misc/empty.gif
 	frame data/chars/misc/empty.gif

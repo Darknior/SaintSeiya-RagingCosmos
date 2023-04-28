@@ -6,12 +6,14 @@ type		item
 gfxshadow 1 3
 nolife	1
 didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
 
 anim idle
 	loop	1
 	delay	100
-	 offset     238 177
+	offset     238 177
 	bbox	223 165 32 16
+	@cmd itemText "ENERGY 50% UP" 0.8 1.5
 	frame	data/chars/misc/items/food/apple01.gif
       delay   4
 	frame	data/chars/misc/items/food/apple02.gif

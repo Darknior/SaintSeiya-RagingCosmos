@@ -516,4 +516,6 @@ know    temple13roadcolumns      data/bgs/temple13-road/temple13roadcolumns.txt
 know    temple13columns      data/bgs/temple13/temple13columns.txt
 
 
+## TEXT ENTITIES
+load    text      data/chars/misc/text/text.txt
 
