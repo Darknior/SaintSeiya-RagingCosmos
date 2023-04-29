@@ -1,0 +1,30 @@
+name	cosmos-stars
+health	55
+#score		2500
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
+
+anim idle
+	loop		1
+	offset	22 44
+	bbox	5 0 32 40
+	@cmd itemText "COSMOS 100% UP" 0.8 1.5
+	delay	13
+	frame	data/chars/misc/items/cosmos/cosmos-stars/1.png
+	frame	data/chars/misc/items/cosmos/cosmos-stars/2.png
+	frame	data/chars/misc/items/cosmos/cosmos-stars/3.png
+	frame	data/chars/misc/items/cosmos/cosmos-stars/4.png
+	frame	data/chars/misc/items/cosmos/cosmos-stars/5.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/6.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/7.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/8.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/9.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/1.png
+	frame	data/chars/misc/items/cosmos/cosmos-stars/2.png
+	frame	data/chars/misc/items/cosmos/cosmos-stars/3.png
+
+

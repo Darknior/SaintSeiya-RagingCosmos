@@ -311,6 +311,7 @@ know    uvaff           data/chars/misc/items/food/uvaff.txt
 know    cosmos-bronze   data/chars/misc/items/cosmos/cosmos-bronze.txt
 know    cosmos-silver   data/chars/misc/items/cosmos/cosmos-silver.txt
 know    cosmos-gold     data/chars/misc/items/cosmos/cosmos-gold.txt
+know    cosmos-stars    data/chars/misc/items/cosmos/cosmos-stars.txt
 
 know    energy          data/chars/misc/items/obj/energy.txt
 know    cosmo           data/chars/misc/items/obj/cosmo.txt

@@ -1,15 +1,19 @@
 name	cosmos-bronze
-health	25
+health	55
+#score		2500
 type		item
-gfxshadow   1 4
+#shadow	0
+gfxshadow 1 3
 nolife	1
-
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
 
 anim idle
-	loop	1
+	loop		1
 	offset	16 67
-	delay	85
-	bbox	8 3 29 65
+	bbox	5 0 32 80
+	delay	100
+	@cmd itemText "ENERGY 25% UP" 0.8 1.5
 	frame	data/chars/misc/items/cosmos/bronze/6.gif
 	delay	15
 	frame	data/chars/misc/items/cosmos/bronze/1.gif

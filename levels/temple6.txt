@@ -151,7 +151,7 @@ coords	60 420
 at 0
 
 spawn cosmos-silver
-coords	190 440
+coords	180 350
 at 0
 
 spawn cosmos-gold
@@ -162,8 +162,8 @@ spawn apple
 coords	280 450
 at 0
 
-spawn macaff
-coords	180 350
+spawn cosmos-stars
+coords	190 440
 at 0
 
 spawn bananaff
@@ -174,9 +174,6 @@ spawn grape
 coords	250 450
 at 0
 
-spawn abacaxiff
-coords	110 330
-at 0
 
 spawn cerejacc
 coords	420 400
