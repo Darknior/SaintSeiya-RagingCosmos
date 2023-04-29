@@ -1190,3 +1190,27 @@ anim    freespecial8       # Balayette (bas+a1)
     frame    data/chars/hyoga/brush3.png
     frame    data/chars/hyoga/brush4.png
 
+anim    freespecial9    # Attaque au sol
+    range 0 100
+    rangea 0 5
+    rangez -20 20
+    jugglecost  0
+    delay    10
+    offset   38 98
+    otg      1
+    bbox     26 -1 51 75
+    hitflash blood_gerbD
+    @cmd     dasher 1 0 0 1
+    sound    data/chars/shiryu/sounds/dash.wav
+    frame    data/chars/hyoga/downattack-0.png
+    sound    data/sounds/punch.wav
+    frame    data/chars/hyoga/downattack-1.png
+    frame    data/chars/hyoga/downattack-2.png
+    frame    data/chars/hyoga/downattack-3.png
+    delay    30
+	attack 33 68 70 50 5 1 0 0 12 30
+    dropv    3 4
+    frame    data/chars/hyoga/downattack-4.png
+    delay    10
+    @cmd     dasher 0 0 0 1
+    frame    data/chars/hyoga/downattack-5.png
