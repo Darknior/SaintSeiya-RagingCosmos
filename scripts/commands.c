@@ -1,4 +1,4 @@
-#import "data/scripts/main_keyscripts.c"
+#import "data/scripts/main_commands.c"
 
 void main()
 {

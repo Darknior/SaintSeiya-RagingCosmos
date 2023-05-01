@@ -176,6 +176,7 @@ void shooter(void Shot, float dx, float dy, float dz, float Vx, float Vy, float 
    vShot = projectile(Shot, x+dx, z+dz, y+dy, Direction, 1, 0, 0);
    changeentityproperty(vShot, "velocity", Vx, Vz, Vy);
    changeentityproperty(vShot, "speed", Vx);
+   changeentityproperty(vShot, "parent", self);
 }
 
 void toss(void Bomb, float dx, float dy, float dz)

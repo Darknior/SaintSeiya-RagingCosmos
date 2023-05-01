@@ -28,3 +28,23 @@ void autoLand()
 		changeentityproperty(getlocalvar("damagetaker"), "aiflag", "projectile", 2);
 	}
 }
+
+void rushFont()
+{//Trigger a temporary effect for fonts during a rush combo by sending a timed variable to the updated.c event
+	void self	= getlocalvar("self");
+	void type	= getentityproperty(self, "type");
+	int minRush	= 1;
+	int delay	= 75;
+	float time	= openborvariant("elapsed_time");
+	
+	if(type != openborconstant("TYPE_PLAYER")){
+		void parent	= getentityproperty(self, "parent");
+		int rush	= getentityproperty(parent, "rush_count");
+		if(rush >= minRush){setentityvar(parent, "rushFont", time+delay);}
+	}
+	else
+	{
+		int rush	= getentityproperty(self, "rush_count");
+		if(rush >= minRush){setentityvar(self, "rushFont", time+delay);}
+	}
+}

@@ -14,6 +14,7 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "red", 1);
 	genmaken();
 	autoLand();
+	rushFont();
 }
 
 void genmaken()

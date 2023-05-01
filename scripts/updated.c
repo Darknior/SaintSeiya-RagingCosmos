@@ -360,6 +360,8 @@ void rushFunction(void player)
 {//Script used to reduce code size
 	
 	if(player != NULL()){
+		void text;
+		float time		= openborvariant("elapsed_time");
 		float xPos		= openborvariant("xpos");
 		float yPos		= openborvariant("ypos");
 		float screen	= openborvariant("gfx_y_offset");
@@ -374,12 +376,32 @@ void rushFunction(void player)
 		int font		= 8;
 		int layer		= 1001;
 		int minRush		= 2;
-		
+		int divider		= 40;
+
 		if(rush >= minRush){
-			if(dir == 1){x = x-xPos-xRight;}
-			if(dir == 0){x = x-xPos-xLeft;}
+			int scale = 256;
+
+			if(getentityvar(player, "rushScreen") == NULL()){
+				setentityvar(player, "rushScreen", allocscreen(100, 100));
+			}
+
+			if(getentityvar(player, "rushFont") > time){
+				scale = scale*(getentityvar(player, "rushFont") - time)/divider;
+				if(scale < 256){scale = 256;}
+			}
+
+			text = rush+"__HITS";
+			x = x-xPos-(strwidth(text, font)/2);
 			y = z-yPos+screen-y-yDif;
-			drawstring(x, y, font, rush+"__HITS", layer);
+
+			clearscreen(getentityvar(player, "rushScreen"));
+			changedrawmethod(NULL(),"reset", 1);
+			changedrawmethod(NULL(),"enabled", 1);
+			changedrawmethod(NULL(),"scalex", scale);
+			changedrawmethod(NULL(),"scaley", scale);
+			changedrawmethod(NULL(),"transbg", 1);
+			drawstringtoscreen(getentityvar(player, "rushScreen"), 0, 0, font, text);
+			drawscreen(getentityvar(player, "rushScreen"), x-(scale/divider), y-(scale/divider), openborvariant("PLAYER_MAX_Z"));
 		}
 	}
 }

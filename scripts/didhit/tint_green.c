@@ -13,4 +13,5 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL5"), "green", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "green", 1);
 	autoLand();
+	rushFont();
 }

@@ -3,4 +3,5 @@
 void main()
 {
 	autoLand();
+	rushFont();
 }

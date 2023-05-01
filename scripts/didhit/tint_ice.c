@@ -12,6 +12,7 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL5"), "ice", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "ice", 1);
 	autoLand();
+	rushFont();
 
 	if(getlocalvar("attacktype") == openborconstant("ATK_FREEZE")){
 		if(!getlocalvar("blocked")){
