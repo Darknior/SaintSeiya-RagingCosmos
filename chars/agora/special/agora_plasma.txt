@@ -2,6 +2,7 @@ name	agora_plasma
 type	none
 shadow	0
 candamage player
+nolife 1
 setlayer 1
 antigravity 100
 animationscript	data/scripts/player.c
