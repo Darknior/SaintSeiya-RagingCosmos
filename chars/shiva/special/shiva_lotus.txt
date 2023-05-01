@@ -3,6 +3,8 @@ type	none
 shadow	0
 setlayer 1
 antigravity 100
+candamage player
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
@@ -21,3 +23,5 @@ anim	idle
 	frame	data/chars/shiva/special/shiva_lotus/lotus8.png
 	frame	data/chars/shiva/special/shiva_lotus/lotus9.png
 	frame	data/chars/shiva/special/shiva_lotus/lotus10.png
+   @cmd suicide
+   frame	data/chars/shiva/special/shiva_lotus/lotus10.png

@@ -6,8 +6,8 @@ type        enemy
 #-- GENERAL CONFIG --------------------------------------------------
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
-riseinv     1 1         # Invincible après une chute X sec / Clignote pas
-makeinv     2 0         # Invincible après respawn X sec / Clignote
+riseinv     0 1         # Invincible après une chute X sec / Clignote pas
+makeinv     0 0         # Invincible après respawn X sec / Clignote
 
 speed       11          # Vitesse de déplacement
 running     25 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut

@@ -3,6 +3,8 @@ type	none
 shadow	0
 setlayer 1
 antigravity 100
+candamage player
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
@@ -17,4 +19,6 @@ anim	idle
 	frame	data/chars/agora/special/agora_lotus/lotus4.png
 	frame	data/chars/agora/special/agora_lotus/lotus5.png
 	frame	data/chars/agora/special/agora_lotus/lotus6.png
+	frame	data/chars/agora/special/agora_lotus/lotus7.png
+   @cmd suicide
 	frame	data/chars/agora/special/agora_lotus/lotus7.png

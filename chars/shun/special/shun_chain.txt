@@ -1,6 +1,8 @@
 name	shun_chain
 type	panel
 shadow	0
+nolife 1
+remove 0
 speed 10
 setlayer 778
 antigravity 100
@@ -35,5 +37,5 @@ anim	idle
 	frame	data/chars/shun/special/shun_chain/shun_chain-19.png
 	frame	data/chars/shun/special/shun_chain/shun_chain-20.png
 	frame	data/chars/shun/special/shun_chain/shun_chain-21.png
-        @cmd suicide
+   @cmd suicide
 	frame	data/chars/shun/special/shun_chain/shun_chain-21.png

@@ -1,8 +1,10 @@
 name	agora_plasma
 type	none
 shadow	0
+candamage player
 setlayer 1
 antigravity 100
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
@@ -27,3 +29,5 @@ anim	idle
 	frame	data/chars/agora/special/agora_plasma/plasma7.png
 	attack5 0
 	frame	data/chars/agora/special/agora_plasma/plasma8.png
+   @cmd suicide
+   frame	data/chars/agora/special/agora_plasma/plasma8.png

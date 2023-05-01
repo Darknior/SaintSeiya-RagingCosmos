@@ -2,12 +2,13 @@ name	seiya_meteorB
 type	none
 shadow	0
 setlayer 99
+nolife 1
+remove 0
 antigravity 100
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_silver.c
 
 anim	idle
-    otg 1
 	loop	1
 	hitflash marin_swing
 	delay	6
@@ -61,5 +62,5 @@ anim	idle
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-4.png
 	attack5 0
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-5.png
-        @cmd suicide	
+   @cmd suicide	
 	frame	data/chars/seiya/special/seiya_meteor/seiya_meteor-5.png

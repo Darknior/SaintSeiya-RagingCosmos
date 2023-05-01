@@ -39,12 +39,12 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 #-- ENNEMY CONFIG ---------------------------------------------------
 
-hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+hostile     player       # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player       # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase        # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0            # Valeur positive + agressif / valeur negative - aggressif
 
-hitenemy    1 0          # peut toucher d autres ennemis / air et sol
+hitenemy    0 0          # peut toucher d autres ennemis / air et sol
 blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
@@ -284,7 +284,7 @@ anim special2 # Lotus Plasma Flash
     offset   57 169
     sound    data/chars/agora/03-special.wav
     energycost      20 1 0
-    summonframe     0 100 0 0
+    summonframe 0 0 0 0 0
     subentity       agora_plasma
     unsummonframe    5
     hitflash flashbig
@@ -305,7 +305,7 @@ anim freespecial2 # Lotus Plasma Flash
     energycost      20 1 0
     fastattack      1
     hitflash        flashbig
-    summonframe     0 100 0 0
+    summonframe 0 0 0 0 0
     subentity       agora_plasma
     unsummonframe   5
     hitflash flashbig

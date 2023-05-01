@@ -6,7 +6,7 @@ setlayer -1000
 anim	idle
 	loop	1
 	delay	9
-	offset	1000 60
+	offset	1000 20
 	drawmethod alpha 1
 	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-0.png
 	frame	data/bgs/temple6_midboss/volcano_flame/volcano_flame-1.png
