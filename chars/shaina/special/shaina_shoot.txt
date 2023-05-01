@@ -2,6 +2,7 @@ name	shaina_shoot
 type	none
 shadow	0
 setlayer 778
+nolife 1
 remove 0
 antigravity 100
 animationscript	data/scripts/player.c

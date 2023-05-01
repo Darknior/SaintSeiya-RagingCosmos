@@ -10,8 +10,8 @@ anim	idle
 	delay	10
 	offset	-50 333
 	drawmethod scale 0.4 0.4
-        drawmethod  alpha 1
-        drawmethod  channel 0.43
+   drawmethod  alpha 1
+   drawmethod  channel 0.43
 	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini0.png
 	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini1.png
 	frame	data/chars/gemini/special/gemini_multihits/multihits_gemini2.png

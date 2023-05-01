@@ -9,8 +9,8 @@ anim	idle
 	loop	1
 	delay	10
 	offset	40 186
-        drawmethod  alpha 1
-        drawmethod  channel 0.63
+   drawmethod  alpha 1
+   drawmethod  channel 0.63
 	frame	data/chars/gemini/special/gemini_rundust/rundust0.png
 	frame	data/chars/gemini/special/gemini_rundust/rundust1.png
 	frame	data/chars/gemini/special/gemini_rundust/rundust2.png

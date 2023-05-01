@@ -3,6 +3,8 @@ type	none
 shadow	0
 setlayer 333
 antigravity 100
+nolife 1
+remove 0
 lifespan 1.5
 didhitscript	data/scripts/didhit/tint_gold.c
 

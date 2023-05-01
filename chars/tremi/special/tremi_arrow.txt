@@ -2,6 +2,8 @@ name	tremi_arrow
 type	none
 candamage player enemy obstacle
 shadow	0
+nolife 1
+remove 0
 setlayer 0
 antigravity 100
 lifespan  1
@@ -12,7 +14,7 @@ anim	idle
 	loop	1
 	delay	3
 	offset	15 11
-        hitflash milo_blood
+   hitflash milo_blood
 	followanim 1
 	followcond 1
 	bbox 0 0 28 22

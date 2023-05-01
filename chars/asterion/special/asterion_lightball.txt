@@ -3,6 +3,7 @@ type	none
 candamage player obstacle
 shadow	0
 setlayer 0
+nolife 1
 antigravity 100
 lifespan  1
 animationscript		data/scripts/escript.c

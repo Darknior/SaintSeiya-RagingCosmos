@@ -1,6 +1,7 @@
 name	sirius_ray
 type	none
 shadow	0
+nolife 1
 remove 0
 setlayer 99
 antigravity 100

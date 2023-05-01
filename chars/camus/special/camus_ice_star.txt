@@ -4,6 +4,7 @@ candamage player
 shadow	0
 setlayer 100
 antigravity 100
+nolife 1
 remove 0
 didhitscript	data/scripts/didhit/tint_ice.c
 animationscript	data/scripts/player.c
@@ -12,7 +13,7 @@ anim	idle
 	loop	1
 	delay	4
 	offset	200 200
-        hitflash marin_swing
+   hitflash marin_swing
 	drawmethod alpha 1
 	drawmethod scale 0.5 0.5
 	attack1 0

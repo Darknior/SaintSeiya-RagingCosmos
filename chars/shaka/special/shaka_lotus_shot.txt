@@ -3,6 +3,7 @@ type	none
 candamage player
 shadow	0
 setlayer 2
+nolife 1
 remove 0
 lifespan  2
 animationscript	data/scripts/player.c

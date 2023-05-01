@@ -2,6 +2,8 @@ name	camus_icecrystal
 type	none
 shadow	0
 candamage player
+nolife 1
+remove 0
 setlayer 150
 antigravity 100
 didhitscript	data/scripts/didhit/tint_ice.c

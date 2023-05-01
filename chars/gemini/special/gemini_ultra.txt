@@ -10,8 +10,8 @@ anim	idle
 	delay	10
 	offset	420 217
 	drawmethod scale 0.6 0.6
-        drawmethod  alpha 1
-        drawmethod  channel 0.9
+   drawmethod  alpha 1
+   drawmethod  channel 0.9
 	frame	data/chars/gemini/special/gemini_ultra/ultra_gemini0.png
 	frame	data/chars/gemini/special/gemini_ultra/ultra_gemini1.png
 	frame	data/chars/gemini/special/gemini_ultra/ultra_gemini2.png
