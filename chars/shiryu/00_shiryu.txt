@@ -1064,20 +1064,22 @@ anim    freespecial9    # Attaque au sol
     rangez -20 20
     jugglecost  0
     delay    10
-    offset   38 135
+    offset   38 139
     otg      1
-    bbox     -4 54 51 75
+    bbox     52 54 51 75
     hitflash blood_gerbD
     @cmd     dasher 1 0 0 1
     sound    data/chars/shiryu/sounds/dash.wav
     frame    data/chars/shiryu/downattack-0.png
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/downattack-1.png
+	 attack 78 100 50 50 10 1 0 0 15 30
+    dropv    3 4
     frame    data/chars/shiryu/downattack-2.png
     frame    data/chars/shiryu/downattack-3.png
-    attack   33 100 70 50 5 1 0 0 12 30
-    dropv    3 4
+    delay    40
     frame    data/chars/shiryu/downattack-4.png
+    delay    10
     frame    data/chars/shiryu/get2.png
     @cmd     dasher 0 0 0 1
     frame    data/chars/shiryu/get1.png

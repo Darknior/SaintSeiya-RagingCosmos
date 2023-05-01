@@ -1259,14 +1259,14 @@ anim    freespecial9    # Attaque au sol
     offset   32 119
     otg      1
     bbox     29 19 51 75
-    hitflash blood_gerbD
-    @cmd     dasher 2 0 0 1
+    hitflash marin_swing
+    @cmd     dasher 1.2 0 0 1
     sound    data/chars/seiya/sounds/dash.wav
     frame    data/chars/seiya/downattack-0.png
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/downattack-1.png
     frame    data/chars/seiya/downattack-2.png
-    attack   33 100 70 50 5 1 0 0 12 30
+	 attack 122 63 30 50 5 1 0 0 12 30
     dropv    3 4
     frame    data/chars/seiya/downattack-3.png
     frame    data/chars/seiya/downattack-4.png

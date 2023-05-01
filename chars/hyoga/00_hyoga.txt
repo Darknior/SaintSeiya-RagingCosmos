@@ -1196,10 +1196,10 @@ anim    freespecial9    # Attaque au sol
     rangez -20 20
     jugglecost  0
     delay    10
-    offset   38 98
+    offset   38 128
     otg      1
     bbox     26 -1 51 75
-    hitflash blood_gerbD
+    hitflash marin_swing
     @cmd     dasher 1 0 0 1
     sound    data/chars/shiryu/sounds/dash.wav
     frame    data/chars/hyoga/downattack-0.png
@@ -1208,7 +1208,7 @@ anim    freespecial9    # Attaque au sol
     frame    data/chars/hyoga/downattack-2.png
     frame    data/chars/hyoga/downattack-3.png
     delay    30
-	attack 33 68 70 50 5 1 0 0 12 30
+	 attack 114 78 40 50 5 1 0 0 12 30
     dropv    3 4
     frame    data/chars/hyoga/downattack-4.png
     delay    10
