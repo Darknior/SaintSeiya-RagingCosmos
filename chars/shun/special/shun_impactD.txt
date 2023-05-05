@@ -7,18 +7,18 @@ animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
-	delay	12
+	delay	8
 	offset	42 54
 	drawmethod alpha 1
-        drawmethod scale 0.5 0.5
-	frame   data/chars/shun/special/shun_impactD/shun_impactD-0.png
+   drawmethod scale 0.4 0.4
+	frame data/chars/shun/special/shun_impactD/shun_impactD-0.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-1.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-2.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-3.png
-	frame   data/chars/shun/special/shun_impactD/shun_impactD-4.png
+	frame data/chars/shun/special/shun_impactD/shun_impactD-4.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-5.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-6.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-7.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-8.png
-        @cmd suicide
+   @cmd suicide
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-8.png

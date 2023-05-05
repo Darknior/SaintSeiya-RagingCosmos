@@ -10,6 +10,7 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL"), "purple", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL2"), "purple", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL3"), "purple", 1);
+	tintEffect(openborconstant("ANI_FREESPECIAL9"), "purple", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL5"), "purple", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "purple", 1);
 	autoLand();

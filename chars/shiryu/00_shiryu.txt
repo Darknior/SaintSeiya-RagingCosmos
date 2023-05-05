@@ -320,14 +320,13 @@ anim    runattack # Attaque en courant
     bbox     16 13 30 115
     @cmd     dasher 3.5 0 0 1
     sound    data/chars/shiryu/sounds/dash.wav
+    summonframe 0 60 5 0
+    subentity dash_dust
     frame    data/chars/shiryu/runattack1.png
     sound    data/chars/shiryu/sounds/07-forward_punch.wav
     frame    data/chars/shiryu/runattack2.png
     attack2  31 13 55 83 10 0 0 0 5 12
     dropv    3.0 2 0
-    summonframe    0 0 0 0 0
-    subentity      shiryu_dash_dust
-    unsummonframe  11
     frame    data/chars/shiryu/runattack3.png
     attack2  0
     frame    data/chars/shiryu/runattack4.png
@@ -1068,7 +1067,6 @@ anim    freespecial9    # Attaque au sol
     otg      1
     bbox     52 54 51 75
     hitflash blood_gerbD
-    @cmd     dasher 1 0 0 1
     sound    data/chars/shiryu/sounds/dash.wav
     frame    data/chars/shiryu/downattack-0.png
     sound    data/sounds/punch.wav
@@ -1081,7 +1079,6 @@ anim    freespecial9    # Attaque au sol
     frame    data/chars/shiryu/downattack-4.png
     delay    10
     frame    data/chars/shiryu/get2.png
-    @cmd     dasher 0 0 0 1
     frame    data/chars/shiryu/get1.png
     
  

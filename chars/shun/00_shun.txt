@@ -64,6 +64,7 @@ load shun_impactD
 load shun_constellation
 load shun_lights
 load shun_storm
+load dash_dust
 
 
 #-- PALETTES --------------------------------------------------------
@@ -322,39 +323,40 @@ anim run
     frame    data/chars/shun/run6.png
 
 anim runattack # Attaque en courant
-	jugglecost  2
-	energycost  5 1 0
+	 jugglecost  2
+	 energycost  5 1 0
     delay    7
     offset   49 134
     bbox     15 28 51 107
-	fastattack 1
-    hitflash        shun_impact
+	 fastattack 1
+    hitflash shun_impactD
     forcedirection  -1
     @cmd     dasher 3.5 0 0 1
-    sound    data/chars/shun/sounds/01-chain.wav
-    frame    data/chars/shun/runattack1.png
-    frame    data/chars/shun/runattack2.png
-    summonframe     0 0 0 0 0
-    subentity       dash_dust
-    unsummonframe   11
-    frame    data/chars/shun/runattack3.png
-	attack 50 40 182 40 20 1 0 0 5 30
-	dropv    3.0 2 0
-    frame    data/chars/shun/runattack4.png
-    attack 0
-    frame    data/chars/shun/runattack5.png
-    frame    data/chars/shun/runattack6.png
-	attack 50 20 200 40 5 1 0 0 12 30
-	dropv    3.0 2 0
-    frame    data/chars/shun/runattack7.png
-	attack 0
+    delay    8
+    offset    90 199
+    bbox 79 92 35 107
+    summonframe 0 60 5 0
+    subentity dash_dust
+    sound    data/chars/shun/sounds/runattack.wav
+    frame    data/chars/shun/attack6.png
+    frame    data/chars/shun/attack7.png
+    attack1 104 115 65 20 5 5 0 0 12 20
+    dropv    3.0 2 0
+    frame    data/chars/shun/attack8.png
+    attack1 0
+    frame    data/chars/shun/attack9.png
+    attack1 104 115 65 20 5 5 0 0 12 20
+    dropv    3.0 2 0
+    frame    data/chars/shun/attack10.png
+    attack1 0
+    frame    data/chars/shun/attack11.png
+    attack1 104 115 65 20 5 5 0 0 12 20
+    dropv    3.0 2 0
+    frame    data/chars/shun/attack12.png
+    attack1 0
     @cmd     dasher 0 0 0 1
-    frame    data/chars/shun/runattack8.png
-    frame    data/chars/shun/runattack9.png
-	attack 50 60 230 40 5 1 0 0 0 30
-	dropv    3.0 2 0
-    frame    data/chars/shun/runattack10.png
-	attack 0
+    frame    data/chars/shun/attack13.png
+    frame    data/chars/shun/attack14.png
 
 anim get
     delay    5
@@ -378,7 +380,7 @@ anim attack1 # Attaque combo 1
     delay    10
     attack1 104 115 65 20 5 0 0 0 12 20
     frame    data/chars/shun/attack8.png
-	delay    3
+	 delay    3
     frame    data/chars/shun/attack9.png
     frame    data/chars/shun/attack10.png
     frame    data/chars/shun/attack11.png
@@ -413,7 +415,7 @@ anim attack3 # Attaque combo 3
     frame    data/chars/shun/attack17.png
     frame    data/chars/shun/attack18.png
     delay    12
-	attack1 108 100 50 50 5 0 1 0 15 20
+	 attack1 108 100 50 50 5 0 1 0 15 20
     frame    data/chars/shun/attack19.png
     delay    3
     frame    data/chars/shun/attack20.png
@@ -430,10 +432,10 @@ anim attack4 # Attaque combo 4
     frame    data/chars/shun/attack22.png
     frame    data/chars/shun/attack23.png
     delay    12
-	attack1 93 100 65 50 5 0 1 0 15 20
+	 attack1 93 100 65 50 5 0 1 0 15 20
     frame    data/chars/shun/attack24.png
     delay    3
-	attack1 0
+	 attack1 0
     frame    data/chars/shun/attack25.png
     frame    data/chars/shun/attack26.png
     frame    data/chars/shun/attack27.png
@@ -445,9 +447,9 @@ anim attack5 # Attaque combo 5
     hitflash flashbig
     summonframe 0 0 0 0
     subentity dash_dust
-	sound   data/chars/shun//sounds/ah.wav
+	 sound   data/chars/shun//sounds/ah.wav
     frame    data/chars/shun/attack28.png
-	sound   data/chars/shun/sounds/attack.wav
+	 sound   data/chars/shun/sounds/attack.wav
     frame    data/chars/shun/attack29.png
     frame    data/chars/shun/attack30.png
     attack1 55 100 120 50 5 1 1 0 0 20
@@ -459,32 +461,6 @@ anim attack5 # Attaque combo 5
     dropv     5.0 0.5
     frame    data/chars/shun/attack33.png
     attack1 0
-
-anim chargeattack
-    sound   data/sounds/punch.wav
-    delay    6
-    offset    33 132
-    hitflash flashmedium
-    frame    data/chars/shun/attack41.png
-    frame    data/chars/shun/attack42.png
-    frame    data/chars/shun/attack43.png
-    delay    12
-	attack1 93 100 65 50 5 0 0 0 15 20
-    frame    data/chars/shun/attack44.png
-    delay    3
-	attack1 0
-    frame    data/chars/shun/attack45.png
-    frame    data/chars/shun/attack46.png
-    frame    data/chars/shun/attack47.png
-	frame    data/chars/shun/attack48.png
-    frame    data/chars/shun/attack49.png
-    frame    data/chars/shun/attack50.png
-    delay    12
-	attack1 93 100 65 50 5 0 0 0 15 20
-    frame    data/chars/shun/attack51.png
-    delay    3
-	attack1 0
-    frame    data/chars/shun/attack52.png
 
 
 #//Grab animations/////////////////////////////////////////////////
@@ -506,9 +482,9 @@ anim grabattack #Saisie Coup de genou X2
     frame    data/chars/shun/attackbackward3.png
     frame    data/chars/shun/attackbackward4.png
     frame    data/chars/shun/attackbackward5.png
-	attack1 69 42 50 29 5 0 0 0 15 20
+	 attack1 69 42 50 29 5 0 0 0 15 20
     frame    data/chars/shun/attackbackward6.png
-	attack1 0
+	 attack1 0
     frame    data/chars/shun/attackbackward7.png
     frame    data/chars/shun/attackbackward5.png
     frame    data/chars/shun/attackbackward1.png
@@ -520,7 +496,7 @@ anim grabattack2 #Saisie Coup finisher
     hitflash flashbig
     frame    data/chars/shun/grabattack1.png
     delay    20
-	attack3 93 40 50 26 10 1 0 0 15 20
+	 attack3 93 40 50 26 10 1 0 0 15 20
     frame    data/chars/shun/grabattack2.png
     delay    12
     frame    data/chars/shun/grabattack1.png
@@ -635,7 +611,7 @@ anim jumpland # Aterrissage du saut
 	
 anim land #  atterissage safe au sol (haut+ jump pendant la projection)
     flipframe 1
-	delay    8
+	 delay    8
     offset    62 131
     bbox 38 28 51 107
     sound data/chars/shun/sounds/06-jump2.wav
@@ -652,13 +628,13 @@ anim jumpattack #Attaque sautée statique
     sound data/chars/shun/sounds/19-air_special.wav
     frame    data/chars/shun/jumpspecial1.png
     attack4 62 98 67 50 10 1 0 0 5 30
-	dropv    4.0 1.0 0.0
+	 dropv    4.0 1.0 0.0
     frame    data/chars/shun/jumpspecial2.png
     frame    data/chars/shun/jumpspecial3.png
     frame    data/chars/shun/jumpspecial4.png
     delay    10
     attack 86 99 100 90 10 1 0 0 12 30
-	dropv    4.0 1.0 0.0
+	 dropv    4.0 1.0 0.0
     frame    data/chars/shun/jumpspecial5.png
     frame    data/chars/shun/jumpspecial6.png
 
@@ -669,13 +645,13 @@ anim jumpforward #Attaque sautée vers l'avant
     sound data/chars/shun/sounds/19-air_special.wav
     frame    data/chars/shun/jumpspecial1.png
     attack4 62 98 67 50 10 1 0 0 5 30
-	dropv    6.0 2.0 0.0
+	 dropv    6.0 2.0 0.0
     frame    data/chars/shun/jumpspecial2.png
     frame    data/chars/shun/jumpspecial3.png
     frame    data/chars/shun/jumpspecial4.png
     delay    10
     attack 86 99 100 90 10 1 0 0 12 30
-	dropv    6.0 2.0 0.0
+	 dropv    6.0 2.0 0.0
     frame    data/chars/shun/jumpspecial5.png
     frame    data/chars/shun/jumpspecial6.png
 
@@ -687,7 +663,7 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/shun/jumpattack21.png
     jumpframe 2 -2 0
     attack4 62 21 67 26 10 0 0 0 5 12
-	dropv    4.0 1.0 0.0
+	 dropv    4.0 1.0 0.0
     frame    data/chars/shun/jumpattack22.png
     frame    data/chars/shun/jumpattack23.png
     attack4 0
@@ -699,7 +675,7 @@ anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
     sound data/sounds/punch.wav
     frame    data/chars/shun/jumpattack31.png
     attack4 62 21 67 26 10 1 0 0 5 12
-	dropv    7.0 1.0 0.0
+	 dropv    7.0 1.0 0.0
     frame    data/chars/shun/jumpattack32.png
     frame    data/chars/shun/jumpattack33.png
     attack4 0
@@ -829,98 +805,109 @@ anim    attackbackward  # Attaque arrière native (b + a1)
 anim    attackboth  # Attaque de mêlée native (j + a1)
     jugglecost  2
     fastattack 1
-    offset   203 310
-    hitflash shun_impactE
-    delay    4
-    attack1  0 0 0 0 0 0 0 0 0 0
-    sound    data/chars/shun/sounds/01-stream.wav
+    hitflash shun_impactD
+    delay    10
+    sound data/chars/shun/sounds/01-stream.wav
     @cmd     spawnbind "shun_storm" "ANI_IDLE" 0 0 0 0 0
+    delay 10
+    offset    203 310
     frame    data/chars/shun/special1.png
     frame    data/chars/shun/special2.png
     frame    data/chars/shun/special3.png
-    frame    data/chars/shun/special4.png
-    frame    data/chars/shun/special5.png
-    attack   103 279 200 50 5 0 0 0 0 30
-    frame    data/chars/shun/special10.png
-    attack   0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shun/special11.png
-    attack   103 279 200 50 5 0 0 0 0 30
-    frame    data/chars/shun/special12.png
-    attack   0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shun/special13.png
-    attack   103 279 200 50 5 0 0 0 0 30
-    delay    10
+    offset    70 184
     frame    data/chars/shun/uppercut1.png
-    attack   0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shun/uppercut2.png
-    attack   200 120 200 200 5 0 0 0 0 30
+	 attack 82 87 100 100 10 5 0 0 12 30
+    dropv    5 1.5
     frame    data/chars/shun/uppercut3.png
-    attack   0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shun/uppercut4.png
-    attack   200 120 200 200 5 1 0 0 0 30
+    attack 82 87 100 100 10 5 0 0 12 30
+    dropv    5 1.5
     frame    data/chars/shun/uppercut5.png
-    attack   0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shun/uppercut10.png
-    attack   200 120 200 200 5 1 0 0 0 30
-    frame    data/chars/shun/uppercut11.png
-    attack   0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shun/uppercut12.png
+    frame    data/chars/shun/uppercut4.png
+    frame    data/chars/shun/uppercut3.png
+    frame    data/chars/shun/uppercut2.png
+    frame    data/chars/shun/uppercut1.png
+    offset    203 310
+    frame    data/chars/shun/special2.png
+    frame    data/chars/shun/special1.png
 
-anim    freespecial2    # Courant Nébulaire
+anim    freespecial2    # Thunder Wave (Avant + Bouton Special)
     jugglecost  2
-    delay       10
-    offset      175 136
-    summonframe 0 0 0 0 0
-    subentity   shun_aura_ryuseiken
     energycost  20 1 0
-    hitflash    flashbig
-    attack5     127 -29 100 180 10 1 0 0 5 12
-    sound    data/chars/shun/sounds/02.wav
+    fastattack 1
+    delay    10
+    offset    202 310
+    hitflash shun_impactD
+    sound data/chars/shun/sounds/78-cosmos.wav
     @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/shun/special31.png
-    frame    data/chars/shun/special32.png
-    frame    data/chars/shun/special33.png
-    frame    data/chars/shun/special34.png
-    frame    data/chars/shun/special35.png
-    attack5  -8 -30 100 180 10 1 0 0 5 12
-    frame    data/chars/shun/special36.png
-    frame    data/chars/shun/special37.png
-    frame    data/chars/shun/special38.png
-    frame    data/chars/shun/special39.png
-    frame    data/chars/shun/special40.png
-    frame    data/chars/shun/special41.png
-    frame    data/chars/shun/special42.png
-    frame    data/chars/shun/special43.png
-    frame    data/chars/shun/special44.png
-    frame    data/chars/shun/special45.png
-    frame    data/chars/shun/special46.png
-    frame    data/chars/shun/special47.png
-    frame    data/chars/shun/special48.png
-    frame    data/chars/shun/special49.png
-    @cmd     shooter "shun_stream" 77 80 3 3 0 0
-    frame    data/chars/shun/special50.png
-    frame    data/chars/shun/special51.png
-    frame    data/chars/shun/special52.png
-    frame    data/chars/shun/special53.png
-    frame    data/chars/shun/special54.png
-    frame    data/chars/shun/special55.png
-    frame    data/chars/shun/special56.png
-    frame    data/chars/shun/special57.png
-    frame    data/chars/shun/special58.png
-    frame    data/chars/shun/special59.png
-    frame    data/chars/shun/special60.png
+	 @cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/shun/special1.png
+    sound data/chars/shun/sounds/08-ultra.wav
+    frame    data/chars/shun/special2.png
+    sound data/chars/shun/sounds/02.wav
+    frame    data/chars/shun/special3.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special4.png
+	 attack1 0
+    frame    data/chars/shun/special5.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special6.png
+	 attack1 0
+    frame    data/chars/shun/special7.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special8.png
+	 attack1 0
+    frame    data/chars/shun/special9.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special10.png
+	 attack1 0
+    frame    data/chars/shun/special11.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special12.png
+	 attack1 0
+    frame    data/chars/shun/special13.png
+    offset    202 310
+    delay    8
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/attack41.png
+	 attack1 0
+    frame    data/chars/shun/attack42.png
+	 attack5 50 255 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/attack43.png
+	 attack1 0
+    frame    data/chars/shun/attack44.png
+	 attack5 50 255 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/attack45.png
+	 attack1 0
+    frame    data/chars/shun/attack46.png
+	 attack5 50 255 430 65 10 5 0 0 5 30
+    dropv    1.2 5
+    frame    data/chars/shun/attack47.png
+	 attack1 0
+	 frame    data/chars/shun/attack48.png
+	 attack5 50 255 400 65 10 5 0 0 5 30
+    dropv    1.2 5
+    frame    data/chars/shun/attack49.png
+	 attack1 0
+    frame    data/chars/shun/attack50.png
+	 attack5 50 255 400 65 10 5 0 0 5 30
+    dropv    1.2 5
+    frame    data/chars/shun/attack51.png
+	 attack1 0
+    frame    data/chars/shun/attack52.png
 
 anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     delay    9
     offset   174 135
     hitflash flashbig
     bbox     152 18 35 120
-	sound    data/chars/shun/sounds/concentration.wav
+	 sound    data/chars/shun/sounds/concentration.wav
     frame    data/chars/shun/upspecial1.png
     frame    data/chars/shun/upspecial2.png
     @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/upspecial3.png
-	@cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
+	 @cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
     sound    data/chars/shun/sounds/00-cosmos.wav
     frame    data/chars/shun/upspecial4.png
     frame    data/chars/shun/upspecial5.png
@@ -933,61 +920,52 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
 anim    freespecial4   # Attaque arrière (a3)
     jugglecost  1
     fastattack 1
-    offset   52 146
+    offset   84 146
     hitflash flashmedium
     delay    6
     sound    data/chars/seiya/sounds/01-backpunch.wav
     frame    data/chars/shun/backattack0.png
     delay    10
     frame    data/chars/shun/backattack1.png
-    delay    15
-    attack   6 36 60 50 30 12 0 0 0 30
-    dropv    3.5 1 0
     frame    data/chars/shun/backattack3.png
+	 attack 15 76 60 50 10 12 0 0 0 30
+    dropv    3.5 1 0
+    frame    data/chars/shun/backattack4.png
+    frame    data/chars/shun/backattack5.png
     delay    8
     frame    data/chars/shun/backattack1.png
     bbox     29 29 35 120
     frame    data/chars/shun/backattack0.png
 
-anim freespecial5 # Uppercut
+anim freespecial5 # Uppercut (Bas, Avant + Bouton Special)
     jugglecost  2
-    offset    203 310
     fastattack 1
-    hitflash shun_impactE
-    delay    4
-    attack1 0 0 0 0 0 0 0 0 0 0
+    hitflash shun_impactD
+    delay    10
     sound data/chars/shun/sounds/01-stream.wav
     @cmd     spawnbind "shun_storm" "ANI_IDLE" 0 0 0 0 0
+    delay 10
+    offset    203 310
     frame    data/chars/shun/special1.png
     frame    data/chars/shun/special2.png
     frame    data/chars/shun/special3.png
-    frame    data/chars/shun/special4.png
-    frame    data/chars/shun/special5.png
-    attack 103 279 200 50 5 0 0 0 0 30
-    frame    data/chars/shun/special10.png
-    attack 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shun/special11.png
-    attack 103 279 200 50 5 0 0 0 0 30
-    frame    data/chars/shun/special12.png
-    attack 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shun/special13.png
-    attack 103 279 200 50 5 0 0 0 0 30
-    delay 10
+    offset    70 184
     frame    data/chars/shun/uppercut1.png
-    attack 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shun/uppercut2.png
-    attack 200 120 200 200 5 0 0 0 0 30
+	 attack 82 87 100 100 10 5 0 0 12 30
+    dropv    5 1.5
     frame    data/chars/shun/uppercut3.png
-    attack 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shun/uppercut4.png
-    attack 200 120 200 200 5 1 0 0 0 30
+    attack 82 87 100 100 10 5 0 0 12 30
+    dropv    5 1.5
     frame    data/chars/shun/uppercut5.png
-    attack 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shun/uppercut10.png
-    attack 200 120 200 200 5 1 0 0 0 30
-    frame    data/chars/shun/uppercut11.png
-    attack 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shun/uppercut12.png
+    frame    data/chars/shun/uppercut4.png
+    frame    data/chars/shun/uppercut3.png
+    frame    data/chars/shun/uppercut2.png
+    frame    data/chars/shun/uppercut1.png
+    offset    203 310
+    frame    data/chars/shun/special2.png
+    frame    data/chars/shun/special1.png
 	
 anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     jugglecost  3
@@ -995,13 +973,13 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     offset    203 310
     fastattack 1
     hitflash shun_impact
-    sound data/chars/deathmask/78-cosmos.wav
+    sound data/chars/shun/sounds/78-cosmos.wav
     #bbox 21 16 51 97
     summonframe 0 0 0 0 1
     subentity shun_constellation
     energycost  20 1 0
     @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
-	@cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
+	 @cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/special1.png
     sound data/chars/shun/sounds/08-ultra.wav
     frame    data/chars/shun/special2.png
@@ -1037,17 +1015,17 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     frame    data/chars/shun/special20.png
     attack 50 200 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special21.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special22.png
     attack 50 235 1000 35 5 0 0 0 0 30
     @cmd     spawnScreen "shun_lights" 0 0 0 0
     frame    data/chars/shun/special23.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special24.png
     attack 50 276 1000 35 5 0 0 0 0 30
     @cmd     spawnScreen "shun_chainB" 0 0 0 0
     frame    data/chars/shun/special25.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special26.png
     attack 50 200 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
@@ -1056,47 +1034,50 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     attack 50 235 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
     @cmd     spawnScreen "shun_chainC" 0 0 0 0
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
     attack 50 276 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
     attack 50 200 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
     attack 50 235 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
     attack 50 276 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
     attack 50 200 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
     @cmd     spawnScreen "shun_chain" 0 0 0 0
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
     attack 50 235 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
     attack 50 276 1000 35 5 0 0 0 0 30
     frame    data/chars/shun/special19.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
     @cmd     spawnScreen "shun_chainB" 0 0 0 0
-    attack 50 200 1000 35 5 0 0 0 0 30
+    attack 50 200 1000 35 5 5 0 0 0 30
+    dropv    2 5
     frame    data/chars/shun/special19.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
-    attack 50 235 1000 35 5 0 0 0 0 30
+    attack 50 235 1000 35 5 5 0 0 0 30
+    dropv    2 5
     frame    data/chars/shun/special19.png
-        attack 0
+    attack 0
     frame    data/chars/shun/special19.png
-    attack 50 276 1000 35 5 0 0 0 0 30
+    attack 50 276 1000 35 5 5 0 0 0 30
+    dropv    2 5
     delay    10
     frame    data/chars/shun/special13.png
     @cmd     spawnScreen "shun_chainC" 0 0 0 0
@@ -1123,7 +1104,7 @@ anim freespecial7   # Coup de pied haut
     frame    data/chars/shun/attack22.png
     frame    data/chars/shun/attack23.png
     delay    12
-	attack1 79 100 90 50 6 1 1 0 15 25
+	 attack1 79 100 90 50 6 1 1 0 15 25
     dropv    5.0 0.5
     frame    data/chars/shun/attack24.png
     delay    6
@@ -1142,10 +1123,27 @@ anim freespecial8   # Balayette
     sound    data/sounds/punch.wav
     frame    data/chars/shun/slide1.png
     delay    14
-	attack1 63 62 80 65 6 1 0 0 12 25
+	 attack1 63 62 80 65 6 1 0 0 12 25
     dropv    5.0 0.5
     frame    data/chars/shun/slide2.png
     delay    9
     frame    data/chars/shun/slide3.png
     frame    data/chars/shun/slide1.png
     frame    data/chars/shun/slide0.png
+    
+ anim freespecial9
+    otg 1
+    delay    12
+    offset    84 197
+    hitflash shun_impactD
+    sound   data/chars/shun/sounds/ah.wav
+    frame    data/chars/shun/downattack0.png
+    frame    data/chars/shun/downattack1.png
+    frame    data/chars/shun/downattack2.png
+    delay    25
+	 attack 73 164 100 50 10 10 0 0 13 30
+    dropv    2 5
+    delay    12
+    frame    data/chars/shun/downattack3.png
+    frame    data/chars/shun/downattack4.png
+

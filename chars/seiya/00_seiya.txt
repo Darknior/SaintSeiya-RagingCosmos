@@ -349,11 +349,9 @@ anim runattack  # Attaque en courant
     offset   30 111
     hitflash blue_swing
     bbox     20 0 30 112
-    delay    8
-    offset   30 111
-    hitflash blue_swing
-    bbox     20 0 30 112
     @cmd     dasher 3.5 0 0 1
+    summonframe 0 60 5 0
+    subentity dash_dust
     sound    data/chars/seiya/sounds/07-forward_punch.wav
     frame    data/chars/seiya/runattack1.png
     attack   5 13 90 55 15 0 0 0 0 20

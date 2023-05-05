@@ -4,6 +4,7 @@ candamage enemy npc
 shadow	0
 setlayer 100
 antigravity 100
+nolife 1
 remove 0
 didhitscript	data/scripts/didhit/tint_ice.c
 animationscript	data/scripts/player.c
