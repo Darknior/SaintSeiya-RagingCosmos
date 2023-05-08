@@ -1044,7 +1044,7 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
     frame    data/chars/seiya/uppercut3.png
     attack1  55 0 35 148 9 1 0 0 0 20
     dropv    4.0 2 0
-    jumpframe 0 2 0.5
+    jumpframe 0 4 0 0 round_dust
     frame    data/chars/seiya/uppercut3.png
     attack1  0
     frame    data/chars/seiya/uppercut3.png

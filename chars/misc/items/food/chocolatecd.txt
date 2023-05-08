@@ -1,5 +1,5 @@
 name	chocolateCD
-health	22
+health	25
 #score		2500
 type		item
 #shadow	0
@@ -13,7 +13,7 @@ anim idle
 	delay	100
 	offset     238 181
 	bbox	223 164 32 16
-	@cmd itemText "ENERGY 50% UP" 0.8 1.5
+	@cmd itemText "ENERGY 25% UP" 0.8 1.5
 	frame	data/chars/misc/items/food/chocolateCD01.gif
       delay   4
 	frame	data/chars/misc/items/food/chocolateCD02.gif

@@ -13,7 +13,7 @@ anim idle
 	delay	100
 	 offset     238 177
 	bbox	223 165 32 16
-   @cmd itemText "500 points" 0.8 1.5
+   @cmd itemText "500 PTS" 0.8 1.5
 	frame	data/chars/misc/items/points/coinCD01.gif
    delay   4
 	frame	data/chars/misc/items/points/coinCD01a.gif

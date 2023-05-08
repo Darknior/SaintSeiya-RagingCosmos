@@ -13,7 +13,7 @@ anim idle
 	delay	100
 	offset	19 25
 	bbox	14 15 10 11
-   @cmd itemText "2000 points" 0.8 1.5
+   @cmd itemText "2000 PTS" 0.8 1.5
    frame	data/chars/misc/items/points/anelCD01.gif
    delay	4
 	frame	data/chars/misc/items/points/anelCD02.gif

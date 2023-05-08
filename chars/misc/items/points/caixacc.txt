@@ -12,7 +12,7 @@ anim idle
 	loop		1
 	 offset     240 204
 	bbox	223 195 32 16
-   @cmd itemText "1500 points" 0.8 1.5
+   @cmd itemText "1500 PTS" 0.8 1.5
 	delay	100
 	frame	data/chars/misc/items/points/caixaCC01.gif
 	delay   4

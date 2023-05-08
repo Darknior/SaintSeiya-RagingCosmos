@@ -1,5 +1,5 @@
 misc/items/food/	CerejaCC
-health	44
+health	10
 #score		2500
 type		item
 #shadow	0
@@ -13,7 +13,7 @@ anim idle
 	offset     240 182
 	bbox	223 165 32 16
 	delay	100
-	@cmd itemText "ENERGY 50% UP" 0.8 1.5
+	@cmd itemText "ENERGY 10% UP" 0.8 1.5
 	frame	data/chars/misc/items/food/cerejaCC01.gif
 	delay   4
 	frame	data/chars/misc/items/food/cerejaCC02.gif

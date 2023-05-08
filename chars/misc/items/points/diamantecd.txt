@@ -13,7 +13,7 @@ anim idle
 	delay	10
 	offset	18 17
 	bbox	5 1 22 16
-   @cmd itemText "5000 points" 0.8 1.5
+   @cmd itemText "5000 PTS" 0.8 1.5
 	frame	data/chars/misc/items/points/DiamanteCD01.gif
  offset  18  18
 	frame	data/chars/misc/items/points/DiamanteCD02.gif

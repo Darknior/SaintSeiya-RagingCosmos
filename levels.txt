@@ -530,7 +530,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
-z           378 484
+z           388 484
 file        data/levels/temple13.txt
 
 set         Temple_13_BOSS_Grand_PopeSeiya

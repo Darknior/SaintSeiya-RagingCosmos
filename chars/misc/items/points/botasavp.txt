@@ -13,7 +13,7 @@ anim idle
 	delay	100
 	offset     238 177
 	bbox	223 165 32 16
-   @cmd itemText "1000 points" 0.8 1.5
+   @cmd itemText "1000 PTS" 0.8 1.5
 	frame	data/chars/misc/items/points/BotasAVP01.gif
    delay   4
 	frame	data/chars/misc/items/points/BotasAVP02.gif

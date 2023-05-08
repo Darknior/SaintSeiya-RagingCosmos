@@ -50,18 +50,18 @@ at          0
 
 spawn soldier1
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 400
 
 spawn soldier3
 alias SOLDIER
-coords	-200 300
+coords	-200 480
 at 400
 
 spawn soldier2
 alias SOLDIER
 item ourocd
-coords	-200 500
+coords	-200 400
 at 400
 
 
@@ -71,18 +71,18 @@ at 400
 
 spawn soldier3
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 1000
 
 spawn soldier2
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 1000
 
 spawn soldier3
 alias SOLDIER
 item diamondff
-coords	-200 500
+coords	-200 470
 at 1000
 
 
@@ -91,18 +91,18 @@ at 1000
 
 spawn soldier1
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 1500
 
 spawn soldier2
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 1500
 
 spawn soldier3
 alias SOLDIER
 item apple
-coords	-200 500
+coords	-200 470
 at 1500
 
 
@@ -113,18 +113,18 @@ at 1500
 
 spawn soldier1-1
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 2000
 
 spawn soldier2
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 2000
 
 spawn soldier1
 alias SOLDIER
 item laranjaff
-coords	-200 500
+coords	-200 450
 at 2000
 
 
@@ -134,18 +134,18 @@ at 2000
 
 spawn soldier3
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 2400
 
 spawn soldier1-1
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 2400
 
 spawn soldier1-1
 alias SOLDIER
 item cosmos-gold
-coords	-200 500
+coords	-200 470
 at 2400
 
 
@@ -156,18 +156,18 @@ at 2400
 spawn soldier1-1
 alias SOLDIER
 item cosmos-silver
-coords	850 100
+coords	850 400
 at 2800
 
 spawn soldier2
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 2800
 
 spawn soldier1-1
 alias SOLDIER
 item ourocd
-coords	-200 500
+coords	-200 470
 at 2800
 
 
@@ -177,17 +177,17 @@ at 2800
 spawn soldier3
 alias SOLDIER
 item cosmos-stars
-coords	850 100
+coords	850 400
 at 3800
 
 spawn soldier3
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 3800
 
 spawn soldier3
 alias SOLDIER
-coords	-200 500
+coords	-200 470
 at 3800
 
 

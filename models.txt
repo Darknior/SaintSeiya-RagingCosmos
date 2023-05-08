@@ -307,6 +307,9 @@ know    abacaxiff       data/chars/misc/items/food/abacaxiff.txt
 know    cerejacc        data/chars/misc/items/food/cerejacc.txt
 know    limaocc         data/chars/misc/items/food/limaocc.txt
 know    laranjaff       data/chars/misc/items/food/laranjaff.txt
+know    melanciabc      data/chars/misc/items/food/melanciabc.txt
+know    saladacd        data/chars/misc/items/food/saladacd.txt
+know    saladaavp       data/chars/misc/items/food/saladaavp.txt
 know    uvaff           data/chars/misc/items/food/uvaff.txt
 
 --Athena statues (gain life)--
