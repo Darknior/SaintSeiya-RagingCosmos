@@ -1,0 +1,29 @@
+name	colarCD
+health	0
+score		2000
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
+
+anim idle
+	loop	1
+	delay	100
+	offset	24 19
+	bbox	8 7 32 12
+   @cmd itemText "2000 points" 0.8 1.5
+	frame	data/chars/misc/items/points/colarCD01.gif
+   delay   4
+	frame	data/chars/misc/items/points/colarCD02.gif
+	frame	data/chars/misc/items/points/colarCD01.gif
+	frame	data/chars/misc/items/points/colarCD02.gif
+	frame	data/chars/misc/items/points/colarCD01.gif
+	frame	data/chars/misc/items/points/colarCD02.gif
+	frame	data/chars/misc/items/points/colarCD01.gif
+	frame	data/chars/misc/items/points/colarCD02.gif
+	frame	data/chars/misc/items/points/colarCD01.gif
+	frame	data/chars/misc/items/points/colarCD02.gif
+	frame	data/chars/misc/items/points/colarCD01.gif
+

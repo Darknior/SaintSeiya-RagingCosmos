@@ -298,6 +298,7 @@ know    columnT      data/chars/jaki/special/columnT.txt
 
 ## ITEMS ##
 
+--Fruits (gain life)--
 know    apple           data/chars/misc/items/food/apple.txt
 know    macaff          data/chars/misc/items/food/macaff.txt
 know    bananaff        data/chars/misc/items/food/bananaff.txt
@@ -308,14 +309,30 @@ know    limaocc         data/chars/misc/items/food/limaocc.txt
 know    laranjaff       data/chars/misc/items/food/laranjaff.txt
 know    uvaff           data/chars/misc/items/food/uvaff.txt
 
+--Athena statues (gain life)--
 know    cosmos-bronze   data/chars/misc/items/cosmos/cosmos-bronze.txt
 know    cosmos-silver   data/chars/misc/items/cosmos/cosmos-silver.txt
 know    cosmos-gold     data/chars/misc/items/cosmos/cosmos-gold.txt
-know    cosmos-stars    data/chars/misc/items/cosmos/cosmos-stars.txt
 
+--cosmos (gain cosmos)--
+know    cosmos-stars    data/chars/misc/items/cosmos/cosmos-stars.txt
 know    energy          data/chars/misc/items/obj/energy.txt
 know    cosmo           data/chars/misc/items/obj/cosmo.txt
 know    life            data/chars/misc/items/obj/life.txt
+
+--gold and jewels (gain points)--
+know    anelcd          data/chars/misc/items/points/anelcd.txt
+know    botasavp        data/chars/misc/items/points/botasavp.txt
+know    caixacc         data/chars/misc/items/points/caixacc.txt
+know    coincd          data/chars/misc/items/points/coincd.txt
+know    colarcd         data/chars/misc/items/points/colarcd.txt
+know    diamantecd      data/chars/misc/items/points/diamantecd.txt
+know    diamondff       data/chars/misc/items/points/diamondff.txt
+know    gold            data/chars/misc/items/points/gold.txt
+know    goldbc          data/chars/misc/items/points/goldbc.txt
+know    ourocd          data/chars/misc/items/points/ourocd.txt
+know    sacocd          data/chars/misc/items/points/sacocd.txt
+
 
 ## ARMORS  ##
 

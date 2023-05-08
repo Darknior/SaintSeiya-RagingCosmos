@@ -1,0 +1,25 @@
+name	DiamanteCD
+health	0
+score		5000
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
+
+anim idle
+	loop	1
+	delay	10
+	offset	18 17
+	bbox	5 1 22 16
+   @cmd itemText "5000 points" 0.8 1.5
+	frame	data/chars/misc/items/points/DiamanteCD01.gif
+ offset  18  18
+	frame	data/chars/misc/items/points/DiamanteCD02.gif
+	offset  18  17
+	frame	data/chars/misc/items/points/DiamanteCD03.gif
+	offset  18  18
+	frame	data/chars/misc/items/points/DiamanteCD04.gif
+	frame	data/chars/misc/items/points/DiamanteCD05.gif
+

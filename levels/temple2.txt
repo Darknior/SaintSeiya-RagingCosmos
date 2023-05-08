@@ -49,6 +49,7 @@ at          0
 
 spawn soldier_basic
 alias Soldat de Base
+item diamantecd
 coords	800 200
 at 0
 
@@ -74,6 +75,7 @@ at 400
 
 spawn soldier2
 alias SOLDIER
+item apple
 coords	-200 500
 at 400
 
@@ -89,11 +91,13 @@ at 1000
 
 spawn soldier2
 alias SOLDIER
+cosmos-stars
 coords	-200 300
 at 1000
 
 spawn soldier3
 alias SOLDIER
+item cosmos-bronze
 coords	-200 500
 at 1000
 
@@ -113,7 +117,7 @@ at 1500
 
 spawn soldier3
 alias SOLDIER
-item ENERGY
+item limaocc
 coords	-200 500
 at 1500
 
@@ -135,6 +139,7 @@ at 2000
 
 spawn soldier1
 alias SOLDIER
+item cosmos-stars
 coords	-200 500
 at 2000
 
@@ -155,6 +160,7 @@ at 2400
 
 spawn soldier1-1
 alias SOLDIER
+item sacocd
 coords	-200 500
 at 2400
 
@@ -165,7 +171,7 @@ at 2400
 
 spawn soldier1-1
 alias SOLDIER
-item LIFE
+item botasavp
 coords	850 100
 at 2800
 
@@ -176,6 +182,7 @@ at 2800
 
 spawn soldier1-1
 alias SOLDIER
+item diamondff
 coords	-200 500
 at 2800
 
@@ -185,7 +192,7 @@ at 2800
 
 spawn soldier3
 alias SOLDIER
-item LIFE
+item cosmos-silver
 coords	850 100
 at 3800
 
@@ -196,6 +203,7 @@ at 3800
 
 spawn soldier3
 alias SOLDIER
+item colarcd
 coords	-200 500
 at 3800
 

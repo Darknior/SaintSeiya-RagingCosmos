@@ -55,6 +55,7 @@ at          0
 
 spawn marin
 coords	550 390
+item diamantecd
 at 0
 
 spawn soldier1
@@ -64,6 +65,7 @@ at 400
 
 spawn soldier3
 alias SOLDIER
+laranjaff
 coords	-200 300
 at 400
 
@@ -84,11 +86,13 @@ at 1000
 
 spawn soldier2
 alias SOLDIER
+item cosmos-stars
 coords	-200 300
 at 1000
 
 spawn soldier3
 alias SOLDIER
+item anelcd
 coords	-200 500
 at 1000
 
@@ -109,7 +113,7 @@ at 1500
 
 spawn soldier3
 alias SOLDIER
-item ENERGY
+item caixacc
 coords	-200 500
 at 1500
 
@@ -125,11 +129,13 @@ at 2000
 
 spawn soldier2
 alias SOLDIER
+item diamondff
 coords	-200 300
 at 2000
 
 spawn soldier1
 alias SOLDIER
+item coincd
 coords	-200 500
 at 2000
 
@@ -146,6 +152,7 @@ at 2400
 
 spawn soldier1-1
 alias SOLDIER
+item cosmos-gold
 coords	-200 300
 at 2400
 
@@ -161,7 +168,7 @@ at 2400
 
 spawn soldier1-1
 alias SOLDIER
-item LIFE
+item grape
 coords	850 100
 at 2800
 
@@ -172,6 +179,7 @@ at 2800
 
 spawn soldier1-1
 alias SOLDIER
+item cosmos-silver
 coords	-200 500
 at 2800
 
@@ -182,12 +190,13 @@ at 2800
 
 spawn soldier3
 alias SOLDIER
-item LIFE
+item botasavp
 coords	850 100
 at 3800
 
 spawn soldier3
 alias SOLDIER
+goldbc
 coords	-200 300
 at 3800
 

@@ -1,5 +1,5 @@
 name	cosmos-stars
-health	55
+mp	100
 #score		2500
 type		item
 #shadow	0

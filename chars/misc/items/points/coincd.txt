@@ -1,0 +1,31 @@
+name	coinCD
+health	0
+score		500
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
+
+anim idle
+	loop	1
+	delay	100
+	 offset     238 177
+	bbox	223 165 32 16
+   @cmd itemText "500 points" 0.8 1.5
+	frame	data/chars/misc/items/points/coinCD01.gif
+   delay   4
+	frame	data/chars/misc/items/points/coinCD01a.gif
+	frame	data/chars/misc/items/points/coinCD01a.gif
+	frame	data/chars/misc/items/points/coinCD01b.gif
+	frame	data/chars/misc/items/points/coinCD01b.gif
+	frame	data/chars/misc/items/points/coinCD01c.gif
+	frame	data/chars/misc/items/points/coinCD01c.gif
+	frame	data/chars/misc/items/points/coinCD01d.gif
+	frame	data/chars/misc/items/points/coinCD01d.gif
+	frame	data/chars/misc/items/points/coinCD01e.gif
+	frame	data/chars/misc/items/points/coinCD01e.gif
+	frame	data/chars/misc/items/points/coinCD01e.gif
+	frame	data/chars/misc/items/points/coinCD01e.gif
+	frame	data/chars/misc/items/points/coinCD01e.gif

@@ -1,0 +1,19 @@
+name	sacoCD
+health	0
+score		2500
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
+
+anim idle
+	loop	1
+	delay	100
+	offset	32 18
+	bbox	18 8 30 12
+   @cmd itemText "2500 points" 0.8 1.5
+	frame	data/chars/misc/items/points/sacoCD01.gif
+   delay	4
+	frame	data/chars/misc/items/points/sacoCD02.gif
