@@ -13,7 +13,7 @@ anim idle
 	delay	10
 	offset	18 16
 	bbox	0 0 48 16
-   @cmd itemText "5000 PTS" 0.8 1.5
+   @cmd itemText "5000 PTS" 0.8 1.5 8
 	frame	data/chars/misc/items/points/OuroCD01.gif
 	offset  18  17
 	bbox  0  3  48  14

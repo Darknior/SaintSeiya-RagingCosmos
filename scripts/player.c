@@ -181,9 +181,10 @@ void spawnScreen(void name, float fX, float fY, float fZ, int dir)
   changeentityproperty(vSpawn, "direction", dir); //Set direction.
 }
 
-void itemText(void text, float velocity, float duration)
+void itemText(void text, float velocity, float duration, int font)
 {
 	setentityvar(getlocalvar("self"), "text", text);
   setentityvar(getlocalvar("self"), "textVel", velocity);
   setentityvar(getlocalvar("self"), "textTime", duration);
+  setentityvar(getlocalvar("self"), "font", font);
 }

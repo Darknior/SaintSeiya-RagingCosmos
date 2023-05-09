@@ -13,7 +13,7 @@ anim idle
 	delay	100
 	offset	32 18
 	bbox	18 8 30 12
-   @cmd itemText "2500 PTS" 0.8 1.5
+   @cmd itemText "2500 PTS" 0.8 1.5 8
 	frame	data/chars/misc/items/points/sacoCD01.gif
    delay	4
 	frame	data/chars/misc/items/points/sacoCD02.gif

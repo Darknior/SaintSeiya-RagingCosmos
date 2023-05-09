@@ -13,7 +13,7 @@ anim idle
 	delay	100
 	offset     238 177
 	bbox	223 165 32 16
-	@cmd itemText "ENERGY 15% UP" 0.8 1.5
+	@cmd itemText "ENERGY 15% UP" 0.8 1.5 8
 	frame	data/chars/misc/items/food/apple01.gif
       delay   4
 	frame	data/chars/misc/items/food/apple02.gif

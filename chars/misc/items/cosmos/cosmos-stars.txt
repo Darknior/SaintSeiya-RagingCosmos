@@ -12,7 +12,7 @@ anim idle
 	loop		1
 	offset	22 44
 	bbox	5 0 32 40
-	@cmd itemText "COSMOS 100% UP" 0.8 1.5
+	@cmd itemText "COSMOS 100% UP" 0.8 1.5 8
 	delay	13
 	frame	data/chars/misc/items/cosmos/cosmos-stars/1.png
 	frame	data/chars/misc/items/cosmos/cosmos-stars/2.png
