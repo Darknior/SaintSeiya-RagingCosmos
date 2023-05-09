@@ -2,7 +2,7 @@ void main()
 {
 	void self		= getlocalvar("self");
 	void text		= getentityvar(self, "text");
-	void font		= getentityvar(self, "font");
+	int font		= getentityvar(self, "font");
 	float x			= getentityproperty(self, "x");
 	float y			= getentityproperty(self, "y");
 	float z			= getentityproperty(self, "z");

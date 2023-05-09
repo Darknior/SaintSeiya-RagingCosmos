@@ -27,4 +27,5 @@ void showText()
 	changeentityproperty(vSpawn, "lifespancountdown", duration*200);
 	tossentity(vSpawn, yVel, xVel, zVel);
 	setentityvar(vSpawn, "text", getentityvar(self, "text"));
+	setentityvar(vSpawn, "font", getentityvar(self, "font"));
 }
