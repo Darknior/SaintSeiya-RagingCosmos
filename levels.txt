@@ -458,7 +458,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
-z           390 484
+z           340 484
 file        data/levels/temple10.txt
 
 set         Temple_10_BOSS_Capricorne-Shiryu
