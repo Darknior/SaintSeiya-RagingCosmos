@@ -476,6 +476,7 @@ anim    grab
     delay    7
     offset   20 115
     bbox     21 0 35 114
+    sound    data/sounds/grab2.wav
     frame    data/chars/seiya/grab1.png
     frame    data/chars/seiya/grab2.png
 

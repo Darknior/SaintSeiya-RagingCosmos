@@ -223,14 +223,13 @@ anim pain2
 anim fall
     delay    10
     offset    98 125
-	landframe 7
+	 landframe 3
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
+    delay    200
     frame    data/chars/soldier_basic/fall3.png
+    delay    10
     frame    data/chars/soldier_basic/fall4.png
-    frame    data/chars/soldier_basic/fall5.png
-    frame    data/chars/soldier_basic/fall6.png
-    frame    data/chars/soldier_basic/fall7.png
     frame    data/chars/soldier_basic/fall8.png	
 
 anim rise

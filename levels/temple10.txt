@@ -50,6 +50,7 @@ at 100
 
 spawn soldier1
 alias SOLDIER
+item cosmos-stars
 coords	850 100
 at 400
 
