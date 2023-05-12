@@ -477,7 +477,6 @@ anim    grabbackward    # Choppe, Projection en arrière
     throwdamage     20
     delay    10
     offset   143 135
-    bbox     137 26 35 115
     @cmd     grabStart
     @cmd     spawnbind "dash_dust" "ANI_IDLE" -30 10 0 1 0
     @cmd     position 0 33 11 -1 0
@@ -510,7 +509,6 @@ anim    grabbackward    # Choppe, Projection en arrière
 anim    grabforward  # projection en avant
     delay    9
     offset   31 124
-    bbox     16 13 30 115
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
     @cmd     grabStart
     @cmd     position 0 10 25 0 0

@@ -504,7 +504,6 @@ anim grabattack2 #Saisie Coup finisher
 anim grabbackward #Projection en arrière
     delay    15
     offset    33 131
-    bbox 21 28 51 112
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
     @cmd     grabStart
     @cmd     position 0 27 2 2 0
@@ -524,7 +523,6 @@ anim grabbackward #Projection en arrière
 anim    grabforward  # projection en avant
     delay    9
     offset    34 129
-    bbox 37 11 30 120
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
     @cmd     grabStart
     @cmd     position 0 35 2 2 0

@@ -545,7 +545,6 @@ anim    grabbackward    # Projection en arrière
 anim    grabforward  # projection en avant
     delay    10
     offset   45 119
-    bbox     26 7 30 112
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
     @cmd     grabStart
     @cmd     position 0 4 16 -1 0

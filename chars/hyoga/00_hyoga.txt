@@ -548,7 +548,6 @@ anim    grabattack2 # Saisie Coup finisher
 anim    grabbackward   # Projection en arrière
     delay    7
     offset   92 120
-    bbox     55 8 51 112
     sound    data/chars/hyoga/sounds/grabbackward.wav
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 35 10 0 1 0
     @cmd     grabStart
@@ -570,7 +569,6 @@ anim    grabbackward   # Projection en arrière
 anim    grabforward  # projection en avant
     delay    9
     offset    55 151
-    bbox 37 34 30 120
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
     @cmd     grabStart
     @cmd     position 0 0 0 2 0
