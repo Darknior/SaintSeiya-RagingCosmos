@@ -17,3 +17,12 @@ anim idle
 	frame	data/chars/misc/items/points/sacoCD01.gif
    delay	4
 	frame	data/chars/misc/items/points/sacoCD02.gif
+   delay	5
+	frame	data/chars/misc/items/points/sacoCD00.gif
+   frame	data/chars/misc/items/points/sacoCD01.gif
+   frame	data/chars/misc/items/points/sacoCD00.gif
+   frame	data/chars/misc/items/points/sacoCD01.gif
+   frame	data/chars/misc/items/points/sacoCD00.gif
+   frame	data/chars/misc/items/points/sacoCD01.gif
+   frame	data/chars/misc/items/points/sacoCD00.gif
+   frame	data/chars/misc/items/points/sacoCD01.gif

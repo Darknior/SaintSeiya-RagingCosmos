@@ -25,4 +25,11 @@ anim idle
 	frame	data/chars/misc/items/points/goldbc03.gif
 	frame	data/chars/misc/items/points/goldbc04.gif
 	frame	data/chars/misc/items/points/goldbc04.gif
+   delay	5
+   frame	data/chars/misc/items/points/goldbc00.gif
+   frame	data/chars/misc/items/points/goldbc01.gif
+   frame	data/chars/misc/items/points/goldbc00.gif
+   frame	data/chars/misc/items/points/goldbc01.gif
+   frame	data/chars/misc/items/points/goldbc00.gif
+   frame	data/chars/misc/items/points/goldbc01.gif
 

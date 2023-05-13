@@ -17,3 +17,12 @@ anim idle
    frame	data/chars/misc/items/points/anelCD01.gif
    delay	4
 	frame	data/chars/misc/items/points/anelCD02.gif
+   frame	data/chars/misc/items/points/anelCD03.gif
+   frame	data/chars/misc/items/points/anelCD02.gif
+   frame	data/chars/misc/items/points/anelCD03.gif
+   frame	data/chars/misc/items/points/anelCD02.gif
+   frame	data/chars/misc/items/points/anelCD03.gif
+   frame	data/chars/misc/items/points/anelCD02.gif
+   frame	data/chars/misc/items/points/anelCD03.gif
+   frame	data/chars/misc/items/points/anelCD02.gif
+   frame	data/chars/misc/items/points/anelCD03.gif

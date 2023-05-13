@@ -10,16 +10,24 @@ animationscript data/scripts/player.c
 
 anim idle
 	loop	1
-	delay	10
+	delay	100
 	offset	18 17
 	bbox	5 1 22 16
    @cmd itemText "5000 PTS" 0.8 1.5 8
 	frame	data/chars/misc/items/points/DiamanteCD01.gif
- offset  18  18
+   delay	5
+   frame	data/chars/misc/items/points/DiamanteCD00.gif
+   frame	data/chars/misc/items/points/DiamanteCD01.gif
+   frame	data/chars/misc/items/points/DiamanteCD00.gif
+   frame	data/chars/misc/items/points/DiamanteCD01.gif
+   frame	data/chars/misc/items/points/DiamanteCD00.gif
+   frame	data/chars/misc/items/points/DiamanteCD01.gif
+   frame	data/chars/misc/items/points/DiamanteCD00.gif
+   frame	data/chars/misc/items/points/DiamanteCD01.gif
+   delay	8
 	frame	data/chars/misc/items/points/DiamanteCD02.gif
-	offset  18  17
 	frame	data/chars/misc/items/points/DiamanteCD03.gif
-	offset  18  18
 	frame	data/chars/misc/items/points/DiamanteCD04.gif
 	frame	data/chars/misc/items/points/DiamanteCD05.gif
+
 

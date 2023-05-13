@@ -10,7 +10,7 @@ animationscript data/scripts/player.c
 
 anim idle
 	loop		1
-	offset	22 44
+	offset	22 40
 	bbox	5 0 32 40
 	@cmd itemText "COSMOS 100% UP" 0.8 1.5 6
 	delay	13
@@ -26,5 +26,12 @@ anim idle
    frame	data/chars/misc/items/cosmos/cosmos-stars/1.png
 	frame	data/chars/misc/items/cosmos/cosmos-stars/2.png
 	frame	data/chars/misc/items/cosmos/cosmos-stars/3.png
+   delay	4
+   frame	data/chars/misc/items/cosmos/cosmos-stars/0.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/10.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/0.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/10.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/0.png
+   frame	data/chars/misc/items/cosmos/cosmos-stars/10.png
 
 

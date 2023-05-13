@@ -10,19 +10,25 @@ animationscript data/scripts/player.c
 
 anim idle
 	loop	1
-	delay	10
 	offset	18 16
 	bbox	0 0 48 16
    @cmd itemText "5000 PTS" 0.8 1.5 8
+	delay  100
+	frame	data/chars/misc/items/points/OuroCD05.gif
+   delay	5
+	frame	data/chars/misc/items/points/OuroCD00.gif
+   frame	data/chars/misc/items/points/OuroCD01.gif
+   frame	data/chars/misc/items/points/OuroCD00.gif
+   frame	data/chars/misc/items/points/OuroCD01.gif
+   frame	data/chars/misc/items/points/OuroCD00.gif
+   frame	data/chars/misc/items/points/OuroCD01.gif
+   frame	data/chars/misc/items/points/OuroCD00.gif
+   frame	data/chars/misc/items/points/OuroCD01.gif
+	offset	18 16
 	frame	data/chars/misc/items/points/OuroCD01.gif
 	offset  18  17
-	bbox  0  3  48  14
 	frame	data/chars/misc/items/points/OuroCD02.gif
 	offset  19  17
 	frame	data/chars/misc/items/points/OuroCD03.gif
 	offset  18  16
 	frame	data/chars/misc/items/points/OuroCD04.gif
-	offset  18  18
-	delay  100
-	frame	data/chars/misc/items/points/OuroCD05.gif
-

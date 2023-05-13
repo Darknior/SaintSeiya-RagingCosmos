@@ -29,3 +29,11 @@ anim idle
 	frame	data/chars/misc/items/points/coinCD01e.gif
 	frame	data/chars/misc/items/points/coinCD01e.gif
 	frame	data/chars/misc/items/points/coinCD01e.gif
+   frame	data/chars/misc/items/points/coinCD01.gif
+   frame	data/chars/misc/items/points/coinCD02.gif
+   frame	data/chars/misc/items/points/coinCD01.gif
+   frame	data/chars/misc/items/points/coinCD02.gif
+   frame	data/chars/misc/items/points/coinCD01.gif
+   frame	data/chars/misc/items/points/coinCD02.gif
+   frame	data/chars/misc/items/points/coinCD01.gif
+   frame	data/chars/misc/items/points/coinCD02.gif
