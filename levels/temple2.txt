@@ -19,7 +19,6 @@ direction right
 settime 0
 
 cameratype 1
-
 order	a
 
 nofadeout 0

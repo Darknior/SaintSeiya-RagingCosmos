@@ -3,8 +3,8 @@ loadingbg   1 -1000 -1000 -1000 -1000 -1000 -1000
 
 #blocked    1        # Détermine les bords de l'écran comme des murs solide
 #noslow     1        # Désactive l'effet ralenti quand le boss meurt
-#completebg  0        # Ecran de fin de niveau personnalisé data/bgs/complete.gif
-
+completebg  1        # Ecran de fin de niveau personnalisé data/bgs/complete.gif
+hiscorebg 1 
 ## CAUTION!! THE COMMANDS BELOW WILL CHANGE THE LIFE BAR SCRIPT TOO
 
 lbarsize    150 9 1 1 0 -500 -500 1 -500
