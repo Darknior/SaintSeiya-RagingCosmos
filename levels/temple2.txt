@@ -48,33 +48,29 @@ coords      0 0
 at          0
 
 spawn soldier_basic
-alias Soldat de Base
+alias Adem
 item diamantecd
-coords	800 200
+coords	850 440
 at 0
 
 
 spawn malesoldier
-alias SOLDIER
-@script
-void main() {
-	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
-} @end_script
-coords	850 500
+alias Bilal
+coords	850 470
 at 0
 
 spawn soldier1
-alias SOLDIER
+alias Titounis
 coords	850 400
 at 400
 
 spawn soldier3
-alias SOLDIER
+alias Tibo
 coords	-200 410
 at 400
 
 spawn soldier2
-alias SOLDIER
+alias Hiroz
 item apple
 coords	-200 470
 at 400
@@ -85,20 +81,25 @@ at 400
 
 
 spawn soldier3
-alias SOLDIER
+alias Squeezie
 coords	850 400
 at 1000
 
 spawn soldier2
-alias SOLDIER
+alias Bledart
 cosmos-stars
 coords	-200 410
 at 1000
 
 spawn soldier3
-alias SOLDIER
+alias Mac_Skyz
 item cosmos-bronze
 coords	-200 470
+at 1000
+
+spawn sticksoldier
+alias Carlito
+coords	-230 430
 at 1000
 
 
@@ -106,17 +107,22 @@ wait
 at 1000
 
 spawn soldier1
-alias SOLDIER
-coords	850 400
+alias Chris
+coords	920 400
+at 1500
+
+spawn soldier_basic
+alias Trash
+coords	850 430
 at 1500
 
 spawn soldier2
-alias SOLDIER
+alias Seb
 coords	-200 410
 at 1500
 
 spawn soldier3
-alias SOLDIER
+alias Bagel
 item limaocc
 coords	-200 470
 at 1500
@@ -128,17 +134,22 @@ at 1500
 
 
 spawn soldier1-1
-alias SOLDIER
+alias Swan
 coords	850 400
 at 2000
 
+spawn sticksoldier
+alias Neo
+coords	-230 430
+at 2000
+
 spawn soldier2
-alias SOLDIER
+alias Greg
 coords	-200 410
 at 2000
 
 spawn soldier1
-alias SOLDIER
+alias Amixem
 item cosmos-stars
 coords	-200 470
 at 2000
@@ -149,17 +160,22 @@ at 2000
 
 
 spawn soldier3
-alias SOLDIER
+alias Conkerax
 coords	850 400
 at 2400
 
+spawn soldier_basic
+alias Nozman
+coords	850 430
+at 2400
+
 spawn soldier1-1
-alias SOLDIER
+alias Gaillard
 coords	-200 410
 at 2400
 
 spawn soldier1-1
-alias SOLDIER
+alias Remi
 item sacocd
 coords	-200 470
 at 2400
@@ -170,18 +186,18 @@ at 2400
 
 
 spawn soldier1-1
-alias SOLDIER
+alias Norman
 item botasavp
 coords	850 400
 at 2800
 
 spawn soldier2
-alias SOLDIER
+alias Cyprien
 coords	-200 410
 at 2800
 
 spawn soldier1-1
-alias SOLDIER
+alias Hugo
 item diamondff
 coords	-200 470
 at 2800
@@ -191,18 +207,23 @@ wait
 at 2800
 
 spawn soldier3
-alias SOLDIER
+alias Ibra
 item cosmos-silver
 coords	850 400
 at 3800
 
+spawn sticksoldier
+alias Gotaga
+coords	-230 430
+at 3800
+
 spawn soldier3
-alias SOLDIER
+alias Seb
 coords	-200 410
 at 3800
 
 spawn soldier3
-alias SOLDIER
+alias Grenier
 item colarcd
 coords	-200 470
 at 3800

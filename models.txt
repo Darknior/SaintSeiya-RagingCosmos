@@ -408,7 +408,7 @@ know    SOLDIER1-1      data/chars/soldier_base/00_soldier_yellow_B.txt
 
 know    SOLDIER2        data/chars/soldier_purple/00_soldier_purple.txt
 know    SOLDIERTRAINING data/chars/soldier_purple/00_soldier_purple_training.txt
-
+know    sticksoldier    data/chars/soldier_stick/00_soldier_stick.txt
 know    SOLDIER3        data/chars/soldier_big/00_soldier_big.txt
 
 know    jaki            data/chars/jaki/00_jaki.txt
