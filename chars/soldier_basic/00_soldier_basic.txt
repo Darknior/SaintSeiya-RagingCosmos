@@ -62,13 +62,13 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
-load blood_ground_big
+blood_ground_medium
 
 
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/soldier_basic/icon.png 1
-#palette      data/chars/soldier_basic/palettes/palette1.png
+palette      data/chars/soldier_basic/palettes/white_pant.png
 #remap       data/chars/soldier_basic/palettes/palette1.png  # 14 Possible MAX
 
 
@@ -357,12 +357,5 @@ anim death
    delay    10
    offset    98 125
    frame    data/chars/soldier_basic/death1.png
-   frame    data/chars/soldier_basic/death2.png
-   frame    data/chars/soldier_basic/death3.png
-	frame    data/chars/soldier_basic/death4.png
-   frame    data/chars/soldier_basic/death5.png
-   @cmd     spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
-	frame    data/chars/soldier_basic/death6.png	
-   frame    data/chars/soldier_basic/death7.png
-   frame    data/chars/soldier_basic/death8.png
-   frame    data/chars/soldier_basic/death9.png
+   @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
+   frame    data/chars/soldier_basic/death1.png
