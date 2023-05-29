@@ -50,18 +50,18 @@ at          0
 spawn soldier_basic
 alias Adem
 item diamantecd
-coords	850 440
+coords	800 440
 at 0
 
 
 spawn malesoldier
 alias Bilal
-coords	850 470
+coords	800 470
 at 0
 
 spawn soldier1
 alias Titounis
-coords	850 400
+coords	800 400
 at 400
 
 spawn soldier3
@@ -82,7 +82,7 @@ at 400
 
 spawn soldier3
 alias Squeezie
-coords	850 400
+coords	800 400
 at 1000
 
 spawn soldier2
@@ -108,12 +108,12 @@ at 1000
 
 spawn soldier1
 alias Chris
-coords	920 400
+coords	800 400
 at 1500
 
 spawn soldier_basic
 alias Trash
-coords	850 430
+coords	800 430
 at 1500
 
 spawn soldier2
@@ -135,7 +135,7 @@ at 1500
 
 spawn soldier1-1
 alias Swan
-coords	850 400
+coords	800 400
 at 2000
 
 spawn sticksoldier
@@ -161,12 +161,12 @@ at 2000
 
 spawn soldier3
 alias Conkerax
-coords	850 400
+coords	800 400
 at 2400
 
 spawn soldier_basic
 alias Nozman
-coords	850 430
+coords	800 430
 at 2400
 
 spawn soldier1-1
@@ -188,7 +188,7 @@ at 2400
 spawn soldier1-1
 alias Norman
 item botasavp
-coords	850 400
+coords	800 400
 at 2800
 
 spawn soldier2
@@ -209,7 +209,7 @@ at 2800
 spawn soldier3
 alias Ibra
 item cosmos-silver
-coords	850 400
+coords	800 400
 at 3800
 
 spawn sticksoldier

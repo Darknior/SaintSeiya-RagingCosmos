@@ -68,7 +68,7 @@ load blood_ground_big
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/soldier_blue/palettes/icon1.png 0
-palette      data/chars/soldier_blue/palettes/palette1.png
+palette      data/chars/soldier_blue/palettes/palette2.png
 #remap       data/chars/soldier_blue/palettes/palette1.png  # 14 Possible MAX
 
 
