@@ -110,7 +110,7 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 		}
 	}
 	
-	if(openborvariant("in_menuscreen")){
+	if(openborvariant("in_menuscreen") || openborvariant("in_halloffamescreen")){
 
 		//SET THE "CLEARALL" FLAG TO 1
 		if(getglobalvar("clearAll") == NULL()){setglobalvar("clearAll", 1);}
@@ -135,6 +135,7 @@ void menuScreen()
 	float yMenu		= 0;
 	float xBar		= -100;
 	float yBar		= 0;
+	int z			= 1000000001;
 
 	//START AND DEFINE VARIABLES
 	if(getglobalvar("screen") == NULL()){
@@ -143,13 +144,23 @@ void menuScreen()
 	
 	//CLEAR SCREEN
 	clearscreen(getglobalvar("screen"));
-	
-	//DRAW BACKGROUND
-	drawspriteq(getglobalvar("screen"), 0, openborconstant("MIN_INT"), openborconstant("MAX_INT")/3000000000, 0, 0);
 
-	//DRAW MENU
-	drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/2000000000, openborconstant("MAX_INT")/1000000000, xBar, yBar);
-	drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/10, openborconstant("MAX_INT"), xMenu, yMenu);
+	if(openborvariant("in_halloffamescreen")){
+		xMenu = 0;
+
+		//drawbox(0, 0, openborvariant("hresolution"), openborvariant("vresolution"), z, rgbcolor(0, 0, 0), 0);
+		drawsprite(loadsprite("data/bgs/hiscore.gif"), 0, 0, z+1);
+		drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/10, openborconstant("MAX_INT"), xMenu, yMenu);
+	}
+	else
+	{
+		//DRAW BACKGROUND
+		drawspriteq(getglobalvar("screen"), 0, openborconstant("MIN_INT"), openborconstant("MAX_INT")/3000000000, 0, 0);
+
+		//DRAW MENU
+		drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/2000000000, openborconstant("MAX_INT")/1000000000, xBar, yBar);
+		drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/10, openborconstant("MAX_INT"), xMenu, yMenu);
+	}
 
 	//DRAW SCREEN
 	changedrawmethod(NULL(),"reset", 1);
