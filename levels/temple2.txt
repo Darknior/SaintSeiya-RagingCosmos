@@ -12,8 +12,8 @@ bgspeed 1 0
 
 light        256 -44
 at        0
-shadowalpha 6
-shadowopacity 0
+shadowalpha 2
+shadowopacity 80
 direction right
 
 settime 0
