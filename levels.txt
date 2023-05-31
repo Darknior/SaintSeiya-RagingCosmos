@@ -1,5 +1,6 @@
 
-loadingbg   1 -1000 -1000 -1000 -1000 -1000 -1000
+loadingbg   1 -241 435 800 999 999 0
+loadingbg2   1 -241 435 800 999 999 0
 
 #blocked    1        # Détermine les bords de l'écran comme des murs solide
 #noslow     1        # Désactive l'effet ralenti quand le boss meurt
