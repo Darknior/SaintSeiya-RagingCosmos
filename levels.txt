@@ -270,7 +270,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple1.txt
 
-set         Temple_2_Road-Shun
+set         Temple_2_Road-Seiya
 maxplayers  1
 lives       1
 credits     10
@@ -278,7 +278,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  shun
+skipselect  seiya
 z           378 484
 file        data/levels/temple2.txt
 

@@ -21,10 +21,6 @@ settime 0
 cameratype 1
 order	a
 
-nofadeout 0
-nosave 1
-blocked 1
-noslow 1
 
 
 
