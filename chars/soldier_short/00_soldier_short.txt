@@ -8,7 +8,7 @@ type        enemy
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     0 1         # Invincible après une chute X sec / Clignote pas
 makeinv     0 0         # Invincible après respawn X sec / Clignote
-
+risetime    -200        # Temps avant de se relever (-200 = 2 secondes)
 speed       15          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 

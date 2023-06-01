@@ -1,5 +1,5 @@
 music           data/music/pegasus.ogg
-
+background  	data/bgs/temple5-road/background.png		1 1 0 0 0 0 1 1 1 0
 panel           data/bgs/temple2/templeboss.png 
 
 order           a

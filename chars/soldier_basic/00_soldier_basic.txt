@@ -8,7 +8,7 @@ type        enemy
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     0 1         # Invincible après une chute X sec / Clignote pas
 makeinv     0 0         # Invincible après respawn X sec / Clignote
-
+risetime    -200        # Temps avant de se relever (-200 = 2 secondes)
 speed       11          # Vitesse de déplacement
 running     25 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
@@ -169,6 +169,8 @@ anim runattack  # Attaque en courant
    offset    30 121
    bbox 16 10 43 112
    @cmd     dasher 3.5 0 0 1
+   summonframe 0 60 5 0
+   subentity dash_dust
    sound    data/chars/soldier_basic/sounds/07-forward_punch.wav
    frame    data/chars/soldier_basic/runattack1.png
    attack   5 13 90 55 15 0 0 0 0 20
@@ -224,6 +226,7 @@ anim fall
     delay    10
     offset    98 125
 	 landframe 3
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
     delay    200
@@ -299,6 +302,8 @@ anim attack5
    frame    data/chars/soldier_basic/attack62.png	
 
 anim jump # Saut Statique
+   summonframe  0 0 0 0
+   subentity    round_dust
    delay    10
    offset    24 123
    bbox 3 0 43 80
@@ -312,6 +317,8 @@ anim jump # Saut Statique
    frame    data/chars/soldier_basic/jump8.png	
 
 anim    forwardjump # Saut vers l'avant
+   summonframe  0 0 0 0
+   subentity    round_dust
    delay    10
    offset   67 137
    bbox     43 14 30 97
@@ -329,6 +336,8 @@ anim jumpdelay # Animation de saut intermédiaire
    frame    data/chars/soldier_basic/jump2.png
 
 anim jumpland # Aterrissage du saut
+   summonframe  0 0 0 0
+   subentity    round_dust
    delay    10
    offset    30 122
    bbox 16 10 43 112

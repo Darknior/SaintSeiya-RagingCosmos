@@ -8,7 +8,7 @@ type        enemy
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
-
+risetime    -200        # Temps avant de se relever (-200 = 2 secondes)
 speed       13          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
@@ -157,6 +157,7 @@ anim fall
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png

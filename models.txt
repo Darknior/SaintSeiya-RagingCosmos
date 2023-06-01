@@ -80,6 +80,7 @@ load    dash_dust       data/chars/misc/dust/dash_dust.txt
 load    blood_ground_big       data/chars/misc/blood/blood_ground_big.txt
 load    blood_ground_medium    data/chars/misc/blood/blood_ground_medium.txt
 load    blood_gerbD    data/chars/misc/blood/blood_gerbD.txt
+load    blood_projection_big    data/chars/misc/blood/blood_projection_big.txt
 
 # Players special animations
 

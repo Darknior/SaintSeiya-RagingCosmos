@@ -2,6 +2,7 @@ music		data/music/Pegasus_Fantasy_instrumental.ogg
 
 panel		data/bgs/temple5-road/temple5-road.png 
 frontpanel  data/bgs/temple5-road/layer1.png 
+background  	data/bgs/temple5-road/background.png		1 1 0 0 0 0 1 1 1 0
 bglayer  	data/bgs/temple5-road/clouds-back.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
 bglayer  	data/bgs/temple5-road/sun.png		 1 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 bglayer     data/bgs/temple5-road/temple5-mountains.png   	0.8 1 0 0 0 0 1 1 1 0

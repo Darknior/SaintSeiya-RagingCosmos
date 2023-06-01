@@ -647,8 +647,6 @@ anim    land #  atterissage safe au sol (haut+ jump pendant la projection)
     frame    data/chars/seiya/get1.png
 
 anim    jumpattack # Attaque sautée statique
-    summonframe  0 0 0 0
-    subentity    round_dust
     delay    5
     offset   45 112
     hitflash flashbig

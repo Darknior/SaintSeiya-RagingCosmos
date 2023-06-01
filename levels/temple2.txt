@@ -3,6 +3,7 @@ music		data/music/Pegasus_Fantasy_instrumental.ogg
 
 panel		data/bgs/temple2-road/temple2-road.png 
 frontpanel  data/bgs/temple2-road/layer1.png 
+background  	data/bgs/temple2-road/background.png		1 1 0 0 0 0 1 1 1 0
 bglayer  	data/bgs/temple2-road/clouds-back.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
 bglayer     data/bgs/temple2-road/temple2-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple2-road/temple2-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
@@ -43,14 +44,14 @@ coords      0 0
 at          0
 
 spawn soldier_basic
-alias Adem
+alias konstantinos
 item diamantecd
 coords	850 440
 at 0
 
 
 spawn malesoldier
-alias Bilal
+alias Themis
 coords	850 470
 at 0
 
@@ -60,12 +61,12 @@ coords	850 400
 at 400
 
 spawn soldier3
-alias Tibo
+alias Anthonin
 coords	-200 410
 at 400
 
 spawn soldier2
-alias Hiroz
+alias Teo
 item apple
 coords	-200 470
 at 400
@@ -76,18 +77,18 @@ at 400
 
 
 spawn soldier3
-alias Squeezie
+alias Stephan
 coords	850 400
 at 1000
 
 spawn soldier2
-alias Bledart
+alias Leander
 cosmos-stars
 coords	-200 410
 at 1000
 
 spawn soldier3
-alias Mac_Skyz
+alias Luka
 item cosmos-bronze
 coords	-200 470
 at 1000
@@ -107,17 +108,17 @@ coords	850 400
 at 1500
 
 spawn soldier_basic
-alias Trash
+alias Emile
 coords	850 430
 at 1500
 
 spawn soldier2
-alias Seb
+alias Helios
 coords	-200 410
 at 1500
 
 spawn soldier3
-alias Bagel
+alias Alexy
 item limaocc
 coords	-200 470
 at 1500
@@ -144,7 +145,7 @@ coords	-200 410
 at 2000
 
 spawn soldier1
-alias Amixem
+alias Achille
 item cosmos-stars
 coords	-200 470
 at 2000
@@ -155,17 +156,17 @@ at 2000
 
 
 spawn soldier3
-alias Conkerax
+alias Emilio
 coords	850 400
 at 2400
 
 spawn soldier_basic
-alias Nozman
+alias Cassandre
 coords	850 430
 at 2400
 
 spawn soldier1-1
-alias Gaillard
+alias Linus
 coords	-200 410
 at 2400
 
@@ -181,13 +182,13 @@ at 2400
 
 
 spawn soldier1-1
-alias Norman
+alias Sebastian
 item botasavp
 coords	850 400
 at 2800
 
 spawn soldier2
-alias Cyprien
+alias Damon
 coords	-200 410
 at 2800
 
@@ -202,23 +203,23 @@ wait
 at 2800
 
 spawn soldier3
-alias Ibra
+alias Enyo
 item cosmos-silver
 coords	-250 400
 at 3800
 
 spawn sticksoldier
-alias Gotaga
+alias Vangelis
 coords	-230 430
 at 3800
 
 spawn soldier3
-alias Seb
+alias Milan
 coords	-200 410
 at 3800
 
 spawn soldier3
-alias Grenier
+alias Doryan
 item colarcd
 coords	-200 470
 at 3800
