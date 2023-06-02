@@ -160,7 +160,20 @@ anim fall
     delay    10
     offset    118 125
     bbox 55 24 80 100
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -45 -25 0 0 0
+    frame    data/chars/soldier_blue/fall1.png
+    frame    data/chars/soldier_blue/fall2.png
+    frame    data/chars/soldier_blue/fall3.png
+    frame    data/chars/soldier_blue/fall4.png
+    frame    data/chars/soldier_blue/fall5.png
+    frame    data/chars/soldier_blue/fall6.png
+    bbox 23 92 100 35
+    frame    data/chars/soldier_blue/fall7.png
+    
+anim fall7
+    delay    10
+    offset    118 125
+    bbox 55 24 80 100
     frame    data/chars/soldier_blue/fall1.png
     frame    data/chars/soldier_blue/fall2.png
     frame    data/chars/soldier_blue/fall3.png

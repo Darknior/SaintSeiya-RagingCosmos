@@ -357,6 +357,8 @@ anim run
     delay    8
     offset    80 137
     bbox 76 17 30 120
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     sound   data/chars/ikki/sounds/20-run1.wav
     frame    data/chars/ikki/run1.png
     frame    data/chars/ikki/run2.png
@@ -660,8 +662,6 @@ anim jumpattack #Attaque sautée statique
     offset    55 206
     bbox 35 76 51 120
     sound data/sounds/punch.wav
-    summonframe 0 0 0 0
-    subentity round_dust
     frame    data/chars/ikki/jumpattack1.png
     frame    data/chars/ikki/jumpattack2.png
     attack4 62 78 83 76 10 1 0 0 5 12

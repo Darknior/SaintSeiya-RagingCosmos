@@ -359,6 +359,8 @@ anim    run
     delay    8
     offset   48 128
     bbox     34 13 51 115
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/hyoga/run1.png
     sound    data/chars/hyoga/sounds/20-run1.wav
     frame    data/chars/hyoga/run2.png
@@ -668,8 +670,6 @@ anim     land   # Atterissage safe au sol (haut+ jump pendant la projection)
     frame    data/chars/hyoga/get1.png
 
 anim    jumpattack  # Attaque sautée statique
-    summonframe  0 0 0 0
-    subentity    round_dust
     delay    5
     offset   55 140
     bbox     21 14 51 97

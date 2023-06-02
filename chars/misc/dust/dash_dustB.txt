@@ -1,0 +1,30 @@
+name        dash_dustB
+type        none
+shadow      0
+setlayer    150
+antigravity 100
+#lifespan   1
+animationscript    data/scripts/player.c
+
+anim    idle
+    loop     0
+    delay    8
+    offset   68 104
+    drawmethod scale 0.6 0.6
+    drawmethod  alpha 1
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB0.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB1.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB2.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB3.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB4.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB5.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB6.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB7.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB8.png
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB9.png
+    @cmd     suicide # SUICIDE FRAME, THIS WAY YOU DON'T NEED TO CALCULATE THE LIFESPAN TIME
+    frame    data/chars/misc/dust/dash_dustB/dash_dustB9.png
+
+
+
+

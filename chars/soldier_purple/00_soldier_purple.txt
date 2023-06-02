@@ -168,6 +168,25 @@ anim fall
     frame    data/chars/soldier_purple/07.png
     frame    data/chars/soldier_purple/07.png
     frame    data/chars/soldier_purple/07.png
+    
+anim fall7
+    loop    0
+    delay    10
+    offset    110 180
+    dropv 4 1 0
+    bbox 65 65 80 120
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    bbox 42 152 110 30
+    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/07.png
 
 anim death
     delay    10

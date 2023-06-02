@@ -313,6 +313,8 @@ anim run
     delay    8
     offset   62 132
     bbox     39 28 51 104
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     sound    data/chars/shun/sounds/20-run1.wav
     frame    data/chars/shun/run1.png
     frame    data/chars/shun/run2.png

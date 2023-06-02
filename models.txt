@@ -74,6 +74,7 @@ load    round_dust      data/chars/misc/dust/round_dust.txt
 load    fall_dust       data/chars/misc/dust/fall_dust.txt
 load    kick_dust       data/chars/misc/dust/kick_dust.txt
 load    dash_dust       data/chars/misc/dust/dash_dust.txt
+load    dash_dustB       data/chars/misc/dust/dash_dustB.txt
 
 # Blood animations
 

@@ -157,6 +157,25 @@ anim fall
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+    
+anim fall7
+    loop    0
+    delay    10
+    offset    110 180
+    dropv 4 1 0
+    bbox 65 68 80 120
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png

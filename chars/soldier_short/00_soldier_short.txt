@@ -165,6 +165,16 @@ anim fall
     frame    data/chars/soldier_short/fall4.png
     frame    data/chars/soldier_short/fall5.png
     frame    data/chars/soldier_short/fall6.png
+    
+anim fall7
+    delay    10
+    offset    73 110
+    frame    data/chars/soldier_short/fall1.png
+    frame    data/chars/soldier_short/fall2.png
+    frame    data/chars/soldier_short/fall3.png
+    frame    data/chars/soldier_short/fall4.png
+    frame    data/chars/soldier_short/fall5.png
+    frame    data/chars/soldier_short/fall6.png
 
 anim rise
     offset    73 109

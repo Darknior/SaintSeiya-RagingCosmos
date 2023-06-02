@@ -154,6 +154,8 @@ anim run
     delay    15
    offset    80 125
    bbox 61 13 43 112
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/soldier_basic/run1.png
     frame    data/chars/soldier_basic/run2.png
     frame    data/chars/soldier_basic/run3.png
@@ -226,7 +228,19 @@ anim fall
     delay    10
     offset    98 125
 	 landframe 3
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 -15 0 0 0
+    frame    data/chars/soldier_basic/fall1.png
+    frame    data/chars/soldier_basic/fall2.png
+    delay    200
+    frame    data/chars/soldier_basic/fall3.png
+    delay    10
+    frame    data/chars/soldier_basic/fall4.png
+    frame    data/chars/soldier_basic/fall8.png	
+    
+anim fall7
+    delay    10
+    offset    98 125
+	 landframe 3
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
     delay    200

@@ -10,9 +10,9 @@ anim    idle
     loop     0
     delay    10
     offset   196 46
-    drawmethod  scale 0.8 0.8
+    drawmethod  scale 0.7 0.7
     drawmethod  alpha 1
-    drawmethod  channel 0.99
+    drawmethod  channel 0.70
     frame    data/chars/misc/dust/round_dustB/round_dustB0.png
     frame    data/chars/misc/dust/round_dustB/round_dustB1.png
     frame    data/chars/misc/dust/round_dustB/round_dustB2.png

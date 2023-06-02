@@ -33,7 +33,7 @@ sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 
 atchain     0           # Attaque combo de base (anim attack 1, puis 2...)
 
-dust        round_dustB # Effet de poussière quand on tombe (animation)
+dust        fall_dust # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
 #-- ENNEMY CONFIG ---------------------------------------------------
@@ -164,7 +164,25 @@ anim fall
     delay    10
     offset    120 195
     bbox 66 65 85 130
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 -60 0 0 0
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    bbox 29 150 165 50
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+    
+anim fall7
+    loop    0
+    delay    10
+    offset    120 195
+    bbox 66 65 85 130
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
@@ -181,7 +199,6 @@ anim fall
 anim death
     delay    10
     offset    120 195
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     @cmd     spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0
