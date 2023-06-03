@@ -318,7 +318,7 @@ skipselect  shun
 z           378 484
 file        data/levels/temple3boss.txt
 
-set         Temple_4_Road_Jaki-Seiya
+set         Temple_4_Road_Jaki-Shiryu
 maxplayers  1
 lives       1
 credits     10
@@ -326,7 +326,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  seiya
+skipselect  shiryu
 z           378 484
 file        data/levels/temple4.txt
 
