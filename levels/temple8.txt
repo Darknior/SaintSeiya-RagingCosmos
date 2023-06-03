@@ -1,3 +1,5 @@
+loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
+
 
 music		data/music/cascade-gelee.ogg
 

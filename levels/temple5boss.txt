@@ -1,3 +1,5 @@
+loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+
 music           data/music/ryuseiken.ogg
 
 panel           data/bgs/temple5/layer2.png

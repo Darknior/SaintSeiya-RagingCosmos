@@ -1,3 +1,5 @@
+loadingbg		data/sprites/loading/loading_Ikki.png 1 -51 405 460 999 999 0
+
 music       data/music/Disciples-De-Shaka.ogg
 
 panel       data/bgs/temple6_midboss/temple10_panel.png 
