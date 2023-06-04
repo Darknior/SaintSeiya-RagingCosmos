@@ -78,7 +78,6 @@ anim idle
     loop    1
     delay    17
     offset    56 128
-	 bbox 27 29 50 100
     frame    data/chars/athena/idle1.png
     frame    data/chars/athena/idle2.png
     frame    data/chars/athena/idle3.png
