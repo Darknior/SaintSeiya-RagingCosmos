@@ -385,6 +385,10 @@ know    horloge-verseau     data/chars/misc/timer/horloge-verseau.txt
 know    horloge-poissons    data/chars/misc/timer/horloge-poissons.txt
 know    time-is-up          data/chars/misc/timer/time-is-up.txt
 
+## GODDESS ##
+
+know   athena           data/chars/athena/00_athena.txt
+
 ## BRONZE SAINTS ##
 
 load    seiya           data/chars/seiya/00_seiya.txt

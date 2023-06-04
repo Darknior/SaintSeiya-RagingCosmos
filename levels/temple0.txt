@@ -47,6 +47,11 @@ boss 			1
 coords          650 390
 at              0
 
+spawn           athena
+flip 1
+coords          150 410
+at   
+
 group			1 1
 at				0
 

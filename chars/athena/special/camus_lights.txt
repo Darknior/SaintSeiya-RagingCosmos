@@ -1,0 +1,46 @@
+name	camus_lights
+type	panel
+shadow	0
+speed 10
+setlayer 2000
+antigravity 100
+lifespan 3.6
+
+anim	idle
+	loop	1
+	delay	3
+	offset	800 0
+	drawmethod alpha 1
+        drawmethod  channel 0.5
+	frame	data/chars/camus/special/camus_lights/camus_lights0.png
+	frame	data/chars/camus/special/camus_lights/camus_lights1.png
+	frame	data/chars/camus/special/camus_lights/camus_lights2.png
+	frame	data/chars/camus/special/camus_lights/camus_lights3.png
+	frame	data/chars/camus/special/camus_lights/camus_lights4.png
+	frame	data/chars/camus/special/camus_lights/camus_lights5.png
+	frame	data/chars/camus/special/camus_lights/camus_lights6.png
+	frame	data/chars/camus/special/camus_lights/camus_lights7.png
+	frame	data/chars/camus/special/camus_lights/camus_lights8.png
+	frame	data/chars/camus/special/camus_lights/camus_lights9.png
+	frame	data/chars/camus/special/camus_lights/camus_lights10.png
+	frame	data/chars/camus/special/camus_lights/camus_lights11.png
+	frame	data/chars/camus/special/camus_lights/camus_lights12.png
+	frame	data/chars/camus/special/camus_lights/camus_lights13.png
+	frame	data/chars/camus/special/camus_lights/camus_lights14.png
+	frame	data/chars/camus/special/camus_lights/camus_lights15.png
+	frame	data/chars/camus/special/camus_lights/camus_lights16.png
+	frame	data/chars/camus/special/camus_lights/camus_lights17.png
+	frame	data/chars/camus/special/camus_lights/camus_lights18.png
+	frame	data/chars/camus/special/camus_lights/camus_lights19.png
+	frame	data/chars/camus/special/camus_lights/camus_lights20.png
+	frame	data/chars/camus/special/camus_lights/camus_lights21.png
+	frame	data/chars/camus/special/camus_lights/camus_lights22.png
+	frame	data/chars/camus/special/camus_lights/camus_lights23.png
+	frame	data/chars/camus/special/camus_lights/camus_lights24.png
+	frame	data/chars/camus/special/camus_lights/camus_lights25.png
+	frame	data/chars/camus/special/camus_lights/camus_lights26.png
+	frame	data/chars/camus/special/camus_lights/camus_lights27.png
+	frame	data/chars/camus/special/camus_lights/camus_lights28.png
+	frame	data/chars/camus/special/camus_lights/camus_lights29.png
+	frame	data/chars/camus/special/camus_lights/camus_lights30.png
+	frame	data/chars/camus/special/camus_lights/camus_lights31.png

@@ -1,0 +1,31 @@
+name	camus_icecrystal
+type	none
+shadow	0
+candamage player
+nolife 1
+remove 0
+setlayer 150
+antigravity 100
+didhitscript	data/scripts/didhit/tint_ice.c
+
+anim	idle
+	loop	0
+	delay	10
+	offset	106 410
+	drawmethod scale 0.5 0.5
+	drawmethod alpha 1
+	sound data/chars/camus/06-ice_peak.wav
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal1.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal2.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal3.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal4.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal5.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal6.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal7.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal8.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal9.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal10.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal11.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal12.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal13.png
+	frame	data/chars/camus/special/camus_icecrystal/icecrystal14.png	
