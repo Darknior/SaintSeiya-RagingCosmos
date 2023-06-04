@@ -125,7 +125,7 @@ anim spawn
      @cmd spawnFade "in" 0 0 0 10000000001 0.25
      frame     data/chars/tremi/spawn0.png
      delay     30
-     @cmd spawnDialog "dialog_tremi1" 200 100
+     #@cmd spawnDialog "dialog_tremi1" 200 100
      frame     data/chars/tremi/spawn0.png
      frame     data/chars/tremi/spawn1.png
      delay     10

@@ -4,10 +4,10 @@ music       data/music/MSC-tragic.ogg
 
 panel       data/bgs/temple0/temple0_panel.png 
 background     data/bgs/temple0/background.png        1 1 0 0 0 0 1 1 1 0
-bglayer  	data/bgs/temple0/clouds_back.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
-bglayer     data/bgs/temple0/temple0-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
-fglayer  	data/bgs/temple0/clouds_back.png		 -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
-bglayer     data/bgs/temple0/temple0_bglayer0.png        0.05 1 0 0 0 0 1 1 1 0
+bglayer  	data/bgs/temple0/clouds_back.png		 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 1.1
+bglayer     data/bgs/temple0/temple0-mountains.png   	0.5 1 0 0 0 0 1 1 1 0
+fglayer  	data/bgs/temple0/clouds_front.png		 -5000 0.8 0 0 0 0 0 -1 -1 1 1 0 0 0 0 5
+bglayer     data/bgs/temple0/temple.png        0.05 1 0 0 0 0 1 1 1 0
 fglayer     data/bgs/temple0/clouds-road.png        -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
 bgspeed 1 0
 
