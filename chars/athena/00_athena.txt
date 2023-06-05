@@ -131,6 +131,32 @@ anim walk
     frame    data/chars/athena/walk7.png
     frame    data/chars/athena/walk8.png
     
+anim turn
+    delay    15
+    offset   36 125
+    frame    data/chars/athena/turn0.png
+    delay    30
+    frame    data/chars/athena/turn1.png
+    frame    data/chars/athena/turn2.png
+    frame    data/chars/athena/turn3.png
+    frame    data/chars/athena/turn4.png
+    frame    data/chars/athena/turn5.png
+    frame    data/chars/athena/turn6.png
+    frame    data/chars/athena/turn1.png
+    frame    data/chars/athena/turn2.png
+    frame    data/chars/athena/turn3.png
+    frame    data/chars/athena/turn4.png
+    frame    data/chars/athena/turn5.png
+    frame    data/chars/athena/turn6.png
+    frame    data/chars/athena/turn1.png
+    frame    data/chars/athena/turn2.png
+    frame    data/chars/athena/turn3.png
+    frame    data/chars/athena/turn4.png
+    frame    data/chars/athena/turn5.png
+    frame    data/chars/athena/turn6.png
+    delay    15
+    frame    data/chars/athena/turn7.png
+    
 anim attack1 # Attaque combo 1
     delay    12
     offset    65 138
