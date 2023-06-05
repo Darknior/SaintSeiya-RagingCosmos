@@ -84,10 +84,33 @@ anim idle
 
 
 anim spawn
-    loop    1
     delay    17
     offset    56 128
     bbox 27 29 50 100
+    frame    data/chars/athena/idle1.png
+    frame    data/chars/athena/idle2.png
+    frame    data/chars/athena/idle3.png
+    frame    data/chars/athena/idle1.png
+    frame    data/chars/athena/idle2.png
+    frame    data/chars/athena/idle3.png
+    frame    data/chars/athena/idle1.png
+    frame    data/chars/athena/idle2.png
+    frame    data/chars/athena/idle3.png
+    frame    data/chars/athena/idle1.png
+    frame    data/chars/athena/idle2.png
+    frame    data/chars/athena/idle3.png
+    frame    data/chars/athena/idle1.png
+    frame    data/chars/athena/idle2.png
+    frame    data/chars/athena/idle3.png
+    frame    data/chars/athena/idle1.png
+    frame    data/chars/athena/idle2.png
+    frame    data/chars/athena/idle3.png
+    frame    data/chars/athena/idle1.png
+    frame    data/chars/athena/idle2.png
+    frame    data/chars/athena/idle3.png
+    frame    data/chars/athena/idle1.png
+    frame    data/chars/athena/idle2.png
+    frame    data/chars/athena/idle3.png
     frame    data/chars/athena/idle1.png
     frame    data/chars/athena/idle2.png
     frame    data/chars/athena/idle3.png
@@ -98,7 +121,7 @@ anim spawn
 anim walk
     loop    1
     delay    10
-    offset    56 130
+    offset    41 123
     frame    data/chars/athena/walk1.png
     frame    data/chars/athena/walk2.png
     frame    data/chars/athena/walk3.png
