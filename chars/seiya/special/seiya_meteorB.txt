@@ -10,6 +10,7 @@ didhitscript	data/scripts/didhit/tint_silver.c
 
 anim	idle
 	loop	1
+   otg 1
 	hitflash marin_swing
 	delay	6
 	offset	200 38
