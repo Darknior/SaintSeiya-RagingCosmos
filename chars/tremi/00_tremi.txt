@@ -193,6 +193,8 @@ anim run
      delay     10
      offset     72 119
      bbox 45 7 52 112
+     summonframe  0 0 0 0
+     subentity    dash_dustB
      frame     data/chars/tremi/run1.png
      frame     data/chars/tremi/run2.png
      frame     data/chars/tremi/run3.png
@@ -205,16 +207,18 @@ anim runattack # Attaque en courant
      hitflash tremi_slash
      forcedirection -1
      @cmd     dasher 3.5 0 0 1
-	bbox 25 0 50 120
+	  bbox 25 0 50 120
+     summonframe  0 0 0 0
+     subentity    dash_dust
      frame     data/chars/tremi/runattack1.png
      frame     data/chars/tremi/runattack2.png
      @cmd      spawnbind "tremi_dash" "ANI_IDLE" 0 0 0 1 0
      frame     data/chars/tremi/runattack3.png
-	attack2 31 43 86 25 20 1 0 0 5 12
+	  attack2 31 43 86 25 20 1 0 0 5 12
      frame     data/chars/tremi/runattack4.png
      frame     data/chars/tremi/runattack5.png
      frame     data/chars/tremi/runattack6.png
-	attack2 0 0 0 0 0 0 0 0 0 0
+	  attack2 0 0 0 0 0 0 0 0 0 0
      @cmd     dasher 0 0 0 1
      delay     12
      frame     data/chars/tremi/runattack7.png

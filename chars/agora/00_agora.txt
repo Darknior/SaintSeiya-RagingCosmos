@@ -171,6 +171,8 @@ anim run
     delay    10
     offset   73 150
     bbox     44 16 52 134
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/agora/run1.png
     frame    data/chars/agora/run2.png
     frame    data/chars/agora/run3.png

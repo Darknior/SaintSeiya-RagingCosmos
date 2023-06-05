@@ -3,6 +3,7 @@ loadingbg		data/sprites/loading/loading_Ikki.png 1 -51 405 460 999 999 0
 music       data/music/Disciples-De-Shaka.ogg
 
 panel       data/bgs/temple6_midboss/temple10_panel.png 
+background     data/bgs/temple6_midboss/temple10_back.png
 bglayer     data/bgs/temple6_midboss/temple10_back.png        0.9 1 0 0 0 0 1 1 1 0
 bglayer  	data/bgs/temple6_midboss/clouds-back.png		 0.05 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
 bglayer     data/bgs/temple6_midboss/temple10_bglayer.png      0.3 1 0 1 0 0 1 9999 1 0

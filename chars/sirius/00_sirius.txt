@@ -172,6 +172,8 @@ anim run
     delay    10
     offset    69 119
     bbox 58 7 52 112
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/sirius/run1.png
     frame    data/chars/sirius/run2.png
     frame    data/chars/sirius/run3.png
@@ -189,6 +191,8 @@ anim runattack # Attaque en courant
     hitflash sirius_slash
     forcedirection -1
     @cmd    dasher 2.5 0 0 1
+    summonframe  0 0 0 0
+    subentity    dash_dust
     attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/sirius/runattack1.png
     frame    data/chars/sirius/runattack2.png

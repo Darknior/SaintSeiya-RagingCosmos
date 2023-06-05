@@ -322,8 +322,8 @@ anim    runattack # Attaque en courant
     bbox     16 13 30 115
     @cmd     dasher 3.5 0 0 1
     sound    data/chars/shiryu/sounds/dash.wav
-    summonframe 0 60 5 0
-    subentity dash_dust
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     frame    data/chars/shiryu/runattack1.png
     sound    data/chars/shiryu/sounds/07-forward_punch.wav
     frame    data/chars/shiryu/runattack2.png

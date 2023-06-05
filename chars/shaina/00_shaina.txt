@@ -171,6 +171,8 @@ anim run
     delay    10
     offset    53 132
     bbox 32 72 78 60
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/shaina/run1.png
     frame    data/chars/shaina/run2.png
     frame    data/chars/shaina/run3.png
@@ -181,14 +183,16 @@ anim runattack # Attaque en courant
     offset    30 115
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
+    summonframe  0 0 0 0
+    subentity    dash_dust
     bbox 0 38 75 75
     frame    data/chars/shaina/runattack1.png
-	attack2 34 68 86 25 20 1 0 0 5 12
+	 attack2 34 68 86 25 20 1 0 0 5 12
     frame    data/chars/shaina/runattack2.png
-	bbox 0 0 0 0
+	 bbox 0 0 0 0
     frame    data/chars/shaina/runattack3.png
-        frame    data/chars/shaina/runattack4.png
-	attack2 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/shaina/runattack4.png
+	 attack2 0 0 0 0 0 0 0 0 0 0
     @cmd    dasher 0 0 0 1
     delay    12
     frame    data/chars/shaina/runattack5.png

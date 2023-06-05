@@ -181,6 +181,8 @@ anim run
     delay    10
     offset    53 115
     bbox 32 3 51 112
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/marin/run1.png
     frame    data/chars/marin/run2.png
     frame    data/chars/marin/run3.png
@@ -193,10 +195,12 @@ anim runattack # Attaque en courant
     delay    6
     offset    30 115
     bbox 2 3 51 112
-        hitflash marin_swing
+    hitflash marin_swing
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
-        @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
+    spawnframe  0 80 10 0
+    subentity    dash_dust
+    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/marin/runattack1.png
     frame    data/chars/marin/runattack2.png
     frame    data/chars/marin/runattack3.png

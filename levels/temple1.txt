@@ -1,7 +1,7 @@
 loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
 
 music		data/music/temple1.ogg
-
+background  	data/bgs/temple1/temple1_back.png
 panel		data/bgs/temple1/temple1_panel.png 
 frontpanel  data/bgs/temple1/layer1.png 
 bglayer  	data/bgs/temple1/temple1_back.png		0.9 1 0 0 0 0 1 1 1 0

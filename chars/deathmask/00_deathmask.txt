@@ -193,6 +193,8 @@ anim run
     delay    15
     offset    65 130
     bbox 38 22 50 108
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/deathmask/run1.png
     frame    data/chars/deathmask/run2.png
     frame    data/chars/deathmask/run3.png

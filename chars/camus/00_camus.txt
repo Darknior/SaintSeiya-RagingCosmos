@@ -162,6 +162,8 @@ anim run
     delay    15
     offset    65 130
     bbox 49 22 50 108
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/camus/run1.png
     frame    data/chars/camus/run2.png
     frame    data/chars/camus/run3.png
@@ -172,9 +174,11 @@ anim runattack # Attaque en courant
     delay    7
     offset    46 130
     bbox 32 16 38 114
-        hitflash marin_swing
+    hitflash marin_swing
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     frame    data/chars/camus/runattack1.png
     frame    data/chars/camus/runattack2.png
     attack2 60 33 97 33 20 1 0 0 5 12

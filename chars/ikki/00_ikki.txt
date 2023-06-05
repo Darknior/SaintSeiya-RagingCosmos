@@ -376,10 +376,12 @@ anim runattack # Attaque en courant
     delay    7
     offset    48 160
     bbox 29 40 51 120
-        hitflash shaka_flame
+    hitflash shaka_flame
     fastattack 1
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     sound   data/chars/ikki/sounds/01-dash.wav
     attack 100 60 50 50 15 0 0 0 0 30
     frame    data/chars/ikki/runattack4.png
@@ -613,8 +615,8 @@ anim  runjump
     delay    8
     offset   55 206
     bbox     35 76 51 120
-    summonframe 0 0 0 0
-    subentity   round_dust
+    spawnframe  0 0 0 0
+    subentity    round_dust
     sound    data/chars/ikki/sounds/06-jump1.wav
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/forwardjump1.png

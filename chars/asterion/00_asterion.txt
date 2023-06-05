@@ -182,6 +182,8 @@ anim run
     delay    10
     offset    55 129
     bbox 37 17 52 112
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/asterion/run1.png
     frame    data/chars/asterion/run2.png
     frame    data/chars/asterion/run3.png
@@ -197,6 +199,8 @@ anim runattack # Attaque en courant
     hitflash asterion_slash
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
+    summonframe  0 0 0 0
+    subentity    dash_dust
     frame    data/chars/asterion/runattack1.png
     frame    data/chars/asterion/runattack2.png
     attack2 41 43 108 40 20 1 0 0 5 12

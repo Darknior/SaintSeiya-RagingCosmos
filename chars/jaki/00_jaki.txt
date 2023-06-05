@@ -163,6 +163,8 @@ anim run
     delay    15
     offset    95 182
     bbox 59 10 57 172
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/jaki/run1.png
     frame    data/chars/jaki/run2.png
     frame    data/chars/jaki/run3.png
@@ -177,6 +179,8 @@ anim runattack # Attaque en courant
     bbox 59 10 57 172
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
+    summonframe  0 0 0 0
+    subentity    dash_dust
     frame    data/chars/jaki/runattack1.png
     frame    data/chars/jaki/runattack2.png
     attack2 95 66 62 61 20 1 0 0 5 12

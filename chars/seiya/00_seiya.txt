@@ -352,7 +352,8 @@ anim runattack  # Attaque en courant
     hitflash blue_swing
     bbox     20 0 30 112
     @cmd     dasher 3.5 0 0 1
-    @cmd     spawnbind "dash_dust" "ANI_IDLE" -40 0 0 0 0
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     sound    data/chars/seiya/sounds/07-forward_punch.wav
     frame    data/chars/seiya/runattack1.png
     attack   5 13 90 55 15 0 0 0 0 20
@@ -563,7 +564,7 @@ anim    grabforward  # projection en avant
 #// Jump animations /////////////////////////////////////////////////
 
 anim  runjump
-    summonframe  0 0 0 0
+    spawnframe  0 0 0 0
     subentity    round_dust
     delay    6
     offset   45 137

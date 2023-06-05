@@ -235,6 +235,8 @@ anim run
     delay    15
     offset    51 136
     bbox 37 19 38 117
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/aiolia/run1.png
     frame    data/chars/aiolia/run2.png
     frame    data/chars/aiolia/run3.png
@@ -248,18 +250,20 @@ anim runattack # Attaque en courant
     sound data/chars/aiolia/sounds/01-roar.wav
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     @cmd     spawnbind "aiolia_dash" "ANI_IDLE" 0 0 0 1 0
-	bbox 25 18 45 120
+	 bbox 25 18 45 120
     frame    data/chars/aiolia/runattack1.png
     frame    data/chars/aiolia/runattack2.png
-	bbox 0 0 0 0
+	 bbox 0 0 0 0
     frame    data/chars/aiolia/runattack3.png
-	attack2 60 40 88 40 20 1 0 0 5 12
+	 attack2 60 40 88 40 20 1 0 0 5 12
     frame    data/chars/aiolia/runattack4.png
     frame    data/chars/aiolia/runattack1.png
     delay    70
     frame    data/chars/aiolia/runattack6.png
-	attack2 0
+	 attack2 0
     @cmd    dasher 0 0 0 1
     delay    10
     frame    data/chars/aiolia/runattack1.png

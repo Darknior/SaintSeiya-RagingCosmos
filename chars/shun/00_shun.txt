@@ -337,8 +337,8 @@ anim runattack # Attaque en courant
     delay    8
     offset    90 199
     bbox 79 92 35 107
-    summonframe 0 60 5 0
-    subentity dash_dust
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     sound    data/chars/shun/sounds/runattack.wav
     frame    data/chars/shun/attack6.png
     frame    data/chars/shun/attack7.png
@@ -562,8 +562,8 @@ anim  runjump
     delay    6
     offset   87 171
     bbox     68 35 51 107
-    summonframe     0 0 0 0
-    subentity       round_dust
+    spawnframe  0 0 0 0
+    subentity    round_dust
     sound    data/chars/shun/sounds/06-jump1.wav
     frame    data/chars/shun/jump1.png
     frame    data/chars/shun/forwardjump1.png

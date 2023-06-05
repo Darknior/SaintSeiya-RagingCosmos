@@ -1,7 +1,7 @@
 loadingbg		data/sprites/loading/loading_Shun.png 1 -51 405 460 999 999 0
 
 music		data/music/athenabg.ogg
-
+background       data/bgs/temple13-road/temple13-sky.png
 panel		data/bgs/temple13-road/temple13-road.png 
 frontpanel  data/bgs/temple13-road/layer1.png 
 bglayer  	data/bgs/temple13-road/temple13-sky.png		1 1 0 0 0 0 1 1 1 0

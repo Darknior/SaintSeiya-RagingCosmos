@@ -379,8 +379,8 @@ anim    runattack   # Attaque en courant
     offset   45 140
     bbox     18 28 30 112
     @cmd     dasher 3.5 0 0 1
-    summonframe 0 60 5 0
-    subentity dash_dust
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     sound    data/chars/hyoga/sounds/01-dash.wav
     frame    data/chars/hyoga/runattack1.png
     sound    data/chars/hyoga/sounds/dash.wav
@@ -402,24 +402,7 @@ anim    runattack   # Attaque en courant
     frame    data/chars/hyoga/runattack3.png
     frame    data/chars/hyoga/runattack2.png
 
-anim    runjump
-    summonframe  0 0 0 0
-    subentity    round_dust
-    delay    6
-    offset   55 140
-    bbox     35 14 51 97
-    sound    data/chars/hyoga/sounds/06-jump1.wav
-    frame    data/chars/hyoga/jump11.png
-    frame    data/chars/hyoga/forwardjump1.png
-    frame    data/chars/hyoga/forwardjump2.png
-    frame    data/chars/hyoga/forwardjump3.png
-    frame    data/chars/hyoga/forwardjump4.png
-    frame    data/chars/hyoga/forwardjump5.png
-    frame    data/chars/hyoga/forwardjump6.png
-    frame    data/chars/hyoga/forwardjump7.png
-    frame    data/chars/hyoga/forwardjump8.png
-    frame    data/chars/hyoga/forwardjump9.png
-    frame    data/chars/hyoga/jump11.png
+
 
 anim    get
     delay    5
@@ -591,6 +574,25 @@ anim    grabforward  # projection en avant
 
 
 #// Jump animations /////////////////////////////////////////////////
+
+anim    runjump
+    spawnframe  0 0 0 0
+    subentity    round_dust
+    delay    6
+    offset   55 140
+    bbox     35 14 51 97
+    sound    data/chars/hyoga/sounds/06-jump1.wav
+    frame    data/chars/hyoga/jump11.png
+    frame    data/chars/hyoga/forwardjump1.png
+    frame    data/chars/hyoga/forwardjump2.png
+    frame    data/chars/hyoga/forwardjump3.png
+    frame    data/chars/hyoga/forwardjump4.png
+    frame    data/chars/hyoga/forwardjump5.png
+    frame    data/chars/hyoga/forwardjump6.png
+    frame    data/chars/hyoga/forwardjump7.png
+    frame    data/chars/hyoga/forwardjump8.png
+    frame    data/chars/hyoga/forwardjump9.png
+    frame    data/chars/hyoga/jump11.png
 
 anim    jump    # Saut Statique
     summonframe  0 0 0 0

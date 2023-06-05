@@ -231,6 +231,8 @@ anim run
     delay    15
     offset    65 161
     bbox 49 10 50 150
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/aldebaran/run1.png
     frame    data/chars/aldebaran/run2.png
     frame    data/chars/aldebaran/run3.png
@@ -239,25 +241,25 @@ anim run
 anim runattack # Attaque en courant
     delay    7
     offset    37 164
-        hitflash blue_swing
+    hitflash blue_swing
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
     @cmd     spawnbind "aldebaran_runtaurus" "ANI_IDLE" 0 0 0 1 0
     sound data/chars/aldebaran/sounds/10-dash.wav
-	quakeframe 1 7 4
-	bbox 13 14 65 150
+	 quakeframe 1 7 4
+	 bbox 13 14 65 150
     frame    data/chars/aldebaran/runattack1.png 1 7 4
     summonframe 0 0 0 0 0
     subentity aldebaran_rundust
     unsummonframe 20
     frame    data/chars/aldebaran/runattack2.png
     frame    data/chars/aldebaran/runattack3.png
-	attack2 60 40 55 83 20 1 0 0 5 20
+	 attack2 60 40 55 83 20 1 0 0 5 20
     frame    data/chars/aldebaran/runattack4.png
     frame    data/chars/aldebaran/runattack5.png
     frame    data/chars/aldebaran/runattack6.png
     frame    data/chars/aldebaran/runattack7.png
-	attack2 0 0 0 0 0 0 0 0 0 0
+	 attack2 0 0 0 0 0 0 0 0 0 0
     @cmd    dasher 0 0 0 1
     delay    12
     frame    data/chars/aldebaran/runattack8.png

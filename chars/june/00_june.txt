@@ -182,6 +182,8 @@ anim run
     delay    10
     offset    53 124
     bbox 32 28 51 97
+    spawnframe  0 80 10 0
+    subentity    dash_dustB
     frame    data/chars/june/run1.png
     frame    data/chars/june/run2.png
     frame    data/chars/june/run3.png
@@ -198,6 +200,8 @@ anim runattack # Attaque en courant
     range     150 250
     rangea     0 100
     @cmd    dasher 3.5 0 0 1
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/june/runattack1.png
     frame    data/chars/june/runattack2.png

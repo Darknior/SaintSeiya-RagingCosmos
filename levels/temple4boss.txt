@@ -19,7 +19,7 @@ order           a
 direction       both
 settime         99
 
-light        256 44
+light        256 -44
 at        0
 shadowalpha 6
 shadowopacity 0

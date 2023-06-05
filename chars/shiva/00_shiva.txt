@@ -169,6 +169,8 @@ anim run
     delay    10
     offset    56 129
     bbox 32 17 52 112
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/shiva/run1.png
     frame    data/chars/shiva/run2.png
     frame    data/chars/shiva/run3.png
@@ -183,6 +185,8 @@ anim runattack # Attaque en courant
     fastattack 1
     forcedirection -1
     @cmd    dasher 2.5 0 0 1
+    summonframe  0 0 0 0
+    subentity    dash_dust
     frame    data/chars/shiva/runattack1.png
     frame    data/chars/shiva/runattack2.png
     frame    data/chars/shiva/runattack3.png

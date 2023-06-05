@@ -165,6 +165,8 @@ anim run
     delay    8
     offset    65 142
     bbox 63 34 50 108
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/aphrodite/run1.png
     frame    data/chars/aphrodite/run2.png
     frame    data/chars/aphrodite/run3.png
@@ -178,20 +180,22 @@ anim runattack # Attaque en courant
     bbox 2 27 45 132
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
+    spawnframe  0 80 10 0
+    subentity    dash_dust
     frame    data/chars/aphrodite/runattack1.png
-	bbox 50 28 45 130
+	 bbox 50 28 45 130
     frame    data/chars/aphrodite/runattack2.png
-	attack2 60 59 120 33 20 1 0 0 5 12
+	 attack2 60 59 120 33 20 1 0 0 5 12
     dropv 4.0 2.0 0.0
     frame    data/chars/aphrodite/runattack3.png
     frame    data/chars/aphrodite/runattack4.png
     frame    data/chars/aphrodite/runattack5.png
     frame    data/chars/aphrodite/runattack5.png
-	attack2 0
+	 attack2 0
     @cmd    dasher 0 0 0 1
     delay    12
     frame    data/chars/aphrodite/runattack2.png
-	bbox 0 25 45 130
+	 bbox 0 25 45 130
     frame    data/chars/aphrodite/runattack1.png
 
 anim freespecial # Attaque en courant

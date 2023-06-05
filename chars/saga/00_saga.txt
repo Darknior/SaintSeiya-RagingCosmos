@@ -168,6 +168,8 @@ anim run
     delay    15
     offset    75 138
     bbox 59 2 38 137
+    summonframe  0 0 0 0
+    subentity    dash_dustB
     frame    data/chars/saga/run1.png
     frame    data/chars/saga/run2.png
     frame    data/chars/saga/run3.png
@@ -181,6 +183,8 @@ anim runattack # Attaque en courant
     bbox 15 8 38 137
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
+    summonframe  0 0 0 0
+    subentity    dash_dust
     frame    data/chars/saga/runattack1.png
     frame    data/chars/saga/runattack2.png
     attack2 35 40 62 61 20 1 0 0 5 12

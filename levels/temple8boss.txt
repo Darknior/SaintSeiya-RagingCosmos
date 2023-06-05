@@ -1,7 +1,7 @@
 loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
 
 music		data/music/Stringer-Requiem.ogg
-
+background	data/bgs/temple8/layer2.png
 panel		data/bgs/temple8/layer2.png
 
 

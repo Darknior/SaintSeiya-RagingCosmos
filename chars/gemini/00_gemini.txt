@@ -169,6 +169,8 @@ anim run
     delay    15
     offset    117 150
     bbox 87 34 55 90
+    spawnframe  0 80 10 0
+    subentity    dash_dustB
     frame    data/chars/gemini/run1.png
     frame    data/chars/gemini/run2.png
     frame    data/chars/gemini/run3.png
@@ -179,8 +181,8 @@ anim runattack # Attaque en courant
     hitflash aldebaran_swing
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
-        summonframe 0 0 0 0 0
-        subentity gemini_rundust
+    summonframe 0 0 0 0 0
+    subentity gemini_rundust
     unsummonframe 20
     frame    data/chars/gemini/runattack1.png
     sound data/chars/gemini/sounds/04-dash.wav
