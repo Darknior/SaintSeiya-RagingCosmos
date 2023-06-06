@@ -87,7 +87,7 @@ load milo_blood
 
 icon         data/chars/tremi/palettes/icon1.png 0
 palette      data/chars/tremi/palettes/palette1.png
-#remap       data/chars/tremi/palettes/palette1.png  # 14 Possible MAX
+remap       data/chars/tremi/palettes/palette2.png  # 14 Possible MAX
 
 
 #-- ANIMATIONS -------------------------------------------------------
