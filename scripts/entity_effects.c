@@ -54,7 +54,9 @@ void blinkSelect()
 void blinkDamage()
 {//Turn on/off generic blink effects during some "takedamage" events
 	void self			= getlocalvar("self");
+	void type			= getentityproperty(self, "type");
 	void animation		= getentityproperty(self, "animationID");
+	int boss			= getentityproperty(self, "boss");
 	int maxHealth		= getentityproperty(self, "maxhealth");
 	int health			= getentityproperty(self, "health");
 	int dead			= getentityproperty(self, "dead");
@@ -70,9 +72,10 @@ void blinkDamage()
 	float pinkTime		= getentityvar(self, "pinkTime");
 	float whiteTime		= getentityvar(self, "whiteTime");
 	float rainbowTime	= getentityvar(self, "rainbowTime");
+	float dyingTime		= getentityvar(self, "dyingTime");
 	float time;
 	float rate;
-	
+
 	//POISON EFFECT
 	if(poisonTime > time && !dead){
 		
@@ -205,24 +208,53 @@ void blinkDamage()
 		changedrawmethod(self, "tintcolor", rgbcolor(time*rate, time*rate/2, time*rate/4));
 	}else
 
-	//DYING EFFECT
-	if(health <= maxHealth/4 && !dead){
+	//SLOW DYING EFFECT
+	if(health <= maxHealth/4 && health > maxHealth/10 && !dead){
 		
 		//GET NEW VALUES
 		tintMode	= 1;
-		rate		= 20;
+		rate		= 200;
 		
 		//APPLY EFFECTS
-		if((openborvariant("elapsed_time")/200)%2 == 0){
-			changedrawmethod(self, "enabled", 1);
-			changedrawmethod(self, "tintmode", tintMode);
-			changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
+		if(type == openborconstant("TYPE_PLAYER") || type == openborconstant("TYPE_ENEMY") && boss){
+			if(dyingTime == NULL()){setentityvar(self, "dyingTime", 1);}
+
+			if((openborvariant("elapsed_time")/rate)%2 == 0){
+				changedrawmethod(self, "enabled", 1);
+				changedrawmethod(self, "tintmode", tintMode);
+				changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
+			}
+			else
+			{
+				changedrawmethod(self, "enabled", 1);
+				changedrawmethod(self, "tintmode", 0);
+				changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0x00));
+			}
 		}
-		else
-		{
-			changedrawmethod(self, "enabled", 1);
-			changedrawmethod(self, "tintmode", 0);
-			changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0x00));
+	}else
+
+	//FAST DYING EFFECT
+	if(health <= maxHealth/10 && !dead){
+		
+		//GET NEW VALUES
+		tintMode	= 1;
+		rate		= 100;
+		
+		//APPLY EFFECTS
+		if(type == openborconstant("TYPE_PLAYER") || type == openborconstant("TYPE_ENEMY") && boss){
+			if(dyingTime == NULL()){setentityvar(self, "dyingTime", 1);}
+
+			if((openborvariant("elapsed_time")/rate)%2 == 0){
+				changedrawmethod(self, "enabled", 1);
+				changedrawmethod(self, "tintmode", tintMode);
+				changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
+			}
+			else
+			{
+				changedrawmethod(self, "enabled", 1);
+				changedrawmethod(self, "tintmode", 0);
+				changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0x00));
+			}
 		}
 	}else
 
@@ -239,7 +271,8 @@ void blinkDamage()
 				silverTime != NULL()	||
 				pinkTime != NULL()		||
 				whiteTime != NULL()		||
-				rainbowTime != NULL()	){
+				rainbowTime != NULL()	||
+				dyingTime != NULL()		){
 				
 				if(getdrawmethod(self, "enabled")){
 					blinkReset("poisonTime");
@@ -252,6 +285,7 @@ void blinkDamage()
 					blinkReset("pinkTime");
 					blinkReset("whiteTime");
 					blinkReset("rainbowTime");
+					blinkReset("dyingTime");
 				}
 			}
 		}
