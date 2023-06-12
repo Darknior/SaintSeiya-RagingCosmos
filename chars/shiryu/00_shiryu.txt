@@ -1,5 +1,5 @@
 name        shiryu
-health      400
+health      500
 mp          100
 type        player
 
@@ -9,9 +9,9 @@ type        player
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
-
-speed       15          # Vitesse de déplacement
-running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+risetime    -100        # Temps avant de se relever (-300 = 3 secondes)
+speed       11          # Vitesse de déplacement
+running     20 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed   12          # Vitesse du saut
@@ -751,6 +751,7 @@ anim    death
     frame    data/chars/shiryu/death10.png
     frame    data/chars/shiryu/death11.png
     frame    data/chars/shiryu/death12.png
+    delay    200
     frame    data/chars/shiryu/death13.png
 
 

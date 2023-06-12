@@ -1,5 +1,5 @@
 name        ikki
-health      400
+health      450
 mp          100
 type        player
 
@@ -9,9 +9,9 @@ type        player
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
-
-speed       15          # Vitesse de déplacement
-running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+risetime    -100        # Temps avant de se relever (-300 = 3 secondes)
+speed       12          # Vitesse de déplacement
+running     23 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed   12          # Vitesse du saut
@@ -353,12 +353,13 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/ikki/jump1.png
 
 anim run
-    loop    1
+    loop    1 1
     delay    8
     offset    80 137
     bbox 76 17 30 120
     summonframe  0 0 0 0
     subentity    dash_dustB
+    frame    data/chars/ikki/run8.png
     sound   data/chars/ikki/sounds/20-run1.wav
     frame    data/chars/ikki/run1.png
     frame    data/chars/ikki/run2.png
@@ -677,8 +678,6 @@ anim jumpforward #Attaque sautée vers l'avant
     offset    55 206
     bbox 35 76 51 120
     sound data/sounds/punch.wav
-    summonframe 0 0 0 0
-    subentity round_dust
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/jumpforward2.png
     frame    data/chars/ikki/jumpforward3.png
@@ -796,6 +795,7 @@ anim death
     frame    data/chars/ikki/death12.png
     frame    data/chars/ikki/death13.png
     frame    data/chars/ikki/death14.png
+    delay    200
     frame    data/chars/ikki/death15.png
 
 #// Block animations /////////////////////////////////////////////////

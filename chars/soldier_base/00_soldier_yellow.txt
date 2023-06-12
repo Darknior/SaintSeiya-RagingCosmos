@@ -1,5 +1,5 @@
 name        SOLDIER1
-health      50
+health      60
 type        enemy
 
 
@@ -9,8 +9,8 @@ gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du n
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
 risetime    -200        # Temps avant de se relever (-200 = 2 secondes)
-speed       13          # Vitesse de déplacement
-running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+speed       12          # Vitesse de déplacement
+running     23 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
 jumpspeed   12          # Vitesse du saut

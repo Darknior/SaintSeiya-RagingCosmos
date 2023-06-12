@@ -164,12 +164,13 @@ anim    walk
     frame    data/chars/saga/walk6.png
 
 anim run
-    loop    1
+    loop    1 1
     delay    15
     offset    75 138
     bbox 59 2 38 137
     summonframe  0 0 0 0
     subentity    dash_dustB
+    frame    data/chars/saga/run6.png
     frame    data/chars/saga/run1.png
     frame    data/chars/saga/run2.png
     frame    data/chars/saga/run3.png

@@ -1,5 +1,5 @@
 name        hyoga
-health      400
+health      350
 mp          100
 type        player
 
@@ -9,9 +9,9 @@ type        player
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
-
-speed       15          # Vitesse de déplacement
-running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+risetime    -50        # Temps avant de se relever (-300 = 3 secondes)
+speed       14          # Vitesse de déplacement
+running     27 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed   12          # Vitesse du saut
@@ -685,8 +685,6 @@ anim    jumpattack  # Attaque sautée statique
     attack4  0
 
 anim    jumpforward # Attaque sautée vers l'avant
-    summonframe  0 0 0 0
-    subentity    round_dust
     delay    5
     offset   55 140
     bbox     21 14 51 97
@@ -816,6 +814,7 @@ anim    death
     frame    data/chars/hyoga/death17.png
     frame    data/chars/hyoga/death18.png
     frame    data/chars/hyoga/death19.png
+    delay    200
     frame    data/chars/hyoga/death20.png
 
 

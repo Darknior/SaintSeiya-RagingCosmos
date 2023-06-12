@@ -1,5 +1,5 @@
 name        shun
-health      400
+health      300
 mp          100
 type        player
 
@@ -9,9 +9,9 @@ type        player
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
-
+risetime    -50        # Temps avant de se relever (-300 = 3 secondes)
 speed       15          # Vitesse de déplacement
-running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+running     30 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed   12          # Vitesse du saut
@@ -309,12 +309,13 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/shun/jump5.png
 
 anim run
-    loop     1
+    loop     1 1
     delay    8
     offset   62 132
     bbox     39 28 51 104
     summonframe  0 0 0 0
     subentity    dash_dustB
+    frame    data/chars/shun/run6.png
     sound    data/chars/shun/sounds/20-run1.wav
     frame    data/chars/shun/run1.png
     frame    data/chars/shun/run2.png
@@ -752,6 +753,7 @@ anim death
     frame    data/chars/shun/death3.png
     frame    data/chars/shun/death4.png
     frame    data/chars/shun/death5.png
+    delay    200
     frame    data/chars/shun/death6.png
 	
 #// Block animations /////////////////////////////////////////////////

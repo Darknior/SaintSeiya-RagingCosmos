@@ -9,9 +9,9 @@ type        player
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
-
-speed       15          # Vitesse de déplacement
-running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+risetime    -70        # Temps avant de se relever (-300 = 3 secondes)
+speed       13          # Vitesse de déplacement
+running     25 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed   12          # Vitesse du saut
@@ -663,8 +663,6 @@ anim    jumpattack # Attaque sautée statique
     attack4  0
 
 anim    jumpforward # Attaque sautée vers l'avant
-    summonframe  0 0 0 0
-    subentity    round_dust
     delay    5
     offset   45 112
     hitflash blue_swing
@@ -743,32 +741,33 @@ anim    pain2
     frame    data/chars/seiya/pain21.png
 
 anim    fall
-    landframe  5
+    landframe  6
     offset   114 110
-    delay    50
-    frame    data/chars/seiya/fall1.png
-    frame    data/chars/seiya/fall2.png
-    frame    data/chars/seiya/fall3.png
-    frame    data/chars/seiya/fall4.png
-
-anim    fall7
-    landframe  5
-    offset   114 110
-    delay    -1000
+    delay    12
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
     delay    30
     frame    data/chars/seiya/fall3.png
+    delay    12
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
+
+anim    fall7
+    landframe  6
+    offset   114 110
+    delay    12
+    frame    data/chars/seiya/fall1.png
+    frame    data/chars/seiya/fall2.png
+    delay    30
+    frame    data/chars/seiya/fall3.png
+    delay    12
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
     frame    data/chars/seiya/fall4.png
 
 anim    rise
-    jumpframe  0 0 0
-    delay    6
     offset   114 110
-    frame    data/chars/seiya/fall2.png
-    frame    data/chars/seiya/fall3.png
-    delay    85
-    frame    data/chars/seiya/fall4.png
     delay    10
     frame    data/chars/seiya/rise1.png
     frame    data/chars/seiya/rise2.png
@@ -788,6 +787,7 @@ anim    death
     frame    data/chars/seiya/death3.png
     frame    data/chars/seiya/death4.png
     frame    data/chars/seiya/death5.png
+    delay    200
     frame    data/chars/seiya/death6.png
 
 

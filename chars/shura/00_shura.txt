@@ -24,7 +24,7 @@ mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on fr
 
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 holdblock   1           # Permet de pouvoir maintenir la parade
-nodieblink  1           # Ne clignote pas quand tu meurs
+nodieblink  3           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
 modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")
 death       1           # Active l'animation de mort

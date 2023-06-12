@@ -10,8 +10,8 @@ gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du n
 riseinv     0 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
 
-speed       15          # Vitesse de déplacement
-running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+speed       14          # Vitesse de déplacement
+running     25 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
 jumpspeed   12          # Vitesse du saut
@@ -24,7 +24,7 @@ mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on fr
 
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 holdblock   1           # Permet de pouvoir maintenir la parade
-nodieblink  1           # Ne clignote pas quand tu meurs
+nodieblink  3           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
 modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")
 death       1           # Active l'animation de mort
@@ -187,12 +187,13 @@ anim walk
      frame     data/chars/tremi/walk8.png
 
 anim run
-     loop     1
+     loop     1 1
      delay     10
      offset     72 119
      bbox 45 7 52 112
      summonframe  0 0 0 0
      subentity    dash_dustB
+     frame     data/chars/tremi/run5.png
      frame     data/chars/tremi/run1.png
      frame     data/chars/tremi/run2.png
      frame     data/chars/tremi/run3.png
@@ -243,9 +244,9 @@ anim attack1 # Attaque combo 1
      bbox 18 7 52 112
      frame     data/chars/tremi/attack1.png
      frame     data/chars/tremi/attack2.png
-	attack 30 30 70 30 10 0 0 0 12 20
+	  attack 30 30 70 30 10 0 0 0 12 20
      frame     data/chars/tremi/attack3.png
-	attack1 0 0 0 0 0 0 0 0 0 0
+  	  attack1 0 0 0 0 0 0 0 0 0 0
      frame     data/chars/tremi/attack1.png
 
 anim attack2 # Attaque combo 2
@@ -316,7 +317,7 @@ anim special # tremi Jumping
      energycost  25 1 0
      sound data/chars/tremi/sounds/04-skywalk.wav
      hitflash tremi_slash
-	bbox 22 9 50 100
+	  bbox 22 9 50 100
      frame     data/chars/tremi/jump1.png
      offset     80 161
      frame     data/chars/tremi/jump1.png
@@ -327,9 +328,9 @@ anim special # tremi Jumping
      offset     80 221
      frame     data/chars/tremi/jump3.png
      offset     80 241
-	bbox 0 0 0 0
+	  bbox 0 0 0 0
      frame     data/chars/tremi/jump4.png
-	attack5 74 1 120 180 30 1 0 0 5 12
+	  attack5 74 1 120 180 30 1 0 0 5 12
      dropv      8.0 3 0
      delay     10
      frame     data/chars/tremi/jumpattack10.png
@@ -371,8 +372,8 @@ anim special3 # Arrow defense
      unsummonframe 10
      energycost  10 1 0
      hitflash  tremi_arrow_pierceB
-	attack5 0 0 0 0 0 0 0 0 0 0
-	bbox 11 19 45 100
+	  attack5 0 0 0 0 0 0 0 0 0 0
+	  bbox 11 19 45 100
      frame     data/chars/tremi/runattack6.png
      @cmd      spawnbind "tremi_diagonal_arrows" "ANI_IDLE" 0 0 0 0 0
      frame     data/chars/tremi/runattack4.png
@@ -443,8 +444,8 @@ anim freespecial # Arrow defense
      unsummonframe 10
      energycost  10 1 0
      hitflash  tremi_arrow_pierceB
-	attack5 0 0 0 0 0 0 0 0 0 0
-	bbox 9 20 45 100
+	  attack5 0 0 0 0 0 0 0 0 0 0
+	  bbox 9 20 45 100
      frame     data/chars/tremi/runattack6.png
      @cmd      spawnbind "tremi_diagonal_arrows" "ANI_IDLE" 0 0 0 0 0
      frame     data/chars/tremi/runattack4.png
@@ -517,15 +518,15 @@ anim freespecial2 # Multi arrow projectile
      energycost  20 1 0
      hitflash flashbig
      @cmd      spawnbind "tremi_cosmos" "ANI_IDLE" 0 0 0 0 0
-	bbox 59 0 45 120
+	  bbox 59 0 45 120
      frame     data/chars/tremi/special21.png
      frame     data/chars/tremi/special22.png
      frame     data/chars/tremi/special23.png
-	bbox 0 0 0 0
+	  bbox 0 0 0 0
      frame     data/chars/tremi/special24.png
      frame     data/chars/tremi/special25.png
      frame     data/chars/tremi/special26.png
-	attack5 28 -57 100 180 10 1 0 0 5 12
+	  attack5 28 -57 100 180 10 1 0 0 5 12
      @cmd     shooter "tremi_multiarrow" 77 60 0 3 0 0
      frame     data/chars/tremi/special27.png
      delay     70
@@ -537,17 +538,17 @@ anim freespecial3 # Attaque en courant
      hitflash tremi_slash
      forcedirection -1
      @cmd     dasher 3.5 0 0 1
-	bbox 20 0 50 120
+	  bbox 20 0 50 120
      frame     data/chars/tremi/runattack1.png
      frame     data/chars/tremi/runattack2.png
      @cmd      spawnbind "tremi_dash" "ANI_IDLE" 0 0 0 1 0
      frame     data/chars/tremi/runattack3.png
-	attack2 31 43 86 25 20 1 0 0 5 12
+	  attack2 31 43 86 25 20 1 0 0 5 12
      frame     data/chars/tremi/runattack4.png
-	bbox 0 0 0 0
+	  bbox 0 0 0 0
      frame     data/chars/tremi/runattack5.png
      frame     data/chars/tremi/runattack6.png
-	attack2 0 0 0 0 0 0 0 0 0 0
+	  attack2 0 0 0 0 0 0 0 0 0 0
      @cmd     dasher 0 0 0 1
      delay     12
      frame     data/chars/tremi/runattack7.png
@@ -599,7 +600,7 @@ anim jumpattack #Attaque sautée statique
      frame     data/chars/tremi/jumpattack1.png
      frame     data/chars/tremi/jumpattack2.png
      attack4 32 67 67 26 10 1 0 0 5 12
-	 dropv    4.0 1.0 0.0
+	  dropv    4.0 1.0 0.0
      @cmd     shooter2 "tremi_arrow" 17 95 2 -2
      frame     data/chars/tremi/jumpattack3.png
      frame     data/chars/tremi/jumpattack3.png
@@ -638,6 +639,7 @@ anim fall
      frame     data/chars/tremi/fall4.png
      bbox 0 85 120 35
      frame     data/chars/tremi/fall5.png
+     offset     87 110
      frame     data/chars/tremi/fall6.png
 
 anim fall7
@@ -651,6 +653,7 @@ anim fall7
      frame     data/chars/tremi/fall4.png
      bbox 0 85 120 35
      frame     data/chars/tremi/fall5.png
+     offset     87 110
      frame     data/chars/tremi/fall6.png
 
 
@@ -678,6 +681,7 @@ anim death
      frame     data/chars/tremi/death11.png
      frame     data/chars/tremi/death12.png
      frame     data/chars/tremi/death13.png
+     offset     84 126
      frame     data/chars/tremi/death14.png
 
 anim     block
