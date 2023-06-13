@@ -443,10 +443,10 @@ know    CAMUS           data/chars/CAMUS/00_CAMUS.txt
 know    DEATHMASK       data/chars/DEATHMASK/00_DEATHMASK.txt
 know    GEMINI          data/chars/GEMINI/00_GEMINI.txt
 know    MILO            data/chars/MILO/00_MILO.txt
-know    saga            data/chars/saga/saga.txt
+know    saga            data/chars/saga/00_saga.txt
 know    SHAKA           data/chars/SHAKA/00_SHAKA.txt
 know    SHURA           data/chars/SHURA/00_shura.txt
-know    great_pope      data/chars/great_pope/great_pope.txt
+know    great_pope      data/chars/great_pope/00_great_pope.txt
 
 ## OTHER ##
 

@@ -1,5 +1,5 @@
 
-loadingbg   1 -51 405 460 999 999 0
+loadingbg   1 -42 405 450 999 999 0
 
 
 #blocked    1        # Détermine les bords de l'écran comme des murs solide

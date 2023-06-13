@@ -21,8 +21,10 @@ antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
-
+throwdamage 20          # Degats recus si on est projetés
 grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
+grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
+offense all 1.3         # puissance d attaque du perso, 2 signifie 200% de degats en plus
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
@@ -384,27 +386,27 @@ anim runattack # Attaque en courant
     spawnframe  0 80 10 0
     subentity    dash_dust
     sound   data/chars/ikki/sounds/01-dash.wav
-    attack 100 60 50 50 15 0 0 0 0 30
+    attack 100 60 50 50 10 0 0 0 0 30
     frame    data/chars/ikki/runattack4.png
     sound   data/chars/ikki/sounds/high_punch.wav
     @cmd     spawnbind "ikki_run" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/ikki/runattack5.png
-    attack 100 60 50 50 15 1 0 0 0 30
+    attack 100 60 50 50 10 1 0 0 0 30
     dropv    3.0 2 0
     frame    data/chars/ikki/runattack6.png
     attack 0
     frame    data/chars/ikki/runattack7.png
-    attack 100 60 50 50 15 1 0 0 0 30
+    attack 100 60 50 50 10 1 0 0 0 30
     dropv    3.0 2 0
     frame    data/chars/ikki/runattack7.png
     attack 0
     frame    data/chars/ikki/runattack7.png
-    attack 100 60 50 50 15 1 0 0 0 30
+    attack 100 60 50 50 10 1 0 0 0 30
     dropv    3.0 2 0
     frame    data/chars/ikki/runattack8.png
     attack 0
     frame    data/chars/ikki/runattack9.png
-    attack 100 60 50 50 15 0 0 0 0 30
+    attack 100 60 50 50 10 0 0 0 0 30
     @cmd    dasher 0 0 0 1
     delay    12
     frame    data/chars/ikki/runattack9.png
@@ -429,7 +431,7 @@ anim attack1 # Attaque combo 1
     frame    data/chars/ikki/attack1.png
     frame    data/chars/ikki/attack2.png
     frame    data/chars/ikki/attack3.png
-    attack1 54 33 67 26 6 0 0 0 12 20
+    attack1 54 33 67 26 10 0 0 0 12 20
     frame    data/chars/ikki/attack4.png
     attack1 0
 
@@ -443,7 +445,7 @@ anim attack2 # Attaque combo 2
     frame    data/chars/ikki/attack22.png
     frame    data/chars/ikki/attack23.png
     dropv 4.0 1.0 0.0
-    attack1 52 41 67 26 6 0 0 0 12 20
+    attack1 52 41 67 26 10 0 0 0 12 20
     frame    data/chars/ikki/attack24.png
     attack1 0
 
@@ -455,7 +457,7 @@ anim attack3 # Attaque combo 3
     frame    data/chars/ikki/attack31.png
     frame    data/chars/ikki/attack32.png
     dropv 4.0 1.0 0.0
-    attack1 62 41 67 26 6 0 1 0 12 20
+    attack1 62 41 67 26 10 0 1 0 12 20
     frame    data/chars/ikki/attack33.png
 
 
@@ -468,7 +470,7 @@ anim attack4 # Attaque combo 4
     frame    data/chars/ikki/attack41.png
     frame    data/chars/ikki/attack42.png
     frame    data/chars/ikki/attack43.png
-    attack 40 60 60 20 5 0 1 0 12 0
+    attack 40 60 60 20 10 0 1 0 12 0
     frame    data/chars/ikki/attack44.png
     frame    data/chars/ikki/attack45.png
 
@@ -482,7 +484,7 @@ anim attack5 # Attaque combo 5
     frame    data/chars/ikki/attack52.png
     frame    data/chars/ikki/attack53.png
     frame    data/chars/ikki/attack54.png
-    attack1 62 56 87 26 6 0 1 0 12 20
+    attack1 62 56 87 26 10 0 1 0 12 20
     frame    data/chars/ikki/attack55.png
 
 anim attack6 # Attaque combo 6
@@ -498,7 +500,7 @@ anim attack6 # Attaque combo 6
     frame    data/chars/ikki/attack64.png
     frame    data/chars/ikki/attack65.png
     sound   data/chars/ikki/sounds/kick.wav
-    attack1 53 21 67 60 7 1 1 0 12 20
+    attack1 53 21 67 60 10 1 1 0 12 20
     frame    data/chars/ikki/attack66.png
 
 
@@ -518,7 +520,7 @@ anim grabattack #Saisie Coup de genou X2
     bbox 21 17 51 120
     frame    data/chars/ikki/grabattack1.png
     frame    data/chars/ikki/grabattack2.png
-	attack 46 46 50 30 8 0 0 0 15 20
+	attack 46 46 50 30 5 0 0 0 15 20
     frame    data/chars/ikki/grabattack3.png
 
 anim grabattack2 #Saisie Coup finisher
@@ -533,7 +535,7 @@ anim grabattack2 #Saisie Coup finisher
     frame    data/chars/ikki/attack64.png
     dropv     5.0 0.5
     frame    data/chars/ikki/attack65.png
-	attack 56 7 65 50 8 1 0 0 20 20
+	attack 56 7 65 50 10 1 0 0 20 20
     frame    data/chars/ikki/attack66.png
 
 anim grabbackward #Projection en arrière
@@ -663,7 +665,6 @@ anim land #  atterissage safe au sol (haut+ jump pendant la projection)
 anim jumpattack #Attaque sautée statique
     delay    5
     offset    55 206
-    bbox 35 76 51 120
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpattack1.png
     frame    data/chars/ikki/jumpattack2.png
@@ -676,7 +677,6 @@ anim jumpattack #Attaque sautée statique
 anim jumpforward #Attaque sautée vers l'avant
     delay    5
     offset    55 206
-    bbox 35 76 51 120
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/jumpforward2.png
@@ -689,7 +689,6 @@ anim jumpforward #Attaque sautée vers l'avant
 anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     delay    5
     offset    55 206
-    bbox 35 76 51 120
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpattack21.png
     frame    data/chars/ikki/jumpattack22.png
@@ -821,13 +820,13 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     frame    data/chars/ikki/attackbackward0.png
     frame    data/chars/ikki/attackbackward1.png
     frame    data/chars/ikki/attackbackward2.png
-    attack1  -14 63 100 70 20 1 0 0 5 30
+    attack1  -14 63 100 70 10 1 0 0 5 30
     frame    data/chars/ikki/attackbackward3.png
     frame    data/chars/ikki/attackbackward4.png
-    attack1  -14 63 100 70 20 1 0 0 5 30
+    attack1  -14 63 100 70 10 1 0 0 5 30
     frame    data/chars/ikki/attackbackward5.png
     frame    data/chars/ikki/attackbackward4.png
-    attack1  -14 63 100 70 20 1 0 0 5 30
+    attack1  -14 63 100 70 10 1 0 0 5 30
     frame    data/chars/ikki/attackbackward3.png
     frame    data/chars/ikki/attackbackward2.png
     frame    data/chars/ikki/attackbackward1.png
@@ -846,20 +845,20 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     sound    data/chars/ikki/sounds/01-knee.wav
     frame    data/chars/ikki/melee1.png
     frame    data/chars/ikki/melee2.png
-    attack1  32 19 100 120 20 0 0 0 5 30
+    attack1  32 19 100 120 10 0 0 0 5 30
     frame    data/chars/ikki/melee3.png
     attack1  0
     delay    10
     frame    data/chars/ikki/melee4.png
-    attack1  32 19 100 120 20 1 0 0 5 30
+    attack1  32 19 100 120 10 1 0 0 5 30
     frame    data/chars/ikki/melee5.png
     attack1  0
     frame    data/chars/ikki/melee6.png
-    attack1  32 19 100 120 20 1 0 0 5 30
+    attack1  32 19 100 120 10 1 0 0 5 30
     frame    data/chars/ikki/melee7.png
     attack1  0
     frame    data/chars/ikki/melee8.png
-    attack1  32 19 100 120 20 1 0 0 5 30
+    attack1  32 19 100 120 10 1 0 0 5 30
     frame    data/chars/ikki/melee9.png
     delay    5
     frame    data/chars/ikki/melee3.png
@@ -878,20 +877,20 @@ anim    freespecial    # Attaque de mêlée (a2)
     sound    data/chars/ikki/sounds/01-knee.wav
     frame    data/chars/ikki/melee1.png
     frame    data/chars/ikki/melee2.png
-    attack1  32 19 100 120 20 0 0 0 5 30
+    attack1  32 19 100 120 10 0 0 0 5 30
     frame    data/chars/ikki/melee3.png
     attack1  0
     delay    10
     frame    data/chars/ikki/melee4.png
-    attack1  32 19 100 120 20 1 0 0 5 30
+    attack1  32 19 100 120 10 1 0 0 5 30
     frame    data/chars/ikki/melee5.png
     attack1  0
     frame    data/chars/ikki/melee6.png
-    attack1  32 19 100 120 20 1 0 0 5 30
+    attack1  32 19 100 120 10 1 0 0 5 30
     frame    data/chars/ikki/melee7.png
     attack1  0
     frame    data/chars/ikki/melee8.png
-    attack1  32 19 100 120 20 1 0 0 5 30
+    attack1  32 19 100 120 10 1 0 0 5 30
     frame    data/chars/ikki/melee9.png
     delay    5
     frame    data/chars/ikki/melee3.png
@@ -921,30 +920,30 @@ anim freespecial2 # Phoenix Genmaken ( avant + bouton special)
     @cmd     spawnbind "ikki_fire" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/ikki/upspecial2.png
     @cmd     dasher 6 0 0 1
-    attack6  25 60 90 40 20 0 1 0 80 30
+    attack6  25 60 90 40 10 0 1 0 80 30
     stun     3
     @cmd     spawnbind "ikki_impact" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/ikki/upspecial3.png
     #attack  0
     frame    data/chars/ikki/upspecial4.png
-    attack6  25 60 90 40 20 0 1 0 80 30
+    attack6  25 60 90 40 10 0 1 0 80 30
     stun     3
     sound    data/chars/ikki/sounds/08-ultra2.wav
     delay    10
     frame    data/chars/ikki/upspecial5.png
     #attack  0
     frame    data/chars/ikki/upspecial6.png
-    attack6  25 60 90 40 20 0 1 0 80 30
+    attack6  25 60 90 40 10 0 1 0 80 30
     stun     3
     frame    data/chars/ikki/upspecial7.png
     #attack  0
     frame    data/chars/ikki/upspecial8.png
-    attack6  25 60 90 40 20 0 1 0 80 30
+    attack6  25 60 90 40 10 0 1 0 80 30
     stun     3
     frame    data/chars/ikki/upspecial9.png
     #attack  0
     frame    data/chars/ikki/upspecial10.png
-    attack6  25 60 90 40 20 0 1 0 80 30
+    attack6  25 60 90 40 10 0 1 0 80 30
     stun     3
     @cmd     dasher 0 0 0 1
     frame    data/chars/ikki/upspecial11.png
@@ -990,13 +989,13 @@ anim    freespecial4    # Attaque arrière (a3)
     frame    data/chars/ikki/attackbackward0.png
     frame    data/chars/ikki/attackbackward1.png
     frame    data/chars/ikki/attackbackward2.png
-    attack1  -14 63 100 70 20 1 0 0 5 30
+    attack1  -14 63 100 70 10 1 0 0 5 30
     frame    data/chars/ikki/attackbackward3.png
     frame    data/chars/ikki/attackbackward4.png
-    attack1  -14 63 100 70 20 1 0 0 5 30
+    attack1  -14 63 100 70 10 1 0 0 5 30
     frame    data/chars/ikki/attackbackward5.png
     frame    data/chars/ikki/attackbackward4.png
-    attack1  -14 63 100 70 20 1 0 0 5 30
+    attack1  -14 63 100 70 10 1 0 0 5 30
     frame    data/chars/ikki/attackbackward3.png
     frame    data/chars/ikki/attackbackward2.png
     frame    data/chars/ikki/attackbackward1.png
@@ -1011,22 +1010,22 @@ anim freespecial5 # Uppercut
     sound data/chars/ikki/sounds/01-uppercut.wav
     frame    data/chars/ikki/uppercut1.png
     @cmd     spawnbind "ikki_uppercutB" "ANI_IDLE" 0 0 0 1 0
-    attack1 55 0 35 84 7 0 0 0 5 20
+    attack1 55 0 35 84 10 0 0 0 5 20
     frame    data/chars/ikki/uppercut2.png
     delay 5
     attack1 0
     frame    data/chars/ikki/uppercut3.png
-    attack1 55 0 35 84 7 1 0 0 5 10
+    attack1 55 0 35 84 10 1 0 0 5 10
     dropv     5.0 0.5
     frame    data/chars/ikki/uppercut3.png
     attack1 0
     delay 12
     frame    data/chars/ikki/uppercut3.png
-    attack 50 0 30 80 5 1 0 0 0 20
+    attack 50 0 30 80 10 1 0 0 0 20
     frame    data/chars/ikki/uppercut3.png
     attack1 0
     frame    data/chars/ikki/uppercut4.png
-    attack 50 0 30 80 5 1 0 0 5 20
+    attack 50 0 30 80 10 1 0 0 5 20
     frame    data/chars/ikki/uppercut4.png
     delay   12
     frame    data/chars/ikki/uppercut2.png

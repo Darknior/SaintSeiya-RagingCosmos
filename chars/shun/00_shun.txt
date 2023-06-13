@@ -20,8 +20,10 @@ antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
+throwdamage 20          # Degats recus si on est projetés
+grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
-
+offense all 0.7         # puissance d attaque du perso, 2 signifie 200% de degats en plus
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 blockback   1           # Permet de bloquer les attaques qui arrivent derrière : SPÉCIAL !!
 blockodds   1           # Permet de pouvoir bloquer les attaques
@@ -343,17 +345,17 @@ anim runattack # Attaque en courant
     sound    data/chars/shun/sounds/runattack.wav
     frame    data/chars/shun/attack6.png
     frame    data/chars/shun/attack7.png
-    attack1 104 115 65 20 5 5 0 0 12 20
+    attack1 104 115 65 20 10 5 0 0 12 20
     dropv    3.0 2 0
     frame    data/chars/shun/attack8.png
     attack1 0
     frame    data/chars/shun/attack9.png
-    attack1 104 115 65 20 5 5 0 0 12 20
+    attack1 104 115 65 20 10 5 0 0 12 20
     dropv    3.0 2 0
     frame    data/chars/shun/attack10.png
     attack1 0
     frame    data/chars/shun/attack11.png
-    attack1 104 115 65 20 5 5 0 0 12 20
+    attack1 104 115 65 20 10 5 0 0 12 20
     dropv    3.0 2 0
     frame    data/chars/shun/attack12.png
     attack1 0
@@ -381,7 +383,7 @@ anim attack1 # Attaque combo 1
     frame    data/chars/shun/attack6.png
     frame    data/chars/shun/attack7.png
     delay    10
-    attack1 104 115 65 20 5 0 0 0 12 20
+    attack1 104 115 65 20 10 0 0 0 12 20
     frame    data/chars/shun/attack8.png
 	 delay    3
     frame    data/chars/shun/attack9.png
@@ -400,7 +402,7 @@ anim attack2 # Attaque combo 2
     frame    data/chars/shun/attack1.png
     frame    data/chars/shun/attack2.png
     delay    12
-    attack1 80 100 100 26 5 0 0 0 5 20
+    attack1 80 100 100 26 10 0 0 0 5 20
     frame    data/chars/shun/attack3.png
     delay    3
     attack1 0
@@ -418,7 +420,7 @@ anim attack3 # Attaque combo 3
     frame    data/chars/shun/attack17.png
     frame    data/chars/shun/attack18.png
     delay    12
-	 attack1 108 100 50 50 5 0 1 0 15 20
+	 attack1 108 100 50 50 10 0 1 0 15 20
     frame    data/chars/shun/attack19.png
     delay    3
     frame    data/chars/shun/attack20.png
@@ -435,7 +437,7 @@ anim attack4 # Attaque combo 4
     frame    data/chars/shun/attack22.png
     frame    data/chars/shun/attack23.png
     delay    12
-	 attack1 93 100 65 50 5 0 1 0 15 20
+	 attack1 93 100 65 50 10 0 1 0 15 20
     frame    data/chars/shun/attack24.png
     delay    3
 	 attack1 0
@@ -455,12 +457,12 @@ anim attack5 # Attaque combo 5
 	 sound   data/chars/shun/sounds/attack.wav
     frame    data/chars/shun/attack29.png
     frame    data/chars/shun/attack30.png
-    attack1 55 100 120 50 5 1 1 0 0 20
+    attack1 55 100 120 50 10 1 1 0 0 20
     dropv     5.0 0.5
     frame    data/chars/shun/attack31.png
     attack1 0
     frame    data/chars/shun/attack32.png
-    attack1 19 100 160 50 5 1 1 0 0 20
+    attack1 19 100 160 50 10 1 1 0 0 20
     dropv     5.0 0.5
     frame    data/chars/shun/attack33.png
     attack1 0
@@ -625,7 +627,6 @@ anim land #  atterissage safe au sol (haut+ jump pendant la projection)
 anim jumpattack #Attaque sautée statique
     delay    6
     offset    87 171
-    bbox 68 35 51 107
     sound data/chars/shun/sounds/19-air_special.wav
     frame    data/chars/shun/jumpspecial1.png
     attack4 62 98 67 50 10 1 0 0 5 30
@@ -642,7 +643,6 @@ anim jumpattack #Attaque sautée statique
 anim jumpforward #Attaque sautée vers l'avant
     delay    6
     offset    87 171
-    bbox 68 35 51 107
     sound data/chars/shun/sounds/19-air_special.wav
     frame    data/chars/shun/jumpspecial1.png
     attack4 62 98 67 50 10 1 0 0 5 30
@@ -659,7 +659,6 @@ anim jumpforward #Attaque sautée vers l'avant
 anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     delay    10
     offset    87 171
-    bbox 68 35 51 107
     sound data/sounds/punch.wav
     frame    data/chars/shun/jumpattack21.png
     jumpframe 2 -2 0
@@ -672,7 +671,6 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
 anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
     delay    10
     offset    87 171
-    bbox 68 35 51 107
     sound data/sounds/punch.wav
     frame    data/chars/shun/jumpattack31.png
     attack4 62 21 67 26 10 1 0 0 5 12
@@ -795,7 +793,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     delay    10
     frame    data/chars/shun/backattack1.png
     delay    15
-    attack   6 36 60 50 30 12 0 0 0 30
+    attack   6 36 60 50 10 12 0 0 0 30
     dropv    3.5 1 0
     frame    data/chars/shun/backattack3.png
     delay    8
@@ -1015,70 +1013,70 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     frame    data/chars/shun/special19.png
     @cmd     spawnScreen "shun_chain" 0 0 0 0
     frame    data/chars/shun/special20.png
-    attack 50 200 1000 35 5 0 0 0 0 30
+    attack 50 200 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special21.png
     attack 0
     frame    data/chars/shun/special22.png
-    attack 50 235 1000 35 5 0 0 0 0 30
+    attack 50 235 1000 35 10 0 0 0 0 30
     @cmd     spawnScreen "shun_lights" 0 0 0 0
     frame    data/chars/shun/special23.png
     attack 0
     frame    data/chars/shun/special24.png
-    attack 50 276 1000 35 5 0 0 0 0 30
+    attack 50 276 1000 35 10 0 0 0 0 30
     @cmd     spawnScreen "shun_chainB" 0 0 0 0
     frame    data/chars/shun/special25.png
     attack 0
     frame    data/chars/shun/special26.png
-    attack 50 200 1000 35 5 0 0 0 0 30
+    attack 50 200 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 235 1000 35 5 0 0 0 0 30
+    attack 50 235 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     @cmd     spawnScreen "shun_chainC" 0 0 0 0
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 276 1000 35 5 0 0 0 0 30
+    attack 50 276 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 200 1000 35 5 0 0 0 0 30
+    attack 50 200 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 235 1000 35 5 0 0 0 0 30
+    attack 50 235 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 276 1000 35 5 0 0 0 0 30
+    attack 50 276 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 200 1000 35 5 0 0 0 0 30
+    attack 50 200 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     @cmd     spawnScreen "shun_chain" 0 0 0 0
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 235 1000 35 5 0 0 0 0 30
+    attack 50 235 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 276 1000 35 5 0 0 0 0 30
+    attack 50 276 1000 35 10 0 0 0 0 30
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
     @cmd     spawnScreen "shun_chainB" 0 0 0 0
-    attack 50 200 1000 35 5 5 0 0 0 30
+    attack 50 200 1000 35 10 5 0 0 0 30
     dropv    2 5
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 235 1000 35 5 5 0 0 0 30
+    attack 50 235 1000 35 10 5 0 0 0 30
     dropv    2 5
     frame    data/chars/shun/special19.png
     attack 0
     frame    data/chars/shun/special19.png
-    attack 50 276 1000 35 5 5 0 0 0 30
+    attack 50 276 1000 35 10 5 0 0 0 30
     dropv    2 5
     delay    10
     frame    data/chars/shun/special13.png
@@ -1106,7 +1104,7 @@ anim freespecial7   # Coup de pied haut
     frame    data/chars/shun/attack22.png
     frame    data/chars/shun/attack23.png
     delay    12
-	 attack1 79 100 90 50 6 1 1 0 15 25
+	 attack1 79 100 90 50 10 1 1 0 15 25
     dropv    5.0 0.5
     frame    data/chars/shun/attack24.png
     delay    6
@@ -1125,7 +1123,7 @@ anim freespecial8   # Balayette
     sound    data/sounds/punch.wav
     frame    data/chars/shun/slide1.png
     delay    14
-	 attack1 63 62 80 65 6 1 0 0 12 25
+	 attack1 63 62 80 65 10 1 0 0 12 25
     dropv    5.0 0.5
     frame    data/chars/shun/slide2.png
     delay    9

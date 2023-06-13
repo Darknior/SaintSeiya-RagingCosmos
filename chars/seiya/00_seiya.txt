@@ -21,8 +21,9 @@ antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
-
+throwdamage 20          # Degats recus si on est projetés
 grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
+offense all 1           # puissance d attaque du perso, 2 signifie 200% de degats en plus
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 holdblock   1           # Permet de pouvoir maintenir la parade
 nodieblink  1           # Ne clignote pas quand tu meurs
@@ -356,23 +357,23 @@ anim runattack  # Attaque en courant
     subentity    dash_dust
     sound    data/chars/seiya/sounds/07-forward_punch.wav
     frame    data/chars/seiya/runattack1.png
-    attack   5 13 90 55 15 0 0 0 0 20
+    attack   5 13 90 55 10 0 0 0 0 20
     dropv    3.0 2 0
     frame    data/chars/seiya/runattack2.png
     attack2  0
     @cmd     spawnbind "seiya_dash_dust" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/runattack3.png
-    attack2  5 13 90 55 15 12 0 0 0 20
+    attack2  5 13 90 55 10 12 0 0 0 20
     dropv    3.0 2 0
     frame    data/chars/seiya/runattack4.png
     attack2  0
     frame    data/chars/seiya/runattack5.png
-    attack2  5 13 90 55 15 12 0 0 0 20
+    attack2  5 13 90 55 10 12 0 0 0 20
     dropv    3.0 2 0
     frame    data/chars/seiya/runattack4.png
     attack2  0
     frame    data/chars/seiya/runattack5.png
-    attack2  5 13 90 55 15 12 0 0 0 20
+    attack2  5 13 90 55 10 12 0 0 0 20
     dropv    3.0 2 0
     @cmd     dasher 0 0 0 1
     delay    12
@@ -460,7 +461,7 @@ anim    attack5    # Attaque combo 5
     sound    data/chars/seiya/sounds/kick.wav
     frame    data/chars/seiya/attack53.png
     dropv    4.0 1.0 0.0
-    attack1  64 37 67 26 20 1 1 0 12 20
+    attack1  64 37 67 26 10 1 1 0 12 20
     frame    data/chars/seiya/attack54.png
     @cmd     spawnbind "kick_dust" 0 0 0 0 0
     frame    data/chars/seiya/attack55.png
@@ -501,7 +502,7 @@ anim    grabattack2 # Saisie Coup finisher
     frame    data/chars/seiya/grabattack21.png
     frame    data/chars/seiya/grabattack22.png
     frame    data/chars/seiya/grabattack23.png
-    attack3  62 21 90 26 15 1 0 0 0 20
+    attack3  62 21 90 26 10 1 0 0 0 20
     frame    data/chars/seiya/grabattack24.png
     frame    data/chars/seiya/grabattack25.png
     frame    data/chars/seiya/grabattack26.png
@@ -652,7 +653,6 @@ anim    jumpattack # Attaque sautée statique
     delay    5
     offset   45 112
     hitflash flashbig
-    bbox     21 0 51 112
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack1.png
     frame    data/chars/seiya/jumpattack2.png
@@ -666,7 +666,6 @@ anim    jumpforward # Attaque sautée vers l'avant
     delay    5
     offset   45 112
     hitflash blue_swing
-    bbox     21 0 51 112
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpforward1.png
     attack4  75 42 67 26 10 1 0 0 10 12
@@ -680,7 +679,6 @@ anim    jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     delay    5
     offset   45 112
     hitflash blue_swing
-    bbox     21 0 51 112
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack21.png
     frame    data/chars/seiya/jumpattack22.png
@@ -815,7 +813,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     delay    10
     frame    data/chars/seiya/attackbackward21.png
     delay    15
-    attack   20 36 60 50 30 12 0 0 0 30
+    attack   20 36 60 50 10 12 0 0 0 30
     dropv    3.5 1 0
     frame    data/chars/seiya/attackbackward22.png
     delay    8
@@ -1015,7 +1013,7 @@ anim    freespecial4    # Attaque arrière (a3)
     delay    10
     frame    data/chars/seiya/attackbackward21.png
     delay    15
-    attack   20 36 60 50 30 12 0 0 0 30
+    attack   20 36 60 50 10 12 0 0 0 30
     dropv    3.5 1 0
     frame    data/chars/seiya/attackbackward22.png
     delay    8
@@ -1054,12 +1052,12 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
     attack1  0
     delay    5
     frame    data/chars/seiya/uppercut3.png
-    attack1  55 0 35 148 15 1 0 0 0 20
+    attack1  55 0 35 148 10 1 0 0 0 20
     dropv    4.0 2 0
     frame    data/chars/seiya/uppercut3.png
     attack1  0
     frame    data/chars/seiya/uppercut3.png
-    attack1  55 0 35 148 15 1 0 0 0 20
+    attack1  55 0 35 148 10 1 0 0 0 20
     dropv    4.0 2 0
     frame    data/chars/seiya/uppercut3.png
     attack1  0
@@ -1192,30 +1190,30 @@ anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     frame    data/chars/seiya/special41.png
     attack5  0
     @cmd     dasher 8 0 0 1
-    attack4  90 40 55 83 40 1 1 0 0 30
+    attack4  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     frame    data/chars/seiya/special42.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack4  90 40 55 83 40 1 1 0 0 30
+    attack4  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special42.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack4  90 40 55 83 40 1 1 0 0 30
+    attack4  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special43.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack4  90 40 55 83 40 1 1 0 0 30
+    attack4  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special43.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack4  90 40 55 83 40 1 1 0 0 30
+    attack4  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     attack4  0
     @cmd     dasher 0 0 0 1
@@ -1269,7 +1267,7 @@ anim    freespecial9    # Attaque au sol
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/downattack-1.png
     frame    data/chars/seiya/downattack-2.png
-	 attack 122 63 30 50 5 1 0 0 12 30
+	 attack 122 63 30 50 10 1 0 0 12 30
     dropv    3 4
     frame    data/chars/seiya/downattack-3.png
     frame    data/chars/seiya/downattack-4.png
