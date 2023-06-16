@@ -76,6 +76,10 @@ load    kick_dust       data/chars/misc/dust/kick_dust.txt
 load    dash_dust       data/chars/misc/dust/dash_dust.txt
 load    dash_dustB       data/chars/misc/dust/dash_dustB.txt
 
+# Stun animations
+
+load    stun           data/chars/misc/stun/stun.txt
+
 # Blood animations
 
 load    blood_ground_big       data/chars/misc/blood/blood_ground_big.txt

@@ -188,3 +188,34 @@ void itemText(void text, float velocity, float duration, int font)
   setentityvar(getlocalvar("self"), "textTime", duration);
   setentityvar(getlocalvar("self"), "font", font);
 }
+
+void stunCounter(int Px, int Py, int Pz, int countLimit)
+{
+  void vSpawn;
+  void self     = getlocalvar("self");
+  int x         = getentityproperty(self, "x");
+  int y         = getentityproperty(self, "y");
+  int z         = getentityproperty(self, "z");
+  int d         = getentityproperty(self, "direction");
+
+  if(d == 0){Px = -Px;}
+
+  if(getentityvar(self, "stunCount") == NULL()){
+    setentityvar(self, "stunCount", 1);
+  }
+  
+  if(getentityvar(self, "stunCount") < countLimit){
+    setentityvar(self, "stunCount", getentityvar(self, "stunCount")+1);
+  }
+  else
+  {
+    clearspawnentry();
+    setspawnentry("name", "stun");
+    vSpawn = spawn();
+    changeentityproperty(vSpawn, "position", x+Px, z+Pz, y+Py);
+    changeentityproperty(vSpawn, "direction", d);
+    changeentityproperty(vSpawn, "parent", self);
+    setentityvar(self, "stunCount", 1);
+    changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+  }
+}

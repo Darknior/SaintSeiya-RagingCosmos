@@ -1,0 +1,16 @@
+name			stun
+type			none
+shadow			0
+antigravity		100
+animationscript	data/scripts/player.c
+ondrawscript	data/scripts/stun.c
+
+anim	idle
+	loop	1
+	delay	8
+	offset	35 35
+	#sound data/chars/misc/flash/flash.wav
+	frame	data/chars/misc/stun/stun_1.png
+	frame	data/chars/misc/stun/stun_2.png
+	frame	data/chars/misc/stun/stun_3.png
+	frame	data/chars/misc/stun/stun_4.png
