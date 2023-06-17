@@ -13,11 +13,10 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	1
 	delay	10
-	offset	185 25
+	offset	207 120
 	drawmethod scale 1 1
 	drawmethod alpha 0
    drawmethod channel 99
-   drawmethod flipx 1
 	frame	data/chars/misc/timer/time-is-up/time_up-0.png
    frame	data/chars/misc/timer/time-is-up/time_up-0.png
 

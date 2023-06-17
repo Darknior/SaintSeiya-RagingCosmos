@@ -307,17 +307,28 @@ void timeOver()
 
 	//DRAW THE TIME OVER MESSAGE
 	if(reset != NULL()){
+		void vSpawn;
 		void str	= "time_over";
+		float xPos	= openborvariant("xpos");
 		float hRes	= openborvariant("hresolution");
 		float vRes	= openborvariant("vresolution");
 		int font	= 0;
 		int layer	= 1001;
 
-		drawstring((hRes-strwidth(str, font))/2, vRes/2, font, str, layer);
+		if(getglobalvar("timeOver") != 1){
+			clearspawnentry();
+			setspawnentry("name", "time-is-up");
+			vSpawn = spawn();
+			changeentityproperty(vSpawn, "position", xPos+(hRes/2), vRes/2, 0);
+			changeentityproperty(vSpawn, "direction", 1);
+			setglobalvar("timeOver", 1);
+		}
+		//drawstring((hRes-strwidth(str, font))/2, vRes/2, font, str, layer);
 	}
 
 	//RESET THE CURRENT LEVEL
 	if(time > reset){
+		setglobalvar("timeOver", NULL());
 		setglobalvar("reseTimer", NULL());
 		changeopenborvariant("game_time", 0);
 		jumptobranch(branch, 1);

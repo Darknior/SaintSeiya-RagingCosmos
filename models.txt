@@ -388,8 +388,8 @@ know    horloge-sagitaire   data/chars/misc/timer/horloge-sagitaire.txt
 know    horloge-capricorne  data/chars/misc/timer/horloge-capricorne.txt
 know    horloge-verseau     data/chars/misc/timer/horloge-verseau.txt
 know    horloge-poissons    data/chars/misc/timer/horloge-poissons.txt
-know    time-is-up          data/chars/misc/timer/time-is-up.txt
-know    time-is-up0          data/chars/misc/timer/time-is-up0.txt
+load    time-is-up          data/chars/misc/timer/time-is-up.txt
+load    time-is-up0          data/chars/misc/timer/time-is-up0.txt
 
 ## GODDESS ##
 
