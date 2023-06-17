@@ -11,15 +11,18 @@ subject_to_platform 0
 animationscript	data/scripts/player.c
 
 anim	idle
-	loop	0
-	delay	19500
-	offset	124 -140
+	loop	1
+	offset	185 25
 	drawmethod scale 1 1
-	drawmethod alpha 6
-        drawmethod channel 0.99
-	frame	data/chars/misc/timer/time-is-up/empty-time.png
-	delay	400
-	frame	data/chars/misc/timer/time-is-up/time-is-up.png
-	frame	data/chars/misc/timer/time-is-up/time-is-up.png
-	@cmd suicide
-	frame	data/chars/misc/timer/time-is-up/time-is-up.png
+	drawmethod alpha 1
+   drawmethod flipx 1
+   delay	20
+	frame	data/chars/misc/timer/time-is-up/time_up-1.png
+	frame	data/chars/misc/timer/time-is-up/time_up-2.png
+   frame	data/chars/misc/timer/time-is-up/time_up-3.png
+	frame	data/chars/misc/timer/time-is-up/time_up-4.png
+   frame	data/chars/misc/timer/time-is-up/time_up-3.png
+	frame	data/chars/misc/timer/time-is-up/time_up-2.png
+
+
+

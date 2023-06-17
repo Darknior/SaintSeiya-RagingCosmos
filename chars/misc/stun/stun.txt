@@ -7,8 +7,11 @@ ondrawscript	data/scripts/stun.c
 
 anim	idle
 	loop	1
-	delay	8
+	delay	10
 	offset	35 35
+   drawmethod alpha 6
+   drawmethod channel 0.6
+   drawmethod scale 1
 	#sound data/chars/misc/flash/flash.wav
 	frame	data/chars/misc/stun/stun_1.png
 	frame	data/chars/misc/stun/stun_2.png

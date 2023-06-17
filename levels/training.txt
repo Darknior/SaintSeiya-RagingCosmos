@@ -7,7 +7,7 @@ panel           data/bgs/temple2/templeboss.png
 
 order           a
 direction       both
-settime         99
+settime         5
 
 cameratype      0
 light           256 -44
@@ -32,6 +32,9 @@ at          0
 spawn       time-is-up
 coords      368 89
 at          0
+spawn       time-is-up0
+coords      368 89
+at          0
 
 #-- ENNEMIS -------------------------------
 
@@ -40,10 +43,6 @@ health      1000
 coords      750 290
 at          0
 
-spawn       SOLDIERTRAINING
-health      1000
-coords      750 390
-at          0
 
 group       1 1
 at          0

@@ -13,7 +13,7 @@ bgspeed 1 0
 
 order       a
 direction   both
-settime     99
+settime     5
 
 cameratype  0
 light        256 -44

@@ -107,6 +107,7 @@ know    seiya_lights           data/chars/seiya/special/seiya_lights.txt
 know    seiya_seiya_meteor_flash  data/chars/seiya/special/seiya_meteor_flash.txt
 
 know    shiryu_aura            data/chars/shiryu/special/shiryu_aura.txt
+know    shiryu_block           data/chars/shiryu/special/shiryu_block.txt
 know    shiryu_dragon          data/chars/shiryu/special/shiryu_dragon.txt
 know    shiryu_dragon_uppercut data/chars/shiryu/special/shiryu_dragon_uppercut.txt
 know    shiryu_dragon_water    data/chars/shiryu/special/shiryu_dragon_water.txt
@@ -388,6 +389,7 @@ know    horloge-capricorne  data/chars/misc/timer/horloge-capricorne.txt
 know    horloge-verseau     data/chars/misc/timer/horloge-verseau.txt
 know    horloge-poissons    data/chars/misc/timer/horloge-poissons.txt
 know    time-is-up          data/chars/misc/timer/time-is-up.txt
+know    time-is-up0          data/chars/misc/timer/time-is-up0.txt
 
 ## GODDESS ##
 

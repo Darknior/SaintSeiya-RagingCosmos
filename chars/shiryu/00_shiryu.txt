@@ -24,7 +24,7 @@ mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on fr
 throwdamage 20          # Degats recus si on est projetés
 grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
 offense all 1.2         # puissance d attaque du perso, 2 signifie 200% de degats en plus
-defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
+defense     all 1 0 1 0 0 0 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 blockodds   1           # Permet de pouvoir bloquer les attaques
 holdblock   2           # Permet de pouvoir maintenir la parade
 nodieblink  1           # Ne clignote pas quand tu meurs
@@ -37,7 +37,7 @@ sleepwait   1000        # Temps en centisecondes avant de jouer ldata/chars/sele
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière par defaut (animation)
-bflash      tremi_block # Flash pendant un blocage (animation)
+bflash      shiryu_block # Flash pendant un blocage (animation)
 
 #weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 agora
 
@@ -57,6 +57,7 @@ keyscript           data/scripts/commands.c             # Mort du Timer à zéro
 
 load blue_swing
 load shiryu_aura
+load shiryu_block
 load shiryu_dragon
 load shiryu_dragon_water
 load shiryu_explosion

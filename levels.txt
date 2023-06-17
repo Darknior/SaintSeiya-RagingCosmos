@@ -294,7 +294,7 @@ skipselect  seiya
 z           378 484
 file        data/levels/temple2boss.txt
 
-set         Temple_3_Road_Shaina-Shiryu
+set         Temple_3_Road_Shaina-Shun
 maxplayers  1
 lives       1
 credits     10
@@ -302,7 +302,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  shiryu
+skipselect  shun
 z           385 484
 file        data/levels/temple3.txt
 
@@ -414,7 +414,7 @@ skipselect  shiryu
 z           355 470
 file        data/levels/temple7BOSS.txt
 
-set         Temple_8_Road_Sirius-Seiya
+set         Temple_8_Road_Sirius-Hyoga
 maxplayers  1
 lives       1
 credits     10
@@ -422,7 +422,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  seiya
+skipselect  Hyoga
 z           390 484
 file        data/levels/temple8.txt
 
@@ -450,7 +450,7 @@ skipselect  hyoga
 z           390 484
 file        data/levels/temple9.txt
 
-set         Temple_10_Road-Seiya
+set         Temple_10_Road-Shiryu
 maxplayers  1
 lives       1
 credits     10
@@ -458,7 +458,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  seiya
+skipselect  shiryu
 z           340 484
 file        data/levels/temple10.txt
 
@@ -474,7 +474,7 @@ skipselect  shiryu
 z           378 484
 file        data/levels/temple10BOSS.txt
 
-set         Temple_11_Road-Ikki
+set         Temple_11_Road-Hyoga
 maxplayers  1
 lives       1
 credits     10
@@ -482,7 +482,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  ikki
+skipselect  Hyoga
 z           390 484
 file        data/levels/temple11.txt
 
@@ -498,7 +498,7 @@ skipselect  hyoga
 z           378 484
 file        data/levels/temple11BOSS.txt
 
-set         Temple_12_Road_June-Seiya
+set         Temple_12_Road_June-Shun
 maxplayers  1
 lives       1
 credits     10
@@ -506,7 +506,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  seiya
+skipselect  shun
 z           378 484
 file        data/levels/temple12.txt
 

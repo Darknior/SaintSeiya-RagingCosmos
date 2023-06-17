@@ -1,0 +1,33 @@
+name	shiryu_block
+type	none
+shadow	0
+setlayer 157
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	4
+	offset	50 50
+   drawmethod  alpha 1
+   drawmethod  channel 0.53
+   drawmethod scale 0.5
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-0.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-1.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-2.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-3.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-4.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-5.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-6.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-7.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-8.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-9.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-10.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-11.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-12.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-13.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-14.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-15.png
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-16.png
+	@cmd suicide
+	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-16.png
