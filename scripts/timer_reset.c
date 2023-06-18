@@ -5,7 +5,7 @@ void main()
 	int lives	= getplayerproperty(pIndex, "lives");
 	int atkType	= getlocalvar("attacktype");
 	float time	= openborvariant("elapsed_time");
-	float delay	= 400;
+	float delay	= 800;
 
 	//SAVE A VARIABLE TO TELL THE SCRIPT TO RESET CURRENT LEVEL AND DRAW THE "TIME OVER" MESSAGE
 	if(atkType == openborconstant("ATK_TIMEOVER")){

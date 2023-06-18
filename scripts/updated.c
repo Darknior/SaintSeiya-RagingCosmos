@@ -316,13 +316,24 @@ void timeOver()
 		int layer	= 1001;
 
 		if(getglobalvar("timeOver") != 1){
+
+			//FIRST ENTITY
 			clearspawnentry();
 			setspawnentry("name", "time-is-up");
 			vSpawn = spawn();
 			changeentityproperty(vSpawn, "position", xPos+(hRes/2), vRes/2, 0);
 			changeentityproperty(vSpawn, "direction", 1);
+			
+			//SECOND ENTITY
+			clearspawnentry();
+			setspawnentry("name", "time-is-up0");
+			vSpawn = spawn();
+			changeentityproperty(vSpawn, "position", xPos+(hRes/2), (vRes/2)-1, 0);
+			changeentityproperty(vSpawn, "direction", 1);
+
 			setglobalvar("timeOver", 1);
 		}
+		changeopenborvariant("game_time", 50);
 		//drawstring((hRes-strwidth(str, font))/2, vRes/2, font, str, layer);
 	}
 
@@ -330,7 +341,6 @@ void timeOver()
 	if(time > reset){
 		setglobalvar("timeOver", NULL());
 		setglobalvar("reseTimer", NULL());
-		changeopenborvariant("game_time", 0);
 		jumptobranch(branch, 1);
 	}
 }
