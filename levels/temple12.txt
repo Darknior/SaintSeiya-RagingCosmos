@@ -28,8 +28,6 @@ spawn1  60 30
 
 
 
-
-
 nofadeout 0
 nosave 1
 blocked 1
@@ -49,10 +47,6 @@ at          0
 
 spawn       horloge-flame
 coords      387 47
-at          0
-
-spawn       time-is-up
-coords      368 89
 at          0
 
 spawn       temple13roadcolumns

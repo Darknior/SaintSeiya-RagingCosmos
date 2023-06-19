@@ -52,10 +52,6 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
-spawn       time-is-up
-coords      368 89
-at          0
-
 
 #-- BOSS ----------------------------------------------
 

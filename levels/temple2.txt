@@ -17,7 +17,7 @@ shadowalpha 2
 shadowopacity 80
 direction right
 
-settime 0
+settime 99
 
 cameratype 1
 order	a

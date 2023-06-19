@@ -553,7 +553,7 @@ anim grabbackward #Projection en arrière
     frame    data/chars/ikki/grab6.png
     @cmd     position 0 -22 70 2 0
     frame    data/chars/ikki/grab5.png
-    @cmd     slam 100 2 3.5 2 0 0
+    @cmd     slam 20 2 3.5 2 0 0
     frame    data/chars/ikki/grab5.png
     frame    data/chars/ikki/grab5.png
     frame    data/chars/ikki/grab5.png
@@ -571,7 +571,7 @@ anim    grabforward  # projection en avant
     frame    data/chars/ikki/attack3.png
     @cmd     position 0 45 25 2 0
     sound   data/chars/ikki/sounds/grabforward2.wav
-    @cmd     slam 100 2 -3.5 2 0 0
+    @cmd     slam 20 2 -3.5 2 0 0
     delay    15
     frame    data/chars/ikki/attack4.png
 

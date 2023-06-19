@@ -549,7 +549,7 @@ anim    grabbackward   # Projection en arrière
     frame    data/chars/hyoga/grab13.png
     @cmd     position 0 -107 15 0 0
     frame    data/chars/hyoga/grab14.png
-    @cmd     slam 100 2 3.5 2 0 0
+    @cmd     slam 20 2 3.5 2 0 0
     delay    16
     frame    data/chars/hyoga/grab10.png
     
@@ -567,7 +567,7 @@ anim    grabforward  # projection en avant
     @cmd     position 0 44 -2 0 0
     frame    data/chars/hyoga/grabforward3.png
     sound   data/chars/hyoga/sounds/grabforward.wav
-    @cmd     slam 100 2 -3.5 2 0 0
+    @cmd     slam 20 2 -3.5 2 0 0
     delay    15
     frame    data/chars/hyoga/grabforward4.png
     delay    30

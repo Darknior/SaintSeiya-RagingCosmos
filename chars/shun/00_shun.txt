@@ -520,7 +520,7 @@ anim grabbackward #Projection en arrière
     sound   data/chars/shun/sounds/23-projection2.wav
     frame    data/chars/shun/grabbackward2.png
     @cmd     position 0 -31 64 -2 0
-    @cmd     slam 100 2 3.5 2 0 0
+    @cmd     slam 20 2 3.5 2 0 0
     delay    15
     frame    data/chars/shun/grabbackward3.png
     frame    data/chars/shun/grabbackward2.png
@@ -537,7 +537,7 @@ anim    grabforward  # projection en avant
     @cmd     position 0 47 7 -1 0
     sound    data/chars/shun/sounds/grabforward.wav
     frame    data/chars/shun/grabforward3.png
-    @cmd     slam 100 2 -3.5 2 0 0
+    @cmd     slam 20 2 -3.5 2 0 0
     frame    data/chars/shun/grabforward4.png
     sound   data/chars/shun/sounds/23-projection2.wav
     delay    15

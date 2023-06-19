@@ -17,7 +17,7 @@ fglayer         data/bgs/temple12/fogOrange.png        -25 -0.4 0   0 0 0 0 -1 -
 
 order           a
 direction       both
-settime         0
+settime         99
 
 cameratype      0
 light        256 -44
@@ -66,10 +66,6 @@ at          0
 
 spawn       horloge-flame
 coords      387 47
-at          0
-
-spawn       time-is-up
-coords      368 89
 at          0
 
 load temple12_columns 3

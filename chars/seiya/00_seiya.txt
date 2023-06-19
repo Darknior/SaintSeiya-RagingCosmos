@@ -557,7 +557,7 @@ anim    grabforward  # projection en avant
     frame    data/chars/seiya/attack23.png
     @cmd     position 0 71 17 2 0
     sound    data/chars/seiya/sounds/kick.wav
-    @cmd     slam 100 2 -3.5 2 0 0
+    @cmd     slam 20 2 -3.5 2 0 0
     frame    data/chars/seiya/attack24.png
 
 

@@ -19,7 +19,7 @@ shadowalpha 6
 shadowopacity 0
 direction right
 
-settime 0
+settime 99
 
 cameratype 1
 
@@ -44,10 +44,6 @@ at          0
 
 spawn       horloge-flame
 coords      387 47
-at          0
-
-spawn       time-is-up
-coords      368 89
 at          0
 
 
