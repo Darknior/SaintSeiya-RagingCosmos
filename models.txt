@@ -325,7 +325,7 @@ know    cosmos-silver   data/chars/misc/items/cosmos/cosmos-silver.txt
 know    cosmos-gold     data/chars/misc/items/cosmos/cosmos-gold.txt
 
 --Timers (gain time)--
-know    timer   data/chars/misc/items/time/timer.txt
+know    time   data/chars/misc/items/time/time.txt
 
 --cosmos (gain cosmos)--
 know    cosmos-stars    data/chars/misc/items/cosmos/cosmos-stars.txt
