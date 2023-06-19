@@ -52,6 +52,7 @@ at 0
 
 spawn malesoldier
 alias Themis
+item timer
 coords	850 470
 at 0
 

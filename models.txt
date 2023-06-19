@@ -324,6 +324,9 @@ know    cosmos-bronze   data/chars/misc/items/cosmos/cosmos-bronze.txt
 know    cosmos-silver   data/chars/misc/items/cosmos/cosmos-silver.txt
 know    cosmos-gold     data/chars/misc/items/cosmos/cosmos-gold.txt
 
+--Timers (gain time)--
+know    timer   data/chars/misc/items/time/timer.txt
+
 --cosmos (gain cosmos)--
 know    cosmos-stars    data/chars/misc/items/cosmos/cosmos-stars.txt
 know    energy          data/chars/misc/items/obj/energy.txt
@@ -375,6 +378,7 @@ know    rock02          data/chars/misc/obj/rock02.txt
 ## HORLOGE ##
 
 know    horloge-flame       data/chars/misc/timer/horloge-flame.txt
+know    horloge-flameB      data/chars/misc/timer/horloge-flameB.txt
 know    horloge-segment     data/chars/misc/timer/horloge-segment.txt
 know    horloge-belier      data/chars/misc/timer/horloge-belier.txt
 know    horloge-taureau     data/chars/misc/timer/horloge-taureau.txt
