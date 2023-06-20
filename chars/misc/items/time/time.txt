@@ -14,8 +14,8 @@ anim idle
 	bbox	0 0 44 45
 	delay	100
 	@cmd itemText "TIME + 20" 0.8 1.5 6
+   @cmd     spawnbind "horloge-flameB" "ANI_IDLE" 5 -50 0 0 0
 	frame	data/chars/misc/items/time/timer.png
-   @cmd     spawnbind "horloge-flame" "ANI_IDLE" 5 -25 0 0 0
 	frame	data/chars/misc/items/time/timer.png
    delay	100
    frame	data/chars/misc/items/time/timer.png

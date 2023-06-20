@@ -1,15 +1,20 @@
 name	horloge-flameB
 type    panel
 shadow    0
-setlayer 10
+setlayer 5
+speed 10
+no_adjust_base  0
+noquake        1 1
 alpha 1
-
-
+subject_to_gravity 0
+subject_to_obstacle 0
+subject_to_platform 0
+animationscript	data/scripts/player.c
 anim	idle
 	loop	1
 	delay	10
-	offset	69 114
-   drawmethod scale 2
+	offset	69 50
+   drawmethod scale 0.7
 	frame	data/chars/misc/timer/horloge-flame/flame0.png
 	frame	data/chars/misc/timer/horloge-flame/flame1.png
 	frame	data/chars/misc/timer/horloge-flame/flame2.png

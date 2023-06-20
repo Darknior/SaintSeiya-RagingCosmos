@@ -378,7 +378,7 @@ know    rock02          data/chars/misc/obj/rock02.txt
 ## HORLOGE ##
 
 know    horloge-flame       data/chars/misc/timer/horloge-flame.txt
-know    horloge-flameB      data/chars/misc/timer/horloge-flameB.txt
+load    horloge-flameB      data/chars/misc/timer/horloge-flameB.txt
 know    horloge-segment     data/chars/misc/timer/horloge-segment.txt
 know    horloge-belier      data/chars/misc/timer/horloge-belier.txt
 know    horloge-taureau     data/chars/misc/timer/horloge-taureau.txt
