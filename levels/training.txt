@@ -8,7 +8,7 @@ panel           data/bgs/temple2/templeboss.png
 
 order           a
 direction       both
-settime         99
+settime         10
 
 cameratype      0
 light           256 -44

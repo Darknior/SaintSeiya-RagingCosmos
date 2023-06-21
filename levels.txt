@@ -242,7 +242,7 @@ end
 
 set         Temple_1_Road_Tremi-Seiya
 maxplayers  4
-lives       1
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -253,14 +253,13 @@ skipselect  seiya
 branch      temple0
 z           378 484
 file        data/levels/temple0.txt
-
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
 set         Temple_1_BOSS_Mu-Seiya
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -269,10 +268,13 @@ custfade	100
 skipselect  seiya
 z           378 484
 file        data/levels/temple1.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_2_Road-Seiya
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -281,10 +283,13 @@ custfade	100
 skipselect  seiya
 z           378 484
 file        data/levels/temple2.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_2_BOSS_Taureau-Seiya
 maxplayers  4
-lives       1
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -293,10 +298,13 @@ custfade	100
 skipselect  seiya
 z           378 484
 file        data/levels/temple2boss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_3_Road_Shaina-Shun
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -305,10 +313,13 @@ custfade	100
 skipselect  shun
 z           385 484
 file        data/levels/temple3.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_3_BOSS_Gemeaux-Shun
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -317,10 +328,13 @@ custfade	100
 skipselect  shun
 z           378 484
 file        data/levels/temple3boss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_4_Road_Jaki-Shiryu
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -329,10 +343,13 @@ custfade	100
 skipselect  shiryu
 z           378 484
 file        data/levels/temple4.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_4_BOSS_Cancer-Shiryu
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -341,10 +358,13 @@ custfade	100
 skipselect  shiryu
 z           400 484
 file        data/levels/temple4boss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_5_Road_Cassios-Seiya
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -353,10 +373,13 @@ custfade	100
 skipselect  seiya
 z           384 484
 file        data/levels/temple5.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_5_BOSS_Lion-Seiya
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -365,10 +388,13 @@ custfade	100
 skipselect  seiya
 z           378 484
 file        data/levels/temple5boss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_6_Road-Ikki
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -377,10 +403,13 @@ custfade	100
 skipselect  ikki
 z           330 484
 file        data/levels/temple6.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_6_Midboss_Shiva_Agora-Ikki
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -389,10 +418,13 @@ custfade	100
 skipselect  ikki
 z           390 484
 file        data/levels/temple6midboss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_6_BOSS_Vierge-Ikki
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -401,10 +433,13 @@ custfade	100
 skipselect  ikki
 z           390 484
 file        data/levels/temple6boss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_7_BOSS_Balance-Shiryu
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -413,10 +448,13 @@ custfade	100
 skipselect  shiryu
 z           355 470
 file        data/levels/temple7BOSS.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_8_Road_Sirius-Hyoga
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -425,10 +463,13 @@ custfade	100
 skipselect  Hyoga
 z           390 484
 file        data/levels/temple8.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_8_BOSS_Scorpion-Hyoga
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -437,10 +478,13 @@ custfade	100
 skipselect  hyoga
 z           378 484
 file        data/levels/temple8BOSS.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_9_Sagitarius-Hyoga
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -449,10 +493,13 @@ custfade	100
 skipselect  hyoga
 z           390 484
 file        data/levels/temple9.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_10_Road-Shiryu
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -461,10 +508,13 @@ custfade	100
 skipselect  shiryu
 z           340 484
 file        data/levels/temple10.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_10_BOSS_Capricorne-Shiryu
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -473,10 +523,13 @@ custfade	100
 skipselect  shiryu
 z           378 484
 file        data/levels/temple10BOSS.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_11_Road-Hyoga
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -485,10 +538,13 @@ custfade	100
 skipselect  Hyoga
 z           390 484
 file        data/levels/temple11.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_11_BOSS_Verseau-Hyoga
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -497,10 +553,13 @@ custfade	100
 skipselect  hyoga
 z           378 484
 file        data/levels/temple11BOSS.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_12_Road_June-Shun
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -509,10 +568,13 @@ custfade	100
 skipselect  shun
 z           378 484
 file        data/levels/temple12.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_12_BOSS_Poissons-Shun
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -521,10 +583,13 @@ custfade	100
 skipselect  shun
 z           395 484
 file        data/levels/temple12BOSS.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_13_Road_Marin-Seiya
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -533,10 +598,13 @@ custfade	100
 skipselect  seiya
 z           388 484
 file        data/levels/temple13.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
 
 set         Temple_13_BOSS_Grand_PopeSeiya
-maxplayers  1
-lives       1
+maxplayers  4
+lives       3
 credits     10
 cansave     2
 disablehof  0
@@ -545,3 +613,6 @@ custfade	100
 skipselect  seiya
 z           378 430
 file        data/levels/temple13BOSS.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
