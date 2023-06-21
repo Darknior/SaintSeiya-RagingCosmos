@@ -87,53 +87,65 @@ skipselect
 select data/select-all.txt
 
 #-- Temple 1 Belier (INTRO) --
+branch      temple0
 z           378 484
 file        data/levels/temple0.txt
 scene       data/bgs/temple1/temple01_intro.txt
+branch      temple1
 z           378 484
 file        data/levels/temple1.txt
 
 #-- Temple 2 Taurus (Aldébaran du Taureau) --
 
+branch      temple2
 z           390 480
 file        data/levels/temple2.txt
 scene       data/scenes/temple2.txt
+branch      temple2BOSS
 z           435 435
 file        data/levels/temple2BOSS.txt
 
 #-- Temple 3 Gemini (l'Illusion de Saga le Gemeaux) --
 
 #skipselect ANDROMEDA-SHUN
+branch      temple3
 z           390 480
 file        data/levels/temple3.txt
 scene       data/scenes/temple3.txt
+branch      temple3BOSS
 z           435 435
 file        data/levels/temple3BOSS.txt
 
 #-- Temple 4 Cancer (Deathmask du Cancer) --
 
 #skipselect DRAGON-SHIRYU
+branch      temple4
 z           390 480
 scene       data/scenes/temple4.txt
 file        data/levels/temple4.txt
+branch      temple4BOSS
 z           435 435
 file        data/levels/temple4BOSS.txt
 
 #-- Temple 5 Leo (Aiolia du Lion) --
 
 #skipselect PEGASUS-SEIYA
+branch      temple5
 z           390 480
 file        data/levels/temple5.txt
 scene       data/scenes/temple5.txt
+branch      temple5BOSS
 z           435 435
 file        data/levels/temple5BOSS.txt
 
 #-- Temple 6 Virgo (Shaka de la Vierge) --
 
 #skipselect PHOENIX-IKKI
+branch      temple6
 z           390 480
 file        data/levels/temple6.txt
 scene       data/scenes/temple6.txt
+branch      temple6BOSS
 z           435 435
 file        data/levels/temple6BOSS.txt
 
@@ -141,15 +153,18 @@ file        data/levels/temple6BOSS.txt
 
 #skipselect DRAGON-SHIRYU
 scene       data/scenes/temple7.txt
+branch      temple7BOSS
 z           355 470
 file        data/levels/temple7BOSS.txt
 
 #-- Temple 8 Scorpius (Milo du Scorpion) --
 
 #skipselect CYGNUS-HYOGA
+branch      temple8
 z           390 480
 file        data/levels/temple8.txt
 scene       data/scenes/temple8.txt
+branch      temple8BOSS
 z           435 435
 file        data/levels/temple8BOSS.txt
 
@@ -158,42 +173,51 @@ file        data/levels/temple8BOSS.txt
 #skipselect     ## TOUS LES PERSONNAGES AU CHOIX
 select      data/select-team.txt
 scene       data/scenes/temple9.txt
+branch      temple9
 z           320 320
 file        data/levels/temple9.txt
 
 #-- Temple 10 Capricornus (Shura du Capricorne) --
 
 #skipselect DRAGON-SHIRYU
+branch      temple10
 z           390 480
 file        data/levels/temple10.txt
 scene       data/scenes/temple10.txt
+branch      temple10BOSS
 z           435 435
 file        data/levels/temple10BOSS.txt
 
 #-- Temple 11 Aquarius (Camus du Verseau) --
 
 #skipselect CYGNUS-HYOGA
+branch      temple11
 z           390 480
 file        data/levels/temple11.txt
 scene       data/scenes/temple11.txt
+branch      temple11BOSS
 z           435 435
 file        data/levels/temple11BOSS.txt
 
 #-- Temple 12 Pisces (Aphrodite des poissons) --
 
 #skipselect ANDROMEDA-SHUN
+branch      temple12
 z           390 480
 file        data/levels/temple12.txt
 scene       data/scenes/temple12.txt
+branch      temple12BOSS
 z           435 435
 file        data/levels/temple12BOSS.txt
 
 #-- Temple final: Gand Pope Gemini (Gemeaux) --
 
 #skipselect PEGASUS-SEIYA
+branch      templefiori
 z           420 420
 file        data/levels/templefiori.txt
 scene       data/scenes/temple13.txt
+branch      temple13BOSS
 z           430 430
 file        data/levels/temple13BOSS.txt
 
@@ -266,6 +290,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
+branch      temple1
 z           378 484
 file        data/levels/temple1.txt
 branch      gameover
@@ -281,6 +306,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
+branch      temple2
 z           378 484
 file        data/levels/temple2.txt
 branch      gameover
@@ -296,6 +322,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
+branch      temple2boss
 z           378 484
 file        data/levels/temple2boss.txt
 branch      gameover
@@ -311,6 +338,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shun
+branch      temple3
 z           385 484
 file        data/levels/temple3.txt
 branch      gameover
@@ -326,6 +354,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shun
+branch      temple3boss
 z           378 484
 file        data/levels/temple3boss.txt
 branch      gameover
@@ -341,6 +370,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shiryu
+branch      temple4
 z           378 484
 file        data/levels/temple4.txt
 branch      gameover
@@ -356,6 +386,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shiryu
+branch      temple4boss
 z           400 484
 file        data/levels/temple4boss.txt
 branch      gameover
@@ -371,6 +402,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
+branch      temple5
 z           384 484
 file        data/levels/temple5.txt
 branch      gameover
@@ -386,6 +418,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
+branch      temple5boss
 z           378 484
 file        data/levels/temple5boss.txt
 branch      gameover
@@ -401,6 +434,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  ikki
+branch      temple6
 z           330 484
 file        data/levels/temple6.txt
 branch      gameover
@@ -416,6 +450,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  ikki
+branch      temple6midboss
 z           390 484
 file        data/levels/temple6midboss.txt
 branch      gameover
@@ -431,6 +466,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  ikki
+branch      temple6boss
 z           390 484
 file        data/levels/temple6boss.txt
 branch      gameover
@@ -446,6 +482,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shiryu
+branch      temple7BOSS
 z           355 470
 file        data/levels/temple7BOSS.txt
 branch      gameover
@@ -461,6 +498,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  Hyoga
+branch      temple8
 z           390 484
 file        data/levels/temple8.txt
 branch      gameover
@@ -476,6 +514,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  hyoga
+branch      temple8BOSS
 z           378 484
 file        data/levels/temple8BOSS.txt
 branch      gameover
@@ -491,6 +530,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  hyoga
+branch      temple9
 z           390 484
 file        data/levels/temple9.txt
 branch      gameover
@@ -506,6 +546,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shiryu
+branch      temple10
 z           340 484
 file        data/levels/temple10.txt
 branch      gameover
@@ -521,6 +562,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shiryu
+branch      temple10BOSS
 z           378 484
 file        data/levels/temple10BOSS.txt
 branch      gameover
@@ -536,6 +578,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  Hyoga
+branch      temple11
 z           390 484
 file        data/levels/temple11.txt
 branch      gameover
@@ -551,6 +594,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  hyoga
+branch      temple11BOSS
 z           378 484
 file        data/levels/temple11BOSS.txt
 branch      gameover
@@ -566,6 +610,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shun
+branch      temple12
 z           378 484
 file        data/levels/temple12.txt
 branch      gameover
@@ -581,6 +626,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  shun
+branch      temple12BOSS
 z           395 484
 file        data/levels/temple12BOSS.txt
 branch      gameover
@@ -596,6 +642,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
+branch      temple13
 z           388 484
 file        data/levels/temple13.txt
 branch      gameover
@@ -611,6 +658,7 @@ disablehof  0
 typemp      1
 custfade	100
 skipselect  seiya
+branch      temple13BOSS
 z           378 430
 file        data/levels/temple13BOSS.txt
 branch      gameover
