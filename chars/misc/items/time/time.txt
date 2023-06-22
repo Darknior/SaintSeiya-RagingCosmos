@@ -1,7 +1,6 @@
 name	time
 score 0
 health 0
-setlayer 83
 type		item
 gfxshadow 1 3
 nolife	1
@@ -13,7 +12,7 @@ anim idle
 	offset     20 39
 	bbox	0 0 44 45
 	delay	100
-	@cmd itemText "TIME + 20" 0.8 1.5 6
+	@cmd itemText "MORE TIME" 0.8 1.5 6
    @cmd     spawnbind "horloge-flameB" "ANI_IDLE" 2 -35 0 0 0
    drawmethod scale 0.5
 	frame	data/chars/misc/items/time/timer.png

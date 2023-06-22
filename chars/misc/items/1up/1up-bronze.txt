@@ -1,0 +1,25 @@
+name	1up-bronze
+health	0
+#score		2500
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
+
+anim idle
+	loop		1
+	offset	16 67
+	bbox	5 0 32 80
+	delay	100
+	@cmd itemText "EXTRA LIFE" 0.8 1.5 8
+	frame	data/chars/misc/items/1up/bronze/6.gif
+	delay	15
+	frame	data/chars/misc/items/1up/bronze/1.gif
+	frame	data/chars/misc/items/1up/bronze/2.gif
+	frame	data/chars/misc/items/1up/bronze/3.gif
+	frame	data/chars/misc/items/1up/bronze/4.gif
+	frame	data/chars/misc/items/1up/bronze/5.gif
+
+

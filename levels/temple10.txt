@@ -101,7 +101,7 @@ at 1500
 
 spawn soldier3
 alias SOLDIER
-item cosmos-bronze
+item 1up-bronze
 coords	-200 470
 at 1500
 
@@ -169,7 +169,7 @@ at 2800
 
 spawn soldier1-1
 alias SOLDIER
-item cosmos-bronze
+item 1up-bronze
 coords	-200 470
 at 2800
 

@@ -1,7 +1,6 @@
 name	horloge-flameB
-type    panel
+type    none
 shadow    0
-setlayer 77
 speed 10
 no_adjust_base  0
 noquake        1 1

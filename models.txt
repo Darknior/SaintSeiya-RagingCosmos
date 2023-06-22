@@ -320,9 +320,9 @@ know    saladaavp       data/chars/misc/items/food/saladaavp.txt
 know    uvaff           data/chars/misc/items/food/uvaff.txt
 
 --Athena statues (gain life)--
-know    cosmos-bronze   data/chars/misc/items/cosmos/cosmos-bronze.txt
-know    cosmos-silver   data/chars/misc/items/cosmos/cosmos-silver.txt
-know    cosmos-gold     data/chars/misc/items/cosmos/cosmos-gold.txt
+know    1up-bronze   data/chars/misc/items/1up/1up-bronze.txt
+know    1up-silver   data/chars/misc/items/1up/1up-silver.txt
+know    1up-gold     data/chars/misc/items/1up/1up-gold.txt
 
 --Timers (gain time)--
 know    time   data/chars/misc/items/time/time.txt
@@ -333,7 +333,7 @@ know    energy          data/chars/misc/items/obj/energy.txt
 know    cosmo           data/chars/misc/items/obj/cosmo.txt
 know    life            data/chars/misc/items/obj/life.txt
 
---gold and jewels (gain points)--
+--objects gold and jewels (gain points)--
 know    anelcd          data/chars/misc/items/points/anelcd.txt
 know    botasavp        data/chars/misc/items/points/botasavp.txt
 know    caixacc         data/chars/misc/items/points/caixacc.txt

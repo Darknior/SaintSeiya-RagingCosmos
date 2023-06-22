@@ -220,7 +220,7 @@ at 2000
 
 spawn soldier1
 alias SOLDIER
-item cosmos-gold
+item 1up-gold
 coords	-200 470
 at 2000
 
