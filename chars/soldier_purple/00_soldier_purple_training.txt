@@ -195,7 +195,7 @@ anim follow1 #STUN
     offset    106 180
     bbox 66 76 80 110
     frame    data/chars/soldier_purple/08.png
-        delay    400
+    delay    400
     frame    data/chars/soldier_purple/05.png
 
 #//Basic Attacks animations/////////////////////////////////////////////////

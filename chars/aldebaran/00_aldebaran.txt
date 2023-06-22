@@ -367,6 +367,15 @@ anim rise
     delay    10
     frame    data/chars/aldebaran/rise1.png
     frame    data/chars/aldebaran/rise2.png
+    ## PARAMETERS: X, Y, Z, LIMIT
+    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
+    @cmd stunCounter -15 110 1 5
+    frame    data/chars/aldebaran/rise3.png
+    
+anim follow1 #STUN
+    offset    118 164
+    delay    300
+	bbox 69 50 60 120
     frame    data/chars/aldebaran/rise3.png
 
 anim attack1 # Attaque combo 1

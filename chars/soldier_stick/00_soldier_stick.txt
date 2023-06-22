@@ -147,10 +147,20 @@ anim rise
     delay    15
     offset    65 125
     bbox 49 10 50 115
-    frame    data/chars/soldier_stick/run1.png
-    frame    data/chars/soldier_stick/run2.png
-    frame    data/chars/soldier_stick/run3.png
-    frame    data/chars/soldier_stick/run4.png
+    frame    data/chars/soldier_stick/rise1.png
+    frame    data/chars/soldier_stick/rise2.png
+    ## PARAMETERS: X, Y, Z, LIMIT
+    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
+    @cmd stunCounter -15 110 1 3
+    frame    data/chars/soldier_stick/rise3.png
+
+anim follow1 #STUN
+    loop    1
+    delay    400
+    offset    65 125
+    bbox 37 57 50 70
+    frame    data/chars/soldier_stick/rise3.png
+
 
 anim pain
     delay    5
@@ -166,8 +176,10 @@ anim fall
     delay    15
     offset    118 125
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
+	bbox 34 15 60 100
     frame    data/chars/soldier_stick/fall1.png
     frame    data/chars/soldier_stick/fall2.png
+	bbox 10 90 100 35
     frame    data/chars/soldier_stick/fall3.png
     
 anim fall7

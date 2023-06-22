@@ -210,9 +210,19 @@ anim death
 
 
 anim rise
-        loop    0
+    loop    0
     offset    120 195
     delay    10
+    ## PARAMETERS: X, Y, Z, LIMIT
+    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
+    @cmd stunCounter -15 110 1 3
+    frame    data/chars/soldier_big/05.png
+    
+anim follow1 #STUN
+    loop    0
+    offset    120 195
+    delay    400
+	bbox 84 117 80 80
     frame    data/chars/soldier_big/05.png
 
 
