@@ -13,7 +13,7 @@ anim idle
 	offset	16 67
 	bbox	5 0 32 80
 	delay	100
-	@cmd itemText "EXTRA LIFE" 0.8 1.5 8
+	@cmd itemText "EXTRA LIFE" 0.8 2.5 9
 	frame	data/chars/misc/items/1up/bronze/6.gif
 	delay	15
 	frame	data/chars/misc/items/1up/bronze/1.gif

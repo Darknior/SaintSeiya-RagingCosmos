@@ -1,5 +1,5 @@
 name	SaladaAVP
-health	40
+health	300
 #score		2500
 type		item
 #shadow	0
@@ -14,7 +14,7 @@ anim idle
 	loop		1
 	offset     240 177
 	bbox	223 190 32 16
-   @cmd itemText "ENERGY 40% UP" 0.8 1.5 4
+   @cmd itemText "HEALTH + 300" 0.8 1.5 4
 	delay	100
 	frame	data/chars/misc/food/SaladaAVP01.gif
 	delay   4

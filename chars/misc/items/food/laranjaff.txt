@@ -1,5 +1,5 @@
 name	LaranjaFF
-health	25
+health	200
 #score		2500
 type		item
 #shadow	0
@@ -13,7 +13,7 @@ anim idle
 	offset     240 204
 	bbox	223 190 32 16
 	delay	100
-	@cmd itemText "ENERGY 25% UP" 0.8 1.5 4
+	@cmd itemText "HEALTH + 200" 0.8 1.5 4
 	frame	data/chars/misc/items/food/laranjaFF01.gif
 	delay   4
 	frame	data/chars/misc/items/food/laranjaFF02.gif

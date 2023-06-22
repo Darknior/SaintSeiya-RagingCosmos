@@ -13,7 +13,7 @@ anim idle
 	delay	100
 	offset	24 19
 	bbox	8 7 32 12
-   @cmd itemText "2000 PTS" 0.8 1.5 8
+   @cmd itemText "2000 PTS" 0.8 2.5 8
 	frame	data/chars/misc/items/points/colarCD01.gif
    delay   4
 	frame	data/chars/misc/items/points/colarCD02.gif

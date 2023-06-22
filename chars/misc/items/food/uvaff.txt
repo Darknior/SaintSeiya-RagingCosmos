@@ -1,5 +1,5 @@
 name	uvaff
-health	33
+health	170
 #score		2500
 type		item
 #shadow	0
@@ -13,7 +13,7 @@ anim idle
 	offset     240 207
 	bbox	223 190 32 16
 	delay	100
-	@cmd itemText "ENERGY 33% UP" 0.8 1.5 4
+	@cmd itemText "HEALTH + 170" 0.8 2.5 4
 	frame	data/chars/misc/items/food/uvaFF01.gif
 	delay   4
 	frame	data/chars/misc/items/food/uvaFF02.gif

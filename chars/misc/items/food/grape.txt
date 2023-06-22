@@ -1,5 +1,5 @@
 name	Grape
-health	30
+health	130
 #score		2500
 type		item
 #shadow	0
@@ -13,7 +13,7 @@ anim idle
 	offset     240 179
 	bbox	223 165 32 16
 	delay	100
-	@cmd itemText "ENERGY 30% UP" 0.8 1.5 4
+	@cmd itemText "HEALTH + 130" 0.8 1.5 4
 	frame	data/chars/misc/items/food/grape01.gif
 	delay   4
 	frame	data/chars/misc/items/food/grape02.gif

@@ -13,7 +13,7 @@ anim idle
 	delay	100
 	offset	18 17
 	bbox	5 1 22 16
-   @cmd itemText "5000 PTS" 0.8 1.5 8
+   @cmd itemText "5000 PTS" 0.8 2.5 8
 	frame	data/chars/misc/items/points/DiamanteCD01.gif
    delay	5
    frame	data/chars/misc/items/points/DiamanteCD00.gif

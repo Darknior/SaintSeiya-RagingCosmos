@@ -14,7 +14,7 @@ anim idle
 	delay	100
 	offset     238 177
 	bbox	223 149 32 32
-   @cmd itemText "3500 PTS" 0.8 1.5 8
+   @cmd itemText "3500 PTS" 0.8 2.5 8
 	delay   2
 	move 8
 	frame	data/chars/misc/items/points/goldbc01.gif
