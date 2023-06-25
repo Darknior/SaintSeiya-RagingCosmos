@@ -134,6 +134,9 @@ know    hyoga_diamonds_up      data/chars/hyoga/special/hyoga_diamonds_up.txt
 know    hyoga_uppercut         data/chars/hyoga/special/hyoga_uppercut.txt
 know    hyoga_dash             data/chars/hyoga/special/hyoga_dash.txt
 know    hyoga_tornadoB         data/chars/hyoga/special/hyoga_tornadoB.txt
+know    hyoga_iceA             data/chars/hyoga/special/hyoga_iceA.txt
+know    hyoga_iceB             data/chars/hyoga/special/hyoga_iceB.txt
+know    hyoga_iceC             data/chars/hyoga/special/hyoga_iceC.txt
 know    hyoga_roll             data/chars/hyoga/special/hyoga_roll.txt
 
 know    shun_aura              data/chars/shun/special/shun_aura.txt

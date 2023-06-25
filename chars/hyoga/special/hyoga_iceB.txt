@@ -1,0 +1,32 @@
+name        hyoga_iceB
+type        none
+shadow      0
+setlayer    778
+antigravity 100
+animationscript    data/scripts/player.c
+
+anim    idle
+    loop     1
+    delay    7
+    offset   85 232
+    drawmethod alpha 1
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB0.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB1.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB2.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB3.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB4.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB5.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB6.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB7.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB8.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB9.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB10.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB11.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB12.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB13.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB14.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB15.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB16.png
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB17.png
+    @cmd     suicide
+    frame    data/chars/hyoga/special/hyoga_iceB/iceB17.png

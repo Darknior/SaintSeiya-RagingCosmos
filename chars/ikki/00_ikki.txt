@@ -386,27 +386,27 @@ anim runattack # Attaque en courant
     spawnframe  0 80 10 0
     subentity    dash_dust
     sound   data/chars/ikki/sounds/01-dash.wav
-    attack 100 60 50 50 10 0 0 0 0 30
+    burn 100 60 50 50 10 0 0 0 0 30
     frame    data/chars/ikki/runattack4.png
     sound   data/chars/ikki/sounds/high_punch.wav
     @cmd     spawnbind "ikki_run" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/ikki/runattack5.png
-    attack 100 60 50 50 10 1 0 0 0 30
+    burn 100 60 50 50 10 1 0 0 0 30
     dropv    3.0 2 0
     frame    data/chars/ikki/runattack6.png
     attack 0
     frame    data/chars/ikki/runattack7.png
-    attack 100 60 50 50 10 1 0 0 0 30
+    burn 100 60 50 50 10 1 0 0 0 30
     dropv    3.0 2 0
     frame    data/chars/ikki/runattack7.png
     attack 0
     frame    data/chars/ikki/runattack7.png
-    attack 100 60 50 50 10 1 0 0 0 30
+    burn 100 60 50 50 10 1 0 0 0 30
     dropv    3.0 2 0
     frame    data/chars/ikki/runattack8.png
     attack 0
     frame    data/chars/ikki/runattack9.png
-    attack 100 60 50 50 10 0 0 0 0 30
+    burn 100 60 50 50 10 0 0 0 0 30
     @cmd    dasher 0 0 0 1
     delay    12
     frame    data/chars/ikki/runattack9.png

@@ -1,0 +1,21 @@
+name        hyoga_iceC
+type        none
+shadow      0
+setlayer    778
+antigravity 100
+animationscript    data/scripts/player.c
+
+anim    idle
+    loop     1
+    delay    7
+    offset   85 232
+    drawmethod alpha 1
+    frame    data/chars/hyoga/special/hyoga_iceC/iceC0.png
+    frame    data/chars/hyoga/special/hyoga_iceC/iceC1.png
+    frame    data/chars/hyoga/special/hyoga_iceC/iceC2.png
+    frame    data/chars/hyoga/special/hyoga_iceC/iceC3.png
+    frame    data/chars/hyoga/special/hyoga_iceC/iceC4.png
+    frame    data/chars/hyoga/special/hyoga_iceC/iceC5.png
+    frame    data/chars/hyoga/special/hyoga_iceC/iceC5.png
+    @cmd     suicide
+    frame    data/chars/hyoga/special/hyoga_iceC/iceC5.png

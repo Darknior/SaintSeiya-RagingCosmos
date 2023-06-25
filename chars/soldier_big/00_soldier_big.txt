@@ -65,7 +65,7 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load blood_ground_big
-
+load shaka_flame
 
 #-- PALETTES --------------------------------------------------------
 
@@ -145,6 +145,32 @@ anim BACKWALK
     frame    data/chars/soldier_big/16.png
     frame    data/chars/soldier_big/17.png
     frame    data/chars/soldier_big/18.png
+   
+#// FIRE/ ICE / SHOCK animations /////////////////////////////////////////////////
+ 
+anim bpain
+    loop    0
+
+    delay    10
+    offset    120 195
+	 bbox 57 68 93 132
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+  
+anim burn
+    loop    0
+    delay    30
+    offset    120 195
+    bbox 57 68 93 132
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_big/03.png
+    delay    100
+    bbox 29 150 165 50
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_big/04.png
+    
+    
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
@@ -157,9 +183,7 @@ anim pain
 	bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
-
-
-        
+  
 
 anim fall
     loop    0

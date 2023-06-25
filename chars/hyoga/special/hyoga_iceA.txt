@@ -1,0 +1,48 @@
+name        hyoga_iceA
+type        none
+shadow      0
+setlayer    778
+antigravity 100
+animationscript    data/scripts/player.c
+
+anim    idle
+    loop     1
+    delay    7
+    offset   85 232
+    drawmethod alpha 1
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA0.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA1.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA2.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA3.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA4.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA5.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA6.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA7.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA8.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA9.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA0.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA10.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA11.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA12.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA13.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA14.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA15.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA16.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA17.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA18.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA19.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA20.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA21.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA22.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA23.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA24.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA25.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA26.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA27.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA28.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA29.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA30.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA31.png
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA31.png
+    @cmd     suicide
+    frame    data/chars/hyoga/special/hyoga_iceA/iceA31.png
