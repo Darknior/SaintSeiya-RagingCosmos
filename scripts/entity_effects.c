@@ -209,52 +209,48 @@ void blinkDamage()
 	}else
 
 	//SLOW DYING EFFECT
-	if(health <= maxHealth/4 && health > maxHealth/10 && !dead){
+	if(health <= maxHealth/4 && health > maxHealth/10 && !dead && (type == openborconstant("TYPE_PLAYER") || type == openborconstant("TYPE_ENEMY") && boss)){
 		
 		//GET NEW VALUES
 		tintMode	= 1;
 		rate		= 200;
 		
 		//APPLY EFFECTS
-		if(type == openborconstant("TYPE_PLAYER") || type == openborconstant("TYPE_ENEMY") && boss){
-			if(dyingTime == NULL()){setentityvar(self, "dyingTime", 1);}
+		if(dyingTime == NULL()){setentityvar(self, "dyingTime", 1);}
 
-			if((openborvariant("elapsed_time")/rate)%2 == 0){
-				changedrawmethod(self, "enabled", 1);
-				changedrawmethod(self, "tintmode", tintMode);
-				changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
-			}
-			else
-			{
-				changedrawmethod(self, "enabled", 1);
-				changedrawmethod(self, "tintmode", 0);
-				changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0x00));
-			}
+		if((openborvariant("elapsed_time")/rate)%2 == 0){
+			changedrawmethod(self, "enabled", 1);
+			changedrawmethod(self, "tintmode", tintMode);
+			changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
+		}
+		else
+		{
+			changedrawmethod(self, "enabled", 1);
+			changedrawmethod(self, "tintmode", 0);
+			changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0x00));
 		}
 	}else
 
 	//FAST DYING EFFECT
-	if(health <= maxHealth/10 && !dead){
+	if(health <= maxHealth/10 && !dead && (type == openborconstant("TYPE_PLAYER") || type == openborconstant("TYPE_ENEMY") && boss)){
 		
 		//GET NEW VALUES
 		tintMode	= 1;
 		rate		= 100;
 		
 		//APPLY EFFECTS
-		if(type == openborconstant("TYPE_PLAYER") || type == openborconstant("TYPE_ENEMY") && boss){
-			if(dyingTime == NULL()){setentityvar(self, "dyingTime", 1);}
+		if(dyingTime == NULL()){setentityvar(self, "dyingTime", 1);}
 
-			if((openborvariant("elapsed_time")/rate)%2 == 0){
-				changedrawmethod(self, "enabled", 1);
-				changedrawmethod(self, "tintmode", tintMode);
-				changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
-			}
-			else
-			{
-				changedrawmethod(self, "enabled", 1);
-				changedrawmethod(self, "tintmode", 0);
-				changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0x00));
-			}
+		if((openborvariant("elapsed_time")/rate)%2 == 0){
+			changedrawmethod(self, "enabled", 1);
+			changedrawmethod(self, "tintmode", tintMode);
+			changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
+		}
+		else
+		{
+			changedrawmethod(self, "enabled", 1);
+			changedrawmethod(self, "tintmode", 0);
+			changedrawmethod(self, "tintcolor", rgbcolor(0x00, 0x00, 0x00));
 		}
 	}else
 
