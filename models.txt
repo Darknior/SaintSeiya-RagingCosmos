@@ -1,11 +1,12 @@
 
-ajspecial 1
-autoland 1
-nodropen 
-spdirection  1 1 1 1
-#nodebug      1
-#versusdamage 1
-maxattacks 6
+ajspecial 1               #players can use the input for ATTACKBOTH as a special attack
+autoland 1                #changes how entities can land after being thrown
+nodropen                  #enemies not knocked down on respawn
+spdirection  1 1 1 1      #facing direction of players in select menu
+#nodebug      1           #1 to disable debug menu in options
+#versusdamage 1           #Sets whether players can hit each other or not
+maxattacks 20
+maxattacktypes 20
 maxfollows 50
 maxfreespecials 15
 

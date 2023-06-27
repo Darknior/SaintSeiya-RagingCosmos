@@ -15,34 +15,34 @@ anim	idle
 	delay	10
 	offset	400 217
 	drawmethod alpha 1
-	freeze 0 100 800 100 0 3.5 50
+	attack6 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-13.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-14.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-15.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-16.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-17.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-18.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-19.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-20.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-21.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-22.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-23.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-24.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-25.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-26.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
    frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-27.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-28.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-29.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-30.png
-	freeze 0 100 800 100 0 3.5 50
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-31.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-32.png	
 	@cmd	suicide	

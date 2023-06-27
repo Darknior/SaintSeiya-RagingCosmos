@@ -1,20 +1,22 @@
 name        hyoga_iceB
 type        none
 shadow      0
-setlayer    778
+setlayer    130
 antigravity 100
 animationscript    data/scripts/player.c
 
 anim    idle
     loop     1
     delay    7
-    offset   85 232
+    offset   58 62
     drawmethod alpha 1
     frame    data/chars/hyoga/special/hyoga_iceB/iceB0.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB1.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB2.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB3.png
+    delay    200
     frame    data/chars/hyoga/special/hyoga_iceB/iceB4.png
+    delay    7
     frame    data/chars/hyoga/special/hyoga_iceB/iceB5.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB6.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB7.png

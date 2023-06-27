@@ -1,30 +1,29 @@
-loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
+loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
 
+music		data/music/Cascade-Gelee.ogg
 
-music		data/music/cascade-gelee.ogg
+panel		data/bgs/temple5-road/temple5-road.png 
+frontpanel  data/bgs/temple5-road/layer1.png 
+background  	data/bgs/temple5-road/background.png		1 1 0 0 0 0 1 1 1 0
+bglayer  	data/bgs/temple5-road/clouds-back.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
+bglayer  	data/bgs/temple5-road/sun.png		 1 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+bglayer     data/bgs/temple5-road/temple5-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple5-road/temple5-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
+fglayer  	data/bgs/temple5-road/clouds-front.png		 -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer     data/bgs/temple5-road/clouds-road.png        -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+bgspeed 1 0
 
-panel		data/bgs/ROOMS/temple8.png 
-
-frontpanel                   data/bgs/ROOMS/templerock8.png
-
-background                 data/bgs/ROOMS/sky002.png
-
-cameratype 1
-
+light        256 -44
+at        0
+shadowalpha 6
+shadowopacity 0
 direction right
 
 settime 99
 
+cameratype 1
+
 order	a
-
-
-
-\\rock 3
-
-
-
-
-
 
 nofadeout 0
 nosave 1
@@ -48,30 +47,20 @@ coords      387 47
 at          0
 
 
-spawn sirius
-boss 1
-coords  740 450
-at 0
-
-spawn kiki2
-alias KIKI
-item libra2
-coords	850 390
-at 400
-
 spawn soldier1
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 400
 
 spawn soldier3
 alias SOLDIER
-coords	-200 300
+coords	-200 480
 at 400
 
 spawn soldier2
 alias SOLDIER
-coords	-200 500
+item ourocd
+coords	-200 400
 at 400
 
 
@@ -81,17 +70,18 @@ at 400
 
 spawn soldier3
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 1000
 
 spawn soldier2
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 1000
 
 spawn soldier3
 alias SOLDIER
-coords	-200 500
+item diamondff
+coords	-200 470
 at 1000
 
 
@@ -100,18 +90,18 @@ at 1000
 
 spawn soldier1
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 1500
 
 spawn soldier2
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 1500
 
 spawn soldier3
 alias SOLDIER
-item ENERGY
-coords	-200 500
+item apple
+coords	-200 470
 at 1500
 
 
@@ -122,17 +112,18 @@ at 1500
 
 spawn soldier1-1
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 2000
 
 spawn soldier2
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 2000
 
 spawn soldier1
 alias SOLDIER
-coords	-200 500
+item laranjaff
+coords	-200 450
 at 2000
 
 
@@ -142,43 +133,40 @@ at 2000
 
 spawn soldier3
 alias SOLDIER
-coords	850 100
+coords	850 400
 at 2400
 
 spawn soldier1-1
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 2400
 
 spawn soldier1-1
 alias SOLDIER
-coords	-200 500
+item 1up-gold
+coords	-200 470
 at 2400
 
 
 wait
 at 2400
 
-spawn kiki2
-alias KIKI
-item libra3
-coords	850 390
-at 2800
 
 spawn soldier1-1
 alias SOLDIER
-item LIFE
-coords	850 100
+item 1up-silver
+coords	850 400
 at 2800
 
 spawn soldier2
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 2800
 
 spawn soldier1-1
 alias SOLDIER
-coords	-200 500
+item ourocd
+coords	-200 470
 at 2800
 
 
@@ -187,18 +175,18 @@ at 2800
 
 spawn soldier3
 alias SOLDIER
-item LIFE
-coords	850 100
+item cosmos-stars
+coords	850 400
 at 3800
 
 spawn soldier3
 alias SOLDIER
-coords	-200 300
+coords	-200 400
 at 3800
 
 spawn soldier3
 alias SOLDIER
-coords	-200 500
+coords	-200 470
 at 3800
 
 

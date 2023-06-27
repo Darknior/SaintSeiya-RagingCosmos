@@ -55,6 +55,9 @@ keyscript           data/scripts/commands.c               # Mort du Timer à zé
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load hyoga_aura
+load hyoga_iceA
+load hyoga_iceB
+load hyoga_iceC
 load hyoga_cosmos
 load hyoga_cygnus
 load hyoga_twister
