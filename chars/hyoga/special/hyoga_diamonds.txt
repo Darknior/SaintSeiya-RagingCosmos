@@ -15,7 +15,7 @@ anim	idle
 	delay	10
 	offset	400 217
 	drawmethod alpha 1
-	attack6 187 71 350 150 10 0 0 0 0 30
+   attack10 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-13.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-14.png
    attack10 187 71 350 150 10 0 0 0 0 30

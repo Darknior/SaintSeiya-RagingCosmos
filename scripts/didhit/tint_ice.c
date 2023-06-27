@@ -14,6 +14,7 @@ void main()
 	autoLand();
 	rushFont();
 
+	//EXCEPTION FOR "FREEZE TYPE" ATTACKS
 	if(getlocalvar("attacktype") == openborconstant("ATK_FREEZE")){
 		if(!getlocalvar("blocked")){
 
@@ -26,5 +27,10 @@ void main()
 			changedrawmethod(target, "tintmode", tintMode);
 			changedrawmethod(target, "tintcolor", rgbcolor(0x33, 0xFF, 0xFF));
 		}
+	}
+
+	//EXCEPTION FOR THE CUSTOM "PAIN10" ANIMATION
+	if(getentityproperty(getlocalvar("self"), "defaultname") == "hyoga_diamonds"){
+		tintEffect(openborconstant("ANI_IDLE"), "ice", 2.5);
 	}
 }
