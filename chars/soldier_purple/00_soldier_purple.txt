@@ -190,7 +190,7 @@ anim pain10# ICE PAIN
     bbox 42 64 99 121
     @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/soldier_purple/05.png
-    delay    250
+    delay    300
     frame    data/chars/soldier_purple/05.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////

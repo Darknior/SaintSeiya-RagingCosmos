@@ -73,6 +73,7 @@ load hyoga_uppercut
 load hyoga_dash
 load hyoga_tornadoB
 load marin_stormA
+load hyoga_swing
 
 
 #-- PALETTES --------------------------------------------------------
@@ -380,6 +381,7 @@ anim    runattack   # Attaque en courant
     forcedirection -1
     jugglecost  2
     energycost  5 1 0
+    hitflash hyoga_swing
     delay    7
     offset   45 140
     bbox     18 28 30 112
@@ -935,7 +937,7 @@ anim    freespecial2    # Diamond Dust (2 projectiles)
     fastattack  1
     delay    10
     offset   45 151
-    hitflash flashbig
+    hitflash hyoga_swing
     sound    data/chars/hyoga/sounds/01.wav
     delay    10
     offset   45 151
@@ -943,17 +945,11 @@ anim    freespecial2    # Diamond Dust (2 projectiles)
     @cmd     spawnbind "hyoga_cosmos" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/special21.png
     frame    data/chars/hyoga/special22.png
-    attack5  -8 -27 100 180 10 1 0 0 5 30
-    dropv    3 5
     frame    data/chars/hyoga/special23.png
     frame    data/chars/hyoga/special24.png
-    attack5  -8 -29 100 180 10 1 0 0 5 30
-    dropv    3 5
     frame    data/chars/hyoga/special25.png
     frame    data/chars/hyoga/special26.png
-    attack   0 50 800 50 10 0 0 0 0 50
     frame    data/chars/hyoga/special27.png
-    attack1  0
     @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/special28.png
     @cmd     shooter "hyoga_diamonds" 0 0 0 1.4 0 0

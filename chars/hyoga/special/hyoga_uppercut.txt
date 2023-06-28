@@ -22,7 +22,7 @@ anim	idle
 	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-4.png
 	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-5.png
 	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-6.png
-        frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-7.png
+   frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-7.png
 	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-8.png
 	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-9.png
 	frame	data/chars/hyoga/special/hyoga_uppercut/hyoga_uppercut-10.png

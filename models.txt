@@ -139,6 +139,7 @@ know    hyoga_iceA             data/chars/hyoga/special/hyoga_iceA.txt
 know    hyoga_iceB             data/chars/hyoga/special/hyoga_iceB.txt
 know    hyoga_iceC             data/chars/hyoga/special/hyoga_iceC.txt
 know    hyoga_roll             data/chars/hyoga/special/hyoga_roll.txt
+know    hyoga_swing             data/chars/hyoga/special/hyoga_swing.txt
 
 know    shun_aura              data/chars/shun/special/shun_aura.txt
 know    shun_stream            data/chars/shun/special/shun_stream.txt

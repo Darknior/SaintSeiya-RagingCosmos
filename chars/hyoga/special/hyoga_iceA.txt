@@ -8,7 +8,7 @@ animationscript    data/scripts/player.c
 anim    idle
     loop     1
     delay    7
-    offset   85 232
+    offset   112 150
     drawmethod alpha 1
     frame    data/chars/hyoga/special/hyoga_iceA/iceA0.png
     frame    data/chars/hyoga/special/hyoga_iceA/iceA1.png

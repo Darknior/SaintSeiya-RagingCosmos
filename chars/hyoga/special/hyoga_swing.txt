@@ -1,0 +1,22 @@
+name	hyoga_swing
+type	none
+shadow	0
+setlayer 157
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	111 137
+   drawmethod  alpha 1
+   drawmethod  scale 0.4 0.4
+   sound data/chars/hyoga/sounds/hyoga_502-0.wav
+	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-0.png
+	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-1.png
+	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-2.png
+	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-3.png
+	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-4.png
+	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-4.png
+	@cmd suicide
+	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-4.png

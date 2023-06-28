@@ -188,9 +188,10 @@ anim pain10# ICE PAIN
     delay    5
     offset    102 179
     bbox 42 64 99 121
-    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/soldier_base/05.png
-    delay    250
+    delay    300
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/soldier_base/05.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////

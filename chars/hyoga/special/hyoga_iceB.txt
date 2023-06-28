@@ -8,8 +8,9 @@ animationscript    data/scripts/player.c
 anim    idle
     loop     1
     delay    7
-    offset   58 62
+    offset   83 62
     drawmethod alpha 1
+    sound data/chars/hyoga/sounds/ice-coffin.wav
     frame    data/chars/hyoga/special/hyoga_iceB/iceB0.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB1.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB2.png
@@ -17,6 +18,7 @@ anim    idle
     delay    200
     frame    data/chars/hyoga/special/hyoga_iceB/iceB4.png
     delay    7
+    sound data/chars/hyoga/sounds/ice-break.wav
     frame    data/chars/hyoga/special/hyoga_iceB/iceB5.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB6.png
     frame    data/chars/hyoga/special/hyoga_iceB/iceB7.png
