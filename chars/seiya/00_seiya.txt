@@ -836,27 +836,20 @@ anim    attackboth # Attaque de mêlée native (j + a1)
     attack1  0
     bbox     40 22 51 112
     frame    data/chars/seiya/attackbackward3.png
-    attack1  -10 8 130 65 8 0 0 0 0 0
+    attack1  -10 8 130 65 8 1 0 0 0 0
+    dropv    3.5 1 0
     frame    data/chars/seiya/attackbackward4.png
     attack1  0
     frame    data/chars/seiya/attackbackward5.png
-    attack1  6 8 150 65 8 1 0 0 0 0
-    dropv    3.5 1 0
-    bbox     53 22 51 112
+    bbox     0 0 0 0
     frame    data/chars/seiya/attackbackward6.png
     attack1  0
     frame    data/chars/seiya/attackbackward7.png
-    attack1  4 8 130 65 8 0 0 0 0 0
     frame    data/chars/seiya/attackbackward8.png
-    attack1  0
     frame    data/chars/seiya/attackbackward9.png
-    attack1  26 31 130 65 8 0 0 0 0 0
-    bbox     66 22 51 112
+    bbox     0 0 0 0
     frame    data/chars/seiya/attackbackward10.png
-    attack1  0
     frame    data/chars/seiya/attackbackward11.png
-    attack1  -21 8 130 65 8 1 0 0 0 0
-    dropv    3.5 1 0
     delay    12
     frame    data/chars/seiya/attackbackward1.png
 
@@ -876,27 +869,20 @@ anim    freespecial # Attaque de mêlée (Bouton special, a2)
     attack1  0
     bbox     40 22 51 112
     frame    data/chars/seiya/attackbackward3.png
-    attack1  -10 8 130 65 8 0 0 0 0 0
+    attack1  -10 8 130 65 8 1 0 0 0 0
+    dropv    3.5 1 0
     frame    data/chars/seiya/attackbackward4.png
     attack1  0
     frame    data/chars/seiya/attackbackward5.png
-    attack1  6 8 150 65 8 1 0 0 0 0
-    dropv    3.5 1 0
-    bbox     53 22 51 112
+    bbox     0 0 0 0
     frame    data/chars/seiya/attackbackward6.png
     attack1  0
     frame    data/chars/seiya/attackbackward7.png
-    attack1  4 8 130 65 8 0 0 0 0 0
     frame    data/chars/seiya/attackbackward8.png
-    attack1  0
     frame    data/chars/seiya/attackbackward9.png
-    attack1  26 31 130 65 8 0 0 0 0 0
-    bbox     66 22 51 112
+    bbox     0 0 0 0
     frame    data/chars/seiya/attackbackward10.png
-    attack1  0
     frame    data/chars/seiya/attackbackward11.png
-    attack1  -21 8 130 65 8 1 0 0 0 0
-    dropv    3.5 1 0
     delay    12
     frame    data/chars/seiya/attackbackward1.png
 

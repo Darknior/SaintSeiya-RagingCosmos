@@ -34,5 +34,5 @@ anim	idle
 	frame	data/chars/ikki/special/ikki_impact/ikki_impact-19.png
 	frame	data/chars/ikki/special/ikki_impact/ikki_impact-20.png
 	frame	data/chars/ikki/special/ikki_impact/ikki_impact-21.png
-        @cmd suicide
+   @cmd suicide
 	frame	data/chars/ikki/special/ikki_impact/ikki_impact-21.png

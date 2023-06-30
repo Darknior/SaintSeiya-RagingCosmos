@@ -248,7 +248,7 @@ anim rise
     delay    10
     ## PARAMETERS: X, Y, Z, LIMIT
     ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
-    @cmd stunCounter -15 110 1 3
+    @cmd stunCounter -15 110 1 4
     frame    data/chars/soldier_big/05.png
     
 anim follow1 #STUN

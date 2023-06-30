@@ -33,5 +33,5 @@ anim	idle
 	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-20.png
 	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-21.png
 	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-22.png
-        @cmd suicide
+   @cmd suicide
 	frame	data/chars/ikki/special/ikki_auraB/ikki_auraB-22.png

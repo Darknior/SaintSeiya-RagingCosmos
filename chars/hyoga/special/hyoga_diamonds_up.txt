@@ -28,7 +28,7 @@ anim	idle
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-24.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-25.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-26.png
-        frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-27.png
+   frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-27.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-28.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-29.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-30.png

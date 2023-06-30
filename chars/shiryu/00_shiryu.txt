@@ -790,7 +790,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
 anim    attackboth  # Attaque de mêlée native (j + a1)
     jugglecost  2
     fastattack 1
-    energycost  10 0 0
+    energycost  20 0 0
     offset   39 130
     bbox     21 15 51 115
     hitflash flashbig
@@ -805,27 +805,23 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/shiryu/attackbackward4.png
     attack1  55 35 84 29 10 1 0 0 0 30
+    dropv    3.5 1 0
     frame    data/chars/shiryu/attackbackward5.png
-    attack1  0
+    bbox     0 0 0 0
     frame    data/chars/shiryu/attackbackward6.png
-    attack1  9 23 120 35 10 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward7.png
-    attack1  0
     frame    data/chars/shiryu/attackbackward8.png
-    attack1  10 35 120 29 10 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward6.png
-    attack1  0
     frame    data/chars/shiryu/attackbackward4.png
-    attack1  10 33 120 35 10 1 1 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     delay    12
-    bbox     16 29 50 100
+    bbox     0 0 0 0
     frame    data/chars/shiryu/attackbackward1.png
 
 anim    freespecial  # Attaque de mêlée (Bouton special, a2)
     jugglecost  2
-    fastattack  1
-    energycost  10 0 0
+    fastattack 1
+    energycost  20 0 0
     offset   39 130
     bbox     21 15 51 115
     hitflash flashbig
@@ -840,21 +836,17 @@ anim    freespecial  # Attaque de mêlée (Bouton special, a2)
     @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/shiryu/attackbackward4.png
     attack1  55 35 84 29 10 1 0 0 0 30
+    dropv    3.5 1 0
     frame    data/chars/shiryu/attackbackward5.png
-    attack1  0
+    bbox     0 0 0 0
     frame    data/chars/shiryu/attackbackward6.png
-    attack1  9 23 120 35 10 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward7.png
-    attack1  0
     frame    data/chars/shiryu/attackbackward8.png
-    attack1  10 35 120 29 10 1 0 0 0 30
     frame    data/chars/shiryu/attackbackward6.png
-    attack1  0
     frame    data/chars/shiryu/attackbackward4.png
-    attack1  10 33 120 35 10 1 1 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     delay    12
-    bbox     16 29 50 100
+    bbox     0 0 0 0
     frame    data/chars/shiryu/attackbackward1.png
 
 anim    freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)

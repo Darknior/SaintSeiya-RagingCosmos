@@ -861,7 +861,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     energycost  10 0 0
     offset   45 140
     bbox     21 28 51 112
-    hitflash blue_swing
+    hitflash hyoga_swing
     delay    8
     sound    data/chars/seiya/sounds/17-back_kick.wav
     @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 0 0 0 0
@@ -875,11 +875,9 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     frame    data/chars/hyoga/attackbackward4.png
     attack1  0
     frame    data/chars/hyoga/attackbackward5.png
-    attack1  14 20 130 50 10 0 0 0 0 20
     frame    data/chars/hyoga/attackbackward6.png
     attack1  0
     frame    data/chars/hyoga/attackbackward7.png
-    attack1  51 41 130 50 10 1 0 0 0 20
     bbox     90 23 50 120
     frame    data/chars/hyoga/attackbackward8.png
     delay    12
@@ -906,25 +904,23 @@ anim    freespecial # Attaque de mêlée (a2)
     energycost  10 0 0
     offset   45 140
     bbox     21 28 51 112
-    hitflash blue_swing
+    hitflash hyoga_swing
     delay    8
     sound    data/chars/seiya/sounds/17-back_kick.wav
     @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 0 0 0 0
     frame    data/chars/hyoga/attackbackward1.png
-    attack1  -14 93 130 50 10 0 0 0 0 20
+	attack1 -10 93 110 50 10 0 0 0 0 20
     frame    data/chars/hyoga/attackbackward2.png
-    attack1  0
+	attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/hyoga/attackbackward3.png
-    attack1  0 64 130 50 10 1 0 0 0 20
+	attack1 12 64 110 50 10 1 0 0 0 20
     bbox     61 22 50 120
     frame    data/chars/hyoga/attackbackward4.png
-    attack1  0
+	attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/hyoga/attackbackward5.png
-    attack1  14 20 130 50 10 0 0 0 0 20
     frame    data/chars/hyoga/attackbackward6.png
-    attack1  0
+	attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/hyoga/attackbackward7.png
-    attack1  51 41 130 50 10 1 0 0 0 20
     bbox     90 23 50 120
     frame    data/chars/hyoga/attackbackward8.png
     delay    12
@@ -1011,20 +1007,20 @@ anim    freespecial4    # Attaque arrière (a3)
 anim    freespecial5    # Uppercut
     jugglecost  2
     fastattack  1
-    hitflash flashbig
+    hitflash hyoga_swing
     offset   39 141
     bbox     21 28 51 112
     delay    5
     sound    data/chars/hyoga/sounds/01-twister.wav
     @cmd     spawnbind "hyoga_uppercut" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/uppercut1.png
-    attack1  23 51 50 120 10 0 0 0 0 30
+    attack10  23 51 50 120 10 0 0 0 0 30
     sound    data/chars/seiya/03-uppercut2.wav
     frame    data/chars/hyoga/uppercut2.png
     attack1  0
     delay    5
     frame    data/chars/hyoga/uppercut3.png
-    attack1  23 51 50 120 10 0 0 0 0 30
+    attack10  23 51 50 120 10 0 0 0 0 30
     @cmd     shooter "hyoga_tornadoB" 47 0 0 0 0 0
     frame    data/chars/hyoga/uppercut4.png
     delay    19
@@ -1035,6 +1031,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     jugglecost  3
     energycost  50 1 0
     fastattack  1
+    hitflash hyoga_swing
     delay    10
     offset   45 148
     sound    data/chars/deathmask/78-cosmos.wav
@@ -1045,52 +1042,48 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     @cmd     spawnbind "hyoga_cosmos" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/upspecial1.png
     frame    data/chars/hyoga/upspecial2.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
-    dropv    3 5
     sound    data/chars/hyoga/sounds/01-cygnus.wav
     frame    data/chars/hyoga/upspecial3.png
     frame    data/chars/hyoga/upspecial4.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
-    dropv    3 5
     frame    data/chars/hyoga/upspecial5.png
     frame    data/chars/hyoga/upspecial6.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
+    attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
     sound    data/chars/hyoga/sounds/01-icepunch.wav
     @cmd     shooter "hyoga_diamonds_up" -50 -200 0 0 3
     @cmd     shooter2 "hyoga_frozenray_up" 0 0 0 4
     frame    data/chars/hyoga/upspecial7.png
     frame    data/chars/hyoga/upspecial8.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
+    attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
     frame    data/chars/hyoga/upspecial9.png
     attack5  0
     frame    data/chars/hyoga/upspecial10.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
+    attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
     frame    data/chars/hyoga/upspecial11.png
     attack5  0
     frame    data/chars/hyoga/upspecial12.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
+    attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
     frame    data/chars/hyoga/upspecial13.png
-    attack5  0
     sound    data/chars/hyoga/sounds/01-icepunch.wav
+    attack5  0
     @cmd     shooter "hyoga_diamonds_up" -50 -200 0 0 3
     @cmd     shooter2 "hyoga_frozenray_up" 0 0 0 4
     frame    data/chars/hyoga/upspecial14.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
+    attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
     frame    data/chars/hyoga/upspecial15.png
     attack5  0
     frame    data/chars/hyoga/upspecial16.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
+    attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
     sound    data/chars/hyoga/sounds/02.wav
     frame    data/chars/hyoga/upspecial17.png
     attack5  0
     frame    data/chars/hyoga/upspecial18.png
-    attack5  -8 8 100 140 10 1 0 0 5 30
+    attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
     frame    data/chars/hyoga/upspecial19.png
     attack5  0
@@ -1113,6 +1106,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     frame    data/chars/hyoga/upspecial22.png
     attack5  0 50 800 50 10 0 0 0 0 50
     frame    data/chars/hyoga/special22.png
+    attack5  0
     frame    data/chars/hyoga/special22.png
     attack5  0 100 800 50 10 0 0 0 0 50
     frame    data/chars/hyoga/special22.png
@@ -1130,6 +1124,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     frame    data/chars/hyoga/special28.png
     attack5  0
     sound    data/chars/hyoga/sounds/01-icepunch.wav
+    attack5  0 100 800 50 10 0 0 0 0 50
     @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 1 0
     @cmd     shooter2 "hyoga_frozenray" 0 80 0 0
     @cmd     shooter "hyoga_diamondsB" 0 0 0 1.8 0 0
@@ -1152,13 +1147,17 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     frame    data/chars/hyoga/special27.png
     attack5  0
     frame    data/chars/hyoga/special28.png
+    attack10  0 100 800 50 10 0 0 0 0 50
     sound    data/chars/hyoga/sounds/01-icepunch.wav
     @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 1 0
     @cmd     shooter2 "hyoga_frozenray" 0 80 0 0
     @cmd     shooter "hyoga_diamonds" 0 0 0 1.8 0 0
     frame    data/chars/hyoga/special28.png
+    attack5  0
     frame    data/chars/hyoga/special28.png
+    attack10  0 100 800 50 10 0 0 0 0 50
     frame    data/chars/hyoga/special28.png
+    attack5  0
 
 anim    freespecial7   # Coup de pied haut (haut+a1)
     jugglecost  1
