@@ -226,8 +226,8 @@ void overlayFunction(void player, int pIndex)
 			setdrawmethod(NULL(),1,256,256,0,0,0,2);
 			drawsprite(getglobalvar("lifebar1"), xPos+xAdd, yPos1+yAdd1, layer2); //PLAYER LIFEBAR OVERLAY
 			drawsprite(getglobalvar("mpbar"), xPos+xAdd, yPos1+yAdd2, layer2); //PLAYER MPBAR OVERLAY
-			drawstring(xPos+xAdd, 3+yText1, 0, "energy", layer1);
-			drawstring(xPos+xAdd, 3+yText2, 0, "cosmos", layer1);
+			drawstring(xPos+xAdd, 3+yText1, 0, "Energy", layer1);
+			drawstring(xPos+xAdd, 3+yText2, 0, "Cosmos", layer1);
 
 			//DRAW CUSTOM LIFE BARS
 			int pIndex		= getentityproperty(player, "playerindex");
