@@ -226,8 +226,8 @@ void overlayFunction(void player, int pIndex)
 			setdrawmethod(NULL(),1,256,256,0,0,0,2);
 			drawsprite(getglobalvar("lifebar1"), xPos+xAdd, yPos1+yAdd1, layer2); //PLAYER LIFEBAR OVERLAY
 			drawsprite(getglobalvar("mpbar"), xPos+xAdd, yPos1+yAdd2, layer2); //PLAYER MPBAR OVERLAY
-			drawstring(xPos+xAdd, yPos1+yText1, 0, "energy", layer1);
-			drawstring(xPos+xAdd, yPos1+yText2, 0, "cosmos", layer1);
+			drawstring(xPos+xAdd, 3+yText1, 0, "energy", layer1);
+			drawstring(xPos+xAdd, 3+yText2, 0, "cosmos", layer1);
 
 			//DRAW CUSTOM LIFE BARS
 			int pIndex		= getentityproperty(player, "playerindex");
@@ -245,7 +245,7 @@ void overlayFunction(void player, int pIndex)
 			int yMp			= 94;
 			int xDif		= 200;
 			int xAdd		= xDif*pIndex;
-			float xLSize	= 150; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER LIFE)
+			float xLSize	= 125; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER LIFE)
 			float xESize	= 75; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (ENEMY LIFE)
 			float xMSize	= 100; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER MP)
 			float ySize		= 9; //BAR HEIGHT INCREASE FACTOR, MORE VALUE IS MORE SIZE
