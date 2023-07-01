@@ -189,6 +189,7 @@ void drawOverlay()
 
 void overlayFunction(void player, int pIndex)
 {//Script used to reduce code size
+	int addTimer = 40;
 
 	//USED FOR PLAYERS ALREADY IN-GAME
 	if(player != NULL()){
@@ -212,6 +213,9 @@ void overlayFunction(void player, int pIndex)
 			int layer1	= 10000;
 			int layer2	= 60000;
 			int layer3	= 50000;
+
+			//ADDITIONAL SPACE FOR THE TIMER
+			if(pIndex >= 2){xAdd = xAdd+addTimer;}
 
 			//LOAD ASSETS
 			if(getglobalvar("charIcon1") == NULL()){setglobalvar("charIcon1", loadsprite("data/sprites/charicon1.png"));}
@@ -243,8 +247,6 @@ void overlayFunction(void player, int pIndex)
 			int yPLife		= 69;
 			int yELife		= 141;
 			int yMp			= 94;
-			int xDif		= 200;
-			int xAdd		= xDif*pIndex;
 			float xLSize	= 125; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER LIFE)
 			float xESize	= 75; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (ENEMY LIFE)
 			float xMSize	= 100; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER MP)
@@ -293,6 +295,9 @@ void overlayFunction(void player, int pIndex)
 		int xAdd	= xDif*pIndex;
 		int yPos1	= 6;
 		int layer1	= 10000;
+
+		//ADDITIONAL SPACE FOR THE TIMER
+		if(pIndex >= 2){xAdd = xAdd+addTimer;}
 
 		setdrawmethod(NULL(),0,256,256,0,0,0,0);
 		drawsprite(getglobalvar("charIcon1"), xPos+xAdd, yPos1, layer1); //PLAYER CHARACTER ICON OVERLAY
