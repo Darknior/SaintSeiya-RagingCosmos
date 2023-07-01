@@ -1,4 +1,4 @@
-name        Seiya
+name        seiya
 health      400
 mp          100
 type        player
