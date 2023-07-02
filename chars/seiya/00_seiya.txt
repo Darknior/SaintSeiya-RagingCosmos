@@ -460,7 +460,7 @@ anim    attack5    # Attaque combo 5
     sound    data/chars/seiya/sounds/kick.wav
     frame    data/chars/seiya/attack53.png
     dropv    4.0 1.0 0.0
-    attack1  64 37 67 26 10 1 1 0 12 20
+    attack20  64 37 67 26 10 1 1 0 12 20
     frame    data/chars/seiya/attack54.png
     @cmd     spawnbind "kick_dust" 0 0 0 0 0
     frame    data/chars/seiya/attack55.png
@@ -501,11 +501,11 @@ anim    grabattack2 # Saisie Coup finisher
     frame    data/chars/seiya/grabattack21.png
     frame    data/chars/seiya/grabattack22.png
     frame    data/chars/seiya/grabattack23.png
-    attack3  62 21 90 26 10 1 0 0 0 20
+    attack20  62 21 90 26 10 1 0 0 0 20
     frame    data/chars/seiya/grabattack24.png
     frame    data/chars/seiya/grabattack25.png
     frame    data/chars/seiya/grabattack26.png
-    attack3  0
+    attack20  0
     frame    data/chars/seiya/grabattack23.png
 
 anim    grabbackward    # Projection en arrière
@@ -667,7 +667,7 @@ anim    jumpforward # Attaque sautée vers l'avant
     hitflash blue_swing
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpforward1.png
-    attack4  75 42 67 26 10 1 0 0 10 12
+    attack20  75 42 67 26 10 1 0 0 10 12
     dropv    6.0 2.0 0.0
     frame    data/chars/seiya/jumpforward2.png
     frame    data/chars/seiya/jumpforward2.png
@@ -812,7 +812,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     delay    10
     frame    data/chars/seiya/attackbackward21.png
     delay    15
-    attack   20 36 60 50 10 12 0 0 0 30
+    attack20   20 36 60 50 10 12 0 0 0 30
     dropv    3.5 1 0
     frame    data/chars/seiya/attackbackward22.png
     delay    8
@@ -998,7 +998,7 @@ anim    freespecial4    # Attaque arrière (a3)
     delay    10
     frame    data/chars/seiya/attackbackward21.png
     delay    15
-    attack   20 36 60 50 10 12 0 0 0 30
+    attack20   20 36 60 50 10 12 0 0 0 30
     dropv    3.5 1 0
     frame    data/chars/seiya/attackbackward22.png
     delay    8
@@ -1017,35 +1017,35 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
     @cmd     spawnbind "seiya_upper_dust" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/uppercut1.png
     sound    data/chars/seiya/sounds/03-uppercut2.wav
-    attack1  55 0 35 84 9 0 0 0 0 20
+    attack20  55 0 35 84 9 0 0 0 0 20
     frame    data/chars/seiya/uppercut2.png
-    attack1  0
+    attack20  0
     frame    data/chars/seiya/uppercut3.png
-    attack1  55 0 35 148 9 1 0 0 0 20
+    attack20  55 0 35 148 9 1 0 0 0 20
     frame    data/chars/seiya/uppercut3.png
-    attack1  0
+    attack20  0
     frame    data/chars/seiya/uppercut3.png
-    attack1  55 0 35 148 9 1 0 0 0 20
+    attack20  55 0 35 148 9 1 0 0 0 20
     dropv    4.0 2 0
     jumpframe 0 4 0 0 round_dust
     frame    data/chars/seiya/uppercut3.png
-    attack1  0
+    attack20  0
     frame    data/chars/seiya/uppercut3.png
-    attack1  55 0 35 148 9 1 0 0 0 20
+    attack20  55 0 35 148 9 1 0 0 0 20
     dropv     4.0 2 0
     frame    data/chars/seiya/uppercut3.png
-    attack1  0
+    attack20  0
     delay    5
     frame    data/chars/seiya/uppercut3.png
-    attack1  55 0 35 148 10 1 0 0 0 20
+    attack20  55 0 35 148 10 1 0 0 0 20
     dropv    4.0 2 0
     frame    data/chars/seiya/uppercut3.png
-    attack1  0
+    attack20  0
     frame    data/chars/seiya/uppercut3.png
-    attack1  55 0 35 148 10 1 0 0 0 20
+    attack20  55 0 35 148 10 1 0 0 0 20
     dropv    4.0 2 0
     frame    data/chars/seiya/uppercut3.png
-    attack1  0
+    attack20  0
     delay    12
     frame    data/chars/seiya/uppercut2.png
 
@@ -1175,32 +1175,32 @@ anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     frame    data/chars/seiya/special41.png
     attack5  0
     @cmd     dasher 8 0 0 1
-    attack4  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     frame    data/chars/seiya/special42.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack4  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special42.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack4  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special43.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack4  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special43.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack4  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 0 30
     dropv    3 4
-    attack4  0
+    attack20  0
     @cmd     dasher 0 0 0 1
     offset   31 116
     frame    data/chars/seiya/special42.png
@@ -1215,7 +1215,7 @@ anim    freespecial7   # Coup de pied haut (haut+a1)
     frame    data/chars/seiya/attack41.png
     frame    data/chars/seiya/attack42.png
     dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 1 0 0 12 20
+    attack20  62 21 67 26 10 1 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/seiya/attack43.png
     frame    data/chars/seiya/attack42.png

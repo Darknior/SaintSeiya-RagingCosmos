@@ -142,6 +142,64 @@ anim run
     frame    data/chars/soldier_stick/run5.png
     frame    data/chars/soldier_stick/run6.png
 
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+ 
+anim bpain # BURN PAIN
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_stick/pain1.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain3.png
+    frame    data/chars/soldier_stick/pain2.png
+  
+anim burn # BURN PAIN Ground
+    delay    15
+    offset    118 125
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+	 bbox 34 15 60 100
+    frame    data/chars/soldier_stick/fall1.png
+    frame    data/chars/soldier_stick/fall2.png
+	 bbox 10 90 100 35
+    frame    data/chars/soldier_stick/fall3.png
+    
+anim pain10 # ICE PAIN
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 0 1 0
+    frame    data/chars/soldier_stick/pain1.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain3.png
+    frame    data/chars/soldier_stick/pain2.png
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 0 1 0
+    frame    data/chars/soldier_stick/pain1.png
+    
+anim fall20 # Blood fall  
+    delay    15
+    offset    118 125
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -40 -10 0 0 0
+	 bbox 34 15 60 100
+    frame    data/chars/soldier_stick/fall1.png
+    frame    data/chars/soldier_stick/fall1.png
+    frame    data/chars/soldier_stick/fall2.png
+	 bbox 10 90 100 35
+    frame    data/chars/soldier_stick/fall3.png
+    
+anim pain20 # Blood pain
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -40 -10 0 0 0
+    frame    data/chars/soldier_stick/pain1.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain3.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain1.png
+
+#// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
+
 anim rise
     loop    1
     delay    15
@@ -175,11 +233,10 @@ anim pain
 anim fall
     delay    15
     offset    118 125
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
-	bbox 34 15 60 100
+	 bbox 34 15 60 100
     frame    data/chars/soldier_stick/fall1.png
     frame    data/chars/soldier_stick/fall2.png
-	bbox 10 90 100 35
+	 bbox 10 90 100 35
     frame    data/chars/soldier_stick/fall3.png
     
 anim fall7

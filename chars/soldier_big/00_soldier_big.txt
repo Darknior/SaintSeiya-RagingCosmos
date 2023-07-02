@@ -148,7 +148,7 @@ anim BACKWALK
    
 #// FIRE/ ICE / SHOCK animations /////////////////////////////////////////////////
  
-anim bpain# BURN PAIN
+anim bpain # BURN PAIN
     loop    0
 
     delay    10
@@ -158,7 +158,7 @@ anim bpain# BURN PAIN
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
   
-anim burn# BURN PAIN Ground
+anim burn # BURN PAIN Ground
     loop    0
     delay    30
     offset    120 195
@@ -170,7 +170,7 @@ anim burn# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" 0 0 0 0 0
     frame    data/chars/soldier_big/04.png
     
-anim pain10# ICE PAIN
+anim pain10 # ICE PAIN
     loop    0
     delay    10
     offset    120 195
@@ -179,6 +179,35 @@ anim pain10# ICE PAIN
     frame    data/chars/soldier_big/03.png
     delay    300
     @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 0 1 0
+    frame    data/chars/soldier_big/03.png
+    
+anim fall20 # Blood fall  
+    loop    0
+    delay    10
+    offset    120 195
+    bbox 66 65 85 130
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 -60 0 0 0
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    bbox 29 150 165 50
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+    
+anim pain20 # Blood pain
+    loop    0
+
+    delay    15
+    offset    120 195
+	 bbox 57 68 93 132
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 -60 0 0 0
+    frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
@@ -199,7 +228,6 @@ anim fall
     delay    10
     offset    120 195
     bbox 66 65 85 130
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 -60 0 0 0
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png

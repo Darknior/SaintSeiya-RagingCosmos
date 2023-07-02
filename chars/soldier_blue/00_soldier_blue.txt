@@ -138,6 +138,66 @@ anim walk
     frame    data/chars/soldier_blue/run3.png
     frame    data/chars/soldier_blue/run4.png
 
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+ 
+anim bpain # BURN PAIN
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_blue/pain1.png
+    frame    data/chars/soldier_blue/pain2.png
+    frame    data/chars/soldier_blue/pain1.png
+  
+anim burn # BURN PAIN Ground
+    delay    10
+    offset    118 125
+    bbox 55 24 80 100
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_blue/fall1.png
+    frame    data/chars/soldier_blue/fall2.png
+    frame    data/chars/soldier_blue/fall3.png
+    frame    data/chars/soldier_blue/fall4.png
+    frame    data/chars/soldier_blue/fall5.png
+    frame    data/chars/soldier_blue/fall6.png
+    bbox 23 92 100 35
+    frame    data/chars/soldier_blue/fall7.png
+    
+anim pain10 # ICE PAIN
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 0 1 0
+    frame    data/chars/soldier_blue/pain1.png
+    frame    data/chars/soldier_blue/pain2.png
+    frame    data/chars/soldier_blue/pain1.png
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 0 1 0
+    delay    300
+    frame    data/chars/soldier_blue/pain1.png
+    
+anim fall20 # Blood fall  
+    delay    10
+    offset    118 125
+    bbox 55 24 80 100
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -45 -25 0 0 0
+    frame    data/chars/soldier_blue/fall1.png
+    frame    data/chars/soldier_blue/fall2.png
+    frame    data/chars/soldier_blue/fall3.png
+    frame    data/chars/soldier_blue/fall4.png
+    frame    data/chars/soldier_blue/fall5.png
+    frame    data/chars/soldier_blue/fall6.png
+    bbox 23 92 100 35
+    frame    data/chars/soldier_blue/fall7.png
+    
+anim pain20 # Blood pain
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -45 -25 0 0 0
+    frame    data/chars/soldier_blue/pain1.png
+    frame    data/chars/soldier_blue/pain2.png
+    frame    data/chars/soldier_blue/pain1.png
+
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim rise
@@ -158,11 +218,12 @@ anim pain
     frame    data/chars/soldier_blue/pain2.png
     frame    data/chars/soldier_blue/pain1.png
 
+
+
 anim fall
     delay    10
     offset    118 125
     bbox 55 24 80 100
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -45 -25 0 0 0
     frame    data/chars/soldier_blue/fall1.png
     frame    data/chars/soldier_blue/fall2.png
     frame    data/chars/soldier_blue/fall3.png

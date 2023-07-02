@@ -5,8 +5,8 @@ nodropen                  #enemies not knocked down on respawn
 spdirection  1 1 1 1      #facing direction of players in select menu
 #nodebug      1           #1 to disable debug menu in options
 #versusdamage 1           #Sets whether players can hit each other or not
-maxattacks 20
-maxattacktypes 20
+maxattacks 90
+maxattacktypes 90
 maxfollows 50
 maxfreespecials 15
 

@@ -151,7 +151,78 @@ anim pain
     frame    data/chars/soldier_base/05.png
     frame    data/chars/soldier_base/05.png
 
-   
+#// FIRE / ICE / BLOOD / SHOCK animations /////////////////////////////////////////////////
+ 
+anim bpain# BURN PAIN
+    loop    0
+    delay    5
+    offset    102 179
+    bbox 42 64 99 121
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_base/05.png
+
+  
+anim burn# BURN PAIN Ground
+    loop    0
+    delay    10
+    offset    110 180
+    dropv 4 1 0
+    bbox 65 68 80 120
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    @cmd     spawnbind "shaka_flame" 0 0 0 0 0
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+    
+anim pain10# ICE PAIN
+    loop    0
+    delay    5
+    offset    102 179
+    bbox 42 64 99 121
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 0 1 0
+    frame    data/chars/soldier_base/05.png
+    delay    300
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 0 1 0
+    frame    data/chars/soldier_base/05.png
+    
+anim pain20 # Blood pain
+    loop    0
+    delay    5
+    offset    102 179
+    bbox 42 64 99 121
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 -20 0 0 0
+    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_base/05.png
+    
+anim fall20 # blood fall
+    loop    0
+    delay    10
+    offset    110 180
+    dropv 4 1 0
+    bbox 65 68 80 120
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 -20 0 0 0
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+
+#// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim fall
     loop    0

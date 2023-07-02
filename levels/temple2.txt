@@ -44,7 +44,7 @@ coords      0 0
 at          0
 
 spawn soldier_basic
-alias Konstantinos
+alias konstantinos
 item diamantecd
 coords	850 440
 at 0
