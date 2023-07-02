@@ -10,7 +10,7 @@ bglayer     data/bgs/temple3/layer4.png   	0.13 1 -30 0 0 0 1 1 1 0
 order           a
 direction       both
 settime         99
-
+noreset 2
 cameratype      0
 light           100 -100
 at              0

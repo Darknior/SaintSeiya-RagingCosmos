@@ -7,6 +7,7 @@ panel           data/bgs/temple2/templeboss.png
 order           a
 direction       both
 settime         99
+noreset 2
 shadowalpha 6
 shadowopacity 0
 cameratype      0

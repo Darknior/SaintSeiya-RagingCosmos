@@ -15,7 +15,7 @@ order	a
 direction both
 
 settime 100
-
+noreset 2
 cameratype 0
 
 light 0 -64

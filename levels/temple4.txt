@@ -20,7 +20,7 @@ shadowopacity 0
 direction right
 
 settime 99
-
+noreset 2
 cameratype 1
 
 order	a
@@ -143,7 +143,7 @@ at 2400
 
 spawn soldier1-1
 alias SOLDIER
-item cosmos-gold
+item 1up-gold
 coords	-200 470
 at 2400
 
@@ -154,7 +154,7 @@ at 2400
 
 spawn soldier1-1
 alias SOLDIER
-item cosmos-silver
+item 1up-silver
 coords	850 400
 at 2800
 

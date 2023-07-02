@@ -7,7 +7,7 @@ panel		data/bgs/temple13/layer2.png
 order	    a
 direction   both
 settime     99
-
+noreset 2
 cameratype  0
 light       256 -44
 at          0

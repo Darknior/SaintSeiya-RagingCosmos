@@ -18,7 +18,7 @@ shadowopacity 0
 direction right
 
 settime 99
-
+noreset 2
 order	a
 
 spawn1 60 400

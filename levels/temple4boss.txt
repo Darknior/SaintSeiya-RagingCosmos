@@ -18,7 +18,7 @@ offscreenkill 10000
 order           a
 direction       both
 settime         99
-
+noreset 2
 light        256 -44
 at        0
 shadowalpha 6

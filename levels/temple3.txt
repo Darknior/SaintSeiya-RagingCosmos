@@ -13,7 +13,7 @@ cameratype 1
 direction right
 
 settime 99
-
+noreset 2
 order	a
 
 

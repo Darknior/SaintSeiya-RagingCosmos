@@ -20,7 +20,7 @@ shadowopacity 0
 direction right
 
 settime 99
-
+noreset 2
 order	a
 
 
