@@ -245,10 +245,10 @@ void overlayFunction(void player, int pIndex)
 			int xELife		= 7;
 			int xMp			= 7;
 			int yPLife		= 69;
-			int yELife		= 141;
+			int yELife		= 143;
 			int yMp			= 94;
 			float xLSize	= 125; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER LIFE)
-			float xESize	= 75; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (ENEMY LIFE)
+			float xESize	= 100; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (ENEMY LIFE)
 			float xMSize	= 100; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER MP)
 			float ySize		= 9; //BAR HEIGHT INCREASE FACTOR, MORE VALUE IS MORE SIZE
 

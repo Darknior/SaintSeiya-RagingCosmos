@@ -12,12 +12,12 @@ void lifeBar()
 	if(!dead){
 
 		//THE LIFEBAR POSITION DEFINES ALL OTHER ELEMENT'S POSITION
-		int xLife	= 249;
+		int xLife	= 225;
 		int yLife	= 461;
 		int xName	= xLife+50;
 		int yName	= yLife-9;
 		int xIcon	= xLife+1;
-		int yIcon	= yLife-46;
+		int yIcon	= yLife-36;
 		int layer1	= 10000;
 		int layer2	= 60000;
 		int layer3	= 50000;
@@ -34,12 +34,12 @@ void lifeBar()
 		setdrawmethod(NULL(),0,256,256,0,0,0,0);
 		drawsprite(getglobalvar("charIcon3"), xLife, yLife-47, layer1); //BOSS CHARACTER ICON OVERLAY
 		setdrawmethod(NULL(),1,256,256,0,0,0,2);
-		drawsprite(getglobalvar("lifebar3"), xLife, yLife+1, layer2); //BOSS LIFEBAR OVERLAY
+		drawsprite(getglobalvar("lifebar3"), xLife+49, yLife+1, layer2); //BOSS LIFEBAR OVERLAY
 
 		//DRAW CUSTOM LIFE BARS
 		int maxLife	= getentityproperty(self, "maxhealth");
 		int life	= getentityproperty(self, "health");
-		float xSize	= 300; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER LIFE)
+		float xSize	= 349; //BAR WIDTH INCREASE FACTOR, MORE VALUE IS MORE SIZE (PLAYER LIFE)
 		float ySize	= 9; //BAR HEIGHT INCREASE FACTOR, MORE VALUE IS MORE SIZE
 
 		//LIFE BAR
