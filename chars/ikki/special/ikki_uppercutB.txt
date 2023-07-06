@@ -2,7 +2,6 @@ name	ikki_uppercutB
 type	none
 candamage player
 shadow	0
-setlayer 1
 antigravity 100
 remove 0
 animationscript	data/scripts/player.c

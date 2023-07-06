@@ -1,7 +1,6 @@
 name        hyoga_iceB
 type        none
 shadow      0
-setlayer    130
 antigravity 100
 animationscript    data/scripts/player.c
 

@@ -1,4 +1,4 @@
-loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
 
 music		data/music/Cascade-Gelee.ogg
 

@@ -1,0 +1,29 @@
+name	hyoga_pikeB
+type	none
+shadow	0
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	111 137
+   drawmethod  alpha 1
+   drawmethod  scale 1 1
+   sound data/chars/hyoga/sounds/hyoga_502-0.wav
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-0.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-1.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-2.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-3.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-4.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-4.png
+   frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-5.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-6.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-7.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-8.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-9.png
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-10.png
+   frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-11.png
+   frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-11.png
+	@cmd suicide
+	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-11.png

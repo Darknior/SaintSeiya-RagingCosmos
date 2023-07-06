@@ -16,6 +16,7 @@ anim	idle
 	offset	100 220
 	drawmethod alpha 1
 	drawmethod scale 0.8 0.8
+	attack10 50 73 75 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-4.png
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-5.png
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-6.png
@@ -29,7 +30,6 @@ anim	idle
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-14.png
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-15.png
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-16.png
-	attack10 23 51 50 120 10 3.5 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-17.png
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-18.png
 	frame	data/chars/hyoga/special/hyoga_tornadoB/hyoga_tornadoB-19.png

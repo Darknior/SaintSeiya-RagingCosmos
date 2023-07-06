@@ -1,0 +1,57 @@
+name	hyoga_pike
+type	none
+shadow	0
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	10
+	offset	139 386
+   drawmethod  alpha 1
+   drawmethod  scale 0.7 0.7
+   drawmethod flipx 1
+   sound data/chars/hyoga/sounds/hyoga_502-0.wav
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-0.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-1.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-2.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-3.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-4.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-4.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-5.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-6.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-7.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-8.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-9.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-10.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-11.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-12.png
+   delay	150
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-13.png
+   delay	10
+   sound data/chars/hyoga/sounds/ice-break.wav
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-14.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-15.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-16.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-17.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-18.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-19.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-20.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-21.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-22.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-23.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-24.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-25.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-26.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-27.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-28.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-29.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-30.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-31.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-32.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-33.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-34.png
+   frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-35.png
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-36.png
+	@cmd suicide
+	frame	data/chars/hyoga/special/hyoga_pike/hyoga_pike-36.png

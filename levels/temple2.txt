@@ -43,22 +43,16 @@ spawn       temple2roadcolumns
 coords      0 0
 at          0
 
-spawn soldier_basic
+spawn soldier3
 alias konstantinos
 item diamantecd
 coords	850 440
 at 0
 
 
-spawn malesoldier
-alias Themis
-coords	850 470
-at 0
 
-spawn soldier1
-alias Titounis
-coords	850 400
-at 400
+
+
 
 spawn soldier3
 alias Anthonin

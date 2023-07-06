@@ -2,7 +2,6 @@ name	shaka_flame
 type	none
 shadow	0
 nomove 1 1
-setlayer 150
 antigravity 100
 animationscript	data/scripts/player.c
 
