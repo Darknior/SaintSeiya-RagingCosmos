@@ -355,24 +355,19 @@ anim runattack  # Attaque en courant
     subentity    dash_dust
     sound    data/chars/seiya/sounds/07-forward_punch.wav
     frame    data/chars/seiya/runattack1.png
-    attack   5 13 90 55 10 0 0 0 0 20
+	 attack 5 13 90 55 10 0 0 0 0 20
     dropv    3.0 2 0
+	 bbox 22 0 65 120
     frame    data/chars/seiya/runattack2.png
-    attack2  0
+	 attack2 0 0 0 0 0 0 0 0 0 0
     @cmd     spawnbind "seiya_dash_dust" "ANI_IDLE" 0 10 5 0 0
     frame    data/chars/seiya/runattack3.png
-    attack2  5 13 90 55 10 12 0 0 0 20
+	 attack2 5 13 90 55 10 12 0 0 0 20
     dropv    3.0 2 0
     frame    data/chars/seiya/runattack4.png
-    attack2  0
     frame    data/chars/seiya/runattack5.png
-    attack2  5 13 90 55 10 12 0 0 0 20
-    dropv    3.0 2 0
     frame    data/chars/seiya/runattack4.png
-    attack2  0
     frame    data/chars/seiya/runattack5.png
-    attack2  5 13 90 55 10 12 0 0 0 20
-    dropv    3.0 2 0
     @cmd     dasher 0 0 0 1
     delay    12
     frame    data/chars/seiya/runattack3.png
