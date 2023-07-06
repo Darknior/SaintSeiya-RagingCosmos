@@ -1,9 +1,7 @@
 name        kick_dust
 type        none
 shadow      0
-setlayer    100
 antigravity 100
-#lifespan   1
 animationscript    data/scripts/player.c
 
 anim    idle

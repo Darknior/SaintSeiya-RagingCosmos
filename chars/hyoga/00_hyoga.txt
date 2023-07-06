@@ -493,12 +493,12 @@ anim    attack5 # Attaque combo 5
     sound    data/chars/hyoga/sounds/kick.wav
     frame    data/chars/hyoga/attack32.png
     delay    12
-    attack1  62 50 67 26 10 1 1 0 12 20
+    attack20  62 50 67 26 10 1 1 0 12 20
     frame    data/chars/hyoga/attack33.png
     delay    6
     frame    data/chars/hyoga/attack34.png
     frame    data/chars/hyoga/attack35.png
-    attack1  0
+    attack20  0
 
 
 #// Grab animations /////////////////////////////////////////////////
@@ -685,7 +685,7 @@ anim    jumpattack  # Attaque sautée statique
     sound    data/sounds/punch.wav
     frame    data/chars/hyoga/jumpattack1.png
     frame    data/chars/hyoga/jumpattack2.png
-    attack4  62 51 67 26 10 1 0 0 5 12
+    attack20  62 51 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/hyoga/jumpattack3.png
     frame    data/chars/hyoga/jumpattack4.png
@@ -848,7 +848,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     frame    data/chars/hyoga/attackbackward11.png
     frame    data/chars/hyoga/attackbackward12.png
     delay    15
-    attack   20 36 60 50 10 1 0 0 0 30
+    attack20   20 36 60 50 10 1 0 0 0 30
     dropv    3.5 1 0
     frame    data/chars/hyoga/attackbackward13.png
     delay    8
@@ -859,7 +859,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
 anim    attackboth  # Attaque de mêlée native (j + a1)
     jugglecost  2
     fastattack  1
-    energycost  10 0 0
+    energycost  20 0 0
     offset   45 140
     bbox     21 28 51 112
     hitflash hyoga_swing
@@ -902,13 +902,13 @@ anim    special3    # Saut attaque spéciale flashkick
 anim    freespecial # Attaque de mêlée (a2)
     jugglecost  2
     fastattack  1
-    energycost  10 0 0
+    energycost  20 0 0
     offset   45 140
     bbox     21 28 51 112
     hitflash hyoga_swing
     delay    8
     sound    data/chars/seiya/sounds/17-back_kick.wav
-    @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 0 10 0 0
+    @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 10 10 0 0
     frame    data/chars/hyoga/attackbackward1.png
 	attack1 -10 93 110 50 10 0 0 0 0 20
     frame    data/chars/hyoga/attackbackward2.png
@@ -968,6 +968,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     offset   35 141
     hitflash flashbig
     bbox     7 23 50 120
+    quakeframe 1 10 3
     sound    data/chars/hyoga/sounds/concentration.wav
     frame    data/chars/hyoga/special1.png
     frame    data/chars/hyoga/special2.png
@@ -997,7 +998,7 @@ anim    freespecial4    # Attaque arrière (a3)
     frame    data/chars/hyoga/attackbackward11.png
     frame    data/chars/hyoga/attackbackward12.png
     delay    15
-    attack   20 36 60 50 10 1 0 0 0 30
+    attack20   20 36 60 50 10 1 0 0 0 30
     dropv    3.5 1 0
     frame    data/chars/hyoga/attackbackward13.png
     delay    8

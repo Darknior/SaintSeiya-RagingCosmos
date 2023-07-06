@@ -3,7 +3,6 @@ type	none
 shadow	0
 remove 0
 candamage enemy npc
-setlayer 90
 antigravity 100
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_green.c
@@ -17,60 +16,60 @@ anim	idle
         hitflash blue_swing
 	offset	250 102
         sound   data/chars/shiryu/sounds/01-dragon.wav
-	attack5 107 35 400 120 10 0 0 0 0 50
+	attack20 107 35 400 120 10 0 0 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-2.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-2.png
-	attack5 107 35 400 120 10 0 0 0 0 50
+	attack20 107 35 400 120 10 0 0 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-3.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-4.png
-	attack5 107 35 400 120 10 0 0 0 0 50
+	attack20 107 35 400 120 10 0 0 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-5.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
 	delay	20	
-	attack5 107 35 400 120 10 1 0 0 0 50
+	attack20 107 35 400 120 10 1 0 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 0 0 0 50
+	attack20 107 35 400 120 10 1 0 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 0 0 0 50
+	attack20 107 35 400 120 10 1 0 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 1 0 0 50
+	attack20 107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 1 0 0 50
+	attack20 107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 1 0 0 50
+	attack20 107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 1 0 0 50
+	attack20 107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 1 0 0 50
+	attack20 107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 1 0 0 50
+	attack20 107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 1 0 0 50
+	attack20 107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
-	attack5 0
+	attack20 0
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
-	attack5 107 35 400 120 10 1 1 0 0 50
+	attack20 107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
 	@cmd suicide
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png

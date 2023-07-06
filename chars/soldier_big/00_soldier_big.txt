@@ -146,7 +146,7 @@ anim BACKWALK
     frame    data/chars/soldier_big/17.png
     frame    data/chars/soldier_big/18.png
    
-#// FIRE/ ICE / SHOCK animations /////////////////////////////////////////////////
+#// Blood / FIRE/ ICE / SHOCK animations /////////////////////////////////////////////////
     
 anim pain10 # ICE PAIN
     loop    0

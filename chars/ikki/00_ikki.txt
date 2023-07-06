@@ -835,7 +835,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
 anim    attackboth  # Attaque de mêlée native (j + a1)
     jugglecost  1
     fastattack  1
-    energycost  10 0 0
+    energycost  20 0 0
     offset   80 165
     hitflash shaka_flame
     summonframe 0 0 0 0 0
@@ -866,7 +866,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
 anim    freespecial    # Attaque de mêlée (a2)
     jugglecost  1
     fastattack  1
-    energycost  10 0 0
+    energycost  20 0 0
     offset   80 165
     hitflash shaka_flame
     summonframe 0 0 0 0 0
@@ -954,6 +954,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     offset   89 185
     hitflash flashbig
     bbox     70 56 50 130
+    quakeframe 1 7 3
     sound    data/chars/ikki/sounds/concentration.wav
     frame    data/chars/ikki/special1.png
     frame    data/chars/ikki/special2.png
@@ -996,6 +997,7 @@ anim    freespecial4    # Attaque arrière (a3)
 anim freespecial5 # Uppercut
     jugglecost  2
     offset    45 150
+    energycost  20 0 0
     fastattack 1
     hitflash shaka_flame
     delay    10

@@ -1,7 +1,6 @@
 name	seiya_dash_dust
 type	none
 shadow	0
-setlayer 778
 animationscript	data/scripts/player.c
 
 anim	idle

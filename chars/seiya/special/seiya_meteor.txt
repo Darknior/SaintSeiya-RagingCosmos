@@ -1,7 +1,6 @@
 name	seiya_meteor
 type	none
 shadow	0
-setlayer 99
 nolife 1
 remove 0
 antigravity 100
