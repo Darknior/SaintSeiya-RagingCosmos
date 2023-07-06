@@ -367,8 +367,7 @@ anim    run
     delay    8
     offset   48 128
     bbox     34 13 51 115
-    summonframe  0 0 0 0
-    subentity    dash_dustB
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
     frame    data/chars/hyoga/run1.png
     sound    data/chars/hyoga/sounds/20-run1.wav
     frame    data/chars/hyoga/run2.png
@@ -1151,7 +1150,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     sound    data/chars/hyoga/sounds/01-icepunch.wav
     @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 1 0
     @cmd     shooter2 "hyoga_frozenray" 0 80 0 0
-    @cmd     shooter "hyoga_diamonds" 0 0 0 1.8 0 0
+    @cmd     shooter "hyoga_diamondsB" 0 0 0 1.8 0 0
     frame    data/chars/hyoga/special28.png
     attack11  0
     frame    data/chars/hyoga/special28.png
