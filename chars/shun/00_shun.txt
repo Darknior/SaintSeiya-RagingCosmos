@@ -71,7 +71,13 @@ load dash_dust
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/shun/palettes/icon1.png 0
+icon         data/chars/shun/palettes/icon1.png
+iconpain         data/chars/shun/palettes/iconpain.png
+icondie         data/chars/shun/palettes/icondie.png
+iconmphigh          data/chars/shun/palettes/iconmphigh.png
+iconget          data/chars/shun/palettes/iconget.png
+iconmphalf          data/chars/shun/palettes/iconmphalf.png
+iconmplow          data/chars/shun/palettes/iconmplow.png
 palette      data/chars/shun/palettes/palette1.png
 #remap       data/chars/shun/palettes/palette1.png  # 14 Possible MAX
 
@@ -190,7 +196,21 @@ anim spawn
 
 anim idle
     loop     1
-    delay    18
+    delay    17
+    offset   32 131
+    bbox     15 28 51 107
+    frame    data/chars/shun/idle1.png
+    frame    data/chars/shun/idle2.png
+    frame    data/chars/shun/idle3.png
+    frame    data/chars/shun/idle4.png
+    frame    data/chars/shun/idle5.png
+    frame    data/chars/shun/idle4.png
+    frame    data/chars/shun/idle3.png
+    frame    data/chars/shun/idle2.png
+    
+anim faint
+    loop     1
+    delay    13
     offset   32 131
     bbox     15 28 51 107
     frame    data/chars/shun/idle1.png
@@ -977,7 +997,7 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     #bbox 21 16 51 97
     summonframe 0 0 0 0 1
     subentity shun_constellation
-    energycost  20 1 0
+    energycost  50 1 0
     @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
 	 @cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/special1.png

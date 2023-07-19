@@ -73,7 +73,13 @@ load shaka_flame
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/ikki/palettes/icon1.png 0
+icon         data/chars/ikki/palettes/icon1.png
+iconpain         data/chars/ikki/palettes/iconpain.png
+icondie         data/chars/ikki/palettes/icondie.png
+iconmphigh          data/chars/ikki/palettes/iconmphigh.png
+iconget          data/chars/ikki/palettes/iconget.png
+iconmphalf          data/chars/ikki/palettes/iconmphalf.png
+iconmplow          data/chars/ikki/palettes/iconmplow.png
 palette      data/chars/ikki/palettes/palette1.png
 #remap       data/chars/ikki/palettes/palette1.png  # 14 Possible MAX
 
@@ -231,7 +237,19 @@ anim spawn
 
 anim idle
     loop 1
-    delay    15
+    delay    16
+    offset   45 137
+    bbox     30 17 30 120
+    frame    data/chars/ikki/idle1.png
+    frame    data/chars/ikki/idle2.png
+    frame    data/chars/ikki/idle3.png
+    frame    data/chars/ikki/idle4.png
+    frame    data/chars/ikki/idle5.png
+    frame    data/chars/ikki/idle6.png
+    
+anim faint
+    loop 1
+    delay    12
     offset   45 137
     bbox     30 17 30 120
     frame    data/chars/ikki/idle1.png

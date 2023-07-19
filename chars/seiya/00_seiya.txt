@@ -225,6 +225,23 @@ anim idle
     frame    data/chars/seiya/idle9.png
     frame    data/chars/seiya/idle10.png
     frame    data/chars/seiya/idle11.png
+    
+anim faint
+    loop     1
+    delay    8
+    offset   45 112
+    bbox     34 0 30 112
+    frame    data/chars/seiya/idle1.png
+    frame    data/chars/seiya/idle2.png
+    frame    data/chars/seiya/idle3.png
+    frame    data/chars/seiya/idle4.png
+    frame    data/chars/seiya/idle5.png
+    frame    data/chars/seiya/idle6.png
+    frame    data/chars/seiya/idle7.png
+    frame    data/chars/seiya/idle8.png
+    frame    data/chars/seiya/idle9.png
+    frame    data/chars/seiya/idle10.png
+    frame    data/chars/seiya/idle11.png
 
 anim sleep # Animation configurée après 10s d'idle 
     loop     1

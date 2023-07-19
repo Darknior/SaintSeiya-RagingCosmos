@@ -80,7 +80,13 @@ load marin_stormA
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/hyoga/palettes/icon1.png 1
+icon         data/chars/hyoga/palettes/icon1.png
+iconpain         data/chars/hyoga/palettes/iconpain.png
+icondie         data/chars/hyoga/palettes/icondie.png
+iconmphigh          data/chars/hyoga/palettes/iconmphigh.png
+iconget          data/chars/hyoga/palettes/iconget.png
+iconmphalf          data/chars/hyoga/palettes/iconmphalf.png
+iconmplow          data/chars/hyoga/palettes/iconmplow.png
 palette      data/chars/hyoga/palettes/palette1.png
 remap        data/chars/hyoga/palettes/palette1.png data/chars/hyoga/palettes/palette2.png data/chars/hyoga/palettes/palette3.png data/chars/hyoga/palettes/palette4.png  # 14 Possible MAX
 
@@ -218,7 +224,20 @@ anim    spawn
 
 anim    idle
     loop     1
-    delay    10
+    delay    12
+    offset   45 140
+    bbox     29 28 30 112
+    frame    data/chars/hyoga/idle1.png
+    frame    data/chars/hyoga/idle2.png
+    frame    data/chars/hyoga/idle3.png
+    frame    data/chars/hyoga/idle4.png
+    frame    data/chars/hyoga/idle5.png
+    frame    data/chars/hyoga/idle6.png
+    frame    data/chars/hyoga/idle7.png
+    
+anim    faint
+    loop     1
+    delay    8
     offset   45 140
     bbox     29 28 30 112
     frame    data/chars/hyoga/idle1.png
@@ -864,7 +883,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     bbox     21 28 51 112
     hitflash hyoga_swing
     delay    8
-    sound    data/chars/seiya/sounds/17-back_kick.wav
+    sound    data/chars/hyoga/sounds/17-back_kick.wav
     @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 0 10 0 0
     frame    data/chars/hyoga/attackbackward1.png
     attack1  -14 93 130 50 10 0 0 0 0 20
@@ -907,7 +926,7 @@ anim    freespecial # Attaque de mêlée (a2)
     bbox     21 28 51 112
     hitflash hyoga_swing
     delay    8
-    sound    data/chars/seiya/sounds/17-back_kick.wav
+    sound    data/chars/hyoga/sounds/17-back_kick.wav
     @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 10 10 0 0
     frame    data/chars/hyoga/attackbackward1.png
 	attack1 -10 93 110 50 10 0 0 0 0 20
@@ -1016,7 +1035,7 @@ anim    freespecial5    # Uppercut
     sound    data/chars/hyoga/sounds/01-twister.wav
     @cmd     spawnbind "hyoga_uppercut" "ANI_IDLE" 0 0 10 1 0
     frame    data/chars/hyoga/uppercut1.png
-    sound    data/chars/seiya/03-uppercut2.wav
+    sound    data/chars/hyoga/03-uppercut2.wav
     frame    data/chars/hyoga/uppercut2.png
     delay    5
     frame    data/chars/hyoga/uppercut3.png

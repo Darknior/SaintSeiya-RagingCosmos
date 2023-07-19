@@ -74,7 +74,13 @@ load blood_gerbD
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/shiryu/palettes/icon1.png 1
+icon         data/chars/shiryu/palettes/icon1.png
+iconpain         data/chars/shiryu/palettes/iconpain.png
+icondie         data/chars/shiryu/palettes/icondie.png
+iconmphigh          data/chars/shiryu/palettes/iconmphigh.png
+iconget          data/chars/shiryu/palettes/iconget.png
+iconmphalf          data/chars/shiryu/palettes/iconmphalf.png
+iconmplow          data/chars/shiryu/palettes/iconmplow.png
 palette      data/chars/shiryu/palettes/palette1.png
 remap        data/chars/shiryu/palettes/palette1.png data/chars/shiryu/palettes/palette2.png data/chars/shiryu/palettes/palette3.png data/chars/shiryu/palettes/palette4.png  # 14 Possible MAX
 
@@ -189,6 +195,18 @@ anim    spawn
 anim    idle
     loop     1
     delay    18
+    offset   39 128
+    bbox     28 13 30 115
+    frame    data/chars/shiryu/idle1.png
+    frame    data/chars/shiryu/idle2.png
+    frame    data/chars/shiryu/idle3.png
+    frame    data/chars/shiryu/idle4.png
+    frame    data/chars/shiryu/idle3.png
+    frame    data/chars/shiryu/idle2.png
+    
+anim    faint
+    loop     1
+    delay    13
     offset   39 128
     bbox     28 13 30 115
     frame    data/chars/shiryu/idle1.png
