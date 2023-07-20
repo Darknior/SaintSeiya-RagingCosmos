@@ -932,11 +932,11 @@ anim freespecial2 # Phoenix Genmaken ( avant + bouton special)
     frame    data/chars/ikki/upspecial2.png
     frame    data/chars/ikki/upspecial1.png
     delay    10
-    @cmd     spawnbind "ikki_fire" "ANI_IDLE" 0 0 0 0 10
+    @cmd     spawnbind "ikki_fire" "ANI_IDLE" 0 10 0 0 10
     frame    data/chars/ikki/upspecial2.png
     @cmd     dasher 6 0 0 1
     attack15  25 60 90 40 15 1 1 0 80 30
-    @cmd     spawnbind "ikki_impact" "ANI_IDLE" 0 0 0 0 10
+    @cmd     spawnbind "ikki_impact" "ANI_IDLE" 0 10 0 0 10
     frame    data/chars/ikki/upspecial3.png
     #attack  0
     frame    data/chars/ikki/upspecial4.png
@@ -976,10 +976,10 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     sound    data/chars/ikki/sounds/concentration.wav
     frame    data/chars/ikki/special1.png
     frame    data/chars/ikki/special2.png
-    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 0 10 0 10
+    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 10 5 5 0 10
     @cmd     spawnbind "ikki_cosmos" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/ikki/special3.png
-    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 0 10 0 10
+    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 10 5 5 0 10
     sound    data/chars/ikki/sounds/00-cosmos.wav
     frame    data/chars/ikki/special4.png
     frame    data/chars/ikki/special5.png
@@ -1054,7 +1054,7 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
     sound   data/chars/ikki/sounds/01-phoenix.wav
-    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 0 0 0 10
+    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 5 0 0 10
     frame    data/chars/ikki/sleep1.png
     frame    data/chars/ikki/sleep2.png
     attack15 35 66 100 131 10 1 0 0 5 12
@@ -1065,7 +1065,7 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
     frame    data/chars/ikki/sleep5.png
-    @cmd     spawnbind "ikki_auraB" "ANI_IDLE" 0 0 0 0 10
+    @cmd     spawnbind "ikki_auraB" "ANI_IDLE" 0 10 0 0 10
     frame    data/chars/ikki/sleep6.png
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
@@ -1074,7 +1074,7 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
     frame    data/chars/ikki/sleep9.png
-    @cmd    shooter "ikki_storm" 30 0 0 1.5 0 0
+    @cmd    shooter "ikki_storm" 30 10 0 1.5 0 0
     frame    data/chars/ikki/sleep10.png
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
@@ -1114,7 +1114,7 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     attack15 -40 23 800 50 10 0 0 0 0 30
     frame    data/chars/ikki/special33.png
     attack 0
-    @cmd    shooter "ikki_storm" 30 0 0 1.5 0 0
+    @cmd    shooter "ikki_storm" 30 10 0 1.5 0 0
     @cmd    shooter "ikki_shooter" 77 50 0 3 0 0
     frame    data/chars/ikki/special34.png
     attack15 -40 54 800 50 10 0 0 0 0 30
@@ -1126,7 +1126,7 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     attack 0
     frame    data/chars/ikki/special34.png
     attack15 -40 23 800 50 10 0 0 0 0 30
-    @cmd     spawnScreen "ikki_fire_beam" 0 0 0 0
+    @cmd     spawnbind "ikki_fire_beam" 0 200 20 0 1
     sound data/chars/ikki/sounds/01-flapA.wav
     frame    data/chars/ikki/special35.png
     attack 0

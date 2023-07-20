@@ -2,7 +2,6 @@ name	shiryu_whirl
 type	none
 shadow	0
 speed 10
-setlayer 100
 antigravity 100
 animationscript	data/scripts/player.c
 

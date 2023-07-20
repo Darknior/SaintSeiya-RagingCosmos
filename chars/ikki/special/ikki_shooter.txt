@@ -2,7 +2,6 @@ name	ikki_shooter
 type	none
 shadow	0
 remove 0
-setlayer 99
 antigravity 100
 animationscript	data/scripts/player.c
 

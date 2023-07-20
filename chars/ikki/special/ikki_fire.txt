@@ -1,7 +1,6 @@
 name	ikki_fire
 type	none
 shadow	0
-setlayer 778
 antigravity 100
 animationscript	data/scripts/player.c
 

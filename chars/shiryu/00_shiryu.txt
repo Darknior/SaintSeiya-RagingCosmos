@@ -353,7 +353,7 @@ anim    runattack # Attaque en courant
     frame    data/chars/shiryu/runattack4.png
     attack2  31 13 55 83 10 1 0 0 5 12
     dropv    3.0 2 0
-    @cmd     spawnbind "shiryu_dash" "ANI_IDLE" 0 0 10 1 0
+    @cmd     spawnbind "shiryu_dash" "ANI_IDLE" 0 5 10 1 0
     frame    data/chars/shiryu/runattack5.png
     attack2  0
     delay    10
@@ -819,7 +819,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     attack1  7 28 120 35 10 0 0 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     attack1  0
-    @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 10 1 0
+    @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 5 10 1 0
     frame    data/chars/shiryu/attackbackward4.png
     attack1  55 35 84 29 10 1 0 0 0 30
     dropv    3.5 1 0
@@ -850,7 +850,7 @@ anim    freespecial  # Attaque de mêlée (Bouton special, a2)
     attack1  7 28 120 35 10 0 0 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     attack1  0
-    @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 0 10 1 0
+    @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 5 10 1 0
     frame    data/chars/shiryu/attackbackward4.png
     attack1  55 35 84 29 10 1 0 0 0 30
     dropv    3.5 1 0
@@ -875,7 +875,7 @@ anim    freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)
     hitflash flashbig
     delay    10
     offset   47 130
-    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 0 0 10 1 0
+    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 10 10 1 0
     @cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 1 0
     sound    data/chars/shiryu/sounds/01-shoryuha.wav
     attack5  -4 -7 100 140 10 1 0 0 5 30
@@ -897,7 +897,7 @@ anim    freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)
     frame    data/chars/shiryu/special29.png
     frame    data/chars/shiryu/special30.png
     frame    data/chars/shiryu/special31.png
-    @cmd     spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "shiryu_cosmos" "ANI_IDLE" 0 5 0 1 0
     @cmd     shooter "shiryu_dragon" 77 80 10 1.5 0 0
     frame    data/chars/shiryu/special32.png
     frame    data/chars/shiryu/special33.png
@@ -920,7 +920,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     frame    data/chars/shiryu/special4.png
     frame    data/chars/shiryu/special5.png
     frame    data/chars/shiryu/special6.png
-    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 0 0 10 0 0
+    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 10 10 0 0
     @cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shiryu/special7.png
     sound    data/chars/shiryu/sounds/00-cosmos.wav
@@ -970,7 +970,7 @@ anim    freespecial5 # Uppercut (Bas, Avant, a1)
     sound    data/chars/shiryu/sounds/01-uppercut3.wav
     attack2  59 63 50 84 10 0 0 0 0 20
     frame    data/chars/shiryu/uppercut4.png
-    @cmd     spawnbind "shiryu_uppercut" "ANI_IDLE" 0 0 10 1 0
+    @cmd     spawnbind "shiryu_uppercut" "ANI_IDLE" 0 5 10 1 0
     attack1  0
     delay    10
     frame    data/chars/shiryu/uppercut5.png
@@ -1000,7 +1000,7 @@ anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     summonframe  0 0 0 0 1
     subentity    shiryu_constellation
     energycost   50 1 0
-    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 0 0 10 1 0
+    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 10 10 1 0
     @cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 1 0
     attack5  -4 -7 100 140 10 1 0 0 5 30
     dropv    3 5
@@ -1024,7 +1024,7 @@ anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     frame    data/chars/shiryu/special29.png
     frame    data/chars/shiryu/special30.png
     frame    data/chars/shiryu/special31.png
-    @cmd     spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "shiryu_cosmos" "ANI_IDLE" 0 5 0 1 0
     @cmd     shooter "shiryu_big_dragon" 77 80 10 2 0 0
     frame    data/chars/shiryu/special32.png
     frame    data/chars/shiryu/special33.png

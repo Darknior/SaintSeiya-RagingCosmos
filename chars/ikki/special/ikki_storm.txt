@@ -2,7 +2,6 @@ name	ikki_storm
 type	none
 candamage enemy npc
 shadow	0
-setlayer 100
 antigravity 100
 remove 0
 animationscript	data/scripts/player.c
