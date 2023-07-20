@@ -130,7 +130,7 @@ anim spawn
     frame    data/chars/aphrodite/spawn6.png
     frame    data/chars/aphrodite/spawn7.png
     frame    data/chars/aphrodite/spawn8.png
-        sound   data/bgs/temple12/Roses/voices.wav
+    sound   data/bgs/temple12/Roses/voices.wav
     frame    data/chars/aphrodite/spawn9.png
     frame    data/chars/aphrodite/spawn10.png
     frame    data/chars/aphrodite/spawn11.png
@@ -400,7 +400,7 @@ anim jumpattack # Attaque sautée statique
     sound data/sounds/punch.wav
     frame    data/chars/aphrodite/jumpattack1.png
     attack1 57 76 98 45 10 1 0 0 5 12
-	dropv    6.0 2.0 0.0
+	 dropv    6.0 2.0 0.0
     frame    data/chars/aphrodite/jumpattack2.png
 
 anim special # Défense spéciale rose explosion
@@ -409,14 +409,14 @@ anim special # Défense spéciale rose explosion
     sound data/chars/aphrodite/sounds/02.wav
     energycost  25 1 0
     hitflash flashbig
-        @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/aphrodite/special2.png
     frame    data/chars/aphrodite/special6.png
-        @cmd     spawnbind "aphrodite_rose_explosion" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "aphrodite_rose_explosion" "ANI_IDLE" 0 0 0 0 0
     attack5 -50 3 200 142 30 1 0 0 5 12
     dropv 4.0 3.0 0.0
     frame    data/chars/aphrodite/special12.png
-        @cmd     spawnbind "aphrodite_rose_explosion" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "aphrodite_rose_explosion" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/aphrodite/special13.png
     frame    data/chars/aphrodite/special14.png
     delay    200
@@ -432,15 +432,15 @@ anim freespecial2 #Blue Rose shot
     offset    59 144
     hitflash flashmedium
     energycost  25 1 0
-        @cmd     spawnbind "aphrodite_poissons" "ANI_IDLE" 0 0 0 0 0
-	bbox 42 17 45 130
+    @cmd     spawnbind "aphrodite_poissons" "ANI_IDLE" 0 0 0 0 0
+	 bbox 42 17 45 130
     frame    data/chars/aphrodite/special15.png
-        @cmd     spawnbind "aphrodite_big_roses" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "aphrodite_big_roses" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/aphrodite/special14.png
     frame    data/chars/aphrodite/special13.png
     frame    data/chars/aphrodite/special12.png
-	attack5 0
-	bbox 0 0 0 0
+	 attack5 0
+	 bbox 0 0 0 0
     frame    data/chars/aphrodite/special11.png
     frame    data/chars/aphrodite/special10.png
     frame    data/chars/aphrodite/special9.png
@@ -463,14 +463,14 @@ anim special2 # Défense spéciale carnivore roses
     sound data/chars/aphrodite/sounds/02.wav
     energycost  20 1 0
     hitflash flashbig
-	bbox 14 15 45 130
+	 bbox 14 15 45 130
     frame    data/chars/aphrodite/special1.png
     frame    data/chars/aphrodite/special2.png
     frame    data/chars/aphrodite/special3.png
     frame    data/chars/aphrodite/special4.png
-	bbox 0 0 0 0
+	 bbox 0 0 0 0
     frame    data/chars/aphrodite/special5.png
-	attack5 -50 3 200 142 30 1 0 0 5 12
+	 attack5 -50 3 200 142 30 1 0 0 5 12
     dropv 4.0 3.0 0.0
     frame    data/chars/aphrodite/special6.png
     frame    data/chars/aphrodite/special7.png
@@ -478,7 +478,7 @@ anim special2 # Défense spéciale carnivore roses
     frame    data/chars/aphrodite/special9.png
     frame    data/chars/aphrodite/special10.png
     frame    data/chars/aphrodite/special11.png
-	attack5 0
+	 attack5 0
     frame    data/chars/aphrodite/special1.png
 
 anim freespecial3 # Attaque spéciale Rosefield
@@ -504,7 +504,7 @@ anim freespecial3 # Attaque spéciale Rosefield
     offset    30 173
     frame    data/chars/aphrodite/special23.png
     offset    30 183
-	bbox 0 0 0 0
+	 bbox 0 0 0 0
     frame    data/chars/aphrodite/special23.png
     offset    30 193
     frame    data/chars/aphrodite/special23.png
@@ -517,7 +517,7 @@ anim freespecial3 # Attaque spéciale Rosefield
     @cmd     spawnScreen "aphrodite_ultra" 0 0 0 0
     delay    100
     frame    data/chars/aphrodite/special27.png
-	attack5 0
+	 attack5 0
     delay    10
     frame    data/chars/aphrodite/special26.png
     frame    data/chars/aphrodite/special25.png
@@ -543,19 +543,19 @@ anim freespecial6 # Ultra Bloody rose
     offset    58 144
     fastattack 1
     @cmd     spawnScreen "aphrodite_ultra" 0 0 0 0
-        @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
     sound data/chars/aldebaran/78-cosmos.wav
     spawnframe 0 0 0 0 1
     subentity aphrodite_constellation
     energycost  50 1 0
-        @cmd     spawnbind "aphrodite_big_roses_white" "ANI_IDLE" 0 0 0 0 0
-	bbox 42 16 45 130
+    @cmd     spawnbind "aphrodite_big_roses_white" "ANI_IDLE" 0 0 0 0 0
+	 bbox 42 16 45 130
     frame    data/chars/aphrodite/special15.png
     sound data/chars/aphrodite/sounds/03.wav
     frame    data/chars/aphrodite/special14.png
     frame    data/chars/aphrodite/special13.png
     frame    data/chars/aphrodite/special12.png
-	bbox 0 0 0 0
+	 bbox 0 0 0 0
     frame    data/chars/aphrodite/special11.png
     frame    data/chars/aphrodite/special10.png
     frame    data/chars/aphrodite/special9.png
