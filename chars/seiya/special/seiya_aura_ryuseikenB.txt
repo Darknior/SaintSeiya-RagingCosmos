@@ -1,7 +1,6 @@
 name	seiya_aura_ryuseikenB
 type	none
 shadow	0
-setlayer 1
 animationscript	data/scripts/player.c
 
 anim	idle

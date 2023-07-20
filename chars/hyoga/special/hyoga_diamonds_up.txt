@@ -2,7 +2,6 @@ name	hyoga_diamonds_up
 type	none
 shadow	0
 remove 0
-setlayer 99
 antigravity 100
 animationscript	data/scripts/player.c
 nolife 1
@@ -10,7 +9,7 @@ anim	idle
 	loop	1
 	fastattack 1
 	delay	10
-	offset	-40 95
+	offset	400 100
 	drawmethod rotate 270
 	drawmethod fliprotate 1
 	drawmethod alpha 1

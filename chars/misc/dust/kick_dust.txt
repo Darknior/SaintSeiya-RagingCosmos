@@ -7,7 +7,7 @@ animationscript    data/scripts/player.c
 anim    idle
     loop     0
     delay    10
-    offset   130 90
+    offset   130 107
     drawmethod  scale 1 1
     drawmethod  alpha 1
     frame    data/chars/misc/dust/kick_dust/kick_dust1.png

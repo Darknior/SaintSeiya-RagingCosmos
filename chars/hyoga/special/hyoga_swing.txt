@@ -1,12 +1,10 @@
 name	hyoga_swing
 type	none
 shadow	0
-setlayer 157
-antigravity 100
-animationscript	data/scripts/player.c
+
 
 anim	idle
-	loop	1
+	loop	0
 	delay	10
 	offset	111 137
    drawmethod  alpha 1
@@ -17,6 +15,4 @@ anim	idle
 	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-2.png
 	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-3.png
 	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-4.png
-	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-4.png
-	@cmd suicide
-	frame	data/chars/hyoga/special/hyoga_swing/hyoga_swing-4.png
+

@@ -2,7 +2,6 @@ name	seiya_meteord
 type	none
 candamage enemy obstacle
 shadow	0
-setlayer 0
 antigravity 100
 lifespan  1
 animationscript		data/scripts/escript.c

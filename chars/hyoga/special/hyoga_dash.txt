@@ -3,7 +3,6 @@ type	none
 candamage enemy npc
 shadow	0
 remove 0
-setlayer 150
 antigravity 100
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_ice.c

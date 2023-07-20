@@ -383,7 +383,7 @@ anim runattack  # Attaque en courant
 	 bbox 22 0 65 120
     frame    data/chars/seiya/runattack2.png
 	 attack2 0 0 0 0 0 0 0 0 0 0
-    @cmd     spawnbind "seiya_dash_dust" "ANI_IDLE" 0 10 5 0 0
+    @cmd     spawnbind "seiya_dash_dust" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/seiya/runattack3.png
 	 attack2 5 13 90 55 10 12 0 0 0 20
     dropv    3.0 2 0
@@ -479,7 +479,7 @@ anim    attack5    # Attaque combo 5
     dropv    4.0 1.0 0.0
     attack20  64 37 67 26 10 1 1 0 12 20
     frame    data/chars/seiya/attack54.png
-    @cmd     spawnbind "kick_dust" 0 0 10 0 0
+    @cmd     spawnbind "kick_dust" 0 10 10 0 0
     frame    data/chars/seiya/attack55.png
     attack1  0
     frame    data/chars/seiya/attack56.png
@@ -912,7 +912,7 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     attack5  -8 -64 100 180 10 1 0 0 5 30
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
-    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 10 0 0
+    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 10 10 0 0
     @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png
@@ -994,7 +994,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     sound    data/chars/seiya/sounds/cosmos.wav
     frame    data/chars/seiya/special1.png
     frame    data/chars/seiya/special2.png
-    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 10 0 0
+    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 10 10 0 0
     frame    data/chars/seiya/special3.png
     @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     sound    data/chars/seiya/sounds/00-cosmos.wav
@@ -1067,7 +1067,7 @@ anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     attack5  -8 -64 100 180 10 1 0 0 5 30
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
-    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 0 10 0 0
+    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 10 10 0 0
     @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png

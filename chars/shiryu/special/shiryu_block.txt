@@ -1,11 +1,10 @@
 name	shiryu_block
 type	none
 shadow	0
-antigravity 100
-animationscript	data/scripts/player.c
+
 
 anim	idle
-	loop	1
+	loop	0
 	delay	4
 	offset	50 50
    drawmethod  alpha 1
@@ -28,5 +27,4 @@ anim	idle
 	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-14.png
 	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-15.png
 	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-16.png
-	@cmd suicide
-	frame	data/chars/shiryu/special/shiryu_block/shiryu_block-16.png
+

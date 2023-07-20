@@ -13,7 +13,7 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 1
 	quakeframe 1 6 5
-    frame   data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-1.png
+   frame   data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-1.png
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-2.png
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-3.png
 	frame	data/chars/seiya/special/seiya_meteor_flash/seiya_meteor_flash-4.png

@@ -10,6 +10,7 @@ didhitscript	data/scripts/didhit/tint_green.c
 anim	idle
 	fastattack 1
 	loop	0
+   otg 1
 	fastattack 1
 	delay	7
 	drawmethod alpha 1
