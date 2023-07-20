@@ -7,7 +7,7 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	1
 	delay	10
-	offset	107 136
+	offset	107 120
 	drawmethod alpha 1
 	frame	data/chars/ikki/special/ikki_fire/ikki_fire-0.png
 	frame	data/chars/ikki/special/ikki_fire/ikki_fire-1.png

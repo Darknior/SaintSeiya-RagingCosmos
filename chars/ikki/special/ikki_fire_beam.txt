@@ -8,10 +8,10 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	1
 	delay	10
-	offset	400 343
+	offset	500 343
 	drawmethod alpha 1
    drawmethod  channel 0.5
-   drawmethod scale 1.5 1
+   drawmethod scale 2 1
 	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-0.png
 	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-1.png
 	frame	data/chars/ikki/special/ikki_fire_beam/ikki_fire_beam-2.png
