@@ -787,6 +787,7 @@ anim death
     frame    data/chars/shun/death4.png
     frame    data/chars/shun/death5.png
     delay    200
+    offset    69 129
     frame    data/chars/shun/death6.png
 	
 #// Block animations /////////////////////////////////////////////////
@@ -875,7 +876,7 @@ anim    freespecial2    # Thunder Wave (Avant + Bouton Special)
     offset    202 310
     hitflash shun_impactD
     sound data/chars/shun/sounds/78-cosmos.wav
-    @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 10 0 0 0
 	 @cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/special1.png
     sound data/chars/shun/sounds/08-ultra.wav
@@ -940,7 +941,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
 	 sound    data/chars/shun/sounds/concentration.wav
     frame    data/chars/shun/upspecial1.png
     frame    data/chars/shun/upspecial2.png
-    @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/shun/upspecial3.png
 	 @cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
     sound    data/chars/shun/sounds/00-cosmos.wav
@@ -1013,7 +1014,7 @@ anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     summonframe 0 0 0 0 1
     subentity shun_constellation
     energycost  50 1 0
-    @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 10 0 0 0
 	 @cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shun/special1.png
     sound data/chars/shun/sounds/08-ultra.wav

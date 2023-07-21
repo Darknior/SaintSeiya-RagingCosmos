@@ -1,14 +1,13 @@
 name        shun_aura
 type        none
 shadow      0
-setlayer    778
 antigravity 100
 animationscript    data/scripts/player.c
 
 anim    idle
     loop     1
     delay    7
-    offset   85 220
+    offset   85 233
     drawmethod alpha 1
     frame    data/chars/shun/special/shun_aura/aura1.png
     frame    data/chars/shun/special/shun_aura/aura2.png

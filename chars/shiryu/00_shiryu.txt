@@ -780,6 +780,7 @@ anim    death
     frame    data/chars/shiryu/death11.png
     frame    data/chars/shiryu/death12.png
     delay    200
+    offset   114 126
     frame    data/chars/shiryu/death13.png
 
 

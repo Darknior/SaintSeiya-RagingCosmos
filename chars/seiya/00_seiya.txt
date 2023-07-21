@@ -840,6 +840,7 @@ anim    death
     frame    data/chars/seiya/death4.png
     frame    data/chars/seiya/death5.png
     delay    200
+    offset   114 108
     frame    data/chars/seiya/death6.png
 
 

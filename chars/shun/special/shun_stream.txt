@@ -2,9 +2,6 @@ name	shun_stream
 type	none
 shadow	0
 remove 0
-setlayer 99
-antigravity 100
-lifespan  6
 animationscript		data/scripts/escript.c
 
 anim	idle

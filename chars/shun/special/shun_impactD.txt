@@ -1,12 +1,10 @@
 name	shun_impactD
 type	none
 shadow	0
-setlayer 778
-antigravity 100
-animationscript	data/scripts/player.c
+
 
 anim	idle
-	loop	1
+	loop	0
 	delay	8
 	offset	42 54
 	drawmethod alpha 1
@@ -19,6 +17,4 @@ anim	idle
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-5.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-6.png
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-7.png
-	frame	data/chars/shun/special/shun_impactD/shun_impactD-8.png
-   @cmd suicide
 	frame	data/chars/shun/special/shun_impactD/shun_impactD-8.png

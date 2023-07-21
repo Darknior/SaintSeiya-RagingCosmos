@@ -649,7 +649,7 @@ anim    runjump
     frame    data/chars/hyoga/forwardjump9.png
     frame    data/chars/hyoga/jump11.png
 
-anim    jump    # Saut Statique
+anim jump    # Saut Statique
     summonframe  0 0 0 0
     subentity    round_dust
     delay    8
@@ -668,23 +668,23 @@ anim    jump    # Saut Statique
     frame    data/chars/hyoga/jump10.png
     frame    data/chars/hyoga/jump11.png
 
-anim    forwardjump # Saut vers l'avant
+anim forwardjump # Saut vers l'avant
     summonframe  0 0 0 0
     subentity    round_dust
-    delay    6
+    delay    8
     offset   55 140
     bbox     21 14 51 97
     sound    data/chars/hyoga/sounds/06-jump1.wav
-    frame    data/chars/hyoga/jump11.png
-    frame    data/chars/hyoga/forwardjump1.png
-    frame    data/chars/hyoga/forwardjump2.png
-    frame    data/chars/hyoga/forwardjump3.png
-    frame    data/chars/hyoga/forwardjump4.png
-    frame    data/chars/hyoga/forwardjump5.png
-    frame    data/chars/hyoga/forwardjump6.png
-    frame    data/chars/hyoga/forwardjump7.png
-    frame    data/chars/hyoga/forwardjump8.png
-    frame    data/chars/hyoga/forwardjump9.png
+    frame    data/chars/hyoga/jump1.png
+    frame    data/chars/hyoga/jump2.png
+    frame    data/chars/hyoga/jump3.png
+    frame    data/chars/hyoga/jump4.png
+    frame    data/chars/hyoga/jump5.png
+    frame    data/chars/hyoga/jump6.png
+    frame    data/chars/hyoga/jump7.png
+    frame    data/chars/hyoga/jump8.png
+    frame    data/chars/hyoga/jump9.png
+    frame    data/chars/hyoga/jump10.png
     frame    data/chars/hyoga/jump11.png
 
 anim    jumpdelay   # Animation de saut intermédiaire
@@ -867,6 +867,7 @@ anim    death
     frame    data/chars/hyoga/death18.png
     frame    data/chars/hyoga/death19.png
     delay    200
+    offset   42 143
     frame    data/chars/hyoga/death20.png
 
 
