@@ -71,10 +71,14 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
+load june_vine
+load june_whip
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/june/palettes/icon1.png 0
+icon         data/chars/june/palettes/icon1.png
+iconpain         data/chars/june/palettes/iconpain.png
+icondie         data/chars/june/palettes/icondie.png
 palette      data/chars/june/palettes/palette1.png
 #remap       data/chars/june/palettes/palettes/palette1.png  # 14 Possible MAX
 
@@ -184,8 +188,7 @@ anim run
     delay    10
     offset    53 124
     bbox 32 28 51 97
-    spawnframe  0 80 10 0
-    subentity    dash_dustB
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
     frame    data/chars/june/run6.png
     frame    data/chars/june/run1.png
     frame    data/chars/june/run2.png
@@ -383,13 +386,13 @@ anim special2 # Vine Prison
     delay    15
     offset    96 124
     sound data/chars/june/sounds/01-multi2.wav
-    followanim 1
-    followcond 2
+    range     80 150
+    rangea     0 100
     energycost  10 1 0
     hitflash flashbig
     frame    data/chars/june/special21.png
     frame    data/chars/june/special22.png
-    attack5 38 46 250 79 30 0 0 0 5 12
+    @cmd    shooter "june_whip" 0 80 0 2 0 0
     frame    data/chars/june/special23.png
     frame    data/chars/june/special24.png
     frame    data/chars/june/special25.png
@@ -428,13 +431,11 @@ anim freespecial2 # Vine Prison
     sound data/chars/june/sounds/01-multi2.wav
     range     80 150
     rangea     0 100
-    followanim 1
-    followcond 2
     energycost  10 1 0
     hitflash flashbig
     frame    data/chars/june/special21.png
     frame    data/chars/june/special22.png
-    attack5 38 46 250 79 30 0 0 0 5 12
+    @cmd    shooter "june_whip" 0 80 0 2 0 0
     frame    data/chars/june/special23.png
     frame    data/chars/june/special24.png
     frame    data/chars/june/special25.png

@@ -297,6 +297,9 @@ know    tremi_skull       data/chars/tremi/special/tremi_skull.txt
 know    tremi_diagonal_arrows      data/chars/tremi/special/tremi_diagonal_arrows.txt
 load    tremi_block      data/chars/tremi/special/tremi_block.txt
 
+know    june_whip     data/chars/june/special/june_whip.txt
+know    june_vine     data/chars/june/special/june_vine.txt
+
 know    sirius_ray         data/chars/sirius/special/sirius_ray.txt
 
 know    asterion_clone     data/chars/asterion/special/asterion_clone.txt

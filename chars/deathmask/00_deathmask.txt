@@ -76,7 +76,6 @@ load deathmask_claw
 load deathmask_constellation
 load deathmask_circles
 load deathmask_thunder
-load deathmask
 load deathmask_spirit
 load aldebaran_super_lights
 load aldebaran_block

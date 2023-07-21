@@ -1,0 +1,12 @@
+name	june_vine
+type	none
+shadow	0
+antigravity 100
+
+anim	idle
+	loop	0
+	delay	90
+	offset	82 130
+	frame	data/chars/june/special/june_vine/vine1.png
+	frame	data/chars/june/special/june_vine/vine2.png
+	frame	data/chars/june/special/june_vine/vine3.png
