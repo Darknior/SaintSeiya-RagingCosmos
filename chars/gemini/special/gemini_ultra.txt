@@ -1,7 +1,6 @@
 name	gemini_ultra
 type	none
 shadow	0
-layer 546
 antigravity 100
 animationscript	data/scripts/player.c
 
