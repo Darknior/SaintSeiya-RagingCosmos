@@ -5,6 +5,8 @@ remove 0
 shadow	0
 animationscript data/scripts/player.c
 
+palette data/chars/june/special/june_vine/vine1.png
+
 anim	idle
 	followanim 1
 	followcond 1
