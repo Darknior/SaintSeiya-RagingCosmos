@@ -89,7 +89,9 @@ load blue_swing
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/aldebaran/palettes/icon1.png 0
+icon         data/chars/aldebaran/palettes/icon1.png
+iconpain         data/chars/aldebaran/palettes/iconpain.png
+icondie         data/chars/aldebaran/palettes/icondie.png
 palette      data/chars/aldebaran/palettes/palette1.png
 #remap       data/chars/aldebaran/palettes/palettes/palette1.png  # 14 Possible MAX
 
@@ -161,6 +163,21 @@ anim idle
     frame    data/chars/aldebaran/idle3.png
     frame    data/chars/aldebaran/idle4.png
     frame    data/chars/aldebaran/idle5.png
+    
+anim idle2
+    range 0 200
+    loop    1
+    delay    25
+    offset    43 159
+    bbox 10 6 50 151
+    frame    data/chars/aldebaran/sleep7.png
+    frame    data/chars/aldebaran/sleep8.png
+    frame    data/chars/aldebaran/sleep9.png
+    frame    data/chars/aldebaran/sleep10.png
+    frame    data/chars/aldebaran/sleep11.png
+    frame    data/chars/aldebaran/sleep12.png
+    frame    data/chars/aldebaran/sleep13.png
+    frame    data/chars/aldebaran/sleep14.png
 
 anim sleep
     loop    1
@@ -251,9 +268,7 @@ anim runattack # Attaque en courant
 	 quakeframe 1 7 4
 	 bbox 13 14 65 150
     frame    data/chars/aldebaran/runattack1.png 1 7 4
-    summonframe 0 0 0 0 0
-    subentity aldebaran_rundust
-    unsummonframe 20
+    @cmd     spawnbind "aldebaran_rundust" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/aldebaran/runattack2.png
     frame    data/chars/aldebaran/runattack3.png
 	 attack2 60 40 55 83 20 1 0 0 5 20
@@ -281,9 +296,7 @@ anim freespecial # Attaque en courant
     sound data/chars/aldebaran/sounds/10-dash.wav
 	 quakeframe 1 7 4
     frame    data/chars/aldebaran/runattack1.png
-    summonframe 0 0 0 0 0
-    subentity aldebaran_rundust
-    unsummonframe 20
+    @cmd     spawnbind "aldebaran_rundust" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/aldebaran/runattack2.png
     frame    data/chars/aldebaran/runattack3.png
     attack2 60 40 55 83 20 1 0 0 5 20
@@ -481,20 +494,20 @@ anim special # Earthquake
     energycost  20 1 0
     sound data/chars/aldebaran/sounds/02-swing.wav
     hitflash blue_swing
-    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/aldebaran/attack60.png
-    @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/aldebaran/attack61.png
     frame    data/chars/aldebaran/attack62.png
     frame    data/chars/aldebaran/attack63.png
     attack5 -28 -12 120 180 30 1 0 0 5 12
     dropv     8.0 3 0
-    @cmd     spawnbind "aldebaran_fist" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_fist" "ANI_IDLE" 0 10 0 1 0
     sound data/chars/aldebaran/sounds/09-earthquake2.wav
     frame    data/chars/aldebaran/attack64.png
     delay    15
     frame    data/chars/aldebaran/attack65.png
-    @cmd     spawnbind "aldebaran_rock" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_rock" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/aldebaran/attack66.png
     frame    data/chars/aldebaran/attack65.png
     frame    data/chars/aldebaran/attack66.png
@@ -551,7 +564,7 @@ anim special2 #Attaque spéciale Punch combo
     energycost 20 2 5
     delay    6
     offset    42 160
-    @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 10 0 1 0
     sound data/chars/aldebaran/sounds/02-swing.wav
     attack1 59 30 55 35 5 0 0 0 12 12
     frame    data/chars/aldebaran/special21.png
@@ -600,7 +613,7 @@ anim riseattack #Attaque spéciale Punch combo
     #energycost 20 2 5
     delay    6
     offset    42 160
-    @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 10 0 1 0
     sound data/chars/aldebaran/sounds/02-swing.wav
     attack1 59 30 55 35 5 0 0 0 12 12
     frame    data/chars/aldebaran/special21.png
@@ -647,7 +660,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
     fastattack 1
     energycost  50 1 0
     bbox 2 17 60 150
-    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 0 0
     @cmd     spawnScreen "camus_lights" 0 0 0 0
     sound data/chars/aldebaran/sounds/78-cosmos.wav
     frame    data/chars/aldebaran/special40.png
@@ -667,7 +680,7 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
 	bbox 0 0 0 0
     sound data/chars/aldebaran/sounds/06-ultraGH.wav
     frame    data/chars/aldebaran/special51.png
-    @cmd     spawnbind "aldebaran_ultraGH" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_ultraGH" "ANI_IDLE" 0 50 0 1 0
     delay   5
     attack1 0
     frame    data/chars/aldebaran/special55.png

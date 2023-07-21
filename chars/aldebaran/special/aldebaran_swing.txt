@@ -1,18 +1,15 @@
 name	aldebaran_swing
 type	none
 shadow	0
-setlayer 157
-antigravity 100
-animationscript	data/scripts/player.c
 
 anim	idle
-	loop	1
+	loop	0
 	delay	8
 	offset	95 90
-        drawmethod  alpha 1
-        drawmethod  scale 0.3 0.3
-        drawmethod  channel 0.53
-        sound data/chars/aldebaran/sounds/11-crush.wav
+   drawmethod  alpha 1
+   drawmethod  scale 0.3 0.3
+   drawmethod  channel 0.53
+   sound data/chars/aldebaran/sounds/11-crush.wav
 	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-0.png
 	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-1.png
 	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-2.png
@@ -22,5 +19,4 @@ anim	idle
 	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-6.png
 	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-7.png
 	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-8.png
-	@cmd suicide
-	frame	data/chars/aldebaran/special/aldebaran_swing/aldebaran_swing-8.png
+

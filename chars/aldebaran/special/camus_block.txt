@@ -1,16 +1,14 @@
 name	camus_block
 type	none
 shadow	0
-setlayer 157
-antigravity 100
-animationscript	data/scripts/player.c
+
 
 anim	idle
-	loop	1
+	loop	0
 	delay	10
 	offset	5 31
-        drawmethod  alpha 1
-        drawmethod  channel 0.53
+   drawmethod  alpha 1
+   drawmethod  channel 0.53
 	frame	data/chars/camus/special/camus_block/camus_block-0.png
 	frame	data/chars/camus/special/camus_block/camus_block-1.png
 	frame	data/chars/camus/special/camus_block/camus_block-2.png
@@ -28,5 +26,4 @@ anim	idle
 	frame	data/chars/camus/special/camus_block/camus_block-14.png
 	frame	data/chars/camus/special/camus_block/camus_block-15.png
 	frame	data/chars/camus/special/camus_block/camus_block-16.png
-	@cmd suicide
-	frame	data/chars/camus/special/camus_block/camus_block-16.png
+

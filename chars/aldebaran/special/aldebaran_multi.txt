@@ -1,16 +1,15 @@
 name	aldebaran_multi
 type	none
 shadow	0
-setlayer 150
 antigravity 100
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_gold.c
 
 anim	idle
-	loop	1
+	loop	0
 	delay	10
 	offset	45 145
-        drawmethod  alpha 1
+   drawmethod  alpha 1
 	quakeframe 1 8 6
 	frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-0.png
 	frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-1.png
@@ -27,7 +26,7 @@ anim	idle
 	frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-12.png
 	frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-13.png
 	frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-14.png
-    frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-15.png
+   frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-15.png
 	frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-16.png
 	frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-17.png
 	frame	data/chars/aldebaran/special/aldebaran_multi/aldebaran_multi-18.png

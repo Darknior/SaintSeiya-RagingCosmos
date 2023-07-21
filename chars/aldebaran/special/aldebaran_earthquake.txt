@@ -2,7 +2,6 @@ name	aldebaran_earthquake
 type	none
 shadow	0
 remove 0
-setlayer 999
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -11,8 +10,8 @@ anim	idle
 	delay	6
 	offset	193 213
 	drawmethod scale 1 1
-        drawmethod  alpha 1
-        drawmethod  channel 0.99
+   drawmethod  alpha 1
+   drawmethod  channel 0.99
 	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake0.png
 	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake1.png
 	frame	data/chars/aldebaran/special/aldebaran_earthquake/aldebaran_earthquake2.png

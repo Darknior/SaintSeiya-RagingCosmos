@@ -2,16 +2,15 @@ name	aldebaran_fist
 type	none
 shadow	0
 remove 0
-setlayer 999
 antigravity 100
 animationscript	data/scripts/player.c
 
 anim	idle
-	loop	1
+	loop	0
 	delay	10
 	offset	170 326
 	drawmethod scale 1 1
-        drawmethod  alpha 1
+   drawmethod  alpha 1
 	frame	data/chars/aldebaran/special/aldebaran_fist/aldebaran_fist0.png
 	frame	data/chars/aldebaran/special/aldebaran_fist/aldebaran_fist1.png
 	frame	data/chars/aldebaran/special/aldebaran_fist/aldebaran_fist2.png

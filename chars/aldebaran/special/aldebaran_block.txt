@@ -1,7 +1,6 @@
 name	aldebaran_block
 type	none
 shadow	0
-setlayer 157
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -9,8 +8,8 @@ anim	idle
 	loop	1
 	delay	5
 	offset	7 26
-        drawmethod  alpha 1
-        drawmethod  channel 0.53
+   drawmethod  alpha 1
+   drawmethod  channel 0.53
 	frame	data/chars/aldebaran/special/aldebaran_block/aldebaran_block-0.png
 	frame	data/chars/aldebaran/special/aldebaran_block/aldebaran_block-1.png
 	frame	data/chars/aldebaran/special/aldebaran_block/aldebaran_block-2.png

@@ -1,7 +1,6 @@
 name	aldebaran_aura
 type	none
 shadow	0
-setlayer 778
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -34,5 +33,5 @@ anim	idle
 	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-9.png
 	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-10.png
 	frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-11.png
-        @cmd suicide
-        frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-11.png
+   @cmd suicide
+   frame	data/chars/aldebaran/special/aldebaran_aura/aldebaran_aura-11.png
