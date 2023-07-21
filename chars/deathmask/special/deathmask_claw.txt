@@ -1,9 +1,8 @@
 name	deathmask_claw
 type	none
 shadow	0
-setlayer 333
 antigravity 100
-lifespan 1.5
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
@@ -26,3 +25,5 @@ anim	idle
 	frame	data/chars/deathmask/special/deathmask_claw/deathmask_claw12.png
 	frame	data/chars/deathmask/special/deathmask_claw/deathmask_claw13.png
 	frame	data/chars/deathmask/special/deathmask_claw/deathmask_claw14.png
+   @cmd suicide
+   frame	data/chars/deathmask/special/deathmask_claw/deathmask_claw14.png

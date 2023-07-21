@@ -1,9 +1,8 @@
 name	deathmask_melee
 type	none
 shadow	0
-setlayer 555
 antigravity 100
-lifespan 2
+
 
 anim	idle
 	loop	0
@@ -33,3 +32,5 @@ anim	idle
 	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee20.png
 	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee21.png
 	frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee22.png
+   @cmd suicide
+   frame	data/chars/deathmask/special/deathmask_melee/deathmask_melee22.png
