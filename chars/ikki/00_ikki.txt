@@ -247,6 +247,19 @@ anim idle
     frame    data/chars/ikki/idle5.png
     frame    data/chars/ikki/idle6.png
     
+anim idle2
+    range 0 200
+    loop 1
+    delay    16
+    offset   64 127
+    bbox     51 9 30 120
+    frame    data/chars/ikki/idle10.png
+    frame    data/chars/ikki/idle11.png
+    frame    data/chars/ikki/idle12.png
+    frame    data/chars/ikki/idle13.png
+    frame    data/chars/ikki/idle14.png
+    frame    data/chars/ikki/idle15.png
+    
 anim faint
     loop 1
     delay    12

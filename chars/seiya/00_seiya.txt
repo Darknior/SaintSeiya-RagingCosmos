@@ -226,7 +226,32 @@ anim idle
     frame    data/chars/seiya/idle10.png
     frame    data/chars/seiya/idle11.png
     
-anim faint
+anim idle2
+    range 0 200
+    loop     1
+    delay    20
+    offset   39 117
+    bbox     29 6 30 112
+    frame    data/chars/seiya/idle21.png
+    frame    data/chars/seiya/idle22.png
+    frame    data/chars/seiya/idle23.png
+    
+anim cant # Plus assez de mp
+    jugglecost  1
+    delay    6
+    offset   45 119
+    bbox     36 7 30 112
+    hitflash flash
+    frame    data/chars/seiya/attack1.png
+    attack1  62 21 67 26 10 0 0 0 12 20
+    frame    data/chars/seiya/attack2.png
+    attack1  62 21 67 26 10 0 0 0 12 20
+    frame    data/chars/seiya/attack3.png
+    delay    4
+    frame    data/chars/seiya/attack2.png
+    attack1  0
+    
+anim faint # Quand il reste 1/4 de hp
     loop     1
     delay    8
     offset   45 112
@@ -305,6 +330,19 @@ anim walk
     frame    data/chars/seiya/walk5.png
     frame    data/chars/seiya/walk6.png
     frame    data/chars/seiya/walk7.png
+    
+anim walk2
+    range 0 400
+    loop     1
+    delay    14
+    offset   21 128
+    bbox     10 18 30 112
+    frame    data/chars/seiya/walk11.png
+    frame    data/chars/seiya/walk12.png
+    frame    data/chars/seiya/walk13.png
+    frame    data/chars/seiya/walk14.png
+    frame    data/chars/seiya/walk15.png
+    frame    data/chars/seiya/walk16.png
 
 anim up
     loop     1

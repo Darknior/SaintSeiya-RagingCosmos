@@ -235,6 +235,19 @@ anim    idle
     frame    data/chars/hyoga/idle6.png
     frame    data/chars/hyoga/idle7.png
     
+anim    idle2
+    range 0 200
+    loop     1
+    delay    20
+    offset   45 123
+    bbox     16 14 30 112
+    frame    data/chars/hyoga/idle11.png
+    frame    data/chars/hyoga/idle12.png
+    frame    data/chars/hyoga/idle13.png
+    frame    data/chars/hyoga/idle12.png
+
+
+    
 anim    faint
     loop     1
     delay    8
@@ -321,6 +334,21 @@ anim    turn
     frame    data/chars/hyoga/turn.png
 
 anim    walk
+    loop     1
+    delay    14
+    offset   47 126
+    bbox     35 14 30 112
+    frame    data/chars/hyoga/walk21.png
+    frame    data/chars/hyoga/walk22.png
+    frame    data/chars/hyoga/walk23.png
+    frame    data/chars/hyoga/walk24.png
+    frame    data/chars/hyoga/walk25.png
+    frame    data/chars/hyoga/walk26.png
+    frame    data/chars/hyoga/walk27.png
+    frame    data/chars/hyoga/walk28.png
+    
+anim    walk2
+    range 0 400
     loop     1
     delay    14
     offset   47 140

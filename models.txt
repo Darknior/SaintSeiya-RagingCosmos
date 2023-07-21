@@ -7,6 +7,8 @@ spdirection  1 1 1 1      #facing direction of players in select menu
 #versusdamage 1           #Sets whether players can hit each other or not
 maxattacks 90
 maxattacktypes 90
+maxidles 10
+maxwalks 10
 maxfollows 50
 maxfreespecials 15
 

@@ -204,6 +204,19 @@ anim    idle
     frame    data/chars/shiryu/idle3.png
     frame    data/chars/shiryu/idle2.png
     
+anim    idle2
+    range 0 200
+    loop     1
+    delay    20
+    offset   40 128
+    bbox     31 13 30 115
+    frame    data/chars/shiryu/idle5.png
+    frame    data/chars/shiryu/idle6.png
+    frame    data/chars/shiryu/idle7.png
+    frame    data/chars/shiryu/idle8.png
+    frame    data/chars/shiryu/idle7.png
+    frame    data/chars/shiryu/idle6.png
+    
 anim    faint
     loop     1
     delay    13

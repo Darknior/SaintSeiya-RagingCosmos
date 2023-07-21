@@ -208,6 +208,21 @@ anim idle
     frame    data/chars/shun/idle3.png
     frame    data/chars/shun/idle2.png
     
+anim idle2
+    range 0 200
+    loop     1
+    delay    17
+    offset   32 116
+    bbox     -1 11 51 107
+    frame    data/chars/shun/idle21.png
+    frame    data/chars/shun/idle22.png
+    frame    data/chars/shun/idle23.png
+    frame    data/chars/shun/idle24.png
+    frame    data/chars/shun/idle25.png
+    frame    data/chars/shun/idle24.png
+    frame    data/chars/shun/idle23.png
+    frame    data/chars/shun/idle22.png
+    
 anim faint
     loop     1
     delay    13
