@@ -1,8 +1,7 @@
 name	aiolia_lionstar
 type	none
 candamage player
-shadow	0
-setlayer 100
+shadow 4
 antigravity 100
 nolife 1
 remove 0

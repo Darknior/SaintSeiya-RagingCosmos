@@ -43,7 +43,7 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aimove      chasez       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression  0           # Valeur positive + agressif / valeur negative - aggressif
 
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
@@ -87,7 +87,9 @@ load aldebaran_aura
 
 #-- PALETTES --------------------------------------------------------
 
-icon        data/chars/aiolia/palettes/icon1.png 0
+icon        data/chars/aiolia/palettes/icon1.png
+iconpain        data/chars/aiolia/palettes/iconpain.png
+icondie        data/chars/aiolia/palettes/icondie.png
 palette     data/chars/aiolia/palettes/palette1.png
 #remap      data/chars/aiolia/palettes/palette1.png  # 14 Possible MAX
 
@@ -233,20 +235,19 @@ anim walk
     frame    data/chars/aiolia/walk6.png
 
 anim run
-    loop    1 1
+    loop    1
     delay    15
     offset    51 136
     bbox 37 19 38 117
-    summonframe  0 0 0 0
-    subentity    dash_dustB
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
     frame    data/chars/aiolia/run5.png
     frame    data/chars/aiolia/run1.png
     frame    data/chars/aiolia/run2.png
     frame    data/chars/aiolia/run3.png
     frame    data/chars/aiolia/run4.png
-    frame    data/chars/aiolia/run5.png
 
 anim runattack # Attaque en courant
+    range 100 200
     delay    10
     offset    50 136
     hitflash aldebaran_swing
@@ -255,7 +256,7 @@ anim runattack # Attaque en courant
     @cmd    dasher 3.5 0 0 1
     spawnframe  0 80 10 0
     subentity    dash_dust
-    @cmd     spawnbind "aiolia_dash" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aiolia_dash" "ANI_IDLE" 0 10 0 1 0
 	 bbox 25 18 45 120
     frame    data/chars/aiolia/runattack1.png
     frame    data/chars/aiolia/runattack2.png
@@ -380,7 +381,7 @@ anim jumpattack # Attaque sautée statique
     frame    data/chars/aiolia/jumpattack1.png
     dropv 4.0 1.0 0.0
     attack1 62 51 75 26 10 1 0 0 5 12
-	dropv    6.0 2.0 0.0
+	 dropv    6.0 2.0 0.0
     frame    data/chars/aiolia/jumpattack2.png
     attack1 0
 
@@ -420,6 +421,7 @@ anim fall
     frame    data/chars/aiolia/fall3.png
     frame    data/chars/aiolia/fall4.png
     bbox 21 100 120 40
+    offset    124 135
     frame    data/chars/aiolia/fall5.png
 
 anim death
@@ -429,7 +431,9 @@ anim death
     frame    data/chars/aiolia/fall2.png
     frame    data/chars/aiolia/fall3.png
     frame    data/chars/aiolia/fall4.png
+    offset    124 130
     frame    data/chars/aiolia/fall5.png
+    offset    124 135
     frame    data/chars/aiolia/rise1.png
     frame    data/chars/aiolia/rise2.png
     frame    data/chars/aiolia/rise3.png
@@ -485,11 +489,12 @@ anim    block
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
 anim special # Défense spéciale Lion homerun
+    range     50 100
     delay    10
     offset    134 184
     sound data/chars/aiolia/sounds/04-swing.wav
     hitflash flashbig
-    @cmd     spawnbind "aiolia_explosion" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "aiolia_explosion" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/aiolia/melee1.png
     sound data/chars/aiolia/sounds/15-explosion.wav
     frame    data/chars/aiolia/melee2.png
@@ -515,10 +520,9 @@ anim freespecial # Attaque en courant
     hitflash aldebaran_swing
     sound data/chars/aiolia/sounds/01-roar.wav
     forcedirection -1
-    range     80 175
-    rangea     0 100
+    range     100 200
     @cmd    dasher 3.5 0 0 1
-    @cmd     spawnbind "aiolia_dash" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aiolia_dash" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/aiolia/runattack1.png
     frame    data/chars/aiolia/runattack2.png
     frame    data/chars/aiolia/runattack3.png
@@ -536,19 +540,18 @@ anim freespecial # Attaque en courant
 anim freespecial2 # Défense spéciale Lion homerun
     delay    10
     offset    134 184
-    range     50 80
-    rangea     0 100
+    range     50 100
     hitflash flashbig
-    @cmd     spawnbind "aiolia_explosion" "ANI_IDLE" 0 0 0 0 0
-	bbox 109 70 50 120
+    @cmd     spawnbind "aiolia_explosion" "ANI_IDLE" 0 10 0 0 0
+	 bbox 109 70 50 120
     frame    data/chars/aiolia/melee1.png
     sound data/chars/aiolia/sounds/15-explosion.wav
     frame    data/chars/aiolia/melee2.png
     sound data/chars/aiolia/sounds/01.wav
-	attack5 74 1 120 180 30 1 0 0 5 12
+	 attack5 74 1 120 180 30 1 0 0 5 12
     dropv     8.0 3 0
     delay    40
-	bbox 0 0 0 0
+	 bbox 0 0 0 0
     frame    data/chars/aiolia/melee3.png
     delay    10
     frame    data/chars/aiolia/melee4.png
@@ -558,16 +561,15 @@ anim freespecial2 # Défense spéciale Lion homerun
     frame    data/chars/aiolia/melee7.png
     delay    20
     frame    data/chars/aiolia/melee8.png
-	attack5 0
+	 attack5 0
     frame    data/chars/aiolia/melee8.png
 
 anim freespecial3 #Lion star shot
     fastattack 1
     forcedirection -1
-    range 200 400
+    range 200 800
     delay    10
     offset    35 128
-    energycost  20 1 0
     bbox 13 7 50 120
     frame    data/chars/aiolia/special21.png
     frame    data/chars/aiolia/special22.png
@@ -584,15 +586,15 @@ anim freespecial6 #ULTRA Lightning Plasma
     fastattack 1
     delay    10
     offset    29 128
-        hitflash flashbig
+    hitflash flashbig
     fastattack 1
     spawnframe 0 0 0 0 1
     subentity aiolia_constellation
     energycost  50 1 0
     sound data/chars/deathmask/78-cosmos.wav
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
-    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
-	bbox 0 9 50 120
+    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
+	 bbox 0 9 50 120
     frame    data/chars/aiolia/special1.png
     sound data/chars/aiolia/sounds/02-plasma1.wav
     frame    data/chars/aiolia/special2.png
@@ -600,88 +602,89 @@ anim freespecial6 #ULTRA Lightning Plasma
     frame    data/chars/aiolia/special4.png
     delay   5
     frame    data/chars/aiolia/special5.png
-	attack1 0
+	 attack1 0
     @cmd spawnScreen "aiolia_plasma" 0 0 0 0
-	bbox 0 0 0 0
+	 bbox 0 0 0 0
     frame    data/chars/aiolia/special6.png
-	attack1 0 -50 800 380 12 0 0 0 12 480
+	 attack1 0 -50 800 380 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 -25 800 400 12 0 0 0 12 480
+	 attack1 0 -25 800 400 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 0 800 420 12 0 0 0 12 480
+	 attack1 0 0 800 420 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 25 800 440 12 0 0 0 12 480
+	 attack1 0 25 800 440 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 50 800 440 12 0 0 0 12 480
+	 attack1 0 50 800 440 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 75 800 480 12 0 0 0 12 480
+	 attack1 0 75 800 480 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 -50 800 400 12 0 0 0 12 480
+	 attack1 0 -50 800 400 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 -25 800 420 12 0 0 0 12 480
+	 attack1 0 -25 800 420 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 0 800 440 12 0 0 0 12 480
+	 attack1 0 0 800 440 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special6.png
-	attack1 0 25 800 460 12 0 0 0 12 480
+	 attack1 0 25 800 460 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 50 800 480 12 0 0 0 12 480
+	 attack1 0 50 800 480 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 75 800 400 12 0 0 0 12 480
+	 attack1 0 75 800 400 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 -50 800 420 12 0 0 0 12 480
+	 attack1 0 -50 800 420 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 -25 800 440 12 0 0 0 12 480
+	 attack1 0 -25 800 440 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 0 800 460 12 0 0 0 12 480
+	 attack1 0 0 800 460 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 25 800 480 12 0 0 0 12 480
+	 attack1 0 25 800 480 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 50 800 400 12 0 0 0 12 480
+	 attack1 0 50 800 400 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 75 800 420 12 0 0 0 12 480
+	 attack1 0 75 800 420 12 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
-	attack1 0 -50 800 440 10 1 0 0 12 480
+	 attack1 0 -50 800 440 10 1 0 0 12 480
     frame    data/chars/aiolia/special7.png
-	attack1 0
+	 attack1 0
     frame    data/chars/aiolia/special8.png
 
-anim riseattack #Attaque spéciale Punch combo
+anim freespecial4 #Attaque spéciale Punch combo
+    range 0 50
     fastattack 1
     delay    5
     offset    28 128
@@ -690,13 +693,12 @@ anim riseattack #Attaque spéciale Punch combo
     hitflash flashbig
     summonframe 0 0 0 0 1
     subentity aiolia_multihit
-    energycost  20 1 0
     attack1 -12 16 200 30 12 0 0 0 12 12
     frame    data/chars/aiolia/attack21.png
     attack1 0
     frame    data/chars/aiolia/attack22.png
     attack1 -12 48 200 30 12 0 0 0 12 12
-    @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/aiolia/attack23.png
     attack1 0
     delay    5
