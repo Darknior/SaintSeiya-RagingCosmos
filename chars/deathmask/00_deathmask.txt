@@ -43,7 +43,7 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aimove      chasez       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression  0           # Valeur positive + agressif / valeur negative - aggressif
 
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
@@ -65,7 +65,7 @@ ondrawscript        data/scripts/lifebar.c              # Barre de vie directeme
 
 script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
 animationscript     data/scripts/player.c               #
-didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite
+didhitscript        data/scripts/didhit/tint_poison.c     # Effets de teinte sur sprite
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 
@@ -73,6 +73,7 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 load deathmask_hands
 load deathmask_claw
+load deathmask_melee
 load deathmask_constellation
 load deathmask_circles
 load deathmask_thunder
@@ -167,6 +168,8 @@ anim victory
     frame    data/chars/deathmask/victory5.png
     frame    data/chars/deathmask/victory6.png
     frame    data/chars/deathmask/victory7.png
+    
+#// Walk/Run animations /////////////////////////////////////////////////
 
 anim turn
     delay    12
@@ -203,7 +206,6 @@ anim walk
     frame    data/chars/deathmask/oldwalk3.png
     frame    data/chars/deathmask/oldwalk2.png
 
-
 anim run
     loop    1
     delay    15
@@ -218,122 +220,7 @@ anim run
     frame    data/chars/deathmask/run6.png
     frame    data/chars/deathmask/run7.png
 
-anim runattack # Attaque en courant
-    delay    7
-    offset    46 130
-    summonframe 3 0 0 0
-    subentity deathmask_claw
-    unsummonframe 17
-    bbox 32 16 38 114
-    forcedirection -1
-    @cmd    dasher 3.5 0 0 1
-    frame    data/chars/deathmask/runattack1.png
-    frame    data/chars/deathmask/runattack2.png
-    attack2 60 16 55 83 20 1 0 0 5 12
-    dot 0 800 1 10 50
-    dropv 4.0 2.0 0.0
-    frame    data/chars/deathmask/runattack3.png
-    sound data/chars/deathmask/sounds/10-slash.wav
-    frame    data/chars/deathmask/runattack3.png
-    frame    data/chars/deathmask/runattack4.png
-    frame    data/chars/deathmask/runattack4.png
-    attack2 0
-    @cmd    dasher 0 0 0 1
-    delay    12
-    frame    data/chars/deathmask/runattack2.png
-    frame    data/chars/deathmask/runattack1.png
-
-anim freespecial # Attaque en courant
-    delay    7
-    offset    46 130
-    summonframe 3 0 0 0
-    subentity deathmask_claw
-    unsummonframe 17
-    bbox 32 16 38 114
-    forcedirection -1
-    range     80 150
-    rangea     0 100
-    @cmd    dasher 3.5 0 0 1
-    frame    data/chars/deathmask/runattack1.png
-    frame    data/chars/deathmask/runattack2.png
-    attack2 60 16 55 83 20 1 0 0 5 12
-    dot 0 800 1 10 50
-    dropv 4.0 2.0 0.0
-    frame    data/chars/deathmask/runattack3.png
-    sound data/chars/deathmask/sounds/10-slash.wav
-    frame    data/chars/deathmask/runattack3.png
-    frame    data/chars/deathmask/runattack4.png
-    frame    data/chars/deathmask/runattack4.png
-    attack2 0
-    @cmd    dasher 0 0 0 1
-    delay    12
-    frame    data/chars/deathmask/runattack2.png
-    frame    data/chars/deathmask/runattack1.png
-
-anim pain # Up
-    delay    10
-    offset    36 127
-    bbox 18 16 38 114
-    frame    data/chars/deathmask/pain1.png
-    frame    data/chars/deathmask/pain2.png
-    frame    data/chars/deathmask/pain3.png
-
-anim pain2 # Down
-    delay    15
-    offset    31 127
-    bbox 19 16 38 114
-    frame    data/chars/deathmask/pain21.png
-    frame    data/chars/deathmask/pain22.png
-
-anim fall
-    delay    -1000
-    offset    92 126
-    landframe 4
-    bbox 7 50 100 80
-    frame    data/chars/deathmask/fall1.png
-    frame    data/chars/deathmask/fall2.png
-    frame    data/chars/deathmask/fall3.png
-    frame    data/chars/deathmask/fall4.png
-    bbox 7 91 100 35
-    frame    data/chars/deathmask/fall5.png
-
-anim fall7
-    delay    -1000
-    offset    92 126
-    landframe 4
-    bbox 7 50 100 80
-    frame    data/chars/deathmask/fall1.png
-    frame    data/chars/deathmask/fall2.png
-    frame    data/chars/deathmask/fall3.png
-    frame    data/chars/deathmask/fall4.png
-    bbox 7 90 100 35
-    frame    data/chars/deathmask/fall5.png
-
-anim death
-    delay    10
-    offset    92 126
-    frame    data/chars/deathmask/fall1.png
-    frame    data/chars/deathmask/fall2.png
-    frame    data/chars/deathmask/fall3.png
-    frame    data/chars/deathmask/fall4.png
-    frame    data/chars/deathmask/fall5.png
-    offset    77 130
-    frame    data/chars/deathmask/rise1.png
-    frame    data/chars/deathmask/rise2.png
-    frame    data/chars/deathmask/rise3.png
-    frame    data/chars/deathmask/idle1.png
-    offset    37 169
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special2.png
-    @cmd spawnDialog "dialog_deathmask2" 200 100
-    frame    data/chars/deathmask/special2.png
-
-anim rise
-    offset    77 130
-    delay    10
-    frame    data/chars/deathmask/rise1.png
-    frame    data/chars/deathmask/rise2.png
-    frame    data/chars/deathmask/rise3.png
+#// Basic Attacks animations /////////////////////////////////////////////////
 
 anim attack1 # Attaque combo 1
     delay    5
@@ -399,6 +286,8 @@ anim attack5 # Attaque combo 5
     frame    data/chars/deathmask/attack55.png
     attack1 0
     frame    data/chars/deathmask/attack53.png
+    
+#// Jump animations /////////////////////////////////////////////////
 
 anim jump # Saut Statique
     delay    10
@@ -443,89 +332,83 @@ anim jumpattack # Attaque sautée statique
     frame    data/chars/deathmask/jumpattack4.png
     frame    data/chars/deathmask/jumpattack5.png
 
-anim special # Défense spéciale circles
-    delay    15
-    offset    37 169
-    sound data/chars/deathmask/sounds/07-ahah2.wav
-    summonframe 0 0 0 0
-    subentity deathmask_melee
-    unsummonframe 22
-    energycost  25 1 0
-    hitflash flashbig
-    bbox 9 29 50 140
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special1.png
-    delay 30
-    attack5 -28 -12 120 180 30 1 0 0 5 12
-    dropv 4.0 3.0 0.0
-    frame    data/chars/deathmask/special2.png
-    frame    data/chars/deathmask/special2.png
-    attack5 0
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special1.png
+#// Pain/Fall/Rise/Death animations /////////////////////////////////////////////////
 
-anim freespecial2 # Défense spéciale circles
-    delay    15
-    offset    37 169
-    sound data/chars/deathmask/sounds/07-ahah2.wav
-    summonframe 0 0 0 0
-    subentity deathmask_melee
-    unsummonframe 5
-    energycost  25 1 0
-    hitflash flashbig
-    bbox 9 29 50 140
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special1.png
-    delay 30
-    attack5 -28 -12 120 180 30 1 0 0 5 12
-    dropv 4.0 3.0 0.0
-    frame    data/chars/deathmask/special2.png
-    frame    data/chars/deathmask/special2.png
-    attack5 0
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special1.png
+anim pain # Up
+    delay    10
+    offset    36 127
+    bbox 18 16 38 114
+    frame    data/chars/deathmask/pain1.png
+    frame    data/chars/deathmask/pain2.png
+    frame    data/chars/deathmask/pain3.png
 
-anim special2 # Défense spéciale circles
+anim pain2 # Down
     delay    15
-    offset    37 169
-    sound data/chars/deathmask/sounds/07-ahah2.wav
-    summonframe 0 0 0 0
-    subentity deathmask_melee
-    unsummonframe 5
-    energycost  25 1 0
-    hitflash flashbig
-    bbox 9 29 50 140
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special1.png
-    delay 30
-    attack5 -28 -12 120 180 30 1 0 0 5 12
-    dropv 4.0 3.0 0.0
-    frame    data/chars/deathmask/special2.png
-    frame    data/chars/deathmask/special2.png
-    attack5 0
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special1.png
+    offset    31 127
+    bbox 19 16 38 114
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
 
-anim riseattack # Défense spéciale circles
-    delay    15
+anim fall
+    delay    -1000
+    offset    92 126
+    landframe 4
+    bbox 7 50 100 80
+    frame    data/chars/deathmask/fall1.png
+    frame    data/chars/deathmask/fall2.png
+    frame    data/chars/deathmask/fall3.png
+    frame    data/chars/deathmask/fall4.png
+    bbox 7 91 100 35
+    frame    data/chars/deathmask/fall5.png
+
+anim fall7
+    delay    -1000
+    offset    92 126
+    landframe 4
+    bbox 7 50 100 80
+    frame    data/chars/deathmask/fall1.png
+    frame    data/chars/deathmask/fall2.png
+    frame    data/chars/deathmask/fall3.png
+    frame    data/chars/deathmask/fall4.png
+    bbox 7 90 100 35
+    frame    data/chars/deathmask/fall5.png
+
+anim death
+    delay    10
+    offset    92 126
+    frame    data/chars/deathmask/fall1.png
+    frame    data/chars/deathmask/fall2.png
+    frame    data/chars/deathmask/fall3.png
+    frame    data/chars/deathmask/fall4.png
+    frame    data/chars/deathmask/fall5.png
+    offset    77 130
+    frame    data/chars/deathmask/rise1.png
+    frame    data/chars/deathmask/rise2.png
+    frame    data/chars/deathmask/rise3.png
+    frame    data/chars/deathmask/idle1.png
     offset    37 169
-    sound data/chars/deathmask/sounds/07-ahah2.wav
-    summonframe 0 0 0 0
-	 subentity deathmask_melee
-    unsummonframe 5
-    energycost  25 1 0
-    hitflash flashbig
-    bbox 9 29 50 140
     frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special1.png
-    delay 30
-    attack5 -28 -12 120 180 30 1 0 0 5 12
-    dropv 4.0 3.0 0.0
     frame    data/chars/deathmask/special2.png
+    @cmd spawnDialog "dialog_deathmask2" 200 100
     frame    data/chars/deathmask/special2.png
-    attack5 0
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special1.png
+
+anim rise
+    offset    77 130
+    delay    10
+    frame    data/chars/deathmask/rise1.png
+    frame    data/chars/deathmask/rise2.png
+    ## PARAMETERS: X, Y, Z, LIMIT
+    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
+    @cmd stunCounter -15 110 1 5
+    frame    data/chars/deathmask/rise3.png
+
+anim follow1 #STUN
+    offset    118 164
+    delay    300
+	 bbox 69 50 60 120
+    frame    data/chars/deathmask/rise3.png
+
+#// Block animations /////////////////////////////////////////////////
 
 anim    block
     offset    28 127
@@ -534,13 +417,94 @@ anim    block
     frame    data/chars/deathmask/block2.png
     frame    data/chars/deathmask/block3.png
 
+#-- ATTAQUES SPECIALES -------------------------------------------------------
+
+anim special # Defense circles (attaque lorsqu il est grab)
+    delay    15
+    offset    37 169
+    sound data/chars/deathmask/sounds/07-ahah2.wav
+    @cmd     spawnbind "deathmask_melee" "ANI_IDLE" 0 7 10 0 1
+    hitflash flashbig
+    bbox 9 29 50 140
+    frame    data/chars/deathmask/special1.png
+    frame    data/chars/deathmask/special1.png
+    delay 30
+    attack5 -28 -12 120 180 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/deathmask/special2.png
+    frame    data/chars/deathmask/special2.png
+    attack5 0
+    frame    data/chars/deathmask/special1.png
+    frame    data/chars/deathmask/special1.png
+    
+anim riseattack # Defense circles (attaque en se relevant)
+    delay    15
+    offset    37 169
+    sound data/chars/deathmask/sounds/07-ahah2.wav
+    @cmd     spawnbind "deathmask_melee" "ANI_IDLE" 0 7 10 0 1
+    hitflash flashbig
+    bbox 9 29 50 140
+    frame    data/chars/deathmask/special1.png
+    frame    data/chars/deathmask/special1.png
+    delay 30
+    attack5 -28 -12 120 180 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/deathmask/special2.png
+    frame    data/chars/deathmask/special2.png
+    attack5 0
+    frame    data/chars/deathmask/special1.png
+    frame    data/chars/deathmask/special1.png 
+    
+anim freespecial # Défense spéciale circles
+    range 0 75
+    delay    15
+    offset    37 169
+    sound data/chars/deathmask/sounds/07-ahah2.wav
+    @cmd     spawnbind "deathmask_melee" "ANI_IDLE" 0 7 10 0 1
+    hitflash flashbig
+    bbox 9 29 50 140
+    frame    data/chars/deathmask/special1.png
+    frame    data/chars/deathmask/special1.png
+    delay 30
+    attack5 -28 -12 120 180 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/deathmask/special2.png
+    frame    data/chars/deathmask/special2.png
+    attack5 0
+    frame    data/chars/deathmask/special1.png
+    frame    data/chars/deathmask/special1.png
+    
+anim freespecial2 # Attaque en courant
+    range 100 200
+    delay    7
+    offset    46 130
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    @cmd     spawnbind "deathmask_claw" "ANI_IDLE" 0 10 0 0 0
+    bbox 32 16 38 114
+    forcedirection -1
+    @cmd    dasher 3.5 0 0 1
+    frame    data/chars/deathmask/runattack1.png
+    frame    data/chars/deathmask/runattack2.png
+    attack2 60 16 55 83 20 1 0 0 5 12
+    dot 0 1000 1 6 100
+    dropv 4.0 2.0 0.0
+    frame    data/chars/deathmask/runattack3.png
+    sound data/chars/deathmask/sounds/10-slash.wav
+    frame    data/chars/deathmask/runattack3.png
+    frame    data/chars/deathmask/runattack4.png
+    frame    data/chars/deathmask/runattack4.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/deathmask/runattack2.png
+    frame    data/chars/deathmask/runattack1.png
+
 anim freespecial3 # Spirit hands
     fastattack 1
     forcedirection -1
-    range 200 400
+    range 200 800
     delay    10
     offset    35 128
-    energycost  25 1 0
     sound data/chars/deathmask/sounds/05-spirit.wav
     bbox 28 14 50 120
     frame    data/chars/deathmask/attack1.png

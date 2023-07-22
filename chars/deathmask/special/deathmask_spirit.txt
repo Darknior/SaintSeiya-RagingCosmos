@@ -2,17 +2,20 @@ name	deathmask_spirit
 type	none
 nolife 1
 remove 0
-shadow	0
+shadow 2
 animationscript data/scripts/player.c
+didhitscript        data/scripts/didhit/tint_poison.c
+palette data/chars/deathmask/special/deathmask_spirit/deathmask_spirit1.png
 
 anim	idle
 	followanim 1
-	followcond 1
+	followcond 3
 	loop	0
 	delay	5
 	offset	116 164
 	drawmethod alpha 1
-	attack 86 124 162 66 0 0 1 0 0 0
+	attack 86 124 162 66 20 0 0 0 0 10
+   stun 5
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit0.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit1.png
 	frame	data/chars/deathmask/special/deathmask_spirit/deathmask_spirit2.png
@@ -66,13 +69,14 @@ anim	follow1
 	}
 }
 @end_script
-	loop	1
+	loop	0
 	delay	2
-	offset	79 128
+	offset	79 118
+   dot 0 1000 1 6 100
 	hitfx	data/sounds/none.wav
 	frame	data/chars/deathmask/special/deathmask_hands/hands1.png #THIS FRAME IS DISCARDED BY THE ENGINE DURING FOLLOW
 	delay	90
-	attack 86 124 162 66 0 0 1 0 0 0
+	attack 86 124 162 66 0 0 0 0 0 0
 	stun 5
 	frame	data/chars/deathmask/special/deathmask_hands/hands1.png #FREEZE THE OPPONENT
 	hitfx	data/sounds/beat1.wav
@@ -80,7 +84,7 @@ anim	follow1
 	stun 0
 	frame	data/chars/deathmask/special/deathmask_hands/hands1.png #DISABLE THE ATTACK BOX
 	delay	45
-	attack 86 124 162 66 0 1 1 0 0 0
+	attack 86 124 162 66 0 1 0 0 0 0
 	stun 0
 	frame	data/chars/deathmask/special/deathmask_hands/hands2.png #ATTACK AGAIN TO THROW AWAY THE OPPONENT
 	attack 0 0 0 0 0 0 0 0 0 0

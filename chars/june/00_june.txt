@@ -10,7 +10,7 @@ gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du n
 riseinv     0.3 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
 risetime    -50        # Temps avant de se relever (-300 = 3 secondes)
-speed       14          # Vitesse de déplacement
+speed       13          # Vitesse de déplacement
 running     30 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
@@ -41,12 +41,12 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 #-- ENNEMY CONFIG ---------------------------------------------------
 
-hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression  0           # Valeur positive + agressif / valeur negative - aggressif
+hostile     player       # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player       # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chasez       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  0            # Valeur positive + agressif / valeur negative - aggressif
 
-hitenemy    1 0          # peut toucher d autres ennemis / air et sol
+hitenemy    0 0          # peut toucher d autres ennemis / air et sol
 blockodds   1            # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
@@ -73,6 +73,7 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 load june_vine
 load june_whip
+load marin_stormA
 
 #-- PALETTES --------------------------------------------------------
 
@@ -171,6 +172,8 @@ anim sleep
     frame    data/chars/june/sleep5.png
     frame    data/chars/june/sleep4.png
 
+#// Walk/Run animations /////////////////////////////////////////////////
+
 anim walk
     loop    1
     delay    14
@@ -197,34 +200,6 @@ anim run
     frame    data/chars/june/run5.png
     frame    data/chars/june/run6.png
 
-anim runattack # Attaque en courant
-    delay    6
-    offset    52 170
-    bbox 28 59 51 112
-    hitflash june_swing
-    forcedirection -1
-    range     150 250
-    rangea     0 100
-    @cmd    dasher 3.5 0 0 1
-    spawnframe  0 80 10 0
-    subentity    dash_dust
-    attack1 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/june/runattack1.png
-    frame    data/chars/june/runattack2.png
-    frame    data/chars/june/runattack3.png
-    attack2 52 59 120 112 20 1 0 0 5 12
-    frame    data/chars/june/runattack4.png
-    frame    data/chars/june/runattack5.png
-    frame    data/chars/june/runattack6.png
-    frame    data/chars/june/runattack7.png
-    frame    data/chars/june/runattack8.png
-    frame    data/chars/june/runattack9.png
-    attack2 0
-    @cmd    dasher 0 0 0 1
-    delay    12
-    frame    data/chars/june/runattack10.png
-    frame    data/chars/june/runattack11.png
-
 anim get
     delay    1
     offset    25 113
@@ -233,6 +208,8 @@ anim get
     frame    data/chars/june/get2.png
     frame    data/chars/june/get2.png
     frame    data/chars/june/get1.png
+
+#// Basic Attacks animations /////////////////////////////////////////////////
 
 anim attack1 # Attaque combo 1
     delay    5
@@ -353,93 +330,7 @@ anim attack5 # Attaque combo 5
     frame    data/chars/june/attack112.png
     frame    data/chars/june/attack113.png
 
-anim special # Vine Mill
-    delay    10
-    offset    111 124
-    sound data/chars/june/sounds/01-explosion.wav
-    fastattack 1
-    frame    data/chars/june/special1.png
-    sound data/chars/june/sounds/01-hurl.wav
-    frame    data/chars/june/special2.png
-    sound data/chars/june/sounds/06-launch.wav
-    attack5 42 24 150 100 10 0 0 0 5 12
-    frame    data/chars/june/special3.png
-    frame    data/chars/june/special4.png
-    frame    data/chars/june/special5.png
-    frame    data/chars/june/special6.png
-    frame    data/chars/june/special7.png
-    attack5 0
-    frame    data/chars/june/special8.png
-    frame    data/chars/june/special9.png
-    frame    data/chars/june/special10.png
-    attack5 42 24 150 100 30 1 0 0 5 12
-    dropv 4.0 3.0 0.0
-    frame    data/chars/june/special11.png
-    frame    data/chars/june/special12.png
-    frame    data/chars/june/special13.png
-    frame    data/chars/june/special14.png
-    frame    data/chars/june/special15.png
-    frame    data/chars/june/special16.png
-    frame    data/chars/june/special17.png
-
-anim special2 # Vine Prison
-    delay    15
-    offset    96 124
-    sound data/chars/june/sounds/01-multi2.wav
-    range     80 150
-    rangea     0 100
-    energycost  10 1 0
-    hitflash flashbig
-    frame    data/chars/june/special21.png
-    frame    data/chars/june/special22.png
-    @cmd    shooter "june_whip" 0 80 0 2 0 0
-    frame    data/chars/june/special23.png
-    frame    data/chars/june/special24.png
-    frame    data/chars/june/special25.png
-    frame    data/chars/june/special26.png
-
-anim follow1 # Vine Prison follow
-    delay    15
-    offset    96 124
-    fastattack 1
-    hitflash flashbig
-    attack5 109 25 150 100 20 0 0 0 5 12
-    frame    data/chars/june/special27.png
-    frame    data/chars/june/special28.png
-    frame    data/chars/june/special29.png
-    attack5 0
-    frame    data/chars/june/special28.png
-    attack5 109 25 150 100 20 0 0 0 5 12
-    frame    data/chars/june/special27.png
-    frame    data/chars/june/special28.png
-    frame    data/chars/june/special29.png
-    attack5 0
-    frame    data/chars/june/special28.png
-    attack5 109 25 150 100 30 1 0 0 5 12
-    frame    data/chars/june/special27.png
-    frame    data/chars/june/special28.png
-    frame    data/chars/june/special29.png
-    attack5 0
-    frame    data/chars/june/special28.png
-    frame    data/chars/june/special27.png
-    frame    data/chars/june/special25.png
-    frame    data/chars/june/special26.png
-
-anim freespecial2 # Vine Prison
-    delay    15
-    offset    96 124
-    sound data/chars/june/sounds/01-multi2.wav
-    range     80 150
-    rangea     0 100
-    energycost  10 1 0
-    hitflash flashbig
-    frame    data/chars/june/special21.png
-    frame    data/chars/june/special22.png
-    @cmd    shooter "june_whip" 0 80 0 2 0 0
-    frame    data/chars/june/special23.png
-    frame    data/chars/june/special24.png
-    frame    data/chars/june/special25.png
-    frame    data/chars/june/special26.png
+#// Jump animations /////////////////////////////////////////////////
 
 anim jump # Saut Statique
     delay    10
@@ -479,7 +370,7 @@ anim jumpattack #Attaque sautée statique
     frame    data/chars/june/jumpattack1.png
     frame    data/chars/june/jumpattack2.png
     attack4 5 100 130 80 10 1 0 0 5 12
-	dropv    4.0 1.0 0.0
+	 dropv    4.0 1.0 0.0
     frame    data/chars/june/jumpattack3.png
     frame    data/chars/june/jumpattack4.png
     frame    data/chars/june/jumpattack5.png
@@ -488,6 +379,8 @@ anim jumpattack #Attaque sautée statique
     frame    data/chars/june/jumpattack8.png
     frame    data/chars/june/jumpattack9.png
     frame    data/chars/june/jumpattack10.png
+
+#// Pain/Fall/Rise/Death animations /////////////////////////////////////////////////
 
 anim pain
     offset    49 124
@@ -561,6 +454,8 @@ anim death
     frame    data/chars/june/fall5.png
     frame    data/chars/june/fall6.png
     frame    data/chars/june/fall7.png
+    
+#// Block animations /////////////////////////////////////////////////
 
 anim    block
     loop    0
@@ -570,3 +465,167 @@ anim    block
     frame    data/chars/june/block1.png
     frame    data/chars/june/block2.png
     frame    data/chars/june/block3.png
+    
+#-- ATTAQUES SPECIALES -------------------------------------------------------
+
+anim special # Vine Mill
+    delay    10
+    offset    111 124
+    hitflash blue_swing
+    sound data/chars/june/sounds/01-explosion.wav
+    fastattack 1
+    frame    data/chars/june/special1.png
+    sound data/chars/june/sounds/01-hurl.wav
+    frame    data/chars/june/special2.png
+    sound data/chars/june/sounds/06-launch.wav
+    attack5 42 24 150 100 10 0 0 0 5 12
+    frame    data/chars/june/special3.png
+    frame    data/chars/june/special4.png
+    frame    data/chars/june/special5.png
+    frame    data/chars/june/special6.png
+    frame    data/chars/june/special7.png
+    attack5 0
+    frame    data/chars/june/special8.png
+    frame    data/chars/june/special9.png
+    frame    data/chars/june/special10.png
+    attack5 42 24 150 100 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/june/special11.png
+    frame    data/chars/june/special12.png
+    frame    data/chars/june/special13.png
+    frame    data/chars/june/special14.png
+    frame    data/chars/june/special15.png
+    frame    data/chars/june/special16.png
+    frame    data/chars/june/special17.png
+
+anim riseattack # Vine Mill (attaque en se relevant)
+    delay    10
+    offset    111 124
+    hitflash blue_swing
+    sound data/chars/june/sounds/01-explosion.wav
+    fastattack 1
+    frame    data/chars/june/special1.png
+    sound data/chars/june/sounds/01-hurl.wav
+    frame    data/chars/june/special2.png
+    sound data/chars/june/sounds/06-launch.wav
+    attack5 42 24 150 100 10 0 0 0 5 12
+    frame    data/chars/june/special3.png
+    frame    data/chars/june/special4.png
+    frame    data/chars/june/special5.png
+    frame    data/chars/june/special6.png
+    frame    data/chars/june/special7.png
+    attack5 0
+    frame    data/chars/june/special8.png
+    frame    data/chars/june/special9.png
+    frame    data/chars/june/special10.png
+    attack5 42 24 150 100 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/june/special11.png
+    frame    data/chars/june/special12.png
+    frame    data/chars/june/special13.png
+    frame    data/chars/june/special14.png
+    frame    data/chars/june/special15.png
+    frame    data/chars/june/special16.png
+    frame    data/chars/june/special17.png
+    
+anim freespecial # Vine Mill
+    range 0 100
+    delay    10
+    offset    111 124
+    hitflash blue_swing
+    sound data/chars/june/sounds/01-explosion.wav
+    fastattack 1
+    frame    data/chars/june/special1.png
+    sound data/chars/june/sounds/01-hurl.wav
+    frame    data/chars/june/special2.png
+    sound data/chars/june/sounds/06-launch.wav
+    attack5 42 24 150 100 10 0 0 0 5 12
+    frame    data/chars/june/special3.png
+    frame    data/chars/june/special4.png
+    frame    data/chars/june/special5.png
+    frame    data/chars/june/special6.png
+    frame    data/chars/june/special7.png
+    attack5 0
+    frame    data/chars/june/special8.png
+    frame    data/chars/june/special9.png
+    frame    data/chars/june/special10.png
+    attack5 42 24 150 100 30 1 0 0 5 12
+    dropv 4.0 3.0 0.0
+    frame    data/chars/june/special11.png
+    frame    data/chars/june/special12.png
+    frame    data/chars/june/special13.png
+    frame    data/chars/june/special14.png
+    frame    data/chars/june/special15.png
+    frame    data/chars/june/special16.png
+    frame    data/chars/june/special17.png
+
+anim freespecial2 # Attaque en courant
+    range 100 200
+    delay    6
+    offset    52 170
+    bbox 28 59 51 112
+    hitflash blue_swing
+    forcedirection -1
+    range     150 250
+    @cmd    dasher 3.5 0 0 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/june/runattack1.png
+    frame    data/chars/june/runattack2.png
+    frame    data/chars/june/runattack3.png
+    attack2 52 59 120 112 20 1 0 0 5 12
+    frame    data/chars/june/runattack4.png
+    frame    data/chars/june/runattack5.png
+    frame    data/chars/june/runattack6.png
+    frame    data/chars/june/runattack7.png
+    frame    data/chars/june/runattack8.png
+    frame    data/chars/june/runattack9.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/june/runattack10.png
+    frame    data/chars/june/runattack11.png
+    
+anim freespecial3 # Vine Prison
+    range 200 800
+    delay    15
+    offset    96 124
+    sound data/chars/june/sounds/01-multi2.wav
+    hitflash flashbig
+    frame    data/chars/june/special21.png
+    @cmd    shooter "marin_stormA" 0 10 10 1 0 0
+    frame    data/chars/june/special22.png
+    @cmd    shooter "june_whip" 0 80 0 2 0 0
+    frame    data/chars/june/special23.png
+    frame    data/chars/june/special24.png
+    frame    data/chars/june/special25.png
+    frame    data/chars/june/special26.png
+    
+anim follow1 # Vine Prison follow
+    delay    15
+    offset    96 124
+    fastattack 1
+    hitflash flashbig
+    attack5 109 25 150 100 20 0 0 0 5 12
+    frame    data/chars/june/special27.png
+    frame    data/chars/june/special28.png
+    frame    data/chars/june/special29.png
+    attack5 0
+    frame    data/chars/june/special28.png
+    attack5 109 25 150 100 20 0 0 0 5 12
+    frame    data/chars/june/special27.png
+    frame    data/chars/june/special28.png
+    frame    data/chars/june/special29.png
+    attack5 0
+    frame    data/chars/june/special28.png
+    attack5 109 25 150 100 30 1 0 0 5 12
+    frame    data/chars/june/special27.png
+    frame    data/chars/june/special28.png
+    frame    data/chars/june/special29.png
+    attack5 0
+    frame    data/chars/june/special28.png
+    frame    data/chars/june/special27.png
+    frame    data/chars/june/special25.png
+    frame    data/chars/june/special26.png
+  
+

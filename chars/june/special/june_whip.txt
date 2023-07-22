@@ -4,17 +4,17 @@ nolife 1
 remove 0
 shadow	0
 animationscript data/scripts/player.c
-
+didhitscript        data/scripts/didhit/tint_silver.c
 palette data/chars/june/special/june_vine/vine1.png
 
 anim	idle
 	followanim 1
-	followcond 1
+	followcond 3
 	loop	0
 	delay	5
 	offset	116 164
 	drawmethod alpha 1
-	attack 86 124 162 66 0 0 1 0 0 0
+	attack 86 124 162 66 10 0 0 0 0 0
 	frame	data/chars/june/special/june_whip/june_spirit0.png
 	frame	data/chars/june/special/june_whip/june_spirit0.png
 	frame	data/chars/june/special/june_whip/june_spirit0.png
@@ -58,14 +58,14 @@ anim	follow1
 	hitfx	data/sounds/none.wav
 	frame	data/chars/june/special/june_vine/vine1.png #THIS FRAME IS DISCARDED BY THE ENGINE DURING FOLLOW
    frame	data/chars/june/special/june_vine/vine2.png
-	delay	90
+	delay	100
 	attack 86 124 162 66 0 0 1 0 0 0
 	stun 5
 	frame	data/chars/june/special/june_vine/vine3.png #FREEZE THE OPPONENT
 	hitfx	data/sounds/beat1.wav
 	attack 0 0 0 0 0 0 0 0 0 0
 	stun 0
-	frame	data/chars/june/special/june_vine/vine3.png #DISABLE THE ATTACK BOX
+	frame	data/chars/june/special/june_whip/june_spirit0.png #DISABLE THE ATTACK BOX
 	delay	45
 	attack 86 124 162 66 0 1 1 0 0 0
 	stun 0

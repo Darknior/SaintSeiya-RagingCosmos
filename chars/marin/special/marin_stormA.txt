@@ -2,7 +2,6 @@ name	marin_stormA
 type	none
 candamage player
 shadow	0
-setlayer 100
 antigravity 100
 remove 0
 animationscript	data/scripts/player.c
@@ -12,7 +11,7 @@ anim	idle
 	delay	7
 	offset	72 257
 	drawmethod alpha 1
-        drawmethod  scale 0.6 0.6
+   drawmethod  scale 0.6 0.6
 	sound data/chars/marin/sounds/01-storm.wav
 	frame	data/chars/marin/special/marin_stormA/marin_stormA-1.png
 	frame	data/chars/marin/special/marin_stormA/marin_stormA-2.png

@@ -1,11 +1,11 @@
 name	deathmask_hands
 type	none
 shadow	0
-setlayer 99
 antigravity 100
+palette data/chars/deathmask/special/deathmask_spirit/deathmask_spirit1.png
 
 anim	idle
-	loop	1
+	loop	0
 	delay	90
 	offset	82 130
 	frame	data/chars/deathmask/special/deathmask_hands/hands1.png

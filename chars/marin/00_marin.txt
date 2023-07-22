@@ -339,7 +339,7 @@ anim special2 # Multi punch combo
     frame    data/chars/marin/special27.png
     frame    data/chars/marin/special28.png
     frame    data/chars/marin/special29.png
-    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 10 0 0 0
         frame    data/chars/marin/special21.png
     frame    data/chars/marin/special22.png
     attack5 28 -61 120 180 30 0 0 0 5 12

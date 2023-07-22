@@ -484,31 +484,33 @@ anim special # Lion homerun (attaque lorsqu il est grab)
     frame    data/chars/aiolia/melee8.png
     attack5 0
     frame    data/chars/aiolia/melee8.png
-
-anim freespecial # Attaque en courant
-    range 100 200
+    
+anim riseattack # Lion homerun (attaque en se relevant)
     delay    10
-    offset    50 136
-    hitflash blue_swing
-    sound data/chars/aiolia/sounds/01-roar.wav
-    forcedirection -1
-    @cmd    dasher 4.5 0 0 1
-    @cmd     spawnbind "aiolia_dash" "ANI_IDLE" 0 10 0 1 0
-    frame    data/chars/aiolia/runattack1.png
-    frame    data/chars/aiolia/runattack2.png
-    frame    data/chars/aiolia/runattack3.png
-    attack2 60 40 88 40 20 1 0 0 5 12
-    frame    data/chars/aiolia/runattack4.png
-    frame    data/chars/aiolia/runattack1.png
-    delay    70
-    frame    data/chars/aiolia/runattack6.png
-    attack2 0
-    @cmd    dasher 0 0 0 1
+    offset    134 184
+    sound data/chars/aiolia/sounds/04-swing.wav
+    hitflash flashbig
+    @cmd     spawnbind "aiolia_explosion" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/aiolia/melee1.png
+    sound data/chars/aiolia/sounds/15-explosion.wav
+    frame    data/chars/aiolia/melee2.png
+    sound data/chars/aiolia/sounds/01.wav
+    attack5 74 1 120 180 30 1 0 0 5 12
+    dropv     8.0 3 0
+    delay    40
+    frame    data/chars/aiolia/melee3.png
     delay    10
-    frame    data/chars/aiolia/runattack1.png
-    frame    data/chars/aiolia/runattack4.png
-
-anim freespecial2 # Défense spéciale Lion homerun
+    frame    data/chars/aiolia/melee4.png
+    frame    data/chars/aiolia/melee5.png
+    frame    data/chars/aiolia/melee6.png
+    delay    100
+    frame    data/chars/aiolia/melee7.png
+    delay    20
+    frame    data/chars/aiolia/melee8.png
+    attack5 0
+    frame    data/chars/aiolia/melee8.png
+    
+anim freespecial # Lion homerun
     range 0 75
     delay    10
     offset    134 184
@@ -534,6 +536,30 @@ anim freespecial2 # Défense spéciale Lion homerun
     frame    data/chars/aiolia/melee8.png
 	 attack5 0
     frame    data/chars/aiolia/melee8.png
+    
+anim freespecial2 # Attaque en courant
+    range 100 200
+    delay    10
+    offset    50 136
+    hitflash blue_swing
+    sound data/chars/aiolia/sounds/01-roar.wav
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    forcedirection -1
+    @cmd    dasher 4.5 0 0 1
+    @cmd     spawnbind "aiolia_dash" "ANI_IDLE" 0 10 0 1 0
+    frame    data/chars/aiolia/runattack1.png
+    frame    data/chars/aiolia/runattack2.png
+    frame    data/chars/aiolia/runattack3.png
+    attack2 60 40 88 40 20 1 0 0 5 12
+    frame    data/chars/aiolia/runattack4.png
+    frame    data/chars/aiolia/runattack1.png
+    delay    70
+    frame    data/chars/aiolia/runattack6.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    10
+    frame    data/chars/aiolia/runattack1.png
+    frame    data/chars/aiolia/runattack4.png
 
 anim freespecial3 #Lion star shot
     range 200 800

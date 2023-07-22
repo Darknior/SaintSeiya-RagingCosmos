@@ -218,15 +218,6 @@ anim victory
     frame    data/chars/aldebaran/victory3.png
     frame    data/chars/aldebaran/victory2.png
 
-anim turn
-    delay    8
-    offset    36 156
-    cancel 0 3 0 A freespecial4
-    bbox 8 8 50 150
-    frame    data/chars/aldebaran/turn1.png
-    frame    data/chars/aldebaran/turn2.png
-    frame    data/chars/aldebaran/turn3.png
-
 #// Walk/Run animations /////////////////////////////////////////////////
 
 anim walk
@@ -244,6 +235,15 @@ anim walk
     frame    data/chars/aldebaran/walk8.png
     frame    data/chars/aldebaran/walk9.png
     frame    data/chars/aldebaran/walk10.png
+    
+anim turn
+    delay    8
+    offset    36 156
+    cancel 0 3 0 A freespecial4
+    bbox 8 8 50 150
+    frame    data/chars/aldebaran/turn1.png
+    frame    data/chars/aldebaran/turn2.png
+    frame    data/chars/aldebaran/turn3.png
 
 anim run
     loop    1 1
@@ -454,6 +454,46 @@ anim    block
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
 anim special # Earthquake (attaque lorsqu il est grab)
+    delay    10
+    offset    37 163
+    sound data/chars/aldebaran/sounds/02-swing.wav
+    hitflash blue_swing
+    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/aldebaran/attack60.png
+    @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 10 0 1 0
+    frame    data/chars/aldebaran/attack61.png
+    frame    data/chars/aldebaran/attack62.png
+    frame    data/chars/aldebaran/attack63.png
+    attack5 -28 -12 120 180 30 1 0 0 5 12
+    dropv     8.0 3 0
+    @cmd     spawnbind "aldebaran_fist" "ANI_IDLE" 0 10 0 1 0
+    sound data/chars/aldebaran/sounds/09-earthquake2.wav
+    frame    data/chars/aldebaran/attack64.png
+    delay    15
+    frame    data/chars/aldebaran/attack65.png
+    @cmd     spawnbind "aldebaran_rock" "ANI_IDLE" 0 10 0 1 0
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    sound data/chars/aldebaran/sounds/08-earthquake.wav
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    frame    data/chars/aldebaran/attack66.png
+    frame    data/chars/aldebaran/attack65.png
+    frame    data/chars/aldebaran/attack66.png
+
+anim riseattack # Earthquake (attaque en se relevant)
     delay    10
     offset    37 163
     sound data/chars/aldebaran/sounds/02-swing.wav
