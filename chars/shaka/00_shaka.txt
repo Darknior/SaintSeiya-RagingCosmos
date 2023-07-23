@@ -9,7 +9,8 @@ type        enemy
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     0.3 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
-
+risetime -200 0          # Temps avant de se relever (-300 = 3 secondes) / Temps avant d effectuer riseattack
+riseattacktype 1        # Effectue riseattack quand il se releve
 speed       15          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
@@ -91,7 +92,7 @@ load aldebaran_super_lights
 load aldebaran_block
 load aphrodite_rose_explosion
 load aldebaran_aura
-
+load aphrodite_rose_explosion
 
 #-- PALETTES --------------------------------------------------------
 
@@ -559,7 +560,6 @@ anim special# Melee (attaque lorsqu il est grab)
     attack1 0
 
 anim riseattack # Lotus toss (attaque en se relevant)
-    range 100 250
     delay    15
     offset    92 129
     bbox 46 16 38 133

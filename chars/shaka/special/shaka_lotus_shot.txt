@@ -2,6 +2,7 @@ name	shaka_lotus_shot
 type	none
 candamage player
 shadow	0
+hitflash aphrodite_rose_explosion
 nolife 1
 remove 0
 lifespan  2
