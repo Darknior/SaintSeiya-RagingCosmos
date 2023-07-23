@@ -234,7 +234,7 @@ anim pain15# BURN PAIN
    delay    5
    offset    44 122
    bbox 21 10 43 112
-   @cmd     spawnbind "shaka_flame" 0 0 10 1 0
+   @cmd     spawnbind "shaka_flame" 0 10 10 1 0
    frame    data/chars/soldier_basic/pain1.png
    frame    data/chars/soldier_basic/pain2.png
    frame    data/chars/soldier_basic/pain3.png
@@ -250,7 +250,7 @@ anim fall15# BURN PAIN Ground
     offset    98 125
     bbox 20 34 65 70
 	 landframe 3
-    @cmd     spawnbind "shaka_flame" 0 0 10 1 0
+    @cmd     spawnbind "shaka_flame" 0 10 10 1 0
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
     delay    200
@@ -284,7 +284,7 @@ anim pain11# ICE PAIN Big
    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 10 0 10
    frame    data/chars/soldier_basic/pain1.png
    frame    data/chars/soldier_basic/pain2.png
-    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 0 0 10 0 10
+   @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 0 0 10 0 10
    frame    data/chars/soldier_basic/pain3.png
    frame    data/chars/soldier_basic/pain4.png
    frame    data/chars/soldier_basic/pain3.png

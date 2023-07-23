@@ -428,6 +428,75 @@ anim rise
     frame    data/chars/shaka/rise1.png
     frame    data/chars/shaka/rise2.png
     frame    data/chars/shaka/rise3.png
+    
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+
+anim pain15 # Burn
+    delay    5
+    offset    54 127
+    bbox 42 4 38 126
+    @cmd     spawnbind "shaka_flame" 0 10 -60 1 0
+    frame    data/chars/shaka/pain1.png
+    frame    data/chars/shaka/pain2.png
+    frame    data/chars/shaka/pain1.png
+
+anim fall15 #Burn
+    delay    10
+    offset    121 127
+    landframe 5
+    bbox 44 26 80 100
+    @cmd     spawnbind "shaka_flame" 100 10 0 1 0
+    frame    data/chars/shaka/fall1.png
+    frame    data/chars/shaka/fall2.png
+    frame    data/chars/shaka/fall3.png
+    frame    data/chars/shaka/fall4.png
+    frame    data/chars/shaka/fall5.png
+    bbox 0 95 120 35
+    frame    data/chars/shaka/fall6.png
+
+anim pain20 # Blood
+    delay    5
+    offset    54 127
+    bbox 42 4 38 126
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 5 -25 -5 0 0
+    frame    data/chars/shaka/pain1.png
+    frame    data/chars/shaka/pain2.png
+    frame    data/chars/shaka/pain1.png
+
+anim fall20 # Blood
+    delay    10
+    offset    121 127
+    landframe 5
+    bbox 44 26 80 100
+     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -15 -25 -5 0 0
+    frame    data/chars/shaka/fall1.png
+    frame    data/chars/shaka/fall2.png
+    frame    data/chars/shaka/fall3.png
+    frame    data/chars/shaka/fall4.png
+    frame    data/chars/shaka/fall5.png
+    bbox 0 95 120 35
+    frame    data/chars/shaka/fall6.png
+    
+anim pain10 # Ice
+    delay    5
+    offset    54 127
+    bbox 42 4 38 126
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 10 0 10
+    frame    data/chars/shaka/pain1.png
+    frame    data/chars/shaka/pain2.png
+    delay    300
+    frame    data/chars/shaka/pain1.png
+    
+anim pain11 # Ice Big
+    delay    5
+    offset    54 127
+    bbox 42 4 38 126
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 10 0 10
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 0 0 10 0 10
+    frame    data/chars/shaka/pain1.png
+    frame    data/chars/shaka/pain2.png
+    delay    500
+    frame    data/chars/shaka/pain1.png
 
 #// Block animations /////////////////////////////////////////////////
 
@@ -496,7 +565,7 @@ anim riseattack # Lotus toss (attaque en se relevant)
     bbox 46 16 38 133
     hitflash aphrodite_rose_explosion
     sound data/chars/shaka/sounds/16-lotus.wav
-    @cmd     spawnbind "shaka_lotus" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shaka_lotus" "ANI_IDLE" 0 10 0 0 0
 	 attack1 15 39 100 40 5 0 0 0 12 12
     @cmd tosser3 "shaka_lotus_shot" 0 40 0 1 1.3 0
     frame    data/chars/shaka/special1.png
