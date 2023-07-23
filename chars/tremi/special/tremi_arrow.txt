@@ -1,12 +1,11 @@
 name	tremi_arrow
 type	none
 candamage player enemy obstacle
-shadow	0
+shadow	1
 nolife 1
 remove 0
 setlayer 0
 antigravity 100
-lifespan  1
 animationscript		data/scripts/escript.c
 didhitscript	data/scripts/didhit/tint_red.c
 

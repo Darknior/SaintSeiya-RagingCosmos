@@ -32,9 +32,9 @@ void lifeBar()
 		changeentityproperty(self, "iconposition", xIcon, yIcon);
 
 		setdrawmethod(NULL(),0,256,256,0,0,0,0);
-		drawsprite(getglobalvar("charIcon3"), xLife, yLife-47, layer1); //BOSS CHARACTER ICON OVERLAY
+		drawsprite(getglobalvar("charIcon3"), xLife-1, yLife-47, layer1); //BOSS CHARACTER ICON OVERLAY
 		setdrawmethod(NULL(),1,256,256,0,0,0,2);
-		drawsprite(getglobalvar("lifebar3"), xLife+49, yLife+1, layer2); //BOSS LIFEBAR OVERLAY
+		drawsprite(getglobalvar("lifebar3"), xLife+48, yLife+1, layer2); //BOSS LIFEBAR OVERLAY
 
 		//DRAW CUSTOM LIFE BARS
 		int maxLife	= getentityproperty(self, "maxhealth");

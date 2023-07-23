@@ -1,48 +1,49 @@
 name	tremi_multiarrow
 type	none
-shadow	0
+shadow	3
 nolife 1
 remove 0
-setlayer 99
 antigravity 100
 didhitscript	data/scripts/didhit/tint_red.c
-lifespan  6
+animationscript	data/scripts/player.c
 
 anim	idle
 	loop	1
 	fastattack 1
 	delay	6
 	offset	0 20
-        hitflash milo_blood
+   hitflash milo_blood
 	drawmethod alpha 1
-	attack5 0 0 100 50 20 0 0 0 0 20
+	attack5 0 0 100 50 20 0 0 0 0 12
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow1.png
 	attack5 0
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow2.png
-	attack5 0 0 100 50 20 0 0 0 0 20
+	attack5 0 0 100 50 20 0 0 0 0 12
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow3.png
 	attack5 0
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow4.png
-	attack5 0 0 100 50 20 0 0 0 0 20
+	attack5 0 0 100 50 20 0 0 0 0 12
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow5.png
 	attack5 0
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow6.png
-	attack5 0 0 100 50 20 0 0 0 0 20
+	attack5 0 0 100 50 20 0 0 0 0 12
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow7.png
 	attack5 0
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow8.png
-	attack5 0 0 100 50 20 0 0 0 0 20
+	attack5 0 0 100 50 20 0 0 0 0 12
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow9.png
 	attack5 0
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow10.png
-	attack5 0 0 100 50 20 0 0 0 0 20
+	attack5 0 0 100 50 20 0 0 0 0 12
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow11.png
 	attack5 0
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow12.png
-	attack5 0 0 100 50 20 0 0 0 0 20
+	attack5 0 0 100 50 20 0 0 0 0 12
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow13.png
 	attack5 0
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow14.png
-	attack5 0 0 100 50 20 0 0 0 0 20
+	attack5 0 0 100 50 20 0 0 0 0 12
 	frame	data/chars/tremi/special/tremi_multiarrow/multiarrow15.png
 	attack5 0
+   @cmd suicide
+   frame	data/chars/tremi/special/tremi_multiarrow/multiarrow15.png

@@ -2,7 +2,6 @@ name	tremi_slash
 type	none
 shadow	0
 remove 0
-setlayer 666
 animationscript	data/scripts/player.c
 
 anim	idle
