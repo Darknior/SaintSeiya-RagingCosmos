@@ -1,7 +1,6 @@
 name	shaka_lotus
 type	none
 shadow	0
-setlayer 1
 antigravity 100
 animationscript	data/scripts/player.c
 

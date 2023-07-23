@@ -43,7 +43,7 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aimove      chasez       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression  0           # Valeur positive + agressif / valeur negative - aggressif
 
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
@@ -95,7 +95,9 @@ load aldebaran_aura
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/shaka/palettes/icon1.png 0
+icon         data/chars/shaka/palettes/icon1.png
+iconpain         data/chars/shaka/palettes/iconpain.png
+icondie         data/chars/shaka/palettes/icondie.png
 palette      data/chars/shaka/palettes/palette1.png
 #remap       data/chars/shaka/palettes/palette1.png  # 14 Possible MAX
 
@@ -183,6 +185,8 @@ anim sleep
     frame    data/chars/shaka/sleep5.png
     frame    data/chars/shaka/sleep6.png
     frame    data/chars/shaka/sleep5.png
+    
+#// Walk/Run animations /////////////////////////////////////////////////
 
 anim turn
     delay    8
@@ -218,48 +222,130 @@ anim run
     frame    data/chars/shaka/run5.png
     frame    data/chars/shaka/run6.png
 
-anim runattack # Attaque en courant
-    delay    7
-    offset    23 130
-    bbox 9 4 38 126
-    forcedirection -1
-    @cmd    dasher 3.5 0 0 1
-    summonframe  0 0 0 0
-    subentity    dash_dust
-    frame    data/chars/shaka/runattack1.png
-    frame    data/chars/shaka/runattack2.png
-    attack2 36 40 60 27 20 1 0 0 5 12
-    frame    data/chars/shaka/runattack3.png
-    frame    data/chars/shaka/runattack3.png
-    frame    data/chars/shaka/runattack4.png
-    frame    data/chars/shaka/runattack4.png
-    attack2 0
-    @cmd    dasher 0 0 0 1
-    delay    12
-    frame    data/chars/shaka/runattack5.png
-    frame    data/chars/shaka/runattack5.png
+#//Basic Attacks animations/////////////////////////////////////////////////
 
-anim freespecial # Attaque en courant
-    delay    7
-    offset    23 130
-    bbox 9 4 38 126
-    forcedirection -1
-    range     80 175
-    rangea     0 100
-    @cmd    dasher 3.5 0 0 1
-    frame    data/chars/shaka/runattack1.png
-    frame    data/chars/shaka/runattack2.png
-    attack2 36 40 60 27 20 1 0 0 5 12
-    frame    data/chars/shaka/runattack3.png
-    frame    data/chars/shaka/runattack3.png
-    frame    data/chars/shaka/runattack4.png
-    frame    data/chars/shaka/runattack4.png
-    attack2 0
-    @cmd    dasher 0 0 0 1
-    delay    12
-    frame    data/chars/shaka/runattack5.png
-    frame    data/chars/shaka/runattack5.png
+anim attack1 # Attaque combo 1
+    delay    5
+    offset    84 127
+    bbox 64 4 38 126
+    frame    data/chars/shaka/attack1.png
+    frame    data/chars/shaka/attack2.png
+    attack1 100 25 71 25 10 0 0 0 5 12
+    frame    data/chars/shaka/attack3.png
+    frame    data/chars/shaka/attack4.png
 
+anim attack2 # Attaque combo 2
+    delay    5
+    offset    84 127
+    bbox 64 4 38 126
+    frame    data/chars/shaka/attack21.png
+    frame    data/chars/shaka/attack22.png
+    frame    data/chars/shaka/attack23.png
+    attack1 100 47 88 25 10 0 0 0 5 12
+    frame    data/chars/shaka/attack24.png
+    frame    data/chars/shaka/attack25.png
+    frame    data/chars/shaka/attack26.png
+
+anim attack3 # Attaque combo 3
+    delay    5
+    offset    84 127
+    bbox 64 4 38 126
+    frame    data/chars/shaka/attack31.png
+    frame    data/chars/shaka/attack32.png
+    frame    data/chars/shaka/attack33.png
+    frame    data/chars/shaka/attack34.png
+    attack1 84 11 82 89 10 0 0 0 5 12
+    frame    data/chars/shaka/attack35.png
+    frame    data/chars/shaka/attack36.png
+    attack1 0
+    frame    data/chars/shaka/attack37.png
+
+anim attack4 # Attaque combo 4
+    delay    5
+    offset    84 127
+    bbox 64 4 38 126
+    hitflash flashmedium
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/shaka/attack41.png
+    frame    data/chars/shaka/attack42.png
+    attack1 99 88 73 43 10 0 0 0 5 12
+    frame    data/chars/shaka/attack43.png
+    frame    data/chars/shaka/attack43.png
+    attack1 0
+    frame    data/chars/shaka/attack41.png
+
+anim attack5 # Attaque combo 5
+    delay    10
+    offset    84 127
+    bbox 64 4 38 126
+    hitflash flashbig
+    frame    data/chars/shaka/attack51.png
+    frame    data/chars/shaka/attack52.png
+    frame    data/chars/shaka/attack53.png
+    frame    data/chars/shaka/attack54.png
+    attack1 90 31 87 26 20 1 0 0 5 12
+    dropv 4.0 1.0 0.0
+    frame    data/chars/shaka/attack55.png
+    frame    data/chars/shaka/attack56.png
+    attack1 0
+    frame    data/chars/shaka/attack55.png
+    
+#//Grab animations/////////////////////////////////////////////////
+
+
+
+#//Jump animations/////////////////////////////////////////////////  
+    
+anim jump # Saut Statique
+    delay    8
+    offset    84 146
+    bbox 64 11 38 98
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/shaka/jump1.png
+    frame    data/chars/shaka/jump2.png
+    frame    data/chars/shaka/jump3.png
+    frame    data/chars/shaka/jump4.png
+    frame    data/chars/shaka/jump5.png
+    frame    data/chars/shaka/jump6.png
+    frame    data/chars/shaka/jump5.png
+    frame    data/chars/shaka/jump3.png
+    frame    data/chars/shaka/jump2.png
+    frame    data/chars/shaka/jump1.png
+
+anim jumpdelay # Animation de saut intermédiaire
+    delay    10
+    offset    84 146
+    bbox 64 11 38 98
+    frame    data/chars/shaka/jump2.png
+
+anim jumpland # Aterrissage du saut
+    delay    8
+    offset    63 129
+    bbox 56 41 38 89
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/shaka/get1.png
+    frame    data/chars/shaka/get2.png
+    frame    data/chars/shaka/get3.png
+    frame    data/chars/shaka/get2.png
+    frame    data/chars/shaka/get1.png
+
+anim jumpattack # Attaque sautée statique
+    delay    8
+    offset    84 146
+    bbox 64 11 38 98
+    sound data/sounds/punch.wav
+    frame    data/chars/shaka/jumpattack1.png
+    frame    data/chars/shaka/jumpattack2.png
+    attack1 82 60 62 70 10 1 0 0 5 12
+	dropv    4.0 1.0 0.0
+    frame    data/chars/shaka/jumpattack3.png
+    frame    data/chars/shaka/jumpattack3.png
+    attack1 0
+
+#// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
+    
 anim pain # Up
     delay    5
     offset    54 127
@@ -343,135 +429,262 @@ anim rise
     frame    data/chars/shaka/rise2.png
     frame    data/chars/shaka/rise3.png
 
-anim attack1 # Attaque combo 1
-    delay    5
-    offset    84 127
-    bbox 64 4 38 126
-    frame    data/chars/shaka/attack1.png
-    frame    data/chars/shaka/attack2.png
-    attack1 100 25 71 25 10 0 0 0 5 12
-    frame    data/chars/shaka/attack3.png
-    frame    data/chars/shaka/attack4.png
+#// Block animations /////////////////////////////////////////////////
 
-anim attack2 # Attaque combo 2
-    delay    5
-    offset    84 127
-    bbox 64 4 38 126
-    frame    data/chars/shaka/attack21.png
-    frame    data/chars/shaka/attack22.png
-    frame    data/chars/shaka/attack23.png
-    attack1 100 47 88 25 10 0 0 0 5 12
-    frame    data/chars/shaka/attack24.png
-    frame    data/chars/shaka/attack25.png
-    frame    data/chars/shaka/attack26.png
+anim    block
+    offset    42 128
+    bbox 21 4 38 126
+    frame    data/chars/shaka/block1.png
+    frame    data/chars/shaka/block2.png
+    frame    data/chars/shaka/block3.png
 
-anim attack3 # Attaque combo 3
-    delay    5
-    offset    84 127
-    bbox 64 4 38 126
-    frame    data/chars/shaka/attack31.png
-    frame    data/chars/shaka/attack32.png
-    frame    data/chars/shaka/attack33.png
-    frame    data/chars/shaka/attack34.png
-    attack1 84 11 82 89 10 0 0 0 5 12
-    frame    data/chars/shaka/attack35.png
-    frame    data/chars/shaka/attack36.png
-    attack1 0
-    frame    data/chars/shaka/attack37.png
+#-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim attack4 # Attaque combo 4
-    delay    5
-    offset    84 127
-    bbox 64 4 38 126
-    hitflash flashmedium
-    attack1 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/shaka/attack41.png
-    frame    data/chars/shaka/attack42.png
-    attack1 99 88 73 43 10 0 0 0 5 12
-    frame    data/chars/shaka/attack43.png
-    frame    data/chars/shaka/attack43.png
-    attack1 0
-    frame    data/chars/shaka/attack41.png
-
-anim attack5 # Attaque combo 5
-    delay    10
-    offset    84 127
-    bbox 64 4 38 126
+anim special# Melee (attaque lorsqu il est grab)
+    delay    7
+    offset    66 144
+    fastattack 1
+    sound data/chars/shaka/sounds/01-tenmakosen.wav
+    @cmd     spawnbind "shaka_aura" "ANI_IDLE" 0 10 0 0 0
     hitflash flashbig
-    frame    data/chars/shaka/attack51.png
-    frame    data/chars/shaka/attack52.png
-    frame    data/chars/shaka/attack53.png
-    frame    data/chars/shaka/attack54.png
-    attack1 90 31 87 26 20 1 0 0 5 12
-    dropv 4.0 1.0 0.0
-    frame    data/chars/shaka/attack55.png
-    frame    data/chars/shaka/attack56.png
+    frame    data/chars/shaka/special21.png
+    frame    data/chars/shaka/special22.png
+    frame    data/chars/shaka/special23.png
+    frame    data/chars/shaka/special24.png
+    frame    data/chars/shaka/special25.png
+    frame    data/chars/shaka/special26.png
+    frame    data/chars/shaka/special27.png
+    frame    data/chars/shaka/special28.png
+    frame    data/chars/shaka/special29.png
+    frame    data/chars/shaka/special30.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special31.png
     attack1 0
-    frame    data/chars/shaka/attack55.png
+    frame    data/chars/shaka/special32.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special33.png
+    attack1 0
+    frame    data/chars/shaka/special34.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special35.png
+    attack1 0
+    frame    data/chars/shaka/special30.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special31.png
+    attack1 0
+    frame    data/chars/shaka/special32.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special33.png
+    attack1 0
+    frame    data/chars/shaka/special34.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special35.png
+    attack1 0
+    frame    data/chars/shaka/special30.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special31.png
+    attack1 0
+    frame    data/chars/shaka/special32.png
+    attack 7 10 119 144 10 1 0 0 0 360
+    frame    data/chars/shaka/special33.png
+    attack1 0
 
-anim jump # Saut Statique
-    delay    8
-    offset    84 146
-    bbox 64 11 38 98
-    summonframe 0 0 0 0
-    subentity round_dust
-    frame    data/chars/shaka/jump1.png
-    frame    data/chars/shaka/jump2.png
-    frame    data/chars/shaka/jump3.png
-    frame    data/chars/shaka/jump4.png
-    frame    data/chars/shaka/jump5.png
-    frame    data/chars/shaka/jump6.png
-    frame    data/chars/shaka/jump5.png
-    frame    data/chars/shaka/jump3.png
-    frame    data/chars/shaka/jump2.png
-    frame    data/chars/shaka/jump1.png
+anim riseattack # Lotus toss (attaque en se relevant)
+    range 100 250
+    delay    15
+    offset    92 129
+    bbox 46 16 38 133
+    hitflash aphrodite_rose_explosion
+    sound data/chars/shaka/sounds/16-lotus.wav
+    @cmd     spawnbind "shaka_lotus" "ANI_IDLE" 0 0 0 0 0
+	 attack1 15 39 100 40 5 0 0 0 12 12
+    @cmd tosser3 "shaka_lotus_shot" 0 40 0 1 1.3 0
+    frame    data/chars/shaka/special1.png
+    @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 10 0 0 0
+    @cmd tosser3 "shaka_lotus_shot" 0 40 0 -1 1.3 0
+    frame    data/chars/shaka/special2.png
+    @cmd tosser3 "shaka_lotus_shot" 0 50 0 1 1.3 0
+    frame    data/chars/shaka/special3.png
+    @cmd tosser3 "shaka_lotus_shot" 0 50 0 -1 1.3 0
+    frame    data/chars/shaka/special4.png
+    @cmd tosser3 "shaka_lotus_shot" 0 60 0 1 1.3 0
+	 bbox 0 0 0 0
+    frame    data/chars/shaka/special5.png
+    @cmd tosser3 "shaka_lotus_shot" 0 60 0 -1 1.3 0
+    frame    data/chars/shaka/special6.png
+    @cmd tosser3 "shaka_lotus_shot" 0 70 0 1 1.3 0
+    frame    data/chars/shaka/special7.png
+    @cmd tosser3 "shaka_lotus_shot" 0 70 0 -1 1.3 0
+    frame    data/chars/shaka/special8.png
+    @cmd tosser3 "shaka_lotus_shot" 0 80 0 1 1.3 0
+    frame    data/chars/shaka/special9.png
+    @cmd tosser3 "shaka_lotus_shot" 0 80 0 -1 1.3 0
+    frame    data/chars/shaka/special10.png
+    @cmd tosser3 "shaka_lotus_shot" 0 90 0 1 1.3 0
+    frame    data/chars/shaka/special10.png
+    @cmd tosser3 "shaka_lotus_shot" 0 90 0 -1 1.3 0
+    frame    data/chars/shaka/special10.png
+    @cmd tosser3 "shaka_lotus_shot" 0 100 0 1 1.3 0
+    frame    data/chars/shaka/special10.png
+    @cmd tosser3 "shaka_lotus_shot" 0 100 0 -1 1.3 0
+    frame    data/chars/shaka/special10.png
+    frame    data/chars/shaka/special1.png
 
-anim jumpdelay # Animation de saut intermédiaire
+anim freespecial# Melee
+    range 0 100
+    delay    7
+    offset    66 144
+    fastattack 1
+    sound data/chars/shaka/sounds/01-tenmakosen.wav
+    @cmd     spawnbind "shaka_aura" "ANI_IDLE" 0 10 0 0 0
+    hitflash flashbig
+    frame    data/chars/shaka/special21.png
+    frame    data/chars/shaka/special22.png
+    frame    data/chars/shaka/special23.png
+    frame    data/chars/shaka/special24.png
+    frame    data/chars/shaka/special25.png
+    frame    data/chars/shaka/special26.png
+    frame    data/chars/shaka/special27.png
+    frame    data/chars/shaka/special28.png
+    frame    data/chars/shaka/special29.png
+    frame    data/chars/shaka/special30.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special31.png
+    attack1 0
+    frame    data/chars/shaka/special32.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special33.png
+    attack1 0
+    frame    data/chars/shaka/special34.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special35.png
+    attack1 0
+    frame    data/chars/shaka/special30.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special31.png
+    attack1 0
+    frame    data/chars/shaka/special32.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special33.png
+    attack1 0
+    frame    data/chars/shaka/special34.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special35.png
+    attack1 0
+    frame    data/chars/shaka/special30.png
+    attack 7 10 119 144 10 0 0 0 0 360
+    frame    data/chars/shaka/special31.png
+    attack1 0
+    frame    data/chars/shaka/special32.png
+    attack 7 10 119 144 10 1 0 0 0 360
+    frame    data/chars/shaka/special33.png
+    attack1 0
+    # Attaque en courant
+    range 100 200
+    delay    7
+    offset    23 130
+    bbox 9 4 38 126
+    forcedirection -1
+    @cmd    dasher 3.5 0 0 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    frame    data/chars/shaka/runattack1.png
+    frame    data/chars/shaka/runattack2.png
+    attack2 36 40 60 27 20 1 0 0 5 12
+    frame    data/chars/shaka/runattack3.png
+    frame    data/chars/shaka/runattack3.png
+    frame    data/chars/shaka/runattack4.png
+    frame    data/chars/shaka/runattack4.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/shaka/runattack5.png
+    frame    data/chars/shaka/runattack5.png
+
+anim freespecial3 # Shaka hands
+    range 250 900
+    fastattack 1
+    forcedirection -1
     delay    10
-    offset    84 146
-    bbox 64 11 38 98
-    frame    data/chars/shaka/jump2.png
+    offset    66 149
+    sound data/chars/deathmask/05-spirit.wav
+    @cmd     spawnbind "shaka_cosmos" "ANI_IDLE" 0 10 0 0 0
+    bbox 39 15 50 130
+    frame    data/chars/shaka/special21.png
+    frame    data/chars/shaka/special22.png
+    frame    data/chars/shaka/special23.png
+    frame    data/chars/shaka/special24.png
+    @cmd    shooter "shaka_hands" 0 80 0 2 0 0
+    frame    data/chars/shaka/special25.png
+    frame    data/chars/shaka/special26.png
+	 bbox 0 0 0 0
+    frame    data/chars/shaka/special27.png
+    frame    data/chars/shaka/special28.png
+    frame    data/chars/shaka/special29.png
+    frame    data/chars/shaka/special30.png
+    frame    data/chars/shaka/special31.png
+    frame    data/chars/shaka/special32.png
+    frame    data/chars/shaka/special33.png
+    frame    data/chars/shaka/special34.png
+    frame    data/chars/shaka/special34.png
+    frame    data/chars/shaka/special35.png
 
-anim jumpland # Aterrissage du saut
-    delay    8
-    offset    63 129
-    bbox 56 41 38 89
-    summonframe 0 0 0 0
-    subentity round_dust
-    frame    data/chars/shaka/get1.png
-    frame    data/chars/shaka/get2.png
-    frame    data/chars/shaka/get3.png
-    frame    data/chars/shaka/get2.png
-    frame    data/chars/shaka/get1.png
+anim freespecial4 # Lotus toss (attaque en se relevant)
+    range 100 250
+    delay    15
+    offset    92 129
+    bbox 46 16 38 133
+    hitflash aphrodite_rose_explosion
+    sound data/chars/shaka/sounds/16-lotus.wav
+    @cmd     spawnbind "shaka_lotus" "ANI_IDLE" 0 10 0 0 0
+	 attack1 15 39 100 40 5 0 0 0 12 12
+    @cmd tosser3 "shaka_lotus_shot" 0 40 0 1 1.3 0
+    frame    data/chars/shaka/special1.png
+    @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 10 0 0 0
+    @cmd tosser3 "shaka_lotus_shot" 0 40 0 -1 1.3 0
+    frame    data/chars/shaka/special2.png
+    @cmd tosser3 "shaka_lotus_shot" 0 50 0 1 1.3 0
+    frame    data/chars/shaka/special3.png
+    @cmd tosser3 "shaka_lotus_shot" 0 50 0 -1 1.3 0
+    frame    data/chars/shaka/special4.png
+    @cmd tosser3 "shaka_lotus_shot" 0 60 0 1 1.3 0
+	 bbox 0 0 0 0
+    frame    data/chars/shaka/special5.png
+    @cmd tosser3 "shaka_lotus_shot" 0 60 0 -1 1.3 0
+    frame    data/chars/shaka/special6.png
+    @cmd tosser3 "shaka_lotus_shot" 0 70 0 1 1.3 0
+    frame    data/chars/shaka/special7.png
+    @cmd tosser3 "shaka_lotus_shot" 0 70 0 -1 1.3 0
+    frame    data/chars/shaka/special8.png
+    @cmd tosser3 "shaka_lotus_shot" 0 80 0 1 1.3 0
+    frame    data/chars/shaka/special9.png
+    @cmd tosser3 "shaka_lotus_shot" 0 80 0 -1 1.3 0
+    frame    data/chars/shaka/special10.png
+    @cmd tosser3 "shaka_lotus_shot" 0 90 0 1 1.3 0
+    frame    data/chars/shaka/special10.png
+    @cmd tosser3 "shaka_lotus_shot" 0 90 0 -1 1.3 0
+    frame    data/chars/shaka/special10.png
+    @cmd tosser3 "shaka_lotus_shot" 0 100 0 1 1.3 0
+    frame    data/chars/shaka/special10.png
+    @cmd tosser3 "shaka_lotus_shot" 0 100 0 -1 1.3 0
+    frame    data/chars/shaka/special10.png
+    frame    data/chars/shaka/special1.png
 
-anim jumpattack # Attaque sautée statique
-    delay    8
-    offset    84 146
-    bbox 64 11 38 98
-    sound data/sounds/punch.wav
-    frame    data/chars/shaka/jumpattack1.png
-    frame    data/chars/shaka/jumpattack2.png
-    attack1 82 60 62 70 10 1 0 0 5 12
-	dropv    4.0 1.0 0.0
-    frame    data/chars/shaka/jumpattack3.png
-    frame    data/chars/shaka/jumpattack3.png
-    attack1 0
-
-anim freespecial6 # Défense spéciale Blood Sea
+anim freespecial5 # Blood Sea
+    range 300 900
     delay    10
     offset    66 149
     energycost  50 1
-        hitflash shaka_flame
+    hitflash shaka_flame
     fastattack 1
     sound data/chars/deathmask/78-cosmos.wav
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
-        @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     summonframe 0 0 0 0 1
     subentity shaka_constellationB
-        @cmd     spawnScreen "shaka_constellationB" 0 0 0 0
-        @cmd     spawnScreen "shaka_blood_seaB" 0 0 0 0
+    @cmd     spawnScreen "shaka_constellationB" 0 0 0 0
+    @cmd     spawnScreen "shaka_blood_seaB" 0 0 0 0
     @cmd     spawnbind "shaka_blood_geyser" "ANI_IDLE" 0 0 0 0 0
-    @cmd     spawnbind "shaka_circles" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shaka_circles" "ANI_IDLE" 0 10 0 0 0
     attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shaka/special21.png
     @cmd     spawnScreen "shaka_blood_sea" 0 0 0 0
@@ -584,194 +797,25 @@ anim freespecial6 # Défense spéciale Blood Sea
     frame    data/chars/shaka/special35.png
     attack1 0
 
-anim special# Défense spéciale Melee
-    delay    7
-    offset    66 144
-    energycost  20 1
-    fastattack 1
-    sound data/chars/shaka/sounds/01-tenmakosen.wav
-    @cmd     spawnbind "shaka_aura" "ANI_IDLE" 0 0 0 0 0
-    hitflash flashbig
-    frame    data/chars/shaka/special21.png
-    frame    data/chars/shaka/special22.png
-    frame    data/chars/shaka/special23.png
-    frame    data/chars/shaka/special24.png
-    frame    data/chars/shaka/special25.png
-    frame    data/chars/shaka/special26.png
-    frame    data/chars/shaka/special27.png
-    frame    data/chars/shaka/special28.png
-    frame    data/chars/shaka/special29.png
-    frame    data/chars/shaka/special30.png
-    attack 7 10 119 144 10 0 0 0 0 360
-    frame    data/chars/shaka/special31.png
-    attack1 0
-    frame    data/chars/shaka/special32.png
-    attack 7 10 119 144 10 0 0 0 0 360
-    frame    data/chars/shaka/special33.png
-    attack1 0
-    frame    data/chars/shaka/special34.png
-    attack 7 10 119 144 10 0 0 0 0 360
-    frame    data/chars/shaka/special35.png
-    attack1 0
-    frame    data/chars/shaka/special30.png
-    attack 7 10 119 144 10 0 0 0 0 360
-    frame    data/chars/shaka/special31.png
-    attack1 0
-    frame    data/chars/shaka/special32.png
-    attack 7 10 119 144 10 0 0 0 0 360
-    frame    data/chars/shaka/special33.png
-    attack1 0
-    frame    data/chars/shaka/special34.png
-    attack 7 10 119 144 10 0 0 0 0 360
-    frame    data/chars/shaka/special35.png
-    attack1 0
-    frame    data/chars/shaka/special30.png
-    attack 7 10 119 144 10 0 0 0 0 360
-    frame    data/chars/shaka/special31.png
-    attack1 0
-    frame    data/chars/shaka/special32.png
-    attack 7 10 119 144 10 1 0 0 0 360
-    frame    data/chars/shaka/special33.png
-    attack1 0
-
-anim special2 #Attaque spéciale Lotus toss
-    range     250 400
-    rangea     0 100
-    energycost  20 1
-        hitflash aphrodite_rose_explosion
-    delay    15
-    offset    92 129
-    bbox 46 16 38 133
-    sound data/chars/shaka/sounds/16-lotus.wav
-    summonframe 0 0 0 0
-    subentity shaka_lotus
-        unsummonframe 10
-    attack1 15 39 100 40 5 0 0 0 12 12
-    @cmd tosser3 "shaka_lotus_shot" 0 40 0 1 1.3 0
-    frame    data/chars/shaka/special1.png
-    @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 0 0 0 0
-    @cmd tosser3 "shaka_lotus_shot" 0 40 0 -1 1.3 0
-    frame    data/chars/shaka/special2.png
-    @cmd tosser3 "shaka_lotus_shot" 0 50 0 1 1.3 0
-    frame    data/chars/shaka/special3.png
-    @cmd tosser3 "shaka_lotus_shot" 0 50 0 -1 1.3 0
-    frame    data/chars/shaka/special4.png
-    @cmd tosser3 "shaka_lotus_shot" 0 60 0 1 1.3 0
-    frame    data/chars/shaka/special5.png
-    @cmd tosser3 "shaka_lotus_shot" 0 60 0 -1 1.3 0
-    frame    data/chars/shaka/special6.png
-    @cmd tosser3 "shaka_lotus_shot" 0 70 0 1 1.3 0
-    frame    data/chars/shaka/special7.png
-    @cmd tosser3 "shaka_lotus_shot" 0 70 0 -1 1.3 0
-    frame    data/chars/shaka/special8.png
-    @cmd tosser3 "shaka_lotus_shot" 0 80 0 1 1.3 0
-    frame    data/chars/shaka/special9.png
-    @cmd tosser3 "shaka_lotus_shot" 0 80 0 -1 1.3 0
-    frame    data/chars/shaka/special10.png
-    @cmd tosser3 "shaka_lotus_shot" 0 90 0 1 1.3 0
-    frame    data/chars/shaka/special10.png
-    @cmd tosser3 "shaka_lotus_shot" 0 90 0 -1 1.3 0
-    frame    data/chars/shaka/special10.png
-    @cmd tosser3 "shaka_lotus_shot" 0 100 0 1 1.3 0
-    frame    data/chars/shaka/special10.png
-    @cmd tosser3 "shaka_lotus_shot" 0 100 0 -1 1.3 0
-    frame    data/chars/shaka/special10.png
-    frame    data/chars/shaka/special1.png
-
-anim freespecial2 # Attaque spéciale Lotus toss
-    range     250 400
-    rangea     0 100
-    energycost  20 1
-    delay    15
-    offset    92 129
-    bbox 46 16 38 133
-        hitflash aphrodite_rose_explosion
-    sound data/chars/shaka/sounds/16-lotus.wav
-    summonframe 0 0 0 0
-        unsummonframe 10
-    subentity shaka_lotus
-	attack1 15 39 100 40 5 0 0 0 12 12
-    @cmd tosser3 "shaka_lotus_shot" 0 40 0 1 1.3 0
-    frame    data/chars/shaka/special1.png
-    @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 0 0 0 0
-    @cmd tosser3 "shaka_lotus_shot" 0 40 0 -1 1.3 0
-    frame    data/chars/shaka/special2.png
-    @cmd tosser3 "shaka_lotus_shot" 0 50 0 1 1.3 0
-    frame    data/chars/shaka/special3.png
-    @cmd tosser3 "shaka_lotus_shot" 0 50 0 -1 1.3 0
-    frame    data/chars/shaka/special4.png
-    @cmd tosser3 "shaka_lotus_shot" 0 60 0 1 1.3 0
-	bbox 0 0 0 0
-    frame    data/chars/shaka/special5.png
-    @cmd tosser3 "shaka_lotus_shot" 0 60 0 -1 1.3 0
-    frame    data/chars/shaka/special6.png
-    @cmd tosser3 "shaka_lotus_shot" 0 70 0 1 1.3 0
-    frame    data/chars/shaka/special7.png
-    @cmd tosser3 "shaka_lotus_shot" 0 70 0 -1 1.3 0
-    frame    data/chars/shaka/special8.png
-    @cmd tosser3 "shaka_lotus_shot" 0 80 0 1 1.3 0
-    frame    data/chars/shaka/special9.png
-    @cmd tosser3 "shaka_lotus_shot" 0 80 0 -1 1.3 0
-    frame    data/chars/shaka/special10.png
-    @cmd tosser3 "shaka_lotus_shot" 0 90 0 1 1.3 0
-    frame    data/chars/shaka/special10.png
-    @cmd tosser3 "shaka_lotus_shot" 0 90 0 -1 1.3 0
-    frame    data/chars/shaka/special10.png
-    @cmd tosser3 "shaka_lotus_shot" 0 100 0 1 1.3 0
-    frame    data/chars/shaka/special10.png
-    @cmd tosser3 "shaka_lotus_shot" 0 100 0 -1 1.3 0
-    frame    data/chars/shaka/special10.png
-    frame    data/chars/shaka/special1.png
-
-anim freespecial3 # Shaka hands
-    fastattack 1
-    forcedirection -1
-    range 200 400
-    delay    10
-    offset    66 149
-    energycost  15 1
-    sound data/chars/deathmask/05-spirit.wav
-    summonframe 0 0 0 0 0
-    subentity shaka_cosmos
-    unsummonframe 15
-    bbox 39 15 50 130
-    frame    data/chars/shaka/special21.png
-    frame    data/chars/shaka/special22.png
-    frame    data/chars/shaka/special23.png
-    frame    data/chars/shaka/special24.png
-    @cmd    shooter "shaka_hands" 0 80 0 2 0 0
-    frame    data/chars/shaka/special25.png
-    frame    data/chars/shaka/special26.png
-	bbox 0 0 0 0
-    frame    data/chars/shaka/special27.png
-    frame    data/chars/shaka/special28.png
-    frame    data/chars/shaka/special29.png
-    frame    data/chars/shaka/special30.png
-    frame    data/chars/shaka/special31.png
-    frame    data/chars/shaka/special32.png
-    frame    data/chars/shaka/special33.png
-    frame    data/chars/shaka/special34.png
-    frame    data/chars/shaka/special34.png
-    frame    data/chars/shaka/special35.png
-
-anim freespecial5 # Ten Bu Ho Rin
+anim freespecial6 # Ten Bu Ho Rin
+    range 0 300
     delay    20
     offset    66 149
-    energycost  40 1
-        hitflash shaka_flame
+    energycost  50 1
+    hitflash shaka_flame
     fastattack 1
     sound data/chars/deathmask/78-cosmos.wav
-        @cmd     spawnScreen "shaka_constellationA" 0 0 0 0
+    @cmd     spawnScreen "shaka_constellationA" 0 0 0 0
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
-        @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     sound data/chars/shaka/sounds/13-blood.wav
-    @cmd     spawnbind "shaka_circlesB" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shaka_circlesB" "ANI_IDLE" 0 10 0 0 0
     @cmd     spawnbind "shaka_cosmos" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shaka/special22.png
-    @cmd     spawnbind "shaka_budda" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shaka_budda" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/shaka/special23.png
     frame    data/chars/shaka/special21.png
-        @cmd     spawnScreen "shaka_constellation" 0 0 0 0
+    @cmd     spawnScreen "shaka_constellation" 0 0 0 0
     frame    data/chars/shaka/special24.png
     frame    data/chars/shaka/special25.png
     frame    data/chars/shaka/special26.png
@@ -937,9 +981,4 @@ anim freespecial5 # Ten Bu Ho Rin
     attack1 0
 
 
-anim    block
-    offset    42 128
-    bbox 21 4 38 126
-    frame    data/chars/shaka/block1.png
-    frame    data/chars/shaka/block2.png
-    frame    data/chars/shaka/block3.png
+

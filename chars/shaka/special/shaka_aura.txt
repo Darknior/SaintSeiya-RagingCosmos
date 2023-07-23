@@ -2,7 +2,6 @@ name	shaka_aura
 type	none
 shadow	0
 remove 0
-setlayer 101
 animationscript	data/scripts/player.c
 
 anim	idle

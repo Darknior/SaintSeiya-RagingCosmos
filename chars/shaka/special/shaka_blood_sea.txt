@@ -11,7 +11,7 @@ anim	idle
 	offset	800 50
 	drawmethod scale 1 1
 	drawmethod alpha 6
-        drawmethod  channel 0.99
+   drawmethod  channel 0.99
 	frame	data/chars/shaka/special/shaka_blood_sea/shaka_blood_sea0.png
 	frame	data/chars/shaka/special/shaka_blood_sea/shaka_blood_sea1.png
 	frame	data/chars/shaka/special/shaka_blood_sea/shaka_blood_sea2.png

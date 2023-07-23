@@ -2,7 +2,6 @@ name	shaka_lotus_shot
 type	none
 candamage player
 shadow	0
-setlayer 2
 nolife 1
 remove 0
 lifespan  2
@@ -16,6 +15,7 @@ anim	idle
 	delay	-1000
 	offset	12 22
 	bbox 0 0 25 25
+   drawmethod alpha 1
 	followanim 1
 	followcond 1
 	attack1 0 0 25 25 10 0 0 0 12 12
@@ -26,6 +26,7 @@ anim	idle
 anim follow1
 	loop	1
 	offset	12 22
+   drawmethod alpha 1
 	bbox 0 0 25 25
 	@cmd stop
 	attack1 0 0 25 25 10 0 0 0 12 12

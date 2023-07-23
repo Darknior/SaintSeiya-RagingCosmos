@@ -1,13 +1,11 @@
 name	shaka_cosmos
 type	none
 shadow	0
-remove 0
-setlayer 666
 animationscript	data/scripts/player.c
 
 anim	idle
 	loop	0
-	delay	15
+	delay	5
 	offset	200 298
 	drawmethod alpha 1
 	frame	data/chars/shaka/special/shaka_cosmos/shaka_cosmos0.png

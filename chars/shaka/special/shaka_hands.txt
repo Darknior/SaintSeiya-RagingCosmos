@@ -1,15 +1,13 @@
 name	shaka_hands
 type	none
-shadow	0
-setlayer 333
+shadow 2
 antigravity 100
 nolife 1
-remove 0
-lifespan 1.5
 didhitscript	data/scripts/didhit/tint_gold.c
+animationscript	data/scripts/player.c
 
 anim	idle
-	loop	0
+	loop	1
 	delay	5
 	offset	9 42
 	drawmethod scale 1 1
@@ -23,5 +21,43 @@ anim	idle
 	frame	data/chars/shaka/special/shaka_hands/shaka_hands5.png
 	frame	data/chars/shaka/special/shaka_hands/shaka_hands6.png
 	frame	data/chars/shaka/special/shaka_hands/shaka_hands7.png
-	attack 0 0 0 0 0 0 0 0 0 0
+   frame	data/chars/shaka/special/shaka_hands/shaka_hands7.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands6.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands5.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands4.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands3.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands2.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands1.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands0.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands1.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands2.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands3.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands4.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands5.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands6.png
 	frame	data/chars/shaka/special/shaka_hands/shaka_hands7.png
+   frame	data/chars/shaka/special/shaka_hands/shaka_hands7.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands6.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands5.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands4.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands3.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands2.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands1.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands0.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands1.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands2.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands3.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands4.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands5.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands6.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands7.png
+   frame	data/chars/shaka/special/shaka_hands/shaka_hands7.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands6.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands5.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands4.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands3.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands2.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands1.png
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands0.png
+	@cmd suicide
+	frame	data/chars/shaka/special/shaka_hands/shaka_hands0.png

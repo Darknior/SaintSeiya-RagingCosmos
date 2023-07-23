@@ -9,240 +9,240 @@ anim	idle
 	loop	0
 	delay	4
 	offset	800 0
-        drawmethod  alpha 6
-        drawmethod  channel 0.20
+   drawmethod  alpha 6
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.99
+   drawmethod  channel 0.99
 	delay	50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
 	delay	4
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.10
+   drawmethod  channel 0.10
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation1.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.99
+   drawmethod  channel 0.99
 	delay	50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
 	delay	4
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.10
+   drawmethod  channel 0.10
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation2.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.99
+   drawmethod  channel 0.99
 	delay	50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
 	delay	4
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.10
+   drawmethod  channel 0.10
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation3.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.99
+   drawmethod  channel 0.99
 	delay	50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
 	delay	4
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.10
+   drawmethod  channel 0.10
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation4.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.99
+   drawmethod  channel 0.99
 	delay	50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
 	delay	4
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.10
+   drawmethod  channel 0.10
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation5.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.99
+   drawmethod  channel 0.99
 	delay	50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
 	delay	4
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.90
+   drawmethod  channel 0.90
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.80
+   drawmethod  channel 0.80
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.70
+   drawmethod  channel 0.70
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.60
+   drawmethod  channel 0.60
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.40
+   drawmethod  channel 0.40
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.30
+   drawmethod  channel 0.30
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.20
+   drawmethod  channel 0.20
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
-        drawmethod  channel 0.10
+   drawmethod  channel 0.10
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png
 	@cmd suicide
 	frame	data/chars/shaka/special/shaka_constellation/shaka_constellation6.png

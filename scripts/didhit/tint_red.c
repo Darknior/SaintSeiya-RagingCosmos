@@ -11,6 +11,7 @@ void main()
 	tintEffect(openborconstant("ANI_FREESPECIAL2"), "red", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL3"), "red", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL5"), "red", 1);
+   tintEffect(openborconstant("ANI_FREESPECIAL4"), "red", 1);
 	tintEffect(openborconstant("ANI_FREESPECIAL6"), "red", 1);
 	genmaken();
 	autoLand();

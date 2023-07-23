@@ -2,7 +2,6 @@ name	shaka_blood_geyser
 type	none
 shadow	0
 remove 0
-setlayer 5
 animationscript	data/scripts/player.c
 
 anim	idle
@@ -10,7 +9,7 @@ anim	idle
 	delay	15
 	offset	231 632
 	drawmethod alpha 6
-        drawmethod  channel 0.99
+   drawmethod  channel 0.99
 	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser10.png
 	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser9.png
 	frame	data/chars/shaka/special/shaka_blood_geyser/shaka_blood_geyser8.png
