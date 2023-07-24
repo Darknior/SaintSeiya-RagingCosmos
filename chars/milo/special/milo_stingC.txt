@@ -2,7 +2,6 @@ name	milo_stingC
 type	none
 shadow	0
 remove 0
-setlayer 9999
 animationscript	data/scripts/player.c
 
 anim	idle
@@ -10,7 +9,7 @@ anim	idle
 	delay	7
 	offset	414 579
 	drawmethod alpha 1
-        drawmethod scale 0.7 0.7
+   drawmethod scale 0.7 0.7
 	delay	20
 	frame	data/chars/milo/special/milo_stingC/milo_stingC7.png
 	delay	7

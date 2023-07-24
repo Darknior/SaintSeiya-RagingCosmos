@@ -2,7 +2,7 @@ loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0
 
 music       data/music/montagnes-rocheuses.ogg
 
-panel		data/bgs/temple10-road/temple10-road.png 
+panel		data/bgs/temple10-road/temple10-road.png
 frontpanel  data/bgs/temple10-road/layer1.png 
 background  	data/bgs/temple10-road/clouds-back.png		1 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple10-road/temple10-mountains.png   	0.8 1 0 0 0 0 1 1 1 0

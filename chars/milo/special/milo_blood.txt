@@ -2,7 +2,6 @@ name	milo_blood
 type	none
 shadow	0
 remove 0
-setlayer 666
 animationscript	data/scripts/player.c
 
 anim	idle
@@ -10,8 +9,8 @@ anim	idle
 	delay	15
 	offset	0 40
 	drawmethod alpha 6
-        drawmethod  channel 0.99
-        sound data/chars/tremi/02-pierce.wav
+   drawmethod  channel 0.99
+   sound data/chars/tremi/02-pierce.wav
 	frame	data/chars/milo/special/milo_blood/milo_blood0.png
 	frame	data/chars/milo/special/milo_blood/milo_blood1.png
 	frame	data/chars/milo/special/milo_blood/milo_blood2.png

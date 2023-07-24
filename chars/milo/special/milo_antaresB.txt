@@ -2,7 +2,6 @@ name	milo_antaresB
 type	none
 shadow	0
 remove 0
-setlayer 4521
 hitflash milo_blood
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_red.c

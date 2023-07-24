@@ -2,7 +2,6 @@ name	milo_antaresC
 type	none
 shadow	0
 remove 0
-setlayer 50
 animationscript	data/scripts/player.c
 
 anim	idle

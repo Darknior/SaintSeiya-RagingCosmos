@@ -1,8 +1,6 @@
 name	milo_antares
 type	none
 shadow	0
-speed 10
-setlayer 78944
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -10,7 +8,7 @@ anim	idle
 	loop	0
 	delay	8
 	offset	50 550
-        drawmethod  alpha 1
+   drawmethod  alpha 1
 	drawmethod scale 0.5 0.5
 	frame	data/chars/milo/special/milo_antares/milo_antares0.png
 	frame	data/chars/milo/special/milo_antares/milo_antares1.png
