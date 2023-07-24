@@ -434,7 +434,7 @@ anim special # Defense Scorpion (attaque lorsqu il est grab)
     delay    10
     frame    data/chars/milo/uppercut2.png
     
-anim special # Defense Scorpion (attaque en se relevant)
+anim riseattack # Defense Scorpion (attaque en se relevant)
     delay    10
     offset    103 140
     sound data/chars/milo/04-swing.wav
@@ -459,7 +459,7 @@ anim special # Defense Scorpion (attaque en se relevant)
     frame    data/chars/milo/uppercut2.png
 
 anim freespecial # Defense Scorpion
-    range 0 75
+    range 0 100
     delay    10
     offset    103 140
     sound data/chars/milo/04-swing.wav
@@ -484,7 +484,7 @@ anim freespecial # Defense Scorpion
     frame    data/chars/milo/uppercut2.png
 
 anim freespecial2 # Run attack Aiguille écarlate
-    range     130 300
+    range     100 300
     delay    5
     offset    46 130
     bbox 32 16 38 114
@@ -494,6 +494,7 @@ anim freespecial2 # Run attack Aiguille écarlate
     subentity milo_sting
     unsummonframe 5
     forcedirection -1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
     @cmd    dasher 4 0 0 1
     attack5 60 16 55 83 10 0 0 0 5 12
     frame    data/chars/milo/special21.png
