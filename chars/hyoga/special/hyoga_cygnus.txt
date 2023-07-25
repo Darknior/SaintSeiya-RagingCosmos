@@ -1,6 +1,6 @@
 name	hyoga_cygnus
 type	none
-shadow	0
+gfxshadow	1
 antigravity 100
 remove 1
 lifespan  3

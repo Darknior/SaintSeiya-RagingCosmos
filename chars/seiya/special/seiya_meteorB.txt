@@ -1,6 +1,5 @@
 name	seiya_meteorB
 type	none
-shadow	0
 nolife 1
 remove 0
 antigravity 100

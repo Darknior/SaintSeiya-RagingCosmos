@@ -1,7 +1,6 @@
 name	camus_dash
 type	none
 shadow	0
-setlayer 666
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -11,7 +10,7 @@ anim	idle
 	offset	336 231
 	drawmethod scale 0.8 0.8
 	drawmethod alpha 1
-        drawmethod  channel 0.50
+   drawmethod  channel 0.50
 	sound data/chars/camus/sounds/02-dash.wav
 	frame	data/chars/camus/special/camus_dash/camus_dash0.png
 	frame	data/chars/camus/special/camus_dash/camus_dash1.png

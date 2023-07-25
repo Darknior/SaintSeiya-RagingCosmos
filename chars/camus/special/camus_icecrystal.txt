@@ -4,8 +4,8 @@ shadow	0
 candamage player
 nolife 1
 remove 0
-setlayer 150
 antigravity 100
+animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_ice.c
 
 anim	idle
@@ -29,3 +29,5 @@ anim	idle
 	frame	data/chars/camus/special/camus_icecrystal/icecrystal12.png
 	frame	data/chars/camus/special/camus_icecrystal/icecrystal13.png
 	frame	data/chars/camus/special/camus_icecrystal/icecrystal14.png	
+   @cmd suicide
+   frame	data/chars/camus/special/camus_icecrystal/icecrystal14.png	

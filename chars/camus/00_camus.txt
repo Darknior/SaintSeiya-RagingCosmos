@@ -35,14 +35,14 @@ sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière quand on tombe (animation)
-bflash      tremi_block # Flash pendant un blocage (animation)
+bflash      camus_block # Flash pendant un blocage (animation)
 
 
 #-- ENNEMY CONFIG ---------------------------------------------------
 
 hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aimove      chasez       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression  0           # Valeur positive + agressif / valeur negative - aggressif
 
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
@@ -77,13 +77,15 @@ load camus_lights
 load camus_ice_star
 load camus_dash
 load camus_block
-load marin_swing
+load hyoga_swing
 load aldebaran_aura
 
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/camus/palettes/icon1.png 0
+icon         data/chars/camus/palettes/icon1.png
+iconpain         data/chars/camus/palettes/iconpain.png
+icondie         data/chars/camus/palettes/icondie.png
 palette      data/chars/camus/palettes/palette1.png
 #remap       data/chars/camus/palettes/palettes/palette1.png  # 14 Possible MAX
 
@@ -148,6 +150,8 @@ anim idle
     frame    data/chars/camus/idle3.png
     frame    data/chars/camus/idle2.png
 
+#// Walk/Run animations /////////////////////////////////////////////////
+
 anim walk
     loop    1
     delay    10
@@ -160,7 +164,7 @@ anim walk
     frame    data/chars/camus/walk5.png
 
 anim run
-    loop    1 1
+    loop    1
     delay    15
     offset    65 130
     bbox 49 22 50 108
@@ -171,56 +175,127 @@ anim run
     frame    data/chars/camus/run2.png
     frame    data/chars/camus/run3.png
     frame    data/chars/camus/run4.png
-    frame    data/chars/camus/run5.png
 
-anim runattack # Attaque en courant
-    delay    7
-    offset    46 130
-    bbox 32 16 38 114
-    hitflash marin_swing
-    forcedirection -1
-    @cmd    dasher 3.5 0 0 1
-    spawnframe  0 80 10 0
-    subentity    dash_dust
-    frame    data/chars/camus/runattack1.png
-    frame    data/chars/camus/runattack2.png
-    attack2 60 33 97 33 20 1 0 0 5 12
-    dropv 4.0 2.0 0.0
-    @cmd     spawnbind "camus_dash" "ANI_IDLE" 0 0 0 1 0
-    frame    data/chars/camus/runattack3.png
-    frame    data/chars/camus/runattack3.png
-    frame    data/chars/camus/runattack3.png
-    frame    data/chars/camus/runattack3.png
-    attack2 0
-    @cmd    dasher 0 0 0 1
-    delay    12
-    frame    data/chars/camus/runattack2.png
-    frame    data/chars/camus/runattack1.png
 
-anim freespecial # Attaque en courant
-    delay    7
-    offset    46 130
-    bbox 32 16 38 114
-        hitflash marin_swing
-    range     80 150
-    rangea     0 100
-    forcedirection -1
-    @cmd    dasher 3.5 0 0 1
-    frame    data/chars/camus/runattack1.png
-    frame    data/chars/camus/runattack2.png
-    attack2 60 33 97 33 20 1 0 0 5 18
-    dropv 4.0 2.0 0.0
-    @cmd     spawnbind "camus_dash" "ANI_IDLE" 0 0 0 1 0
-    frame    data/chars/camus/runattack3.png
-    frame    data/chars/camus/runattack3.png
-    frame    data/chars/camus/runattack3.png
-    attack 60 30 100 30 20 1 0 0 5 18
-    frame    data/chars/camus/runattack3.png
-    attack2 0
-    @cmd    dasher 0 0 0 1
+#//Basic Attacks animations/////////////////////////////////////////////////
+
+anim attack1 # Attaque combo 1
+    delay    5
+    offset    56 148
+    bbox 35 32 45 114
+    frame    data/chars/camus/attack1.png
+	 attack1 56 26 66 25 10 0 0 0 5 12
+    frame    data/chars/camus/attack2.png
+    frame    data/chars/camus/attack2.png
+	 attack1 0
+    frame    data/chars/camus/attack1.png
+
+anim attack2 # Attaque combo 2
+    delay    5
+    offset    56 146
+    bbox 32 32 45 114
+    frame    data/chars/camus/attack21.png
+    frame    data/chars/camus/attack22.png
+	 attack1 59 44 60 29 10 0 0 0 5 12
+    frame    data/chars/camus/attack23.png
+    frame    data/chars/camus/attack23.png
+	 attack1 0
+    frame    data/chars/camus/attack21.png
+
+anim attack3 # Attaque combo 3
+    delay    8
+    offset    56 148
+    bbox 32 18 45 129
+    frame    data/chars/camus/attack31.png
+    frame    data/chars/camus/attack32.png
+    frame    data/chars/camus/attack33.png
+	 attack1 47 50 69 41 10 0 0 0 5 12
+    frame    data/chars/camus/attack34.png
+    frame    data/chars/camus/attack35.png
+	 attack1 0
+    frame    data/chars/camus/attack33.png
+
+anim attack4 # Attaque combo 4
+    delay    5
+    offset    56 150
+    bbox 32 18 38 129
+    hitflash flashmedium
+	 attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/camus/attack41.png
+    frame    data/chars/camus/attack42.png
+    frame    data/chars/camus/attack43.png
+	 attack1 49 58 75 26 10 0 0 0 5 12
+    frame    data/chars/camus/attack45.png
+    frame    data/chars/camus/attack45.png
+    frame    data/chars/camus/attack44.png
+	 attack1 0
+    frame    data/chars/camus/attack43.png
+
+anim attack5 # Attaque combo 5
     delay    12
-    frame    data/chars/camus/runattack2.png
-    frame    data/chars/camus/runattack1.png
+    offset    27 142
+    bbox 20 63 38 84
+        hitflash hyoga_swing
+    attack1 0 0 0 0 0 0 0 0 0 0
+    frame    data/chars/camus/attack51.png
+    frame    data/chars/camus/attack52.png
+    attack1 35 107 92 30 20 1 0 0 5 12
+    dropv 4.0 1.0 0.0
+    frame    data/chars/camus/attack53.png
+    frame    data/chars/camus/attack54.png
+    attack1 0
+    frame    data/chars/camus/attack51.png
+
+#//Grab animations/////////////////////////////////////////////////
+
+
+
+#//Jump animations/////////////////////////////////////////////////
+
+anim jump # Saut Statique
+    delay    10
+    offset    45 146
+    bbox 30 1 38 94
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/camus/jump1.png
+    frame    data/chars/camus/jump2.png
+    frame    data/chars/camus/jump3.png
+    frame    data/chars/camus/jump4.png
+    frame    data/chars/camus/jump5.png
+    frame    data/chars/camus/jump6.png
+    frame    data/chars/camus/jump7.png
+    frame    data/chars/camus/jump8.png
+
+anim jumpdelay # Animation de saut intermédiaire
+    loop     1
+    delay    10
+    offset    45 132
+    bbox 30 1 38 94
+    frame    data/chars/camus/jump2.png
+
+anim jumpland # Aterrissage du saut
+    delay    12
+    offset    44 129
+    bbox 23 32 38 97
+    summonframe 0 0 0 0
+    subentity round_dust
+    frame    data/chars/camus/get1.png
+    frame    data/chars/camus/get2.png
+    frame    data/chars/camus/get1.png
+
+anim jumpattack # Attaque sautée statique
+    delay    10
+    offset    45 129
+    bbox 24 0 38 92
+    sound data/sounds/punch.wav
+    frame    data/chars/camus/jumpattack1.png
+    frame    data/chars/camus/jumpattack2.png
+	 attack1 57 44 80 48 10 1 0 0 5 12
+	dropv    6.0 2.0 0.0
+    frame    data/chars/camus/jumpattack3.png
+
+#// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim pain # Up
     delay    8
@@ -283,149 +358,120 @@ anim rise
     frame    data/chars/camus/rise3.png
     frame    data/chars/camus/rise4.png
 
-anim attack1 # Attaque combo 1
-    delay    5
-    offset    56 148
-    bbox 35 32 45 114
-    frame    data/chars/camus/attack1.png
-	attack1 56 26 66 25 10 0 0 0 5 12
-    frame    data/chars/camus/attack2.png
-    frame    data/chars/camus/attack2.png
-	attack1 0
-    frame    data/chars/camus/attack1.png
+#// Block animations /////////////////////////////////////////////////
 
-anim attack2 # Attaque combo 2
-    delay    5
-    offset    56 146
-    bbox 32 32 45 114
-    frame    data/chars/camus/attack21.png
-    frame    data/chars/camus/attack22.png
-	attack1 59 44 60 29 10 0 0 0 5 12
-    frame    data/chars/camus/attack23.png
-    frame    data/chars/camus/attack23.png
-	attack1 0
-    frame    data/chars/camus/attack21.png
+anim    block
+    offset    46 126
+    bbox 5 9 50 118
+    frame    data/chars/camus/block1.png
+    frame    data/chars/camus/block2.png
+    frame    data/chars/camus/block3.png
 
-anim attack3 # Attaque combo 3
-    delay    8
-    offset    56 148
-    bbox 32 18 45 129
-    frame    data/chars/camus/attack31.png
-    frame    data/chars/camus/attack32.png
-    frame    data/chars/camus/attack33.png
-	attack1 47 50 69 41 10 0 0 0 5 12
-    frame    data/chars/camus/attack34.png
-    frame    data/chars/camus/attack35.png
-	attack1 0
-    frame    data/chars/camus/attack33.png
+#-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim attack4 # Attaque combo 4
-    delay    5
-    offset    56 150
-    bbox 32 18 38 129
-    hitflash flashmedium
-	attack1 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/camus/attack41.png
-    frame    data/chars/camus/attack42.png
-    frame    data/chars/camus/attack43.png
-	attack1 49 58 75 26 10 0 0 0 5 12
-    frame    data/chars/camus/attack45.png
-    frame    data/chars/camus/attack45.png
-    frame    data/chars/camus/attack44.png
-	attack1 0
-    frame    data/chars/camus/attack43.png
-
-anim attack5 # Attaque combo 5
-    delay    12
-    offset    27 142
-    bbox 20 63 38 84
-        hitflash marin_swing
-    attack1 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/camus/attack51.png
-    frame    data/chars/camus/attack52.png
-    attack1 35 107 92 30 20 1 0 0 5 12
-    dropv 4.0 1.0 0.0
-    frame    data/chars/camus/attack53.png
-    frame    data/chars/camus/attack54.png
-    attack1 0
-    frame    data/chars/camus/attack51.png
-
-anim jump # Saut Statique
-    delay    10
-    offset    45 146
-    bbox 30 1 38 94
-    summonframe 0 0 0 0
-    subentity round_dust
-    frame    data/chars/camus/jump1.png
-    frame    data/chars/camus/jump2.png
-    frame    data/chars/camus/jump3.png
-    frame    data/chars/camus/jump4.png
-    frame    data/chars/camus/jump5.png
-    frame    data/chars/camus/jump6.png
-    frame    data/chars/camus/jump7.png
-    frame    data/chars/camus/jump8.png
-
-anim jumpdelay # Animation de saut intermédiaire
-    loop     1
-    delay    10
-    offset    45 132
-    bbox 30 1 38 94
-    frame    data/chars/camus/jump2.png
-
-anim jumpland # Aterrissage du saut
-    delay    12
-    offset    44 129
-    bbox 23 32 38 97
-    summonframe 0 0 0 0
-    subentity round_dust
-    frame    data/chars/camus/get1.png
-    frame    data/chars/camus/get2.png
-    frame    data/chars/camus/get1.png
-
-anim jumpattack # Attaque sautée statique
-    delay    10
-    offset    45 129
-    bbox 24 0 38 92
-    sound data/sounds/punch.wav
-    frame    data/chars/camus/jumpattack1.png
-    frame    data/chars/camus/jumpattack2.png
-	attack1 57 44 80 48 10 1 0 0 5 12
-	dropv    6.0 2.0 0.0
-    frame    data/chars/camus/jumpattack3.png
-
-anim special # Défense spéciale Ice pike
+anim special # Ice pike (attaque lorsqu il est grab)
     delay    15
     offset    68 158
     sound data/chars/camus/sounds/07-icewall.wav
-    energycost  25 1 0
-        hitflash marin_swing
-    summonframe 0 0 0 0
-    subentity camus_icecrystal
-    unsummonframe 11
-    freeze  56 28 36 15 0 5
-    dropv 4.0 3.0 0.0
+    hitflash hyoga_swing
+    @cmd     spawnbind "camus_icecrystal" "ANI_IDLE" 0 10 10 0 1
     frame    data/chars/camus/special1.png
     frame    data/chars/camus/special2.png
     frame    data/chars/camus/special3.png
+    attack11 90 50 180 120 30 0 0 0 0 20
     frame    data/chars/camus/special4.png
     frame    data/chars/camus/special5.png
     frame    data/chars/camus/special6.png
     frame    data/chars/camus/special7.png
-    freeze  56 28 36 15 0 5
     frame    data/chars/camus/special8.png
     frame    data/chars/camus/special9.png
     frame    data/chars/camus/special10.png
     frame    data/chars/camus/special11.png
-	attack5 0
     frame    data/chars/camus/special1.png
 
-anim freespecial3 #Camus ice star
-    fastattack 1
+anim riseattack # Ice pike (attaque en se relevant)
+    delay    15
+    offset    68 158
+    sound data/chars/camus/sounds/07-icewall.wav
+    hitflash hyoga_swing
+    @cmd     spawnbind "camus_icecrystal" "ANI_IDLE" 0 10 10 0 1
+    frame    data/chars/camus/special1.png
+    frame    data/chars/camus/special2.png
+    frame    data/chars/camus/special3.png
+    attack11 90 50 180 120 30 0 0 0 0 20
+    frame    data/chars/camus/special4.png
+    frame    data/chars/camus/special5.png
+    frame    data/chars/camus/special6.png
+    frame    data/chars/camus/special7.png
+    frame    data/chars/camus/special8.png
+    frame    data/chars/camus/special9.png
+    frame    data/chars/camus/special10.png
+    frame    data/chars/camus/special11.png
+    frame    data/chars/camus/special1.png
+
+anim freespecial # Ice pike
+    range 0 200
+    delay    15
+    offset    68 158
+    sound data/chars/camus/sounds/07-icewall.wav
+    hitflash hyoga_swing
+    @cmd     spawnbind "camus_icecrystal" "ANI_IDLE" 0 10 10 0 1
+    frame    data/chars/camus/special1.png
+    frame    data/chars/camus/special2.png
+    frame    data/chars/camus/special3.png
+    attack11 90 50 180 120 30 0 0 0 0 20
+    frame    data/chars/camus/special4.png
+    frame    data/chars/camus/special5.png
+    frame    data/chars/camus/special6.png
+    frame    data/chars/camus/special7.png
+    frame    data/chars/camus/special8.png
+    frame    data/chars/camus/special9.png
+    frame    data/chars/camus/special10.png
+    frame    data/chars/camus/special11.png
+    frame    data/chars/camus/special1.png
+
+anim freespecial2 # Attaque en courant
+    range 200 300
+    hitflash hyoga_swing
     forcedirection -1
-    range 200 400
+    delay    5
+    offset    65 130
+    bbox 49 22 50 108
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    @cmd    dasher 2 0 0 1
+    frame    data/chars/camus/run5.png
+    frame    data/chars/camus/run1.png
+    frame    data/chars/camus/run2.png
+    frame    data/chars/camus/run3.png
+    frame    data/chars/camus/run4.png
+    @cmd    dasher 5 0 0 1
+    spawnframe  0 80 10 0
+    subentity    dash_dust
+    delay    7
+    offset    46 130
+    bbox 0 0 0 0
+    frame    data/chars/camus/runattack1.png
+    frame    data/chars/camus/runattack2.png
+    attack2 60 33 97 33 20 30 0 0 5 12
+    dropv 4.0 2.0 0.0
+    @cmd     spawnbind "camus_dash" "ANI_IDLE" 0 10 0 1 0
+    frame    data/chars/camus/runattack3.png
+    frame    data/chars/camus/runattack3.png
+    frame    data/chars/camus/runattack3.png
+    frame    data/chars/camus/runattack3.png
+    attack2 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/camus/runattack2.png
+    frame    data/chars/camus/runattack1.png
+
+anim freespecial3 #Camus ice star
+    range 300 900
+    fastattack 1
+    hitflash hyoga_swing
+    forcedirection -1
     delay    10
     offset    68 158
-    energycost  25 1 0
     bbox 47 28 50 130
     frame    data/chars/camus/special1.png
     frame    data/chars/camus/special2.png
@@ -451,52 +497,26 @@ anim freespecial3 #Camus ice star
     frame    data/chars/camus/special2.png
     frame    data/chars/camus/special1.png
 
-anim special2 # Défense spéciale icecrystal
-    delay    10
-    offset    68 158
-    sound data/chars/camus/sounds/07-icewall.wav
-    energycost  25 1 0
-        hitflash marin_swing
-    summonframe 0 0 0 0
-    subentity camus_icecrystal
-    unsummonframe 11
-    freeze  56 28 36 15 0 5
-    dropv 4.0 3.0 0.0
-	bbox 45 38 45 120
-    frame    data/chars/camus/special1.png
-    frame    data/chars/camus/special2.png
-    frame    data/chars/camus/special3.png
-    frame    data/chars/camus/special4.png
-	bbox 0 0 0 0
-    frame    data/chars/camus/special5.png
-    frame    data/chars/camus/special6.png
-    frame    data/chars/camus/special7.png
-    freeze  56 28 36 15 0 5
-    frame    data/chars/camus/special8.png
-    frame    data/chars/camus/special9.png
-    frame    data/chars/camus/special10.png
-    frame    data/chars/camus/special11.png
-	attack5 0
-    frame    data/chars/camus/special1.png
-
 anim freespecial6 # Aurora execution ( haut + bouton special)
+    range 0 800
     delay    10
+    bbox 46 26 50 120
     offset    81 150
+    hitflash hyoga_swing
     fastattack 1
     @cmd     spawnScreen "camus_lights" 0 0 0 0
     sound data/chars/camus/sounds/05-constellation.wav
-	bbox 46 26 50 120
     frame    data/chars/camus/special29.png
     spawnframe 0 0 0 0 1
     subentity camus_constellation
     energycost  50 1 0
-        @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/camus/special21.png
     frame    data/chars/camus/special22.png
     frame    data/chars/camus/special23.png
     delay    10
     frame    data/chars/camus/special24.png
-	bbox 0 0 0 0
+	 bbox 0 0 0 0
     frame    data/chars/camus/special25.png
     frame    data/chars/camus/special26.png
     frame    data/chars/camus/special27.png
@@ -504,138 +524,112 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
     frame    data/chars/camus/special29.png
     sound data/chars/camus/sounds/03-aurora_execution.wav
     frame    data/chars/camus/special29.png
-    @cmd     spawnbind "camus_iceray" "ANI_IDLE" 0 0 0 1 0
+    @cmd     spawnbind "camus_iceray" "ANI_IDLE" 0 10 0 1 0
     delay   7
-	attack1 0
+	 attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 30 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 60 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 90 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 120 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 30 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 60 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 90 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 120 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 41 30 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 41 60 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 41 90 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 41 120 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 30 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 60 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 90 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 120 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 41 30 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 41 60 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 0
+	 attack1 41 90 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special29.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 0
     frame    data/chars/camus/special29.png
-	attack1 0
-    frame    data/chars/camus/special28.png
-	attack1 41 66 900 182 5 0 0 0 0 50
-    frame    data/chars/camus/special27.png
-	attack1 0
-    frame    data/chars/camus/special26.png
-	attack1 41 66 900 182 5 0 0 0 0 50
-    frame    data/chars/camus/special25.png
-	attack1 0
-    frame    data/chars/camus/special24.png
-	attack1 41 66 900 182 5 0 0 0 0 50
+	 attack1 41 120 900 30 5 0 0 0 0 30
+    frame    data/chars/camus/special29.png
+	 attack1 0
+    frame    data/chars/camus/special29.png
+    frame    data/chars/camus/special29.png
+	 attack1 41 30 900 30 5 0 0 0 0 30
+    frame    data/chars/camus/special29.png
+	 attack1 0
+    frame    data/chars/camus/special29.png
+	 attack1 41 60 900 30 5 0 0 0 0 30
+    frame    data/chars/camus/special29.png
+	 attack1 0
+    frame    data/chars/camus/special29.png
+	 attack1 41 90 900 30 5 0 0 0 0 30
+    frame    data/chars/camus/special29.png
+	 attack1 0
+    frame    data/chars/camus/special29.png
+	 attack1 41 120 900 30 5 0 0 0 0 30
     frame    data/chars/camus/special23.png
-	attack1 0
+	 attack1 0
     frame    data/chars/camus/special22.png
     freeze  41 66 900 182 0 5
     frame    data/chars/camus/special21.png
 
-anim riseattack # Défense spéciale icecrystal
-    delay    10
-    offset    68 158
-    sound data/chars/camus/sounds/07-icewall.wav
-    energycost  10 1 0
-        hitflash marin_swing
-    summonframe 0 0 0 0
-    subentity camus_icecrystal
-    unsummonframe 11
-    freeze  56 28 36 15 0 5
-    dropv 4.0 3.0 0.0
-    frame    data/chars/camus/special1.png
-    frame    data/chars/camus/special2.png
-    frame    data/chars/camus/special3.png
-    frame    data/chars/camus/special4.png
-    frame    data/chars/camus/special5.png
-    frame    data/chars/camus/special6.png
-    frame    data/chars/camus/special7.png
-    freeze  56 28 36 15 0 5
-    frame    data/chars/camus/special8.png
-    frame    data/chars/camus/special9.png
-    frame    data/chars/camus/special10.png
-    frame    data/chars/camus/special11.png
-	attack5 0
-    frame    data/chars/camus/special1.png
 
-anim    block
-    offset    46 126
-    bbox 5 9 50 118
-    frame    data/chars/camus/block1.png
-    frame    data/chars/camus/block2.png
-    frame    data/chars/camus/block3.png
+

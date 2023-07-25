@@ -21,8 +21,8 @@ settime         99
 noreset 2
 light        256 -44
 at        0
-shadowalpha 6
-shadowopacity 0
+shadowalpha 1
+shadowopacity 250
 at        0
 
 

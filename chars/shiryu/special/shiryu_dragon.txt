@@ -1,6 +1,6 @@
 name	shiryu_dragon
 type	none
-shadow	0
+gfxshadow	1
 remove 0
 candamage enemy npc
 antigravity 100

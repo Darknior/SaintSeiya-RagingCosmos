@@ -11,7 +11,7 @@ anim	idle
 	delay	3
 	offset	800 0
 	drawmethod alpha 1
-        drawmethod  channel 0.5
+   drawmethod  channel 0.5
 	frame	data/chars/camus/special/camus_lights/camus_lights0.png
 	frame	data/chars/camus/special/camus_lights/camus_lights1.png
 	frame	data/chars/camus/special/camus_lights/camus_lights2.png

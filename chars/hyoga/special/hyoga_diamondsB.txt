@@ -1,7 +1,6 @@
 name	hyoga_diamondsB
 type	none
 candamage enemy npc
-shadow	0
 remove 0
 antigravity 100
 animationscript	data/scripts/player.c

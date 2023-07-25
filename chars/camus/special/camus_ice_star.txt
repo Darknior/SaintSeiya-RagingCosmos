@@ -1,8 +1,7 @@
 name	camus_ice_star
 type	none
 candamage player
-shadow	0
-setlayer 100
+gfxshadow	1
 antigravity 100
 nolife 1
 remove 0
@@ -13,59 +12,59 @@ anim	idle
 	loop	1
 	delay	4
 	offset	200 200
-   hitflash marin_swing
+   hitflash hyoga_swing
 	drawmethod alpha 1
 	drawmethod scale 0.5 0.5
 	attack1 0
 	sound data/chars/camus/04-ice_star.wav
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star0.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star1.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star2.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star3.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star4.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star5.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star6.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star7.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star8.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star9.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star10.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star11.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star12.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star13.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star14.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star15.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star16.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star17.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star18.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star19.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star20.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star21.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star22.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star23.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star24.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star25.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star26.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star27.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star28.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star29.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star30.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star31.png
-	freeze  200 150 150 150 0 3.5
+	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star32.png
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star33.png
 	@cmd suicide

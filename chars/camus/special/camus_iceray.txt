@@ -2,7 +2,6 @@ name	camus_iceray
 type	none
 shadow	0
 remove 0
-setlayer 150
 antigravity 100
 animationscript	data/scripts/player.c
 

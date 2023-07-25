@@ -1,7 +1,7 @@
 name                temple4_heads
 type                none
 shadow              0
-setlayer            2
+setlayer            0
 
 anim idle
     loop        1 10 38
