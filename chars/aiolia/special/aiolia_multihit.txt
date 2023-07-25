@@ -2,7 +2,7 @@ name	aiolia_multihit
 type	panel
 speed	10
 shadow	0
-setlayer 854
+setlayer 400
 antigravity 100
 animationscript	data/scripts/player.c
 

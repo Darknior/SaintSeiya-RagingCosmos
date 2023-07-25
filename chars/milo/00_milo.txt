@@ -27,6 +27,7 @@ grabdistance 36         # Distance à partir de laquelle on peut chopper l ennem
 offense all 2           # puissance d attaque du perso, 2 signifie 200% de degats en plus
 defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
 holdblock   1           # Permet de pouvoir maintenir la parade
+nopassiveblock 1        # Maintient la garde quand il est attaqué
 nodieblink  3           # Ne clignote pas quand tu meurs
 weaploss    2           # On ne perd son arme qu' à notre mort
 modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")

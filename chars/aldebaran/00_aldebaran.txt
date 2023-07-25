@@ -535,7 +535,7 @@ anim riseattack # Earthquake (attaque en se relevant)
     frame    data/chars/aldebaran/attack66.png
 
 anim freespecial # Earthquake
-    range 0 75
+    range 65 130
     delay    10
     offset    37 163
     sound data/chars/aldebaran/sounds/02-swing.wav
@@ -577,20 +577,28 @@ anim freespecial # Earthquake
 
 anim freespecial2 # Attaque en courant
     range 200 500
-    delay    7
-    offset    37 164
     forcedirection -1
     hitflash blue_swing
-    range     200 400
+    quakeframe 1 7 4
+    delay    10
+    offset    65 161
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    @cmd    dasher 2 0 0 1
+    frame    data/chars/aldebaran/run4.png
+    frame    data/chars/aldebaran/run1.png
+    frame    data/chars/aldebaran/run2.png
+    frame    data/chars/aldebaran/run3.png
+    frame    data/chars/aldebaran/run4.png
     @cmd    dasher 6.5 0 0 1
     @cmd     spawnbind "aldebaran_runtaurus" "ANI_IDLE" 0 0 0 1 0
     sound data/chars/aldebaran/sounds/10-dash.wav
-	 quakeframe 1 7 4
+    delay    7
+    offset    37 164
     frame    data/chars/aldebaran/runattack1.png
     @cmd     spawnbind "aldebaran_rundust" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/aldebaran/runattack2.png
     frame    data/chars/aldebaran/runattack3.png
-    attack2 60 40 55 83 20 1 0 0 5 20
+    attack2 60 40 55 83 30 1 0 0 5 20
     frame    data/chars/aldebaran/runattack4.png
     frame    data/chars/aldebaran/runattack5.png
     frame    data/chars/aldebaran/runattack6.png
@@ -604,7 +612,7 @@ anim freespecial2 # Attaque en courant
     frame    data/chars/aldebaran/runattack10.png
 
 anim freespecial3 # Taurus homerun
-    range 0 75
+    range 0 65
     delay    5
     offset    37 163
     sound data/chars/aldebaran/sounds/02-swing.wav
@@ -631,46 +639,46 @@ anim freespecial3 # Taurus homerun
     frame    data/chars/aldebaran/special15.png
 
 anim freespecial4 # Punch combo
-    range 75 150
+    range 130 200
     fastattack 1
     forcedirection -1
-    hitflash flashbig
+    hitflash aldebaran_swing
     delay    6
     offset    42 160
     @cmd     spawnbind "aldebaran_multi" "ANI_IDLE" 0 10 0 1 0
     sound data/chars/aldebaran/sounds/02-swing.wav
-	attack1 59 30 150 35 5 0 0 0 12 30
+	attack1 59 30 140 35 5 0 0 0 12 30
     frame    data/chars/aldebaran/special21.png
 	attack1 0
     frame    data/chars/aldebaran/special22.png
-	attack1 59 60 150 35 5 0 0 0 12 30
+	attack1 59 60 140 35 5 0 0 0 12 30
     frame    data/chars/aldebaran/special23.png
 	attack1 0
     frame    data/chars/aldebaran/special24.png
-	attack1 59 90 150 35 5 0 0 0 12 30
+	attack1 59 90 140 35 5 0 0 0 12 30
     frame    data/chars/aldebaran/special25.png
 	attack1 0
     frame    data/chars/aldebaran/special21.png
     frame    data/chars/aldebaran/special22.png
-	attack1 59 120 150 35 5 0 0 0 12 30
+	attack1 59 120 140 35 5 0 0 0 12 30
     frame    data/chars/aldebaran/special23.png
 	attack1 0
     frame    data/chars/aldebaran/special24.png
     frame    data/chars/aldebaran/special25.png
-	attack1 59 30 150 35 5 0 0 0 12 30
+	attack1 59 30 140 35 5 0 0 0 12 30
     frame    data/chars/aldebaran/special21.png
 	attack1 0
     frame    data/chars/aldebaran/special22.png
-	attack1 59 60 150 35 5 0 0 0 12 30
+	attack1 59 60 140 35 5 0 0 0 12 30
     frame    data/chars/aldebaran/special23.png
 	attack1 0
     frame    data/chars/aldebaran/special24.png
-	attack1 59 90 150 35 5 0 0 0 12 30
+	attack1 59 90 140 35 5 0 0 0 12 30
     frame    data/chars/aldebaran/special25.png
 	attack1 0
     frame    data/chars/aldebaran/special25.png
     delay    10
-	attack1 59 30 150 35 5 0 0 0 12 30
+	attack1 59 30 140 35 5 0 0 0 12 30
     dropv 3.0 3.0 0.0
     frame    data/chars/aldebaran/special26.png
     frame    data/chars/aldebaran/special27.png

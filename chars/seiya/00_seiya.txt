@@ -9,7 +9,7 @@ type        player
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
 riseinv     1 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
-risetime    -70        # Temps avant de se relever (-300 = 3 secondes)
+risetime    -70         # Temps avant de se relever (-300 = 3 secondes)
 speed       13          # Vitesse de déplacement
 running     25 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 

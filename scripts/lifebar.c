@@ -46,7 +46,7 @@ void lifeBar()
 		if(life > 0){
 			life	= (life*xSize)/(maxLife); //CALCULATE REMAINING LIFE BAR SIZE
 			maxLife	= (maxLife*xSize)/(maxLife); //CALCULATE MAX LIFE BAR SIZE
-			drawbox(xLife+50, yLife+1, life, ySize, layer3, rgbcolor(255,255,255), 0); //YELLOW BAR, LIFE REMAINING
+			drawbox(xLife+49, yLife+1, life, ySize, layer3, rgbcolor(255,255,255), 0); //YELLOW BAR, LIFE REMAINING
 		}
 	}
 	else
