@@ -17,7 +17,6 @@ jumpmove    0 0         # Peut se déplacer en plein saut (Toute dir. 7 7)
 jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
-
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 1         # Secoue l’écran qd on tombe au sol
 throwdamage 20          # Degats recus si on est projetés
@@ -502,6 +501,69 @@ anim attack5 # Attaque combo 5
     frame    data/chars/shun/attack33.png
     attack1 0
 
+anim chargeattack    # Thunder Wave (Avant + Bouton Special)
+    chargetime 1
+    fastattack 1
+    delay    10
+    offset    202 310
+    hitflash shun_impactD
+    sound data/chars/shun/sounds/78-cosmos.wav
+    @cmd     spawnbind "shun_aura" "ANI_IDLE" 0 10 0 0 0
+	 @cmd     spawnbind "shun_cosmos" "ANI_IDLE" 0 0 0 0 0
+    frame    data/chars/shun/special1.png
+    sound data/chars/shun/sounds/08-ultra.wav
+    frame    data/chars/shun/special2.png
+    sound data/chars/shun/sounds/02.wav
+    frame    data/chars/shun/special3.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special4.png
+	 attack1 0
+    frame    data/chars/shun/special5.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special6.png
+	 attack1 0
+    frame    data/chars/shun/special7.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special8.png
+	 attack1 0
+    frame    data/chars/shun/special9.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special10.png
+	 attack1 0
+    frame    data/chars/shun/special11.png
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/special12.png
+	 attack1 0
+    frame    data/chars/shun/special13.png
+    offset    202 310
+    delay    8
+	 attack5 50 290 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/attack41.png
+	 attack1 0
+    frame    data/chars/shun/attack42.png
+	 attack5 50 255 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/attack43.png
+	 attack1 0
+    frame    data/chars/shun/attack44.png
+	 attack5 50 255 400 65 10 0 0 0 5 30
+    frame    data/chars/shun/attack45.png
+	 attack1 0
+    frame    data/chars/shun/attack46.png
+	 attack5 50 255 430 65 10 5 0 0 5 30
+    dropv    1.2 5
+    frame    data/chars/shun/attack47.png
+	 attack1 0
+	 frame    data/chars/shun/attack48.png
+	 attack5 50 255 400 65 10 5 0 0 5 30
+    dropv    1.2 5
+    frame    data/chars/shun/attack49.png
+	 attack1 0
+    frame    data/chars/shun/attack50.png
+	 attack5 50 255 400 65 10 5 0 0 5 30
+    dropv    1.2 5
+    frame    data/chars/shun/attack51.png
+	 attack1 0
+    frame    data/chars/shun/attack52.png
 
 #//Grab animations/////////////////////////////////////////////////
 

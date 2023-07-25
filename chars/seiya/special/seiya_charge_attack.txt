@@ -1,0 +1,51 @@
+name	seiya_charge_attack
+type	none
+nolife 1
+candamage enemy
+remove 0
+antigravity 100
+animationscript	data/scripts/player.c
+didhitscript	data/scripts/didhit/tint_silver.c
+
+anim	idle
+	loop	1
+   otg 1
+	jugglecost 10
+   hitflash meteor_impact
+	delay	6
+	offset	39 196
+	drawmethod alpha 1	
+   drawmethod  scale 0.7 0.7
+	attack5 40 42 150 70 5 0 0 0 0 20
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack0.png
+	attack5 0
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack1.png
+	attack5 40 42 150 70 5 0 0 0 0 20
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack2.png
+	attack5 0
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack3.png
+	attack5 40 42 150 70 5 0 0 0 0 20
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack4.png
+	attack5 0
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack5.png
+	attack5 40 42 150 70 5 0 0 0 0 20
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack6.png
+	attack5 0
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack7.png
+	attack5 40 42 150 70 5 1 0 0 0 20
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack8.png
+	attack5 0
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack9.png
+	attack5 40 42 150 70 5 1 0 0 0 20
+   frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack10.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack11.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack12.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack13.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack14.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack15.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack16.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack17.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack18.png
+	frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack19.png
+   @cmd     suicide
+   frame	data/chars/seiya/special/seiya_charge_attack/seiya_charge_attack19.png

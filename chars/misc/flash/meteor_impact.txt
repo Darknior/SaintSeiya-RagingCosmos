@@ -1,0 +1,30 @@
+name	meteor_impact
+type	none
+shadow	0
+
+
+
+anim	idle
+	loop	0
+	delay	8
+	offset	95 90
+   drawmethod  alpha 1
+   drawmethod  scale 0.7 0.7
+   sound data/chars/misc/flash/flashbig.wav
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact0.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact1.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact2.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact3.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact4.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact5.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact6.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact7.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact8.png
+   frame	data/chars/misc/flash/meteor_impact/meteor_impact9.png
+   frame	data/chars/misc/flash/meteor_impact/meteor_impact10.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact11.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact12.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact13.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact14.png
+	frame	data/chars/misc/flash/meteor_impact/meteor_impact15.png
+

@@ -11,7 +11,7 @@ anim	idle
 	loop	1
    otg 1
 	jugglecost 10
-	hitflash marin_swing
+   hitflash meteor_impact
 	delay	6
 	offset	200 38
 	drawmethod alpha 1	

@@ -52,25 +52,26 @@ keyscript           data/scripts/commands.c             # Mort du Timer à zéro
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
+load aldebaran_super_lights
+load aldebaran_swing
+load marin_swing
+load meteor_impact
 load seiya_aura
-load seiya_constellation
-load seiya_meteor
-load seiya_meteorB
-load seiya_meteord
-load seiya_constellation
-load seiya_roll
-load seiya_dash_dust
-load seiya_upper_dust
-load seiya_round_dust
 load seiya_aura_air_kick
 load seiya_aura_ryuseiken
 load seiya_aura_ryuseikenB
 load seiya_aura_ryuseikenC
-load aldebaran_super_lights
-load aldebaran_swing
+load seiya_charge_attack
+load seiya_constellation
+load seiya_dash_dust
 load seiya_lights
+load seiya_meteor
+load seiya_meteorB
 load seiya_meteor_flash
-load marin_swing
+load seiya_meteord
+load seiya_roll
+load seiya_round_dust
+load seiya_upper_dust
 
 
 #-- PALETTES --------------------------------------------------------
@@ -526,6 +527,21 @@ anim    attack5    # Attaque combo 5
     frame    data/chars/seiya/attack59.png
     frame    data/chars/seiya/attack60.png
 
+anim chargeattack # Attaque combo 3
+    jugglecost  1
+    delay    10
+    chargetime 1
+    offset   45 119
+    bbox     38 7 30 112
+    hitflash flashmedium
+    @cmd     spawnbind "seiya_charge_attack" "ANI_IDLE" 0 10 10 0 0
+    sound    data/chars/seiya/sounds/01-pegasus_shoot.wav
+    frame    data/chars/seiya/attack31.png
+    frame    data/chars/seiya/attack32.png
+    delay    100
+    frame    data/chars/seiya/attack33.png
+    attack1  0
+
 
 #// Grab animations /////////////////////////////////////////////////
 
@@ -947,7 +963,7 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     delay    10
     offset   31 116
     energycost  25 1 0
-    hitflash marin_swing
+    hitflash meteor_impact
     attack5  -8 -64 100 180 10 1 0 0 5 30
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
@@ -1092,6 +1108,7 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
 anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     jugglecost   10
     fastattack   1
+    hitflash meteor_impact
     summonframe  0 0 0 0 1
     subentity    seiya_constellation
     energycost   50 1 0
@@ -1102,7 +1119,6 @@ anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     @cmd     spawnScreen "seiya_lights" 0 0 0 0
     delay    10
     offset   31 116
-    hitflash marin_swing
     attack5  -8 -64 100 180 10 1 0 0 5 30
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav

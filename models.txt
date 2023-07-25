@@ -69,6 +69,7 @@ load    flashmedium     data/chars/misc/flash/flashmedium.txt
 load    flashbig        data/chars/misc/flash/flashbig.txt
 load    blue_swing      data/chars/misc/flash/blue_swing.txt
 load    yellow_swing    data/chars/misc/flash/yellow_swing.txt
+load    meteor_impact    data/chars/misc/flash/meteor_impact.txt
 
 # Dust animations
 
@@ -97,6 +98,7 @@ know    seiya_aura_air_kick    data/chars/seiya/special/seiya_aura_air_kick.txt
 know    seiya_aura_ryuseiken   data/chars/seiya/special/seiya_aura_ryuseiken.txt
 know    seiya_aura_ryuseikenB   data/chars/seiya/special/seiya_aura_ryuseikenB.txt
 know    seiya_aura_ryuseikenC   data/chars/seiya/special/seiya_aura_ryuseikenC.txt
+know    seiya_charge_attack    data/chars/seiya/special/seiya_charge_attack.txt
 know    seiya_constellation    data/chars/seiya/special/seiya_constellation.txt
 know    seiya_dash_dust        data/chars/seiya/special/seiya_dash_dust.txt
 know    seiya_lights           data/chars/seiya/special/seiya_lights.txt
