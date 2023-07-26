@@ -1,7 +1,7 @@
 name	aphrodite_rose_shot
 type	none
 candamage player
-gfxshadow	1
+shadow	2
 antigravity 100
 remove 0
 lifespan  6
@@ -11,25 +11,26 @@ anim	idle
 	fastattack 1
 	loop	1
 	delay	4
+   dot 0 1000 1 6 100
 	offset	-50 35
    hitflash aphrodite_rose_explosion
 	drawmethod alpha 1
-	attack1 0 0 150 150 10 0 0 0 12 12
+	attack1 0 0 150 150 20 0 0 0 12 12
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose1.png
-	attack1 0 0 150 150 10 0 0 0 12 12
+	attack1 0 0 150 150 20 0 0 0 12 12
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose2.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose3.png
-	attack1 0 0 150 150 10 0 0 0 12 12
+	attack1 0 0 150 150 20 0 0 0 12 12
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose1.png
-	attack1 0 0 150 150 10 0 0 0 12 12
+	attack1 0 0 150 150 20 0 0 0 12 12
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose2.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose3.png
-	attack1 0 0 150 150 10 0 0 0 12 12
+	attack1 0 0 150 150 20 0 0 0 12 12
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose1.png
-	attack1 0 0 150 150 10 0 0 0 12 12
+	attack1 0 0 150 150 20 0 0 0 12 12
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose2.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/black_rose3.png
-	attack1 0 0 150 150 10 0 0 0 12 12
+	attack1 0 0 150 150 20 0 0 0 12 12

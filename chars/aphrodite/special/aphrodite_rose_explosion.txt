@@ -7,7 +7,7 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	0
 	delay	5
-	offset	238 275
+	offset	238 201
 	drawmethod alpha 1
 	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion55.png
 	frame	data/chars/aphrodite/special/aphrodite_rose_explosion/aphrodite_rose_explosion56.png

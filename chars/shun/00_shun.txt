@@ -345,7 +345,7 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/shun/jump5.png
 
 anim run
-    loop     1 1
+    loop     1
     delay    8
     offset   62 132
     bbox     39 28 51 104
