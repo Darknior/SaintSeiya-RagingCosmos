@@ -555,6 +555,7 @@ anim freespecial2 # Attaque en courant
     frame    data/chars/aiolia/run4.png
     delay    10
     offset    50 136
+    bbox 0 0 0 0
     @cmd    dasher 4 0 0 1
     sound data/chars/aiolia/sounds/01-roar.wav
     @cmd     spawnbind "aiolia_dash" "ANI_IDLE" 0 10 0 1 0

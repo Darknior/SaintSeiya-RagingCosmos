@@ -2,7 +2,6 @@ name	aphrodite_big_roses_white
 type	none
 shadow	0
 remove 0
-setlayer 199
 animationscript	data/scripts/player.c
 
 anim	idle

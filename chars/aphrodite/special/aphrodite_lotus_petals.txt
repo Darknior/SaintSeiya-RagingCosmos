@@ -2,7 +2,6 @@ name	aphrodite_lotus_petals
 type	none
 shadow	0
 remove 0
-setlayer 199
 animationscript	data/scripts/player.c
 
 anim	idle

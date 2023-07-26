@@ -2,7 +2,6 @@ name	aphrodite_rosefield
 type	none
 shadow	0
 nolife 	 1
-setlayer 1
 candamage player
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_red.c
@@ -11,7 +10,9 @@ anim	idle
 	loop	0
 	delay	10
 	offset	-69 30
-        hitflash aphrodite_rose_explosion
+   hitflash aphrodite_rose_explosion
+   drawmethod  alpha 6
+   drawmethod  channel 0.99
 	attack1 31 0 100 30 30 1 0 0 0 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield1.png
 	attack1 0
@@ -46,5 +47,17 @@ anim	idle
 	attack1 0
 	delay	10
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
+   drawmethod  channel 0.8
+   frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
+   drawmethod  channel 0.6
+   frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
+   drawmethod  channel 0.4
+   frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
+   drawmethod  channel 0.3
+   frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
+   drawmethod  channel 0.2
+   frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
+   drawmethod  channel 0.1
+   frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
 	@cmd suicide
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png	
