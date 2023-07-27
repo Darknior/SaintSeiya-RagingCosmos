@@ -8,7 +8,7 @@ anim	idle
 	loop	1
 	delay	10
 	offset	280 750
-        drawmethod  alpha 1
+   drawmethod  alpha 1
 	drawmethod scale 0.4 0.4
 	frame	data/chars/shura/special/shura_excalibur/shura_excalibur2.png
 	frame	data/chars/shura/special/shura_excalibur/shura_excalibur3.png

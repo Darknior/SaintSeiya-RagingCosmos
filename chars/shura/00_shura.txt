@@ -464,60 +464,63 @@ anim freespecial4
     loop    0
     hitflash aldebaran_swing
 	 sound data/chars/shura/sounds/08-sword.wav
-    delay    5
-    offset    67 226
+    delay    80
+    offset    56 228
+    sound data/chars/aldebaran/sounds/78-cosmos.wav
+    @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/shura/fsp0.png
+    delay    10
     frame    data/chars/shura/fsp1.png
     frame    data/chars/shura/fsp2.png
     sound    data/chars/shura/sounds/03-excalibur.wav
     @cmd 	spawnbind "shura_slashA" "ANI_IDLE" 0 0 0 0 0
 	 @cmd	shooter "shura_rundust" 0 80 0 1.5 0 0
-    delay    2
-	 attack 43 51 70 78 30 1 0 1 0 50
+    delay    6
+	attack 43 51 70 78 30 1 0 1 0 50
     frame    data/chars/shura/fsp2a.png
-	 attack 43 90 70 78 30 1 0 1 0 50
+	attack 43 90 70 78 30 1 0 1 0 50
     frame    data/chars/shura/fsp3.png
-	 attack 45 90 70 78 30 1 0 1 0 50
+	attack 45 90 70 78 30 1 0 1 0 50
     frame    data/chars/shura/fsp3a.png
-	 attack 50 109 70 78 30 1 0 1 0 50
+	attack 50 109 70 78 30 1 0 1 0 50
     frame    data/chars/shura/fsp5.png
-	 attack 94 76 62 131 30 1 0 1 0 50
+	attack 94 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp6.png
-	 attack 123 76 62 131 30 1 0 0 0 50
+	attack 123 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp7.png
-	 attack 144 76 62 131 30 1 0 0 0 50
+	attack 144 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp8.png
-	 attack 161 76 62 131 30 1 0 0 0 50
+	attack 161 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp9.png
-	 attack 177 76 62 131 30 1 0 0 0 50
+	attack 177 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp10.png
-	 attack 194 76 62 131 30 1 0 1 0 50
+	attack 194 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp11.png
-	 attack 212 76 62 131 30 1 0 1 0 50
+	attack 212 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp12.png
-	 attack 263 76 62 131 30 1 0 0 0 50
+	attack 263 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp13.png
-	 attack 290 76 62 131 30 1 0 0 0 50
+	attack 290 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp14.png
-	 attack 316 76 62 131 30 1 0 0 0 50
+	attack 316 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp15.png
-	 attack 343 76 62 131 30 1 0 0 0 50
+	attack 343 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp16.png
-	 attack 374 76 62 131 30 1 0 0 0 50
+	attack 374 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp17.png
-	 attack 396 76 62 131 30 1 0 0 0 50
+	attack 396 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp18.png
-	 attack 425 76 62 131 30 1 0 0 0 50
+	attack 425 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp19.png
-	 attack 451 76 62 131 30 1 0 0 0 50
+	attack 451 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp20.png
-	 attack 479 76 62 131 30 1 0 0 0 50
+	attack 479 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp21.png
-	 attack 506 76 62 131 30 1 0 0 0 50
+	attack 506 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp22.png
-	 attack 532 76 62 131 30 1 0 0 0 50
+	attack 532 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp23.png
-	 attack 590 76 62 131 30 1 0 0 0 50
+	attack 590 76 62 131 30 1 0 0 0 20
     frame    data/chars/shura/fsp24.png
     frame    data/chars/shura/fsp25.png
     frame    data/chars/shura/fsp4.png
@@ -525,34 +528,39 @@ anim freespecial4
 anim freespecial5
     range 450 900
     loop    0
-    delay    5
+    delay    80
     hitflash aldebaran_swing
+	 quakeframe 1 7 4
     sound    data/chars/shura/sounds/03-excalibur.wav
-    offset    51 241
+    offset    55 242
+    sound data/chars/aldebaran/sounds/78-cosmos.wav
+    @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/shura/sp1.png
+    delay    10
     frame    data/chars/shura/sp2.png
-    attack    16 94 156 147 45 1 0 0 0 50
+	attack 16 94 156 147 45 1 0 0 0 20
     frame    data/chars/shura/sp3.png
     frame    data/chars/shura/sp4.png
-    attack    53 36 222 206 45 1 0 0 0 50
+	attack 53 36 222 206 45 1 0 0 0 20
     frame    data/chars/shura/sp5.png
     frame    data/chars/shura/sp6.png
-    attack    122 36 311 206 45 1 0 0 0 50
+	attack 122 36 311 206 45 1 0 0 0 20
     frame    data/chars/shura/sp7.png
     frame    data/chars/shura/sp8.png
-    attack    183 36 311 206 45 1 0 0 0 50
+	attack 183 36 311 206 45 1 0 0 0 20
     frame    data/chars/shura/sp9.png
     frame    data/chars/shura/sp10.png
-    attack    264 36 311 206 45 1 0 0 0 50
+	attack 264 36 311 206 45 1 0 0 0 20
     frame    data/chars/shura/sp11.png
     frame    data/chars/shura/sp12.png
-    attack    337 36 311 206 45 1 0 0 0 50
+	attack 337 36 311 206 45 1 0 0 0 20
     frame    data/chars/shura/sp13.png
     frame    data/chars/shura/sp14.png
-    attack    454 25 252 216 45 1 0 0 0 50
+	attack 454 25 252 216 45 1 0 0 0 20
     frame    data/chars/shura/sp15.png
     frame    data/chars/shura/sp16.png
-    attack    525 31 182 210 45 1 0 0 0 50
+	attack 525 31 182 210 45 1 0 0 0 20
+    dropv 6 5
     frame    data/chars/shura/sp17.png
     frame    data/chars/shura/sp18.png
     frame    data/chars/shura/sp19.png
@@ -564,8 +572,9 @@ anim freespecial6
     energycost  50 1 0
     hitflash aldebaran_swing
     fastattack 1
+    otg 1
     loop    0
-    delay    8
+    delay    80
     offset    39 249
     bbox    22 133 15 116
     @cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
@@ -573,6 +582,7 @@ anim freespecial6
 	 @cmd 	spawnScreen "shura_constellation" 0 0 0 0
     sound data/chars/aldebaran/sounds/78-cosmos.wav
     frame    data/chars/shura/grat1.png
+    delay    8
     frame    data/chars/shura/grat2.png
     frame    data/chars/shura/grat2a.png
     frame    data/chars/shura/grat3.png
@@ -626,9 +636,11 @@ anim freespecial6
     attack 0
     frame    data/chars/shura/grat1.png
     attack -200 50 600 400 15 1 0 0 0 100
+    dropv 6 5
     frame    data/chars/shura/grat1.png
     attack 0
     frame    data/chars/shura/grat1.png
     attack -200 50 600 400 15 1 0 0 0 100
+    dropv 6 5
     frame    data/chars/shura/grat1.png
     attack 0
