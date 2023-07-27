@@ -1,7 +1,6 @@
 name	shura_dash
 type	none
 shadow	0
-setlayer 666
 antigravity 100
 animationscript	data/scripts/player.c
 

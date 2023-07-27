@@ -1,7 +1,6 @@
 name	shura_slashA
 type	none
 shadow	0
-setlayer 7777
 antigravity 100
 animationscript	data/scripts/player.c
 
@@ -9,10 +8,10 @@ anim	idle
 	loop	1
 	delay	5
 	offset	194 330
-        drawmethod  alpha 1
-        drawmethod  channel 0.73
+   drawmethod  alpha 1
+   drawmethod  channel 0.73
 	sound data/chars/shura/02-slash.wav
-	quakeframe   data/chars/shura/special/shura_slashA/shura_slashB25.png 13 5
+	quakeframe 13 5
 	frame	data/chars/shura/special/shura_slashA/shura_slashB24.png
 	frame	data/chars/shura/special/shura_slashA/shura_slashB23.png
 	frame	data/chars/shura/special/shura_slashA/shura_slashB22.png
