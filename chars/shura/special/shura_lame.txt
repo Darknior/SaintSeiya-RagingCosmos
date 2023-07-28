@@ -1,0 +1,59 @@
+name	shura_lame
+type	none
+gfxshadow	1
+remove 0
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	1
+	delay	30
+	offset	500 233
+   drawmethod  alpha 1
+   drawmethod  channel 0.73
+   quakeframe 1 7 4
+	sound data/chars/shura/sounds/02-slash.wav
+	frame	data/chars/shura/special/shura_lame/shura_lame1.png
+   delay	10
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png
+	attack 500 50 200 200 40 1 0 0 100 20
+	frame	data/chars/shura/special/shura_lame/shura_lame3.png
+   delay	100
+	frame	data/chars/shura/special/shura_lame/shura_lame4.png
+   delay	10
+	frame	data/chars/shura/special/shura_lame/shura_lame3.png
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png
+   attack 500 50 200 200 40 1 0 0 100 20
+   delay	30
+	frame	data/chars/shura/special/shura_lame/shura_lame1.png
+   delay	10
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png
+   attack 500 50 200 200 40 1 0 0 100 20
+	frame	data/chars/shura/special/shura_lame/shura_lame3.png
+   delay	100
+	frame	data/chars/shura/special/shura_lame/shura_lame4.png
+   delay	10
+	frame	data/chars/shura/special/shura_lame/shura_lame3.png
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png
+   attack 500 50 200 200 40 1 0 0 100 20
+   frame	data/chars/shura/special/shura_lame/shura_lame1.png
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png
+   attack 500 50 200 200 40 1 0 0 100 20
+	frame	data/chars/shura/special/shura_lame/shura_lame3.png
+   delay	100
+	frame	data/chars/shura/special/shura_lame/shura_lame4.png
+   delay	10
+	frame	data/chars/shura/special/shura_lame/shura_lame3.png
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png
+   attack 500 50 200 200 40 1 0 0 100 20
+	frame	data/chars/shura/special/shura_lame/shura_lame1.png
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png
+   attack 500 50 200 200 40 1 0 0 100 20
+	frame	data/chars/shura/special/shura_lame/shura_lame3.png
+   delay	100
+	frame	data/chars/shura/special/shura_lame/shura_lame4.png
+   delay	10
+	frame	data/chars/shura/special/shura_lame/shura_lame3.png
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png
+	@cmd suicide
+	frame	data/chars/shura/special/shura_lame/shura_lame2.png

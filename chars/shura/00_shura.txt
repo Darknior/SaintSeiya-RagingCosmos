@@ -81,6 +81,7 @@ load shura_dash
 load shura_excalibur
 load shura_excaliburB
 load shura_explosion
+load shura_lame
 load shura_rundust
 load shura_slashA
 load shura_slashB
@@ -186,7 +187,7 @@ anim    attack1
     offset    72 153
     bbox    63 39 17 117
     frame    data/chars/shura/atk1.png
-	attack 73 53 80 67 15 0 0 0 0 20
+	attack 73 53 80 67 15 0 0 0 15 20
     delay    15
     frame    data/chars/shura/atk2.png
     delay    8
@@ -207,7 +208,7 @@ anim    attack2
     bbox    54 35 17 118
     offset    39 153
     delay    10
-	attack 65 61 85 67 15 0 0 0 0 20
+	attack 65 61 85 67 15 0 0 0 15 20
     frame    data/chars/shura/atk6.png
     bbox    54 35 17 118
     offset    43 153
@@ -232,7 +233,7 @@ anim    attack3
     sound    data/chars/shura/sounds/cut.wav
     frame    data/chars/shura/atk8.png
     frame    data/chars/shura/atk11.png
-	attack 72 43 96 110 15 1 1 0 0 20
+	attack 72 43 96 110 15 1 0 0 15 20
     frame    data/chars/shura/atk9.png
     frame    data/chars/shura/atk11.png
     bbox    57 73 13 95
@@ -327,7 +328,7 @@ anim jumpattack
     delay    10
     offset    200 277
     frame    data/chars/shura/jat1.png
-	 attack 200 189 100 50 30 1 0 0 0 20
+	 attack 200 189 100 50 30 1 0 0 100 20
     frame    data/chars/shura/jat2.png
 
 anim    land
@@ -386,7 +387,7 @@ anim follow1 #STUN
 
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim special (quand il est grab)
+anim special # Jumping stone (quand il est grab)
     loop    0
     delay    7
     offset    193 320
@@ -399,7 +400,7 @@ anim special (quand il est grab)
     frame    data/chars/shura/jatt2.png
     sound data/chars/shura/sounds/01-jumping_stone.wav
     @cmd 	spawnbind "shura_circle" "ANI_IDLE" 0 10 0 0 0
-	 attack 100 100 200 200 40 1 0 0 0 20
+	 attack 100 100 200 200 40 1 0 0 100 20
     dropv 6 5
     frame    data/chars/shura/jatt3.png
     frame    data/chars/shura/jatt4.png
@@ -410,7 +411,7 @@ anim special (quand il est grab)
     frame    data/chars/shura/jatt9.png
     frame    data/chars/shura/jatt10.png
     
-anim riseattack (quand il se releve)
+anim riseattack # Jumping stone (quand il se releve)
     loop    0
     delay    7
     offset    193 320
@@ -423,7 +424,7 @@ anim riseattack (quand il se releve)
     frame    data/chars/shura/jatt2.png
     sound data/chars/shura/sounds/01-jumping_stone.wav
     @cmd 	spawnbind "shura_circle" "ANI_IDLE" 0 10 0 0 0
-	 attack 100 100 200 200 40 1 0 0 0 20
+	 attack 100 100 200 200 40 1 0 0 100 20
     dropv 6 5
     frame    data/chars/shura/jatt3.png
     frame    data/chars/shura/jatt4.png
@@ -434,33 +435,38 @@ anim riseattack (quand il se releve)
     frame    data/chars/shura/jatt9.png
     frame    data/chars/shura/jatt10.png
 
-anim freespecial
+anim freespecial # Uppercut excalibur
     range 100 180
-    loop    0
-    delay    7
-    offset    193 320
     hitflash aldebaran_swing
-    summonframe  0 0 0 0
-    subentity    round_dust
-    frame    data/chars/shura/jat1.png
-    frame    data/chars/shura/jatt0.png
-    frame    data/chars/shura/jatt1.png
-    frame    data/chars/shura/jatt2.png
-    sound data/chars/shura/sounds/01-jumping_stone.wav
-    @cmd 	spawnbind "shura_circle" "ANI_IDLE" 0 10 0 0 0
-	 attack 100 100 200 200 40 1 0 0 0 20
-    dropv 6 5
-    frame    data/chars/shura/jatt3.png
-    frame    data/chars/shura/jatt4.png
-    frame    data/chars/shura/jatt5.png
-    frame    data/chars/shura/jatt6.png
-    frame    data/chars/shura/jatt7.png
-    frame    data/chars/shura/jatt8.png
-    frame    data/chars/shura/jatt9.png
-    frame    data/chars/shura/jatt10.png
+    fastattack 1
+    otg 1
+    loop    0
+    delay    8
+    offset    39 249
+    bbox    22 133 15 116
+    @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
+    @cmd 	spawnbind "shura_rundust" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/shura/grat1.png
+    frame    data/chars/shura/grat2a.png
+    attack 70 58 100 200 15 0 0 0 0 20
+    sound data/chars/shura/sounds/03-excalibur.wav
+    frame    data/chars/shura/grat4.png
+    attack 0
+    frame    data/chars/shura/grat5.png
+    delay 100
+    attack 70 58 100 200 40 1 0 0 100 20
+    frame    data/chars/shura/grat6.png
+    delay 8
+    frame    data/chars/shura/grat7.png
+    frame    data/chars/shura/grat8.png
+    frame    data/chars/shura/grat3.png
+    frame    data/chars/shura/grat2.png
+    frame    data/chars/shura/grat1.png
 
-anim freespecial4
-    range 250 450
+
+
+anim freespecial4 # Slash simple lame
+    range 300 900
     loop    0
     hitflash aldebaran_swing
 	 sound data/chars/shura/sounds/08-sword.wav
@@ -474,59 +480,59 @@ anim freespecial4
     frame    data/chars/shura/fsp2.png
     sound    data/chars/shura/sounds/03-excalibur.wav
     @cmd 	spawnbind "shura_slashA" "ANI_IDLE" 0 0 0 0 0
-	 @cmd	shooter "shura_rundust" 0 80 0 1.5 0 0
+	 @cmd	shooter "shura_rundust" 0 0 0 1.5 0 0
     delay    6
-	attack 43 51 70 78 30 1 0 1 0 50
+	 attack 43 51 70 78 30 1 0 1 0 50
     frame    data/chars/shura/fsp2a.png
-	attack 43 90 70 78 30 1 0 1 0 50
+	 attack 43 90 70 78 30 1 0 1 0 50
     frame    data/chars/shura/fsp3.png
-	attack 45 90 70 78 30 1 0 1 0 50
+	 attack 45 90 70 78 30 1 0 1 0 50
     frame    data/chars/shura/fsp3a.png
-	attack 50 109 70 78 30 1 0 1 0 50
+	 attack 50 109 70 78 30 1 0 1 0 50
     frame    data/chars/shura/fsp5.png
-	attack 94 76 62 131 30 1 0 1 0 50
+	 attack 94 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp6.png
-	attack 123 76 62 131 30 1 0 0 0 20
+	 attack 123 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp7.png
-	attack 144 76 62 131 30 1 0 0 0 20
+	 attack 144 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp8.png
-	attack 161 76 62 131 30 1 0 0 0 20
+	 attack 161 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp9.png
-	attack 177 76 62 131 30 1 0 0 0 20
+	 attack 177 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp10.png
-	attack 194 76 62 131 30 1 0 1 0 50
+	 attack 194 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp11.png
-	attack 212 76 62 131 30 1 0 1 0 50
+	 attack 212 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp12.png
-	attack 263 76 62 131 30 1 0 0 0 20
+	 attack 263 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp13.png
-	attack 290 76 62 131 30 1 0 0 0 20
+	 attack 290 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp14.png
-	attack 316 76 62 131 30 1 0 0 0 20
+	 attack 316 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp15.png
-	attack 343 76 62 131 30 1 0 0 0 20
+	 attack 343 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp16.png
-	attack 374 76 62 131 30 1 0 0 0 20
+	 attack 374 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp17.png
-	attack 396 76 62 131 30 1 0 0 0 20
+	 attack 396 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp18.png
-	attack 425 76 62 131 30 1 0 0 0 20
+	 attack 425 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp19.png
-	attack 451 76 62 131 30 1 0 0 0 20
+	 attack 451 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp20.png
-	attack 479 76 62 131 30 1 0 0 0 20
+	 attack 479 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp21.png
-	attack 506 76 62 131 30 1 0 0 0 20
+	 attack 506 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp22.png
-	attack 532 76 62 131 30 1 0 0 0 20
+	 attack 532 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp23.png
-	attack 590 76 62 131 30 1 0 0 0 20
+	 attack 590 76 62 131 30 1 0 0 100 20
     frame    data/chars/shura/fsp24.png
     frame    data/chars/shura/fsp25.png
     frame    data/chars/shura/fsp4.png
 
-anim freespecial5
-    range 450 900
+anim freespecial5 # Slash double lame
+    range 180 300
     loop    0
     delay    80
     hitflash aldebaran_swing
@@ -538,36 +544,20 @@ anim freespecial5
     frame    data/chars/shura/sp1.png
     delay    10
     frame    data/chars/shura/sp2.png
-	attack 16 94 156 147 45 1 0 0 0 20
     frame    data/chars/shura/sp3.png
+    @cmd	shooter "shura_lame" 0 0 0 1.5 0 0
     frame    data/chars/shura/sp4.png
-	attack 53 36 222 206 45 1 0 0 0 20
     frame    data/chars/shura/sp5.png
+    delay    100
     frame    data/chars/shura/sp6.png
-	attack 122 36 311 206 45 1 0 0 0 20
-    frame    data/chars/shura/sp7.png
-    frame    data/chars/shura/sp8.png
-	attack 183 36 311 206 45 1 0 0 0 20
-    frame    data/chars/shura/sp9.png
-    frame    data/chars/shura/sp10.png
-	attack 264 36 311 206 45 1 0 0 0 20
-    frame    data/chars/shura/sp11.png
-    frame    data/chars/shura/sp12.png
-	attack 337 36 311 206 45 1 0 0 0 20
-    frame    data/chars/shura/sp13.png
-    frame    data/chars/shura/sp14.png
-	attack 454 25 252 216 45 1 0 0 0 20
-    frame    data/chars/shura/sp15.png
-    frame    data/chars/shura/sp16.png
-	attack 525 31 182 210 45 1 0 0 0 20
-    dropv 6 5
-    frame    data/chars/shura/sp17.png
-    frame    data/chars/shura/sp18.png
-    frame    data/chars/shura/sp19.png
-    frame    data/chars/shura/sp20.png
-    frame    data/chars/shura/sp21.png
-
-anim freespecial6
+    delay    10
+    frame    data/chars/shura/sp5.png
+    frame    data/chars/shura/sp4.png
+    frame    data/chars/shura/sp3.png
+    frame    data/chars/shura/sp2.png
+    frame    data/chars/shura/sp1.png
+        
+anim freespecial6 # ULTRA Excalibur
     range 0 900
     energycost  50 1 0
     hitflash aldebaran_swing
@@ -579,6 +569,7 @@ anim freespecial6
     bbox    22 133 15 116
     @cmd 	spawnScreen "aldebaran_super_lights" 0 0 0 0
     @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
+    @cmd 	spawnbind "shura_rundust" "ANI_IDLE" 0 10 0 0 0
 	 @cmd 	spawnScreen "shura_constellation" 0 0 0 0
     sound data/chars/aldebaran/sounds/78-cosmos.wav
     frame    data/chars/shura/grat1.png
@@ -635,12 +626,12 @@ anim freespecial6
     frame    data/chars/shura/grat1.png
     attack 0
     frame    data/chars/shura/grat1.png
-    attack -200 50 600 400 15 1 0 0 0 100
+    attack -200 50 600 400 15 1 0 0 100 100
     dropv 6 5
     frame    data/chars/shura/grat1.png
     attack 0
     frame    data/chars/shura/grat1.png
-    attack -200 50 600 400 15 1 0 0 0 100
+    attack -200 50 600 400 15 1 0 0 100 100
     dropv 6 5
     frame    data/chars/shura/grat1.png
     attack 0

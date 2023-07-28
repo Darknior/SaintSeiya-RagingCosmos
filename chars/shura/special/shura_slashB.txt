@@ -12,7 +12,7 @@ anim	idle
         drawmethod  alpha 1
         drawmethod  channel 0.73
 	sound data/chars/shura/02-slash.wav
-	quakeframe   data/chars/shura/special/shura_slashB/shura_slashB12.png 13 5
+	quakeframe 1 13 5
 	frame	data/chars/shura/special/shura_slashB/shura_slashB13.png
 	frame	data/chars/shura/special/shura_slashB/shura_slashB14.png
 	frame	data/chars/shura/special/shura_slashB/shura_slashB15.png

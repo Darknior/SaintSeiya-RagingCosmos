@@ -1,7 +1,7 @@
 name	shura_rundust
 type	none
 candamage player
-shadow	0
+gfxshadow	1
 antigravity 100
 remove 0
 animationscript	data/scripts/player.c
@@ -11,39 +11,24 @@ anim	idle
 	loop	1
 	fastattack 1
 	delay	10
-	offset	-20 100
+	offset	121 187
    drawmethod  alpha 1
    drawmethod  channel 0.73
 	sound data/chars/shura/02-slash.wav
 	frame	data/chars/shura/special/shura_rundust/shura_rundust0.png
-	attack 0 50 240 150 10 0 0 0 12 12
 	frame	data/chars/shura/special/shura_rundust/shura_rundust1.png
-	attack 0
 	frame	data/chars/shura/special/shura_rundust/shura_rundust2.png
-	attack 0 50 240 150 10 0 0 0 12 12
 	frame	data/chars/shura/special/shura_rundust/shura_rundust3.png
-	attack 0
 	frame	data/chars/shura/special/shura_rundust/shura_rundust4.png
-	attack 0 50 240 150 10 0 0 0 12 12
 	frame	data/chars/shura/special/shura_rundust/shura_rundust5.png
-	attack 0
 	frame	data/chars/shura/special/shura_rundust/shura_rundust6.png
-	attack 0 50 240 150 10 0 0 0 12 12
 	frame	data/chars/shura/special/shura_rundust/shura_rundust7.png
-	attack 0
 	frame	data/chars/shura/special/shura_rundust/shura_rundust8.png
-	attack 0 50 240 150 10 0 0 0 12 12
 	frame	data/chars/shura/special/shura_rundust/shura_rundust9.png
-	attack 0
 	frame	data/chars/shura/special/shura_rundust/shura_rundust10.png
-	attack 0 50 240 150 10 0 0 0 12 12
 	frame	data/chars/shura/special/shura_rundust/shura_rundust11.png
-	attack 0
 	frame	data/chars/shura/special/shura_rundust/shura_rundust12.png
-	attack 0 50 240 150 10 0 0 0 12 12
 	frame	data/chars/shura/special/shura_rundust/shura_rundust13.png
-	attack 0
    frame	data/chars/shura/special/shura_rundust/shura_rundust14.png
-	attack 0 50 240 150 10 0 0 0 12 12
 	@cmd suicide
    frame	data/chars/shura/special/shura_rundust/shura_rundust14.png
