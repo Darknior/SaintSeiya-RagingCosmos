@@ -9,40 +9,40 @@ didhitscript	data/scripts/didhit/tint_red.c
 anim	idle
 	loop	0
 	delay	10
-	offset	-69 30
+	offset	-69 37
    dot 0 1000 1 6 100
    hitflash aphrodite_rose_explosion
    drawmethod  alpha 6
    drawmethod  channel 0.99
-	attack1 31 0 100 30 20 1 0 0 0 0
+	attack1 0 0 50 30 20 1 0 0 100 20
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield1.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield2.png
-	attack1 31 0 150 30 20 1 0 0 0 0
+	attack1 0 13 50 30 20 1 0 0 100 20
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield3.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield4.png
-	attack1 31 0 300 30 20 1 0 0 0 0
+	attack1 31 20 100 30 20 1 0 0 100 20
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield5.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield6.png
-	attack1 31 0 500 30 20 1 0 0 0 0
+	attack1 31 20 120 30 20 1 0 0 100 20
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield7.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield8.png
-	attack1 31 0 800 30 20 1 0 0 0 0
+	attack1 24 20 130 30 20 1 0 0 100 20
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield9.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield10.png
-	attack1 31 0 800 30 20 1 0 0 0 0
+	attack1 0 20 250 30 20 1 0 0 100 20
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield11.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield12.png
-	attack1 31 0 800 30 20 1 0 0 0 0
+	attack1 31 20 500 30 20 1 0 0 100 20
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield13.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield14.png
-	attack1 31 0 800 30 20 1 0 0 0 0
+	attack1 31 10 900 30 20 1 0 0 100 20
 	delay	300
 	frame	data/chars/aphrodite/special/aphrodite_rosefield/rosefield15.png
 	attack1 0

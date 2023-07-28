@@ -310,12 +310,12 @@ anim attack4 # Attaque combo 4
     frame    data/chars/aldebaran/attack45.png
 
 anim attack5 # Attaque combo 5
-    delay    12
+    delay    5
     offset    46 163
     bbox 19 13 38 151
     hitflash flashbig
     frame    data/chars/aldebaran/attack51.png
-    attack1 82 42 78 56 20 1 0 0 5 12
+    attack1 82 42 78 56 20 1 0 0 50 12
     dropv 4.0 1.0 0.0
     frame    data/chars/aldebaran/attack52.png
     frame    data/chars/aldebaran/attack53.png
@@ -454,35 +454,31 @@ anim    block
     
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim special # Earthquake (attaque lorsqu il est grab)
-    delay    10
+anim special # Taurus homerun (attaque lorsqu il est grab)
+    delay    5
     offset    37 163
     sound data/chars/aldebaran/sounds/02-swing.wav
-    hitflash blue_swing
-    @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 0 0
-    frame    data/chars/aldebaran/attack60.png
-    @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 10 0 1 0
-    frame    data/chars/aldebaran/attack61.png
-    frame    data/chars/aldebaran/attack62.png
-    frame    data/chars/aldebaran/attack63.png
-    @cmd     spawnbind "aldebaran_fist" "ANI_IDLE" 0 10 0 1 0
-    sound data/chars/aldebaran/sounds/09-earthquake2.wav
-    frame    data/chars/aldebaran/attack64.png
-    attack5 -28 9 200 180 30 1 0 0 100 30
-    dropv     8 6
-    delay    15
-    frame    data/chars/aldebaran/attack65.png
-    @cmd     spawnbind "aldebaran_rock" "ANI_IDLE" 0 10 0 1 0
-    frame    data/chars/aldebaran/attack66.png
-    frame    data/chars/aldebaran/attack65.png
-    frame    data/chars/aldebaran/attack66.png
-    frame    data/chars/aldebaran/attack65.png
-    frame    data/chars/aldebaran/attack66.png
-    frame    data/chars/aldebaran/attack65.png
-    sound data/chars/aldebaran/sounds/08-earthquake.wav
-    frame    data/chars/aldebaran/attack66.png
-    frame    data/chars/aldebaran/attack65.png
-    frame    data/chars/aldebaran/attack66.png
+    hitflash aldebaran_swing
+	 quakeframe 1 7 4
+	 bbox 2 17 60 150
+    frame    data/chars/aldebaran/special1.png
+    frame    data/chars/aldebaran/special2.png
+    frame    data/chars/aldebaran/special3.png
+	 bbox 0 0 0 0
+    frame    data/chars/aldebaran/special5.png
+    frame    data/chars/aldebaran/special6.png
+    frame    data/chars/aldebaran/special7.png
+    attack5 -28 -12 120 180 30 1 0 0 100 12
+    dropv     8.0 3 0
+    frame    data/chars/aldebaran/special8.png
+    frame    data/chars/aldebaran/special9.png
+    frame    data/chars/aldebaran/special10.png
+	 attack5 0
+    frame    data/chars/aldebaran/special11.png
+    frame    data/chars/aldebaran/special12.png
+    frame    data/chars/aldebaran/special13.png
+    frame    data/chars/aldebaran/special14.png
+    frame    data/chars/aldebaran/special15.png
 
 
 anim riseattack # Earthquake (attaque en se relevant)
@@ -492,7 +488,7 @@ anim riseattack # Earthquake (attaque en se relevant)
     hitflash blue_swing
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/aldebaran/attack60.png
-    @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 10 0 1 0
+    @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 10 0 1 1
     frame    data/chars/aldebaran/attack61.png
     frame    data/chars/aldebaran/attack62.png
     frame    data/chars/aldebaran/attack63.png
@@ -500,10 +496,10 @@ anim riseattack # Earthquake (attaque en se relevant)
     sound data/chars/aldebaran/sounds/09-earthquake2.wav
     frame    data/chars/aldebaran/attack64.png
     attack5 -28 9 200 180 30 1 0 0 100 30
-    dropv     8 6
+    dropv     8 5
     delay    15
     frame    data/chars/aldebaran/attack65.png
-    @cmd     spawnbind "aldebaran_rock" "ANI_IDLE" 0 10 0 1 0
+    @cmd     spawnbind "aldebaran_rock" "ANI_IDLE" 0 10 0 1 1
     frame    data/chars/aldebaran/attack66.png
     frame    data/chars/aldebaran/attack65.png
     frame    data/chars/aldebaran/attack66.png
@@ -516,14 +512,14 @@ anim riseattack # Earthquake (attaque en se relevant)
     frame    data/chars/aldebaran/attack66.png
 
 anim freespecial # Earthquake
-    range 65 130
+    range 70 130
     delay    10
     offset    37 163
     sound data/chars/aldebaran/sounds/02-swing.wav
     hitflash blue_swing
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/aldebaran/attack60.png
-    @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 10 0 1 0
+    @cmd     spawnbind "aldebaran_earthquake" "ANI_IDLE" 0 10 0 1 1
     frame    data/chars/aldebaran/attack61.png
     frame    data/chars/aldebaran/attack62.png
     frame    data/chars/aldebaran/attack63.png
@@ -531,10 +527,10 @@ anim freespecial # Earthquake
     sound data/chars/aldebaran/sounds/09-earthquake2.wav
     frame    data/chars/aldebaran/attack64.png
     attack5 -28 9 200 180 30 1 0 0 100 30
-    dropv     8 6
+    dropv     8 5
     delay    15
     frame    data/chars/aldebaran/attack65.png
-    @cmd     spawnbind "aldebaran_rock" "ANI_IDLE" 0 10 0 1 0
+    @cmd     spawnbind "aldebaran_rock" "ANI_IDLE" 0 10 0 1 1
     frame    data/chars/aldebaran/attack66.png
     frame    data/chars/aldebaran/attack65.png
     frame    data/chars/aldebaran/attack66.png
@@ -566,14 +562,16 @@ anim freespecial2 # Attaque en courant
     delay    7
     offset    37 164
     frame    data/chars/aldebaran/runattack1.png
+    attack2 60 40 55 83 30 1 0 0 100 30
+    dropv 6 5
     @cmd     spawnbind "shura_rundust" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/aldebaran/runattack2.png
     frame    data/chars/aldebaran/runattack3.png
-    attack2 60 40 55 83 30 1 0 0 100 20
-    dropv 6 5
     frame    data/chars/aldebaran/runattack4.png
     frame    data/chars/aldebaran/runattack5.png
     frame    data/chars/aldebaran/runattack6.png
+    attack2 60 40 55 83 30 1 0 0 100 30
+    dropv 6 5
     frame    data/chars/aldebaran/runattack7.png
     attack2 0
     @cmd    dasher 0 0 0 1
@@ -584,22 +582,21 @@ anim freespecial2 # Attaque en courant
     frame    data/chars/aldebaran/runattack10.png
 
 anim freespecial3 # Taurus homerun
-    range 0 65
     delay    5
     offset    37 163
     sound data/chars/aldebaran/sounds/02-swing.wav
-    hitflash blue_swing
+    hitflash aldebaran_swing
 	 quakeframe 1 7 4
 	 bbox 2 17 60 150
     frame    data/chars/aldebaran/special1.png
     frame    data/chars/aldebaran/special2.png
     frame    data/chars/aldebaran/special3.png
-	 attack5 -28 -12 120 180 30 1 0 0 100 12
-    dropv     8.0 3 0
 	 bbox 0 0 0 0
     frame    data/chars/aldebaran/special5.png
     frame    data/chars/aldebaran/special6.png
     frame    data/chars/aldebaran/special7.png
+    attack5 -28 -12 120 180 30 1 0 0 100 12
+    dropv     8.0 3 0
     frame    data/chars/aldebaran/special8.png
     frame    data/chars/aldebaran/special9.png
     frame    data/chars/aldebaran/special10.png
@@ -646,13 +643,13 @@ anim freespecial4 # Punch combo
 	attack1 0
     frame    data/chars/aldebaran/special24.png
 	attack1 59 90 140 35 5 1 0 0 100 30
-    dropv 6 5
+    dropv 6 4
     frame    data/chars/aldebaran/special25.png
 	attack1 0
     frame    data/chars/aldebaran/special25.png
     delay    10
 	attack1 59 30 140 35 5 1 0 0 100 30
-    dropv 6 5
+    dropv 6 4
     frame    data/chars/aldebaran/special26.png
     frame    data/chars/aldebaran/special27.png
     frame    data/chars/aldebaran/special28.png
@@ -780,14 +777,17 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
     attack1 0
     frame    data/chars/aldebaran/special55.png
     attack1 51 -15 900 75 5 12 0 0 100 50
+    dropv 6 5
     frame    data/chars/aldebaran/special52.png
     attack1 0
     frame    data/chars/aldebaran/special53.png
     attack1 51 23 900 75 5 12 0 0 100 50
+    dropv 6 5
     frame    data/chars/aldebaran/special54.png
     attack1 0
     frame    data/chars/aldebaran/special55.png
     attack1 41 40 900 182 5 12 0 0 100 50
+    dropv 6 5
     frame    data/chars/aldebaran/special52.png
     attack1 0
 

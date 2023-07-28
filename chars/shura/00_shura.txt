@@ -149,9 +149,10 @@ anim spawn
     delay    15
     offset    35 143
     bbox    13 14 22 93
-    sound data/chars/shura/sounds/09-laugh.wav
+    @cmd spawnFade "in" 0 0 0 10000000001 0.25
     frame    data/chars/shura/idle1.png
     frame    data/chars/shura/idle2.png
+    sound data/chars/shura/sounds/09-laugh.wav
     @cmd spawnDialog "dialog_shura1" 200 100
     frame    data/chars/shura/idle3.png
     frame    data/chars/shura/idle2.png

@@ -124,6 +124,7 @@ anim spawn
     delay    15
     offset    44 158
     frame    data/chars/aphrodite/spawn1.png
+    @cmd spawnFade "in" 0 0 0 10000000001 0.25
     @cmd spawnDialog "dialog_aphrodite1" 200 100
     frame    data/chars/aphrodite/spawn1.png
     frame    data/chars/aphrodite/spawn2.png
@@ -227,7 +228,7 @@ anim attack2 # Attaque combo 2
     frame    data/chars/aphrodite/attack21.png
 
 anim attack3 # Attaque combo 3
-    delay    8
+    delay    5
     offset    29 174
     bbox 11 85 38 90
     frame    data/chars/aphrodite/attack31.png
@@ -256,7 +257,7 @@ anim attack4 # Attaque combo 4
     frame    data/chars/aphrodite/attack46.png
 
 anim attack5 # Attaque combo 5
-    delay    10
+    delay    5
     offset    37 174
     bbox 21 42 38 132
     hitflash flashbig
@@ -265,8 +266,8 @@ anim attack5 # Attaque combo 5
     frame    data/chars/aphrodite/attack52.png
     frame    data/chars/aphrodite/attack53.png
     frame    data/chars/aphrodite/attack54.png
-    attack1 58 82 105 30 20 1 0 0 5 12
-    dropv 4.0 1.0 0.0
+    attack1 58 82 105 30 20 1 0 0 50 12
+    dropv 8 3
     frame    data/chars/aphrodite/attack55.png
     frame    data/chars/aphrodite/attack56.png
     attack1 0
@@ -402,42 +403,41 @@ anim    block
 
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim special # Défense spéciale rose explosion (attaque lorsqu il est grab)
+anim special # rose explosion (attaque lorsqu il est grab)
     delay    10
     offset    59 144
     sound data/chars/aphrodite/sounds/02.wav
-    energycost  25 1 0
-    hitflash flashbig
+    hitflash aphrodite_rose_explosion
     @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 10 10 0 1
     frame    data/chars/aphrodite/special12.png
     frame    data/chars/aphrodite/special13.png
     @cmd     spawnbind "aphrodite_rose_explosion" "ANI_IDLE" 0 10 1 0 1
-    attack5 -50 3 200 142 30 1 0 0 5 12
+    attack5 -50 3 200 142 30 1 0 0 100 12
     dropv 4.0 3.0 0.0
     frame    data/chars/aphrodite/special14.png
     delay    100
     frame    data/chars/aphrodite/special15.png
 
-anim riseattack # Défense spéciale rose explosion (attaque en se relevant)
+anim riseattack # rose explosion (attaque en se relevant)
     delay    10
     offset    59 144
     sound data/chars/aphrodite/sounds/02.wav
-    energycost  25 1 0
-    hitflash flashbig
+    hitflash aphrodite_rose_explosion
     @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 10 10 0 1
     frame    data/chars/aphrodite/special12.png
     frame    data/chars/aphrodite/special13.png
     @cmd     spawnbind "aphrodite_rose_explosion" "ANI_IDLE" 0 10 10 0 1
-    attack5 -50 3 200 142 30 1 0 0 5 12
+    attack5 -50 3 200 142 30 1 0 0 100 12
     dropv 4.0 3.0 0.0
     frame    data/chars/aphrodite/special14.png
     delay    100
     frame    data/chars/aphrodite/special15.png
 
-anim freespecial2 # Attaque en courant
-    range 200 400
+anim freespecial # Attaque en courant
+    range 250 400
     delay    6
     offset    30 142
+    hitflash aphrodite_rose_explosion
     bbox 0 0 0 0
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
     @cmd    dasher 2 0 0 1
@@ -461,7 +461,8 @@ anim freespecial2 # Attaque en courant
     frame    data/chars/aphrodite/runattack2.png
     frame    data/chars/aphrodite/runattack3.png
     frame    data/chars/aphrodite/runattack4.png
-	 attack 0 0 200 50 30 1 0 0 0 15
+	 attack 0 0 200 50 30 1 0 0 100 15
+    dropv     6 5
     frame    data/chars/aphrodite/runattack5.png
     frame    data/chars/aphrodite/runattack6.png
     frame    data/chars/aphrodite/runattack7.png
@@ -470,7 +471,8 @@ anim freespecial2 # Attaque en courant
     @cmd     spawnbind "round_dust" "ANI_IDLE" 0 7 10 0 1
     sound    data/chars/aphrodite/sounds/runattack_jump.wav
     frame    data/chars/aphrodite/runattack10.png
-	 attack 20 0 90 120 30 1 0 0 0 15
+	 attack 20 0 90 120 30 1 0 0 100 15
+    dropv     6 5
     frame    data/chars/aphrodite/runattack11.png
     frame    data/chars/aphrodite/runattack12.png
     frame    data/chars/aphrodite/runattack13.png
@@ -480,12 +482,12 @@ anim freespecial2 # Attaque en courant
     @cmd     spawnbind "round_dust" "ANI_IDLE" 0 7 10 0 1
     sound    data/chars/aphrodite/sounds/runattack_jump.wav
     frame    data/chars/aphrodite/runattack17.png
-	 attack 0 0 200 50 0 30 0 0 0 15
+	 attack 0 0 200 50 0 1 0 0 100 15
+    dropv     6 5
     frame    data/chars/aphrodite/runattack18.png
     frame    data/chars/aphrodite/runattack19.png
     frame    data/chars/aphrodite/runattack20.png
     frame    data/chars/aphrodite/runattack21.png
-
     
 anim freespecial3 #Blue Rose shot
     range 400 900
@@ -519,9 +521,8 @@ anim freespecial3 #Blue Rose shot
     delay    100
     frame    data/chars/aphrodite/special0.png
 
-anim freespecial4 # Attaque spéciale Rosefield
-    range     0 200
-    hitflash flashbig
+anim freespecial4 # Rosefield
+    range     100 250
     forcedirection -1
     delay    10
     offset    30 143

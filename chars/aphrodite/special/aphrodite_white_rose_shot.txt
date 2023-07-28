@@ -29,8 +29,10 @@ anim	idle
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose3.png
 	attack1 0 0 150 150 10 0 0 0 12 12
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose1.png
-	attack1 0 0 150 150 30 1 0 0 12 12
+	attack1 0 0 150 150 30 1 0 0 100 12
+   dropv     6 5
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose2.png
 	attack1 0
 	frame	data/chars/aphrodite/special/aphrodite_rose_shot/white_rose3.png
-	attack1 0 0 150 150 20 1 0 0 12 12
+	attack1 0 0 150 150 20 1 0 0 100 12
+   dropv     6 5
