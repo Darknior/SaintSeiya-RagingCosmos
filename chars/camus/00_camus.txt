@@ -120,11 +120,12 @@ anim    select  # Personnage sélectionné
 anim spawn
     delay    15
     offset    66 148
+    frame    data/chars/camus/spawn3.png
+    @cmd spawnFade "in" 0 0 0 10000000001 0.25
+    frame    data/chars/camus/spawn3.png
     sound data/chars/camus/sounds/01-greetings.wav
-    frame    data/chars/camus/spawn3.png
-    @cmd spawnDialog "dialog_camus1" 200 100
-    frame    data/chars/camus/spawn3.png
     frame    data/chars/camus/spawn4.png
+    @cmd spawnDialog "dialog_camus1" 200 100
     frame    data/chars/camus/spawn5.png
     frame    data/chars/camus/spawn6.png
     frame    data/chars/camus/spawn7.png
@@ -180,43 +181,35 @@ anim run
 
 #//Basic Attacks animations/////////////////////////////////////////////////
 
-anim attack1 # Attaque combo 1
-    delay    5
-    offset    56 148
-    bbox 35 32 45 114
-    frame    data/chars/camus/attack1.png
-	 attack1 56 26 66 25 10 0 0 0 5 12
-    frame    data/chars/camus/attack2.png
-    frame    data/chars/camus/attack2.png
-	 attack1 0
-    frame    data/chars/camus/attack1.png
 
-anim attack2 # Attaque combo 2
+anim attack1 # Attaque combo 2
+    hitflash hyoga_swing
     delay    5
     offset    56 146
     bbox 32 32 45 114
     frame    data/chars/camus/attack21.png
     frame    data/chars/camus/attack22.png
-	 attack1 59 44 60 29 10 0 0 0 5 12
+	 attack1 59 44 85 29 10 0 0 0 5 20
     frame    data/chars/camus/attack23.png
-    frame    data/chars/camus/attack23.png
+    frame    data/chars/camus/attack22.png
 	 attack1 0
-    frame    data/chars/camus/attack21.png
 
-anim attack3 # Attaque combo 3
+anim attack2 # Attaque combo 3
+    hitflash hyoga_swing
     delay    8
     offset    56 148
     bbox 32 18 45 129
     frame    data/chars/camus/attack31.png
     frame    data/chars/camus/attack32.png
     frame    data/chars/camus/attack33.png
-	 attack1 47 50 69 41 10 0 0 0 5 12
+	attack1 47 50 95 41 10 0 0 0 5 20
     frame    data/chars/camus/attack34.png
     frame    data/chars/camus/attack35.png
-	 attack1 0
+	attack1 0
     frame    data/chars/camus/attack33.png
 
-anim attack4 # Attaque combo 4
+anim attack3 # Attaque combo 4
+    hitflash hyoga_swing
     delay    5
     offset    56 150
     bbox 32 18 38 129
@@ -225,27 +218,14 @@ anim attack4 # Attaque combo 4
     frame    data/chars/camus/attack41.png
     frame    data/chars/camus/attack42.png
     frame    data/chars/camus/attack43.png
-	 attack1 49 58 75 26 10 0 0 0 5 12
+	 attack1 49 58 75 26 10 1 0 0 75 20
+    dropv 4 4
     frame    data/chars/camus/attack45.png
     frame    data/chars/camus/attack45.png
     frame    data/chars/camus/attack44.png
 	 attack1 0
     frame    data/chars/camus/attack43.png
 
-anim attack5 # Attaque combo 5
-    delay    12
-    offset    27 142
-    bbox 20 63 38 84
-        hitflash hyoga_swing
-    attack1 0 0 0 0 0 0 0 0 0 0
-    frame    data/chars/camus/attack51.png
-    frame    data/chars/camus/attack52.png
-    attack1 35 107 92 30 20 1 0 0 5 12
-    dropv 4.0 1.0 0.0
-    frame    data/chars/camus/attack53.png
-    frame    data/chars/camus/attack54.png
-    attack1 0
-    frame    data/chars/camus/attack51.png
 
 #//Grab animations/////////////////////////////////////////////////
 
@@ -379,7 +359,7 @@ anim special # Ice pike (attaque lorsqu il est grab)
     frame    data/chars/camus/special1.png
     frame    data/chars/camus/special2.png
     frame    data/chars/camus/special3.png
-    attack11 90 50 180 120 30 0 0 0 0 20
+    freeze 90 50 180 120 30 5 0 0 100 20
     frame    data/chars/camus/special4.png
     frame    data/chars/camus/special5.png
     frame    data/chars/camus/special6.png
@@ -399,7 +379,7 @@ anim riseattack # Ice pike (attaque en se relevant)
     frame    data/chars/camus/special1.png
     frame    data/chars/camus/special2.png
     frame    data/chars/camus/special3.png
-    attack11 90 50 180 120 30 0 0 0 0 20
+    freeze 90 50 180 120 30 5 0 0 100 20
     frame    data/chars/camus/special4.png
     frame    data/chars/camus/special5.png
     frame    data/chars/camus/special6.png
@@ -411,7 +391,7 @@ anim riseattack # Ice pike (attaque en se relevant)
     frame    data/chars/camus/special1.png
 
 anim freespecial # Ice pike
-    range 0 200
+    range 100 200
     delay    15
     offset    68 158
     sound data/chars/camus/sounds/07-icewall.wav
@@ -420,7 +400,7 @@ anim freespecial # Ice pike
     frame    data/chars/camus/special1.png
     frame    data/chars/camus/special2.png
     frame    data/chars/camus/special3.png
-    attack11 90 50 180 120 30 0 0 0 0 20
+    freeze 90 50 180 120 30 5 0 0 100 20
     frame    data/chars/camus/special4.png
     frame    data/chars/camus/special5.png
     frame    data/chars/camus/special6.png
@@ -432,7 +412,7 @@ anim freespecial # Ice pike
     frame    data/chars/camus/special1.png
 
 anim freespecial2 # Attaque en courant
-    range 200 300
+    range 200 330
     hitflash hyoga_swing
     forcedirection -1
     delay    5
@@ -453,8 +433,8 @@ anim freespecial2 # Attaque en courant
     bbox 0 0 0 0
     frame    data/chars/camus/runattack1.png
     frame    data/chars/camus/runattack2.png
-    attack2 60 33 97 33 20 30 0 0 5 12
-    dropv 4.0 2.0 0.0
+    attack2 60 33 97 33 20 30 0 0 100 15
+    dropv     6 5
     @cmd     spawnbind "camus_dash" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/camus/runattack3.png
     frame    data/chars/camus/runattack3.png
@@ -467,7 +447,7 @@ anim freespecial2 # Attaque en courant
     frame    data/chars/camus/runattack1.png
 
 anim freespecial3 #Camus ice star
-    range 300 900
+    range 330 900
     fastattack 1
     hitflash hyoga_swing
     forcedirection -1
@@ -499,7 +479,7 @@ anim freespecial3 #Camus ice star
     frame    data/chars/camus/special1.png
 
 anim freespecial6 # Aurora execution ( haut + bouton special)
-    range 0 800
+    range 300 900
     delay    10
     bbox 46 26 50 120
     offset    81 150
@@ -629,7 +609,7 @@ anim freespecial6 # Aurora execution ( haut + bouton special)
     frame    data/chars/camus/special23.png
 	 attack1 0
     frame    data/chars/camus/special22.png
-    freeze  41 66 900 182 0 5
+    freeze  41 66 900 182 0 5 0 0 100
     frame    data/chars/camus/special21.png
 
 

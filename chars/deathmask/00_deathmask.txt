@@ -404,10 +404,27 @@ anim rise
     frame    data/chars/deathmask/rise3.png
 
 anim follow1 #STUN
-    offset    118 164
-    delay    300
-	 bbox 69 50 60 120
-    frame    data/chars/deathmask/rise3.png
+    offset    27 128
+    delay    30
+	 bbox 12 29 45 100
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
 
 #// Block animations /////////////////////////////////////////////////
 

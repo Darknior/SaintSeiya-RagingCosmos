@@ -1,6 +1,6 @@
 name	camus_icecrystal
 type	none
-shadow	0
+gfxshadow 1
 candamage player
 nolife 1
 remove 0

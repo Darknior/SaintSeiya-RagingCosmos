@@ -7,12 +7,11 @@ antigravity 100
 animationscript	data/scripts/player.c
 
 anim	idle
-	loop	1
-	delay	20
+	loop	0
+	delay	13
 	offset	1000 100
 	drawmethod scale 1 1	
-	drawmethod alpha 6
-    drawmethod  channel 0.99
+	drawmethod alpha 1
 	frame	data/chars/aiolia/special/multihit/multihit1.png
 	frame	data/chars/aiolia/special/multihit/multihit2.png
 	frame	data/chars/aiolia/special/multihit/multihit3.png
