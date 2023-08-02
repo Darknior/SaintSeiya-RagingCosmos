@@ -92,9 +92,9 @@ remap        data/chars/seiya/palettes/palette2.png data/chars/seiya/palettes/pa
 #    b + a1         attackbackward  # Manchette arrière
 com  a3             freespecial4    # Manchette arrière
 
-com  d f a1         freespecial5    # Uppercut
+com  u a2         freespecial5    # Uppercut
 #    a1 + j         attackboth      # Roue de melée
-com  a2             freespecial     # Roue de melée
+com  a2 a2             freespecial     # Roue de melée
 
 com  a4             freespecial3    # Explosion du Cosmos (Recharge)
 
@@ -238,19 +238,10 @@ anim idle2
     frame    data/chars/seiya/idle23.png
     
 anim cant # Plus assez de mp
-    jugglecost  1
-    delay    6
-    offset   45 119
+    delay    64
+    offset   114 110
     bbox     36 7 30 112
-    hitflash flash
-    frame    data/chars/seiya/attack1.png
-    attack1  62 21 67 26 10 0 0 0 12 20
-    frame    data/chars/seiya/attack2.png
-    attack1  62 21 67 26 10 0 0 0 12 20
-    frame    data/chars/seiya/attack3.png
-    delay    4
-    frame    data/chars/seiya/attack2.png
-    attack1  0
+    frame    data/chars/seiya/rise4.png
     
 anim faint # Quand il reste 1/4 de hp
     loop     1
@@ -1081,7 +1072,7 @@ anim    freespecial4    # Attaque arrière (a3)
 
 anim    freespecial5    # Uppercut (Bas, Avant, a1)
     jugglecost  2
-    energycost  20 0 0
+    energycost  20 1 0
     fastattack  1
     offset   45 134
     bbox     0 0 0 0

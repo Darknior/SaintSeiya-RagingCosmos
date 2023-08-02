@@ -7,14 +7,21 @@ void ultra(void anim)
 	int cost	= getentityproperty(self,"energycost", "cost", anim);
 	
 	if(playerkeys(iPIndex, 1, "attack2")){
-		int checkMp = (mp >= cost);
+		if(playerkeys(iPIndex, 0, "movedown")){
+			if(	vAniID == openborconstant("ANI_WALK")	||
+				vAniID == openborconstant("ANI_WALK2")	||
+				vAniID == openborconstant("ANI_DOWN")	){
+				int checkMp = (mp >= cost);
 
-		if(checkMp){
-			if(playerkeys(iPIndex, 0, "moveup")){
-				if(vAniID == openborconstant("ANI_WALK") || vAniID == openborconstant("ANI_UP")){
+				if(checkMp){
 					changeentityproperty(self, "mp", mp-cost);
 					changeentityproperty(self, "velocity", 0, 0, 0);
 					performattack(self, anim, 0);
+				}
+				else
+				{
+					changeentityproperty(self, "velocity", 0, 0, 0);
+					performattack(self, openborconstant("ANI_CANT"), 0);
 				}
 			}
 		}
@@ -31,14 +38,54 @@ void super(void anim)
 	int dir		= getentityproperty(self,"direction");
 	
 	if(playerkeys(iPIndex, 1, "attack2")){
-		int checkMp = (mp >= cost);
+		if(	playerkeys(iPIndex, 0, "moveright") && dir == 1	||
+			playerkeys(iPIndex, 0, "moveleft") && dir == 0	){
+			
+			if(	vAniID == openborconstant("ANI_WALK")	||
+				vAniID == openborconstant("ANI_WALK2")	||
+				vAniID == openborconstant("ANI_RUN")	){
+				int checkMp = (mp >= cost);
 
-		if(checkMp){
-			if(playerkeys(iPIndex, 0, "moveright") && dir == 1 || playerkeys(iPIndex, 0, "moveleft") && dir == 0 ){
-				if(vAniID == openborconstant("ANI_WALK") || vAniID == openborconstant("ANI_RUN")){
+				if(checkMp){
 					changeentityproperty(self, "mp", mp-cost);
 					changeentityproperty(self, "velocity", 0, 0, 0);
 					performattack(self, anim, 0);
+				}
+				else
+				{
+					changeentityproperty(self, "velocity", 0, 0, 0);
+					performattack(self, openborconstant("ANI_CANT"), 0);
+				}
+			}
+		}
+	}
+}
+
+void upper(void anim)
+{//Perform upper attacks
+	void self	= getlocalvar("self");
+	void vAniID	= getentityproperty(self,"animationID");
+	int iPIndex	= getlocalvar("player");
+	int mp		= getentityproperty(self,"mp");
+	int cost	= getentityproperty(self,"energycost", "cost", anim);
+	int dir		= getentityproperty(self,"direction");
+	
+	if(playerkeys(iPIndex, 1, "attack2")){
+		if(playerkeys(iPIndex, 0, "moveup")){
+			if(	vAniID == openborconstant("ANI_WALK")	||
+				vAniID == openborconstant("ANI_WALK2")	||
+				vAniID == openborconstant("ANI_UP")		){
+				int checkMp = (mp >= cost);
+
+				if(checkMp){
+					changeentityproperty(self, "mp", mp-cost);
+					changeentityproperty(self, "velocity", 0, 0, 0);
+					performattack(self, anim, 0);
+				}
+				else
+				{
+					changeentityproperty(self, "velocity", 0, 0, 0);
+					performattack(self, openborconstant("ANI_CANT"), 0);
 				}
 			}
 		}
