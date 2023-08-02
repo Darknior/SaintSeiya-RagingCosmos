@@ -100,8 +100,8 @@ com  a4             freespecial3    # Explosion du Cosmos (Recharge)
 
 com  f a2           freespecial2    # SUPER Météores de Pégase
 com  f + a2         freespecial2    # SUPER Météores de Pégase
-com  u a2           freespecial6    # ULTRA Météores de Pégase
-com  u + a2         freespecial6    # ULTRA Météores de Pégase
+com  d a2           freespecial6    # ULTRA Météores de Pégase
+com  d + a2         freespecial6    # ULTRA Météores de Pégase
 
 #    u + a1         freespecial7    # High kick
 #    d + a1         freespecial8    # Slide kick
