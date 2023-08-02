@@ -1,0 +1,42 @@
+name			Impact
+type			none
+no_adjust_base	0
+subject_to_hole	1
+shadow			0
+antigravity		100
+alpha			1
+toflip			1
+animationscript    data/scripts/player.c
+
+anim idle
+	loop	0
+	delay	3
+	offset	160 91
+	sound	data/sounds/Impact.wav
+	frame	data/chars/misc/flash/impact/impact00.gif
+	frame	data/chars/misc/flash/impact/impact01.gif
+	frame	data/chars/misc/flash/impact/impact02.gif
+	frame	data/chars/misc/flash/impact/impact03.gif
+	frame	data/chars/misc/flash/impact/impact04.gif
+	frame	data/chars/misc/flash/impact/impact05.gif
+	frame	data/chars/misc/flash/impact/impact06.gif
+	frame	data/chars/misc/flash/impact/impact07.gif
+	frame	data/chars/misc/flash/impact/impact08.gif
+	frame	data/chars/misc/flash/impact/impact09.gif
+	frame	data/chars/misc/flash/impact/impact10.gif
+	frame	data/chars/misc/flash/impact/impact11.gif
+	frame	data/chars/misc/flash/impact/impact12.gif
+	frame	data/chars/misc/flash/impact/impact13.gif
+	frame	data/chars/misc/flash/impact/impact14.gif
+	frame	data/chars/misc/flash/impact/impact15.gif
+	frame	data/chars/misc/flash/impact/impact16.gif
+	frame	data/chars/misc/flash/impact/impact17.gif
+	frame	data/chars/misc/flash/impact/impact18.gif
+	frame	data/chars/misc/flash/impact/impact19.gif
+	frame	data/chars/misc/flash/impact/impact20.gif
+	frame	data/chars/misc/flash/impact/impact21.gif
+	frame	data/chars/misc/flash/impact/impact22.gif
+	frame	data/chars/misc/flash/impact/impact23.gif
+	frame	data/chars/misc/flash/impact/impact24.gif
+	@cmd suicide
+	frame	data/chars/misc/flash/impact/impact24.gif

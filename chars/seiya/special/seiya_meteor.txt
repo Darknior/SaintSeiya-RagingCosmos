@@ -1,7 +1,7 @@
 name	seiya_meteor
 type	none
 nolife 1
-gfxshadow 1
+gfxshadow 0
 remove 0
 antigravity 100
 animationscript	data/scripts/player.c

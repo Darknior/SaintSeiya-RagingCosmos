@@ -65,6 +65,7 @@ load    fade              data/chars/dialogs/fade.txt
 # Flash animations
 
 load    flash           data/chars/misc/flash/flash.txt
+load    impact          data/chars/misc/flash/impact.txt
 load    flashmedium     data/chars/misc/flash/flashmedium.txt
 load    flashbig        data/chars/misc/flash/flashbig.txt
 load    blue_swing      data/chars/misc/flash/blue_swing.txt
@@ -83,6 +84,7 @@ load    dash_dustB       data/chars/misc/dust/dash_dustB.txt
 # Stun animations
 
 load    stun           data/chars/misc/stun/stun.txt
+load    cant           data/chars/misc/text/cant.txt
 
 # Blood animations
 

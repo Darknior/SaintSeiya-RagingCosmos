@@ -238,10 +238,15 @@ anim idle2
     frame    data/chars/seiya/idle23.png
     
 anim cant # Plus assez de mp
-    delay    64
-    offset   114 110
+    delay    70
+    offset   45 119
     bbox     36 7 30 112
-    frame    data/chars/seiya/rise4.png
+    hitflash flash
+    sound    data/chars/seiya/sounds/low_cosmos.wav
+    @cmd     spawnbind "cant" "ANI_IDLE" 40 10 10 1 1
+    @cmd     spawnbind "impact" "ANI_IDLE" 0 10 60 0 0
+    frame    data/chars/seiya/attack1.png
+
     
 anim faint # Quand il reste 1/4 de hp
     loop     1
@@ -408,14 +413,14 @@ anim runattack  # Attaque en courant
     subentity    dash_dust
     sound    data/chars/seiya/sounds/07-forward_punch.wav
     frame    data/chars/seiya/runattack1.png
-	 attack 5 13 90 55 10 0 0 0 0 20
+	 attack 5 13 90 55 10 0 0 0 0 10
     dropv    3.0 2 0
 	 bbox 22 0 65 120
     frame    data/chars/seiya/runattack2.png
 	 attack2 0 0 0 0 0 0 0 0 0 0
     @cmd     spawnbind "seiya_dash_dust" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/seiya/runattack3.png
-	 attack2 5 13 90 55 10 12 0 0 0 20
+	 attack2 5 13 90 55 10 1 0 0 0 15
     dropv    3.0 2 0
     frame    data/chars/seiya/runattack4.png
     frame    data/chars/seiya/runattack5.png
@@ -507,7 +512,7 @@ anim    attack5    # Attaque combo 5
     sound    data/chars/seiya/sounds/kick.wav
     frame    data/chars/seiya/attack53.png
     dropv    4.0 1.0 0.0
-    attack20  64 37 67 26 10 1 1 0 12 20
+    attack20  64 37 67 26 10 1 1 0 50 20
     frame    data/chars/seiya/attack54.png
     @cmd     spawnbind "kick_dust" 0 10 10 0 0
     frame    data/chars/seiya/attack55.png
@@ -919,7 +924,7 @@ anim    attackboth # Attaque de mêlée native (j + a1)
 anim    freespecial # Attaque de mêlée (Bouton special, a2)
     jugglecost  2
     fastattack  1
-    energycost  20 0 0
+    energycost  20 1 0
     offset   45 134
     bbox     21 22 51 112
     hitflash blue_swing
@@ -1222,30 +1227,30 @@ anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     frame    data/chars/seiya/special41.png
     attack5  0
     @cmd     dasher 8 0 0 1
-    attack20  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     frame    data/chars/seiya/special42.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack20  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special42.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack20  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special43.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack20  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special43.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack20  90 40 55 83 20 1 1 0 0 30
+    attack20  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     attack20  0
     @cmd     dasher 0 0 0 1
