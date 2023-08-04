@@ -243,7 +243,7 @@ anim cant # Plus assez de mp
     bbox     36 7 30 112
     hitflash flash
     sound    data/chars/seiya/sounds/low_cosmos.wav
-    @cmd     spawnbind "cant" "ANI_IDLE" 40 10 10 1 1
+    #@cmd     spawnbind "cant" "ANI_IDLE" 40 10 10 1 1
     @cmd     spawnbind "impact" "ANI_IDLE" 0 10 60 0 0
     frame    data/chars/seiya/attack1.png
 

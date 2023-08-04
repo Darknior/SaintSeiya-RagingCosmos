@@ -6,7 +6,7 @@ void main()
 	showText();
 }
 
-void showText()
+void showText(void cosmos)
 {
 	void vSpawn;
 	void self		= getlocalvar("self");
@@ -19,6 +19,12 @@ void showText()
 	float zVel		= 0;
 	float height	= 100;
 	float duration	= getentityvar(self, "textTime");
+
+	if(cosmos){
+		x = getentityproperty(self, "x");
+		y = getentityproperty(self, "y");
+		z = getentityproperty(self, "z");
+	}
 
 	clearspawnentry();
 	setspawnentry("name", "text");

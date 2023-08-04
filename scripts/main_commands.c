@@ -1,3 +1,6 @@
+#import "data/scripts/player.c"
+#import "data/scripts/didhit/items.c"
+
 void ultra(void anim)
 {//Perform ultra attacks
 	void self	= getlocalvar("self");
@@ -20,6 +23,8 @@ void ultra(void anim)
 				}
 				else
 				{
+					itemText("LOW COSMOS", 0.4, 1, 3);
+					showText("cosmos");
 					changeentityproperty(self, "velocity", 0, 0, 0);
 					performattack(self, openborconstant("ANI_CANT"), 0);
 				}
@@ -53,6 +58,8 @@ void super(void anim)
 				}
 				else
 				{
+					itemText("LOW COSMOS", 0.4, 1, 3);
+					showText("cosmos");
 					changeentityproperty(self, "velocity", 0, 0, 0);
 					performattack(self, openborconstant("ANI_CANT"), 0);
 				}
@@ -84,6 +91,8 @@ void upper(void anim)
 				}
 				else
 				{
+					itemText("LOW COSMOS", 0.4, 1, 3);
+					showText("cosmos");
 					changeentityproperty(self, "velocity", 0, 0, 0);
 					performattack(self, openborconstant("ANI_CANT"), 0);
 				}

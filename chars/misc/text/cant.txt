@@ -1,7 +1,6 @@
 name        cant
 type        none
 shadow      0
-toflip 1
 antigravity 100
 animationscript    data/scripts/player.c
 
@@ -10,7 +9,6 @@ anim    idle
     delay    40
     offset   90 130
     drawmethod alpha 6
-    drawmethod flipx 0
     drawmethod channel 0.99
     frame    data/chars/misc/text/cant/cant.png
     delay    10
