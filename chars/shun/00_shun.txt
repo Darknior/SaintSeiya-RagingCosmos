@@ -222,7 +222,24 @@ anim idle2
     frame    data/chars/shun/idle23.png
     frame    data/chars/shun/idle22.png
     
-anim faint
+anim cant # Plus assez de mp
+    delay    10
+    offset    32 139
+    bbox 20 40 35 100
+    sound    data/chars/shun/sounds/cant.wav
+    @cmd     spawnbind "impact" "ANI_IDLE" 20 10 60 0 0
+    frame    data/chars/shun/attack79.png
+    delay    10
+    frame    data/chars/shun/attack78.png
+    delay    10
+    frame    data/chars/shun/attack77.png
+    delay    20
+    frame    data/chars/shun/attack76.png
+    delay    10
+    frame    data/chars/shun/attack77.png
+    frame    data/chars/shun/attack78.png
+
+anim faint # Quand il reste 1/4 de hp
     loop     1
     delay    13
     offset   32 131
@@ -345,12 +362,11 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/shun/jump5.png
 
 anim run
-    loop     1
+    loop     1 1
     delay    8
     offset   62 132
     bbox     39 28 51 104
-    summonframe  0 0 0 0
-    subentity    dash_dustB
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
     frame    data/chars/shun/run6.png
     sound    data/chars/shun/sounds/20-run1.wav
     frame    data/chars/shun/run1.png
@@ -903,10 +919,11 @@ anim    attackbackward  # Attaque arrière native (b + a1)
 anim    attackboth  # Attaque de mêlée native (j + a1)
     jugglecost  2
     fastattack 1
+    energycost  20 0 0
     hitflash shun_impactD
     delay    10
     sound data/chars/shun/sounds/01-stream.wav
-    @cmd     spawnbind "shun_storm" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shun_storm" "ANI_IDLE" 0 10 0 0 0
     delay 10
     offset    203 310
     frame    data/chars/shun/special1.png
@@ -1038,10 +1055,11 @@ anim    freespecial4   # Attaque arrière (a3)
 anim freespecial5 # Uppercut (Bas, Avant + Bouton Special)
     jugglecost  2
     fastattack 1
+    energycost  20 0 0
     hitflash shun_impactD
     delay    10
     sound data/chars/shun/sounds/01-stream.wav
-    @cmd     spawnbind "shun_storm" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "shun_storm" "ANI_IDLE" 0 10 0 0 0
     delay 10
     offset    203 310
     frame    data/chars/shun/special1.png

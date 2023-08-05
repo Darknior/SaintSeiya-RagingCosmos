@@ -260,7 +260,19 @@ anim idle2
     frame    data/chars/ikki/idle14.png
     frame    data/chars/ikki/idle15.png
     
-anim faint
+anim cant # Plus assez de mp
+    delay    10
+    offset    39 136
+    bbox 25 17 30 120
+    sound    data/chars/ikki/sounds/cant.wav
+    @cmd     spawnbind "impact" "ANI_IDLE" 5 10 60 0 0
+    frame    data/chars/ikki/attack22.png
+    delay    50
+    frame    data/chars/ikki/attack23.png
+    delay    10
+    frame    data/chars/ikki/attack24.png
+    
+anim faint # Quand il reste 1/4 de hp
     loop 1
     delay    12
     offset   45 137

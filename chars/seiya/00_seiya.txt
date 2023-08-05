@@ -384,7 +384,7 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/seiya/jump1.png
 
 anim run
-    loop     1
+    loop     1 1
     delay    8
     offset   48 128
     bbox     34 13 51 115

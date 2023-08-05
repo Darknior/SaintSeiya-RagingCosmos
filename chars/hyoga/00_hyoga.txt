@@ -247,9 +247,20 @@ anim    idle2
     frame    data/chars/hyoga/idle13.png
     frame    data/chars/hyoga/idle12.png
 
+anim cant # Plus assez de mp
+    offset   39 141
+    delay    10
+    sound    data/chars/hyoga/sounds/cant.wav
+    @cmd     spawnbind "impact" "ANI_IDLE" 0 10 60 0 0
+    frame    data/chars/hyoga/uppercut1.png
+    sound    data/chars/hyoga/03-uppercut2.wav
+    delay    50
+    frame    data/chars/hyoga/uppercut2.png
+    delay    10
+    frame    data/chars/hyoga/uppercut3.png
 
     
-anim    faint
+anim faint # Quand il reste 1/4 de hp
     loop     1
     delay    8
     offset   45 140

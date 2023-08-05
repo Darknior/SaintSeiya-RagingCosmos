@@ -238,7 +238,7 @@ anim walk
     frame    data/chars/aiolia/walk6.png
 
 anim run
-    loop    1
+    loop    1 1
     delay    15
     offset    51 136
     bbox 37 19 38 117
@@ -248,6 +248,7 @@ anim run
     frame    data/chars/aiolia/run2.png
     frame    data/chars/aiolia/run3.png
     frame    data/chars/aiolia/run4.png
+    frame    data/chars/aiolia/run5.png
 
 #//Basic Attacks animations/////////////////////////////////////////////////
 

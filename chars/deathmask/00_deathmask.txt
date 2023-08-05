@@ -208,7 +208,7 @@ anim walk
     frame    data/chars/deathmask/oldwalk2.png
 
 anim run
-    loop    1
+    loop    1 1
     delay    15
     offset    65 130
     bbox 38 22 50 108
@@ -220,6 +220,7 @@ anim run
     frame    data/chars/deathmask/run5.png
     frame    data/chars/deathmask/run6.png
     frame    data/chars/deathmask/run7.png
+    frame    data/chars/deathmask/run1.png
 
 #// Basic Attacks animations /////////////////////////////////////////////////
 

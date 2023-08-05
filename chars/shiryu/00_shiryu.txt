@@ -217,7 +217,19 @@ anim    idle2
     frame    data/chars/shiryu/idle7.png
     frame    data/chars/shiryu/idle6.png
     
-anim    faint
+anim cant # Plus assez de mp
+    delay    10
+    offset   39 130
+    bbox     31 15 30 115
+    sound    data/chars/shiryu/sounds/cant.wav
+    @cmd     spawnbind "impact" "ANI_IDLE" 15 10 60 0 0
+    frame    data/chars/shiryu/attack1.png
+    delay    50
+    frame    data/chars/shiryu/attack2.png
+    delay    10
+    frame    data/chars/shiryu/attack2.png
+    
+anim    faint # Quand il reste 1/4 de hp
     loop     1
     delay    13
     offset   39 128
