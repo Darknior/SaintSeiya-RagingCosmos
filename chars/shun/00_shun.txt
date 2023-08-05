@@ -224,20 +224,16 @@ anim idle2
     
 anim cant # Plus assez de mp
     delay    10
-    offset    32 139
-    bbox 20 40 35 100
+    offset    28 109
+    bbox 10 10 35 100
     sound    data/chars/shun/sounds/cant.wav
-    @cmd     spawnbind "impact" "ANI_IDLE" 20 10 60 0 0
-    frame    data/chars/shun/attack79.png
+    @cmd     spawnbind "impact" "ANI_IDLE" 0 10 60 0 0
+    frame    data/chars/shun/cant1.png
     delay    10
-    frame    data/chars/shun/attack78.png
-    delay    10
-    frame    data/chars/shun/attack77.png
-    delay    20
-    frame    data/chars/shun/attack76.png
-    delay    10
-    frame    data/chars/shun/attack77.png
-    frame    data/chars/shun/attack78.png
+    frame    data/chars/shun/cant2.png
+    delay    50
+    frame    data/chars/shun/cant3.png
+
 
 anim faint # Quand il reste 1/4 de hp
     loop     1
@@ -1086,6 +1082,7 @@ anim freespecial5 # Uppercut (Bas, Avant + Bouton Special)
 anim freespecial6 # Tempête Nébulaire ( haut + bouton special)
     jugglecost  3
     delay    10
+    otg 1
     offset    203 310
     fastattack 1
     hitflash shun_impact
