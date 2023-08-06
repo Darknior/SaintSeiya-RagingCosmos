@@ -337,7 +337,7 @@ anim fall
 	 bbox 6 93 90 35
     frame    data/chars/soldier_basic/fall8.png	
     
-anim fall7
+anim fall7 # chutte apres etre Grab
     delay    10
     offset    98 125
 	 landframe 3
@@ -349,7 +349,7 @@ anim fall7
     frame    data/chars/soldier_basic/fall4.png
     frame    data/chars/soldier_basic/fall8.png	
 
-anim rise
+anim rise # Se releve avec compteur de chuttes
    offset    98 125
    delay    10
    frame    data/chars/soldier_basic/rise1.png
@@ -362,7 +362,7 @@ anim rise
    @cmd stunCounter -15 110 1 3
    frame    data/chars/soldier_basic/rise6.png	
    
-anim follow1 #STUN
+anim follow1 # Stun aprés X chuttes
    offset    98 125
    delay    400
 	bbox 69 24 50 100

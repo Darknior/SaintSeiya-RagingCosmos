@@ -322,6 +322,34 @@ anim fall
     bbox 30 106 130 40
     frame    data/chars/gemini/fall5.png
 
+anim fall7 # chutte apres etre Grab
+    delay    10
+    offset    146 144
+    landframe 4
+    bbox 12 50 100 100
+    frame    data/chars/gemini/fall1.png
+    frame    data/chars/gemini/fall2.png
+    frame    data/chars/gemini/fall3.png
+    frame    data/chars/gemini/fall4.png
+    bbox 30 106 130 40
+    frame    data/chars/gemini/fall5.png
+
+anim rise # Se releve avec compteur de chuttes
+    offset    146 144
+    delay    10
+    frame    data/chars/gemini/rise1.png
+    frame    data/chars/gemini/rise2.png
+    frame    data/chars/gemini/rise3.png
+    frame    data/chars/gemini/rise4.png
+    @cmd stunCounter -15 110 1 5
+    frame    data/chars/gemini/rise5.png
+
+anim follow1 # Stun aprés X chuttes
+    delay    300
+    offset    75 171
+    bbox 59 73 35 71
+    frame    data/chars/gemini/get1.png
+
 anim death
     delay    40
     offset    146 144
@@ -353,15 +381,6 @@ anim death
     frame    data/chars/gemini/spawn3.png
     frame    data/chars/gemini/spawn2.png
     frame    data/chars/gemini/spawn1.png
-
-anim rise
-    offset    146 144
-    delay    10
-    frame    data/chars/gemini/rise1.png
-    frame    data/chars/gemini/rise2.png
-    frame    data/chars/gemini/rise3.png
-    frame    data/chars/gemini/rise4.png
-    frame    data/chars/gemini/rise5.png
 
 
 #// Block animations /////////////////////////////////////////////////

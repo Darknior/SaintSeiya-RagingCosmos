@@ -352,6 +352,37 @@ anim fall
     frame    data/chars/aphrodite/fall6.png
     frame    data/chars/aphrodite/fall7.png
 
+anim fall7 # chutte apres etre Grab
+    delay    10
+    offset    131 129
+    landframe 4
+    bbox 50 25 70 120
+    frame    data/chars/aphrodite/fall1.png
+    frame    data/chars/aphrodite/fall2.png
+    frame    data/chars/aphrodite/fall3.png
+    bbox 14 94 120 35
+    frame    data/chars/aphrodite/fall4.png
+    frame    data/chars/aphrodite/fall5.png
+    frame    data/chars/aphrodite/fall6.png
+    frame    data/chars/aphrodite/fall7.png
+
+anim rise # Se releve avec compteur de chuttes
+    offset    142 140
+    delay    10
+    frame    data/chars/aphrodite/rise1.png
+    frame    data/chars/aphrodite/rise2.png
+    frame    data/chars/aphrodite/rise3.png
+    @cmd stunCounter -15 110 1 5
+    frame    data/chars/aphrodite/rise4.png
+    
+anim follow1 # Stun aprés X chuttes
+    offset    142 140
+    delay    10
+    frame    data/chars/aphrodite/rise1.png
+    frame    data/chars/aphrodite/rise2.png
+    frame    data/chars/aphrodite/rise3.png
+    frame    data/chars/aphrodite/rise4.png
+    
 anim death
     delay    25
     offset    131 129
@@ -383,14 +414,6 @@ anim death
     frame    data/chars/aphrodite/death3.png
     frame    data/chars/aphrodite/death4.png
     frame    data/chars/aphrodite/death5.png
-
-anim rise
-    offset    142 140
-    delay    10
-    frame    data/chars/aphrodite/rise1.png
-    frame    data/chars/aphrodite/rise2.png
-    frame    data/chars/aphrodite/rise3.png
-    frame    data/chars/aphrodite/rise4.png
 
 #// Block animations /////////////////////////////////////////////////
 

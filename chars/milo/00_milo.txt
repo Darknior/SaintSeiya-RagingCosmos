@@ -352,6 +352,33 @@ anim fall
     bbox 0 93 120 35
     frame    data/chars/milo/fall5.png
 
+anim fall7 # chutte apres etre Grab
+    delay    10
+    offset    92 126
+    landframe 4
+    bbox 27 50 80 80
+    frame    data/chars/milo/fall1.png
+    frame    data/chars/milo/fall2.png
+    frame    data/chars/milo/fall3.png
+    frame    data/chars/milo/fall4.png
+    bbox 0 93 120 35
+    frame    data/chars/milo/fall5.png
+
+anim rise # Se releve avec compteur de chuttes
+    offset    95 130
+    delay    10
+    frame    data/chars/milo/rise1.png
+    frame    data/chars/milo/rise2.png
+    frame    data/chars/milo/rise3.png
+    frame    data/chars/milo/rise4.png
+    @cmd stunCounter -15 110 1 5
+    frame    data/chars/milo/rise5.png
+
+anim follow1 # Stun aprés X chuttes
+    offset    95 130
+    delay    400
+    frame    data/chars/milo/rise5.png
+
 anim death
     delay    15
     offset    92 126
@@ -391,15 +418,6 @@ anim death
     frame    data/chars/milo/death9.png
     frame    data/chars/milo/death8.png
     frame    data/chars/milo/death9.png
-
-anim rise
-    offset    95 130
-    delay    10
-    frame    data/chars/milo/rise1.png
-    frame    data/chars/milo/rise2.png
-    frame    data/chars/milo/rise3.png
-    frame    data/chars/milo/rise4.png
-    frame    data/chars/milo/rise5.png
 
 #// Block animations /////////////////////////////////////////////////
 

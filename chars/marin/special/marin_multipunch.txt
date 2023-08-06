@@ -2,7 +2,6 @@ name	marin_multipunch
 type	none
 candamage player
 shadow	0
-setlayer 100
 antigravity 100
 nolife 1
 remove 0

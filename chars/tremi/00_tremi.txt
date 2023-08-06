@@ -383,7 +383,7 @@ anim fall
      offset     87 110
      frame     data/chars/tremi/fall6.png
 
-anim fall7
+anim fall7 # chutte apres etre Grab
      offset     85 119
      delay     -1000
      #landframe 4
@@ -397,13 +397,20 @@ anim fall7
      offset     87 110
      frame     data/chars/tremi/fall6.png
 
-anim rise
+anim rise # Se releve avec compteur de chuttes
      delay     10
      offset     83 119
      jumpframe 0 0 0
      frame     data/chars/tremi/rise1.png
      frame     data/chars/tremi/rise2.png
+     @cmd stunCounter -15 110 1 4
      frame     data/chars/tremi/rise3.png
+     
+anim follow1 # Stun aprés X chuttes
+     offset     46 119
+     bbox 18 7 52 112
+     delay     300
+     frame     data/chars/tremi/pain1.png
 
 anim death
      offset     84 136

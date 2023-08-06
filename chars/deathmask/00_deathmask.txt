@@ -363,7 +363,7 @@ anim fall
     bbox 7 91 100 35
     frame    data/chars/deathmask/fall5.png
 
-anim fall7
+anim fall7 # chutte apres etre Grab
     delay    -1000
     offset    92 126
     landframe 4
@@ -375,26 +375,7 @@ anim fall7
     bbox 7 90 100 35
     frame    data/chars/deathmask/fall5.png
 
-anim death
-    delay    10
-    offset    92 126
-    frame    data/chars/deathmask/fall1.png
-    frame    data/chars/deathmask/fall2.png
-    frame    data/chars/deathmask/fall3.png
-    frame    data/chars/deathmask/fall4.png
-    frame    data/chars/deathmask/fall5.png
-    offset    77 130
-    frame    data/chars/deathmask/rise1.png
-    frame    data/chars/deathmask/rise2.png
-    frame    data/chars/deathmask/rise3.png
-    frame    data/chars/deathmask/idle1.png
-    offset    37 169
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special2.png
-    @cmd spawnDialog "dialog_deathmask2" 200 100
-    frame    data/chars/deathmask/special2.png
-
-anim rise
+anim rise # Se releve avec compteur de chuttes
     offset    77 130
     delay    10
     frame    data/chars/deathmask/rise1.png
@@ -404,9 +385,9 @@ anim rise
     @cmd stunCounter -15 110 1 5
     frame    data/chars/deathmask/rise3.png
 
-anim follow1 #STUN
+anim follow1 # Stun aprés X chuttes
     offset    27 128
-    delay    30
+    delay    20
 	 bbox 12 29 45 100
     frame    data/chars/deathmask/pain21.png
     frame    data/chars/deathmask/pain22.png
@@ -426,6 +407,27 @@ anim follow1 #STUN
     frame    data/chars/deathmask/pain22.png
     frame    data/chars/deathmask/pain21.png
     frame    data/chars/deathmask/pain22.png
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+
+anim death
+    delay    10
+    offset    92 126
+    frame    data/chars/deathmask/fall1.png
+    frame    data/chars/deathmask/fall2.png
+    frame    data/chars/deathmask/fall3.png
+    frame    data/chars/deathmask/fall4.png
+    frame    data/chars/deathmask/fall5.png
+    offset    77 130
+    frame    data/chars/deathmask/rise1.png
+    frame    data/chars/deathmask/rise2.png
+    frame    data/chars/deathmask/rise3.png
+    frame    data/chars/deathmask/idle1.png
+    offset    37 169
+    frame    data/chars/deathmask/special1.png
+    frame    data/chars/deathmask/special2.png
+    @cmd spawnDialog "dialog_deathmask2" 200 100
+    frame    data/chars/deathmask/special2.png
 
 #// Block animations /////////////////////////////////////////////////
 

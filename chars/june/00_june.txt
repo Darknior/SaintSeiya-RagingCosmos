@@ -10,6 +10,7 @@ gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du n
 riseinv     0.3 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
 risetime    -50        # Temps avant de se relever (-300 = 3 secondes)
+riseattacktype 1        # Effectue riseattack quand il se releve
 speed       13          # Vitesse de déplacement
 running     30 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
@@ -417,7 +418,7 @@ anim fall
     frame    data/chars/june/fall6.png
     frame    data/chars/june/fall7.png
 
-anim fall7
+anim fall7 # chutte apres etre Grab
     offset    106 124
     delay    -1000
     bbox 35 50 75 75
@@ -430,7 +431,7 @@ anim fall7
     frame    data/chars/june/fall6.png
     frame    data/chars/june/fall7.png
 
-anim rise
+anim rise # Se releve avec compteur de chuttes
     delay    10
     offset    106 124
     jumpframe 0 0 0
@@ -438,7 +439,15 @@ anim rise
     frame    data/chars/june/rise2.png
     frame    data/chars/june/rise3.png
     frame    data/chars/june/rise4.png
+    @cmd stunCounter -15 110 1 4
     frame    data/chars/june/rise5.png
+
+anim follow1 # Stun aprés X chuttes
+    offset    49 124
+    bbox 17 15 51 110
+    delay    400
+    frame    data/chars/june/pain1.png
+
 
 anim death
     offset    49 124
@@ -468,7 +477,7 @@ anim    block
     
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim special # Vine Mill
+anim special # Vine Mill (attaque lorsqu elle est grab)
     delay    10
     offset    111 124
     hitflash blue_swing

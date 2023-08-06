@@ -1,7 +1,6 @@
 name	shaina_electricity
 type	none
 shadow	0
-setlayer 778
 remove 0
 antigravity 100
 animationscript	data/scripts/player.c

@@ -1,9 +1,8 @@
 name	marin_eagle
 type	none
-shadow	0
+gfxshadow 1
 nolife 1
 remove 0
-setlayer 99
 antigravity 100
 lifespan  6
 didhitscript	data/scripts/didhit/tint_ice.c

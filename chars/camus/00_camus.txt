@@ -308,6 +308,33 @@ anim fall
     bbox 0 88 120 40
     frame    data/chars/camus/fall5.png
 
+anim fall7 # chutte apres etre Grab
+    delay    10
+    offset    97 135
+    landframe 4
+    bbox 0 47 120 80
+    frame    data/chars/camus/fall1.png
+    frame    data/chars/camus/fall2.png
+    frame    data/chars/camus/fall3.png
+    frame    data/chars/camus/fall4.png
+    bbox 0 88 120 40
+    frame    data/chars/camus/fall5.png
+
+anim rise # Se releve avec compteur de chuttes
+    offset    115 127
+    delay    10
+    frame    data/chars/camus/rise1.png
+    frame    data/chars/camus/rise2.png
+    frame    data/chars/camus/rise3.png
+    @cmd stunCounter -15 110 1 5
+    frame    data/chars/camus/rise4.png
+
+anim follow1 # Stun aprés X chuttes
+    delay    300
+    offset    46 126
+    bbox 25 8 50 120
+    frame    data/chars/camus/runattack1.png
+
 anim death
     delay    20
     offset    97 127
@@ -331,13 +358,6 @@ anim death
     @cmd spawnDialog "dialog_camus3" 200 100
     frame    data/chars/camus/death7.png
 
-anim rise
-    offset    115 127
-    delay    10
-    frame    data/chars/camus/rise1.png
-    frame    data/chars/camus/rise2.png
-    frame    data/chars/camus/rise3.png
-    frame    data/chars/camus/rise4.png
 
 #// Block animations /////////////////////////////////////////////////
 

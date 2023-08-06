@@ -1,7 +1,6 @@
 name	shaina_shoot
 type	none
-shadow	0
-setlayer 778
+gfxshadow	1
 nolife 1
 remove 0
 antigravity 100
@@ -12,7 +11,7 @@ anim	idle
 	loop	1
 	delay	8
 	offset	0 -30
-        hitflash shaina_electricity
+   hitflash shaina_electricity
 	drawmethod alpha 1
 	attack 20 8 50 50 15 12 0 0 0 20
 	quakeframe	data/chars/shaina/special/shaina_shoot/shaina_shoot-34.png 13 5

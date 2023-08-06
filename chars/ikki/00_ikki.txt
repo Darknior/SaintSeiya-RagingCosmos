@@ -690,7 +690,7 @@ anim jumpland # Aterrissage du saut
     frame    data/chars/ikki/get2.png
     frame    data/chars/ikki/get1.png
 
-anim land #  atterissage safe au sol (haut+ jump pendant la projection)
+anim land # atterissage safe au sol (haut+ jump pendant la projection)
     delay    8
     offset    27 139
     bbox 2 19 51 120
@@ -702,7 +702,7 @@ anim land #  atterissage safe au sol (haut+ jump pendant la projection)
     frame    data/chars/ikki/get2.png
     frame    data/chars/ikki/get1.png
 
-anim jumpattack #Attaque sautée statique
+anim jumpattack # Attaque sautée statique
     delay    5
     offset    55 206
     sound data/sounds/punch.wav
@@ -714,7 +714,7 @@ anim jumpattack #Attaque sautée statique
     frame    data/chars/ikki/jumpattack3.png
     attack4 0
 
-anim jumpforward #Attaque sautée vers l'avant
+anim jumpforward # Attaque sautée vers l'avant
     delay    5
     offset    55 206
     sound data/sounds/punch.wav
@@ -726,7 +726,7 @@ anim jumpforward #Attaque sautée vers l'avant
     frame    data/chars/ikki/jumpforward4.png
     attack4 0
 
-anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
+anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     delay    5
     offset    55 206
     sound data/sounds/punch.wav
@@ -740,7 +740,7 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/ikki/jumpattack24.png
     attack4 0
 
-anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
+anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     delay    5
     offset    55 206
     bbox 35 76 51 120
@@ -790,7 +790,7 @@ anim fall
     frame    data/chars/ikki/fall5.png
     frame    data/chars/ikki/fall6.png
 
-anim fall7
+anim fall7 # chutte apres etre Grab
     landframe 5
     offset    114 139
     delay    -1000
@@ -802,10 +802,9 @@ anim fall7
     frame    data/chars/ikki/fall5.png
     frame    data/chars/ikki/fall6.png
 
-anim rise
+anim rise # Se releve avec compteur de chuttes
     delay    10
     offset    86 139
-    jumpframe 0 0 0
     delay    10
     frame    data/chars/ikki/rise1.png
     frame    data/chars/ikki/rise2.png
@@ -813,6 +812,12 @@ anim rise
     frame    data/chars/ikki/rise2.png
     frame    data/chars/ikki/rise3.png
     frame    data/chars/ikki/rise4.png
+    @cmd stunCounter -15 110 1 3
+    frame    data/chars/ikki/rise5.png
+
+anim follow1 # Stun aprés X chuttes
+    delay    300
+    offset    86 139
     frame    data/chars/ikki/rise5.png
 
 anim death

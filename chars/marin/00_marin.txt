@@ -10,6 +10,7 @@ gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du n
 riseinv     0.3 1         # Invincible après une chute X sec / Clignote pas
 makeinv     2 0         # Invincible après respawn X sec / Clignote
 risetime    -50        # Temps avant de se relever (-300 = 3 secondes)
+riseattacktype 1        # Effectue riseattack quand il se releve
 speed       14          # Vitesse de déplacement
 running     30 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
@@ -43,7 +44,7 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aimove      chasez       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression  0           # Valeur positive + agressif / valeur negative - aggressif
 
 hitenemy    1 0          # peut toucher d autres ennemis / air et sol
@@ -164,6 +165,18 @@ anim sleep
     frame    data/chars/marin/sleep3.png
     frame    data/chars/marin/sleep4.png
 
+anim get
+    delay    1
+    offset    25 113
+    bbox 2 16 52 99
+    frame    data/chars/marin/get1.png
+    frame    data/chars/marin/get2.png
+    frame    data/chars/marin/get3.png
+    frame    data/chars/marin/get2.png
+    frame    data/chars/marin/get1.png
+
+#// Walk/Run animations /////////////////////////////////////////////////
+
 anim walk
     loop    1
     delay    14
@@ -194,39 +207,7 @@ anim run
     frame    data/chars/marin/run6.png
     frame    data/chars/marin/run7.png
 
-anim runattack # Attaque en courant
-    delay    6
-    offset    30 115
-    bbox 2 3 51 112
-    hitflash marin_swing
-    forcedirection -1
-    @cmd    dasher 3.5 0 0 1
-    spawnframe  0 80 10 0
-    subentity    dash_dust
-    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/marin/runattack1.png
-    frame    data/chars/marin/runattack2.png
-    frame    data/chars/marin/runattack3.png
-    attack2 31 43 86 25 20 1 0 0 5 12
-    frame    data/chars/marin/runattack4.png
-    frame    data/chars/marin/runattack5.png
-    frame    data/chars/marin/runattack6.png
-    frame    data/chars/marin/runattack7.png
-    attack2 0 0 0 0 0 0 0 0 0 0
-    @cmd    dasher 0 0 0 1
-    delay    12
-    frame    data/chars/marin/runattack2.png
-    frame    data/chars/marin/runattack1.png
-
-anim get
-    delay    1
-    offset    25 113
-    bbox 2 16 52 99
-    frame    data/chars/marin/get1.png
-    frame    data/chars/marin/get2.png
-    frame    data/chars/marin/get3.png
-    frame    data/chars/marin/get2.png
-    frame    data/chars/marin/get1.png
+#// Basic Attacks animations /////////////////////////////////////////////////
 
 anim attack1 # Attaque combo 1
     delay    5
@@ -284,137 +265,15 @@ anim attack5 # Attaque combo 5
     bbox 21 7 51 112
     hitflash flashbig
     attack1 0 0 0 0 0 0 0 0 0 0
-        @cmd     spawnbind "marin_circle" "ANI_IDLE" 0 0 0 0 0
+    @cmd     spawnbind "marin_circle" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/marin/attack51.png
     frame    data/chars/marin/attack52.png
-    attack1 62 21 67 26 20 1 0 0 5 12
+    attack1 62 21 67 26 20 1 0 0 70 12
     frame    data/chars/marin/attack53.png
     frame    data/chars/marin/attack54.png
     frame    data/chars/marin/attack52.png
 
-anim special # Eagle homerun
-    delay    10
-    offset    24 112
-    energycost  10 1 0
-    sound data/chars/marin/sounds/01-explosion.wav
-        hitflash marin_swing
-    @cmd     spawnbind "marin_stormC" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/marin/pain22.png
-    sound data/chars/marin/sounds/01-hurl.wav
-    frame    data/chars/marin/pain22.png
-    sound data/chars/marin/sounds/06-launch.wav
-    attack5 74 1 120 180 30 1 0 0 5 12
-    dropv     8.0 3 0
-    delay    40
-    frame    data/chars/marin/pain21.png
-    delay    10
-    offset    51 113
-    frame    data/chars/marin/pain1.png
-    frame    data/chars/marin/pain2.png
-    frame    data/chars/marin/pain3.png
-    frame    data/chars/marin/pain3.png
-    delay    40
-        frame    data/chars/marin/pain3.png
-    attack5 0
-        frame    data/chars/marin/pain2.png
-
-anim special2 # Multi punch combo
-    delay    15
-    offset    31 119
-    sound data/chars/marin/sounds/01-multi2.wav
-    summonframe 0 120 0 0
-    @cmd     spawnbind "marin_multipunch" "ANI_IDLE" 0 0 0 0 0
-    energycost  10 1 0
-    hitflash flashbig
-    attack 0 0 0 0 0 0 0 0 0 0
-    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/marin/special21.png
-    frame    data/chars/marin/special22.png
-    attack5 28 -61 120 180 30 0 0 0 5 12
-    frame    data/chars/marin/special23.png
-    frame    data/chars/marin/special24.png
-    frame    data/chars/marin/special25.png
-    frame    data/chars/marin/special26.png
-    attack5 0
-    frame    data/chars/marin/special27.png
-    frame    data/chars/marin/special28.png
-    frame    data/chars/marin/special29.png
-    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 10 0 0 0
-        frame    data/chars/marin/special21.png
-    frame    data/chars/marin/special22.png
-    attack5 28 -61 120 180 30 0 0 0 5 12
-    frame    data/chars/marin/special23.png
-    @cmd     spawnbind "marin_multipunch" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/marin/special24.png
-    frame    data/chars/marin/special25.png
-    frame    data/chars/marin/special26.png
-    attack5 0
-    frame    data/chars/marin/special27.png
-    frame    data/chars/marin/special28.png
-    frame    data/chars/marin/special29.png
-    frame    data/chars/marin/special30.png
-    frame    data/chars/marin/special31.png
-
-anim freespecial # Multi punch combo
-    delay    15
-    offset    31 119
-    sound data/chars/marin/sounds/01-multi2.wav
-    summonframe 0 120 0 0
-    @cmd     spawnbind "marin_multipunch" "ANI_IDLE" 0 0 0 0 0
-    energycost  10 1 0
-    hitflash flashbig
-    attack 0 0 0 0 0 0 0 0 0 0
-    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/marin/special21.png
-    frame    data/chars/marin/special22.png
-    attack5 28 -61 120 180 30 0 0 0 5 12
-    frame    data/chars/marin/special23.png
-    frame    data/chars/marin/special24.png
-    frame    data/chars/marin/special25.png
-    frame    data/chars/marin/special26.png
-    attack5 0
-    frame    data/chars/marin/special27.png
-    frame    data/chars/marin/special28.png
-    frame    data/chars/marin/special29.png
-    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 0 0 0 0
-        frame    data/chars/marin/special21.png
-    frame    data/chars/marin/special22.png
-    attack5 28 -61 120 180 30 0 0 0 5 12
-    frame    data/chars/marin/special23.png
-    @cmd     spawnbind "marin_multipunch" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/marin/special24.png
-    frame    data/chars/marin/special25.png
-    frame    data/chars/marin/special26.png
-    attack5 0
-    frame    data/chars/marin/special27.png
-    frame    data/chars/marin/special28.png
-    frame    data/chars/marin/special29.png
-    frame    data/chars/marin/special30.png
-    frame    data/chars/marin/special31.png
-
-anim freespecial2 # Eagle projectile
-    delay    10
-    offset    31 115
-        hitflash marin_swing
-    sound data/chars/marin/sounds/01-eagle_shoot.wav
-    range     130 300
-    rangea     0 100
-    #summonframe 0 0 0 0 0
-    #subentity constellation
-    #unsummonframe 27
-    energycost  25 1 0
-    hitflash flashbig
-    attack5 -8 -64 100 180 10 1 0 0 5 12
-    frame    data/chars/marin/special1.png
-    frame    data/chars/marin/special2.png
-    frame    data/chars/marin/special3.png
-    frame    data/chars/marin/special4.png
-    attack5 -8 -57 100 180 10 1 0 0 5 12
-    @cmd    shooter "marin_eagle" 77 40 0 1.5 0 0
-        @cmd    shooter "marin_stormA" 77 40 0 1 0 0
-    frame    data/chars/marin/special3.png
-    delay    150
-    frame    data/chars/marin/special2.png
+#// Jump animations /////////////////////////////////////////////////
 
 anim jump # Saut Statique
     delay    10
@@ -460,6 +319,8 @@ anim jumpattack #Attaque sautée statique
     frame    data/chars/marin/jumpattack3.png
     attack4 0
 
+#// Pain/Fall/Rise/Death animations /////////////////////////////////////////////////
+
 anim pain
     offset    51 113
     bbox 28 0 51 112
@@ -497,7 +358,7 @@ anim fall
     frame    data/chars/marin/fall7.png
     frame    data/chars/marin/fall8.png
 
-anim fall7
+anim fall7 # chutte apres etre Grab
     offset    67 115
     delay    -1000
     bbox 32 38 75 75
@@ -507,14 +368,21 @@ anim fall7
     bbox 0 80 110 35
     frame    data/chars/marin/fall4.png
 
-anim rise
+anim rise # Se releve avec compteur de chuttes
     delay    10
     offset    93 115
     jumpframe 0 0 0
     frame    data/chars/marin/rise1.png
     frame    data/chars/marin/rise2.png
     frame    data/chars/marin/rise3.png
+    @cmd stunCounter 5 110 1 4
     frame    data/chars/marin/rise4.png
+    
+anim follow1 # Stun aprés X chuttes
+    offset    24 112
+    bbox 11 2 36 112
+    delay    400
+    frame    data/chars/marin/pain21.png
 
 anim death
     offset    28 113
@@ -527,6 +395,8 @@ anim death
     frame    data/chars/marin/death2.png
     frame    data/chars/marin/death1.png
 
+#// Block animations /////////////////////////////////////////////////
+
 anim    block
     loop    0
     delay    5
@@ -535,3 +405,148 @@ anim    block
     frame    data/chars/marin/block1.png
     frame    data/chars/marin/block2.png
     frame    data/chars/marin/block3.png
+
+#-- ATTAQUES SPECIALES -------------------------------------------------------
+
+anim special # Eagle homerun (attaque lorsqu elle est grab)
+    delay    10
+    offset    24 112
+    sound data/chars/marin/sounds/01-explosion.wav
+    hitflash marin_swing
+    @cmd     spawnbind "marin_stormC" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/marin/pain22.png
+    sound data/chars/marin/sounds/01-hurl.wav
+    frame    data/chars/marin/pain22.png
+    sound data/chars/marin/sounds/06-launch.wav
+    attack5 74 1 120 180 30 1 0 0 5 12
+    dropv     8.0 3 0
+    delay    40
+    frame    data/chars/marin/pain21.png
+    delay    10
+    offset    51 113
+    frame    data/chars/marin/pain1.png
+    frame    data/chars/marin/pain2.png
+    frame    data/chars/marin/pain3.png
+    frame    data/chars/marin/pain3.png
+    delay    40
+    frame    data/chars/marin/pain3.png
+    attack5 0
+    frame    data/chars/marin/pain2.png
+    
+anim riseattack # Eagle homerun (attaque en se relevant)
+    delay    10
+    offset    24 112
+    sound data/chars/marin/sounds/01-explosion.wav
+    hitflash marin_swing
+    @cmd     spawnbind "marin_stormC" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/marin/pain22.png
+    sound data/chars/marin/sounds/01-hurl.wav
+    frame    data/chars/marin/pain22.png
+    sound data/chars/marin/sounds/06-launch.wav
+    attack5 74 1 120 180 30 1 0 0 5 12
+    dropv     8.0 3 0
+    delay    40
+    frame    data/chars/marin/pain21.png
+    delay    10
+    offset    51 113
+    frame    data/chars/marin/pain1.png
+    frame    data/chars/marin/pain2.png
+    frame    data/chars/marin/pain3.png
+    frame    data/chars/marin/pain3.png
+    delay    40
+    frame    data/chars/marin/pain3.png
+    attack5 0
+    frame    data/chars/marin/pain2.png
+
+anim freespecial2 # Attaque en courant
+    range 200 330
+    delay    5
+    offset    53 115
+    bbox 32 3 51 112
+    summonframe  0 0 0 0
+    subentity    dash_dustB
+    @cmd    dasher 2 0 0 1
+    frame    data/chars/marin/run1.png
+    frame    data/chars/marin/run2.png
+    frame    data/chars/marin/run3.png
+    frame    data/chars/marin/run4.png
+    frame    data/chars/marin/run5.png
+    frame    data/chars/marin/run6.png
+    frame    data/chars/marin/run7.png
+    delay    6
+    offset    30 115
+    bbox 2 3 51 112
+    hitflash marin_swing
+    forcedirection -1
+    @cmd    dasher 3.5 0 0 1
+    spawnframe  0 80 10 0
+    subentity    dash_dust
+    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/marin/runattack1.png
+    frame    data/chars/marin/runattack2.png
+    frame    data/chars/marin/runattack3.png
+    attack2 31 43 86 25 20 1 0 0 5 12
+    frame    data/chars/marin/runattack4.png
+    frame    data/chars/marin/runattack5.png
+    frame    data/chars/marin/runattack6.png
+    frame    data/chars/marin/runattack7.png
+    attack2 0 0 0 0 0 0 0 0 0 0
+    @cmd    dasher 0 0 0 1
+    delay    12
+    frame    data/chars/marin/runattack2.png
+    frame    data/chars/marin/runattack1.png
+
+anim freespecial3 # Eagle projectile
+    range 330 900
+    delay    10
+    offset    31 115
+    hitflash marin_swing
+    sound data/chars/marin/sounds/01-eagle_shoot.wav
+    attack5 -8 -64 100 180 10 1 0 0 5 12
+    frame    data/chars/marin/special1.png
+    frame    data/chars/marin/special2.png
+    frame    data/chars/marin/special3.png
+    frame    data/chars/marin/special4.png
+    attack5 -8 -57 100 180 10 1 0 0 5 12
+    @cmd    shooter "marin_eagle" 77 40 0 1.5 0 0
+    @cmd    shooter "marin_stormA" 77 40 0 1 0 0
+    frame    data/chars/marin/special3.png
+    delay    150
+    frame    data/chars/marin/special2.png
+
+anim freespecial4 # Multi punch combo
+    range 100 200
+    delay    15
+    offset    31 119
+    sound data/chars/marin/sounds/01-multi2.wav
+    summonframe 0 120 0 0
+    @cmd     spawnbind "marin_multipunch" "ANI_IDLE" 0 10 0 0 0
+    hitflash flashbig
+    attack 0 0 0 0 0 0 0 0 0 0
+    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/marin/special21.png
+    frame    data/chars/marin/special22.png
+    attack5 28 -61 120 180 30 0 0 0 5 12
+    frame    data/chars/marin/special23.png
+    frame    data/chars/marin/special24.png
+    frame    data/chars/marin/special25.png
+    frame    data/chars/marin/special26.png
+    attack5 0
+    frame    data/chars/marin/special27.png
+    frame    data/chars/marin/special28.png
+    frame    data/chars/marin/special29.png
+    @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/marin/special21.png
+    frame    data/chars/marin/special22.png
+    attack5 28 -61 120 180 30 0 0 0 5 12
+    frame    data/chars/marin/special23.png
+    @cmd     spawnbind "marin_multipunch" "ANI_IDLE" 0 10 0 0 0
+    frame    data/chars/marin/special24.png
+    frame    data/chars/marin/special25.png
+    frame    data/chars/marin/special26.png
+    attack5 0
+    frame    data/chars/marin/special27.png
+    frame    data/chars/marin/special28.png
+    frame    data/chars/marin/special29.png
+    frame    data/chars/marin/special30.png
+    frame    data/chars/marin/special31.png

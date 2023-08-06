@@ -1,7 +1,6 @@
 name	shaina_venom
 type	none
 shadow	0
-setlayer 778
 remove 0
 antigravity 100
 animationscript	data/scripts/player.c
@@ -10,7 +9,7 @@ anim	idle
 	loop	1
 	delay	8
 	offset	170 161
-        hitflash shaina_electricity
+   hitflash shaina_electricity
 	drawmethod alpha 1
 	frame	data/chars/shaina/special/shaina_venom/shaina_venom-54.png
 	frame	data/chars/shaina/special/shaina_venom/shaina_venom-55.png

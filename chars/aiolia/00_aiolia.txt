@@ -400,6 +400,35 @@ anim fall
     offset    124 135
     frame    data/chars/aiolia/fall5.png
 
+anim fall7 # chutte apres etre Grab
+    delay    50
+    offset    124 135
+    landframe 4
+    bbox 110 11 45 120
+    frame    data/chars/aiolia/fall1.png
+    bbox 45 80 100 50
+    frame    data/chars/aiolia/fall2.png
+    bbox 25 56 120 45
+    frame    data/chars/aiolia/fall3.png
+    frame    data/chars/aiolia/fall4.png
+    bbox 21 100 120 40
+    offset    124 135
+    frame    data/chars/aiolia/fall5.png
+
+anim rise # Se releve avec compteur de chuttes
+    offset    124 135
+    delay    10
+    frame    data/chars/aiolia/rise1.png
+    frame    data/chars/aiolia/rise2.png
+    frame    data/chars/aiolia/rise3.png
+    @cmd stunCounter -15 110 1 5
+    frame    data/chars/aiolia/rise4.png
+    
+anim follow1 # Stun aprés X chuttes
+    offset    124 135
+    delay    300
+    frame    data/chars/aiolia/rise4.png
+    
 anim death
     delay    15
     offset    124 135
@@ -443,16 +472,6 @@ anim death
     frame    data/chars/aiolia/death11.png
     frame    data/chars/aiolia/death12.png
     frame    data/chars/aiolia/death13.png
-
-anim rise
-    offset    124 135
-    delay    10
-    frame    data/chars/aiolia/rise1.png
-    frame    data/chars/aiolia/rise2.png
-    frame    data/chars/aiolia/rise3.png
-    frame    data/chars/aiolia/rise4.png
-
-#// Block animations /////////////////////////////////////////////////
 
 anim    block
     offset    24 132
@@ -550,7 +569,7 @@ anim freespecial2 # Attaque en courant
     frame    data/chars/aiolia/runattack1.png
     frame    data/chars/aiolia/runattack4.png
 
-anim freespecial3 #Lion star shot
+anim freespecial3 # Lion star shot (attaque projectile)
     range 330 900
     fastattack 1
     forcedirection -1

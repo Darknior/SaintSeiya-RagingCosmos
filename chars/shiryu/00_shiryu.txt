@@ -749,7 +749,7 @@ anim    fall
     frame    data/chars/shiryu/fall7.png
     frame    data/chars/shiryu/fall8.png
 
-anim    fall7
+anim fall7 # chutte apres etre Grab
     landframe  1
     offset   114 130
     delay    -1000
@@ -763,8 +763,7 @@ anim    fall7
     frame    data/chars/shiryu/fall7.png
     frame    data/chars/shiryu/fall8.png
 
-anim    rise
-    jumpframe  0 0 0
+anim rise # Se releve avec compteur de chuttes
     delay    10
     offset   114 130
     frame    data/chars/shiryu/rise1.png
@@ -772,6 +771,12 @@ anim    rise
     frame    data/chars/shiryu/rise1.png
     frame    data/chars/shiryu/rise2.png
     frame    data/chars/shiryu/rise3.png
+    @cmd stunCounter -15 110 1 3
+    frame    data/chars/shiryu/rise4.png
+
+anim follow1 # Stun aprés X chuttes
+    delay    300
+    offset   114 130
     frame    data/chars/shiryu/rise4.png
 
 anim    death

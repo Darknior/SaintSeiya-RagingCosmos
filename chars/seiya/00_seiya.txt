@@ -804,7 +804,7 @@ anim    pain2
     frame    data/chars/seiya/pain22.png
     frame    data/chars/seiya/pain21.png
 
-anim    fall
+anim fall
     landframe  6
     offset   114 110
     delay    12
@@ -817,7 +817,7 @@ anim    fall
     frame    data/chars/seiya/fall4.png
     frame    data/chars/seiya/fall4.png
 
-anim    fall7
+anim fall7 # chutte apres etre Grab
     landframe  6
     offset   114 110
     delay    12
@@ -830,7 +830,7 @@ anim    fall7
     frame    data/chars/seiya/fall4.png
     frame    data/chars/seiya/fall4.png
 
-anim    rise
+anim rise # Se releve avec compteur de chuttes
     offset   114 110
     delay    10
     frame    data/chars/seiya/rise1.png
@@ -839,6 +839,14 @@ anim    rise
     frame    data/chars/seiya/rise2.png
     frame    data/chars/seiya/rise3.png
     frame    data/chars/seiya/rise4.png
+    ## PARAMETERS: X, Y, Z, LIMIT
+    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
+    @cmd stunCounter -15 110 1 3
+    frame    data/chars/seiya/rise5.png
+    
+anim follow1 # Stun aprés X chuttes
+    offset   114 110
+    delay    300
     frame    data/chars/seiya/rise5.png
 
 anim    death
