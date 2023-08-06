@@ -382,14 +382,14 @@ anim fall7 # chutte apres etre Grab
 anim rise # Se releve avec compteur de chuttes
     offset    79 154
     delay    25
-    @cmd stunCounter -15 110 1 5
+    @cmd stunCounter 20 110 1 4
     frame    data/chars/shura/get2.png
     offset    79 154
     frame    data/chars/shura/get1.png
     
 anim follow1 # Stun aprés X chuttes
     offset    79 154
-    delay    300
+    delay    400
 	 bbox 55 69 50 85
     frame    data/chars/shura/get1.png
 

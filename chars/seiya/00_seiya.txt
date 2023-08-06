@@ -841,12 +841,12 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/seiya/rise4.png
     ## PARAMETERS: X, Y, Z, LIMIT
     ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
-    @cmd stunCounter -15 110 1 3
+    @cmd stunCounter -15 100 1 4
     frame    data/chars/seiya/rise5.png
     
 anim follow1 # Stun aprés X chuttes
     offset   114 110
-    delay    300
+    delay    400
     frame    data/chars/seiya/rise5.png
 
 anim    death

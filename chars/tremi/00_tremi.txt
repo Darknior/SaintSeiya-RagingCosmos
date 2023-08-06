@@ -403,7 +403,7 @@ anim rise # Se releve avec compteur de chuttes
      jumpframe 0 0 0
      frame     data/chars/tremi/rise1.png
      frame     data/chars/tremi/rise2.png
-     @cmd stunCounter -15 110 1 4
+     @cmd stunCounter -2 110 1 4
      frame     data/chars/tremi/rise3.png
      
 anim follow1 # Stun aprés X chuttes

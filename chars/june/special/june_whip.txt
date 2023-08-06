@@ -8,7 +8,7 @@ didhitscript        data/scripts/didhit/tint_silver.c
 palette data/chars/june/special/june_vine/vine1.png
 
 anim	idle
-	followanim 1
+	followanim 2
 	followcond 3
 	loop	0
 	delay	5
@@ -28,7 +28,7 @@ anim	idle
 	@cmd suicide
 	frame	data/chars/june/special/june_whip/june_spirit0.png
 
-anim	follow1
+anim	follow2
 @script
 {
 	void self	= getlocalvar("self");

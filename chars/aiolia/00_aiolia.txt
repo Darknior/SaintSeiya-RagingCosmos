@@ -421,12 +421,12 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/aiolia/rise1.png
     frame    data/chars/aiolia/rise2.png
     frame    data/chars/aiolia/rise3.png
-    @cmd stunCounter -15 110 1 5
+    @cmd stunCounter -20 100 1 5
     frame    data/chars/aiolia/rise4.png
     
 anim follow1 # Stun aprés X chuttes
     offset    124 135
-    delay    300
+    delay    400
     frame    data/chars/aiolia/rise4.png
     
 anim death

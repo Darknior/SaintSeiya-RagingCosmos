@@ -382,7 +382,7 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/deathmask/rise2.png
     ## PARAMETERS: X, Y, Z, LIMIT
     ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
-    @cmd stunCounter -15 110 1 5
+    @cmd stunCounter 15 100 1 5
     frame    data/chars/deathmask/rise3.png
 
 anim follow1 # Stun aprés X chuttes

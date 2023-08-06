@@ -43,7 +43,7 @@ spawn       temple2roadcolumns
 coords      0 0
 at          0
 
-spawn soldier3
+spawn soldier2
 alias konstantinos
 item diamantecd
 coords	850 440

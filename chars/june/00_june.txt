@@ -434,12 +434,11 @@ anim fall7 # chutte apres etre Grab
 anim rise # Se releve avec compteur de chuttes
     delay    10
     offset    106 124
-    jumpframe 0 0 0
     frame    data/chars/june/rise1.png
     frame    data/chars/june/rise2.png
     frame    data/chars/june/rise3.png
     frame    data/chars/june/rise4.png
-    @cmd stunCounter -15 110 1 4
+    @cmd stunCounter -10 105 1 4
     frame    data/chars/june/rise5.png
 
 anim follow1 # Stun aprés X chuttes
@@ -610,7 +609,7 @@ anim freespecial3 # Vine Prison
     frame    data/chars/june/special25.png
     frame    data/chars/june/special26.png
     
-anim follow1 # Vine Prison follow
+anim follow2 # Vine Prison follow
     delay    15
     offset    96 124
     fastattack 1

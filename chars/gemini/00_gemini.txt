@@ -341,7 +341,7 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/gemini/rise2.png
     frame    data/chars/gemini/rise3.png
     frame    data/chars/gemini/rise4.png
-    @cmd stunCounter -15 110 1 5
+    @cmd stunCounter 20 100 1 5
     frame    data/chars/gemini/rise5.png
 
 anim follow1 # Stun aprés X chuttes

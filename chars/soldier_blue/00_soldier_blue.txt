@@ -189,7 +189,7 @@ anim rise # Se releve avec compteur de chuttes
     delay    10
     frame    data/chars/soldier_blue/rise1.png
     frame    data/chars/soldier_blue/rise2.png
-    @cmd stunCounter -15 110 1 3
+    @cmd stunCounter 10 100 1 3
     frame    data/chars/soldier_blue/rise3.png
     
 anim follow1 # Stun aprés X chuttes

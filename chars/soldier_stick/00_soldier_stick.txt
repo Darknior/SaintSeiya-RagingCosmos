@@ -102,15 +102,6 @@ anim spawn
     frame    data/chars/soldier_stick/spawn.png
     frame    data/chars/soldier_stick/spawn.png
 
-anim follow1 #Entrée en jeu custom
-    delay    20
-    offset    52 130
-    bbox 42 10 35 71
-    jumpframe 0 3 1.5 0
-    frame    data/chars/soldier_stick/jump1.png
-    frame    data/chars/soldier_stick/jump2.png
-    frame    data/chars/soldier_stick/jump1.png
-
 anim idle
     loop    1
     delay    25
@@ -141,6 +132,73 @@ anim run
     frame    data/chars/soldier_stick/run4.png
     frame    data/chars/soldier_stick/run5.png
     frame    data/chars/soldier_stick/run6.png
+    
+#// Basic Attacks animations /////////////////////////////////////////////////
+    
+anim attack1
+    delay    10
+    offset    44 125
+    bbox 30 10 35 115
+    frame    data/chars/soldier_stick/attack1.png
+    attack1 65 30 164 25 10 0 0 0 5 12
+    frame    data/chars/soldier_stick/attack2.png
+
+anim attack2
+    delay    5
+    offset    44 125
+    bbox 30 10 35 115
+    fastattack 1
+    attack1 65 30 180 35 10 0 0 0 5 12
+    frame    data/chars/soldier_stick/attack21.png
+    attack1 0
+    frame    data/chars/soldier_stick/attack21.png
+    attack1 65 30 180 35 10 0 0 0 5 12
+    frame    data/chars/soldier_stick/attack22.png
+    attack1 0
+    frame    data/chars/soldier_stick/attack22.png
+    attack1 65 30 180 35 10 1 0 0 5 12
+    frame    data/chars/soldier_stick/attack23.png
+    frame    data/chars/soldier_stick/attack23.png
+
+anim upper
+    delay    10
+    offset    49 179
+    bbox 37 64 35 115
+    frame    data/chars/soldier_stick/upper1.png
+    attack1 49 0 126 100 10 1 0 0 5 12
+    frame    data/chars/soldier_stick/upper2.png
+    
+#// Jump animations /////////////////////////////////////////////////
+
+anim jump # Saut Statique
+    delay    10
+    offset    52 130
+    bbox 42 10 35 71
+    frame    data/chars/soldier_stick/jump1.png
+    frame    data/chars/soldier_stick/jump2.png
+    frame    data/chars/soldier_stick/jump2.png
+    frame    data/chars/soldier_stick/jump1.png
+
+anim jumpdelay # Animation de saut intermédiaire
+    delay    10
+    offset    52 130
+    bbox 42 10 35 71
+    frame    data/chars/soldier_stick/jump1.png
+
+anim jumpland # Aterrissage du saut
+    delay    12
+    offset    68 125
+    bbox 29 10 35 115
+    frame    data/chars/soldier_stick/get.png
+
+anim jumpattack #Attaque sautée statique
+    delay    10
+    offset    44 130
+    bbox 29 10 35 71
+    sound data/sounds/punch.wav
+    frame    data/chars/soldier_stick/jumpattack1.png
+    attack1 62 45 180 26 10 1 0 0 5 12
+    frame    data/chars/soldier_stick/jumpattack2.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
  
@@ -207,18 +265,14 @@ anim rise
     bbox 49 10 50 115
     frame    data/chars/soldier_stick/rise1.png
     frame    data/chars/soldier_stick/rise2.png
-    ## PARAMETERS: X, Y, Z, LIMIT
-    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
-    @cmd stunCounter -15 110 1 3
+    @cmd stunCounter 15 110 1 3
     frame    data/chars/soldier_stick/rise3.png
 
 anim follow1 #STUN
-    loop    1
     delay    400
-    offset    65 125
-    bbox 37 57 50 70
-    frame    data/chars/soldier_stick/rise3.png
-
+    offset    44 125
+    bbox 29 10 35 115
+    frame    data/chars/soldier_stick/pain1.png
 
 anim pain
     delay    5
@@ -245,76 +299,6 @@ anim fall7
     frame    data/chars/soldier_stick/fall1.png
     frame    data/chars/soldier_stick/fall2.png
     frame    data/chars/soldier_stick/fall3.png
-
-anim rise
-    offset    118 125
-    delay    10
-    frame    data/chars/soldier_stick/rise1.png
-    frame    data/chars/soldier_stick/rise2.png
-    frame    data/chars/soldier_stick/rise3.png
-
-anim attack1
-    delay    10
-    offset    44 125
-    bbox 30 10 35 115
-    frame    data/chars/soldier_stick/attack1.png
-    attack1 65 30 164 25 10 0 0 0 5 12
-    frame    data/chars/soldier_stick/attack2.png
-
-anim attack2
-    delay    5
-    offset    44 125
-    bbox 30 10 35 115
-    fastattack 1
-    attack1 65 30 180 35 10 0 0 0 5 12
-    frame    data/chars/soldier_stick/attack21.png
-    attack1 0
-    frame    data/chars/soldier_stick/attack21.png
-    attack1 65 30 180 35 10 0 0 0 5 12
-    frame    data/chars/soldier_stick/attack22.png
-    attack1 0
-    frame    data/chars/soldier_stick/attack22.png
-    attack1 65 30 180 35 10 1 0 0 5 12
-    frame    data/chars/soldier_stick/attack23.png
-    frame    data/chars/soldier_stick/attack23.png
-
-anim upper
-    delay    10
-    offset    49 179
-    bbox 37 64 35 115
-    frame    data/chars/soldier_stick/upper1.png
-    attack1 49 0 126 100 10 1 0 0 5 12
-    frame    data/chars/soldier_stick/upper2.png
-
-anim jump # Saut Statique
-    delay    10
-    offset    52 130
-    bbox 42 10 35 71
-    frame    data/chars/soldier_stick/jump1.png
-    frame    data/chars/soldier_stick/jump2.png
-    frame    data/chars/soldier_stick/jump2.png
-    frame    data/chars/soldier_stick/jump1.png
-
-anim jumpdelay # Animation de saut intermédiaire
-    delay    10
-    offset    52 130
-    bbox 42 10 35 71
-    frame    data/chars/soldier_stick/jump1.png
-
-anim jumpland # Aterrissage du saut
-    delay    12
-    offset    68 125
-    bbox 29 10 35 115
-    frame    data/chars/soldier_stick/get.png
-
-anim jumpattack #Attaque sautée statique
-    delay    10
-    offset    44 130
-    bbox 29 10 35 71
-    sound data/sounds/punch.wav
-    frame    data/chars/soldier_stick/jumpattack1.png
-    attack1 62 45 180 26 10 1 0 0 5 12
-    frame    data/chars/soldier_stick/jumpattack2.png
 
 anim death
     delay    10

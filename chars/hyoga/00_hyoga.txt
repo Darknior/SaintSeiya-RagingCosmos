@@ -846,18 +846,20 @@ anim fall7 # chutte apres etre Grab
 anim rise # Se releve avec compteur de chuttes
     delay    10
     offset   113 139
+	 bbox 86 42 40 100
     frame    data/chars/hyoga/rise1.png
     frame    data/chars/hyoga/rise2.png
     frame    data/chars/hyoga/rise1.png
     frame    data/chars/hyoga/rise2.png
     frame    data/chars/hyoga/rise3.png
     frame    data/chars/hyoga/rise4.png
-    @cmd stunCounter -15 110 1 3
+    @cmd stunCounter -10 95 1 4
     frame    data/chars/hyoga/rise5.png
     
 anim follow1 # Stun aprés X chuttes
-    delay    300
+    delay    400
     offset   113 139
+	 bbox 85 40 40 100
     frame    data/chars/hyoga/rise5.png
     
 anim    death

@@ -372,16 +372,13 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/aphrodite/rise1.png
     frame    data/chars/aphrodite/rise2.png
     frame    data/chars/aphrodite/rise3.png
-    @cmd stunCounter -15 110 1 5
+    @cmd stunCounter -10 110 1 5
     frame    data/chars/aphrodite/rise4.png
     
 anim follow1 # Stun aprés X chuttes
     offset    142 140
-    delay    10
-    frame    data/chars/aphrodite/rise1.png
-    frame    data/chars/aphrodite/rise2.png
+    delay    400
     frame    data/chars/aphrodite/rise3.png
-    frame    data/chars/aphrodite/rise4.png
     
 anim death
     delay    25

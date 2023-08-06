@@ -375,7 +375,7 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/marin/rise1.png
     frame    data/chars/marin/rise2.png
     frame    data/chars/marin/rise3.png
-    @cmd stunCounter 5 110 1 4
+    @cmd stunCounter 10 105 1 4
     frame    data/chars/marin/rise4.png
     
 anim follow1 # Stun aprés X chuttes

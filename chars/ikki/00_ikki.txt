@@ -806,18 +806,20 @@ anim rise # Se releve avec compteur de chuttes
     delay    10
     offset    86 139
     delay    10
+	bbox 65 40 40 100
     frame    data/chars/ikki/rise1.png
     frame    data/chars/ikki/rise2.png
     frame    data/chars/ikki/rise1.png
     frame    data/chars/ikki/rise2.png
     frame    data/chars/ikki/rise3.png
     frame    data/chars/ikki/rise4.png
-    @cmd stunCounter -15 110 1 3
+    @cmd stunCounter -5 110 1 4
     frame    data/chars/ikki/rise5.png
 
 anim follow1 # Stun aprés X chuttes
-    delay    300
+    delay    400
     offset    86 139
+	bbox 65 40 40 100
     frame    data/chars/ikki/rise5.png
 
 anim death

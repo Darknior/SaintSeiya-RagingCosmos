@@ -431,6 +431,7 @@ know    malesoldier_jumpattack      data/chars/soldier_blue/malesoldier_jumpatta
 know    malesoldier_specialattack   data/chars/soldier_blue/malesoldier_specialattack.txt
 know    malesoldier_runattack       data/chars/soldier_blue/malesoldier_runattack.txt
 know    malesoldier_defense_all     data/chars/soldier_blue/malesoldier_defense_all.txt
+know    soldier_short               data/chars/soldier_short/00_soldier_short.txt
 
 know    soldier_basic   data/chars/soldier_basic/00_soldier_basic.txt
 

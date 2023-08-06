@@ -326,7 +326,7 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/camus/rise1.png
     frame    data/chars/camus/rise2.png
     frame    data/chars/camus/rise3.png
-    @cmd stunCounter -15 110 1 5
+    @cmd stunCounter 10 115 1 5
     frame    data/chars/camus/rise4.png
 
 anim follow1 # Stun aprés X chuttes

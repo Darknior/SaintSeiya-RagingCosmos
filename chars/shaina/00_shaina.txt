@@ -378,7 +378,7 @@ anim rise # Se releve avec compteur de chuttes
     jumpframe 0 0 0
     frame    data/chars/shaina/rise1.png
     frame    data/chars/shaina/rise2.png
-    @cmd stunCounter -15 110 1 4
+    @cmd stunCounter -10 105 1 4
     frame    data/chars/shaina/rise3.png
     
 anim follow1 # Stun aprés X chuttes

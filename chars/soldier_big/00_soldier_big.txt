@@ -256,7 +256,7 @@ anim fall
     frame    data/chars/soldier_big/04.png
     frame    data/chars/soldier_big/04.png
     
-anim fall7
+anim fall7 # chutte apres etre Grab
     loop    0
     delay    10
     offset    120 187
@@ -274,6 +274,22 @@ anim fall7
     frame    data/chars/soldier_big/04.png
     frame    data/chars/soldier_big/04.png
 
+anim rise # Se releve avec compteur de chuttes
+    loop    0
+    offset    120 195
+    delay    10
+    ## PARAMETERS: X, Y, Z, LIMIT
+    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
+    @cmd stunCounter -5 80 1 4
+    frame    data/chars/soldier_big/05.png
+    
+anim follow1 # Stun aprés X chuttes
+    loop    0
+    offset    120 195
+    delay    400
+	 bbox 84 117 80 80
+    frame    data/chars/soldier_big/05.png
+    
 anim death
     delay    10
     offset    120 187
@@ -283,23 +299,6 @@ anim death
     frame    data/chars/soldier_big/04.png
     frame    data/chars/soldier_big/04.png
     frame    data/chars/soldier_big/04.png
-
-
-anim rise
-    loop    0
-    offset    120 195
-    delay    10
-    ## PARAMETERS: X, Y, Z, LIMIT
-    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
-    @cmd stunCounter -15 110 1 4
-    frame    data/chars/soldier_big/05.png
-    
-anim follow1 #STUN
-    loop    0
-    offset    120 195
-    delay    400
-	bbox 84 117 80 80
-    frame    data/chars/soldier_big/05.png
 
 
 #//Basic Attacks animations/////////////////////////////////////////////////

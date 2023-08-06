@@ -219,7 +219,7 @@ anim fall20 # blood fall
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 -20 10 0 0
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 -20 0 0 0
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
@@ -286,19 +286,15 @@ anim rise
     loop    0
     offset    110 180
     delay    10
-    dropv 4 1 0
-    ## PARAMETERS: X, Y, Z, LIMIT
-    ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
-    @cmd stunCounter -15 110 1 3
+    @cmd stunCounter -20 110 1 3
     frame    data/chars/soldier_purple/08.png
     
 anim follow1 #STUN
     loop    0
     offset    110 180
     delay    400
-    dropv 4 1 0
-	bbox 70 106 50 75
-    frame    data/chars/soldier_purple/08.png
+	 bbox 70 106 50 75
+    frame    data/chars/soldier_purple/05.png
 
 #//Basic Attacks animations/////////////////////////////////////////////////
 
