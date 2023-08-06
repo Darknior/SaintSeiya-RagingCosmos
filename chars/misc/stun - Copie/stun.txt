@@ -12,7 +12,6 @@ anim	idle
    drawmethod alpha 6
    drawmethod channel 0.6
    drawmethod scale 1
-   drawmethod flipx 1
 	#sound data/chars/misc/flash/flash.wav
 	frame	data/chars/misc/stun/stun_1.png
 	frame	data/chars/misc/stun/stun_2.png

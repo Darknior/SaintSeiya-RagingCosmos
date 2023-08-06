@@ -97,7 +97,7 @@ anim    select  # Personnage sélectionné
 anim idle
     loop    1
     delay    10
-    offset    120 195
+    offset    120 190
 	bbox 82 68 93 132
     frame    data/chars/soldier_big/01.png
 
@@ -106,7 +106,7 @@ anim idle
 
 anim    block
     loop    0
-    offset    120 195
+    offset    120 190
     delay    10
 	bbox 74 49 95 150
     frame    data/chars/soldier_big/02.png
@@ -121,7 +121,7 @@ anim    block
 anim walk
     loop    1
     delay    15
-    offset    120 195
+    offset    120 191
 	bbox 81 49 85 150
     frame    data/chars/soldier_big/07.png
     frame    data/chars/soldier_big/08.png
@@ -137,7 +137,7 @@ anim BACKWALK
 
     loop    1
     delay    15
-    offset    120 195
+    offset    120 190
 	bbox 80 48 85 150
     frame    data/chars/soldier_big/13.png
     frame    data/chars/soldier_big/14.png
@@ -151,7 +151,7 @@ anim BACKWALK
 anim pain10 # ICE PAIN
     loop    0
     delay    10
-    offset    120 195
+    offset    120 188
 	 bbox 57 68 93 132
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 5 10 0 0
     frame    data/chars/soldier_big/03.png
@@ -162,7 +162,7 @@ anim pain10 # ICE PAIN
 anim pain11 # ICE PAIN Big
     loop    0
     delay    10
-    offset    120 195
+    offset    120 187
 	 bbox 57 68 93 132
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 5 10 0 0
     frame    data/chars/soldier_big/03.png
@@ -174,7 +174,7 @@ anim pain15 # BURN PAIN
     loop    0
 
     delay    10
-    offset    120 195
+    offset    120 187
 	 bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
     @cmd     spawnbind "shaka_flame" 0 0 10 1 0
@@ -183,7 +183,7 @@ anim pain15 # BURN PAIN
 anim fall15 # BURN PAIN Ground
     loop    0
     delay    30
-    offset    120 195
+    offset    120 187
     bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
     delay    50
@@ -199,7 +199,7 @@ anim pain20 # Blood pain
     loop    0
 
     delay    15
-    offset    120 195
+    offset    120 187
 	 bbox 57 68 93 132
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 -60 10 0 0
     frame    data/chars/soldier_big/03.png
@@ -208,7 +208,7 @@ anim pain20 # Blood pain
 anim fall20 # Blood fall  
     loop    0
     delay    10
-    offset    120 195
+    offset    120 187
     bbox 66 65 85 130
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 -60 10 0 0
     frame    data/chars/soldier_big/03.png
@@ -232,7 +232,7 @@ anim pain
     loop    0
 
     delay    10
-    offset    120 195
+    offset    120 187
 	bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
@@ -241,7 +241,7 @@ anim pain
 anim fall
     loop    0
     delay    10
-    offset    120 195
+    offset    120 187
     bbox 66 65 85 130
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
@@ -259,7 +259,7 @@ anim fall
 anim fall7
     loop    0
     delay    10
-    offset    120 195
+    offset    120 187
     bbox 66 65 85 130
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
@@ -276,7 +276,7 @@ anim fall7
 
 anim death
     delay    10
-    offset    120 195
+    offset    120 187
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     @cmd     spawnbind "blood_ground_big" "ANI_IDLE" 0 0 0 0 0

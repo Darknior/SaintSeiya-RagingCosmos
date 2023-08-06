@@ -494,7 +494,7 @@ anim freespecial2 # Attaque en courant
     delay    6
     offset    30 115
     forcedirection -1
-    @cmd    dasher 3.5 0 0 1
+    @cmd    dasher 4.5 0 0 1
     summonframe  0 0 0 0
     subentity    dash_dust
     bbox 0 38 75 75
