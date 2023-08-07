@@ -869,7 +869,113 @@ anim death
     delay    200
     offset    69 129
     frame    data/chars/shun/death6.png
-	
+
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+
+anim pain20 # Blood pain
+    offset    43 132
+    bbox 30 28 51 107
+    delay    5
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 -15 0 0
+    frame    data/chars/shun/pain21.png
+    frame    data/chars/shun/pain22.png
+    frame    data/chars/shun/pain23.png
+    frame    data/chars/shun/pain22.png
+    frame    data/chars/shun/pain21.png
+
+anim fall20 # blood fall
+    landframe 6
+    offset    69 131
+    delay    10
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 5 0 0 0 0
+    frame    data/chars/shun/fall1.png
+    frame    data/chars/shun/fall2.png
+    delay    30
+    frame    data/chars/shun/fall3.png
+    frame    data/chars/shun/fall4.png
+    frame    data/chars/shun/fall5.png
+    frame    data/chars/shun/fall6.png
+    frame    data/chars/shun/fall7.png
+
+anim pain15# BURN PAIN
+    offset    57 131
+    bbox 33 28 51 107
+    #move    -5
+    delay    5
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+    frame    data/chars/shun/pain1.png
+    frame    data/chars/shun/pain2.png
+    frame    data/chars/shun/pain3.png
+    frame    data/chars/shun/pain2.png
+    frame    data/chars/shun/pain1.png
+   
+anim fall15# BURN PAIN Ground
+    landframe 6
+    offset    69 131
+    delay    10
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 50 0 0
+    frame    data/chars/shun/fall1.png
+    frame    data/chars/shun/fall2.png
+    frame    data/chars/shun/fall3.png
+    frame    data/chars/shun/fall4.png
+    frame    data/chars/shun/fall5.png
+    frame    data/chars/shun/fall6.png
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 0 0 0
+    frame    data/chars/shun/fall7.png
+    
+anim pain10# ICE PAIN
+    offset    57 131
+    bbox 33 28 51 107
+    #move    -5
+    delay    5
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
+    frame    data/chars/shun/pain1.png
+    frame    data/chars/shun/pain2.png
+    frame    data/chars/shun/pain3.png
+    frame    data/chars/shun/pain2.png
+    delay    300
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 1 0 0 0
+    frame    data/chars/shun/pain1.png  
+
+anim pain11# ICE PAIN Big
+    offset    57 131
+    bbox 33 28 51 107
+    #move    -5
+    delay    5
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 0 0 0
+    frame    data/chars/shun/pain1.png
+    frame    data/chars/shun/pain2.png
+    frame    data/chars/shun/pain3.png
+    frame    data/chars/shun/pain2.png
+    delay    500
+    frame    data/chars/shun/pain1.png
+    
+anim pain30# Shock Pain
+    offset    57 131
+    bbox 33 28 51 107
+    #move    -5
+    delay    5
+    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 60 0 0
+    frame    data/chars/shun/pain1.png
+    frame    data/chars/shun/pain2.png
+    frame    data/chars/shun/pain3.png
+    frame    data/chars/shun/pain2.png
+    frame    data/chars/shun/pain1.png
+   
+anim fall30# Shock PAIN Ground
+    landframe 6
+    offset    69 131
+    delay    10
+    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 50 0 0
+    frame    data/chars/shun/fall1.png
+    frame    data/chars/shun/fall2.png
+    frame    data/chars/shun/fall3.png
+    frame    data/chars/shun/fall4.png
+    frame    data/chars/shun/fall5.png
+    frame    data/chars/shun/fall6.png
+    @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 0 0 0
+    frame    data/chars/shun/fall7.png
+
 #// Block animations /////////////////////////////////////////////////
 
 anim    block

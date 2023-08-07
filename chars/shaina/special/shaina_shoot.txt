@@ -1,6 +1,6 @@
 name	shaina_shoot
 type	none
-gfxshadow	1
+gfxshadow	0
 nolife 1
 remove 0
 antigravity 100
@@ -13,33 +13,33 @@ anim	idle
 	offset	0 -30
    hitflash shaina_electricity
 	drawmethod alpha 1
-	attack 20 8 50 50 15 12 0 0 0 20
+	attack30 20 8 50 50 15 12 0 0 0 20
 	quakeframe	data/chars/shaina/special/shaina_shoot/shaina_shoot-34.png 13 5
-	attack 0
+	attack30 0
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-35.png
-	attack 20 8 50 50 15 12 0 0 0 20
+	attack30 20 8 50 50 15 12 0 0 0 20
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-36.png
-	attack 0
+	attack30 0
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-37.png
-	attack 20 8 50 50 15 12 0 0 0 20
+	attack30 20 8 50 50 15 12 0 0 0 20
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-38.png
-	attack 0
+	attack30 0
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-39.png
-	attack 20 8 50 50 15 12 0 0 0 20
+	attack30 20 8 50 50 15 12 0 0 0 20
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-40.png
-	attack 0
+	attack30 0
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-41.png
-	attack 20 8 50 50 15 12 0 0 0 20
+	attack30 20 8 50 50 15 12 0 0 0 20
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-42.png
-	attack 0
+	attack30 0
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-43.png
-	attack 20 8 50 50 15 12 0 0 0 20
+	attack30 20 8 50 50 15 12 0 0 0 20
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-44.png
-	attack 0
+	attack30 0
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-45.png
-	attack 20 8 50 50 15 12 0 0 0 20
+	attack30 20 8 50 50 15 12 0 0 0 20
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-46.png
-	attack 0
+	attack30 0
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-47.png
 	@cmd suicide
 	frame	data/chars/shaina/special/shaina_shoot/shaina_shoot-47.png

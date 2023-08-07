@@ -868,7 +868,6 @@ anim    death
 anim pain20 # Blood pain
     offset   24 110
     bbox     11 2 36 112
-    #move    -5
     delay    3
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 -10 0 0
     frame    data/chars/seiya/pain21.png
@@ -952,6 +951,35 @@ anim pain11# ICE PAIN Big
     frame    data/chars/seiya/pain2.png
     delay    500
     frame    data/chars/seiya/pain1.png
+    
+anim pain30# Shock Pain
+    offset   51 111
+    bbox     21 0 51 112
+    #move    -5
+    delay    3
+    @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
+    frame    data/chars/seiya/pain1.png
+    frame    data/chars/seiya/pain2.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain4.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain2.png
+    frame    data/chars/seiya/pain1.png
+    
+anim fall30# Shock PAIN Ground
+    landframe  6
+    offset   114 110
+    delay    12
+    @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 35 0 0
+    frame    data/chars/seiya/fall1.png
+    frame    data/chars/seiya/fall2.png
+    delay    30
+    frame    data/chars/seiya/fall3.png
+    delay    12
+    @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
 
 #// Block animations /////////////////////////////////////////////////
 

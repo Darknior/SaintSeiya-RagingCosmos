@@ -222,7 +222,7 @@ anim cant # Plus assez de mp
     offset   39 130
     bbox     31 15 30 115
     sound    data/chars/shiryu/sounds/cant.wav
-    @cmd     spawnbind "impact" "ANI_IDLE" 15 10 60 0 0
+    @cmd     spawnbind "impact" "ANI_IDLE" 15 1 50 0 0
     frame    data/chars/shiryu/attack1.png
     delay    50
     frame    data/chars/shiryu/attack2.png
@@ -345,7 +345,7 @@ anim    run
     delay    8
     offset   48 128
     bbox     34 13 51 115
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 0 0 1
     frame    data/chars/shiryu/run1.png
     sound    data/chars/shiryu/sounds/20-run1.wav
     frame    data/chars/shiryu/run2.png
@@ -378,7 +378,7 @@ anim    runattack # Attaque en courant
     frame    data/chars/shiryu/runattack4.png
     attack2  31 13 55 83 10 1 0 0 5 12
     dropv    3.0 2 0
-    @cmd     spawnbind "shiryu_dash" "ANI_IDLE" 0 5 10 1 0
+    @cmd     spawnbind "shiryu_dash" "ANI_IDLE" 0 1 0 1 0
     frame    data/chars/shiryu/runattack5.png
     attack2  0
     delay    10
@@ -524,7 +524,7 @@ anim    grabbackward    # Choppe, Projection en arrière
     delay    10
     offset   143 135
     @cmd     grabStart
-    @cmd     spawnbind "dash_dust" "ANI_IDLE" -30 10 10 1 0
+    @cmd     spawnbind "dash_dust" "ANI_IDLE" -30 1 0 1 0
     @cmd     position 0 33 11 -1 0
     frame    data/chars/shiryu/grab12.png
     @cmd     position 0 33 14 -1 0
@@ -555,7 +555,7 @@ anim    grabbackward    # Choppe, Projection en arrière
 anim    grabforward  # projection en avant
     delay    9
     offset   31 124
-    @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 10 1 0
+    @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 1 0 1 0
     @cmd     grabStart
     @cmd     position 0 10 25 0 0
     frame    data/chars/shiryu/runattack2.png
@@ -799,7 +799,120 @@ anim    death
     delay    200
     offset   114 126
     frame    data/chars/shiryu/death13.png
+    
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
+anim pain20 # Blood pain
+    offset   37 130
+    bbox     17 15 51 115
+    delay    3
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 0 0 0
+    frame    data/chars/shiryu/pain21.png
+    frame    data/chars/shiryu/pain22.png
+    frame    data/chars/shiryu/pain23.png
+    frame    data/chars/shiryu/pain22.png
+    frame    data/chars/shiryu/pain21.png
+
+anim fall20 # blood fall
+    landframe  7
+    offset   114 130
+    delay    -1000
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 50 0 0
+    frame    data/chars/shiryu/fall1.png
+    frame    data/chars/shiryu/fall2.png
+    frame    data/chars/shiryu/fall3.png
+    frame    data/chars/shiryu/fall4.png
+    frame    data/chars/shiryu/fall5.png
+    frame    data/chars/shiryu/fall6.png
+    frame    data/chars/shiryu/fall7.png
+    frame    data/chars/shiryu/fall8.png
+
+anim pain15# BURN PAIN
+    offset   58 128
+    bbox     20 13 51 115
+    #move    -5
+    delay    3
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 80 0 0
+    frame    data/chars/shiryu/pain1.png
+    frame    data/chars/shiryu/pain2.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain4.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain2.png
+    frame    data/chars/shiryu/pain1.png
+
+anim fall15# BURN PAIN Ground
+    landframe  7
+    offset   114 130
+    delay    -1000
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 80 0 0
+    frame    data/chars/shiryu/fall1.png
+    frame    data/chars/shiryu/fall2.png
+    frame    data/chars/shiryu/fall3.png
+    frame    data/chars/shiryu/fall4.png
+    frame    data/chars/shiryu/fall5.png
+    frame    data/chars/shiryu/fall6.png
+    frame    data/chars/shiryu/fall7.png
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 0 0 0
+    frame    data/chars/shiryu/fall8.png
+
+anim pain10# ICE PAIN
+    offset   58 128
+    bbox     20 13 51 115
+    delay    3
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
+    frame    data/chars/shiryu/pain1.png
+    frame    data/chars/shiryu/pain2.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain4.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain2.png
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 1 0 0 0
+    delay    300
+    frame    data/chars/shiryu/pain1.png
+    
+anim pain11# ICE PAIN Big
+    offset   58 128
+    bbox     20 13 51 115
+    delay    3
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 0 0 0
+    frame    data/chars/shiryu/pain1.png
+    frame    data/chars/shiryu/pain2.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain4.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain2.png
+    delay    500
+    frame    data/chars/shiryu/pain1.png
+
+anim pain30# Shock Pain
+    offset   58 128
+    bbox     20 13 51 115
+    #move    -5
+    delay    3
+    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 80 0 0
+    frame    data/chars/shiryu/pain1.png
+    frame    data/chars/shiryu/pain2.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain4.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain2.png
+    frame    data/chars/shiryu/pain1.png
+
+anim fall30# Shock PAIN Ground
+    landframe  7
+    offset   114 130
+    delay    -1000
+    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 80 0 0
+    frame    data/chars/shiryu/fall1.png
+    frame    data/chars/shiryu/fall2.png
+    frame    data/chars/shiryu/fall3.png
+    frame    data/chars/shiryu/fall4.png
+    frame    data/chars/shiryu/fall5.png
+    frame    data/chars/shiryu/fall6.png
+    frame    data/chars/shiryu/fall7.png
+    @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 0 0 0
+    frame    data/chars/shiryu/fall8.png
 
 #// Block animations /////////////////////////////////////////////////
 
@@ -850,7 +963,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     attack1  7 28 120 35 10 0 0 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     attack1  0
-    @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 5 10 1 0
+    @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 1 0 1 0
     frame    data/chars/shiryu/attackbackward4.png
     attack1  55 35 84 29 10 1 0 0 0 30
     dropv    3.5 1 0
@@ -881,7 +994,7 @@ anim    freespecial  # Attaque de mêlée (Bouton special, a2)
     attack1  7 28 120 35 10 0 0 0 0 30
     frame    data/chars/shiryu/attackbackward3.png
     attack1  0
-    @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 5 10 1 0
+    @cmd     spawnbind "shiryu_whirl" "ANI_IDLE" 0 1 0 1 0
     frame    data/chars/shiryu/attackbackward4.png
     attack1  55 35 84 29 10 1 0 0 0 30
     dropv    3.5 1 0
@@ -906,7 +1019,7 @@ anim    freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)
     hitflash flashbig
     delay    10
     offset   47 130
-    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 10 10 1 0
+    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 1 0 1 0
     @cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 1 0
     sound    data/chars/shiryu/sounds/01-shoryuha.wav
     attack5  -4 -7 100 140 10 1 0 0 5 30
@@ -951,7 +1064,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     frame    data/chars/shiryu/special4.png
     frame    data/chars/shiryu/special5.png
     frame    data/chars/shiryu/special6.png
-    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 10 10 0 0
+    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 1 0 0 0
     @cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/shiryu/special7.png
     sound    data/chars/shiryu/sounds/00-cosmos.wav
@@ -1001,7 +1114,7 @@ anim    freespecial5 # Uppercut (Bas, Avant, a1)
     sound    data/chars/shiryu/sounds/01-uppercut3.wav
     attack2  59 63 50 84 10 0 0 0 0 20
     frame    data/chars/shiryu/uppercut4.png
-    @cmd     spawnbind "shiryu_uppercut" "ANI_IDLE" 0 5 10 1 0
+    @cmd     spawnbind "shiryu_uppercut" "ANI_IDLE" 0 1 0 1 0
     attack1  0
     delay    10
     frame    data/chars/shiryu/uppercut5.png
@@ -1031,7 +1144,7 @@ anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     summonframe  0 0 0 0 1
     subentity    shiryu_constellation
     energycost   50 1 0
-    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 10 10 1 0
+    @cmd     spawnbind "shiryu_aura" "ANI_IDLE" 10 1 0 1 0
     @cmd     spawnbind "shiryu_cosmosB" "ANI_IDLE" 0 0 0 1 0
     attack5  -4 -7 100 140 10 1 0 0 5 30
     dropv    3 5
@@ -1055,7 +1168,7 @@ anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     frame    data/chars/shiryu/special29.png
     frame    data/chars/shiryu/special30.png
     frame    data/chars/shiryu/special31.png
-    @cmd     spawnbind "shiryu_cosmos" "ANI_IDLE" 0 5 0 1 0
+    @cmd     spawnbind "shiryu_cosmos" "ANI_IDLE" 0 0 0 1 0
     @cmd     shooter "shiryu_big_dragon" 77 80 10 2 0 0
     frame    data/chars/shiryu/special32.png
     frame    data/chars/shiryu/special33.png

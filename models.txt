@@ -86,6 +86,10 @@ load    dash_dustB       data/chars/misc/dust/dash_dustB.txt
 load    stun           data/chars/misc/stun/stun.txt
 load    cant           data/chars/misc/text/cant.txt
 
+# Shock animations
+
+load    shock1           data/chars/misc/shock/shock1.txt
+
 # Blood animations
 
 load    blood_ground_big       data/chars/misc/blood/blood_ground_big.txt

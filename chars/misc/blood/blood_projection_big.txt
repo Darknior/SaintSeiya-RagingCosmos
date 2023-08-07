@@ -2,7 +2,6 @@ name	blood_projection_big
 type	none
 shadow	0
 remove 0
-setlayer 1
 animationscript	data/scripts/player.c
 
 anim	idle

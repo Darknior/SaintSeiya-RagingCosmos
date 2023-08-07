@@ -201,23 +201,23 @@ anim attack1 # Attaque combo 1
     offset    43 129
     bbox 14 21 51 108
     frame    data/chars/shaina/attack1.png
-    attack1 43 63 100 26 10 0 0 0 5 12
+    attack30 43 63 100 26 10 0 0 0 5 12
     frame    data/chars/shaina/attack2.png
     frame    data/chars/shaina/attack3.png
-    attack1 0
+    attack30 0
     frame    data/chars/shaina/attack4.png
-    frame    data/chars/shaina/attack5.png
+    frame    data/chars/shaina/attack1.png
 
 anim attack2 # Attaque combo 2
     delay    5
     offset    43 142
     bbox 14 34 51 108
     frame    data/chars/shaina/attack21.png
-    attack1 43 63 100 26 10 0 0 0 5 12
+    attack30 43 63 100 26 10 0 0 0 5 12
     frame    data/chars/shaina/attack22.png
     frame    data/chars/shaina/attack23.png
     frame    data/chars/shaina/attack24.png
-    attack1 0
+    attack30 0
     frame    data/chars/shaina/attack25.png
 
 anim attack3 # Attaque combo 3
@@ -227,7 +227,7 @@ anim attack3 # Attaque combo 3
     frame    data/chars/shaina/attack31.png
     frame    data/chars/shaina/attack32.png
     frame    data/chars/shaina/attack33.png
-    attack1 43 47 100 26 10 0 0 0 5 12
+    attack30 43 47 100 26 10 0 0 0 5 12
     frame    data/chars/shaina/attack34.png
     frame    data/chars/shaina/attack35.png
     frame    data/chars/shaina/attack36.png
@@ -238,10 +238,10 @@ anim attack4 # Attaque combo 4
     offset    43 165
     bbox 25 57 51 108
     hitflash flashmedium
-    attack1 0 0 0 0 0 0 0 0 0 0
+    attack30 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shaina/attack41.png
     frame    data/chars/shaina/attack42.png
-    attack1 42 77 100 26 10 0 0 0 5 12
+    attack30 42 77 100 26 10 0 0 0 5 12
     frame    data/chars/shaina/attack43.png
     frame    data/chars/shaina/attack44.png
 
@@ -250,10 +250,10 @@ anim attack5 # Attaque combo 5
     offset    35 132
     bbox 21 20 51 112
     hitflash flashbig
-    attack1 0 0 0 0 0 0 0 0 0 0
+    attack30 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shaina/attack51.png
     frame    data/chars/shaina/attack52.png
-    attack1 35 34 100 26 10 0 0 0 5 12
+    attack30 35 34 100 26 10 0 0 0 5 12
     frame    data/chars/shaina/attack53.png
     frame    data/chars/shaina/attack54.png
     frame    data/chars/shaina/attack55.png
@@ -264,10 +264,10 @@ anim attack6 # Attaque combo 6
     offset    52 132
     bbox 39 20 51 112
     hitflash shaina_electricity
-    attack1 0 0 0 0 0 0 0 0 0 0
+    attack30 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shaina/attack61.png
     frame    data/chars/shaina/attack62.png
-    attack1 52 56 100 26 20 1 0 0 5 12
+    attack20 52 56 100 26 20 1 0 0 50 12
     frame    data/chars/shaina/attack63.png
     frame    data/chars/shaina/attack64.png
     sound data/chars/shaina/sounds/02-laugh.wav
@@ -321,7 +321,7 @@ anim jumpattack #Attaque sautée statique
 	dropv    4.0 1.0 0.0
     frame    data/chars/shaina/jumpattack3.png
     frame    data/chars/shaina/jumpattack4.png
-    frame    data/chars/shaina/jumpattack5.png
+    frame    data/chars/shaina/jumpattack1.png
     frame    data/chars/shaina/jumpattack6.png
     frame    data/chars/shaina/jumpattack7.png
     attack4 0
@@ -423,7 +423,7 @@ anim special # Cobra Storm (attaque lorsqu elle est grab)
     frame    data/chars/shaina/special1.png
     frame    data/chars/shaina/special2.png
     frame    data/chars/shaina/special3.png
-	 attack5 -28 -12 120 180 30 1 0 0 5 12
+	 attack30 -28 -12 120 180 30 1 0 0 50 12
     dropv     8.0 3 0
     sound data/chars/aldebaran/09-earthquake2.wav
     frame    data/chars/shaina/special4.png
@@ -457,7 +457,7 @@ anim riseattack # Cobra Storm (attaque en se relevant)
     frame    data/chars/shaina/special1.png
     frame    data/chars/shaina/special2.png
     frame    data/chars/shaina/special3.png
-	 attack5 -28 -12 120 180 30 1 0 0 5 12
+	 attack30 -28 -12 120 180 30 1 0 0 50 12
     dropv     8.0 3 0
     sound data/chars/aldebaran/09-earthquake2.wav
     frame    data/chars/shaina/special4.png
@@ -495,24 +495,24 @@ anim freespecial2 # Attaque en courant
     delay    6
     offset    30 115
     forcedirection -1
-    @cmd    dasher 4.5 0 0 1
+    @cmd    dasher 5.5 0 0 1
     summonframe  0 0 0 0
     subentity    dash_dust
     bbox 0 38 75 75
     frame    data/chars/shaina/runattack1.png
-	 attack2 34 68 86 25 20 1 0 0 5 12
+	 attack20 34 68 86 25 20 1 0 0 50 12
     frame    data/chars/shaina/runattack2.png
 	 bbox 0 0 0 0
     frame    data/chars/shaina/runattack3.png
     frame    data/chars/shaina/runattack4.png
-	 attack2 0 0 0 0 0 0 0 0 0 0
+	 attack20 0 0 0 0 0 0 0 0 0 0
     @cmd    dasher 0 0 0 1
     delay    12
-    frame    data/chars/shaina/runattack5.png
-    frame    data/chars/shaina/runattack5.png
+    frame    data/chars/shaina/runattack1.png
+    frame    data/chars/shaina/runattack1.png
 
 anim freespecial3 # Cobra shoot (attaque projectile)
-    range 330 900
+    range 500 900
     fastattack 1
     forcedirection -1
     range 190 300
@@ -538,26 +538,28 @@ anim freespecial4 # Attaque spéciale Venin du Serpent
     @cmd     spawnbind "shaina_venom" "ANI_IDLE" 0 10 0 0 0
     hitflash shaina_electricity
     forcedirection -1
-    @cmd    dasher 4 0 0 1
-	 bbox 18 15 50 100
+    @cmd    dasher 5 0 0 1
     frame    data/chars/shaina/special21.png
     sound data/chars/shaina/sounds/04-rush.wav
     frame    data/chars/shaina/special22.png
     frame    data/chars/shaina/special23.png
 	 bbox 0 0 0 0
     frame    data/chars/shaina/special24.png
-	 attack5 60 16 79 83 10 0 0 0 5 12
+	 attack30 60 16 140 83 10 0 0 0 5 30
     frame    data/chars/shaina/special25.png
-	 attack5 0 0 0 0 0 0 0 0 0 0
+	 attack30 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shaina/special25.png
-	 attack5 60 16 79 83 10 0 0 0 5 12
+	 attack30 60 16 140 83 10 0 0 0 5 30
     frame    data/chars/shaina/special26.png
-	 attack5 0
+	 attack30 0
     frame    data/chars/shaina/special27.png
-	 attack5 60 16 55 83 10 0 0 0 5 12
+	 attack20 60 16 140 83 10 1 0 0 50 30
+    dropv     5 4
     frame    data/chars/shaina/special28.png
-	 attack5 0
+	 attack30 0
     frame    data/chars/shaina/special24.png
+    attack20 60 16 140 83 10 1 0 0 50 30
+    dropv     5 4
     sound data/chars/shaina/sounds/02-laugh.wav
     frame    data/chars/shaina/special24.png
     frame    data/chars/shaina/special23.png

@@ -1,0 +1,29 @@
+name shock1
+type			none
+no_adjust_base	0
+subject_to_hole	1
+shadow			0
+antigravity 	100
+alpha			4
+toflip			1
+animationscript    data/scripts/player.c
+
+anim idle
+	loop	0
+	delay	6
+	offset	94 44
+	frame	data/chars/misc/shock/shock1/shock00.gif
+	frame	data/chars/misc/shock/shock1/shock01.gif
+	frame	data/chars/misc/shock/shock1/shock02.gif
+	frame	data/chars/misc/shock/shock1/shock03.gif
+	frame	data/chars/misc/shock/shock1/shock04.gif
+	frame	data/chars/misc/shock/shock1/shock05.gif
+	frame	data/chars/misc/shock/shock1/shock06.gif
+	frame	data/chars/misc/shock/shock1/shock07.gif
+	frame	data/chars/misc/shock/shock1/shock08.gif
+	frame	data/chars/misc/shock/shock1/shock09.gif
+	frame	data/chars/misc/shock/shock1/shock10.gif
+	frame	data/chars/misc/shock/shock1/shock11.gif
+	frame	data/chars/misc/shock/shock1/shock12.gif
+	@cmd suicide
+	frame	data/chars/misc/shock/shock1/empty.gif
