@@ -153,12 +153,41 @@ anim pain
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
  
+anim pain20 # Blood pain
+    loop    0
+    delay    5
+    offset    102 179
+    bbox 42 64 99 121
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 -20 10 0 0
+    frame    data/chars/soldier_purple/05.png
+    frame    data/chars/soldier_purple/05.png
+    
+anim fall20 # blood fall
+    loop    0
+    delay    10
+    offset    110 180
+    dropv 4 1 0
+    bbox 65 68 80 120
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 -20 0 0 0
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/07.png
+ 
+ 
 anim pain15# BURN PAIN
     loop    0
     delay    5
     offset    102 179
     bbox 42 64 99 121
-    @cmd     spawnbind "shaka_flame" 0 0 10 1 0
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" 0 0 10 1 0
     frame    data/chars/soldier_purple/05.png
     frame    data/chars/soldier_purple/05.png
 
@@ -203,34 +232,7 @@ anim pain11# ICE PAIN Big
     frame    data/chars/soldier_purple/05.png
     delay    500
     frame    data/chars/soldier_purple/05.png
-    
-anim pain20 # Blood pain
-    loop    0
-    delay    5
-    offset    102 179
-    bbox 42 64 99 121
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 -20 10 0 0
-    frame    data/chars/soldier_purple/05.png
-    frame    data/chars/soldier_purple/05.png
-    
-anim fall20 # blood fall
-    loop    0
-    delay    10
-    offset    110 180
-    dropv 4 1 0
-    bbox 65 68 80 120
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 -20 0 0 0
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
+ 
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
@@ -304,7 +306,7 @@ anim attack1
     offset    110 180
     dropv 4 1 0
     bbox 65 59 80 133
-	attack 117 83 60 25 5 0 0 0 12 20
+	 attack1 117 83 60 25 5 0 0 0 12 20
     frame    data/chars/soldier_purple/03.png
 
 anim attack2

@@ -243,8 +243,8 @@ anim cant # Plus assez de mp
     bbox     36 7 30 112
     hitflash flash
     sound    data/chars/seiya/sounds/low_cosmos.wav
-    #@cmd     spawnbind "cant" "ANI_IDLE" 40 10 10 1 1
-    @cmd     spawnbind "impact" "ANI_IDLE" 0 10 60 0 0
+    #@cmd     spawnbind "cant" "ANI_IDLE" 40 1 1 1 1
+    @cmd     spawnbind "impact" "ANI_IDLE" 0 1 50 0 0
     frame    data/chars/seiya/attack1.png
 
     
@@ -388,7 +388,7 @@ anim run
     delay    8
     offset   48 128
     bbox     34 13 51 115
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 0 0 1
     frame    data/chars/seiya/run1.png
     sound    data/chars/seiya/sounds/20-run1.wav
     frame    data/chars/seiya/run2.png
@@ -418,7 +418,7 @@ anim runattack  # Attaque en courant
 	 bbox 22 0 65 120
     frame    data/chars/seiya/runattack2.png
 	 attack2 0 0 0 0 0 0 0 0 0 0
-    @cmd     spawnbind "seiya_dash_dust" "ANI_IDLE" 0 10 0 0 0
+    @cmd     spawnbind "seiya_dash_dust" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/seiya/runattack3.png
 	 attack2 5 13 90 55 10 1 0 0 0 15
     dropv    3.0 2 0
@@ -514,7 +514,7 @@ anim    attack5    # Attaque combo 5
     dropv    4.0 1.0 0.0
     attack20  64 37 67 26 10 1 1 0 50 20
     frame    data/chars/seiya/attack54.png
-    @cmd     spawnbind "kick_dust" 0 10 10 0 0
+    @cmd     spawnbind "kick_dust" 0 1 0 0 0
     frame    data/chars/seiya/attack55.png
     attack1  0
     frame    data/chars/seiya/attack56.png
@@ -530,7 +530,7 @@ anim chargeattack # Attaque combo 3
     offset   45 119
     bbox     38 7 30 112
     hitflash flashmedium
-    @cmd     spawnbind "seiya_charge_attack" "ANI_IDLE" 0 10 10 0 0
+    @cmd     spawnbind "seiya_charge_attack" "ANI_IDLE" 0 1 0 0 0
     sound    data/chars/seiya/sounds/01-pegasus_shoot.wav
     frame    data/chars/seiya/attack31.png
     frame    data/chars/seiya/attack32.png
@@ -614,7 +614,7 @@ anim    grabbackward    # Projection en arrière
 anim    grabforward  # projection en avant
     delay    10
     offset   45 119
-    @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 10 1 0
+    @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 1 0 1 0
     @cmd     grabStart
     @cmd     position 0 4 16 -1 0
     frame    data/chars/seiya/attack21.png
@@ -778,7 +778,7 @@ anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
-anim    pain
+anim    pain # normal pain
     offset   51 111
     bbox     21 0 51 112
     #move    -5
@@ -791,7 +791,7 @@ anim    pain
     frame    data/chars/seiya/pain2.png
     frame    data/chars/seiya/pain1.png
 
-anim    pain2
+anim    pain2 # big pain
     offset   24 110
     bbox     11 2 36 112
     #move    -5
@@ -863,6 +863,95 @@ anim    death
     offset   114 108
     frame    data/chars/seiya/death6.png
 
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+
+anim pain20 # Blood pain
+    offset   24 110
+    bbox     11 2 36 112
+    #move    -5
+    delay    3
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 -10 0 0
+    frame    data/chars/seiya/pain21.png
+    frame    data/chars/seiya/pain22.png
+    frame    data/chars/seiya/pain23.png
+    frame    data/chars/seiya/pain24.png
+    frame    data/chars/seiya/pain23.png
+    frame    data/chars/seiya/pain22.png
+    frame    data/chars/seiya/pain21.png
+    
+anim fall20 # blood fall
+    landframe  6
+    offset   114 110
+    delay    12
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 0 0 0
+    frame    data/chars/seiya/fall1.png
+    frame    data/chars/seiya/fall2.png
+    delay    30
+    frame    data/chars/seiya/fall3.png
+    delay    12
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
+    
+anim pain15# BURN PAIN
+    offset   51 111
+    bbox     21 0 51 112
+    #move    -5
+    delay    3
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+    frame    data/chars/seiya/pain1.png
+    frame    data/chars/seiya/pain2.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain4.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain2.png
+    frame    data/chars/seiya/pain1.png
+    
+anim fall15# BURN PAIN Ground
+    landframe  6
+    offset   114 110
+    delay    12
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 30 0 0
+    frame    data/chars/seiya/fall1.png
+    frame    data/chars/seiya/fall2.png
+    delay    30
+    frame    data/chars/seiya/fall3.png
+    delay    12
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
+    frame    data/chars/seiya/fall4.png
+    
+anim pain10# ICE PAIN
+    offset   51 111
+    bbox     21 0 51 112
+    #move    -5
+    delay    3
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
+    frame    data/chars/seiya/pain1.png
+    frame    data/chars/seiya/pain2.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain4.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain2.png
+    delay    300
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 1 0 0 0
+    frame    data/chars/seiya/pain1.png
+    
+anim pain11# ICE PAIN Big
+    offset   51 111
+    bbox     21 0 51 112
+    #move    -5
+    delay    3
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 0 0 0
+    frame    data/chars/seiya/pain1.png
+    frame    data/chars/seiya/pain2.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain4.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain2.png
+    delay    500
+    frame    data/chars/seiya/pain1.png
 
 #// Block animations /////////////////////////////////////////////////
 
@@ -906,7 +995,7 @@ anim    attackboth # Attaque de mêlée native (j + a1)
     delay    5
     sound    data/chars/seiya/sounds/17-back_kick.wav
     frame    data/chars/seiya/attackbackward1.png
-    @cmd     spawnbind "seiya_roll" "ANI_IDLE" 40 10 10 0 0
+    @cmd     spawnbind "seiya_roll" "ANI_IDLE" 40 1 10 0 0
     attack1  -9 84 50 50 8 0 0 0 0 0
     frame    data/chars/seiya/attackbackward2.png
     attack1  0
@@ -939,7 +1028,7 @@ anim    freespecial # Attaque de mêlée (Bouton special, a2)
     delay    5
     sound    data/chars/seiya/sounds/17-back_kick.wav
     frame    data/chars/seiya/attackbackward1.png
-    @cmd     spawnbind "seiya_roll" "ANI_IDLE" 40 10 10 0 0
+    @cmd     spawnbind "seiya_roll" "ANI_IDLE" 40 1 10 0 0
     attack1  -9 84 50 50 8 0 0 0 0 0
     frame    data/chars/seiya/attackbackward2.png
     attack1  0
@@ -971,7 +1060,7 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     attack5  -8 -64 100 180 10 1 0 0 5 30
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
-    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 10 10 0 0
+    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 1 0 0 0
     @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png
@@ -1053,7 +1142,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     sound    data/chars/seiya/sounds/cosmos.wav
     frame    data/chars/seiya/special1.png
     frame    data/chars/seiya/special2.png
-    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 10 10 0 0
+    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/seiya/special3.png
     @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     sound    data/chars/seiya/sounds/00-cosmos.wav
@@ -1092,7 +1181,7 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
     hitflash blue_swing
     delay    5
     sound    data/chars/seiya/sounds/01-dragonpunch.wav
-    @cmd     spawnbind "seiya_upper_dust" "ANI_IDLE" 0 10 10 0 0
+    @cmd     spawnbind "seiya_upper_dust" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/seiya/uppercut1.png
     sound    data/chars/seiya/sounds/03-uppercut2.wav
     frame    data/chars/seiya/uppercut2.png
@@ -1126,7 +1215,7 @@ anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     attack5  -8 -64 100 180 10 1 0 0 5 30
     dropv    3 5
     sound    data/chars/seiya/sounds/02.wav
-    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 10 10 0 0
+    @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 1 0 0 0
     @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png
