@@ -448,6 +448,7 @@ anim riseattack # Arrow defense  (attaque en se relevant)
      delay     10
      offset     52 119
      fastattack 1
+     energycost  25 1 0
      sound data/chars/tremi/sounds/02.wav
      summonframe 0 120 0 0
      subentity tremi_multipunch

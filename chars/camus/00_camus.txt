@@ -393,6 +393,7 @@ anim special # Ice pike (attaque lorsqu il est grab)
 anim riseattack # Ice pike (attaque en se relevant)
     delay    15
     offset    68 158
+    energycost  25 1 0
     sound data/chars/camus/sounds/07-icewall.wav
     hitflash hyoga_swing
     @cmd     spawnbind "camus_icecrystal" "ANI_IDLE" 0 10 10 0 1

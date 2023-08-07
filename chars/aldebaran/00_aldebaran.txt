@@ -483,6 +483,7 @@ anim special # Taurus homerun (attaque lorsqu il est grab)
 anim riseattack # Earthquake (attaque en se relevant)
     delay    10
     offset    37 163
+    energycost  25 1 0
     sound data/chars/aldebaran/sounds/02-swing.wav
     hitflash blue_swing
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 0 0

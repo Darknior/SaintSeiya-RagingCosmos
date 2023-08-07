@@ -436,6 +436,7 @@ anim special # Eagle homerun (attaque lorsqu elle est grab)
 anim riseattack # Eagle homerun (attaque en se relevant)
     delay    10
     offset    24 112
+    energycost  25 1 0
     sound data/chars/marin/sounds/01-explosion.wav
     hitflash marin_swing
     @cmd     spawnbind "marin_stormC" "ANI_IDLE" 0 10 0 0 0

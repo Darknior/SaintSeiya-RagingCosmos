@@ -511,6 +511,7 @@ anim special # Lion homerun (attaque lorsqu il est grab)
 anim riseattack # Lion homerun (attaque en se relevant)
     delay    10
     offset    134 184
+    energycost  25 1 0
     sound data/chars/aiolia/sounds/04-swing.wav
     hitflash flashbig
     @cmd     spawnbind "aiolia_explosion" "ANI_IDLE" 0 10 0 0 0

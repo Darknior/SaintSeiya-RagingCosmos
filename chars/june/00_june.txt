@@ -509,6 +509,7 @@ anim special # Vine Mill (attaque lorsqu elle est grab)
 anim riseattack # Vine Mill (attaque en se relevant)
     delay    10
     offset    111 124
+    energycost  25 1 0
     hitflash blue_swing
     sound data/chars/june/sounds/01-explosion.wav
     fastattack 1

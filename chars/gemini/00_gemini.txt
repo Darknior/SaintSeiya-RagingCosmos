@@ -397,6 +397,7 @@ anim riseattack # Defense Melee (attaque en se relevant)
     delay    7
     offset    66 144
     fastattack 1
+    energycost  25 1 0
     sound data/chars/gemini/sounds/02-ahah.wav
     @cmd     spawnbind "gemini_clones" "ANI_IDLE" 0 0 0 1 0
     @cmd     spawnbind "gemini_melee" "ANI_IDLE" 0 10 0 1 0

@@ -427,6 +427,7 @@ anim riseattack # Jumping stone (quand il se releve)
     loop    0
     delay    7
     offset    193 320
+    energycost  25 1 0
     hitflash aldebaran_swing
     summonframe  0 0 0 0
     subentity    round_dust

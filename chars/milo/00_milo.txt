@@ -456,6 +456,7 @@ anim special # Defense Scorpion (attaque lorsqu il est grab)
 anim riseattack # Defense Scorpion (attaque en se relevant)
     delay    10
     offset    103 140
+    energycost  25 1 0
     sound data/chars/milo/04-swing.wav
     hitflash flashbig
     @cmd     spawnbind "milo_scorpion" "ANI_IDLE" 0 10 0 0 0

@@ -461,6 +461,7 @@ anim special # Defense circles (attaque lorsqu il est grab)
 anim riseattack # Defense circles (attaque en se relevant)
     delay    15
     offset    37 169
+    energycost  25 1 0
     sound data/chars/deathmask/sounds/07-ahah2.wav
     @cmd     spawnbind "deathmask_melee" "ANI_IDLE" 0 7 10 0 1
     hitflash flashbig

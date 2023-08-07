@@ -441,6 +441,7 @@ anim special # rose explosion (attaque lorsqu il est grab)
 anim riseattack # rose explosion (attaque en se relevant)
     delay    10
     offset    59 144
+    energycost  25 1 0
     sound data/chars/aphrodite/sounds/02.wav
     hitflash aphrodite_rose_explosion
     @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 10 10 0 1

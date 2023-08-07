@@ -584,6 +584,7 @@ anim riseattack # Lotus toss (attaque en se relevant)
     delay    15
     offset    92 129
     bbox 46 16 38 133
+    energycost  25 1 0
     hitflash aphrodite_rose_explosion
     sound data/chars/shaka/sounds/16-lotus.wav
     @cmd     spawnbind "shaka_lotus" "ANI_IDLE" 0 10 0 0 0

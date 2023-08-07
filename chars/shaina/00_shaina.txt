@@ -449,6 +449,7 @@ anim special # Cobra Storm (attaque lorsqu elle est grab)
 anim riseattack # Cobra Storm (attaque en se relevant)
     delay    10
     offset    22 138
+    energycost  25 1 0
     sound data/chars/shaina/sounds/12-claw2.wav
     hitflash shaina_electricity
     frame    data/chars/shaina/special1.png
