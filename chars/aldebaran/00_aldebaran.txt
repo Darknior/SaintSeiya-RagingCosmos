@@ -41,8 +41,8 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 #-- ENNEMY CONFIG ---------------------------------------------------
 
-hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+hostile     player  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
 aimove      chasez       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression  0           # Valeur positive + agressif / valeur negative - aggressif
 
@@ -501,6 +501,8 @@ anim pain10# ICE PAIN
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/aldebaran/pain1.png
     frame    data/chars/aldebaran/pain2.png
+    delay    300
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/aldebaran/pain3.png
     
 anim pain11# ICE PAIN Big
@@ -510,6 +512,7 @@ anim pain11# ICE PAIN Big
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 0 0 0
     frame    data/chars/aldebaran/pain1.png
     frame    data/chars/aldebaran/pain2.png
+    delay    500
     frame    data/chars/aldebaran/pain3.png
 
 anim pain30# Shock Pain
@@ -526,7 +529,7 @@ anim fall30# Shock PAIN Ground
     offset    118 164
     landframe 7
     bbox 85 14 60 150
-    @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 35 0 0
+    @cmd     spawnbind "shock1" "ANI_IDLE" -20 1 85 0 0
     frame    data/chars/aldebaran/fall1.png
     frame    data/chars/aldebaran/fall2.png
     bbox 8 104 160 60
@@ -535,7 +538,7 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/aldebaran/fall5.png
     frame    data/chars/aldebaran/fall6.png
     frame    data/chars/aldebaran/fall7.png
-    @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0
+    @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 15 0 0
     frame    data/chars/aldebaran/fall8.png
     
 #// Block animations /////////////////////////////////////////////////

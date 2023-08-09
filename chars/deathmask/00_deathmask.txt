@@ -42,8 +42,8 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 #-- ENNEMY CONFIG ---------------------------------------------------
 
-hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
-candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+hostile     none  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   none  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
 aimove      chasez       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression  0           # Valeur positive + agressif / valeur negative - aggressif
 
@@ -428,6 +428,96 @@ anim death
     frame    data/chars/deathmask/special2.png
     @cmd spawnDialog "dialog_deathmask2" 200 100
     frame    data/chars/deathmask/special2.png
+
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+
+anim pain20 # Blood pain
+    delay    15
+    offset    31 127
+    bbox 19 16 38 114
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 -10 0 0
+    frame    data/chars/deathmask/pain21.png
+    frame    data/chars/deathmask/pain22.png
+
+anim fall20 # blood fall
+    delay    -1000
+    offset    92 126
+    landframe 4
+    bbox 7 50 100 80
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 0 0 0
+    frame    data/chars/deathmask/fall1.png
+    frame    data/chars/deathmask/fall2.png
+    frame    data/chars/deathmask/fall3.png
+    frame    data/chars/deathmask/fall4.png
+    bbox 7 91 100 35
+    frame    data/chars/deathmask/fall5.png
+
+anim pain15# BURN PAIN
+    delay    10
+    offset    36 127
+    bbox 18 16 38 114
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -5 1 60 0 0
+    frame    data/chars/deathmask/pain1.png
+    frame    data/chars/deathmask/pain2.png
+    frame    data/chars/deathmask/pain3.png
+
+anim fall15# BURN PAIN Ground
+    delay    -1000
+    offset    92 126
+    landframe 4
+    bbox 7 50 100 80
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
+    frame    data/chars/deathmask/fall1.png
+    frame    data/chars/deathmask/fall2.png
+    frame    data/chars/deathmask/fall3.png
+    frame    data/chars/deathmask/fall4.png
+    bbox 7 91 100 35
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
+    frame    data/chars/deathmask/fall5.png
+
+anim pain10# ICE PAIN
+    delay    10
+    offset    36 127
+    bbox 18 16 38 114
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 35 1 0 0 0
+    frame    data/chars/deathmask/pain1.png
+    frame    data/chars/deathmask/pain2.png
+    delay    300
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 35 1 1 1 1
+    frame    data/chars/deathmask/pain3.png
+    
+anim pain11# ICE PAIN Big
+    delay    10
+    offset    36 127
+    bbox 18 16 38 114
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 40 1 1 1 1
+    frame    data/chars/deathmask/pain1.png
+    frame    data/chars/deathmask/pain2.png
+    delay    500
+    frame    data/chars/deathmask/pain3.png
+
+anim pain30# Shock Pain
+    delay    10
+    offset    36 127
+    bbox 18 16 38 114
+    @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
+    frame    data/chars/deathmask/pain1.png
+    frame    data/chars/deathmask/pain2.png
+    frame    data/chars/deathmask/pain3.png
+
+anim fall30# Shock PAIN Ground
+    delay    -1000
+    offset    92 126
+    landframe 4
+    bbox 7 50 100 80
+    @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 70 0 0
+    frame    data/chars/deathmask/fall1.png
+    frame    data/chars/deathmask/fall2.png
+    frame    data/chars/deathmask/fall3.png
+    frame    data/chars/deathmask/fall4.png
+    bbox 7 91 100 35
+    @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0
+    frame    data/chars/deathmask/fall5.png
 
 #// Block animations /////////////////////////////////////////////////
 

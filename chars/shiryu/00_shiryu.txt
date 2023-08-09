@@ -1187,7 +1187,6 @@ anim    freespecial7    # Coup de pied haut (haut+a1)
     hitflash flashmedium
     frame    data/chars/shiryu/attack41.png
     frame    data/chars/shiryu/attack42.png
-    dropv    4.0 1.0 0.0
     attack1  62 21 67 26 10 1 0 0 10 12
     dropv    5.0 0.5
     frame    data/chars/shiryu/attack43.png
@@ -1203,7 +1202,6 @@ anim    freespecial8    # Balayette (bas+a1)
     frame    data/chars/shiryu/slide0.png
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/slide1.png
-    dropv    4.0 1.0 0.0
     attack1  23 100 100 26 10 1 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/shiryu/slide2.png
