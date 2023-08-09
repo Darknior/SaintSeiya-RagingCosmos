@@ -388,7 +388,7 @@ anim run
     delay    8
     offset   48 128
     bbox     34 13 51 115
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 0 0 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 3 0 0 1
     frame    data/chars/seiya/run1.png
     sound    data/chars/seiya/sounds/20-run1.wav
     frame    data/chars/seiya/run2.png
@@ -1392,7 +1392,7 @@ anim    freespecial7   # Coup de pied haut (haut+a1)
     frame    data/chars/seiya/attack41.png
     frame    data/chars/seiya/attack42.png
     dropv    4.0 1.0 0.0
-    attack20  62 21 67 26 10 1 0 0 12 20
+    attack1  62 21 67 26 10 1 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/seiya/attack43.png
     frame    data/chars/seiya/attack42.png
@@ -1408,7 +1408,7 @@ anim    freespecial8   # Balayette (bas+a1)
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/brush2.png
     dropv    4.0 1.0 0.0
-    attack1  23 100 100 26 10 1 0 0 12 20
+    attack2  23 100 100 26 10 0 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/seiya/brush3.png
     frame    data/chars/seiya/brush4.png
@@ -1429,7 +1429,7 @@ anim    freespecial9    # Attaque au sol
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/downattack-1.png
     frame    data/chars/seiya/downattack-2.png
-	 attack 122 63 30 50 10 1 0 0 12 30
+	 attack2 122 63 30 50 10 1 0 0 12 30
     dropv    3 4
     frame    data/chars/seiya/downattack-3.png
     frame    data/chars/seiya/downattack-4.png
