@@ -1345,7 +1345,7 @@ anim    freespecial7   # Coup de pied haut (haut+a1)
     sound    data/sounds/punch.wav
     frame    data/chars/hyoga/attack42.png
     dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 1 0 0 12 20
+    attack30  62 21 67 26 10 1 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/hyoga/attack43.png
     frame    data/chars/hyoga/attack44.png
@@ -1362,7 +1362,7 @@ anim    freespecial8       # Balayette (bas+a1)
     sound    data/sounds/punch.wav
     frame    data/chars/hyoga/brush2.png
     dropv    4.0 1.0 0.0
-    attack1  23 100 100 26 10 1 0 0 12 20
+    attack30  23 100 100 26 10 0 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/hyoga/brush3.png
     frame    data/chars/hyoga/brush4.png
