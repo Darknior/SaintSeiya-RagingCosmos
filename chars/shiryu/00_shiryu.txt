@@ -441,7 +441,7 @@ anim    attack2 # Attaque combo 2
     frame    data/chars/shiryu/attack21.png
     frame    data/chars/shiryu/attack22.png
     frame    data/chars/shiryu/attack23.png
-    attack1  62 21 67 26 10 0 0 0 12 20
+    attack2  62 21 67 26 10 0 0 0 12 20
     frame    data/chars/shiryu/attack24.png
     frame    data/chars/shiryu/attack25.png
     attack1  0
@@ -1187,7 +1187,7 @@ anim    freespecial7    # Coup de pied haut (haut+a1)
     hitflash flashmedium
     frame    data/chars/shiryu/attack41.png
     frame    data/chars/shiryu/attack42.png
-    attack30  62 21 67 26 10 1 0 0 10 12
+    attack20  62 21 67 26 10 1 0 0 10 12
     dropv    5.0 0.5
     frame    data/chars/shiryu/attack43.png
     frame    data/chars/shiryu/attack44.png
@@ -1202,7 +1202,7 @@ anim    freespecial8    # Balayette (bas+a1)
     frame    data/chars/shiryu/slide0.png
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/slide1.png
-    attack30  23 100 100 26 10 0 0 0 12 20
+    attack2  23 100 100 26 10 0 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/shiryu/slide2.png
     frame    data/chars/shiryu/slide3.png
@@ -1221,7 +1221,7 @@ anim    freespecial9    # Attaque au sol
     frame    data/chars/shiryu/downattack-0.png
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/downattack-1.png
-	 attack 78 100 50 50 10 1 0 0 15 30
+	 attack20 78 100 50 50 10 1 0 0 15 30
     dropv    3 4
     frame    data/chars/shiryu/downattack-2.png
     frame    data/chars/shiryu/downattack-3.png

@@ -17,115 +17,115 @@ anim	idle
 	drawmethod fliprotate 1	
 	offset	650 102
    sound   data/chars/shiryu/sounds/01-dragon.wav
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 0 0 0 0 35
+	attack30 57 73 700 100 15 0 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 12 0 0 0 35
+	attack30 57 73 700 100 15 12 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 12 0 0 0 35
+	attack30 57 73 700 100 15 12 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 12 0 0 0 35
+	attack30 57 73 700 100 15 12 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 12 0 0 0 35
+	attack30 57 73 700 100 15 12 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 12 0 0 0 35
+	attack30 57 73 700 100 15 12 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 12 0 0 0 35
+	attack30 57 73 700 100 15 12 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 12 0 0 0 35
+	attack30 57 73 700 100 15 12 0 0 0 35
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 12 0 0 0 25
+	attack30 57 73 700 100 15 12 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 12 0 0 0 25
+	attack30 57 73 700 100 15 12 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 12 0 0 0 25
+	attack30 57 73 700 100 15 12 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 20 0 0 0 25
+	attack30 57 73 700 100 15 20 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 20 0 0 0 25
+	attack30 57 73 700 100 15 20 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 20 0 0 0 25
+	attack30 57 73 700 100 15 20 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 20 0 0 0 25
+	attack30 57 73 700 100 15 20 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 20 0 0 0 25
+	attack30 57 73 700 100 15 20 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-0.png
-	attack20 57 73 700 100 15 20 0 0 0 25
+	attack30 57 73 700 100 15 20 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-1.png
-	attack20 57 73 700 100 15 20 0 0 0 25
+	attack30 57 73 700 100 15 20 0 0 0 25
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 0
+	attack30 0
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
-	attack20 57 73 700 100 15 20 0 0 0 25
+	attack30 57 73 700 100 15 20 0 0 0 25
 	@cmd suicide
 	frame	data/chars/shiryu/special/shiryu_big_dragon/shiryu_big_dragon-2.png
 
