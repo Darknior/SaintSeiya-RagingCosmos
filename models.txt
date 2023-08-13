@@ -81,21 +81,31 @@ load    kick_dust       data/chars/misc/dust/kick_dust.txt
 load    dash_dust       data/chars/misc/dust/dash_dust.txt
 load    dash_dustB       data/chars/misc/dust/dash_dustB.txt
 
-# Stun animations
+# Stun pain animations
 
 load    stun           data/chars/misc/stun/stun.txt
 load    cant           data/chars/misc/text/cant.txt
 
-# Shock animations
-
-load    shock1           data/chars/misc/shock/shock1.txt
-
-# Blood animations
+# Blood pain animations
 
 load    blood_ground_big       data/chars/misc/blood/blood_ground_big.txt
 load    blood_ground_medium    data/chars/misc/blood/blood_ground_medium.txt
 load    blood_gerbD    data/chars/misc/blood/blood_gerbD.txt
 load    blood_projection_big    data/chars/misc/blood/blood_projection_big.txt
+
+# Fire pain animations
+
+load    shaka_flame    data/chars/shaka/special/shaka_flame.txt
+
+# ice pain animations
+
+load    hyoga_iceA             data/chars/hyoga/special/hyoga_iceA.txt
+load    hyoga_iceB             data/chars/hyoga/special/hyoga_iceB.txt
+load    hyoga_pike             data/chars/hyoga/special/hyoga_pike.txt
+
+# Shock pain animations
+
+load    shock1           data/chars/misc/shock/shock1.txt
 
 # Players special animations
 
