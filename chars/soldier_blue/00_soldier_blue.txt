@@ -213,12 +213,35 @@ anim death
     frame    data/chars/soldier_blue/fall7.png
     
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+
+anim pain20 # Blood pain
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -10 0 15 0 0
+    frame    data/chars/soldier_blue/pain1.png
+    frame    data/chars/soldier_blue/pain2.png
+    frame    data/chars/soldier_blue/pain1.png 
+ 
+anim fall20 # Blood fall  
+    delay    10
+    offset    118 125
+    bbox 55 24 80 100
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -45 0 10 0 0
+    frame    data/chars/soldier_blue/fall1.png
+    frame    data/chars/soldier_blue/fall2.png
+    frame    data/chars/soldier_blue/fall3.png
+    frame    data/chars/soldier_blue/fall4.png
+    frame    data/chars/soldier_blue/fall5.png
+    frame    data/chars/soldier_blue/fall6.png
+    bbox 23 92 100 35
+    frame    data/chars/soldier_blue/fall7.png   
  
 anim pain15# BURN PAIN
     delay    5
     offset    44 125
     bbox 29 10 35 115
-    @cmd     spawnbind "shaka_flame" 0 0 10 1 0
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 1 0
     frame    data/chars/soldier_blue/pain1.png
     frame    data/chars/soldier_blue/pain2.png
     frame    data/chars/soldier_blue/pain1.png
@@ -227,7 +250,7 @@ anim fall15# BURN PAIN Ground
     delay    10
     offset    118 125
     bbox 55 24 80 100
-    @cmd     spawnbind "shaka_flame" 0 0 10 1 0
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 60 1 0
     frame    data/chars/soldier_blue/fall1.png
     frame    data/chars/soldier_blue/fall2.png
     frame    data/chars/soldier_blue/fall3.png
@@ -235,25 +258,47 @@ anim fall15# BURN PAIN Ground
     frame    data/chars/soldier_blue/fall5.png
     frame    data/chars/soldier_blue/fall6.png
     bbox 23 92 100 35
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 10 1 0
     frame    data/chars/soldier_blue/fall7.png
     
 anim pain10 # ICE PAIN
     delay    5
     offset    44 125
     bbox 29 10 35 115
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 10 0 10
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_blue/pain1.png
     frame    data/chars/soldier_blue/pain2.png
     frame    data/chars/soldier_blue/pain1.png
-    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 10 0 0
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 1 1 1 1
     delay    300
     frame    data/chars/soldier_blue/pain1.png
-    
-anim fall20 # Blood fall  
+ 
+anim pain11# ICE PAIN Big
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
+    frame    data/chars/soldier_blue/pain1.png
+    frame    data/chars/soldier_blue/pain2.png
+    frame    data/chars/soldier_blue/pain1.png
+    delay    500
+    frame    data/chars/soldier_blue/pain1.png
+ 
+anim pain30# Shock Pain
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "shock1" "ANI_IDLE" 0 1 70 0 0
+    frame    data/chars/soldier_blue/pain1.png
+    frame    data/chars/soldier_blue/pain2.png
+    frame    data/chars/soldier_blue/pain1.png
+  
+anim fall30# Shock PAIN Ground
     delay    10
     offset    118 125
     bbox 55 24 80 100
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -45 -25 10 0 0
+    @cmd     spawnbind "shock1" "ANI_IDLE" -20 1 70 0 0
     frame    data/chars/soldier_blue/fall1.png
     frame    data/chars/soldier_blue/fall2.png
     frame    data/chars/soldier_blue/fall3.png
@@ -261,16 +306,8 @@ anim fall20 # Blood fall
     frame    data/chars/soldier_blue/fall5.png
     frame    data/chars/soldier_blue/fall6.png
     bbox 23 92 100 35
+    @cmd     spawnbind "shock1" "ANI_IDLE" -35 1 5 0 0
     frame    data/chars/soldier_blue/fall7.png
-    
-anim pain20 # Blood pain
-    delay    5
-    offset    44 125
-    bbox 29 10 35 115
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -45 -25 10 0 0
-    frame    data/chars/soldier_blue/pain1.png
-    frame    data/chars/soldier_blue/pain2.png
-    frame    data/chars/soldier_blue/pain1.png
 
 #//Basic Attacks animations/////////////////////////////////////////////////
 

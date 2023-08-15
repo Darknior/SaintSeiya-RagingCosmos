@@ -200,62 +200,6 @@ anim jumpattack #Attaque sautée statique
     attack1 62 45 180 26 10 1 0 0 5 12
     frame    data/chars/soldier_stick/jumpattack2.png
 
-#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
- 
-anim pain15 # BURN PAIN
-    delay    5
-    offset    44 125
-    bbox 29 10 35 115
-    @cmd     spawnbind "shaka_flame" 0 0 10 1 0
-    frame    data/chars/soldier_stick/pain1.png
-    frame    data/chars/soldier_stick/pain2.png
-    frame    data/chars/soldier_stick/pain3.png
-    frame    data/chars/soldier_stick/pain2.png
-  
-anim fall15 # BURN PAIN Ground
-    delay    15
-    offset    118 125
-    @cmd     spawnbind "shaka_flame" 0 0 10 1 0
-	 bbox 34 15 60 100
-    frame    data/chars/soldier_stick/fall1.png
-    frame    data/chars/soldier_stick/fall2.png
-	 bbox 10 90 100 35
-    frame    data/chars/soldier_stick/fall3.png
-    
-anim pain10 # ICE PAIN
-    delay    5
-    offset    44 125
-    bbox 29 10 35 115
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 0 10 1 0
-    frame    data/chars/soldier_stick/pain1.png
-    frame    data/chars/soldier_stick/pain2.png
-    frame    data/chars/soldier_stick/pain3.png
-    frame    data/chars/soldier_stick/pain2.png
-    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 0 10 1 0
-    frame    data/chars/soldier_stick/pain1.png
-    
-anim fall20 # Blood fall  
-    delay    15
-    offset    118 125
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -40 -10 10 0 0
-	 bbox 34 15 60 100
-    frame    data/chars/soldier_stick/fall1.png
-    frame    data/chars/soldier_stick/fall1.png
-    frame    data/chars/soldier_stick/fall2.png
-	 bbox 10 90 100 35
-    frame    data/chars/soldier_stick/fall3.png
-    
-anim pain20 # Blood pain
-    delay    5
-    offset    44 125
-    bbox 29 10 35 115
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -40 -10 10 0 0
-    frame    data/chars/soldier_stick/pain1.png
-    frame    data/chars/soldier_stick/pain2.png
-    frame    data/chars/soldier_stick/pain3.png
-    frame    data/chars/soldier_stick/pain2.png
-    frame    data/chars/soldier_stick/pain1.png
-
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim rise
@@ -310,3 +254,96 @@ anim death
     frame    data/chars/soldier_stick/fall3.png
     frame    data/chars/soldier_stick/fall3.png
     frame    data/chars/soldier_stick/fall3.png
+
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+
+anim pain20 # Blood pain
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 15 0 10 0 0
+    frame    data/chars/soldier_stick/pain1.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain3.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain1.png
+
+anim fall20 # Blood fall  
+    delay    15
+    offset    118 125
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -40 1 20 0 0
+	 bbox 34 15 60 100
+    frame    data/chars/soldier_stick/fall1.png
+    frame    data/chars/soldier_stick/fall1.png
+    frame    data/chars/soldier_stick/fall2.png
+	 bbox 10 90 100 35
+    frame    data/chars/soldier_stick/fall3.png
+    
+anim pain15 # BURN PAIN
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" 0 1 60 1 0
+    frame    data/chars/soldier_stick/pain1.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain3.png
+    frame    data/chars/soldier_stick/pain2.png
+  
+anim fall15 # BURN PAIN Ground
+    delay    15
+    offset    118 125
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -45 1 60 1 0
+	 bbox 34 15 60 100
+    frame    data/chars/soldier_stick/fall1.png
+    frame    data/chars/soldier_stick/fall2.png
+	 bbox 10 90 100 35
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -65 1 10 1 0
+    frame    data/chars/soldier_stick/fall3.png
+    
+anim pain10 # ICE PAIN
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    frame    data/chars/soldier_stick/pain1.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain3.png
+    frame    data/chars/soldier_stick/pain2.png
+    delay    300
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 5 1 1 1 1
+    frame    data/chars/soldier_stick/pain1.png
+
+anim pain11# ICE PAIN Big
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
+    frame    data/chars/soldier_stick/pain1.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain3.png
+    frame    data/chars/soldier_stick/pain2.png
+    delay    500
+    frame    data/chars/soldier_stick/pain1.png
+
+anim pain30# Shock Pain
+    delay    5
+    offset    44 125
+    bbox 29 10 35 115
+    @cmd     spawnbind "shock1" "ANI_IDLE" 15 1 70 0 0
+    frame    data/chars/soldier_stick/pain1.png
+    frame    data/chars/soldier_stick/pain2.png
+    frame    data/chars/soldier_stick/pain3.png
+    frame    data/chars/soldier_stick/pain2.png
+  
+anim fall30# Shock PAIN Ground
+    delay    15
+    offset    118 125
+    @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 70 0 0
+	 bbox 34 15 60 100
+    frame    data/chars/soldier_stick/fall1.png
+    frame    data/chars/soldier_stick/fall2.png
+	 bbox 10 90 100 35
+    @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0
+    frame    data/chars/soldier_stick/fall3.png
+
