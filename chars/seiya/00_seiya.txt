@@ -521,21 +521,15 @@ anim    attack5    # Attaque combo 5
     frame    data/chars/seiya/attack59.png
     frame    data/chars/seiya/attack60.png
 
-anim chargeattack # Attaque combo 3
-    jugglecost  1
-    delay    10
-    chargetime 1
-    offset   45 119
-    bbox     38 7 30 112
+anim chargeattack #DISABLE THE NATIVE CHARGE ATTACK TO AVOID CONFLICTS WITH THE SCRIPTED VERSION
+	chargetime 9999
+	loop	0
+	delay	1
+	offset   45 112
     hitflash flashmedium
-    @cmd     spawnbind "seiya_charge_attack" "ANI_IDLE" 0 1 0 0 0
-    sound    data/chars/seiya/sounds/01-pegasus_shoot.wav
-    frame    data/chars/seiya/attack31.png
-    frame    data/chars/seiya/attack32.png
-    delay    100
-    frame    data/chars/seiya/attack33.png
-    attack1  0
-
+    #@cmd     spawnbind "seiya_charge_attack" "ANI_IDLE" 0 1 0 0 0
+    #sound    data/chars/seiya/sounds/01-pegasus_shoot.wav
+	frame    data/chars/seiya/idle1.png
 
 #// Grab animations /////////////////////////////////////////////////
 

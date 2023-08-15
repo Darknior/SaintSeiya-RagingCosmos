@@ -7,6 +7,7 @@ void main()
 
 	if(openborvariant("in_level")){
 		blinkDamage();
+		blinkCharge();
 	}
 }
 
@@ -284,6 +285,87 @@ void blinkDamage()
 					blinkReset("dyingTime");
 				}
 			}
+		}
+	}
+}
+
+void blinkCharge()
+{//Perform charged attacks and show blink effects
+	void self	= getlocalvar("self");
+	void type	= getentityproperty(self, "type");
+	
+	//APPLY BLINK EFFECTS
+	if(type == openborconstant("TYPE_PLAYER")){
+		void animation	= getentityproperty(self, "animationID");
+		int valid		= getentityproperty(self, "animvalid", openborconstant("ANI_ATTACK5"));
+		int pIndex		= getentityproperty(self, "playerindex");
+		int dead		= getentityproperty(self, "dead");
+		int tintMode	= 1;
+		int warning		= 10;
+		float time		= openborvariant("elapsed_time");
+		float blinkRate	= 20;
+		float delay		= 250;
+		float color;
+
+		//START THE CHARGE ATTACK VARIABLE IF THE BUTTON IS HELD 
+		//CHECK IF AT LEAST THE ATTACK2 ANIMATION IS FOUND
+		if(playerkeys(pIndex, 0, "attack") && valid){
+			if(getglobalvar("chargeStart"+pIndex) == NULL()){
+				setglobalvar("chargeStart"+pIndex, openborvariant("elapsed_time")+delay);
+			}
+			
+			//START THE BLINKING EFFECT
+			if(time < getglobalvar("chargeStart"+pIndex)){
+				if(!dead){
+					color = time - getglobalvar("chargeStart"+pIndex);
+					changedrawmethod(self, "enabled", 1);
+					changedrawmethod(self, "tintmode", tintMode);
+					changedrawmethod(self, "tintcolor", rgbcolor(0, 0, color));
+				}
+			}
+			else
+			{
+				if(!dead){
+					if((time/blinkRate)%2 == 0){
+						color = 255;
+						changedrawmethod(self, "enabled", 1);
+						changedrawmethod(self, "tintmode", tintMode);
+						changedrawmethod(self, "tintcolor", rgbcolor(0, 0, color));
+					}
+					else
+					{
+						changedrawmethod(self, "enabled", 0);
+					}
+				}
+			}
+		}else
+
+		//PERFORM THE CHARGE ATTACK IF THE BUTTON IS RELEASED
+		{
+			//CHECK IF ALL REQUIRIMENTS ARE MET IN ORDER TO PERFORM THE CHARGED ATTACK
+			if(time > getglobalvar("chargeStart"+pIndex)){
+
+				//CHECK FOR THE ALLOWED ANIMATIONS
+				if(	animation == openborconstant("ANI_IDLE")	||
+					animation == openborconstant("ANI_IDLE2")	||
+					animation == openborconstant("ANI_WALK")	||
+					animation == openborconstant("ANI_WALK2")	||
+					animation == openborconstant("ANI_UP")		||
+					animation == openborconstant("ANI_DOWN")	||
+					animation == openborconstant("ANI_SLEEP")	||
+					animation == openborconstant("ANI_RUN")		){
+					
+					//RESET THE COMBOTIME PROPERTY AND PERFORM THE ATTACK5
+					setidle(self, openborconstant("ANI_IDLE"));
+					changeentityproperty(self, "combotime", 0);
+					changeentityproperty(self, "velocity", 0, 0, 0);
+					performattack(self, openborconstant("ANI_ATTACK5"), 0);
+				}
+			}
+			
+			//CLEAR THE CHARGE ATTACK VARIABLE NO MATTER THE RESULTS
+			setglobalvar("chargeStart"+pIndex, NULL());
+			blinkReset();
 		}
 	}
 }
