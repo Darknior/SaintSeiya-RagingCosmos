@@ -10,7 +10,7 @@ anim	idle
 	offset	250 184
 	drawmethod alpha 6
    drawmethod  channel 0.99
-	sound data/chars/gemini/05-rise.wav
+	sound data/chars/gemini/sounds/05-rise.wav
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones1.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones2.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones3.png
@@ -30,7 +30,7 @@ anim	idle
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones6.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones5.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones4.png
-	sound data/chars/gemini/05-rise.wav
+	sound data/chars/gemini/sounds/05-rise.wav
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones3.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones2.png
 	frame	data/chars/gemini/special/gemini_clones/gemini_clones1.png
