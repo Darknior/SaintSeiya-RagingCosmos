@@ -214,7 +214,7 @@ anim follow1 #STUN
     loop    0
     offset    110 180
     delay    400
-	 bbox 68 111 50 70
+	 bbox 68 80 50 100
     frame    data/chars/soldier_base/05.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////

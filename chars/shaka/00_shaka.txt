@@ -400,7 +400,7 @@ anim rise # Se releve avec compteur de chuttes
 anim follow1 # Stun aprés X chuttes
     delay    400
     offset    54 127
-    bbox 42 4 38 126
+    bbox 35 4 38 126
     frame    data/chars/shaka/pain1.png
 
 anim death
