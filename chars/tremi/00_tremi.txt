@@ -261,7 +261,7 @@ anim attack4 # Attaque combo 4
      attack1 0 0 0 0 0 0 0 0 0 0
      frame     data/chars/tremi/attack41.png
      frame     data/chars/tremi/attack42.png
-     attack1 42 40 67 26 10 0 0 0 5 12
+     attack2 42 40 67 26 10 0 0 0 5 12
      frame     data/chars/tremi/attack43.png
      frame     data/chars/tremi/attack44.png
      frame     data/chars/tremi/attack45.png
@@ -271,10 +271,10 @@ anim attack5 # Attaque combo 5
      offset     38 119
      bbox 18 7 52 112
      hitflash flashbig
-     attack1 0 0 0 0 0 0 0 0 0 0
+     attack20 0 0 0 0 0 0 0 0 0 0
      frame     data/chars/tremi/attack51.png
      frame     data/chars/tremi/attack52.png
-     attack1 62 21 67 26 10 0 0 0 5 12
+     attack20 62 21 67 26 10 0 0 0 5 12
      frame     data/chars/tremi/attack53.png
      frame     data/chars/tremi/attack54.png
      frame     data/chars/tremi/attack52.png
@@ -287,7 +287,8 @@ anim attack5 # Attaque combo 5
      attack1 0 0 0 0 0 0 0 0 0 0
      frame     data/chars/tremi/attack61.png
      frame     data/chars/tremi/attack62.png
-     attack1 62 21 67 26 20 1 0 0 5 12
+     attack20 62 21 67 26 20 1 0 0 50 12
+     dropv 3 3
      frame     data/chars/tremi/attack63.png
      frame     data/chars/tremi/attack64.png
      frame     data/chars/tremi/attack65.png
@@ -338,7 +339,7 @@ anim jumpattack #Attaque sautée statique
      sound data/sounds/punch.wav
      frame     data/chars/tremi/jumpattack1.png
      frame     data/chars/tremi/jumpattack2.png
-     attack4 32 67 67 26 10 1 0 0 5 12
+     attack20 32 67 67 26 10 1 0 0 5 12
 	  dropv    4.0 1.0 0.0
      @cmd     shooter2 "tremi_arrow" 17 95 2 -2
      frame     data/chars/tremi/jumpattack3.png
@@ -644,7 +645,7 @@ anim special # tremi Jumping (attaque lorsqu il est grab)
      offset     80 241
 	  bbox 0 0 0 0
      frame     data/chars/tremi/jump4.png
-	  attack5 74 1 120 180 30 1 0 0 5 12
+	  attack20 74 1 120 180 30 1 0 0 50 12
      dropv      8.0 3 0
      delay     10
      frame     data/chars/tremi/jumpattack10.png
@@ -690,11 +691,12 @@ anim freespecial2 # Attaque en courant
      frame     data/chars/tremi/runattack2.png
      @cmd      spawnbind "tremi_dash" "ANI_IDLE" 0 10 0 1 0
      frame     data/chars/tremi/runattack3.png
-	  attack2 31 43 86 25 20 1 0 0 5 12
+	  attack20 31 43 86 25 20 1 0 0 50 12
+     dropv 3 3
      frame     data/chars/tremi/runattack4.png
      frame     data/chars/tremi/runattack5.png
      frame     data/chars/tremi/runattack6.png
-	  attack2 0 0 0 0 0 0 0 0 0 0
+	  attack20 0 0 0 0 0 0 0 0 0 0
      @cmd     dasher 0 0 0 1
      delay     12
      frame     data/chars/tremi/runattack7.png
@@ -819,7 +821,7 @@ anim freespecial5 # tremi Jumping
      offset     80 241
 	  bbox 0 0 0 0
      frame     data/chars/tremi/jump4.png
-	  attack5 74 1 120 180 30 1 0 0 5 12
+	  attack30 74 1 120 180 30 1 0 0 50 12
      dropv      8.0 3 0
      delay     10
      frame     data/chars/tremi/jumpattack10.png
