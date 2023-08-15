@@ -213,11 +213,11 @@ anim attack2 # Attaque combo 2
     offset    43 142
     bbox 14 34 51 108
     frame    data/chars/shaina/attack21.png
-    attack30 43 63 100 26 10 0 0 0 5 12
+    attack20 43 63 100 26 10 0 0 0 5 12
     frame    data/chars/shaina/attack22.png
     frame    data/chars/shaina/attack23.png
     frame    data/chars/shaina/attack24.png
-    attack30 0
+    attack20 0
     frame    data/chars/shaina/attack25.png
 
 anim attack3 # Attaque combo 3
@@ -238,10 +238,10 @@ anim attack4 # Attaque combo 4
     offset    43 165
     bbox 25 57 51 108
     hitflash flashmedium
-    attack30 0 0 0 0 0 0 0 0 0 0
+    attack20 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shaina/attack41.png
     frame    data/chars/shaina/attack42.png
-    attack30 42 77 100 26 10 0 0 0 5 12
+    attack20 42 77 100 26 10 0 0 0 5 12
     frame    data/chars/shaina/attack43.png
     frame    data/chars/shaina/attack44.png
 
@@ -317,8 +317,8 @@ anim jumpattack #Attaque sautée statique
     sound data/sounds/punch.wav
     frame    data/chars/shaina/jumpattack1.png
     frame    data/chars/shaina/jumpattack2.png
-    attack4 32 69 80 26 10 1 0 0 5 12
-	dropv    4.0 1.0 0.0
+    attack20 32 69 80 26 10 1 0 0 5 12
+	 dropv    4.0 1.0 0.0
     frame    data/chars/shaina/jumpattack3.png
     frame    data/chars/shaina/jumpattack4.png
     frame    data/chars/shaina/jumpattack1.png
@@ -329,7 +329,7 @@ anim jumpattack #Attaque sautée statique
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
-anim pain
+anim pain # Normal pain
     offset    30 130
     bbox 0 21 52 108
     delay    5
@@ -339,7 +339,7 @@ anim pain
     frame    data/chars/shaina/pain2.png
     frame    data/chars/shaina/pain1.png
 
-anim pain2
+anim pain2 # Big pain
     offset    30 130
     bbox 0 21 52 108
     #move    -5
@@ -399,6 +399,116 @@ anim death
     frame    data/chars/shaina/death7.png
     frame    data/chars/shaina/death8.png
     frame    data/chars/shaina/death9.png
+
+#// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
+
+anim pain20 # Blood pain
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 -10 0 0
+    offset    30 130
+    bbox 0 21 52 108
+    #move    -5
+    delay    5
+    frame    data/chars/shaina/pain21.png
+    frame    data/chars/shaina/pain22.png
+    frame    data/chars/shaina/pain23.png
+    frame    data/chars/shaina/pain22.png
+    frame    data/chars/shaina/pain21.png
+    
+anim fall20 # blood fall
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -15 0 10 0 0
+    offset    89 130
+    delay    10
+    landframe 5
+    bbox 34 44 85 85
+    frame    data/chars/shaina/fall1.png
+    frame    data/chars/shaina/fall2.png
+    frame    data/chars/shaina/fall3.png
+    frame    data/chars/shaina/fall4.png
+    bbox 0 95 100 35
+    frame    data/chars/shaina/fall5.png
+    frame    data/chars/shaina/fall6.png
+    
+anim pain15# BURN PAIN
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -5 1 60 0 0
+    offset    30 130
+    bbox 0 21 52 108
+    delay    5
+    frame    data/chars/shaina/pain1.png
+    frame    data/chars/shaina/pain2.png
+    frame    data/chars/shaina/pain3.png
+    frame    data/chars/shaina/pain2.png
+    frame    data/chars/shaina/pain1.png
+    
+anim fall15# BURN PAIN Ground
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 50 0 0
+    offset    89 130
+    delay    10
+    landframe 5
+    bbox 34 44 85 85
+    frame    data/chars/shaina/fall1.png
+    frame    data/chars/shaina/fall2.png
+    frame    data/chars/shaina/fall3.png
+    frame    data/chars/shaina/fall4.png
+    bbox 0 95 100 35
+    frame    data/chars/shaina/fall5.png
+    frame    data/chars/shaina/fall6.png
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
+    frame    data/chars/shaina/fall6.png
+    
+anim pain10# ICE PAIN
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    offset    30 130
+    bbox 0 21 52 108
+    delay    5
+    frame    data/chars/shaina/pain1.png
+    frame    data/chars/shaina/pain2.png
+    frame    data/chars/shaina/pain3.png
+    frame    data/chars/shaina/pain2.png
+    frame    data/chars/shaina/pain1.png
+    delay    300
+    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 0 1 0 0 0
+    frame    data/chars/shaina/pain1.png
+    
+anim pain11# ICE PAIN Big
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
+    offset    30 130
+    bbox 0 21 52 108
+    delay    5
+    frame    data/chars/shaina/pain1.png
+    frame    data/chars/shaina/pain2.png
+    frame    data/chars/shaina/pain3.png
+    frame    data/chars/shaina/pain2.png
+    frame    data/chars/shaina/pain1.png
+    delay    500
+    frame    data/chars/shaina/pain1.png
+    
+anim pain30# Shock Pain
+    @cmd     spawnbind "shock1" "ANI_IDLE" 20 1 60 0 0
+    offset    30 130
+    bbox 0 21 52 108
+    delay    5
+    frame    data/chars/shaina/pain1.png
+    frame    data/chars/shaina/pain2.png
+    frame    data/chars/shaina/pain3.png
+    frame    data/chars/shaina/pain2.png
+    frame    data/chars/shaina/pain1.png
+    
+anim fall30# Shock PAIN Ground
+    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 55 0 0
+    offset    89 130
+    delay    10
+    landframe 5
+    bbox 34 44 85 85
+    frame    data/chars/shaina/fall1.png
+    frame    data/chars/shaina/fall2.png
+    frame    data/chars/shaina/fall3.png
+    frame    data/chars/shaina/fall4.png
+    bbox 0 95 100 35
+    frame    data/chars/shaina/fall5.png
+    frame    data/chars/shaina/fall6.png
+    @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 15 0 0
+    frame    data/chars/shaina/fall6.png
 
 #// Block animations /////////////////////////////////////////////////
 
