@@ -413,14 +413,14 @@ anim runattack  # Attaque en courant
     subentity    dash_dust
     sound    data/chars/seiya/sounds/07-forward_punch.wav
     frame    data/chars/seiya/runattack1.png
-	 attack 5 13 90 55 10 0 0 0 0 10
+	 attack30 5 13 90 55 10 0 0 0 0 10
     dropv    3.0 2 0
 	 bbox 22 0 65 120
     frame    data/chars/seiya/runattack2.png
 	 attack2 0 0 0 0 0 0 0 0 0 0
     @cmd     spawnbind "seiya_dash_dust" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/seiya/runattack3.png
-	 attack2 5 13 90 55 10 1 0 0 0 15
+	 attack30 5 13 90 55 10 1 0 0 0 15
     dropv    3.0 2 0
     frame    data/chars/seiya/runattack4.png
     frame    data/chars/seiya/runattack5.png
@@ -483,7 +483,6 @@ anim    attack3    # Attaque combo 3
     hitflash flashmedium
     frame    data/chars/seiya/attack31.png
     frame    data/chars/seiya/attack32.png
-    dropv    4.0 1.0 0.0
     attack1  62 21 67 26 10 0 1 0 12 20
     frame    data/chars/seiya/attack33.png
     attack1  0
@@ -496,8 +495,7 @@ anim    attack4    # Attaque combo 4
     hitflash flashmedium
     frame    data/chars/seiya/attack41.png
     frame    data/chars/seiya/attack42.png
-    dropv    4.0 1.0 0.0
-    attack1  62 21 67 26 10 0 1 0 12 20
+    attack2  62 21 67 26 10 0 1 0 12 20
     frame    data/chars/seiya/attack43.png
     attack1  0
 
@@ -511,12 +509,12 @@ anim    attack5    # Attaque combo 5
     frame    data/chars/seiya/attack52.png
     sound    data/chars/seiya/sounds/kick.wav
     frame    data/chars/seiya/attack53.png
-    dropv    4.0 1.0 0.0
     attack20  64 37 67 26 10 1 1 0 50 20
+    dropv    4.0 1.0 0.0
     frame    data/chars/seiya/attack54.png
     @cmd     spawnbind "kick_dust" 0 1 0 0 0
     frame    data/chars/seiya/attack55.png
-    attack1  0
+    attack20  0
     frame    data/chars/seiya/attack56.png
     frame    data/chars/seiya/attack57.png
     frame    data/chars/seiya/attack58.png
@@ -1352,32 +1350,32 @@ anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     frame    data/chars/seiya/special41.png
     attack5  0
     @cmd     dasher 8 0 0 1
-    attack20  90 40 55 83 20 1 1 0 100 30
+    attack30  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     frame    data/chars/seiya/special42.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack20  90 40 55 83 20 1 1 0 100 30
+    attack30  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special42.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack20  90 40 55 83 20 1 1 0 100 30
+    attack30  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special43.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack20  90 40 55 83 20 1 1 0 100 30
+    attack30  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
     offset   31 116
     frame    data/chars/seiya/special43.png
     offset   100 147
     frame    data/chars/seiya/special44.png
-    attack20  90 40 55 83 20 1 1 0 100 30
+    attack30  90 40 55 83 20 1 1 0 100 30
     dropv    3 4
-    attack20  0
+    attack30  0
     @cmd     dasher 0 0 0 1
     offset   31 116
     frame    data/chars/seiya/special42.png
@@ -1391,8 +1389,7 @@ anim    freespecial7   # Coup de pied haut (haut+a1)
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/attack41.png
     frame    data/chars/seiya/attack42.png
-    dropv    4.0 1.0 0.0
-    attack30  62 21 67 26 10 1 0 0 12 20
+    attack20  62 21 67 26 10 1 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/seiya/attack43.png
     frame    data/chars/seiya/attack42.png
@@ -1407,8 +1404,7 @@ anim    freespecial8   # Balayette (bas+a1)
     frame    data/chars/seiya/brush1.png
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/brush2.png
-    dropv    4.0 1.0 0.0
-    attack30  23 100 100 26 10 0 0 0 12 20
+    attack2  23 100 100 26 10 0 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/seiya/brush3.png
     frame    data/chars/seiya/brush4.png
@@ -1429,7 +1425,7 @@ anim    freespecial9    # Attaque au sol
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/downattack-1.png
     frame    data/chars/seiya/downattack-2.png
-	 attack2 122 63 30 50 10 1 0 0 12 30
+	 attack20 122 63 30 50 10 1 0 0 12 30
     dropv    3 4
     frame    data/chars/seiya/downattack-3.png
     frame    data/chars/seiya/downattack-4.png
