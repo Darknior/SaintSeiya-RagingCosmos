@@ -222,7 +222,7 @@ void blinkDamage()
 		if((openborvariant("elapsed_time")/rate)%2 == 0){
 			changedrawmethod(self, "enabled", 1);
 			changedrawmethod(self, "tintmode", tintMode);
-			changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
+			changedrawmethod(self, "tintcolor", rgbcolor(0x88, 0x00, 0x00));
 		}
 		else
 		{
@@ -245,7 +245,7 @@ void blinkDamage()
 		if((openborvariant("elapsed_time")/rate)%2 == 0){
 			changedrawmethod(self, "enabled", 1);
 			changedrawmethod(self, "tintmode", tintMode);
-			changedrawmethod(self, "tintcolor", rgbcolor(0xFF, 0x00, 0x00));
+			changedrawmethod(self, "tintcolor", rgbcolor(0x88, 0x00, 0x00));
 		}
 		else
 		{
@@ -300,7 +300,7 @@ void blinkCharge()
 		int valid		= getentityproperty(self, "animvalid", openborconstant("ANI_ATTACK5"));
 		int pIndex		= getentityproperty(self, "playerindex");
 		int dead		= getentityproperty(self, "dead");
-		int tintMode	= 1;
+		int tintMode	= 5;
 		int warning		= 10;
 		float time		= openborvariant("elapsed_time");
 		float blinkRate	= 20;

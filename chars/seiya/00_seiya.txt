@@ -1059,7 +1059,7 @@ anim    attackboth # Attaque de mêlée native (j + a1)
 anim    freespecial # Attaque de mêlée (Bouton special, a2)
     jugglecost  2
     fastattack  1
-    energycost  20 1 0
+    energycost  20 0 0
     offset   45 134
     bbox     21 22 51 112
     hitflash blue_swing
