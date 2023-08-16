@@ -355,17 +355,19 @@ void blinkCharge()
 					animation == openborconstant("ANI_SLEEP")	||
 					animation == openborconstant("ANI_RUN")		){
 					
-					//RESET THE COMBOTIME PROPERTY AND PERFORM THE ATTACK5
+					//RESET THE COMBOTIME PROPERTY AND PERFORM THE ATTACK10
 					setidle(self, openborconstant("ANI_IDLE"));
 					changeentityproperty(self, "combotime", 0);
 					changeentityproperty(self, "velocity", 0, 0, 0);
-					performattack(self, openborconstant("ANI_ATTACK5"), 0);
+					performattack(self, openborconstant("ANI_ATTACK10"), 0);
 				}
 			}
 			
 			//CLEAR THE CHARGE ATTACK VARIABLE NO MATTER THE RESULTS
-			setglobalvar("chargeStart"+pIndex, NULL());
-			blinkReset();
+			if(getglobalvar("chargeStart"+pIndex) != NULL()){
+				blinkReset();
+				setglobalvar("chargeStart"+pIndex, NULL());
+			}
 		}
 	}
 }

@@ -40,7 +40,6 @@ health      1000
 coords      750 290
 at          0
 
-
-group       1 1
+spawn       Apple
+coords      500 400
 at          0
-

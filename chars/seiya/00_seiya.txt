@@ -521,6 +521,28 @@ anim    attack5    # Attaque combo 5
     frame    data/chars/seiya/attack59.png
     frame    data/chars/seiya/attack60.png
 
+anim    attack10    # charge attack
+    jugglecost  1
+    delay    7
+    offset   45 119
+    bbox     42 7 30 112
+    hitflash flashbig
+    frame    data/chars/seiya/attack51.png
+    frame    data/chars/seiya/attack52.png
+    sound    data/chars/seiya/sounds/kick.wav
+    frame    data/chars/seiya/attack53.png
+    attack20  64 37 67 26 10 1 1 0 50 20
+    dropv    4.0 1.0 0.0
+    frame    data/chars/seiya/attack54.png
+    @cmd     spawnbind "kick_dust" 0 1 0 0 0
+    frame    data/chars/seiya/attack55.png
+    attack20  0
+    frame    data/chars/seiya/attack56.png
+    frame    data/chars/seiya/attack57.png
+    frame    data/chars/seiya/attack58.png
+    frame    data/chars/seiya/attack59.png
+    frame    data/chars/seiya/attack60.png
+
 anim chargeattack #DISABLE THE NATIVE CHARGE ATTACK TO AVOID CONFLICTS WITH THE SCRIPTED VERSION
 	chargetime 9999
 	loop	0
