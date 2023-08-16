@@ -243,10 +243,8 @@ anim cant # Plus assez de mp
     bbox     36 7 30 112
     hitflash flash
     sound    data/chars/seiya/sounds/low_cosmos.wav
-    #@cmd     spawnbind "cant" "ANI_IDLE" 40 1 1 1 1
     @cmd     spawnbind "impact" "ANI_IDLE" 0 1 50 0 0
     frame    data/chars/seiya/attack1.png
-
     
 anim faint # Quand il reste 1/4 de hp
     loop     1
@@ -817,6 +815,7 @@ anim fall
     landframe  6
     offset   114 110
     delay    12
+    sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
     delay    30
@@ -830,6 +829,7 @@ anim fall7 # chutte apres etre Grab
     landframe  6
     offset   114 110
     delay    12
+    sound    data/chars/seiya/sounds/hurt2.wav
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
     delay    30
@@ -845,6 +845,7 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/seiya/rise1.png
     frame    data/chars/seiya/rise2.png
     frame    data/chars/seiya/rise1.png
+    sound    data/chars/seiya/sounds/rise.wav
     frame    data/chars/seiya/rise2.png
     frame    data/chars/seiya/rise3.png
     frame    data/chars/seiya/rise4.png
@@ -862,7 +863,7 @@ anim    death
     landframe  6
     offset   114 110
     delay    10
-    sound    data/chars/seiya/sounds/hurt.wav
+    sound    data/chars/seiya/sounds/die.wav
     frame    data/chars/seiya/death1.png
     frame    data/chars/seiya/death2.png
     frame    data/chars/seiya/death3.png
