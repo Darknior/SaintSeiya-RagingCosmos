@@ -921,6 +921,7 @@ anim freespecial6 # Ten Bu Ho Rin
     energycost  50 1
     hitflash shaka_flame
     fastattack 1
+    attack.damage.lethal.disable 1
     sound data/chars/deathmask/78-cosmos.wav
     @cmd     spawnScreen "shaka_constellationA" 0 0 0 0
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0

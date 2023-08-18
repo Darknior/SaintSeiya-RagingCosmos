@@ -813,6 +813,7 @@ anim freespecial6 # Another dimension
     offset    66 144
     energycost  50 1 0
     fastattack 1
+    attack.damage.lethal.disable 1
     sound data/chars/deathmask/78-cosmos.wav
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
