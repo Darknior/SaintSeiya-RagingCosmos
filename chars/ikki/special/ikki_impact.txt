@@ -7,7 +7,7 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	0
 	delay	5
-	offset	85 400
+	offset	200 250
 	drawmethod alpha 1
 	drawmethod scale 0.4 0.4
 	sound data/chars/ikki/sounds/01-laser.wav

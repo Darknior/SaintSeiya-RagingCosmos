@@ -181,7 +181,7 @@ anim    select  # Personnage sélectionné
 #anim spawnold # Animation de 1ère apparition du personnage
     delay    8
     offset   98 208
-    sound    data/chars/ikki/sounds/01-fire.wav
+    sound    data/chars/ikki/sounds/fire.wav
     frame    data/chars/ikki/spawn1.png
     frame    data/chars/ikki/spawn2.png
     frame    data/chars/ikki/spawn3.png
@@ -316,7 +316,7 @@ anim victory # Animation de victoire contre un boss
     bbox     21 17 51 120
     frame    data/chars/ikki/victory1.png
     frame    data/chars/ikki/victory2.png
-    sound    data/chars/ikki/sounds/10-yatta.wav
+    sound    data/chars/ikki/sounds/victory1.wav
     frame    data/chars/ikki/victory3.png
     frame    data/chars/ikki/victory4.png
     frame    data/chars/ikki/victory5.png
@@ -390,7 +390,7 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     summonframe     0 0 0 0
     subentity       round_dust
     jumpframe       2 1.8 0
-    sound    data/chars/ikki/sounds/06-jump1.wav
+    sound    data/chars/ikki/sounds/jump1.wav
     frame    data/chars/ikki/jump1.png
     frame    data/chars/ikki/jump2.png
     frame    data/chars/ikki/jump3.png
@@ -402,14 +402,14 @@ anim run
     delay    8
     offset    80 137
     bbox 76 17 30 120
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 1 1
     frame    data/chars/ikki/run8.png
-    sound   data/chars/ikki/sounds/20-run1.wav
+    sound   data/chars/ikki/sounds/run1.wav
     frame    data/chars/ikki/run1.png
     frame    data/chars/ikki/run2.png
     frame    data/chars/ikki/run3.png
     frame    data/chars/ikki/run4.png
-    sound   data/chars/ikki/sounds/20-run2.wav
+    sound   data/chars/ikki/sounds/run2.wav
     frame    data/chars/ikki/run5.png
     frame    data/chars/ikki/run6.png
     frame    data/chars/ikki/run7.png
@@ -427,10 +427,10 @@ anim runattack # Attaque en courant
     @cmd    dasher 3.5 0 0 1
     spawnframe  0 80 10 0
     subentity    dash_dust
-    sound   data/chars/ikki/sounds/01-dash.wav
+    sound   data/chars/ikki/sounds/dash.wav
     attack15 100 60 50 50 10 0 0 0 0 30
     frame    data/chars/ikki/runattack4.png
-    sound   data/chars/ikki/sounds/high_punch.wav
+    sound   data/chars/ikki/sounds/attack2.wav
     @cmd     spawnbind "ikki_run" "ANI_IDLE" 0 10 10 0 0
     frame    data/chars/ikki/runattack5.png
     attack15 100 60 50 50 10 1 0 0 0 30
@@ -473,7 +473,7 @@ anim attack1 # Attaque combo 1
     frame    data/chars/ikki/attack1.png
     frame    data/chars/ikki/attack2.png
     frame    data/chars/ikki/attack3.png
-    attack1 54 33 67 26 10 0 0 0 12 20
+    attack1 54 33 67 26 10 0 0 0 12 10
     frame    data/chars/ikki/attack4.png
     attack1 0
 
@@ -486,7 +486,7 @@ anim attack2 # Attaque combo 2
     frame    data/chars/ikki/attack21.png
     frame    data/chars/ikki/attack22.png
     frame    data/chars/ikki/attack23.png
-    attack1 52 41 67 26 10 0 0 0 12 20
+    attack1 52 41 67 26 10 0 0 0 12 10
     frame    data/chars/ikki/attack24.png
     attack1 0
 
@@ -495,9 +495,10 @@ anim attack3 # Attaque combo 3
     delay    6
     offset    39 136
     bbox 34 17 30 120
+    sound   data/chars/ikki/sounds/projection2.wav
     frame    data/chars/ikki/attack31.png
     frame    data/chars/ikki/attack32.png
-    attack20 62 41 67 26 10 0 0 0 12 20
+    attack20 62 41 67 26 10 0 0 0 12 10
     frame    data/chars/ikki/attack33.png
 
 
@@ -510,7 +511,7 @@ anim attack4 # Attaque combo 4
     frame    data/chars/ikki/attack41.png
     frame    data/chars/ikki/attack42.png
     frame    data/chars/ikki/attack43.png
-    attack 40 60 60 20 10 0 1 0 12 0
+    attack 40 60 60 20 10 0 1 0 12 10
     frame    data/chars/ikki/attack44.png
     frame    data/chars/ikki/attack45.png
 
@@ -524,7 +525,7 @@ anim attack5 # Attaque combo 5
     frame    data/chars/ikki/attack52.png
     frame    data/chars/ikki/attack53.png
     frame    data/chars/ikki/attack54.png
-    attack20 62 56 87 26 10 0 1 0 12 20
+    attack20 62 56 87 26 10 0 1 0 12 10
     frame    data/chars/ikki/attack55.png
 
 anim attack6 # Attaque combo 6
@@ -539,8 +540,8 @@ anim attack6 # Attaque combo 6
     frame    data/chars/ikki/attack63.png
     frame    data/chars/ikki/attack64.png
     frame    data/chars/ikki/attack65.png
-    sound   data/chars/ikki/sounds/kick.wav
-    attack1 53 21 67 60 10 1 1 0 12 20
+    sound   data/chars/ikki/sounds/attack5.wav
+    attack1 53 21 67 60 10 1 1 0 50 10
     frame    data/chars/ikki/attack66.png
 
 
@@ -589,7 +590,7 @@ anim grabbackward #Projection en arrière
     @cmd     position 0 2 61 2 0
     frame    data/chars/ikki/grab4.png
     @cmd     position 0 -11 70 2 0
-    sound   data/chars/ikki/sounds/23-projection2.wav
+    sound   data/chars/ikki/sounds/projection2.wav
     frame    data/chars/ikki/grab6.png
     @cmd     position 0 -22 70 2 0
     frame    data/chars/ikki/grab5.png
@@ -624,7 +625,7 @@ anim jump # Saut Statique
     bbox     49 76 30 120
     summonframe  0 0 0 0
     subentity    round_dust
-    sound    data/chars/ikki/sounds/06-jump1.wav
+    sound    data/chars/ikki/sounds/jump1.wav
     frame    data/chars/ikki/jump1.png
     frame    data/chars/ikki/jump2.png
     frame    data/chars/ikki/jump3.png
@@ -642,7 +643,7 @@ anim forwardjump # Saut vers l'avant
     bbox     49 76 30 120
     summonframe  0 0 0 0
     subentity    round_dust
-    sound    data/chars/ikki/sounds/06-jump1.wav
+    sound    data/chars/ikki/sounds/jump1.wav
     frame    data/chars/ikki/jump1.png
     frame    data/chars/ikki/jump2.png
     frame    data/chars/ikki/jump3.png
@@ -660,7 +661,7 @@ anim  runjump
     bbox     35 76 51 120
     spawnframe  0 0 0 0
     subentity    round_dust
-    sound    data/chars/ikki/sounds/06-jump1.wav
+    sound    data/chars/ikki/sounds/jump1.wav
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/forwardjump1.png
     frame    data/chars/ikki/forwardjump2.png
@@ -682,7 +683,7 @@ anim jumpland # Aterrissage du saut
     delay    8
     offset    27 139
     bbox 2 19 51 120
-    sound data/chars/ikki/sounds/06-jump2.wav
+    sound data/chars/ikki/sounds/jump2.wav
     summonframe 0 0 0 0
     subentity round_dust
     frame    data/chars/ikki/get1.png
@@ -761,6 +762,7 @@ anim pain
     bbox 21 17 51 120
     #move    -5
     delay    5
+    sound data/chars/ikki/sounds/hurt3.wav
     frame    data/chars/ikki/pain1.png
     frame    data/chars/ikki/pain2.png
     frame    data/chars/ikki/pain3.png
@@ -772,6 +774,7 @@ anim pain2
     bbox 21 17 51 120
     #move    -5
     delay    5
+    sound data/chars/ikki/sounds/hurt5.wav
     frame    data/chars/ikki/pain21.png
     frame    data/chars/ikki/pain22.png
     frame    data/chars/ikki/pain23.png
@@ -782,6 +785,7 @@ anim fall
     landframe 5
     offset    114 139
     delay    -1000
+    sound data/chars/ikki/sounds/hurt4.wav
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
     delay    30
@@ -794,6 +798,7 @@ anim fall7 # chutte apres etre Grab
     landframe 5
     offset    114 139
     delay    -1000
+    sound data/chars/ikki/sounds/hurt4.wav
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
     delay    30
@@ -807,6 +812,7 @@ anim rise # Se releve avec compteur de chuttes
     offset    86 139
     delay    10
 	bbox 65 40 40 100
+   sound data/chars/ikki/sounds/rise2.wav
     frame    data/chars/ikki/rise1.png
     frame    data/chars/ikki/rise2.png
     frame    data/chars/ikki/rise1.png
@@ -826,7 +832,7 @@ anim death
     offset    143 139
     delay    10
     landframe 6
-    sound data/chars/ikki/sounds/20-hurt.wav
+    sound data/chars/ikki/sounds/die2.wav
     frame    data/chars/ikki/death1.png
     frame    data/chars/ikki/death2.png
     frame    data/chars/ikki/death3.png
@@ -850,6 +856,7 @@ anim pain20 # Blood pain
     offset    45 137
     bbox 21 17 51 120
     delay    5
+    sound data/chars/ikki/sounds/hurt5.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 10 0 0 0 0
     frame    data/chars/ikki/pain21.png
     frame    data/chars/ikki/pain22.png
@@ -861,6 +868,7 @@ anim fall20 # blood fall
     landframe 5
     offset    114 139
     delay    -1000
+    sound data/chars/ikki/sounds/hurt4.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 0 0 0
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
@@ -875,6 +883,7 @@ anim pain15# BURN PAIN
     bbox 21 17 51 120
     #move    -5
     delay    5
+    sound data/chars/ikki/sounds/hurt6.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
     frame    data/chars/ikki/pain1.png
     frame    data/chars/ikki/pain2.png
@@ -886,6 +895,7 @@ anim fall15# BURN PAIN Ground
     landframe 5
     offset    114 139
     delay    10
+    sound data/chars/ikki/sounds/hurt6.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
@@ -900,6 +910,7 @@ anim pain10# ICE PAIN
     bbox 21 17 51 120
     #move    -5
     delay    5
+    sound data/chars/ikki/sounds/hurt6.wav
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/ikki/pain1.png
     frame    data/chars/ikki/pain2.png
@@ -914,6 +925,7 @@ anim pain11# ICE PAIN Big
     bbox 21 17 51 120
     #move    -5
     delay    5
+    sound data/chars/ikki/sounds/hurt6.wav
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 0 0 0
     frame    data/chars/ikki/pain1.png
     frame    data/chars/ikki/pain2.png
@@ -927,6 +939,7 @@ anim pain30# Shock Pain
     bbox 21 17 51 120
     #move    -5
     delay    5
+    sound data/chars/ikki/sounds/hurt3.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 60 0 0
     frame    data/chars/ikki/pain1.png
     frame    data/chars/ikki/pain2.png
@@ -938,6 +951,7 @@ anim fall30# Shock PAIN Ground
     landframe 5
     offset    114 139
     delay    10
+    sound data/chars/ikki/sounds/hurt4.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
@@ -966,7 +980,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     offset   82 140
     hitflash flashbig
     delay    5
-    sound    data/chars/ikki/sounds/17-back_kick.wav
+    sound    data/chars/ikki/sounds/back_kick.wav
     frame    data/chars/ikki/attackbackward0.png
     frame    data/chars/ikki/attackbackward1.png
     frame    data/chars/ikki/attackbackward2.png
@@ -992,7 +1006,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     summonframe 0 0 0 0 0
     subentity   ikki_auraC
     delay    5
-    sound    data/chars/ikki/sounds/01-knee.wav
+    sound    data/chars/ikki/sounds/knee2.wav
     frame    data/chars/ikki/melee1.png
     frame    data/chars/ikki/melee2.png
     attack15  32 19 100 120 10 1 0 0 5 30
@@ -1023,7 +1037,7 @@ anim    freespecial    # Attaque de mêlée (a2)
     summonframe 0 0 0 0 0
     subentity   ikki_auraC
     delay    5
-    sound    data/chars/ikki/sounds/01-knee.wav
+    sound    data/chars/ikki/sounds/knee2.wav
     frame    data/chars/ikki/melee1.png
     frame    data/chars/ikki/melee2.png
     attack15  32 19 100 120 10 1 0 0 5 30
@@ -1056,25 +1070,23 @@ anim freespecial2 # Phoenix Genmaken ( avant + bouton special)
     @cmd     spawnScreen "ikki_lights" 0 0 0 0
     #bbox    21 16 51 97
     energycost  25 1 0
-    summonframe 0 0 0 0 0
-    subentity   ikki_auraB
+    @cmd     spawnbind "ikki_auraB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/ikki/upspecial1.png
-    sound    data/chars/ikki/sounds/01-genmaken.wav
+    sound    data/chars/ikki/sounds/genmaken.wav
     frame    data/chars/ikki/upspecial2.png
     frame    data/chars/ikki/upspecial1.png
     frame    data/chars/ikki/upspecial2.png
     frame    data/chars/ikki/upspecial1.png
     delay    10
-    @cmd     spawnbind "ikki_fire" "ANI_IDLE" 0 10 0 0 10
+    @cmd     spawnbind "ikki_fire" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/ikki/upspecial2.png
     @cmd     dasher 6 0 0 1
+    @cmd     spawnbind "ikki_impact" "ANI_IDLE" 20 0 64 0 0
     attack15  25 60 90 40 15 1 1 0 80 30
-    @cmd     spawnbind "ikki_impact" "ANI_IDLE" 0 10 0 0 10
     frame    data/chars/ikki/upspecial3.png
     #attack  0
     frame    data/chars/ikki/upspecial4.png
     attack15  25 60 90 40 15 1 1 0 80 30
-    sound    data/chars/ikki/sounds/08-ultra2.wav
     delay    10
     frame    data/chars/ikki/upspecial5.png
     #attack  0
@@ -1109,11 +1121,11 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     sound    data/chars/ikki/sounds/concentration.wav
     frame    data/chars/ikki/special1.png
     frame    data/chars/ikki/special2.png
-    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 10 5 5 0 10
+    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 10 5 5 0 0
     @cmd     spawnbind "ikki_cosmos" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/ikki/special3.png
-    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 10 5 5 0 10
-    sound    data/chars/ikki/sounds/00-cosmos.wav
+    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 10 5 5 0 0
+    sound    data/chars/ikki/sounds/cosmos.wav
     frame    data/chars/ikki/special4.png
     frame    data/chars/ikki/special5.png
     frame    data/chars/ikki/special6.png
@@ -1152,7 +1164,7 @@ anim freespecial5 # Uppercut
     fastattack 1
     hitflash shaka_flame
     delay    10
-    sound data/chars/ikki/sounds/01-uppercut.wav
+    sound data/chars/ikki/sounds/uppercut.wav
     frame    data/chars/ikki/uppercut1.png
     @cmd     spawnbind "ikki_uppercutB" "ANI_IDLE" 0 0 0 0 0
     attack15 55 0 35 84 10 0 0 0 5 20
@@ -1186,19 +1198,19 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     hitflash shaka_flame
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
-    sound   data/chars/ikki/sounds/01-phoenix.wav
-    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 5 0 0 10
+    sound   data/chars/ikki/sounds/phoenix.wav
+    @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 5 1 1 0
     frame    data/chars/ikki/sleep1.png
     frame    data/chars/ikki/sleep2.png
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
     frame    data/chars/ikki/sleep3.png
     frame    data/chars/ikki/sleep4.png
-    sound data/chars/ikki/sounds/01-flapB.wav
+    sound data/chars/ikki/sounds/flapB.wav
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
     frame    data/chars/ikki/sleep5.png
-    @cmd     spawnbind "ikki_auraB" "ANI_IDLE" 0 10 0 0 10
+    @cmd     spawnbind "ikki_auraB" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/ikki/sleep6.png
     attack15 35 66 100 131 10 1 0 0 5 12
     dropv     3 5
@@ -1222,7 +1234,7 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     frame    data/chars/ikki/sleep2.png
     delay    10
     offset    73 136
-    sound data/chars/ikki/sounds/02.wav
+    sound data/chars/ikki/sounds/hoyo_tensho.wav
     frame    data/chars/ikki/special21.png
     frame    data/chars/ikki/special22.png
     attack15 35 66 100 131 10 1 0 0 5 12
@@ -1259,14 +1271,15 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     attack 0
     frame    data/chars/ikki/special34.png
     attack15 -40 23 800 50 10 0 0 0 0 30
-    @cmd     spawnbind "ikki_fire_beam" 0 200 20 0 1
-    sound data/chars/ikki/sounds/01-flapA.wav
+    @cmd     spawnbind "ikki_fire_beam" 0 100 20 0 1
+    sound data/chars/ikki/sounds/flapA.wav
     frame    data/chars/ikki/special35.png
     attack 0
     frame    data/chars/ikki/special34.png
     attack15 -40 54 800 50 10 0 0 0 0 30
     frame    data/chars/ikki/special35.png
     attack 0
+    sound data/chars/ikki/sounds/phoenix2.wav
     frame    data/chars/ikki/special34.png
     attack15 -40 89 800 50 10 0 0 0 0 30
     frame    data/chars/ikki/special35.png
