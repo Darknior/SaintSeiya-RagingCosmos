@@ -15,7 +15,7 @@ anim	idle
 	drawmethod fliprotate 1	
    hitflash blue_swing
 	offset	250 102
-   sound   data/chars/shiryu/sounds/01-dragon.wav
+   sound   data/chars/shiryu/sounds/dragon.wav
 	attack30  107 35 400 120 10 0 0 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-2.png
 	attack30  0
@@ -52,6 +52,7 @@ anim	idle
 	attack30  107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png
 	attack30  0
+   sound   data/chars/shiryu/sounds/dragon2.wav
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-7.png
 	attack30  107 35 400 120 10 1 1 0 0 50
 	frame	data/chars/shiryu/special/shiryu_dragon/shiryu_dragon-6.png

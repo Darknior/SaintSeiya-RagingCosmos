@@ -429,7 +429,7 @@ anim attack1 # Attaque combo 1
     frame    data/chars/shun/attack6.png
     frame    data/chars/shun/attack7.png
     delay    10
-    attack1 104 115 65 20 10 0 0 0 12 20
+	 attack1 104 115 50 20 10 0 0 0 12 20
     frame    data/chars/shun/attack8.png
 	 delay    3
     frame    data/chars/shun/attack9.png

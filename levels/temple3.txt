@@ -45,7 +45,7 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
-spawn shaina
+spawn soldier
 coords	550 390
 at 0
 
