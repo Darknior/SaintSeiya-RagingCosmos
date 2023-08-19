@@ -792,6 +792,7 @@ anim fall
     frame    data/chars/ikki/fall3.png
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
+    sound data/chars/ikki/sounds/fall3.wav
     frame    data/chars/ikki/fall6.png
 
 anim fall7 # chutte apres etre Grab
@@ -805,6 +806,7 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/ikki/fall3.png
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
+    sound data/chars/ikki/sounds/fall3.wav
     frame    data/chars/ikki/fall6.png
 
 anim rise # Se releve avec compteur de chuttes
@@ -848,6 +850,7 @@ anim death
     frame    data/chars/ikki/death13.png
     frame    data/chars/ikki/death14.png
     delay    200
+    sound data/chars/ikki/sounds/fall3.wav
     frame    data/chars/ikki/death15.png
     
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
