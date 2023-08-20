@@ -223,11 +223,24 @@ anim    select  # Personnage sélectionné
     frame    data/chars/ikki/spawn39.png
     frame    data/chars/ikki/spawn40.png
 
-anim spawn
+anim spawn # anim debut de niveau
     loop 0
     delay    15
     offset   45 137
     bbox     30 17 30 120
+    frame    data/chars/ikki/idle1.png
+    frame    data/chars/ikki/idle2.png
+    frame    data/chars/ikki/idle3.png
+    frame    data/chars/ikki/idle4.png
+    frame    data/chars/ikki/idle5.png
+    frame    data/chars/ikki/idle6.png
+
+anim respawn # anim apres perdre une vie
+    loop 0
+    delay    15
+    offset   45 137
+    bbox     30 17 30 120
+    sound    data/chars/ikki/sounds/victory1.wav
     frame    data/chars/ikki/idle1.png
     frame    data/chars/ikki/idle2.png
     frame    data/chars/ikki/idle3.png
@@ -285,16 +298,18 @@ anim faint # Quand il reste 1/4 de hp
     frame    data/chars/ikki/idle6.png
 
 anim sleep # Animation configurée après 10s d'idle 
-    loop     1
-    delay    25
+    loop     1 2
+    delay    15
     offset   94 195
     bbox     62 75 51 120
+    frame    data/chars/ikki/sleep1.png
     frame    data/chars/ikki/sleep1.png
     frame    data/chars/ikki/sleep2.png
     frame    data/chars/ikki/sleep3.png
     frame    data/chars/ikki/sleep4.png
     frame    data/chars/ikki/sleep5.png
     frame    data/chars/ikki/sleep6.png
+    sound    data/chars/ikki/sounds/flapA.wav
     frame    data/chars/ikki/sleep7.png
     frame    data/chars/ikki/sleep8.png
     frame    data/chars/ikki/sleep9.png
@@ -303,6 +318,7 @@ anim sleep # Animation configurée après 10s d'idle
     frame    data/chars/ikki/sleep12.png
     frame    data/chars/ikki/sleep13.png
     frame    data/chars/ikki/sleep14.png
+    sound    data/chars/ikki/sounds/flapB.wav
     frame    data/chars/ikki/sleep15.png
     frame    data/chars/ikki/sleep16.png
     frame    data/chars/ikki/sleep17.png
@@ -316,7 +332,6 @@ anim victory # Animation de victoire contre un boss
     bbox     21 17 51 120
     frame    data/chars/ikki/victory1.png
     frame    data/chars/ikki/victory2.png
-    sound    data/chars/ikki/sounds/victory1.wav
     frame    data/chars/ikki/victory3.png
     frame    data/chars/ikki/victory4.png
     frame    data/chars/ikki/victory5.png
@@ -753,8 +768,6 @@ anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/ikki/jumpattack32.png
     attack4 0
 
-
-
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
 anim pain
@@ -792,7 +805,7 @@ anim fall
     frame    data/chars/ikki/fall3.png
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
-    sound data/chars/ikki/sounds/fall3.wav
+    sound data/chars/ikki/sounds/hurt2.wav
     frame    data/chars/ikki/fall6.png
 
 anim fall7 # chutte apres etre Grab
@@ -806,7 +819,7 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/ikki/fall3.png
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
-    sound data/chars/ikki/sounds/fall3.wav
+    sound data/chars/ikki/sounds/hurt2.wav
     frame    data/chars/ikki/fall6.png
 
 anim rise # Se releve avec compteur de chuttes
@@ -879,6 +892,7 @@ anim fall20 # blood fall
     frame    data/chars/ikki/fall3.png
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
+    sound data/chars/ikki/sounds/hurt2.wav
     frame    data/chars/ikki/fall6.png
     
 anim pain15# BURN PAIN
@@ -905,6 +919,7 @@ anim fall15# BURN PAIN Ground
     frame    data/chars/ikki/fall3.png
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
+    sound data/chars/ikki/sounds/hurt2.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -70 1 0 0 0
     frame    data/chars/ikki/fall6.png
 
@@ -961,6 +976,7 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/ikki/fall3.png
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
+    sound data/chars/ikki/sounds/hurt2.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -70 1 0 0 0
     frame    data/chars/ikki/fall6.png
 

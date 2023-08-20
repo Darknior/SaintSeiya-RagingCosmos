@@ -14,7 +14,7 @@ anim	idle
 	followanim 1
 	followcond 1	
 	drawmethod alpha 1
-	sound data/chars/hyoga/sounds/01-cygnus.wav
+	sound data/chars/hyoga/sounds/cygnus.wav
 	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus1.png
 	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus2.png
 	frame	data/chars/hyoga/special/hyoga_cygnus/cygnus3.png

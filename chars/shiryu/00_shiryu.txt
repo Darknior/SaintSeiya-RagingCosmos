@@ -180,12 +180,25 @@ anim    select  # Personnage sélectionné
     frame    data/chars/shiryu/spawn16.png
     frame    data/chars/shiryu/spawn17.png
 
-anim    spawn
+anim spawn # anim debut de niveau
     loop     0
     delay    18
     offset   39 128
     bbox     28 13 30 115
     frame    data/chars/shiryu/idle1.png
+    frame    data/chars/shiryu/idle2.png
+    frame    data/chars/shiryu/idle3.png
+    frame    data/chars/shiryu/idle4.png
+    frame    data/chars/shiryu/idle3.png
+    frame    data/chars/shiryu/idle2.png
+
+anim respawn # anim apres perdre une vie
+    loop     0
+    delay    18
+    offset   39 128
+    bbox     28 13 30 115
+    frame    data/chars/shiryu/idle1.png
+    sound    data/chars/shiryu/sounds/victory2.wav
     frame    data/chars/shiryu/idle2.png
     frame    data/chars/shiryu/idle3.png
     frame    data/chars/shiryu/idle4.png
@@ -229,7 +242,7 @@ anim cant # Plus assez de mp
     delay    10
     frame    data/chars/shiryu/attack2.png
     
-anim    faint # Quand il reste 1/4 de hp
+anim faint # Quand il reste 1/4 de hp
     loop     1
     delay    13
     offset   39 128
@@ -241,7 +254,7 @@ anim    faint # Quand il reste 1/4 de hp
     frame    data/chars/shiryu/idle3.png
     frame    data/chars/shiryu/idle2.png
 
-anim    sleep # Animation configurée après 10s d'idle
+anim sleep # Animation configurée après 10s d'idle
     loop     1
     delay    25
     offset   41 134
@@ -265,12 +278,11 @@ anim    sleep # Animation configurée après 10s d'idle
     frame    data/chars/shiryu/sleep15.png
     frame    data/chars/shiryu/sleep14.png
 
-anim    victory # Animation de victoire contre un boss
+anim victory # Animation de victoire contre un boss
     delay    30
     offset   27 127
     frame    data/chars/shiryu/victory1.png
     frame    data/chars/shiryu/victory2.png
-    sound    data/chars/shiryu/sounds/victory3.wav
     frame    data/chars/shiryu/victory3.png
     frame    data/chars/shiryu/victory4.png
     frame    data/chars/shiryu/victory5.png
@@ -278,17 +290,16 @@ anim    victory # Animation de victoire contre un boss
     frame    data/chars/shiryu/victory7.png
     frame    data/chars/shiryu/victory8.png
 
-
 #// Walk/Run animations /////////////////////////////////////////////////
 
-anim    turn    # Demi-tour
+anim turn    # Demi-tour
     delay    10
     offset   42 129
     bbox     28 9 30 120
     cancel   0 3 0 A freespecial4   # Manchette arrière
     frame    data/chars/shiryu/turn.png
 
-anim    walk    # Marche
+anim walk    # Marche
     loop     1
     delay    14
     offset   39 127
@@ -356,7 +367,7 @@ anim    run
     frame    data/chars/shiryu/run6.png
     frame    data/chars/shiryu/run7.png
 
-anim    runattack # Attaque en courant
+anim runattack # Attaque en courant
     forcedirection  -1
     jugglecost      2
     energycost      5 1 0
@@ -485,7 +496,6 @@ anim    attack5 # Attaque combo 5
     attack20  0
     frame    data/chars/shiryu/attack56.png
     frame    data/chars/shiryu/attack57.png
-
 
 #// Grab animations /////////////////////////////////////////////////
 
@@ -708,7 +718,6 @@ anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/shiryu/jumpattack35.png
     attack4  0
 
-
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
 anim    pain
@@ -749,6 +758,7 @@ anim    fall
     frame    data/chars/shiryu/fall5.png
     frame    data/chars/shiryu/fall6.png
     frame    data/chars/shiryu/fall7.png
+    sound    data/chars/shiryu/sounds/hurt.wav
     frame    data/chars/shiryu/fall8.png
 
 anim fall7 # chutte apres etre Grab
@@ -764,6 +774,7 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/shiryu/fall5.png
     frame    data/chars/shiryu/fall6.png
     frame    data/chars/shiryu/fall7.png
+    sound    data/chars/shiryu/sounds/hurt.wav
     frame    data/chars/shiryu/fall8.png
 
 anim rise # Se releve avec compteur de chuttes
@@ -781,6 +792,7 @@ anim rise # Se releve avec compteur de chuttes
 anim follow1 # Stun aprés X chuttes
     delay    300
     offset   114 130
+	bbox 87 29 40 100
     frame    data/chars/shiryu/rise4.png
     sound    data/chars/shiryu/sounds/stun.wav
     frame    data/chars/shiryu/rise4.png
@@ -801,6 +813,7 @@ anim    death
     frame    data/chars/shiryu/death9.png
     frame    data/chars/shiryu/death10.png
     frame    data/chars/shiryu/death11.png
+    sound    data/chars/shiryu/sounds/hurt.wav
     frame    data/chars/shiryu/death12.png
     delay    200
     offset   114 126
@@ -833,6 +846,7 @@ anim fall20 # blood fall
     frame    data/chars/shiryu/fall5.png
     frame    data/chars/shiryu/fall6.png
     frame    data/chars/shiryu/fall7.png
+    sound    data/chars/shiryu/sounds/hurt.wav
     frame    data/chars/shiryu/fall8.png
 
 anim pain15# BURN PAIN
@@ -863,6 +877,7 @@ anim fall15# BURN PAIN Ground
     frame    data/chars/shiryu/fall5.png
     frame    data/chars/shiryu/fall6.png
     frame    data/chars/shiryu/fall7.png
+    sound    data/chars/shiryu/sounds/hurt.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 0 0 0
     frame    data/chars/shiryu/fall8.png
 
@@ -925,6 +940,7 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/shiryu/fall5.png
     frame    data/chars/shiryu/fall6.png
     frame    data/chars/shiryu/fall7.png
+    sound    data/chars/shiryu/sounds/hurt.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 0 0 0
     frame    data/chars/shiryu/fall8.png
 
@@ -939,7 +955,6 @@ anim    block
     frame    data/chars/shiryu/block2.png
     frame    data/chars/shiryu/block3.png
     frame    data/chars/shiryu/block4.png
-
 
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 

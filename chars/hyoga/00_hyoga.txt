@@ -210,11 +210,25 @@ anim    select  # Personnage sélectionné
     frame    data/chars/hyoga/spawn15.png
     frame    data/chars/hyoga/spawn16.png
 
-anim    spawn
+anim spawn # anim debut de niveau
     loop 0
     delay    10
     offset   45 140
     bbox     29 28 30 112
+    frame    data/chars/hyoga/idle1.png
+    frame    data/chars/hyoga/idle2.png
+    frame    data/chars/hyoga/idle3.png
+    frame    data/chars/hyoga/idle4.png
+    frame    data/chars/hyoga/idle5.png
+    frame    data/chars/hyoga/idle6.png
+    frame    data/chars/hyoga/idle7.png
+
+anim respawn # anim apres perdre une vie
+    loop 0
+    delay    10
+    offset   45 140
+    bbox     29 28 30 112
+    sound    data/chars/hyoga/sounds/victory1.wav
     frame    data/chars/hyoga/idle1.png
     frame    data/chars/hyoga/idle2.png
     frame    data/chars/hyoga/idle3.png
@@ -273,7 +287,7 @@ anim faint # Quand il reste 1/4 de hp
     frame    data/chars/hyoga/idle6.png
     frame    data/chars/hyoga/idle7.png
 
-anim    sleep   # Animation configurée après 10s d'idle
+anim sleep   # Animation configurée après 10s d'idle
     loop     1
     delay    25
     offset   54 141
@@ -281,12 +295,14 @@ anim    sleep   # Animation configurée après 10s d'idle
     frame    data/chars/hyoga/sleep1.png
     frame    data/chars/hyoga/sleep2.png
     frame    data/chars/hyoga/sleep3.png
+    sound    data/chars/hyoga/sounds/cygnus_flap.wav
     frame    data/chars/hyoga/sleep4.png
     frame    data/chars/hyoga/sleep5.png
     frame    data/chars/hyoga/sleep6.png
     frame    data/chars/hyoga/sleep7.png
     frame    data/chars/hyoga/sleep8.png
     frame    data/chars/hyoga/sleep9.png
+    sound    data/chars/hyoga/sounds/cygnus_flap.wav
     frame    data/chars/hyoga/sleep10.png
     frame    data/chars/hyoga/sleep11.png
     frame    data/chars/hyoga/sleep12.png
@@ -295,6 +311,7 @@ anim    sleep   # Animation configurée après 10s d'idle
     frame    data/chars/hyoga/sleep15.png
     frame    data/chars/hyoga/sleep16.png
     frame    data/chars/hyoga/sleep17.png
+    sound    data/chars/hyoga/sounds/cygnus_flap.wav
     frame    data/chars/hyoga/sleep18.png
     frame    data/chars/hyoga/sleep19.png
     frame    data/chars/hyoga/sleep20.png
@@ -302,10 +319,12 @@ anim    sleep   # Animation configurée après 10s d'idle
     frame    data/chars/hyoga/sleep22.png
     frame    data/chars/hyoga/sleep23.png
     frame    data/chars/hyoga/sleep24.png
+    sound    data/chars/hyoga/sounds/cygnus_flap.wav
     frame    data/chars/hyoga/sleep25.png
     frame    data/chars/hyoga/sleep26.png
     frame    data/chars/hyoga/sleep27.png
     frame    data/chars/hyoga/sleep28.png
+    sound    data/chars/hyoga/sounds/cygnus_flap.wav
     frame    data/chars/hyoga/sleep29.png
     frame    data/chars/hyoga/sleep30.png
     frame    data/chars/hyoga/sleep31.png
@@ -316,7 +335,6 @@ anim    victory # Animation de victoire contre un boss
     offset   29 141
     frame    data/chars/hyoga/victory1.png
     frame    data/chars/hyoga/victory2.png
-    sound    data/chars/hyoga/sounds/10-yatta.wav
     frame    data/chars/hyoga/victory3.png
     frame    data/chars/hyoga/victory4.png
     frame    data/chars/hyoga/victory5.png
@@ -414,7 +432,7 @@ anim    dodge    # Esquive Haut / Bas (u u / d d)
     summonframe     0 0 0 0
     subentity       round_dust
     jumpframe       2 1.8 0
-    sound    data/chars/hyoga/sounds/06-jump1.wav
+    sound    data/chars/hyoga/sounds/jump1.wav
     frame    data/chars/hyoga/jump1.png
     frame    data/chars/hyoga/jump2.png
     frame    data/chars/hyoga/jump3.png
@@ -428,11 +446,11 @@ anim    run
     bbox     34 13 51 115
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/hyoga/run1.png
-    sound    data/chars/hyoga/sounds/20-run1.wav
+    sound    data/chars/hyoga/sounds/run1.wav
     frame    data/chars/hyoga/run2.png
     frame    data/chars/hyoga/run3.png
     frame    data/chars/hyoga/run4.png
-    sound    data/chars/hyoga/sounds/20-run2.wav
+    sound    data/chars/hyoga/sounds/run2.wav
     frame    data/chars/hyoga/run5.png
     frame    data/chars/hyoga/run6.png
     frame    data/chars/hyoga/run7.png
@@ -448,9 +466,9 @@ anim    runattack   # Attaque en courant
     @cmd     dasher 3.5 0 0 1
     spawnframe  0 80 10 0
     subentity    dash_dust
-    sound    data/chars/hyoga/sounds/01-dash.wav
+    sound    data/chars/hyoga/sounds/attack10.wav
     frame    data/chars/hyoga/runattack1.png
-    sound    data/chars/hyoga/sounds/dash.wav
+    sound    data/chars/hyoga/sounds/dash2.wav
     frame    data/chars/hyoga/runattack2.png
     @cmd     spawnbind "hyoga_dash" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/hyoga/runattack3.png
@@ -469,8 +487,6 @@ anim    runattack   # Attaque en courant
     frame    data/chars/hyoga/runattack3.png
     frame    data/chars/hyoga/runattack2.png
 
-
-
 anim    get
     delay    5
     offset   45 140
@@ -479,7 +495,6 @@ anim    get
     frame    data/chars/hyoga/get2.png
     frame    data/chars/hyoga/get2.png
     frame    data/chars/hyoga/get1.png
-
 
 #// Basic Attacks animations /////////////////////////////////////////////////
 
@@ -559,7 +574,6 @@ anim    attack5 # Attaque combo 5
     frame    data/chars/hyoga/attack35.png
     attack20  0
 
-
 #// Grab animations /////////////////////////////////////////////////
 
 anim    grab
@@ -608,7 +622,7 @@ anim    grabbackward   # Projection en arrière
     @cmd     position 0 -25 10 2 0
     frame    data/chars/hyoga/grab11.png
     @cmd     position 0 -20 10 2 0
-    sound    data/chars/hyoga/sounds/23-projection2.wav
+    sound    data/chars/hyoga/sounds/projection2.wav
     frame    data/chars/hyoga/grab12.png
     @cmd     position 0 -71 10 2 0
     frame    data/chars/hyoga/grab13.png
@@ -628,7 +642,7 @@ anim    grabforward  # projection en avant
     @cmd     position 0 21 -2 2 0
     frame    data/chars/hyoga/grabforward2.png
     @cmd     position 0 41 -2 0 0
-    sound    data/chars/hyoga/sounds/23-projection2.wav
+    sound    data/chars/hyoga/sounds/projection2.wav
     @cmd     position 0 44 -2 0 0
     frame    data/chars/hyoga/grabforward3.png
     sound   data/chars/hyoga/sounds/grabforward.wav
@@ -638,8 +652,6 @@ anim    grabforward  # projection en avant
     delay    30
     frame    data/chars/hyoga/grabforward5.png
 
-
-
 #// Jump animations /////////////////////////////////////////////////
 
 anim    runjump
@@ -648,7 +660,7 @@ anim    runjump
     delay    6
     offset   55 140
     bbox     35 14 51 97
-    sound    data/chars/hyoga/sounds/06-jump1.wav
+    sound    data/chars/hyoga/sounds/jump1.wav
     frame    data/chars/hyoga/jump11.png
     frame    data/chars/hyoga/forwardjump1.png
     frame    data/chars/hyoga/forwardjump2.png
@@ -667,7 +679,7 @@ anim jump    # Saut Statique
     delay    8
     offset   55 140
     bbox     21 14 51 97
-    sound    data/chars/hyoga/sounds/06-jump1.wav
+    sound    data/chars/hyoga/sounds/jump1.wav
     frame    data/chars/hyoga/jump1.png
     frame    data/chars/hyoga/jump2.png
     frame    data/chars/hyoga/jump3.png
@@ -686,7 +698,7 @@ anim forwardjump # Saut vers l'avant
     delay    8
     offset   55 140
     bbox     21 14 51 97
-    sound    data/chars/hyoga/sounds/06-jump1.wav
+    sound    data/chars/hyoga/sounds/jump1.wav
     frame    data/chars/hyoga/jump1.png
     frame    data/chars/hyoga/jump2.png
     frame    data/chars/hyoga/jump3.png
@@ -711,7 +723,7 @@ anim    jumpland    # Aterrissage du saut
     delay    8
     offset   55 140
     bbox     21 14 51 97
-    sound    data/chars/hyoga/sounds/06-jump2.wav
+    sound    data/chars/hyoga/sounds/jump2.wav
     frame    data/chars/hyoga/get1.png
     frame    data/chars/hyoga/get2.png
     frame    data/chars/hyoga/get2.png
@@ -790,7 +802,6 @@ anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/hyoga/jumpattack33.png
     attack4  0
 
-
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
 anim    pain
@@ -798,6 +809,7 @@ anim    pain
     bbox     21 28 51 112
     #move    -5
     delay    5
+    sound    data/chars/hyoga/sounds/hurt.wav
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
     frame    data/chars/hyoga/pain3.png
@@ -809,6 +821,7 @@ anim    pain2
     bbox     21 28 51 112
     #move    -5
     delay    5
+    sound    data/chars/hyoga/sounds/hurt2.wav
     frame    data/chars/hyoga/pain21.png
     frame    data/chars/hyoga/pain22.png
     frame    data/chars/hyoga/pain23.png
@@ -819,6 +832,7 @@ anim    fall
     landframe 6
     offset   69 142
     delay    10
+    sound    data/chars/hyoga/sounds/fall2.wav
     frame    data/chars/hyoga/fall1.png
     frame    data/chars/hyoga/fall2.png
     delay    30
@@ -826,6 +840,7 @@ anim    fall
     frame    data/chars/hyoga/fall4.png
     frame    data/chars/hyoga/fall5.png
     frame    data/chars/hyoga/fall6.png
+    sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
     frame    data/chars/hyoga/fall8.png
 
@@ -833,6 +848,7 @@ anim fall7 # chutte apres etre Grab
     landframe 6
     offset   69 142
     delay    -1000
+    sound    data/chars/hyoga/sounds/fall2.wav
     frame    data/chars/hyoga/fall1.png
     frame    data/chars/hyoga/fall2.png
     delay    30
@@ -840,6 +856,7 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/hyoga/fall4.png
     frame    data/chars/hyoga/fall5.png
     frame    data/chars/hyoga/fall6.png
+    sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
     frame    data/chars/hyoga/fall8.png
 
@@ -854,18 +871,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/hyoga/rise3.png
     frame    data/chars/hyoga/rise4.png
     @cmd stunCounter -10 95 1 4
+    sound    data/chars/hyoga/sounds/rise1.wav
     frame    data/chars/hyoga/rise5.png
     
 anim follow1 # Stun aprés X chuttes
-    delay    400
+    delay    250
     offset   113 139
-	 bbox 85 40 40 100
+	 bbox 90 40 40 100
+    frame    data/chars/hyoga/rise5.png
+    sound    data/chars/hyoga/sounds/rise4.wav
     frame    data/chars/hyoga/rise5.png
     
 anim    death
     offset   42 151
     delay    10
-    sound    data/chars/hyoga/sounds/20-hurt.wav
+    sound    data/chars/hyoga/sounds/die1.wav
     frame    data/chars/hyoga/death1.png
     frame    data/chars/hyoga/death2.png
     frame    data/chars/hyoga/death3.png
@@ -887,6 +907,7 @@ anim    death
     frame    data/chars/hyoga/death19.png
     delay    200
     offset   42 143
+    sound    data/chars/hyoga/sounds/die3.wav
     frame    data/chars/hyoga/death20.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
@@ -896,6 +917,7 @@ anim pain20 # Blood pain
     bbox     21 28 51 112
     #move    -5
     delay    5
+    sound    data/chars/hyoga/sounds/hurt.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 10 0 -10 0 0
     frame    data/chars/hyoga/pain21.png
     frame    data/chars/hyoga/pain22.png
@@ -907,6 +929,7 @@ anim fall20 # blood fall
     landframe 6
     offset   69 142
     delay    10
+    sound    data/chars/hyoga/sounds/fall2.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -10 0 0 0 0
     frame    data/chars/hyoga/fall1.png
     frame    data/chars/hyoga/fall2.png
@@ -915,6 +938,7 @@ anim fall20 # blood fall
     frame    data/chars/hyoga/fall4.png
     frame    data/chars/hyoga/fall5.png
     frame    data/chars/hyoga/fall6.png
+    sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
     frame    data/chars/hyoga/fall8.png
     
@@ -923,6 +947,7 @@ anim pain15# BURN PAIN
     bbox     21 28 51 112
     #move    -5
     delay    5
+    sound    data/chars/hyoga/sounds/hurt.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
@@ -934,6 +959,7 @@ anim fall15# BURN PAIN Ground
     landframe 6
     offset   69 142
     delay    10
+    sound    data/chars/hyoga/sounds/fall2.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 70 0 0
     frame    data/chars/hyoga/fall1.png
     frame    data/chars/hyoga/fall2.png
@@ -941,6 +967,7 @@ anim fall15# BURN PAIN Ground
     frame    data/chars/hyoga/fall4.png
     frame    data/chars/hyoga/fall5.png
     frame    data/chars/hyoga/fall6.png
+    sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 0 0 0
     frame    data/chars/hyoga/fall8.png
@@ -950,6 +977,7 @@ anim pain10# ICE PAIN
     bbox     21 28 51 112
     #move    -5
     delay    5
+    sound    data/chars/hyoga/sounds/hurt.wav
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
@@ -964,6 +992,7 @@ anim pain11# ICE PAIN Big
     bbox     21 28 51 112
     #move    -5
     delay    5
+    sound    data/chars/hyoga/sounds/hurt.wav
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
     frame    data/chars/hyoga/pain1.png
@@ -978,6 +1007,7 @@ anim pain30# Shock Pain
     bbox     21 28 51 112
     #move    -5
     delay    5
+    sound    data/chars/hyoga/sounds/hurt.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 60 0 0
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
@@ -989,6 +1019,7 @@ anim fall30# Shock PAIN Ground
     landframe 6
     offset   69 142
     delay    10
+    sound    data/chars/hyoga/sounds/fall2.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
     frame    data/chars/hyoga/fall1.png
     frame    data/chars/hyoga/fall2.png
@@ -996,6 +1027,7 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/hyoga/fall4.png
     frame    data/chars/hyoga/fall5.png
     frame    data/chars/hyoga/fall6.png
+    sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
     @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 0 0 0
     frame    data/chars/hyoga/fall8.png
@@ -1019,7 +1051,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     offset   146 118
     hitflash flashmedium
     delay    6
-    sound    data/chars/hyoga/sounds/01-08-backward_kick.wav
+    sound    data/chars/hyoga/sounds/backward_kick.wav
     frame    data/chars/hyoga/attackbackward10.png
     delay    10
     frame    data/chars/hyoga/attackbackward11.png
@@ -1041,7 +1073,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     bbox     21 28 51 112
     hitflash hyoga_swing
     delay    8
-    sound    data/chars/hyoga/sounds/17-back_kick.wav
+    sound    data/chars/hyoga/sounds/attack9.wav
     @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 80 1 0 0 0
     frame    data/chars/hyoga/attackbackward1.png
     attack1  -14 93 130 50 10 0 0 0 0 20
@@ -1084,7 +1116,7 @@ anim    freespecial # Attaque de mêlée (a2)
     bbox     21 28 51 112
     hitflash hyoga_swing
     delay    8
-    sound    data/chars/hyoga/sounds/17-back_kick.wav
+    sound    data/chars/hyoga/sounds/attack9.wav
     @cmd     spawnbind "hyoga_roll" "ANI_IDLE" 60 1 -45 0 0
     frame    data/chars/hyoga/attackbackward1.png
 	attack1 -10 93 110 50 10 0 0 0 0 20
@@ -1112,7 +1144,7 @@ anim    freespecial2    # Diamond Dust (2 projectiles)
     delay    10
     offset   45 151
     hitflash hyoga_swing
-    sound    data/chars/hyoga/sounds/01.wav
+    sound    data/chars/hyoga/sounds/diamond_dust.wav
     delay    10
     offset   45 151
     @cmd     spawnbind "hyoga_aura" "ANI_IDLE" 0 1 0 1 0
@@ -1153,7 +1185,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP)
     @cmd     spawnbind "hyoga_aura" "ANI_IDLE" 0 1 0 1 0
     frame    data/chars/hyoga/special4.png
     @cmd     spawnbind "hyoga_cosmos" "ANI_IDLE" 0 0 0 1 0
-    sound    data/chars/hyoga/sounds/00-cosmos.wav
+    sound    data/chars/hyoga/sounds/cosmos2.wav
     frame    data/chars/hyoga/special5.png
     frame    data/chars/hyoga/special3.png
     frame    data/chars/hyoga/special4.png
@@ -1169,7 +1201,7 @@ anim    freespecial4    # Attaque arrière (a3)
     offset   146 118
     hitflash flashmedium
     delay    6
-    sound    data/chars/hyoga/sounds/01-08-backward_kick.wav
+    sound    data/chars/hyoga/sounds/backward_kick.wav
     frame    data/chars/hyoga/attackbackward10.png
     delay    10
     frame    data/chars/hyoga/attackbackward11.png
@@ -1190,10 +1222,10 @@ anim    freespecial5    # Uppercut
     hitflash hyoga_swing
     offset   39 141
     delay    5
-    sound    data/chars/hyoga/sounds/01-twister.wav
+    sound    data/chars/hyoga/sounds/twister.wav
     @cmd     spawnbind "hyoga_uppercut" "ANI_IDLE" 0 1 0 1 0
     frame    data/chars/hyoga/uppercut1.png
-    sound    data/chars/hyoga/03-uppercut2.wav
+    sound    data/chars/hyoga/sounds/uppercut3.wav
     frame    data/chars/hyoga/uppercut2.png
     delay    5
     frame    data/chars/hyoga/uppercut3.png
@@ -1219,14 +1251,14 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     @cmd     spawnbind "hyoga_cosmos" "ANI_IDLE" 0 0 0 1 0
     frame    data/chars/hyoga/upspecial1.png
     frame    data/chars/hyoga/upspecial2.png
-    sound    data/chars/hyoga/sounds/01-cygnus.wav
+    sound    data/chars/hyoga/sounds/cygnus.wav
     frame    data/chars/hyoga/upspecial3.png
     frame    data/chars/hyoga/upspecial4.png
     frame    data/chars/hyoga/upspecial5.png
     frame    data/chars/hyoga/upspecial6.png
     attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
-    sound    data/chars/hyoga/sounds/01-icepunch.wav
+    sound    data/chars/hyoga/sounds/icepunch.wav
     @cmd     shooter "hyoga_diamonds_up" -50 30 0 0 3
     @cmd     shooter2 "hyoga_frozenray_up" 0 30 0 4
     frame    data/chars/hyoga/upspecial7.png
@@ -1244,7 +1276,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
     frame    data/chars/hyoga/upspecial13.png
-    sound    data/chars/hyoga/sounds/01-icepunch.wav
+    sound    data/chars/hyoga/sounds/icepunch.wav
     attack5  0
     @cmd     shooter "hyoga_diamonds_up" -50 30 0 0 3
     @cmd     shooter2 "hyoga_frozenray_up" 0 30 0 4
@@ -1256,7 +1288,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     frame    data/chars/hyoga/upspecial16.png
     attack10  -8 8 100 140 10 1 0 0 5 30
     dropv    3 5
-    sound    data/chars/hyoga/sounds/02.wav
+    sound    data/chars/hyoga/sounds/aurora_thunder.wav
     frame    data/chars/hyoga/upspecial17.png
     attack5  0
     frame    data/chars/hyoga/upspecial18.png
@@ -1265,7 +1297,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     frame    data/chars/hyoga/upspecial19.png
     attack5  0
     frame    data/chars/hyoga/upspecial20.png
-    sound    data/chars/hyoga/sounds/01-icepunch.wav
+    sound    data/chars/hyoga/sounds/icepunch.wav
     @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 1 0 1 0
     @cmd     shooter2 "hyoga_frozenray" 0 80 0 0
     @cmd     shooter "hyoga_diamondsB" 0 10 0 1.8 0 0
@@ -1300,7 +1332,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     attack5  0 100 800 50 7 0 0 0 0 50
     frame    data/chars/hyoga/special28.png
     attack5  0
-    sound    data/chars/hyoga/sounds/01-icepunch.wav
+    sound    data/chars/hyoga/sounds/icepunch.wav
     attack5  0 100 800 50 7 0 0 0 0 50
     @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 1 0 1 0
     @cmd     shooter2 "hyoga_frozenray" 0 80 0 0
@@ -1325,7 +1357,7 @@ anim    freespecial6    # Aurora Thunder Attack ( haut + bouton special)
     attack5  0
     frame    data/chars/hyoga/special28.png
     attack11  0 100 800 50 7 0 0 0 0 50
-    sound    data/chars/hyoga/sounds/01-icepunch.wav
+    sound    data/chars/hyoga/sounds/icepunch.wav
     @cmd     spawnbind "marin_stormA" "ANI_IDLE" 0 10 0 1 0
     @cmd     shooter2 "hyoga_frozenray" 0 80 0 0
     @cmd     shooter "hyoga_diamondsB" 0 0 0 1.8 0 0
