@@ -862,7 +862,7 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/shun/rise2.png
     frame    data/chars/shun/rise3.png
     frame    data/chars/shun/rise4.png
-    @cmd stunCounter 15 85 1 1
+    @cmd stunCounter 15 85 1 3
     frame    data/chars/shun/rise5.png
 
 anim follow1 # Stun aprés X chuttes
