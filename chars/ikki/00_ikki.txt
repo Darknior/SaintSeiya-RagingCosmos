@@ -795,31 +795,35 @@ anim pain2
     frame    data/chars/ikki/pain21.png
 
 anim fall
-    landframe 5
+    landframe 4
     offset    114 139
-    delay    -1000
+    delay    15
     sound data/chars/ikki/sounds/hurt4.wav
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
-    delay    30
     frame    data/chars/ikki/fall3.png
+    delay    -1000
     frame    data/chars/ikki/fall4.png
+    delay    15
     frame    data/chars/ikki/fall5.png
     sound data/chars/ikki/sounds/hurt2.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     frame    data/chars/ikki/fall6.png
 
 anim fall7 # chutte apres etre Grab
-    landframe 5
+    landframe 4
     offset    114 139
-    delay    -1000
+    delay    15
     sound data/chars/ikki/sounds/hurt4.wav
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
-    delay    30
     frame    data/chars/ikki/fall3.png
+    delay    -1000
     frame    data/chars/ikki/fall4.png
+    delay    15
     frame    data/chars/ikki/fall5.png
     sound data/chars/ikki/sounds/hurt2.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     frame    data/chars/ikki/fall6.png
 
 anim rise # Se releve avec compteur de chuttes
@@ -864,7 +868,7 @@ anim death
     frame    data/chars/ikki/death14.png
     delay    200
     sound data/chars/ikki/sounds/fall3.wav
-    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" -50 0 0 0 1
     frame    data/chars/ikki/death15.png
     
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
@@ -882,16 +886,17 @@ anim pain20 # Blood pain
     frame    data/chars/ikki/pain21.png
 
 anim fall20 # blood fall
-    landframe 5
+    landframe 4
     offset    114 139
-    delay    -1000
+    delay    15
     sound data/chars/ikki/sounds/hurt4.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 0 0 0
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
-    delay    30
     frame    data/chars/ikki/fall3.png
+    delay    -1000
     frame    data/chars/ikki/fall4.png
+    delay    15
     frame    data/chars/ikki/fall5.png
     sound data/chars/ikki/sounds/hurt2.wav
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
@@ -911,15 +916,17 @@ anim pain15# BURN PAIN
     frame    data/chars/ikki/pain1.png
 
 anim fall15# BURN PAIN Ground
-    landframe 5
+    landframe 4
     offset    114 139
-    delay    10
+    delay    15
     sound data/chars/ikki/sounds/hurt6.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
     frame    data/chars/ikki/fall3.png
+    delay    -1000
     frame    data/chars/ikki/fall4.png
+    delay    15
     frame    data/chars/ikki/fall5.png
     sound data/chars/ikki/sounds/hurt2.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -70 1 0 0 0
@@ -968,15 +975,17 @@ anim pain30# Shock Pain
     frame    data/chars/ikki/pain1.png
 
 anim fall30# Shock PAIN Ground
-    landframe 5
+    landframe 4
     offset    114 139
-    delay    10
+    delay    15
     sound data/chars/ikki/sounds/hurt4.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
     frame    data/chars/ikki/fall3.png
+    delay    -1000
     frame    data/chars/ikki/fall4.png
+    delay    15
     frame    data/chars/ikki/fall5.png
     sound data/chars/ikki/sounds/hurt2.wav
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
