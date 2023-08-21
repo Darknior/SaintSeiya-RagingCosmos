@@ -14,34 +14,34 @@ anim	idle
 	offset	400 217
    hitflash hyoga_swing
 	drawmethod alpha 1
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-13.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-14.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-15.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-16.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-17.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-18.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-19.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-20.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-21.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-22.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-23.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-24.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-25.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-26.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
    frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-27.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-28.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-29.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-30.png
-   attack10 187 71 350 150 10 0 0 0 0 30
+   attack12 187 71 350 150 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-31.png
 	frame	data/chars/hyoga/special/hyoga_diamonds/hyoga_diamonds-32.png	
 	@cmd	suicide	

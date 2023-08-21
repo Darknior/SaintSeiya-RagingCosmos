@@ -13,9 +13,7 @@ anim	idle
         drawmethod  channel 0.99
 	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-0.png
 	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-1.png
-	delay	150
-	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
-	delay	150
+	delay	500
 	frame	data/chars/misc/blood/blood_ground_medium/blood_ground_medium-2.png
 	delay	20
         drawmethod  channel 0.90

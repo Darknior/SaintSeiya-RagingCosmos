@@ -143,6 +143,7 @@ know    shiryu_uppercut        data/chars/shiryu/special/shiryu_uppercut.txt
 know    shiryu_whirl           data/chars/shiryu/special/shiryu_whirl.txt
 
 know    hyoga_aura             data/chars/hyoga/special/hyoga_aura.txt
+know    hyoga_charge           data/chars/hyoga/special/hyoga_charge.txt
 know    hyoga_constellation    data/chars/hyoga/special/hyoga_constellation.txt
 know    hyoga_cosmos           data/chars/hyoga/special/hyoga_cosmos.txt
 know    hyoga_cygnus           data/chars/hyoga/special/hyoga_cygnus.txt
@@ -155,6 +156,7 @@ know    hyoga_frozenray_up     data/chars/hyoga/special/hyoga_frozenray_up.txt
 know    hyoga_iceA             data/chars/hyoga/special/hyoga_iceA.txt
 know    hyoga_iceB             data/chars/hyoga/special/hyoga_iceB.txt
 know    hyoga_iceC             data/chars/hyoga/special/hyoga_iceC.txt
+know    hyoga_iceD             data/chars/hyoga/special/hyoga_iceD.txt
 know    hyoga_pike             data/chars/hyoga/special/hyoga_pike.txt
 know    hyoga_pikeB            data/chars/hyoga/special/hyoga_pikeB.txt
 know    hyoga_roll             data/chars/hyoga/special/hyoga_roll.txt

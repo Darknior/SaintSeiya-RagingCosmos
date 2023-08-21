@@ -198,7 +198,7 @@ anim respawn # anim apres perdre une vie
     delay    18
     offset   32 131
     bbox     15 28 51 107
-    sound data/chars/shun/sounds/spawn1.wav
+    sound data/chars/shun/sounds/spawn2.wav
     frame    data/chars/shun/idle1.png
     frame    data/chars/shun/idle2.png
     frame    data/chars/shun/idle3.png
@@ -885,6 +885,7 @@ anim death
     delay    200
     offset    69 129
     sound data/chars/shun/sounds/die2.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     frame    data/chars/shun/death6.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
@@ -914,6 +915,7 @@ anim fall20 # blood fall
     frame    data/chars/shun/fall4.png
     frame    data/chars/shun/fall5.png
     frame    data/chars/shun/fall6.png
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     sound data/chars/shun/sounds/fall2.wav
     frame    data/chars/shun/fall7.png
 
@@ -1002,6 +1004,7 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/shun/fall5.png
     frame    data/chars/shun/fall6.png
     sound data/chars/shun/sounds/fall2.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 0 0 0
     frame    data/chars/shun/fall7.png
 

@@ -864,6 +864,7 @@ anim death
     frame    data/chars/ikki/death14.png
     delay    200
     sound data/chars/ikki/sounds/fall3.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     frame    data/chars/ikki/death15.png
     
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
@@ -893,6 +894,7 @@ anim fall20 # blood fall
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
     sound data/chars/ikki/sounds/hurt2.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     frame    data/chars/ikki/fall6.png
     
 anim pain15# BURN PAIN
@@ -977,6 +979,7 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/ikki/fall4.png
     frame    data/chars/ikki/fall5.png
     sound data/chars/ikki/sounds/hurt2.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     @cmd     spawnbind "shock1" "ANI_IDLE" -70 1 0 0 0
     frame    data/chars/ikki/fall6.png
 

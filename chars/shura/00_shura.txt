@@ -329,7 +329,7 @@ anim jumpattack
     delay    10
     offset    200 277
     frame    data/chars/shura/jat1.png
-	 attack 200 189 100 50 30 1 0 0 100 20
+	 attack 200 189 100 50 30 1 0 0 50 20
     frame    data/chars/shura/jat2.png
 
 anim    land
@@ -521,7 +521,7 @@ anim special # Jumping stone (quand il est grab)
     frame    data/chars/shura/jatt2.png
     sound data/chars/shura/sounds/01-jumping_stone.wav
     @cmd 	spawnbind "shura_circle" "ANI_IDLE" 0 10 0 0 0
-	 attack 100 100 200 200 40 1 0 0 100 20
+	 attack20 100 100 200 200 40 1 0 0 50 20
     dropv 6 5
     frame    data/chars/shura/jatt3.png
     frame    data/chars/shura/jatt4.png
@@ -546,7 +546,7 @@ anim riseattack # Jumping stone (quand il se releve)
     frame    data/chars/shura/jatt2.png
     sound data/chars/shura/sounds/01-jumping_stone.wav
     @cmd 	spawnbind "shura_circle" "ANI_IDLE" 0 10 0 0 0
-	 attack 100 100 200 200 40 1 0 0 100 20
+	 attack20 100 100 200 200 40 1 0 0 50 20
     dropv 6 5
     frame    data/chars/shura/jatt3.png
     frame    data/chars/shura/jatt4.png
@@ -576,7 +576,7 @@ anim freespecial # Uppercut excalibur
     attack 0
     frame    data/chars/shura/grat5.png
     delay 100
-    attack 70 58 100 200 40 1 0 0 100 20
+    attack20 70 58 100 200 40 1 0 0 50 20
     frame    data/chars/shura/grat6.png
     delay 8
     frame    data/chars/shura/grat7.png
@@ -614,41 +614,41 @@ anim freespecial4 # Slash simple lame
     frame    data/chars/shura/fsp5.png
 	 attack 94 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp6.png
-	 attack 123 76 62 131 30 1 0 0 100 20
+	 attack 123 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp7.png
-	 attack 144 76 62 131 30 1 0 0 100 20
+	 attack 144 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp8.png
-	 attack 161 76 62 131 30 1 0 0 100 20
+	 attack 161 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp9.png
-	 attack 177 76 62 131 30 1 0 0 100 20
+	 attack 177 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp10.png
 	 attack 194 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp11.png
 	 attack 212 76 62 131 30 1 0 1 0 50
     frame    data/chars/shura/fsp12.png
-	 attack 263 76 62 131 30 1 0 0 100 20
+	 attack 263 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp13.png
-	 attack 290 76 62 131 30 1 0 0 100 20
+	 attack 290 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp14.png
-	 attack 316 76 62 131 30 1 0 0 100 20
+	 attack 316 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp15.png
-	 attack 343 76 62 131 30 1 0 0 100 20
+	 attack 343 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp16.png
-	 attack 374 76 62 131 30 1 0 0 100 20
+	 attack 374 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp17.png
-	 attack 396 76 62 131 30 1 0 0 100 20
+	 attack 396 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp18.png
-	 attack 425 76 62 131 30 1 0 0 100 20
+	 attack 425 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp19.png
-	 attack 451 76 62 131 30 1 0 0 100 20
+	 attack 451 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp20.png
-	 attack 479 76 62 131 30 1 0 0 100 20
+	 attack 479 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp21.png
-	 attack 506 76 62 131 30 1 0 0 100 20
+	 attack20 506 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp22.png
-	 attack 532 76 62 131 30 1 0 0 100 20
+	 attack20 532 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp23.png
-	 attack 590 76 62 131 30 1 0 0 100 20
+	 attack20 590 76 62 131 30 1 0 0 50 20
     frame    data/chars/shura/fsp24.png
     frame    data/chars/shura/fsp25.png
     frame    data/chars/shura/fsp4.png
@@ -748,12 +748,12 @@ anim freespecial6 # ULTRA Excalibur
     frame    data/chars/shura/grat1.png
     attack 0
     frame    data/chars/shura/grat1.png
-    attack -200 50 600 400 15 1 0 0 100 100
+    attack20 -200 50 600 400 15 1 0 0 100 100
     dropv 6 5
     frame    data/chars/shura/grat1.png
     attack 0
     frame    data/chars/shura/grat1.png
-    attack -200 50 600 400 15 1 0 0 100 100
+    attack20 -200 50 600 400 15 1 0 0 100 100
     dropv 6 5
     frame    data/chars/shura/grat1.png
     attack 0

@@ -533,7 +533,7 @@ anim special # Defense Scorpion (attaque lorsqu il est grab)
     frame    data/chars/milo/uppercut2.png
     @cmd     spawnbind "milo_flash" "ANI_IDLE" 0 10 0 0 0
     sound data/chars/milo/sounds/13-bang.wav
-    attack5 74 1 120 180 30 1 0 0 5 12
+    attack30 74 1 120 180 30 1 0 0 5 12
     dropv     8.0 3 0
     delay    10
     frame    data/chars/milo/uppercut3.png
@@ -558,7 +558,7 @@ anim riseattack # Defense Scorpion (attaque en se relevant)
     frame    data/chars/milo/uppercut2.png
     @cmd     spawnbind "milo_flash" "ANI_IDLE" 0 10 0 0 0
     sound data/chars/milo/sounds/13-bang.wav
-    attack5 74 1 120 180 30 1 0 0 5 12
+    attack30 74 1 120 180 30 1 0 0 5 12
     dropv     8.0 3 0
     delay    10
     frame    data/chars/milo/uppercut3.png
@@ -583,7 +583,7 @@ anim freespecial # Defense Scorpion
     frame    data/chars/milo/uppercut2.png
     @cmd     spawnbind "milo_flash" "ANI_IDLE" 0 10 0 0 0
     sound data/chars/milo/sounds/13-bang.wav
-    attack5 74 1 120 180 30 1 0 0 5 12
+    attack30 74 1 120 180 30 1 0 0 5 12
     dropv     8.0 3 0
     delay    10
     frame    data/chars/milo/uppercut3.png

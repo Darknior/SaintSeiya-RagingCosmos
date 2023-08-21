@@ -536,7 +536,7 @@ anim    attack5    # Attaque combo 5
     frame    data/chars/seiya/attack59.png
     frame    data/chars/seiya/attack60.png
 
-anim    attack10    # charge attack
+anim attack10 # charge attack (laisser punch appuyé 2 sec pour executer)
 	 loop	0
 	 delay	10
 	 offset   37 121
@@ -829,29 +829,29 @@ anim    pain2 # big pain
     frame    data/chars/seiya/pain21.png
 
 anim fall
-    landframe  6
+    landframe  4
     offset   114 110
-    delay    -1000
+    delay    10
     sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
+    delay    -1000
     frame    data/chars/seiya/fall3.png
-    frame    data/chars/seiya/fall3.png
-    frame    data/chars/seiya/fall3.png
+    delay    10
     frame    data/chars/seiya/fall4.png
     sound    data/chars/seiya/sounds/hurt2.wav
     frame    data/chars/seiya/fall4.png
 
 anim fall7 # chutte apres etre Grab
-    landframe  6
+    landframe  4
     offset   114 110
-    delay    -1000
+    delay    10
     sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
+    delay    -1000
     frame    data/chars/seiya/fall3.png
-    frame    data/chars/seiya/fall3.png
-    frame    data/chars/seiya/fall3.png
+    delay    10
     frame    data/chars/seiya/fall4.png
     sound    data/chars/seiya/sounds/hurt2.wav
     frame    data/chars/seiya/fall4.png
@@ -873,8 +873,11 @@ anim rise # Se releve avec compteur de chuttes
     
 anim follow1 # Stun aprés X chuttes
     offset   114 110
-    delay    400
-	bbox 81 12 40 100
+    delay    150
+	 bbox 81 12 40 100
+    frame    data/chars/seiya/rise5.png
+    delay    350
+    sound    data/chars/seiya/sounds/stun.wav
     frame    data/chars/seiya/rise5.png
 
 anim    death
@@ -890,6 +893,7 @@ anim    death
     delay    200
     offset   114 108
     sound    data/chars/seiya/sounds/fall.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" -40 0 0 0 1
     frame    data/chars/seiya/death6.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
@@ -908,17 +912,18 @@ anim pain20 # Blood pain
     frame    data/chars/seiya/pain21.png
     
 anim fall20 # blood fall
-    landframe  6
+    landframe  4
     offset   114 110
-    delay    -1000
+    delay    10
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 0 0 0
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
+    delay    -1000
     frame    data/chars/seiya/fall3.png
-    frame    data/chars/seiya/fall3.png
-    frame    data/chars/seiya/fall3.png
+    delay    10
     frame    data/chars/seiya/fall4.png
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" -40 0 0 0 1
     sound    data/chars/seiya/sounds/hurt2.wav
     frame    data/chars/seiya/fall4.png
     
@@ -1018,19 +1023,20 @@ anim pain31# Shock Pain Aiolia Special
     frame    data/chars/seiya/pain1.png
     
 anim fall30# Shock PAIN Ground
-    landframe  6
+    landframe  4
     offset   114 110
-    delay    -1000
+    delay    10
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 35 0 0
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
+    delay    -1000
     frame    data/chars/seiya/fall3.png
+    delay    10
     @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0
-    frame    data/chars/seiya/fall3.png
-    frame    data/chars/seiya/fall3.png
     frame    data/chars/seiya/fall4.png
     sound    data/chars/seiya/sounds/hurt2.wav
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" -40 0 0 0 1
     frame    data/chars/seiya/fall4.png
 
 #// Block animations /////////////////////////////////////////////////

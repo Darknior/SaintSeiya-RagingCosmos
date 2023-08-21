@@ -1,0 +1,43 @@
+name        hyoga_iceD
+type        none
+shadow      0
+antigravity 100
+animationscript    data/scripts/player.c
+didhitscript	data/scripts/didhit/tint_ice.c
+
+anim    idle
+    loop     1
+    delay    10
+    offset   175 160
+    drawmethod alpha 1
+    drawmethod scale 0.5 0.5
+    sound data/chars/hyoga/sounds/ice-coffin.wav
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD1.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD2.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD3.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD4.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD5.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD6.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD7.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD8.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD9.png
+    delay    400
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD10.png
+    delay    10
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD11.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD12.png
+    sound data/chars/hyoga/sounds/ice-break.wav
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD13.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD14.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD15.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD16.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD17.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD18.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD19.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD20.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD22.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD23.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD24.png
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD25.png
+    @cmd     suicide
+    frame    data/chars/hyoga/special/hyoga_iceD/hyoga_iceD25.png

@@ -304,6 +304,17 @@ anim pain11# ICE PAIN Big
     delay    500
     frame    data/chars/soldier_purple/05.png
 
+anim pain12# ICE PAIN Small
+    loop    0
+    delay    5
+    offset    102 179
+    bbox 42 64 99 121
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+    frame    data/chars/soldier_purple/05.png
+    delay    500
+    frame    data/chars/soldier_purple/05.png
+
 anim pain30# Shock Pain
     loop    0
     delay    5

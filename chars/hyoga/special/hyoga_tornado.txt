@@ -20,7 +20,7 @@ anim	idle
 	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-3.png
 	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-4.png
 	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-5.png
-	freeze 23 51 50 120 10 3.5 0 0 0 30
+	attack11 23 51 50 120 10 0 0 0 0 30
 	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-6.png
 	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-7.png
 	frame	data/chars/hyoga/special/hyoga_tornado/hyoga_tornado-8.png
