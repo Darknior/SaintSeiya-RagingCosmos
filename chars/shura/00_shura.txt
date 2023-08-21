@@ -234,7 +234,7 @@ anim    attack3
     sound    data/chars/shura/sounds/cut.wav
     frame    data/chars/shura/atk8.png
     frame    data/chars/shura/atk11.png
-	attack 72 43 96 110 15 1 0 0 15 20
+	 attack20 72 43 96 110 15 1 0 0 15 20
     frame    data/chars/shura/atk9.png
     frame    data/chars/shura/atk11.png
     bbox    57 73 13 95
