@@ -83,22 +83,9 @@ palette      data/chars/shun/palettes/palette1.png
 
 #-- ATTAQUES --------------------------------------------------------
 
-#    b + a1         attackbackward  # Manchette arrière
 com  a3             freespecial4    # Manchette arrière
-
-com  d f a1         freespecial5    # Uppercut
-#    a1 + j         attackboth      # Roue de melée
-com  a2             freespecial     # Roue de melée
-
+com  a2 a2             freespecial     # Attaque de melée
 com  a4             freespecial3    # Explosion du Cosmos (Recharge)
-
-com  f a2           freespecial2    # SUPER Courant Nébulaire
-com  f + a2         freespecial2    # SUPER Courant Nébulaire
-com  u a2           freespecial6    # ULTRA Tempête Nébulaire
-com  u + a2         freespecial6    # ULTRA Tempête Nébulaire
-
-#    u + a1         freespecial7    # High kick
-#    d + a1         freespecial8    # Slide kick
 
 #-- ANIMATIONS -------------------------------------------------------
 

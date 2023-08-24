@@ -87,22 +87,9 @@ remap        data/chars/shiryu/palettes/palette1.png data/chars/shiryu/palettes/
 
 #-- ATTAQUES --------------------------------------------------------
 
-#    b + a1         attackbackward  # Manchette arrière
 com  a3             freespecial4    # Manchette arrière
-
-com  d f a1         freespecial5    # Colère du Dragon (Uppercut)
-#    a1 + j         attackboth      # Roue de melée
-com  a2             freespecial     # Roue de melée
-
+com  a2 a2             freespecial     # Attaque de melée
 com  a4             freespecial3    # Explosion du Cosmos (Recharge)
-
-com  f a2           freespecial2    # SUPER Fureur du Dragon
-com  f + a2         freespecial2    # SUPER Fureur du Dragon
-com  u a2           freespecial6    # ULTRA Rozan Shoryuha
-com  u + a2         freespecial6    # ULTRA Rozan Shoryuha
-
-#    u + a1         freespecial7    # High kick
-#    d + a1         freespecial8    # Slide kick
 
 #-- ANIMATIONS -------------------------------------------------------
 

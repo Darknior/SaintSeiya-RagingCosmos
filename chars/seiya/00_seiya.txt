@@ -89,23 +89,9 @@ remap        data/chars/seiya/palettes/palette2.png data/chars/seiya/palettes/pa
 
 #-- COMMANDES ATTAQUES SPECIALES-----------------------------------------------
 
-#    b + a1         attackbackward  # Manchette arrière
 com  a3             freespecial4    # Manchette arrière
-
-com  u a2         freespecial5    # Uppercut
-#    a1 + j         attackboth      # Roue de melée
 com  a2 a2             freespecial     # Roue de melée
-
 com  a4             freespecial3    # Explosion du Cosmos (Recharge)
-
-com  f a2           freespecial2    # SUPER Météores de Pégase
-com  f + a2         freespecial2    # SUPER Météores de Pégase
-com  d a2           freespecial6    # ULTRA Météores de Pégase
-com  d + a2         freespecial6    # ULTRA Météores de Pégase
-
-#    u + a1         freespecial7    # High kick
-#    d + a1         freespecial8    # Slide kick
-
 
 #-- ANIMATIONS -------------------------------------------------------
 
