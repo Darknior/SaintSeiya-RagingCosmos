@@ -9,8 +9,8 @@ void ultra(void anim)
 	int mp		= getentityproperty(self,"mp");
 	int cost	= getentityproperty(self,"energycost", "cost", anim);
 	
-	if(playerkeys(iPIndex, 1, "attack2")){
-		if(playerkeys(iPIndex, 0, "movedown")){
+	if(playerkeys(iPIndex, 0, "movedown")){
+		if(playerkeys(iPIndex, 1, "attack2")){
 			if(	vAniID == openborconstant("ANI_WALK")	||
 				vAniID == openborconstant("ANI_WALK2")	||
 				vAniID == openborconstant("ANI_DOWN")	){
@@ -42,9 +42,9 @@ void super(void anim)
 	int cost	= getentityproperty(self,"energycost", "cost", anim);
 	int dir		= getentityproperty(self,"direction");
 	
-	if(playerkeys(iPIndex, 1, "attack2")){
-		if(	playerkeys(iPIndex, 0, "moveright") && dir == 1	||
-			playerkeys(iPIndex, 0, "moveleft") && dir == 0	){
+	if(	playerkeys(iPIndex, 0, "moveright") && dir == 1	||
+		playerkeys(iPIndex, 0, "moveleft") && dir == 0	){
+		if(playerkeys(iPIndex, 1, "attack2")){
 			
 			if(	vAniID == openborconstant("ANI_WALK")	||
 				vAniID == openborconstant("ANI_WALK2")	||
@@ -77,8 +77,8 @@ void upper(void anim)
 	int cost	= getentityproperty(self,"energycost", "cost", anim);
 	int dir		= getentityproperty(self,"direction");
 	
-	if(playerkeys(iPIndex, 1, "attack2")){
-		if(playerkeys(iPIndex, 0, "moveup")){
+	if(playerkeys(iPIndex, 0, "moveup")){
+		if(playerkeys(iPIndex, 1, "attack2")){
 			if(	vAniID == openborconstant("ANI_WALK")	||
 				vAniID == openborconstant("ANI_WALK2")	||
 				vAniID == openborconstant("ANI_UP")		){
