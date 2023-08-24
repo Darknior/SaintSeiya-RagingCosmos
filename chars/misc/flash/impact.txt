@@ -1,4 +1,4 @@
-name			Impact
+name			impact
 type			none
 no_adjust_base	0
 subject_to_hole	1
@@ -12,7 +12,7 @@ anim idle
 	loop	0
 	delay	3
 	offset	160 91
-	sound	data/sounds/Impact.wav
+#	sound	data/sounds/impact.wav
 	frame	data/chars/misc/flash/impact/impact00.gif
 	frame	data/chars/misc/flash/impact/impact01.gif
 	frame	data/chars/misc/flash/impact/impact02.gif

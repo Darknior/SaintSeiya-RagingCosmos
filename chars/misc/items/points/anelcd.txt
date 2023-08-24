@@ -1,28 +1,28 @@
-name	anelCD
-health	0
-score		2000
-type		item
-#shadow	0
+name      anelcd
+health    0
+score     2000
+type      item
+#shadow   0
 gfxshadow 1 3
-nolife	1
-didhitscript data/scripts/didhit/items.c
+nolife    1
+didhitscript    data/scripts/didhit/items.c
 animationscript data/scripts/player.c
 
 anim idle
-	loop	1
-	delay	100
-	offset	19 25
-	bbox	14 15 10 11
-   @cmd itemText "2000 PTS" 0.8 2.5 8
-   frame	data/chars/misc/items/points/anelCD01.gif
-   delay	4
-	frame	data/chars/misc/items/points/anelCD02.gif
-   frame	data/chars/misc/items/points/anelCD03.gif
-   frame	data/chars/misc/items/points/anelCD02.gif
-   frame	data/chars/misc/items/points/anelCD03.gif
-   frame	data/chars/misc/items/points/anelCD02.gif
-   frame	data/chars/misc/items/points/anelCD03.gif
-   frame	data/chars/misc/items/points/anelCD02.gif
-   frame	data/chars/misc/items/points/anelCD03.gif
-   frame	data/chars/misc/items/points/anelCD02.gif
-   frame	data/chars/misc/items/points/anelCD03.gif
+    loop     1
+    delay    100
+    offset   19 25
+    bbox     14 15 10 11
+    @cmd     itemText "2000 PTS" 0.8 2.5 8
+    frame    data/chars/misc/items/points/anelcd01.gif
+    delay    4
+    frame    data/chars/misc/items/points/anelcd02.gif
+    frame    data/chars/misc/items/points/anelcd03.gif
+    frame    data/chars/misc/items/points/anelcd02.gif
+    frame    data/chars/misc/items/points/anelcd03.gif
+    frame    data/chars/misc/items/points/anelcd02.gif
+    frame    data/chars/misc/items/points/anelcd03.gif
+    frame    data/chars/misc/items/points/anelcd02.gif
+    frame    data/chars/misc/items/points/anelcd03.gif
+    frame    data/chars/misc/items/points/anelcd02.gif
+    frame    data/chars/misc/items/points/anelcd03.gif

@@ -1,28 +1,28 @@
-name	caixaCC
-health	0
-score		1500
-type		item
-#shadow	0
+name      caixacc
+health    0
+score     1500
+type      item
+#shadow   0
 gfxshadow 1 3
-nolife	1
-didhitscript data/scripts/didhit/items.c
+nolife    1
+didhitscript    data/scripts/didhit/items.c
 animationscript data/scripts/player.c
 
 anim idle
-	loop		1
-	 offset     240 204
-	bbox	223 195 32 16
-   @cmd itemText "1500 PTS" 0.8 2.5 8
-	delay	100
-	frame	data/chars/misc/items/points/caixaCC01.gif
-	delay   4
-	frame	data/chars/misc/items/points/caixaCC02.gif
-	frame	data/chars/misc/items/points/caixaCC01.gif
-	frame	data/chars/misc/items/points/caixaCC02.gif
-	frame	data/chars/misc/items/points/caixaCC01.gif
-	frame	data/chars/misc/items/points/caixaCC02.gif
-	frame	data/chars/misc/items/points/caixaCC01.gif
-	frame	data/chars/misc/items/points/caixaCC02.gif
-	frame	data/chars/misc/items/points/caixaCC01.gif
-	frame	data/chars/misc/items/points/caixaCC02.gif
-	frame	data/chars/misc/items/points/caixaCC01.gif
+    loop     1
+    offset   240 204
+    bbox     223 195 32 16
+    @cmd     itemText "1500 PTS" 0.8 2.5 8
+    delay    100
+    frame    data/chars/misc/items/points/caixacc01.gif
+    delay    4
+    frame    data/chars/misc/items/points/caixacc02.gif
+    frame    data/chars/misc/items/points/caixacc01.gif
+    frame    data/chars/misc/items/points/caixacc02.gif
+    frame    data/chars/misc/items/points/caixacc01.gif
+    frame    data/chars/misc/items/points/caixacc02.gif
+    frame    data/chars/misc/items/points/caixacc01.gif
+    frame    data/chars/misc/items/points/caixacc02.gif
+    frame    data/chars/misc/items/points/caixacc01.gif
+    frame    data/chars/misc/items/points/caixacc02.gif
+    frame    data/chars/misc/items/points/caixacc01.gif

@@ -1,35 +1,35 @@
-name	goldbc
-health	0
-score		3500
-type		item
-subtype touch
-shadow	1
+name       goldbc
+health     0
+score      3500
+type       item
+subtype    touch
+shadow     1
 #gfxshadow 1 3
-nolife	1
-didhitscript data/scripts/didhit/items.c
+nolife     1
+didhitscript    data/scripts/didhit/items.c
 animationscript data/scripts/player.c
 
 anim idle
-	loop	1
-	delay	100
-	offset     238 177
-	bbox	223 149 32 32
-   @cmd itemText "3500 PTS" 0.8 2.5 8
-	delay   2
-	move 8
-	frame	data/chars/misc/items/points/goldbc01.gif
-	frame	data/chars/misc/items/points/goldbc01.gif
-	frame	data/chars/misc/items/points/goldbc02.gif
-	frame	data/chars/misc/items/points/goldbc02.gif
-	frame	data/chars/misc/items/points/goldbc03.gif
-	frame	data/chars/misc/items/points/goldbc03.gif
-	frame	data/chars/misc/items/points/goldbc04.gif
-	frame	data/chars/misc/items/points/goldbc04.gif
-   delay	5
-   frame	data/chars/misc/items/points/goldbc00.gif
-   frame	data/chars/misc/items/points/goldbc01.gif
-   frame	data/chars/misc/items/points/goldbc00.gif
-   frame	data/chars/misc/items/points/goldbc01.gif
-   frame	data/chars/misc/items/points/goldbc00.gif
-   frame	data/chars/misc/items/points/goldbc01.gif
+    loop     1
+    delay    100
+    offset   238 177
+    bbox     223 149 32 32
+    @cmd     itemText "3500 PTS" 0.8 2.5 8
+    delay    2
+    move     8
+    frame    data/chars/misc/items/points/goldbc01.gif
+    frame    data/chars/misc/items/points/goldbc01.gif
+    frame    data/chars/misc/items/points/goldbc02.gif
+    frame    data/chars/misc/items/points/goldbc02.gif
+    frame    data/chars/misc/items/points/goldbc03.gif
+    frame    data/chars/misc/items/points/goldbc03.gif
+    frame    data/chars/misc/items/points/goldbc04.gif
+    frame    data/chars/misc/items/points/goldbc04.gif
+    delay    5
+    frame    data/chars/misc/items/points/goldbc00.gif
+    frame    data/chars/misc/items/points/goldbc01.gif
+    frame    data/chars/misc/items/points/goldbc00.gif
+    frame    data/chars/misc/items/points/goldbc01.gif
+    frame    data/chars/misc/items/points/goldbc00.gif
+    frame    data/chars/misc/items/points/goldbc01.gif
 

@@ -1,0 +1,32 @@
+
+
+Armor 1 : 3b2400 (Darker
+Armor 2 : 966d00
+Armor 3 : fcc212
+Armor 4 : fcfa29
+Armor 5 : ffffbf (Lighter)
+Armor 6 : fffdf4 White
+
+Cloth 1 : 2e0507 ROUGE
+Cloth 2 : 60161a
+Cloth 3 : b93332
+Cloth 4 : d34948
+
+Pants 1 : 04304c
+Pants 2 : 1c587c
+Pants 3 : 3c78a4
+Pants 4 : 5494b4
+
+Hair 0 : 1c0e00 (portrait) MARRON
+Hair 1 : 482400
+Hair 2 : 7c4008
+Hair 3 : a45008
+
+Belt 1 : 7c5c04 JAUNE
+Belt 2 : b08408 (Ailes)
+Belt 3 : fcc018
+Belt 4 : fcec84
+
+Eyes 0 : 5b2315 (portrait) MARRON
+Eyes 1 : 8d4432
+Eyes 2 : c87763

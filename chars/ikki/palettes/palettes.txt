@@ -1,0 +1,142 @@
+ 
+## Seiya
+
+Armor 1 : 3c4858 (Darker) GRIS
+Armor 2 : 84889c
+Armor 3 : acb0c4
+Armor 4 : dce0f0
+Armor 5 : fcfcfc (Lighter)
+
+Cloth 1 : 800000 ROUGE
+Cloth 2 : b40000
+Cloth 3 : d80000
+Cloth 4 : f00000
+
+Pants 1 : 04304c
+Pants 2 : 1c587c
+Pants 3 : 3c78a4
+Pants 4 : 5494b4
+
+Hair 0 : 1c0e00 (portrait) MARRON
+Hair 1 : 482400
+Hair 2 : 7c4008
+Hair 3 : a45008
+
+Belt 1 : 7c5c04 JAUNE
+Belt 2 : b08408 (Ailes)
+Belt 3 : fcc018
+Belt 4 : fcec84
+
+Eyes 0 : 5b2315 (portrait) MARRON
+Eyes 1 : 8d4432
+Eyes 2 : c87763
+
+
+## Black Seiya
+
+Armor 1 : 000000 (Darker) DARK
+Armor 2 : 1f2526
+Armor 3 : 283337
+Armor 4 : 3b4c52
+Armor 5 : 5a7179 (Lighter)
+Armor 6 : 6797a8 / White
+
+Cloth 1 : 000207 BLUE
+Cloth 2 : 0b1741
+Cloth 3 : 12266b
+Cloth 4 : 1a379c
+
+Pants 1 : 04304c
+Pants 2 : 1c587c
+Pants 3 : 3c78a4
+Pants 4 : 5494b4
+
+Hair 0 : 000104 (portrait)
+Hair 1 : 0b1113
+Hair 2 : 2f3f45
+Hair 3 : 596c72
+
+Belt 1 : 3b4c52 BLEU CLAIR
+Ailes 2 : 5a7179
+Belt 3 : 6797a8
+Belt 4 : bcd4e8
+
+Eyes 0 : 333130 (portrait)
+Eyes 1 : 53504e (portrait)
+Eyes 2 : c3bcb8
+
+
+## Gold Seiya
+
+Armor 1 : 3b2400 (Darker
+Armor 2 : 966d00
+Armor 3 : fcc212
+Armor 4 : fcfa29
+Armor 5 : ffffbf (Lighter)
+Armor 6 : fffdf4 White
+
+Cloth 1 : 2e0507 ROUGE
+Cloth 2 : 60161a
+Cloth 3 : b93332
+Cloth 4 : d34948
+
+Pants 1 : 04304c
+Pants 2 : 1c587c
+Pants 3 : 3c78a4
+Pants 4 : 5494b4
+
+Hair 0 : 1c0e00 (portrait) MARRON
+Hair 1 : 482400
+Hair 2 : 7c4008
+Hair 3 : a45008
+
+Belt 1 : 7c5c04 JAUNE
+Belt 2 : b08408 (Ailes)
+Belt 3 : fcc018
+Belt 4 : fcec84
+
+Eyes 0 : 5b2315 (portrait) MARRON
+Eyes 1 : 8d4432
+Eyes 2 : c87763
+
+
+## Special Seiya
+
+Armor 1 : 150700 (Darker)
+Armor 2 : 290f04
+Armor 3 : 421f18
+Armor 4 : 5a3420
+Armor 5 : 694b30 (Lighter)
+Armor 6 : 88684c / White
+
+Cloth 1 : 1e3b1b
+Cloth 2 : 2d5829
+Cloth 3 : 2e7526
+Cloth 4 : 368c2d
+
+Hair 0 : 735218 (portrait)
+Hair 0.2 : a85a1e (portrait)
+Hair 1 : dea510
+Hair 2 : ffc300 (peu)
+Hair 3 : fdd64d (peu)
+Hair 4 : f6fe18
+
+Belt 1 :
+Belt 2 : e3d603
+Belt 3 : fdf687
+
+Divers 1 : 423d5b
+Divers 2 : 565583
+Divers 3 : 6f6b95
+Divers 3 : 9788b8
+
+122e44
+294c66
+416989
+5f95bf
+8fcade
+
+Eyes 1 : 391514 (portrait)
+Eyes 2 : 9c1615 (portrait)
+Eyes 3 : dc5835
+
