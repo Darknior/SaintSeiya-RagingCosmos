@@ -83,9 +83,19 @@ palette      data/chars/shun/palettes/palette1.png
 
 #-- ATTAQUES --------------------------------------------------------
 
-com  a3             freespecial4    # Manchette arrière
-com  a2 a2             freespecial     # Attaque de melée
-com  a4             freespecial3    # Explosion du Cosmos (Recharge)
+# arriere + a1 attackbackward        # Attaque arrière
+com  a3          freespecial4     # Attaque arrière
+# haut + a1         freespecial7    # Coup de pied haut
+# bas + a1       freespecial8    # Coup de pied bas
+# bas + a1 (qd l ennemi est au sol)  freespecial9  # Attaque au sol
+com  a4          freespecial3     # Explosion du Cosmos (Recharge les Mp)
+
+# laisser a1 appuyé (2 sec) puis relacher # Attaque de charge (coute 12 Mp)
+com  a2 a2       freespecial     # Attaque de melée (coute 12 Mp)
+# haut + a2        freespecial5  # Uppercut (coute 12 Mp)
+
+# avant + a2      freespecial2    # SUPER Thunder Wave (coute 25 Mp)
+# bas + a2        freespecial6    # ULTRA Tempête Nébulaire (coute 50 Mp)
 
 #-- ANIMATIONS -------------------------------------------------------
 
