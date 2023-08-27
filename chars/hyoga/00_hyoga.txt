@@ -268,10 +268,12 @@ anim faint # Quand il reste 1/4 de hp
     frame    data/chars/hyoga/idle7.png
 
 anim sleep   # Animation configurée après 10s d'idle
-    loop     1
+    loop     1 1
     delay    25
     offset   54 141
     bbox     36 28 51 112
+    sound    data/chars/hyoga/sounds/rise4.wav
+    frame    data/chars/hyoga/sleep1.png
     frame    data/chars/hyoga/sleep1.png
     frame    data/chars/hyoga/sleep2.png
     frame    data/chars/hyoga/sleep3.png

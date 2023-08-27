@@ -238,10 +238,12 @@ anim faint # Quand il reste 1/4 de hp
     frame    data/chars/shiryu/idle2.png
 
 anim sleep # Animation configurée après 10s d'idle
-    loop     1
+    loop     1 1
     delay    25
     offset   41 134
     bbox     13 21 51 115
+    sound    data/chars/shiryu/sounds/victory3.wav
+    frame    data/chars/shiryu/sleep1.png
     frame    data/chars/shiryu/sleep1.png
     frame    data/chars/shiryu/sleep2.png
     frame    data/chars/shiryu/sleep3.png
@@ -663,7 +665,7 @@ anim jumpforward  # Attaque sautée vers l avant
 anim runjumpattack # Attaque sautée en courant
     delay    5
     offset   50 128
-    sound    data/sounds/punch.wav
+    sound    data/sounds/shiryu/kick.wav
     frame    data/chars/shiryu/jumpforward1.png
     frame    data/chars/shiryu/jumpforward2.png
     jumpframe  2 -2 4.5

@@ -177,7 +177,7 @@ anim spawn # anim debut de niveau
 anim respawn # anim apres perdre une vie
     delay 20
     offset   32 131
-    sound data/chars/shun/sounds/spawn2.wav
+    sound data/chars/shun/sounds/spawn1.wav
     frame    data/chars/shun/spawn1.png
     frame    data/chars/shun/spawn2.png
     frame    data/chars/shun/spawn3.png
@@ -247,10 +247,11 @@ anim faint # Quand il reste 1/4 de hp
     frame    data/chars/shun/idle2.png
 
 anim sleep # Animation configurée après 10s d'idle 
-    loop     1 2
+    loop     1 1
     delay 10
     offset   56 148
     bbox     26 44 51 107
+    sound data/chars/shun/sounds/spawn2.wav
     frame    data/chars/shun/sleep1.png
     frame    data/chars/shun/sleep1.png
     frame    data/chars/shun/sleep2.png

@@ -261,10 +261,12 @@ anim faint # Quand il reste 1/4 de hp
     frame    data/chars/seiya/idle11.png
 
 anim sleep # Animation configurée après 10s d'idle 
-    loop     1
+    loop     1 1
     delay    25
     offset   33 119
     bbox     21 19 51 112
+    sound    data/chars/seiya/sounds/spawn4.wav
+    frame    data/chars/seiya/sleep1.png
     frame    data/chars/seiya/sleep1.png
     frame    data/chars/seiya/sleep2.png
     frame    data/chars/seiya/sleep3.png
