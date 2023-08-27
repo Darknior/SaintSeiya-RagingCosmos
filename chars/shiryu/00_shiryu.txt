@@ -41,7 +41,6 @@ bflash      shiryu_block # Flash pendant un blocage (animation)
 
 #weapons     PSARMA0  PSARMA1  PSARMA2 PSARMA3 PSARMA4 PSARMA5 PSARMA6 agora
 
-
 #-- SCRIPTS ---------------------------------------------------------
 
 #ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
@@ -52,25 +51,25 @@ didhitscript        data/scripts/didhit/tint_green.c     # Effets de teinte sur 
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 keyscript           data/scripts/commands.c             # Mort du Timer à zéro
 
-
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
+load blood_gerbD
 load blue_swing
 load shiryu_aura
-load shiryu_block
-load shiryu_dragon
-load shiryu_dragon_water
-load shiryu_explosion
-load shiryu_uppercut
 load shiryu_big_dragon
-load shiryu_whirl
+load shiryu_block
+load shiryu_constellation
 load shiryu_cosmos
 load shiryu_cosmosB
-load shiryu_constellation
-load shiryu_lights
 load shiryu_dash
-load blood_gerbD
-
+load shiryu_dragon
+load shiryu_dragon_punch
+load shiryu_dragon_water
+load shiryu_explosion
+load shiryu_lights
+load shiryu_swing
+load shiryu_uppercut
+load shiryu_whirl
 
 #-- PALETTES --------------------------------------------------------
 
@@ -105,14 +104,14 @@ com  a2 a2       freespecial     # Attaque de melée (coute 12 Mp)
 
 #// Select animations /////////////////////////////////////////////////
 
-anim    waiting # Animation d'attente dans l'écran de sélection
+anim waiting # Animation d'attente dans l'écran de sélection
     loop     1
     delay    60
     offset   55 211
     frame    data/chars/shiryu/waiting1.png
     frame    data/chars/shiryu/waiting2.png
 
-anim    select  # Personnage sélectionné
+anim select  # Personnage sélectionné
     delay    2
     offset   55 211
     sound    data/chars/sounds/select-long.wav
@@ -153,10 +152,9 @@ anim    select  # Personnage sélectionné
     frame    data/chars/shiryu/select/select35.png
     frame    data/chars/shiryu/select/select35.png
 
-
 #// Static animations /////////////////////////////////////////////////
 
-#anim    spawnold # Animation de 1ère apparition du personnage
+#anim spawnold # Animation de 1ère apparition du personnage
     delay    10
     offset   42 127
     frame    data/chars/shiryu/spawn1.png
@@ -202,7 +200,7 @@ anim respawn # anim apres perdre une vie
     frame    data/chars/shiryu/idle3.png
     frame    data/chars/shiryu/idle2.png
 
-anim    idle
+anim idle
     loop     1
     delay    18
     offset   39 128
@@ -214,7 +212,7 @@ anim    idle
     frame    data/chars/shiryu/idle3.png
     frame    data/chars/shiryu/idle2.png
     
-anim    idle2
+anim idle2
     range 0 200
     loop     1
     delay    20
@@ -308,7 +306,7 @@ anim walk    # Marche
     frame    data/chars/shiryu/walk5.png
     frame    data/chars/shiryu/walk6.png
 
-anim    up
+anim up
     cancel   0 8 0 A1 freespecial7  # Coup de pied haut
     loop     1
     delay    14
@@ -321,7 +319,7 @@ anim    up
     frame    data/chars/shiryu/walk5.png
     frame    data/chars/shiryu/walk6.png
 
-anim    down
+anim down
     cancel   0 8 0 A1 freespecial8  # Balayette
     loop     1
     delay    14
@@ -334,7 +332,7 @@ anim    down
     frame    data/chars/shiryu/walk5.png
     frame    data/chars/shiryu/walk6.png
 
-anim    dodge   # Esquive Haut / Bas (u u / d d)
+anim dodge   # Esquive Haut / Bas (u u / d d)
     delay    8
     offset   37 128
     bbox     21 13 30 115
@@ -348,7 +346,7 @@ anim    dodge   # Esquive Haut / Bas (u u / d d)
     frame    data/chars/shiryu/jump2.png
     frame    data/chars/shiryu/jump1.png
 
-anim    run
+anim run
     loop     1 1
     delay    8
     offset   48 128
@@ -399,23 +397,7 @@ anim runattack # Attaque en courant
     delay    12
     frame    data/chars/shiryu/runattack8.png
 
-anim    runjump
-    summonframe  0 0 0 0
-    subentity    round_dust
-    delay    6
-    offset   37 146
-    bbox     16 13 30 115
-    sound    data/chars/shiryu/sounds/jump1.wav
-    frame    data/chars/shiryu/forwardjump1.png
-    frame    data/chars/shiryu/forwardjump2.png
-    frame    data/chars/shiryu/forwardjump3.png
-    frame    data/chars/shiryu/forwardjump4.png
-    frame    data/chars/shiryu/forwardjump5.png
-    frame    data/chars/shiryu/forwardjump6.png
-    frame    data/chars/shiryu/forwardjump7.png
-    frame    data/chars/shiryu/forwardjump8.png
-
-anim    get
+anim get
     delay    1
     offset   30 129
     bbox     5 17 51 112
@@ -427,7 +409,7 @@ anim    get
 
 #// Basic Attacks animations /////////////////////////////////////////////////
 
-anim    attack1 # Attaque combo 1
+anim attack1 # Attaque combo 1
     jugglecost  1
     delay    5
     offset   39 130
@@ -441,7 +423,7 @@ anim    attack1 # Attaque combo 1
     frame    data/chars/shiryu/attack6.png
     frame    data/chars/shiryu/attack7.png
 
-anim    attack2 # Attaque combo 2
+anim attack2 # Attaque combo 2
     jugglecost  1
     delay    6
     offset   39 135
@@ -454,7 +436,7 @@ anim    attack2 # Attaque combo 2
     frame    data/chars/shiryu/attack25.png
     attack1  0
 
-anim    attack3 # Attaque combo 3
+anim attack3 # Attaque combo 3
     jugglecost  1
     delay    7
     offset   57 128
@@ -465,7 +447,7 @@ anim    attack3 # Attaque combo 3
     bbox     68 30 35 100
     frame    data/chars/shiryu/attack33.png
 
-anim    attack4 # Attaque combo 4
+anim attack4 # Attaque combo 4
     jugglecost  1
     delay    7
     offset   39 130
@@ -478,25 +460,46 @@ anim    attack4 # Attaque combo 4
     frame    data/chars/shiryu/attack45.png
     attack1  0
 
-anim    attack5 # Attaque combo 5
+anim attack5 # Attaque combo 5
     jugglecost  1
     delay    5
     offset   39 130
-    hitflash flashbig
+    hitflash shiryu_swing
     frame    data/chars/shiryu/attack51.png
     frame    data/chars/shiryu/attack52.png
     sound    data/chars/shiryu/sounds/attack7.wav
     frame    data/chars/shiryu/attack53.png
-    attack20  62 21 67 26 10 1 1 0 10 12
+    attack20  62 21 67 26 10 1 1 0 50 12
     frame    data/chars/shiryu/attack54.png
     frame    data/chars/shiryu/attack55.png
     attack20  0
     frame    data/chars/shiryu/attack56.png
     frame    data/chars/shiryu/attack57.png
+    
+anim attack10 # charge attack (laisser punch appuyé 2 sec pour executer)
+    jugglecost  1
+    delay    8
+    offset   39 130
+    bbox     31 15 30 115
+    hitflash shiryu_swing
+    @cmd     spawnbind "dash_dust" "ANI_IDLE" -30 1 0 1 0
+    sound    data/chars/shiryu/sounds/attack8.wav
+    @cmd     spawnbind "shiryu_dragon_punch" "ANI_IDLE" 0 1 0 1 0
+    frame    data/chars/shiryu/attack1.png
+    frame    data/chars/shiryu/attack2.png
+    attack30   70 34 60 20 10 1 0 0 50 20
+    frame    data/chars/shiryu/attack3.png
+    frame    data/chars/shiryu/attack4.png
+    frame    data/chars/shiryu/attack5.png
+    delay    50
+    frame    data/chars/shiryu/attack6.png
+    delay    10
+    frame    data/chars/shiryu/attack7.png
+    frame    data/chars/shiryu/attack1.png
 
 #// Grab animations /////////////////////////////////////////////////
 
-anim    grab        # Choppe
+anim grab        # Choppe
     delay    8
     offset   42 147
     bbox     42 33 30 115
@@ -504,7 +507,7 @@ anim    grab        # Choppe
     frame    data/chars/shiryu/grab2.png
     frame    data/chars/shiryu/grab3.png
 
-anim    grabattack # Choppe, Coup de genou X2
+anim grabattack # Choppe, Coup de genou X2
     delay    7
     offset   69 125
     hitflash flashmedium
@@ -515,7 +518,7 @@ anim    grabattack # Choppe, Coup de genou X2
     bbox     68 30 35 100
     frame    data/chars/shiryu/attack33.png
 
-anim    grabattack2 # Choppe, Coup finisher
+anim grabattack2 # Choppe, Coup finisher
     delay    7
     offset   77 127
     hitflash flashbig
@@ -526,7 +529,7 @@ anim    grabattack2 # Choppe, Coup finisher
     frame    data/chars/shiryu/attack44.png
     frame    data/chars/shiryu/attack45.png
 
-anim    grabbackward    # Choppe, Projection en arrière
+anim grabbackward    # Choppe, Projection en arrière
     throwdamage     20
     delay    10
     offset   143 135
@@ -558,7 +561,7 @@ anim    grabbackward    # Choppe, Projection en arrière
     frame    data/chars/shiryu/rise3.png
     frame    data/chars/shiryu/rise4.png
     
-anim    grabforward  # projection en avant
+anim grabforward  # projection en avant
     delay    9
     offset   31 124
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 1 0 1 0
@@ -577,7 +580,7 @@ anim    grabforward  # projection en avant
 
 #// Jump animations /////////////////////////////////////////////////
 
-anim    jump        # Saut Statique
+anim jump        # Saut Statique
     summonframe  0 0 0 0
     subentity    round_dust
     delay    10
@@ -591,7 +594,7 @@ anim    jump        # Saut Statique
     frame    data/chars/shiryu/jump2.png
     frame    data/chars/shiryu/jump1.png
 
-anim    forwardjump       # Saut Statique
+anim forwardjump       # Saut Statique
     summonframe  0 0 0 0
     subentity    round_dust
     delay    10
@@ -605,7 +608,7 @@ anim    forwardjump       # Saut Statique
     frame    data/chars/shiryu/jump2.png
     frame    data/chars/shiryu/jump1.png
 
-anim    runjump # Saut vers l'avant
+anim runjump # Saut vers l'avant
     summonframe  0 0 0 0
     subentity    round_dust
     delay    6
@@ -621,13 +624,13 @@ anim    runjump # Saut vers l'avant
     frame    data/chars/shiryu/forwardjump7.png
     frame    data/chars/shiryu/forwardjump8.png
 
-anim    jumpdelay   # Animation de saut intermédiaire
+anim jumpdelay   # Animation de saut intermédiaire
     delay    10
     offset   37 130
     bbox     16 13 51 115
     frame    data/chars/shiryu/jump1.png
 
-anim    jumpland    # Aterrissage du saut
+anim jumpland    # Aterrissage du saut
     summonframe  0 0 0 0
     subentity    round_dust
     delay    8
@@ -640,7 +643,7 @@ anim    jumpland    # Aterrissage du saut
     frame    data/chars/shiryu/get2.png
     frame    data/chars/shiryu/get1.png
 
-anim    land    # atterissage safe au sol (haut+ jump pendant la projection)
+anim land    # atterissage safe au sol (haut+ jump pendant la projection)
     flipframe  1
     delay    8
     offset   37 146
@@ -662,19 +665,20 @@ anim    land    # atterissage safe au sol (haut+ jump pendant la projection)
     frame    data/chars/shiryu/get2.png
     frame    data/chars/shiryu/get1.png
 
-anim    jumpattack  # Attaque sautée statique
+anim jumpattack  # Attaque sautée statique
     delay    5
     offset   37 128
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/jumpattack1.png
     frame    data/chars/shiryu/jumpattack2.png
+    jumpframe  2 -1.5 0
     attack20  62 21 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/shiryu/jumpattack3.png
     frame    data/chars/shiryu/jumpattack3.png
     attack4  0
 
-anim    jumpforward # Attaque sautée vers l'avant
+anim jumpforward # Attaque sautée vers l'avant
     summonframe  0 0 0 0
     subentity    round_dust
     delay    5
@@ -682,12 +686,13 @@ anim    jumpforward # Attaque sautée vers l'avant
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/jumpforward1.png
     frame    data/chars/shiryu/jumpforward2.png
+    jumpframe  2 -1.5 4
     attack4  62 21 67 26 10 1 0 0 5 12
     dropv    6.0 2.0 0.0
     frame    data/chars/shiryu/jumpforward3.png
     attack4  0
 
-anim    jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
+anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     delay    5
     offset   50 128
     sound    data/sounds/punch.wav
@@ -701,7 +706,7 @@ anim    jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/shiryu/jumpattack23.png
     attack4  0
 
-anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
+anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     delay    5
     offset   50 132
     sound    data/sounds/punch.wav
@@ -717,7 +722,7 @@ anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
-anim    pain
+anim pain
     offset   58 128
     bbox     20 13 51 115
     delay    5
@@ -730,7 +735,7 @@ anim    pain
     frame    data/chars/shiryu/pain2.png
     frame    data/chars/shiryu/pain1.png
 
-anim    pain2
+anim pain2
     offset   37 130
     bbox     17 15 51 115
     delay    5
@@ -741,7 +746,7 @@ anim    pain2
     frame    data/chars/shiryu/pain22.png
     frame    data/chars/shiryu/pain21.png
 
-anim    fall
+anim fall
     landframe  6
     offset   114 130
     delay    15
@@ -796,7 +801,7 @@ anim follow1 # Stun aprés X chuttes
     sound    data/chars/shiryu/sounds/stun.wav
     frame    data/chars/shiryu/rise4.png
 
-anim    death
+anim death
     landframe  12
     offset   114 130
     delay    10
@@ -891,7 +896,7 @@ anim pain10# ICE PAIN
     bbox     20 13 51 115
     delay    3
     sound    data/chars/shiryu/sounds/hurt2.wav
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/shiryu/pain1.png
     frame    data/chars/shiryu/pain2.png
     frame    data/chars/shiryu/pain3.png
@@ -907,7 +912,24 @@ anim pain11# ICE PAIN Big
     bbox     20 13 51 115
     delay    3
     sound    data/chars/shiryu/sounds/hurt2.wav
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 0 0 0
+    frame    data/chars/shiryu/pain1.png
+    frame    data/chars/shiryu/pain2.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain4.png
+    frame    data/chars/shiryu/pain3.png
+    frame    data/chars/shiryu/pain2.png
+    delay    500
+    frame    data/chars/shiryu/pain1.png
+
+anim pain12# ICE PAIN small
+    offset   58 128
+    bbox     20 13 51 115
+    delay    3
+    sound    data/chars/shiryu/sounds/hurt2.wav
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/shiryu/pain1.png
     frame    data/chars/shiryu/pain2.png
     frame    data/chars/shiryu/pain3.png
@@ -954,7 +976,7 @@ anim fall30# Shock PAIN Ground
 
 #// Block animations /////////////////////////////////////////////////
 
-anim    block
+anim block
     loop     0
     delay    5
     offset   45 130
@@ -966,7 +988,7 @@ anim    block
 
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim    attackbackward  # Attaque arrière native (b + a1)
+anim attackbackward  # Attaque arrière native (b + a1)
     jugglecost  1
     offset   93 130
     bbox     61 15 51 115
@@ -985,13 +1007,13 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     frame    data/chars/shiryu/attack66.png
     frame    data/chars/shiryu/attack67.png
 
-anim    attackboth  # Attaque de mêlée native (j + a1)
+anim attackboth  # Attaque de mêlée native (j + a1)
     jugglecost  2
     fastattack 1
     energycost  20 0 0
     offset   39 130
     bbox     21 15 51 115
-    hitflash flashbig
+    hitflash shiryu_swing
     delay    7
     sound    data/chars/shiryu/sounds/attack5.wav
     frame    data/chars/shiryu/attackbackward1.png
@@ -1016,13 +1038,13 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     bbox     0 0 0 0
     frame    data/chars/shiryu/attackbackward1.png
 
-anim    freespecial  # Attaque de mêlée (Bouton special, a2)
+anim freespecial  # Attaque de mêlée (Bouton special, a2)
     jugglecost  2
     fastattack 1
     energycost  20 0 0
     offset   39 130
     bbox     21 15 51 115
-    hitflash flashbig
+    hitflash shiryu_swing
     delay    7
     sound    data/chars/shiryu/sounds/attack5.wav
     frame    data/chars/shiryu/attackbackward1.png
@@ -1047,7 +1069,7 @@ anim    freespecial  # Attaque de mêlée (Bouton special, a2)
     bbox     0 0 0 0
     frame    data/chars/shiryu/attackbackward1.png
 
-anim    freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)
+anim freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)
     jugglecost   2
     summonframe  0 0 0 0 0
     subentity    shiryu_aura_ryuseiken
@@ -1088,7 +1110,7 @@ anim    freespecial2 # Fureur du Dragon (SUPER, haut + bouton special a2)
     frame    data/chars/shiryu/special37.png
     frame    data/chars/shiryu/special38.png
 
-anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 (laisser appuyé))
+anim freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 (laisser appuyé))
     delay    9
     offset   32 156
     hitflash flashbig
@@ -1115,7 +1137,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     frame    data/chars/shiryu/special3.png
     frame    data/chars/shiryu/special2.png
 
-anim    freespecial4    # Attaque arrière (a3)
+anim freespecial4    # Attaque arrière (a3)
     jugglecost  1
     offset   105 147
     hitflash flashmedium
@@ -1133,11 +1155,11 @@ anim    freespecial4    # Attaque arrière (a3)
     bbox     64 29 50 120
     frame    data/chars/shiryu/attackbackward20.png
 
-anim    freespecial5 # Uppercut (Bas, Avant, a1)
+anim freespecial5 # Uppercut (Bas, Avant, a1)
     jugglecost  2
     fastattack  1
     energycost  20 0 0
-    hitflash    flashbig
+    hitflash shiryu_swing
     offset   44 156
     bbox     16 41 51 115
     delay    5
@@ -1171,7 +1193,7 @@ anim    freespecial5 # Uppercut (Bas, Avant, a1)
     delay    60
     frame    data/chars/shiryu/uppercut11.png
 
-anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
+anim freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     jugglecost  3
     fastattack  1
     delay    13
@@ -1215,7 +1237,7 @@ anim    freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     frame    data/chars/shiryu/special37.png
     frame    data/chars/shiryu/special38.png
 
-anim    freespecial7    # Coup de pied haut (haut+a1)
+anim freespecial7    # Coup de pied haut (haut+a1)
     jugglecost  1
     sound    data/sounds/punch.wav
     delay    7
@@ -1230,7 +1252,7 @@ anim    freespecial7    # Coup de pied haut (haut+a1)
     frame    data/chars/shiryu/attack44.png
     frame    data/chars/shiryu/attack45.png
 
-anim    freespecial8    # Balayette (bas+a1)
+anim freespecial8    # Balayette (bas+a1)
     jugglecost  1
     delay    10
     offset   22 127
@@ -1244,7 +1266,7 @@ anim    freespecial8    # Balayette (bas+a1)
     frame    data/chars/shiryu/slide2.png
     frame    data/chars/shiryu/slide3.png
 
-anim    freespecial9    # Attaque au sol
+anim freespecial9    # Attaque au sol
     range 0 100
     rangea 0 5
     rangez -20 20

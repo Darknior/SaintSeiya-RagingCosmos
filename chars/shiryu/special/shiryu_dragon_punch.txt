@@ -1,0 +1,28 @@
+name	shiryu_dragon_punch
+type	none
+shadow	0
+speed 10
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim	idle
+	loop	0
+	delay	4
+	offset	100 158
+   drawmethod  alpha 1
+	drawmethod scale 1 1
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-0.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-1.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-2.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-3.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-4.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-5.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-6.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-7.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-8.png
+   delay	15
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-9.png
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-10.png
+   frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-11.png
+	@cmd suicide
+	frame	data/chars/shiryu/special/shiryu_dragon_punch/shiryu_dragon_punch-10.png

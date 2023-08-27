@@ -12,6 +12,7 @@ anim	idle
 	loop	0
    otg 1
 	fastattack 1
+   hitflash shiryu_swing
 	delay	7
 	drawmethod alpha 1
 	drawmethod fliprotate 1	

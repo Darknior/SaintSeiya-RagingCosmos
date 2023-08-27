@@ -132,13 +132,15 @@ know    shiryu_big_dragon      data/chars/shiryu/special/shiryu_big_dragon.txt
 know    shiryu_block           data/chars/shiryu/special/shiryu_block.txt
 know    shiryu_constellation   data/chars/shiryu/special/shiryu_constellation.txt
 know    shiryu_cosmos          data/chars/shiryu/special/shiryu_cosmos.txt
-know    shiryu_cosmosB          data/chars/shiryu/special/shiryu_cosmosB.txt
+know    shiryu_cosmosB         data/chars/shiryu/special/shiryu_cosmosB.txt
 know    shiryu_dash            data/chars/shiryu/special/shiryu_dash.txt
 know    shiryu_dragon          data/chars/shiryu/special/shiryu_dragon.txt
+know    shiryu_dragon_punch    data/chars/shiryu/special/shiryu_dragon_punch.txt
 know    shiryu_dragon_uppercut data/chars/shiryu/special/shiryu_dragon_uppercut.txt
 know    shiryu_dragon_water    data/chars/shiryu/special/shiryu_dragon_water.txt
 know    shiryu_explosion       data/chars/shiryu/special/shiryu_explosion.txt
 know    shiryu_lights          data/chars/shiryu/special/shiryu_lights.txt
+know    shiryu_swing           data/chars/shiryu/special/shiryu_swing.txt
 know    shiryu_uppercut        data/chars/shiryu/special/shiryu_uppercut.txt
 know    shiryu_whirl           data/chars/shiryu/special/shiryu_whirl.txt
 

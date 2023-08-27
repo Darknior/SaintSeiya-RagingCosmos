@@ -7,7 +7,7 @@ animationscript	data/scripts/player.c
 anim	idle
 	loop	0
 	delay	5
-	offset	38 200
+	offset	38 230
 	drawmethod alpha 1
 	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-0.png
 	frame	data/chars/shiryu/special/shiryu_uppercut/shiryu_uppercut-1.png

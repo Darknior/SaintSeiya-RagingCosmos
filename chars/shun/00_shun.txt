@@ -759,12 +759,11 @@ anim jumpforward #Attaque sautée vers l'avant
     offset    87 171
     sound data/chars/shun/sounds/attack.wav
     frame    data/chars/shun/jumpspecial1.png
-    attack20 62 98 67 50 10 1 0 0 5 30
-	 dropv    6.0 2.0 0.0
     frame    data/chars/shun/jumpspecial2.png
     frame    data/chars/shun/jumpspecial3.png
     frame    data/chars/shun/jumpspecial4.png
     delay    10
+    jumpframe  2 -1.5 4
     attack20 86 99 100 90 10 1 0 0 12 30
 	 dropv    6.0 2.0 0.0
     frame    data/chars/shun/jumpspecial5.png

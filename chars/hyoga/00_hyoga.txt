@@ -763,6 +763,7 @@ anim    jumpattack  # Attaque sautée statique
     sound    data/sounds/punch.wav
     frame    data/chars/hyoga/jumpattack1.png
     frame    data/chars/hyoga/jumpattack2.png
+    jumpframe  2 -1.5 0
     attack20  62 51 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/hyoga/jumpattack3.png
@@ -775,6 +776,7 @@ anim    jumpforward # Attaque sautée vers l'avant
     sound    data/sounds/punch.wav
     frame    data/chars/hyoga/jumpforward1.png
     frame    data/chars/hyoga/jumpforward2.png
+    jumpframe  2 -1.5 4
     attack4  62 21 67 26 10 1 0 0 5 12
     dropv    6.0 2.0 0.0
     frame    data/chars/hyoga/jumpforward3.png
@@ -979,7 +981,7 @@ anim pain10# ICE PAIN
     #move    -5
     delay    5
     sound    data/chars/hyoga/sounds/hurt.wav
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
     frame    data/chars/hyoga/pain3.png
@@ -994,8 +996,23 @@ anim pain11# ICE PAIN Big
     #move    -5
     delay    5
     sound    data/chars/hyoga/sounds/hurt.wav
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
+    frame    data/chars/hyoga/pain1.png
+    frame    data/chars/hyoga/pain2.png
+    frame    data/chars/hyoga/pain3.png
+    frame    data/chars/hyoga/pain2.png
+    delay    500
+    frame    data/chars/hyoga/pain1.png
+    
+anim pain12# ICE PAIN Small
+    offset   45 141
+    bbox     21 28 51 112
+    #move    -5
+    delay    5
+    sound    data/chars/hyoga/sounds/hurt.wav
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
     frame    data/chars/hyoga/pain3.png

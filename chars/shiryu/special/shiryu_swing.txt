@@ -1,0 +1,17 @@
+name	shiryu_swing
+type	none
+shadow	0
+
+
+anim	idle
+	loop	0
+	delay	10
+	offset	83 63
+   drawmethod  alpha 1
+   drawmethod  scale 0.6 0.6
+   sound data/chars/shiryu/sounds/explosion4.wav
+	frame	data/chars/shiryu/special/shiryu_swing/shiryu_swing-1.png
+	frame	data/chars/shiryu/special/shiryu_swing/shiryu_swing-2.png
+	frame	data/chars/shiryu/special/shiryu_swing/shiryu_swing-3.png
+	frame	data/chars/shiryu/special/shiryu_swing/shiryu_swing-4.png
+

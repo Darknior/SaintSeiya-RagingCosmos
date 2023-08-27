@@ -490,7 +490,19 @@ anim pain11# ICE PAIN Big
     delay    10
     offset    36 127
     bbox 18 16 38 114
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 40 1 1 1 1
+    frame    data/chars/deathmask/pain1.png
+    frame    data/chars/deathmask/pain2.png
+    delay    500
+    frame    data/chars/deathmask/pain3.png
+
+anim pain12# ICE PAIN Small
+    delay    10
+    offset    36 127
+    bbox 18 16 38 114
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/deathmask/pain1.png
     frame    data/chars/deathmask/pain2.png
     delay    500

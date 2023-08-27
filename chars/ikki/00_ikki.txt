@@ -721,6 +721,7 @@ anim jumpattack # Attaque sautée statique
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpattack1.png
     frame    data/chars/ikki/jumpattack2.png
+    jumpframe  2 -1.5 0
     attack4 62 78 83 76 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/ikki/jumpattack3.png
@@ -734,6 +735,7 @@ anim jumpforward # Attaque sautée vers l'avant
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/jumpforward2.png
     frame    data/chars/ikki/jumpforward3.png
+    jumpframe  2 -1.5 4
     attack4 62 121 107 40 10 1 0 0 5 12
     dropv    6.0 2.0 0.0
     frame    data/chars/ikki/jumpforward4.png
@@ -935,7 +937,7 @@ anim pain10# ICE PAIN
     #move    -5
     delay    5
     sound data/chars/ikki/sounds/hurt6.wav
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/ikki/pain1.png
     frame    data/chars/ikki/pain2.png
     frame    data/chars/ikki/pain3.png
@@ -950,14 +952,30 @@ anim pain11# ICE PAIN Big
     #move    -5
     delay    5
     sound data/chars/ikki/sounds/hurt6.wav
-    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 0 0 0
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
     frame    data/chars/ikki/pain1.png
     frame    data/chars/ikki/pain2.png
     frame    data/chars/ikki/pain3.png
     frame    data/chars/ikki/pain2.png
     delay    500
     frame    data/chars/ikki/pain1.png
-    
+ 
+anim pain12# ICE PAIN Small
+    offset    45 137
+    bbox 21 17 51 120
+    #move    -5
+    delay    5
+    sound data/chars/ikki/sounds/hurt6.wav
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+    frame    data/chars/ikki/pain1.png
+    frame    data/chars/ikki/pain2.png
+    frame    data/chars/ikki/pain3.png
+    frame    data/chars/ikki/pain2.png
+    delay    500
+    frame    data/chars/ikki/pain1.png
+ 
 anim pain30# Shock Pain
     offset    45 137
     bbox 21 17 51 120

@@ -107,14 +107,14 @@ com  a2 a2       freespecial     # Attaque de melée (coute 12 Mp)
 
 #// Select animations /////////////////////////////////////////////////
 
-anim    waiting # Animation d'attente dans l'écran de sélection
+anim waiting # Animation d'attente dans l'écran de sélection
     loop     1
     delay    40
     offset   59 226
     frame    data/chars/seiya/waiting1.png
     frame    data/chars/seiya/waiting2.png
 
-anim    select  # Personnage sélectionné
+anim select  # Personnage sélectionné
     delay    2
     offset   59 226
     sound    data/chars/seiya/sounds/select-long.wav
@@ -455,7 +455,7 @@ anim get
 
 #// Basic Attacks animations /////////////////////////////////////////////////
 
-anim    attack1 # Attaque combo 1
+anim attack1 # Attaque combo 1
     jugglecost  1
     delay    6
     offset   45 119
@@ -470,7 +470,7 @@ anim    attack1 # Attaque combo 1
     frame    data/chars/seiya/attack2.png
     attack1  0
 
-anim    attack2    # Attaque combo 2
+anim attack2    # Attaque combo 2
     jugglecost  1
     delay    7
     offset   45 119
@@ -486,7 +486,7 @@ anim    attack2    # Attaque combo 2
     frame    data/chars/seiya/attack24.png
     attack1  0
 
-anim    attack3    # Attaque combo 3
+anim attack3    # Attaque combo 3
     jugglecost  1
     delay    7
     offset   45 119
@@ -498,7 +498,7 @@ anim    attack3    # Attaque combo 3
     frame    data/chars/seiya/attack33.png
     attack1  0
 
-anim    attack4    # Attaque combo 4
+anim attack4    # Attaque combo 4
     jugglecost  1
     delay    7
     offset   45 119
@@ -510,7 +510,7 @@ anim    attack4    # Attaque combo 4
     frame    data/chars/seiya/attack43.png
     attack1  0
 
-anim    attack5    # Attaque combo 5
+anim attack5    # Attaque combo 5
     jugglecost  1
     delay    7
     offset   45 119
@@ -545,23 +545,9 @@ anim attack10 # charge attack (laisser punch appuyé 2 sec pour executer)
     delay	10
     frame    data/chars/seiya/special42.png
 
-anim chargeattack #DISABLE THE NATIVE CHARGE ATTACK TO AVOID CONFLICTS WITH THE SCRIPTED VERSION
-	chargetime 9999
-	loop	0
-	delay	10
-	offset   45 112
-    hitflash flashmedium
-    #@cmd     spawnbind "seiya_charge_attack" "ANI_IDLE" 0 1 0 0 0
-    #sound    data/chars/seiya/sounds/01-pegasus_shoot.wav
-	frame    data/chars/seiya/special42.png
-   delay	100
-   frame    data/chars/seiya/special43.png
-   delay	10
-   frame    data/chars/seiya/special42.png
-
 #// Grab animations /////////////////////////////////////////////////
 
-anim    grab
+anim grab
     delay    7
     offset   20 115
     bbox     21 0 35 114
@@ -569,7 +555,7 @@ anim    grab
     frame    data/chars/seiya/grab1.png
     frame    data/chars/seiya/grab2.png
 
-anim    grabattack  # Saisie Coup de genou X2
+anim grabattack  # Saisie Coup de genou X2
     delay    6
     offset   45 119
     bbox     42 7 30 112
@@ -580,7 +566,7 @@ anim    grabattack  # Saisie Coup de genou X2
     frame    data/chars/seiya/attack53.png
     frame    data/chars/seiya/attack51.png
 
-anim    grabattack2 # Saisie Coup finisher
+anim grabattack2 # Saisie Coup finisher
     delay    6
     offset   38 114
     bbox     21 0 35 114
@@ -595,7 +581,7 @@ anim    grabattack2 # Saisie Coup finisher
     attack20  0
     frame    data/chars/seiya/grabattack23.png
 
-anim    grabbackward    # Projection en arrière
+anim grabbackward    # Projection en arrière
     summonframe  0 0 0 0
     subentity    dash_dust
     landframe    6
@@ -631,7 +617,7 @@ anim    grabbackward    # Projection en arrière
     frame    data/chars/seiya/rise4.png
     frame    data/chars/seiya/rise5.png
     
-anim    grabforward  # projection en avant
+anim grabforward  # projection en avant
     delay    10
     offset   45 119
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 1 0 1 0
@@ -665,7 +651,7 @@ anim  runjump
     frame    data/chars/seiya/forwardjump7.png
     frame    data/chars/seiya/forwardjump8.png
 
-anim    jump    # Saut Statique
+anim jump    # Saut Statique
     summonframe  0 0 0 0
     subentity    round_dust
     delay    10
@@ -680,7 +666,7 @@ anim    jump    # Saut Statique
     frame    data/chars/seiya/jump2.png
     frame    data/chars/seiya/jump1.png
 
-anim    forwardjump # Saut vers l'avant
+anim forwardjump # Saut vers l'avant
     summonframe  0 0 0 0
     subentity    round_dust
     delay    10
@@ -695,13 +681,13 @@ anim    forwardjump # Saut vers l'avant
     frame    data/chars/seiya/jump2.png
     frame    data/chars/seiya/jump1.png
 
-anim    jumpdelay # Animation de saut intermédiaire
+anim jumpdelay # Animation de saut intermédiaire
     delay    10
     offset   45 137
     bbox     21 14 51 97
     frame    data/chars/seiya/jump1.png
 
-anim    jumpland # Aterrissage du saut
+anim jumpland # Aterrissage du saut
     summonframe  0 0 0 0
     subentity    round_dust
     delay    7
@@ -713,7 +699,7 @@ anim    jumpland # Aterrissage du saut
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get1.png
 
-anim    land #  atterissage safe au sol (haut+ jump pendant la projection)
+anim land #  atterissage safe au sol (haut+ jump pendant la projection)
     summonframe  0 0 0 0
     subentity    round_dust
     flipframe    1
@@ -734,32 +720,34 @@ anim    land #  atterissage safe au sol (haut+ jump pendant la projection)
     frame    data/chars/seiya/get2.png
     frame    data/chars/seiya/get1.png
 
-anim    jumpattack # Attaque sautée statique
+anim jumpattack # Attaque sautée statique
     delay    5
     offset   45 112
     hitflash flashbig
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack1.png
     frame    data/chars/seiya/jumpattack2.png
+    jumpframe  2 -1.5 0
     attack4  77 68 67 26 10 1 0 0 10 12
     dropv    4.0 1.0 0.0
     frame    data/chars/seiya/jumpattack3.png
     frame    data/chars/seiya/jumpattack3.png
     attack4  0
 
-anim    jumpforward # Attaque sautée vers l'avant
+anim jumpforward # Attaque sautée vers l'avant
     delay    5
     offset   45 112
     hitflash blue_swing
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpforward1.png
+    jumpframe  2 -1.5 2.5
     attack20  75 42 67 26 10 1 0 0 10 12
-    dropv    6.0 2.0 0.0
+    dropv    5.0 2.0 0.0
     frame    data/chars/seiya/jumpforward2.png
     frame    data/chars/seiya/jumpforward2.png
     attack4  0
 
-anim    jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
+anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     fastattack  1
     delay    5
     offset   45 112
@@ -781,7 +769,7 @@ anim    jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/seiya/jumpattack24.png
     attack4  62 21 67 100 10 1 0 0 0 20
 
-anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
+anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     delay    5
     offset   45 112
     bbox     21 0 51 112
@@ -796,7 +784,7 @@ anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
-anim    pain # normal pain
+anim pain # normal pain
     offset   51 111
     bbox     21 0 51 112
     #move    -5
@@ -810,7 +798,7 @@ anim    pain # normal pain
     frame    data/chars/seiya/pain2.png
     frame    data/chars/seiya/pain1.png
 
-anim    pain2 # big pain
+anim pain2 # big pain
     offset   24 110
     bbox     11 2 36 112
     #move    -5
@@ -876,7 +864,7 @@ anim follow1 # Stun aprés X chuttes
     sound    data/chars/seiya/sounds/stun.wav
     frame    data/chars/seiya/rise5.png
 
-anim    death
+anim death
     landframe  6
     offset   114 110
     delay    10
@@ -988,6 +976,23 @@ anim pain11# ICE PAIN Big
     delay    500
     frame    data/chars/seiya/pain1.png
     
+anim pain12# ICE PAIN Small
+    offset   51 111
+    bbox     21 0 51 112
+    #move    -5
+    delay    3
+    sound    data/chars/seiya/sounds/hurt.wav
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+    frame    data/chars/seiya/pain1.png
+    frame    data/chars/seiya/pain2.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain4.png
+    frame    data/chars/seiya/pain3.png
+    frame    data/chars/seiya/pain2.png
+    delay    500
+    frame    data/chars/seiya/pain1.png
+    
 anim pain30# Shock Pain
     offset   51 111
     bbox     21 0 51 112
@@ -1037,7 +1042,7 @@ anim fall30# Shock PAIN Ground
 
 #// Block animations /////////////////////////////////////////////////
 
-anim    block
+anim block
     loop     0
     delay    5
     offset   26 112
@@ -1049,7 +1054,7 @@ anim    block
 
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim    attackbackward  # Attaque arrière native (b + a1)
+anim attackbackward  # Attaque arrière native (b + a1)
     jugglecost 1
     offset   107 148
     hitflash flashmedium
@@ -1067,7 +1072,7 @@ anim    attackbackward  # Attaque arrière native (b + a1)
     bbox     64 29 50 120
     frame    data/chars/seiya/attackbackward20.png
 
-anim    attackboth # Attaque de mêlée native (j + a1)
+anim attackboth # Attaque de mêlée native (j + a1)
     jugglecost  2
     fastattack  1
     energycost  20 0 0
@@ -1100,7 +1105,7 @@ anim    attackboth # Attaque de mêlée native (j + a1)
     delay    12
     frame    data/chars/seiya/attackbackward1.png
 
-anim    freespecial # Attaque de mêlée (Bouton special, a2)
+anim freespecial # Attaque de mêlée (Bouton special, a2)
     jugglecost  2
     fastattack  1
     energycost  20 0 0
@@ -1133,7 +1138,7 @@ anim    freespecial # Attaque de mêlée (Bouton special, a2)
     delay    12
     frame    data/chars/seiya/attackbackward1.png
 
-anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
+anim freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     otg 1
     delay    10
     offset   31 116
@@ -1215,7 +1220,7 @@ anim    freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     @cmd     shooter "seiya_meteorB" 47 100 10 3 0 0
     attack5  0
 
-anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 (laisser appuyé))
+anim freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 (laisser appuyé))
     delay    9
     offset   31 119
     hitflash flashbig
@@ -1236,7 +1241,7 @@ anim    freespecial3    # Explosion du cosmos (Récupération des MP, bouton a4 
     frame    data/chars/seiya/special3.png
     frame    data/chars/seiya/special2.png
 
-anim    freespecial4    # Attaque arrière (a3)
+anim freespecial4    # Attaque arrière (a3)
     jugglecost 1
     offset   105 147
     hitflash flashmedium
@@ -1254,7 +1259,7 @@ anim    freespecial4    # Attaque arrière (a3)
     bbox     64 29 50 120
     frame    data/chars/seiya/attackbackward20.png
 
-anim    freespecial5    # Uppercut (Bas, Avant, a1)
+anim freespecial5    # Uppercut (Bas, Avant, a1)
     jugglecost  2
     energycost  20 1 0
     fastattack  1
@@ -1280,7 +1285,7 @@ anim    freespecial5    # Uppercut (Bas, Avant, a1)
     frame    data/chars/seiya/uppercut3.png
     frame    data/chars/seiya/uppercut2.png
 
-anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
+anim freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     jugglecost   10
     fastattack   1
     hitflash meteor_impact
@@ -1436,7 +1441,7 @@ anim    freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
     offset   31 116
     frame    data/chars/seiya/special42.png
 
-anim    freespecial7   # Coup de pied haut (haut+a1)
+anim freespecial7   # Coup de pied haut (haut+a1)
     jugglecost  1
     delay    7
     offset   45 119
@@ -1451,7 +1456,7 @@ anim    freespecial7   # Coup de pied haut (haut+a1)
     frame    data/chars/seiya/attack42.png
     frame    data/chars/seiya/attack41.png
 
-anim    freespecial8   # Balayette (bas+a1)
+anim freespecial8   # Balayette (bas+a1)
     jugglecost  1
     delay    10
     offset   22 127
@@ -1465,7 +1470,7 @@ anim    freespecial8   # Balayette (bas+a1)
     frame    data/chars/seiya/brush3.png
     frame    data/chars/seiya/brush4.png
 
-anim    freespecial9    # Attaque au sol
+anim freespecial9    # Attaque au sol
     range 0 100
     rangea 0 5
     rangez -20 20

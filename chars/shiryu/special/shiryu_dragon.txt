@@ -13,7 +13,7 @@ anim	idle
 	delay	8
 	drawmethod alpha 1
 	drawmethod fliprotate 1	
-   hitflash blue_swing
+   hitflash shiryu_swing
 	offset	250 102
    sound   data/chars/shiryu/sounds/dragon.wav
 	attack30  107 35 400 120 10 0 0 0 0 50

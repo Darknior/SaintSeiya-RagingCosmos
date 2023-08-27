@@ -488,7 +488,18 @@ anim pain11# ICE PAIN Big
     frame    data/chars/milo/pain2.png
     delay    500
     frame    data/chars/milo/pain1.png   
-    
+ 
+anim pain12# ICE PAIN Small
+    delay    10
+    offset    36 127
+    bbox 18 16 38 114
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+    frame    data/chars/milo/pain1.png
+    frame    data/chars/milo/pain2.png
+    delay    500
+    frame    data/chars/milo/pain1.png   
+ 
 anim pain30# Shock Pain
     delay    10
     offset    36 127
