@@ -1,0 +1,31 @@
+name        jump_dust
+type        none
+shadow      0
+antigravity 100
+animationscript    data/scripts/player.c
+
+anim    idle
+    loop     0
+    delay    4
+    offset   113 270
+    drawmethod scale 0.4 0.3
+    drawmethod  alpha 1
+    frame    data/chars/misc/dust/jump_dust/jump_dust8.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust9.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust10.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust11.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust12.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust12.png
+    delay    8
+    frame    data/chars/misc/dust/jump_dust/jump_dust13.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust14.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust15.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust16.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust17.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust18.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust19.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust20.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust21.png
+    frame    data/chars/misc/dust/jump_dust/jump_dust22.png
+    @cmd     suicide
+    frame    data/chars/misc/dust/jump_dust/jump_dust22.png

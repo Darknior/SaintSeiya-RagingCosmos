@@ -352,20 +352,6 @@ anim down
     frame    data/chars/shun/walk6.png
     frame    data/chars/shun/walk7.png
 
-anim dodge  # Esquive Haut / Bas (u u / d d)
-    delay    8
-    offset   87 171
-    bbox     68 35 51 107
-    summonframe     0 0 0 0
-    subentity       round_dust
-    jumpframe       2 1.8 0
-    sound    data/chars/shun/sounds/jump1.wav
-    frame    data/chars/shun/jump0.png
-    frame    data/chars/shun/jump1.png
-    frame    data/chars/shun/jump2.png
-    frame    data/chars/shun/jump3.png
-    frame    data/chars/shun/jump5.png
-
 anim run
     loop     1 1
     delay    8
@@ -666,8 +652,7 @@ anim    jump    # Saut Statique
     delay    10
     offset   87 171
     bbox     68 35 51 107
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/shun/sounds/jump1.wav
     frame    data/chars/shun/jump1.png
     frame    data/chars/shun/jump2.png
@@ -679,8 +664,7 @@ anim  runjump
     delay    6
     offset   87 171
     bbox     68 35 51 107
-    spawnframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/shun/sounds/jump1.wav
     frame    data/chars/shun/jump1.png
     frame    data/chars/shun/forwardjump1.png
@@ -698,8 +682,7 @@ anim    forwardjump # Saut vers l'avant
     delay    10
     offset   87 171
     bbox     68 35 51 107
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/shun/sounds/jump1.wav
     frame    data/chars/shun/jump1.png
     frame    data/chars/shun/jump2.png
@@ -791,6 +774,20 @@ anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/shun/jumpattack32.png
     frame    data/chars/shun/jumpattack33.png
     attack4 0
+
+anim dodge  # Esquive Haut / Bas (u u / d d)
+    delay    8
+    offset   87 171
+    bbox     68 35 51 107
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
+    jumpframe       2 1.8 0
+    sound    data/chars/shun/sounds/jump1.wav
+    frame    data/chars/shun/jump0.png
+    frame    data/chars/shun/jump1.png
+    frame    data/chars/shun/jump2.png
+    frame    data/chars/shun/jump3.png
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 1 1 1 0
+    frame    data/chars/shun/jump5.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 

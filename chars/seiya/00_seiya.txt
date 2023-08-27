@@ -381,20 +381,6 @@ anim down
     frame    data/chars/seiya/walk6.png
     frame    data/chars/seiya/walk7.png
 
-anim dodge  # Esquive Haut / Bas (u u / d d)
-    summonframe  0 0 0 0
-    subentity    round_dust
-    jumpframe    2.5 1.8 0
-    delay    8
-    offset   45 137
-    bbox     21 14 51 97
-    sound    data/chars/seiya/sounds/jump.wav
-    frame    data/chars/seiya/jump1.png
-    frame    data/chars/seiya/jump2.png
-    frame    data/chars/seiya/jump3.png
-    frame    data/chars/seiya/jump4.png
-    frame    data/chars/seiya/jump1.png
-
 anim run
     loop     1 1
     delay    8
@@ -636,8 +622,7 @@ anim grabforward  # projection en avant
 #// Jump animations /////////////////////////////////////////////////
 
 anim  runjump
-    spawnframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    6
     offset   45 137
     bbox     35 14 30 97
@@ -652,8 +637,7 @@ anim  runjump
     frame    data/chars/seiya/forwardjump8.png
 
 anim jump    # Saut Statique
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    10
     offset   45 137
     bbox     39 14 30 97
@@ -667,8 +651,7 @@ anim jump    # Saut Statique
     frame    data/chars/seiya/jump1.png
 
 anim forwardjump # Saut vers l'avant
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    10
     offset   45 137
     bbox     39 14 30 97
@@ -781,6 +764,20 @@ anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/seiya/jumpattack32.png
     frame    data/chars/seiya/jumpattack32.png
     attack4  0
+
+anim dodge  # Esquive Haut / Bas (u u / d d)
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
+    jumpframe    2.5 1.8 0
+    delay    8
+    offset   45 137
+    bbox     21 14 51 97
+    sound    data/chars/seiya/sounds/jump.wav
+    frame    data/chars/seiya/jump1.png
+    frame    data/chars/seiya/jump2.png
+    frame    data/chars/seiya/jump3.png
+    frame    data/chars/seiya/jump4.png
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 1 1 1 0
+    frame    data/chars/seiya/jump1.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 

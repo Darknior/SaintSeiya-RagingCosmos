@@ -332,20 +332,6 @@ anim down
     frame    data/chars/shiryu/walk5.png
     frame    data/chars/shiryu/walk6.png
 
-anim dodge   # Esquive Haut / Bas (u u / d d)
-    delay    8
-    offset   37 128
-    bbox     21 13 30 115
-    summonframe 0 0 0 0
-    subentity   round_dust
-    jumpframe   2 1.8 0
-    sound    data/chars/shiryu/sounds/jump1.wav
-    frame    data/chars/shiryu/jump1.png
-    frame    data/chars/shiryu/jump2.png
-    frame    data/chars/shiryu/jump3.png
-    frame    data/chars/shiryu/jump2.png
-    frame    data/chars/shiryu/jump1.png
-
 anim run
     loop     1 1
     delay    8
@@ -581,8 +567,7 @@ anim grabforward  # projection en avant
 #// Jump animations /////////////////////////////////////////////////
 
 anim jump        # Saut Statique
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    10
     offset   37 128
     bbox     16 13 51 115
@@ -595,8 +580,7 @@ anim jump        # Saut Statique
     frame    data/chars/shiryu/jump1.png
 
 anim forwardjump       # Saut Statique
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    10
     offset   37 128
     bbox     16 13 51 115
@@ -609,8 +593,7 @@ anim forwardjump       # Saut Statique
     frame    data/chars/shiryu/jump1.png
 
 anim runjump # Saut vers l'avant
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    6
     offset   37 146
     bbox     16 13 51 115
@@ -679,8 +662,6 @@ anim jumpattack  # Attaque sautée statique
     attack4  0
 
 anim jumpforward # Attaque sautée vers l'avant
-    summonframe  0 0 0 0
-    subentity    round_dust
     delay    5
     offset   50 128
     sound    data/sounds/punch.wav
@@ -719,6 +700,20 @@ anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/shiryu/jumpattack35.png
     frame    data/chars/shiryu/jumpattack35.png
     attack4  0
+    
+anim dodge   # Esquive Haut / Bas (u u / d d)
+    delay    8
+    offset   37 128
+    bbox     21 13 30 115
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
+    jumpframe   2 1.8 0
+    sound    data/chars/shiryu/sounds/jump1.wav
+    frame    data/chars/shiryu/jump1.png
+    frame    data/chars/shiryu/jump2.png
+    frame    data/chars/shiryu/jump3.png
+    frame    data/chars/shiryu/jump2.png
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 1 1 1 0
+    frame    data/chars/shiryu/jump1.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 

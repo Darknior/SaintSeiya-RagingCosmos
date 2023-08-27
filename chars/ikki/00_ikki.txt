@@ -394,21 +394,6 @@ anim down
     frame    data/chars/ikki/walk7.png
     frame    data/chars/ikki/walk8.png
 
-
-anim dodge  # Esquive Haut / Bas (u u / d d)
-    delay    8
-    offset   55 206
-    bbox     48 76 30 120
-    summonframe     0 0 0 0
-    subentity       round_dust
-    jumpframe       2 1.8 0
-    sound    data/chars/ikki/sounds/jump1.wav
-    frame    data/chars/ikki/jump1.png
-    frame    data/chars/ikki/jump2.png
-    frame    data/chars/ikki/jump3.png
-    frame    data/chars/ikki/jump4.png
-    frame    data/chars/ikki/jump1.png
-
 anim run
     loop    1 1
     delay    8
@@ -635,8 +620,7 @@ anim jump # Saut Statique
     delay    10
     offset   55 206
     bbox     49 76 30 120
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/ikki/sounds/jump1.wav
     frame    data/chars/ikki/jump1.png
     frame    data/chars/ikki/jump2.png
@@ -653,8 +637,7 @@ anim forwardjump # Saut vers l'avant
     delay    10
     offset   55 206
     bbox     49 76 30 120
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/ikki/sounds/jump1.wav
     frame    data/chars/ikki/jump1.png
     frame    data/chars/ikki/jump2.png
@@ -671,8 +654,7 @@ anim  runjump
     delay    8
     offset   55 206
     bbox     35 76 51 120
-    spawnframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/ikki/sounds/jump1.wav
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/forwardjump1.png
@@ -766,6 +748,20 @@ anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/ikki/jumpattack32.png
     frame    data/chars/ikki/jumpattack32.png
     attack4 0
+    
+anim dodge  # Esquive Haut / Bas (u u / d d)
+    delay    8
+    offset   55 206
+    bbox     48 76 30 120
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
+    jumpframe       2 1.8 0
+    sound    data/chars/ikki/sounds/jump1.wav
+    frame    data/chars/ikki/jump1.png
+    frame    data/chars/ikki/jump2.png
+    frame    data/chars/ikki/jump3.png
+    frame    data/chars/ikki/jump4.png
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 1 1 1 0
+    frame    data/chars/ikki/jump1.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 

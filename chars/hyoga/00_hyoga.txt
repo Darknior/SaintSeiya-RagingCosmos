@@ -417,20 +417,6 @@ anim    down
     frame    data/chars/hyoga/walk8.png
     frame    data/chars/hyoga/walk9.png
 
-anim    dodge    # Esquive Haut / Bas (u u / d d)
-    delay    8
-    offset   63 140
-    bbox     34 18 51 112
-    summonframe     0 0 0 0
-    subentity       round_dust
-    jumpframe       2 1.8 0
-    sound    data/chars/hyoga/sounds/jump1.wav
-    frame    data/chars/hyoga/jump1.png
-    frame    data/chars/hyoga/jump2.png
-    frame    data/chars/hyoga/jump3.png
-    frame    data/chars/hyoga/jump4.png
-    frame    data/chars/hyoga/jump1.png
-
 anim    run
     loop     1 1
     delay    8
@@ -662,8 +648,7 @@ anim    grabforward  # projection en avant
 #// Jump animations /////////////////////////////////////////////////
 
 anim    runjump
-    spawnframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    6
     offset   55 140
     bbox     35 14 51 97
@@ -681,8 +666,7 @@ anim    runjump
     frame    data/chars/hyoga/jump11.png
 
 anim jump    # Saut Statique
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    8
     offset   55 140
     bbox     21 14 51 97
@@ -700,8 +684,7 @@ anim jump    # Saut Statique
     frame    data/chars/hyoga/jump11.png
 
 anim forwardjump # Saut vers l'avant
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    8
     offset   55 140
     bbox     21 14 51 97
@@ -810,6 +793,20 @@ anim    jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/hyoga/jumpattack32.png
     frame    data/chars/hyoga/jumpattack33.png
     attack4  0
+    
+anim    dodge    # Esquive Haut / Bas (u u / d d)
+    delay    8
+    offset   63 140
+    bbox     34 18 51 112
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
+    jumpframe       2 1.8 0
+    sound    data/chars/hyoga/sounds/jump1.wav
+    frame    data/chars/hyoga/jump1.png
+    frame    data/chars/hyoga/jump2.png
+    frame    data/chars/hyoga/jump3.png
+    frame    data/chars/hyoga/jump4.png
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 1 1 1 0
+    frame    data/chars/hyoga/jump1.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
