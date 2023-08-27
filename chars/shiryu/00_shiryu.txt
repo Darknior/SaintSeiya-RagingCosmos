@@ -672,9 +672,10 @@ anim runjumpattack # Attaque sautée en courant
     frame    data/chars/shiryu/jumpforward3.png
 
 anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
+    otg 1
     delay    5
     offset   50 128
-    sound    data/sounds/punch.wav
+    sound    data/chars/shiryu/sounds/attack2.wav
     frame    data/chars/shiryu/jumpattack21.png
     frame    data/chars/shiryu/jumpattack22.png
     frame    data/chars/shiryu/jumpattack23.png

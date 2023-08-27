@@ -712,7 +712,7 @@ anim jumpforward # Attaque sautée vers l'avant
 anim runjumpattack # Attaque sautée en courant
     delay    5
     offset    55 206
-    sound data/sounds/punch.wav
+    sound data/chars/ikki/sounds/attack5.wav
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/jumpforward2.png
     frame    data/chars/ikki/jumpforward3.png
@@ -723,6 +723,7 @@ anim runjumpattack # Attaque sautée en courant
     attack4 0
 
 anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
+    otg 1
     delay    5
     offset    55 206
     sound data/sounds/punch.wav

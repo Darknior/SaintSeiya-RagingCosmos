@@ -487,8 +487,9 @@ anim attack5    # Attaque combo 5
     hitflash flashbig
     frame    data/chars/seiya/attack51.png
     frame    data/chars/seiya/attack52.png
-    sound    data/chars/seiya/sounds/kick.wav
+    sound    data/chars/seiya/sounds/punch3.wav
     frame    data/chars/seiya/attack53.png
+    sound    data/chars/seiya/sounds/kick.wav
     attack20  64 37 67 26 10 1 1 0 50 20
     dropv    4.0 1.0 0.0
     frame    data/chars/seiya/attack54.png
@@ -718,7 +719,7 @@ anim runjumpattack # Attaque sautée en courant
     delay    5
     offset   45 112
     hitflash blue_swing
-    sound    data/sounds/punch.wav
+    sound    data/chars/seiya/sounds/punch2.wav
     frame    data/chars/seiya/jumpforward1.png
     jumpframe  2 -2 4.5
     attack20  75 42 67 26 10 1 0 0 10 12
@@ -728,11 +729,12 @@ anim runjumpattack # Attaque sautée en courant
     attack4  0
 
 anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
+    otg 1
     fastattack  1
     delay    5
     offset   45 112
     hitflash blue_swing
-    sound    data/sounds/punch.wav
+    sound    data/chars/seiya/sounds/punch3.wav
     frame    data/chars/seiya/jumpattack21.png
     frame    data/chars/seiya/jumpattack22.png
     frame    data/chars/seiya/jumpattack23.png
@@ -1139,40 +1141,24 @@ anim freespecial2   # Météores de Pégase (SUPER, haut + bouton special a2)
     offset   31 116
     energycost  25 1 0
     hitflash meteor_impact
-    attack5  -8 -64 100 180 10 1 0 0 5 30
-    dropv    3 5
     sound    data/chars/seiya/sounds/pegasus_ryuseiken.wav
     @cmd     spawnbind "seiya_aura" "ANI_IDLE" 0 1 0 0 0
     @cmd     spawnbind "seiya_aura_ryuseikenB" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/seiya/special21.png
     frame    data/chars/seiya/special22.png
-    attack5  -8 -64 100 180 10 1 0 0 5 30
-    dropv    3 5
     frame    data/chars/seiya/special23.png
     frame    data/chars/seiya/special24.png
-    attack5 -8 -64 100 180 10 1 0 0 5 30
-    dropv    3 5
     frame    data/chars/seiya/special25.png
     frame    data/chars/seiya/special26.png
-    attack5 -8 -64 100 180 10 1 0 0 5 30
-    dropv    3 5
     frame    data/chars/seiya/special27.png
     frame    data/chars/seiya/special28.png
-    attack5 -8 -64 100 180 10 1 0 0 5 30
-    dropv    3 5
     frame    data/chars/seiya/special29.png
     frame    data/chars/seiya/special30.png
-    attack5 -8 -64 100 180 10 1 0 0 5 30
-    dropv    3 5
     frame    data/chars/seiya/special31.png
     frame    data/chars/seiya/special32.png
-    attack5 -8 -64 100 180 10 1 0 0 5 30
-    dropv    3 5
     sound    data/chars/seiya/sounds/meteors.wav
     frame    data/chars/seiya/special33.png
     frame    data/chars/seiya/special34.png
-    attack5 -8 -64 100 180 10 1 0 0 5 30
-    dropv    3 5
     offset   31 123
     frame    data/chars/seiya/special35.png
     @cmd     spawnbind "seiya_aura_ryuseiken" "ANI_IDLE" 0 0 0 0 0

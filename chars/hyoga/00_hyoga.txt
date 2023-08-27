@@ -754,7 +754,7 @@ anim jumpforward # Attaque sautée vers l'avant
 anim runjumpattack # Attaque sautée en courant
     delay    5
     offset   55 140
-    sound    data/sounds/punch.wav
+    sound    data/chars/hyoga/sounds/attack10.wav
     frame    data/chars/hyoga/jumpforward1.png
     frame    data/chars/hyoga/jumpforward2.png
     jumpframe  2 -2 4.5
@@ -764,9 +764,10 @@ anim runjumpattack # Attaque sautée en courant
     frame    data/chars/hyoga/jumpforward4.png
 
 anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
+    otg 1
     delay    5
     offset   55 140
-    sound    data/sounds/punch.wav
+    sound    data/chars/hyoga/sounds/attack6.wav
     frame    data/chars/hyoga/jumpattack1.png
     frame    data/chars/hyoga/jumpattack2.png
     jumpframe  2 -2 0
