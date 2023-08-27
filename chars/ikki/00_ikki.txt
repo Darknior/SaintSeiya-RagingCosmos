@@ -703,21 +703,32 @@ anim jumpattack # Attaque sautée statique
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpattack1.png
     frame    data/chars/ikki/jumpattack2.png
-    jumpframe  2 -1.5 0
+    jumpframe 2 0 0
     attack4 62 78 83 76 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
-    frame    data/chars/ikki/jumpattack3.png
-    frame    data/chars/ikki/jumpattack3.png
-    attack4 0
+    frame    data/chars/ikki/jumpattack4.png
+    frame    data/chars/ikki/jumpattack4.png
 
 anim jumpforward # Attaque sautée vers l'avant
+    delay    5
+    offset    55 206
+    sound data/sounds/punch.wav
+    frame    data/chars/ikki/jumpattack1.png
+    frame    data/chars/ikki/jumpattack2.png
+    jumpframe 2 -1.5 2.5
+    attack4 62 78 83 76 10 1 0 0 5 12
+    dropv    4.0 1.0 0.0
+    frame    data/chars/ikki/jumpattack4.png
+    frame    data/chars/ikki/jumpattack4.png
+    
+anim runjumpattack # Attaque sautée en courant
     delay    5
     offset    55 206
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/jumpforward2.png
     frame    data/chars/ikki/jumpforward3.png
-    jumpframe  2 -1.5 4
+    jumpframe 2 -2 4.5
     attack4 62 121 107 40 10 1 0 0 5 12
     dropv    6.0 2.0 0.0
     frame    data/chars/ikki/jumpforward4.png
@@ -735,7 +746,6 @@ anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     dropv    4.0 1.0 0.0
     frame    data/chars/ikki/jumpattack24.png
     frame    data/chars/ikki/jumpattack24.png
-    attack4 0
 
 anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     delay    5
@@ -743,18 +753,18 @@ anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     bbox 35 76 51 120
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpattack31.png
+    jumpframe 1 2 0
     attack4 65 91 67 60 10 1 0 0 5 12
     dropv    7.0 1.0 0.0
     frame    data/chars/ikki/jumpattack32.png
-    frame    data/chars/ikki/jumpattack32.png
-    attack4 0
+    frame    data/chars/ikki/jumpattack33.png
     
 anim dodge  # Esquive Haut / Bas (u u / d d)
     delay    8
     offset   55 206
     bbox     48 76 30 120
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
-    jumpframe       2 1.8 0
+    jumpframe 2 1.8 0
     sound    data/chars/ikki/sounds/jump1.wav
     frame    data/chars/ikki/jump1.png
     frame    data/chars/ikki/jump2.png
@@ -1238,61 +1248,37 @@ anim freespecial6 # Hoyoku Tensho ( haut + bouton special)
     subentity ikki_constellation
     energycost  50 1 0
     hitflash shaka_flame
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     sound   data/chars/ikki/sounds/phoenix.wav
     @cmd     spawnbind "ikki_aura" "ANI_IDLE" 0 5 1 1 0
     frame    data/chars/ikki/sleep1.png
     frame    data/chars/ikki/sleep2.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/sleep3.png
     frame    data/chars/ikki/sleep4.png
     sound data/chars/ikki/sounds/flapB.wav
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/sleep5.png
     @cmd     spawnbind "ikki_auraB" "ANI_IDLE" 0 10 0 0 0
     frame    data/chars/ikki/sleep6.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/sleep7.png
     frame    data/chars/ikki/sleep8.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/sleep9.png
     @cmd    shooter "ikki_storm" 30 10 0 1.5 0 0
     frame    data/chars/ikki/sleep10.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/sleep11.png
     frame    data/chars/ikki/sleep12.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/sleep4.png
     frame    data/chars/ikki/sleep3.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/sleep2.png
     delay    10
     offset    73 136
     sound data/chars/ikki/sounds/hoyo_tensho.wav
     frame    data/chars/ikki/special21.png
     frame    data/chars/ikki/special22.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/special23.png
     frame    data/chars/ikki/special24.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/special25.png
     frame    data/chars/ikki/special26.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/special27.png
     frame    data/chars/ikki/special28.png
-    attack15 35 66 100 131 10 1 0 0 5 12
-    dropv     3 5
     frame    data/chars/ikki/special29.png
     @cmd     spawnScreen "ikki_lights" 0 0 0 0
     frame    data/chars/ikki/special30.png

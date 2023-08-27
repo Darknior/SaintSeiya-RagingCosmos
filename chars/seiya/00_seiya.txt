@@ -710,20 +710,34 @@ anim jumpattack # Attaque sautée statique
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack1.png
     frame    data/chars/seiya/jumpattack2.png
-    jumpframe  2 -1.5 0
+    jumpframe  2 0 0
     attack4  77 68 67 26 10 1 0 0 10 12
     dropv    4.0 1.0 0.0
     frame    data/chars/seiya/jumpattack3.png
     frame    data/chars/seiya/jumpattack3.png
     attack4  0
 
-anim jumpforward # Attaque sautée vers l'avant
+anim jumpforward # Attaque sautée vers l avant
+    delay    5
+    offset   45 112
+    hitflash flashbig
+    sound    data/sounds/punch.wav
+    frame    data/chars/seiya/jumpattack1.png
+    frame    data/chars/seiya/jumpattack2.png
+    jumpframe  2 -1.5 2.5
+    attack4  77 68 67 26 10 1 0 0 10 12
+    dropv    4.0 1.0 0.0
+    frame    data/chars/seiya/jumpattack3.png
+    frame    data/chars/seiya/jumpattack3.png
+    attack4  0
+
+anim runjumpattack # Attaque sautée en courant
     delay    5
     offset   45 112
     hitflash blue_swing
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpforward1.png
-    jumpframe  2 -1.5 2.5
+    jumpframe  2 -2 4.5
     attack20  75 42 67 26 10 1 0 0 10 12
     dropv    5.0 2.0 0.0
     frame    data/chars/seiya/jumpforward2.png
@@ -757,6 +771,7 @@ anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     offset   45 112
     bbox     21 0 51 112
     hitflash flashbig
+    jumpframe  1 2 0
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack31.png
     attack4  73 21 67 35 10 1 0 0 10 12

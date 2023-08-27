@@ -654,24 +654,34 @@ anim jumpattack  # Attaque sautée statique
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/jumpattack1.png
     frame    data/chars/shiryu/jumpattack2.png
-    jumpframe  2 -1.5 0
+    jumpframe  2 0 0
     attack20  62 21 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/shiryu/jumpattack3.png
     frame    data/chars/shiryu/jumpattack3.png
-    attack4  0
+    
+anim jumpforward  # Attaque sautée vers l avant
+    delay    5
+    offset   37 128
+    sound    data/sounds/punch.wav
+    frame    data/chars/shiryu/jumpattack1.png
+    frame    data/chars/shiryu/jumpattack2.png
+    jumpframe  2 -1.5 2.5
+    attack20  62 21 67 26 10 1 0 0 5 12
+    dropv    4.0 1.0 0.0
+    frame    data/chars/shiryu/jumpattack3.png
+    frame    data/chars/shiryu/jumpattack3.png
 
-anim jumpforward # Attaque sautée vers l'avant
+anim runjumpattack # Attaque sautée en courant
     delay    5
     offset   50 128
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/jumpforward1.png
     frame    data/chars/shiryu/jumpforward2.png
-    jumpframe  2 -1.5 4
+    jumpframe  2 -2 4.5
     attack4  62 21 67 26 10 1 0 0 5 12
     dropv    6.0 2.0 0.0
     frame    data/chars/shiryu/jumpforward3.png
-    attack4  0
 
 anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     delay    5
@@ -685,7 +695,6 @@ anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     dropv    4.0 1.0 0.0
     frame    data/chars/shiryu/jumpattack24.png
     frame    data/chars/shiryu/jumpattack23.png
-    attack4  0
 
 anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     delay    5
@@ -695,11 +704,11 @@ anim jumpattack3 # Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/shiryu/jumpattack32.png
     frame    data/chars/shiryu/jumpattack33.png
     frame    data/chars/shiryu/jumpattack34.png
+    jumpframe  1 2 0
     attack4  62 21 67 26 10 1 0 0 5 12
     dropv    7.0 1.0 0.0
     frame    data/chars/shiryu/jumpattack35.png
     frame    data/chars/shiryu/jumpattack35.png
-    attack4  0
     
 anim dodge   # Esquive Haut / Bas (u u / d d)
     delay    8

@@ -6,6 +6,7 @@ void main()
    tintEffect(openborconstant("ANI_PAIN10"), "ice", 1);
    tintEffect(openborconstant("ANI_PAIN11"), "ice", 1);
 	tintEffect(openborconstant("ANI_RUNATTACK"), "ice", 1);
+   tintEffect(openborconstant("ANI_ATTACK10"), "ice", 1);
 	tintEffect(openborconstant("ANI_RISEATTACK"), "ice", 1);
 	tintEffect(openborconstant("ANI_SPECIAL"), "ice", 1);
 	tintEffect(openborconstant("ANI_SPECIAL2"), "ice", 1);
