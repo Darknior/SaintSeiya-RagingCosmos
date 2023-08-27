@@ -174,21 +174,6 @@ anim select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
-#anim spawnold # Animation de 1ère apparition du personnage
-    delay    20
-    offset   45 124
-    frame    data/chars/seiya/spawn1.png
-    frame    data/chars/seiya/spawn2.png
-    frame    data/chars/seiya/spawn3.png
-    frame    data/chars/seiya/spawn2.png
-    frame    data/chars/seiya/spawn1.png
-    frame    data/chars/seiya/spawn2.png
-    frame    data/chars/seiya/spawn3.png
-    frame    data/chars/seiya/spawn4.png
-    frame    data/chars/seiya/spawn5.png
-    frame    data/chars/seiya/spawn6.png
-    frame    data/chars/seiya/spawn7.png
-
 anim spawn # anim debut de niveau
     loop     0
     delay    10
@@ -207,22 +192,20 @@ anim spawn # anim debut de niveau
     frame    data/chars/seiya/idle11.png
 
 anim respawn # anim apres perdre une vie
-    loop     0
-    delay    10
-    offset   45 112
-    bbox     34 0 30 112
+    delay    20
+    offset   45 124
     sound    data/chars/seiya/sounds/spawn2.wav
-    frame    data/chars/seiya/idle1.png
-    frame    data/chars/seiya/idle2.png
-    frame    data/chars/seiya/idle3.png
-    frame    data/chars/seiya/idle4.png
-    frame    data/chars/seiya/idle5.png
-    frame    data/chars/seiya/idle6.png
-    frame    data/chars/seiya/idle7.png
-    frame    data/chars/seiya/idle8.png
-    frame    data/chars/seiya/idle9.png
-    frame    data/chars/seiya/idle10.png
-    frame    data/chars/seiya/idle11.png
+    frame    data/chars/seiya/spawn1.png
+    frame    data/chars/seiya/spawn2.png
+    frame    data/chars/seiya/spawn3.png
+    frame    data/chars/seiya/spawn2.png
+    frame    data/chars/seiya/spawn1.png
+    frame    data/chars/seiya/spawn2.png
+    frame    data/chars/seiya/spawn3.png
+    frame    data/chars/seiya/spawn4.png
+    frame    data/chars/seiya/spawn5.png
+    frame    data/chars/seiya/spawn6.png
+    frame    data/chars/seiya/spawn7.png
 
 anim idle
     loop     1

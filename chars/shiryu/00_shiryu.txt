@@ -154,9 +154,22 @@ anim select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
-#anim spawnold # Animation de 1ère apparition du personnage
+anim spawn # anim debut de niveau
+    loop     0
+    delay    18
+    offset   39 128
+    bbox     28 13 30 115
+    frame    data/chars/shiryu/idle1.png
+    frame    data/chars/shiryu/idle2.png
+    frame    data/chars/shiryu/idle3.png
+    frame    data/chars/shiryu/idle4.png
+    frame    data/chars/shiryu/idle3.png
+    frame    data/chars/shiryu/idle2.png
+
+anim respawn # anim apres perdre une vie
     delay    10
     offset   42 127
+    sound    data/chars/shiryu/sounds/victory2.wav
     frame    data/chars/shiryu/spawn1.png
     frame    data/chars/shiryu/spawn2.png
     frame    data/chars/shiryu/spawn3.png
@@ -174,31 +187,6 @@ anim select  # Personnage sélectionné
     frame    data/chars/shiryu/spawn15.png
     frame    data/chars/shiryu/spawn16.png
     frame    data/chars/shiryu/spawn17.png
-
-anim spawn # anim debut de niveau
-    loop     0
-    delay    18
-    offset   39 128
-    bbox     28 13 30 115
-    frame    data/chars/shiryu/idle1.png
-    frame    data/chars/shiryu/idle2.png
-    frame    data/chars/shiryu/idle3.png
-    frame    data/chars/shiryu/idle4.png
-    frame    data/chars/shiryu/idle3.png
-    frame    data/chars/shiryu/idle2.png
-
-anim respawn # anim apres perdre une vie
-    loop     0
-    delay    18
-    offset   39 128
-    bbox     28 13 30 115
-    frame    data/chars/shiryu/idle1.png
-    sound    data/chars/shiryu/sounds/victory2.wav
-    frame    data/chars/shiryu/idle2.png
-    frame    data/chars/shiryu/idle3.png
-    frame    data/chars/shiryu/idle4.png
-    frame    data/chars/shiryu/idle3.png
-    frame    data/chars/shiryu/idle2.png
 
 anim idle
     loop     1

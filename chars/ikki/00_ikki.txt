@@ -175,7 +175,19 @@ anim    select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
-#anim spawnold # Animation de 1ère apparition du personnage
+anim spawn # anim debut de niveau
+    loop 0
+    delay    15
+    offset   45 137
+    bbox     30 17 30 120
+    frame    data/chars/ikki/idle1.png
+    frame    data/chars/ikki/idle2.png
+    frame    data/chars/ikki/idle3.png
+    frame    data/chars/ikki/idle4.png
+    frame    data/chars/ikki/idle5.png
+    frame    data/chars/ikki/idle6.png
+
+anim respawn # anim apres perdre une vie
     delay    8
     offset   98 208
     sound    data/chars/ikki/sounds/fire.wav
@@ -188,6 +200,7 @@ anim    select  # Personnage sélectionné
     frame    data/chars/ikki/spawn7.png
     frame    data/chars/ikki/spawn8.png
     frame    data/chars/ikki/spawn9.png
+    sound    data/chars/ikki/sounds/victory1.wav
     frame    data/chars/ikki/spawn10.png
     frame    data/chars/ikki/spawn11.png
     frame    data/chars/ikki/spawn12.png
@@ -219,31 +232,6 @@ anim    select  # Personnage sélectionné
     frame    data/chars/ikki/spawn38.png
     frame    data/chars/ikki/spawn39.png
     frame    data/chars/ikki/spawn40.png
-
-anim spawn # anim debut de niveau
-    loop 0
-    delay    15
-    offset   45 137
-    bbox     30 17 30 120
-    frame    data/chars/ikki/idle1.png
-    frame    data/chars/ikki/idle2.png
-    frame    data/chars/ikki/idle3.png
-    frame    data/chars/ikki/idle4.png
-    frame    data/chars/ikki/idle5.png
-    frame    data/chars/ikki/idle6.png
-
-anim respawn # anim apres perdre une vie
-    loop 0
-    delay    15
-    offset   45 137
-    bbox     30 17 30 120
-    sound    data/chars/ikki/sounds/victory1.wav
-    frame    data/chars/ikki/idle1.png
-    frame    data/chars/ikki/idle2.png
-    frame    data/chars/ikki/idle3.png
-    frame    data/chars/ikki/idle4.png
-    frame    data/chars/ikki/idle5.png
-    frame    data/chars/ikki/idle6.png
 
 anim idle
     loop 1

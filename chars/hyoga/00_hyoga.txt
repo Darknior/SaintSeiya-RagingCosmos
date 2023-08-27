@@ -183,26 +183,6 @@ anim select  # Personnage sélectionné
 
 #// Static animations /////////////////////////////////////////////////
 
-#anim   spawnold    # Animation de 1ère apparition du personnage
-    delay    20
-    offset   27 141
-    frame    data/chars/hyoga/spawn1.png
-    frame    data/chars/hyoga/spawn2.png
-    frame    data/chars/hyoga/spawn3.png
-    frame    data/chars/hyoga/spawn4.png
-    frame    data/chars/hyoga/spawn5.png
-    frame    data/chars/hyoga/spawn6.png
-    frame    data/chars/hyoga/spawn7.png
-    frame    data/chars/hyoga/spawn8.png
-    frame    data/chars/hyoga/spawn9.png
-    frame    data/chars/hyoga/spawn10.png
-    frame    data/chars/hyoga/spawn11.png
-    frame    data/chars/hyoga/spawn12.png
-    frame    data/chars/hyoga/spawn13.png
-    frame    data/chars/hyoga/spawn14.png
-    frame    data/chars/hyoga/spawn15.png
-    frame    data/chars/hyoga/spawn16.png
-
 anim spawn # anim debut de niveau
     loop 0
     delay    10
@@ -217,18 +197,25 @@ anim spawn # anim debut de niveau
     frame    data/chars/hyoga/idle7.png
 
 anim respawn # anim apres perdre une vie
-    loop 0
-    delay    10
-    offset   45 140
-    bbox     29 28 30 112
+    delay    20
+    offset   27 141
+    frame    data/chars/hyoga/spawn1.png
+    frame    data/chars/hyoga/spawn2.png
+    frame    data/chars/hyoga/spawn3.png
+    frame    data/chars/hyoga/spawn4.png
+    frame    data/chars/hyoga/spawn5.png
     sound    data/chars/hyoga/sounds/victory1.wav
-    frame    data/chars/hyoga/idle1.png
-    frame    data/chars/hyoga/idle2.png
-    frame    data/chars/hyoga/idle3.png
-    frame    data/chars/hyoga/idle4.png
-    frame    data/chars/hyoga/idle5.png
-    frame    data/chars/hyoga/idle6.png
-    frame    data/chars/hyoga/idle7.png
+    frame    data/chars/hyoga/spawn6.png
+    frame    data/chars/hyoga/spawn7.png
+    frame    data/chars/hyoga/spawn8.png
+    frame    data/chars/hyoga/spawn9.png
+    frame    data/chars/hyoga/spawn10.png
+    frame    data/chars/hyoga/spawn11.png
+    frame    data/chars/hyoga/spawn12.png
+    frame    data/chars/hyoga/spawn13.png
+    frame    data/chars/hyoga/spawn14.png
+    frame    data/chars/hyoga/spawn15.png
+    frame    data/chars/hyoga/spawn16.png
 
 anim idle
     loop     1
