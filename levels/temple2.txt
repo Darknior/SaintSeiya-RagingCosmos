@@ -41,14 +41,18 @@ spawn       temple2roadcolumns
 coords      0 0
 at          0
 
-spawn soldier_basic
+spawn soldier_shield_dress
 alias konstantinos
 item diamantecd
 coords    850 440
 at 0
 
 
-
+spawn soldier_shield
+alias konstantinos
+item diamantecd
+coords    350 390
+at 0
 
 
 
@@ -57,7 +61,7 @@ alias Anthonin
 coords    -200 410
 at 400
 
-spawn soldier2
+spawn sticksoldier
 alias Teo
 item apple
 coords    -200 470

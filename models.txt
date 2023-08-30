@@ -454,6 +454,9 @@ know soldier_short               data/chars/soldier_short/00_soldier_short.txt
 
 know soldier_basic   data/chars/soldier_basic/00_soldier_basic.txt
 
+know soldier_shield   data/chars/soldier_shield/00_soldier_shield.txt
+know soldier_shield_dress   data/chars/soldier_shield/00_soldier_shield_dress.txt
+
 know SOLDIER         data/chars/soldier_base/00_soldier_white.txt
 know SOLDIER1        data/chars/soldier_base/00_soldier_yellow.txt
 know SOLDIER1-1      data/chars/soldier_base/00_soldier_yellow_B.txt

@@ -49,7 +49,7 @@ blockodds   10           # capacité de l enemi pour bloquer une attraque (1 max
 escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 0      # ne peut pas aller hors ecran
-
+projectilehit enemy
 
 #-- SCRIPTS ---------------------------------------------------------
 

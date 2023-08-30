@@ -44,19 +44,26 @@ at          0
 wait
 at 100
 
-spawn soldier1
-alias SOLDIER
-item cosmos-stars
-coords	850 100
+spawn soldier_shield_dress
+alias konstantinos
+item diamantecd
+coords    850 440
 at 400
 
-spawn soldier3
+
+spawn soldier_shield
+alias konstantinos
+item diamantecd
+coords    850 390
+at 400
+
+spawn malesoldier
 alias SOLDIER
 item anelcd
 coords	-200 300
 at 400
 
-spawn soldier2
+spawn soldier1
 alias SOLDIER
 item caixacc
 coords	-200 500

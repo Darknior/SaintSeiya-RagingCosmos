@@ -59,7 +59,7 @@ script              data/scripts/entity_effects.c       # Permet d'avoir un effe
 animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
 didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite : ARGENT
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
-
+projectilehit enemy
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
