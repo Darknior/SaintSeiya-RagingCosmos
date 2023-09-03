@@ -1,0 +1,353 @@
+name        soldier_muscles
+health      200
+type        enemy
+
+
+#-- GENERAL CONFIG --------------------------------------------------
+
+gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
+riseinv     0 1         # Invincible après une chute X sec / Clignote pas
+makeinv     0 0         # Invincible après respawn X sec / Clignote
+risetime    -200        # Temps avant de se relever (-200 = 2 secondes)
+speed       11          # Vitesse de déplacement
+running     22 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+
+jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
+jumpspeed   12          # Vitesse du saut
+jumpheight  5.5         # Hauteur du saut
+antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
+
+jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
+noquake     0 1         # Secoue l’écran qd on tombe au sol / enemi ne tremble pas
+mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
+throwdamage 20           # Degats recus si on est projetés
+grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
+offense all 1           # puissance d attaque du perso, 2 signifie 200% de degats en plus
+defense     all 1 0 1 0 0 0.25 0    # La valeur 0.25 correspond à 1/4 des dommages totaux (le 0 à la fin permet de réduire directement la vie sans drainer la magie)
+holdblock   1           # Permet de pouvoir maintenir la parade
+nodieblink  1           # Ne clignote pas quand tu meurs
+weaploss    2           # On ne perd son arme qu' à notre mort
+modelflag   3           # L'animation et la liste d'armes sont copiées (obligatoire pour le "custom select screen")
+death       1           # Active l'animation de mort
+nolife      0           # Masque la petite barre de vie si on frappe un autre joueur
+sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
+
+atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
+
+dust        round_dustB # Effet de poussière quand on tombe (animation)
+bflash      tremi_block # Flash pendant un blocage (animation)
+
+
+#-- ENNEMY CONFIG ---------------------------------------------------
+
+hostile     player      # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
+aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aggression  -150           # Valeur positive + agressif / valeur negative - aggressif
+
+hitenemy    0 0          # peut toucher d autres ennemis / air et sol
+blockodds   10           # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
+escapehits  1            # cet enemi declenche freespecial2 quand il est attaqué
+offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
+subject_to_screen 0      # ne peut pas aller hors ecran
+projectilehit enemy
+
+#-- SCRIPTS ---------------------------------------------------------
+
+#ondrawscript       data/scripts/_debugs/DEBUG_GRAB.c   # DEBUG GRAB
+
+script              data/scripts/entity_effects.c       # Permet d'avoir un effet de teinte quand on est attaqué
+animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
+didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite : ARGENT
+ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
+
+
+#-- EFFECTS ANIMATIONS ----------------------------------------------
+
+blood_ground_medium
+
+
+#-- PALETTES --------------------------------------------------------
+
+icon         data/chars/soldier_muscles/icon.png 1
+palette      data/chars/soldier_muscles/palettes/soldier_muscles.png
+#remap       data/chars/soldier_muscles/palettes/palette1.png  # 14 Possible MAX
+
+
+#-- ANIMATIONS -------------------------------------------------------
+
+#// Select animations /////////////////////////////////////////////////
+
+anim    waiting # Animation d'attente dans l'écran de sélection
+   loop     1
+   delay    25
+   offset    30 122
+   frame    data/chars/soldier_muscles/idle1.png
+   frame    data/chars/soldier_muscles/idle2.png
+   frame    data/chars/soldier_muscles/idle3.png
+   frame    data/chars/soldier_muscles/idle2.png
+
+anim    select  # Personnage sélectionné
+   delay    150
+   offset    30 122
+   sound    data/chars/sounds/select-short.wav
+   frame    data/chars/soldier_muscles/idle1.png
+
+
+#// Static animations /////////////////////////////////////////////////
+
+anim spawn
+   delay    10
+   offset    30 134
+   frame    data/chars/soldier_muscles/idle1.png
+   frame    data/chars/soldier_muscles/idle2.png
+   frame    data/chars/soldier_muscles/idle3.png
+   frame    data/chars/soldier_muscles/idle2.png
+
+anim idle
+   loop    1
+   delay    25
+   offset    30 134
+   bbox 13 5 50 130
+   frame    data/chars/soldier_muscles/idle1.png
+   frame    data/chars/soldier_muscles/idle2.png
+   frame    data/chars/soldier_muscles/idle3.png
+   frame    data/chars/soldier_muscles/idle2.png
+
+#// Walk/Run animations /////////////////////////////////////////////////
+
+anim walk
+   loop    1
+   delay    15
+   offset    18 139
+	bbox -4 9 50 130
+   frame    data/chars/soldier_muscles/walkB1.png
+   frame    data/chars/soldier_muscles/walkB2.png
+   frame    data/chars/soldier_muscles/walkB3.png
+   frame    data/chars/soldier_muscles/walkB4.png
+   frame    data/chars/soldier_muscles/walkB5.png
+   frame    data/chars/soldier_muscles/walkB6.png	
+
+#// Basic Attacks animations /////////////////////////////////////////////////
+
+anim attack1
+   delay    10
+   offset    27 127
+	bbox 6 0 50 130
+   frame    data/chars/soldier_muscles/attackA0.png
+   frame    data/chars/soldier_muscles/attackA1.png
+	attack1 42 36 88 25 10 0 0 0 5 12
+   frame    data/chars/soldier_muscles/attackA2.png
+
+#// Grab animations /////////////////////////////////////////////////
+
+
+#// Jump animations /////////////////////////////////////////////////
+
+
+#// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
+
+anim death
+   delay    10
+   offset    96 35
+   frame    data/chars/soldier_muscles/death1.png
+   @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
+   frame    data/chars/soldier_muscles/death1.png
+
+anim pain
+   delay    5
+   offset    42 127
+   bbox 25 15 50 112
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain1.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain4.png
+
+anim fall
+    delay    10
+    offset    100 121
+	 landframe 3
+	 bbox 40 17 80 80
+    frame    data/chars/soldier_muscles/fall1.png
+    frame    data/chars/soldier_muscles/fall2.png
+    delay    200
+    frame    data/chars/soldier_muscles/fall3.png
+    delay    10
+    frame    data/chars/soldier_muscles/fall4.png
+	 bbox 6 93 140 35
+    frame    data/chars/soldier_muscles/fall5.png	
+    
+anim fall7 # chutte apres etre Grab
+    delay    10
+    offset    100 121
+	 landframe 3
+	 bbox 40 17 80 80
+    frame    data/chars/soldier_muscles/fall1.png
+    frame    data/chars/soldier_muscles/fall2.png
+    delay    200
+    frame    data/chars/soldier_muscles/fall3.png
+    delay    10
+    frame    data/chars/soldier_muscles/fall4.png
+	 bbox 6 93 140 35
+    frame    data/chars/soldier_muscles/fall5.png	
+
+anim rise # Se releve avec compteur de chuttes
+   offset    98 125
+   delay    10
+   frame    data/chars/soldier_muscles/rise0.png
+   frame    data/chars/soldier_muscles/rise1.png
+   frame    data/chars/soldier_muscles/rise2.png
+   frame    data/chars/soldier_muscles/rise3.png
+   @cmd stunCounter -5 115 1 3
+   frame    data/chars/soldier_muscles/rise3.png	
+   
+anim follow1 # Stun aprés X chuttes
+   offset    42 125
+   delay    400
+	bbox 23 24 50 100
+   frame    data/chars/soldier_muscles/pain3.png	
+
+#// FIRE / ICE / BLOOD / SHOCK animations /////////////////////////////////////////////////
+ 
+anim pain20 # Blood pain
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -5 0 5 0 0
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain1.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain4.png
+    
+anim fall20 # blood fall
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 10 0 0
+    delay    10
+    offset    100 121
+	 landframe 3
+	 bbox 40 17 80 80
+    frame    data/chars/soldier_muscles/fall1.png
+    frame    data/chars/soldier_muscles/fall2.png
+    delay    200
+    frame    data/chars/soldier_muscles/fall3.png
+    delay    10
+    frame    data/chars/soldier_muscles/fall4.png
+	 bbox 6 93 140 35
+    frame    data/chars/soldier_muscles/fall5.png	
+ 
+anim pain15# BURN PAIN
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain1.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain4.png
+  
+anim fall15# BURN PAIN Ground
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
+    delay    10
+    offset    100 121
+	 landframe 3
+	 bbox 40 17 80 80
+    frame    data/chars/soldier_muscles/fall1.png
+    frame    data/chars/soldier_muscles/fall2.png
+    delay    200
+    frame    data/chars/soldier_muscles/fall3.png
+    delay    10
+    frame    data/chars/soldier_muscles/fall4.png
+	 bbox 6 93 140 35
+    frame    data/chars/soldier_muscles/fall5.png	
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
+    frame    data/chars/soldier_muscles/fall5.png	
+    
+anim pain10# ICE PAIN
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+   frame    data/chars/soldier_muscles/pain1.png
+   frame    data/chars/soldier_muscles/pain2.png
+   @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 5 1 1 1 1
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain1.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain3.png
+   
+anim pain11# ICE PAIN Big
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+   @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain1.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain3.png
+
+anim pain12# ICE PAIN Small
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+   @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain1.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain3.png
+
+anim pain30# Shock Pain
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain1.png
+   frame    data/chars/soldier_muscles/pain2.png
+   frame    data/chars/soldier_muscles/pain3.png
+   frame    data/chars/soldier_muscles/pain4.png
+  
+anim fall30# Shock PAIN Ground
+    @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 45 0 0
+    delay    10
+    offset    100 121
+	 landframe 3
+	 bbox 40 17 80 80
+    frame    data/chars/soldier_muscles/fall1.png
+    frame    data/chars/soldier_muscles/fall2.png
+    delay    200
+    frame    data/chars/soldier_muscles/fall3.png
+    delay    10
+    frame    data/chars/soldier_muscles/fall4.png
+	 bbox 6 93 140 35
+    frame    data/chars/soldier_muscles/fall5.png	
+    @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0
+    frame    data/chars/soldier_muscles/fall5.png	
+
+#// Block animations /////////////////////////////////////////////////
+
+anim    block
+   delay    10
+   offset    29 133
+   bbox 8 4 50 130
+   frame    data/chars/soldier_muscles/block1.png
+   frame    data/chars/soldier_muscles/block2.png
+   frame    data/chars/soldier_muscles/block3.png	
+
+

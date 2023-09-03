@@ -41,7 +41,7 @@ spawn       temple2roadcolumns
 coords      0 0
 at          0
 
-spawn soldier_shield_dress
+spawn soldier_muscles
 alias konstantinos
 item diamantecd
 coords    850 440
@@ -54,7 +54,17 @@ item diamantecd
 coords    350 390
 at 0
 
+spawn soldier_basic
+alias konstantinos
+item diamantecd
+coords    250 430
+at 0
 
+spawn soldier_pant
+alias konstantinos
+item diamantecd
+coords    150 480
+at 0
 
 spawn soldier3
 alias Anthonin
