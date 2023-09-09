@@ -32,7 +32,7 @@ death       1           # Active l'animation de mort
 nolife      0           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 
-atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
+atchain     1 2 3       # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
@@ -132,12 +132,35 @@ anim walk
 
 anim attack1
    delay    10
-   offset    27 127
+   offset    29 132
 	bbox 6 0 50 130
    frame    data/chars/soldier_muscles/attackA0.png
    frame    data/chars/soldier_muscles/attackA1.png
 	attack1 42 36 88 25 10 0 0 0 5 12
    frame    data/chars/soldier_muscles/attackA2.png
+
+anim attack2
+   delay    10
+   offset    28 123
+	bbox 19 -5 50 130
+   frame    data/chars/soldier_muscles/attackB1.png
+   frame    data/chars/soldier_muscles/attackB2.png
+	attack1 42 20 88 25 10 0 0 0 5 12
+   frame    data/chars/soldier_muscles/attackB3.png
+   frame    data/chars/soldier_muscles/attackB1.png
+   
+anim attack3
+   delay    10
+   offset    27 132
+	bbox 6 0 50 130
+   @cmd     dasher 1 0 0 1
+   frame    data/chars/soldier_muscles/attackC1.png
+   frame    data/chars/soldier_muscles/attackC2.png
+	attack20 42 36 88 25 10 1 0 0 5 12
+   dropv 4 4
+   frame    data/chars/soldier_muscles/attackC3.png
+   frame    data/chars/soldier_muscles/attackC4.png
+   frame    data/chars/soldier_muscles/attackC1.png
 
 #// Grab animations /////////////////////////////////////////////////
 
@@ -154,7 +177,7 @@ anim death
    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
    frame    data/chars/soldier_muscles/death1.png
 
-anim pain
+anim pain # normal pain
    delay    5
    offset    42 127
    bbox 25 15 50 112
@@ -165,6 +188,16 @@ anim pain
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain4.png
 
+anim pain2 # big pain
+   delay    5
+   offset    26 122
+	bbox 6 5 50 120
+   frame    data/chars/soldier_muscles/bigpain1.png
+   frame    data/chars/soldier_muscles/bigpain2.png
+   frame    data/chars/soldier_muscles/bigpain3.png
+   frame    data/chars/soldier_muscles/bigpain2.png
+   frame    data/chars/soldier_muscles/bigpain1.png
+   
 anim fall
     delay    10
     offset    100 121
