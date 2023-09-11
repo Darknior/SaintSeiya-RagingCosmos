@@ -300,6 +300,8 @@ void blinkCharge()
 		int valid		= getentityproperty(self, "animvalid", openborconstant("ANI_ATTACK5"));
 		int pIndex		= getentityproperty(self, "playerindex");
 		int dead		= getentityproperty(self, "dead");
+		int mp			= getentityproperty(self, "mp");
+		int limit		= 10;
 		int tintMode	= 5;
 		int warning		= 10;
 		float time		= openborvariant("elapsed_time");
@@ -309,7 +311,7 @@ void blinkCharge()
 
 		//START THE CHARGE ATTACK VARIABLE IF THE BUTTON IS HELD 
 		//CHECK IF AT LEAST THE ATTACK2 ANIMATION IS FOUND
-		if(playerkeys(pIndex, 0, "attack") && valid){
+		if(playerkeys(pIndex, 0, "attack") && valid  && mp >= limit){
 			if(getglobalvar("chargeStart"+pIndex) == NULL()){
 				setglobalvar("chargeStart"+pIndex, openborvariant("elapsed_time")+delay);
 			}
@@ -359,6 +361,7 @@ void blinkCharge()
 					setidle(self, openborconstant("ANI_IDLE"));
 					changeentityproperty(self, "combotime", 0);
 					changeentityproperty(self, "velocity", 0, 0, 0);
+					changeentityproperty(self, "mp", mp-limit);
 					performattack(self, openborconstant("ANI_ATTACK10"), 0);
 				}
 			}
