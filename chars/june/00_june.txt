@@ -409,6 +409,7 @@ anim fall
     delay    10
     landframe 6
     bbox 35 50 75 75
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/june/fall1.png
     frame    data/chars/june/fall2.png
     frame    data/chars/june/fall3.png
@@ -422,6 +423,7 @@ anim fall7 # chutte apres etre Grab
     offset    106 124
     delay    -1000
     bbox 35 50 75 75
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/june/fall1.png
     frame    data/chars/june/fall2.png
     frame    data/chars/june/fall3.png
@@ -446,7 +448,6 @@ anim follow1 # Stun aprés X chuttes
     bbox 17 15 51 110
     delay    400
     frame    data/chars/june/pain1.png
-
 
 anim death
     offset    49 124

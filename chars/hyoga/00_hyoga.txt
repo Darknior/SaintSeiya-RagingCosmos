@@ -837,6 +837,7 @@ anim fall
     landframe 3
     offset   69 142
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/hyoga/sounds/fall2.wav
     frame    data/chars/hyoga/fall1.png
     frame    data/chars/hyoga/fall2.png
@@ -854,6 +855,7 @@ anim fall7 # chutte apres etre Grab
     landframe 3
     offset   69 142
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/hyoga/sounds/fall2.wav
     frame    data/chars/hyoga/fall1.png
     frame    data/chars/hyoga/fall2.png
@@ -926,6 +928,7 @@ anim fall20 # blood fall
     landframe 3
     offset   69 142
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/hyoga/sounds/fall2.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -10 0 0 0 0
     frame    data/chars/hyoga/fall1.png
@@ -958,6 +961,7 @@ anim fall15# BURN PAIN Ground
     landframe 6
     offset   69 142
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/hyoga/sounds/fall2.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 70 0 0
     frame    data/chars/hyoga/fall1.png
@@ -1033,6 +1037,7 @@ anim fall30# Shock PAIN Ground
     landframe 3
     offset   69 142
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/hyoga/sounds/fall2.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
     frame    data/chars/hyoga/fall1.png

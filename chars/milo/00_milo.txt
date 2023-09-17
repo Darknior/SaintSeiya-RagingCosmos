@@ -345,6 +345,7 @@ anim fall
     offset    92 126
     landframe 4
     bbox 27 50 80 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
     frame    data/chars/milo/fall3.png
@@ -357,6 +358,7 @@ anim fall7 # chutte apres etre Grab
     offset    92 126
     landframe 4
     bbox 27 50 80 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
     frame    data/chars/milo/fall3.png
@@ -436,6 +438,7 @@ anim fall20 # blood fall
     offset    92 126
     landframe 4
     bbox 27 50 80 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -50 0 -10 0 0
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
@@ -458,6 +461,7 @@ anim fall15# BURN PAIN Ground
     offset    92 126
     landframe 4
     bbox 27 50 80 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
@@ -514,6 +518,7 @@ anim fall30# Shock PAIN Ground
     offset    92 126
     landframe 4
     bbox 27 50 80 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png

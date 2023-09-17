@@ -162,6 +162,7 @@ anim fall
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png
@@ -181,6 +182,7 @@ anim fall7
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png
@@ -214,7 +216,7 @@ anim follow1 #STUN
     loop    0
     offset    110 180
     delay    400
-	 bbox 68 82 50 100
+	 bbox 68 80 50 100
     frame    data/chars/soldier_base/05.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
@@ -234,6 +236,7 @@ anim fall20 # blood fall
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 20 0 0
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png
@@ -262,6 +265,7 @@ anim fall15# BURN PAIN Ground
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -20 1 60 1 0
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png
@@ -297,7 +301,7 @@ anim pain11# ICE PAIN Big
     frame    data/chars/soldier_base/05.png
     delay    500
     frame    data/chars/soldier_base/05.png
-
+    
 anim pain12# ICE PAIN Small
     loop    0
     delay    5
@@ -324,6 +328,7 @@ anim fall30# Shock PAIN Ground
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
     frame    data/chars/soldier_base/06.png
     frame    data/chars/soldier_base/06.png

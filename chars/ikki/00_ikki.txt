@@ -792,6 +792,7 @@ anim fall
     landframe 4
     offset    114 139
     delay    15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/ikki/sounds/hurt4.wav
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
@@ -808,6 +809,7 @@ anim fall7 # chutte apres etre Grab
     landframe 4
     offset    114 139
     delay    15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/ikki/sounds/hurt4.wav
     frame    data/chars/ikki/fall1.png
     frame    data/chars/ikki/fall2.png
@@ -883,6 +885,7 @@ anim fall20 # blood fall
     landframe 4
     offset    114 139
     delay    15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/ikki/sounds/hurt4.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 0 0 0
     frame    data/chars/ikki/fall1.png
@@ -913,6 +916,7 @@ anim fall15# BURN PAIN Ground
     landframe 4
     offset    114 139
     delay    15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/ikki/sounds/hurt6.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/ikki/fall1.png
@@ -988,6 +992,7 @@ anim fall30# Shock PAIN Ground
     landframe 4
     offset    114 139
     delay    15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/ikki/sounds/hurt4.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/ikki/fall1.png

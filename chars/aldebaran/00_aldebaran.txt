@@ -327,8 +327,7 @@ anim jump # Saut Statique
     delay    10
     offset    44 164
     bbox 29 10 35 150
-    summonframe 0 0 0 0
-    subentity round_dust
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/aldebaran/jump1.png
     frame    data/chars/aldebaran/jump2.png
     frame    data/chars/aldebaran/jump3.png
@@ -384,6 +383,23 @@ anim fall
     offset    118 164
     landframe 7
     bbox 85 14 60 150
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
+    frame    data/chars/aldebaran/fall1.png
+    frame    data/chars/aldebaran/fall2.png
+    bbox 8 104 160 60
+    frame    data/chars/aldebaran/fall3.png
+    frame    data/chars/aldebaran/fall4.png
+    frame    data/chars/aldebaran/fall5.png
+    frame    data/chars/aldebaran/fall6.png
+    frame    data/chars/aldebaran/fall7.png
+    frame    data/chars/aldebaran/fall8.png
+
+anim fall7
+    delay    10
+    offset    118 164
+    landframe 7
+    bbox 85 14 60 150
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/aldebaran/fall1.png
     frame    data/chars/aldebaran/fall2.png
     bbox 8 104 160 60
@@ -457,6 +473,7 @@ anim fall20 # blood fall
     offset    118 164
     landframe 7
     bbox 85 14 60 150
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 35 0 0
     frame    data/chars/aldebaran/fall1.png
     frame    data/chars/aldebaran/fall2.png
@@ -482,6 +499,7 @@ anim fall15# BURN PAIN Ground
     offset    118 164
     landframe 7
     bbox 85 14 60 150
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -20 1 80 0 0
     frame    data/chars/aldebaran/fall1.png
     frame    data/chars/aldebaran/fall2.png
@@ -541,6 +559,7 @@ anim fall30# Shock PAIN Ground
     offset    118 164
     landframe 7
     bbox 85 14 60 150
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shock1" "ANI_IDLE" -20 1 85 0 0
     frame    data/chars/aldebaran/fall1.png
     frame    data/chars/aldebaran/fall2.png

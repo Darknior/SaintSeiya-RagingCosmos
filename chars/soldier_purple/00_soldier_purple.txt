@@ -167,6 +167,7 @@ anim fall
     offset    110 180
     dropv 4 1 0
     bbox 65 65 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
@@ -186,6 +187,7 @@ anim fall7
     offset    110 180
     dropv 4 1 0
     bbox 65 65 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
@@ -240,6 +242,7 @@ anim fall20 # blood fall
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 20 0 0
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
@@ -268,6 +271,7 @@ anim fall15# BURN PAIN Ground
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -20 1 60 1 0
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
@@ -330,6 +334,7 @@ anim fall30# Shock PAIN Ground
     offset    110 180
     dropv 4 1 0
     bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png

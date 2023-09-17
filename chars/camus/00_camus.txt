@@ -301,6 +301,7 @@ anim fall
     offset    97 135
     landframe 4
     bbox 0 47 120 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/camus/fall1.png
     frame    data/chars/camus/fall2.png
     frame    data/chars/camus/fall3.png
@@ -313,6 +314,7 @@ anim fall7 # chutte apres etre Grab
     offset    97 135
     landframe 4
     bbox 0 47 120 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/camus/fall1.png
     frame    data/chars/camus/fall2.png
     frame    data/chars/camus/fall3.png
@@ -375,6 +377,7 @@ anim fall20 # blood fall
     offset    97 135
     landframe 4
     bbox 0 47 120 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 0 0 0
     frame    data/chars/camus/fall1.png
     frame    data/chars/camus/fall2.png
@@ -398,6 +401,7 @@ anim fall15# BURN PAIN Ground
     offset    97 135
     landframe 4
     bbox 0 47 120 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 50 0 0
     frame    data/chars/camus/fall1.png
     frame    data/chars/camus/fall2.png
@@ -458,6 +462,7 @@ anim fall30# Shock PAIN Ground
     offset    97 135
     landframe 4
     bbox 0 47 120 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
     frame    data/chars/camus/fall1.png
     frame    data/chars/camus/fall2.png

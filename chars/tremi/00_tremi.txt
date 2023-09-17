@@ -303,8 +303,7 @@ anim jump # Saut Statique
      delay     8
      offset     46 131
      bbox 18 7 52 112
-     summonframe 0 0 0 0
-     subentity round_dust
+     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
      cancel 0 8 0 A2 freespecial3
      frame     data/chars/tremi/jump1.png
      frame     data/chars/tremi/jump2.png
@@ -374,6 +373,7 @@ anim fall
      delay     10
      landframe 4
      bbox 50 19 70 100
+     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
      frame     data/chars/tremi/fall1.png
      frame     data/chars/tremi/fall2.png
      frame     data/chars/tremi/fall3.png
@@ -388,6 +388,7 @@ anim fall7 # chutte apres etre Grab
      delay     -1000
      #landframe 4
      bbox 50 18 70 100
+     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
      frame     data/chars/tremi/fall1.png
      frame     data/chars/tremi/fall2.png
      frame     data/chars/tremi/fall3.png
@@ -450,6 +451,7 @@ anim fall20 # blood fall
     delay     10
     landframe 4
     bbox 50 19 70 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame     data/chars/tremi/fall1.png
     frame     data/chars/tremi/fall2.png
     frame     data/chars/tremi/fall3.png
@@ -476,6 +478,7 @@ anim fall15# BURN PAIN Ground
     delay     10
     landframe 4
     bbox 50 19 70 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame     data/chars/tremi/fall1.png
     frame     data/chars/tremi/fall2.png
     frame     data/chars/tremi/fall3.png
@@ -546,6 +549,7 @@ anim fall30# Shock PAIN Ground
     delay     10
     landframe 4
     bbox 50 19 70 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame     data/chars/tremi/fall1.png
     frame     data/chars/tremi/fall2.png
     frame     data/chars/tremi/fall3.png

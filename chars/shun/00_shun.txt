@@ -825,6 +825,7 @@ anim fall
     landframe 5
     offset    68 128
     delay 15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/shun/sounds/hurt2.wav
     frame    data/chars/shun/fall1.png
     frame    data/chars/shun/fall2.png
@@ -842,6 +843,7 @@ anim fall7 # chutte apres etre Grab
     landframe 5
     offset    68 128
     delay 15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/shun/sounds/hurt2.wav
     frame    data/chars/shun/fall1.png
     frame    data/chars/shun/fall2.png
@@ -909,6 +911,7 @@ anim fall20 # blood fall
     landframe 5
     offset    68 128
     delay 15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/shun/sounds/hurt2.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 5 0 0 0 0
     frame    data/chars/shun/fall1.png
@@ -940,6 +943,7 @@ anim fall15# BURN PAIN Ground
     landframe 5
     offset    68 128
     delay 15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/shun/sounds/hurt2.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 50 0 0
     frame    data/chars/shun/fall1.png
@@ -1001,6 +1005,7 @@ anim fall30# Shock PAIN Ground
     landframe 5
     offset    68 128
     delay 15
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound data/chars/shun/sounds/hurt.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 50 0 0
     frame    data/chars/shun/fall1.png

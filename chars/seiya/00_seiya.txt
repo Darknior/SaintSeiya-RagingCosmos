@@ -815,6 +815,7 @@ anim fall
     landframe  4
     offset   114 110
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
@@ -829,6 +830,7 @@ anim fall7 # chutte apres etre Grab
     landframe  4
     offset   114 110
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
@@ -898,6 +900,7 @@ anim fall20 # blood fall
     landframe  4
     offset   114 110
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 0 0 0
     frame    data/chars/seiya/fall1.png
@@ -929,6 +932,7 @@ anim fall15# BURN PAIN Ground
     landframe  6
     offset   114 110
     delay    -1000
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 30 0 0
     frame    data/chars/seiya/fall1.png
@@ -1026,6 +1030,7 @@ anim fall30# Shock PAIN Ground
     landframe  4
     offset   114 110
     delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 35 0 0
     frame    data/chars/seiya/fall1.png

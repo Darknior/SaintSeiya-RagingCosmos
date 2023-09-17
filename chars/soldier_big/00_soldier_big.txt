@@ -153,6 +153,7 @@ anim fall
     delay    10
     offset    120 187
     bbox 66 65 85 130
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
@@ -171,6 +172,7 @@ anim fall7 # chutte apres etre Grab
     delay    10
     offset    120 187
     bbox 66 65 85 130
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
@@ -227,6 +229,7 @@ anim fall20 # blood fall
     delay    10
     offset    120 187
     bbox 66 65 85 130
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
@@ -255,6 +258,7 @@ anim fall15# BURN PAIN Ground
     delay    10
     offset    120 187
     bbox 66 65 85 130
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
@@ -321,6 +325,7 @@ anim fall30# Shock PAIN Ground
     delay    10
     offset    120 187
     bbox 66 65 85 130
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png
     frame    data/chars/soldier_big/03.png

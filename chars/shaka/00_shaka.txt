@@ -368,6 +368,7 @@ anim fall
     offset    121 127
     landframe 5
     bbox 44 26 80 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
@@ -381,6 +382,7 @@ anim fall7 # chutte apres etre Grab
     offset    121 127
     landframe 5
     bbox 44 26 80 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
@@ -467,6 +469,7 @@ anim fall20 # Blood fall
     offset    121 127
     landframe 5
     bbox 44 26 80 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -15 0 20 0 0
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
@@ -490,6 +493,7 @@ anim fall15 # Burn fall
     offset    121 127
     landframe 5
     bbox 44 26 80 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 50 0 0
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
@@ -547,6 +551,7 @@ anim fall30# Shock PAIN Ground
     offset    121 127
     landframe 5
     bbox 44 26 80 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 35 0 0
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png

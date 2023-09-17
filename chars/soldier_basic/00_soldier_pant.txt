@@ -255,8 +255,7 @@ anim attack5
 #// Jump animations /////////////////////////////////////////////////
 
 anim jump # Saut Statique
-   summonframe  0 0 0 0
-   subentity    round_dust
+   @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
    delay    10
    offset    24 123
    bbox 3 0 43 80
