@@ -99,16 +99,20 @@ void spawnM(void Name, float dx, float dy, float dz)
 //Example: @cmd spawnbind "Naruto_Rasengan" "ANI_FOLLOW10" 0 0 0 1 0
 //Result: Binds a Rasengan on the caller, running its "Follow 10" animation.
 
-void spawnbind(void ChildName, void ChildAnim, float OffsetX, float OffsetY, float OffsetZ, int Direction, int BindFlag)
+void spawnbind(void ChildName, void ChildAnim, float OffsetX, float OffsetY, float OffsetZ, int Direction, int BindFlag, int airLimit)
 {
-	void self = getlocalvar("self");										//Spawnin parent entity.
-	void Child = spawn01(ChildName, OffsetX, OffsetY, OffsetZ);							//Spawned child entity.
-	
-	changeentityproperty(Child, "parent", self);							//Set child's parent.
-	performattack(Child, openborconstant(ChildAnim));
-  bindentity(Child, self, OffsetX, OffsetY, OffsetZ, Direction, BindFlag);
+  void self = getlocalvar("self");										//Spawnin parent entity.
+  int height = getentityproperty(self, "y");
 
-  return Child;
+  if(!airLimit || airLimit && height <= airLimit){
+    void Child = spawn01(ChildName, OffsetX, OffsetY, OffsetZ);							//Spawned child entity.
+    
+    changeentityproperty(Child, "parent", self);							//Set child's parent.
+    performattack(Child, openborconstant(ChildAnim));
+    bindentity(Child, self, OffsetX, OffsetY, OffsetZ, Direction, BindFlag);
+
+    return Child;
+  }
 }
 
 void unbind()
