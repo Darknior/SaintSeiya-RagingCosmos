@@ -9,7 +9,7 @@ anim	idle
 	delay	12
 	offset	85 50
 	drawmethod alpha 1
-        drawmethod scale 0.5 0.5
+   drawmethod scale 0.5 0.5
 	frame   data/chars/shun/special/shun_impact/shun_impact-0.png
 	frame	data/chars/shun/special/shun_impact/shun_impact-1.png
 	frame	data/chars/shun/special/shun_impact/shun_impact-2.png
@@ -17,5 +17,5 @@ anim	idle
 	frame   data/chars/shun/special/shun_impact/shun_impact-2.png
 	frame	data/chars/shun/special/shun_impact/shun_impact-1.png
 	frame	data/chars/shun/special/shun_impact/shun_impact-0.png
-        @cmd suicide
+   @cmd suicide
 	frame	data/chars/shun/special/shun_impact/shun_impact-0.png

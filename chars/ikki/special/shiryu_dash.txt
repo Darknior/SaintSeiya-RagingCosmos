@@ -9,7 +9,7 @@ anim	idle
 	loop	0
 	delay	4
 	offset	500 700
-        drawmethod  alpha 1
+   drawmethod  alpha 1
 	drawmethod scale 0.2 0.2
 	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-0.png
 	frame	data/chars/shiryu/special/shiryu_dash/shiryu_dash-1.png

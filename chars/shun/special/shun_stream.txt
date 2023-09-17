@@ -2,6 +2,7 @@ name	shun_stream
 type	none
 shadow	0
 remove 0
+nolife 1
 animationscript		data/scripts/escript.c
 
 anim	idle

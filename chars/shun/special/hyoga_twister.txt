@@ -2,6 +2,7 @@ name	hyoga_twister
 type	none
 shadow	0
 remove 0
+nolife 1
 setlayer 99
 antigravity 100
 offscreenkill 635

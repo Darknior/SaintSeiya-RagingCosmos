@@ -21,7 +21,7 @@ anim	idle
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-4.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-5.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-6.png
-        frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-7.png
+   frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-7.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-8.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-9.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-10.png
@@ -31,7 +31,7 @@ anim	idle
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-14.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-15.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-16.png
-        frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-17.png
+   frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-17.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-18.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-19.png
 	frame	data/chars/hyoga/special/hyoga_dash/hyoga_dash-20.png

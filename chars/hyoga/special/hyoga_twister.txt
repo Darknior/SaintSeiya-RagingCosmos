@@ -2,6 +2,7 @@ name	hyoga_twister
 type	none
 candamage enemy npc
 shadow	0
+nolife 1
 antigravity 100
 remove 0
 didhitscript	data/scripts/didhit/tint_ice.c

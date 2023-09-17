@@ -1,6 +1,7 @@
 name	seiya_upper_dust
 type	none
 shadow	0
+nolife 1
 animationscript	data/scripts/player.c
 
 anim	idle

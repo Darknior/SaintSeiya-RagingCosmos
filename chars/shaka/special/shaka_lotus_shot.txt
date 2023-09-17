@@ -8,7 +8,6 @@ remove 0
 lifespan  2
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_red.c
-hitflash aphrodite_rose_explosion
 
 anim	idle
 	landframe 1
@@ -16,6 +15,7 @@ anim	idle
 	delay	-1000
 	offset	12 22
 	bbox 0 0 25 25
+   hitflash aphrodite_rose_explosion
    drawmethod alpha 1
 	followanim 1
 	followcond 1
@@ -29,6 +29,7 @@ anim follow1
 	offset	12 22
    drawmethod alpha 1
 	bbox 0 0 25 25
+   hitflash aphrodite_rose_explosion
 	@cmd stop
 	attack1 0 0 25 25 10 0 0 0 12 12
 	frame	data/chars/shaka/special/shaka_lotus_shot/lotusshot2.png

@@ -2,6 +2,7 @@ name	shiryu_dragon
 type	none
 gfxshadow	1
 remove 0
+nolife 1
 candamage enemy npc
 antigravity 100
 animationscript	data/scripts/player.c

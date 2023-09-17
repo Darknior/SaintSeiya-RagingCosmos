@@ -2,6 +2,7 @@ name	aldebaran_rock
 type	none
 shadow	0
 antigravity 100
+nolife 1
 animationscript	data/scripts/player.c
 
 anim	idle

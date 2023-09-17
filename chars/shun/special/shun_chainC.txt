@@ -34,5 +34,5 @@ anim	idle
 	frame	data/chars/shun/special/shun_chain/shun_chain-19.png
 	frame	data/chars/shun/special/shun_chain/shun_chain-20.png
 	frame	data/chars/shun/special/shun_chain/shun_chain-21.png
-        @cmd suicide
+   @cmd suicide
 	frame	data/chars/shun/special/shun_chain/shun_chain-21.png

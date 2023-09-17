@@ -2,6 +2,7 @@ name	shura_lame
 type	none
 gfxshadow	1
 remove 0
+nolife 1
 antigravity 100
 animationscript	data/scripts/player.c
 

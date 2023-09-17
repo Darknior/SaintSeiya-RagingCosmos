@@ -4,6 +4,7 @@ candamage player
 shadow	2
 antigravity 100
 remove 0
+nolife 1
 lifespan  6
 didhitscript	data/scripts/didhit/tint_red.c
 

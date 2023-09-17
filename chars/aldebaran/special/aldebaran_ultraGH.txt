@@ -11,8 +11,8 @@ anim	idle
 	delay	15
 	offset	7 420
 	drawmethod scale 0.7 0.7
-        drawmethod  alpha 1
-        drawmethod  channel 0.73
+   drawmethod  alpha 1
+   drawmethod  channel 0.73
 	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH0.png
 	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH1.png
 	frame	data/chars/aldebaran/special/aldebaran_ultraGH/ultraGH2.png

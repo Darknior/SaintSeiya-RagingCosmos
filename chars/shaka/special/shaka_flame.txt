@@ -26,7 +26,7 @@ anim idle
 anim follow1
 	loop	0
 	delay	6
-	 offset     238 177
+	offset     238 177
 	frame	data/chars/shaka/special/shaka_flame/shaka_flame-01.png
 	frame	data/chars/shaka/special/shaka_flame/shaka_flame-02.png
 	frame	data/chars/shaka/special/shaka_flame/shaka_flame-03.png
