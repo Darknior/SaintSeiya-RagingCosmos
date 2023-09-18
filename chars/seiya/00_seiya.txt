@@ -371,7 +371,7 @@ anim run
     delay    8
     offset   48 128
     bbox     34 13 51 115
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/seiya/run1.png
     sound    data/chars/seiya/sounds/run1.wav
     frame    data/chars/seiya/run2.png
@@ -657,8 +657,7 @@ anim jumpdelay # Animation de saut intermédiaire
     frame    data/chars/seiya/jump1.png
 
 anim jumpland # Aterrissage du saut
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 0 0 0 1
     delay    7
     offset   45 112
     bbox     21 0 51 112
@@ -778,7 +777,7 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/seiya/jump2.png
     frame    data/chars/seiya/jump3.png
     frame    data/chars/seiya/jump4.png
-    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 1 1 1 0
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 0 0 0 1
     frame    data/chars/seiya/jump1.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
@@ -815,7 +814,7 @@ anim fall
     landframe  4
     offset   114 110
     delay    10
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
@@ -830,7 +829,7 @@ anim fall7 # chutte apres etre Grab
     landframe  4
     offset   114 110
     delay    10
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
@@ -900,7 +899,7 @@ anim fall20 # blood fall
     landframe  4
     offset   114 110
     delay    10
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 0 0 0
     frame    data/chars/seiya/fall1.png
@@ -932,7 +931,7 @@ anim fall15# BURN PAIN Ground
     landframe  6
     offset   114 110
     delay    -1000
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 30 0 0
     frame    data/chars/seiya/fall1.png
@@ -1030,7 +1029,7 @@ anim fall30# Shock PAIN Ground
     landframe  4
     offset   114 110
     delay    10
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 35 0 0
     frame    data/chars/seiya/fall1.png

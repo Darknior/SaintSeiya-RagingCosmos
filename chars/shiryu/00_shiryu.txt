@@ -327,7 +327,7 @@ anim run
     delay    8
     offset   48 128
     bbox     34 13 51 115
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shiryu/run1.png
     sound    data/chars/shiryu/sounds/run1.wav
     frame    data/chars/shiryu/run2.png
@@ -604,8 +604,7 @@ anim jumpdelay   # Animation de saut intermédiaire
     frame    data/chars/shiryu/jump1.png
 
 anim jumpland    # Aterrissage du saut
-    summonframe  0 0 0 0
-    subentity    round_dust
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 0 0 0 1
     delay    8
     offset   30 129
     bbox     5 17 51 112
@@ -712,7 +711,8 @@ anim dodge   # Esquive Haut / Bas (u u / d d)
     frame    data/chars/shiryu/jump2.png
     frame    data/chars/shiryu/jump3.png
     frame    data/chars/shiryu/jump2.png
-    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 1 1 1 0
+    frame    data/chars/shiryu/jump1.png
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 0 0 0 1
     frame    data/chars/shiryu/jump1.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
@@ -745,7 +745,7 @@ anim fall
     landframe  6
     offset   114 130
     delay    15
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/shiryu/sounds/hurt2.wav
     frame    data/chars/shiryu/fall1.png
     frame    data/chars/shiryu/fall2.png
@@ -763,7 +763,7 @@ anim fall7 # chutte apres etre Grab
     landframe  6
     offset   114 130
     delay    15
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/shiryu/sounds/hurt2.wav
     frame    data/chars/shiryu/fall1.png
     frame    data/chars/shiryu/fall2.png
@@ -839,7 +839,7 @@ anim fall20 # blood fall
     landframe  6
     offset   114 130
     delay    15
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/shiryu/sounds/fall.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 50 0 0
     frame    data/chars/shiryu/fall1.png
@@ -874,7 +874,7 @@ anim fall15# BURN PAIN Ground
     landframe  6
     offset   114 130
     delay    15
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/shiryu/sounds/fall.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 80 0 0
     frame    data/chars/shiryu/fall1.png
@@ -957,7 +957,7 @@ anim fall30# Shock PAIN Ground
     landframe  6
     offset   114 130
     delay    15
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/shiryu/sounds/fall.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 80 0 0
     frame    data/chars/shiryu/fall1.png

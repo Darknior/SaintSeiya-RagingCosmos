@@ -342,7 +342,7 @@ anim fall
     offset    131 129
     landframe 4
     bbox 50 25 70 120
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/aphrodite/fall1.png
     frame    data/chars/aphrodite/fall2.png
     frame    data/chars/aphrodite/fall3.png
@@ -357,7 +357,7 @@ anim fall7 # chutte apres etre Grab
     offset    131 129
     landframe 4
     bbox 50 25 70 120
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/aphrodite/fall1.png
     frame    data/chars/aphrodite/fall2.png
     frame    data/chars/aphrodite/fall3.png
@@ -432,7 +432,7 @@ anim fall20 # blood fall
     offset    131 129
     landframe 4
     bbox 50 25 70 120
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/aphrodite/fall1.png
     frame    data/chars/aphrodite/fall2.png
     frame    data/chars/aphrodite/fall3.png
@@ -458,7 +458,7 @@ anim fall15# BURN PAIN Ground
     offset    131 129
     landframe 4
     bbox 50 25 70 120
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/aphrodite/fall1.png
     frame    data/chars/aphrodite/fall2.png
     frame    data/chars/aphrodite/fall3.png
@@ -525,7 +525,7 @@ anim fall30# Shock PAIN Ground
     offset    131 129
     landframe 4
     bbox 50 25 70 120
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/aphrodite/fall1.png
     frame    data/chars/aphrodite/fall2.png
     frame    data/chars/aphrodite/fall3.png

@@ -203,7 +203,7 @@ anim fall
     offset    100 121
 	 landframe 3
 	 bbox 40 17 80 80
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_muscles/fall1.png
     frame    data/chars/soldier_muscles/fall2.png
     delay    200
@@ -218,7 +218,7 @@ anim fall7 # chutte apres etre Grab
     offset    100 121
 	 landframe 3
 	 bbox 40 17 80 80
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_muscles/fall1.png
     frame    data/chars/soldier_muscles/fall2.png
     delay    200
@@ -265,7 +265,7 @@ anim fall20 # blood fall
     offset    100 121
 	 landframe 3
 	 bbox 40 17 80 80
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_muscles/fall1.png
     frame    data/chars/soldier_muscles/fall2.png
     delay    200
@@ -365,7 +365,7 @@ anim fall30# Shock PAIN Ground
     offset    100 121
 	 landframe 3
 	 bbox 40 17 80 80
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_muscles/fall1.png
     frame    data/chars/soldier_muscles/fall2.png
     delay    200

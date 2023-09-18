@@ -232,7 +232,7 @@ anim fall
     delay    15
     offset    118 125
 	 bbox 34 15 60 100
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_stick/fall1.png
     frame    data/chars/soldier_stick/fall2.png
 	 bbox 10 90 100 35
@@ -241,7 +241,7 @@ anim fall
 anim fall7
     delay    15
     offset    118 125
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_stick/fall1.png
     frame    data/chars/soldier_stick/fall2.png
     frame    data/chars/soldier_stick/fall3.png
@@ -273,7 +273,7 @@ anim pain20 # Blood pain
 anim fall20 # Blood fall  
     delay    15
     offset    118 125
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -40 1 20 0 0
 	 bbox 34 15 60 100
     frame    data/chars/soldier_stick/fall1.png
@@ -295,7 +295,7 @@ anim pain15 # BURN PAIN
 anim fall15 # BURN PAIN Ground
     delay    15
     offset    118 125
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -45 1 60 1 0
 	 bbox 34 15 60 100
     frame    data/chars/soldier_stick/fall1.png
@@ -356,7 +356,7 @@ anim pain30# Shock Pain
 anim fall30# Shock PAIN Ground
     delay    15
     offset    118 125
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 70 0 0
 	 bbox 34 15 60 100
     frame    data/chars/soldier_stick/fall1.png

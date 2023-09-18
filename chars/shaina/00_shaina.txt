@@ -355,7 +355,7 @@ anim fall
     delay    10
     landframe 5
     bbox 34 44 85 85
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
     frame    data/chars/shaina/fall3.png
@@ -368,7 +368,7 @@ anim fall7 # chutte apres etre Grab
     offset    89 130
     delay    -1000
     bbox 34 44 85 85
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
     frame    data/chars/shaina/fall3.png
@@ -422,7 +422,7 @@ anim fall20 # blood fall
     delay    10
     landframe 5
     bbox 34 44 85 85
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
     frame    data/chars/shaina/fall3.png
@@ -448,7 +448,7 @@ anim fall15# BURN PAIN Ground
     delay    10
     landframe 5
     bbox 34 44 85 85
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
     frame    data/chars/shaina/fall3.png
@@ -518,7 +518,7 @@ anim fall30# Shock PAIN Ground
     delay    10
     landframe 5
     bbox 34 44 85 85
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
     frame    data/chars/shaina/fall3.png
