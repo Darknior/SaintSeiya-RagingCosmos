@@ -777,7 +777,7 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/seiya/jump2.png
     frame    data/chars/seiya/jump3.png
     frame    data/chars/seiya/jump4.png
-    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 0 0 0 1
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 -15 0 0 1
     frame    data/chars/seiya/jump1.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
