@@ -75,6 +75,7 @@ void spawnScreen(void entity, float fX, float fY, float fZ, int dir, void anim)
 	changeentityproperty(vSpawn, "direction", dir);
 	changeentityproperty(vSpawn, "parent", self);
 	changeentityproperty(vSpawn, "animation", openborconstant(anim));
+	setentityvar(self, entity, vSpawn);
 
 	return vSpawn;
 }
@@ -83,6 +84,14 @@ void setVar(void variable, float value)
 {//Set generic global variable for further use
 	
 	setglobalvar(variable, value);
+}
+
+void removEntity(void entity)
+{//Set generic global variable for further use
+	void self = getlocalvar("self");
+	void victim = getentityvar(self, entity);
+
+	killentity(victim);
 }
 
 void suicide()

@@ -18,8 +18,9 @@ void main()
 	int textRight		= xPos+114;
 	int lineStart		= yPos+33;
 	int lineAdd			= 18;
-	int textLayer		= 1001;
-	int spriteLayer		= 1000000001;
+	int boxLayer		= 1000000002;
+	int textLayer		= 1000000003;
+	int spriteLayer		= 1000000004;
 	int alpha			= 6;
 	int channel			= 190;
 	int color			= 0;
@@ -61,12 +62,53 @@ void main()
 	//DRAW CONTENT
 	if(line1 != NULL()){
 		yText = lineStart;
-		drawbox(xBox, yBox, boxWidth, boHeight, textLayer, color, alpha);
+		drawbox(xBox, yBox, boxWidth, boHeight, boxLayer, color, alpha);
 		changedrawmethod(NULL(), "enabled", 0);
 		drawsprite(getglobalvar(portName), xPortrait, yPortrait, spriteLayer);
 		drawstring(xText, yText, font, line1, textLayer);yText = yText+lineAdd;
 		drawstring(xText, yText, font, line2, textLayer);yText = yText+lineAdd;
 		drawstring(xText, yText, font, line3, textLayer);yText = yText+lineAdd;
 		drawstring(xText, yText, font, line4, textLayer);yText = yText+lineAdd;
+	}
+	
+	hideEntity();
+}
+
+void hideEntity()
+{//Hide some entities during the cutscenes
+	void self			= getlocalvar("self");
+	void entity_cursor	= NULL();
+	int entity_count	= openborvariant("count_entities");
+	int entity_index	= 0;
+	int exists			= 0;
+
+	//PERFORM THE MAIN TASKS
+	for(entity_index = 0; entity_index < entity_count; entity_index++){
+
+		entity_cursor = getentity(entity_index);
+
+		if(!entity_cursor){
+			continue;
+		}
+
+		exists = getentityproperty(entity_cursor, "exists");
+
+		if(!exists){
+			continue;
+		}
+
+		if(	getentityproperty(entity_cursor, "type") == openborconstant("TYPE_PLAYER")	||
+			getentityproperty(entity_cursor, "type") == openborconstant("TYPE_ENEMY")	){
+			int hideZ = -999;
+			int showZ = 400;
+			
+			if(getglobalvar("lockButton") == 1){
+				changeentityproperty(entity_cursor, "z", hideZ); //HIDE REAL ENTITIES DURING THE CUTSCENE
+			}
+			else
+			{
+				changeentityproperty(entity_cursor, "z", showZ); //SHOW BACK REAL ENTITIES AFTER THE CUTSCENE
+			}
+		}
 	}
 }

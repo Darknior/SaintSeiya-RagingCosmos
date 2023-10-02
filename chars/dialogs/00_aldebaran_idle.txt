@@ -1,0 +1,47 @@
+name        aldebaran_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/aldebaran/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1 24 32
+    delay    10
+    offset    231 157
+    frame    data/chars/aldebaran/spawn7.png
+    frame    data/chars/aldebaran/spawn6.png
+    frame    data/chars/aldebaran/spawn5.png
+    frame    data/chars/aldebaran/spawn4.png
+    frame    data/chars/aldebaran/spawn3.png
+    frame    data/chars/aldebaran/spawn2.png
+    frame    data/chars/aldebaran/spawn1.png
+    frame    data/chars/aldebaran/spawn2.png
+    frame    data/chars/aldebaran/spawn3.png
+    frame    data/chars/aldebaran/spawn4.png
+    frame    data/chars/aldebaran/spawn5.png
+    frame    data/chars/aldebaran/spawn6.png
+    frame    data/chars/aldebaran/spawn7.png
+        delay    100
+    frame    data/chars/aldebaran/spawn8.png
+        delay    10
+    frame    data/chars/aldebaran/spawn9.png
+    frame    data/chars/aldebaran/spawn10.png
+    frame    data/chars/aldebaran/spawn11.png
+    frame    data/chars/aldebaran/spawn12.png
+    frame    data/chars/aldebaran/spawn13.png
+    frame    data/chars/aldebaran/spawn14.png
+    frame    data/chars/aldebaran/spawn15.png
+    frame    data/chars/aldebaran/spawn16.png
+    frame    data/chars/aldebaran/spawn17.png
+    frame    data/chars/aldebaran/spawn18.png
+    delay    25
+    offset    31 157
+    frame    data/chars/aldebaran/idle1.png
+    frame    data/chars/aldebaran/idle2.png
+    frame    data/chars/aldebaran/idle3.png
+    frame    data/chars/aldebaran/idle4.png
+    frame    data/chars/aldebaran/idle5.png
+    frame    data/chars/aldebaran/idle4.png
+    frame    data/chars/aldebaran/idle3.png
+    frame    data/chars/aldebaran/idle2.png

@@ -122,37 +122,16 @@ anim    select  # Personnage sélectionné
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-    offset    231 162
+    delay    25
+    offset    37 157
     @cmd spawnFade "in" 0 0 0 10000000001 0.25
-    sound data/chars/aldebaran/sounds/04-voice1.wav
-    delay    100
-    frame    data/chars/aldebaran/spawn8.png
-    delay    10
-    frame    data/chars/aldebaran/spawn7.png
-    frame    data/chars/aldebaran/spawn6.png
-    frame    data/chars/aldebaran/spawn5.png
-    frame    data/chars/aldebaran/spawn4.png
-    frame    data/chars/aldebaran/spawn3.png
-    frame    data/chars/aldebaran/spawn2.png
-    frame    data/chars/aldebaran/spawn1.png
-    frame    data/chars/aldebaran/spawn2.png
-    frame    data/chars/aldebaran/spawn3.png
-    frame    data/chars/aldebaran/spawn4.png
-    frame    data/chars/aldebaran/spawn5.png
-    frame    data/chars/aldebaran/spawn6.png
-    frame    data/chars/aldebaran/spawn7.png
-    frame    data/chars/aldebaran/spawn8.png
-    frame    data/chars/aldebaran/spawn9.png
-    frame    data/chars/aldebaran/spawn10.png
-    frame    data/chars/aldebaran/spawn11.png
     @cmd spawnDialog "dialog_aldebaran1" 200 100
-    frame    data/chars/aldebaran/spawn12.png
-    frame    data/chars/aldebaran/spawn13.png
-    frame    data/chars/aldebaran/spawn14.png
-    frame    data/chars/aldebaran/spawn15.png
-    frame    data/chars/aldebaran/spawn16.png
-    frame    data/chars/aldebaran/spawn17.png
-    frame    data/chars/aldebaran/spawn18.png
+    sound data/chars/aldebaran/sounds/04-voice1.wav
+    frame    data/chars/aldebaran/idle1.png
+    frame    data/chars/aldebaran/idle2.png
+    frame    data/chars/aldebaran/idle3.png
+    frame    data/chars/aldebaran/idle4.png
+    frame    data/chars/aldebaran/idle5.png
 
 anim idle
     loop    1

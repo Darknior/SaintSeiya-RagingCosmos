@@ -61,6 +61,8 @@ load dialog_shura4 data/chars/dialogs/dialog_shura4.txt
 load dialog_tremi1 data/chars/dialogs/dialog_tremi1.txt
 load dialog_wait       data/chars/dialogs/dialog_wait.txt
 load fade              data/chars/dialogs/fade.txt
+load seiya_idle        data/chars/dialogs/00_seiya_idle.txt
+load aldebaran_idle    data/chars/dialogs/00_aldebaran_idle.txt
 
 # Flash animations
 

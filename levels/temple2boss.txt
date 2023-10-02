@@ -34,7 +34,7 @@ at          0
 
 spawn           aldebaran
 boss 			1
-coords          650 390
+coords          650 400
 at              0
 
 group			1 1
