@@ -1,0 +1,65 @@
+name        aiolia_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/aiolia/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1 24 50
+    delay    10
+    offset    73 126
+    frame    data/chars/aiolia/spawn1.png
+    frame    data/chars/aiolia/spawn2.png
+    frame    data/chars/aiolia/spawn3.png
+    frame    data/chars/aiolia/spawn4.png
+    frame    data/chars/aiolia/spawn5.png
+    frame    data/chars/aiolia/spawn6.png
+    frame    data/chars/aiolia/spawn7.png
+    frame    data/chars/aiolia/spawn8.png
+    frame    data/chars/aiolia/spawn9.png
+    frame    data/chars/aiolia/spawn10.png
+    frame    data/chars/aiolia/spawn11.png
+    frame    data/chars/aiolia/spawn12.png
+    frame    data/chars/aiolia/spawn13.png
+    frame    data/chars/aiolia/spawn14.png
+    frame    data/chars/aiolia/spawn15.png
+    frame    data/chars/aiolia/spawn16.png
+    frame    data/chars/aiolia/spawn17.png
+    frame    data/chars/aiolia/spawn18.png
+    frame    data/chars/aiolia/spawn19.png
+    frame    data/chars/aiolia/spawn20.png
+    frame    data/chars/aiolia/spawn21.png
+    frame    data/chars/aiolia/spawn22.png
+    frame    data/chars/aiolia/spawn23.png
+    frame    data/chars/aiolia/spawn24.png
+    delay    40
+    offset    35 134
+    bbox 19 17 38 117
+    frame    data/chars/aiolia/idle1.png
+    delay    10
+    frame    data/chars/aiolia/idle2.png
+    frame    data/chars/aiolia/idle3.png
+    frame    data/chars/aiolia/idle4.png
+    frame    data/chars/aiolia/idle5.png
+    frame    data/chars/aiolia/idle6.png
+    frame    data/chars/aiolia/idle7.png
+    frame    data/chars/aiolia/idle8.png
+    frame    data/chars/aiolia/idle9.png
+    frame    data/chars/aiolia/idle10.png
+    frame    data/chars/aiolia/idle11.png
+    frame    data/chars/aiolia/idle12.png
+    frame    data/chars/aiolia/idle13.png
+    frame    data/chars/aiolia/idle14.png
+    frame    data/chars/aiolia/idle13.png
+    frame    data/chars/aiolia/idle12.png
+    frame    data/chars/aiolia/idle11.png
+    frame    data/chars/aiolia/idle10.png
+    frame    data/chars/aiolia/idle9.png
+    frame    data/chars/aiolia/idle8.png
+    frame    data/chars/aiolia/idle7.png
+    frame    data/chars/aiolia/idle6.png
+    frame    data/chars/aiolia/idle5.png
+    frame    data/chars/aiolia/idle4.png
+    frame    data/chars/aiolia/idle3.png
+    frame    data/chars/aiolia/idle2.png
