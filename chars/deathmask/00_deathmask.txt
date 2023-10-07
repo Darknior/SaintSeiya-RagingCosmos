@@ -118,9 +118,13 @@ anim    select  # Personnage sélectionné
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-    delay    10
+    delay    1
     offset    68 160
     frame    data/chars/deathmask/spawn7.png
+    @cmd spawnFade "in" 0 0 0 10000000001 0.25
+    @cmd spawnDialog "dialog_deathmask1" 200 100
+    frame    data/chars/deathmask/spawn7.png
+    delay    10
     frame    data/chars/deathmask/spawn8.png
     frame    data/chars/deathmask/spawn9.png
     frame    data/chars/deathmask/spawn9.png
@@ -131,7 +135,6 @@ anim spawn
     frame    data/chars/deathmask/spawn9.png
     frame    data/chars/deathmask/spawn9.png
     frame    data/chars/deathmask/spawn9.png
-    @cmd spawnDialog "dialog_deathmask1" 200 100
     frame    data/chars/deathmask/spawn9.png
     frame    data/chars/deathmask/spawn9.png
     frame    data/chars/deathmask/spawn9.png

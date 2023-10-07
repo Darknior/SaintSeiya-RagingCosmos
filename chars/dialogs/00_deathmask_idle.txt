@@ -1,0 +1,34 @@
+name deathmask_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/deathmask/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1 15 20
+    delay    10
+    offset    68 160
+    frame    data/chars/deathmask/spawn7.png
+    frame    data/chars/deathmask/spawn8.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    frame    data/chars/deathmask/spawn9.png
+    delay    25
+    offset    49 130
+    bbox 32 16 38 114
+    frame    data/chars/deathmask/idle1.png
+    frame    data/chars/deathmask/idle2.png
+    frame    data/chars/deathmask/idle3.png
+    frame    data/chars/deathmask/idle4.png
+    frame    data/chars/deathmask/idle3.png
+    frame    data/chars/deathmask/idle2.png

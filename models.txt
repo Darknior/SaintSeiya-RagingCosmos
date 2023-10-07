@@ -63,6 +63,10 @@ load dialog_wait       data/chars/dialogs/dialog_wait.txt
 load fade              data/chars/dialogs/fade.txt
 load seiya_idle        data/chars/dialogs/00_seiya_idle.txt
 load aldebaran_idle    data/chars/dialogs/00_aldebaran_idle.txt
+load shun_idle        data/chars/dialogs/00_shun_idle.txt
+load gemini_idle    data/chars/dialogs/00_gemini_idle.txt
+load shiryu_idle        data/chars/dialogs/00_shiryu_idle.txt
+load deathmask_idle    data/chars/dialogs/00_deathmask_idle.txt
 
 # Flash animations
 

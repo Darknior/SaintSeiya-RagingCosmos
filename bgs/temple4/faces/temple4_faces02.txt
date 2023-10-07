@@ -6,16 +6,14 @@ setlayer            199
 offscreenkill       1500
 
 anim idle
-    loop            1 2 3
+    loop            1 4 6
+    movea           2
     palette         data/bgs/temple4/faces/face02.png
-
-# SHOW
     delay           1
     offset          0 0
+    frame           data/sprites/null.png
+    frame           data/sprites/null.png
+    frame           data/sprites/null.png
     frame           data/bgs/temple4/faces/face02.png
-
-# MOVE
-    delay           1
-    movea           2
     frame           data/bgs/temple4/faces/face02.png
     frame           data/bgs/temple4/faces/face02.png

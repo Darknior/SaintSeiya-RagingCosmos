@@ -15,7 +15,7 @@ anim idle
 	@cmd spawnScreen "aldebaran_idle" 650 0 400 0 "ANI_IDLE"
 	frame	data/chars/dialogs/empty.png
 
-		delay	50
+	delay	300
 	@cmd setVar "line1" "So, here are the rebellious Bronze"
 	@cmd setVar "line2" "Knights who dare to defy the"
 	@cmd setVar "line3" "Sanctuary and the Grand Pope's"

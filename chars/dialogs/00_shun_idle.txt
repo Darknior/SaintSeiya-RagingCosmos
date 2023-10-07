@@ -1,0 +1,20 @@
+name        shun_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/shun/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1
+    delay 17
+    offset   32 131
+    bbox     15 28 51 107
+    frame    data/chars/shun/idle1.png
+    frame    data/chars/shun/idle2.png
+    frame    data/chars/shun/idle3.png
+    frame    data/chars/shun/idle4.png
+    frame    data/chars/shun/idle5.png
+    frame    data/chars/shun/idle4.png
+    frame    data/chars/shun/idle3.png
+    frame    data/chars/shun/idle2.png

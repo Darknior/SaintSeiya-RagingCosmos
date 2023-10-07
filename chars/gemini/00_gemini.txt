@@ -120,23 +120,7 @@ anim spawn
     delay    20
     offset    69 176
     @cmd spawnFade "in" 0 0 0 10000000001 0.25
-    frame    data/chars/gemini/spawn1.png
-    frame    data/chars/gemini/spawn2.png
-    frame    data/chars/gemini/spawn3.png
-    frame    data/chars/gemini/spawn4.png
-    frame    data/chars/gemini/spawn5.png
-    frame    data/chars/gemini/spawn6.png
-    frame    data/chars/gemini/spawn7.png
-    frame    data/chars/gemini/spawn8.png
-    frame    data/chars/gemini/spawn9.png
-    frame    data/chars/gemini/spawn10.png
-    frame    data/chars/gemini/spawn11.png
-    frame    data/chars/gemini/spawn12.png
-    sound data/chars/gemini/sounds/03-ahah.wav
-    frame    data/chars/gemini/spawn13.png
     @cmd spawnDialog "dialog_gemini1" 200 100
-    frame    data/chars/gemini/spawn14.png
-    frame    data/chars/gemini/spawn15.png
     frame    data/chars/gemini/spawn16.png
     frame    data/chars/gemini/spawn17.png
     frame    data/chars/gemini/spawn18.png
