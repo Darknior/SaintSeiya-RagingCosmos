@@ -1,0 +1,18 @@
+name        ikki_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/ikki/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop 1
+    delay    16
+    offset   45 137
+    bbox     30 17 30 120
+    frame    data/chars/ikki/idle1.png
+    frame    data/chars/ikki/idle2.png
+    frame    data/chars/ikki/idle3.png
+    frame    data/chars/ikki/idle4.png
+    frame    data/chars/ikki/idle5.png
+    frame    data/chars/ikki/idle6.png

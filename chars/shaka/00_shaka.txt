@@ -127,42 +127,16 @@ anim    select  # Personnage sélectionné
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-    offset    93 127
-    delay    30
-    seta    70
-    frame    data/chars/shaka/spawn1.png
+    delay    25
+    offset    25 127
+    bbox 9 4 38 126
+    frame    data/chars/shaka/idle1.png
+    @cmd spawnFade "in" 0 0 0 10000000001 0.25
     @cmd spawnDialog "dialog_shaka1" 200 100
-    frame    data/chars/shaka/spawn1.png
-    frame    data/chars/shaka/spawn2.png
-    frame    data/chars/shaka/spawn3.png
-    frame    data/chars/shaka/spawn4.png
-    frame    data/chars/shaka/spawn5.png
-    @cmd jump 1
-    @cmd leaper 0 3.5 1
-    delay    5
-    frame    data/chars/shaka/spawn5.png
-    frame    data/chars/shaka/spawn5.png
-    frame    data/chars/shaka/spawn6.png
-    frame    data/chars/shaka/spawn6.png
-    frame    data/chars/shaka/spawn6.png
-    frame    data/chars/shaka/spawn7.png
-    frame    data/chars/shaka/spawn7.png
-    frame    data/chars/shaka/spawn7.png
-    frame    data/chars/shaka/spawn8.png
-    frame    data/chars/shaka/spawn8.png
-    frame    data/chars/shaka/spawn8.png
-    frame    data/chars/shaka/spawn9.png
-    frame    data/chars/shaka/spawn9.png
-    frame    data/chars/shaka/spawn9.png
-    frame    data/chars/shaka/spawn10.png
-    frame    data/chars/shaka/spawn10.png
-    frame    data/chars/shaka/spawn10.png
-    frame    data/chars/shaka/spawn11.png
-    frame    data/chars/shaka/spawn11.png
-    frame    data/chars/shaka/spawn11.png
-    frame    data/chars/shaka/spawn12.png
-    delay    40
-    frame    data/chars/shaka/spawn12.png
+    frame    data/chars/shaka/idle1.png
+    frame    data/chars/shaka/idle2.png
+    frame    data/chars/shaka/idle3.png
+    frame    data/chars/shaka/idle4.png
 
 anim idle
     loop    1

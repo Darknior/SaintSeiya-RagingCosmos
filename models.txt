@@ -68,6 +68,8 @@ load gemini_idle    data/chars/dialogs/00_gemini_idle.txt
 load shiryu_idle        data/chars/dialogs/00_shiryu_idle.txt
 load deathmask_idle    data/chars/dialogs/00_deathmask_idle.txt
 load aiolia_idle    data/chars/dialogs/00_aiolia_idle.txt
+load ikki_idle        data/chars/dialogs/00_ikki_idle.txt
+load shaka_idle        data/chars/dialogs/00_shaka_idle.txt
 
 # Flash animations
 
