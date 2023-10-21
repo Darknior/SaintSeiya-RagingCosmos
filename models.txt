@@ -66,6 +66,7 @@ load hyoga_idle        data/chars/dialogs/00_hyoga_idle.txt
 load shun_idle        data/chars/dialogs/00_shun_idle.txt
 load shiryu_idle        data/chars/dialogs/00_shiryu_idle.txt
 load ikki_idle        data/chars/dialogs/00_ikki_idle.txt
+load tremi_idle        data/chars/dialogs/00_tremi_idle.txt
 load aldebaran_idle    data/chars/dialogs/00_aldebaran_idle.txt
 load gemini_idle    data/chars/dialogs/00_gemini_idle.txt
 load deathmask_idle    data/chars/dialogs/00_deathmask_idle.txt

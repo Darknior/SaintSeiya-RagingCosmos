@@ -1,0 +1,36 @@
+name        tremi_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/tremi/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+     loop     1 12 21
+     offset     141 120
+     delay     2000
+     frame     data/chars/tremi/spawn0.png
+     delay     100
+     frame     data/chars/tremi/spawn1.png
+     delay     10
+     frame     data/chars/tremi/spawn2.png
+     frame     data/chars/tremi/spawn3.png
+     frame     data/chars/tremi/spawn4.png
+     frame     data/chars/tremi/spawn5.png
+     frame     data/chars/tremi/spawn6.png
+     frame     data/chars/tremi/spawn7.png
+     frame     data/chars/tremi/spawn8.png
+     frame     data/chars/tremi/spawn9.png
+     frame     data/chars/tremi/spawn10.png
+     delay     15
+     offset     46 119
+     frame     data/chars/tremi/idle1.png
+     frame     data/chars/tremi/idle2.png
+     frame     data/chars/tremi/idle3.png
+     frame     data/chars/tremi/idle4.png
+     frame     data/chars/tremi/idle5.png
+     frame     data/chars/tremi/idle6.png
+     frame     data/chars/tremi/idle7.png
+     frame     data/chars/tremi/idle8.png
+     frame     data/chars/tremi/idle9.png
+     frame     data/chars/tremi/idle10.png
