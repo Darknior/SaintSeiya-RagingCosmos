@@ -1,19 +1,21 @@
 name			dialog_milo1 #TIMELINE
 type			text
 subtype			noskip
-setlayer		100000001
+setlayer		100000002
 shadow			0
 ondrawscript	data/scripts/dialogs/dialog.c
 animationscript	data/scripts/dialogs/animation.c
 
 anim idle
 	loop	0
-	delay	2
+	delay	400
 	offset	0 -15
 	@cmd setVar "lockButton" 1
+	@cmd spawnScreen "hyoga_idle" 60 0 400 1 "ANI_IDLE"
+	@cmd spawnScreen "milo_idle" 650 0 400 0 "ANI_IDLE"
 	frame	data/chars/dialogs/empty.png
 
-		delay	50
+	delay	300
 	@cmd setVar "line1" "Welcome Bronze Knight!"
 	@cmd setVar "line2" ""
 	@cmd setVar "line3" ""
@@ -54,5 +56,17 @@ anim idle
 	@cmd setVar "portraitName" "empty"
 	@cmd setVar "portraitSide" "right"
 	@cmd setVar "dialog_entity" NULL()
+	frame	data/chars/dialogs/empty.png
+
+	delay	250
+	@cmd spawnFade "out" 0 0 0 10000000001 0.50
+	frame	data/chars/dialogs/empty.png
+
+	delay	10
+	@cmd setVar "lockButton" 0
+	@cmd removEntity "hyoga_idle"
+	@cmd removEntity "milo_idle"
+	frame	data/chars/dialogs/empty.png
+
 	@cmd suicide
-	frame	data/chars/dialogs/textbox.png
+	frame	data/chars/dialogs/empty.png

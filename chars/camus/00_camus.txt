@@ -118,25 +118,19 @@ anim    select  # Personnage sélectionné
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-    delay    15
-    offset    66 148
-    frame    data/chars/camus/spawn3.png
+    delay    20
+    offset    56 128
+    bbox 41 1 38 127
+    frame    data/chars/camus/idle1.png
     @cmd spawnFade "in" 0 0 0 10000000001 0.25
-    frame    data/chars/camus/spawn3.png
-    sound data/chars/camus/sounds/01-greetings.wav
-    frame    data/chars/camus/spawn4.png
     @cmd spawnDialog "dialog_camus1" 200 100
-    frame    data/chars/camus/spawn5.png
-    frame    data/chars/camus/spawn6.png
-    frame    data/chars/camus/spawn7.png
-    frame    data/chars/camus/spawn8.png
-    frame    data/chars/camus/spawn9.png
-    frame    data/chars/camus/spawn10.png
-    frame    data/chars/camus/spawn11.png
-    frame    data/chars/camus/spawn12.png
-    frame    data/chars/camus/spawn13.png
-    frame    data/chars/camus/spawn14.png
-    frame    data/chars/camus/spawn15.png
+    frame    data/chars/camus/idle2.png
+    frame    data/chars/camus/idle3.png
+    frame    data/chars/camus/idle4.png
+    frame    data/chars/camus/idle5.png
+    frame    data/chars/camus/idle4.png
+    frame    data/chars/camus/idle3.png
+    frame    data/chars/camus/idle2.png
 
 anim idle
     loop    1

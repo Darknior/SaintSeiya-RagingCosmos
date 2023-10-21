@@ -128,36 +128,18 @@ anim    select  # Personnage sélectionné
 #// Static animations /////////////////////////////////////////////////
 
 anim spawn
-    delay    12
-    offset   127 139
+    delay    20
+    offset    44 126
     @cmd     spawnFade "in" 0 0 0 10000000001 0.25
-    frame    data/chars/milo/spawn1.png
-    frame    data/chars/milo/spawn2.png
-    frame    data/chars/milo/spawn3.png
-    frame    data/chars/milo/spawn1.png
-    frame    data/chars/milo/spawn2.png
-    frame    data/chars/milo/spawn3.png
-    frame    data/chars/milo/spawn1.png
-    frame    data/chars/milo/spawn2.png
-    frame    data/chars/milo/spawn3.png
-    sound    data/chars/milo/sounds/laugh.wav
-    frame    data/chars/milo/spawn1.png
-    frame    data/chars/milo/spawn2.png
-    frame    data/chars/milo/spawn3.png
-    frame    data/chars/milo/spawn4.png
-    frame    data/chars/milo/spawn5.png
-    frame    data/chars/milo/spawn6.png
-    frame    data/chars/milo/spawn7.png
-    frame    data/chars/milo/spawn8.png
-    frame    data/chars/milo/spawn9.png
-    frame    data/chars/milo/spawn10.png
-    frame    data/chars/milo/spawn11.png
-    frame    data/chars/milo/spawn12.png
-    frame    data/chars/milo/spawn13.png
-    frame    data/chars/milo/spawn14.png
-    frame    data/chars/milo/spawn15.png
     @cmd spawnDialog "dialog_milo1" 200 100
-    frame    data/chars/milo/spawn15.png
+    frame    data/chars/milo/idle1.png
+    frame    data/chars/milo/idle2.png
+    frame    data/chars/milo/idle3.png
+    frame    data/chars/milo/idle4.png
+    frame    data/chars/milo/idle5.png
+    frame    data/chars/milo/idle4.png
+    frame    data/chars/milo/idle3.png
+    frame    data/chars/milo/idle2.png
 
 anim idle
     loop    1

@@ -1,0 +1,35 @@
+name        camus_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/camus/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1 14 21
+    delay    15
+    offset    66 148
+    frame    data/chars/camus/spawn3.png
+    sound data/chars/camus/sounds/01-greetings.wav
+    frame    data/chars/camus/spawn4.png
+    frame    data/chars/camus/spawn5.png
+    frame    data/chars/camus/spawn6.png
+    frame    data/chars/camus/spawn7.png
+    frame    data/chars/camus/spawn8.png
+    frame    data/chars/camus/spawn9.png
+    frame    data/chars/camus/spawn10.png
+    frame    data/chars/camus/spawn11.png
+    frame    data/chars/camus/spawn12.png
+    frame    data/chars/camus/spawn13.png
+    frame    data/chars/camus/spawn14.png
+    frame    data/chars/camus/spawn15.png
+    delay    20
+    offset    56 128
+    frame    data/chars/camus/idle1.png
+    frame    data/chars/camus/idle2.png
+    frame    data/chars/camus/idle3.png
+    frame    data/chars/camus/idle4.png
+    frame    data/chars/camus/idle5.png
+    frame    data/chars/camus/idle4.png
+    frame    data/chars/camus/idle3.png
+    frame    data/chars/camus/idle2.png

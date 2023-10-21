@@ -1,0 +1,32 @@
+name        aphrodite_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/aphrodite/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1 15 18
+    delay    15
+    offset    44 158
+    frame    data/chars/aphrodite/spawn1.png
+    frame    data/chars/aphrodite/spawn2.png
+    frame    data/chars/aphrodite/spawn3.png
+    frame    data/chars/aphrodite/spawn4.png
+    frame    data/chars/aphrodite/spawn5.png
+    frame    data/chars/aphrodite/spawn6.png
+    frame    data/chars/aphrodite/spawn7.png
+    frame    data/chars/aphrodite/spawn8.png
+    sound   data/bgs/temple12/Roses/voices.wav
+    frame    data/chars/aphrodite/spawn9.png
+    frame    data/chars/aphrodite/spawn10.png
+    frame    data/chars/aphrodite/spawn11.png
+    frame    data/chars/aphrodite/spawn12.png
+    frame    data/chars/aphrodite/spawn13.png
+    frame    data/chars/aphrodite/spawn14.png
+    delay    20
+    offset    39 144
+    frame    data/chars/aphrodite/idle1.png
+    frame    data/chars/aphrodite/idle2.png
+    frame    data/chars/aphrodite/idle3.png
+    frame    data/chars/aphrodite/idle2.png

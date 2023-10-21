@@ -1,0 +1,15 @@
+name        shura_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/shura/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1
+    delay    15
+    offset    35 143
+    frame    data/chars/shura/idle1.png
+    frame    data/chars/shura/idle2.png
+    frame    data/chars/shura/idle3.png
+    frame    data/chars/shura/idle2.png

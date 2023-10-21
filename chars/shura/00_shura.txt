@@ -148,12 +148,11 @@ anim spawn
     loop    0
     delay    15
     offset    35 143
-    bbox    13 14 22 93
     @cmd spawnFade "in" 0 0 0 10000000001 0.25
+    @cmd spawnDialog "dialog_shura1" 200 100
     frame    data/chars/shura/idle1.png
     frame    data/chars/shura/idle2.png
     sound data/chars/shura/sounds/09-laugh.wav
-    @cmd spawnDialog "dialog_shura1" 200 100
     frame    data/chars/shura/idle3.png
     frame    data/chars/shura/idle2.png
 
@@ -355,7 +354,7 @@ anim    pain
 
 anim    fall
     loop    0
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/voices/anddie2.wav
     delay    15
     offset    75 157
@@ -369,7 +368,7 @@ anim    fall
     
 anim fall7 # chutte apres etre Grab
     loop    0
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/voices/anddie2.wav
     delay    15
     offset    75 157

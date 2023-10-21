@@ -1,0 +1,19 @@
+name        hyoga_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/hyoga/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1
+    delay    12
+    offset   45 140
+    bbox     29 28 30 112
+    frame    data/chars/hyoga/idle1.png
+    frame    data/chars/hyoga/idle2.png
+    frame    data/chars/hyoga/idle3.png
+    frame    data/chars/hyoga/idle4.png
+    frame    data/chars/hyoga/idle5.png
+    frame    data/chars/hyoga/idle6.png
+    frame    data/chars/hyoga/idle7.png
