@@ -1,6 +1,6 @@
 name        shaka
 health      700
-mp          100
+mp          0
 type        enemy
 
 
@@ -340,29 +340,33 @@ anim pain2 # big pain
 anim fall
     delay    10
     offset    121 127
-    landframe 5
+    landframe 6
     bbox 44 26 80 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
     frame    data/chars/shaka/fall4.png
+    delay    -1000
     frame    data/chars/shaka/fall5.png
     bbox 0 95 120 35
+    frame    data/chars/shaka/fall6.png
     frame    data/chars/shaka/fall6.png
 
 anim fall7 # chutte apres etre Grab
     delay    10
     offset    121 127
-    landframe 5
+    landframe 6
     bbox 44 26 80 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
     frame    data/chars/shaka/fall4.png
+    delay    -1000
     frame    data/chars/shaka/fall5.png
     bbox 0 95 120 35
+    frame    data/chars/shaka/fall6.png
     frame    data/chars/shaka/fall6.png
 
 anim rise # Se releve avec compteur de chuttes
