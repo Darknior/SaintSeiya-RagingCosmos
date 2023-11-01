@@ -753,7 +753,7 @@ anim fall
     frame    data/chars/shiryu/fall4.png
     delay    -1000
     frame    data/chars/shiryu/fall5.png
-    delay    10
+    delay    15
     frame    data/chars/shiryu/fall6.png
     frame    data/chars/shiryu/fall7.png
     sound    data/chars/shiryu/sounds/hurt.wav
@@ -771,7 +771,7 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/shiryu/fall4.png
     delay    -1000
     frame    data/chars/shiryu/fall5.png
-    delay    10
+    delay    15
     frame    data/chars/shiryu/fall6.png
     frame    data/chars/shiryu/fall7.png
     sound    data/chars/shiryu/sounds/hurt.wav
@@ -848,7 +848,7 @@ anim fall20 # blood fall
     frame    data/chars/shiryu/fall4.png
     delay    -1000
     frame    data/chars/shiryu/fall5.png
-    delay    10
+    delay    15
     frame    data/chars/shiryu/fall6.png
     frame    data/chars/shiryu/fall7.png
     sound    data/chars/shiryu/sounds/hurt.wav

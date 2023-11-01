@@ -367,6 +367,7 @@ anim    fall
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     delay 10
     frame    data/chars/shura/fall3.png
+    frame    data/chars/shura/fall3.png
     
 anim fall7 # chutte apres etre Grab
     landframe 3
@@ -382,6 +383,7 @@ anim fall7 # chutte apres etre Grab
     bbox 25 122 120 35
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     delay 10
+    frame    data/chars/shura/fall3.png
     frame    data/chars/shura/fall3.png
 
 anim rise # Se releve avec compteur de chuttes
@@ -426,6 +428,7 @@ anim fall20 # blood fall
     bbox 25 122 120 35
     delay    15
     frame    data/chars/shura/fall3.png
+    frame    data/chars/shura/fall3.png
 
 anim pain15# BURN PAIN
     loop    0
@@ -453,6 +456,7 @@ anim fall15# BURN PAIN Ground
     bbox 25 122 120 35
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 0 0 0
     delay    15
+    frame    data/chars/shura/fall3.png
     frame    data/chars/shura/fall3.png
 
 anim pain10# ICE PAIN
@@ -520,6 +524,7 @@ anim fall30# Shock PAIN Ground
     bbox 25 122 120 35
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 0 0 0
     delay    15
+    frame    data/chars/shura/fall3.png
     frame    data/chars/shura/fall3.png
 
 #// Block animations /////////////////////////////////////////////////

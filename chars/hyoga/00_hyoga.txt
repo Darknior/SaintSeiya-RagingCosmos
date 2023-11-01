@@ -844,14 +844,14 @@ anim fall
     frame    data/chars/hyoga/fall4.png
     delay    -1000
     frame    data/chars/hyoga/fall5.png
-    delay    10
+    delay    15
     frame    data/chars/hyoga/fall6.png
     sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
     frame    data/chars/hyoga/fall8.png
 
 anim fall7 # chutte apres etre Grab
-    landframe 3
+    landframe 6
     offset   69 142
     delay    10
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -862,7 +862,7 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/hyoga/fall4.png
     delay    -1000
     frame    data/chars/hyoga/fall5.png
-    delay    10
+    delay    15
     frame    data/chars/hyoga/fall6.png
     sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
@@ -936,7 +936,7 @@ anim fall20 # blood fall
     frame    data/chars/hyoga/fall4.png
     delay    -1000
     frame    data/chars/hyoga/fall5.png
-    delay    10
+    delay    15
     frame    data/chars/hyoga/fall6.png
     sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
@@ -969,7 +969,7 @@ anim fall15# BURN PAIN Ground
     frame    data/chars/hyoga/fall4.png
     delay    -1000
     frame    data/chars/hyoga/fall5.png
-    delay    10
+    delay    15
     frame    data/chars/hyoga/fall6.png
     sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png
@@ -1047,7 +1047,7 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/hyoga/fall4.png
     delay    -1000
     frame    data/chars/hyoga/fall5.png
-    delay    10
+    delay    15
     frame    data/chars/hyoga/fall6.png
     sound    data/chars/hyoga/sounds/hurt4.wav
     frame    data/chars/hyoga/fall7.png

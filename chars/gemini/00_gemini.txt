@@ -309,6 +309,7 @@ anim fall
     bbox 30 106 130 40
     delay    10
     frame    data/chars/gemini/fall5.png
+    frame    data/chars/gemini/fall5.png
 
 anim fall7 # chutte apres etre Grab
     delay    10
@@ -324,6 +325,7 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/gemini/fall4.png
     bbox 30 106 130 40
     delay    10
+    frame    data/chars/gemini/fall5.png
     frame    data/chars/gemini/fall5.png
 
 anim rise # Se releve avec compteur de chuttes
@@ -401,6 +403,7 @@ anim fall20 # blood fall
     bbox 30 106 130 40
     delay    10
     frame    data/chars/gemini/fall5.png
+    frame    data/chars/gemini/fall5.png
 
 anim pain15# BURN PAIN
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" 0 1 75 0 0
@@ -427,6 +430,7 @@ anim fall15# BURN PAIN Ground
     bbox 30 106 130 40
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
     delay    10
+    frame    data/chars/gemini/fall5.png
     frame    data/chars/gemini/fall5.png
     
 anim pain10# ICE PAIN
@@ -488,6 +492,7 @@ anim fall30# Shock PAIN Ground
     bbox 30 106 130 40
     @cmd     spawnbind "shock1" "ANI_IDLE" -50 1 10 0 0
     delay    10
+    frame    data/chars/gemini/fall5.png
     frame    data/chars/gemini/fall5.png
 
 #// Block animations /////////////////////////////////////////////////
