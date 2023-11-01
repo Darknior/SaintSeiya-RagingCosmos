@@ -788,7 +788,7 @@ anim pain2
     frame    data/chars/ikki/pain21.png
 
 anim fall
-    landframe 4
+    landframe 5
     offset    114 139
     delay    15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -805,7 +805,7 @@ anim fall
     frame    data/chars/ikki/fall6.png
 
 anim fall7 # chutte apres etre Grab
-    landframe 4
+    landframe 5
     offset    114 139
     delay    15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -881,7 +881,7 @@ anim pain20 # Blood pain
     frame    data/chars/ikki/pain21.png
 
 anim fall20 # blood fall
-    landframe 4
+    landframe 5
     offset    114 139
     delay    15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -912,7 +912,7 @@ anim pain15# BURN PAIN
     frame    data/chars/ikki/pain1.png
 
 anim fall15# BURN PAIN Ground
-    landframe 4
+    landframe 5
     offset    114 139
     delay    15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -988,7 +988,7 @@ anim pain30# Shock Pain
     frame    data/chars/ikki/pain1.png
 
 anim fall30# Shock PAIN Ground
-    landframe 4
+    landframe 5
     offset    114 139
     delay    15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10

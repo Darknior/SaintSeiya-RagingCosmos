@@ -353,31 +353,35 @@ anim    pain
     frame    data/chars/shura/pain2.png
 
 anim    fall
-    loop    0
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    sound    data/voices/anddie2.wav
+    landframe 3
     delay    15
     offset    75 157
     bbox 22 57 100 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shura/fall1.png
     offset    71 160
+    delay -1000
     frame    data/chars/shura/fall2.png
     offset    71 151
     bbox 25 122 120 35
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
+    delay 10
     frame    data/chars/shura/fall3.png
     
 anim fall7 # chutte apres etre Grab
-    loop    0
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    sound    data/voices/anddie2.wav
+    landframe 3
     delay    15
     offset    75 157
     bbox 22 57 100 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shura/fall1.png
     offset    71 160
+    delay -1000
     frame    data/chars/shura/fall2.png
     offset    71 151
     bbox 25 122 120 35
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
+    delay 10
     frame    data/chars/shura/fall3.png
 
 anim rise # Se releve avec compteur de chuttes
@@ -408,7 +412,7 @@ anim pain20 # Blood pain
     frame    data/chars/shura/pain2.png
 
 anim fall20 # blood fall
-    loop    0
+    landframe 3
     delay    15
     offset    75 157
     bbox 22 57 100 100
@@ -416,9 +420,11 @@ anim fall20 # blood fall
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 0 -10 0 0
     frame    data/chars/shura/fall1.png
     offset    71 160
+    delay    -1000
     frame    data/chars/shura/fall2.png
     offset    71 151
     bbox 25 122 120 35
+    delay    15
     frame    data/chars/shura/fall3.png
 
 anim pain15# BURN PAIN
@@ -433,7 +439,7 @@ anim pain15# BURN PAIN
     frame    data/chars/shura/pain2.png
 
 anim fall15# BURN PAIN Ground
-    loop    0
+    landframe 3
     delay    15
     offset    75 157
     bbox 22 57 100 100
@@ -441,10 +447,12 @@ anim fall15# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -20 1 50 0 0
     frame    data/chars/shura/fall1.png
     offset    71 160
+    delay    -1000
     frame    data/chars/shura/fall2.png
     offset    71 151
     bbox 25 122 120 35
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 0 0 0
+    delay    15
     frame    data/chars/shura/fall3.png
 
 anim pain10# ICE PAIN
@@ -496,21 +504,22 @@ anim pain30# Shock Pain
     bbox    51 47 46 103
     offset    81 152
     frame    data/chars/shura/pain2.png
-
-anim    fall
-    loop    0
-    sound    data/voices/anddie2.wav
+    
+anim fall30# Shock PAIN Ground
+    landframe 3
     delay    15
     offset    75 157
     bbox 22 57 100 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
-    @cmd     spawnbind "shock1" "ANI_IDLE" 0 1 35 0 0
+    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 50 0 0
     frame    data/chars/shura/fall1.png
     offset    71 160
+    delay    -1000
     frame    data/chars/shura/fall2.png
     offset    71 151
     bbox 25 122 120 35
-    @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 5 0 0
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 0 0 0
+    delay    15
     frame    data/chars/shura/fall3.png
 
 #// Block animations /////////////////////////////////////////////////
@@ -521,7 +530,6 @@ anim    block
     delay    10
     offset    81 152
     frame    data/chars/shura/pain1.png
-
 
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
@@ -601,8 +609,6 @@ anim freespecial # Uppercut excalibur
     frame    data/chars/shura/grat3.png
     frame    data/chars/shura/grat2.png
     frame    data/chars/shura/grat1.png
-
-
 
 anim freespecial4 # Slash simple lame
     range 300 900

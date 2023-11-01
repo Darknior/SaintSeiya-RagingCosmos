@@ -353,26 +353,34 @@ anim pain2 # Big pain
 anim fall
     offset    89 130
     delay    10
-    landframe 5
+    landframe 4
     bbox 34 44 85 85
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
+    delay    -1000
     frame    data/chars/shaina/fall3.png
+    delay    10
     frame    data/chars/shaina/fall4.png
     bbox 0 95 100 35
     frame    data/chars/shaina/fall5.png
     frame    data/chars/shaina/fall6.png
 
 anim fall7 # chutte apres etre Grab
+    landframe 4
     offset    89 130
-    delay    -1000
+    delay    10
     bbox 34 44 85 85
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
+    delay    -1000
     frame    data/chars/shaina/fall3.png
+    delay    10
     frame    data/chars/shaina/fall4.png
+    bbox 0 95 100 35
+    frame    data/chars/shaina/fall5.png
+    frame    data/chars/shaina/fall6.png
 
 anim rise # Se releve avec compteur de chuttes
     delay    10
@@ -420,12 +428,14 @@ anim fall20 # blood fall
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -15 0 10 0 0
     offset    89 130
     delay    10
-    landframe 5
+    landframe 4
     bbox 34 44 85 85
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
+    delay    -1000
     frame    data/chars/shaina/fall3.png
+    delay    10
     frame    data/chars/shaina/fall4.png
     bbox 0 95 100 35
     frame    data/chars/shaina/fall5.png
@@ -446,12 +456,14 @@ anim fall15# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 50 0 0
     offset    89 130
     delay    10
-    landframe 5
+    landframe 4
     bbox 34 44 85 85
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
+    delay    -1000
     frame    data/chars/shaina/fall3.png
+    delay    10
     frame    data/chars/shaina/fall4.png
     bbox 0 95 100 35
     frame    data/chars/shaina/fall5.png
@@ -516,12 +528,14 @@ anim fall30# Shock PAIN Ground
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 55 0 0
     offset    89 130
     delay    10
-    landframe 5
+    landframe 4
     bbox 34 44 85 85
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaina/fall1.png
     frame    data/chars/shaina/fall2.png
+    delay    -1000
     frame    data/chars/shaina/fall3.png
+    delay    10
     frame    data/chars/shaina/fall4.png
     bbox 0 95 100 35
     frame    data/chars/shaina/fall5.png

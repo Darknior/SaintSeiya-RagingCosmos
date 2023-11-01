@@ -330,7 +330,9 @@ anim fall
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
+    delay    -1000
     frame    data/chars/milo/fall3.png
+    delay    10
     frame    data/chars/milo/fall4.png
     bbox 0 93 120 35
     frame    data/chars/milo/fall5.png
@@ -343,7 +345,9 @@ anim fall7 # chutte apres etre Grab
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
+    delay    -1000
     frame    data/chars/milo/fall3.png
+    delay    10
     frame    data/chars/milo/fall4.png
     bbox 0 93 120 35
     frame    data/chars/milo/fall5.png
@@ -424,7 +428,9 @@ anim fall20 # blood fall
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -50 0 -10 0 0
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
+    delay    -1000
     frame    data/chars/milo/fall3.png
+    delay    10
     frame    data/chars/milo/fall4.png
     bbox 0 93 120 35
     frame    data/chars/milo/fall5.png
@@ -447,7 +453,9 @@ anim fall15# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
+    delay    -1000
     frame    data/chars/milo/fall3.png
+    delay    10
     frame    data/chars/milo/fall4.png
     bbox 0 93 120 35
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -70 1 0 0 0
@@ -504,7 +512,9 @@ anim fall30# Shock PAIN Ground
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/milo/fall1.png
     frame    data/chars/milo/fall2.png
+    delay    -1000
     frame    data/chars/milo/fall3.png
+    delay    10
     frame    data/chars/milo/fall4.png
     bbox 0 93 120 35
     @cmd     spawnbind "shock1" "ANI_IDLE" -50 1 0 0 0

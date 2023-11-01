@@ -355,27 +355,31 @@ anim pain2 # Down
     frame    data/chars/deathmask/pain22.png
 
 anim fall
-    delay    -1000
+    delay    10
     offset    92 126
     landframe 4
     bbox 7 50 100 80
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/deathmask/fall1.png
     frame    data/chars/deathmask/fall2.png
+    delay    -1000
     frame    data/chars/deathmask/fall3.png
+    delay    10
     frame    data/chars/deathmask/fall4.png
     bbox 7 91 100 35
     frame    data/chars/deathmask/fall5.png
 
 anim fall7 # chutte apres etre Grab
-    delay    -1000
+    delay    10
     offset    92 126
     landframe 4
     bbox 7 50 100 80
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/deathmask/fall1.png
     frame    data/chars/deathmask/fall2.png
+    delay    -1000
     frame    data/chars/deathmask/fall3.png
+    delay    10
     frame    data/chars/deathmask/fall4.png
     bbox 7 90 100 35
     frame    data/chars/deathmask/fall5.png
@@ -445,7 +449,7 @@ anim pain20 # Blood pain
     frame    data/chars/deathmask/pain22.png
 
 anim fall20 # blood fall
-    delay    -1000
+    delay    10
     offset    92 126
     landframe 4
     bbox 7 50 100 80
@@ -453,7 +457,9 @@ anim fall20 # blood fall
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 0 0 0
     frame    data/chars/deathmask/fall1.png
     frame    data/chars/deathmask/fall2.png
+    delay    -1000
     frame    data/chars/deathmask/fall3.png
+    delay    10
     frame    data/chars/deathmask/fall4.png
     bbox 7 91 100 35
     frame    data/chars/deathmask/fall5.png
@@ -468,7 +474,7 @@ anim pain15# BURN PAIN
     frame    data/chars/deathmask/pain3.png
 
 anim fall15# BURN PAIN Ground
-    delay    -1000
+    delay    10
     offset    92 126
     landframe 4
     bbox 7 50 100 80
@@ -476,7 +482,9 @@ anim fall15# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/deathmask/fall1.png
     frame    data/chars/deathmask/fall2.png
+    delay    -1000
     frame    data/chars/deathmask/fall3.png
+    delay    10
     frame    data/chars/deathmask/fall4.png
     bbox 7 91 100 35
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
@@ -525,7 +533,7 @@ anim pain30# Shock Pain
     frame    data/chars/deathmask/pain3.png
 
 anim fall30# Shock PAIN Ground
-    delay    -1000
+    delay    10
     offset    92 126
     landframe 4
     bbox 7 50 100 80
@@ -533,7 +541,9 @@ anim fall30# Shock PAIN Ground
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 70 0 0
     frame    data/chars/deathmask/fall1.png
     frame    data/chars/deathmask/fall2.png
+    delay    -1000
     frame    data/chars/deathmask/fall3.png
+    delay    10
     frame    data/chars/deathmask/fall4.png
     bbox 7 91 100 35
     @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0

@@ -930,7 +930,7 @@ anim pain15# BURN PAIN
 anim fall15# BURN PAIN Ground
     landframe  6
     offset   114 110
-    delay    -1000
+    delay    10
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 30 0 0
@@ -939,7 +939,9 @@ anim fall15# BURN PAIN Ground
     frame    data/chars/seiya/fall3.png
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
     frame    data/chars/seiya/fall3.png
+    delay    -1000
     frame    data/chars/seiya/fall3.png
+    delay    10
     frame    data/chars/seiya/fall4.png
     sound    data/chars/seiya/sounds/hurt2.wav
     frame    data/chars/seiya/fall4.png

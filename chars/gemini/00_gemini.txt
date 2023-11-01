@@ -297,29 +297,33 @@ anim pain2 # Big pain
 anim fall
     delay    10
     offset    117 148
-    landframe 4
+    landframe 5
     bbox 90 50 50 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/gemini/fall1.png
 	 bbox 20 60 70 60
     frame    data/chars/gemini/fall2.png
     frame    data/chars/gemini/fall3.png
+    delay    -1000
     frame    data/chars/gemini/fall4.png
     bbox 30 106 130 40
+    delay    10
     frame    data/chars/gemini/fall5.png
 
 anim fall7 # chutte apres etre Grab
     delay    10
     offset    117 148
-    landframe 4
+    landframe 5
     bbox 90 50 50 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/gemini/fall1.png
 	 bbox 20 60 70 60
     frame    data/chars/gemini/fall2.png
     frame    data/chars/gemini/fall3.png
+    delay    -1000
     frame    data/chars/gemini/fall4.png
     bbox 30 106 130 40
+    delay    10
     frame    data/chars/gemini/fall5.png
 
 anim rise # Se releve avec compteur de chuttes
@@ -385,15 +389,17 @@ anim fall20 # blood fall
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 5 0 0 0 0
     delay    10
     offset    117 148
-    landframe 4
+    landframe 5
     bbox 90 50 50 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/gemini/fall1.png
 	 bbox 20 60 70 60
     frame    data/chars/gemini/fall2.png
     frame    data/chars/gemini/fall3.png
+    delay    -1000
     frame    data/chars/gemini/fall4.png
     bbox 30 106 130 40
+    delay    10
     frame    data/chars/gemini/fall5.png
 
 anim pain15# BURN PAIN
@@ -409,18 +415,18 @@ anim fall15# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" 0 1 60 0 0
     delay    10
     offset    117 148
-    landframe 4
+    landframe 5
     bbox 90 50 50 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/gemini/fall1.png
     frame    data/chars/gemini/fall1.png
 	 bbox 20 60 70 60
     frame    data/chars/gemini/fall2.png
     frame    data/chars/gemini/fall3.png
+    delay    -1000
     frame    data/chars/gemini/fall4.png
     bbox 30 106 130 40
-    frame    data/chars/gemini/fall5.png
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
+    delay    10
     frame    data/chars/gemini/fall5.png
     
 anim pain10# ICE PAIN
@@ -470,17 +476,18 @@ anim fall30# Shock PAIN Ground
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 60 0 0
     delay    10
     offset    117 148
-    landframe 4
+    landframe 5
     bbox 90 50 50 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/gemini/fall1.png
 	 bbox 20 60 70 60
     frame    data/chars/gemini/fall2.png
     frame    data/chars/gemini/fall3.png
+    delay    -1000
     frame    data/chars/gemini/fall4.png
     bbox 30 106 130 40
-    frame    data/chars/gemini/fall5.png
     @cmd     spawnbind "shock1" "ANI_IDLE" -50 1 10 0 0
+    delay    10
     frame    data/chars/gemini/fall5.png
 
 #// Block animations /////////////////////////////////////////////////
