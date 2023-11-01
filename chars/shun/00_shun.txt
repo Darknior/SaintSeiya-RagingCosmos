@@ -870,12 +870,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/shun/rise5.png
 
 anim follow1 # Stun aprés X chuttes
-    delay 150
     offset    68 139
-    frame    data/chars/shun/rise5.png
     sound    data/chars/shun/sounds/stun.wav
-    delay 450
-    frame    data/chars/shun/rise5.png
+    delay 50
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
 
 anim death
     offset    130 131

@@ -380,10 +380,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/shaka/rise3.png
 
 anim follow1 # Stun aprés X chuttes
-    delay    400
+    delay    50
     offset    54 127
     bbox 35 4 38 126
-    frame    data/chars/shaka/pain1.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
 
 anim death
     delay    20

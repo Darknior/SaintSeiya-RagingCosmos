@@ -859,10 +859,20 @@ anim follow1 # Stun aprés X chuttes
     offset   114 110
     delay    150
 	 bbox 81 12 40 100
-    frame    data/chars/seiya/rise5.png
-    delay    350
+    delay    50
     sound    data/chars/seiya/sounds/stun.wav
-    frame    data/chars/seiya/rise5.png
+    frame    data/chars/seiya/stun1.png
+    frame    data/chars/seiya/stun2.png
+    frame    data/chars/seiya/stun1.png
+    frame    data/chars/seiya/stun2.png
+    frame    data/chars/seiya/stun1.png
+    frame    data/chars/seiya/stun2.png
+    frame    data/chars/seiya/stun1.png
+    frame    data/chars/seiya/stun2.png
+    frame    data/chars/seiya/stun1.png
+    frame    data/chars/seiya/stun2.png
+    frame    data/chars/seiya/stun1.png
+    frame    data/chars/seiya/stun2.png
 
 anim death
     landframe  6

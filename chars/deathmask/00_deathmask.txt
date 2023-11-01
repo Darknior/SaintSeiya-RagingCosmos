@@ -396,18 +396,8 @@ anim rise # Se releve avec compteur de chuttes
 
 anim follow1 # Stun aprés X chuttes
     offset    27 128
-    delay    20
+    delay    50
 	 bbox 12 29 45 100
-    frame    data/chars/deathmask/pain21.png
-    frame    data/chars/deathmask/pain22.png
-    frame    data/chars/deathmask/pain21.png
-    frame    data/chars/deathmask/pain22.png
-    frame    data/chars/deathmask/pain21.png
-    frame    data/chars/deathmask/pain22.png
-    frame    data/chars/deathmask/pain21.png
-    frame    data/chars/deathmask/pain22.png
-    frame    data/chars/deathmask/pain21.png
-    frame    data/chars/deathmask/pain22.png
     frame    data/chars/deathmask/pain21.png
     frame    data/chars/deathmask/pain22.png
     frame    data/chars/deathmask/pain21.png

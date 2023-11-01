@@ -370,9 +370,20 @@ anim rise # Se releve avec compteur de chuttes
     
 anim follow1 # Stun aprés X chuttes
     offset    142 140
-    delay    400
-	bbox 113 22 45 120
-    frame    data/chars/aphrodite/rise3.png
+    delay    50
+	 bbox 113 22 45 120
+    frame    data/chars/aphrodite/stun1.png
+    frame    data/chars/aphrodite/stun2.png
+    frame    data/chars/aphrodite/stun1.png
+    frame    data/chars/aphrodite/stun2.png
+    frame    data/chars/aphrodite/stun1.png
+    frame    data/chars/aphrodite/stun2.png
+    frame    data/chars/aphrodite/stun1.png
+    frame    data/chars/aphrodite/stun2.png
+    frame    data/chars/aphrodite/stun1.png
+    frame    data/chars/aphrodite/stun2.png
+    frame    data/chars/aphrodite/stun1.png
+    frame    data/chars/aphrodite/stun2.png
     
 anim death
     delay    25

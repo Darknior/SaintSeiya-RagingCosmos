@@ -435,10 +435,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/aldebaran/rise3.png
     
 anim follow1 # Stun aprés X chuttes
-    delay    300
+    delay    50
     offset    43 159
     bbox 22 8 45 151
-    frame    data/chars/aldebaran/pain2.png
+    frame    data/chars/aldebaran/stun1.png
+    frame    data/chars/aldebaran/stun2.png
+    frame    data/chars/aldebaran/stun1.png
+    frame    data/chars/aldebaran/stun2.png
+    frame    data/chars/aldebaran/stun1.png
+    frame    data/chars/aldebaran/stun2.png
+    frame    data/chars/aldebaran/stun1.png
+    frame    data/chars/aldebaran/stun2.png
+    frame    data/chars/aldebaran/stun1.png
+    frame    data/chars/aldebaran/stun2.png
+    frame    data/chars/aldebaran/stun1.png
+    frame    data/chars/aldebaran/stun2.png
     
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 

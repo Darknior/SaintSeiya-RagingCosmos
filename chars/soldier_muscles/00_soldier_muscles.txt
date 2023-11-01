@@ -240,9 +240,20 @@ anim rise # Se releve avec compteur de chuttes
    
 anim follow1 # Stun aprés X chuttes
    offset    42 125
-   delay    400
+   delay    50
 	bbox 23 24 50 100
-   frame    data/chars/soldier_muscles/pain3.png	
+    frame    data/chars/soldier_muscles/stun1.png
+    frame    data/chars/soldier_muscles/stun2.png
+    frame    data/chars/soldier_muscles/stun1.png
+    frame    data/chars/soldier_muscles/stun2.png
+    frame    data/chars/soldier_muscles/stun1.png
+    frame    data/chars/soldier_muscles/stun2.png
+    frame    data/chars/soldier_muscles/stun1.png
+    frame    data/chars/soldier_muscles/stun2.png
+    frame    data/chars/soldier_muscles/stun1.png
+    frame    data/chars/soldier_muscles/stun2.png
+    frame    data/chars/soldier_muscles/stun1.png
+    frame    data/chars/soldier_muscles/stun2.png
 
 #// FIRE / ICE / BLOOD / SHOCK animations /////////////////////////////////////////////////
  
@@ -280,7 +291,7 @@ anim pain15# BURN PAIN
    delay    5
    offset    44 122
    bbox 21 10 43 112
-   @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+   @cmd     spawnbind "soldier_muscles_flame" "ANI_IDLE" -10 1 60 0 0
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain2.png
    frame    data/chars/soldier_muscles/pain1.png
@@ -289,7 +300,7 @@ anim pain15# BURN PAIN
    frame    data/chars/soldier_muscles/pain4.png
   
 anim fall15# BURN PAIN Ground
-    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
+    @cmd     spawnbind "soldier_muscles_flame" "ANI_IDLE" -40 1 50 0 0
     delay    10
     offset    100 121
 	 landframe 3
@@ -302,7 +313,7 @@ anim fall15# BURN PAIN Ground
     frame    data/chars/soldier_muscles/fall4.png
 	 bbox 6 93 140 35
     frame    data/chars/soldier_muscles/fall5.png	
-    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
+    @cmd     spawnbind "soldier_muscles_flame" "ANI_IDLE" -60 1 0 0 0
     frame    data/chars/soldier_muscles/fall5.png	
     
 anim pain10# ICE PAIN

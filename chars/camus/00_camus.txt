@@ -330,10 +330,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/camus/rise4.png
 
 anim follow1 # Stun aprés X chuttes
-    delay    300
+    delay    50
     offset    46 126
     bbox 25 8 50 120
-    frame    data/chars/camus/runattack1.png
+    frame    data/chars/camus/stun1.png
+    frame    data/chars/camus/stun2.png
+    frame    data/chars/camus/stun1.png
+    frame    data/chars/camus/stun2.png
+    frame    data/chars/camus/stun1.png
+    frame    data/chars/camus/stun2.png
+    frame    data/chars/camus/stun1.png
+    frame    data/chars/camus/stun2.png
+    frame    data/chars/camus/stun1.png
+    frame    data/chars/camus/stun2.png
+    frame    data/chars/camus/stun1.png
+    frame    data/chars/camus/stun2.png
 
 anim death
     delay    20

@@ -339,10 +339,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/gemini/rise5.png
 
 anim follow1 # Stun aprés X chuttes
-    delay    300
+    delay    50
     offset    75 171
     bbox 63 68 35 110
-    frame    data/chars/gemini/get1.png
+    frame    data/chars/gemini/stun1.png
+    frame    data/chars/gemini/stun2.png
+    frame    data/chars/gemini/stun1.png
+    frame    data/chars/gemini/stun2.png
+    frame    data/chars/gemini/stun1.png
+    frame    data/chars/gemini/stun2.png
+    frame    data/chars/gemini/stun1.png
+    frame    data/chars/gemini/stun2.png
+    frame    data/chars/gemini/stun1.png
+    frame    data/chars/gemini/stun2.png
+    frame    data/chars/gemini/stun1.png
+    frame    data/chars/gemini/stun2.png
 
 anim death
     delay    40

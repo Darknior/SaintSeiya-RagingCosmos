@@ -390,8 +390,19 @@ anim rise # Se releve avec compteur de chuttes
 anim follow1 # Stun aprés X chuttes
     offset    24 112
     bbox 11 2 36 112
-    delay    400
-    frame    data/chars/marin/pain21.png
+    delay    50
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
 
 anim death
     offset    28 113

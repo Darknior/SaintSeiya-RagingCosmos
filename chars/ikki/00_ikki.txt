@@ -837,10 +837,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/ikki/rise5.png
 
 anim follow1 # Stun aprés X chuttes
-    delay    400
+    delay    50
     offset    86 139
 	 bbox 65 40 40 100
-    frame    data/chars/ikki/rise5.png
+    frame    data/chars/ikki/stun1.png
+    frame    data/chars/ikki/stun2.png
+    frame    data/chars/ikki/stun1.png
+    frame    data/chars/ikki/stun2.png
+    frame    data/chars/ikki/stun1.png
+    frame    data/chars/ikki/stun2.png
+    frame    data/chars/ikki/stun1.png
+    frame    data/chars/ikki/stun2.png
+    frame    data/chars/ikki/stun1.png
+    frame    data/chars/ikki/stun2.png
+    frame    data/chars/ikki/stun1.png
+    frame    data/chars/ikki/stun2.png
 
 anim death
     offset    143 139

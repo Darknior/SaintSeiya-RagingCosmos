@@ -37,7 +37,7 @@ sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière quand on tombe (animation)
-bflash      tremi_block # Flash pendant un blocage (animation)
+bflash      shaina_block # Flash pendant un blocage (animation)
 
 #-- ENNEMY CONFIG ---------------------------------------------------
 
@@ -77,7 +77,7 @@ load shaina_electricity
 load shaina_shoot
 load aldebaran_earthquake
 load aldebaran_fist
-load tremi_block
+load shaina_block
 
 
 #-- PALETTES --------------------------------------------------------
@@ -394,8 +394,19 @@ anim rise # Se releve avec compteur de chuttes
 anim follow1 # Stun aprés X chuttes
     offset    30 130
     bbox 0 21 52 108
-    delay    400
-    frame    data/chars/shaina/pain1.png
+    delay    50
+    frame    data/chars/shaina/stun1.png
+    frame    data/chars/shaina/stun2.png
+    frame    data/chars/shaina/stun1.png
+    frame    data/chars/shaina/stun2.png
+    frame    data/chars/shaina/stun1.png
+    frame    data/chars/shaina/stun2.png
+    frame    data/chars/shaina/stun1.png
+    frame    data/chars/shaina/stun2.png
+    frame    data/chars/shaina/stun1.png
+    frame    data/chars/shaina/stun2.png
+    frame    data/chars/shaina/stun1.png
+    frame    data/chars/shaina/stun2.png
 
 anim death
     offset    34 130

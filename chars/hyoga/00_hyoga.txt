@@ -883,12 +883,22 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/hyoga/rise5.png
     
 anim follow1 # Stun aprés X chuttes
-    delay    250
+    delay    50
     offset   113 139
 	 bbox 90 40 40 100
-    frame    data/chars/hyoga/rise5.png
     sound    data/chars/hyoga/sounds/rise4.wav
-    frame    data/chars/hyoga/rise5.png
+    frame    data/chars/hyoga/stun1.png
+    frame    data/chars/hyoga/stun2.png
+    frame    data/chars/hyoga/stun1.png
+    frame    data/chars/hyoga/stun2.png
+    frame    data/chars/hyoga/stun1.png
+    frame    data/chars/hyoga/stun2.png
+    frame    data/chars/hyoga/stun1.png
+    frame    data/chars/hyoga/stun2.png
+    frame    data/chars/hyoga/stun1.png
+    frame    data/chars/hyoga/stun2.png
+    frame    data/chars/hyoga/stun1.png
+    frame    data/chars/hyoga/stun2.png
     
 anim death
     offset   100 110

@@ -790,13 +790,22 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/shiryu/rise4.png
 
 anim follow1 # Stun aprés X chuttes
-    delay    150
     offset   114 130
 	 bbox 87 29 40 100
-    frame    data/chars/shiryu/rise4.png
-    delay    350
+    delay    50
     sound    data/chars/shiryu/sounds/stun.wav
-    frame    data/chars/shiryu/rise4.png
+    frame    data/chars/shiryu/stun1.png
+    frame    data/chars/shiryu/stun2.png
+    frame    data/chars/shiryu/stun1.png
+    frame    data/chars/shiryu/stun2.png
+    frame    data/chars/shiryu/stun1.png
+    frame    data/chars/shiryu/stun2.png
+    frame    data/chars/shiryu/stun1.png
+    frame    data/chars/shiryu/stun2.png
+    frame    data/chars/shiryu/stun1.png
+    frame    data/chars/shiryu/stun2.png
+    frame    data/chars/shiryu/stun1.png
+    frame    data/chars/shiryu/stun2.png
 
 anim death
     landframe  12

@@ -396,9 +396,21 @@ anim rise # Se releve avec compteur de chuttes
     
 anim follow1 # Stun aprés X chuttes
     offset    79 154
-    delay    400
+    delay    50
 	 bbox 55 54 50 100
-    frame    data/chars/shura/get1.png
+    frame    data/chars/shura/stun1.png
+    frame    data/chars/shura/stun2.png
+    frame    data/chars/shura/stun1.png
+    frame    data/chars/shura/stun2.png
+    frame    data/chars/shura/stun1.png
+    frame    data/chars/shura/stun2.png
+    frame    data/chars/shura/stun1.png
+    frame    data/chars/shura/stun2.png
+    frame    data/chars/shura/stun1.png
+    frame    data/chars/shura/stun2.png
+    frame    data/chars/shura/stun1.png
+    frame    data/chars/shura/stun2.png
+
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
@@ -418,7 +430,7 @@ anim fall20 # blood fall
     delay    15
     offset    75 157
     bbox 22 57 100 100
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 0 -10 0 0
     frame    data/chars/shura/fall1.png
     offset    71 160
@@ -446,7 +458,7 @@ anim fall15# BURN PAIN Ground
     delay    15
     offset    75 157
     bbox 22 57 100 100
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -20 1 50 0 0
     frame    data/chars/shura/fall1.png
     offset    71 160
@@ -514,7 +526,7 @@ anim fall30# Shock PAIN Ground
     delay    15
     offset    75 157
     bbox 22 57 100 100
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 50 0 0
     frame    data/chars/shura/fall1.png
     offset    71 160

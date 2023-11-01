@@ -364,9 +364,20 @@ anim rise # Se releve avec compteur de chuttes
 
 anim follow1 # Stun aprés X chuttes
     offset    95 130
-    delay    400
-	bbox 72 30 50 100
-    frame    data/chars/milo/rise5.png
+    delay    50
+	 bbox 72 30 50 100
+    frame    data/chars/milo/stun1.png
+    frame    data/chars/milo/stun2.png
+    frame    data/chars/milo/stun1.png
+    frame    data/chars/milo/stun2.png
+    frame    data/chars/milo/stun1.png
+    frame    data/chars/milo/stun2.png
+    frame    data/chars/milo/stun1.png
+    frame    data/chars/milo/stun2.png
+    frame    data/chars/milo/stun1.png
+    frame    data/chars/milo/stun2.png
+    frame    data/chars/milo/stun1.png
+    frame    data/chars/milo/stun2.png
 
 anim death
     delay    15
@@ -465,19 +476,19 @@ anim pain10# ICE PAIN
     delay    10
     offset    36 127
     bbox 18 16 38 114
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
+    @cmd     spawnbind "milo_iceA" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/milo/pain1.png
     frame    data/chars/milo/pain2.png
     delay    300
-    @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" -7 1 1 1 1
+    @cmd     spawnbind "milo_iceB" "ANI_IDLE" -7 1 1 1 1
     frame    data/chars/milo/pain1.png
 
 anim pain11# ICE PAIN Big
     delay    10
     offset    36 127
     bbox 18 16 38 114
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 0 0 0
-    @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 10 1 1 1 1
+    @cmd     spawnbind "milo_iceA" "ANI_IDLE" 0 1 0 0 0
+    @cmd     spawnbind "milo_pike" "ANI_IDLE" 10 1 1 1 1
     frame    data/chars/milo/pain1.png
     frame    data/chars/milo/pain2.png
     delay    500
@@ -487,8 +498,8 @@ anim pain12# ICE PAIN Small
     delay    10
     offset    36 127
     bbox 18 16 38 114
-    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
-    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "milo_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "milo_iceD" "ANI_IDLE" 0 1 1 1 1
     frame    data/chars/milo/pain1.png
     frame    data/chars/milo/pain2.png
     delay    500
