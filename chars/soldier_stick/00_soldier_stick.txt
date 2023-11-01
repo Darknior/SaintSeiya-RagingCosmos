@@ -213,10 +213,21 @@ anim rise
     frame    data/chars/soldier_stick/rise3.png
 
 anim follow1 #STUN
-    delay    400
     offset    44 125
     bbox 29 10 35 115
-    frame    data/chars/soldier_stick/pain1.png
+    delay    50
+    frame    data/chars/soldier_stick/stun1.png
+    frame    data/chars/soldier_stick/stun2.png
+    frame    data/chars/soldier_stick/stun1.png
+    frame    data/chars/soldier_stick/stun2.png
+    frame    data/chars/soldier_stick/stun1.png
+    frame    data/chars/soldier_stick/stun2.png
+    frame    data/chars/soldier_stick/stun1.png
+    frame    data/chars/soldier_stick/stun2.png
+    frame    data/chars/soldier_stick/stun1.png
+    frame    data/chars/soldier_stick/stun2.png
+    frame    data/chars/soldier_stick/stun1.png
+    frame    data/chars/soldier_stick/stun2.png
 
 anim pain
     delay    5
