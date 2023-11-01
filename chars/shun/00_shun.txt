@@ -821,7 +821,7 @@ anim pain2
     frame    data/chars/shun/pain21.png
 
 anim fall
-    landframe 5
+    landframe 6
     offset    68 128
     delay 15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -829,17 +829,17 @@ anim fall
     frame    data/chars/shun/fall1.png
     frame    data/chars/shun/fall2.png
     frame    data/chars/shun/fall3.png
-    delay -1000
     frame    data/chars/shun/fall4.png
-    delay 15
+    delay -1000
     frame    data/chars/shun/fall5.png
+    delay 15
     frame    data/chars/shun/fall6.png
     sound data/chars/shun/sounds/fall2.wav
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     frame    data/chars/shun/fall7.png
 
 anim fall7 # chutte apres etre Grab
-    landframe 5
+    landframe 6
     offset    68 128
     delay 15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -847,10 +847,10 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/shun/fall1.png
     frame    data/chars/shun/fall2.png
     frame    data/chars/shun/fall3.png
-    delay -1000
     frame    data/chars/shun/fall4.png
-    delay 15
+    delay -1000
     frame    data/chars/shun/fall5.png
+    delay 15
     frame    data/chars/shun/fall6.png
     sound data/chars/shun/sounds/fall2.wav
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
@@ -870,12 +870,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/shun/rise5.png
 
 anim follow1 # Stun aprés X chuttes
-    delay 150
     offset    68 139
-    frame    data/chars/shun/rise5.png
     sound    data/chars/shun/sounds/stun.wav
-    delay 450
-    frame    data/chars/shun/rise5.png
+    delay 50
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
+    frame    data/chars/shun/stun1.png
+    frame    data/chars/shun/stun2.png
 
 anim death
     offset    130 131
@@ -907,7 +916,7 @@ anim pain20 # Blood pain
     frame    data/chars/shun/pain21.png
 
 anim fall20 # blood fall
-    landframe 5
+    landframe 6
     offset    68 128
     delay 15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -916,10 +925,10 @@ anim fall20 # blood fall
     frame    data/chars/shun/fall1.png
     frame    data/chars/shun/fall2.png
     frame    data/chars/shun/fall3.png
-    delay -1000
     frame    data/chars/shun/fall4.png
-    delay 15
+    delay -1000
     frame    data/chars/shun/fall5.png
+    delay 15
     frame    data/chars/shun/fall6.png
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1
     sound data/chars/shun/sounds/fall2.wav
@@ -939,7 +948,7 @@ anim pain15# BURN PAIN
     frame    data/chars/shun/pain1.png
    
 anim fall15# BURN PAIN Ground
-    landframe 5
+    landframe 6
     offset    68 128
     delay 15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -948,10 +957,10 @@ anim fall15# BURN PAIN Ground
     frame    data/chars/shun/fall1.png
     frame    data/chars/shun/fall2.png
     frame    data/chars/shun/fall3.png
-    delay -1000
     frame    data/chars/shun/fall4.png
-    delay 15
+    delay -1000
     frame    data/chars/shun/fall5.png
+    delay 15
     frame    data/chars/shun/fall6.png
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 0 0 0
     sound data/chars/shun/sounds/fall2.wav
@@ -1001,7 +1010,7 @@ anim pain30# Shock Pain
     frame    data/chars/shun/pain1.png
    
 anim fall30# Shock PAIN Ground
-    landframe 5
+    landframe 6
     offset    68 128
     delay 15
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -1010,10 +1019,10 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/shun/fall1.png
     frame    data/chars/shun/fall2.png
     frame    data/chars/shun/fall3.png
-    delay -1000
     frame    data/chars/shun/fall4.png
-    delay 15
+    delay -1000
     frame    data/chars/shun/fall5.png
+    delay 15
     frame    data/chars/shun/fall6.png
     sound data/chars/shun/sounds/fall2.wav
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 1

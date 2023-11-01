@@ -414,12 +414,15 @@ anim fall
     frame    data/chars/june/fall2.png
     frame    data/chars/june/fall3.png
     frame    data/chars/june/fall4.png
+    delay    -1000
     frame    data/chars/june/fall5.png
     bbox 7 90 100 35
+    delay    15
     frame    data/chars/june/fall6.png
     frame    data/chars/june/fall7.png
 
 anim fall7 # chutte apres etre Grab
+    landframe 6
     offset    106 124
     delay    -1000
     bbox 35 50 75 75
@@ -428,7 +431,9 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/june/fall2.png
     frame    data/chars/june/fall3.png
     frame    data/chars/june/fall4.png
+    delay    -1000
     frame    data/chars/june/fall5.png
+    delay    15
     bbox 7 90 100 35
     frame    data/chars/june/fall6.png
     frame    data/chars/june/fall7.png

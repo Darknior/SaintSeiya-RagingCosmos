@@ -340,14 +340,15 @@ anim pain2 # big pain
 anim fall
     delay    10
     offset    121 127
-    landframe 6
+    landframe 5
     bbox 44 26 80 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
-    frame    data/chars/shaka/fall4.png
     delay    -1000
+    frame    data/chars/shaka/fall4.png
+    delay    10
     frame    data/chars/shaka/fall5.png
     bbox 0 95 120 35
     frame    data/chars/shaka/fall6.png
@@ -356,14 +357,15 @@ anim fall
 anim fall7 # chutte apres etre Grab
     delay    10
     offset    121 127
-    landframe 6
+    landframe 5
     bbox 44 26 80 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
-    frame    data/chars/shaka/fall4.png
     delay    -1000
+    frame    data/chars/shaka/fall4.png
+    delay    10
     frame    data/chars/shaka/fall5.png
     bbox 0 95 120 35
     frame    data/chars/shaka/fall6.png
@@ -378,10 +380,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/shaka/rise3.png
 
 anim follow1 # Stun aprés X chuttes
-    delay    400
+    delay    50
     offset    54 127
     bbox 35 4 38 126
-    frame    data/chars/shaka/pain1.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
+    frame    data/chars/shaka/stun1.png
+    frame    data/chars/shaka/stun2.png
 
 anim death
     delay    20
@@ -452,9 +465,12 @@ anim fall20 # Blood fall
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
+    delay    -1000
     frame    data/chars/shaka/fall4.png
+    delay    10
     frame    data/chars/shaka/fall5.png
     bbox 0 95 120 35
+    frame    data/chars/shaka/fall6.png
     frame    data/chars/shaka/fall6.png
 
 anim pain15 # Burn
@@ -476,7 +492,9 @@ anim fall15 # Burn fall
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
+    delay    -1000
     frame    data/chars/shaka/fall4.png
+    delay    10
     frame    data/chars/shaka/fall5.png
     bbox 0 95 120 35
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -80 1 0 0 0
@@ -534,7 +552,9 @@ anim fall30# Shock PAIN Ground
     frame    data/chars/shaka/fall1.png
     frame    data/chars/shaka/fall2.png
     frame    data/chars/shaka/fall3.png
+    delay    -1000
     frame    data/chars/shaka/fall4.png
+    delay    10
     frame    data/chars/shaka/fall5.png
     bbox 0 95 120 35
     @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0

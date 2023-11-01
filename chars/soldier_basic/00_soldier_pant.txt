@@ -341,14 +341,14 @@ anim pain2
 anim fall
     delay    10
     offset    98 125
-	 landframe 3
+	 landframe 4
 	 bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
-    delay    200
+    delay    -1000
     frame    data/chars/soldier_basic/fall3.png
-    delay    10
+    delay    15
     frame    data/chars/soldier_basic/fall4.png
 	 bbox 6 93 90 35
     frame    data/chars/soldier_basic/fall8.png	
@@ -356,13 +356,13 @@ anim fall
 anim fall7 # chutte apres etre Grab
     delay    10
     offset    98 125
-	 landframe 3
+	 landframe 4
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
-    delay    200
+    delay    -1000
     frame    data/chars/soldier_basic/fall3.png
-    delay    10
+    delay    15
     frame    data/chars/soldier_basic/fall4.png
     frame    data/chars/soldier_basic/fall8.png	
 
@@ -379,9 +379,20 @@ anim rise # Se releve avec compteur de chuttes
    
 anim follow1 # Stun aprés X chuttes
    offset    98 125
-   delay    400
+   delay    50
 	bbox 69 24 50 100
-   frame    data/chars/soldier_basic/rise6.png	
+   frame    data/chars/soldier_basic/stun1.png
+   frame    data/chars/soldier_basic/stun2.png
+   frame    data/chars/soldier_basic/stun1.png
+   frame    data/chars/soldier_basic/stun2.png
+   frame    data/chars/soldier_basic/stun1.png
+   frame    data/chars/soldier_basic/stun2.png
+   frame    data/chars/soldier_basic/stun1.png
+   frame    data/chars/soldier_basic/stun2.png
+   frame    data/chars/soldier_basic/stun1.png
+   frame    data/chars/soldier_basic/stun2.png
+   frame    data/chars/soldier_basic/stun1.png
+   frame    data/chars/soldier_basic/stun2.png
 
 #// FIRE / ICE / BLOOD / SHOCK animations /////////////////////////////////////////////////
  
@@ -402,15 +413,15 @@ anim pain20 # Blood pain
 anim fall20 # blood fall
     delay    10
     offset    98 125
-	 landframe 3
+	 landframe 4
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 10 0 0
 	 bbox 20 34 65 70
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
-    delay    200
+    delay    -1000
     frame    data/chars/soldier_basic/fall3.png
-    delay    10
+    delay    15
     frame    data/chars/soldier_basic/fall4.png
 	 bbox 6 93 90 35
     frame    data/chars/soldier_basic/fall8.png	
@@ -434,12 +445,12 @@ anim fall15# BURN PAIN Ground
     delay    10
     offset    98 125
     bbox 20 34 65 70
-	 landframe 3
+	 landframe 4
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
-    delay    200
+    delay    -1000
     frame    data/chars/soldier_basic/fall3.png
     delay    10
     frame    data/chars/soldier_basic/fall4.png
@@ -514,14 +525,14 @@ anim fall30# Shock PAIN Ground
     delay    10
     offset    98 125
     bbox 20 34 65 70
-	 landframe 3
+	 landframe 4
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 45 0 0
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
-    delay    200
+    delay    -1000
     frame    data/chars/soldier_basic/fall3.png
-    delay    10
+    delay    15
     frame    data/chars/soldier_basic/fall4.png
 	 bbox 6 93 90 35
     @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0

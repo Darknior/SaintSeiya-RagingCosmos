@@ -344,20 +344,23 @@ anim pain2 # Big pain
 anim fall
     offset    67 115
     delay    10
-    landframe 6
+    landframe 5
     bbox 32 38 75 75
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/marin/fall1.png
     frame    data/chars/marin/fall2.png
     frame    data/chars/marin/fall3.png
     bbox 0 79 110 35
+    delay    -1000
     frame    data/chars/marin/fall4.png
+    delay    10
     frame    data/chars/marin/fall5.png
     frame    data/chars/marin/fall6.png
     frame    data/chars/marin/fall7.png
     frame    data/chars/marin/fall8.png
 
 anim fall7 # chutte apres etre Grab
+    landframe 5
     offset    67 115
     delay    -1000
     bbox 32 38 75 75
@@ -365,8 +368,14 @@ anim fall7 # chutte apres etre Grab
     frame    data/chars/marin/fall1.png
     frame    data/chars/marin/fall2.png
     frame    data/chars/marin/fall3.png
-    bbox 0 80 110 35
+    bbox 0 79 110 35
+    delay    -1000
     frame    data/chars/marin/fall4.png
+    delay    10
+    frame    data/chars/marin/fall5.png
+    frame    data/chars/marin/fall6.png
+    frame    data/chars/marin/fall7.png
+    frame    data/chars/marin/fall8.png
 
 anim rise # Se releve avec compteur de chuttes
     delay    10
@@ -381,8 +390,19 @@ anim rise # Se releve avec compteur de chuttes
 anim follow1 # Stun aprés X chuttes
     offset    24 112
     bbox 11 2 36 112
-    delay    400
-    frame    data/chars/marin/pain21.png
+    delay    50
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
+    frame    data/chars/marin/stun1.png
+    frame    data/chars/marin/stun2.png
 
 anim death
     offset    28 113
@@ -412,14 +432,16 @@ anim fall20 # blood fall
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 0 0 0
     offset    67 115
     delay    10
-    landframe 6
+    landframe 5
     bbox 32 38 75 75
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/marin/fall1.png
     frame    data/chars/marin/fall2.png
     frame    data/chars/marin/fall3.png
     bbox 0 79 110 35
+    delay    -1000
     frame    data/chars/marin/fall4.png
+    delay    10
     frame    data/chars/marin/fall5.png
     frame    data/chars/marin/fall6.png
     frame    data/chars/marin/fall7.png
@@ -440,14 +462,16 @@ anim fall15# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 40 0 0
     offset    67 115
     delay    10
-    landframe 6
+    landframe 5
     bbox 32 38 75 75
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/marin/fall1.png
     frame    data/chars/marin/fall2.png
     frame    data/chars/marin/fall3.png
     bbox 0 79 110 35
+    delay    -1000
     frame    data/chars/marin/fall4.png
+    delay    10
     frame    data/chars/marin/fall5.png
     frame    data/chars/marin/fall6.png
     frame    data/chars/marin/fall7.png
@@ -512,14 +536,16 @@ anim fall30# Shock PAIN Ground
     @cmd     spawnbind "shock1" "ANI_IDLE" 0 1 45 0 0
     offset    67 115
     delay    10
-    landframe 6
+    landframe 5
     bbox 32 38 75 75
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/marin/fall1.png
     frame    data/chars/marin/fall2.png
     frame    data/chars/marin/fall3.png
     bbox 0 79 110 35
+    delay    -1000
     frame    data/chars/marin/fall4.png
+    delay    10
     frame    data/chars/marin/fall5.png
     frame    data/chars/marin/fall6.png
     frame    data/chars/marin/fall7.png

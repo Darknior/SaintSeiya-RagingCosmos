@@ -219,11 +219,21 @@ anim rise
     frame    data/chars/soldier_purple/08.png
     
 anim follow1 #STUN
-    loop    0
     offset    110 180
-    delay    400
 	 bbox 70 106 50 75
-    frame    data/chars/soldier_purple/05.png
+    delay    50
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
  

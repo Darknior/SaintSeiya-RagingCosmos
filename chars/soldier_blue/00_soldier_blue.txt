@@ -196,9 +196,20 @@ anim rise # Se releve avec compteur de chuttes
     
 anim follow1 # Stun aprés X chuttes
     offset    118 125
-    delay    400
 	 bbox 94 27 50 100
-    frame    data/chars/soldier_blue/rise3.png
+    delay    50
+    frame    data/chars/soldier_blue/stun1.png
+    frame    data/chars/soldier_blue/stun2.png
+    frame    data/chars/soldier_blue/stun1.png
+    frame    data/chars/soldier_blue/stun2.png
+    frame    data/chars/soldier_blue/stun1.png
+    frame    data/chars/soldier_blue/stun2.png
+    frame    data/chars/soldier_blue/stun1.png
+    frame    data/chars/soldier_blue/stun2.png
+    frame    data/chars/soldier_blue/stun1.png
+    frame    data/chars/soldier_blue/stun2.png
+    frame    data/chars/soldier_blue/stun1.png
+    frame    data/chars/soldier_blue/stun2.png
     
 anim death
     delay    10

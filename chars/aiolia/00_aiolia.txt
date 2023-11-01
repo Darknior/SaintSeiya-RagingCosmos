@@ -358,7 +358,7 @@ anim pain2 # big pain
     frame    data/chars/aiolia/pain21.png
 
 anim fall
-    delay    50
+    delay 12
     offset    124 135
     landframe 4
     bbox 110 11 45 120
@@ -367,14 +367,16 @@ anim fall
     bbox 45 80 100 50
     frame    data/chars/aiolia/fall2.png
     bbox 25 56 120 45
+    delay -1000
     frame    data/chars/aiolia/fall3.png
+    delay 12
     frame    data/chars/aiolia/fall4.png
     bbox 21 100 120 40
     offset    124 135
     frame    data/chars/aiolia/fall5.png
 
 anim fall7 # chutte apres etre Grab
-    delay    50
+    delay 12
     offset    124 135
     landframe 4
     bbox 110 11 45 120
@@ -383,7 +385,9 @@ anim fall7 # chutte apres etre Grab
     bbox 45 80 100 50
     frame    data/chars/aiolia/fall2.png
     bbox 25 56 120 45
+    delay -1000
     frame    data/chars/aiolia/fall3.png
+    delay 12
     frame    data/chars/aiolia/fall4.png
     bbox 21 100 120 40
     offset    124 135
@@ -400,9 +404,20 @@ anim rise # Se releve avec compteur de chuttes
     
 anim follow1 # Stun aprés X chuttes
     offset    124 135
-    delay    400
-	bbox 87 40 45 100
-    frame    data/chars/aiolia/rise4.png
+    delay    50
+	 bbox 87 40 45 100
+    frame    data/chars/aiolia/stun1.png
+    frame    data/chars/aiolia/stun2.png
+    frame    data/chars/aiolia/stun1.png
+    frame    data/chars/aiolia/stun2.png
+    frame    data/chars/aiolia/stun1.png
+    frame    data/chars/aiolia/stun2.png
+    frame    data/chars/aiolia/stun1.png
+    frame    data/chars/aiolia/stun2.png
+    frame    data/chars/aiolia/stun1.png
+    frame    data/chars/aiolia/stun2.png
+    frame    data/chars/aiolia/stun1.png
+    frame    data/chars/aiolia/stun2.png
     
 anim death
     delay    15
@@ -462,7 +477,7 @@ anim pain20 # Blood pain
     frame    data/chars/aiolia/pain21.png
 
 anim fall20 # blood fall
-    delay    50
+    delay 12
     offset    124 135
     landframe 4
     bbox 110 11 45 120
@@ -472,7 +487,9 @@ anim fall20 # blood fall
     bbox 45 80 100 50
     frame    data/chars/aiolia/fall2.png
     bbox 25 56 120 45
+    delay -1000
     frame    data/chars/aiolia/fall3.png
+    delay 12
     frame    data/chars/aiolia/fall4.png
     bbox 21 100 120 40
     offset    124 135
@@ -492,7 +509,7 @@ anim pain15# BURN PAIN
     frame    data/chars/aiolia/pain1.png
 
 anim fall15# BURN PAIN Ground
-    delay    50
+    delay 12
     offset    124 135
     landframe 4
     bbox 110 11 45 120
@@ -502,7 +519,9 @@ anim fall15# BURN PAIN Ground
     bbox 45 80 100 50
     frame    data/chars/aiolia/fall2.png
     bbox 25 56 120 45
+    delay -1000
     frame    data/chars/aiolia/fall3.png
+    delay 12
     frame    data/chars/aiolia/fall4.png
     bbox 21 100 120 40
     offset    124 135
@@ -568,7 +587,7 @@ anim pain30# Shock Pain
     frame    data/chars/aiolia/pain1.png
 
 anim fall30# Shock PAIN Ground
-    delay    50
+    delay 12
     offset    124 135
     landframe 4
     bbox 110 11 45 120
@@ -578,7 +597,9 @@ anim fall30# Shock PAIN Ground
     bbox 45 80 100 50
     frame    data/chars/aiolia/fall2.png
     bbox 25 56 120 45
+    delay -1000
     frame    data/chars/aiolia/fall3.png
+    delay 12
     frame    data/chars/aiolia/fall4.png
     bbox 21 100 120 40
     offset    124 135
@@ -767,7 +788,7 @@ anim freespecial4 #Attaque spéciale Punch combo
     frame    data/chars/aiolia/attack23.png
     attack30 0
     frame    data/chars/aiolia/attack23.png
-    attack20 -12 48 200 30 6 1 0 0 50 12
+    attack31 -12 48 200 30 6 1 0 0 50 12
     dropv     8.0 3 0
     frame    data/chars/aiolia/attack23.png
     attack20 0
@@ -844,7 +865,7 @@ anim freespecial6 #ULTRA Lightning Plasma
     frame    data/chars/aiolia/special7.png
 	 attack1 0
     frame    data/chars/aiolia/special6.png
-	 attack31 0 25 800 460 7 0 0 0 12 480
+	 attack1 0 25 800 460 7 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
 	 attack1 0
     frame    data/chars/aiolia/special8.png
@@ -876,7 +897,7 @@ anim freespecial6 #ULTRA Lightning Plasma
     frame    data/chars/aiolia/special7.png
 	 attack30 0
     frame    data/chars/aiolia/special8.png
-	 attack20 0 75 800 420 7 1 0 0 50 480
+	 attack31 0 75 800 420 7 1 0 0 50 480
     dropv     8.0 3 0
     frame    data/chars/aiolia/special7.png
 	 attack20 0
