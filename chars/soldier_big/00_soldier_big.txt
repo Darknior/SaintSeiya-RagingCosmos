@@ -196,11 +196,21 @@ anim rise # Se releve avec compteur de chuttes
     frame    data/chars/soldier_big/05.png
     
 anim follow1 # Stun aprés X chuttes
-    loop    0
     offset    120 195
-    delay    400
 	 bbox 84 117 80 80
-    frame    data/chars/soldier_big/05.png
+    delay    50
+    frame    data/chars/soldier_big/stun1.png
+    frame    data/chars/soldier_big/stun2.png
+    frame    data/chars/soldier_big/stun1.png
+    frame    data/chars/soldier_big/stun2.png
+    frame    data/chars/soldier_big/stun1.png
+    frame    data/chars/soldier_big/stun2.png
+    frame    data/chars/soldier_big/stun1.png
+    frame    data/chars/soldier_big/stun2.png
+    frame    data/chars/soldier_big/stun1.png
+    frame    data/chars/soldier_big/stun2.png
+    frame    data/chars/soldier_big/stun1.png
+    frame    data/chars/soldier_big/stun2.png
     
 anim death
     delay    10
