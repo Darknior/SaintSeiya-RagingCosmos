@@ -777,7 +777,7 @@ anim freespecial4 #Attaque spéciale Punch combo
     frame    data/chars/aiolia/attack23.png
     attack30 0
     frame    data/chars/aiolia/attack23.png
-    attack20 -12 48 200 30 6 1 0 0 50 12
+    attack31 -12 48 200 30 6 1 0 0 50 12
     dropv     8.0 3 0
     frame    data/chars/aiolia/attack23.png
     attack20 0
@@ -854,7 +854,7 @@ anim freespecial6 #ULTRA Lightning Plasma
     frame    data/chars/aiolia/special7.png
 	 attack1 0
     frame    data/chars/aiolia/special6.png
-	 attack31 0 25 800 460 7 0 0 0 12 480
+	 attack1 0 25 800 460 7 0 0 0 12 480
     frame    data/chars/aiolia/special7.png
 	 attack1 0
     frame    data/chars/aiolia/special8.png
@@ -886,7 +886,7 @@ anim freespecial6 #ULTRA Lightning Plasma
     frame    data/chars/aiolia/special7.png
 	 attack30 0
     frame    data/chars/aiolia/special8.png
-	 attack20 0 75 800 420 7 1 0 0 50 480
+	 attack31 0 75 800 420 7 1 0 0 50 480
     dropv     8.0 3 0
     frame    data/chars/aiolia/special7.png
 	 attack20 0
