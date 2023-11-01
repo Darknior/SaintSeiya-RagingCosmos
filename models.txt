@@ -613,3 +613,5 @@ know temple13columns      data/bgs/temple13/temple13columns.txt
 ## TEXT ENTITIES
 load text      data/chars/misc/text/text.txt
 
+## SHADOW TRAIL ENTITIES
+load seiyaS      data/chars/seiya/00_seiyaS.txt

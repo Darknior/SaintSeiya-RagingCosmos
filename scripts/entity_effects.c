@@ -1,3 +1,5 @@
+#import "data/scripts/library/spawn.h"
+
 void main()
 {//Turn on/off generic effects according to global variables
 	
@@ -8,6 +10,46 @@ void main()
 	if(openborvariant("in_level")){
 		blinkDamage();
 		blinkCharge();
+	}
+
+	afterEffect();
+}
+
+void afterEffect()
+{//Check defined conditions before use "after image" effect
+	void self	= getlocalvar("self");
+	void name	= getentityproperty(self, "defaultname");
+	void ani	= getentityproperty(self, "animationID");
+	
+	if(name == "seiya"){
+		if(ani == openborconstant("ANI_RUN")){
+			afterImage("seiyaS");
+		}
+	}
+}
+
+void afterImage(void shadowEntity, float rate, int legacy)
+{//Make "shadow trails" effect for ANY animation (AFTER IMAGE EFFECT)
+	void self		= getlocalvar("self");
+	void height		= getentityproperty(self, "y");
+	float time		= openborvariant("elapsed_time");
+	int map			= getentityproperty(self, "map");
+	int yLimit		= -20;
+
+	if(rate == NULL()){rate = 16;}
+	
+	if(time%rate == 0 && height >= yLimit){
+		void vSpawn	= spawn01(shadowEntity, 0, 0, -1);
+		void vAniID	= getentityproperty(self, "animationID");
+		int map		= getentityproperty(self, "map");
+		int frame	= getentityproperty(self, "animpos");
+		
+		changeentityproperty(vSpawn, "parent", self);
+		changeentityproperty(vSpawn, "map", map);
+		changeentityproperty(vSpawn, "animation", vAniID);
+		changeentityproperty(vSpawn, "subject_to_hole", 1);
+		changeentityproperty(vSpawn, "no_adjust_base", 0);
+		updateframe(vSpawn, frame);
 	}
 }
 

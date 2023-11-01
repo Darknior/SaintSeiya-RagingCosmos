@@ -1,0 +1,32 @@
+name        seiyaS
+type        none
+
+
+#-- GENERAL CONFIG --------------------------------------------------
+
+antigravity 100
+
+#-- SCRIPTS ---------------------------------------------------------
+
+script data/scripts/channel.c
+
+#-- PALETTES --------------------------------------------------------
+
+palette      data/chars/seiya/palettes/palette1.png
+remap        data/chars/seiya/palettes/palette2.png data/chars/seiya/palettes/palette3.png data/chars/seiya/palettes/palette3.png data/chars/seiya/palettes/palette4.png  # 14 Possible MAX
+
+#-- ANIMATIONS -------------------------------------------------------
+
+#// Select animations /////////////////////////////////////////////////
+
+anim run
+    loop	0
+	delay	1000
+    offset   48 128
+    frame    data/chars/seiya/run1.png
+    frame    data/chars/seiya/run2.png
+    frame    data/chars/seiya/run3.png
+    frame    data/chars/seiya/run4.png
+    frame    data/chars/seiya/run5.png
+    frame    data/chars/seiya/run6.png
+    frame    data/chars/seiya/run7.png
