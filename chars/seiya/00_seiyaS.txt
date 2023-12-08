@@ -30,3 +30,78 @@ anim run
     frame    data/chars/seiya/run5.png
     frame    data/chars/seiya/run6.png
     frame    data/chars/seiya/run7.png
+
+anim runattack
+    loop	0
+    delay	1000
+    offset   30 111
+    frame    data/chars/seiya/runattack1.png
+    frame    data/chars/seiya/runattack2.png
+    frame    data/chars/seiya/runattack3.png
+    frame    data/chars/seiya/runattack4.png
+    frame    data/chars/seiya/runattack5.png
+    frame    data/chars/seiya/runattack4.png
+    frame    data/chars/seiya/runattack5.png
+    frame    data/chars/seiya/runattack3.png
+    frame    data/chars/seiya/runattack2.png
+
+anim  runjump
+    loop	0
+    delay    1000
+    offset   45 137
+    frame    data/chars/seiya/forwardjump1.png
+    frame    data/chars/seiya/forwardjump2.png
+    frame    data/chars/seiya/forwardjump3.png
+    frame    data/chars/seiya/forwardjump4.png
+    frame    data/chars/seiya/forwardjump5.png
+    frame    data/chars/seiya/forwardjump6.png
+    frame    data/chars/seiya/forwardjump7.png
+    frame    data/chars/seiya/forwardjump8.png
+
+anim runjumpattack
+    loop	0
+    delay    1000
+    offset   45 112
+    frame    data/chars/seiya/jumpforward1.png
+    frame    data/chars/seiya/jumpforward2.png
+    frame    data/chars/seiya/jumpforward2.png
+
+anim dodge
+    loop	0
+    delay    1000
+    offset   45 137
+    frame    data/chars/seiya/jump1.png
+    frame    data/chars/seiya/jump2.png
+    frame    data/chars/seiya/jump3.png
+    frame    data/chars/seiya/jump4.png
+    frame    data/chars/seiya/jump1.png
+
+anim jumpattack2
+    loop	0
+    delay    1000
+    offset   45 112
+    frame    data/chars/seiya/jumpattack21.png
+    frame    data/chars/seiya/jumpattack22.png
+    frame    data/chars/seiya/jumpattack23.png
+    frame    data/chars/seiya/jumpattack24.png
+    frame    data/chars/seiya/jumpattack24.png
+    frame    data/chars/seiya/jumpattack24.png
+    frame    data/chars/seiya/jumpattack24.png
+
+anim freespecial5
+    loop	0
+    delay    1000
+    offset   45 134
+    frame    data/chars/seiya/uppercut1.png
+    frame    data/chars/seiya/uppercut2.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut3.png
+    frame    data/chars/seiya/uppercut2.png

@@ -22,7 +22,13 @@ void afterEffect()
 	void ani	= getentityproperty(self, "animationID");
 	
 	if(name == "seiya"){
-		if(ani == openborconstant("ANI_RUN")){
+		if(	ani == openborconstant("ANI_RUN")||
+			ani == openborconstant("ANI_RUNATTACK")||
+			ani == openborconstant("ANI_RUNJUMP")||
+			ani == openborconstant("ANI_RUNJUMPATTACK")||
+			ani == openborconstant("ANI_DODGE")||
+			ani == openborconstant("ANI_JUMPATTACK2")||
+			ani == openborconstant("ANI_FREESPECIAL5")){
 			afterImage("seiyaS");
 		}
 	}
