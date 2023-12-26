@@ -1,0 +1,104 @@
+name        shiryuS
+type        none
+
+
+#-- GENERAL CONFIG --------------------------------------------------
+
+antigravity 100
+
+#-- SCRIPTS ---------------------------------------------------------
+
+script data/scripts/channel.c
+
+#-- PALETTES --------------------------------------------------------
+
+palette      data/chars/shiryu/palettes/palette1.png
+remap        data/chars/shiryu/palettes/palette1.png data/chars/shiryu/palettes/palette2.png data/chars/shiryu/palettes/palette3.png data/chars/shiryu/palettes/palette4.png  # 14 Possible MAX
+
+#-- ANIMATIONS -------------------------------------------------------
+
+#// Select animations /////////////////////////////////////////////////
+
+anim run
+    loop	 0
+    delay    1000
+    offset   48 128
+    frame    data/chars/shiryu/run1.png
+    frame    data/chars/shiryu/run2.png
+    frame    data/chars/shiryu/run3.png
+    frame    data/chars/shiryu/run4.png
+    frame    data/chars/shiryu/run5.png
+    frame    data/chars/shiryu/run6.png
+    frame    data/chars/shiryu/run7.png
+
+anim runattack
+    loop	 0
+    delay    1000
+    offset   39 128
+    frame    data/chars/shiryu/runattack1.png
+    frame    data/chars/shiryu/runattack2.png
+    frame    data/chars/shiryu/runattack3.png
+    frame    data/chars/shiryu/runattack4.png
+    frame    data/chars/shiryu/runattack5.png
+    frame    data/chars/shiryu/runattack6.png
+    frame    data/chars/shiryu/runattack7.png
+    frame    data/chars/shiryu/runattack8.png
+
+anim runjump
+    loop	 0
+    delay    1000
+    offset   37 146
+    sound    data/chars/shiryu/sounds/jump1.wav
+    frame    data/chars/shiryu/forwardjump1.png
+    frame    data/chars/shiryu/forwardjump2.png
+    frame    data/chars/shiryu/forwardjump3.png
+    frame    data/chars/shiryu/forwardjump4.png
+    frame    data/chars/shiryu/forwardjump5.png
+    frame    data/chars/shiryu/forwardjump6.png
+    frame    data/chars/shiryu/forwardjump7.png
+    frame    data/chars/shiryu/forwardjump8.png
+
+anim runjumpattack
+    loop	 0
+    delay    1000
+    offset   50 128
+    frame    data/chars/shiryu/jumpforward1.png
+    frame    data/chars/shiryu/jumpforward2.png
+    frame    data/chars/shiryu/jumpforward3.png
+
+anim dodge
+    loop	 0
+    delay    1000
+    offset   37 128
+    frame    data/chars/shiryu/jump1.png
+    frame    data/chars/shiryu/jump2.png
+    frame    data/chars/shiryu/jump3.png
+    frame    data/chars/shiryu/jump2.png
+    frame    data/chars/shiryu/jump1.png
+    frame    data/chars/shiryu/jump1.png
+
+anim jumpattack2
+    loop	 0
+    delay    1000
+    offset   50 128
+    frame    data/chars/shiryu/jumpattack21.png
+    frame    data/chars/shiryu/jumpattack22.png
+    frame    data/chars/shiryu/jumpattack23.png
+    frame    data/chars/shiryu/jumpattack24.png
+    frame    data/chars/shiryu/jumpattack23.png
+
+anim freespecial5
+    loop	 0
+    delay    1000
+    offset   44 156
+    frame    data/chars/shiryu/uppercut1.png
+    frame    data/chars/shiryu/uppercut2.png
+    frame    data/chars/shiryu/uppercut3.png
+    frame    data/chars/shiryu/uppercut4.png
+    frame    data/chars/shiryu/uppercut5.png
+    frame    data/chars/shiryu/uppercut6.png
+    frame    data/chars/shiryu/uppercut7.png
+    frame    data/chars/shiryu/uppercut8.png
+    frame    data/chars/shiryu/uppercut9.png
+    frame    data/chars/shiryu/uppercut10.png
+    frame    data/chars/shiryu/uppercut11.png

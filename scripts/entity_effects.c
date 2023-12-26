@@ -32,6 +32,17 @@ void afterEffect()
 			afterImage("seiyaS");
 		}
 	}
+	if(name == "shiryu"){
+		if(	ani == openborconstant("ANI_RUN")||
+			ani == openborconstant("ANI_RUNATTACK")||
+			ani == openborconstant("ANI_RUNJUMP")||
+			ani == openborconstant("ANI_RUNJUMPATTACK")||
+			ani == openborconstant("ANI_DODGE")||
+			ani == openborconstant("ANI_JUMPATTACK2")||
+			ani == openborconstant("ANI_FREESPECIAL5")){
+			afterImage("shiryuS");
+		}
+	}
 }
 
 void afterImage(void shadowEntity, float rate, int legacy)
