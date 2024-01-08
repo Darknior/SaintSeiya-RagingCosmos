@@ -2,10 +2,10 @@ loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
 
 music		data/music/ikki2.ogg
 
-panel		data/bgs/ROOMS/temple11.png 
+panel		data/bgs/temple11-road/temple11.png
+background	data/bgs/temple11-road/swamp.png 
+fglayer		data/bgs/temple11-road/rock.png 20 0 0 0 280 220 0 2 1 1
 
-
-background                 data/bgs/ROOMS/sky002.png
 
 cameratype 1
 
@@ -42,7 +42,7 @@ at          0
 
 spawn soldier1
 alias SOLDIER
-coords	850 100
+coords	950 300
 at 400
 
 spawn soldier3
@@ -52,7 +52,7 @@ at 400
 
 spawn soldier2
 alias SOLDIER
-coords	-200 500
+coords	-200 100
 at 400
 
 
