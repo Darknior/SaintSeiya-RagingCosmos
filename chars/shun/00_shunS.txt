@@ -1,0 +1,94 @@
+name        shunS
+type        none
+
+#-- GENERAL CONFIG --------------------------------------------------
+
+antigravity 100
+
+#-- SCRIPTS ---------------------------------------------------------
+
+script data/scripts/channel.c
+
+#-- PALETTES --------------------------------------------------------
+
+palette      data/chars/shun/palettes/palette1.png
+#remap       data/chars/shun/palettes/palette1.png  # 14 Possible MAX
+
+#-- ANIMATIONS -------------------------------------------------------
+
+#// Select animations /////////////////////////////////////////////////
+
+anim run
+    loop 0
+    delay 8
+    offset   62 132
+    bbox     39 28 51 104
+    frame    data/chars/shun/run6.png
+    frame    data/chars/shun/run1.png
+    frame    data/chars/shun/run2.png
+    frame    data/chars/shun/run3.png
+    frame    data/chars/shun/run4.png
+    frame    data/chars/shun/run5.png
+    frame    data/chars/shun/run6.png
+
+anim runattack # Attaque en courant
+    loop 0
+    forcedirection  -1
+    delay 8
+    offset    90 199
+    frame    data/chars/shun/attack6.png
+    frame    data/chars/shun/attack7.png
+    frame    data/chars/shun/attack8.png
+    frame    data/chars/shun/attack9.png
+    frame    data/chars/shun/attack10.png
+    frame    data/chars/shun/attack11.png
+    frame    data/chars/shun/attack12.png
+    frame    data/chars/shun/attack13.png
+    frame    data/chars/shun/attack14.png
+
+anim runjump
+    loop 0
+    delay 6
+    offset   87 171
+    frame    data/chars/shun/jump1.png
+    frame    data/chars/shun/forwardjump1.png
+    frame    data/chars/shun/forwardjump2.png
+    frame    data/chars/shun/forwardjump3.png
+    frame    data/chars/shun/forwardjump4.png
+    frame    data/chars/shun/forwardjump5.png
+    frame    data/chars/shun/forwardjump6.png
+    frame    data/chars/shun/forwardjump7.png
+    frame    data/chars/shun/forwardjump8.png
+    frame    data/chars/shun/forwardjump9.png
+    frame    data/chars/shun/jump1.png
+    
+anim runjumpattack # Attaque sautée en courant
+    loop 0
+    delay 5
+    offset    87 171
+    frame    data/chars/shun/jumpspecial1.png
+    frame    data/chars/shun/jumpspecial2.png
+    frame    data/chars/shun/jumpspecial3.png
+    frame    data/chars/shun/jumpspecial4.png
+    frame    data/chars/shun/jumpspecial5.png
+    frame    data/chars/shun/jumpspecial6.png
+
+anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
+    loop 0
+    delay 12
+    offset    75 224
+    frame    data/chars/shun/downattack0.png
+    frame    data/chars/shun/downattack1.png
+    frame    data/chars/shun/downattack2.png
+    frame    data/chars/shun/downattack3.png
+    frame    data/chars/shun/downattack4.png
+    
+anim dodge  # Esquive Haut / Bas (u u / d d)
+    loop 0
+    delay 8
+    offset   87 171
+    frame    data/chars/shun/jump0.png
+    frame    data/chars/shun/jump1.png
+    frame    data/chars/shun/jump2.png
+    frame    data/chars/shun/jump3.png
+    frame    data/chars/shun/jump5.png

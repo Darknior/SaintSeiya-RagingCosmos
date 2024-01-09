@@ -617,3 +617,5 @@ load text      data/chars/misc/text/text.txt
 load seiyaS      data/chars/seiya/00_seiyaS.txt
 load shiryuS     data/chars/shiryu/00_shiryuS.txt
 load hyogaS     data/chars/hyoga/00_hyogaS.txt
+load ikkiS     data/chars/ikki/00_ikkiS.txt
+load shunS     data/chars/shun/00_shunS.txt
