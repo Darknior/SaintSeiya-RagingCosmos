@@ -21,27 +21,21 @@ void afterEffect()
 	void name	= getentityproperty(self, "defaultname");
 	void ani	= getentityproperty(self, "animationID");
 	
-	if(name == "seiya"){
-		if(	ani == openborconstant("ANI_RUN")||
-			ani == openborconstant("ANI_RUNATTACK")||
-			ani == openborconstant("ANI_RUNJUMP")||
-			ani == openborconstant("ANI_RUNJUMPATTACK")||
-			ani == openborconstant("ANI_DODGE")||
-			ani == openborconstant("ANI_JUMPATTACK2")||
-			ani == openborconstant("ANI_FREESPECIAL5")){
-			afterImage("seiyaS");
-		}
-	}
-	if(name == "shiryu"){
-		if(	ani == openborconstant("ANI_RUN")||
-			ani == openborconstant("ANI_RUNATTACK")||
-			ani == openborconstant("ANI_RUNJUMP")||
-			ani == openborconstant("ANI_RUNJUMPATTACK")||
-			ani == openborconstant("ANI_DODGE")||
-			ani == openborconstant("ANI_JUMPATTACK2")||
-			ani == openborconstant("ANI_FREESPECIAL5")){
-			afterImage("shiryuS");
-		}
+	//THESE ANIMATIONS WILL TRIGGER THE SHADOW TRAILS
+	if(	ani == openborconstant("ANI_RUN")||
+		ani == openborconstant("ANI_RUNATTACK")||
+		ani == openborconstant("ANI_RUNJUMP")||
+		ani == openborconstant("ANI_RUNJUMPATTACK")||
+		ani == openborconstant("ANI_DODGE")||
+		ani == openborconstant("ANI_JUMPATTACK2")||
+		ani == openborconstant("ANI_FREESPECIAL5")){
+		
+		//THESE ENTITIES WILL SHOW THE SHADOW TRAILS
+		if(name == "seiya"){afterImage("seiyaS");}
+		if(name == "shiryu"){afterImage("shiryuS");}
+		if(name == "hyoga"){afterImage("hyogaS");}
+		// if(name == "shun"){afterImage("shunS");}
+		// if(name == "ikki"){afterImage("ikkiS");}
 	}
 }
 

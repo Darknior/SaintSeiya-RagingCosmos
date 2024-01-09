@@ -16,12 +16,10 @@ noreset 2
 order	a
 
 
-
-
 nosave 1
 blocked 1
 noslow 1
-
+updatescript	data/scripts/updatelevel/temple11_water.c
 
 
 -------------------------------------

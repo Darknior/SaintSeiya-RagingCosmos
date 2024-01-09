@@ -4,6 +4,7 @@ shadow      0
 setlayer    1
 antigravity 100
 #lifespan   1
+onspawnscript      data/scripts/onspawn/dust.c
 animationscript    data/scripts/player.c
 
 anim    idle

@@ -1,0 +1,66 @@
+name			splash
+type			none
+shadow			0
+antigravity		100
+alpha			6
+animationscript	data/scripts/player.c
+
+anim idle #HALF UP
+	loop	0
+	delay	16
+	offset	109 84 #DIFFERENT OFFSET
+	drawmethod channel 0 1.2 0.8 #DIFFERENT CHANNEL
+	frame	data/chars/misc/splash/splash04.png
+	frame	data/chars/misc/splash/splash05.png
+	frame	data/chars/misc/splash/splash06.png
+	frame	data/chars/misc/splash/splash07.png
+	frame	data/chars/misc/splash/splash08.png
+	@cmd suicide
+	frame	data/chars/misc/splash/splash08.png
+
+anim follow1 #HALF DOWN
+	loop	0
+	delay	16
+	offset	109 86 #DIFFERENT OFFSET
+	drawmethod channel 0 0.8 0.4 #DIFFERENT CHANNEL
+	frame	data/chars/misc/splash/splash04b.png
+	frame	data/chars/misc/splash/splash05b.png
+	frame	data/chars/misc/splash/splash06b.png
+	frame	data/chars/misc/splash/splash07b.png
+	frame	data/chars/misc/splash/splash08b.png
+	@cmd suicide
+	frame	data/chars/misc/splash/splash08b.png
+
+anim follow2 #FULL UP
+	loop	0
+	delay	16
+	offset	109 84 #DIFFERENT OFFSET
+	drawmethod channel 0 1.2 0.8 #DIFFERENT CHANNEL
+	frame	data/chars/misc/splash/splash00.png
+	frame	data/chars/misc/splash/splash01.png
+	frame	data/chars/misc/splash/splash02.png
+	frame	data/chars/misc/splash/splash03.png
+	frame	data/chars/misc/splash/splash04.png
+	frame	data/chars/misc/splash/splash05.png
+	frame	data/chars/misc/splash/splash06.png
+	frame	data/chars/misc/splash/splash07.png
+	frame	data/chars/misc/splash/splash08.png
+	@cmd suicide
+	frame	data/chars/misc/splash/splash08.png
+
+anim follow3 #FULL DOWN
+	loop	0
+	delay	16
+	offset	109 86 #DIFFERENT OFFSET
+	drawmethod channel 0 0.8 0.4 #DIFFERENT CHANNEL
+	frame	data/chars/misc/splash/splash00b.png
+	frame	data/chars/misc/splash/splash01b.png
+	frame	data/chars/misc/splash/splash02b.png
+	frame	data/chars/misc/splash/splash03b.png
+	frame	data/chars/misc/splash/splash04b.png
+	frame	data/chars/misc/splash/splash05b.png
+	frame	data/chars/misc/splash/splash06b.png
+	frame	data/chars/misc/splash/splash07b.png
+	frame	data/chars/misc/splash/splash08b.png
+	@cmd suicide
+	frame	data/chars/misc/splash/splash08b.png

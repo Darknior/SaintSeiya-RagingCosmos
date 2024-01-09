@@ -194,7 +194,7 @@ file        data/levels/temple10BOSS.txt
 
 #skipselect CYGNUS-HYOGA
 branch      temple11
-z           390 480
+z           325 484
 file        data/levels/temple11.txt
 scene       data/scenes/temple11.txt
 branch      temple11BOSS
@@ -581,7 +581,7 @@ typemp      1
 custfade	100
 skipselect  Hyoga
 branch      temple11
-z           250 484
+z           325 484
 file        data/levels/temple11.txt
 branch      gameover
 scene       data/scenes/gameover.txt

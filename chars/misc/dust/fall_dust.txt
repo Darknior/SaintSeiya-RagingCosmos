@@ -2,6 +2,7 @@ name        fall_dust
 type        none
 shadow      0
 antigravity 100
+onspawnscript      data/scripts/onspawn/dust.c
 animationscript    data/scripts/player.c
 
 anim    idle

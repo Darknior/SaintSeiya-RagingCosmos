@@ -1,0 +1,29 @@
+name			Water
+type			none
+shadow			0
+antigravity 	100
+alpha			1
+animationscript	data/scripts/player.c
+
+anim idle
+	loop	0
+	delay	6
+	offset	65 61
+	sound	data/sounds/splash.wav
+	frame	data/chars/misc/water/water00.gif
+	frame	data/chars/misc/water/water01.gif
+	frame	data/chars/misc/water/water02.gif
+	frame	data/chars/misc/water/water03.gif
+	frame	data/chars/misc/water/water04.gif
+	frame	data/chars/misc/water/water05.gif
+	frame	data/chars/misc/water/water06.gif
+	frame	data/chars/misc/water/water07.gif
+	frame	data/chars/misc/water/water08.gif
+	frame	data/chars/misc/water/water09.gif
+	frame	data/chars/misc/water/water10.gif
+	frame	data/chars/misc/water/water11.gif
+	frame	data/chars/misc/water/water12.gif
+	frame	data/chars/misc/water/water13.gif
+	frame	data/chars/misc/water/water14.gif
+	@cmd suicide
+	frame	data/chars/misc/water/water14.gif

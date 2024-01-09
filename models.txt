@@ -596,6 +596,8 @@ know temple10roadcolumns      data/bgs/temple10-road/temple10roadcolumns.txt
 
 ## TEMPLE 11
 know temple11columns      data/bgs/temple11/temple11columns.txt
+load splash      data/chars/misc/splash/splash.txt
+load water      data/chars/misc/water/water.txt
 
 ## TEMPLE 12
 know temple12_columns     data/bgs/temple12/columns/temple12_columns.txt
