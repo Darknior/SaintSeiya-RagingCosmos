@@ -433,7 +433,6 @@ anim attack2 # Attaque combo 2
     attack1 80 100 100 26 10 0 0 0 5 20
     frame    data/chars/shun/attack3.png
     delay 3
-    attack1 0
     frame    data/chars/shun/attack4.png
     frame    data/chars/shun/attack5.png
     frame    data/chars/shun/attack1.png
@@ -448,7 +447,7 @@ anim attack3 # Attaque combo 3
     frame    data/chars/shun/attack17.png
     frame    data/chars/shun/attack18.png
     delay 12
-	 attack1 108 100 50 50 10 0 1 0 15 20
+	 attack1 108 100 50 50 10 0 0 0 15 20
     frame    data/chars/shun/attack19.png
     delay 3
     frame    data/chars/shun/attack20.png
@@ -468,14 +467,13 @@ anim attack4 # Attaque combo 4
 	 attack2 93 100 65 50 10 0 1 0 15 20
     frame    data/chars/shun/attack24.png
     delay 3
-	 attack2 0
     frame    data/chars/shun/attack25.png
     frame    data/chars/shun/attack26.png
     frame    data/chars/shun/attack27.png
 
 anim attack5 # Attaque combo 5
     jugglecost  1
-    delay 5
+    delay 8
     offset    39 196
     hitflash flashbig
     summonframe 0 0 0 0
@@ -487,10 +485,8 @@ anim attack5 # Attaque combo 5
     attack20 55 100 120 50 10 1 1 0 0 20
     dropv     5.0 0.5
     frame    data/chars/shun/attack31.png
-    attack20 0
+    delay 16
     frame    data/chars/shun/attack32.png
-    attack20 19 100 160 50 10 1 1 0 50 20
-    dropv     5.0 0.5
     frame    data/chars/shun/attack33.png
 
 anim chargeattack    # Thunder Wave (Avant + Bouton Special)

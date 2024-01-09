@@ -433,13 +433,10 @@ anim attack1 # Attaque combo 1
     bbox     36 7 30 112
     hitflash flash
     frame    data/chars/seiya/attack1.png
-    attack1  62 21 67 26 10 0 0 0 12 20
     frame    data/chars/seiya/attack2.png
     attack1  62 21 67 26 10 0 0 0 12 20
     frame    data/chars/seiya/attack3.png
-    delay    4
     frame    data/chars/seiya/attack2.png
-    attack1  0
 
 anim attack2    # Attaque combo 2
     jugglecost  1
@@ -452,7 +449,6 @@ anim attack2    # Attaque combo 2
     frame    data/chars/seiya/attack21.png
     frame    data/chars/seiya/attack22.png
     frame    data/chars/seiya/attack23.png
-    dropv    4.0 1.0 0.0
     attack1  62 21 67 26 10 0 0 0 12 20
     frame    data/chars/seiya/attack24.png
     attack1  0
@@ -465,27 +461,24 @@ anim attack3    # Attaque combo 3
     hitflash flashmedium
     frame    data/chars/seiya/attack31.png
     frame    data/chars/seiya/attack32.png
-    attack1  62 21 67 26 10 0 1 0 12 20
+    attack1  62 21 67 26 10 0 0 0 12 20
     frame    data/chars/seiya/attack33.png
     attack1  0
 
 anim attack4    # Attaque combo 4
     jugglecost  1
-    delay    7
+    delay    9
     offset   45 119
-    bbox     19 7 30 112
     hitflash flashmedium
     frame    data/chars/seiya/attack41.png
     frame    data/chars/seiya/attack42.png
     attack2  62 21 67 26 10 0 1 0 12 20
     frame    data/chars/seiya/attack43.png
-    attack1  0
 
 anim attack5    # Attaque combo 5
     jugglecost  1
-    delay    7
+    delay    8
     offset   45 119
-    bbox     42 7 30 112
     hitflash flashbig
     frame    data/chars/seiya/attack51.png
     frame    data/chars/seiya/attack52.png
@@ -497,10 +490,10 @@ anim attack5    # Attaque combo 5
     frame    data/chars/seiya/attack54.png
     @cmd     spawnbind "kick_dust" 0 1 0 0 0
     frame    data/chars/seiya/attack55.png
-    attack20  0
     frame    data/chars/seiya/attack56.png
     frame    data/chars/seiya/attack57.png
     frame    data/chars/seiya/attack58.png
+    delay 15
     frame    data/chars/seiya/attack59.png
     frame    data/chars/seiya/attack60.png
 

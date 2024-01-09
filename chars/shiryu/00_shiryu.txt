@@ -392,7 +392,7 @@ anim attack1 # Attaque combo 1
     bbox     31 15 30 115
     frame    data/chars/shiryu/attack1.png
     frame    data/chars/shiryu/attack2.png
-    attack   70 34 60 20 10 0 0 0 12 20
+    attack1   70 34 60 20 10 0 0 0 12 20
     frame    data/chars/shiryu/attack3.png
     frame    data/chars/shiryu/attack4.png
     frame    data/chars/shiryu/attack5.png
@@ -401,16 +401,15 @@ anim attack1 # Attaque combo 1
 
 anim attack2 # Attaque combo 2
     jugglecost  1
-    delay    6
+    delay    5
     offset   39 135
     bbox     26 15 30 120
     frame    data/chars/shiryu/attack21.png
     frame    data/chars/shiryu/attack22.png
     frame    data/chars/shiryu/attack23.png
-    attack2  62 21 67 26 10 0 0 0 12 20
+    attack1  62 21 67 26 10 0 0 0 12 20
     frame    data/chars/shiryu/attack24.png
     frame    data/chars/shiryu/attack25.png
-    attack1  0
 
 anim attack3 # Attaque combo 3
     jugglecost  1
@@ -419,36 +418,35 @@ anim attack3 # Attaque combo 3
     bbox     34 29 35 100
     frame    data/chars/shiryu/attack31.png
     frame    data/chars/shiryu/attack32.png
-    attack   78 52 60 20 10 0 1 0 12 20
+    attack1   78 52 60 20 10 0 0 0 12 20
     bbox     68 30 35 100
     frame    data/chars/shiryu/attack33.png
 
 anim attack4 # Attaque combo 4
     jugglecost  1
-    delay    7
+    delay    9
     offset   39 130
     hitflash flashmedium
     frame    data/chars/shiryu/attack41.png
     frame    data/chars/shiryu/attack42.png
-    attack1  62 21 67 26 10 0 1 0 10 12
+    attack2  62 21 67 26 10 0 1 0 10 20
     frame    data/chars/shiryu/attack43.png
     frame    data/chars/shiryu/attack44.png
     frame    data/chars/shiryu/attack45.png
-    attack1  0
 
 anim attack5 # Attaque combo 5
     jugglecost  1
-    delay    5
+    delay    10
     offset   39 130
     hitflash shiryu_swing
     frame    data/chars/shiryu/attack51.png
     frame    data/chars/shiryu/attack52.png
     sound    data/chars/shiryu/sounds/attack7.wav
     frame    data/chars/shiryu/attack53.png
-    attack20  62 21 67 26 10 1 1 0 50 12
+    attack20  62 21 67 26 10 1 1 0 50 20
     frame    data/chars/shiryu/attack54.png
     frame    data/chars/shiryu/attack55.png
-    attack20  0
+    delay 12
     frame    data/chars/shiryu/attack56.png
     frame    data/chars/shiryu/attack57.png
     
