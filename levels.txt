@@ -299,7 +299,7 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         2_Road-Seiya
+set         2A_Road-Seiya
 maxplayers  4
 lives       3
 credits     10
@@ -310,12 +310,28 @@ custfade	100
 skipselect  seiya
 branch      temple2
 z           378 484
-file        data/levels/temple2.txt
+file        data/levels/temple2A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         2_BOSS_Taureau-Seiya
+set         2B_Midboss-Seiya
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  seiya
+branch      temple2
+z           378 484
+file        data/levels/temple2B-midboss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         2D_BOSS_Taureau-Seiya
 maxplayers  4
 lives       3
 credits     10
@@ -326,7 +342,7 @@ custfade	100
 skipselect  seiya
 branch      temple2boss
 z           378 484
-file        data/levels/temple2boss.txt
+file        data/levels/temple2D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end

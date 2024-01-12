@@ -1,0 +1,47 @@
+loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+
+music           data/music/pegasus.ogg
+background  	data/bgs/temple2D-boss/background.png		1 1 0 0 0 0 1 1 1 0
+panel           data/bgs/temple2D-boss/templeboss.png 
+fglayer     data/bgs/temple2D-boss/temple2_cloud.png        -25 -0.7 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+bgspeed 1 0
+order           a
+direction       both
+settime         99
+noreset 2
+shadowalpha 6
+shadowopacity 0
+cameratype      0
+light        256 -44
+
+
+spawn1          60 30
+
+#-- BOSS -----------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-taureau
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+
+spawn           aldebaran
+boss 			1
+coords          650 400
+at              0
+
+group			1 1
+at				0
+
+spawn           dialog_wait
+flip            1
+boss			1
+coords          1 1
+at              0
