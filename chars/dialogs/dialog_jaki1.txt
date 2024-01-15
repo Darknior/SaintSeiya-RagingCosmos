@@ -1,0 +1,55 @@
+name			dialog_jaki1 #TIMELINE
+type			text
+subtype			noskip
+setlayer		1000000002
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	400
+	offset	0 -15
+	@cmd setVar "lockButton" 1
+	@cmd spawnScreen "seiya_idle" 80 0 450 1 "ANI_IDLE"
+	@cmd spawnScreen "jaki_idle" 650 0 450 0 "ANI_IDLE"
+	frame	data/chars/dialogs/empty.png
+
+	delay	300
+	@cmd setVar "line1" "Seiya, the one who stole the"
+	@cmd setVar "line2" "pegasus armor from my brother!"
+	@cmd setVar "line3" "I'll crush your bones!!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "jaki1"
+	@cmd setVar "portraitSide" "right"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" "You are an idiot Jaki!"
+	@cmd setVar "line2" "I'll beat you like I beat"
+	@cmd setVar "line3" "your brother Cassios before!!"
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "seiya3"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	frame	data/chars/dialogs/empty.png
+
+		delay	250
+	@cmd spawnFade "out" 0 0 0 10000000001 0.50
+	frame	data/chars/dialogs/empty.png
+
+	delay	10
+	@cmd setVar "lockButton" 0
+	@cmd removEntity "seiya_idle"
+	@cmd removEntity "jaki_idle"
+	frame	data/chars/dialogs/empty.png
+
+	@cmd suicide
+	frame	data/chars/dialogs/empty.png

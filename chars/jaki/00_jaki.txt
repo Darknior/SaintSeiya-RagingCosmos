@@ -111,6 +111,8 @@ anim    select  # Personnage sélectionné
 anim spawn
     delay    40
     offset    48 182
+    @cmd spawnFade "in" 0 0 0 10000000001 0.25
+    @cmd spawnDialog "dialog_jaki1" 200 100
     frame    data/chars/jaki/spawn1.png
     frame    data/chars/jaki/spawn2.png
     frame    data/chars/jaki/spawn3.png

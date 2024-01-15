@@ -1,0 +1,16 @@
+name jaki_idle
+type        text
+gfxshadow   1 4
+palette     data/chars/jaki/palettes/palette1.png
+
+#-- ANIMATIONS -------------------------------------------------------
+
+anim idle
+    loop     1
+    delay    40
+    offset    48 182
+    frame    data/chars/jaki/spawn1.png
+    frame    data/chars/jaki/spawn2.png
+    frame    data/chars/jaki/spawn3.png
+    frame    data/chars/jaki/spawn4.png
+    frame    data/chars/jaki/spawn5.png

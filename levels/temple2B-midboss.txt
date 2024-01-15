@@ -2,8 +2,11 @@ loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
 
 music           data/music/coliseum.ogg
 background  	data/bgs/temple2B-midboss/background.png		0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.5
-panel           data/bgs/temple2B-midboss/0.png 
+panel		data/bgs/temple2B-midboss/null.png
+bglayer      data/bgs/temple2B-midboss/clouds-back.png       0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.5
 fglayer     data/bgs/temple2B-midboss/temple2_cloud.png        -25 -0.7 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+bglayer      data/bgs/temple2B-midboss/temple2-mountains.png 0.8 1 0 0 0 0 1 1 1 0
+fglayer      data/bgs/temple2B-midboss/clouds-front.png      -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 bgspeed 1 0
 order           a
 direction       both
@@ -15,7 +18,7 @@ cameratype      0
 light        256 -44
 
 
-spawn1          60 30
+spawn1          60 450
 
 #-- BOSS -----------------------------------
 
@@ -31,10 +34,13 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
+spawn       temple2B_coliseum
+coords      0 0
+at          0
 
 spawn           jaki
 boss 			1
-coords          650 400
+coords          650 430
 at              0
 
 group			1 1
