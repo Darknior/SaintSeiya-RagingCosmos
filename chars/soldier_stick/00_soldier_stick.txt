@@ -249,7 +249,7 @@ anim fall
 	 bbox 10 90 100 35
     frame    data/chars/soldier_stick/fall3.png
     
-anim fall7
+anim fall8 # touche les enemis quand il est projetté
     delay    15
     offset    118 125
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10

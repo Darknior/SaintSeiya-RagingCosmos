@@ -353,7 +353,7 @@ anim fall
 	 bbox 6 93 90 35
     frame    data/chars/soldier_basic/fall8.png	
     
-anim fall7 # chutte apres etre Grab
+anim fall8 # touche les enemis quand il est projetté
     delay    10
     offset    98 125
 	 landframe 4

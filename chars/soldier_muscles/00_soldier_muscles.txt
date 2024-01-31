@@ -213,7 +213,7 @@ anim fall
 	 bbox 6 93 140 35
     frame    data/chars/soldier_muscles/fall5.png	
     
-anim fall7 # chutte apres etre Grab
+anim fall8 # touche les enemis quand il est projetté
     delay    10
     offset    100 121
 	 landframe 3

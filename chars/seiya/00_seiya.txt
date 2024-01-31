@@ -818,7 +818,7 @@ anim fall
     sound    data/chars/seiya/sounds/hurt2.wav
     frame    data/chars/seiya/fall4.png
 
-anim fall7 # chutte apres etre Grab
+anim fall8 # touche les enemis quand il est projetté
     landframe  4
     offset   114 110
     delay    10
@@ -1065,7 +1065,7 @@ anim block
 
 #-- ATTAQUES SPECIALES -------------------------------------------------------
 
-anim attackbackward  # Attaque arrière native (b + a1)
+anim attackbackward  # Attaque arrière native (arriere + a1)
     jugglecost 1
     offset   107 148
     hitflash flashmedium
@@ -1116,7 +1116,7 @@ anim attackboth # Attaque de mêlée native (j + a1)
     delay    12
     frame    data/chars/seiya/attackbackward1.png
 
-anim freespecial # Attaque de mêlée (Bouton special, a2)
+anim freespecial # Attaque de mêlée (Bouton special a2 plusieurs fois)
     jugglecost  2
     fastattack  1
     energycost  20 0 0
@@ -1254,7 +1254,7 @@ anim freespecial4    # Attaque arrière (a3)
     bbox     64 29 50 120
     frame    data/chars/seiya/attackbackward20.png
 
-anim freespecial5    # Uppercut (Bas, Avant, a1)
+anim freespecial5    # Uppercut (Haut + a2)
     jugglecost  2
     energycost  20 1 0
     fastattack  1
@@ -1280,7 +1280,7 @@ anim freespecial5    # Uppercut (Bas, Avant, a1)
     frame    data/chars/seiya/uppercut3.png
     frame    data/chars/seiya/uppercut2.png
 
-anim freespecial6    # Ultra meteores de Pégase ( Haut + bouton special a2)
+anim freespecial6    # Ultra meteores de Pégase ( Bas + bouton special a2)
     jugglecost   10
     fastattack   1
     hitflash meteor_impact

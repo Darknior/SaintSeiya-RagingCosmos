@@ -172,7 +172,7 @@ anim fall
     bbox 23 92 100 35
     frame    data/chars/soldier_blue/fall7.png
     
-anim fall7 # chutte apres etre Grab
+anim fall8 # touche les enemis quand il est projetté
     delay    10
     offset    118 125
     bbox 55 24 80 100

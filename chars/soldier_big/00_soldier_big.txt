@@ -167,7 +167,7 @@ anim fall
     frame    data/chars/soldier_big/04.png
     frame    data/chars/soldier_big/04.png
     
-anim fall7 # chutte apres etre Grab
+anim fall8 # touche les enemis quand il est projetté
     loop    0
     delay    10
     offset    120 187
