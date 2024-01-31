@@ -253,6 +253,7 @@ anim fall8 # touche les enemis quand il est projetté
     delay    15
     offset    118 125
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    attack 34 15 60 100 4 1 0 0 10 12
     bbox 34 15 60 100
     frame    data/chars/soldier_stick/fall1.png
     frame    data/chars/soldier_stick/fall2.png
@@ -263,6 +264,7 @@ anim fall9 # touche les enemis quand il est projetté
     delay    15
     offset    118 125
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    attack 34 15 60 100 4 1 0 0 10 12
     bbox 34 15 60 100
     frame    data/chars/soldier_stick/fall1.png
     frame    data/chars/soldier_stick/fall2.png

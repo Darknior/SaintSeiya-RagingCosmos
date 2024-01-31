@@ -824,6 +824,25 @@ anim fall8 # touche les enemis quand il est projetté
     delay    10
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     sound    data/chars/seiya/sounds/hurt.wav
+    attack 20 34 65 70 4 1 0 0 10 12
+    bbox 20 34 65 70
+    frame    data/chars/seiya/fall1.png
+    frame    data/chars/seiya/fall2.png
+    delay    -1000
+    frame    data/chars/seiya/fall3.png
+    delay    10
+    frame    data/chars/seiya/fall4.png
+    sound    data/chars/seiya/sounds/hurt2.wav
+    frame    data/chars/seiya/fall4.png
+
+anim fall9 # touche les enemis quand il est projetté
+    landframe  4
+    offset   114 110
+    delay    10
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    sound    data/chars/seiya/sounds/hurt.wav
+    attack 20 34 65 70 4 1 0 0 10 12
+    bbox 20 34 65 70
     frame    data/chars/seiya/fall1.png
     frame    data/chars/seiya/fall2.png
     delay    -1000

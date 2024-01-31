@@ -171,6 +171,7 @@ anim fall8 # touche les enemis quand il est projetté
     loop    0
     delay    10
     offset    120 187
+    attack 66 65 85 130 4 1 0 0 10 12
     bbox 66 65 85 130
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_big/03.png
@@ -190,6 +191,7 @@ anim fall9 # touche les enemis quand il est projetté
     loop    0
     delay    10
     offset    120 187
+    attack 66 65 85 130 4 1 0 0 10 12
     bbox 66 65 85 130
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_big/03.png

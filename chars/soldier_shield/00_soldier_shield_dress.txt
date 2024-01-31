@@ -244,6 +244,7 @@ anim fall8 # chutte apres etre Grab
     delay    10
     offset    98 125
 	 landframe 3
+    attack 20 34 65 70 4 1 0 0 10 12
     bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_shield/fall1.png
@@ -258,6 +259,7 @@ anim fall9 # chutte apres etre Grab
     delay    10
     offset    98 125
 	 landframe 3
+    attack 20 34 65 70 4 1 0 0 10 12
     bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_shield/fall1.png

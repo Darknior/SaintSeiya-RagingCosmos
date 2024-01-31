@@ -184,6 +184,7 @@ anim fall8 # touche les enemis quand il est projetté
     delay    10
     offset    110 180
     dropv 4 1 0
+    attack 65 65 80 120 4 1 0 0 10 12
     bbox 65 65 80 120
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png
@@ -203,6 +204,7 @@ anim fall9 # touche les enemis quand il est projetté
     delay    10
     offset    110 180
     dropv 4 1 0
+    attack 65 65 80 120 4 1 0 0 10 12
     bbox 65 65 80 120
     frame    data/chars/soldier_purple/06.png
     frame    data/chars/soldier_purple/06.png

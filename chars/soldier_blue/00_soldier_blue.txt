@@ -175,6 +175,7 @@ anim fall
 anim fall8 # touche les enemis quand il est projetté
     delay    10
     offset    118 125
+    attack 55 24 80 100 4 1 0 0 10 12
     bbox 55 24 80 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_blue/fall1.png
@@ -189,6 +190,7 @@ anim fall8 # touche les enemis quand il est projetté
 anim fall9 # touche les enemis quand il est projetté
     delay    10
     offset    118 125
+    attack 55 24 80 100 4 1 0 0 10 12
     bbox 55 24 80 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_blue/fall1.png
