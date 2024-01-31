@@ -228,6 +228,21 @@ anim fall8 # touche les enemis quand il est projetté
 	 bbox 6 93 140 35
     frame    data/chars/soldier_muscles/fall5.png	
 
+anim fall9 # touche les enemis quand il est projetté
+    delay    10
+    offset    100 121
+	 landframe 3
+	 bbox 40 17 80 80
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    frame    data/chars/soldier_muscles/fall1.png
+    frame    data/chars/soldier_muscles/fall2.png
+    delay    200
+    frame    data/chars/soldier_muscles/fall3.png
+    delay    10
+    frame    data/chars/soldier_muscles/fall4.png
+	 bbox 6 93 140 35
+    frame    data/chars/soldier_muscles/fall5.png	
+
 anim rise # Se releve avec compteur de chuttes
    offset    98 125
    delay    10

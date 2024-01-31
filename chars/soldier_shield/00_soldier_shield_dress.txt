@@ -240,7 +240,21 @@ anim fall
 	 bbox 6 93 90 35
     frame    data/chars/soldier_shield/fall8.png	
     
-anim fall7 # chutte apres etre Grab
+anim fall8 # chutte apres etre Grab
+    delay    10
+    offset    98 125
+	 landframe 3
+    bbox 20 34 65 70
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    frame    data/chars/soldier_shield/fall1.png
+    frame    data/chars/soldier_shield/fall2.png
+    delay    200
+    frame    data/chars/soldier_shield/fall3.png
+    delay    10
+    frame    data/chars/soldier_shield/fall4.png
+    frame    data/chars/soldier_shield/fall8.png	
+
+anim fall9 # chutte apres etre Grab
     delay    10
     offset    98 125
 	 landframe 3

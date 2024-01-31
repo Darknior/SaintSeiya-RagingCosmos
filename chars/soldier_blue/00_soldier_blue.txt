@@ -185,6 +185,20 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_blue/fall6.png
     bbox 23 92 100 35
     frame    data/chars/soldier_blue/fall7.png
+    
+anim fall9 # touche les enemis quand il est projetté
+    delay    10
+    offset    118 125
+    bbox 55 24 80 100
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    frame    data/chars/soldier_blue/fall1.png
+    frame    data/chars/soldier_blue/fall2.png
+    frame    data/chars/soldier_blue/fall3.png
+    frame    data/chars/soldier_blue/fall4.png
+    frame    data/chars/soldier_blue/fall5.png
+    frame    data/chars/soldier_blue/fall6.png
+    bbox 23 92 100 35
+    frame    data/chars/soldier_blue/fall7.png
 
 anim rise # Se releve avec compteur de chuttes
     offset    118 125

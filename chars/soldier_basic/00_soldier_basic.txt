@@ -358,6 +358,7 @@ anim fall8 # touche les enemis quand il est projetté
     delay    10
     offset    98 125
 	 landframe 4
+    bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_basic/fall1.png
     frame    data/chars/soldier_basic/fall2.png
@@ -365,6 +366,22 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_basic/fall3.png
     delay    15
     frame    data/chars/soldier_basic/fall4.png
+    bbox 6 93 90 35
+    frame    data/chars/soldier_basic/fall8.png	
+
+anim fall9 # touche les enemis quand il est projetté
+    delay    10
+    offset    98 125
+	 landframe 4
+    bbox 20 34 65 70
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    frame    data/chars/soldier_basic/fall1.png
+    frame    data/chars/soldier_basic/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_basic/fall3.png
+    delay    15
+    frame    data/chars/soldier_basic/fall4.png
+    bbox 6 93 90 35
     frame    data/chars/soldier_basic/fall8.png	
 
 anim rise # Se releve avec compteur de chuttes

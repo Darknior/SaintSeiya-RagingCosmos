@@ -195,6 +195,25 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_base/07.png
     frame    data/chars/soldier_base/07.png
 
+anim fall9 # touche les enemis quand il est projetté
+    loop    0
+    delay    10
+    offset    110 180
+    dropv 4 1 0
+    bbox 65 68 80 120
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/06.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+    frame    data/chars/soldier_base/07.png
+
 anim death
     delay    10
     offset    110 180

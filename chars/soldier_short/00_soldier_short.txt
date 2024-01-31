@@ -180,6 +180,17 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_short/fall5.png
     frame    data/chars/soldier_short/fall6.png
 
+anim fall9 # touche les enemis quand il est projetté
+    delay    10
+    offset    73 110
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    frame    data/chars/soldier_short/fall1.png
+    frame    data/chars/soldier_short/fall2.png
+    frame    data/chars/soldier_short/fall3.png
+    frame    data/chars/soldier_short/fall4.png
+    frame    data/chars/soldier_short/fall5.png
+    frame    data/chars/soldier_short/fall6.png
+
 anim rise
     offset    73 109
     delay    10

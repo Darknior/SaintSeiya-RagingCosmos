@@ -186,6 +186,25 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_big/04.png
     frame    data/chars/soldier_big/04.png
 
+anim fall9 # touche les enemis quand il est projetté
+    loop    0
+    delay    10
+    offset    120 187
+    bbox 66 65 85 130
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/03.png
+    bbox 29 150 165 50
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/04.png
+
 anim rise # Se releve avec compteur de chuttes
     loop    0
     offset    120 195
