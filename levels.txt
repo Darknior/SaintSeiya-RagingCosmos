@@ -331,6 +331,22 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
+set         2C_Road-Seiya
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  seiya
+branch      temple2
+z           378 484
+file        data/levels/temple2C-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
 set         2D_BOSS_Taureau-Seiya
 maxplayers  4
 lives       3
@@ -347,7 +363,7 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         3_Road_Shaina-Shun
+set         3A_Road-Shun
 maxplayers  4
 lives       3
 credits     10
@@ -357,13 +373,45 @@ typemp      1
 custfade	100
 skipselect  shun
 branch      temple3
-z           385 484
-file        data/levels/temple3.txt
+z           378 484
+file        data/levels/temple3A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         3_BOSS_Gemeaux-Shun
+set         3B_Midboss-Asterion
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  shun
+branch      temple3
+z           420 484
+file        data/levels/temple3B-midboss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         3C_Road-Shun
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  shun
+branch      temple3
+z           378 484
+file        data/levels/temple3C-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         3D_BOSS_Gemini
 maxplayers  4
 lives       3
 credits     10
@@ -374,11 +422,10 @@ custfade	100
 skipselect  shun
 branch      temple3boss
 z           378 484
-file        data/levels/temple3boss.txt
+file        data/levels/temple3D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
-
 set         4_Road_Jaki-Shiryu
 maxplayers  4
 lives       3

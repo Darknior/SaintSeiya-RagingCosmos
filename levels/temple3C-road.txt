@@ -1,0 +1,244 @@
+loadingbg    data/sprites/loading/loading_Shun.png 1 -51 405 460 999 999 0
+music        data/music/Pegasus_Fantasy_instrumental.ogg
+
+panel        data/bgs/temple3C-road/temple2-road.png
+frontpanel   data/bgs/temple3C-road/layer1.png
+background   data/bgs/temple3C-road/background.png        1 1 0 0 0 0 1 1 1 0
+bglayer      data/bgs/temple3C-road/clouds-back.png       0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.5
+bglayer      data/bgs/temple3C-road/temple2-mountains.png 0.8 1 0 0 0 0 1 1 1 0
+bglayer      data/bgs/temple3C-road/temple2-temple.png    0.5 1 0 0 0 0 1 9999 1 0
+fglayer      data/bgs/temple3C-road/clouds-front.png      -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer      data/bgs/temple3C-road/clouds-road.png       -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+bgspeed      1 0
+
+light        256 -44
+at           0
+shadowalpha  2
+shadowopacity 80
+direction    right
+
+settime      99
+noreset      2
+cameratype   1
+order        a
+
+
+-------------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-taureau
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn       temple2roadcolumns
+coords      0 0
+at          0
+
+spawn soldier_muscles
+alias konstantinos
+item diamantecd
+coords    850 440
+at 0
+
+
+spawn soldier_shield
+alias konstantinos
+item diamantecd
+coords    350 390
+at 0
+
+spawn soldier_basic
+alias konstantinos
+item diamantecd
+coords    250 430
+at 0
+
+spawn soldier_pant
+alias konstantinos
+item diamantecd
+coords    150 480
+at 0
+
+spawn soldier3
+alias Anthonin
+coords    -200 410
+at 400
+
+spawn sticksoldier
+alias Teo
+item apple
+coords    -200 470
+at 400
+
+
+wait
+at 400
+
+
+spawn soldier3
+alias Stephan
+coords    850 400
+at 1000
+
+spawn soldier2
+alias Leander
+cosmos-stars
+coords    -200 410
+at 1000
+
+spawn soldier3
+alias Luka
+item 1up-bronze
+coords    -200 470
+at 1000
+
+spawn sticksoldier
+alias Carlito
+coords    -230 430
+at 1000
+
+
+wait
+at 1000
+
+spawn soldier1
+alias Chris
+coords    850 400
+at 1500
+
+spawn soldier_basic
+alias Emile
+coords    850 430
+at 1500
+
+spawn soldier2
+alias Helios
+coords    -200 410
+at 1500
+
+spawn soldier3
+alias Alexy
+item limaocc
+coords    -200 470
+at 1500
+
+
+wait
+at 1500
+
+
+
+spawn soldier1-1
+alias Swan
+coords    850 400
+at 2000
+
+spawn sticksoldier
+alias Neo
+item time
+coords    -230 430
+at 2000
+
+spawn soldier2
+alias Greg
+coords    -200 410
+at 2000
+
+spawn soldier1
+alias Achille
+item cosmos-stars
+coords    -200 470
+at 2000
+
+
+wait
+at 2000
+
+
+spawn soldier3
+alias Emilio
+coords    850 400
+at 2400
+
+spawn soldier_basic
+alias Cassandre
+coords    850 430
+at 2400
+
+spawn soldier1-1
+alias Linus
+coords    -200 410
+at 2400
+
+spawn soldier1-1
+alias Remi
+item sacocd
+coords    -200 470
+at 2400
+
+
+wait
+at 2400
+
+
+spawn soldier1-1
+alias Sebastian
+item botasavp
+coords    850 400
+at 2800
+
+spawn soldier2
+alias Damon
+item time
+coords    -200 410
+at 2800
+
+spawn soldier1-1
+alias Hugo
+item diamondff
+coords    -200 470
+at 2800
+
+
+wait
+at 2800
+
+spawn soldier3
+alias Enyo
+item 1up-silver
+coords    -250 400
+at 3800
+
+spawn sticksoldier
+alias Vangelis
+coords    -230 430
+at 3800
+
+spawn soldier3
+alias Milan
+coords    -200 410
+at 3800
+
+spawn soldier3
+alias Doryan
+item colarcd
+coords    -200 470
+at 3800
+
+
+wait
+at 3800
+
+
+
+
+
+
+

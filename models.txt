@@ -562,8 +562,8 @@ know temple2roadsky      data/bgs/temple2A-road/temple2roadsky.txt
 know temple2B_coliseum      data/bgs/temple2B-midboss/temple2B_coliseum.txt
 
 ## TEMPLE 3
-know temple3_columns     data/bgs/temple3/columns/temple3_columns.txt
-know temple3_grid        data/bgs/temple3/grid/temple3_grid.txt
+know temple3_columns     data/bgs/temple3D-boss/columns/temple3_columns.txt
+know temple3_grid        data/bgs/temple3D-boss/grid/temple3_grid.txt
 
 ## TEMPLE 4 ROAD
 know temple4roadcolumns      data/bgs/temple4-road/temple4roadcolumns.txt
