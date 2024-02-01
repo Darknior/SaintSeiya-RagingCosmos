@@ -34,8 +34,8 @@ void afterEffect()
 		if(name == "seiya"){afterImage("seiyaS");}
 		if(name == "shiryu"){afterImage("shiryuS");}
 		if(name == "hyoga"){afterImage("hyogaS");}
-		// if(name == "shun"){afterImage("shunS");}
-		// if(name == "ikki"){afterImage("ikkiS");}
+		if(name == "shun"){afterImage("shunS");}
+		if(name == "ikki"){afterImage("ikkiS");}
 	}
 }
 
