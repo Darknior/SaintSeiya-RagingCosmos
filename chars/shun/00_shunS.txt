@@ -20,9 +20,8 @@ palette      data/chars/shun/palettes/palette1.png
 
 anim run
     loop 0
-    delay 8
+    delay	1000
     offset   62 132
-    bbox     39 28 51 104
     frame    data/chars/shun/run6.png
     frame    data/chars/shun/run1.png
     frame    data/chars/shun/run2.png
@@ -33,8 +32,7 @@ anim run
 
 anim runattack # Attaque en courant
     loop 0
-    forcedirection  -1
-    delay 8
+    delay	1000
     offset    90 199
     frame    data/chars/shun/attack6.png
     frame    data/chars/shun/attack7.png
@@ -48,7 +46,7 @@ anim runattack # Attaque en courant
 
 anim runjump
     loop 0
-    delay 6
+    delay	1000
     offset   87 171
     frame    data/chars/shun/jump1.png
     frame    data/chars/shun/forwardjump1.png
@@ -64,7 +62,7 @@ anim runjump
     
 anim runjumpattack # Attaque sautée en courant
     loop 0
-    delay 5
+    delay	1000
     offset    87 171
     frame    data/chars/shun/jumpspecial1.png
     frame    data/chars/shun/jumpspecial2.png
@@ -75,7 +73,7 @@ anim runjumpattack # Attaque sautée en courant
 
 anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     loop 0
-    delay 12
+    delay	1000
     offset    75 224
     frame    data/chars/shun/downattack0.png
     frame    data/chars/shun/downattack1.png
@@ -85,7 +83,7 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     
 anim dodge  # Esquive Haut / Bas (u u / d d)
     loop 0
-    delay 8
+    delay	1000
     offset   87 171
     frame    data/chars/shun/jump0.png
     frame    data/chars/shun/jump1.png
