@@ -566,15 +566,15 @@ know temple3_columns     data/bgs/temple3D-boss/columns/temple3_columns.txt
 know temple3_grid        data/bgs/temple3D-boss/grid/temple3_grid.txt
 
 ## TEMPLE 4 ROAD
-know temple4roadcolumns      data/bgs/temple4-road/temple4roadcolumns.txt
+know temple4roadcolumns      data/bgs/temple4A-road/temple4roadcolumns.txt
 
 ## TEMPLE 4
-know temple4_columns     data/bgs/temple4/columns/temple4_columns.txt
-know temple4_heads       data/bgs/temple4/heads/temple4_heads.txt
-know temple4_wallheads   data/bgs/temple4/heads/temple4_wallheads.txt
-know temple4_faces01     data/bgs/temple4/faces/temple4_faces01.txt
-know temple4_faces02     data/bgs/temple4/faces/temple4_faces02.txt
-know temple4_faces03     data/bgs/temple4/faces/temple4_faces03.txt
+know temple4_columns     data/bgs/temple4B-midboss/columns/temple4_columns.txt
+know temple4_heads       data/bgs/temple4B-midboss/heads/temple4_heads.txt
+know temple4_wallheads   data/bgs/temple4B-midboss/heads/temple4_wallheads.txt
+know temple4_faces01     data/bgs/temple4B-midboss/faces/temple4_faces01.txt
+know temple4_faces02     data/bgs/temple4B-midboss/faces/temple4_faces02.txt
+know temple4_faces03     data/bgs/temple4B-midboss/faces/temple4_faces03.txt
 
 ## TEMPLE 5
 know flame               data/bgs/temple5/flame/flame.txt

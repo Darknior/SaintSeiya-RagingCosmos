@@ -1,0 +1,102 @@
+loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0
+
+music           data/music/cancer.ogg
+
+# Shorter 1200x484
+background      data/bgs/temple4B-midboss/temple4_back.png      0 0 0 -4
+bglayer         data/bgs/temple4B-midboss/temple4_wall.png      0 0 0 -4 0 0 1 1    1 0    0 0 0 0 0
+
+panel           data/bgs/temple4B-midboss/temple4_ground.png
+
+# 1400x484
+fglayer         data/bgs/temple4B-midboss/fogPink.png         100  0.1 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
+fglayer         data/bgs/temple4B-midboss/fogWhite.png       -150 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
+fglayer         data/bgs/temple4B-midboss/fogWhite.png        -25 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
+
+#frontpanel      data/bgs/temple4B-midboss/temple4_columns.png
+offscreenkill 10000
+order           a
+direction       both
+settime         99
+noreset 2
+light        256 -44
+at        0
+shadowalpha 1
+shadowopacity 250
+at        0
+
+
+#-- PLAYERS ---------------------------------
+
+spawn1          60 30
+spawn2          70 40
+
+
+#-- INTRO -----------------------------------
+
+load temple4_faces01 3
+load temple4_faces02 3
+load temple4_faces03 3
+
+spawn           temple4_faces01
+flip            1
+coords          0 0
+at              0
+spawn           temple4_faces02
+flip            1
+coords          0 0
+at              0
+spawn           temple4_faces03
+flip            1
+coords          0 0
+at              0
+
+
+
+#-- LEVEL ANIMATIONS -----------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-cancer
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+spawn           temple4_columns
+coords          0 0
+at              0
+
+load temple4_columns 3
+load temple4_heads 3
+load temple4_wallheads 3
+
+spawn           temple4_heads
+flip            1
+coords          0 377
+at              0
+spawn           temple4_wallheads
+flip            1
+coords          0 0
+at              0
+
+
+#-- BOSS -----------------------------------
+
+spawn           deathmask
+boss 			1
+coords          650 410
+at              0
+
+group			1 1
+at				0
+
+spawn           dialog_wait
+flip            1
+boss			1
+coords          1 1
+at              0

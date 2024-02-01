@@ -1,0 +1,19 @@
+temple4B-midbossB-midboss                temple4B-midboss_faces02
+type                none
+shadow              0
+setlayer            199
+
+offscreenkill       1500
+
+anim idle
+    loop            1 4 6
+    movea           2
+    palette         data/bgs/temple4B-midboss/faces/face02.png
+    delay           1
+    offset          0 0
+    frame           data/sprites/null.png
+    frame           data/sprites/null.png
+    frame           data/sprites/null.png
+    frame           data/bgs/temple4B-midboss/faces/face02.png
+    frame           data/bgs/temple4B-midboss/faces/face02.png
+    frame           data/bgs/temple4B-midboss/faces/face02.png

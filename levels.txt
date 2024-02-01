@@ -426,7 +426,8 @@ file        data/levels/temple3D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
-set         4_Road_Jaki-Shiryu
+
+set         4A_Road-Shiryu
 maxplayers  4
 lives       3
 credits     10
@@ -434,15 +435,15 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  shiryu
+skipselect  Shiryu
 branch      temple4
 z           378 484
-file        data/levels/temple4.txt
+file        data/levels/temple4A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         4_BOSS_Cancer-Shiryu
+set         4B_Midboss-Deathmask
 maxplayers  4
 lives       3
 credits     10
@@ -450,10 +451,42 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  shiryu
+skipselect  Shiryu
+branch      temple4
+z           420 484
+file        data/levels/temple4B-midboss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         4C_Road-Shiryu
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  Shiryu
+branch      temple4
+z           378 484
+file        data/levels/temple4C-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         4D_BOSS_Deathmask
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  Shiryu
 branch      temple4boss
-z           400 484
-file        data/levels/temple4boss.txt
+z           378 484
+file        data/levels/temple4D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end

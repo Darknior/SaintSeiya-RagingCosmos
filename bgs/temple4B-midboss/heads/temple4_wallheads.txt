@@ -1,0 +1,61 @@
+name                temple4_wallheads
+shadow              0
+setlayer            2
+
+anim idle
+    loop        1 10 38
+    palette     data/bgs/temple4B-midboss/heads/wallheads01_open.png
+
+# HIDE
+    delay       350
+    offset      0 0
+    frame       data/bgs/temple4B-midboss/heads/wallheads09.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads09.png
+# SHOW
+    delay       20
+    frame       data/bgs/temple4B-midboss/heads/wallheads08.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads07.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads06.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads05.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads04.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads03.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads02.png
+# STAND
+    delay       500
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png
+# SPEAK 1
+    delay       25
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_closed.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_closed.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+# STAND CLOSED
+    delay       300
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_closed.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_closed.png
+# SPEAK 2
+    delay       30
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_closed.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_closed.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_closed.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_closed.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_middle.png
+# STAND
+    delay       1000
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png
+    frame       data/bgs/temple4B-midboss/heads/wallheads01_open.png

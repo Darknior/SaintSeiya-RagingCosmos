@@ -1,0 +1,12 @@
+name            temple4_columns
+type            panel
+speedf          -0.5
+offscreenkill 10000
+setlayer        200
+facing          1
+
+anim idle
+    offset      0 0
+    drawmethod  alpha 6
+    drawmethod  channel 0.83
+    frame       data/bgs/temple4/columns/temple4_columns.png
