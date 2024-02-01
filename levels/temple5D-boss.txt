@@ -1,8 +1,8 @@
 loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
 
 music           data/music/ryuseiken.ogg
-background           data/bgs/temple5/layer2.png
-panel           data/bgs/temple5/layer2.png
+background           data/bgs/temple5D-boss/layer2.png
+panel           data/bgs/temple5D-boss/layer2.png
 offscreenkill 10000
 order           a
 direction       both

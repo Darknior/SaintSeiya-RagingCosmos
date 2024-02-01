@@ -561,14 +561,14 @@ know temple2roadsky      data/bgs/temple2A-road/temple2roadsky.txt
 ## TEMPLE 2B MIDBOSS
 know temple2B_coliseum      data/bgs/temple2B-midboss/temple2B_coliseum.txt
 
-## TEMPLE 3
+## TEMPLE 3D
 know temple3_columns     data/bgs/temple3D-boss/columns/temple3_columns.txt
 know temple3_grid        data/bgs/temple3D-boss/grid/temple3_grid.txt
 
 ## TEMPLE 4 ROAD
 know temple4roadcolumns      data/bgs/temple4A-road/temple4roadcolumns.txt
 
-## TEMPLE 4
+## TEMPLE 4D
 know temple4_columns     data/bgs/temple4B-midboss/columns/temple4_columns.txt
 know temple4_heads       data/bgs/temple4B-midboss/heads/temple4_heads.txt
 know temple4_wallheads   data/bgs/temple4B-midboss/heads/temple4_wallheads.txt
@@ -576,9 +576,9 @@ know temple4_faces01     data/bgs/temple4B-midboss/faces/temple4_faces01.txt
 know temple4_faces02     data/bgs/temple4B-midboss/faces/temple4_faces02.txt
 know temple4_faces03     data/bgs/temple4B-midboss/faces/temple4_faces03.txt
 
-## TEMPLE 5
-know flame               data/bgs/temple5/flame/flame.txt
-know temple5columns      data/bgs/temple5/temple5columns.txt
+## TEMPLE 5D
+know flame               data/bgs/temple5D-boss/flame/flame.txt
+know temple5columns      data/bgs/temple5D-boss/temple5columns.txt
 
 ## TEMPLE 6 ROAD
 know temple6rain      data/bgs/temple6-road/temple6rain.txt

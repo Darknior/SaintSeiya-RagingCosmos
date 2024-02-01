@@ -475,7 +475,7 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         4D_BOSS_Deathmask
+set         4D_BOSS_Cancer
 maxplayers  4
 lives       3
 credits     10
@@ -491,7 +491,7 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         5_Road_Cassios-Seiya
+set         5A_Road-Seiya
 maxplayers  4
 lives       3
 credits     10
@@ -499,15 +499,15 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  seiya
+skipselect  Seiya
 branch      temple5
-z           384 484
-file        data/levels/temple5.txt
+z           378 484
+file        data/levels/temple5A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         5_BOSS_Lion-Seiya
+set         5B_Midboss-Cassios
 maxplayers  4
 lives       3
 credits     10
@@ -515,10 +515,42 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  seiya
+skipselect  Seiya
+branch      temple5
+z           420 484
+file        data/levels/temple5B-midboss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         5C_Road-Seiya
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  Seiya
+branch      temple5
+z           378 484
+file        data/levels/temple5C-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         5D_BOSS_Lion
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  Seiya
 branch      temple5boss
 z           378 484
-file        data/levels/temple5boss.txt
+file        data/levels/temple5D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end

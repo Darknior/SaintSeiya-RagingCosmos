@@ -1,4 +1,4 @@
-name            temple2roadsky
+name            temple2roadcolumns
 type            panel
 speedf          -0.7
 setlayer        200
@@ -8,5 +8,5 @@ offscreenkill 10000
 anim idle
     offset      0 0
     drawmethod  alpha 6
-    drawmethod  channel 0.3
-    frame       data/bgs/temple2-road/clouds-road.png
+    drawmethod  channel 0.7
+    frame       data/bgs/temple5A-road/temple2roadcolumns.png

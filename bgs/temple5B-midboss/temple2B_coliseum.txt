@@ -1,0 +1,18 @@
+name	temple2B_coliseum
+type	none
+shadow	0
+setlayer 0
+
+anim	idle
+	loop	1
+	delay	50
+	offset	1031 0
+	drawmethod alpha 6
+   drawmethod channel 0.99
+	frame	data/bgs/temple2B-midboss/temple2B_coliseum/0.png
+	frame	data/bgs/temple2B-midboss/temple2B_coliseum/1.png
+	frame	data/bgs/temple2B-midboss/temple2B_coliseum/2.png
+	frame	data/bgs/temple2B-midboss/temple2B_coliseum/3.png
+
+
+
