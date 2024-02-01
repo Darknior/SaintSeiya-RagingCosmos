@@ -244,7 +244,7 @@ anim fall8 # touche les enemis quand il est projetté
     delay    10
     offset    98 125
 	 landframe 3
-    attack 20 34 65 70 4 1 0 0 10 12
+	 attack 20 34 65 70 4 1 0 0 10 12
     bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_shield/fall1.png
@@ -253,13 +253,14 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_shield/fall3.png
     delay    10
     frame    data/chars/soldier_shield/fall4.png
+	 bbox 0 85 110 40
     frame    data/chars/soldier_shield/fall8.png	
 
 anim fall9 # touche les enemis quand il est projetté
     delay    10
     offset    98 125
 	 landframe 3
-    attack 20 34 65 70 4 1 0 0 10 12
+	 attack 20 34 65 70 4 1 0 0 10 12
     bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_shield/fall1.png
@@ -268,6 +269,7 @@ anim fall9 # touche les enemis quand il est projetté
     frame    data/chars/soldier_shield/fall3.png
     delay    10
     frame    data/chars/soldier_shield/fall4.png
+	 bbox 0 85 110 40
     frame    data/chars/soldier_shield/fall8.png	
 
 anim rise # Se releve avec compteur de chuttes
