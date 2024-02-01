@@ -149,7 +149,7 @@ anim rise
     frame    data/chars/soldier_short/run6.png
 
 anim pain
-    delay    5
+    delay    7
     offset    37 109
     bbox 22 0 43 109
     frame    data/chars/soldier_short/pain1.png

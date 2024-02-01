@@ -203,7 +203,7 @@ anim death
     frame    data/chars/soldier_shield/death.png	
 
 anim pain
-   delay    5
+   delay    7
    offset    47 122
    bbox 21 10 43 112
    frame    data/chars/soldier_shield/pain1.png
@@ -215,7 +215,7 @@ anim pain
    frame    data/chars/soldier_shield/pain1.png
 	
 anim pain2
-   delay    5
+   delay    7
    offset    47 177
    bbox 13 68 50 112
    frame    data/chars/soldier_shield/pain21.png

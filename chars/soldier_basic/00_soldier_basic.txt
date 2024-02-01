@@ -316,7 +316,7 @@ anim death
    frame    data/chars/soldier_basic/death1.png
 
 anim pain
-   delay    5
+   delay    6
    offset    44 122
    bbox 21 10 43 112
    frame    data/chars/soldier_basic/pain1.png
@@ -328,7 +328,7 @@ anim pain
    frame    data/chars/soldier_basic/pain1.png
 	
 anim pain2
-   delay    5
+   delay    6
    offset    42 121
    bbox 21 10 43 112
    frame    data/chars/soldier_basic/pain21.png

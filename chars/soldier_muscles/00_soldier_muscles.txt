@@ -178,7 +178,7 @@ anim death
    frame    data/chars/soldier_muscles/death1.png
 
 anim pain # normal pain
-   delay    5
+   delay    7
    offset    42 127
    bbox 25 15 50 112
    frame    data/chars/soldier_muscles/pain3.png
@@ -189,7 +189,7 @@ anim pain # normal pain
    frame    data/chars/soldier_muscles/pain4.png
 
 anim pain2 # big pain
-   delay    5
+   delay    7
    offset    26 122
 	bbox 6 5 50 120
    frame    data/chars/soldier_muscles/bigpain1.png

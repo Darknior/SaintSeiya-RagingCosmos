@@ -155,7 +155,7 @@ anim attack1
 
 anim pain
     loop    0
-    delay    10
+    delay    12
     offset    106 180
     bbox 66 76 80 110
     frame    data/chars/soldier_purple/05.png

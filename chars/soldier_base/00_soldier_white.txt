@@ -82,7 +82,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     delay    10
     offset   110 180
     dropv    4 1 0
-	bbox 62 57 93 132
+	 bbox 62 57 93 132
     frame    data/chars/soldier_base/01.png
 
 anim    select  # Personnage sélectionné
@@ -99,7 +99,7 @@ anim    block
     #sound data/chars/soldier_base/KO.wav
     delay    10
     dropv 4 1 0
-	bbox 79 55 70 133
+	 bbox 79 55 70 133
     frame    data/chars/soldier_base/04.png
     frame    data/chars/soldier_base/04.png
     frame    data/chars/soldier_base/04.png
@@ -110,26 +110,25 @@ anim idle
     delay    10
     offset    110 180
     dropv 4 1 0
-	bbox 70 57 80 132
+ 	 bbox 70 57 80 132
     frame    data/chars/soldier_base/01.png
 
 anim walk
     loop    1
     delay    15
     offset    110 180
-	bbox 66 62 90 125
+	 bbox 66 62 90 125
     frame    data/chars/soldier_base/09.png
     frame    data/chars/soldier_base/10.png
     frame    data/chars/soldier_base/11.png
     frame    data/chars/soldier_base/12.png
 
 anim BACKWALK
-
     loop    1
     delay    15
     offset    110 180
     dropv 4 1 0
-	bbox 42 64 99 121
+	 bbox 42 64 99 121
     frame    data/chars/soldier_base/17.png
     frame    data/chars/soldier_base/18.png
     frame    data/chars/soldier_base/19.png
@@ -143,14 +142,14 @@ anim attack1
     offset    110 180
     dropv 4 1 0
     bbox 70 68 80 120
-	attack 132 80 50 25 0 0 0 0 0 0
+	 attack 132 80 50 25 0 0 0 0 0 0
     frame    data/chars/soldier_base/03.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim pain
     loop    0
-    delay    5
+    delay    7
     offset    102 179
     bbox 42 64 99 121
     frame    data/chars/soldier_base/05.png

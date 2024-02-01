@@ -142,7 +142,7 @@ anim BACKWALK
 
 anim pain
     loop    0
-    delay    10
+    delay    12
     offset    120 187
 	 bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
