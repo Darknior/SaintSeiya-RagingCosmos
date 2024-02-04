@@ -1,8 +1,8 @@
 loadingbg		data/sprites/loading/loading_Ikki.png 1 -51 405 460 999 999 0
 
 music		data/music/7sens.ogg
-background      data/bgs/temple6/temple6_back.png      0.4 1 0 0 0 0 1 1 1 0
-panel           data/bgs/temple6/temple6_ground.png
+background      data/bgs/temple6D-boss/temple6_back.png      0.4 1 0 0 0 0 1 1 1 0
+panel           data/bgs/temple6D-boss/temple6_ground.png
 
 order           a
 direction       both

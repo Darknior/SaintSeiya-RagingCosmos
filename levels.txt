@@ -555,7 +555,23 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         6_Road-Ikki
+set         6B_Midboss_Shiva_Agora
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  ikki
+branch      temple6
+z           390 484
+file        data/levels/temple6B-midboss.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         6C_Road-Ikki
 maxplayers  4
 lives       3
 credits     10
@@ -566,28 +582,12 @@ custfade	100
 skipselect  ikki
 branch      temple6
 z           330 484
-file        data/levels/temple6.txt
+file        data/levels/temple6C-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         6_Midboss_Shiva_Agora-Ikki
-maxplayers  4
-lives       3
-credits     10
-cansave     2
-disablehof  0
-typemp      1
-custfade	100
-skipselect  ikki
-branch      temple6midboss
-z           390 484
-file        data/levels/temple6midboss.txt
-branch      gameover
-scene       data/scenes/gameover.txt
-end
-
-set         6_BOSS_Vierge-Ikki
+set         6D_BOSS_Vierge
 maxplayers  4
 lives       3
 credits     10
@@ -598,7 +598,7 @@ custfade	100
 skipselect  ikki
 branch      temple6boss
 z           390 484
-file        data/levels/temple6boss.txt
+file        data/levels/temple6D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end

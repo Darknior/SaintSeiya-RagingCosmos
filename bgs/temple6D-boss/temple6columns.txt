@@ -9,4 +9,4 @@ anim idle
     offset      0 0
     drawmethod  alpha 6
     drawmethod  channel 0.83
-    frame       data/bgs/temple6/temple6columns.png
+    frame       data/bgs/temple6D-boss/temple6columns.png

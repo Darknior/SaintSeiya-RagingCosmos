@@ -2,23 +2,23 @@ loadingbg		data/sprites/loading/loading_Ikki.png 1 -51 405 460 999 999 0
 
 music		data/music/Horloge-Du-Sanctuaire.ogg
 
-panel		data/bgs/temple6-road/temple6-road.png 
-frontpanel  data/bgs/temple6-road/layer1.png 
-background  	data/bgs/temple6-road/temple6-sky.png		1 1 0 0 0 0 1 1 1 0
-#bglayer  	data/bgs/temple6-road/clouds-back.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
-bglayer     data/bgs/temple6-road/temple6-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
-bglayer     data/bgs/temple6-road/temple6-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
-fglayer  	data/bgs/temple6-road/clouds-front.png		 -2000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+panel		data/bgs/temple6C-road/temple6-road.png 
+frontpanel  data/bgs/temple6C-road/layer1.png 
+background  	data/bgs/temple6C-road/temple6-sky.png		1 1 0 0 0 0 1 1 1 0
+#bglayer  	data/bgs/temple6C-road/clouds-back.png		 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.4
+bglayer     data/bgs/temple6C-road/temple6-mountains.png   	0.8 1 0 0 0 0 1 1 1 0
+bglayer     data/bgs/temple6C-road/temple6-temple.png  	0.5 1 0 0 0 0 1 9999 1 0
+fglayer  	data/bgs/temple6C-road/clouds-front.png		 -2000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 
 # RAIN
-fglayer  	data/bgs/temple6-road/rain/rain-1.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
-fglayer  	data/bgs/temple6-road/rain/rain-2.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
-fglayer  	data/bgs/temple6-road/rain/rain-3.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
-fglayer  	data/bgs/temple6-road/rain/rain-4.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
-fglayer  	data/bgs/temple6-road/rain/rain-5.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
-fglayer  	data/bgs/temple6-road/rain/rain-6.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
-fglayer  	data/bgs/temple6-road/rain/rain-7.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
-fglayer  	data/bgs/temple6-road/rain/rain-8.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6C-road/rain/rain-1.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6C-road/rain/rain-2.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6C-road/rain/rain-3.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6C-road/rain/rain-4.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6C-road/rain/rain-5.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6C-road/rain/rain-6.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6C-road/rain/rain-7.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
+fglayer  	data/bgs/temple6C-road/rain/rain-8.png		 200 0.6 0 0 0 0 0 -1 -1 1 6 0 0 0 0 2
 
 
 updatescript 	data/scripts/updatelevel/temple6_rain.c

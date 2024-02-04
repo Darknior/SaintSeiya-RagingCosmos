@@ -558,17 +558,17 @@ know  aphrodite_dialog2    data/bgs/temple12/aphrodite_dialog/aphrodite_dialog2.
 know temple2roadcolumns      data/bgs/temple2A-road/temple2roadcolumns.txt
 know temple2roadsky      data/bgs/temple2A-road/temple2roadsky.txt
 
-## TEMPLE 2B MIDBOSS
+## TEMPLE 2B MIDBOSS: JAKI
 know temple2B_coliseum      data/bgs/temple2B-midboss/temple2B_coliseum.txt
 
-## TEMPLE 3D
+## TEMPLE 3D BOSS: GEMINI
 know temple3_columns     data/bgs/temple3D-boss/columns/temple3_columns.txt
 know temple3_grid        data/bgs/temple3D-boss/grid/temple3_grid.txt
 
-## TEMPLE 4 ROAD
+## TEMPLE 4A ROAD
 know temple4roadcolumns      data/bgs/temple4A-road/temple4roadcolumns.txt
 
-## TEMPLE 4D
+## TEMPLE 4D BOSS: DEATHMASK
 know temple4_columns     data/bgs/temple4B-midboss/columns/temple4_columns.txt
 know temple4_heads       data/bgs/temple4B-midboss/heads/temple4_heads.txt
 know temple4_wallheads   data/bgs/temple4B-midboss/heads/temple4_wallheads.txt
@@ -576,22 +576,22 @@ know temple4_faces01     data/bgs/temple4B-midboss/faces/temple4_faces01.txt
 know temple4_faces02     data/bgs/temple4B-midboss/faces/temple4_faces02.txt
 know temple4_faces03     data/bgs/temple4B-midboss/faces/temple4_faces03.txt
 
-## TEMPLE 5D
+## TEMPLE 5D BOSS: LION
 know flame               data/bgs/temple5D-boss/flame/flame.txt
 know temple5columns      data/bgs/temple5D-boss/temple5columns.txt
 
-## TEMPLE 6 ROAD
+## TEMPLE 6B MIDBOSS: SHIVA AGORA
+know volcano_flame      data/bgs/temple6B-midboss/volcano_flame.txt
+
+## TEMPLE 6C ROAD
 know temple6rain      data/bgs/temple6-road/temple6rain.txt
-know temple6raindrop      data/bgs/temple6-road/temple6raindrop.txt
-know temple6raindrop2      data/bgs/temple6-road/temple6raindrop2.txt
-know temple6raindrop3      data/bgs/temple6-road/temple6raindrop3.txt
-know temple6raindrop4      data/bgs/temple6-road/temple6raindrop4.txt
+know temple6raindrop      data/bgs/temple6C-road/temple6raindrop.txt
+know temple6raindrop2      data/bgs/temple6C-road/temple6raindrop2.txt
+know temple6raindrop3      data/bgs/temple6C-road/temple6raindrop3.txt
+know temple6raindrop4      data/bgs/temple6C-road/temple6raindrop4.txt
 
-## TEMPLE 6 MIDBOSS
-know volcano_flame      data/bgs/temple6_midboss/volcano_flame.txt
-
-## TEMPLE 6
-know temple6columns      data/bgs/temple6/temple6columns.txt
+## TEMPLE 6D BOSS: SHAKA
+know temple6columns      data/bgs/temple6D-boss/temple6columns.txt
 
 ## TEMPLE 7
 know temple7columns      data/bgs/temple7/temple7columns.txt

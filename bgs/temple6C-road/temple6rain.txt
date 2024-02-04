@@ -1,0 +1,21 @@
+name            temple6rain
+type            panel
+setlayer        200
+speed	10
+facing          1
+offscreenkill 10000
+
+anim idle
+	 loop	1
+    offset      0 0
+    drawmethod  alpha 6
+    drawmethod  channel 0.6
+    delay	10
+    frame       data/bgs/temple6C-road/rain/rain-1.png
+    frame       data/bgs/temple6C-road/rain/rain-2.png
+    frame       data/bgs/temple6C-road/rain/rain-3.png
+    frame       data/bgs/temple6C-road/rain/rain-4.png
+    frame       data/bgs/temple6C-road/rain/rain-5.png
+    frame       data/bgs/temple6C-road/rain/rain-6.png
+    frame       data/bgs/temple6C-road/rain/rain-7.png
+    frame       data/bgs/temple6C-road/rain/rain-8.png
