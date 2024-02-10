@@ -1,0 +1,53 @@
+loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0
+
+music       data/music/MSC-tragic.ogg
+
+panel       data/bgs/temple7A-road/panel.png 
+fglayer   data/bgs/temple7A-road/front-layer.png        -25 -0.7 0 0 -484 0 0 -1 -1 0.99 6 0 0 0 0 1.5
+bglayer     data/bgs/temple7A-road/background.png        1 0 0 0 0 0 -1 -1 1 1 1 0 0 0 1
+fglayer  	data/bgs/temple7A-road/clouds-front.png		 -5000 0.8 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer     data/bgs/temple7A-road/temple10_cloudB.png        -25 -0.7 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+vbgspeed -2 0
+
+order       a
+direction   both
+settime     99
+noreset 2
+cameratype  0
+light        256 -44
+at        0
+shadowalpha 6
+shadowopacity 0
+at        0
+
+spawn1      60 30
+
+
+#-------------------------------------
+
+spawn       horloge-segment
+coords      368 89
+at          0
+
+spawn       horloge-balance
+coords      368 89
+at          0
+
+spawn       horloge-flame
+coords      387 47
+at          0
+
+
+spawn           soldier1
+boss 			1
+coords          650 390
+at              0
+
+group			1 1
+at				0
+
+spawn           dialog_wait
+flip            1
+boss			1
+coords          1 1
+at              0

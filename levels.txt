@@ -603,6 +603,22 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
+set         7A_Road-Shiryu
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  Shiryu
+branch      temple7
+z           378 484
+file        data/levels/temple7A-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
 set         7_BOSS_Balance-Shiryu
 maxplayers  4
 lives       3
