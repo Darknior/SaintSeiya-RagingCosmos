@@ -12,6 +12,7 @@ fglayer     data/bgs/temple7A-road/temple10_cloudB.png        -25 -0.7 0 0 -484 
 order       a
 direction   both
 settime     99
+rock 1
 #noreset 2
 #cameratype  0
 light        256 -44
