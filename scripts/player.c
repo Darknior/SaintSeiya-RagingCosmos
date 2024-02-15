@@ -223,3 +223,64 @@ void stunCounter(int Px, int Py, int Pz, int countLimit)
     changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
   }
 }
+
+void aniPEcount(int type, void ani, int pNumber, int eNumber) 
+{//Animation changer with PLAYER/ENEMY count (ELEVATORS)
+	void self	= getlocalvar("self");
+	int pCount	= openborvariant("count_players");
+	int eCount	= openborvariant("count_enemies");
+
+	//PLAYERS AND ENEMIES "LESS THAN COUNT"
+	if(type == 0){
+		if(pCount <= pNumber && eCount <= eNumber){
+			changeentityproperty(self, "animation", ani);
+		}
+	}
+
+	//PLAYERS AND ENEMIES "MORE THAN COUNT"
+	if(type == 1){
+		if(pCount >= pNumber && eCount >= eNumber){
+			changeentityproperty(self, "animation", ani);
+		}
+	}
+	
+	//PLAYERS "LESS THAN COUNT" AND ENEMIES "MORE THAN COUNT"
+	if(type == 2){
+		if(pCount <= pNumber && eCount >= eNumber){
+			changeentityproperty(self, "animation", ani);
+		}
+	}
+
+	//PLAYERS "MORE THAN COUNT" AND ENEMIES "LESS THAN COUNT"
+	if(type == 3){
+		if(pCount >= pNumber && eCount <= eNumber){
+			changeentityproperty(self, "animation", ani);
+		}
+	}
+}
+
+void reseTime()
+{//Reset game time to 99
+
+	if(getglobalvar("gameTimer") == "on"){changeopenborvariant("game_time", 39600);}
+}
+
+void bgSpeed(void type, float speed)
+{//Changes bgspeed
+
+	changelevelproperty(type, speed);
+}
+
+void zeroWait(int levelPos)
+{//Change level "Wait" to 0 to spawn next group
+
+	changeopenborvariant("waiting", 0);
+	if(levelPos != NULL()){changeopenborvariant("levelpos", levelPos);}
+}
+
+void changeType(void type)
+{//Change current type
+	void self = getlocalvar("self");
+
+	changeentityproperty(self, "type", type);
+}

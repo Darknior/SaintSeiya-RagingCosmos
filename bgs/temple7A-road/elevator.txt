@@ -1,0 +1,143 @@
+name			temple7A_elevator
+type			enemy
+subtype			notgrab
+subject_to_wall	0
+subject_to_minz	0
+subject_to_maxz	0
+subject_to_hole	0
+health			1
+shadow			0
+nomove			1 1
+nodrop			2
+noquake			1 1
+stealth			2
+offscreenkill	5000
+setlayer		-6
+onmovezscript	data/scripts/onmove/elevators.c
+thinkscript		data/scripts/think/elevators.c
+animationscript	data/scripts/player.c
+
+anim spawn
+	loop	0
+	delay	8
+	offset	1 1
+	frame	data/bgs/temple7A-road/empty.png
+	frame	data/bgs/temple7A-road/empty.png
+
+anim idle
+	loop	1
+	delay	32
+	offset	1 1
+	@cmd aniPEcount 3 openborconstant("ANI_FOLLOW1") 1 1
+	frame	data/bgs/temple7A-road/empty.png
+	frame	data/bgs/temple7A-road/empty.png
+	
+anim follow1
+	loop	1 3 5
+	delay	16
+	offset	1 1
+	#@cmd sound "data/sounds/sor3_elevator.wav"
+	#@cmd quake "gradual" 10 4 1
+	@cmd reseTime
+	frame	data/bgs/temple7A-road/empty.png
+		delay	-1000
+	@cmd dasher 0 0 1
+	@cmd bgSpeed "vbgspeed" -6.5
+	frame	data/bgs/temple7A-road/empty.png
+		delay	32
+	@cmd zeroWait
+	#@cmd quake "regular" 2 4 4
+	#@cmd sound "data/sounds/sor3_elevator2.wav"
+	#@cmd sound "data/sounds/sor2_elevator2.wav"
+	frame	data/bgs/temple7A-road/empty.png
+	@cmd aniPEcount 3 openborconstant("ANI_FOLLOW2") 1 1
+	frame	data/bgs/temple7A-road/empty.png
+	frame	data/bgs/temple7A-road/empty.png
+	
+anim follow2
+	loop	1 3 5
+	delay	16
+	offset	1 1
+	#@cmd sound "data/sounds/sor3_elevator.wav"
+	#@cmd quake "gradual" 10 4 1
+	@cmd reseTime
+	frame	data/bgs/temple7A-road/empty.png
+		delay	-1000
+	@cmd dasher 0 0 1
+	@cmd bgSpeed "vbgspeed" -6.5
+	frame	data/bgs/temple7A-road/empty.png
+		delay	32
+	@cmd zeroWait
+	#@cmd quake "regular" 2 4 4
+	#@cmd sound "data/sounds/sor3_elevator2.wav"
+	#@cmd sound "data/sounds/sor2_elevator2.wav"
+	frame	data/bgs/temple7A-road/empty.png
+	@cmd aniPEcount 3 openborconstant("ANI_FOLLOW3") 1 1
+	frame	data/bgs/temple7A-road/empty.png
+	frame	data/bgs/temple7A-road/empty.png
+	
+anim follow3
+	loop	1 3 5
+	delay	16
+	offset	1 1
+	#@cmd sound "data/sounds/sor3_elevator.wav"
+	#@cmd quake "gradual" 10 4 1
+	@cmd reseTime
+	frame	data/bgs/temple7A-road/empty.png
+		delay	-1000
+	@cmd dasher 0 0 1
+	@cmd bgSpeed "vbgspeed" -6.5
+	frame	data/bgs/temple7A-road/empty.png
+		delay	32
+	@cmd zeroWait
+	#@cmd quake "regular" 2 4 4
+	#@cmd sound "data/sounds/sor3_elevator2.wav"
+	#@cmd sound "data/sounds/sor2_elevator2.wav"
+	frame	data/bgs/temple7A-road/empty.png
+	@cmd aniPEcount 3 openborconstant("ANI_FOLLOW4") 1 1
+	frame	data/bgs/temple7A-road/empty.png
+	frame	data/bgs/temple7A-road/empty.png
+
+anim follow4
+	loop	1 3 5
+	delay	16
+	offset	1 1
+	#@cmd sound "data/sounds/sor3_elevator.wav"
+	#@cmd quake "gradual" 10 4 1
+	@cmd reseTime
+	frame	data/bgs/temple7A-road/empty.png
+		delay	-1000
+	@cmd dasher 0 0 1
+	@cmd bgSpeed "vbgspeed" -6.5
+	frame	data/bgs/temple7A-road/empty.png
+		delay	32
+	@cmd zeroWait
+	#@cmd quake "regular" 2 4 4
+	#@cmd sound "data/sounds/sor3_elevator2.wav"
+	#@cmd sound "data/sounds/sor2_elevator2.wav"
+	frame	data/bgs/temple7A-road/empty.png
+	@cmd aniPEcount 3 openborconstant("ANI_FOLLOW5") 1 1
+	frame	data/bgs/temple7A-road/empty.png
+	frame	data/bgs/temple7A-road/empty.png
+
+anim follow5
+	loop	0
+	delay	16
+	offset	1 1
+	#@cmd sound "data/sounds/sor3_elevator.wav"
+	#@cmd quake "gradual" 10 4 1
+	@cmd reseTime
+	frame	data/bgs/temple7A-road/empty.png
+		delay	-1000
+	@cmd dasher 0 0 1
+	@cmd bgSpeed "vbgspeed" -6.5
+	frame	data/bgs/temple7A-road/empty.png
+		delay	32
+	@cmd zeroWait
+	#@cmd quake "regular" 2 4 4
+	#@cmd sound "data/sounds/sor3_elevator2.wav"
+	#@cmd sound "data/sounds/sor2_elevator2.wav"
+	frame	data/bgs/temple7A-road/empty.png
+		delay	-1000
+	@cmd changeType openborconstant("TYPE_NONE")
+	frame	data/bgs/temple7A-road/empty.png

@@ -594,6 +594,7 @@ know temple6raindrop4      data/bgs/temple6C-road/temple6raindrop4.txt
 know temple6columns      data/bgs/temple6D-boss/temple6columns.txt
 
 ## TEMPLE 7
+know temple7A_elevator   data/bgs/temple7A-road/elevator.txt
 know temple7columns      data/bgs/temple7/temple7columns.txt
 
 ## TEMPLE 10 ROAD
