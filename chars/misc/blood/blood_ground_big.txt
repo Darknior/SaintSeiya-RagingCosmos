@@ -10,10 +10,10 @@ anim	idle
 	delay	15
 	offset	200 10
 	drawmethod alpha 6
-        drawmethod  channel 0.99
+        drawmethod  channel 0.6
 	frame	data/chars/misc/blood/blood_ground_big/blood_ground_big-0.png
 	frame	data/chars/misc/blood/blood_ground_big/blood_ground_big-1.png
-	delay	150
+	delay	2000
 	frame	data/chars/misc/blood/blood_ground_big/blood_ground_big-2.png
 	delay	20
         drawmethod  channel 0.90
