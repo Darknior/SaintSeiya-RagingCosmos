@@ -122,6 +122,7 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 		drawOverlay();
 		drawRush();
 		timeOver();
+		quakeEffect();
 	}
 	
 }// MAIN END
@@ -439,6 +440,97 @@ void rushFunction(void player)
 			changedrawmethod(NULL(),"transbg", 1);
 			drawstringtoscreen(getentityvar(player, "rushScreen"), 0, 0, font, text);
 			drawscreen(getentityvar(player, "rushScreen"), x-(scale/divider), y-(scale/divider), openborvariant("PLAYER_MAX_Z"));
+		}
+	}
+}
+
+void quakeEffect()
+{//Custom scripted quake
+	void type		= getglobalvar("quakeType");
+	float time		= openborvariant("elapsed_time");
+	float intensity	= getglobalvar("quakeIntensity"); //SCREEN MOVEMENT IN PIXELS
+	float delay		= getglobalvar("quakeDelay"); //DELAY BETWEEN EVERY SHAKE EVENT
+	float duration	= getglobalvar("quakeDuration"); //TOTAL QUAKE DURATION ONLY USED BY THE "REGULAR" TYPE
+	int reset		= 0; //FINISH THE QUAKE EFFECT, DON'T CHANGE THIS!!!!!
+	int reduce		= 1;
+
+	//GRADUAL EFFECT, DURATION IS MANAGED BY INTENSITY
+	if(type == "gradual"){
+		if(time > getglobalvar("quakeEnable")){
+
+			//SIMPLE SWITCH TO ALTERNATE BETWEEN SHAKE/NO-SHAKE
+			if(getglobalvar("quakeSwitch") == NULL()){
+				setglobalvar("quakeSwitch", 1);
+			}
+			else
+			{
+				setglobalvar("quakeSwitch", NULL());
+			}
+
+			//APPLY SHAKE EFFECT IN THE CURRENT LEVEL, AVOID NEGATIVE NUMBERS
+			if(getglobalvar("quakeIntensity") > 0){
+				if(getglobalvar("quakeSwitch") == 1){
+					changeopenborvariant("gfx_y_offset_adj", getglobalvar("quakeIntensity"));
+					setglobalvar("quakeIntensity", getglobalvar("quakeIntensity")-duration);
+				}
+				else
+				{
+					changeopenborvariant("gfx_y_offset_adj", reset);
+				}
+				setglobalvar("quakeEnable", time+delay);
+			}else
+
+			//CLEAR ALL QUAKE VARIABLES AT THE END OF THE QUAKE EFFECT 
+			{
+				changelevelproperty("quake", reset);
+				changeopenborvariant("gfx_y_offset_adj", reset);
+				setglobalvar("quakeEnable", NULL());
+				setglobalvar("quakeType", NULL());
+				setglobalvar("quakeIntensity", NULL());
+				setglobalvar("quakeDelay", NULL());
+				setglobalvar("quakeDuration", NULL());
+				setglobalvar("quakeSwitch", NULL());
+			}
+		}
+	}else
+
+	//REGULAR EFFECT, DURATION IS MANAGED BY TIME
+	if(type == "regular"){
+		if(time > getglobalvar("quakeEnable")){
+
+			//SIMPLE SWITCH TO ALTERNATE BETWEEN SHAKE/NO-SHAKE
+			if(getglobalvar("quakeSwitch") == NULL()){
+				setglobalvar("quakeSwitch", 1);
+			}
+			else
+			{
+				setglobalvar("quakeSwitch", NULL());
+			}
+
+			//APPLY SHAKE EFFECT IN THE CURRENT LEVEL, AVOID NEGATIVE NUMBERS
+			if(getglobalvar("quakeDuration") > 0){
+				if(getglobalvar("quakeSwitch") == 1){
+					changeopenborvariant("gfx_y_offset_adj", getglobalvar("quakeIntensity"));
+					setglobalvar("quakeDuration", getglobalvar("quakeDuration")-reduce);
+				}
+				else
+				{
+					changeopenborvariant("gfx_y_offset_adj", reset);
+				}
+				setglobalvar("quakeEnable", time+delay);
+			}else
+
+			//CLEAR ALL QUAKE VARIABLES AT THE END OF THE QUAKE EFFECT 
+			{
+				changelevelproperty("quake", reset);
+				changeopenborvariant("gfx_y_offset_adj", reset);
+				setglobalvar("quakeEnable", NULL());
+				setglobalvar("quakeType", NULL());
+				setglobalvar("quakeIntensity", NULL());
+				setglobalvar("quakeDelay", NULL());
+				setglobalvar("quakeDuration", NULL());
+				setglobalvar("quakeSwitch", NULL());
+			}
 		}
 	}
 }

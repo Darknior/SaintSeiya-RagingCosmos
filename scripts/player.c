@@ -284,3 +284,20 @@ void changeType(void type)
 
 	changeentityproperty(self, "type", type);
 }
+
+void quake(void type, float intensity, float delay, float duration)
+{//Activate the quake effect and define parameters
+
+	//CLEAR ALL NECESSARY VARIABLES
+	setglobalvar("quakeEnable", NULL());
+	setglobalvar("quakeSwitch", NULL());
+	changelevelproperty("quake", 0);
+	changeopenborvariant("gfx_y_offset_adj", 0);
+
+	//APPLY THE NEW VALUES
+	setglobalvar("quakeType", type);
+	setglobalvar("quakeIntensity", intensity);
+	setglobalvar("quakeDelay", delay);
+	setglobalvar("quakeDuration", duration);
+	setglobalvar("quakeEnable", openborvariant("elapsed_time"));
+}

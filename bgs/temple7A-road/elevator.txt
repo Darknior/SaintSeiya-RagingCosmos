@@ -37,7 +37,7 @@ anim follow1
 	delay	16
 	offset	1 1
 	#@cmd sound "data/sounds/sor3_elevator.wav"
-	#@cmd quake "gradual" 10 4 1
+	@cmd quake "gradual" 10 4 1
 	@cmd reseTime
 	frame	data/bgs/temple7A-road/empty.png
 		delay	-1000
@@ -46,7 +46,7 @@ anim follow1
 	frame	data/bgs/temple7A-road/empty.png
 		delay	32
 	@cmd zeroWait
-	#@cmd quake "regular" 2 4 4
+	@cmd quake "regular" 2 4 4
 	#@cmd sound "data/sounds/sor3_elevator2.wav"
 	#@cmd sound "data/sounds/sor2_elevator2.wav"
 	frame	data/bgs/temple7A-road/empty.png
@@ -59,7 +59,7 @@ anim follow2
 	delay	16
 	offset	1 1
 	#@cmd sound "data/sounds/sor3_elevator.wav"
-	#@cmd quake "gradual" 10 4 1
+	@cmd quake "gradual" 10 4 1
 	@cmd reseTime
 	frame	data/bgs/temple7A-road/empty.png
 		delay	-1000
@@ -68,7 +68,7 @@ anim follow2
 	frame	data/bgs/temple7A-road/empty.png
 		delay	32
 	@cmd zeroWait
-	#@cmd quake "regular" 2 4 4
+	@cmd quake "regular" 2 4 4
 	#@cmd sound "data/sounds/sor3_elevator2.wav"
 	#@cmd sound "data/sounds/sor2_elevator2.wav"
 	frame	data/bgs/temple7A-road/empty.png
@@ -81,7 +81,7 @@ anim follow3
 	delay	16
 	offset	1 1
 	#@cmd sound "data/sounds/sor3_elevator.wav"
-	#@cmd quake "gradual" 10 4 1
+	@cmd quake "gradual" 10 4 1
 	@cmd reseTime
 	frame	data/bgs/temple7A-road/empty.png
 		delay	-1000
@@ -90,7 +90,7 @@ anim follow3
 	frame	data/bgs/temple7A-road/empty.png
 		delay	32
 	@cmd zeroWait
-	#@cmd quake "regular" 2 4 4
+	@cmd quake "regular" 2 4 4
 	#@cmd sound "data/sounds/sor3_elevator2.wav"
 	#@cmd sound "data/sounds/sor2_elevator2.wav"
 	frame	data/bgs/temple7A-road/empty.png
@@ -103,7 +103,7 @@ anim follow4
 	delay	16
 	offset	1 1
 	#@cmd sound "data/sounds/sor3_elevator.wav"
-	#@cmd quake "gradual" 10 4 1
+	@cmd quake "gradual" 10 4 1
 	@cmd reseTime
 	frame	data/bgs/temple7A-road/empty.png
 		delay	-1000
@@ -112,7 +112,7 @@ anim follow4
 	frame	data/bgs/temple7A-road/empty.png
 		delay	32
 	@cmd zeroWait
-	#@cmd quake "regular" 2 4 4
+	@cmd quake "regular" 2 4 4
 	#@cmd sound "data/sounds/sor3_elevator2.wav"
 	#@cmd sound "data/sounds/sor2_elevator2.wav"
 	frame	data/bgs/temple7A-road/empty.png
@@ -125,7 +125,7 @@ anim follow5
 	delay	16
 	offset	1 1
 	#@cmd sound "data/sounds/sor3_elevator.wav"
-	#@cmd quake "gradual" 10 4 1
+	@cmd quake "gradual" 10 4 1
 	@cmd reseTime
 	frame	data/bgs/temple7A-road/empty.png
 		delay	-1000
@@ -134,7 +134,7 @@ anim follow5
 	frame	data/bgs/temple7A-road/empty.png
 		delay	32
 	@cmd zeroWait
-	#@cmd quake "regular" 2 4 4
+	@cmd quake "regular" 2 4 4
 	#@cmd sound "data/sounds/sor3_elevator2.wav"
 	#@cmd sound "data/sounds/sor2_elevator2.wav"
 	frame	data/bgs/temple7A-road/empty.png
