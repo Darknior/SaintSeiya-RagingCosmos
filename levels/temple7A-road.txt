@@ -4,10 +4,9 @@ music       data/music/MSC-tragic.ogg
 
 panel       data/bgs/temple7A-road/panel.png 
 bglayer     data/bgs/temple7A-road/background.png        1 0 0 0 0 0 -1 -1 1 1 1 0 0 0 1
-fglayer   data/bgs/temple7A-road/front-layer.png        -25 -0.7 0 0 -484 0 0 -1 -1 1 0 0 0 0 0 1.5
+fglayer   data/bgs/temple7A-road/front-layer.png        -25 1 0 0 -484 0 0 -1 -1 1 0 0 0 0 0 1.5
 fglayer  	data/bgs/temple7A-road/clouds-front.png		 -5000 0.8 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 fglayer     data/bgs/temple7A-road/temple10_cloudB.png        -25 -0.7 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
-#vbgspeed -2 0
 
 order       a
 direction   both
