@@ -21,7 +21,7 @@ shadowalpha 6
 shadowopacity 0
 at        0
 
-spawn1      60 30
+spawn1      60 30 300
 
 
 #-------------------------------------

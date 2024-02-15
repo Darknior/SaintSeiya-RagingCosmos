@@ -19,7 +19,7 @@ jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
-noquake     0 1         # Secoue l’écran qd on tombe au sol
+noquake     0 0         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 throwdamage 20          # Degats recus si on est projetés
 grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
@@ -33,7 +33,7 @@ modelflag   3           # L'animation et la liste d'armes sont copiées (obligat
 death       1           # Active l'animation de mort
 nolife      1           # Needed when a player hits another, once the heroes icons are bigger than regular enemies icons.
 sleepwait   1000        # Temps en centisecondes avant de jouer ldata/chars/select.wav'anim sleep
-
+diesound    data/chars/shiryu/sounds/die.wav
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière par defaut (animation)
