@@ -49,23 +49,12 @@ item diamantecd
 at 0
 
 
-spawn soldier_shield
+spawn soldier3
 alias konstantinos
 coords 505 327
 item diamantecd
 at 0
 
-spawn soldier_basic
-alias konstantinos
-coords 582 454
-item diamantecd
-at 0
-
-spawn soldier_pant
-alias konstantinos
-coords 329 299
-item diamantecd
-at 0
 
 spawn soldier3
 alias Anthonin

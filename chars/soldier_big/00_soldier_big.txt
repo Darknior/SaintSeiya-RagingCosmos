@@ -32,7 +32,7 @@ modelflag   3           # L'animation et la liste d'armes sont copiées (obligat
 death       1           # Active l'animation de mort
 nolife      0           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
-
+diesound    data/chars/soldier_big/sounds/big06.wav
 atchain     0           # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        fall_dust # Effet de poussière quand on tombe (animation)
@@ -149,63 +149,58 @@ anim pain
     frame    data/chars/soldier_big/03.png
   
 anim fall
+    landframe 4
     loop    0
     delay    10
     offset    120 187
     bbox 66 65 85 130
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/fall1.png
+    frame    data/chars/soldier_big/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_big/fall3.png
+    delay    10
+    frame    data/chars/soldier_big/fall4.png
     bbox 29 150 165 50
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/fall4.png
+    frame    data/chars/soldier_big/fall5.png
+
     
 anim fall8 # touche les enemis quand il est projetté
+    landframe 4
     loop    0
     delay    10
     offset    120 187
     attack 66 65 85 130 4 1 0 0 10 12
     bbox 66 65 85 130
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/fall1.png
+    frame    data/chars/soldier_big/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_big/fall3.png
+    delay    10
+    frame    data/chars/soldier_big/fall4.png
     bbox 29 150 165 50
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/fall4.png
+    frame    data/chars/soldier_big/fall5.png
 
 anim fall9 # touche les enemis quand il est projetté
+    landframe 4
     loop    0
     delay    10
     offset    120 187
     attack 66 65 85 130 4 1 0 0 10 12
     bbox 66 65 85 130
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/fall1.png
+    frame    data/chars/soldier_big/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_big/fall3.png
+    delay    10
+    frame    data/chars/soldier_big/fall4.png
     bbox 29 150 165 50
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/fall4.png
+    frame    data/chars/soldier_big/fall5.png
 
 anim rise # Se releve avec compteur de chuttes
     loop    0
@@ -255,24 +250,23 @@ anim pain20 # Blood pain
     frame    data/chars/soldier_big/03.png
     
 anim fall20 # blood fall
+    landframe 4
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -40 0 30 0 0
     loop    0
     delay    10
     offset    120 187
     bbox 66 65 85 130
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
+    sound    data/chars/soldier_big/sounds/bguy12.wav
+    frame    data/chars/soldier_big/fall1.png
+    frame    data/chars/soldier_big/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_big/fall3.png
+    delay    10
+    frame    data/chars/soldier_big/fall4.png
     bbox 29 150 165 50
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/fall4.png
+    frame    data/chars/soldier_big/fall5.png
  
 anim pain15# BURN PAIN
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 1 0
@@ -289,21 +283,18 @@ anim fall15# BURN PAIN Ground
     delay    10
     offset    120 187
     bbox 66 65 85 130
+    landframe 4
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/fall1.png
+    frame    data/chars/soldier_big/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_big/fall3.png
+    delay    10
+    frame    data/chars/soldier_big/fall4.png
     bbox 29 150 165 50
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/fall4.png
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 10 1 0
-    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/fall5.png
 
 anim pain10# ICE PAIN
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
@@ -351,26 +342,23 @@ anim pain30# Shock Pain
     frame    data/chars/soldier_big/03.png
  
 anim fall30# Shock PAIN Ground
+    landframe 4
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
     loop    0
     delay    10
     offset    120 187
     bbox 66 65 85 130
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
-    frame    data/chars/soldier_big/03.png
+    frame    data/chars/soldier_big/fall1.png
+    frame    data/chars/soldier_big/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_big/fall3.png
+    delay    10
+    frame    data/chars/soldier_big/fall4.png
     bbox 29 150 165 50
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
-    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/fall4.png
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 5 0 0
-    frame    data/chars/soldier_big/04.png
+    frame    data/chars/soldier_big/fall5.png
 
 #//Basic Attacks animations/////////////////////////////////////////////////
 
