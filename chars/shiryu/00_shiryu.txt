@@ -816,7 +816,6 @@ anim death
     landframe  12
     offset   114 130
     delay    10
-    sound    data/chars/shiryu/sounds/die.wav
     frame    data/chars/shiryu/death1.png
     frame    data/chars/shiryu/death2.png
     frame    data/chars/shiryu/death3.png
