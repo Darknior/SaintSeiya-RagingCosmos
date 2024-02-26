@@ -1,0 +1,28 @@
+name   special
+health  1
+type	none
+speed	0
+nomove  1
+alpha	1
+
+anim idle
+	 loop    0
+	 delay   5
+	 offset  189 371	
+	 frame   data/chars/misc/playno/1.gif
+	 frame   data/chars/misc/playno/2.gif
+	 frame   data/chars/misc/playno/3.gif
+	 frame   data/chars/misc/playno/4.gif
+	 frame   data/chars/misc/playno/5.gif
+	 frame   data/chars/misc/playno/6.gif
+	 frame   data/chars/misc/playno/7.gif
+	 frame   data/chars/misc/playno/8.gif
+	 frame   data/chars/misc/playno/empty.gif
+
+
+
+
+
+
+
+
