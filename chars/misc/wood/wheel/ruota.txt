@@ -1,0 +1,44 @@
+name	ruota
+type	none
+shadow	0
+
+antigravity	100
+offscreenkill 9999999
+palette DATA\bgs\carro\ruota1
+
+alternatepal DATA/bgs/fulmine#map 1
+#alternatepal DATA/bgs/carro/axruota.gif
+#alternatepal DATA/bgs/carro/tyruota.gif
+#alternatepal DATA/bgs/carro/giruota.gif
+#alternatepal DATA/bgs/carro/adruota.gif
+
+#script data/scripts/common/decortn.c
+
+anim idle
+	loop	1
+	delay	5
+	offset	43 21
+@script
+void self = getlocalvar("self");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+@end_script
+	frame	DATA\bgs\carro\ruota1
+	frame	DATA\bgs\carro\ruota2
+	frame	DATA\bgs\carro\ruota3
+	frame	DATA\bgs\carro\ruota4
+
+
+
+
+
+
+
+
+
+
+
+
+

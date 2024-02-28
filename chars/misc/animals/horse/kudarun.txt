@@ -1,0 +1,19 @@
+name		KudaRun
+type    	none
+gfxshadow	1
+offscreenkill	300
+subject_to_obstacle 0
+
+
+anim	idle
+	loop	1
+	delay	8
+	jumpframe 1 0 2 0
+	offset	125 245
+	sound	data/sounds/hoof2.wav
+	frame	data/chars/misc/animals/Kuda1.png
+	frame	data/chars/misc/animals/Kuda2.png
+	frame	data/chars/misc/animals/Kuda3.png
+	frame	data/chars/misc/animals/Kuda4.png
+	frame	data/chars/misc/animals/Kuda5.png
+	frame	data/chars/misc/animals/Kuda6.png

@@ -1,0 +1,124 @@
+name	topo
+health	1
+speed	18
+jumpheight	4
+type	npc
+aimove avoid
+shadow	1
+bounce	0
+nodieblink  0 #3
+death	1
+noatflash	1
+flash	chomp
+cantgrab	1
+nolife	1
+throw	2 2
+score 0 -1 #necessario per evitare life up gratuiti ed inspiegabili
+
+#antigravity 100
+
+subject_to_screen 1
+subject_to_obstacle 0
+subject_to_hole 0
+
+palette data/bgs/sentiero/topo/topc000
+
+#onblockwscript data/scripts/common/eobws.c
+
+anim spawn
+	loop	0
+	delay	3
+	offset	23 13
+	frame	data/bgs/sentiero/topo/topc000
+
+anim idle
+	loop	1
+	offset	11 12
+	bbox	3 0 16 13
+	delay	45
+	frame	data/bgs/sentiero/topo/topsn000
+	delay	7
+	frame	data/bgs/sentiero/topo/topsn001
+	frame	data/bgs/sentiero/topo/topsn002
+	frame	data/bgs/sentiero/topo/topsn003
+	frame	data/bgs/sentiero/topo/topsn004
+	delay	12
+	frame	data/bgs/sentiero/topo/topsn005
+	delay	25
+	frame	data/bgs/sentiero/topo/topsn006
+	delay	12
+	frame	data/bgs/sentiero/topo/topsn007
+	delay	7
+	frame	data/bgs/sentiero/topo/topsn008
+	frame	data/bgs/sentiero/topo/topsn009
+	frame	data/bgs/sentiero/topo/topsn010
+	frame	data/bgs/sentiero/topo/topsn011
+	frame	data/bgs/sentiero/topo/topsn012
+
+anim walk
+	loop	1
+	offset	23 13
+	bbox	16 0 15 14
+	delay	7
+	frame	data/bgs/sentiero/topo/topc000
+	frame	data/bgs/sentiero/topo/topc001
+	frame	data/bgs/sentiero/topo/topc002
+	frame	data/bgs/sentiero/topo/topc003
+
+anim backwalk
+	loop	1
+	offset	23 13
+	bbox	16 0 15 14
+	delay	7
+	frame	data/bgs/sentiero/topo/topc000
+	frame	data/bgs/sentiero/topo/topc001
+	frame	data/bgs/sentiero/topo/topc002
+	frame	data/bgs/sentiero/topo/topc003
+
+anim death
+	loop 	0
+	delay 	8
+	offset	23 12
+	frame	data/bgs/sentiero/topo/topm000
+	frame	data/bgs/sentiero/topo/topm001
+@script
+void self = getlocalvar("self");
+
+int x = getentityproperty(self, "x");
+int z = getentityproperty(self, "z");
+int a = getentityproperty(self, "a");
+int lx = openborvariant("xpos");
+void name;
+void e;
+int i;
+if(frame==2)
+	{
+	i = 25+rand()%25; //da 0 a 50
+	if(i>=0 && i<=50)
+		{
+		name = "Half_Energy";
+		}
+	if(i>=-50 && i <0)
+		{
+		name = "Energy_Block";
+		}
+	clearspawnentry();
+	setspawnentry("name", name);
+	setspawnentry("coords", x-lx, z, a);
+	e=spawn();
+	tossentity(e, 3, 0, 0);
+	}
+@end_script
+	frame	data/bgs/sentiero/topo/topm002
+	frame	data/bgs/sentiero/topo/topm003
+	frame	data/bgs/sentiero/topo/topm004
+	delay	55
+	frame	data/bgs/sentiero/topo/topm005
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+name	pipist
+speed 0
+type	none
+shadow	0
+offscreenkill 9999999
+antigravity	100
+
+palette DATA\bgs\sentiero\pipi000
+
+alternatepal DATA/bgs/fulmine #map 1
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	185 128
+@script
+void self = getlocalvar("self");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+@end_script
+	frame	DATA\bgs\sentiero\pipi000
+	frame	DATA\bgs\sentiero\pipi001
+	frame	DATA\bgs\sentiero\pipi002
+	frame	DATA\bgs\sentiero\pipi003
+	frame	DATA\bgs\sentiero\pipi004
+	frame	DATA\bgs\sentiero\pipi005
+	frame	DATA\bgs\sentiero\pipi006
+	frame	DATA\bgs\sentiero\pipi007
+	frame	DATA\bgs\sentiero\pipi008
+	frame	DATA\bgs\sentiero\pipi009
+	frame	DATA\bgs\sentiero\pipi010
+	frame	DATA\bgs\sentiero\pipi011
+	frame	DATA\bgs\sentiero\pipi012
+	frame	DATA\bgs\sentiero\pipi013
+	frame	DATA\bgs\sentiero\pipi014
+	frame	DATA\bgs\sentiero\pipi015
+	frame	DATA\bgs\sentiero\pipi016
+	frame	DATA\bgs\sentiero\pipi017
+	frame	DATA\bgs\sentiero\pipi018
+	frame	DATA\bgs\sentiero\pipi019
+	frame	DATA\bgs\sentiero\pipi020
+	frame	DATA\bgs\sentiero\pipi021
+	frame	DATA\bgs\sentiero\pipi022
+	frame	DATA\bgs\sentiero\pipi023
+	frame	DATA\bgs\sentiero\pipi024
+	frame	DATA\bgs\sentiero\pipi025
+	frame	DATA\bgs\sentiero\pipi026
+	frame	DATA\bgs\sentiero\pipi027
+	frame	DATA\bgs\sentiero\pipi028
+	frame	DATA\bgs\sentiero\pipi029
+	frame	DATA\bgs\sentiero\pipi030
+	frame	DATA\bgs\sentiero\pipi031
+	frame	DATA\bgs\sentiero\pipi032
+	frame	DATA\bgs\sentiero\pipi033
+	frame	DATA\bgs\sentiero\pipi034
+	frame	DATA\bgs\sentiero\pipi035
+	frame	DATA\bgs\sentiero\pipi036
+	frame	DATA\bgs\sentiero\pipi037
+
+	delay	800
+	frame 	data/varie/dust/run1
+
+
+
+
+
+
+
+
+
+
+
+

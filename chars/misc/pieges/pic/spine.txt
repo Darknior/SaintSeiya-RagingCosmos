@@ -1,0 +1,57 @@
+name	spine
+health	1
+type	obstacle
+#shadow	0
+nodieblink 2 #3 non funge per obstacle
+death	1
+gfxshadow	0
+noatflash	1
+hitflash	blood
+flash	none
+nolife	1
+offscreenkill 9999999
+candamage	player
+hostile		player
+
+
+anim idle
+	loop	1
+	delay	2
+	fastattack 1
+	offset	51 69
+	bbox	29 34 47 58
+hitflash	blood
+#	hitfx	data/voices/none.wav
+	attack	47 41 14 43 20 1 0 0 0 20
+	frame	data/bgs/battle/spiR001
+	attack 0 0 0 0 0 0 
+	frame	data/bgs/battle/spiR001
+
+anim pain
+	loop	1
+	delay	7
+	offset	51 69
+	frame	data/bgs/battle/spiR002
+	frame	data/bgs/battle/spiR003
+
+
+anim death
+	loop	0
+	offset	51 69
+	delay	7
+#@script
+#void self = getlocalvar("self");
+#changeentityproperty(self, "velocity", -7, 0, 0);
+#@end_script
+sound	data/voices/cassabr.wav
+	frame	data/bgs/battle/spiR002
+	frame	data/bgs/battle/spiR003
+	frame	data/bgs/battle/spiR004
+	frame	data/bgs/battle/spiR005
+	frame	data/bgs/battle/spiR006
+	frame	data/bgs/battle/spiR007
+	frame	data/bgs/battle/spiR008
+	frame	data/bgs/battle/spiR009
+	frame	data/bgs/battle/spiR010
+
+

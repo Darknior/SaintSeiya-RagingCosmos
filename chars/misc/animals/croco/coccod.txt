@@ -1,0 +1,46 @@
+name	coccod
+speed 0
+type	none
+shadow	0
+offscreenkill 9999999
+antigravity	100
+
+palette DATA\bgs\palude\all1
+
+alternatepal DATA/bgs/fulmine #map 1
+
+anim idle
+	loop	1
+	offset	150 47
+	delay	25
+@script
+void self = getlocalvar("self");
+changeentityproperty(self, "velocity", 0.05, 0, 0);
+@end_script
+	frame 	DATA\bgs\palude\all1
+	frame 	DATA\bgs\palude\all2
+	frame 	DATA\bgs\palude\all3
+	frame 	DATA\bgs\palude\all4
+	frame 	DATA\bgs\palude\all5
+	frame 	DATA\bgs\palude\all6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

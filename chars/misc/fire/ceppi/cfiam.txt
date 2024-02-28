@@ -1,0 +1,52 @@
+name	cfiam
+type	none
+shadow	0
+
+alpha 1
+
+antigravity	100
+offscreenkill 9999999
+
+palette DATA\bgs\notti\ceppi\fire000
+
+alternatepal DATA/bgs/fulmine #map 1
+
+#script data/scripts/common/decortn.c
+
+anim idle
+	loop	1
+	delay	5
+	offset	45 137
+@script
+void self = getlocalvar("self");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+@end_script
+	frame	DATA\bgs\notti\ceppi\fire000
+	frame	DATA\bgs\notti\ceppi\fire001
+	frame	DATA\bgs\notti\ceppi\fire002
+	frame	DATA\bgs\notti\ceppi\fire003
+	frame	DATA\bgs\notti\ceppi\fire004
+	frame	DATA\bgs\notti\ceppi\fire005
+	frame	DATA\bgs\notti\ceppi\fire006
+	frame	DATA\bgs\notti\ceppi\fire007
+	frame	DATA\bgs\notti\ceppi\fire008
+	frame	DATA\bgs\notti\ceppi\fire009
+	frame	DATA\bgs\notti\ceppi\fire010
+	frame	DATA\bgs\notti\ceppi\fire011
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+name		HorseRun
+type    	none
+gfxshadow	1
+offscreenkill	300
+subject_to_obstacle 0
+
+
+anim	idle
+	loop	1
+	delay	7
+	jumpframe 1 0 2 0
+	offset	187 108
+	sound	data/sounds/hoof2.wav
+	frame	data/chars/misc/animals/horse1.png
+	frame	data/chars/misc/animals/horse2.png
+	frame	data/chars/misc/animals/horse3.png
+	frame	data/chars/misc/animals/horse4.png
+	frame	data/chars/misc/animals/horse5.png
+	frame	data/chars/misc/animals/horse6.png

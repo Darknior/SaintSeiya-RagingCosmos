@@ -1,0 +1,74 @@
+name	berba
+speed 0
+type	none
+shadow	0
+
+antigravity	100
+
+offscreenkill 9999999
+palette DATA\bgs\battle\erba001
+
+alternatepal DATA/bgs/fulmine #map 1
+
+anim idle
+	loop	1
+	offset	240 66
+	delay	8
+	frame 	data/varie/dust/run1
+	delay	150
+	frame 	data/varie/dust/run1
+	frame 	data/varie/dust/run1
+	frame 	data/varie/dust/run1
+	frame 	data/varie/dust/run1
+	frame 	data/varie/dust/run1
+	delay	8
+@script
+void self = getlocalvar("self");
+int x = getentityproperty(self, "x");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+if(frame == 0 && getentityvar(self, 0) == 1)
+{
+changeentityproperty(self, "animpos", 2);
+}
+if(frame==0 && getentityvar(self, 0) == NULL())
+{
+changeentityproperty(self, "animpos", 1000/x);
+setentityvar(self, 0, 1);
+}
+@end_script
+	frame	DATA\bgs\battle\erba001
+	frame	DATA\bgs\battle\erba002
+	frame	DATA\bgs\battle\erba003
+	frame	DATA\bgs\battle\erba004
+	frame	DATA\bgs\battle\erba005
+	frame	DATA\bgs\battle\erba006
+	frame	DATA\bgs\battle\erba007
+	frame	DATA\bgs\battle\erba009
+	frame	DATA\bgs\battle\erba010
+	frame	DATA\bgs\battle\erba011
+	frame	DATA\bgs\battle\erba012
+	frame	DATA\bgs\battle\erba013
+	frame	DATA\bgs\battle\erba014
+	frame	DATA\bgs\battle\erba015
+	frame	DATA\bgs\battle\erba016
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

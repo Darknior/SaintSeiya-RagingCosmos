@@ -1,0 +1,65 @@
+name	avvolt
+type	none
+shadow	0
+
+antigravity	100
+offscreenkill 9999999
+palette DATA\bgs\salita\avv0
+
+alternatepal DATA/bgs/fulmine #map 1
+
+#script data/scripts/common/decortn.c
+
+anim idle
+	loop	1
+	delay	300
+	offset	12 35
+@script
+void self = getlocalvar("self");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+@end_script
+	frame	DATA\bgs\salita\avv0
+	delay	10
+	frame	DATA\bgs\salita\avv1
+	frame	DATA\bgs\salita\avv2
+	frame	DATA\bgs\salita\avv3
+	frame	DATA\bgs\salita\avv4
+	frame	DATA\bgs\salita\avv5
+	delay	35
+	frame	DATA\bgs\salita\avv6
+	delay	10
+	frame	DATA\bgs\salita\avv7
+	frame	DATA\bgs\salita\avv8
+	frame	DATA\bgs\salita\avv9
+	frame	DATA\bgs\salita\avv10
+	frame	DATA\bgs\salita\avv11
+	frame	DATA\bgs\salita\avv12
+	frame	DATA\bgs\salita\avv13
+	delay	45
+	frame	DATA\bgs\salita\avv14
+	delay	10
+	frame	DATA\bgs\salita\avv15
+	frame	DATA\bgs\salita\avv16
+	frame	DATA\bgs\salita\avv17
+	frame	DATA\bgs\salita\avv18
+	frame	DATA\bgs\salita\avv19
+	frame	DATA\bgs\salita\avv20
+	frame	DATA\bgs\salita\avv21
+	frame	DATA\bgs\salita\avv22
+	frame	DATA\bgs\salita\avv23
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+name	premass
+type	obstacle #non mettere bbox
+shadow	0
+offscreenkill 9999999
+#antigravity	100
+score 0 -1 #necessario per evitare life up gratuiti ed inspiegabili
+
+palette DATA\bgs\salita\enemies\sassi000.gif
+
+alternatepal DATA/bgs/fulmine.gif #map 1
+
+anim spawn
+	loop	0
+	delay	2
+#	flipframe	0
+	offset	150 76
+@script
+void self = getlocalvar("self");
+setentityvar(self, 10, 1);
+@end_script
+	frame DATA\bgs\salita\enemies\sassi000.gif
+sound data/voices/14sass.wav
+	frame DATA\bgs\salita\enemies\sassi000.gif
+
+anim idle
+	loop	0
+	delay	8
+#	flipframe	0
+	offset	150 76
+	frame DATA\bgs\salita\enemies\sassi000.gif
+	frame DATA\bgs\salita\enemies\sassi001.gif
+	frame DATA\bgs\salita\enemies\sassi002.gif
+	frame DATA\bgs\salita\enemies\sassi003.gif
+	frame DATA\bgs\salita\enemies\sassi004.gif
+	frame DATA\bgs\salita\enemies\sassi005.gif
+	frame DATA\bgs\salita\enemies\sassi006.gif
+	frame DATA\bgs\salita\enemies\sassi007.gif
+	frame DATA\bgs\salita\enemies\sassi008.gif
+	frame DATA\bgs\salita\enemies\sassi009.gif
+	frame DATA\bgs\salita\enemies\sassi010.gif
+	frame DATA\bgs\salita\enemies\sassi011.gif
+@script
+void self = getlocalvar("self");
+if(frame == 12)
+{
+killentity(self);
+}
+@end_script
+	frame DATA\bgs\salita\enemies\sassi011.gif
+
+
+
+
+
+
+
+
+
+
+

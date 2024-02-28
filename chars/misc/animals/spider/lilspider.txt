@@ -1,0 +1,26 @@
+name		LilSpider
+type		none
+gfxshadow 	1
+offscreenkill	300
+subject_to_obstacle 0
+animationscript	data/scripts/lescript.c
+
+
+anim idle
+	loop	1 3 7
+	delay	800
+	landframe 1
+	offset  30 20
+	frame	data/chars/misc/animals/spider1.gif
+	delay	40
+	frame	data/chars/misc/animals/spider2.gif
+	delay	10
+	@cmd	dasher 1.5 0 0
+	frame	data/chars/misc/animals/spider3.gif
+	frame	data/chars/misc/animals/spider4.gif
+	frame	data/chars/misc/animals/spider5.gif
+	frame	data/chars/misc/animals/spider2.gif
+	frame	data/chars/misc/animals/spider3.gif
+	frame	data/chars/misc/animals/spider4.gif
+	frame	data/chars/misc/animals/spider5.gif
+	frame	data/chars/misc/animals/spider2.gif

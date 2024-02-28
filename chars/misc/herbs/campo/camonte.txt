@@ -1,0 +1,37 @@
+name	camonte
+speed 0
+type	none
+shadow	0
+setlayer      -101
+antigravity	100
+offscreenkill 9999999
+#alpha	1
+
+palette DATA\bgs\duel\campo\panel
+
+alternatepal DATA/bgs/fulmine #map 1
+
+anim idle
+	loop	1
+#	offset	220 118
+	offset	220 180
+	delay	35
+@script
+void self = getlocalvar("self");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+@end_script
+	frame 	DATA\bgs\duel\campo\panel
+
+
+
+
+
+
+
+
+
+
+

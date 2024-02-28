@@ -1,0 +1,209 @@
+name	tronco
+type	obstacle #non mettere bbox
+shadow	0
+
+candamage player
+hostile player
+offscreenkill 600
+score 0 -1 #necessario per evitare life up gratuiti ed inspiegabili
+
+palette DATA\bgs\salita\enemies\t1.gif
+
+alternatepal DATA/bgs/fulmine.gif #map 1
+
+animationscript data/bgs/salita/enemies/massoc.c
+
+anim spawn
+	loop	0
+	delay	40
+#	flipframe	0
+	offset	115 115
+@cmd coming "premass"
+#velocità x e z devono essere l'una il doppio dell'altra (lo schermo è 1400 x 700 circa)
+#@cmd velv 0.6 0.3 0
+@cmd nohit 1
+	frame DATA\bgs\salita\enemies\t1.gif
+	frame DATA\bgs\salita\enemies\t2.gif
+sound data/voices/tFX.wav
+	frame DATA\bgs\salita\enemies\t3.gif
+
+anim idle
+	loop	1
+	delay	1
+#	flipframe	0
+	hitflash chomp
+	fastattack	1
+	offset	115 115
+@cmd evoc "quake" 0 0
+@cmd velv 1.2 0.6 0
+@cmd nohit 1
+	attack 29 163 35 28 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack	75 121 38 42 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack	106 102 52 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack	146 77 44 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack	183 45 59 27 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t1.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t1.gif
+
+	attack 29 163 35 28 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack	75 121 38 42 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack	106 102 52 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack	146 77 44 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack	183 45 59 27 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t2.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t2.gif
+
+	attack 29 163 35 28 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack	75 121 38 42 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack	106 102 52 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack	146 77 44 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack	183 45 59 27 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t3.gif
+
+	attack 29 163 35 28 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack	75 121 38 42 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack	106 102 52 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack	146 77 44 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack	183 45 59 27 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t4.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t4.gif
+
+	attack 29 163 35 28 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack	75 121 38 42 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack	106 102 52 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack	146 77 44 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack	183 45 59 27 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t5.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t5.gif
+
+	attack 29 163 35 28 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack	75 121 38 42 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack	106 102 52 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack	146 77 44 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack	183 45 59 27 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t6.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t6.gif
+
+	attack 29 163 35 28 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t7.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t7.gif
+	attack	75 121 38 42 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t7.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t7.gif
+	attack	106 102 52 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t3.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t7.gif
+	attack	146 77 44 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t7.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t7.gif
+	attack	183 45 59 27 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t7.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t7.gif
+
+	attack 29 163 35 28 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack	75 121 38 42 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack	106 102 52 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack	146 77 44 34 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack	183 45 59 27 20 1 1 0 0 36
+	frame DATA\bgs\salita\enemies\t8.gif
+	attack 0 0 0 0 0 0 
+	frame DATA\bgs\salita\enemies\t8.gif
+
+
+

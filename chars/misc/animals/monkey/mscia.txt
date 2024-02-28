@@ -1,0 +1,65 @@
+name	mscia
+#speed 0
+type	none
+shadow	0
+offscreenkill 9999999
+antigravity	100
+
+palette data/bgs/mare/sa1
+
+alternatepal DATA/bgs/fulmine #map 1
+
+anim idle
+	loop	1
+	offset	45 71
+	delay	10
+@script
+void self = getlocalvar("self");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+@end_script
+	frame 	data/bgs/mare/sa1
+	frame 	data/bgs/mare/sa2
+	frame 	data/bgs/mare/sa3
+	frame 	data/bgs/mare/sa4
+	frame 	data/bgs/mare/sa5
+	frame 	data/bgs/mare/sa6
+	frame 	data/bgs/mare/sa7
+	frame 	data/bgs/mare/sa8
+	frame 	data/bgs/mare/sa9
+	frame 	data/bgs/mare/sa10
+	frame 	data/bgs/mare/sa11
+	frame 	data/bgs/mare/sa12
+	frame 	data/bgs/mare/sa13
+	frame 	data/bgs/mare/sa14
+	frame 	data/bgs/mare/sa15
+	frame 	data/bgs/mare/sa16
+	frame 	data/bgs/mare/sa17
+	frame 	data/bgs/mare/sa18
+	frame 	data/bgs/mare/sa19
+	frame 	data/bgs/mare/sa20
+	frame 	data/bgs/mare/sa21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

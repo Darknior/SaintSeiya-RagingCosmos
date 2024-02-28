@@ -1,0 +1,48 @@
+name	gabb
+speed 0
+type	none
+shadow	0
+offscreenkill 9999999
+antigravity	100
+
+alpha	1
+
+palette DATA\bgs\pesci\g1
+
+alternatepal DATA/bgs/fulmine #map 1
+
+anim idle
+	loop	1
+	offset	18 12
+
+delay	12
+@script
+void self = getlocalvar("self");
+if(frame==0)
+{
+changeentityproperty(self, "velocity", -0.1, 0, 0);
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+@end_script
+	frame	DATA\bgs\pesci\g1
+	frame	DATA\bgs\pesci\g2
+	frame	DATA\bgs\pesci\g3
+	frame	DATA\bgs\pesci\g4
+	frame	DATA\bgs\pesci\g5
+	frame	DATA\bgs\pesci\g6
+
+
+#	frame 	data/varie/dust/run1
+
+
+
+
+
+
+
+
+
+
+
+
+

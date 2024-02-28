@@ -1,0 +1,38 @@
+name		Frog
+type		none
+gfxshadow 	1
+offscreenkill	300
+subject_to_obstacle 0
+subject_to_wall 1
+animationscript	data/scripts/lescript.c
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+anim idle
+	loop	1 10 16
+	delay	800
+	landframe 1
+	offset  8 25
+	frame	data/chars/misc/animals/frog4.png
+	delay	20
+	frame	data/chars/misc/animals/frog7.png
+	delay	9
+	frame	data/chars/misc/animals/frog1.png
+	frame	data/chars/misc/animals/frog2.png
+	frame	data/chars/misc/animals/frog3.png
+	frame	data/chars/misc/animals/frog2.png
+	frame	data/chars/misc/animals/frog1.png
+	frame	data/chars/misc/animals/frog2.png
+	frame	data/chars/misc/animals/frog3.png
+	frame	data/chars/misc/animals/frog2.png
+	delay	12
+	sound	data/sounds/frog.wav
+	frame	data/chars/misc/animals/frog7.png
+	delay	8
+	@cmd	leaper 0.5 2 0
+	frame	data/chars/misc/animals/frog6.png
+	frame	data/chars/misc/animals/frog5.png
+	frame	data/chars/misc/animals/frog4.png
+	frame	data/chars/misc/animals/frog5.png
+	frame	data/chars/misc/animals/frog6.png
+	delay	12
+	frame	data/chars/misc/animals/frog7.png

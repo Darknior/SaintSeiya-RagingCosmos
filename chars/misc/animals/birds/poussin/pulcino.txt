@@ -1,0 +1,57 @@
+name	pulcino
+type	none
+shadow	0
+
+antigravity	100
+
+palette DATA\bgs\salita\p0
+offscreenkill 9999999
+alternatepal DATA/bgs/fulmine #map 1
+
+#script data/scripts/common/decortn.c
+
+anim idle
+	loop	1
+	delay	200
+	offset	16 12
+@script
+void self = getlocalvar("self");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+@end_script
+	frame	DATA\bgs\salita\p0
+	delay	10
+	frame	DATA\bgs\salita\p1
+	delay	45
+	frame	DATA\bgs\salita\p2
+	delay	10
+	frame	DATA\bgs\salita\p3
+	frame	DATA\bgs\salita\p4
+	frame	DATA\bgs\salita\p5
+	delay	35
+	frame	DATA\bgs\salita\p6
+	delay	10
+	frame	DATA\bgs\salita\p7
+	frame	DATA\bgs\salita\p8
+	frame	DATA\bgs\salita\p9
+	delay	55
+	frame	DATA\bgs\salita\p10
+	delay	10
+	frame	DATA\bgs\salita\p11
+	frame	DATA\bgs\salita\p12
+
+
+
+
+
+
+
+
+
+
+
+
+
+

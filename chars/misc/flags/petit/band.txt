@@ -1,0 +1,62 @@
+name	band
+#speed 0
+type	none
+#shadow	0
+gfxshadow	1
+
+#antigravity	100
+
+#alpha	1
+offscreenkill 9999999
+palette DATA\bgs\battle\b1
+
+alternatepal DATA\bgs\fulmine
+
+anim idle
+	loop	1
+	offset	45 41
+	delay	20
+	frame	DATA\bgs\battle\b3
+	frame	DATA\bgs\battle\b1
+	frame	DATA\bgs\battle\b2
+	frame	DATA\bgs\battle\b3
+	frame	DATA\bgs\battle\b1
+	frame	DATA\bgs\battle\b2
+#RIMUOVILO SE CRASHA TUTTO se ci son troppi enemies
+@script
+void self = getlocalvar("self");
+int x = getentityproperty(self, "x");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+if(frame == 0 && getentityvar(self, 0) == 1)
+{
+changeentityproperty(self, "animpos", 6);
+}
+if(frame==0 && getentityvar(self, 0) == NULL())
+{
+changeentityproperty(self, "animpos", 2000/x);
+setentityvar(self, 0, 1);
+}
+@end_script
+	frame	DATA\bgs\battle\b1
+	frame	DATA\bgs\battle\b2
+	frame	DATA\bgs\battle\b3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

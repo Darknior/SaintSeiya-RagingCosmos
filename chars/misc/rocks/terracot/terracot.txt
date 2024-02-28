@@ -1,0 +1,46 @@
+name	terracot
+type 	obstacle
+health 1
+nodieblink 2
+death	1
+gfxshadow	1
+noatflash	1
+hitflash	chomp
+flash	none
+nolife	1
+offscreenkill 9999999
+score 0 -1 #necessario per evitare life up gratuiti ed inspiegabili
+
+palette data/bgs/inferno/terracot/rochel00
+
+anim spawn
+	loop	0
+	delay	1
+	offset	10 10
+	frame 	data/varie/dust/run1
+
+anim idle
+	loop	1
+	delay	10
+	offset	27 81
+	bbox	18 27 22 57
+	frame	data/bgs/inferno/terracot/rochel00
+
+anim death
+	loop	0
+	delay	5
+	offset	27 81
+sound	data/voices/giara.wav
+#	frame	data/bgs/inferno/terracot/rochel00
+	frame	data/bgs/inferno/terracot/rochel01
+	frame	data/bgs/inferno/terracot/rochel02
+	frame	data/bgs/inferno/terracot/rochel03
+	frame	data/bgs/inferno/terracot/rochel04
+	frame	data/bgs/inferno/terracot/rochel05
+	frame	data/bgs/inferno/terracot/rochel06
+	frame	data/bgs/inferno/terracot/rochel07
+	frame	data/bgs/inferno/terracot/rochel08
+	frame	data/bgs/inferno/terracot/rochel09
+	frame	data/bgs/inferno/terracot/rochel10
+	frame	data/bgs/inferno/terracot/rochel11
+	frame	data/bgs/inferno/terracot/rochel12

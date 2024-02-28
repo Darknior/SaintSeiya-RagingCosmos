@@ -1,0 +1,125 @@
+name	blatta
+health	1
+speed	18
+jumpheight	4
+type	npc
+aimove avoid
+shadow	1
+bounce	0
+nodieblink  0 #3
+death	1
+noatflash	1
+flash	chomp
+cantgrab	1
+nolife	1
+score 0 -1 #necessario per evitare life up gratuiti ed inspiegabili
+
+throw	2 2
+
+subject_to_screen 1
+subject_to_obstacle 1
+subject_to_hole 1
+
+palette data/bgs/carro/blatta/blaca000
+
+#onblockwscript data/scripts/common/eobws.c
+
+anim spawn
+	loop	0
+	delay	3
+	offset	15 13
+	frame	data/bgs/carro/blatta/blwal000
+
+anim idle
+	loop	1
+	offset	15 13
+	bbox	3 -20 21 35
+	delay	45
+	frame	data/bgs/carro/blatta/blaca000
+	delay	8
+	frame	data/bgs/carro/blatta/blaca001
+	frame	data/bgs/carro/blatta/blaca002
+	frame	data/bgs/carro/blatta/blaca003
+
+anim walk
+	loop	1
+	offset	15 13
+	bbox	3 -20 21 35
+	delay	6
+	frame	data/bgs/carro/blatta/blwal000
+	frame	data/bgs/carro/blatta/blwal001
+	frame	data/bgs/carro/blatta/blwal002
+	frame	data/bgs/carro/blatta/blwal003
+
+anim backwalk
+	loop	1
+	offset	15 13
+	bbox	3 -20 21 35
+	delay	6
+flipframe 0
+	frame	data/bgs/carro/blatta/blwal000
+	frame	data/bgs/carro/blatta/blwal001
+	frame	data/bgs/carro/blatta/blwal002
+	frame	data/bgs/carro/blatta/blwal003
+
+anim death
+	loop 	0
+	delay 	55
+	offset	15 13
+	frame	data/bgs/carro/blatta/blmor000
+	delay	8
+	frame	data/bgs/carro/blatta/blmor001
+@script
+void self = getlocalvar("self");
+
+int x = getentityproperty(self, "x");
+int z = getentityproperty(self, "z");
+int a = getentityproperty(self, "a");
+int lx = openborvariant("xpos");
+void name;
+void e;
+int i;
+if(frame==2)
+	{
+	i = 25+rand()%25; //da 0 a 50
+	if(i>=0 && i<=50)
+		{
+		name = "Half_Energy";
+		}
+	if(i>=-50 && i <0)
+		{
+		name = "Energy_Block";
+		}
+//	if(i>=30 && i <35)
+//		{
+//		name="Potion";
+//		}
+//	if(i>=35 && i <40)
+//		{
+//		name= "Potion";
+//		}
+//	if(i>=40 && i <50)
+//		{
+//		name = "Potion";
+//		}
+	clearspawnentry();
+	setspawnentry("name", name);
+	setspawnentry("coords", x-lx, z, a);
+	e=spawn();
+	tossentity(e, 3, 0, 0);
+	}
+@end_script
+	frame	data/bgs/carro/blatta/blmor002
+	delay	55
+	frame	data/bgs/carro/blatta/blmor003
+	delay	8
+	frame	data/bgs/carro/blatta/blmor004
+	frame	data/bgs/carro/blatta/blmor005
+
+
+
+
+
+
+
+

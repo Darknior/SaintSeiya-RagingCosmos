@@ -1,0 +1,31 @@
+name		Fox
+type		none
+gfxshadow 	1
+offscreenkill	300
+animationscript	data/scripts/lescript.c
+
+
+anim idle
+	loop	1 8 12
+	delay	800
+	landframe 1
+	offset  55 35
+	frame	data/chars/misc/animals/fox1.png
+	delay	15
+	frame	data/chars/misc/animals/fox2.png
+	frame	data/chars/misc/animals/fox3.png
+	delay	12
+	frame	data/chars/misc/animals/fox4.png
+	frame	data/chars/misc/animals/fox5.png
+	frame	data/chars/misc/animals/fox4.png
+	frame	data/chars/misc/animals/fox5.png
+	delay	10
+	@cmd	dasher 1 0 0
+	frame	data/chars/misc/animals/fox6.png
+	frame	data/chars/misc/animals/fox7.png
+	frame	data/chars/misc/animals/fox8.png
+	frame	data/chars/misc/animals/fox9.png
+	frame	data/chars/misc/animals/fox6.png
+	frame	data/chars/misc/animals/fox7.png
+	frame	data/chars/misc/animals/fox8.png
+	frame	data/chars/misc/animals/fox9.png

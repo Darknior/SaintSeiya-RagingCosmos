@@ -1,0 +1,84 @@
+#cespuglio foresta
+
+name	cespu
+type 	obstacle
+health 1
+nodieblink 2
+death	1
+gfxshadow	1
+noatflash	1
+hitflash	chomp
+flash	chomp
+nolife	1
+offscreenkill 9999999
+score 0 -1 #necessario per evitare life up gratuiti ed inspiegabili
+
+palette data/bgs/foresta/cespu000
+
+#takedamagescript data/bgs/montagna/sasso/montsass.c
+
+anim spawn
+	loop	0
+	delay	1
+	offset	54 99
+	frame 	data/bgs/foresta/cespu000
+
+anim idle
+	loop	0
+	delay	10
+	offset	54 99
+	bbox	37 62 42 38
+	frame 	data/bgs/foresta/cespu000
+
+anim death
+	loop	0
+	delay	7
+	offset	54 99
+@script
+void self = getlocalvar("self");
+
+int x = getentityproperty(self, "x");
+int z = getentityproperty(self, "z");
+int a = getentityproperty(self, "a");
+int lx = openborvariant("xpos");
+void name;
+void e;
+int i;
+if(frame==1)
+	{
+	i = 25+rand()%25; //da 0 a 50
+	if(i>=0 && i<20)
+		{
+		name = "Attack_Up";
+		}
+	if(i>=20 && i <=50)
+		{
+		name = "Defense_Up";
+		}
+	clearspawnentry();
+	setspawnentry("name", name);
+	setspawnentry("coords", x-lx, z+15, a);
+	e=spawn();
+	tossentity(e, 5, 0, 0);
+	}
+if(frame==10)
+{
+killentity(self);
+}
+@end_script
+	frame 	data/bgs/foresta/cespu000
+	frame 	data/bgs/foresta/cespu001
+	frame 	data/bgs/foresta/cespu002
+	frame 	data/bgs/foresta/cespu003
+	frame 	data/bgs/foresta/cespu004
+	frame 	data/bgs/foresta/cespu005
+	frame 	data/bgs/foresta/cespu006
+	frame 	data/bgs/foresta/cespu007
+	frame 	data/bgs/foresta/cespu008
+	frame 	data/bgs/foresta/cespu009
+	frame 	data/bgs/foresta/cespu009
+
+
+
+
+

@@ -1,0 +1,21 @@
+name	  	SEagle
+type	  	none
+candamage 	enemy obstacle
+offscreenkill	250
+shadow		4
+subject_to_gravity 0
+
+
+anim idle
+	loop	1
+	delay	6
+	offset  50 60
+	attack	21 40 63 64 20 1 1 0 20
+	dropv	4 0 0
+	frame	data/chars/misc/animals/eagle1.png
+	frame	data/chars/misc/animals/eagle2.png
+	frame	data/chars/misc/animals/eagle3.png
+	frame	data/chars/misc/animals/eagle4.png
+	frame	data/chars/misc/animals/eagle5.png
+	frame	data/chars/misc/animals/eagle6.png
+	frame	data/chars/misc/animals/eagle7.png

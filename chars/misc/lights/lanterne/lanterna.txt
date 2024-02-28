@@ -1,0 +1,69 @@
+name	lanterna
+#speed 0
+type	none
+shadow	0
+offscreenkill 9999999
+antigravity	100
+
+#alpha	1
+
+palette DATA\bgs\grotta\l0
+
+#alternatepal DATA/bgs/fulmine #map 1
+
+anim idle
+	loop	1
+	offset	18 62
+	delay	25
+	frame	DATA\bgs\grotta\l0
+	frame	DATA\bgs\grotta\l1
+	frame	DATA\bgs\grotta\l2
+	frame	DATA\bgs\grotta\l3
+	frame	DATA\bgs\grotta\l4
+	frame	DATA\bgs\grotta\l5
+	frame	DATA\bgs\grotta\l6
+	frame	DATA\bgs\grotta\l0
+	frame	DATA\bgs\grotta\l1
+	frame	DATA\bgs\grotta\l2
+	frame	DATA\bgs\grotta\l3
+	frame	DATA\bgs\grotta\l4
+	frame	DATA\bgs\grotta\l5
+	frame	DATA\bgs\grotta\l6
+@script
+void self = getlocalvar("self");
+int x = getentityproperty(self, "x");
+if(frame == 0)
+{
+setentityvar(self, 10, 10); //devo cambiare paletta se tuona
+}
+if(frame == 0 && getentityvar(self, 0) == 1)
+{
+changeentityproperty(self, "animpos", 14);
+}
+if(frame==0 && getentityvar(self, 0) == NULL())
+{
+changeentityproperty(self, "animpos", 3000/x);
+setentityvar(self, 0, 1);
+}
+@end_script
+	frame	DATA\bgs\grotta\l0
+	frame	DATA\bgs\grotta\l1
+	frame	DATA\bgs\grotta\l2
+	frame	DATA\bgs\grotta\l3
+	frame	DATA\bgs\grotta\l4
+	frame	DATA\bgs\grotta\l5
+	frame	DATA\bgs\grotta\l6
+
+
+
+
+
+
+
+
+
+
+
+
+
+

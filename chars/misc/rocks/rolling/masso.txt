@@ -1,0 +1,100 @@
+name	masso
+#speedf 0.3
+type	obstacle #non mettere bbox
+shadow	0
+
+#antigravity	100
+offscreenkill 600
+candamage player
+hostile player
+score 0 -1 #necessario per evitare life up gratuiti ed inspiegabili
+
+palette DATA\bgs\salita\enemies\masso000.gif
+
+alternatepal DATA/bgs/fulmine.gif #map 1
+
+animationscript data/bgs/salita/enemies/massoc.c
+
+anim spawn
+	loop	0
+	delay	8 
+#	flipframe	0
+	offset	85 127
+@cmd coming "premass"
+#velocità x e z devono essere l'una il doppio dell'altra (lo schermo è 1400 x 700 circa)
+#@cmd velv -1 0.5 0
+@cmd nohit 1
+	frame DATA\bgs\salita\enemies\masso000.gif
+sound data/voices/15mac.wav
+	frame DATA\bgs\salita\enemies\masso001.gif
+	frame DATA\bgs\salita\enemies\masso002.gif
+	frame DATA\bgs\salita\enemies\masso003.gif
+	frame DATA\bgs\salita\enemies\masso004.gif
+	frame DATA\bgs\salita\enemies\masso005.gif
+	frame DATA\bgs\salita\enemies\masso006.gif
+	frame DATA\bgs\salita\enemies\masso000.gif
+	frame DATA\bgs\salita\enemies\masso001.gif
+	frame DATA\bgs\salita\enemies\masso002.gif
+	frame DATA\bgs\salita\enemies\masso003.gif
+	frame DATA\bgs\salita\enemies\masso004.gif
+	frame DATA\bgs\salita\enemies\masso005.gif
+	frame DATA\bgs\salita\enemies\masso006.gif
+
+anim idle
+	loop	1
+	delay	8
+#	flipframe	0 IL FLIPPING VA SETTATO IN SPAWN, CIOè IN LEVEL TEXT
+	fastattack	1
+	hitflash chomp
+	offset	85 127
+@cmd velv -2 1 0
+@cmd nohit 1
+@cmd evoc "quake" 0 0
+	frame DATA\bgs\salita\enemies\masso000.gif
+	attack	40 25 94 98 20 1 1 0 0 50
+@cmd evoc2 "fumocav"
+	frame DATA\bgs\salita\enemies\masso001.gif
+	attack	0 0 0 0 0 0
+@cmd evoc "quake" 0 0
+	frame DATA\bgs\salita\enemies\masso002.gif
+	attack	40 25 94 98 20 1 1 0 0 50
+	frame DATA\bgs\salita\enemies\masso003.gif
+	attack	0 0 0 0 0 0 
+@cmd evoc "quake" 0 0
+	frame DATA\bgs\salita\enemies\masso004.gif
+	attack	40 25 94 98 20 1 1 0 0 50
+@cmd evoc2 "fumocav"
+	frame DATA\bgs\salita\enemies\masso005.gif
+	attack	0 0 0 0 0 0 
+@cmd evoc "quake" 0 0
+#@cmd rndani openborconstant("ANI_JUMP") 0
+	frame DATA\bgs\salita\enemies\masso006.gif
+
+anim jump
+	loop	0
+	delay	8
+	offset	85 127
+@cmd rndjump
+	frame DATA\bgs\salita\enemies\masso000.gif
+	frame DATA\bgs\salita\enemies\masso001.gif
+	frame DATA\bgs\salita\enemies\masso002.gif
+	frame DATA\bgs\salita\enemies\masso003.gif
+	frame DATA\bgs\salita\enemies\masso004.gif
+	frame DATA\bgs\salita\enemies\masso005.gif
+	frame DATA\bgs\salita\enemies\masso006.gif
+@cmd chngani openborconstant("ANI_IDLE")
+	frame DATA\bgs\salita\enemies\masso006.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
