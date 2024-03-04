@@ -42,24 +42,12 @@ coords 0 0
 flip 1
 at 0
 
-spawn soldier_muscles
+spawn soldier_fat
 alias konstantinos
 coords 850 440
 item diamantecd
 at 0
 
-
-spawn soldier3
-alias konstantinos
-coords 505 327
-item diamantecd
-at 0
-
-
-spawn soldier3
-alias Anthonin
-coords 19 456
-at 400
 
 spawn sticksoldier
 alias Teo
