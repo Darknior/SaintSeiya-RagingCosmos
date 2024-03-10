@@ -3,9 +3,9 @@ loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
 music		data/music/ikki2.ogg
 
 panel		data/bgs/temple11-road/temple11.png
-background	data/bgs/temple11-road/swamp.png 
+background	data/bgs/temple11-road/swamp1.png 
 fglayer		data/bgs/temple11-road/rock.png 20 0 0 0 280 220 0 2 1 1
-fglayer		data/bgs/temple11-road/swamp2.png -300 0.5 0 0 0 0 0 -1 1 1 0 5 2 10 1
+fglayer		data/bgs/temple11-road/raft.png -300 0.5 0 0 0 0 0 -1 1 1 0 5 2 10 1
 
 
 cameratype 1
@@ -100,12 +100,6 @@ wait
 at 1500
 
 
-spawn kiki2
-alias KIKI
-item libra1
-coords	850 390
-at 2000
-
 spawn soldier1-1
 alias SOLDIER
 coords	850 100
@@ -124,12 +118,6 @@ at 2000
 
 wait
 at 2000
-
-spawn kiki2
-alias KIKI
-item libra6
-coords	850 390
-at 2400
 
 
 spawn soldier3
