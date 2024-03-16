@@ -563,7 +563,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  seiya
+skipselect  ikki
 branch      temple6
 z           378 484
 file        data/levels/temple6A-road.txt
