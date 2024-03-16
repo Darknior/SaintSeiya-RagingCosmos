@@ -1,14 +1,14 @@
 loadingbg    data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
 music        data/music/Pegasus_Fantasy_instrumental.ogg
 
-panel        data/bgs/temple11A-road/temple11A-road.png
-frontpanel   data/bgs/temple11A-road/layer1.png
-background   data/bgs/temple11A-road/background.png        1 1 0 0 0 0 1 1 1 0
-bglayer      data/bgs/temple11A-road/clouds-back.png       0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.5
-bglayer      data/bgs/temple11A-road/temple2-mountains.png 0.8 1 0 0 0 0 1 1 1 0
-bglayer      data/bgs/temple11A-road/temple2-temple.png    0.5 1 0 0 0 0 1 9999 1 0
-fglayer      data/bgs/temple11A-road/clouds-front.png      -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
-fglayer      data/bgs/temple11A-road/clouds-road.png       -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+panel        data/bgs/temple2A-road/temple2A-road.png
+frontpanel   data/bgs/temple2A-road/layer1.png
+background   data/bgs/temple2A-road/background.png        1 1 0 0 0 0 1 1 1 0
+bglayer      data/bgs/temple2A-road/clouds-back.png       0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.5
+bglayer      data/bgs/temple2A-road/temple2-mountains.png 0.8 1 0 0 0 0 1 1 1 0
+bglayer      data/bgs/temple2A-road/temple2-temple.png    0.5 1 0 0 0 0 1 9999 1 0
+fglayer      data/bgs/temple2A-road/clouds-front.png      -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer      data/bgs/temple2A-road/clouds-road.png       -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
 bgspeed      1 0
 
 light        256 -44
