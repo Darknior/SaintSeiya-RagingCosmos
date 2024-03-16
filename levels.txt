@@ -731,6 +731,22 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
+set         11A_Road-Hyoga
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  Hyoga
+branch      temple11
+z           325 484
+file        data/levels/temple11A-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
 set         11_Road-Hyoga
 maxplayers  4
 lives       3
