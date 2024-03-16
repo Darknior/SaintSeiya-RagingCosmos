@@ -555,6 +555,22 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
+set         6A_Road-Ikki
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  seiya
+branch      temple6
+z           378 484
+file        data/levels/temple6A-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
 set         6B_Midboss_Shiva_Agora
 maxplayers  4
 lives       3
