@@ -9,14 +9,14 @@ void tintEffect(void vAnim, void effect, int duration, int itemType)
 	if(!blocked){
 		if(cAnim == vAnim){
 			float mult	= duration;
-			float limit = 200*mult;
+			float limit = 400*mult;
 			setentityvar(target, effect+"Time", time+limit);
 		}
 	}
 
 	if(itemType){
 		float mult	= duration;
-		float limit = 200*mult;
+		float limit = 400*mult;
 		setentityvar(target, effect+"Time", time+limit);
 	}
 }
