@@ -651,7 +651,23 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         8_Road_Sirius-Hyoga
+set         8A_Road-Hyoga
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  Hyoga
+branch      temple8
+z           330 484
+file        data/levels/temple8A-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
+set         8C_Road_Sirius-Hyoga
 maxplayers  4
 lives       3
 credits     10
@@ -662,12 +678,12 @@ custfade	100
 skipselect  Hyoga
 branch      temple8
 z           390 484
-file        data/levels/temple8.txt
+file        data/levels/temple8C-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         8_BOSS_Scorpion-Hyoga
+set         8D_BOSS_Scorpion-Hyoga
 maxplayers  4
 lives       3
 credits     10
@@ -678,7 +694,7 @@ custfade	100
 skipselect  hyoga
 branch      temple8BOSS
 z           378 484
-file        data/levels/temple8BOSS.txt
+file        data/levels/temple8D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
