@@ -1,13 +1,12 @@
 loadingbg    data/sprites/loading/loading_Shun.png 1 -51 405 460 999 999 0
 music        data/music/Pegasus_Fantasy_instrumental.ogg
 
-panel        data/bgs/temple3A-road/temple2-road.png
-frontpanel   data/bgs/temple3A-road/layer1.png
+panel        data/bgs/temple3A-road/temple3A-road.png
 background   data/bgs/temple3A-road/background.png        1 1 0 0 0 0 1 1 1 0
 bglayer      data/bgs/temple3A-road/clouds-back.png       0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.5
 bglayer      data/bgs/temple3A-road/temple2-mountains.png 0.8 1 0 0 0 0 1 1 1 0
 bglayer      data/bgs/temple3A-road/temple2-temple.png    0.5 1 0 0 0 0 1 9999 1 0
-fglayer      data/bgs/temple3A-road/clouds-front.png      -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer      data/bgs/temple3A-road/clouds-front.png      -5000 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 fglayer      data/bgs/temple3A-road/clouds-road.png       -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
 bgspeed      1 0
 
@@ -29,7 +28,7 @@ spawn       horloge-segment
 coords      368 89
 at          0
 
-spawn       horloge-taureau
+spawn       horloge-gemeau
 coords      368 89
 at          0
 
@@ -37,7 +36,7 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
-spawn       temple2roadcolumns
+spawn       temple3roadcolumns
 coords      0 0
 at          0
 

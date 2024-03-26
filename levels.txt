@@ -373,7 +373,7 @@ typemp      1
 custfade	100
 skipselect  shun
 branch      temple3
-z           378 484
+z           320 444
 file        data/levels/temple3A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt

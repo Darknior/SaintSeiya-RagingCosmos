@@ -1,4 +1,4 @@
-name            temple2roadcolumns
+name            temple3roadcolumns
 type            panel
 speedf          -0.7
 setlayer        200
@@ -9,4 +9,4 @@ anim idle
     offset      0 0
     drawmethod  alpha 6
     drawmethod  channel 0.7
-    frame       data/bgs/temple2A-road/temple2roadcolumns.png
+    frame       data/bgs/temple3A-road/temple3roadcolumns.png
