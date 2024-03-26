@@ -30,6 +30,11 @@ nosave 1
 blocked 1
 noslow 1
 
+hole 967 484 -22 36 71 93 110 10
+hole 2010 484 0 0 71 71 110 10
+hole 3013 484 -22 36 71 93 110 10
+hole 3949 484 5 19 109 81 110 10
+updatescript data/scripts/updatelevel/temple5c_holes.c
 
 
 -------------------------------------
