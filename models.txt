@@ -387,7 +387,7 @@ know life            data/chars/misc/items/obj/life.txt
 
 --objects gold and jewels (gain points)--
 know anelcd          data/chars/misc/items/points/anelcd.txt
-know botasavp        data/chars/misc/items/points/botasavp.txt
+know boots        data/chars/misc/items/points/boots.txt
 know caixacc         data/chars/misc/items/points/caixacc.txt
 know coincd          data/chars/misc/items/points/coincd.txt
 know colarcd         data/chars/misc/items/points/colarcd.txt
@@ -395,6 +395,7 @@ know diamantecd      data/chars/misc/items/points/diamantecd.txt
 know diamondff       data/chars/misc/items/points/diamondff.txt
 know gold            data/chars/misc/items/points/gold.txt
 know goldbc          data/chars/misc/items/points/goldbc.txt
+know helmet          data/chars/misc/items/points/helmet.txt
 know ourocd          data/chars/misc/items/points/ourocd.txt
 know sacocd          data/chars/misc/items/points/sacocd.txt
 
