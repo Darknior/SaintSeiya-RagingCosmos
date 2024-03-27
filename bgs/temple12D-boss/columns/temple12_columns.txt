@@ -8,4 +8,4 @@ anim idle
     offset      0 0
     drawmethod  alpha 6
     drawmethod  channel 0.83
-    frame       data/bgs/temple12/columns/temple12_columns.png
+    frame       data/bgs/temple12D-boss/columns/temple12_columns.png

@@ -597,29 +597,29 @@ know temple6raindrop4      data/bgs/temple6C-road/temple6raindrop4.txt
 ## TEMPLE 6D BOSS: SHAKA
 know temple6columns      data/bgs/temple6D-boss/temple6columns.txt
 
-## TEMPLE 7
+## TEMPLE 7A Road: Elevator
 know temple7A_elevator   data/bgs/temple7A-road/elevator.txt
-know temple7columns      data/bgs/temple7/temple7columns.txt
+know temple7columns      data/bgs/temple7A/temple7columns.txt
 
-## TEMPLE 10 ROAD
-know temple10roadcolumns      data/bgs/temple10-road/temple10roadcolumns.txt
+## TEMPLE 10C ROAD
+know temple10roadcolumns      data/bgs/temple10C-road/temple10roadcolumns.txt
 
-## TEMPLE 11
-know temple11columns      data/bgs/temple11/temple11columns.txt
+## TEMPLE 11D Boss: Camus Verseau
+know temple11columns      data/bgs/temple11D-boss/temple11columns.txt
 load splash      data/chars/misc/splash/splash.txt
 load water      data/chars/misc/water/water.txt
 
-## TEMPLE 12
-know temple12_columns     data/bgs/temple12/columns/temple12_columns.txt
-know temple12_Roses01     data/bgs/temple12/Roses/temple12_Roses01.txt
-know temple12_Roses02     data/bgs/temple12/Roses/temple12_Roses02.txt
-know temple12_Roses03     data/bgs/temple12/Roses/temple12_Roses03.txt
+## TEMPLE 12D Boss: Aphrodite poissons
+know temple12_columns     data/bgs/temple12D-boss/columns/temple12_columns.txt
+know temple12_Roses01     data/bgs/temple12D-boss/Roses/temple12_Roses01.txt
+know temple12_Roses02     data/bgs/temple12D-boss/Roses/temple12_Roses02.txt
+know temple12_Roses03     data/bgs/temple12D-boss/Roses/temple12_Roses03.txt
 
-## TEMPLE 13 ROAD
-know temple13roadcolumns      data/bgs/temple13-road/temple13roadcolumns.txt
+## TEMPLE 13A ROAD
+know temple13roadcolumns      data/bgs/temple13A-road/temple13roadcolumns.txt
 
-## TEMPLE 13 FINAL
-know temple13columns      data/bgs/temple13/temple13columns.txt
+## TEMPLE 13D FINAL: Grand pope
+know temple13columns      data/bgs/temple13D-boss/temple13columns.txt
 
 
 ## TEXT ENTITIES

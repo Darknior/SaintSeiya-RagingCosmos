@@ -2,11 +2,11 @@ loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
 
 music		data/music/ryuseiken.ogg
 
-background      data/bgs/temple11/temple11_back.png      0.4 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0
-panel		data/bgs/temple11/layer2.png
-fglayer         data/bgs/temple11/crystals.png        100 0.1 0 -20 100 0 0 1 1 1 1 0 0 0 0 0.5
-fglayer         data/bgs/temple11/clouds.png        -150 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
-fglayer         data/bgs/temple11/clouds.png        -25 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 1
+background      data/bgs/temple11D-boss/temple11_back.png      0.4 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0
+panel		data/bgs/temple11D-boss/layer2.png
+fglayer         data/bgs/temple11D-boss/crystals.png        100 0.1 0 -20 100 0 0 1 1 1 1 0 0 0 0 0.5
+fglayer         data/bgs/temple11D-boss/clouds.png        -150 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer         data/bgs/temple11D-boss/clouds.png        -25 -0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 1
 bgspeed -1 0
 offscreenkill 10000
 order	a

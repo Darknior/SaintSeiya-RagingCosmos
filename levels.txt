@@ -646,7 +646,7 @@ custfade	100
 skipselect  shiryu
 branch      temple7BOSS
 z           355 470
-file        data/levels/temple7BOSS.txt
+file        data/levels/temple7D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
@@ -715,7 +715,7 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         10_Road-Shiryu
+set         10C_Road-Shiryu
 maxplayers  4
 lives       3
 credits     10
@@ -726,12 +726,12 @@ custfade	100
 skipselect  shiryu
 branch      temple10
 z           340 484
-file        data/levels/temple10.txt
+file        data/levels/temple10C-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         10_BOSS_Capricorne-Shiryu
+set         10D_BOSS_Capricorne-Shiryu
 maxplayers  4
 lives       3
 credits     10
@@ -742,7 +742,7 @@ custfade	100
 skipselect  shiryu
 branch      temple10BOSS
 z           378 484
-file        data/levels/temple10BOSS.txt
+file        data/levels/temple10D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
@@ -779,7 +779,7 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         11_BOSS_Verseau-Hyoga
+set         11D_BOSS_Verseau-Hyoga
 maxplayers  4
 lives       3
 credits     10
@@ -790,28 +790,12 @@ custfade	100
 skipselect  hyoga
 branch      temple11BOSS
 z           378 484
-file        data/levels/temple11BOSS.txt
+file        data/levels/temple11D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         12_Road_June-Shun
-maxplayers  4
-lives       3
-credits     10
-cansave     2
-disablehof  0
-typemp      1
-custfade	100
-skipselect  shun
-branch      temple12
-z           378 484
-file        data/levels/temple12.txt
-branch      gameover
-scene       data/scenes/gameover.txt
-end
-
-set         12_BOSS_Poissons-Shun
+set         12D_BOSS_Poissons-Shun
 maxplayers  4
 lives       3
 credits     10
@@ -822,12 +806,12 @@ custfade	100
 skipselect  shun
 branch      temple12BOSS
 z           395 484
-file        data/levels/temple12BOSS.txt
+file        data/levels/temple12D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         13_Road_Marin-Seiya
+set         13A_Road_Marin-Seiya
 maxplayers  4
 lives       3
 credits     10
@@ -838,12 +822,12 @@ custfade	100
 skipselect  seiya
 branch      temple13
 z           388 484
-file        data/levels/temple13.txt
+file        data/levels/temple13A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         13_BOSS_Grand_PopeSeiya
+set         13D_BOSS_Grand_PopeSeiya
 maxplayers  4
 lives       3
 credits     10
@@ -854,7 +838,7 @@ custfade	100
 skipselect  seiya
 branch      temple13BOSS
 z           378 430
-file        data/levels/temple13BOSS.txt
+file        data/levels/temple13D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end

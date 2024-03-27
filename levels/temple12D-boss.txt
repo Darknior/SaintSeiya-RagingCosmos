@@ -3,17 +3,17 @@ loadingbg		data/sprites/loading/loading_Shun.png 1 -51 405 460 999 999 0
 music           data/music/cancer.ogg
 
 # Shorter 1200x484
-background      data/bgs/temple12/temple12_back.png      0.4 1 0 0 0 0 1 1 1 0
+background      data/bgs/temple12D-boss/temple12_back.png      0.4 1 0 0 0 0 1 1 1 0
 
-panel           data/bgs/temple12/temple12_ground.png
+panel           data/bgs/temple12D-boss/temple12_ground.png
 
 # 1400x484
-fglayer         data/bgs/temple12/fogYellow.png         100  0.1 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
-fglayer         data/bgs/temple12/RosesPetals.png         100  0.1 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
-fglayer         data/bgs/temple12/fogOrange.png       -150 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
-fglayer         data/bgs/temple12/fogOrange.png        -25 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
+fglayer         data/bgs/temple12D-boss/fogYellow.png         100  0.1 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
+fglayer         data/bgs/temple12D-boss/RosesPetals.png         100  0.1 0 -20 0 0 0  1  1 0 1   1 5 30 0.7 0 
+fglayer         data/bgs/temple12D-boss/fogOrange.png       -150 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
+fglayer         data/bgs/temple12D-boss/fogOrange.png        -25 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
 
-#frontpanel      data/bgs/temple12/temple12_columns.png
+#frontpanel      data/bgs/temple12D-boss/temple12_columns.png
 
 order           a
 direction       both

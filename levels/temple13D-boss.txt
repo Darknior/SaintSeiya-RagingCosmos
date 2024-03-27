@@ -1,8 +1,8 @@
 loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
 
 music		data/music/God-Warriors-vs-Saints.ogg
-background		data/bgs/temple13/layer2.png
-panel		data/bgs/temple13/layer2.png
+background		data/bgs/temple13D-boss/layer2.png
+panel		data/bgs/temple13D-boss/layer2.png
 
 order	    a
 direction   both

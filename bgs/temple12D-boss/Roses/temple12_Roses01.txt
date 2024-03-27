@@ -7,16 +7,16 @@ offscreenkill       1500
 
 anim idle
     loop            1 2 3
-    palette         data/bgs/temple12/Roses/Roses01.png
+    palette         data/bgs/temple12D-boss/Roses/Roses01.png
 
 
 # SHOW
     delay           1
     offset          0 0
-    frame           data/bgs/temple12/Roses/Roses01.png
+    frame           data/bgs/temple12D-boss/Roses/Roses01.png
 
 # MOVE
     delay           1
     movea           3
-    frame           data/bgs/temple12/Roses/Roses01.png
-    frame           data/bgs/temple12/Roses/Roses01.png
+    frame           data/bgs/temple12D-boss/Roses/Roses01.png
+    frame           data/bgs/temple12D-boss/Roses/Roses01.png
