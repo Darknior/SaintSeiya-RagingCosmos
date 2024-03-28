@@ -795,6 +795,22 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
+set         12C_Road_Seiya
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  seiya
+branch      temple12
+z           388 484
+file        data/levels/temple12C-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
 set         12D_BOSS_Poissons-Shun
 maxplayers  4
 lives       3
