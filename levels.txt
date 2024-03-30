@@ -619,7 +619,7 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         7A_Road: Elevator-Shiryu
+set         7A_Road_Elevator-Shiryu
 maxplayers  4
 lives       3
 credits     10
@@ -627,7 +627,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  Seiya
+skipselect  Ikki
 branch      temple7
 z           375 430
 file        data/levels/temple7A-road.txt

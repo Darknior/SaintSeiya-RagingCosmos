@@ -19,7 +19,7 @@ jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
-noquake     0 1         # Secoue l’écran qd on tombe au sol
+noquake     0 0         # Secoue l’écran qd on tombe au sol
 throwdamage 20          # Degats recus si on est projetés
 grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
@@ -217,7 +217,7 @@ anim respawn # anim apres perdre une vie
     frame    data/chars/hyoga/spawn15.png
     frame    data/chars/hyoga/spawn16.png
 
-anim idle
+anim idle # quand on ne bouge pas
     loop     1
     delay    12
     offset   45 140
@@ -230,7 +230,7 @@ anim idle
     frame    data/chars/hyoga/idle6.png
     frame    data/chars/hyoga/idle7.png
     
-anim idle2
+anim idle2 # quand on ne bouge pas et qu un adversaire est proche
     range 0 200
     loop     1
     delay    20
@@ -267,7 +267,7 @@ anim faint # Quand il reste 1/4 de hp
     frame    data/chars/hyoga/idle6.png
     frame    data/chars/hyoga/idle7.png
 
-anim sleep   # Animation configurée après 10s d'idle
+anim sleep # Animation configurée après 10s d'idle
     loop     1 1
     delay    25
     offset   54 141
@@ -337,14 +337,14 @@ anim victory # Animation de victoire contre un boss
 
 #// Walk/Run animations /////////////////////////////////////////////////
 
-anim turn
+anim turn # quand on change de direction
     delay    10
     offset   45 141
     bbox     34 28 30 112
     cancel   0 3 0 A freespecial4
     frame    data/chars/hyoga/turn.png
 
-anim walk
+anim walk # marche normale
     loop     1
     delay    14
     offset   47 126
@@ -358,7 +358,7 @@ anim walk
     frame    data/chars/hyoga/walk27.png
     frame    data/chars/hyoga/walk28.png
     
-anim walk2
+anim walk2 # marche quand on est proche d un adversaire
     range 0 400
     loop     1
     delay    14
@@ -374,7 +374,22 @@ anim walk2
     frame    data/chars/hyoga/walk8.png
     frame    data/chars/hyoga/walk9.png
 
-anim up
+anim walkoff # Quand on tombe dans un trou
+    delay    5
+    offset   55 140
+    bbox     21 14 51 97
+    sound    data/chars/hyoga/sounds/cant.wav
+    frame    data/chars/hyoga/jump1.png
+    frame    data/chars/hyoga/jump2.png
+    frame    data/chars/hyoga/jump3.png
+    frame    data/chars/hyoga/jump4.png
+    frame    data/chars/hyoga/jump5.png
+    frame    data/chars/hyoga/jump6.png
+    frame    data/chars/hyoga/jump7.png
+    frame    data/chars/hyoga/jump8.png
+    frame    data/chars/hyoga/jump9.png
+
+anim up # marche vers le haut
     loop     1
     delay    14
     cancel   0 8 0 A1 freespecial7  # Coup de pied haut
@@ -390,7 +405,7 @@ anim up
     frame    data/chars/hyoga/walk8.png
     frame    data/chars/hyoga/walk9.png
 
-anim down
+anim down # marche vers le bas
     loop     1
     delay    14
     cancel   0 8 0 A1 freespecial8  # Balayette
@@ -406,7 +421,7 @@ anim down
     frame    data/chars/hyoga/walk8.png
     frame    data/chars/hyoga/walk9.png
 
-anim run
+anim run # course
     loop     1 1
     delay    8
     offset   48 128
@@ -454,7 +469,7 @@ anim runattack   # Attaque en courant
     frame    data/chars/hyoga/runattack3.png
     frame    data/chars/hyoga/runattack2.png
 
-anim get
+anim get # quand on ramasse un objet
     delay    5
     offset   45 140
     bbox     21 28 51 112
@@ -553,7 +568,7 @@ anim attack10 #  charge attack (laisser punch appuyé 2 sec pour executer)
 
 #// Grab animations /////////////////////////////////////////////////
 
-anim grab
+anim grab # Saisie de l adversaire
     delay    5
     offset   26 119
     bbox     12 6 35 112

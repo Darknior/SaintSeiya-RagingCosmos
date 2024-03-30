@@ -188,7 +188,7 @@ anim respawn # anim apres perdre une vie
     frame    data/chars/shiryu/spawn16.png
     frame    data/chars/shiryu/spawn17.png
 
-anim idle
+anim idle # quand on ne bouge pas
     loop     1
     delay    18
     offset   39 128
@@ -200,7 +200,7 @@ anim idle
     frame    data/chars/shiryu/idle3.png
     frame    data/chars/shiryu/idle2.png
     
-anim idle2
+anim idle2 # quand on ne bouge pas et qu un adversaire est proche
     range 0 200
     loop     1
     delay    20
@@ -277,14 +277,14 @@ anim victory # Animation de victoire contre un boss
 
 #// Walk/Run animations /////////////////////////////////////////////////
 
-anim turn    # Demi-tour
+anim turn # Demi-tour
     delay    10
     offset   42 129
     bbox     28 9 30 120
     cancel   0 3 0 A freespecial4   # Manchette arrière
     frame    data/chars/shiryu/turn.png
 
-anim walk    # Marche
+anim walk # Marche
     loop     1
     delay    14
     offset   39 127
@@ -303,7 +303,7 @@ anim walkoff # Quand on tombe dans un trou
     frame    data/chars/shiryu/jumpattack33.png
     frame    data/chars/shiryu/jumpattack34.png
 
-anim up
+anim up # marche vers le haut
     cancel   0 8 0 A1 freespecial7  # Coup de pied haut
     loop     1
     delay    14
@@ -316,7 +316,7 @@ anim up
     frame    data/chars/shiryu/walk5.png
     frame    data/chars/shiryu/walk6.png
 
-anim down
+anim down # marche vers le bas
     cancel   0 8 0 A1 freespecial8  # Balayette
     loop     1
     delay    14
@@ -329,7 +329,7 @@ anim down
     frame    data/chars/shiryu/walk5.png
     frame    data/chars/shiryu/walk6.png
 
-anim run
+anim run # course
     loop     1 1
     delay    8
     offset   48 128
@@ -380,7 +380,7 @@ anim runattack # Attaque en courant
     delay    12
     frame    data/chars/shiryu/runattack8.png
 
-anim get
+anim get # quand on ramasse un objet
     delay    1
     offset   30 129
     bbox     5 17 51 112

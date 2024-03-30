@@ -19,7 +19,7 @@ jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
-noquake     0 1         # Secoue l’écran qd on tombe au sol
+noquake     0 0         # Secoue l’écran qd on tombe au sol
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
 throwdamage 20          # Degats recus si on est projetés
 grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
@@ -104,13 +104,13 @@ com  a2 a2       freespecial     # Attaque de melée (coute 12 Mp)
 
 #// Select animations /////////////////////////////////////////////////
 
-anim    waiting # Animation d'attente dans l'écran de sélection
+anim waiting # Animation d'attente dans l'écran de sélection
     loop 1
     delay    40
     offset   59 226
     frame    data/chars/ikki/waiting.png
 
-anim    select  # Personnage sélectionné
+anim select  # Personnage sélectionné
     delay    2
     offset   59 226
     sound    data/chars/sounds/select-long.wav
@@ -233,7 +233,7 @@ anim respawn # anim apres perdre une vie
     frame    data/chars/ikki/spawn39.png
     frame    data/chars/ikki/spawn40.png
 
-anim idle
+anim idle # quand on ne bouge pas
     loop 1
     delay    16
     offset   45 137
@@ -245,7 +245,7 @@ anim idle
     frame    data/chars/ikki/idle5.png
     frame    data/chars/ikki/idle6.png
     
-anim idle2
+anim idle2 # quand on ne bouge pas et qu un adversaire est proche
     range 0 200
     loop 1
     delay    16
@@ -331,14 +331,14 @@ anim victory # Animation de victoire contre un boss
 
 #// Walk/Run animations /////////////////////////////////////////////////
 
-anim turn
+anim turn # quand on change de direction
     delay    10
     offset   39 137
     bbox     25 17 30 120
     cancel   0 3 0 A freespecial4
     frame    data/chars/ikki/turn.png
 
-anim walk
+anim walk # marche normale
     loop     1
     delay    14
     offset   45 140
@@ -352,7 +352,17 @@ anim walk
     frame    data/chars/ikki/walk7.png
     frame    data/chars/ikki/walk8.png
 
-anim up
+anim walkoff # Quand on tombe dans un trou
+    delay    10
+    offset   55 206
+    bbox     49 76 30 120
+    sound    data/chars/ikki/sounds/cant.wav
+    frame    data/chars/ikki/jump7.png
+    frame    data/chars/ikki/jump8.png
+    frame    data/chars/ikki/jump9.png
+    frame    data/chars/ikki/jump10.png
+
+anim up # marche vers le haut
     cancel   0 8 0 A1 freespecial7    # Coup de pied haut
     loop     1
     delay    14
@@ -367,7 +377,7 @@ anim up
     frame    data/chars/ikki/walk7.png
     frame    data/chars/ikki/walk8.png
 
-anim down
+anim down # marche vers le bas
     cancel   0 8 0 A1 freespecial8    # Balayette
     loop     1
     delay    14
@@ -382,7 +392,7 @@ anim down
     frame    data/chars/ikki/walk7.png
     frame    data/chars/ikki/walk8.png
 
-anim run
+anim run # course
     loop    1 1
     delay    8
     offset    80 137
@@ -439,7 +449,7 @@ anim runattack # Attaque en courant
     frame    data/chars/ikki/runattack9.png
 
 
-anim get
+anim get # quand on ramasse un objet
     delay    5
     offset   27 139
     bbox     2 19 51 120
@@ -516,7 +526,7 @@ anim attack5 # Attaque combo 5
 
 #//Grab animations/////////////////////////////////////////////////
 
-anim grab
+anim grab # Saisie de l adversaire
     delay    9
     offset    35 145
     bbox 25 26 30 120
@@ -568,7 +578,7 @@ anim grabbackward #Projection en arrière
     frame    data/chars/ikki/grab5.png
     frame    data/chars/ikki/grab5.png
     
-anim    grabforward  # projection en avant
+anim grabforward  # projection en avant
     delay    9
     offset    34 136
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 0 10
@@ -584,7 +594,6 @@ anim    grabforward  # projection en avant
     @cmd     slam 20 2 -3.5 2 0 0
     delay    15
     frame    data/chars/ikki/attack4.png
-
 
 #//Jump animations/////////////////////////////////////////////////
 
