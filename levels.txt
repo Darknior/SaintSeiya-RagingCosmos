@@ -627,7 +627,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  Ikki
+skipselect  Shun
 branch      temple7
 z           375 430
 file        data/levels/temple7A-road.txt

@@ -18,7 +18,7 @@ jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut
 antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
-noquake     0 1         # Secoue l’écran qd on tombe au sol
+noquake     0 0         # Secoue l’écran qd on tombe au sol
 throwdamage 20          # Degats recus si on est projetés
 grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
@@ -101,7 +101,7 @@ com  a2 a2       freespecial     # Attaque de melée (coute 12 Mp)
 
 #// Select animations /////////////////////////////////////////////////
 
-anim    waiting # Animation d'attente dans l'écran de sélection
+anim waiting # Animation d'attente dans l'écran de sélection
     loop     1
     delay 40
     offset   52 229
@@ -110,7 +110,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     frame    data/chars/shun/waiting3.png
     frame    data/chars/shun/waiting2.png
 
-anim    select  # Personnage sélectionné
+anim select # Personnage sélectionné
     delay 2
     offset   52 229
     sound    data/chars/sounds/select-long.wav
@@ -191,7 +191,7 @@ anim respawn # anim apres perdre une vie
     frame    data/chars/shun/spawn11.png
     frame    data/chars/shun/spawn12.png
 
-anim idle
+anim idle # quand on ne bouge pas
     loop     1
     delay 17
     offset   32 131
@@ -205,7 +205,7 @@ anim idle
     frame    data/chars/shun/idle3.png
     frame    data/chars/shun/idle2.png
     
-anim idle2
+anim idle2 # quand on ne bouge pas et qu un adversaire est proche
     range 0 200
     loop     1
     delay 17
@@ -291,14 +291,14 @@ anim victory # Animation de victoire contre un boss
 	
 #// Walk/Run animations /////////////////////////////////////////////////
 
-anim turn
+anim turn # quand on change de direction
     delay 10
     offset   32 135
     bbox     7 28 51 107
     cancel   0 3 0 A freespecial4
     frame    data/chars/shun/turn.png
 
-anim walk
+anim walk # marche normale
     loop     1
     delay 14
     offset   42 134
@@ -311,7 +311,16 @@ anim walk
     frame    data/chars/shun/walk6.png
     frame    data/chars/shun/walk7.png
 
-anim up
+anim walkoff # Quand on tombe dans un trou
+    delay 10
+    offset   87 171
+    bbox     68 35 51 107
+    sound    data/chars/shun/sounds/cant.wav
+    frame    data/chars/shun/jump3.png
+    frame    data/chars/shun/jump4.png
+    frame    data/chars/shun/jump5.png
+
+anim up # marche vers le haut
     cancel   0 8 0 A1 freespecial7  # Coup de pied haut
     loop     1
     delay 14
@@ -325,7 +334,7 @@ anim up
     frame    data/chars/shun/walk6.png
     frame    data/chars/shun/walk7.png
 
-anim down
+anim down # marche vers le bas
     cancel   0 8 0 A1 freespecial8  # Balayette
     loop     1
     delay 14
@@ -339,7 +348,7 @@ anim down
     frame    data/chars/shun/walk6.png
     frame    data/chars/shun/walk7.png
 
-anim run
+anim run # course
     loop     1 1
     delay 8
     offset   62 132
@@ -391,7 +400,7 @@ anim runattack # Attaque en courant
     frame    data/chars/shun/attack13.png
     frame    data/chars/shun/attack14.png
 
-anim get
+anim get # quand on ramasse un objet
     delay 5
     offset   62 131
     bbox     38 28 51 107
@@ -554,7 +563,7 @@ anim chargeattack    # Thunder Wave (Avant + Bouton Special)
 
 #//Grab animations/////////////////////////////////////////////////
 
-anim grab
+anim grab # Saisie de l adversaire
     delay 5
     offset   32 116
     bbox     16 4 35 112
@@ -609,7 +618,7 @@ anim grabbackward #Projection en arrière
     frame    data/chars/shun/grabbackward3.png
     frame    data/chars/shun/grabbackward2.png
     
-anim    grabforward  # projection en avant
+anim grabforward  # projection en avant
     delay 9
     offset    34 129
     @cmd     spawnbind "dash_dust" "ANI_IDLE" 20 10 0 1 0
@@ -630,7 +639,7 @@ anim    grabforward  # projection en avant
 
 #//Jump animations/////////////////////////////////////////////////
 
-anim jump    # Saut Statique
+anim jump # Saut Statique
     delay 10
     offset   87 171
     bbox     68 35 51 107
@@ -642,7 +651,7 @@ anim jump    # Saut Statique
     frame    data/chars/shun/jump4.png
     frame    data/chars/shun/jump5.png
 	
-anim runjump
+anim runjump # Saut en courant
     delay 6
     offset   87 171
     bbox     68 35 51 107
@@ -776,7 +785,7 @@ anim jumpattack3 #Attaque sautée vers le haut (Haut + attaque)
     frame    data/chars/shun/jumpattack33.png
     attack4 0
 
-anim dodge  # Esquive Haut / Bas (u u / d d)
+anim dodge # Esquive Haut / Bas (u u / d d)
     delay 8
     offset   87 171
     bbox     68 35 51 107
@@ -792,7 +801,7 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
-anim pain
+anim pain # Douleur normale
     offset    57 131
     bbox 33 28 51 107
     #move    -5
@@ -804,7 +813,7 @@ anim pain
     frame    data/chars/shun/pain2.png
     frame    data/chars/shun/pain1.png
 
-anim pain2
+anim pain2 # Grosse douleur
     offset    43 132
     bbox 30 28 51 107
     #move    -5
@@ -882,7 +891,7 @@ anim follow1 # Stun aprés X chuttes
     frame    data/chars/shun/stun1.png
     frame    data/chars/shun/stun2.png
 
-anim death
+anim death # Animation de mort
     offset    130 131
     delay 15
     sound data/chars/shun/sounds/die3.wav

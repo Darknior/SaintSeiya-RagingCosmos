@@ -646,7 +646,7 @@ anim grabforward  # projection en avant
 
 #// Jump animations /////////////////////////////////////////////////
 
-anim runjump
+anim runjump # Saut en courant
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    6
     offset   55 140
@@ -664,7 +664,7 @@ anim runjump
     frame    data/chars/hyoga/forwardjump9.png
     frame    data/chars/hyoga/jump11.png
 
-anim jump    # Saut Statique
+anim jump # Saut Statique
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
     delay    8
     offset   55 140
@@ -818,7 +818,7 @@ anim dodge    # Esquive Haut / Bas (u u / d d)
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
-anim pain
+anim pain # Douleur normale
     offset   45 141
     bbox     21 28 51 112
     #move    -5
@@ -830,7 +830,7 @@ anim pain
     frame    data/chars/hyoga/pain2.png
     frame    data/chars/hyoga/pain1.png
 
-anim pain2
+anim pain2 # Grosse douleur
     offset   45 141
     bbox     21 28 51 112
     #move    -5
@@ -910,7 +910,7 @@ anim follow1 # Stun aprés X chuttes
     frame    data/chars/hyoga/stun1.png
     frame    data/chars/hyoga/stun2.png
     
-anim death
+anim death # Animation de mort
     offset   100 110
     delay    10
     sound    data/chars/hyoga/sounds/die1.wav
