@@ -15,10 +15,14 @@ shadowalpha 6
 shadowopacity 0
 at        0
 
-spawn1          60 30
+#-------- Players spawn position -----------------------------------------------
 
+spawn1 50 180 0 # position du joueur1 (x, z, Y)
+spawn2 80 160 0 # position du joueur2 (x, z, Y)
+spawn3 90 220 0 # position du joueur3 (x, z, Y)
+spawn4 110 190 0 # position du joueur4 (x, z, Y)
 
-#-- LEVEL -----------------------------------
+#-- HUD ------------------------------------------------------------------------
 
 spawn       horloge-segment
 coords      368 89

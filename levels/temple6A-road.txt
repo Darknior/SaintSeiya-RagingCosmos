@@ -21,8 +21,14 @@ noreset      2
 cameratype   1
 order        a
 
+#-------- Players spawn position -----------------------------------------------
 
--------------------------------------
+spawn1 50 180 0 # position du joueur1 (x, z, Y)
+spawn2 80 160 0 # position du joueur2 (x, z, Y)
+spawn3 90 220 0 # position du joueur3 (x, z, Y)
+spawn4 110 190 0 # position du joueur4 (x, z, Y)
+
+#-- HUD ------------------------------------------------------------------------
 
 spawn       horloge-segment
 coords 368 89

@@ -19,26 +19,14 @@ at              0
 shadowalpha     3   # Mirror transparency
 at              0
 
+#-------- Players spawn position -----------------------------------------------
 
-#-- PLAYERS ---------------------------------
+spawn1 50 180 0 # position du joueur1 (x, z, Y)
+spawn2 80 160 0 # position du joueur2 (x, z, Y)
+spawn3 90 220 0 # position du joueur3 (x, z, Y)
+spawn4 110 190 0 # position du joueur4 (x, z, Y)
 
-spawn1          60 30
-spawn2          70 40
-
-
-#-- INTRO -----------------------------------
-
-#-- LEVEL ANIMATIONS -----------------------
-
-load temple3_columns 3
-load temple3_grid 3
-
-spawn           temple3_columns
-coords          1200 0
-at              0
-spawn           temple3_grid
-coords          1200 -120
-at              0
+#-- HUD ------------------------------------------------------------------------
 
 spawn       horloge-segment
 coords      368 89
@@ -51,6 +39,19 @@ at          0
 spawn       horloge-flame
 coords      387 47
 at          0
+
+
+#-- LEVEL ANIMATIONS -----------------------
+
+load temple3_columns 3
+load temple3_grid 3
+
+spawn           temple3_columns
+coords          1200 0
+at              0
+spawn           temple3_grid
+coords          1200 -120
+at              0
 
 
 #-- BOSS ----------------------------------------------
