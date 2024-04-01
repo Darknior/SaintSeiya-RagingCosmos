@@ -843,6 +843,22 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
+set         13C_Road_Seiya
+maxplayers  4
+lives       3
+credits     10
+cansave     2
+disablehof  0
+typemp      1
+custfade	100
+skipselect  seiya
+branch      temple12
+z           288 444
+file        data/levels/temple13C-road.txt
+branch      gameover
+scene       data/scenes/gameover.txt
+end
+
 set         13D_BOSS_Grand_PopeSeiya
 maxplayers  4
 lives       3

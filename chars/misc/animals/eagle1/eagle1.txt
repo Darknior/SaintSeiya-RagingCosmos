@@ -3,6 +3,7 @@ type	  	none
 subject_to_gravity 0
 setlayer -5000
 offscreenkill 250
+palette      data/chars/misc/animals/eagle1/eagle1.png
 
 anim idle
 	loop	1 2 8
