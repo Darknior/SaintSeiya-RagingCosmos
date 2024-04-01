@@ -12,6 +12,7 @@ anim idle
 	loop	0
 	delay	6
 	offset	94 44
+   sound data/chars/misc/shock/shock1/shock.wav
 	frame	data/chars/misc/shock/shock1/shock00.gif
 	frame	data/chars/misc/shock/shock1/shock01.gif
 	frame	data/chars/misc/shock/shock1/shock02.gif

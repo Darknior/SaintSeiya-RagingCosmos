@@ -34,7 +34,7 @@ modelflag   3           # L'animation et la liste d'armes sont copiées (obligat
 death       1           # Active l'animation de mort
 nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
-
+diesound    data/chars/ikki/sounds/hurt5.wav
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière par defaut (animation)
@@ -356,7 +356,6 @@ anim walkoff # Quand on tombe dans un trou
     delay    10
     offset   55 206
     bbox     49 76 30 120
-    sound    data/chars/ikki/sounds/cant.wav
     frame    data/chars/ikki/jump7.png
     frame    data/chars/ikki/jump8.png
     frame    data/chars/ikki/jump9.png
@@ -695,7 +694,7 @@ anim jumpforward # Attaque sautée vers l'avant
     sound data/sounds/punch.wav
     frame    data/chars/ikki/jumpattack1.png
     frame    data/chars/ikki/jumpattack2.png
-    jumpframe 2 -1.5 2.5
+    jumpframe  2 -1 2.5
     attack4 62 78 83 76 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/ikki/jumpattack4.png
@@ -708,7 +707,7 @@ anim runjumpattack # Attaque sautée en courant
     frame    data/chars/ikki/jumpforward1.png
     frame    data/chars/ikki/jumpforward2.png
     frame    data/chars/ikki/jumpforward3.png
-    jumpframe 2 -2 4.5
+    jumpframe  2 -1.5 3.5
     attack4 62 121 107 40 10 1 0 0 5 12
     dropv    6.0 2.0 0.0
     frame    data/chars/ikki/jumpforward4.png

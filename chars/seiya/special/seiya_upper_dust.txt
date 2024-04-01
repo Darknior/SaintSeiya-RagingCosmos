@@ -3,6 +3,7 @@ type	none
 shadow	0
 nolife 1
 animationscript	data/scripts/player.c
+didhitscript        data/scripts/didhit/tint_silver.c 
 
 anim	idle
 	loop	0
@@ -11,7 +12,7 @@ anim	idle
 	drawmethod alpha 1
 	frame	data/chars/seiya/special/seiya_upper_dust/upper_dust1.png
 	frame	data/chars/seiya/special/seiya_upper_dust/upper_dust2.png
-	attack20 24 31 50 120 20 1 0 0 50 20
+	attack30 24 31 50 120 20 1 0 0 50 20
    dropv    3 2
 	frame	data/chars/seiya/special/seiya_upper_dust/upper_dust3.png
 	frame	data/chars/seiya/special/seiya_upper_dust/upper_dust4.png

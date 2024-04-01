@@ -33,7 +33,7 @@ death       1           # Active l'animation de mort
 nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
-
+diesound    data/chars/seiya/sounds/hurt.wav
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 candamage  enemy npc 
@@ -339,12 +339,12 @@ anim walk2 # marche quand on est proche d un adversaire
     frame    data/chars/seiya/walk16.png
 
 anim walkoff # Quand on tombe dans un trou
-    delay    6
+    delay    8
     offset   43 123
     bbox     35 14 30 97
-    sound    data/chars/seiya/sounds/low_cosmos.wav
     frame    data/chars/seiya/forwardjump7.png
     frame    data/chars/seiya/forwardjump8.png
+    sound    data/chars/seiya/sounds/low_cosmos.wav
 
 anim up # marche vers le haut
     loop     1
@@ -710,7 +710,7 @@ anim jumpforward # Attaque sautée vers l avant
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/jumpattack1.png
     frame    data/chars/seiya/jumpattack2.png
-    jumpframe  2 -1.5 2.5
+    jumpframe  2 -1 2.5
     attack4  77 68 67 26 10 1 0 0 10 12
     dropv    4.0 1.0 0.0
     frame    data/chars/seiya/jumpattack3.png
@@ -723,7 +723,7 @@ anim runjumpattack # Attaque sautée en courant
     hitflash blue_swing
     sound    data/chars/seiya/sounds/punch2.wav
     frame    data/chars/seiya/jumpforward1.png
-    jumpframe  2 -2 4.5
+    jumpframe  2 -1.5 3.5
     attack20  75 42 67 26 10 1 0 0 10 12
     dropv    5.0 2.0 0.0
     frame    data/chars/seiya/jumpforward2.png

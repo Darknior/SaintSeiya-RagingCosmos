@@ -166,7 +166,7 @@ at 2400
 spawn soldier1-1
 alias Sebastian
 coords 850 400
-item botasavp
+item boots
 at 2800
 
 spawn soldier2
