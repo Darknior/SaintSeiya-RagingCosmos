@@ -2,15 +2,19 @@ name	  	eagle1
 type	  	none
 subject_to_gravity 0
 setlayer -5000
+offscreenkill 250
 
 anim idle
-	loop	1
-	delay	6
+	loop	1 2 8
+	delay	8
    move 11
    movea 3
+   sound    data/chars/misc/animals/eagle1/eagle.wav
+   frame	data/chars/misc/animals/eagle1/eagle7.png
 	frame	data/chars/misc/animals/eagle1/eagle1.png
 	frame	data/chars/misc/animals/eagle1/eagle2.png
 	frame	data/chars/misc/animals/eagle1/eagle3.png
+   sound    data/chars/misc/animals/eagle1/eagle_flap.wav
 	frame	data/chars/misc/animals/eagle1/eagle4.png
 	frame	data/chars/misc/animals/eagle1/eagle5.png
 	frame	data/chars/misc/animals/eagle1/eagle6.png
