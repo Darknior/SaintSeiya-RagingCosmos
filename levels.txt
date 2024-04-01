@@ -309,7 +309,7 @@ typemp      1
 custfade	100
 skipselect  seiya
 branch      temple2
-z           378 484
+z           230 484
 file        data/levels/temple2A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt

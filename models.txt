@@ -371,7 +371,7 @@ know saladacd        data/chars/misc/items/food/saladacd.txt
 know saladaavp       data/chars/misc/items/food/saladaavp.txt
 know uvaff           data/chars/misc/items/food/uvaff.txt
 
---Athena statues (gain life)--
+--Athena statues (gain 1up)--
 know 1up-bronze   data/chars/misc/items/1up/1up-bronze.txt
 know 1up-silver   data/chars/misc/items/1up/1up-silver.txt
 know 1up-gold     data/chars/misc/items/1up/1up-gold.txt
@@ -518,6 +518,10 @@ know saga            data/chars/saga/00_saga.txt
 know SHAKA           data/chars/SHAKA/00_SHAKA.txt
 know SHURA           data/chars/SHURA/00_shura.txt
 know great_pope      data/chars/great_pope/00_great_pope.txt
+
+## ANIMALS ##
+
+know eagle1            data/chars/misc/animals/eagle1/eagle1.txt
 
 ## OTHER ##
 

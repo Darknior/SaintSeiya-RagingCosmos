@@ -1,0 +1,17 @@
+name	  	eagle1
+type	  	none
+subject_to_gravity 0
+setlayer -5000
+
+anim idle
+	loop	1
+	delay	6
+   move 11
+   movea 3
+	frame	data/chars/misc/animals/eagle1/eagle1.png
+	frame	data/chars/misc/animals/eagle1/eagle2.png
+	frame	data/chars/misc/animals/eagle1/eagle3.png
+	frame	data/chars/misc/animals/eagle1/eagle4.png
+	frame	data/chars/misc/animals/eagle1/eagle5.png
+	frame	data/chars/misc/animals/eagle1/eagle6.png
+	frame	data/chars/misc/animals/eagle1/eagle7.png
