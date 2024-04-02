@@ -1,15 +1,28 @@
 name    ENERGY
-health  100
-type    item
+health	200
+#score		2500
+type		item
+#shadow	0
+gfxshadow 1 3
+nolife	1
+didhitscript data/scripts/didhit/items.c
+animationscript data/scripts/player.c
 
-
-offscreenkill 9999999
-
-
-anim    idle
-    loop    1
-    delay   10
-    offset  8 14
-    bbox    0 0 16 16
-    frame   data/chars/misc/items/obj/obj2.png
-    frame   data/chars/misc/items/obj/obj4.png
+anim idle
+	loop		1 
+	offset     240 204
+	bbox	223 190 32 16
+	delay	100
+	@cmd itemText "HEALTH + 200" 0.8 1.5 4
+	frame	data/chars/misc/items/food/laranjaFF01.gif
+	delay   4
+	frame	data/chars/misc/items/food/laranjaFF02.gif
+	frame	data/chars/misc/items/food/laranjaFF01.gif
+	frame	data/chars/misc/items/food/laranjaFF02.gif
+	frame	data/chars/misc/items/food/laranjaFF01.gif
+	frame	data/chars/misc/items/food/laranjaFF02.gif
+	frame	data/chars/misc/items/food/laranjaFF01.gif
+	frame	data/chars/misc/items/food/laranjaFF02.gif
+	frame	data/chars/misc/items/food/laranjaFF01.gif
+	frame	data/chars/misc/items/food/laranjaFF02.gif
+	frame	data/chars/misc/items/food/laranjaFF01.gif
