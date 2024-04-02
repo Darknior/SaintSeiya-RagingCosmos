@@ -33,7 +33,7 @@ modelflag   3           # Masque la petite barre de vie si on frappe un autre jo
 death       1           # Active l'animation de mort
 nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
-diesound    data/chars/shun/sounds/cant.wav
+diesound    data/chars/shun/sounds/die2.wav
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière par defaut (animation)
@@ -288,6 +288,14 @@ anim victory # Animation de victoire contre un boss
     frame    data/chars/shun/victory9.png
     frame    data/chars/shun/victory8.png
     frame    data/chars/shun/victory7.png
+    
+anim lose # Animation de time up
+    delay 10
+    offset    68 139
+    sound data/chars/shun/sounds/rise6.wav
+    frame    data/chars/shun/rise5.png
+    frame    data/chars/shun/rise4.png
+    frame    data/chars/shun/rise3.png
 	
 #// Walk/Run animations /////////////////////////////////////////////////
 
@@ -315,7 +323,9 @@ anim walkoff # Quand on tombe dans un trou
     delay 10
     offset   87 171
     bbox     68 35 51 107
-    frame    data/chars/shun/jump3.png
+    frame    data/chars/shun/jump1.png
+    frame    data/chars/shun/jump2.png
+    sound data/chars/shun/sounds/hurt2.wav
     frame    data/chars/shun/jump4.png
     frame    data/chars/shun/jump5.png
 
@@ -796,6 +806,7 @@ anim dodge # Esquive Haut / Bas (u u / d d)
     frame    data/chars/shun/jump2.png
     frame    data/chars/shun/jump3.png
     @cmd     spawnbind "round_dust" "ANI_IDLE" 0 -15 0 0 1
+    delay 20
     frame    data/chars/shun/jump5.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////

@@ -273,6 +273,15 @@ anim victory # Animation de victoire contre un boss
     frame    data/chars/shiryu/victory6.png
     frame    data/chars/shiryu/victory7.png
     frame    data/chars/shiryu/victory8.png
+    
+anim lose # Animation de time up
+    delay    10
+    offset   114 130
+    sound    data/chars/shiryu/sounds/rise3.wav
+    frame    data/chars/shiryu/rise4.png
+    frame    data/chars/shiryu/rise3.png
+    frame    data/chars/shiryu/rise2.png
+    frame    data/chars/shiryu/rise1.png
 
 #// Walk/Run animations /////////////////////////////////////////////////
 
@@ -299,6 +308,7 @@ anim walkoff # Quand on tombe dans un trou
     delay    9
     offset   36 130
     frame    data/chars/shiryu/jumpattack33.png
+    sound    data/chars/shiryu/sounds/cant.wav
     frame    data/chars/shiryu/jumpattack34.png
     frame    data/chars/shiryu/jumpattack34.png
 

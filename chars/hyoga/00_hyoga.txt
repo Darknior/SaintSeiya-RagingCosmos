@@ -33,7 +33,7 @@ modelflag   3           # L'animation et la liste d'armes sont copiées (obligat
 death       1           # Active l'animation de mort
 nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
-diesound    data/chars/hyoga/sounds/hurt4.wav
+diesound    data/chars/hyoga/sounds/die3.wav
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière par defaut (animation)
@@ -252,8 +252,7 @@ anim cant # Plus assez de mp
     frame    data/chars/hyoga/uppercut2.png
     delay    10
     frame    data/chars/hyoga/uppercut3.png
-
-    
+  
 anim faint # Quand il reste 1/4 de hp
     loop     1
     delay    8
@@ -335,6 +334,15 @@ anim victory # Animation de victoire contre un boss
     frame    data/chars/hyoga/victory18.png
     frame    data/chars/hyoga/victory19.png
 
+anim lose # Animation de time up
+    delay    10
+    offset   113 139
+    sound    data/chars/hyoga/sounds/rise4.wav
+    frame    data/chars/hyoga/rise5.png
+    frame    data/chars/hyoga/rise4.png
+    frame    data/chars/hyoga/rise3.png
+    frame    data/chars/hyoga/rise2.png
+
 #// Walk/Run animations /////////////////////////////////////////////////
 
 anim turn # quand on change de direction
@@ -378,9 +386,12 @@ anim walkoff # Quand on tombe dans un trou
     delay    5
     offset   55 140
     bbox     21 14 51 97
+    frame    data/chars/hyoga/jump1.png
+    sound    data/chars/hyoga/sounds/hurt4.wav
+    frame    data/chars/hyoga/jump2.png
+    frame    data/chars/hyoga/jump3.png
+    frame    data/chars/hyoga/jump4.png
     frame    data/chars/hyoga/jump6.png
-    frame    data/chars/hyoga/jump7.png
-    frame    data/chars/hyoga/jump8.png
 
 anim up # marche vers le haut
     loop     1
@@ -807,7 +818,8 @@ anim dodge    # Esquive Haut / Bas (u u / d d)
     frame    data/chars/hyoga/jump3.png
     frame    data/chars/hyoga/jump4.png
     @cmd     spawnbind "round_dust" "ANI_IDLE" 0 -15 0 0 1
-    frame    data/chars/hyoga/jump1.png
+    delay    20
+    frame    data/chars/hyoga/jump5.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 

@@ -33,7 +33,7 @@ death       1           # Active l'animation de mort
 nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
-diesound    data/chars/seiya/sounds/hurt.wav
+diesound    data/chars/seiya/sounds/die.wav
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 candamage  enemy npc 
@@ -299,7 +299,15 @@ anim victory # Animation de victoire contre un boss
     frame    data/chars/seiya/victory4.png
     frame    data/chars/seiya/victory5.png
     frame    data/chars/seiya/victory6.png
-
+    
+anim lose # Animation de time up
+    offset   114 110
+    delay    10
+    sound    data/chars/seiya/sounds/spawn3.wav
+    frame    data/chars/seiya/rise5.png
+    frame    data/chars/seiya/rise4.png
+    frame    data/chars/seiya/rise3.png
+    frame    data/chars/seiya/rise2.png
 
 #// Walk/Run animations /////////////////////////////////////////////////
 
@@ -345,6 +353,15 @@ anim walkoff # Quand on tombe dans un trou
     frame    data/chars/seiya/forwardjump7.png
     frame    data/chars/seiya/forwardjump8.png
     sound    data/chars/seiya/sounds/low_cosmos.wav
+    frame    data/chars/seiya/forwardjump8.png
+
+anim edge # Quand on est proche d un trou
+    loop     1
+    delay    14
+    offset   21 128
+    bbox     10 18 30 112
+    frame    data/chars/seiya/walk11.png
+    frame    data/chars/seiya/walk12.png
 
 anim up # marche vers le haut
     loop     1
@@ -779,6 +796,7 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/seiya/jump3.png
     frame    data/chars/seiya/jump4.png
     @cmd     spawnbind "round_dust" "ANI_IDLE" 0 -15 0 0 1
+    delay    15
     frame    data/chars/seiya/jump1.png
 
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
