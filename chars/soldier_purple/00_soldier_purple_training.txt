@@ -162,6 +162,7 @@ anim pain
     frame    data/chars/soldier_purple/05.png
  
 anim fall
+    bouncefactor 1.9
     loop    0
     delay    10
     offset    110 180
@@ -181,6 +182,7 @@ anim fall
     frame    data/chars/soldier_purple/07.png
     
 anim fall8 # touche les enemis quand il est projetté
+    bouncefactor 1.9
     loop    0
     delay    10
     offset    110 180
@@ -202,6 +204,7 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_purple/07.png
 
 anim fall9 # touche les enemis quand il est projetté
+    bouncefactor 1.9
     loop    0
     delay    10
     offset    110 180

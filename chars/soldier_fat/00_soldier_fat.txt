@@ -381,8 +381,8 @@ anim pain
 	delay	10
 	frame	data/chars/soldier_fat/subisce4
 	
-
 anim fall
+    bouncefactor 1.9
 	landframe 4
    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
 	loop	0
@@ -412,6 +412,7 @@ anim fall
 	frame	data/chars/soldier_fat/vola9
     
 anim fall8 # touche les enemis quand il est projetté
+   bouncefactor 1.9
 	landframe 4
    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
 	loop	0
@@ -441,6 +442,7 @@ anim fall8 # touche les enemis quand il est projetté
 	frame	data/chars/soldier_fat/vola9
 
 anim fall9 # touche les enemis quand il est projetté
+   bouncefactor 1.9
 	landframe 4
    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
 	loop	0

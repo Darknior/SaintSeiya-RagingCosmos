@@ -157,6 +157,7 @@ anim pain
     frame    data/chars/soldier_base/05.png
 
 anim fall
+    bouncefactor 1.9
     landframe  4
     loop    0
     delay    17
@@ -173,6 +174,7 @@ anim fall
     frame    data/chars/soldier_base/fall3.png
     
 anim fall8 # touche les enemis quand il est projetté
+    bouncefactor 1.9
     landframe  4
     loop    0
     delay    17
@@ -190,6 +192,7 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_base/fall3.png
 
 anim fall9 # touche les enemis quand il est projetté
+    bouncefactor 1.9
     landframe  4
     loop    0
     delay    17

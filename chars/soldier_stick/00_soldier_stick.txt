@@ -240,6 +240,7 @@ anim pain
     frame    data/chars/soldier_stick/pain1.png
 
 anim fall
+    bouncefactor 1.9
     delay    15
     offset    118 125
 	 bbox 34 15 60 100
@@ -250,6 +251,7 @@ anim fall
     frame    data/chars/soldier_stick/fall3.png
     
 anim fall8 # touche les enemis quand il est projetté
+    bouncefactor 1.9
     delay    15
     offset    118 125
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
@@ -261,6 +263,7 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_stick/fall3.png
 
 anim fall9 # touche les enemis quand il est projetté
+    bouncefactor 1.9
     delay    15
     offset    118 125
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10

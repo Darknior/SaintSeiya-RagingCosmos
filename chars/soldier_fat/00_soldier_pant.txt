@@ -340,6 +340,7 @@ anim pain2
    frame    data/chars/soldier_basic/pain21.png
 
 anim fall
+    bouncefactor 1.9
     delay    10
     offset    98 125
 	 landframe 4
@@ -355,6 +356,7 @@ anim fall
     frame    data/chars/soldier_basic/fall8.png	
     
 anim fall8 # touche les enemis quand il est projetté
+    bouncefactor 1.9
     delay    10
     offset    98 125
 	 landframe 4
@@ -371,6 +373,7 @@ anim fall8 # touche les enemis quand il est projetté
     frame    data/chars/soldier_basic/fall8.png	
 
 anim fall9 # touche les enemis quand il est projetté
+    bouncefactor 1.9
     delay    10
     offset    98 125
 	 landframe 4
