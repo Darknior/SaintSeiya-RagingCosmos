@@ -20,6 +20,7 @@ antigravity -40         # Augmente la gravité pour redescendre plus vite 1/100
 
 jugglepoints 4          # Nombre de fois que l on peut etre combo dans les airs
 noquake     0 0         # Secoue l’écran qd on tombe au sol
+bounce 1                # rebondit au sol quand il est projetté
 throwdamage 20          # Degats recus si on est projetés
 grabdistance 36         # Distance à partir de laquelle on peut chopper l ennemi
 mprate      1           # Nombre de MP gagné (Réglé dans "level.txt" si on frappe un ennemi "typemp 1")
@@ -848,6 +849,7 @@ anim pain2 # Grosse douleur
     frame    data/chars/hyoga/pain21.png
 
 anim fall
+    bouncefactor 1.9
     landframe 6
     offset   69 142
     delay    10
@@ -866,6 +868,7 @@ anim fall
     frame    data/chars/hyoga/fall8.png
 
 anim fall7 # chutte apres etre Grab
+    bouncefactor 1.9
     landframe 6
     offset   69 142
     delay    10

@@ -3,7 +3,7 @@ loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
 music           data/music/pegasus.ogg
 background  	data/bgs/temple2D-boss/background.png		1 1 0 0 0 0 1 1 1 0
 panel           data/bgs/temple2D-boss/templeboss.png 
-fglayer     data/bgs/temple2D-boss/temple2_cloud.png        -25 -0.7 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+fglayer     data/bgs/temple2D-boss/temple2_cloud.png        -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
 bgspeed 1 0
 order           a
 direction       both
