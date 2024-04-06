@@ -67,14 +67,14 @@ at 0
 
 ----------Enemys---------------------------------------------------------------
 
-spawn soldier1
+spawn soldier2
 alias konstantinos
 coords 850 440
 item diamantecd
 at 0
 
 
-spawn sticksoldier
+spawn soldier2
 alias Teo
 coords -200 470
 item apple
@@ -85,7 +85,7 @@ wait
 at 400
 
 
-spawn soldier3
+spawn soldier2
 alias Stephan
 coords 850 400
 item boots

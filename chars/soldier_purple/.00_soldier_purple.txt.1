@@ -1,4 +1,4 @@
-name        SOLDIER1
+name        SOLDIER2
 health      60
 type        enemy
 
@@ -6,11 +6,11 @@ type        enemy
 #-- GENERAL CONFIG --------------------------------------------------
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
-riseinv     1 1         # Invincible après une chute X sec / Clignote pas
-makeinv     2 0         # Invincible après respawn X sec / Clignote
+riseinv     0 1         # Invincible après une chute X sec / Clignote pas
+makeinv     0 0         # Invincible après respawn X sec / Clignote
 risetime    -200        # Temps avant de se relever (-200 = 2 secondes)
 speed       12          # Vitesse de déplacement
-running     23 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
+running     22 5 2 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
 
 jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
 jumpspeed   12          # Vitesse du saut
@@ -32,18 +32,19 @@ modelflag   3           # L'animation et la liste d'armes sont copiées (obligat
 death       1           # Active l'animation de mort
 nolife      0           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
-diesound    data/chars/soldier_base/sounds/die1.wav
+
 atchain     0           # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
+
 #-- ENNEMY CONFIG ---------------------------------------------------
 
-hostile     player      # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
+hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
 aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
-aggression  -150         # Valeur positive + agressif / valeur negative - aggressif
+aggression  -150           # Valeur positive + agressif / valeur negative - aggressif
 
 hitenemy    0 0          # peut toucher d autres ennemis / air et sol
 blockodds   10           # capacité de l enemi pour bloquer une attraque (1 maximum, 20000 minimum)
@@ -69,9 +70,9 @@ load blood_ground_medium
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/soldier_base/palettes/icon1.png 0
-palette      data/chars/soldier_base/palettes/palette2.png
-#remap       data/chars/soldier_base/palettes/palette1.png  # 14 Possible MAX
+icon         data/chars/soldier_purple/palettes/icon1.png 0
+palette      data/chars/soldier_purple/palettes/palette2.png
+#remap       data/chars/soldier_purple/palettes/palette1.png  # 14 Possible MAX
 
 
 #-- ANIMATIONS -------------------------------------------------------
@@ -83,58 +84,62 @@ anim    waiting # Animation d'attente dans l'écran de sélection
     delay    10
     offset   110 180
     dropv    4 1 0
-	bbox 62 57 93 132
-    frame    data/chars/soldier_base/01.png
+    bbox     87 63 40 120
+    frame    data/chars/soldier_purple/01.png
 
 anim    select  # Personnage sélectionné
     delay    150
     offset   110 180
     sound    data/chars/sounds/select-short.wav
-    frame    data/chars/soldier_base/01.png
+    frame    data/chars/soldier_purple/01.png
+
 
 #// Static animations /////////////////////////////////////////////////
-
-anim    block
-    loop    0
-    offset    110 180
-    #sound data/chars/soldier_base/KO.wav
-    delay    10
-    dropv 4 1 0
-	bbox 79 55 70 133
-    frame    data/chars/soldier_base/04.png
-    frame    data/chars/soldier_base/04.png
-    frame    data/chars/soldier_base/04.png
-    frame    data/chars/soldier_base/04.png
 
 anim idle
     loop    1
     delay    10
     offset    110 180
     dropv 4 1 0
-	bbox 70 57 80 132
-    frame    data/chars/soldier_base/01.png
+    bbox 75 66 80 120
+    frame    data/chars/soldier_purple/01.png
+
+#// Block animations /////////////////////////////////////////////////
+
+anim        block
+loop    0
+    offset    110 180
+    delay    10
+dropv 4 1 0
+	    bbox 68 57 75 133
+frame    data/chars/soldier_purple/04.png
+frame    data/chars/soldier_purple/04.png
+frame    data/chars/soldier_purple/04.png
+frame    data/chars/soldier_purple/04.png
+
+
+#// Walk/Run animations /////////////////////////////////////////////////
 
 anim walk
     loop    1
     delay    15
     offset    110 180
-	bbox 66 62 90 125
-    frame    data/chars/soldier_base/09.png
-    frame    data/chars/soldier_base/10.png
-    frame    data/chars/soldier_base/11.png
-    frame    data/chars/soldier_base/12.png
+    bbox 67 71 80 111
+    frame    data/chars/soldier_purple/09.png
+    frame    data/chars/soldier_purple/10.png
+    frame    data/chars/soldier_purple/11.png
+    frame    data/chars/soldier_purple/12.png
 
 anim BACKWALK
-
     loop    1
     delay    15
     offset    110 180
     dropv 4 1 0
-	bbox 42 64 99 121
-    frame    data/chars/soldier_base/17.png
-    frame    data/chars/soldier_base/18.png
-    frame    data/chars/soldier_base/19.png
-    frame    data/chars/soldier_base/20.png
+    bbox 54 70 80 110
+    frame    data/chars/soldier_purple/13.png
+    frame    data/chars/soldier_purple/14.png
+    frame    data/chars/soldier_purple/15.png
+    frame    data/chars/soldier_purple/16.png
 
 #//Basic Attacks animations/////////////////////////////////////////////////
 
@@ -143,109 +148,112 @@ anim attack1
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 70 68 80 120
-	attack 132 80 50 25 0 0 0 0 0 0
-    frame    data/chars/soldier_base/03.png
+    bbox 65 59 80 133
+	 attack1 117 83 60 25 5 0 0 0 12 20
+    frame    data/chars/soldier_purple/03.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim pain
     loop    0
-    delay    7
-    offset    102 179
-    bbox 42 64 99 121
-    frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/05.png
-
+    delay    12
+    offset    106 180
+    bbox 66 76 80 110
+    frame    data/chars/soldier_purple/05.png
+    frame    data/chars/soldier_purple/05.png
+ 
 anim fall
     bouncefactor 1.9
     landframe  4
     loop    0
-    delay    17
+    delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 65 68 80 120
+    bbox 65 65 80 120
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_base/fall0.png
-    frame    data/chars/soldier_base/fall1.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
     delay    1000
-    frame    data/chars/soldier_base/fall2.png
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
     delay    10
-    offset    110 175
-    frame    data/chars/soldier_base/fall3.png
-    frame    data/chars/soldier_base/fall3.png
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
     
 anim fall8 # touche les enemis quand il est projetté
     bouncefactor 1.9
     landframe  4
     loop    0
-    delay    17
+    delay    10
     offset    110 180
     dropv 4 1 0
-	 attack 65 68 80 120 4 1 0 0 10 12
-    bbox 65 68 80 120
+    bbox 65 65 80 120
+    attack 65 65 80 120 4 1 0 0 10 12
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_base/fall0.png
-    frame    data/chars/soldier_base/fall1.png
-    delay    -1000
-    frame    data/chars/soldier_base/fall2.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
     delay    10
-    offset    110 175
-    frame    data/chars/soldier_base/fall3.png
-    frame    data/chars/soldier_base/fall3.png
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
 
 anim fall9 # touche les enemis quand il est projetté
     bouncefactor 1.9
     landframe  4
     loop    0
-    delay    17
+    delay    10
     offset    110 180
     dropv 4 1 0
-	 attack 65 68 80 120 4 1 0 0 10 12
-    bbox 65 68 80 120
+    bbox 65 65 80 120
+    attack 65 65 80 120 4 1 0 0 10 12
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_base/fall0.png
-    frame    data/chars/soldier_base/fall1.png
-    delay    -1000
-    frame    data/chars/soldier_base/fall2.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
     delay    10
-    offset    110 175
-    frame    data/chars/soldier_base/fall3.png
-    frame    data/chars/soldier_base/fall3.png
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
 
 anim death
     delay    10
-    offset    110 180
-    frame    data/chars/soldier_base/death1.png
-    frame    data/chars/soldier_base/death2.png
-    frame    data/chars/soldier_base/death3.png
-    frame    data/chars/soldier_base/death4.png
+    offset    100 180
+    frame    data/chars/soldier_purple/05.png
+    frame    data/chars/soldier_purple/06.png
     @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
-    frame    data/chars/soldier_base/death5.png
+    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/07.png
 
 anim rise
     loop    0
     offset    110 180
     delay    10
     @cmd stunCounter -20 110 1 3
-    frame    data/chars/soldier_base/08.png
-
+    frame    data/chars/soldier_purple/08.png
+    
 anim follow1 #STUN
     offset    110 180
-	 bbox 68 80 50 100
+	 bbox 70 106 50 75
     delay    50
-    frame    data/chars/soldier_base/stun1.png
-    frame    data/chars/soldier_base/stun2.png
-    frame    data/chars/soldier_base/stun1.png
-    frame    data/chars/soldier_base/stun2.png
-    frame    data/chars/soldier_base/stun1.png
-    frame    data/chars/soldier_base/stun2.png
-    frame    data/chars/soldier_base/stun1.png
-    frame    data/chars/soldier_base/stun2.png
-    frame    data/chars/soldier_base/stun1.png
-    frame    data/chars/soldier_base/stun2.png
-    frame    data/chars/soldier_base/stun1.png
-    frame    data/chars/soldier_base/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
+    frame    data/chars/soldier_purple/stun1.png
+    frame    data/chars/soldier_purple/stun2.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
  
@@ -255,27 +263,27 @@ anim pain20 # Blood pain
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -5 0 15 0 0
-    frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_purple/05.png
+    frame    data/chars/soldier_purple/05.png
     
 anim fall20 # blood fall
     landframe  4
     loop    0
-    delay    17
+    delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 65 68 80 120
+    bbox 65 65 80 120
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 20 0 0
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 0 0 0
-    sound    data/chars/soldier_base/sounds/att07.wav
-    frame    data/chars/soldier_base/fall0.png
-    frame    data/chars/soldier_base/fall1.png
-    delay    -1000
-    frame    data/chars/soldier_base/fall2.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
     delay    10
-    offset    110 175
-    frame    data/chars/soldier_base/fall3.png
-    frame    data/chars/soldier_base/fall3.png
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
  
 anim pain15# BURN PAIN
     loop    0
@@ -283,27 +291,29 @@ anim pain15# BURN PAIN
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 1 0
-    frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_purple/05.png
+    frame    data/chars/soldier_purple/05.png
  
 anim fall15# BURN PAIN Ground
     landframe  4
     loop    0
-    delay    17
+    delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 65 68 80 120
+    bbox 65 65 80 120
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -20 1 60 1 0
-    frame    data/chars/soldier_base/fall0.png
-    frame    data/chars/soldier_base/fall1.png
-    delay    -1000
-    frame    data/chars/soldier_base/fall2.png
+    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
     delay    10
-    offset    110 175
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 10 1 0
-    frame    data/chars/soldier_base/fall3.png
-    frame    data/chars/soldier_base/fall3.png
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
     
 anim pain10# ICE PAIN
     loop    0
@@ -311,10 +321,10 @@ anim pain10# ICE PAIN
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
-    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_purple/05.png
     delay    300
     @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 10 1 1 1 1
-    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_purple/05.png
     
 anim pain11# ICE PAIN Big
     loop    0
@@ -323,10 +333,10 @@ anim pain11# ICE PAIN Big
     bbox 42 64 99 121
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
-    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_purple/05.png
     delay    500
-    frame    data/chars/soldier_base/05.png
-    
+    frame    data/chars/soldier_purple/05.png
+
 anim pain12# ICE PAIN Small
     loop    0
     delay    5
@@ -334,9 +344,9 @@ anim pain12# ICE PAIN Small
     bbox 42 64 99 121
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
-    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_purple/05.png
     delay    500
-    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_purple/05.png
 
 anim pain30# Shock Pain
     loop    0
@@ -344,24 +354,29 @@ anim pain30# Shock Pain
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "shock1" "ANI_IDLE" 5 1 70 0 0
-    frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/05.png
+    frame    data/chars/soldier_purple/05.png
+    frame    data/chars/soldier_purple/05.png
  
 anim fall30# Shock PAIN Ground
     landframe  4
     loop    0
-    delay    17
+    delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 65 68 80 120
+    bbox 65 65 80 120
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
-    frame    data/chars/soldier_base/fall0.png
-    frame    data/chars/soldier_base/fall1.png
-    delay    -1000
-    frame    data/chars/soldier_base/fall2.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
     delay    10
-    offset    110 175
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 5 0 0
-    frame    data/chars/soldier_base/fall3.png
-    frame    data/chars/soldier_base/fall3.png
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
+
+#//Jump animations/////////////////////////////////////////////////
+
+

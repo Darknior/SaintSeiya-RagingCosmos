@@ -170,6 +170,7 @@ anim fall
     delay    1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
     
@@ -188,6 +189,7 @@ anim fall8 # touche les enemis quand il est projetté
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
 
@@ -206,6 +208,7 @@ anim fall9 # touche les enemis quand il est projetté
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
 
@@ -269,6 +272,7 @@ anim fall20 # blood fall
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
  
@@ -295,6 +299,7 @@ anim fall15# BURN PAIN Ground
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 10 1 0
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
@@ -355,6 +360,7 @@ anim fall30# Shock PAIN Ground
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 5 0 0
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png

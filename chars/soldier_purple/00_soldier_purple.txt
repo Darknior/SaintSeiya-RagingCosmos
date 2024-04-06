@@ -164,68 +164,66 @@ anim pain
  
 anim fall
     bouncefactor 1.9
+    landframe  4
     loop    0
     delay    10
     offset    110 180
     dropv 4 1 0
     bbox 65 65 80 120
+    attack 65 65 80 120 4 1 0 0 10 12
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
     bbox 42 152 110 30
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
+    delay    10
+    offset    110 174
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
     
 anim fall8 # touche les enemis quand il est projetté
     bouncefactor 1.9
+    landframe  4
     loop    0
     delay    10
     offset    110 180
     dropv 4 1 0
-	 attack 65 65 80 120 4 1 0 0 10 12
     bbox 65 65 80 120
+    attack 65 65 80 120 4 1 0 0 10 12
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    bbox 42 140 110 45
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
+    delay    10
+    offset    110 174
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
 
 anim fall9 # touche les enemis quand il est projetté
     bouncefactor 1.9
+    landframe  4
     loop    0
     delay    10
     offset    110 180
     dropv 4 1 0
-	 attack 65 65 80 120 4 1 0 0 10 12
     bbox 65 65 80 120
+    attack 65 65 80 120 4 1 0 0 10 12
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    bbox 42 140 110 45
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
+    delay    10
+    offset    110 174
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
 
 anim death
     delay    10
@@ -273,24 +271,24 @@ anim pain20 # Blood pain
     frame    data/chars/soldier_purple/05.png
     
 anim fall20 # blood fall
+    landframe  4
     loop    0
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 65 68 80 120
-    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    bbox 65 65 80 120
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -20 0 20 0 0
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
+    delay    10
+    offset    110 174
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
  
 anim pain15# BURN PAIN
     loop    0
@@ -302,25 +300,26 @@ anim pain15# BURN PAIN
     frame    data/chars/soldier_purple/05.png
  
 anim fall15# BURN PAIN Ground
+    landframe  4
     loop    0
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 65 68 80 120
+    bbox 65 65 80 120
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -20 1 60 1 0
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
+    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
+    delay    10
+    offset    110 174
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 10 1 0
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
     
 anim pain10# ICE PAIN
     loop    0
@@ -365,25 +364,25 @@ anim pain30# Shock Pain
     frame    data/chars/soldier_purple/05.png
  
 anim fall30# Shock PAIN Ground
+    landframe  4
     loop    0
     delay    10
     offset    110 180
     dropv 4 1 0
-    bbox 65 68 80 120
+    bbox 65 65 80 120
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
-    frame    data/chars/soldier_purple/06.png
+    frame    data/chars/soldier_purple/fall0.png
+    frame    data/chars/soldier_purple/fall1.png
+    frame    data/chars/soldier_purple/fall2.png
+    delay    1000
+    frame    data/chars/soldier_purple/fall3.png
+    bbox 42 152 110 30
+    delay    10
+    offset    110 174
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 5 0 0
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
-    frame    data/chars/soldier_purple/07.png
+    frame    data/chars/soldier_purple/fall4.png
+    frame    data/chars/soldier_purple/fall4.png
 
 #//Jump animations/////////////////////////////////////////////////
 

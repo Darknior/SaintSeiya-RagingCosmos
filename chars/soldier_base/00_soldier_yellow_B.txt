@@ -168,9 +168,10 @@ anim fall
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_base/fall0.png
     frame    data/chars/soldier_base/fall1.png
-    delay    -1000
+    delay    1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
     
@@ -189,6 +190,7 @@ anim fall8 # touche les enemis quand il est projetté
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
 
@@ -204,9 +206,10 @@ anim fall9 # touche les enemis quand il est projetté
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_base/fall0.png
     frame    data/chars/soldier_base/fall1.png
-    delay    1000
+    delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
 
@@ -270,6 +273,7 @@ anim fall20 # blood fall
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
  
@@ -283,6 +287,7 @@ anim pain15# BURN PAIN
     frame    data/chars/soldier_base/05.png
  
 anim fall15# BURN PAIN Ground
+    landframe  4
     loop    0
     delay    17
     offset    110 180
@@ -295,6 +300,7 @@ anim fall15# BURN PAIN Ground
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -30 1 10 1 0
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
@@ -355,6 +361,7 @@ anim fall30# Shock PAIN Ground
     delay    -1000
     frame    data/chars/soldier_base/fall2.png
     delay    10
+    offset    110 175
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 5 0 0
     frame    data/chars/soldier_base/fall3.png
     frame    data/chars/soldier_base/fall3.png
