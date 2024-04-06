@@ -356,13 +356,21 @@ anim walkoff # Quand on tombe dans un trou
     sound    data/chars/seiya/sounds/low_cosmos.wav
     frame    data/chars/seiya/forwardjump8.png
 
-anim edge # Quand on est proche d un trou
+anim edge # Quand on est proche d un trou (devant)
     loop     1
-    delay    14
-    offset   21 128
-    bbox     10 18 30 112
-    frame    data/chars/seiya/walk11.png
-    frame    data/chars/seiya/walk12.png
+    delay    25
+    offset   33 119
+    bbox     21 19 51 112
+    frame    data/chars/seiya/sleep5.png
+    frame    data/chars/seiya/sleep6.png
+    
+anim backedge # Quand on est proche d un trou (derriere)
+    loop     1
+    delay    25
+    offset   33 119
+    bbox     21 19 51 112
+    frame    data/chars/seiya/sleep5.png
+    frame    data/chars/seiya/sleep6.png
 
 anim up # marche vers le haut
     loop     1
