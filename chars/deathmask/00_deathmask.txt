@@ -34,7 +34,7 @@ modelflag   3           # L'animation et la liste d'armes sont copiées (obligat
 death       1           # Active l'animation de mort
 nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
-
+diesound    data/chars/deathmask/sounds/die1.wav
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        round_dustB # Effet de poussière quand on tombe (animation)
@@ -124,6 +124,7 @@ anim spawn
     frame    data/chars/deathmask/spawn7.png
     @cmd spawnFade "in" 0 0 0 10000000001 0.25
     @cmd spawnDialog "dialog_deathmask1" 200 100
+    sound data/chars/deathmask/sounds/07-ahah2.wav
     frame    data/chars/deathmask/spawn7.png
     delay    10
     frame    data/chars/deathmask/spawn8.png
@@ -283,6 +284,7 @@ anim attack5 # Attaque combo 5
     bbox 32 16 38 114
     hitflash flashbig
     attack1 0 0 0 0 0 0 0 0 0 0
+    sound data/chars/deathmask/sounds/punch1.wav
     frame    data/chars/deathmask/attack51.png
     frame    data/chars/deathmask/attack52.png
     frame    data/chars/deathmask/attack53.png
@@ -352,6 +354,7 @@ anim pain2 # Down
     delay    15
     offset    31 127
     bbox 19 16 38 114
+    sound data/chars/deathmask/sounds/pain1.wav
     frame    data/chars/deathmask/pain21.png
     frame    data/chars/deathmask/pain22.png
 
@@ -390,6 +393,7 @@ anim fall7 # chutte apres etre Grab
 anim rise # Se releve avec compteur de chuttes
     offset    77 130
     delay    10
+    sound data/chars/deathmask/sounds/07-ahah2.wav
     frame    data/chars/deathmask/rise1.png
     frame    data/chars/deathmask/rise2.png
     ## PARAMETERS: X, Y, Z, LIMIT
@@ -404,6 +408,7 @@ anim follow1 # Stun aprés X chuttes
     frame    data/chars/deathmask/pain21.png
     frame    data/chars/deathmask/pain22.png
     frame    data/chars/deathmask/pain21.png
+    sound data/chars/deathmask/sounds/stun1.wav
     frame    data/chars/deathmask/pain22.png
     frame    data/chars/deathmask/pain21.png
     frame    data/chars/deathmask/pain22.png
@@ -446,6 +451,7 @@ anim fall20 # blood fall
     offset    92 126
     landframe 4
     bbox 7 50 100 80
+    sound data/chars/deathmask/sounds/pain5.wav
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 0 0 0
     frame    data/chars/deathmask/fall1.png
@@ -530,6 +536,7 @@ anim fall30# Shock PAIN Ground
     offset    92 126
     landframe 4
     bbox 7 50 100 80
+    sound data/chars/deathmask/sounds/pain6.wav
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shock1" "ANI_IDLE" -40 1 70 0 0
     frame    data/chars/deathmask/fall1.png
