@@ -21,7 +21,6 @@ anim idle
     frame    data/chars/gemini/spawn10.png
     frame    data/chars/gemini/spawn11.png
     frame    data/chars/gemini/spawn12.png
-    sound data/chars/gemini/sounds/03-ahah.wav
     frame    data/chars/gemini/spawn13.png
     frame    data/chars/gemini/spawn14.png
     frame    data/chars/gemini/spawn15.png
