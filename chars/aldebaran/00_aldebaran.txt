@@ -33,7 +33,7 @@ modelflag   3           # L'animation et la liste d'armes sont copiées (obligat
 death       1           # Active l'animation de mort
 nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
-
+diesound    data/chars/aldebaran/sounds/die1.wav
 atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        fall_dust # Effet de poussière quand on tombe (animation)
@@ -294,6 +294,7 @@ anim attack5 # Attaque combo 5
     offset    46 163
     bbox 19 13 38 151
     hitflash flashbig
+    sound data/chars/aldebaran/sounds/punch1.wav
     frame    data/chars/aldebaran/attack51.png
     attack20 82 42 78 56 20 1 0 0 50 12
     dropv 4.0 1.0 0.0
@@ -354,6 +355,7 @@ anim pain2 # Big pain
     delay    5
     offset    43 160
     bbox 22 15 45 151
+    sound data/chars/aldebaran/sounds/hurt3.wav
     frame    data/chars/aldebaran/pain21.png
     frame    data/chars/aldebaran/pain22.png
     frame    data/chars/aldebaran/pain23.png
@@ -432,6 +434,7 @@ anim death
 anim rise # Se releve avec compteur de chuttes
     offset    118 164
     delay    10
+    sound data/chars/aldebaran/sounds/respawn1.wav
     frame    data/chars/aldebaran/rise1.png
     frame    data/chars/aldebaran/rise2.png
     @cmd stunCounter -5 150 1 5
@@ -444,6 +447,7 @@ anim follow1 # Stun aprés X chuttes
     frame    data/chars/aldebaran/stun1.png
     frame    data/chars/aldebaran/stun2.png
     frame    data/chars/aldebaran/stun1.png
+    sound data/chars/aldebaran/sounds/stun1.wav
     frame    data/chars/aldebaran/stun2.png
     frame    data/chars/aldebaran/stun1.png
     frame    data/chars/aldebaran/stun2.png
@@ -460,6 +464,7 @@ anim pain20 # Blood pain
     delay    5
     offset    43 160
     bbox 22 15 45 151
+    sound data/chars/aldebaran/sounds/hurt4.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 50 0 0
     frame    data/chars/aldebaran/pain21.png
     frame    data/chars/aldebaran/pain22.png
@@ -472,6 +477,7 @@ anim fall20 # blood fall
     bbox 85 14 60 150
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 35 0 0
+    sound data/chars/aldebaran/sounds/hurt2.wav
     frame    data/chars/aldebaran/fall1.png
     frame    data/chars/aldebaran/fall2.png
     bbox 8 104 160 60
@@ -560,6 +566,7 @@ anim fall30# Shock PAIN Ground
     offset    118 164
     landframe 6
     bbox 85 14 60 150
+    sound data/chars/aldebaran/sounds/hurt1.wav
     @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shock1" "ANI_IDLE" -20 1 85 0 0
     frame    data/chars/aldebaran/fall1.png
@@ -760,6 +767,7 @@ anim freespecial4 # Punch combo
 	attack1 59 90 140 35 5 0 0 0 12 30
     frame    data/chars/aldebaran/special25.png
 	attack1 0
+    sound data/chars/aldebaran/sounds/multihit.wav
     frame    data/chars/aldebaran/special21.png
     frame    data/chars/aldebaran/special22.png
 	attack30 59 120 140 35 5 0 0 0 12 30
@@ -795,7 +803,6 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
     offset    45 160
     fastattack 1
     energycost  50 1 0
-    bbox 2 17 60 150
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 0 0
     @cmd     spawnScreen "camus_lights" 0 0 0 0
     sound data/chars/aldebaran/sounds/78-cosmos.wav
@@ -813,7 +820,6 @@ anim freespecial6 # Ultra Great Horn ( haut + bouton special)
     frame    data/chars/aldebaran/special48.png
     frame    data/chars/aldebaran/special49.png
     frame    data/chars/aldebaran/special50.png
-	 bbox 0 0 0 0
     sound data/chars/aldebaran/sounds/06-ultraGH.wav
     frame    data/chars/aldebaran/special51.png
     @cmd     spawnbind "aldebaran_ultraGH" "ANI_IDLE" 0 50 0 1 0
