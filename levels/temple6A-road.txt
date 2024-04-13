@@ -48,15 +48,15 @@ spawn4 110 350 0 # position du joueur4 (x, z, Y)
 #-- HUD ------------------------------------------------------------------------
 
 spawn       horloge-segment
-coords 368 89
+coords 368 140 50
 at 0
 
 spawn       horloge-taureau
-coords 368 89
+coords 368 140 50
 at 0
 
 spawn       horloge-flame
-coords 387 47
+coords 387 98 50
 at 0
 
 #spawn       temple2roadcolumns

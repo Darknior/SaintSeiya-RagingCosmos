@@ -3,7 +3,7 @@ type    panel
 shadow    0
 setlayer 8000
 speed 10
-no_adjust_base  0
+#no_adjust_base  0
 noquake        1 1
 subject_to_gravity 0
 subject_to_obstacle 0
