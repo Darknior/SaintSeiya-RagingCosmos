@@ -1,32 +1,49 @@
 loadingbg    data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
 music        data/music/Pegasus_Fantasy_instrumental.ogg
-
-panel        data/bgs/temple6A-road/temple6A-road.png
-frontpanel   data/bgs/temple6A-road/layer1.png
-background   data/bgs/temple6A-road/background.png        
+background   data/bgs/temple6A-road/background.png
 bglayer      data/bgs/temple6A-road/backgroundC.png 0.8 1 0 0 0 0 1 1 1 0
+panel        data/bgs/temple6A-road/temple6A-road.png
 fglayer      data/bgs/temple6A-road/clouds-road.png   -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer      data/bgs/temple6A-road/temple6A-road.png   -5000 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 1
+fglayer      data/bgs/temple6A-road/temple6A-roadB.png   -619 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 1
 
- 1
-bgspeed      1 0
+#bgspeed      1 0
+
+shadowalpha  2
+shadowopacity 80
+direction    both
+
+settime      99
+#noreset      2
+#cameratype   1
+order        a
+
+wall 331 542 -638 0 887 265 157 1000
+wall 235 730 -429 -336 -397 251 157 1000
+wall 1329 417 -1500 -1500 1430 369 314 1000
+wall 1680 738 458 -356 2000 2000 300 1000
+wall 2937 462 299 -33 706 707 116 1000
+wall 900 614 38 -89 95 50 100 1000
+wall 1465 561 -109 -90 69 -33 55 1000
+wall 2432 354 38 -89 95 50 100 1000
+wall 2913 356 -109 -94 -57 -57 105 1000
+wall 2961 279 -109 -109 -105 4 26 1000
+wall 2963 355 -109 -109 66 -106 79 1000
+
+hole 1019 614 -44 -94 477 284 100 10
+hole 2571 353 -44 -94 250 264 100 10
+
+updatescript data/scripts/updatelevel/temple6a_holes.c
 
 light        256 -44
 at           0
-shadowalpha  2
-shadowopacity 80
-direction    right
-
-settime      99
-noreset      2
-cameratype   1
-order        a
 
 #-------- Players spawn position -----------------------------------------------
 
-spawn1 50 180 0 # position du joueur1 (x, z, Y)
-spawn2 80 160 0 # position du joueur2 (x, z, Y)
-spawn3 90 220 0 # position du joueur3 (x, z, Y)
-spawn4 110 190 0 # position du joueur4 (x, z, Y)
+spawn1 50 350 0 # position du joueur1 (x, z, Y)
+spawn2 80 350 0 # position du joueur2 (x, z, Y)
+spawn3 90 350 0 # position du joueur3 (x, z, Y)
+spawn4 110 350 0 # position du joueur4 (x, z, Y)
 
 #-- HUD ------------------------------------------------------------------------
 
@@ -42,17 +59,16 @@ spawn       horloge-flame
 coords 387 47
 at 0
 
-spawn       temple2roadcolumns
-coords 0 0
-flip 1
-at 0
+#spawn       temple2roadcolumns
+#coords 0 0
+#flip 1
+#at 0
 
 spawn soldier_fat
 alias konstantinos
 coords 850 440
 item diamantecd
 at 0
-
 
 spawn sticksoldier
 alias Teo
@@ -218,10 +234,3 @@ at 3800
 
 wait
 at 3800
-
-
-
-
-
-
-

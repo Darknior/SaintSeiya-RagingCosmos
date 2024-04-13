@@ -565,7 +565,7 @@ typemp      1
 custfade	100
 skipselect  ikki
 branch      temple6
-z           378 484
+z           190 710
 file        data/levels/temple6A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt
