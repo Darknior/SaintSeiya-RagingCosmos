@@ -5,7 +5,6 @@ void main()
 
 void adjustLayer()
 {
-	void self			= getlocalvar("self");
 	void entity_cursor	= NULL();
 	int entity_count	= openborvariant("count_entities");
 	int entity_index	= 0;
@@ -28,6 +27,14 @@ void adjustLayer()
 		if(getentityproperty(entity_cursor, "y") < 0){
 			if(getentityproperty(entity_cursor, "x") < openborvariant("hresolution")/2){
 				changeentityproperty(entity_cursor, "setlayer", -10);
+				changeentityproperty(entity_cursor, "sortid", -10);
+			}
+		}
+		else
+		{
+			if(getentityproperty(entity_cursor, "setlayer") < 0){
+				changeentityproperty(entity_cursor, "setlayer", 0);
+				changeentityproperty(entity_cursor, "sortid", 0);
 			}
 		}
 	}
