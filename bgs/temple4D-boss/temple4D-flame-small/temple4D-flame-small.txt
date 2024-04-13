@@ -1,0 +1,22 @@
+name                temple4D-flame-small
+type                none
+shadow              0
+setlayer            2
+
+
+anim idle
+    loop        1
+    delay       16
+    offset      48 85
+    drawmethod  scale 1 1
+    drawmethod  alpha 1
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-0.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-1.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-2.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-3.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-4.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-5.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-6.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-7.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-8.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-small/r_5-9.png

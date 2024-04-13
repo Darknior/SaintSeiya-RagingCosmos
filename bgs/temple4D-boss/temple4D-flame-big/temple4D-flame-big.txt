@@ -1,0 +1,35 @@
+name                temple4D-flame-big
+type                none
+shadow              0
+setlayer            2
+
+
+anim idle
+    loop        1
+    delay       16
+    offset      48 85
+    drawmethod  scale 1 1
+    drawmethod  alpha 1
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-0.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-1.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-2.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-3.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-4.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-5.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-6.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-7.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-8.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-9.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-10.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-11.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-12.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-13.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-14.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-15.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-16.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-17.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-18.png    
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-19.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-20.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-21.png
+    frame       data/bgs/temple4D-boss/temple4D-flame-big/r_4-22.png
