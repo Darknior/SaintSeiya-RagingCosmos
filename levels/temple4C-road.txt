@@ -52,6 +52,10 @@ coords      387 47
 at          0
 
 
+spawn temple4C-dialog1
+coords	0 0
+at 0
+
 spawn soldier1
 alias SOLDIER
 coords	850 400

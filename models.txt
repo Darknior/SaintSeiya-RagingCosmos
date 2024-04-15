@@ -585,6 +585,9 @@ know temple4_faces01     data/bgs/temple4B-midboss/faces/temple4_faces01.txt
 know temple4_faces02     data/bgs/temple4B-midboss/faces/temple4_faces02.txt
 know temple4_faces03     data/bgs/temple4B-midboss/faces/temple4_faces03.txt
 
+## TEMPLE 4C ROAD
+know temple4C-dialog1      data/bgs/temple4C-road/dialogs/temple4C-dialog1.txt
+
 ## TEMPLE 4D BOSS: DEATHMASK
 know temple4D-flame-big     data/bgs/temple4D-boss/temple4D-flame-big/temple4D-flame-big.txt
 know temple4D-flame-small     data/bgs/temple4D-boss/temple4D-flame-small/temple4D-flame-small.txt

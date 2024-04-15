@@ -1,0 +1,46 @@
+name	 temple4C-dialog1
+type	 panel
+setlayer 10000
+speed 10
+antigravity 100
+animationscript	data/scripts/player.c
+
+anim idle
+	loop	0
+	offset   -200 -156
+   drawmethod  flipx 1
+	drawmethod  alpha 6
+   drawmethod channel 0.15	
+   delay	7
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.25
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+	drawmethod channel 0.35	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.45	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.55	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.65	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.75	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   delay	800
+	frame data/bgs/temple4C-road/dialogs/dialog1.png
+   delay	7
+   drawmethod channel 0.65	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.55	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.45	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.35	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.25	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.15	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod channel 0.05	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   @cmd suicide
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
