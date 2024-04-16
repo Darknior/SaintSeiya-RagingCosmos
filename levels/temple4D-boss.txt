@@ -11,7 +11,7 @@ panel       data/bgs/temple4D-boss/temple4D_panel.png
 
 loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
 music           data/music/cancer.ogg        # Musique du niveau
-bgspeed 1 0                                  # Vitesse de deplacement du background / Direction gauche
+#bgspeed 1 0                                  # Vitesse de deplacement du background / Direction gauche
 order       a                                # ordre des panels
 direction   both                             # Direction du scrolling
 settime     99                               # Temps pour finir le niveau

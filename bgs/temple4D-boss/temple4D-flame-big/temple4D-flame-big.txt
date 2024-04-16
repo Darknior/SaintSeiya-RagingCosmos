@@ -1,5 +1,7 @@
 name                temple4D-flame-big
-type                none
+type                panel
+scroll              0
+noquake             1 1
 shadow              0
 setlayer            2
 

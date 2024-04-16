@@ -1,6 +1,9 @@
 name                temple4D-flame-small
-type                none
+type                panel
+scroll              0.5
+noquake             1 1
 shadow              0
+setlayer            2
 
 
 anim idle
