@@ -48,47 +48,47 @@ at 0
 #----------- Decoration --------------------------------------------------------------------------
 
 spawn       temple4D-flame-big
-coords 115 350
+coords 160 311
 flip 1
 at 0
 
 spawn       temple4D-flame-big
-coords 315 310
+coords 360 246
 flip 1
 at 0
 
 spawn       temple4D-flame-big
-coords 615 350
+coords 634 327
 flip 1
 at 0
 
 spawn       temple4D-flame-big
-coords 915 360
+coords 909 293
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 73 339
+coords 57 274
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 191 309
+coords 189 263
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 316 260
+coords 571 261
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 515 300
+coords 753 246
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 1019 322
+coords 1025 250
 flip 1
 at 0
 
@@ -96,17 +96,17 @@ at 0
 
 
 spawn           temple4_faces01
-flip            1
-coords          0 0
-at              0
+coords -19 240
+flip 1
+at 0
 spawn           temple4_faces02
-flip            1
-coords          0 0
-at              0
+coords 0 0
+flip 1
+at 0
 spawn           temple4_faces03
-flip            1
-coords          0 0
-at              0
+coords 0 0
+flip 1
+at 0
 
 
 #-- BOSS -------------------------------------------------------------------------------------

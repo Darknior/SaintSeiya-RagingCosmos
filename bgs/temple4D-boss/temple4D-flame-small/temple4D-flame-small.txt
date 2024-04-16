@@ -1,7 +1,6 @@
 name                temple4D-flame-small
 type                none
 shadow              0
-setlayer            2
 
 
 anim idle
