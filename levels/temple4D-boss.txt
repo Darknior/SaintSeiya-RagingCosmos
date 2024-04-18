@@ -111,9 +111,18 @@ at 0
 
 #-- BOSS -------------------------------------------------------------------------------------
 
-spawn           soldier_basic
+spawn           deathmask
 boss 			1
 coords 650 410
+at 0
+
+group			1 1
+at				0
+
+spawn           dialog_wait
+boss			1
+coords 1 1
+flip 1
 at 0
 
 
