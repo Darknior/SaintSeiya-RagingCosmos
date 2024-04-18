@@ -73,22 +73,22 @@ flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 189 263
+coords 217 275
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 571 261
+coords 558 267
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 753 246
+coords 808 284
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 1025 250
+coords 998 263
 flip 1
 at 0
 

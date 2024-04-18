@@ -3,7 +3,8 @@ type                panel
 scroll              0.5
 noquake             1 1
 shadow              0
-setlayer            2
+antigravity 100
+setlayer            1000
 
 
 anim idle
