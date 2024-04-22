@@ -3,7 +3,7 @@ type                panel
 scroll              0
 noquake             1 1
 shadow              0
-
+setlayer            -10
 
 anim idle
     loop        1

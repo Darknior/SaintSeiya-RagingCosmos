@@ -1,43 +1,46 @@
-loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0
+#--------# Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas) #-----------------
 
-music		data/music/Pegasus_Fantasy_instrumental.ogg
-
-
-background  	data/bgs/temple4C-road/background.png		1 1 0 0 0 0 1 1 1 0
+background     data/bgs/temple4C-road/background.png        1 1 0 0 0 0 1 1 1 0
 bglayer  	data/bgs/temple4C-road/clouds_back.png		 0.7 0 0 0 0 0 -1 -1 1 1 1 4 15 0.5 1
-bglayer     data/bgs/temple4C-road/temple4C-mountainsB.png   	0.93 1 0 0 0 0 1 1 1 0
-bglayer     data/bgs/temple4C-road/temple4C-mountainsA.png        0.8 1 0 0 0 0 1 1 1 0
-bglayer  	data/bgs/temple4C-road/clouds-front.png		 0.3 0 0 0 0 0 -1 -1 1 1 0 0 0 0 1.1
+fglayer     data/bgs/temple4C-road/temple4C-mountainsB.png   	-500 0.92 1 0 0 0 0 1 1 1 0
+fglayer  	data/bgs/temple4C-road/clouds-front.png		 -350 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer     data/bgs/temple4C-road/temple4C-mountainsA.png      -250 0.5 1 0 0 0 0 1 1 1 0
 panel		data/bgs/temple4C-road/temple4C-road.png 
 frontpanel  data/bgs/temple4C-road/layer1.png 
+order       a                                # ordre des panels
 
-bgspeed 1 0
+#--------# Level options #------------------------------------------------------------------------
 
-light        256 -44
-at        0
-shadowalpha 6
-shadowopacity 0
-direction right
+loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
+music           data/music/cancer.ogg        # Musique du niveau
 
-settime 99
-noreset 2
-cameratype 1
+bgspeed 1 0                                  # Vitesse de deplacement du background / Direction gauche
+direction right                              # Direction du scrolling (droite)
+cameratype 1                                 # La caméra bouge horizontalement
 
-order	a
+light        256 -44                         # Direction de l ombre x, y
+at
+shadowalpha 6                                # Alpha de l ombre
+at
+shadowopacity 200                            # Opacité de l ombre
+at
+
+settime     99                               # Temps pour finir le niveau
+noreset 2                                    # Reset de l horloge apres timeout
 
 nofadeout 0
 nosave 1
 blocked 1
 noslow 1
 
-#-------- Players spawn position -----------------------------------------------
+#---------# Players spawn positions #-----------------------------------------------
 
 spawn1 50 180 0 # position du joueur1 (x, z, Y)
 spawn2 80 160 0 # position du joueur2 (x, z, Y)
 spawn3 90 220 0 # position du joueur3 (x, z, Y)
 spawn4 110 190 0 # position du joueur4 (x, z, Y)
 
-#-- HUD ------------------------------------------------------------------------
+#---------# Hud #-------------------------------------------------------------------
 
 spawn       horloge-segment
 coords      368 89
@@ -51,10 +54,60 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
+#----------- Decoration --------------------------------------------------------------------------
+
+spawn       temple4C-flame-big
+coords 160 350 39
+flip 1
+at 0
+
+spawn       temple4C-flame-big
+coords 362 351 104
+flip 1
+at 0
+
+spawn       temple4C-flame-big
+coords 642 335 23
+flip 1
+at 0
+
+spawn       temple4C-flame-big
+coords 909 350 57
+flip 1
+at 0
+
+spawn       temple4C-flame-small
+coords 57 350 76
+flip 1
+at 0
+
+spawn       temple4C-flame-small
+coords 217 350 75
+flip 1
+at 0
+
+spawn       temple4C-flame-small
+coords 591 295 83
+flip 1
+at 0
+
+spawn       temple4C-flame-small
+coords 796 287 66
+flip 1
+at 0
+
+spawn       temple4C-flame-small
+coords 972 337 87
+flip 1
+at 0
+
+#---------- # Dialogs #---------------------------------------------------------------
 
 spawn temple4C-dialog1
 coords	0 0
 at 0
+
+#----------# Enemies #---------------------------------------------------------------
 
 spawn soldier1
 alias SOLDIER
@@ -202,7 +255,7 @@ at 3800
 wait
 at 3800
 
-
+#---------------------------------------------------------------------------------------
 
 
 

@@ -6,17 +6,20 @@ fglayer     data/bgs/temple4D-boss/temple4D-mountainsB.png   	-500 0.5 1 0 0 0 0
 fglayer  	data/bgs/temple4C-road/clouds-front.png		 -350 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 fglayer     data/bgs/temple4D-boss/temple4D-mountainsA.png      -250 0.05 1 0 0 0 0 1 1 1 0
 panel       data/bgs/temple4D-boss/temple4D_panel.png 
+order       a                                # ordre des panels
 
 #-------- Level options ------------------------------------------------------------------------
 
 loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
 music           data/music/cancer.ogg        # Musique du niveau
+
 bgspeed 1 0                                  # Vitesse de deplacement du background / Direction gauche
-order       a                                # ordre des panels
 direction   both                             # Direction du scrolling
+cameratype  0                                # La caméra bouge horizontalement
+
 settime     99                               # Temps pour finir le niveau
 noreset 1                                    # Reset de l horloge apres timeout
-cameratype  0                                # La caméra bouge horizontalement
+
 light        256 -44                         # Direction de l ombre x, y
 at
 shadowalpha 6                                # Alpha de l ombre
