@@ -1,26 +1,32 @@
-loadingbg    data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
-music        data/music/Pegasus_Fantasy_instrumental.ogg
+#-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
-panel        data/bgs/temple2A-road/temple2A-road.png
-frontpanel   data/bgs/temple2A-road/layer1.png
 background   data/bgs/temple2A-road/background.png        1 1 0 0 0 0 1 1 1 0
 bglayer      data/bgs/temple2A-road/clouds-back.png       0.75 0 0 0 0 0 -1 -1 1 1 0 0 0 0 1
 bglayer      data/bgs/temple2A-road/temple2A-mountainsA.png 0.8 1 0 0 0 0 1 1 1 0
 bglayer      data/bgs/temple2A-road/temple2A-temple.png    0.5 1 0 0 0 0 1 9999 1 0
-fglayer  	data/bgs/temple2A-road/clouds-front.png		 -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer  	data/bgs/temple2A-road/clouds-front.png		 -5000 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+panel        data/bgs/temple2A-road/temple2A-road.png
 fglayer      data/bgs/temple2A-road/clouds-road.png       -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
-bgspeed      1 0
-bounce 1
-light        256 -44
-at           0
-shadowalpha  2
-shadowopacity 80
-direction    right
+frontpanel   data/bgs/temple2A-road/layer1.png
+order a           # ordre des panels
 
-settime      99
-noreset      2
-cameratype   1
-order        a
+#-------- Level options ------------------------------------------------------------------------
+
+loadingbg    data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
+music        data/music/Pegasus_Fantasy_instrumental.ogg        # Musique du niveau
+
+light        256 -44             # Direction de l ombre x, y
+at 0
+shadowalpha  2                   # Alpha de l ombre
+at 0
+shadowopacity 80                 # Opacité de l ombre
+at 0
+
+bgspeed      1 0                 # Vitesse de deplacement du background / Direction gauche
+direction    right               # Direction du scrolling
+settime      99                  # Temps pour finir le niveau
+noreset      2                   # Reset de l horloge apres timeout
+cameratype   1                   # La caméra bouge horizontalement
 
 
 ---------MURS------------------------------------------
@@ -240,4 +246,4 @@ at 3800
 wait
 at 3800
 
-
+----------# End of Level #---------------------------------------------------------------

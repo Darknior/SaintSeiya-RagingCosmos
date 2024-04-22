@@ -3,7 +3,7 @@
 background     data/bgs/temple4D-boss/background.png        1 1 0 0 0 0 1 1 1 0
 bglayer  	data/bgs/temple4D-boss/clouds_back.png		 0.7 0 0 0 0 0 -1 -1 1 1 1 4 15 0.5 1
 fglayer     data/bgs/temple4D-boss/temple4D-mountainsB.png   	-500 0.5 1 0 0 0 0 1 1 1 0
-bglayer  	data/bgs/temple4D-boss/clouds-front.png		 0.3 0 0 0 0 0 -1 -1 1 1 0 0 0 0 1.1
+fglayer  	data/bgs/temple4C-road/clouds-front.png		 -350 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 fglayer     data/bgs/temple4D-boss/temple4D-mountainsA.png      -250 0.05 1 0 0 0 0 1 1 1 0
 panel       data/bgs/temple4D-boss/temple4D_panel.png 
 
@@ -11,7 +11,7 @@ panel       data/bgs/temple4D-boss/temple4D_panel.png
 
 loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
 music           data/music/cancer.ogg        # Musique du niveau
-#bgspeed 1 0                                  # Vitesse de deplacement du background / Direction gauche
+bgspeed 1 0                                  # Vitesse de deplacement du background / Direction gauche
 order       a                                # ordre des panels
 direction   both                             # Direction du scrolling
 settime     99                               # Temps pour finir le niveau
@@ -53,12 +53,12 @@ flip 1
 at 0
 
 spawn       temple4D-flame-big
-coords 360 350 104
+coords 362 351 104
 flip 1
 at 0
 
 spawn       temple4D-flame-big
-coords 634 350 23
+coords 642 335 23
 flip 1
 at 0
 
@@ -78,17 +78,17 @@ flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 558 350 83
+coords 591 295 83
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 808 350 66
+coords 796 287 66
 flip 1
 at 0
 
 spawn       temple4D-flame-small
-coords 998 350 87
+coords 972 337 87
 flip 1
 at 0
 
@@ -97,15 +97,12 @@ at 0
 
 spawn           temple4_faces01
 coords -19 240
-flip 1
 at 0
 spawn           temple4_faces02
 coords 0 0
-flip 1
 at 0
 spawn           temple4_faces03
 coords 0 0
-flip 1
 at 0
 
 
