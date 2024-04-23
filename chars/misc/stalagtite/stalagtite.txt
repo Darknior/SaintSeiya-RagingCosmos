@@ -1,0 +1,28 @@
+name		Stalagtite
+type		trap
+lifespan	2
+nolife  	1
+shadow 		3
+palette		none
+candamage	player enemy npc
+
+
+anim idle
+	delay	500
+	offset	91 175
+	landframe 1
+	attack5	83 130 23 44 20 1
+	sound   data/sounds/rocks.wav
+	frame	data/chars/misc/Stalagtite/idle.gif
+	delay	3
+	attack  0
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/misc/Stalagtite/death01.gif
+	frame	data/chars/misc/Stalagtite/death02.gif
+	frame	data/chars/misc/Stalagtite/death03.gif
+	frame	data/chars/misc/Stalagtite/death04.gif
+	frame	data/chars/misc/Stalagtite/death05.gif
+	frame	data/chars/misc/Stalagtite/death06.gif
+	frame	data/chars/misc/Stalagtite/death07.gif
+	fshadow	0
+	frame	data/chars/misc/empty.gif

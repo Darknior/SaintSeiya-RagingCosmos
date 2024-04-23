@@ -1,0 +1,95 @@
+name	bull2
+type	enemy
+health        400
+subtype	biker
+speed   16
+gfxshadow     1
+nolife	1
+candamage player obstacle npc
+diesound  data/sounds/bull1.wav
+
+
+load	bull
+rider	bull
+
+alternatepal       data/chars/2bug8/map1.gif
+alternatepal       data/chars/2bug8/map2.gif
+alternatepal       data/chars/2bug8/map3.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	8
+	offset	170 270
+	bbox	100 160 110 90
+	attack	190 195 70 59 20 1 0 0 38 0
+	sound	data/sounds/bull1.wav
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+		
+anim	pain
+	loop	0
+	delay	8
+	offset	170 270
+	frame	data/chars/2bug8/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	10
+	offset	170 270
+	bbox	100 160 110 90
+	frame	data/chars/2bug8/idle01.gif
+	frame	data/chars/2bug8/idle02.gif
+		
+#|edited by openBor Stats v 0.53
+		

@@ -1,0 +1,172 @@
+name	        Rocker
+type	        none
+subject_to_gravity 0
+animationscript data/scripts/oscript.c
+load	        Batu
+load	        Rocks
+load	        Stalagtite
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	@cmd	anichange "ANI_FOLLOW1"
+        frame   data/chars/misc/empty.gif
+
+anim follow1
+@script
+    if(frame == 2){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if(r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+    }
+@end_script
+	loop	1
+	delay	1
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	delay	300
+	@cmd	RspawnN "Rocks" 0 10 0 20 100 10
+        frame   data/chars/misc/empty.gif
+	delay	1
+        frame   data/chars/misc/empty.gif
+
+anim follow2
+@script
+    if(frame == 2){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if(r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else {
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } 
+    }
+@end_script
+	loop	1
+	delay	1
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	delay	430
+	@cmd	RspawnN "Stalagtite" 0 10 0 20 100 10
+        frame   data/chars/misc/empty.gif
+	delay	1
+        frame   data/chars/misc/empty.gif
+
+anim follow3
+@script
+    if(frame == 3){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if(r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else {
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } 
+    }
+@end_script
+	loop	1
+	delay	1
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	delay	300
+        frame   data/chars/misc/empty.gif
+	delay	260
+	@cmd	RspawnN "Rocks" 0 10 0 20 100 10
+        frame   data/chars/misc/empty.gif
+	delay	1
+        frame   data/chars/misc/empty.gif
+
+anim follow4
+@script
+    if(frame == 3){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if(r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } 
+    }
+@end_script
+	loop	1
+	delay	1
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	delay	200
+        frame   data/chars/misc/empty.gif
+	delay	340
+	@cmd	RspawnN "Stalagtite" 0 10 0 20 100 10
+        frame   data/chars/misc/empty.gif
+	delay	1
+        frame   data/chars/misc/empty.gif
+
+anim follow5
+@script
+    if(frame == 2){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if(r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else {
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } 
+    }
+@end_script
+	loop	1
+	delay	1
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	delay	360
+	@cmd	RspawnN "Batu" 0 10 0 20 100 10
+        frame   data/chars/misc/empty.gif
+	delay	1
+        frame   data/chars/misc/empty.gif
+
+anim follow6
+@script
+    if(frame == 3){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if(r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } 
+    }
+@end_script
+	loop	1
+	delay	1
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	delay	400
+        frame   data/chars/misc/empty.gif
+	delay	100
+	@cmd	RspawnN "Batu" 0 10 0 20 100 10
+        frame   data/chars/misc/empty.gif
+	delay	1
+        frame   data/chars/misc/empty.gif

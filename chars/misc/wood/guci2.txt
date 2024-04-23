@@ -1,0 +1,20 @@
+name		Guci2
+health		20
+type		obstacle
+gfxshadow	1
+defense		normal4 10
+diesound 	data/sounds/glass.wav
+icon		data/chars/misc/gucicon.png
+
+
+anim idle
+	delay	100
+	offset	30 48
+	bbox	2 -30 54 76
+	platform 30 58 -30 -30 30 30 20 40
+	frame	data/chars/misc/guci.png
+
+anim fall
+	delay	100
+	offset	46 61
+	frame	data/chars/misc/guced.png

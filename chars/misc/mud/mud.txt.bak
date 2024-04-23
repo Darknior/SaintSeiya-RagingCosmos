@@ -1,0 +1,157 @@
+name	mud
+health	150
+speed	10
+#running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+#aggression 30
+bflash bflash
+blockodds 1
+thold     49
+nodrop	2
+nopain 1
+falldie	1
+aimove chase
+hostile player npc
+candamage player npc
+icon	data/chars/mud/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+animationscript 	data/scripts/ani0020.h
+palette	data/chars/mud/idle1.gif
+ondrawscript 		data/scripts/player_ondrawscript.c
+subject_to_wall 1
+alternatepal	data/chars/mud/testpal.gif
+#alternatepal	data/chars/mud/testpal2.gif
+
+
+anim spawn
+	loop	1
+	offset	146 205
+	delay	22
+	@cmd  attack1  34  80  440  "ANI_follow1"
+	frame	data/chars/misc/empty/empty.gif
+
+anim follow1
+	loop	0
+	offset	146 205
+	delay	22
+	frame	data/chars/mud/spawn1.gif
+	frame	data/chars/mud/spawn2.gif
+	frame	data/chars/mud/spawn3.gif
+	frame	data/chars/mud/spawn4.gif
+
+
+anim idle
+	loop	1
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	16
+	frame	data/chars/mud/idle1.gif
+	frame	data/chars/mud/idle2.gif
+	frame	data/chars/mud/idle3.gif
+	frame	data/chars/mud/idle4.gif
+
+
+anim walk
+	loop	1
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	8
+	frame	data/chars/mud/walk1.gif
+	frame	data/chars/mud/walk2.gif
+	frame	data/chars/mud/walk3.gif
+	frame	data/chars/mud/walk4.gif
+	frame	data/chars/mud/walk5.gif
+	frame	data/chars/mud/walk6.gif
+
+
+anim fall
+	loop	1
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	16
+	frame	data/chars/mud/idle1.gif
+
+anim death
+	loop	0
+	delay	17
+	offset  146 205
+	frame	data/chars/mud/death1.gif
+	frame	data/chars/mud/death2.gif
+	frame	data/chars/mud/death3.gif
+	frame	data/chars/mud/death4.gif
+	frame	data/chars/mud/death5.gif
+	frame	data/chars/mud/death6.gif
+	frame	data/chars/mud/death7.gif
+	frame	data/chars/mud/death8.gif
+	frame	data/chars/mud/death9.gif
+	frame	data/chars/mud/death10.gif
+	frame	data/chars/mud/death11.gif
+	frame	data/chars/mud/death12.gif
+	frame	data/chars/mud/death13.gif
+	frame	data/chars/mud/death14.gif
+	frame	data/chars/mud/death15.gif
+	frame	data/chars/mud/death16.gif
+
+
+
+anim rise
+	loop	1
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	16
+	frame	data/chars/mud/idle1.gif
+
+
+anim attack1
+	range	30 75
+	loop	0
+	delay	10
+	offset  146 205
+	bbox 	113 112 60 92
+	sound	data/chars/mud/light.wav
+	frame	data/chars/mud/atk1.gif
+	frame	data/chars/mud/atk2.gif
+	attack	147 114 67 86 10 0 0 0 14
+	frame	data/chars/mud/atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/mud/atk4.gif
+	attack	147 114 67 86 20 1 0 0 26
+	frame	data/chars/mud/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/mud/atk6.gif
+anim  pain
+	loop  1
+		delay  6
+		offset  146  205
+		move  -3
+	frame  data/chars/mud/walk6.gif
+	frame  data/chars/mud/walk5.gif
+	frame  data/chars/mud/walk4.gif
+	frame  data/chars/mud/walk3.gif
+	frame  data/chars/mud/walk2.gif
+		offset  146  205
+		bbox  113  112  60  92
+		delay  8
+	frame  data/chars/mud/walk1.gif
+anim  backwalk
+	loop  1
+		delay  6
+		offset  146  205
+		move  -3
+	frame  data/chars/mud/walk6.gif
+	frame  data/chars/mud/walk5.gif
+	frame  data/chars/mud/walk4.gif
+	frame  data/chars/mud/walk3.gif
+	frame  data/chars/mud/walk2.gif
+		offset  146  205
+		bbox  113  112  60  92
+		delay  8
+	frame  data/chars/mud/walk1.gif
+

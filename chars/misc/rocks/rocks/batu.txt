@@ -1,0 +1,34 @@
+name		Batu
+type		trap
+lifespan	2
+nolife		1
+shadow		4
+noquake		1
+candamage	player enemy npc
+
+
+anim idle
+@script
+    if(frame==1){
+      void self = getlocalvar("self");
+      float Vx = rand()%10;
+
+      changeentityproperty(self, "velocity", Vx*0.1, 0, 2);
+    }
+@end_script
+	delay	500
+	offset	32 50
+	landframe 1
+	attack5 4 4 57 45 15 2
+	sound   data/sounds/rocks.wav
+	frame	data/chars/misc/Rocks/batu1.png
+	delay	10
+	attack5 4 4 57 45 8 2
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/misc/Rocks/batu2.png
+	frame	data/chars/misc/Rocks/batu3.png
+	frame	data/chars/misc/Rocks/batu4.png
+	frame	data/chars/misc/Rocks/batu1.png
+	attack  0
+	fshadow	0
+	frame	data/chars/misc/empty.gif

@@ -1,0 +1,45 @@
+name	        RollBarrel
+health	        1
+speed           10
+type	        enemy
+subtype         arrow
+gfxshadow       1
+nolife		1
+subject_to_hole 1
+no_adjust_base  0
+jugglepoints	2
+offscreenkill	250
+diesound 	data/sounds/wood.wav
+candamage       player enemy npc obstacle
+
+
+anim idle
+        loop    1
+	delay	10
+	offset	37 55
+        bouncefactor 2
+	jugglecost 2
+	bbox	6 -15 60 72
+        attack4	6 5 60 52 10 1 1 0 0 20
+        frame	data/chars/misc/rollbar1.png
+        frame	data/chars/misc/rollbar2.png
+        frame	data/chars/misc/rollbar3.png
+        frame	data/chars/misc/rollbar4.png #
+        frame	data/chars/misc/rollbar1.png
+        frame	data/chars/misc/rollbar2.png
+        frame	data/chars/misc/rollbar3.png
+        frame	data/chars/misc/rollbar4.png #
+        frame	data/chars/misc/rollbar1.png
+        frame	data/chars/misc/rollbar2.png
+        frame	data/chars/misc/rollbar3.png
+        frame	data/chars/misc/rollbar4.png #
+        frame	data/chars/misc/rollbar1.png
+        frame	data/chars/misc/rollbar2.png
+        frame	data/chars/misc/rollbar3.png
+        attack  0
+        frame	data/chars/misc/rollbar4.png #
+
+anim fall
+	delay	100
+	offset	31 60
+	frame	data/chars/misc/barred.gif

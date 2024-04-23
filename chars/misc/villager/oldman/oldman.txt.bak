@@ -1,0 +1,37 @@
+name    Old_Villager
+speed    6
+type    none
+gfxshadow 1
+shadow    2
+nomove  1 1
+nolife  1
+
+remap data/chars/villager/oldman/r0.gif data/chars/villager/oldman/alt1.gif
+
+anim spawn
+@script
+void self = getlocalvar("self");
+changeentityproperty(self, "base", getentityproperty(self, "a"));
+@end_script
+    loop    0
+    offset    24 43
+    delay 1
+    sound   data\sounds\villager.wav
+    frame    data/chars/villager/oldman/r0.gif
+
+
+anim walk
+    loop    1
+    offset    24 43
+    delay 9
+    frame    data/chars/villager/oldman/r0.gif
+    frame    data/chars/villager/oldman/r1.gif
+    frame    data/chars/villager/oldman/r2.gif
+    frame    data/chars/villager/oldman/r3.gif
+    frame    data/chars/villager/oldman/r4.gif
+    frame    data/chars/villager/oldman/r3.gif
+    frame    data/chars/villager/oldman/r2.gif
+    frame    data/chars/villager/oldman/r1.gif
+        
+
+

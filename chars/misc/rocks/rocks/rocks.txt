@@ -1,0 +1,54 @@
+name		Rocks
+type		trap
+lifespan	2
+nolife		1
+shadow		4
+candamage	player enemy npc
+
+
+anim idle
+	delay	500
+	offset	90 170
+	landframe 1
+	attack5  64 131 70 38 10
+	sound   data/sounds/rocks.wav
+	frame	data/chars/misc/Rocks/idle.gif
+	delay	2
+	attack  0
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/misc/Rocks/death01.gif
+	frame	data/chars/misc/Rocks/death02.gif
+	frame	data/chars/misc/Rocks/death03.gif
+	frame	data/chars/misc/Rocks/death04.gif
+	frame	data/chars/misc/Rocks/death05.gif
+	frame	data/chars/misc/Rocks/death06.gif
+	frame	data/chars/misc/Rocks/death07.gif
+	frame	data/chars/misc/Rocks/death08.gif
+	frame	data/chars/misc/Rocks/death09.gif
+	frame	data/chars/misc/Rocks/death10.gif
+	frame	data/chars/misc/Rocks/death11.gif
+	frame	data/chars/misc/Rocks/death12.gif
+	frame	data/chars/misc/Rocks/death13.gif
+	frame	data/chars/misc/Rocks/death14.gif
+	frame	data/chars/misc/Rocks/death15.gif
+	frame	data/chars/misc/Rocks/death16.gif
+	frame	data/chars/misc/Rocks/death17.gif
+	frame	data/chars/misc/Rocks/death18.gif
+	frame	data/chars/misc/Rocks/death19.gif
+	frame	data/chars/misc/Rocks/death20.gif
+	frame	data/chars/misc/Rocks/death21.gif
+	frame	data/chars/misc/Rocks/death22.gif
+	frame	data/chars/misc/Rocks/death23.gif
+	frame	data/chars/misc/Rocks/death24.gif
+	frame	data/chars/misc/Rocks/death25.gif
+	frame	data/chars/misc/Rocks/death26.gif
+	frame	data/chars/misc/Rocks/death27.gif
+	frame	data/chars/misc/Rocks/death28.gif
+	frame	data/chars/misc/Rocks/death29.gif
+	frame	data/chars/misc/Rocks/death30.gif
+	frame	data/chars/misc/Rocks/death31.gif
+	frame	data/chars/misc/Rocks/death32.gif
+	frame	data/chars/misc/Rocks/death33.gif
+	frame	data/chars/misc/Rocks/death34.gif
+	fshadow	0
+	frame	data/chars/misc/empty.gif

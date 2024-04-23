@@ -1,0 +1,71 @@
+#*****Notes***************************************************************************
+
+#"Super" burst.
+
+#*****Settings***************************************************************************
+
+#*****icons*****
+#*****General*****
+
+name         burs0001    					
+type	     text
+subtype	     noskip   						
+health	     100						
+antigravity  100
+alpha	     1
+lifespan     2
+
+#*****Player Specific*****
+#*****NPC/Enemy Specific*****
+#*****Inert Specfic*****
+#*****Sub Entites*****
+#*****Scripts*****
+#*****Alternates*******
+#*****Commands*****************************************************************************
+#*****Basic********************************************************************************
+
+anim idle
+	
+	delay	1
+	offset	100 100
+	sound	data/sounds/chinlong.wav
+	frame	data/chars/misc/effe0001/0001
+	frame	data/chars/misc/effe0001/0002
+	frame	data/chars/misc/effe0001/0003
+	frame	data/chars/misc/effe0001/0004
+	frame	data/chars/misc/effe0001/0005
+	frame	data/chars/misc/effe0001/0006
+	frame	data/chars/misc/effe0001/0007
+	frame	data/chars/misc/effe0001/0008
+	frame	data/chars/misc/effe0001/0009
+	frame	data/chars/misc/effe0001/0010
+	frame	data/chars/misc/effe0001/0011
+	frame	data/chars/misc/effe0001/0012
+	frame	data/chars/misc/effe0001/0013
+	frame	data/chars/misc/effe0001/0014
+	frame	data/chars/misc/effe0001/0015
+	frame	data/chars/misc/effe0001/0016
+	frame	data/chars/misc/effe0001/0017
+	frame	data/chars/misc/effe0001/0018
+	frame	data/chars/misc/effe0001/0019
+	frame	data/chars/misc/effe0001/0020
+	frame	data/chars/misc/effe0001/0021
+	frame	data/chars/misc/effe0001/0022
+	frame	data/chars/misc/effe0001/0023
+	frame	data/chars/misc/effe0001/0024
+	frame	data/chars/misc/effe0001/0025
+	frame	data/chars/misc/effe0001/0026
+	frame	data/chars/misc/effe0001/0027
+	frame	data/chars/misc/effe0001/0028
+	frame	data/chars/misc/effe0001/0029
+			
+#*****Attack*******************************************************************************
+#*****Special******************************************************************************
+#*****Followups****************************************************************************
+#*****Grappling****************************************************************************
+#*****Jumping******************************************************************************
+#*****Injury and Defence*******************************************************************
+#*****Footer********************************************************************************
+
+#Always make sure to include a single blank line at bottom of file.
+

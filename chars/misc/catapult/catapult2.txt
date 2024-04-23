@@ -1,0 +1,29 @@
+name	Catapult2
+type	obstacle
+health	1
+load smoke1
+falldie 1
+nodieblink 3
+gfxshadow	1
+animationscript 	data/scripts/ani0020.h
+
+
+anim	idle
+	loop	1
+	delay	5
+	seta	1
+	offset	145 210
+	bbox	15 150 182 57
+	frame	data/chars/Catapult/atk1.gif
+
+anim	death
+	loop	0
+		delay  10
+		offset  103  200
+		sound  data/sounds/klunk.wav
+	frame	data/chars/Catapult/pain5.gif
+	frame	data/chars/Catapult/pain6.gif
+	frame	data/chars/Catapult/pain7.gif
+	@cmd spawn01 "smoke1" 0 0 5
+	frame	data/chars/Catapult/pain8.gif
+

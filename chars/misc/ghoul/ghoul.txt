@@ -1,0 +1,347 @@
+name		Ghoul
+health		100
+speed		7
+type		enemy
+hostile		player npc
+candamage	player npc
+gfxshadow	1
+noquake		1
+fmap		2
+subject_to_wall	1
+dust		dust
+risetime	-50
+defense		normal2 0
+aggression 99
+subtype	    	chase
+ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript 	data/scripts/ani0020.h
+falldie 2
+nodieblink 3
+diesound	data/sounds/monsdie4.wav
+alternatepal	data/chars/ghoul/human.png
+alternatepal	data/chars/ghoul/frozen.png
+
+anim	idle
+	loop	0
+	delay	10
+	offset	70 82
+	bbox	68 33 5 23
+	frame	data/chars/ghoul/idle1.png
+
+anim	idle2
+	loop	1
+	delay	8
+	offset	70 82
+	bbox	62 18 35 64
+	frame	data/chars/ghoul/idle1.png
+	frame	data/chars/ghoul/idle2.png
+	frame	data/chars/ghoul/idle3.png
+	frame	data/chars/ghoul/idle4.png
+	frame	data/chars/ghoul/idle3.png
+	frame	data/chars/ghoul/idle2.png
+
+anim	walk
+	loop	1
+	delay	10
+	offset	70 82
+	bbox	68 27 10 34
+	frame	data/chars/ghoul/walk1.png
+	frame	data/chars/ghoul/walk2.png
+	frame	data/chars/ghoul/walk3.png
+	frame	data/chars/ghoul/walk4.png
+	frame	data/chars/ghoul/walk5.png
+	frame	data/chars/ghoul/walk6.png
+
+
+anim	follow2
+	loop 0
+	offset	70 82
+	jumpframe 1 3 2 0
+	delay	8
+	frame	data/chars/ghoul/rise3.png
+	delay	60
+	frame	data/chars/ghoul/jump.png
+	delay	12
+	frame	data/chars/ghoul/rise3.png
+
+anim	spawn
+	loop 1
+	offset	70 82
+	delay	1
+	 @cmd  attack1  34  130  240  "ANI_follow2"
+	frame	data/chars/ghoul/rise3.png
+
+anim	follow3
+	loop 1
+	offset	70 82
+	delay	1
+	 @cmd  attack1  34  100  240  "ANI_follow1"
+	frame	data/chars/ghoul/spawn1.png
+anim	follow1
+
+	offset	70 82
+
+	delay	8
+	frame	data/chars/ghoul/spawn1.png
+
+	frame  data/chars/ghoul/spawn2.png
+
+	frame  data/chars/ghoul/spawn3.png
+
+	frame  data/chars/ghoul/spawn4.png
+
+	frame  data/chars/ghoul/spawn5.png
+
+	frame  data/chars/ghoul/spawn6.png
+
+	frame  data/chars/ghoul/idle1.png
+
+anim	attack1
+	range	60 89
+	rangez -1 3
+	offset	70 82
+	delay	30
+	bbox	62 28 5 24
+	hitfx	data/sounds/Slash1.wav
+	frame	data/chars/ghoul/claw1.png
+	delay	6
+		bbox  65  21  23  48
+	frame	data/chars/ghoul/claw2.png
+	attack	107 22 30 42 10 0 0 0 30
+		bbox  59  24  67  39
+	frame	data/chars/ghoul/claw3.png
+	attack	0
+	bbox	67 34 14 29
+	frame	data/chars/ghoul/claw4.png
+	frame	data/chars/ghoul/claw5.png
+		delay  25
+	frame	data/chars/ghoul/claw5.png
+
+anim	attack2
+	range	40 65
+	rangez -1 3
+	delay	8
+	offset	70 82
+	bbox	0 0 0 0
+	hitfx	data/sounds/Slash1.wav
+	frame	data/chars/ghoul/attack1.png
+		bbox  57  31  17  29
+	frame	data/chars/ghoul/attack2.png
+		bbox  68  32  9  24
+	frame	data/chars/ghoul/attack3.png
+	attack	96 24 41 30 10 0 0 0 30
+		bbox  68  26  59  27
+	frame	data/chars/ghoul/attack4.png
+	delay	30
+	attack	0
+		bbox  72  26  6  27
+	frame	data/chars/ghoul/attack5.png
+
+
+anim	pain
+	delay	10
+	offset	70 82
+	bbox	62 18 35 64
+	frame	data/chars/ghoul/pain1.png
+	delay	20
+	frame	data/chars/ghoul/pain2.png
+	delay	10
+	frame	data/chars/ghoul/pain1.png
+
+anim	pain3
+	delay	30
+	offset	70 82
+	bbox	62 18 35 64
+	frame	data/chars/ghoul/claw6.png
+
+		offset  40  122
+		bbox  29  47  71  31
+	frame	data/chars/ghoul/fall1.png
+		delay  12
+
+		offset  100  -22
+		drawmethod  256  256  1  1  0  -1  -1
+	frame  data/chars/ghoul/jump.png
+
+	frame  data/chars/ghoul/jump.png
+
+anim	pain13
+	delay	10
+	offset	70 82
+	bbox	62 18 35 64
+	frame	data/chars/ghoul/pain1.png
+	delay	400
+
+	frame	data/chars/ghoul/pain1.png
+
+anim	bpain
+
+	delay	40
+	offset	70 82
+	frame	data/chars/misc/empty.gif
+
+anim	spain
+
+	delay	40
+	offset	70 82
+	frame	data/chars/misc/empty.gif
+
+anim	fall
+	delay	30
+	landframe 2
+	offset	70 82
+	frame	data/chars/ghoul/pain2.png
+	delay	400
+	frame	data/chars/ghoul/fall1.png
+	delay	15
+	frame	data/chars/ghoul/fall2.png
+
+anim	fall4
+	delay	30
+	landframe 2
+	offset	70 82
+	bbox	20 21 53 54
+	frame	data/chars/ghoul/pain2.png
+	delay	400
+	frame	data/chars/ghoul/fall1.png
+	delay	15
+	bbox	0
+	frame	data/chars/ghoul/fall2.png
+
+anim	fall5
+	landframe  2
+	jumpframe  0  2  -1.5  0
+
+	delay	10
+	landframe 2
+	offset	48 83
+	bbox	0 0 0 0
+		attack1  19  32  76  37  0  1
+	frame	data/chars/ghoul/fall1.png
+		delay  300
+		landframe  2
+	frame  data/chars/ghoul/fall1.png
+		delay  8
+		offset  48  77
+		sound  data/sounds/fall.wav
+		Attack1  0
+	frame	data/chars/ghoul/fall2.png
+		delay  40
+	frame  data/chars/ghoul/fall2.png
+
+anim	fall6
+
+	delay	30
+	landframe 2
+	offset	70 82
+	bbox	20 21 53 54
+	frame	data/chars/misc/empty.gif
+	delay	300
+	frame	data/chars/misc/empty.gif
+	delay	20
+	bbox	0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ghoul/fall2.png
+
+anim	fall7
+	delay	600
+	offset	70 77
+	frame	data/chars/ghoul/pain1.png
+
+anim	fall9
+	delay	20
+	offset	70 82
+	jumpframe 0 2 0 0
+	spawnframe 1 0 0 30 0
+	custentity ISkull
+	frame	data/chars/misc/empty.gif
+	delay	50
+	frame	data/chars/misc/empty.gif
+
+anim	burn
+
+	delay	30
+	landframe 2
+	offset	70 82
+	frame	data/chars/misc/empty.gif
+	delay	300
+	frame	data/chars/misc/empty.gif
+	delay	20
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ghoul/fall2.png
+
+anim	shock
+
+	delay	30
+	landframe 2
+	offset	70 82
+	frame	data/chars/misc/empty.gif
+	delay	300
+	frame	data/chars/misc/empty.gif
+	delay	20
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ghoul/fall2.png
+
+anim	rise
+	delay	70
+	offset	70 82
+	frame	data/chars/ghoul/fall2.png
+	delay	12
+	frame	data/chars/ghoul/rise1.png
+	frame	data/chars/ghoul/rise2.png
+	frame	data/chars/ghoul/rise3.png
+
+anim	rise3
+	delay	10
+	offset	70 82
+	bbox	62 18 35 64
+	frame	data/chars/ghoul/pain1.png
+	delay	400
+	sound	data/sounds/holdpersonFX.wav
+
+	frame	data/chars/ghoul/pain1.png
+
+anim	rise13
+	delay	10
+	offset	70 82
+	bbox	62 18 35 64
+	frame	data/chars/ghoul/pain1.png
+	delay	400
+
+	frame	data/chars/ghoul/pain1.png
+anim  death
+		offset  70  82
+
+		delay  12
+	frame  data/chars/ghoul/idle1.png
+
+	frame  data/chars/ghoul/spawn6.png
+
+		delay  18
+	frame  data/chars/ghoul/spawn5.png
+
+	frame  data/chars/ghoul/spawn4.png
+
+	frame  data/chars/ghoul/spawn3.png
+
+	frame  data/chars/ghoul/spawn2.png
+
+		delay  12
+	frame  data/chars/ghoul/spawn1.png
+anim  grabbed
+		delay  25
+		offset  80  82
+		bbox  62  18  35  64
+	frame  data/chars/ghoul/claw6.png
+		delay  12
+
+	frame  data/chars/ghoul/snatch4.png
+anim  pain2
+		delay  10
+		offset  70  82
+		bbox  62  18  35  64
+	frame  data/chars/ghoul/rise2.png
+		delay  100
+
+	frame  data/chars/ghoul/pain1.png
+

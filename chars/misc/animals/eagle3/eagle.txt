@@ -1,0 +1,156 @@
+name		Eagle
+health		30
+speed		20
+type		enemy
+shadow		4
+death		1
+noquake		1
+antigrab	30
+risetime	300
+knockdowncount	-1
+aggression	-20
+hostile		player npc
+candamage	player npc obstacle
+icon		data/chars/eagle/icon.png
+icondie		data/chars/eagle/iconD.png
+animationscript	data/scripts/enemy.c
+
+
+anim idle
+	loop	1
+	delay	8
+	seta	110
+	offset	80 70
+	bbox	52 32 60 38
+	sound   data/sounds/wing.wav
+	frame	data/chars/eagle/idle1.png
+	frame	data/chars/eagle/idle2.png
+	frame	data/chars/eagle/idle3.png
+	frame	data/chars/eagle/idle4.png
+	frame	data/chars/eagle/idle5.png
+	frame	data/chars/eagle/idle6.png
+	frame	data/chars/eagle/idle7.png
+	frame	data/chars/eagle/idle8.png	
+	
+anim spawn
+	delay	8
+	seta	110
+	offset	80 70
+	jumpframe 1 0 2 0
+	frame	data/chars/eagle/idle5.png
+	frame	data/chars/eagle/idle6.png
+	frame	data/chars/eagle/idle7.png
+	frame	data/chars/eagle/idle8.png
+	sound   data/sounds/wing.wav
+	frame	data/chars/eagle/idle1.png
+	frame	data/chars/eagle/idle2.png
+	frame	data/chars/eagle/idle3.png
+	frame	data/chars/eagle/idle4.png
+	frame	data/chars/eagle/idle5.png
+	frame	data/chars/eagle/idle6.png
+	frame	data/chars/eagle/idle7.png
+	frame	data/chars/eagle/idle8.png
+
+anim backwalk
+	loop	1
+	delay	15
+	seta	110
+	offset	80 70
+	bbox	52 32 60 38
+	frame	data/chars/eagle/float1.png
+	frame	data/chars/eagle/float2.png
+	
+
+anim fall
+	delay	15
+	seta	60
+	offset	80 70
+	@cmd	degravity 0
+	bbox	52 32 60 38
+	frame	data/chars/eagle/float1.png
+	frame	data/chars/eagle/float2.png
+	frame	data/chars/eagle/float1.png
+	frame	data/chars/eagle/float2.png
+
+anim rise
+	delay	6
+	seta	60
+	offset	80 70
+	sound   data/sounds/wing.wav
+	frame	data/chars/eagle/idle1.png
+	@cmd	degravity 1
+	@cmd	dasher 0 1 0
+	frame	data/chars/eagle/idle2.png
+	frame	data/chars/eagle/idle3.png
+	frame	data/chars/eagle/idle4.png
+	frame	data/chars/eagle/idle5.png
+	frame	data/chars/eagle/idle6.png
+	frame	data/chars/eagle/idle7.png
+	frame	data/chars/eagle/idle8.png
+	delay	8
+	seta	110
+	@cmd	degravity 0
+	@cmd	dasher 0 0 0
+	sound   data/sounds/wing.wav
+	frame	data/chars/eagle/idle1.png
+	frame	data/chars/eagle/idle2.png
+	frame	data/chars/eagle/idle3.png
+	frame	data/chars/eagle/idle4.png
+	frame	data/chars/eagle/idle5.png
+	frame	data/chars/eagle/idle6.png
+	frame	data/chars/eagle/idle7.png
+	frame	data/chars/eagle/idle8.png	
+	
+anim death
+	delay   800
+	seta	0
+	landframe 1
+	offset	80 70
+	@cmd	degravity 0
+	frame	data/chars/eagle/fall1.png
+	delay   10
+	frame	data/chars/eagle/fall2.png
+	delay   100
+	frame	data/chars/eagle/fall3.png
+
+
+anim attack1
+        range   60 140
+	delay	1
+	offset	80 70
+	seta	0
+	bbox	52 32 60 38
+	frame	data/chars/eagle/idle1.png
+        delay   30
+	@cmd	degravity 1
+	@cmd	dasher 3 -3 0
+	attack  80 50 33 26 12 1 0 0 10
+        frame	data/chars/eagle/dive.png
+	delay	8
+        attack	0
+	@cmd	dasher 0 0 0
+	frame	data/chars/eagle/idle7.png
+	frame	data/chars/eagle/idle8.png
+	delay	6
+	@cmd	dasher 0 1.5 0
+	sound   data/sounds/wing.wav
+	frame	data/chars/eagle/idle1.png
+	frame	data/chars/eagle/idle2.png
+	frame	data/chars/eagle/idle3.png
+	frame	data/chars/eagle/idle4.png
+	frame	data/chars/eagle/idle5.png
+	frame	data/chars/eagle/idle6.png
+	frame	data/chars/eagle/idle7.png
+	frame	data/chars/eagle/idle8.png
+	sound   data/sounds/wing.wav
+	frame	data/chars/eagle/idle1.png
+	frame	data/chars/eagle/idle2.png
+	@cmd	degravity 0
+	@cmd	dasher 0 0 0
+	frame	data/chars/eagle/idle3.png
+	seta	110
+	frame	data/chars/eagle/idle4.png
+	delay	8
+	frame	data/chars/eagle/idle6.png
+	frame	data/chars/eagle/idle7.png
+	frame	data/chars/eagle/idle8.png

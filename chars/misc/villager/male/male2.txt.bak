@@ -1,0 +1,32 @@
+#escaped version
+name Male_Villager2
+type none
+speed 8
+gfxshadow 1
+shadow 2
+nolife 1
+setlayer 10
+anim spawn
+@script
+void self = getlocalvar("self");
+changeentityproperty(self, "base", getentityproperty(self, "a"));
+@end_script
+    loop 0
+    offset 32 53
+    delay 1
+    #move 6
+	frame   data/chars/villager/male/r0.gif
+        
+anim walk
+    loop 1
+    offset 32 53
+    delay 8
+    #move 6
+	frame   data/chars/villager/male/r0.gif
+	frame   data/chars/villager/male/r1.gif
+	frame   data/chars/villager/male/r2.gif
+	frame   data/chars/villager/male/r3.gif
+	frame   data/chars/villager/male/r4.gif
+	frame   data/chars/villager/male/r3.gif
+	frame   data/chars/villager/male/r2.gif
+	frame   data/chars/villager/male/r1.gif

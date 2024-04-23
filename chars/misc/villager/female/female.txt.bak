@@ -1,0 +1,48 @@
+#stomped version
+name Female_Villager
+type none
+health 1
+speed 8
+gfxshadow 1
+shadow 2
+nomove 1 1
+
+anim spawn
+    loop 0
+    offset 32 54
+    delay 30
+    sound data/sounds/female.wav
+    frame data/chars/villager/female/stomp1.gif
+    frame data/chars/villager/female/stomp2.gif
+    frame data/chars/villager/female/stomp1.gif
+    frame data/chars/villager/female/stomp2.gif
+    frame data/chars/villager/female/stomp1.gif
+    frame data/chars/villager/female/stomp2.gif
+    frame data/chars/villager/female/stomp1.gif
+    delay 40
+    frame data/chars/villager/female/stomp2.gif
+@script
+if(frame==8)
+{
+    void self = getlocalvar("self");
+    clearspawnentry();
+    setspawnentry("name", "Female_Villager2");
+    float x = getentityproperty(self, "x");
+    float z = getentityproperty(self, "z");
+    float a = getentityproperty(self, "a");
+    float lx = openborvariant("xpos");
+    setspawnentry("coords", x-lx, z, a);
+    spawn();
+    killentity(self);
+}
+@end_script
+    frame data/chars/misc/empty.gif
+
+anim idle
+    loop 0
+    offset 32 53
+    delay 8
+    move  5
+    frame data/chars/misc/empty.gif
+
+

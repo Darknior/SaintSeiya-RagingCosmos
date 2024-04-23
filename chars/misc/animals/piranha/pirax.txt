@@ -1,0 +1,422 @@
+name          pirax
+type          enemy
+health        30
+speedf         1.4
+jumpheight    4
+throw         5 2
+throwdamage   18
+falldie	      2
+shadow        0
+cantgrab      1
+noquake       1
+notgrab	      1
+nolife        1
+knockdowncount -1
+dust          zero
+projectilehit enemy obstacle
+animationscript data/scripts/escript.c
+
+alternatepal       data/chars/2bug10/map1.gif
+alternatepal       data/chars/2bug10/map2.gif
+
+load	splash
+
+
+
+anim	attack1
+	range	120 190
+	rangez	-15 15
+	loop	0
+	delay	50
+	offset	110 125
+	bbox	0 0 0 0
+	jumpframe	1 3 1.5
+	landframe	46
+	frame	data/chars/2bug10/empty.gif
+	@cmd	spawnAni "splash" 1 30 2 "ANI_FOLLOW2"
+	delay	5
+	bbox	75 85 75 60 25
+	seta 	20
+	frame	data/chars/2bug10/a01.gif
+	frame	data/chars/2bug10/a02.gif
+	frame	data/chars/2bug10/a03.gif
+	frame	data/chars/2bug10/a04.gif
+	frame	data/chars/2bug10/a05.gif
+	frame	data/chars/2bug10/a06.gif
+	frame	data/chars/2bug10/a07.gif
+	frame	data/chars/2bug10/a08.gif
+	attack2	80 100 65 40 6 0 0 0 20 20
+	frame	data/chars/2bug10/a09.gif
+	frame	data/chars/2bug10/a10.gif
+	frame	data/chars/2bug10/a11.gif
+	frame	data/chars/2bug10/a12.gif
+	frame	data/chars/2bug10/a13.gif
+	frame	data/chars/2bug10/a14.gif
+	frame	data/chars/2bug10/a15.gif
+	frame	data/chars/2bug10/a16.gif
+	frame	data/chars/2bug10/a17.gif
+	frame	data/chars/2bug10/a11.gif
+	frame	data/chars/2bug10/a12.gif
+	frame	data/chars/2bug10/a13.gif
+	frame	data/chars/2bug10/a14.gif
+	frame	data/chars/2bug10/a11.gif
+	frame	data/chars/2bug10/a12.gif
+	frame	data/chars/2bug10/a13.gif
+	frame	data/chars/2bug10/a14.gif
+	frame	data/chars/2bug10/a11.gif
+	frame	data/chars/2bug10/a12.gif
+	frame	data/chars/2bug10/a13.gif
+	frame	data/chars/2bug10/a14.gif
+	frame	data/chars/2bug10/a11.gif
+	frame	data/chars/2bug10/a12.gif
+	frame	data/chars/2bug10/a13.gif
+	frame	data/chars/2bug10/a14.gif
+	frame	data/chars/2bug10/a11.gif
+	frame	data/chars/2bug10/a12.gif
+	frame	data/chars/2bug10/a13.gif
+	frame	data/chars/2bug10/a14.gif
+	frame	data/chars/2bug10/a11.gif
+	frame	data/chars/2bug10/a12.gif
+	frame	data/chars/2bug10/a13.gif
+	frame	data/chars/2bug10/a14.gif
+	frame	data/chars/2bug10/a11.gif
+	frame	data/chars/2bug10/a12.gif
+	frame	data/chars/2bug10/a13.gif
+	attack2	0 0 0 0
+	delay	100
+	frame	data/chars/2bug10/a14.gif
+	bbox	0 0 0 0
+	delay	3
+	frame	data/chars/2bug10/empty.gif
+	@cmd	spawnAni "splash" 1 1 2 "ANI_FOLLOW2"
+	frame	data/chars/2bug10/empty.gif
+	frame	data/chars/2bug10/empty.gif
+	delay	50
+	frame	data/chars/2bug10/empty.gif
+		
+anim	attack2
+	range	50 100
+	rangez	-15 15
+	loop	0
+	delay	50
+	offset	110 125
+	bbox	0 0 0 0
+	jumpframe	1 3 0.5
+	landframe	46
+	frame	data/chars/2bug10/empty.gif
+	@cmd	spawnAni "splash" 1 30 2 "ANI_FOLLOW2"
+	delay	5
+	seta	30
+	bbox	75 85 75 60 25
+	frame	data/chars/2bug10/a01.gif
+	frame	data/chars/2bug10/a02.gif
+	frame	data/chars/2bug10/a03.gif
+	frame	data/chars/2bug10/a04.gif
+	frame	data/chars/2bug10/a01.gif
+	frame	data/chars/2bug10/a02.gif
+	frame	data/chars/2bug10/a03.gif
+	frame	data/chars/2bug10/a04.gif
+	attack2	80 100 65 40 6 0 0 0 20 20
+	frame	data/chars/2bug10/a01.gif
+	frame	data/chars/2bug10/a02.gif
+	frame	data/chars/2bug10/a03.gif
+	frame	data/chars/2bug10/a04.gif
+	frame	data/chars/2bug10/a05.gif
+	frame	data/chars/2bug10/a06.gif
+	frame	data/chars/2bug10/a07.gif
+	frame	data/chars/2bug10/a08.gif
+	frame	data/chars/2bug10/a09.gif
+	frame	data/chars/2bug10/a10.gif
+	frame	data/chars/2bug10/b01.gif
+	frame	data/chars/2bug10/b02.gif
+	frame	data/chars/2bug10/b03.gif
+	frame	data/chars/2bug10/b04.gif
+	frame	data/chars/2bug10/b05.gif
+	frame	data/chars/2bug10/b06.gif
+	frame	data/chars/2bug10/b07.gif
+	frame	data/chars/2bug10/b04.gif
+	frame	data/chars/2bug10/b05.gif
+	frame	data/chars/2bug10/b06.gif
+	frame	data/chars/2bug10/b07.gif
+	frame	data/chars/2bug10/b04.gif
+	frame	data/chars/2bug10/b05.gif
+	frame	data/chars/2bug10/b06.gif
+	frame	data/chars/2bug10/b07.gif
+	frame	data/chars/2bug10/b04.gif
+	frame	data/chars/2bug10/b05.gif
+	frame	data/chars/2bug10/b06.gif
+	frame	data/chars/2bug10/b07.gif
+	frame	data/chars/2bug10/b04.gif
+	frame	data/chars/2bug10/b05.gif
+	frame	data/chars/2bug10/b06.gif
+	frame	data/chars/2bug10/b07.gif
+	frame	data/chars/2bug10/b04.gif
+	frame	data/chars/2bug10/b05.gif
+	frame	data/chars/2bug10/b06.gif
+	attack2	0 0 0 0
+	delay	100
+	frame	data/chars/2bug10/b07.gif
+	bbox	0 0 0 0
+	delay	3
+	frame	data/chars/2bug10/empty.gif
+	@cmd	spawnAni "splash" 1 1 2 "ANI_FOLLOW2"
+	frame	data/chars/2bug10/empty.gif
+	frame	data/chars/2bug10/empty.gif
+	delay	50
+	frame	data/chars/2bug10/empty.gif
+		
+anim	burn
+	loop	0
+	delay	5
+	offset	110 125
+	bbox	0 0 0 0
+	jumpframe	0 2 -1
+	landframe	45
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	delay	200
+	frame	data/chars/2bug10/pain15.gif
+	delay	5
+	frame	data/chars/2bug10/empty.gif
+	@cmd	spawnAni "splash" 1 30 2 "ANI_FOLLOW2"
+	frame	data/chars/2bug10/empty.gif
+	delay	50
+	frame	data/chars/2bug10/empty.gif
+		
+anim	death
+	loop	0
+	delay	100
+	offset	110 125
+	bbox	0 0 0 0
+	frame	data/chars/2bug10/empty.gif
+		
+anim	fall
+	loop	0
+	delay	5
+	offset	110 125
+	bbox	0 0 0 0
+	jumpframe	0 2 -1
+	landframe	45
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	delay	200
+	frame	data/chars/2bug10/pain15.gif
+	delay	5
+	frame	data/chars/2bug10/empty.gif
+	@cmd	spawnAni "splash" 1 30 2 "ANI_FOLLOW2"
+	frame	data/chars/2bug10/empty.gif
+	delay	50
+	frame	data/chars/2bug10/empty.gif
+		
+
+		
+anim	fall7
+	delay	1000
+	offset	110 125
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+		
+
+
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	110 125
+	bbox	0 0 0 0
+	drawmethod	256 256 0 0 0 1 0 0 0
+	frame	data/chars/2bug10/idle01.gif
+	frame	data/chars/2bug10/idle02.gif
+	frame	data/chars/2bug10/idle03.gif
+	frame	data/chars/2bug10/idle04.gif
+	frame	data/chars/2bug10/idle03.gif
+	frame	data/chars/2bug10/idle02.gif
+		
+anim	pain
+	loop	0
+	delay	5
+	offset	110 125
+	bbox	0 0 0 0
+	jumpframe	0 2 -1
+	landframe	45
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/2bug10/pain1.gif
+	frame	data/chars/2bug10/pain2.gif
+	frame	data/chars/2bug10/pain3.gif
+	frame	data/chars/2bug10/pain4.gif
+	frame	data/chars/2bug10/pain5.gif
+	frame	data/chars/2bug10/pain6.gif
+	frame	data/chars/2bug10/pain7.gif
+	frame	data/chars/2bug10/pain8.gif
+	frame	data/chars/2bug10/pain9.gif
+	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/2bug10/pain11.gif
+	frame	data/chars/2bug10/pain12.gif
+	frame	data/chars/2bug10/pain13.gif
+	frame	data/chars/2bug10/pain14.gif
+	delay	200
+	frame	data/chars/2bug10/pain15.gif
+	delay	5
+	frame	data/chars/2bug10/empty.gif
+	@cmd	spawnAni "splash" 1 30 2 "ANI_FOLLOW2"
+	frame	data/chars/2bug10/empty.gif
+	delay	50
+	frame	data/chars/2bug10/empty.gif
+		
+
+
+
+
+		
+anim	rise
+	loop	0
+	delay	150
+	offset	110 125
+	bbox	0 0 0 0
+	frame	data/chars/2bug10/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	300
+	offset	110 125
+	bbox	0 0 0 0
+	frame	data/chars/2bug10/empty.gif
+	delay	5
+	@cmd	degravity 0.5
+	frame	data/chars/2bug10/empty.gif
+		
+anim	turn
+	loop	0
+	delay	8
+	offset	110 125
+	bbox	0 0 0 0
+	drawmethod	256 256 0 0 0 1 0 0 0
+	frame	data/chars/2bug10/idle05.gif
+	frame	data/chars/2bug10/idle06.gif
+	frame	data/chars/2bug10/idle07.gif
+	frame	data/chars/2bug10/idle08.gif
+	frame	data/chars/2bug10/idle09.gif
+		
+#|edited by openBor Stats v 0.53
+		

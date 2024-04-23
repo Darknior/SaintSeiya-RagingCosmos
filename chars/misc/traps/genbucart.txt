@@ -1,0 +1,74 @@
+name		GenbuCart
+type		obstacle
+health		100
+gfxshadow	1
+offscreenkill	200
+defense 	all 0 2000
+animationscript	data/scripts/lescript.c
+load		Flame
+
+
+anim	spawn
+	delay	10
+	offset	70 85
+	platform 70 95 -70 -70 75 75 40 5000
+	frame	data/chars/misc/traps/genbucart1.png
+	frame	data/chars/misc/traps/genbucart1.png
+
+anim	idle
+	loop	1
+	delay	200
+	offset	70 85
+	platform 70 95 -70 -70 75 75 40 5000
+	frame	data/chars/misc/traps/genbucart1.png
+	delay	8
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	shooter2 "Flame" 69 57 1 1.5 -0.2 0
+	frame	data/chars/misc/traps/genbucart1.png #
+	delay	200
+	frame	data/chars/misc/traps/genbucart1.png
+
+anim	follow1
+	delay	1
+	offset	70 85
+	sound	data/chars/misc/cart.wav
+	platform 70 95 -70 -70 75 75 40 5000
+	frame	data/chars/misc/traps/genbucart3.png
+	delay	8
+	@cmd	dasher 1.5 0 0
+	attack	33 31 95 58 15 1 0 0 10
+	dropv	2 3 0
+	frame	data/chars/misc/traps/genbucart1.png
+	frame	data/chars/misc/traps/genbucart2.png
+	frame	data/chars/misc/traps/genbucart3.png
+	frame	data/chars/misc/traps/genbucart1.png
+	frame	data/chars/misc/traps/genbucart2.png
+	frame	data/chars/misc/traps/genbucart3.png #
+	frame	data/chars/misc/traps/genbucart1.png
+	frame	data/chars/misc/traps/genbucart2.png
+	frame	data/chars/misc/traps/genbucart3.png
+	frame	data/chars/misc/traps/genbucart1.png
+	frame	data/chars/misc/traps/genbucart2.png
+	frame	data/chars/misc/traps/genbucart3.png #
+	attack	0
+	@cmd	dasher 0 0 0
+	frame	data/chars/misc/traps/genbucart1.png
+	@cmd	beidle
+	frame	data/chars/misc/traps/genbucart1.png

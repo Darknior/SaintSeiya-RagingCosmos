@@ -1,0 +1,43 @@
+name		BurnRock
+type		none
+nolife		1
+shadow		3
+candamage	player npc obstacle
+animationscript	data/scripts/lescript.c
+load		RXplos
+
+
+anim idle
+	loop	1 4 8
+	delay	8
+	landframe 9
+	offset	33 20
+	followanim 1
+	followcond 1
+	move	5
+	hitfx	data/sounds/fbhit.wav
+	burn	19 2 28 23 20 1 1 0 15
+	frame	data/chars/catapult/burnRok1.png
+	frame	data/chars/catapult/burnRok2.png
+	frame	data/chars/catapult/burnRok3.png
+	frame	data/chars/catapult/burnRok4.png
+	offset	33 44
+	burn	19 26 28 23 20 1 1 0 15
+	frame	data/chars/catapult/burnRok5.png
+	frame	data/chars/catapult/burnRok6.png
+	frame	data/chars/catapult/burnRok7.png
+	frame	data/chars/catapult/burnRok8.png
+	frame	data/chars/catapult/burnRok5.png
+	delay	10
+	attack	0
+	@cmd	spawn01 "Rxplos" 0 0 0
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+
+anim follow1
+	delay	5
+	offset	33 20
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "RxplosE" 0 0 0
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif

@@ -1,0 +1,29 @@
+#escaped version
+name Crowd
+type none
+setlayer 500
+
+
+
+anim idle
+    loop 1
+    offset 96 176
+    delay 8
+	frame   data/chars/misc/buble2.GIF
+	frame  data/chars/misc/buble3.GIF
+	frame  data/chars/misc/buble4.GIF
+	frame  data/chars/misc/buble5.GIF
+	frame  data/chars/misc/buble6.GIF
+	frame  data/chars/misc/buble7.GIF
+		delay  40
+	frame  data/chars/misc/buble8.GIF
+		delay  6
+	frame  data/chars/misc/buble2.GIF
+	frame  data/chars/misc/buble3.GIF
+	frame  data/chars/misc/buble4.GIF
+	frame  data/chars/misc/buble5.GIF
+	frame  data/chars/misc/buble6.GIF
+	frame  data/chars/misc/buble7.GIF
+		delay  130
+	frame  data/chars/misc/buble8.GIF
+

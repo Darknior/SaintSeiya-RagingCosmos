@@ -1,0 +1,33 @@
+#escaped version
+name Female_Villager2
+type none
+speed 7
+gfxshadow 1
+
+nolife 1
+setlayer 215
+anim spawn
+
+    loop 0
+    offset 32 53
+    delay 1
+    #move 6
+		drawmethod  300  300  0  0  0  -1  -1
+		sound  data/sounds/female.wav
+	frame   data/chars/villager/female/r0.gif
+
+anim walk
+    loop 1
+    offset 32 53
+    delay 9
+    #move 6
+		drawmethod  300  300  0  0  0  -1  -1
+	frame   data/chars/villager/female/r0.gif
+	frame   data/chars/villager/female/r1.gif
+	frame   data/chars/villager/female/r2.gif
+	frame   data/chars/villager/female/r3.gif
+	frame   data/chars/villager/female/r4.gif
+	frame   data/chars/villager/female/r3.gif
+	frame   data/chars/villager/female/r2.gif
+	frame   data/chars/villager/female/r1.gif
+

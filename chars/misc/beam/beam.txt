@@ -1,0 +1,61 @@
+
+
+name         beam    					
+type	     none 						
+health	     10000						
+antigravity  100
+
+lifespan     16
+
+animationscript	data/scripts/sceneFX.c
+
+anim idle
+	loop 0
+	delay	2
+	offset	93 255
+	sound data/sounds/zoom02.wav
+	drawmethod scale 0.1 1
+	frame	data/chars/misc/beam/beam.png
+	drawmethod scale 0.2 1
+	frame	data/chars/misc/beam/beam1.png
+	drawmethod scale 0.3 1
+	frame	data/chars/misc/beam/beam.png
+	drawmethod scale 0.4 1
+	frame	data/chars/misc/beam/beam1.png
+	drawmethod scale 0.5 1
+	frame	data/chars/misc/beam/beam.png
+	drawmethod scale 0.6 1
+	frame	data/chars/misc/beam/beam1.png
+	drawmethod scale 0.7 1
+	frame	data/chars/misc/beam/beam.png
+	drawmethod scale 0.8 1
+	frame	data/chars/misc/beam/beam1.png
+	drawmethod scale 0.9 1
+	frame	data/chars/misc/beam/beam.png
+
+
+
+delay	2
+	drawmethod alpha 6 
+	drawmethod channel 0.9 
+	frame	data/chars/misc/beam/beam.png
+	drawmethod alpha 6 
+drawmethod channel 0.8
+	frame	data/chars/misc/beam/beam.png
+	drawmethod alpha 6 
+drawmethod channel 0.7
+	frame	data/chars/misc/beam/beam.png
+	drawmethod alpha 6 
+drawmethod channel 0.6
+	frame	data/chars/misc/beam/beam.png
+	drawmethod alpha 6 
+drawmethod channel 0.4
+	frame	data/chars/misc/beam/beam.png
+	drawmethod alpha 6 
+drawmethod channel 0.2
+	frame	data/chars/misc/beam/beam.png
+	drawmethod alpha 6 
+drawmethod channel 0.0
+frame	data/chars/misc/beam/beam.png
+	@cmd   killentity getlocalvar("self")
+	frame	data/chars/misc/beam/beam.png

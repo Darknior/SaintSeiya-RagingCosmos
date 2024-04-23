@@ -1,0 +1,31 @@
+name	        Boulder
+health	        500
+speed           10
+type	        enemy
+subtype         arrow
+gfxshadow       1
+nolife		1
+candamage       player enemy npc obstacle
+subject_to_hole 1
+no_adjust_base  0
+
+
+anim idle
+        loop    1
+	delay	10
+	offset	75 108
+        bouncefactor 2
+        attack4	14 11 123 97 25 10 1 0 0 30
+        frame	data/chars/misc/traps/bould1.png
+        frame	data/chars/misc/traps/bould2.png
+        frame	data/chars/misc/traps/bould3.png
+        frame	data/chars/misc/traps/bould4.png #
+        frame	data/chars/misc/traps/bould1.png
+        frame	data/chars/misc/traps/bould2.png
+        frame	data/chars/misc/traps/bould3.png
+        frame	data/chars/misc/traps/bould4.png #
+        frame	data/chars/misc/traps/bould1.png
+        frame	data/chars/misc/traps/bould2.png
+        frame	data/chars/misc/traps/bould3.png
+        attack  0
+        frame	data/chars/misc/traps/bould4.png

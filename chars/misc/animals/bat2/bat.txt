@@ -1,0 +1,104 @@
+name		Bat
+health		10
+type		enemy
+aimove		chasez
+aimove		avoidx
+speed		25
+shadow 		2
+death		1
+noquake		1
+antigrab	30
+risetime	300
+knockdowncount	-1
+aggression	-20
+candamage 	player npc obstacle
+animationscript	data/scripts/enemy.c
+icon		data/chars/bat/icon.png 1
+icondie		data/chars/bat/iconD.png 1
+palette		data/chars/bat/black.png
+
+
+anim	idle
+	loop	1
+	delay	8
+	seta	60
+	offset  84 102
+	bbox    65 80 32 62
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png
+
+
+anim	fall
+	seta	0
+	delay	15
+	offset  84 122
+	frame	data/chars/bat/a31
+	frame	data/chars/bat/a32
+	frame	data/chars/bat/a31
+	frame	data/chars/bat/a32
+
+anim	rise
+	delay	8
+	seta	0
+	offset  84 102
+	frame	data/chars/bat/a28.png
+	@cmd	degravity 1
+	@cmd	dasher 0 1 0
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png
+	seta	60
+	@cmd	degravity 0
+	@cmd	dasher 0 0 0
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png
+	
+anim	death
+	seta	0
+	landframe 1
+	delay	1000
+	offset  84 122
+	frame	data/chars/bat/a33
+	delay	20
+	offset  92 123
+	frame	data/chars/bat/a27
+
+
+anim	attack1
+	range	0 100
+	delay	8
+	seta	60
+	offset  84 102
+	bbox    65 80 32 62
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png #
+	@cmd	dasher 3 0 0
+	attack  77 91 18 20 10 0 0 0 10
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png #
+	@cmd	dasher 2.25 0 0
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png #
+	@cmd	dasher 1.5 0 0
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png #
+	@cmd	dasher 0.75 0 0
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png #
+	attack  0
+	@cmd	dasher 0 0 0
+	frame	data/chars/bat/a28.png
+	frame	data/chars/bat/a29.png
+	frame	data/chars/bat/a30.png #

@@ -1,0 +1,50 @@
+name		Geyser
+type		trap
+nolife		1
+offscreenkill	300
+candamage	player enemy npc obstacle
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	53 110
+	frame	data/chars/misc/traps/Geyser01.png
+	frame	data/chars/misc/traps/Geyser02.png
+	frame	data/chars/misc/traps/Geyser03.png
+	frame	data/chars/misc/traps/Geyser04.png
+	frame	data/chars/misc/traps/Geyser05.png
+	frame	data/chars/misc/traps/Geyser06.png
+	frame	data/chars/misc/traps/Geyser07.png
+	frame	data/chars/misc/traps/Geyser08.png
+	frame	data/chars/misc/traps/Geyser09.png
+	frame	data/chars/misc/traps/Geyser10.png
+	frame	data/chars/misc/traps/Geyser11.png #
+	frame	data/chars/misc/traps/Geyser07.png
+	frame	data/chars/misc/traps/Geyser08.png
+	frame	data/chars/misc/traps/Geyser09.png
+	frame	data/chars/misc/traps/Geyser10.png
+	frame	data/chars/misc/traps/Geyser11.png #
+	frame	data/chars/misc/traps/Geyser07.png
+	frame	data/chars/misc/traps/Geyser08.png
+	frame	data/chars/misc/traps/Geyser09.png
+	frame	data/chars/misc/traps/Geyser10.png
+	frame	data/chars/misc/traps/Geyser11.png #
+	delay	40
+	frame	data/chars/misc/empty.gif
+        delay   6
+	burn	24 13 60 95 20 10 1 0 25
+	dropv	4 1 0
+	sound   data/sounds/FBXplos.wav
+	hitfx	data/sounds/burnt.wav
+	frame	data/chars/misc/traps/Geyser12.png
+	frame	data/chars/misc/traps/Geyser13.png
+	frame	data/chars/misc/traps/Geyser14.png
+	frame	data/chars/misc/traps/Geyser15.png
+	frame	data/chars/misc/traps/Geyser16.png
+        attack  0
+	frame	data/chars/misc/traps/Geyser17.png
+	frame	data/chars/misc/traps/Geyser18.png
+	frame	data/chars/misc/traps/Geyser19.png
+	delay	300
+	frame	data/chars/misc/empty.gif

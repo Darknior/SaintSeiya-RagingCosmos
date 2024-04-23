@@ -1,0 +1,387 @@
+#scheletro, con scudo
+
+name	Skelescu
+health	586#293
+#velocità settata = 3 !!
+speedf	0.3
+jumpheight	0
+#running{speed}{height}{length}{move}{land}
+#running	15 5 1 1 0
+type	enemy
+subtype notgrab
+#aimove	chase
+risetime	-40
+shadow	0
+dust	caduta
+bflash	block
+blockodds	1
+#icon	data/chars/longmoan/icon
+#icondie    data/chars/misc/icond
+#diesound data/voices/skedie.wav
+bounce	0
+death	1
+noatflash	1
+flash	chomp
+nodieblink	0 #3
+#paingrab	1
+cantgrab	1
+nolife	1
+aggression	0
+gfxshadow	1
+throw	0 0
+score 150 -1
+offscreenkill 1000
+
+#candamage	player enemy 
+combostyle	1
+
+atchain	1 2 3 0 
+
+animationscript data/chars/skeleton/skeletoc.c 
+#script data/scripts/common/e_common.c
+takedamagescript data/scripts/common/etakehit.c
+onblockwscript data/scripts/common/eobws.c
+
+palette data/chars/skelescu/pal000
+
+alternatepal data/chars/skelescu/pal001
+alternatepal data/chars/skelescu/pal002
+alternatepal data/chars/skelescu/pal003
+alternatepal data/chars/skelescu/pal004
+alternatepal data/chars/skelescu/pal005
+alternatepal data/chars/skelescu/pal006
+
+anim spawn
+	loop	0
+	delay	1
+	offset	10 10
+@cmd espawn 1
+@cmd killTX
+	frame 	data/varie/dust/run1
+#14 pixels dalla fine del piede sinistro, protuberanze escluse
+	offset	43 125
+	delay	10
+	frame	data/chars/skelescu/rise1
+sound data/voices/32.wav
+	frame	data/chars/skelescu/rise2
+	frame	data/chars/skelescu/rise3
+	frame	data/chars/skelescu/rise4
+	frame	data/chars/skelescu/rise5
+	frame	data/chars/skelescu/rise6
+	frame	data/chars/skelescu/rise7
+	frame	data/chars/skelescu/rise8
+	frame	data/chars/skelescu/rise9
+
+anim idle
+	loop	1
+	offset	38 105
+	bbox	26 34 21 70
+	delay	17
+@cmd espawn 1
+	frame	data/chars/skelescu/stand1
+	frame	data/chars/skelescu/stand2	
+	frame	data/chars/skelescu/stand3
+	frame	data/chars/skelescu/stand4
+	frame	data/chars/skelescu/stand5
+	frame	data/chars/skelescu/stand6
+	frame	data/chars/skelescu/stand7
+	frame	data/chars/skelescu/stand8
+	frame	data/chars/skelescu/stand9
+	frame	data/chars/skelescu/stand10
+
+anim walk
+	loop	1
+	offset	33 105
+	bbox	20 33 24 72
+	delay   14
+@cmd rescount
+@cmd furbetto
+	frame	data/chars/skelescu/walk1
+@cmd furbetto
+	frame	data/chars/skelescu/walk2
+@cmd furbetto
+	frame	data/chars/skelescu/walk3
+@cmd furbetto
+	frame	data/chars/skelescu/walk4
+@cmd furbetto
+	frame	data/chars/skelescu/walk5
+@cmd furbetto
+	frame	data/chars/skelescu/walk6
+@cmd furbetto
+	frame	data/chars/skelescu/walk7
+@cmd furbetto
+	frame	data/chars/skelescu/walk8
+
+anim follow1
+	loop	0
+	offset	33 105
+	bbox	20 33 24 72
+	delay   14
+	frame	data/chars/skelescu/walk1
+	frame	data/chars/skelescu/walk2
+	frame	data/chars/skelescu/walk3
+	frame	data/chars/skelescu/walk4
+	frame	data/chars/skelescu/walk5
+	frame	data/chars/skelescu/walk6
+	frame	data/chars/skelescu/walk7
+	frame	data/chars/skelescu/walk8
+
+anim follow3
+	loop	0
+	offset	38 105
+	bbox	26 34 21 70
+	delay	17
+	frame	data/chars/skelescu/stand1
+	frame	data/chars/skelescu/stand2	
+	frame	data/chars/skelescu/stand3
+	frame	data/chars/skelescu/stand4
+	frame	data/chars/skelescu/stand5
+	frame	data/chars/skelescu/stand6
+	frame	data/chars/skelescu/stand7
+	frame	data/chars/skelescu/stand8
+	frame	data/chars/skelescu/stand9
+	frame	data/chars/skelescu/stand10
+
+#spadata giù
+anim attack
+	range	30 70
+	rangez	-7 7
+	hitfx	data/audio/hit3.wav
+	loop	0
+	bbox	52 75 20 68
+	delay	10
+	offset	61 145
+@cmd noflrise openborconstant("ANI_FOLLOW3")
+#	frame	data/chars/skelescu/attack1
+	frame	data/chars/skelescu/attack2
+	frame	data/chars/skelescu/attack3
+@cmd p_block openborconstant("ANI_PAIN10")
+	attack	37 39 102 93 10 0 0 0 0 36
+	frame	data/chars/skelescu/attack4
+	attack	0 0 0 0 0 0
+	delay	20
+	frame	data/chars/skelescu/attack5
+
+#contrasto = contrasto + attacco 1
+anim follow2
+	loop	0
+	offset	61 145
+	bbox	52 75 20 68
+	delay   20
+	frame	data/chars/skelescu/attack11
+sound	data/voices/contrast.wav
+	frame	data/chars/skelescu/attack11
+@cmd no_contr openborconstant("ANI_ATTACK")
+	frame	data/chars/skelescu/attack11
+@cmd no_contr openborconstant("ANI_ATTACK")
+	frame	data/chars/skelescu/attack11
+@cmd no_contr openborconstant("ANI_ATTACK")
+	frame	data/chars/skelescu/attack11
+@cmd no_contr openborconstant("ANI_ATTACK")
+	frame	data/chars/skelescu/attack11
+@cmd no_contr openborconstant("ANI_ATTACK")
+	frame	data/chars/skelescu/attack11
+@cmd no_contr openborconstant("ANI_ATTACK")
+	frame	data/chars/skelescu/attack11
+@cmd no_contr openborconstant("ANI_ATTACK")
+	frame	data/chars/skelescu/attack11
+@cmd no_contr openborconstant("ANI_ATTACK")
+	frame	data/chars/skelescu/attack11
+#attacco1
+	bbox	52 75 20 68
+	delay	10
+	offset	61 145
+#	frame	data/chars/skelescu/attack1
+	frame	data/chars/skelescu/attack2
+	delay	10
+	frame	data/chars/skelescu/attack3
+	delay	6
+	attack	37 39 102 93 10 1 1 0 0 36
+	frame	data/chars/skelescu/attack4
+	delay	30
+	attack	0 0 0 0 0 0
+	frame	data/chars/skelescu/attack5
+
+#spadata lato	
+anim attack2
+	range	30 70
+	rangez	-7 7
+	hitfx	data/audio/hit4.wav
+	loop	0
+	bbox	52 75 20 68
+	delay	10
+	offset	61 145
+	sound	data/audio/swish1.wav
+	attack2	5 65 138 77 10 0 0 0 0 36
+@cmd noflrise openborconstant("ANI_FOLLOW3")
+	frame	data/chars/skelescu/attack6
+	attack2	0 0 0 0 0 0
+	delay	15
+	frame	data/chars/skelescu/attack7
+
+#spadata su
+anim attack3
+	range	30 70
+	rangez	-7 7
+	hitfx	data/audio/hit3.wav
+	loop	0
+	bbox	52 75 20 68
+	delay	9
+	offset	61 145
+	sound	data/audio/swish4.wav
+	attack3	17 17 105 127 10 1 1 0 0 36
+@cmd noflrise openborconstant("ANI_FOLLOW3")
+	frame	data/chars/skelescu/attack8
+	attack3	0 0 0 0 0 0
+	delay	40
+	frame	data/chars/skelescu/attack9
+	delay	15
+	frame	data/chars/skelescu/attack10
+	frame	data/chars/skelescu/attack11
+
+anim pain
+	loop	0
+	delay	12
+	bbox	59 74 13 62
+	offset	69 137
+#@cmd grabkill
+#@cmd skecng
+@cmd counter 10 openborconstant("ANI_ATTACK")
+sound data/voices/36.wav
+	frame	data/chars/skelescu/pain2
+	frame	data/chars/skelescu/pain3
+	frame	data/chars/skelescu/pain4
+	frame	data/chars/skelescu/pain5
+	frame	data/chars/skelescu/pain6
+
+anim pain2
+	loop	0
+	delay	20
+	offset	42 70
+	bbox	27 22 25 49
+sound data/voices/38.wav
+	frame	data/chars/skelescu/ab0
+	delay	30
+	frame	data/chars/skelescu/ab1
+
+#blockpain
+anim pain10
+	sound	data/voices/blocked.wav
+	loop	0
+	delay	10
+	bbox	59 74 13 62
+	offset	69 137
+	frame	data/chars/skelescu/pain2
+	frame	data/chars/skelescu/pain3
+	frame	data/chars/skelescu/pain4
+	delay	18
+	frame	data/chars/skelescu/pain5
+	frame	data/chars/skelescu/pain6
+
+anim fall
+	loop	0
+	delay	6
+@cmd rescount
+@cmd velv 0 0 0 
+sound data/voices/36.wav
+	offset	69 137
+	frame	data/chars/skelescu/fall2
+	frame	data/chars/skelescu/fall3
+	frame	data/chars/skelescu/fall4
+	frame	data/chars/skelescu/fall5
+	frame	data/chars/skelescu/fall6
+	frame	data/chars/skelescu/fall7
+	delay	100
+	frame	data/chars/skelescu/fall8
+
+anim rise
+	loop	0
+	delay	10
+	offset	69 137
+	frame	data/chars/skelescu/up1
+	frame	data/chars/skelescu/up2
+	frame	data/chars/skelescu/up3
+	frame	data/chars/skelescu/up4
+	frame	data/chars/skelescu/up5
+	frame	data/chars/skelescu/up6
+
+anim block
+	loop	0
+	delay	7
+	offset	32 105
+	frame	data/chars/skelescu/block1
+	frame	data/chars/skelescu/block2
+	delay	15
+	frame	data/chars/skelescu/block3
+	frame	data/chars/skelescu/block4
+	delay	10
+	frame	data/chars/skelescu/block5
+
+anim death
+	loop	0
+	delay	1
+	offset	69 137
+	frame	data/chars/skelescu/fall2
+	delay	3
+sound data/voices/36.wav
+	frame	data/chars/skelescu/fall2
+#@cmd var4_dth
+	frame	data/chars/skelescu/fall3
+	frame	data/chars/skelescu/fall4
+	frame	data/chars/skelescu/fall5
+	frame	data/chars/skelescu/fall6
+	frame	data/chars/skelescu/fall7
+	frame	data/chars/skelescu/fall8
+
+#Bruciato
+anim death6
+	loop	0
+	delay	7
+	offset	47 95
+#@cmd var4_dth
+	frame	data/chars/skelescu/bruc000
+	frame	data/chars/skelescu/bruc001
+	frame	data/chars/skelescu/bruc002
+	frame	data/chars/skelescu/bruc003
+	frame	data/chars/skelescu/bruc004
+	frame	data/chars/skelescu/bruc005
+	frame	data/chars/skelescu/bruc006
+	frame	data/chars/skelescu/bruc007
+	frame	data/chars/skelescu/bruc008
+	frame	data/chars/skelescu/bruc009
+	frame	data/chars/skelescu/bruc010
+	frame	data/chars/skelescu/bruc011
+	frame	data/chars/skelescu/bruc012
+@cmd premio
+	frame	data/chars/skelescu/bruc013
+	frame	data/chars/skelescu/bruc014
+	frame	data/chars/skelescu/bruc015
+
+#Bruciato da magia
+anim death10
+	loop	0
+	delay	7
+	offset	47 95
+#@cmd var4_dth
+	frame	data/chars/skelescu/bruc000
+	frame	data/chars/skelescu/bruc001
+	frame	data/chars/skelescu/bruc002
+	frame	data/chars/skelescu/bruc003
+	frame	data/chars/skelescu/bruc004
+	frame	data/chars/skelescu/bruc005
+	frame	data/chars/skelescu/bruc006
+	frame	data/chars/skelescu/bruc007
+	frame	data/chars/skelescu/bruc008
+	frame	data/chars/skelescu/bruc009
+	frame	data/chars/skelescu/bruc010
+	frame	data/chars/skelescu/bruc011
+	frame	data/chars/skelescu/bruc012
+@cmd premio
+	frame	data/chars/skelescu/bruc013
+	frame	data/chars/skelescu/bruc014
+	frame	data/chars/skelescu/bruc015
+
+
+
+
+

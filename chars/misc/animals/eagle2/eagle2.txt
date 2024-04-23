@@ -1,0 +1,332 @@
+name          eagle2
+type          enemy
+subtype	      chase
+health        170
+speedf        1.8
+jumpheight    4
+throw         5 2
+throwdamage   18
+shadow        0
+cantgrab      1
+notgrab	      1
+nolife        1
+falldie	      1
+facing		1
+nodieblink    2
+gfxshadow     1
+knockdowncount 500
+lifespan        10
+antigravity   60
+subject_to_hole 0
+subject_to_platform 0
+projectilehit enemy obstacle
+diesound      data/sounds/Eagle1.wav
+
+animationscript data/scripts/escript.c
+
+
+
+
+
+load	gas
+
+
+anim	attack1
+	range	0 90
+	loop	0
+	delay	4
+	offset	110 260
+	bbox	0 0 0 0
+	platform   1 1 1 1 1 1 1 1
+	frame	data/chars/2bug6/xidle01.gif
+	offset	110 258
+	frame	data/chars/2bug6/xidle01.gif
+	offset	110 256
+	frame	data/chars/2bug6/xidle02.gif
+	offset	110 254
+	frame	data/chars/2bug6/xidle02.gif
+	offset	110 252
+	sound	data/sounds/Eagle1.wav
+	frame	data/chars/2bug6/xidle03.gif
+	offset	110 250
+	frame	data/chars/2bug6/xidle03.gif
+	offset	110 248
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 250
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 252
+	frame	data/chars/2bug6/xidle06.gif
+	offset	110 254
+	frame	data/chars/2bug6/xidle06.gif
+	offset	110 256
+	frame	data/chars/2bug6/xidle07.gif
+	offset	110 258
+	frame	data/chars/2bug6/xidle07.gif
+	offset	110 260
+	frame	data/chars/2bug6/xidle08.gif
+	offset	110 262
+	frame	data/chars/2bug6/xidle08.gif
+	offset	110 264
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 262
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 260
+	frame	data/chars/2bug6/xidle01.gif
+	offset	110 258
+	frame	data/chars/2bug6/xidle01.gif
+	sound	data/sounds/Eagle1.wav
+	offset	110 256
+	frame	data/chars/2bug6/xidle02.gif
+	offset	110 254
+	frame	data/chars/2bug6/xidle02.gif
+	offset	110 252
+	frame	data/chars/2bug6/xidle03.gif
+	offset	110 250
+	frame	data/chars/2bug6/xidle03.gif
+	offset	110 248
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 250
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 252
+	frame	data/chars/2bug6/xidle06.gif
+	offset	110 254
+	frame	data/chars/2bug6/xidle06.gif
+	offset	110 256
+	frame	data/chars/2bug6/xidle07.gif
+	sound	data/sounds/Eagle1.wav
+	offset	110 258
+	frame	data/chars/2bug6/xidle07.gif
+	offset	110 260
+	frame	data/chars/2bug6/xidle08.gif
+	offset	110 262
+	frame	data/chars/2bug6/xidle08.gif
+	offset	110 264
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 262
+	frame	data/chars/2bug6/xidle04.gif
+		
+
+		
+anim	death
+	loop	0
+	delay	5
+	offset	110 260
+	bbox	0 0 0 0
+	platform   1 1 1 1 1 1 1 1
+	@cmd    spawn01 "gas" 20 80 5
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a05.gif
+	@cmd	looper 5 5  
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a05.gif
+	delay	5
+	move	3
+	movea	3
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a04.gif
+	move	6
+	movea	6
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a02.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a03.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a05.gif
+	frame	data/chars/2bug6/a01.gif
+	frame	data/chars/misc/empty.gif
+	delay	10
+	frame	data/chars/misc/empty.gif
+
+		
+anim	fall
+	loop	0
+	delay	3
+	offset	110 260
+	bbox	0 0 0 0
+	platform   1 1 1 1 1 1 1 1
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a04.gif
+
+		
+
+		
+anim	idle
+	loop	1
+	delay	4
+	offset	110 260
+	platform   1 1 1 1 1 1 1 1
+	bbox	0 0 0 0
+	frame	data/chars/2bug6/xidle01.gif
+	offset	110 258
+	frame	data/chars/2bug6/xidle01.gif
+	offset	110 256
+	frame	data/chars/2bug6/xidle02.gif
+	offset	110 254
+	frame	data/chars/2bug6/xidle02.gif
+	offset	110 252
+	sound	data/sounds/Eagle1.wav
+	frame	data/chars/2bug6/xidle03.gif
+	offset	110 250
+	frame	data/chars/2bug6/xidle03.gif
+	offset	110 248
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 250
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 252
+	frame	data/chars/2bug6/xidle06.gif
+	offset	110 254
+	frame	data/chars/2bug6/xidle06.gif
+	offset	110 256
+	frame	data/chars/2bug6/xidle07.gif
+	offset	110 258
+	frame	data/chars/2bug6/xidle07.gif
+	offset	110 260
+	frame	data/chars/2bug6/xidle08.gif
+	offset	110 262
+	frame	data/chars/2bug6/xidle08.gif
+	offset	110 264
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 262
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 260
+	frame	data/chars/2bug6/xidle01.gif
+	offset	110 258
+	frame	data/chars/2bug6/xidle01.gif
+	offset	110 256
+	frame	data/chars/2bug6/xidle02.gif
+	offset	110 254
+	frame	data/chars/2bug6/xidle02.gif
+	offset	110 252
+	frame	data/chars/2bug6/xidle03.gif
+	offset	110 250
+	frame	data/chars/2bug6/xidle03.gif
+	offset	110 248
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 250
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 252
+	frame	data/chars/2bug6/xidle06.gif
+	offset	110 254
+	frame	data/chars/2bug6/xidle06.gif
+	offset	110 256
+	frame	data/chars/2bug6/xidle07.gif
+	offset	110 258
+	frame	data/chars/2bug6/xidle07.gif
+	offset	110 260
+	frame	data/chars/2bug6/xidle08.gif
+	offset	110 262
+	frame	data/chars/2bug6/xidle08.gif
+	offset	110 264
+	frame	data/chars/2bug6/xidle04.gif
+	offset	110 262
+	frame	data/chars/2bug6/xidle04.gif
+		
+anim	pain
+	loop	0
+	delay	3
+	offset	110 260
+	bbox	0 0 0 0
+	platform   1 1 1 1 1 1 1 1
+	move	-6
+	frame	data/chars/2bug6/a04.gif
+	frame	data/chars/2bug6/a04.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	110 260
+	bbox	0 0 0 0
+	platform   1 1 1 1 1 1 1 1
+	frame	data/chars/2bug6/xidle08.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	110 260
+	bbox	0 0 0 0
+	platform   1 1 1 1 1 1 1 1
+	frame	data/chars/2bug6/xidle01.gif
+
+
+
+
+anim	follow5
+@script
+if(frame==1)
+{
+  changeentityproperty(getlocalvar("self"), "type", openborconstant("TYPE_OBSTACLE"));
+}
+@end_script
+	loop	0
+	delay	10
+	offset	110 260
+	bbox	0 0 0 0
+	platform   1 1 1 1 1 1 1 1
+	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/2bug6/xidle01.gif
+		

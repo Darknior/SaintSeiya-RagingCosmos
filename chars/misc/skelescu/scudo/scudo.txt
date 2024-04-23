@@ -1,0 +1,28 @@
+name	scudo
+type	none
+shadow	0
+
+anim idle
+	loop	0
+	delay	10
+	offset	63 90
+	frame	data/chars/skelescu/scudo/scudo1
+	frame	data/chars/skelescu/scudo/scudo2
+	frame	data/chars/skelescu/scudo/scudo3
+	frame	data/chars/skelescu/scudo/scudo4
+	frame	data/chars/skelescu/scudo/scudo5
+	frame	data/chars/skelescu/scudo/scudo6
+@script
+void self = getlocalvar("self");
+//int frame = getentityproperty(self, "animpos");
+	if (frame==6)
+		{
+		killentity(self);
+		}
+@end_script
+	frame 	data/varie/dust/run1
+
+
+
+
+

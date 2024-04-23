@@ -1,0 +1,137 @@
+name	esqueleto
+health	100
+speed	9
+type	enemy
+shadow	4
+icon	data/chars/esqueleto/icon.gif
+diesound	data/voices/roul.wav
+
+
+
+
+anim	attack1
+	range	39 70
+	loop	0
+	delay	15
+	bbox	21 21 38 82
+	offset	41 120
+	frame	data/chars/esqueleto/atk01.gif
+	offset	42 120
+	attack	33 8 70 86 5 0 0 0 0 0
+	frame	data/chars/esqueleto/atk02.gif
+	offset	44 121
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/esqueleto/atk03.gif
+	offset	45 121
+	attack	33 8 73 86 5 1 0 1 0 0
+	frame	data/chars/esqueleto/atk04.gif
+	offset	45 121
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/esqueleto/atk05.gif
+		
+anim	attack2
+	range	31 85
+	loop	0
+	delay	12
+	offset	50 120
+	bbox	26 13 42 89
+	frame	data/chars/esqueleto/atk06.gif
+	offset	53 120
+	frame	data/chars/esqueleto/atk07.gif
+	attack	50 14 72 84 20 1 0 1 0 0
+	offset	49 118
+	frame	data/chars/esqueleto/atk08.gif
+	offset	53 120
+	frame	data/chars/esqueleto/atk07.gif
+		
+anim	attack3
+	range	62 80
+	sound	data/voices/skul.wav
+	loop	0
+	delay	12
+	offset	52 115
+	bbox	26 13 41 91
+	frame	data/chars/esqueleto/bone00.gif
+	offset	54 118
+	frame	data/chars/esqueleto/bone01.gif
+	offset	53 117
+	frame	data/chars/esqueleto/bone02.gif
+	offset	59 116
+	frame	data/chars/esqueleto/bone03.gif
+	offset	62 116
+	frame	data/chars/esqueleto/bone04.gif
+	attack	85 9 42 34 20 1 0 1 0 0
+	offset	58 116
+	frame	data/chars/esqueleto/bone05.gif
+	attack	111 11 47 34 20 1 1 0 0 0
+	offset	62 122
+	bbox	26 13 34 105
+	frame	data/chars/esqueleto/bone06.gif
+	attack	153 11 49 37 20 1 0 1 0 0
+	offset	62 122
+	frame	data/chars/esqueleto/bone07.gif
+	attack	207 7 45 38 20 1 0 1 0 0
+	offset	62 122
+	frame	data/chars/esqueleto/bone08.gif
+	attack	258 6 49 38 20 1 0 1 0 0
+	offset	62 122
+	frame	data/chars/esqueleto/bone09.gif
+	attack	300 6 49 37 20 1 0 1 0 0
+	offset	62 122
+	frame	data/chars/esqueleto/bone10.gif
+		
+anim	fall
+	loop	0
+	delay	15
+	bbox	26 29 92 49
+	attack	10 53 51 32 10 1 0 1 0 0
+	offset	51 124
+	frame	data/chars/esqueleto/fall1.gif
+	offset	65 114
+	frame	data/chars/esqueleto/fall2.gif
+	offset	43 29
+	frame	data/chars/esqueleto/rise1.gif
+		
+anim	idle
+	loop	1
+	delay	18
+	bbox	23 13 55 88
+	offset	52 117
+	frame	data/chars/esqueleto/idle1.gif
+	offset	49 124
+	frame	data/chars/esqueleto/idle2.gif
+		
+anim	pain
+	loop	0
+	offset	39 124
+	delay	20
+	bbox	15 10 46 111
+	frame	data/chars/esqueleto/pain0.gif
+		
+anim	rise
+	loop	0
+	offset	43 29
+	delay	50
+	frame	data/chars/esqueleto/rise1.gif
+	offset	43 73
+	frame	data/chars/esqueleto/rise2.gif
+	offset	25 90
+	frame	data/chars/esqueleto/rise3.gif
+		
+anim	walk
+	loop	1
+	delay	15
+	offset	50 112
+	bbox	23 14 45 99
+	frame	data/chars/esqueleto/wlk1.gif
+	offset	52 119
+	frame	data/chars/esqueleto/wlk2.gif
+	offset	52 114
+	frame	data/chars/esqueleto/wlk3.gif
+	offset	52 118
+	frame	data/chars/esqueleto/wlk4.gif
+	offset	56 114
+	frame	data/chars/esqueleto/wlk5.gif
+		
+#|edited by openBor Stats v 0.56
+		

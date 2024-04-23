@@ -1,0 +1,457 @@
+name          bull
+type          enemy
+health        400
+speedf         1.8
+jumpheight    4
+throw         5 2
+throwdamage   18
+shadow        0
+cantgrab      1
+notgrab	      1
+nolife        1
+gfxshadow     1
+dust            dust
+projectilehit enemy obstacle
+diesound      data/sounds/bear3.wav
+animationscript data/scripts/escript.c
+
+
+alternatepal       data/chars/2bug8/map1.gif
+alternatepal       data/chars/2bug8/map2.gif
+alternatepal       data/chars/2bug8/map3.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	5 90
+	loop	0
+	delay	30
+	offset	160 270
+	bbox	120 185 85 91
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/bull2.wav
+	frame	data/chars/2bug8/idle03.gif
+	delay	12
+	frame	data/chars/2bug8/b01.gif
+	frame	data/chars/2bug8/b02.gif
+	frame	data/chars/2bug8/b03.gif
+	attack	155 180 90 40 15 1 0 0 45 0
+	dropv	5 -2 0
+	frame	data/chars/2bug8/b04.gif
+	frame	data/chars/2bug8/b05.gif
+	attack	0 0 0 0
+	frame	data/chars/2bug8/b06.gif
+		
+anim	attack2
+	range	95 200
+	loop	0
+	delay	30
+	offset	160 270
+	bbox	120 185 85 91
+	hitfx	data/sounds/beat3.wav
+	hitflash	flashscreen1
+	sound	data/sounds/Tiger2.wav
+	frame	data/chars/2bug8/idle03.gif
+	delay	12
+	frame	data/chars/2bug8/a01.gif
+	delay	4
+	move	10
+	frame	data/chars/2bug8/a02.gif
+	attack	145 160 110 80 15 1 0 0 50 0
+	dropv	5 3 0
+	frame	data/chars/2bug8/a02.gif
+	frame	data/chars/2bug8/a02.gif
+	frame	data/chars/2bug8/a03.gif
+	frame	data/chars/2bug8/a03.gif
+	frame	data/chars/2bug8/a03.gif
+	frame	data/chars/2bug8/a03.gif
+	frame	data/chars/2bug8/a04.gif
+	frame	data/chars/2bug8/a04.gif
+	frame	data/chars/2bug8/a04.gif
+	frame	data/chars/2bug8/a05.gif
+	frame	data/chars/2bug8/a05.gif
+	frame	data/chars/2bug8/a05.gif
+	frame	data/chars/2bug8/a06.gif
+	frame	data/chars/2bug8/a06.gif
+	attack	0 0 0 0
+	frame	data/chars/2bug8/a06.gif
+	delay	14
+	move	0
+	frame	data/chars/2bug8/b01.gif
+		
+anim	attack3
+	range	205 280
+	loop	0
+	delay	14
+	offset	160 270
+	bbox	120 185 85 91
+	jumpframe	1 4 3 0
+	landframe	4
+	hitfx	data/sounds/beat1.wav
+	sound	data/sounds/bull2.wav
+	frame	data/chars/2bug8/c01.gif
+	bbox	134 139 85 82
+	frame	data/chars/2bug8/c02.gif
+	frame	data/chars/2bug8/c03.gif
+	delay	300
+	attack	140 136 125 90 20 1 0 1 40 0
+	dropv	4 3 0
+	frame	data/chars/2bug8/c04.gif
+	attack	0 0 0 0
+	delay	20
+	frame	data/chars/2bug8/b01.gif
+		
+anim	burn
+	loop	0
+	delay	30
+	offset	160 270
+	bbox	0 0 0 0
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	@cmd	spawnbind "burn1" 1 1 1
+	@cmd	spawnbind "burn2" 1 1 1
+	@cmd	spawnbind "burn3" 1 1 1
+	attack	120 125 80 100 5 1 0 0 13 40
+	sound	data/sounds/bear3.wav
+	frame	data/chars/2bug8/fall1.gif
+	delay	10
+	attack	105 165 70 65 5 1 0 0 13 40
+	frame	data/chars/2bug8/fall2.gif
+	attack	0 0 0 0
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall4.gif
+		
+anim	fall
+	loop	0
+	delay	30
+	offset	160 270
+	bbox	133 141 50 68
+	attack	139 141 40 70 5 1 0 0 13 30
+	sound	data/sounds/bear3.wav
+	frame	data/chars/2bug8/fall1.gif
+	delay	10
+	bbox	106 165 86 65
+	attack	106 168 91 59 5 1 0 0 13 30
+	frame	data/chars/2bug8/fall2.gif
+	bbox	119 181 85 70
+	attack	116 184 91 65 5 1 0 0 13 30
+	frame	data/chars/2bug8/fall3.gif
+	attack	0 0 0 0
+	bbox	102 255 120 15
+	frame	data/chars/2bug8/fall4.gif
+		
+anim	fall10
+	loop	0
+	delay	50
+	offset	160 270
+	bbox	125 136 67 118
+	landframe	3
+	attack	130 141 58 102 5 1 0 0 13 30
+	sound	data/sounds/bear3.wav
+	frame	data/chars/2bug8/pain3.gif
+	delay	30
+	bbox	106 165 86 65
+	attack	106 168 91 59 5 1 0 0 13 30
+	frame	data/chars/2bug8/fall2.gif
+	delay	1000
+	bbox	119 181 85 70
+	attack	116 184 91 65 5 1 0 0 13 30
+	frame	data/chars/2bug8/fall3.gif
+	attack	0 0 0 0
+	bbox	102 255 120 15
+	frame	data/chars/2bug8/fall4.gif
+		
+anim	fall11
+	loop	0
+	delay	30
+	offset	160 270
+	bbox	0 0 0 0
+	sound	data/sounds/bear3.wav
+	frame	data/chars/2bug8/fall2.gif
+	frame	data/chars/2bug8/fall4.gif
+		
+anim	fall2
+	loop	0
+	delay	30
+	offset	160 270
+	bbox	106 165 86 65
+	attack	120 145 80 80 5 1 0 0 13 40
+	sound	data/sounds/bear3.wav
+	frame	data/chars/2bug8/pain3.gif
+	delay	10
+	attack	100 155 95 80 5 1 0 0 13 40
+	frame	data/chars/2bug8/fall2.gif
+	attack	0 0 0 0
+	frame	data/chars/2bug8/fall3.gif
+	bbox	107 243 114 32
+	frame	data/chars/2bug8/fall4.gif
+		
+anim	fall7
+	delay	1000
+	offset	160 200
+	frame	data/chars/2bug8/fall1.gif
+	frame	data/chars/2bug8/fall2.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall1.gif
+	frame	data/chars/2bug8/fall2.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall1.gif
+	frame	data/chars/2bug8/fall2.gif
+		
+anim	fall9
+	loop	0
+	delay	10
+	offset	160 270
+	bbox	133 141 50 68
+	attack	139 141 40 70 5 1 0 0 13 30
+	sound	data/sounds/bear3.wav
+	frame	data/chars/2bug8/fall1.gif
+	delay	37
+	bbox	119 181 85 70
+	attack	116 184 91 65 5 1 0 0 13 30
+	frame	data/chars/2bug8/fall3.gif
+	delay	8
+	frame	data/chars/2bug8/fall3.gif
+	attack	0 0 0 0
+	bbox	102 255 120 15
+	frame	data/chars/2bug8/fall4.gif
+		
+anim	grabbed
+	loop	0
+	delay	10
+	offset	160 270
+	bbox	120 185 85 91
+	frame	data/chars/2bug8/pain1.gif
+		
+anim	idle
+	loop	0
+	delay	9
+	offset	160 270
+	bbox	110 175 115 85
+	frame	data/chars/2bug8/idle01.gif
+	frame	data/chars/2bug8/idle02.gif
+	frame	data/chars/2bug8/idle03.gif
+	frame	data/chars/2bug8/idle04.gif
+	frame	data/chars/2bug8/idle05.gif
+	frame	data/chars/2bug8/idle06.gif
+		
+anim	pain
+	loop	0
+	delay	3
+	offset	160 270
+	bbox	110 175 115 85
+	frame	data/chars/2bug8/pain0.gif
+	offset	155 270
+	frame	data/chars/2bug8/pain1.gif
+	offset	165 270
+	frame	data/chars/2bug8/pain1.gif
+	delay	40
+	offset	155 270
+	frame	data/chars/2bug8/pain1.gif
+		
+anim	pain10
+	loop	0
+	delay	1
+	offset	160 270
+	bbox	120 185 85 91
+	jumpframe	1 5 0 0
+	frame	data/chars/2bug8/pain1.gif
+	delay	45
+	offset	160 270
+	bbox	0 0 0 0
+	frame	data/chars/2bug8/pain3.gif
+	delay	7
+	offset	160 255
+	frame	data/chars/2bug8/pain3.gif
+	delay	52
+	offset	160 245
+	frame	data/chars/2bug8/pain3.gif
+	delay	4
+	offset	160 275
+	move	12
+	frame	data/chars/2bug8/fall4.gif
+	move	0
+	frame	data/chars/2bug8/fall5.gif
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall5.gif
+	delay	55
+	frame	data/chars/2bug8/fall4.gif
+	delay	3
+	bbox	110 230 75 30
+	frame	data/chars/2bug8/fall4.gif
+	bbox	0 0 0 0
+	delay	19
+	offset	160 275
+	frame	data/chars/2bug8/rise01.gif
+	delay	13
+	frame	data/chars/2bug8/rise02.gif
+	frame	data/chars/2bug8/rise03.gif
+		
+anim	pain2
+	loop	0
+	delay	3
+	offset	160 270
+	bbox	110 175 115 85
+	frame	data/chars/2bug8/pain0.gif
+	offset	155 270
+	frame	data/chars/2bug8/pain1.gif
+	offset	165 270
+	frame	data/chars/2bug8/pain1.gif
+	delay	40
+	offset	155 270
+	frame	data/chars/2bug8/pain1.gif
+		
+anim	pain3
+	loop	0
+	delay	1
+	offset	160 270
+	bbox	0 0 0 0
+	jumpframe	1 2 -1 0
+	frame	data/chars/2bug8/pain1.gif
+	delay	25
+	frame	data/chars/2bug8/fall2.gif
+	delay	12
+	frame	data/chars/2bug8/fall3.gif
+	delay	4
+	bbox	100 225 90 40
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall5.gif
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall5.gif
+	delay	15
+	bbox	0 0 0 0
+	frame	data/chars/2bug8/fall4.gif
+	delay	10
+	frame	data/chars/2bug8/rise01.gif
+	frame	data/chars/2bug8/rise02.gif
+	frame	data/chars/2bug8/rise03.gif
+		
+anim	pain4
+	loop	0
+	delay	2
+	offset	160 270
+	bbox	0 0 0 0
+	move	-11
+	attack	95 190 80 45 3 1 0 1 13 0
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	frame	data/chars/2bug8/fall3.gif
+	move	-6
+	attack	0 0 0 0
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall4.gif
+	move	-3
+	frame	data/chars/2bug8/fall4.gif
+	frame	data/chars/2bug8/fall4.gif
+	move	0
+	delay	20
+	bbox	0 0 0 0
+	frame	data/chars/2bug8/fall4.gif
+	delay	10
+	frame	data/chars/2bug8/rise01.gif
+	frame	data/chars/2bug8/rise02.gif
+	frame	data/chars/2bug8/rise03.gif
+		
+anim	pain5
+	loop	0
+	delay	23
+	offset	160 270
+	bbox	110 175 115 85
+	frame	data/chars/2bug8/pain1.gif
+		
+anim	pain6
+	loop	0
+	delay	23
+	offset	160 270
+	bbox	110 175 115 85
+	frame	data/chars/2bug8/pain2.gif
+		
+anim	pain8
+	loop	0
+	delay	2
+	offset	160 270
+	bbox	110 175 115 85
+	move	-6
+	frame	data/chars/2bug8/pain0.gif
+	frame	data/chars/2bug8/pain0.gif
+	frame	data/chars/2bug8/pain0.gif
+	frame	data/chars/2bug8/pain2.gif
+	frame	data/chars/2bug8/pain2.gif
+	frame	data/chars/2bug8/pain2.gif
+	move	-3
+	frame	data/chars/2bug8/pain2.gif
+	frame	data/chars/2bug8/pain2.gif
+	move	-1
+	frame	data/chars/2bug8/pain2.gif
+	delay	35
+	frame	data/chars/2bug8/pain2.gif
+		
+anim	pain9
+	loop	0
+	delay	15
+	offset	160 270
+	bbox	110 175 115 85
+	frame	data/chars/2bug8/pain0.gif
+	delay	150
+	frame	data/chars/2bug8/pain2.gif
+		
+anim	rise
+	loop	0
+	delay	14
+	offset	160 270
+	bbox	0 0 0 0
+	frame	data/chars/2bug8/rise01.gif
+	frame	data/chars/2bug8/rise02.gif
+	frame	data/chars/2bug8/rise03.gif
+	frame	data/chars/2bug8/rise04.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	160 270
+	bbox	0 0 0 0
+	frame	data/chars/2bug8/idle01.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	160 270
+	bbox	110 175 115 85
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	sound	data/sounds/bull2.wav
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+	frame	data/chars/2bug8/wk01.gif
+	frame	data/chars/2bug8/wk02.gif
+	frame	data/chars/2bug8/wk03.gif
+	frame	data/chars/2bug8/wk04.gif
+	frame	data/chars/2bug8/wk05.gif
+		
+#|edited by openBor Stats v 0.53
+		

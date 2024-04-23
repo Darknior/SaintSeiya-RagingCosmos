@@ -1,0 +1,660 @@
+name		KEEPER
+health		30
+speed		15
+type		enemy
+shadow		4
+falldie		1
+antigrab	30
+risetime	1000
+knockdowncount	-1
+aggression	-30
+hostile		player npc
+candamage	player npc obstacle
+icon		data/chars/creatures/keeper/icon.png
+
+hmap 1 2
+fmap 2
+noquake 1
+aimove normal
+
+
+animationscript data/scripts/escript.h 
+
+
+palette      	data/chars/creatures/keeper/idle1.png
+alternatepal 	data/chars/creatures/keeper/map.png
+alternatepal 	data/chars/creatures/keeper/map2.png 
+alternatepal 	data/chars/creatures/keeper/map3.png 
+
+defense normal4 0 
+	
+anim spawn
+	delay	1
+	seta	150
+	offset	109 162
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    defenseAtk4 1
+	frame	data/chars/creatures/keeper/stand1.png
+
+
+
+anim idle
+@script
+    if(frame == 0){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+   changeentityproperty(self, "aimove", openborconstant("AIMOVE1_NORMAL"));
+      } else if(r < -10){
+   changeentityproperty(self, "aimove", openborconstant("AIMOVE1_AVOID"));
+      }
+    }
+@end_script
+	loop	1
+	delay	15
+	seta	150
+	offset	109 162
+	bbox	73 115 68 48
+        @cmd    clearL
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/idle1.png
+	frame	data/chars/creatures/keeper/idle2.png
+	frame	data/chars/creatures/keeper/idle3.png
+	frame	data/chars/creatures/keeper/idle4.png
+
+
+anim backwalk
+	loop	1
+	delay	18
+	seta	150
+	offset	109 162
+	bbox	73 115 57 48
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyup7.png
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyup7.png
+
+# HIGH ALTITUDE (DOWN)
+
+anim follow10
+@script	
+    if(frame==0){
+      void vSelf = getlocalvar("self");
+      int r = rand()%40;
+
+      if(r > 0){
+        changeentityproperty(vSelf, "animation", openborconstant("ANI_FOLLOW11"));
+      }
+    }
+@end_script
+	loop	1 
+	delay	50
+	offset	109 162
+        @cmd    defenseAtk4 0
+	@cmd	degravity 1
+        @cmd    layer -3
+	drawmethod	scale 0.7 0.7
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -170 170 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -170 170 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -170 170 150  "ANI_FOLLOW12"
+	delay	8
+	sound   data/chars/creatures/keeper/stand.wav
+	frame	data/chars/creatures/keeper/stand1.png
+	frame	data/chars/creatures/keeper/stand2.png
+	frame	data/chars/creatures/keeper/stand3.png
+	delay	40
+        @cmd    attack1 -170 170 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand4.png
+	delay	12
+	frame	data/chars/creatures/keeper/stand3.png
+	frame	data/chars/creatures/keeper/stand2.png
+
+
+anim follow11
+	loop	0
+	delay	50
+	offset	109 162
+        @cmd    defenseAtk4 0
+	@cmd	degravity 1
+        @cmd    layer -3
+	drawmethod	scale 0.7 0.7
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -100 100 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -100 100 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -100 100 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -100 100 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -100 100 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand1.png
+	delay	8
+	sound   data/chars/creatures/keeper/stand.wav
+	frame	data/chars/creatures/keeper/stand1.png
+	frame	data/chars/creatures/keeper/stand2.png
+	frame	data/chars/creatures/keeper/stand3.png
+	delay	40
+        @cmd    attack1 -100 100 150  "ANI_FOLLOW12"
+	frame	data/chars/creatures/keeper/stand4.png
+	delay	12
+	frame	data/chars/creatures/keeper/stand3.png
+	frame	data/chars/creatures/keeper/stand2.png
+        @cmd    anichange "ANI_FOLLOW10" 0
+	frame	data/chars/creatures/keeper/stand2.png
+
+
+
+anim follow12
+	loop	0
+	delay	5
+	offset	109 162
+        @cmd    layer -3
+	drawmethod	scale 0.7 0.7
+	frame	data/chars/creatures/keeper/flyat1.png
+	frame	data/chars/creatures/keeper/flyat2.png
+	@cmd	dasher 0.5 -0.5 0
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyat3.png
+	drawmethod	scale 0.8 0.8
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyat3.png
+	drawmethod	scale 0.9 0.9
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyat3.png
+	delay	5
+        @cmd    defenseAtk4 1
+	@cmd	dasher 1 0 0
+        @cmd    layer 0
+	nodrawmethod
+	frame	data/chars/creatures/keeper/flyat3.png
+	delay	1
+	seta	150
+	@cmd	degravity 0
+	frame	data/chars/creatures/keeper/flyat3.png
+
+
+
+# MEDIUM ALTITUDE (UP)
+
+anim follow13
+@script	
+    if(frame==0){
+      void vSelf = getlocalvar("self");
+      int r = rand()%40;
+
+      if(r > 0){
+        changeentityproperty(vSelf, "animation", openborconstant("ANI_FOLLOW14"));
+      }
+    }
+@end_script
+	loop	1
+	delay	50
+	offset	109 162
+        @cmd    defenseAtk4 0
+	@cmd	degravity 1
+        @cmd    layer -3
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -50 170 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -50 170 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -50 170 150  "ANI_FOLLOW16"
+	delay	8
+	sound   data/chars/creatures/keeper/stand.wav
+	frame	data/chars/creatures/keeper/stand1.png
+	frame	data/chars/creatures/keeper/stand2.png
+	frame	data/chars/creatures/keeper/stand3.png
+	delay	40
+        @cmd    attack1 -50 170 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand4.png
+	delay	12
+	frame	data/chars/creatures/keeper/stand3.png
+	frame	data/chars/creatures/keeper/stand2.png
+
+anim follow14
+	loop	0
+	delay	50
+	offset	109 162
+        @cmd    defenseAtk4 0
+	@cmd	degravity 1
+        @cmd    layer -3
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -50 100 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -50 100 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -50 100 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -50 100 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -50 100 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand1.png
+	delay	8
+	sound   data/chars/creatures/keeper/stand.wav
+	frame	data/chars/creatures/keeper/stand1.png
+	frame	data/chars/creatures/keeper/stand2.png
+	frame	data/chars/creatures/keeper/stand3.png
+	delay	40
+        @cmd    attack1 -50 100 150  "ANI_FOLLOW16"
+	frame	data/chars/creatures/keeper/stand4.png
+	delay	12
+	frame	data/chars/creatures/keeper/stand3.png
+	frame	data/chars/creatures/keeper/stand2.png
+        @cmd    anichange "ANI_FOLLOW13" 0
+	frame	data/chars/creatures/keeper/stand2.png
+
+
+
+anim follow16
+	loop	0
+	delay	5
+	offset	109 162
+        @cmd    layer -3
+	seta	0
+	@cmd	dasher 0 1.8 0
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/flyup1.png
+	frame	data/chars/creatures/keeper/flyup2.png
+	frame	data/chars/creatures/keeper/flyup3.png
+	frame	data/chars/creatures/keeper/flyup4.png
+	frame	data/chars/creatures/keeper/flyup5.png
+	frame	data/chars/creatures/keeper/flyup6.png
+	frame	data/chars/creatures/keeper/flyup7.png
+	frame	data/chars/creatures/keeper/flyat4.png
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyat2.png
+        @cmd    defenseAtk4 1
+        @cmd    layer 0
+	@cmd	degravity 0
+	@cmd	dasher 1 0 0
+	frame	data/chars/creatures/keeper/flyat3.png
+	seta	150
+	frame	data/chars/creatures/keeper/flyat3.png
+
+
+# LOW ALTITUDE (UP UP)
+
+anim follow17
+@script	
+    if(frame==0){
+      void vSelf = getlocalvar("self");
+      int r = rand()%40;
+
+      if(r > 0){
+        changeentityproperty(vSelf, "animation", openborconstant("ANI_FOLLOW18"));
+      }
+    }
+@end_script
+	loop	1
+	delay	50
+	offset	109 162
+        @cmd    defenseAtk4 0
+	@cmd	degravity 1
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -60 120 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -60 120 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -60 120 150  "ANI_FOLLOW19"
+	delay	8
+	sound   data/chars/creatures/keeper/stand.wav
+	frame	data/chars/creatures/keeper/stand1.png
+	frame	data/chars/creatures/keeper/stand2.png
+	frame	data/chars/creatures/keeper/stand3.png
+	delay	40
+        @cmd    attack1 -60 120 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand4.png
+	delay	12
+	frame	data/chars/creatures/keeper/stand3.png
+	frame	data/chars/creatures/keeper/stand2.png
+
+anim follow18
+	loop	0
+	delay	50
+	offset	109 162
+        @cmd    defenseAtk4 0
+	@cmd	degravity 1
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -60 170 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -60 170 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -60 170 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -60 170 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand1.png
+        @cmd    attack1 -60 170 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand1.png
+	delay	8
+	sound   data/chars/creatures/keeper/stand.wav
+	frame	data/chars/creatures/keeper/stand1.png
+	frame	data/chars/creatures/keeper/stand2.png
+	frame	data/chars/creatures/keeper/stand3.png
+	delay	40
+        @cmd    attack1 -50 100 150  "ANI_FOLLOW19"
+	frame	data/chars/creatures/keeper/stand4.png
+	delay	12
+	frame	data/chars/creatures/keeper/stand3.png
+	frame	data/chars/creatures/keeper/stand2.png
+        @cmd    anichange "ANI_FOLLOW13" 0
+	frame	data/chars/creatures/keeper/stand2.png
+
+
+
+anim follow19
+	loop	0
+	delay	5
+	offset	109 162
+	seta	0
+	@cmd	dasher 0 2 0
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/flyup1.png
+	frame	data/chars/creatures/keeper/flyup2.png
+	frame	data/chars/creatures/keeper/flyup3.png
+	frame	data/chars/creatures/keeper/flyup4.png
+	frame	data/chars/creatures/keeper/flyup5.png
+	frame	data/chars/creatures/keeper/flyup6.png
+	frame	data/chars/creatures/keeper/flyup7.png
+	frame	data/chars/creatures/keeper/flyat4.png
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyat2.png
+        @cmd    defenseAtk4 1
+	@cmd	degravity 0
+	@cmd	dasher 1 0 0
+	frame	data/chars/creatures/keeper/flyat3.png
+	seta	150
+	frame	data/chars/creatures/keeper/flyat3.png
+
+
+
+anim attack1
+	loop	0
+        range   0 50
+        rangea -999 999
+        rangeb -999 999
+	delay	1
+	offset	109 162
+	seta	0
+	bbox	73 115 68 48
+	sound   data/chars/creatures/keeper/attack.wav
+	frame	data/chars/creatures/keeper/flydown1.png
+	delay	4
+	@cmd	degravity 1
+	@cmd	dasher  0.5 -2 0
+	frame	data/chars/creatures/keeper/flydown1.png
+	frame	data/chars/creatures/keeper/flydown2.png
+	frame	data/chars/creatures/keeper/flydown3.png
+	frame	data/chars/creatures/keeper/flydown4.png
+	frame	data/chars/creatures/keeper/flydown5.png
+	frame	data/chars/creatures/keeper/flydown6.png
+        hitfx   data/sounds/bite.wav
+        hitflash    bloody
+	attack  92 145 32 27 15 1 0 0 10
+	@cmd	dasher 0.5 -1.5 0
+	frame	data/chars/creatures/keeper/flyat4.png
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyat2.png
+	frame	data/chars/creatures/keeper/atk01.png
+	frame	data/chars/creatures/keeper/atk01.png
+	@cmd	dasher 0.5 -1
+	frame	data/chars/creatures/keeper/atk01.png
+	frame	data/chars/creatures/keeper/atk01.png
+	attack  0 0 0 0
+	@cmd	dasher 0 0 0
+	frame	data/chars/creatures/keeper/atk02.png
+	frame	data/chars/creatures/keeper/atk01.png
+        @cmd    anichange "ANI_FOLLOW1" 0
+	frame	data/chars/creatures/keeper/atk01.png
+
+
+anim attack2
+	loop	0
+        range   60 120
+        rangea -999 999
+        rangeb -999 999
+	delay	1
+	offset	109 162
+	seta	0
+	bbox	73 115 68 48
+	sound   data/chars/creatures/keeper/attack.wav
+	frame	data/chars/creatures/keeper/flydown1.png
+	delay	4
+	@cmd	degravity 1
+	@cmd	dasher  3 -2.5 0
+	frame	data/chars/creatures/keeper/flydown1.png
+	frame	data/chars/creatures/keeper/flydown2.png
+	frame	data/chars/creatures/keeper/flydown3.png
+	@cmd	dasher  3 -2 0
+	frame	data/chars/creatures/keeper/flydown4.png
+	frame	data/chars/creatures/keeper/flydown5.png
+	frame	data/chars/creatures/keeper/flydown6.png
+        hitfx   data/sounds/bite.wav
+        hitflash    bloody
+	attack  91 141 38 26 20 1 0 0 10
+	@cmd	dasher 2.5 -2 0
+	frame	data/chars/creatures/keeper/flydown2.png
+	frame	data/chars/creatures/keeper/flydown2.png
+	frame	data/chars/creatures/keeper/flydown2.png
+	@cmd	dasher 2 -1 0
+	frame	data/chars/creatures/keeper/flydown2.png
+	frame	data/chars/creatures/keeper/flydown2.png
+	@cmd	dasher 1 -1
+	frame	data/chars/creatures/keeper/flydown2.png
+	frame	data/chars/creatures/keeper/flydown2.png
+	attack  0 0 0 0
+	@cmd	dasher 0 0 0
+	frame	data/chars/creatures/keeper/atk02.png
+	frame	data/chars/creatures/keeper/atk02.png
+        @cmd    anichange "ANI_FOLLOW1" 0
+	frame	data/chars/creatures/keeper/atk01.png
+
+
+
+anim fall
+	loop	0
+	delay	6
+	seta	0
+	offset	109 162
+        @cmd    degravity 0
+	jumpframe 0 1 -1
+	bbox	0 0 0 0
+	sound   data/chars/creatures/keeper/fall.wav
+	frame	data/chars/creatures/keeper/pain0.png
+	frame	data/chars/creatures/keeper/pain1.png
+	frame	data/chars/creatures/keeper/pain2.png
+	frame	data/chars/creatures/keeper/pain3.png
+	frame	data/chars/creatures/keeper/pain4.png
+	frame	data/chars/creatures/keeper/pain5.png
+	delay	1
+	seta	50
+	frame	data/chars/creatures/keeper/flyup3.png
+        @cmd    anichange "ANI_FOLLOW1" 0
+	frame	data/chars/creatures/keeper/flyup3.png
+
+
+
+anim fall11
+	loop	0
+	delay	6
+	seta	0
+	offset	109 162
+        @cmd    degravity 0
+	jumpframe 0 1 -1
+	bbox	0 0 0 0
+       @cmd damageentity getlocalvar("self") getlocalvar("self") 0 1 openborconstant("ATK_NORMAL13")
+	sound   data/chars/creatures/keeper/fall.wav
+	frame	data/chars/creatures/keeper/pain0.png
+	frame	data/chars/creatures/keeper/pain1.png
+	frame	data/chars/creatures/keeper/pain2.png
+	frame	data/chars/creatures/keeper/pain3.png
+	frame	data/chars/creatures/keeper/pain4.png
+	frame	data/chars/creatures/keeper/pain5.png
+	delay	1
+	seta	50
+	frame	data/chars/creatures/keeper/flyup3.png
+        @cmd    anichange "ANI_FOLLOW1" 0
+	frame	data/chars/creatures/keeper/flyup3.png
+
+
+
+
+#---------freespecial3 Carolina-------------------#
+
+anim fall17
+	loop	0
+	delay	5
+	seta	0
+	offset	109 162
+        @cmd    degravity 0
+	jumpframe 0 1 -1
+	bbox	0 0 0 0
+        @cmd    spawnbind "EFlame" -5 25 1 0 0
+	sound   data/chars/creatures/keeper/fall.wav
+	frame	data/chars/creatures/keeper/pain0.png
+	frame	data/chars/creatures/keeper/pain1.png
+	frame	data/chars/creatures/keeper/pain2.png
+	frame	data/chars/creatures/keeper/pain3.png
+	frame	data/chars/creatures/keeper/pain4.png
+	frame	data/chars/creatures/keeper/pain5.png
+	delay	6
+	frame	data/chars/creatures/keeper/pain5.png
+	delay	1
+	seta	50
+	frame	data/chars/creatures/keeper/flyup3.png
+        @cmd    anichange "ANI_FOLLOW1" 0
+	frame	data/chars/creatures/keeper/flyup3.png
+
+#-----------------------------------------------------#
+
+
+anim shock
+	loop	0
+	delay	6
+	seta	0
+	offset	109 162
+        @cmd    degravity 0
+	jumpframe 0 1 -1
+	bbox	0 0 0 0
+        sound	data/sounds/shock.wav
+	sound   data/chars/creatures/keeper/fall.wav
+	frame	data/chars/creatures/keeper/pain0.png
+        drawmethod remap 3
+	frame	data/chars/creatures/keeper/pain1.png
+        nodrawmethod
+	frame	data/chars/creatures/keeper/pain2.png
+        drawmethod remap 3
+	frame	data/chars/creatures/keeper/pain3.png
+        nodrawmethod
+	frame	data/chars/creatures/keeper/pain4.png
+        drawmethod remap 3
+	frame	data/chars/creatures/keeper/pain5.png
+	delay	1
+	seta	50
+        nodrawmethod
+	frame	data/chars/creatures/keeper/flyup3.png
+        @cmd    anichange "ANI_FOLLOW1" 0
+	frame	data/chars/creatures/keeper/flyup3.png
+
+anim burn
+	loop	0
+	delay	5
+	seta	0
+	offset	109 162
+        @cmd    degravity 0
+	jumpframe 0 1 -1
+	bbox	0 0 0 0
+        @cmd    spawnbind "EFlame" -5 25 1 0 0
+	sound   data/chars/creatures/keeper/fall.wav
+	frame	data/chars/creatures/keeper/pain0.png
+	frame	data/chars/creatures/keeper/pain1.png
+	frame	data/chars/creatures/keeper/pain2.png
+	frame	data/chars/creatures/keeper/pain3.png
+	frame	data/chars/creatures/keeper/pain4.png
+	frame	data/chars/creatures/keeper/pain5.png
+	delay	6
+	frame	data/chars/creatures/keeper/pain5.png
+	delay	1
+	seta	50
+	frame	data/chars/creatures/keeper/flyup3.png
+        @cmd    anichange "ANI_FOLLOW1" 0
+	frame	data/chars/creatures/keeper/flyup3.png
+
+
+
+anim rise
+	loop	0
+	offset	109 162
+	delay	1
+	seta	0
+	frame	data/chars/creatures/keeper/flyup1.png
+        #@cmd    anichange "ANI_FOLLOW1" 0
+	frame	data/chars/creatures/keeper/flyup1.png
+
+
+
+anim follow1
+	loop	0
+	offset	109 162
+	delay	5
+	seta	0
+	@cmd	degravity 1
+	@cmd	dasher 0 1.8 0
+	bbox	0 0 0 0
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/flyup1.png
+	frame	data/chars/creatures/keeper/flyup2.png
+	frame	data/chars/creatures/keeper/flyup3.png
+	frame	data/chars/creatures/keeper/flyup4.png
+	frame	data/chars/creatures/keeper/flyup5.png
+	frame	data/chars/creatures/keeper/flyup6.png
+	frame	data/chars/creatures/keeper/flyup7.png
+	frame	data/chars/creatures/keeper/flyat4.png
+	sound   data/chars/creatures/keeper/wing.wav
+	frame	data/chars/creatures/keeper/flyat3.png
+	frame	data/chars/creatures/keeper/flyat2.png
+	@cmd	degravity 0
+	@cmd	dasher 1 0 0
+	frame	data/chars/creatures/keeper/flyat3.png
+	seta	150
+	frame	data/chars/creatures/keeper/flyat3.png
+
+
+
+
+
+anim death
+	loop	0
+        nodieblink    3 
+	delay   4
+	seta	0
+	landframe 7
+	offset	109 162
+	@cmd	degravity 0
+        jumpframe 0 1 -1.5 0
+	sound   data/chars/creatures/keeper/death.wav
+	frame	data/chars/creatures/keeper/death1.png
+	frame	data/chars/creatures/keeper/death2.png
+	frame	data/chars/creatures/keeper/death3.png
+	frame	data/chars/creatures/keeper/death4.png
+	frame	data/chars/creatures/keeper/death5.png
+	frame	data/chars/creatures/keeper/death6.png
+	delay   999
+	frame	data/chars/creatures/keeper/death7.png
+	delay   1
+	sound   data/sounds/efall.wav
+	frame	data/chars/creatures/keeper/death8.png
+        @cmd    spawnAni "bloodfl"  0 0 -1 "ANI_FOLLOW3" 0 0 0
+	frame	data/chars/creatures/keeper/death8.png
+	delay   30
+	frame	data/chars/creatures/keeper/death8.png
+
+

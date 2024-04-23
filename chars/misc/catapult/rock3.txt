@@ -1,0 +1,80 @@
+name	rock3
+health	1
+nolife  1
+facing 2
+type	enemy
+#type	npc
+hostile player
+#hostile enemy obstacle
+speed	5
+noquake 1
+falldie 1
+subtype flydie
+shadow	0
+palette 	data/chars/Catapult/rock03.gif
+
+anim idle
+	loop	1
+	delay	1
+	offset    335 170
+	hitflash catex
+hitfx     data/sounds/fbhit.wav
+	bbox	238 112 53 50 
+	#burn  -238 112 53 50 5 0 0 0 30
+	    burn    39 26 50 70 30 1 0 0 15
+#burn    1 1 16 14 25 1 0 0 15
+	frame	data/chars/Catapult/rock02.gif
+	burn  0 0 0 0 0 0
+	frame	data/chars/Catapult/rock02.gif
+	#burn  -30 99 105 92 10 0 1 0 8 120
+	frame	data/chars/Catapult/rock02.gif
+	#burn  0 0 0 0 0 0
+	frame	data/chars/Catapult/rock02.gif
+
+anim attack2
+	loop	0
+	delay	2
+	offset	15 17
+#offset 250 17
+	sound   data/sounds/gre.wav
+	hitfx     data/sounds/fbhit.wav
+	frame	data/chars/catapult/exp1.gif
+	frame	data/chars/catapult/exp2.gif
+	frame	data/chars/catapult/exp3.gif
+	frame	data/chars/catapult/exp4.gif
+	frame	data/chars/catapult/exp5.gif
+	frame	data/chars/catapult/exp6.gif
+	frame	data/chars/catapult/exp7.gif
+	frame	data/chars/catapult/exp8.gif
+	frame	data/chars/catapult/exp9.gif
+	frame	data/chars/catapult/exp10.gif
+	frame	data/chars/catapult/exp11.gif
+	frame	data/chars/catapult/exp12.gif
+	frame	data/chars/catapult/exp13.gif
+	frame	data/chars/catapult/exp14.gif
+	
+anim attack1
+	loop	0
+	delay	3
+	offset	53 87
+#offset 225 100
+	sound   data/sounds/gre.wav
+	hitfx     data/sounds/fbhit.wav
+	burn    89 26 50 70 30 1 0 0 15
+#burn  -238 112 53 50 5 0 0 0 30
+	frame	data/chars/catapult/exp1.gif
+	frame	data/chars/catapult/exp2.gif
+	frame	data/chars/catapult/exp3.gif
+	frame	data/chars/catapult/exp4.gif
+	frame	data/chars/catapult/exp5.gif
+	frame	data/chars/catapult/exp6.gif
+	frame	data/chars/catapult/exp7.gif
+	frame	data/chars/catapult/exp8.gif
+	frame	data/chars/catapult/exp9.gif
+	frame	data/chars/catapult/exp10.gif
+	frame	data/chars/catapult/exp11.gif
+	frame	data/chars/catapult/exp12.gif
+	frame	data/chars/catapult/exp13.gif
+	frame	data/chars/catapult/exp14.gif
+
+

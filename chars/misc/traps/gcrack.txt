@@ -1,0 +1,10 @@
+name		GCrack
+type		none
+offscreenkill	3000
+setlayer	1
+
+
+anim	idle
+	delay	100
+	offset	35 13
+	frame	data/chars/misc/traps/crack.png
