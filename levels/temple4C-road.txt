@@ -20,9 +20,9 @@ cameratype 1                                 # La caméra bouge horizontalement
 
 light        256 -44                         # Direction de l ombre x, y
 at
-shadowalpha 6                                # Alpha de l ombre
+shadowalpha 0                                # Alpha de l ombre
 at
-shadowopacity 200                            # Opacité de l ombre
+shadowopacity 1                            # Opacité de l ombre
 at
 
 settime     99                               # Temps pour finir le niveau
@@ -109,7 +109,7 @@ at 0
 
 #----------# Enemies #---------------------------------------------------------------
 
-spawn soldier1
+spawn soldier_mud
 alias SOLDIER
 coords	850 400
 at 400

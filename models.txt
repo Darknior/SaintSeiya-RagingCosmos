@@ -493,6 +493,10 @@ know cassios         data/chars/cassios/00_cassios.txt
 know cassiosp        data/chars/cassios/00_cassiosp.txt
 know cassios_rescue  data/chars/cassios/00_cassios_rescue.txt
 
+## ZOMBIES SOLDIERS ##
+
+know soldier_mud   data/chars/soldier_mud/00_soldier_mud.txt
+
 ## SILVER SAINTS ##
 
 know marin           data/chars/marin/00_marin.txt
