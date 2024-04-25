@@ -120,26 +120,15 @@ anim    select  # Personnage sélectionné
 
 anim spawn
     delay    1
-    offset    68 160
-    frame    data/chars/deathmask/spawn7.png
+    offset    29 127
+    frame    data/chars/deathmask/victory1.png
     @cmd spawnFade "in" 0 0 0 10000000001 0.25
     @cmd spawnDialog "dialog_deathmask1" 200 100
     sound data/chars/deathmask/sounds/07-ahah2.wav
-    frame    data/chars/deathmask/spawn7.png
-    delay    10
-    frame    data/chars/deathmask/spawn8.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
-    frame    data/chars/deathmask/spawn9.png
+    delay    25
+    frame    data/chars/deathmask/victory2.png
+    frame    data/chars/deathmask/victory3.png
+    frame    data/chars/deathmask/victory4.png
 
 anim idle
     loop    1
