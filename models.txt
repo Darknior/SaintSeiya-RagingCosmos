@@ -81,13 +81,14 @@ load jaki_idle        data/chars/dialogs/00_jaki_idle.txt
 
 # Flash animations
 
-load yellow_swing    data/chars/misc/flash/yellow_swing.txt
-load meteor_impact    data/chars/misc/flash/meteor_impact.txt
-load impact          data/chars/misc/flash/impact.txt
-load flashmedium     data/chars/misc/flash/flashmedium.txt
-load flashbig        data/chars/misc/flash/flashbig.txt
-load flash           data/chars/misc/flash/flash.txt
 load blue_swing      data/chars/misc/flash/blue_swing.txt
+load flash           data/chars/misc/flash/flash.txt
+load flashbig        data/chars/misc/flash/flashbig.txt
+load flashmedium     data/chars/misc/flash/flashmedium.txt
+load impact          data/chars/misc/flash/impact.txt
+load meteor_impact    data/chars/misc/flash/meteor_impact.txt
+load super           data/chars/misc/flash/super.txt
+load yellow_swing    data/chars/misc/flash/yellow_swing.txt
 
 # Dust animations
 
