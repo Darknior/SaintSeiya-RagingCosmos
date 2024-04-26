@@ -496,6 +496,7 @@ know cassios_rescue  data/chars/cassios/00_cassios_rescue.txt
 ## ZOMBIES SOLDIERS ##
 
 know soldier_mud   data/chars/soldier_mud/00_soldier_mud.txt
+know soldier_troll   data/chars/soldier_troll/00_soldier_troll.txt
 
 ## SILVER SAINTS ##
 

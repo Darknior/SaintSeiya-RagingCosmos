@@ -114,7 +114,7 @@ alias SOLDIER
 coords	850 400
 at 400
 
-spawn soldier3
+spawn soldier_troll
 alias SOLDIER
 coords	-200 480
 at 400
