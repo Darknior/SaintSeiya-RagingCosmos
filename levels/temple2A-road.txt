@@ -118,7 +118,7 @@ at 1000
 wait
 at 1000
 
-spawn soldier1
+spawn soldier_shield
 alias Chris
 coords 850 400
 at 1500
@@ -145,7 +145,7 @@ at 1500
 
 
 
-spawn soldier1-1
+spawn soldier_shield_dress
 alias Swan
 coords 850 400
 at 2000
@@ -182,7 +182,7 @@ alias Cassandre
 coords 850 430
 at 2400
 
-spawn soldier1-1
+spawn malesoldier
 alias Linus
 coords -200 410
 at 2400

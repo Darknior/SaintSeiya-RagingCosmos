@@ -193,28 +193,32 @@ anim death
 
 anim  pain
 	loop  0
-		delay  6
-		offset  146  205
-		move  -3
-		sound  data/sounds/hit1.wav
+	delay  3
+	offset  146  205
+	move  -3
+	sound  data/sounds/hit1.wav
 	frame  data/chars/soldier_mud/walk6.gif
+   offset  144  205
 	frame  data/chars/soldier_mud/walk5.gif
-	frame  data/chars/soldier_mud/walk4.gif
-	frame  data/chars/soldier_mud/walk3.gif
-	frame  data/chars/soldier_mud/walk2.gif
-		offset  146  205
-		bbox  113  112  60  92
-		delay  38
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+	offset  144  205
+	bbox  113  112  60  92
+	delay  38
 	frame  data/chars/soldier_mud/spawn4.gif
    
 anim  pain2
 	loop  0
-		delay  6
-		offset  146  205
-		move  -3
+	delay  6
+	offset  146  205
+	move  -3
 	frame  data/chars/soldier_mud/spawn4.gif
-		bbox  113  112  60  92
-		delay  38
+	bbox  113  112  60  92
+	delay  38
 	frame  data/chars/soldier_mud/spawn4.gif
 
 

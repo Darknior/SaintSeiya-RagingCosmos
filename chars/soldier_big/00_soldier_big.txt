@@ -143,12 +143,20 @@ anim BACKWALK
 
 anim pain
     loop    0
-    delay    12
+    delay    3
     offset    120 187
 	 bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
+    offset    118 187
     frame    data/chars/soldier_big/03.png
-  
+    offset    120 187
+    frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    delay    8
+    frame    data/chars/soldier_big/03.png
+    
 anim fall
     bouncefactor 1.9
     landframe 4
@@ -247,10 +255,18 @@ anim death
 anim pain20 # Blood pain
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -35 0 30 0 0
     loop    0
-    delay    10
+    delay    3
     offset    120 187
 	 bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    delay    8
     frame    data/chars/soldier_big/03.png
     
 anim fall20 # blood fall
@@ -275,10 +291,18 @@ anim fall20 # blood fall
 anim pain15# BURN PAIN
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 1 0
     loop    0
-    delay    10
+    delay    3
     offset    120 187
 	 bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    delay    8
     frame    data/chars/soldier_big/03.png
  
 anim fall15# BURN PAIN Ground
@@ -339,10 +363,18 @@ anim pain12# ICE PAIN Small
 anim pain30# Shock Pain
     @cmd     spawnbind "shock1" "ANI_IDLE" 15 1 80 0 0
     loop    0
-    delay    10
+    delay    3
     offset    120 187
 	 bbox 57 68 93 132
     frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    delay    8
     frame    data/chars/soldier_big/03.png
  
 anim fall30# Shock PAIN Ground

@@ -317,28 +317,42 @@ anim death
    frame    data/chars/soldier_basic/death1.png
 
 anim pain
-   delay    6
    offset    44 122
    bbox 21 10 43 112
+   delay    3
    frame    data/chars/soldier_basic/pain1.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain2.png
+   offset    44 121
    frame    data/chars/soldier_basic/pain3.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain4.png
-   frame    data/chars/soldier_basic/pain3.png
-   frame    data/chars/soldier_basic/pain2.png
-   frame    data/chars/soldier_basic/pain1.png
+   offset    44 121
+   frame    data/chars/soldier_basic/pain4.png
+   offset    42 121
+   frame    data/chars/soldier_basic/pain4.png
+   offset    44 121
+   delay    8
+   frame    data/chars/soldier_basic/pain4.png
 	
 anim pain2
-   delay    6
    offset    42 121
    bbox 21 10 43 112
+   delay    3
    frame    data/chars/soldier_basic/pain21.png
+   offset    40 121
    frame    data/chars/soldier_basic/pain22.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain23.png
+   offset    40 121
    frame    data/chars/soldier_basic/pain24.png
-   frame    data/chars/soldier_basic/pain23.png
-   frame    data/chars/soldier_basic/pain22.png
-   frame    data/chars/soldier_basic/pain21.png
+   offset    42 121
+   frame    data/chars/soldier_basic/pain24.png
+   offset    40 121
+   frame    data/chars/soldier_basic/pain24.png
+   offset    42 121
+   delay    8
+   frame    data/chars/soldier_basic/pain24.png
 
 anim fall
     bouncefactor 1.9
@@ -422,17 +436,24 @@ anim follow1 # Stun aprés X chuttes
  
 anim pain20 # Blood pain
    loop    0
-   delay    5
    offset    44 122
    bbox 21 10 43 112
    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -5 0 5 0 0
+   delay    3
    frame    data/chars/soldier_basic/pain1.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain2.png
+   offset    44 121
    frame    data/chars/soldier_basic/pain3.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain4.png
-   frame    data/chars/soldier_basic/pain3.png
-   frame    data/chars/soldier_basic/pain2.png
-   frame    data/chars/soldier_basic/pain1.png
+   offset    44 121
+   frame    data/chars/soldier_basic/pain4.png
+   offset    42 121
+   frame    data/chars/soldier_basic/pain4.png
+   offset    44 121
+   delay    8
+   frame    data/chars/soldier_basic/pain4.png
     
 anim fall20 # blood fall
     delay    10
@@ -452,17 +473,24 @@ anim fall20 # blood fall
  
 anim pain15# BURN PAIN
    loop    0
-   delay    5
    offset    44 122
    bbox 21 10 43 112
    @cmd     spawnbind "soldier_basic_flame" "ANI_IDLE" -10 1 60 0 0
+   delay    3
    frame    data/chars/soldier_basic/pain1.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain2.png
+   offset    44 121
    frame    data/chars/soldier_basic/pain3.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain4.png
-   frame    data/chars/soldier_basic/pain3.png
-   frame    data/chars/soldier_basic/pain2.png
-   frame    data/chars/soldier_basic/pain1.png
+   offset    44 121
+   frame    data/chars/soldier_basic/pain4.png
+   offset    42 121
+   frame    data/chars/soldier_basic/pain4.png
+   offset    44 121
+   delay    8
+   frame    data/chars/soldier_basic/pain4.png
   
 anim fall15# BURN PAIN Ground
     loop    0
@@ -532,17 +560,24 @@ anim pain12# ICE PAIN Small
 
 anim pain30# Shock Pain
    loop    0
-   delay    5
    offset    44 122
    bbox 21 10 43 112
    @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
+   delay    3
    frame    data/chars/soldier_basic/pain1.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain2.png
+   offset    44 121
    frame    data/chars/soldier_basic/pain3.png
+   offset    42 121
    frame    data/chars/soldier_basic/pain4.png
-   frame    data/chars/soldier_basic/pain3.png
-   frame    data/chars/soldier_basic/pain2.png
-   frame    data/chars/soldier_basic/pain1.png
+   offset    44 121
+   frame    data/chars/soldier_basic/pain4.png
+   offset    42 121
+   frame    data/chars/soldier_basic/pain4.png
+   offset    44 121
+   delay    8
+   frame    data/chars/soldier_basic/pain4.png
   
 anim fall30# Shock PAIN Ground
     loop    0

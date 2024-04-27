@@ -1,4 +1,4 @@
-name        soldier_shield
+name        soldier_shield_dress
 health      300
 type        enemy
 
@@ -71,7 +71,7 @@ blood_ground_medium
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/soldier_shield/icon.png
-palette      data/chars/soldier_shield/palettes/shield_pant.png
+palette      data/chars/soldier_shield/palettes/soldier_shield_dress.png
 #remap       data/chars/soldier_shield/palettes/palette1.png  # 14 Possible MAX
 
 
@@ -137,7 +137,7 @@ anim idle2
    frame    data/chars/soldier_shield/idle24.png
    frame    data/chars/soldier_shield/idle23.png
    frame    data/chars/soldier_shield/idle22.png
-   
+
 #// Walk/Run animations /////////////////////////////////////////////////
 
 anim walk
@@ -197,98 +197,83 @@ anim attack2
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim death
-   delay    10
-   offset    98 125
-   frame    data/chars/soldier_shield/death1.png
-   @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
-   frame    data/chars/soldier_shield/death.png
+    delay    10
+    offset    98 125
+    @cmd     spawnbind "blood_ground_medium" "ANI_IDLE" 0 0 0 0 0
+	 bbox 6 93 90 35
+    frame    data/chars/soldier_shield/death.png	
 
 anim pain
-   offset    44 122
+   delay    7
+   offset    47 122
    bbox 21 10 43 112
-   delay    3
    frame    data/chars/soldier_shield/pain1.png
-   offset    42 121
    frame    data/chars/soldier_shield/pain2.png
-   offset    44 121
    frame    data/chars/soldier_shield/pain3.png
-   offset    42 121
    frame    data/chars/soldier_shield/pain4.png
-   offset    44 121
-   frame    data/chars/soldier_shield/pain4.png
-   offset    42 121
-   frame    data/chars/soldier_shield/pain4.png
-   offset    44 121
-   delay    8
-   frame    data/chars/soldier_shield/pain4.png
+   frame    data/chars/soldier_shield/pain3.png
+   frame    data/chars/soldier_shield/pain2.png
+   frame    data/chars/soldier_shield/pain1.png
 	
 anim pain2
-   offset    44 177
-   bbox 21 10 43 112
-   delay    3
+   delay    7
+   offset    47 177
+   bbox 13 68 50 112
    frame    data/chars/soldier_shield/pain21.png
-   offset    42 177
    frame    data/chars/soldier_shield/pain22.png
-   offset    44 177
    frame    data/chars/soldier_shield/pain23.png
-   offset    42 177
-   frame    data/chars/soldier_shield/pain24.png
-   offset    44 177
-   frame    data/chars/soldier_shield/pain24.png
-   offset    42 177
-   frame    data/chars/soldier_shield/pain24.png
-   offset    42 177
-   delay    8
-   frame    data/chars/soldier_shield/pain24.png
+   frame    data/chars/soldier_shield/pain23.png
+   frame    data/chars/soldier_shield/pain22.png
+   frame    data/chars/soldier_shield/pain21.png
 
 anim fall
     bouncefactor 1.9
     delay    10
     offset    98 125
-	 landframe 4
+	 landframe 3
 	 bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_shield/fall1.png
     frame    data/chars/soldier_shield/fall2.png
-    delay    -1000
+    delay    200
     frame    data/chars/soldier_shield/fall3.png
-    delay    15
+    delay    10
     frame    data/chars/soldier_shield/fall4.png
 	 bbox 6 93 90 35
     frame    data/chars/soldier_shield/fall8.png	
     
-anim fall8 # touche les enemis quand il est projetté
+anim fall8 # chutte apres etre Grab
     bouncefactor 1.9
     delay    10
     offset    98 125
-	 landframe 4
-    attack 20 34 65 70 4 1 0 0 10 12
+	 landframe 3
+	 attack 20 34 65 70 4 1 0 0 10 12
     bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_shield/fall1.png
     frame    data/chars/soldier_shield/fall2.png
-    delay    -1000
+    delay    200
     frame    data/chars/soldier_shield/fall3.png
-    delay    15
+    delay    10
     frame    data/chars/soldier_shield/fall4.png
-    bbox 6 93 90 35
+	 bbox 0 80 110 40
     frame    data/chars/soldier_shield/fall8.png	
 
-anim fall9 # touche les enemis quand il est projetté
+anim fall9 # chutte apres etre Grab
     bouncefactor 1.9
     delay    10
     offset    98 125
-	 landframe 4
-    attack 20 34 65 70 4 1 0 0 10 12
+	 landframe 3
+	 attack 20 34 65 70 4 1 0 0 10 12
     bbox 20 34 65 70
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/soldier_shield/fall1.png
     frame    data/chars/soldier_shield/fall2.png
-    delay    -1000
+    delay    200
     frame    data/chars/soldier_shield/fall3.png
-    delay    15
+    delay    10
     frame    data/chars/soldier_shield/fall4.png
-    bbox 6 93 90 35
+	 bbox 0 80 110 40
     frame    data/chars/soldier_shield/fall8.png	
 
 anim rise # Se releve avec compteur de chuttes
@@ -304,97 +289,83 @@ anim rise # Se releve avec compteur de chuttes
    
 anim follow1 # Stun aprés X chuttes
    offset    98 125
-   delay    50
 	bbox 69 24 50 100
-   frame    data/chars/soldier_shield/stun1.png
-   frame    data/chars/soldier_shield/stun2.png
-   frame    data/chars/soldier_shield/stun1.png
-   frame    data/chars/soldier_shield/stun2.png
-   frame    data/chars/soldier_shield/stun1.png
-   frame    data/chars/soldier_shield/stun2.png
-   frame    data/chars/soldier_shield/stun1.png
-   frame    data/chars/soldier_shield/stun2.png
-   frame    data/chars/soldier_shield/stun1.png
-   frame    data/chars/soldier_shield/stun2.png
-   frame    data/chars/soldier_shield/stun1.png
-   frame    data/chars/soldier_shield/stun2.png
+    delay    50
+    frame    data/chars/soldier_shield/stun1.png
+    frame    data/chars/soldier_shield/stun2.png
+    frame    data/chars/soldier_shield/stun1.png
+    frame    data/chars/soldier_shield/stun2.png
+    frame    data/chars/soldier_shield/stun1.png
+    frame    data/chars/soldier_shield/stun2.png
+    frame    data/chars/soldier_shield/stun1.png
+    frame    data/chars/soldier_shield/stun2.png
+    frame    data/chars/soldier_shield/stun1.png
+    frame    data/chars/soldier_shield/stun2.png
+    frame    data/chars/soldier_shield/stun1.png
+    frame    data/chars/soldier_shield/stun2.png
 
 #// FIRE / ICE / BLOOD / SHOCK animations /////////////////////////////////////////////////
  
 anim pain20 # Blood pain
    loop    0
+   delay    5
    offset    44 122
    bbox 21 10 43 112
    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -5 0 5 0 0
-   delay    3
    frame    data/chars/soldier_shield/pain1.png
-   offset    42 121
    frame    data/chars/soldier_shield/pain2.png
-   offset    44 121
    frame    data/chars/soldier_shield/pain3.png
-   offset    42 121
    frame    data/chars/soldier_shield/pain4.png
-   offset    44 121
-   frame    data/chars/soldier_shield/pain4.png
-   offset    42 121
-   frame    data/chars/soldier_shield/pain4.png
-   offset    44 121
-   delay    8
-   frame    data/chars/soldier_shield/pain4.png
+   frame    data/chars/soldier_shield/pain3.png
+   frame    data/chars/soldier_shield/pain2.png
+   frame    data/chars/soldier_shield/pain1.png
     
 anim fall20 # blood fall
     delay    10
     offset    98 125
-	 landframe 4
+	 landframe 3
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 10 0 0
 	 bbox 20 34 65 70
     frame    data/chars/soldier_shield/fall1.png
     frame    data/chars/soldier_shield/fall2.png
-    delay    -1000
+    delay    200
     frame    data/chars/soldier_shield/fall3.png
-    delay    15
+    delay    10
     frame    data/chars/soldier_shield/fall4.png
 	 bbox 6 93 90 35
     frame    data/chars/soldier_shield/fall8.png	
  
 anim pain15# BURN PAIN
    loop    0
+   delay    5
    offset    44 122
    bbox 21 10 43 112
-   @cmd     spawnbind "soldier_shield_flame" "ANI_IDLE" -10 1 60 0 0
-   delay    3
+   @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
    frame    data/chars/soldier_shield/pain1.png
-   offset    42 121
    frame    data/chars/soldier_shield/pain2.png
-   offset    44 121
    frame    data/chars/soldier_shield/pain3.png
-   offset    42 121
    frame    data/chars/soldier_shield/pain4.png
-   offset    44 121
-   frame    data/chars/soldier_shield/pain4.png
-   offset    42 121
-   frame    data/chars/soldier_shield/pain4.png
-   offset    44 121
-   delay    8
-   frame    data/chars/soldier_shield/pain4.png
+   frame    data/chars/soldier_shield/pain3.png
+   frame    data/chars/soldier_shield/pain2.png
+   frame    data/chars/soldier_shield/pain1.png
   
 anim fall15# BURN PAIN Ground
     loop    0
     delay    10
     offset    98 125
     bbox 20 34 65 70
-	 landframe 4
+	 landframe 3
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
-    @cmd     spawnbind "soldier_shield_flame" "ANI_IDLE" -40 1 50 0 0
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
     frame    data/chars/soldier_shield/fall1.png
     frame    data/chars/soldier_shield/fall2.png
-    delay    -1000
+    delay    200
     frame    data/chars/soldier_shield/fall3.png
     delay    10
     frame    data/chars/soldier_shield/fall4.png
 	 bbox 6 93 90 35
-    @cmd     spawnbind "soldier_shield_flame" "ANI_IDLE" -60 1 0 0 0
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
     frame    data/chars/soldier_shield/fall8.png	
     
 anim pain10# ICE PAIN
@@ -447,38 +418,31 @@ anim pain12# ICE PAIN Small
 
 anim pain30# Shock Pain
    loop    0
+   delay    5
    offset    44 122
    bbox 21 10 43 112
    @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
-   delay    3
    frame    data/chars/soldier_shield/pain1.png
-   offset    42 121
    frame    data/chars/soldier_shield/pain2.png
-   offset    44 121
    frame    data/chars/soldier_shield/pain3.png
-   offset    42 121
    frame    data/chars/soldier_shield/pain4.png
-   offset    44 121
-   frame    data/chars/soldier_shield/pain4.png
-   offset    42 121
-   frame    data/chars/soldier_shield/pain4.png
-   offset    44 121
-   delay    8
-   frame    data/chars/soldier_shield/pain4.png
+   frame    data/chars/soldier_shield/pain3.png
+   frame    data/chars/soldier_shield/pain2.png
+   frame    data/chars/soldier_shield/pain1.png
   
 anim fall30# Shock PAIN Ground
     loop    0
     delay    10
     offset    98 125
     bbox 20 34 65 70
-	 landframe 4
+	 landframe 3
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 45 0 0
     frame    data/chars/soldier_shield/fall1.png
     frame    data/chars/soldier_shield/fall2.png
-    delay    -1000
+    delay    200
     frame    data/chars/soldier_shield/fall3.png
-    delay    15
+    delay    10
     frame    data/chars/soldier_shield/fall4.png
 	 bbox 6 93 90 35
     @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0

@@ -230,15 +230,24 @@ anim follow1 #STUN
     frame    data/chars/soldier_stick/stun2.png
 
 anim pain
-    delay    7
     offset    44 125
     bbox 29 10 35 115
+    delay    3
     frame    data/chars/soldier_stick/pain1.png
+    offset    42 125
     frame    data/chars/soldier_stick/pain2.png
+    offset    44 125
     frame    data/chars/soldier_stick/pain3.png
-    frame    data/chars/soldier_stick/pain2.png
-    frame    data/chars/soldier_stick/pain1.png
-
+    offset    42 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    44 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    42 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    44 125
+    delay    8
+    frame    data/chars/soldier_stick/pain3.png
+    
 anim fall
     bouncefactor 1.9
     delay    15
@@ -288,15 +297,24 @@ anim death
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
 anim pain20 # Blood pain
-    delay    5
     offset    44 125
     bbox 29 10 35 115
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 15 0 10 0 0
+    delay    3
     frame    data/chars/soldier_stick/pain1.png
+    offset    42 125
     frame    data/chars/soldier_stick/pain2.png
+    offset    44 125
     frame    data/chars/soldier_stick/pain3.png
-    frame    data/chars/soldier_stick/pain2.png
-    frame    data/chars/soldier_stick/pain1.png
+    offset    42 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    44 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    42 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    44 125
+    delay    8
+    frame    data/chars/soldier_stick/pain3.png
 
 anim fall20 # Blood fall  
     delay    15
@@ -311,14 +329,24 @@ anim fall20 # Blood fall
     frame    data/chars/soldier_stick/fall3.png
     
 anim pain15 # BURN PAIN
-    delay    5
     offset    44 125
     bbox 29 10 35 115
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" 0 1 60 1 0
+    delay    3
     frame    data/chars/soldier_stick/pain1.png
+    offset    42 125
     frame    data/chars/soldier_stick/pain2.png
+    offset    44 125
     frame    data/chars/soldier_stick/pain3.png
-    frame    data/chars/soldier_stick/pain2.png
+    offset    42 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    44 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    42 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    44 125
+    delay    8
+    frame    data/chars/soldier_stick/pain3.png
   
 anim fall15 # BURN PAIN Ground
     delay    15
@@ -372,14 +400,24 @@ anim pain11# ICE PAIN Small
     frame    data/chars/soldier_stick/pain1.png
 
 anim pain30# Shock Pain
-    delay    5
     offset    44 125
     bbox 29 10 35 115
     @cmd     spawnbind "shock1" "ANI_IDLE" 15 1 70 0 0
+    delay    3
     frame    data/chars/soldier_stick/pain1.png
+    offset    42 125
     frame    data/chars/soldier_stick/pain2.png
+    offset    44 125
     frame    data/chars/soldier_stick/pain3.png
-    frame    data/chars/soldier_stick/pain2.png
+    offset    42 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    44 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    42 125
+    frame    data/chars/soldier_stick/pain3.png
+    offset    44 125
+    delay    8
+    frame    data/chars/soldier_stick/pain3.png
   
 anim fall30# Shock PAIN Ground
     delay    15

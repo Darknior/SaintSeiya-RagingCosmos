@@ -156,11 +156,19 @@ anim attack1
 
 anim pain
     loop    0
-    delay    12
     offset    106 180
     bbox 66 76 80 110
+    delay    3
     frame    data/chars/soldier_purple/05.png
-    frame    data/chars/soldier_purple/05.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    delay    8
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
  
 anim fall
     bouncefactor 1.9
@@ -263,12 +271,20 @@ anim follow1 #STUN
  
 anim pain20 # Blood pain
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -5 0 15 0 0
+    delay    3
     frame    data/chars/soldier_purple/05.png
-    frame    data/chars/soldier_purple/05.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    delay    8
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
     
 anim fall20 # blood fall
     landframe  4
@@ -292,12 +308,20 @@ anim fall20 # blood fall
  
 anim pain15# BURN PAIN
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 1 0
+    delay    3
     frame    data/chars/soldier_purple/05.png
-    frame    data/chars/soldier_purple/05.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    delay    8
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
  
 anim fall15# BURN PAIN Ground
     landframe  4
@@ -356,12 +380,20 @@ anim pain12# ICE PAIN Small
 
 anim pain30# Shock Pain
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "shock1" "ANI_IDLE" 5 1 70 0 0
+    delay    3
     frame    data/chars/soldier_purple/05.png
-    frame    data/chars/soldier_purple/05.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    delay    8
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
  
 anim fall30# Shock PAIN Ground
     landframe  4

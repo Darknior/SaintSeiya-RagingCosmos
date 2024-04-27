@@ -151,11 +151,19 @@ anim attack1
 
 anim pain
     loop    0
-    delay    7
     offset    102 179
     bbox 42 64 99 121
+    delay    3
     frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    delay    8
+    frame    data/chars/soldier_base/06.png
 
 anim fall
     bouncefactor 1.9
@@ -251,12 +259,20 @@ anim follow1 #STUN
  
 anim pain20 # Blood pain
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -5 0 15 0 0
+    delay    3
     frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    delay    8
+    frame    data/chars/soldier_base/06.png
     
 anim fall20 # blood fall
     landframe  4
@@ -279,12 +295,20 @@ anim fall20 # blood fall
  
 anim pain15# BURN PAIN
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 1 0
+    delay    3
     frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    delay    8
+    frame    data/chars/soldier_base/06.png
  
 anim fall15# BURN PAIN Ground
     landframe  4
@@ -307,45 +331,80 @@ anim fall15# BURN PAIN Ground
     
 anim pain10# ICE PAIN
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    delay    3
     frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    delay    8
+    frame    data/chars/soldier_base/06.png
     delay    300
     @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 10 1 1 1 1
     frame    data/chars/soldier_base/05.png
     
 anim pain11# ICE PAIN Big
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
+    delay    3
     frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    delay    8
+    frame    data/chars/soldier_base/06.png
     delay    500
     frame    data/chars/soldier_base/05.png
     
 anim pain12# ICE PAIN Small
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+    delay    3
     frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    delay    8
+    frame    data/chars/soldier_base/06.png
     delay    500
     frame    data/chars/soldier_base/05.png
 
 anim pain30# Shock Pain
     loop    0
-    delay    5
     offset    102 179
     bbox 42 64 99 121
     @cmd     spawnbind "shock1" "ANI_IDLE" 5 1 70 0 0
+    delay    3
     frame    data/chars/soldier_base/05.png
-    frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    delay    8
+    frame    data/chars/soldier_base/06.png
  
 anim fall30# Shock PAIN Ground
     landframe  4

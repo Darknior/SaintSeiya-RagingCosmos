@@ -124,7 +124,7 @@ anim spawn
     frame    data/chars/deathmask/victory1.png
     @cmd spawnFade "in" 0 0 0 10000000001 0.25
     @cmd spawnDialog "dialog_deathmask1" 200 100
-    sound data/chars/deathmask/sounds/07-ahah2.wav
+    sound data/chars/deathmask/sounds/spawn2.wav
     delay    25
     frame    data/chars/deathmask/victory2.png
     frame    data/chars/deathmask/victory3.png
@@ -332,21 +332,36 @@ anim jumpattack # Attaque sautée statique
 #// Pain/Fall/Rise/Death animations /////////////////////////////////////////////////
 
 anim pain # Up
-    delay    10
     offset    36 127
     bbox 18 16 38 114
+    delay    3
     frame    data/chars/deathmask/pain1.png
     frame    data/chars/deathmask/pain2.png
     frame    data/chars/deathmask/pain3.png
+    offset    34 127
+    frame    data/chars/deathmask/pain3.png
+    offset    36 127
+    frame    data/chars/deathmask/pain3.png
+    offset    34 127
+    delay    8
+    frame    data/chars/deathmask/pain3.png
 
 anim pain2 # Down
-    delay    15
     offset    31 127
     bbox 19 16 38 114
     sound data/chars/deathmask/sounds/pain1.wav
+    delay    3
     frame    data/chars/deathmask/pain21.png
+    offset    29 127
     frame    data/chars/deathmask/pain22.png
-
+    offset    31 127
+    frame    data/chars/deathmask/pain21.png
+    offset    29 127
+    frame    data/chars/deathmask/pain22.png
+    offset    31 127
+    delay    8
+    frame    data/chars/deathmask/pain22.png
+    
 anim fall
     bouncefactor 1.9
     delay    10
@@ -382,13 +397,22 @@ anim fall7 # chutte apres etre Grab
 anim rise # Se releve avec compteur de chuttes
     offset    77 130
     delay    10
-    sound data/chars/deathmask/sounds/07-ahah2.wav
+    sound data/chars/deathmask/sounds/rise2.wav
     frame    data/chars/deathmask/rise1.png
     frame    data/chars/deathmask/rise2.png
     ## PARAMETERS: X, Y, Z, LIMIT
     ## THE "LIMIT" PARAMETER MEANS HOW MANY TIMES THE ENTITY MUST FALL TO START A STUN
     @cmd stunCounter 15 100 1 5
     frame    data/chars/deathmask/rise3.png
+    
+anim rise2 # 
+    delay    8
+    offset    39 127
+    bbox 25 24 38 106
+    sound data/chars/deathmask/sounds/rise2.wav
+    frame    data/chars/deathmask/get3.png
+    frame    data/chars/deathmask/get2.png
+    frame    data/chars/deathmask/get1.png
 
 anim follow1 # Stun aprés X chuttes
     offset    27 128
@@ -428,11 +452,19 @@ anim death
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
 anim pain20 # Blood pain
-    delay    15
     offset    31 127
     bbox 19 16 38 114
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 -10 0 0
+    delay    3
     frame    data/chars/deathmask/pain21.png
+    offset    29 127
+    frame    data/chars/deathmask/pain22.png
+    offset    31 127
+    frame    data/chars/deathmask/pain21.png
+    offset    29 127
+    frame    data/chars/deathmask/pain22.png
+    offset    31 127
+    delay    8
     frame    data/chars/deathmask/pain22.png
 
 anim fall20 # blood fall
@@ -453,12 +485,19 @@ anim fall20 # blood fall
     frame    data/chars/deathmask/fall5.png
 
 anim pain15# BURN PAIN
-    delay    10
     offset    36 127
     bbox 18 16 38 114
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -5 1 60 0 0
+    delay    3
     frame    data/chars/deathmask/pain1.png
     frame    data/chars/deathmask/pain2.png
+    frame    data/chars/deathmask/pain3.png
+    offset    34 127
+    frame    data/chars/deathmask/pain3.png
+    offset    36 127
+    frame    data/chars/deathmask/pain3.png
+    offset    34 127
+    delay    8
     frame    data/chars/deathmask/pain3.png
 
 anim fall15# BURN PAIN Ground
@@ -512,12 +551,19 @@ anim pain12# ICE PAIN Small
     frame    data/chars/deathmask/pain3.png
 
 anim pain30# Shock Pain
-    delay    10
     offset    36 127
     bbox 18 16 38 114
     @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
+    delay    3
     frame    data/chars/deathmask/pain1.png
     frame    data/chars/deathmask/pain2.png
+    frame    data/chars/deathmask/pain3.png
+    offset    34 127
+    frame    data/chars/deathmask/pain3.png
+    offset    36 127
+    frame    data/chars/deathmask/pain3.png
+    offset    34 127
+    delay    8
     frame    data/chars/deathmask/pain3.png
 
 anim fall30# Shock PAIN Ground
@@ -624,6 +670,7 @@ anim freespecial2 # Attaque en courant
     frame    data/chars/deathmask/runattack3.png
     frame    data/chars/deathmask/runattack4.png
     frame    data/chars/deathmask/runattack4.png
+    sound data/chars/deathmask/sounds/slash.wav
     attack2 0
     @cmd    dasher 0 0 0 1
     delay    12
