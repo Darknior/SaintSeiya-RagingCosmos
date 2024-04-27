@@ -355,12 +355,12 @@ void blinkCharge()
 		int pIndex		= getentityproperty(self, "playerindex");
 		int dead		= getentityproperty(self, "dead");
 		int mp			= getentityproperty(self, "mp");
-		int limit		= 10;
+		int limit		= 33;
 		int tintMode	= 5;
-		int warning		= 10;
+		int warning		= 33;
 		float time		= openborvariant("elapsed_time");
 		float blinkRate	= 20;
-		float delay		= 250;
+		float delay		= 350;
 		float color;
 
 		//START THE CHARGE ATTACK VARIABLE IF THE BUTTON IS HELD 
