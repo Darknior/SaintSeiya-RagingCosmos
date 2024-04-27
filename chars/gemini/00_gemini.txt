@@ -282,20 +282,38 @@ anim jumpattack # Attaque sautée statique
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim pain # Normal pain
-    delay    5
     offset    58 170
     bbox 46 33 38 137
+    delay    3
     frame    data/chars/gemini/pain1.png
+    offset    56 170
     frame    data/chars/gemini/pain2.png
-    frame    data/chars/gemini/pain1.png
+    offset    58 170
+    frame    data/chars/gemini/pain2.png
+    offset    56 170
+    frame    data/chars/gemini/pain2.png
+    offset    58 170
+    frame    data/chars/gemini/pain2.png
+    offset    56 170
+    delay    8
+    frame    data/chars/gemini/pain2.png
 
 anim pain2 # Big pain
-    delay    5
     offset    42 150
     bbox 25 18 38 132
     sound data/chars/gemini/sounds/hurt1.wav
+    delay    3
     frame    data/chars/gemini/pain21.png
+    offset    42 150
     frame    data/chars/gemini/pain22.png
+    offset    42 150
+    frame    data/chars/gemini/pain21.png
+    offset    42 150
+    frame    data/chars/gemini/pain21.png
+    offset    42 150
+    frame    data/chars/gemini/pain22.png
+    offset    42 150
+    delay    8
     frame    data/chars/gemini/pain21.png
 
 anim fall
@@ -399,11 +417,20 @@ anim death
 
 anim pain20 # Blood pain
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 5 0 30 0 0
-    delay    5
     offset    42 150
     bbox 25 18 38 132
+    delay    3
     frame    data/chars/gemini/pain21.png
+    offset    42 150
     frame    data/chars/gemini/pain22.png
+    offset    42 150
+    frame    data/chars/gemini/pain21.png
+    offset    42 150
+    frame    data/chars/gemini/pain21.png
+    offset    42 150
+    frame    data/chars/gemini/pain22.png
+    offset    42 150
+    delay    8
     frame    data/chars/gemini/pain21.png
 
 anim fall20 # blood fall
@@ -427,12 +454,21 @@ anim fall20 # blood fall
 
 anim pain15# BURN PAIN
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" 0 1 75 0 0
-    delay    5
     offset    58 170
     bbox 46 33 38 137
+    delay    3
     frame    data/chars/gemini/pain1.png
+    offset    56 170
     frame    data/chars/gemini/pain2.png
-    frame    data/chars/gemini/pain1.png
+    offset    58 170
+    frame    data/chars/gemini/pain2.png
+    offset    56 170
+    frame    data/chars/gemini/pain2.png
+    offset    58 170
+    frame    data/chars/gemini/pain2.png
+    offset    56 170
+    delay    8
+    frame    data/chars/gemini/pain2.png
    
 anim fall15# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" 0 1 60 0 0
@@ -489,12 +525,21 @@ anim pain12# ICE PAIN Small
     
 anim pain30# Shock Pain
     @cmd     spawnbind "shock1" "ANI_IDLE" 20 1 80 0 0
-    delay    5
     offset    58 170
     bbox 46 33 38 137
+    delay    3
     frame    data/chars/gemini/pain1.png
+    offset    56 170
     frame    data/chars/gemini/pain2.png
-    frame    data/chars/gemini/pain1.png
+    offset    58 170
+    frame    data/chars/gemini/pain2.png
+    offset    56 170
+    frame    data/chars/gemini/pain2.png
+    offset    58 170
+    frame    data/chars/gemini/pain2.png
+    offset    56 170
+    delay    8
+    frame    data/chars/gemini/pain2.png
    
 anim fall30# Shock PAIN Ground
     sound data/chars/gemini/sounds/hurt3.wav
