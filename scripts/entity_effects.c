@@ -1,4 +1,5 @@
 #import "data/scripts/library/spawn.h"
+#import "data/scripts/player.c"
 
 void main()
 {//Turn on/off generic effects according to global variables
@@ -376,6 +377,14 @@ void blinkCharge()
 					changedrawmethod(self, "enabled", 1);
 					changedrawmethod(self, "tintmode", tintMode);
 					changedrawmethod(self, "tintcolor", rgbcolor(0, 0, color));
+
+					//SPAWN THER CHARGE ATTACK EFFECT
+					if(getglobalvar("chargeStart"+pIndex) - time < delay/1.2){
+						if(getglobalvar("chargeEffect"+pIndex) == NULL()){
+							void vSpawn = spawnbind("super", "ANI_IDLE", 0, 1, 1, 1, 0, 0);
+							setglobalvar("chargeEffect"+pIndex, vSpawn);
+						}
+					}
 				}
 			}
 			else
@@ -417,6 +426,18 @@ void blinkCharge()
 					changeentityproperty(self, "mp", mp-limit);
 					performattack(self, openborconstant("ANI_ATTACK10"), 0);
 				}
+			}
+			
+			//KILL THE CHARGE ATTACK EFFECT
+			if(getglobalvar("chargeEffect"+pIndex) != NULL()){
+				void effect = getglobalvar("chargeEffect"+pIndex);
+				void vName = getentityproperty(effect, "defaultname");
+				int exists = getentityproperty(effect, "exists");
+
+				if(vName == "super" && exists){
+					killentity(effect);
+				}
+				setglobalvar("chargeEffect"+pIndex, NULL());
 			}
 			
 			//CLEAR THE CHARGE ATTACK VARIABLE NO MATTER THE RESULTS
