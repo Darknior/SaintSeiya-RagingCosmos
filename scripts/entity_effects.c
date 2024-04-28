@@ -360,7 +360,8 @@ void blinkCharge()
 		int warning		= 33;
 		float time		= openborvariant("elapsed_time");
 		float blinkRate	= 20;
-		float delay		= 350;
+		float delay		= 400;
+		float iniDelay	= 2;
 		float color;
 
 		//START THE CHARGE ATTACK VARIABLE IF THE BUTTON IS HELD 
@@ -372,14 +373,14 @@ void blinkCharge()
 			
 			//START THE BLINKING EFFECT
 			if(time < getglobalvar("chargeStart"+pIndex)){
-				if(!dead){
-					color = time - getglobalvar("chargeStart"+pIndex);
-					changedrawmethod(self, "enabled", 1);
-					changedrawmethod(self, "tintmode", tintMode);
-					changedrawmethod(self, "tintcolor", rgbcolor(0, 0, color));
+				if(getglobalvar("chargeStart"+pIndex) - time < delay/iniDelay){
+					if(!dead){
+						color = time - getglobalvar("chargeStart"+pIndex);
+						changedrawmethod(self, "enabled", 1);
+						changedrawmethod(self, "tintmode", tintMode);
+						changedrawmethod(self, "tintcolor", rgbcolor(0, 0, color));
 
-					//SPAWN THER CHARGE ATTACK EFFECT
-					if(getglobalvar("chargeStart"+pIndex) - time < delay/1.2){
+						//SPAWN THER CHARGE ATTACK EFFECT
 						if(getglobalvar("chargeEffect"+pIndex) == NULL()){
 							void vSpawn = spawnbind("super", "ANI_IDLE", 0, 1, 1, 1, 0, 0);
 							setglobalvar("chargeEffect"+pIndex, vSpawn);
