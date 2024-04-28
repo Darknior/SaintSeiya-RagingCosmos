@@ -83,6 +83,7 @@ anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/ikki/jumpattack24.png
     
 anim freespecial5 # Uppercut
+    loop 0
     offset    45 150
     delay    1000
     frame    data/chars/ikki/uppercut1.png

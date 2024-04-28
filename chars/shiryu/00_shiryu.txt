@@ -293,7 +293,7 @@ anim turn # Demi-tour
     cancel   0 3 0 A freespecial4   # Manchette arrière
     frame    data/chars/shiryu/turn.png
 
-anim walk # Marche
+anim walk #  marche normale
     loop     1
     delay    14
     offset   39 127
@@ -304,7 +304,20 @@ anim walk # Marche
     frame    data/chars/shiryu/walk4.png
     frame    data/chars/shiryu/walk5.png
     frame    data/chars/shiryu/walk6.png
-    
+
+anim walk2 # marche quand on est proche d un adversaire
+    range 0 400
+    loop     1
+    delay    14
+    offset   21 128
+    bbox     10 18 30 112
+    frame    data/chars/seiya/walk11.png
+    frame    data/chars/seiya/walk12.png
+    frame    data/chars/seiya/walk13.png
+    frame    data/chars/seiya/walk14.png
+    frame    data/chars/seiya/walk15.png
+    frame    data/chars/seiya/walk16.png
+
 anim walkoff # Quand on tombe dans un trou
     delay    9
     offset   36 130

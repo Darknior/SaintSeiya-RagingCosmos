@@ -90,3 +90,23 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
     frame    data/chars/shun/jump2.png
     frame    data/chars/shun/jump3.png
     frame    data/chars/shun/jump5.png
+    
+anim freespecial5 # Uppercut (Haut + Bouton Special)
+    loop 0
+    delay 1000
+    offset    203 310
+    frame    data/chars/shun/special1.png
+    frame    data/chars/shun/special2.png
+    frame    data/chars/shun/special3.png
+    offset    70 184
+    frame    data/chars/shun/uppercut1.png
+    frame    data/chars/shun/uppercut2.png
+    frame    data/chars/shun/uppercut3.png
+    frame    data/chars/shun/uppercut4.png
+    frame    data/chars/shun/uppercut5.png
+    frame    data/chars/shun/uppercut4.png
+    frame    data/chars/shun/uppercut3.png
+    frame    data/chars/shun/uppercut2.png
+    frame    data/chars/shun/uppercut1.png
+    frame    data/chars/shun/special2.png
+    frame    data/chars/shun/special1.png

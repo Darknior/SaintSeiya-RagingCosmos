@@ -113,3 +113,14 @@ anim runjumpattack # Attaque sautée en courant
     frame    data/chars/hyoga/jumpforward2.png
     frame    data/chars/hyoga/jumpforward3.png
     frame    data/chars/hyoga/jumpforward4.png
+    
+anim freespecial5
+    loop	 0
+    delay 1000
+    offset   39 141
+    frame    data/chars/hyoga/uppercut1.png
+    frame    data/chars/hyoga/uppercut2.png
+    frame    data/chars/hyoga/uppercut3.png
+    frame    data/chars/hyoga/uppercut4.png
+    frame    data/chars/hyoga/uppercut5.png
+    frame    data/chars/hyoga/uppercut6.png

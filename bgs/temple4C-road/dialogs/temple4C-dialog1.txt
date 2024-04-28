@@ -10,23 +10,42 @@ anim idle
 	offset   -200 -156
    drawmethod  flipx 1
 	drawmethod  alpha 6
+   drawmethod  scale 0.15 0.15
    drawmethod channel 0.15	
    delay	7
    frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod  scale 0.25 0.25
    drawmethod channel 0.25
    frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod  scale 0.35 0.35
 	drawmethod channel 0.35	
    frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod  scale 0.45 0.45
    drawmethod channel 0.45	
    frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod  scale 0.55 0.55
    drawmethod channel 0.55	
    frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod  scale 0.65 0.65
    drawmethod channel 0.65	
    frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod  scale 0.75 0.75
    drawmethod channel 0.75	
    frame data/bgs/temple4C-road/dialogs/dialog1.png
-   delay	800
+   drawmethod  scale 0.85 0.85
+   drawmethod channel 0.75	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod  scale 0.92 0.92
+   drawmethod channel 0.75	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   drawmethod  scale 1 1
+   drawmethod channel 0.75	
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
+   delay	150
 	frame data/bgs/temple4C-road/dialogs/dialog1.png
+   sound data/bgs/temple4C-road/dialogs/0004.wav
+   delay	650
+   frame data/bgs/temple4C-road/dialogs/dialog1.png
    delay	7
    drawmethod channel 0.65	
    frame data/bgs/temple4C-road/dialogs/dialog1.png
