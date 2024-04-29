@@ -2,7 +2,7 @@ loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
 
 music		data/music/ikki2.ogg
 
-panel		data/bgs/temple11C-road/temple11.png
+panel		data/bgs/temple11C-road/original_doubled.png
 background	data/bgs/temple11C-road/swamp1.png 
 fglayer		data/bgs/temple11C-road/rock.png 20 0 0 0 280 220 0 2 1 1
 fglayer		data/bgs/temple11C-road/raft.png -300 0.5 0 0 0 0 0 -1 1 1 0 5 2 10 1
