@@ -773,7 +773,7 @@ typemp      1
 custfade	100
 skipselect  Hyoga
 branch      temple11
-z           325 484
+z           345 484
 file        data/levels/temple11C-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt

@@ -1,16 +1,16 @@
 loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
 
 music		data/music/ikki2.ogg
-
-panel		data/bgs/temple11C-road/original_doubled.png
-background	data/bgs/temple11C-road/swamp1.png 
-fglayer		data/bgs/temple11C-road/rock.png 20 0 0 0 280 220 0 2 1 1
-fglayer		data/bgs/temple11C-road/raft.png -300 0.5 0 0 0 0 0 -1 1 1 0 5 2 10 1
+background	data/bgs/temple11C-road/empty.png
+panel		data/bgs/temple11C-road/panel_without_water-b.png
+#fglayer    data/bgs/temple11C-road/rock.png 20 0 0 0 280 220 0 2 1 1
+#fglayer    data/bgs/temple11C-road/raft.png -300 0.5 0 0 0 0 0 -1 1 1 0 5 2 10 1
+fglayer		data/bgs/temple11C-road/original_doubled-b.png -300 0 0 0 0 0 0 -1 -1 1 0 5 2 10 1
 
 
 cameratype 1
 
-direction right
+direction both
 
 settime 99
 noreset 2
@@ -22,6 +22,30 @@ blocked 1
 noslow 1
 updatescript	data/scripts/updatelevel/temple11_water.c
 
+wall	0 500 0 0 1315 1115 200 20
+basemap	1320 300 150 30 22 0
+basemap	1310 310 150 30 22 0
+basemap	1300 320 150 30 22 0
+basemap	1290 330 150 30 22 0
+basemap	1280 340 150 30 22 0
+basemap	1270 350 150 30 22 0
+basemap	1260 360 150 30 22 0
+basemap	1250 370 150 30 22 0
+basemap	1240 380 150 30 22 0
+basemap	1230 390 150 30 22 0
+basemap	1220 400 150 30 22 0
+basemap	1210 410 150 30 22 0
+basemap	1200 420 150 30 22 0
+basemap	1190 430 150 30 22 0
+basemap	1180 440 150 30 22 0
+basemap	1170 450 150 30 22 0
+basemap	1160 460 150 30 22 0
+basemap	1150 470 150 30 22 0
+basemap	1140 480 150 30 22 0
+basemap	1130 490 150 30 22 0
+basemap	1120 500 150 30 22 0
+basemap	1110 510 150 30 22 0
+basemap	1100 520 150 30 22 0
 
 -------------------------------------
 
@@ -43,147 +67,3 @@ spawn soldier1
 alias SOLDIER
 coords	950 300
 at 400
-
-spawn soldier3
-alias SOLDIER
-coords	-200 300
-at 400
-
-spawn soldier2
-alias SOLDIER
-coords	-200 100
-at 400
-
-
-wait
-at 400
-
-
-spawn soldier3
-alias SOLDIER
-coords	850 100
-at 1000
-
-spawn soldier2
-alias SOLDIER
-coords	-200 300
-at 1000
-
-spawn soldier3
-alias SOLDIER
-coords	-200 500
-at 1000
-
-
-wait
-at 1000
-
-
-spawn soldier1
-alias SOLDIER
-coords	850 100
-at 1500
-
-spawn soldier2
-alias SOLDIER
-coords	-200 300
-at 1500
-
-spawn soldier3
-alias SOLDIER
-item ENERGY
-coords	-200 500
-at 1500
-
-
-wait
-at 1500
-
-
-spawn soldier1-1
-alias SOLDIER
-coords	850 100
-at 2000
-
-spawn soldier2
-alias SOLDIER
-coords	-200 300
-at 2000
-
-spawn soldier1
-alias SOLDIER
-coords	-200 500
-at 2000
-
-
-wait
-at 2000
-
-
-spawn soldier3
-alias SOLDIER
-coords	850 100
-at 2400
-
-spawn soldier1-1
-alias SOLDIER
-coords	-200 300
-at 2400
-
-spawn soldier1-1
-alias SOLDIER
-coords	-200 500
-at 2400
-
-
-wait
-at 2400
-
-
-spawn soldier1-1
-alias SOLDIER
-item LIFE
-coords	850 100
-at 2800
-
-spawn soldier2
-alias SOLDIER
-coords	-200 300
-at 2800
-
-spawn soldier1-1
-alias SOLDIER
-coords	-200 500
-at 2800
-
-
-wait
-at 2800
-
-
-spawn soldier3
-alias SOLDIER
-item LIFE
-coords	850 100
-at 3800
-
-spawn soldier3
-alias SOLDIER
-coords	-200 300
-at 3800
-
-spawn soldier3
-alias SOLDIER
-coords	-200 500
-at 3800
-
-
-wait
-at 3800
-
-
-
-
-
-
-

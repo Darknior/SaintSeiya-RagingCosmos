@@ -42,7 +42,7 @@ bflash      tremi_block # Flash pendant un blocage (animation)
 
 hostile     player      # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
 candamage   player npc  # Determine qui il peut attaquer (enemy, player, npc, obstacle, shot)
-aimove      chase       # IA de l enemi (chase, wander, avoid, boomerang)
+aimove      avoid       # IA de l enemi (chase, wander, avoid, boomerang)
 aggression  -150         # Valeur positive + agressif / valeur negative - aggressif
 
 hitenemy    0 0          # peut toucher d autres ennemis / air et sol
