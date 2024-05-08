@@ -13,7 +13,7 @@ risetime -200 0          # Temps avant de se relever (-300 = 3 secondes) / Temps
 riseattacktype 1        # Effectue riseattack quand il se releve
 speed       15          # Vitesse de déplacement
 running     35 5 3 1 1  # Vitesse de course / Hauteur de saut / Longueur multiplilleur / Courir en haut et en bas/ Continue de courir apres un saut
-
+knockdowncount 2        # Nombre d attaques ko qu il peut encaisser avant de tomber
 jumpmove    0 0         # Peut se déplacer en plein saut / selon l axe Z
 jumpspeed   12          # Vitesse du saut
 jumpheight  5.5         # Hauteur du saut

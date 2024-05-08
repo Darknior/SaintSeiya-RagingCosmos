@@ -468,7 +468,7 @@ anim attack1 # Attaque combo 1
     hitflash flash
     frame    data/chars/seiya/attack1.png
     frame    data/chars/seiya/attack2.png
-    attack1  62 21 67 26 10 0 0 0 12 20
+    attack1  62 21 67 26 10 0 0 0 12 20    ## (attack{#} {x} {y} {right} {down} {damage} {power} {block} {noflash} {pausetime} {z})#
     frame    data/chars/seiya/attack3.png
     frame    data/chars/seiya/attack2.png
 
