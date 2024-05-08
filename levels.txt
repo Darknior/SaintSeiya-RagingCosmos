@@ -795,7 +795,7 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-set         12C_Road_Seiya
+set         12C_Road_Shun
 maxplayers  4
 lives       3
 credits     10
@@ -803,7 +803,7 @@ cansave     2
 disablehof  0
 typemp      1
 custfade	100
-skipselect  seiya
+skipselect  shun
 branch      temple12
 z           388 484
 file        data/levels/temple12C-road.txt

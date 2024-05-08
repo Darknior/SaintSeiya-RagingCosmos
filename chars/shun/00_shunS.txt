@@ -98,15 +98,24 @@ anim freespecial5 # Uppercut (Haut + Bouton Special)
     frame    data/chars/shun/special1.png
     frame    data/chars/shun/special2.png
     frame    data/chars/shun/special3.png
-    offset    70 184
+    offset    76 383
     frame    data/chars/shun/uppercut1.png
     frame    data/chars/shun/uppercut2.png
     frame    data/chars/shun/uppercut3.png
     frame    data/chars/shun/uppercut4.png
     frame    data/chars/shun/uppercut5.png
-    frame    data/chars/shun/uppercut4.png
-    frame    data/chars/shun/uppercut3.png
-    frame    data/chars/shun/uppercut2.png
-    frame    data/chars/shun/uppercut1.png
+    frame    data/chars/shun/uppercut6.png
+    frame    data/chars/shun/uppercut7.png
+    frame    data/chars/shun/uppercut8.png
+    frame    data/chars/shun/uppercut9.png
+    frame    data/chars/shun/uppercut10.png
+    frame    data/chars/shun/uppercut11.png
+    frame    data/chars/shun/uppercut12.png
+    frame    data/chars/shun/uppercut13.png
+    frame    data/chars/shun/uppercut14.png
+    frame    data/chars/shun/uppercut15.png
+    frame    data/chars/shun/uppercut16.png
+    offset    203 310
+    frame    data/chars/shun/special3.png
     frame    data/chars/shun/special2.png
     frame    data/chars/shun/special1.png

@@ -1,4 +1,4 @@
-loadingbg    data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+loadingbg    data/sprites/loading/loading_hyoga.png 1 -51 405 460 999 999 0
 music        data/music/Pegasus_Fantasy_instrumental.ogg
 
 panel        data/bgs/temple8A-road/temple8A-road.png
