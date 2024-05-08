@@ -1318,23 +1318,17 @@ anim freespecial5 # Uppercut (Haut + a2)
     offset   45 134
     bbox     0 0 0 0
     hitflash blue_swing
-    delay    5
+    delay    7
     sound    data/chars/seiya/sounds/dragonpunch.wav
     @cmd     spawnbind "seiya_upper_dust" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/seiya/uppercut1.png
     sound    data/chars/seiya/sounds/uppercut.wav
     frame    data/chars/seiya/uppercut2.png
     frame    data/chars/seiya/uppercut3.png
+    jumpframe 0 5 0 0 round_dust
+    delay    60
     frame    data/chars/seiya/uppercut3.png
-    frame    data/chars/seiya/uppercut3.png
-    jumpframe 0 4 0 0 round_dust
-    frame    data/chars/seiya/uppercut3.png
-    frame    data/chars/seiya/uppercut3.png
-    frame    data/chars/seiya/uppercut3.png
-    frame    data/chars/seiya/uppercut3.png
-    frame    data/chars/seiya/uppercut3.png
-    frame    data/chars/seiya/uppercut3.png
-    frame    data/chars/seiya/uppercut3.png
+    delay    10
     frame    data/chars/seiya/uppercut2.png
 
 anim freespecial6 # Ultra meteores de Pégase ( Bas + bouton special a2)
