@@ -1232,22 +1232,9 @@ anim freespecial5 # Uppercut
     sound data/chars/ikki/sounds/uppercut.wav
     frame    data/chars/ikki/uppercut1.png
     @cmd     spawnbind "ikki_uppercutB" "ANI_IDLE" 0 0 0 0 0
-    attack15 55 0 35 84 10 0 0 0 5 20
     frame    data/chars/ikki/uppercut2.png
-    delay 5
-    attack1 0
+    delay 20
     frame    data/chars/ikki/uppercut3.png
-    attack15 55 0 35 84 10 1 0 0 5 10
-    dropv     5.0 0.5
-    frame    data/chars/ikki/uppercut3.png
-    attack1 0
-    delay 12
-    frame    data/chars/ikki/uppercut3.png
-    attack15 50 0 30 80 10 1 0 0 0 20
-    frame    data/chars/ikki/uppercut3.png
-    attack1 0
-    frame    data/chars/ikki/uppercut4.png
-    attack15 50 0 30 80 10 1 0 0 5 20
     frame    data/chars/ikki/uppercut4.png
     delay   12
     frame    data/chars/ikki/uppercut2.png

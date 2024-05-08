@@ -1,33 +1,56 @@
 name	ikki_uppercutB
 type	none
-candamage player
 shadow	0
 antigravity 100
-remove 0
 animationscript	data/scripts/player.c
+didhitscript        data/scripts/didhit/tint_red.c 
+candamage enemy npc
 
 anim	idle
 	loop	0
 	delay	5
 	offset	89 237
+   hitflash shaka_flame
+   fastattack 1
 	drawmethod alpha 1
-        drawmethod  scale 1 1
+   drawmethod  scale 1 1
 	sound data/chars/marin/sounds/01-uppercutB.wav
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-0.png
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-1.png
+   attack15 0 0 150 200 3 1 0 0 0 20
+   dropv     3 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-2.png
+   attack 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-3.png
+   attack15 0 0 150 200 3 1 0 0 0 20
+   dropv     3 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-4.png
+   attack 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-5.png
+   attack15 0 0 150 200 3 1 0 0 0 20
+   dropv     3 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-6.png
+   attack 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-7.png
+	attack15 0 0 150 200 3 1 0 0 0 20
+   dropv     3 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-8.png
+   attack 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-9.png
+   attack15 0 0 150 200 3 1 0 0 0 20
+   dropv     3 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-10.png
+   attack 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-11.png
+   attack15 0 0 150 200 3 1 0 0 0 20
+   dropv     3 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-12.png
+   attack 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-13.png
+   attack15 0 0 150 200 3 1 0 0 0 20
+   dropv     3 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-14.png
+   attack 0
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-15.png
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-16.png
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-17.png

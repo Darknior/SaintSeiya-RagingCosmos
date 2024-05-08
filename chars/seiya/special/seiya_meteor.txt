@@ -6,6 +6,7 @@ remove 0
 antigravity 100
 animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_silver.c
+candamage enemy npc
 
 anim	idle
 	loop	1

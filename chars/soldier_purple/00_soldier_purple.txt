@@ -332,7 +332,6 @@ anim fall15# BURN PAIN Ground
     bbox 65 65 80 120
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -20 1 60 1 0
-    @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 70 0 0
     frame    data/chars/soldier_purple/fall0.png
     frame    data/chars/soldier_purple/fall1.png
     frame    data/chars/soldier_purple/fall2.png

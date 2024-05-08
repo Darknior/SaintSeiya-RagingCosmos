@@ -2,6 +2,7 @@ name	seiya_upper_dust
 type	none
 shadow	0
 nolife 1
+candamage enemy npc
 animationscript	data/scripts/player.c
 didhitscript        data/scripts/didhit/tint_silver.c 
 
