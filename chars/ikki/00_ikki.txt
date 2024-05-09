@@ -59,18 +59,18 @@ keyscript           data/scripts/commands.c             # Mort du Timer à zéro
 load ikki_aura
 load ikki_auraB
 load ikki_auraC
-load ikki_cosmos
-load ikki_lights
 load ikki_constellation
-load ikki_shooter
-load ikki_impact
-load ikki_run
-load ikki_fire_beam
-load ikki_storm
+load ikki_cosmos
+load ikki_feather
 load ikki_fire
+load ikki_fire_beam
+load ikki_impact
+load ikki_lights
+load ikki_run
+load ikki_shooter
+load ikki_storm
 load ikki_uppercutB
 load shaka_flame
-
 
 #-- PALETTES --------------------------------------------------------
 
@@ -535,6 +535,27 @@ anim attack5 # Attaque combo 5
     frame    data/chars/ikki/attack63.png
     frame    data/chars/ikki/attack62.png
     frame    data/chars/ikki/attack61.png
+
+anim attack10 # charge attack (laisser punch appuyé 2 sec pour executer)
+	 loop	0
+	 delay	12
+	 offset   37 148
+    sound    data/chars/ikki/sounds/phoenix.wav
+    @cmd     spawnbind "jump_dust" "ANI_IDLE" 0 1 1 1 1
+    @cmd     dasher -2 0 0 1
+	 frame    data/chars/ikki/charge1.png
+    sound    data/chars/ikki/sounds/attack5.wav
+    frame    data/chars/ikki/charge2.png
+    frame    data/chars/ikki/charge3.png
+    jumpframe 1 5 0 0
+    @cmd     shooter "ikki_feather" -100 0 10 2 0 0
+    frame    data/chars/ikki/charge4.png
+    frame    data/chars/ikki/charge5.png
+    delay	30
+    frame    data/chars/ikki/charge6.png
+    delay	12
+    @cmd     spawnbind "round_dust" "ANI_IDLE" 0 0 0 0 1
+    frame    data/chars/ikki/charge7.png
 
 #//Grab animations/////////////////////////////////////////////////
 
@@ -1066,24 +1087,26 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     jugglecost  1
     fastattack  1
     energycost  20 0 0
-    offset   80 165
+    offset   80 196
     hitflash shaka_flame
     summonframe 0 0 0 0 0
     subentity   ikki_auraC
-    delay    5
+    delay    20
     sound    data/chars/ikki/sounds/knee2.wav
+    frame    data/chars/ikki/melee0.png
+    delay    5
     frame    data/chars/ikki/melee1.png
     frame    data/chars/ikki/melee2.png
-    attack15  32 19 100 120 10 1 0 0 5 30
+	attack15 32 19 100 120 10 1 0 0 5 30
     dropv    3.5 1 0
     frame    data/chars/ikki/melee3.png
-    attack15  0
+	attack15 0
     delay    10
     frame    data/chars/ikki/melee4.png
-    attack15  32 19 100 120 10 1 0 0 5 30
+	attack15 32 19 100 120 10 1 0 0 5 30
     dropv    3.5 1 0
     frame    data/chars/ikki/melee5.png
-    attack15  0
+	attack15 0
     frame    data/chars/ikki/melee6.png
     frame    data/chars/ikki/melee7.png
     frame    data/chars/ikki/melee8.png
@@ -1097,12 +1120,15 @@ anim    freespecial    # Attaque de mêlée (a2)
     jugglecost  1
     fastattack  1
     energycost  20 0 0
-    offset   80 165
+    offset   80 196
     hitflash shaka_flame
     summonframe 0 0 0 0 0
     subentity   ikki_auraC
-    delay    5
+    delay    20
     sound    data/chars/ikki/sounds/knee2.wav
+    frame    data/chars/ikki/melee0.png
+    delay    5
+    offset   80 165
     frame    data/chars/ikki/melee1.png
     frame    data/chars/ikki/melee2.png
     attack15  32 19 100 120 10 1 0 0 5 30
@@ -1123,7 +1149,6 @@ anim    freespecial    # Attaque de mêlée (a2)
     frame    data/chars/ikki/melee3.png
     frame    data/chars/ikki/melee2.png
     frame    data/chars/ikki/melee1.png
-
 
 anim freespecial2 # Phoenix Genmaken ( avant + bouton special)
     jugglecost  3

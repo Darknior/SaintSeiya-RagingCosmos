@@ -36,8 +36,8 @@ settime 99
 
 order	a
 
-wall		497 809 -500 -500 3307 2837 324 400 # Mur 1 le long de la falaise
-wall		3824 800 0 0 693 693 308 306		# Mur 2 à droite du temple
+wall	332 1307 -500 -500 3307 2837 324 400
+wall	3824 800 0 0 693 693 308 306
 
 #-------- Players spawn position -----------------------------------------------
 
@@ -48,129 +48,149 @@ spawn4 110 190 0 # position du joueur4 (x, z, Y)
 
 ---------MURS------------------------------------------
 
-wall	320 306 197 236 693 628 99 306
-wall	956 369 -103 0 1019 935 99 306
-wall 1907 345 84 0 1019 1063 99 306
-wall 2945 322 84 0 2270 329 99 306
+wall	160 404 332 207 503 911 117 306
+wall	1413 312 -670 0 1019 1615 99 306
 
 ---------HUD-----------------------------------------------
 
 spawn       horloge-segment
-coords      368 89
-at          0
+coords 368 89
+at 0
 
 spawn       horloge-vierge
-coords      368 89
-at          0
+coords 368 89
+at 0
 
 spawn       horloge-flame
-coords      387 47
-at          0
+coords 387 47
+at 0
 
 spawn       temple6raindrop
-coords      0 0
-at          0
+coords 0 0
+flip 1
+at 0
 
 spawn       temple6raindrop2
-coords      0 0
-at          0
+coords 0 0
+flip 1
+at 0
 
 spawn       temple6raindrop3
-coords      0 0
-at          0
+coords 0 0
+flip 1
+at 0
 
 spawn       temple6raindrop4
-coords      0 0
-at          0
+coords -2 -32
+flip 1
+at 0
 
 spawn       temple6raindrop
-coords      800 0
-at          0
+coords 800 0
+flip 1
+at 0
 
 spawn       temple6raindrop2
-coords      800 0
-at          0
+coords 800 0
+flip 1
+at 0
 
 spawn       temple6raindrop3
-coords      800 0
-at          0
+coords 800 0
+flip 1
+at 0
 
 spawn       temple6raindrop
-coords      1600 0
-at          0
+coords 1600 0
+flip 1
+at 0
 
 spawn       temple6raindrop2
-coords      1600 0
-at          0
+coords 1600 0
+flip 1
+at 0
 
 spawn       temple6raindrop3
-coords      1600 0
-at          0
+coords 1600 0
+flip 1
+at 0
 
 spawn       temple6raindrop
-coords      2400 0
-at          0
+coords 2400 0
+flip 1
+at 0
 
 spawn       temple6raindrop2
-coords      2400 0
-at          0
+coords 2400 0
+flip 1
+at 0
 
 spawn       temple6raindrop3
-coords      2400 0
-at          0
+coords 2400 0
+flip 1
+at 0
 
 spawn       temple6raindrop
-coords      3200 0
-at          0
+coords 3200 0
+flip 1
+at 0
 
 spawn       temple6raindrop2
-coords      3200 0
-at          0
+coords 3200 0
+flip 1
+at 0
 
 spawn       temple6raindrop3
-coords      3200 0
-at          0
+coords 3200 0
+flip 1
+at 0
 
 spawn       temple6raindrop
-coords      4000 0
-at          0
+coords 4000 0
+flip 1
+at 0
 
 spawn       temple6raindrop2
-coords      4000 0
-at          0
+coords 4000 0
+flip 1
+at 0
 
 spawn       temple6raindrop3
-coords      4000 0
-at          0
+coords 4000 0
+flip 1
+at 0
 
 spawn       temple6raindrop
-coords      4800 0
-at          0
+coords 4800 0
+flip 1
+at 0
 
 spawn       temple6raindrop2
-coords      4800 0
-at          0
+coords 4800 0
+flip 1
+at 0
 
 spawn       temple6raindrop3
-coords      4800 0
-at          0
+coords 4800 0
+flip 1
+at 0
 
 
 spawn soldier1
 alias SOLDIER
-coords	850 400
+coords 850 400
 item apple
 at 400
 
 spawn soldier3
 alias SOLDIER
-coords	-200 410
+coords -200 410
 at 400
 
 spawn soldier2
 alias SOLDIER
+coords -200 470
 item caixacc
-coords	-200 470
 at 400
 
 
@@ -180,18 +200,18 @@ at 400
 
 spawn soldier3
 alias SOLDIER
-coords	850 400
+coords 850 400
 at 1000
 
 spawn soldier2
 alias SOLDIER
-coords	-200 410
+coords -507 546
 at 1000
 
 spawn soldier3
 alias SOLDIER
+coords -311 552
 item boots
-coords	-200 470
 at 1000
 
 
@@ -200,18 +220,18 @@ at 1000
 
 spawn soldier1
 alias SOLDIER
-coords	850 400
+coords 764 453
 at 1500
 
 spawn soldier2
 alias SOLDIER
-coords	-200 410
+coords -200 410
 at 1500
 
 spawn soldier3
 alias SOLDIER
+coords -200 470
 item anelcd
-coords	-200 470
 at 1500
 
 
@@ -222,18 +242,18 @@ at 1500
 
 spawn soldier1-1
 alias SOLDIER
-coords	850 400
+coords 850 400
 at 2000
 
 spawn soldier2
 alias SOLDIER
-coords	-200 410
+coords -200 410
 at 2000
 
 spawn soldier1
 alias SOLDIER
+coords -200 470
 item 1up-gold
-coords	-200 470
 at 2000
 
 
@@ -243,18 +263,18 @@ at 2000
 
 spawn soldier3
 alias SOLDIER
-coords	850 400
+coords 850 400
 at 2400
 
 spawn soldier1-1
 alias SOLDIER
-coords	-200 410
+coords -200 410
 at 2400
 
 spawn soldier1-1
 alias SOLDIER
+coords -200 470
 item ourocd
-coords	-200 470
 at 2400
 
 
@@ -264,19 +284,19 @@ at 2400
 
 spawn soldier1-1
 alias SOLDIER
+coords 771 468
 item LIFE
-coords	850 400
 at 2800
 
 spawn soldier2
 alias SOLDIER
-coords	-200 410
+coords -200 410
 at 2800
 
 spawn soldier1-1
 alias SOLDIER
+coords -200 470
 item diamantecd
-coords	-200 470
 at 2800
 
 
@@ -285,20 +305,22 @@ at 2800
 
 spawn soldier3
 alias SOLDIER
+coords 850 400
 item laranjaff
-coords	850 400
 at 3800
 
 spawn soldier3
 alias SOLDIER
-coords	-200 410
+coords -361 537
 at 3800
 
 spawn soldier3
 alias SOLDIER
-coords	-200 470
+coords -200 470
 at 3800
 
 
 wait
 at 3800
+
+wall -905 400 84 0 2270 329 99 306

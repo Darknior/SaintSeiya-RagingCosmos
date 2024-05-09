@@ -204,6 +204,7 @@ know ikki_auraB             data/chars/ikki/special/ikki_auraB.txt
 know ikki_auraC             data/chars/ikki/special/ikki_auraC.txt
 know ikki_constellation     data/chars/ikki/special/ikki_constellation.txt
 know ikki_cosmos             data/chars/ikki/special/ikki_cosmos.txt
+know ikki_feather         data/chars/ikki/special/ikki_feather.txt
 know ikki_fire              data/chars/ikki/special/ikki_fire.txt
 know ikki_fire_beam         data/chars/ikki/special/ikki_fire_beam.txt
 know ikki_impact            data/chars/ikki/special/ikki_impact.txt

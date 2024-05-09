@@ -1,0 +1,35 @@
+name	ikki_feather
+type	none
+shadow	0
+nolife 1
+remove 0
+candamage enemy npc
+animationscript	data/scripts/player.c
+didhitscript        data/scripts/didhit/tint_red.c 
+
+anim	idle
+	loop	0
+	delay	8
+   hitflash shaka_flame
+	offset	107 120
+	drawmethod alpha 1
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather1.png
+   attack15 100 50 80 80 10 1 0 0 0 15
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather2.png
+	attack15 0
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather3.png
+   attack15 100 50 80 80 10 1 0 0 0 15
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather4.png
+   attack15 0
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather5.png
+   attack15 100 50 80 80 10 1 0 0 0 15
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather6.png
+   attack15 0
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather7.png
+   delay	200
+   attack15 100 50 80 80 10 1 0 0 0 15
+   drawmethod alpha 6
+   drawmethod channel 0.99
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather8.png
+   @cmd suicide
+	frame	data/chars/ikki/special/ikki_feather/ikki_feather8.png
