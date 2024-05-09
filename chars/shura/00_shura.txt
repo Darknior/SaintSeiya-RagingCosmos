@@ -344,14 +344,23 @@ anim    land
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim    pain
-    loop    0
     bbox    51 47 46 103
-    delay    10
+    delay    3
     offset    81 152
     frame    data/chars/shura/pain1.png
-    bbox    51 47 46 103
+    offset    79 152
+    frame    data/chars/shura/pain2.png
     offset    81 152
     frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    delay    8
+    frame    data/chars/shura/pain1.png
 
 anim    fall
     bouncefactor 1.9
@@ -418,15 +427,24 @@ anim follow1 # Stun aprés X chuttes
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
 anim pain20 # Blood pain
-    loop    0
     bbox    51 47 46 103
-    delay    10
-    offset    81 152
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -10 0 20 0 0
+    delay    3
+    offset    81 152
     frame    data/chars/shura/pain1.png
-    bbox    51 47 46 103
+    offset    79 152
+    frame    data/chars/shura/pain2.png
     offset    81 152
     frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    delay    8
+    frame    data/chars/shura/pain1.png
 
 anim fall20 # blood fall
     landframe 3
@@ -446,15 +464,24 @@ anim fall20 # blood fall
     frame    data/chars/shura/fall3.png
 
 anim pain15# BURN PAIN
-    loop    0
     bbox    51 47 46 103
-    delay    10
-    offset    81 152
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+    delay    3
+    offset    81 152
     frame    data/chars/shura/pain1.png
-    bbox    51 47 46 103
+    offset    79 152
+    frame    data/chars/shura/pain2.png
     offset    81 152
     frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    delay    8
+    frame    data/chars/shura/pain1.png
 
 anim fall15# BURN PAIN Ground
     landframe 3
@@ -514,15 +541,24 @@ anim pain12# ICE PAIN Small
     frame    data/chars/shura/pain2.png  
  
 anim pain30# Shock Pain
-    loop    0
     bbox    51 47 46 103
-    delay    10
-    offset    81 152
     @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 70 0 0
+    delay    3
+    offset    81 152
     frame    data/chars/shura/pain1.png
-    bbox    51 47 46 103
+    offset    79 152
+    frame    data/chars/shura/pain2.png
     offset    81 152
     frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    delay    8
+    frame    data/chars/shura/pain1.png
     
 anim fall30# Shock PAIN Ground
     landframe 3

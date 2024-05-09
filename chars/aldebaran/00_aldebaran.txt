@@ -357,8 +357,14 @@ anim pain # Normal pain
     offset    43 159
     frame    data/chars/aldebaran/pain3.png
     offset    45 159
-    delay    8
     frame    data/chars/aldebaran/pain3.png
+    offset    43 159
+    frame    data/chars/aldebaran/pain3.png
+    offset    45 159
+    delay    5
+    frame    data/chars/aldebaran/pain3.png
+    frame    data/chars/aldebaran/pain2.png
+    frame    data/chars/aldebaran/pain1.png
     
 anim pain2 # Big pain
     offset    43 160
@@ -633,6 +639,13 @@ anim pain30# Shock Pain
     frame    data/chars/aldebaran/pain3.png
     offset    45 159
     frame    data/chars/aldebaran/pain3.png
+    offset    43 159
+    frame    data/chars/aldebaran/pain3.png
+    offset    45 159
+    delay    5
+    frame    data/chars/aldebaran/pain3.png
+    frame    data/chars/aldebaran/pain2.png
+    frame    data/chars/aldebaran/pain1.png
     
 anim fall30# Shock PAIN Ground
     delay    10

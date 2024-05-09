@@ -309,13 +309,28 @@ anim jumpattack # Attaque sautée statique
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim pain # Normal pain
-    delay    8
-    offset    58 144
     bbox 40 13 38 132
+    delay    5
+    offset    58 144
     frame    data/chars/aphrodite/pain1.png
     frame    data/chars/aphrodite/pain2.png
     frame    data/chars/aphrodite/pain3.png
+    delay    3
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain3.png
+    delay    5
     frame    data/chars/aphrodite/pain2.png
+    frame    data/chars/aphrodite/pain1.png
 
 anim pain2 # Big pain
     delay    8
@@ -452,13 +467,28 @@ anim fall20 # blood fall
     
 anim pain15# BURN PAIN
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -15 1 70 0 0
-    delay    8
-    offset    58 144
     bbox 40 13 38 132
+    delay    5
+    offset    58 144
     frame    data/chars/aphrodite/pain1.png
     frame    data/chars/aphrodite/pain2.png
     frame    data/chars/aphrodite/pain3.png
+    delay    3
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain3.png
+    delay    5
     frame    data/chars/aphrodite/pain2.png
+    frame    data/chars/aphrodite/pain1.png
     
 anim fall15# BURN PAIN Ground
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 50 0 0
@@ -521,13 +551,28 @@ anim pain12# ICE PAIN Small
  
 anim pain30# Shock Pain
     @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 80 0 0
-    delay    8
-    offset    58 144
     bbox 40 13 38 132
+    delay    5
+    offset    58 144
     frame    data/chars/aphrodite/pain1.png
     frame    data/chars/aphrodite/pain2.png
     frame    data/chars/aphrodite/pain3.png
+    delay    3
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    56 144
+    frame    data/chars/aphrodite/pain4.png
+    offset    58 144
+    frame    data/chars/aphrodite/pain3.png
+    delay    5
     frame    data/chars/aphrodite/pain2.png
+    frame    data/chars/aphrodite/pain1.png
     
 anim fall30# Shock PAIN Ground
     @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 45 0 0

@@ -339,10 +339,15 @@ anim jumpattack # Attaque sautée statique
 anim pain # normal pain
     offset    45 137
     bbox 19 17 38 117
-    delay    3
+    delay    5
     frame    data/chars/aiolia/pain1.png
     frame    data/chars/aiolia/pain2.png
+    delay    3
     frame    data/chars/aiolia/pain3.png
+    offset    43 137
+    frame    data/chars/aiolia/pain4.png
+    offset    45 137
+    frame    data/chars/aiolia/pain4.png
     offset    43 137
     frame    data/chars/aiolia/pain4.png
     offset    45 137
@@ -517,10 +522,15 @@ anim pain15# BURN PAIN
     offset    45 137
     bbox 19 17 38 117
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
-    delay    3
+    delay    5
     frame    data/chars/aiolia/pain1.png
     frame    data/chars/aiolia/pain2.png
+    delay    3
     frame    data/chars/aiolia/pain3.png
+    offset    43 137
+    frame    data/chars/aiolia/pain4.png
+    offset    45 137
+    frame    data/chars/aiolia/pain4.png
     offset    43 137
     frame    data/chars/aiolia/pain4.png
     offset    45 137
@@ -614,10 +624,15 @@ anim pain30# Shock Pain
     offset    45 137
     bbox 19 17 38 117
     @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
-    delay    3
+    delay    5
     frame    data/chars/aiolia/pain1.png
     frame    data/chars/aiolia/pain2.png
+    delay    3
     frame    data/chars/aiolia/pain3.png
+    offset    43 137
+    frame    data/chars/aiolia/pain4.png
+    offset    45 137
+    frame    data/chars/aiolia/pain4.png
     offset    43 137
     frame    data/chars/aiolia/pain4.png
     offset    45 137

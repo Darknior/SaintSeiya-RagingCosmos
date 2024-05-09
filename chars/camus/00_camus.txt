@@ -274,13 +274,24 @@ anim jumpattack # Attaque sautée statique
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
 
 anim pain # normal pain
-    delay    8
-    offset    36 126
     bbox 18 16 38 114
+    delay    5
+    offset    36 126
     frame    data/chars/camus/pain1.png
     frame    data/chars/camus/pain2.png
+    delay    3
     frame    data/chars/camus/pain3.png
-    frame    data/chars/camus/pain2.png
+    offset    34 126
+    frame    data/chars/camus/pain3.png
+    offset    36 126
+    frame    data/chars/camus/pain3.png
+    offset    34 126
+    frame    data/chars/camus/pain3.png
+    offset    36 126
+    frame    data/chars/camus/pain3.png
+    offset    34 126
+    delay    8
+    frame    data/chars/camus/pain3.png
 
 anim pain2 # big pain
     delay    8
@@ -401,14 +412,25 @@ anim fall20 # blood fall
     frame    data/chars/camus/fall5.png
 
 anim pain15# BURN PAIN
-    delay    8
-    offset    36 126
     bbox 18 16 38 114
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+    delay    5
+    offset    36 126
     frame    data/chars/camus/pain1.png
     frame    data/chars/camus/pain2.png
+    delay    3
     frame    data/chars/camus/pain3.png
-    frame    data/chars/camus/pain2.png
+    offset    34 126
+    frame    data/chars/camus/pain3.png
+    offset    36 126
+    frame    data/chars/camus/pain3.png
+    offset    34 126
+    frame    data/chars/camus/pain3.png
+    offset    36 126
+    frame    data/chars/camus/pain3.png
+    offset    34 126
+    delay    8
+    frame    data/chars/camus/pain3.png
 
 anim fall15# BURN PAIN Ground
     delay    10
@@ -464,14 +486,25 @@ anim pain12# ICE PAIN Small
     frame    data/chars/camus/pain2.png    
 
 anim pain30# Shock Pain
-    delay    8
-    offset    36 126
     bbox 18 16 38 114
     @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 70 0 0
+    delay    5
+    offset    36 126
     frame    data/chars/camus/pain1.png
     frame    data/chars/camus/pain2.png
+    delay    3
     frame    data/chars/camus/pain3.png
-    frame    data/chars/camus/pain2.png
+    offset    34 126
+    frame    data/chars/camus/pain3.png
+    offset    36 126
+    frame    data/chars/camus/pain3.png
+    offset    34 126
+    frame    data/chars/camus/pain3.png
+    offset    36 126
+    frame    data/chars/camus/pain3.png
+    offset    34 126
+    delay    8
+    frame    data/chars/camus/pain3.png
 
 anim fall30# Shock PAIN Ground
     delay    10

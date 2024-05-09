@@ -9,7 +9,6 @@ animationscript	data/scripts/player.c
 didhitscript	data/scripts/didhit/tint_ice.c
 
 anim	idle
-	loop	1
 	fastattack 1
 	delay	12
 	offset	100 390
