@@ -179,12 +179,28 @@ anim death
    frame    data/chars/soldier_muscles/death1.png
 
 anim pain # normal pain
-   delay    7
-   offset    42 127
    bbox 25 15 50 112
+   offset    42 127
+   delay    5
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain2.png
+   delay    3
+   offset    40 127
    frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   delay    5
    frame    data/chars/soldier_muscles/pain2.png
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain4.png
@@ -280,13 +296,29 @@ anim follow1 # Stun aprés X chuttes
  
 anim pain20 # Blood pain
    loop    0
-   delay    5
-   offset    44 122
    bbox 21 10 43 112
    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -5 0 5 0 0
+   offset    42 127
+   delay    5
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain2.png
+   delay    3
+   offset    40 127
    frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   delay    5
    frame    data/chars/soldier_muscles/pain2.png
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain4.png
@@ -309,13 +341,29 @@ anim fall20 # blood fall
  
 anim pain15# BURN PAIN
    loop    0
-   delay    5
-   offset    44 122
    bbox 21 10 43 112
    @cmd     spawnbind "soldier_muscles_flame" "ANI_IDLE" -10 1 60 0 0
+   offset    42 127
+   delay    5
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain2.png
+   delay    3
+   offset    40 127
    frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   delay    5
    frame    data/chars/soldier_muscles/pain2.png
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain4.png
@@ -380,13 +428,29 @@ anim pain12# ICE PAIN Small
 
 anim pain30# Shock Pain
    loop    0
-   delay    5
-   offset    44 122
    bbox 21 10 43 112
    @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
+   offset    42 127
+   delay    5
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain2.png
+   delay    3
+   offset    40 127
    frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    40 127
+   frame    data/chars/soldier_muscles/pain1.png
+   offset    42 127
+   delay    5
    frame    data/chars/soldier_muscles/pain2.png
    frame    data/chars/soldier_muscles/pain3.png
    frame    data/chars/soldier_muscles/pain4.png

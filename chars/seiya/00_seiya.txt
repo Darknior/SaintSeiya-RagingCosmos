@@ -811,29 +811,52 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
 anim pain # normal pain
-    offset   51 111
     bbox     21 0 51 112
-    #move    -5
+    offset   51 111
     delay    3
     sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/pain1.png
     frame    data/chars/seiya/pain2.png
     frame    data/chars/seiya/pain3.png
+    offset   51 111
     frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
+    frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
+    frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
     frame    data/chars/seiya/pain3.png
     frame    data/chars/seiya/pain2.png
     frame    data/chars/seiya/pain1.png
 
 anim pain2 # big pain
-    offset   24 110
     bbox     11 2 36 112
-    #move    -5
-    delay    3
+    delay    5
+    offset   24 110
     sound    data/chars/seiya/sounds/hurt2.wav
     frame    data/chars/seiya/pain21.png
     frame    data/chars/seiya/pain22.png
+    offset   24 110
+    delay    3
     frame    data/chars/seiya/pain23.png
-    frame    data/chars/seiya/pain24.png
+    offset   22 110
+    frame    data/chars/seiya/pain23.png
+    offset   24 110
+    frame    data/chars/seiya/pain23.png
+    offset   22 110
+    frame    data/chars/seiya/pain23.png
+    offset   24 110
+    frame    data/chars/seiya/pain23.png
+    offset   22 110
+    frame    data/chars/seiya/pain23.png
+    offset   24 110
+    delay    5
     frame    data/chars/seiya/pain23.png
     frame    data/chars/seiya/pain22.png
     frame    data/chars/seiya/pain21.png
@@ -943,14 +966,27 @@ anim death # quand on est mort
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
 anim pain20 # Blood pain
-    offset   24 110
     bbox     11 2 36 112
-    delay    3
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 20 0 -10 0 0
+    delay    5
+    offset   24 110
+    sound    data/chars/seiya/sounds/hurt2.wav
     frame    data/chars/seiya/pain21.png
     frame    data/chars/seiya/pain22.png
+    delay    3
     frame    data/chars/seiya/pain23.png
-    frame    data/chars/seiya/pain24.png
+    offset   22 110
+    frame    data/chars/seiya/pain23.png
+    offset   24 110
+    frame    data/chars/seiya/pain23.png
+    offset   22 110
+    frame    data/chars/seiya/pain23.png
+    offset   24 110
+    frame    data/chars/seiya/pain23.png
+    offset   22 110
+    frame    data/chars/seiya/pain23.png
+    offset   24 110
+    delay    5
     frame    data/chars/seiya/pain23.png
     frame    data/chars/seiya/pain22.png
     frame    data/chars/seiya/pain21.png
@@ -973,16 +1009,28 @@ anim fall20 # blood fall
     frame    data/chars/seiya/fall4.png
     
 anim pain15# BURN PAIN
-    offset   51 111
     bbox     21 0 51 112
-    #move    -5
-    delay    3
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+    offset   51 111
+    delay    3
+    sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/pain1.png
     frame    data/chars/seiya/pain2.png
     frame    data/chars/seiya/pain3.png
+    offset   51 111
     frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
+    frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
+    frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
     frame    data/chars/seiya/pain3.png
     frame    data/chars/seiya/pain2.png
     frame    data/chars/seiya/pain1.png
@@ -1058,16 +1106,28 @@ anim pain12# ICE PAIN Small
     frame    data/chars/seiya/pain1.png
     
 anim pain30# Shock Pain
-    offset   51 111
     bbox     21 0 51 112
-    #move    -5
-    delay    3
     sound    data/chars/seiya/sounds/hurt.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
+    offset   51 111
+    delay    3
+    sound    data/chars/seiya/sounds/hurt.wav
     frame    data/chars/seiya/pain1.png
     frame    data/chars/seiya/pain2.png
     frame    data/chars/seiya/pain3.png
+    offset   51 111
     frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
+    frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
+    frame    data/chars/seiya/pain4.png
+    offset   49 111
+    frame    data/chars/seiya/pain4.png
+    offset   51 111
     frame    data/chars/seiya/pain3.png
     frame    data/chars/seiya/pain2.png
     frame    data/chars/seiya/pain1.png

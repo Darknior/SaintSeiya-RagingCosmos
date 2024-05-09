@@ -161,6 +161,10 @@ anim pain
     offset    100 179
     frame    data/chars/soldier_base/06.png
     offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
     delay    8
     frame    data/chars/soldier_base/06.png
     
@@ -270,6 +274,10 @@ anim pain20 # Blood pain
     offset    100 179
     frame    data/chars/soldier_base/06.png
     offset    102 179
+    frame    data/chars/soldier_base/06.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
     delay    8
     frame    data/chars/soldier_base/06.png
     
@@ -299,6 +307,10 @@ anim pain15# BURN PAIN
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 1 0
     delay    3
     frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
     offset    100 179
     frame    data/chars/soldier_base/06.png
     offset    102 179
@@ -368,6 +380,10 @@ anim pain30# Shock Pain
     @cmd     spawnbind "shock1" "ANI_IDLE" 5 1 70 0 0
     delay    3
     frame    data/chars/soldier_base/05.png
+    offset    100 179
+    frame    data/chars/soldier_base/06.png
+    offset    102 179
+    frame    data/chars/soldier_base/06.png
     offset    100 179
     frame    data/chars/soldier_base/06.png
     offset    102 179

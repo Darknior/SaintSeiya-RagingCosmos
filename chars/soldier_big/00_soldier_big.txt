@@ -154,6 +154,10 @@ anim pain
     offset    118 187
     frame    data/chars/soldier_big/03.png
     offset    120 187
+    frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
     delay    8
     frame    data/chars/soldier_big/03.png
     

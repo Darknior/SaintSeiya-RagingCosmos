@@ -825,26 +825,49 @@ anim dodge    # Esquive Haut / Bas (u u / d d)
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
 anim pain # Douleur normale
-    offset   45 141
     bbox     21 28 51 112
-    #move    -5
     delay    5
+    offset   45 141
     sound    data/chars/hyoga/sounds/hurt.wav
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
+    offset   43 141
+    delay    3
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    frame    data/chars/hyoga/pain3.png
+    offset   43 141
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    frame    data/chars/hyoga/pain3.png
+    offset   43 141
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    delay    5
     frame    data/chars/hyoga/pain3.png
     frame    data/chars/hyoga/pain2.png
     frame    data/chars/hyoga/pain1.png
 
 anim pain2 # Grosse douleur
-    offset   45 141
     bbox     21 28 51 112
-    #move    -5
     delay    5
+    offset   45 141
     sound    data/chars/hyoga/sounds/hurt2.wav
     frame    data/chars/hyoga/pain21.png
     frame    data/chars/hyoga/pain22.png
+    offset   43 141
+    delay    3
     frame    data/chars/hyoga/pain23.png
+    offset   45 141
+    frame    data/chars/hyoga/pain23.png
+    offset   43 141
+    frame    data/chars/hyoga/pain23.png
+    offset   45 141
+    frame    data/chars/hyoga/pain23.png
+    offset   43 141
+    frame    data/chars/hyoga/pain23.png
+    offset   45 141
+    delay    5
     frame    data/chars/hyoga/pain22.png
     frame    data/chars/hyoga/pain21.png
 
@@ -939,15 +962,27 @@ anim death # Animation de mort
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
 anim pain20 # Blood pain
-    offset   45 141
     bbox     21 28 51 112
-    #move    -5
-    delay    5
     sound    data/chars/hyoga/sounds/hurt.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 10 0 -10 0 0
+    delay    5
+    offset   45 141
+    sound    data/chars/hyoga/sounds/hurt2.wav
     frame    data/chars/hyoga/pain21.png
     frame    data/chars/hyoga/pain22.png
+    offset   43 141
+    delay    3
     frame    data/chars/hyoga/pain23.png
+    offset   45 141
+    frame    data/chars/hyoga/pain23.png
+    offset   43 141
+    frame    data/chars/hyoga/pain23.png
+    offset   45 141
+    frame    data/chars/hyoga/pain23.png
+    offset   43 141
+    frame    data/chars/hyoga/pain23.png
+    offset   45 141
+    delay    5
     frame    data/chars/hyoga/pain22.png
     frame    data/chars/hyoga/pain21.png
 
@@ -972,14 +1007,27 @@ anim fall20 # blood fall
     frame    data/chars/hyoga/fall8.png
     
 anim pain15# BURN PAIN
-    offset   45 141
     bbox     21 28 51 112
-    #move    -5
-    delay    5
     sound    data/chars/hyoga/sounds/hurt.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+    delay    5
+    offset   45 141
+    sound    data/chars/hyoga/sounds/hurt.wav
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
+    offset   43 141
+    delay    3
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    frame    data/chars/hyoga/pain3.png
+    offset   43 141
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    frame    data/chars/hyoga/pain3.png
+    offset   43 141
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    delay    5
     frame    data/chars/hyoga/pain3.png
     frame    data/chars/hyoga/pain2.png
     frame    data/chars/hyoga/pain1.png
@@ -1050,14 +1098,27 @@ anim pain12# ICE PAIN Small
     frame    data/chars/hyoga/pain1.png
     
 anim pain30# Shock Pain
-    offset   45 141
     bbox     21 28 51 112
-    #move    -5
-    delay    5
     sound    data/chars/hyoga/sounds/hurt.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 60 0 0
+    delay    5
+    offset   45 141
+    sound    data/chars/hyoga/sounds/hurt.wav
     frame    data/chars/hyoga/pain1.png
     frame    data/chars/hyoga/pain2.png
+    offset   43 141
+    delay    3
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    frame    data/chars/hyoga/pain3.png
+    offset   43 141
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    frame    data/chars/hyoga/pain3.png
+    offset   43 141
+    frame    data/chars/hyoga/pain3.png
+    offset   45 141
+    delay    5
     frame    data/chars/hyoga/pain3.png
     frame    data/chars/hyoga/pain2.png
     frame    data/chars/hyoga/pain1.png

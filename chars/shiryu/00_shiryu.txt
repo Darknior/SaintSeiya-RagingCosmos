@@ -308,15 +308,15 @@ anim walk #  marche normale
 anim walk2 # marche quand on est proche d un adversaire
     range 0 400
     loop     1
-    delay    14
-    offset   21 128
-    bbox     10 18 30 112
-    frame    data/chars/seiya/walk11.png
-    frame    data/chars/seiya/walk12.png
-    frame    data/chars/seiya/walk13.png
-    frame    data/chars/seiya/walk14.png
-    frame    data/chars/seiya/walk15.png
-    frame    data/chars/seiya/walk16.png
+    delay    16
+    offset   39 127
+    bbox     25 13 30 115
+    frame    data/chars/shiryu/walk1.png
+    frame    data/chars/shiryu/walk2.png
+    frame    data/chars/shiryu/walk3.png
+    frame    data/chars/shiryu/walk4.png
+    frame    data/chars/shiryu/walk5.png
+    frame    data/chars/shiryu/walk6.png
 
 anim walkoff # Quand on tombe dans un trou
     delay    9
@@ -748,11 +748,22 @@ anim dodge   # Esquive Haut / Bas (u u / d d)
 anim pain
     offset   58 128
     bbox     20 13 51 115
-    delay    5
+    delay    3
     sound    data/chars/shiryu/sounds/hurt.wav
     frame    data/chars/shiryu/pain1.png
     frame    data/chars/shiryu/pain2.png
     frame    data/chars/shiryu/pain3.png
+    offset   56 128
+    frame    data/chars/shiryu/pain4.png
+    offset   58 128
+    frame    data/chars/shiryu/pain4.png
+    offset   56 128
+    frame    data/chars/shiryu/pain4.png
+    offset   58 128
+    frame    data/chars/shiryu/pain4.png
+    offset   56 128
+    frame    data/chars/shiryu/pain4.png
+    offset   58 128
     frame    data/chars/shiryu/pain4.png
     frame    data/chars/shiryu/pain3.png
     frame    data/chars/shiryu/pain2.png
@@ -761,10 +772,21 @@ anim pain
 anim pain2
     offset   37 130
     bbox     17 15 51 115
-    delay    5
+    delay    3
     sound    data/chars/shiryu/sounds/hurt3.wav
     frame    data/chars/shiryu/pain21.png
     frame    data/chars/shiryu/pain22.png
+    offset   35 130
+    frame    data/chars/shiryu/pain23.png
+    offset   37 130
+    frame    data/chars/shiryu/pain23.png
+    offset   35 130
+    frame    data/chars/shiryu/pain23.png
+    offset   37 130
+    frame    data/chars/shiryu/pain23.png
+    offset   35 130
+    frame    data/chars/shiryu/pain23.png
+    offset   37 130
     frame    data/chars/shiryu/pain23.png
     frame    data/chars/shiryu/pain22.png
     frame    data/chars/shiryu/pain21.png

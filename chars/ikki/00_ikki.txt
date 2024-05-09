@@ -792,28 +792,47 @@ anim dodge  # Esquive Haut / Bas (u u / d d)
 #// Pain/Fall/rise animations /////////////////////////////////////////////////
 
 anim pain
-    offset    45 137
-    bbox 21 17 51 120
-    #move    -5
-    delay    5
     sound data/chars/ikki/sounds/hurt3.wav
-    frame    data/chars/ikki/pain1.png
+    delay    3
+    offset    43 137
+    frame    data/chars/ikki/pain23.png
+    offset    45 137
+    frame    data/chars/ikki/pain23.png
+    offset    43 137
+    frame    data/chars/ikki/pain23.png
+    offset    45 137
+    frame    data/chars/ikki/pain23.png
+    offset    43 137
+    frame    data/chars/ikki/pain23.png
+    offset    45 137
+    frame    data/chars/ikki/pain23.png
+    delay    5
+    frame    data/chars/ikki/pain22.png
+    frame    data/chars/ikki/pain21.png
+
+anim pain2
+    sound data/chars/ikki/sounds/hurt5.wav
+    offset    43 137
+    delay    5
     frame    data/chars/ikki/pain2.png
+    frame    data/chars/ikki/pain1.png
+    delay    3
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    delay    5
     frame    data/chars/ikki/pain3.png
     frame    data/chars/ikki/pain2.png
     frame    data/chars/ikki/pain1.png
-
-anim pain2
-    offset    45 137
-    bbox 21 17 51 120
-    #move    -5
-    delay    5
-    sound data/chars/ikki/sounds/hurt5.wav
-    frame    data/chars/ikki/pain21.png
-    frame    data/chars/ikki/pain22.png
-    frame    data/chars/ikki/pain23.png
-    frame    data/chars/ikki/pain22.png
-    frame    data/chars/ikki/pain21.png
 
 anim fall
     bouncefactor 1.9
@@ -910,14 +929,23 @@ anim death
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
 anim pain20 # Blood pain
-    offset    45 137
     bbox 21 17 51 120
-    delay    5
     sound data/chars/ikki/sounds/hurt5.wav
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 10 0 0 0 0
-    frame    data/chars/ikki/pain21.png
-    frame    data/chars/ikki/pain22.png
+    delay    3
+    offset    43 137
     frame    data/chars/ikki/pain23.png
+    offset    45 137
+    frame    data/chars/ikki/pain23.png
+    offset    43 137
+    frame    data/chars/ikki/pain23.png
+    offset    45 137
+    frame    data/chars/ikki/pain23.png
+    offset    43 137
+    frame    data/chars/ikki/pain23.png
+    offset    45 137
+    frame    data/chars/ikki/pain23.png
+    delay    5
     frame    data/chars/ikki/pain22.png
     frame    data/chars/ikki/pain21.png
 
@@ -940,14 +968,27 @@ anim fall20 # blood fall
     frame    data/chars/ikki/fall6.png
     
 anim pain15# BURN PAIN
-    offset    45 137
     bbox 21 17 51 120
-    #move    -5
-    delay    5
     sound data/chars/ikki/sounds/hurt6.wav
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
-    frame    data/chars/ikki/pain1.png
+    offset    43 137
+    delay    5
     frame    data/chars/ikki/pain2.png
+    frame    data/chars/ikki/pain1.png
+    delay    3
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    delay    5
     frame    data/chars/ikki/pain3.png
     frame    data/chars/ikki/pain2.png
     frame    data/chars/ikki/pain1.png
@@ -1016,14 +1057,27 @@ anim pain12# ICE PAIN Small
     frame    data/chars/ikki/pain1.png
  
 anim pain30# Shock Pain
-    offset    45 137
     bbox 21 17 51 120
-    #move    -5
-    delay    5
     sound data/chars/ikki/sounds/hurt3.wav
     @cmd     spawnbind "shock1" "ANI_IDLE" -10 1 60 0 0
-    frame    data/chars/ikki/pain1.png
+    offset    43 137
+    delay    5
     frame    data/chars/ikki/pain2.png
+    frame    data/chars/ikki/pain1.png
+    delay    3
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    frame    data/chars/ikki/pain3.png
+    offset    45 137
+    frame    data/chars/ikki/pain3.png
+    offset    43 137
+    delay    5
     frame    data/chars/ikki/pain3.png
     frame    data/chars/ikki/pain2.png
     frame    data/chars/ikki/pain1.png

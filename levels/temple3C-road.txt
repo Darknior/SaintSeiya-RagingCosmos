@@ -196,7 +196,7 @@ at 2400
 
 spawn soldier1-1
 alias Sebastian
-item botasavp
+item colarcd
 coords    850 400
 at 2800
 

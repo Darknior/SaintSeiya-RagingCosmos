@@ -165,8 +165,10 @@ anim pain
     offset    44 125
     frame    data/chars/soldier_blue/pain2.png
     offset    42 125
-    delay    8
+    offset    44 125
     frame    data/chars/soldier_blue/pain2.png
+    delay    8
+    frame    data/chars/soldier_blue/pain1.png
     
 anim fall
     bouncefactor 1.9
@@ -271,8 +273,10 @@ anim pain20 # Blood pain
     offset    44 125
     frame    data/chars/soldier_blue/pain2.png
     offset    42 125
-    delay    8
     frame    data/chars/soldier_blue/pain2.png
+    delay    8
+    offset    44 125
+    frame    data/chars/soldier_blue/pain1.png
  
 anim fall20 # Blood fall  
     delay    10
@@ -304,8 +308,10 @@ anim pain15# BURN PAIN
     offset    44 125
     frame    data/chars/soldier_blue/pain2.png
     offset    42 125
-    delay    8
     frame    data/chars/soldier_blue/pain2.png
+    delay    8
+    offset    44 125
+    frame    data/chars/soldier_blue/pain1.png
   
 anim fall15# BURN PAIN Ground
     delay    10
@@ -402,8 +408,10 @@ anim pain30# Shock Pain
     offset    44 125
     frame    data/chars/soldier_blue/pain2.png
     offset    42 125
-    delay    8
+    offset    44 125
     frame    data/chars/soldier_blue/pain2.png
+    delay    8
+    frame    data/chars/soldier_blue/pain1.png
   
 anim fall30# Shock PAIN Ground
     delay    10
