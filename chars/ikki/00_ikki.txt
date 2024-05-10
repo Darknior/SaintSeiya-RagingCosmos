@@ -201,7 +201,7 @@ anim respawn # anim apres perdre une vie
     frame    data/chars/ikki/spawn7.png
     frame    data/chars/ikki/spawn8.png
     frame    data/chars/ikki/spawn9.png
-    sound    data/chars/ikki/sounds/victory1.wav
+    sound    data/chars/ikki/sounds/respawn1.wav
     frame    data/chars/ikki/spawn10.png
     frame    data/chars/ikki/spawn11.png
     frame    data/chars/ikki/spawn12.png
@@ -288,7 +288,7 @@ anim sleep # Animation configurée après 10s d'idle
     delay    15
     offset   94 195
     bbox     62 75 51 120
-    sound    data/chars/ikki/sounds/victory2.wav
+    sound    data/chars/ikki/sounds/sleep1.wav
     frame    data/chars/ikki/sleep1.png
     frame    data/chars/ikki/sleep1.png
     frame    data/chars/ikki/sleep2.png

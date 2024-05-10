@@ -34,7 +34,7 @@ death       1           # Active l'animation de mort
 nolife      1           # Masque la petite barre de vie si on frappe un autre joueur
 sleepwait   1000        # Temps en centisecondes avant de jouer l'anim sleep
 diesound    data/chars/aldebaran/sounds/die1.wav
-atchain     1 2 3 4 5 6 # Attaque combo de base (anim attack 1, puis 2...)
+atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 
 dust        fall_dust # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
@@ -292,37 +292,15 @@ anim attack4 # Attaque combo 4
 anim attack5 # Attaque combo 5
     delay    5
     offset    46 163
+    bbox 19 13 38 151
     hitflash flashbig
     sound data/chars/aldebaran/sounds/punch1.wav
     frame    data/chars/aldebaran/attack51.png
-    attack20 82 42 78 56 20 0 0 0 50 12
+    attack20 82 42 78 56 20 1 0 0 50 12
+    dropv 4.0 1.0 0.0
     frame    data/chars/aldebaran/attack52.png
     frame    data/chars/aldebaran/attack53.png
     attack1 0
-
-anim attack6 # Taurus homerun
-    delay    5
-    offset    37 163
-    sound data/chars/aldebaran/sounds/02-swing.wav
-    hitflash aldebaran_swing
-	 quakeframe 1 7 4
-    frame    data/chars/aldebaran/special1.png
-    frame    data/chars/aldebaran/special2.png
-    frame    data/chars/aldebaran/special3.png
-    frame    data/chars/aldebaran/special5.png
-    frame    data/chars/aldebaran/special6.png
-    frame    data/chars/aldebaran/special7.png
-    attack20 -28 -12 120 180 30 1 0 0 50 12
-    dropv     9 3 0
-    frame    data/chars/aldebaran/special8.png
-    frame    data/chars/aldebaran/special9.png
-    frame    data/chars/aldebaran/special10.png
-	 attack5 0
-    frame    data/chars/aldebaran/special11.png
-    frame    data/chars/aldebaran/special12.png
-    frame    data/chars/aldebaran/special13.png
-    frame    data/chars/aldebaran/special14.png
-    frame    data/chars/aldebaran/special15.png
 
 #// Jump animations /////////////////////////////////////////////////
 
@@ -716,7 +694,7 @@ anim special # Taurus homerun (attaque lorsqu il est grab)
     frame    data/chars/aldebaran/special6.png
     frame    data/chars/aldebaran/special7.png
     attack20 -28 -12 120 180 30 1 0 0 50 12
-    dropv     9 3 0
+    dropv     8.0 3 0
     frame    data/chars/aldebaran/special8.png
     frame    data/chars/aldebaran/special9.png
     frame    data/chars/aldebaran/special10.png
@@ -828,6 +806,32 @@ anim freespecial2 # Attaque en courant
     frame    data/chars/aldebaran/runattack9.png
     delay    100
     frame    data/chars/aldebaran/runattack10.png
+
+anim freespecial3 # Taurus homerun
+    delay    5
+    offset    37 163
+    sound data/chars/aldebaran/sounds/02-swing.wav
+    hitflash aldebaran_swing
+	 quakeframe 1 7 4
+	 bbox 2 17 60 150
+    frame    data/chars/aldebaran/special1.png
+    frame    data/chars/aldebaran/special2.png
+    frame    data/chars/aldebaran/special3.png
+	 bbox 0 0 0 0
+    frame    data/chars/aldebaran/special5.png
+    frame    data/chars/aldebaran/special6.png
+    frame    data/chars/aldebaran/special7.png
+    attack20 -28 -12 120 180 30 1 0 0 50 12
+    dropv     8.0 3 0
+    frame    data/chars/aldebaran/special8.png
+    frame    data/chars/aldebaran/special9.png
+    frame    data/chars/aldebaran/special10.png
+	 attack5 0
+    frame    data/chars/aldebaran/special11.png
+    frame    data/chars/aldebaran/special12.png
+    frame    data/chars/aldebaran/special13.png
+    frame    data/chars/aldebaran/special14.png
+    frame    data/chars/aldebaran/special15.png
 
 anim freespecial4 # Punch combo
     range 100 150
