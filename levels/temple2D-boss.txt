@@ -1,9 +1,15 @@
-loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+#-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
-music           data/music/pegasus.ogg
-background  	data/bgs/temple2D-boss/background.png		1 1 0 0 0 0 1 1 1 0
+background   data/bgs/temple2D-boss/background0.png        1 1 0 0 0 0 1 1 1 0
+fglayer  	data/bgs/temple2D-boss/background.png		 -350 0.15 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0
+fglayer     data/bgs/temple2D-boss/temple2_cloud_B.png      -250 0 0 0 -504 0 0 -1 -1 1 1 0 0 0 0 0.5
 panel           data/bgs/temple2D-boss/templeboss.png 
-fglayer     data/bgs/temple2D-boss/temple2_cloud.png        -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+fglayer     data/bgs/temple2D-boss/temple2_cloud.png        -25 0 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1.1
+
+#-------- Level options ------------------------------------------------------------------------
+
+loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+music           data/music/pegasus.ogg
 bgspeed 1 0
 order           a
 direction       both
@@ -13,7 +19,6 @@ shadowalpha 6
 shadowopacity 0
 cameratype      0
 light        256 -44
-
 
 #-------- Players spawn position -----------------------------------------------
 
@@ -36,6 +41,7 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
+#-- BOSS -------------------------------------------------------------------------------------
 
 spawn           aldebaran
 boss 			1
@@ -50,3 +56,5 @@ flip            1
 boss			1
 coords          1 1
 at              0
+
+#---------------------------------------------------------------------------------------
