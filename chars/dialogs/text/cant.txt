@@ -10,14 +10,14 @@ anim    idle
     offset   90 130
     drawmethod alpha 6
     drawmethod channel 0.99
-    frame    data/chars/misc/text/cant/cant.png
+    frame    data/chars/dialogs/text/cant/cant.png
     delay    10
     drawmethod channel 0.8
-    frame    data/chars/misc/text/cant/cant.png
+    frame    data/chars/dialogs/text/cant/cant.png
     drawmethod channel 0.6
-    frame    data/chars/misc/text/cant/cant.png
+    frame    data/chars/dialogs/text/cant/cant.png
     drawmethod channel 0.4
-    frame    data/chars/misc/text/cant/cant.png
+    frame    data/chars/dialogs/text/cant/cant.png
     drawmethod channel 0.2
     @cmd     suicide
-    frame    data/chars/misc/text/cant/cant.png
+    frame    data/chars/dialogs/text/cant/cant.png

@@ -56,7 +56,7 @@ void main()
 
 	//LOAD PORTRAITS
 	if(getglobalvar(portName) == NULL()){
-		setglobalvar(portName, loadsprite("data/chars/dialogs/"+portName+".png"));
+		setglobalvar(portName, loadsprite("data/chars/dialogs/icons/"+portName+".png"));
 	}
 
 	//DRAW CONTENT

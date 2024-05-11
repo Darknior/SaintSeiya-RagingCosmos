@@ -1,3 +1,4 @@
+## General options ##----------------------------------------------------------------
 
 ajspecial 1               #players can use the input for ATTACKBOTH as a special attack
 autoland 1                #changes how entities can land after being thrown
@@ -12,72 +13,111 @@ maxwalks 10
 maxfollows 50
 maxfreespecials 15
 
+## Animated Title and Select screens ##----------------------------------------------------------------
 
-#------------------------
-
-## Animated Title and Select screens ##
 load bgselect        data/bgs/select/bgselect.txt
 load bgtitle         data/bgs/title/bgtitle.txt
 load cursor_a        data/bgs/select/cursor_a.txt
 load cursor_b        data/bgs/select/cursor_b.txt
 
-## Dialogs ##
+## Dialogs ##-------------------------------------------------------------------------------------------
 
-load dialog_aiolia1 data/chars/dialogs/dialog_aiolia1.txt
-load dialog_aiolia2 data/chars/dialogs/dialog_aiolia2.txt
-load dialog_aiolia3 data/chars/dialogs/dialog_aiolia3.txt
-load dialog_aiolia4 data/chars/dialogs/dialog_aiolia4.txt
-load dialog_aldebaran1 data/chars/dialogs/dialog_aldebaran1.txt
-load dialog_aldebaran2 data/chars/dialogs/dialog_aldebaran2.txt
-load dialog_aldebaran3 data/chars/dialogs/dialog_aldebaran3.txt
-load dialog_aphrodite1 data/chars/dialogs/dialog_aphrodite1.txt
-load dialog_aphrodite2 data/chars/dialogs/dialog_aphrodite2.txt
-load dialog_camus1 data/chars/dialogs/dialog_camus1.txt
-load dialog_camus2 data/chars/dialogs/dialog_camus2.txt
-load dialog_camus3 data/chars/dialogs/dialog_camus3.txt
-load dialog_deathmask1 data/chars/dialogs/dialog_deathmask1.txt
-load dialog_deathmask2 data/chars/dialogs/dialog_deathmask2.txt
-load dialog_gemini1 data/chars/dialogs/dialog_gemini1.txt
-load dialog_gemini2 data/chars/dialogs/dialog_gemini2.txt
-load dialog_gemini3 data/chars/dialogs/dialog_gemini3.txt
-load dialog_great_pope1 data/chars/dialogs/dialog_great_pope1.txt
-load dialog_great_pope2 data/chars/dialogs/dialog_great_pope2.txt
-load dialog_great_pope3 data/chars/dialogs/dialog_great_pope3.txt
-load dialog_great_pope4 data/chars/dialogs/dialog_great_pope4.txt
-load dialog_marin1 data/chars/dialogs/dialog_marin1.txt
-load dialog_milo1 data/chars/dialogs/dialog_milo1.txt
-load dialog_milo2 data/chars/dialogs/dialog_milo2.txt
-load dialog_milo3 data/chars/dialogs/dialog_milo3.txt
-load dialog_milo4 data/chars/dialogs/dialog_milo4.txt
-load dialog_shaina1 data/chars/dialogs/dialog_shaina1.txt
-load dialog_shaka1 data/chars/dialogs/dialog_shaka1.txt
-load dialog_shaka2 data/chars/dialogs/dialog_shaka2.txt
-load dialog_shaka3 data/chars/dialogs/dialog_shaka3.txt
-load dialog_shaka4 data/chars/dialogs/dialog_shaka4.txt
-load dialog_shura1 data/chars/dialogs/dialog_shura1.txt
-load dialog_shura2 data/chars/dialogs/dialog_shura2.txt
-load dialog_shura3 data/chars/dialogs/dialog_shura3.txt
-load dialog_shura4 data/chars/dialogs/dialog_shura4.txt
-load dialog_tremi1 data/chars/dialogs/dialog_tremi1.txt
-load dialog_jaki1 data/chars/dialogs/dialog_jaki1.txt
+#temple1#
+know  mu_dialog            data/bgs/temple1/mu_dialog/mu_dialog.txt
+
+#temple2D#
+load dialog_aldebaran1 data/chars/dialogs/temple2D/dialog_aldebaran1.txt
+load dialog_aldebaran2 data/chars/dialogs/temple2D/dialog_aldebaran2.txt
+load dialog_aldebaran3 data/chars/dialogs/temple2D/dialog_aldebaran3.txt
+load aldebaran_idle    data/chars/dialogs/temple2D/00_aldebaran_idle.txt
+know  aldebaran_dialog    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
+know  aldebaran_dialog2    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
+
+#temple3D#
+load dialog_gemini1 data/chars/dialogs/temple3D/dialog_gemini1.txt
+load dialog_gemini2 data/chars/dialogs/temple3D/dialog_gemini2.txt
+load dialog_gemini3 data/chars/dialogs/temple3D/dialog_gemini3.txt
+load gemini_idle    data/chars/dialogs/temple3D/00_gemini_idle.txt
+
+#temple4C#
+know temple4C-dialog1      data/bgs/temple4C-road/dialogs/temple4C-dialog1.txt
+
+#temple4D#
+load dialog_deathmask1 data/chars/dialogs/temple4D/dialog_deathmask1.txt
+load dialog_deathmask2 data/chars/dialogs/temple4D/dialog_deathmask2.txt
+load deathmask_idle    data/chars/dialogs/temple4D/00_deathmask_idle.txt
+
+#temple5D#
+load dialog_aiolia1 data/chars/dialogs/temple5D/dialog_aiolia1.txt
+load dialog_aiolia2 data/chars/dialogs/temple5D/dialog_aiolia2.txt
+load dialog_aiolia3 data/chars/dialogs/temple5D/dialog_aiolia3.txt
+load dialog_aiolia4 data/chars/dialogs/temple5D/dialog_aiolia4.txt
+load aiolia_idle    data/chars/dialogs/temple5D/00_aiolia_idle.txt
+
+#temple6D#
+load dialog_shaka1 data/chars/dialogs/temple6D/dialog_shaka1.txt
+load dialog_shaka2 data/chars/dialogs/temple6D/dialog_shaka2.txt
+load dialog_shaka3 data/chars/dialogs/temple6D/dialog_shaka3.txt
+load dialog_shaka4 data/chars/dialogs/temple6D/dialog_shaka4.txt
+load shaka_idle        data/chars/dialogs/temple6D/00_shaka_idle.txt
+
+#temple8D#
+load dialog_milo1 data/chars/dialogs/temple8D/dialog_milo1.txt
+load dialog_milo2 data/chars/dialogs/temple8D/dialog_milo2.txt
+load dialog_milo3 data/chars/dialogs/temple8D/dialog_milo3.txt
+load dialog_milo4 data/chars/dialogs/temple8D/dialog_milo4.txt
+load milo_idle        data/chars/dialogs/temple8D/00_milo_idle.txt
+
+#temple10D#
+load dialog_shura1 data/chars/dialogs/temple10D/dialog_shura1.txt
+load dialog_shura2 data/chars/dialogs/temple10D/dialog_shura2.txt
+load dialog_shura3 data/chars/dialogs/temple10D/dialog_shura3.txt
+load dialog_shura4 data/chars/dialogs/temple10D/dialog_shura4.txt
+load shura_idle        data/chars/dialogs/temple10D/00_shura_idle.txt
+
+#temple11D#
+load dialog_camus1 data/chars/dialogs/temple11D/dialog_camus1.txt
+load dialog_camus2 data/chars/dialogs/temple11D/dialog_camus2.txt
+load dialog_camus3 data/chars/dialogs/temple11D/dialog_camus3.txt
+load camus_idle        data/chars/dialogs/temple11D/00_camus_idle.txt
+
+#temple12D#
+load dialog_aphrodite1 data/chars/dialogs/temple12D/dialog_aphrodite1.txt
+load dialog_aphrodite2 data/chars/dialogs/temple12D/dialog_aphrodite2.txt
+load aphrodite_idle        data/chars/dialogs/temple12D/00_aphrodite_idle.txt
+
+#temple13D#
+load dialog_great_pope1 data/chars/dialogs/temple13D/dialog_great_pope1.txt
+load dialog_great_pope2 data/chars/dialogs/temple13D/dialog_great_pope2.txt
+load dialog_great_pope3 data/chars/dialogs/temple13D/dialog_great_pope3.txt
+load dialog_great_pope4 data/chars/dialogs/temple13D/dialog_great_pope4.txt
+
+#soldiers#
+load dialog_jaki1 data/chars/dialogs/soldiers/dialog_jaki1.txt
+load jaki_idle        data/chars/dialogs/soldiers/00_jaki_idle.txt
+
+#Bronze saints##
+load seiya_idle        data/chars/dialogs/bronze-saints/00_seiya_idle.txt
+load hyoga_idle        data/chars/dialogs/bronze-saints/00_hyoga_idle.txt
+load shun_idle        data/chars/dialogs/bronze-saints/00_shun_idle.txt
+load shiryu_idle        data/chars/dialogs/bronze-saints/00_shiryu_idle.txt
+load ikki_idle        data/chars/dialogs/bronze-saints/00_ikki_idle.txt
+
+#silver saints#
+load dialog_marin1 data/chars/dialogs/silver-saints/dialog_marin1.txt
+load dialog_shaina1 data/chars/dialogs/silver-saints/dialog_shaina1.txt
+load dialog_tremi1 data/chars/dialogs/silver-saints/dialog_tremi1.txt
+load tremi_idle        data/chars/dialogs/silver-saints/00_tremi_idle.txt
+
+#dialog box##
 load dialog_wait       data/chars/dialogs/dialog_wait.txt
 load fade              data/chars/dialogs/fade.txt
-load seiya_idle        data/chars/dialogs/00_seiya_idle.txt
-load hyoga_idle        data/chars/dialogs/00_hyoga_idle.txt
-load shun_idle        data/chars/dialogs/00_shun_idle.txt
-load shiryu_idle        data/chars/dialogs/00_shiryu_idle.txt
-load ikki_idle        data/chars/dialogs/00_ikki_idle.txt
-load tremi_idle        data/chars/dialogs/00_tremi_idle.txt
-load aldebaran_idle    data/chars/dialogs/00_aldebaran_idle.txt
-load gemini_idle    data/chars/dialogs/00_gemini_idle.txt
-load deathmask_idle    data/chars/dialogs/00_deathmask_idle.txt
-load aiolia_idle    data/chars/dialogs/00_aiolia_idle.txt
-load shaka_idle        data/chars/dialogs/00_shaka_idle.txt
-load milo_idle        data/chars/dialogs/00_milo_idle.txt
-load shura_idle        data/chars/dialogs/00_shura_idle.txt
-load camus_idle        data/chars/dialogs/00_camus_idle.txt
-load aphrodite_idle        data/chars/dialogs/00_aphrodite_idle.txt
-load jaki_idle        data/chars/dialogs/00_jaki_idle.txt
+know dialogdelay         data/bgs/temple1/mu_dialog/dialogdelay.txt
+know  dialogbox0            data/bgs/temple1/mu_dialog/dialogbox0.txt
+know  dialogbox            data/bgs/temple1/mu_dialog/dialogbox.txt
+load text      data/chars/dialogs/text/text.txt
+
+##Animations##-----------------------------------------------------------------------------------------------
 
 # Flash animations
 
@@ -103,7 +143,7 @@ load round_dustB     data/chars/misc/dust/round_dustB.txt
 # Stun pain animations
 
 load stun           data/chars/misc/stun/stun.txt
-load cant           data/chars/misc/text/cant.txt
+load cant           data/chars/dialogs/text/cant.txt
 
 # Blood pain animations
 
@@ -128,6 +168,7 @@ load shock1           data/chars/misc/shock/shock1.txt
 
 # Players special animations
 
+#bronze saints#
 know seiya_aura             data/chars/seiya/special/seiya_aura.txt
 know seiya_aura_air_kick    data/chars/seiya/special/seiya_aura_air_kick.txt
 know seiya_aura_ryuseiken   data/chars/seiya/special/seiya_aura_ryuseiken.txt
@@ -214,6 +255,14 @@ know ikki_shooter           data/chars/ikki/special/ikki_shooter.txt
 know ikki_storm             data/chars/ikki/special/ikki_storm.txt
 know ikki_uppercutB         data/chars/ikki/special/ikki_uppercutB.txt
 
+## SHADOW TRAIL ENTITIES
+load seiyaS      data/chars/seiya/00_seiyaS.txt
+load shiryuS     data/chars/shiryu/00_shiryuS.txt
+load hyogaS     data/chars/hyoga/00_hyogaS.txt
+load ikkiS     data/chars/ikki/00_ikkiS.txt
+load shunS     data/chars/shun/00_shunS.txt
+
+#gold saints#
 know aldebaran_aura            data/chars/aldebaran/special/aldebaran_aura.txt
 know aldebaran_block    data/chars/aldebaran/special/aldebaran_block.txt
 know aldebaran_earthquake    data/chars/aldebaran/special/aldebaran_earthquake.txt
@@ -315,6 +364,9 @@ know aphrodite_sting      data/chars/aphrodite/special/aphrodite_sting.txt
 know aphrodite_ultra      data/chars/aphrodite/special/aphrodite_ultra.txt
 know aphrodite_white_rose_shot      data/chars/aphrodite/special/aphrodite_white_rose_shot.txt
 
+know knife          data/chars/great_pope/special/knife.txt
+
+#silver saints#
 know marin_circle       data/chars/marin/special/marin_circle.txt
 know marin_eagle           data/chars/marin/special/marin_eagle.txt
 know marin_multipunch       data/chars/marin/special/marin_multipunch.txt
@@ -352,12 +404,9 @@ know shiva_lotus        data/chars/shiva/special/shiva_lotus.txt
 know agora_lotus        data/chars/agora/special/agora_lotus.txt
 know agora_plasma    data/chars/agora/special/agora_plasma.txt
 
-know knife          data/chars/great_pope/special/knife.txt
-
 know columnT      data/chars/jaki/special/columnT.txt
 
-
-## ITEMS ##
+## ITEMS ##-----------------------------------------------------------------------------------------------------------
 
 --Fruits (gain life)--
 know apple           data/chars/misc/items/food/apple.txt
@@ -423,14 +472,14 @@ know arma0-2         data/chars/misc/libra/arma0-2.txt
 know arma0-3         data/chars/misc/libra/arma0-3.txt
 know arma0-4         data/chars/misc/libra/arma0-4.txt
 
-## TRAPS ##
+## TRAPS ##--------------------------------------------------------------------------------------------------------
 
 know roccia1         data/chars/misc/obj/roccia1.txt
 know rock01          data/chars/misc/obj/rock01.txt
 know roccia2         data/chars/misc/obj/roccia2.txt
 know rock02          data/chars/misc/obj/rock02.txt
 
-## HORLOGE ##
+## HUD-HORLOGE ##--------------------------------------------------------------------------------------------------
 
 know horloge-flame       data/chars/misc/timer/horloge-flame.txt
 load horloge-flameB      data/chars/misc/timer/horloge-flameB.txt
@@ -450,9 +499,11 @@ know horloge-poissons    data/chars/misc/timer/horloge-poissons.txt
 load time-is-up          data/chars/misc/timer/time-is-up.txt
 load time-is-up0          data/chars/misc/timer/time-is-up0.txt
 
+##CHARACTERS##--------------------------------------------------------------------------------------------------------
+
 ## GODDESS ##
 
-know   athena           data/chars/athena/00_athena.txt
+know athena           data/chars/athena/00_athena.txt
 
 ## BRONZE SAINTS ##
 
@@ -536,36 +587,10 @@ know cube            data/chars/CUBE/CUBE.txt
 know KIKI2           data/chars/KIKI/00_KIKI2.txt
 
 
-#-- LEVELS --------------------------------------------------------------------------
+## LEVELS ##-----------------------------------------------------------------------------------------------
 
 ## TEMPLE 1
 know mu                  data/bgs/temple1/mu/mu.txt
-
-## Dialogs
-know dialogdelay         data/bgs/temple1/mu_dialog/dialogdelay.txt
-know  dialogbox0            data/bgs/temple1/mu_dialog/dialogbox0.txt
-know  dialogbox            data/bgs/temple1/mu_dialog/dialogbox.txt
-know  mu_dialog            data/bgs/temple1/mu_dialog/mu_dialog.txt
-know  temple2_dialogbox    data/bgs/temple2/aldebaran_dialog/temple2_dialogbox.txt
-know  aldebaran_dialog    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
-know  aldebaran_dialog2    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
-know  gemini_dialog    data/bgs/temple3/gemini_dialog/gemini_dialog.txt
-know  gemini_dialog2    data/bgs/temple3/gemini_dialog/gemini_dialog2.txt
-know  aiolia_dialog    data/bgs/temple5/aiolia_dialog/aiolia_dialog.txt
-know  aiolia_dialog2    data/bgs/temple5/aiolia_dialog/aiolia_dialog2.txt
-know  shaka_dialog    data/bgs/temple6/shaka_dialog/shaka_dialog.txt
-know  shaka_dialog    data/bgs/temple6/shaka_dialog/shaka_dialog2.txt
-know  balance_dialog    data/bgs/temple7/balance_dialog/balance_dialog.txt
-know  balance_dialog    data/bgs/temple7/balance_dialog/balance_dialog2.txt
-know  milo_dialog    data/bgs/temple8/milo_dialog/milo_dialog.txt
-know  milo_dialog    data/bgs/temple8/milo_dialog/milo_dialog2.txt
-know  shura_dialog    data/bgs/temple10/shura_dialog/shura_dialog.txt
-know  shura_dialog    data/bgs/temple10/shura_dialog/shura_dialog2.txt
-know  camus_dialog    data/bgs/temple11/camus_dialog/camus_dialog.txt
-know  camus_dialog    data/bgs/temple11/camus_dialog/camus_dialog2.txt
-know  aphrodite_dialog    data/bgs/temple12/aphrodite_dialog/aphrodite_dialog.txt
-know  aphrodite_dialog2    data/bgs/temple12/aphrodite_dialog/aphrodite_dialog2.txt
-
 
 ## TEMPLE 2A ROAD
 know temple2roadcolumns      data/bgs/temple2A-road/temple2roadcolumns.txt
@@ -593,7 +618,6 @@ know temple4_faces02     data/bgs/temple4B-midboss/faces/temple4_faces02.txt
 know temple4_faces03     data/bgs/temple4B-midboss/faces/temple4_faces03.txt
 
 ## TEMPLE 4C ROAD
-know temple4C-dialog1      data/bgs/temple4C-road/dialogs/temple4C-dialog1.txt
 know temple4C-flame-big     data/bgs/temple4C-road/temple4C-flame-big/temple4C-flame-big.txt
 know temple4C-flame-small     data/bgs/temple4C-road/temple4C-flame-small/temple4C-flame-small.txt
 
@@ -643,12 +667,4 @@ know temple13roadcolumns      data/bgs/temple13A-road/temple13roadcolumns.txt
 know temple13columns      data/bgs/temple13D-boss/temple13columns.txt
 
 
-## TEXT ENTITIES
-load text      data/chars/misc/text/text.txt
 
-## SHADOW TRAIL ENTITIES
-load seiyaS      data/chars/seiya/00_seiyaS.txt
-load shiryuS     data/chars/shiryu/00_shiryuS.txt
-load hyogaS     data/chars/hyoga/00_hyogaS.txt
-load ikkiS     data/chars/ikki/00_ikkiS.txt
-load shunS     data/chars/shun/00_shunS.txt
