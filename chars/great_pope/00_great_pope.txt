@@ -3,7 +3,6 @@ health      700
 mp          100
 type        enemy
 
-
 #-- GENERAL CONFIG --------------------------------------------------
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
@@ -39,7 +38,6 @@ atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
-
 #-- ENNEMY CONFIG ---------------------------------------------------
 
 hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
@@ -53,11 +51,9 @@ escapehits  1            # cet enemi declenche freespecial2 quand il est attaqu�
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
-
 #-- LIFEBAR ---------------------------------------------------------
 
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom comme Boss
-
 
 #-- SCRIPTS ---------------------------------------------------------
 
@@ -69,13 +65,18 @@ animationscript     data/scripts/player.c               #
 didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
-
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load knife
 load saga
 load aldebaran_block
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_great_pope1
+load dialog_great_pope2
+load dialog_great_pope3
+load dialog_great_pope4
 
 #-- PALETTES --------------------------------------------------------
 
@@ -109,7 +110,6 @@ anim    select  # Personnage sélectionné
     offset    50 136
     sound    data/chars/sounds/select-short.wav
     frame    data/chars/great_pope/idle1.png
-
 
 #// Static animations /////////////////////////////////////////////////
 

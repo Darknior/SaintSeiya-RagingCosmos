@@ -3,7 +3,6 @@ health      700
 mp          100
 type        enemy
 
-
 #-- GENERAL CONFIG --------------------------------------------------
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
@@ -53,11 +52,9 @@ escapehits  1            # cet enemi declenche freespecial2 quand il est attaqu�
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
-
 #-- LIFEBAR ---------------------------------------------------------
 
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom comme Boss
-
 
 #-- SCRIPTS ---------------------------------------------------------
 
@@ -69,7 +66,6 @@ animationscript     data/scripts/player.c               #
 didhitscript        data/scripts/didhit/tint_purple.c     # Effets de teinte sur sprite
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
-
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load shaina_venom
@@ -80,6 +76,9 @@ load aldebaran_earthquake
 load aldebaran_fist
 load shaina_block
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_shaina1
 
 #-- PALETTES --------------------------------------------------------
 
@@ -109,7 +108,6 @@ anim    select  # Personnage sélectionné
     offset   30 129
     sound    data/chars/sounds/select-short.wav
     frame    data/chars/shaina/idle1.png
-
 
 #// Static animations /////////////////////////////////////////////////
 

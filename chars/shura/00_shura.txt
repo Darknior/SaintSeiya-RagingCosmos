@@ -3,7 +3,6 @@ health      700
 mp          100
 type        enemy
 
-
 #-- GENERAL CONFIG --------------------------------------------------
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
@@ -40,7 +39,6 @@ atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
-
 #-- ENNEMY CONFIG ---------------------------------------------------
 
 hostile     player npc  # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
@@ -54,11 +52,9 @@ escapehits  1            # cet enemi declenche freespecial2 quand il est attaqu�
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
-
 #-- LIFEBAR ---------------------------------------------------------
 
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom pour Boss via Script
-
 
 #-- SCRIPTS ---------------------------------------------------------
 
@@ -69,7 +65,6 @@ script              data/scripts/entity_effects.c       # Permet d'avoir un effe
 animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
 didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite : OR
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
-
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
@@ -87,6 +82,14 @@ load shura_rundust
 load shura_slashA
 load shura_slashB
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_shura1
+load dialog_shura2
+load dialog_shura3
+load dialog_shura4
+load shura_idle
+
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/shura/palettes/icon1.png
@@ -95,10 +98,7 @@ icondie         data/chars/shura/palettes/icondie.png
 palette      data/chars/shura/palettes/palette1.png
 #remap       data/chars/shura/palettes/palette1.png  # 14 Possible MAX
 
-
 #-- ANIMATIONS -------------------------------------------------------
-
-
 
 #// Select animations /////////////////////////////////////////////////
 

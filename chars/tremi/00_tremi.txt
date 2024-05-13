@@ -3,7 +3,6 @@ health        500
 mp            100
 type          enemy
 
-
 #-- GENERAL CONFIG --------------------------------------------------
 
 gfxshadow   1 4         # Possède une ombre moderne basée sur la lumière du niveau
@@ -39,7 +38,6 @@ atchain     1 2 3 4 5   # Attaque combo de base (anim attack 1, puis 2...)
 dust        round_dustB # Effet de poussière quand on tombe (animation)
 bflash      tremi_block # Flash pendant un blocage (animation)
 
-
 #-- ENNEMY CONFIG ---------------------------------------------------
 
 hostile     player      # Determine qui il va attaquer (enemy, player, npc, obstacle, none, shot)
@@ -53,11 +51,9 @@ escapehits  1            # cet enemi declenche freespecial2 quand il est attaqu�
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
-
 #-- LIFEBAR ---------------------------------------------------------
 
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom pour Boss via Script
-
 
 #-- SCRIPTS ---------------------------------------------------------
 
@@ -68,7 +64,6 @@ script              data/scripts/entity_effects.c       # Permet d'avoir un effe
 animationscript     data/scripts/player.c               # Améliore la maniabilité du joueur
 didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite : ARGENT
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
-
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
@@ -85,6 +80,10 @@ load tremi_diagonal_arrows
 load tremi_block
 load milo_blood
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_tremi1
+load tremi_idle
 
 #-- PALETTES --------------------------------------------------------
 

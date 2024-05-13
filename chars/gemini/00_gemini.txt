@@ -86,6 +86,12 @@ load gemini_rundust
 load gemini_ultra
 load shura_rundust
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_gemini1
+load dialog_gemini2
+load dialog_gemini3
+load gemini_idle
 
 #-- PALETTES --------------------------------------------------------
 

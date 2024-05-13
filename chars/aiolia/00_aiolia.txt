@@ -83,6 +83,14 @@ load aldebaran_multi
 load aldebaran_swing
 load aldebaran_aura
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_aiolia1
+load dialog_aiolia2
+load dialog_aiolia3
+load dialog_aiolia4
+load aiolia_idle
+
 #-- PALETTES --------------------------------------------------------
 
 icon        data/chars/aiolia/palettes/icon1.png

@@ -53,11 +53,9 @@ escapehits  1            # cet enemi declenche freespecial2 quand il est attaqu�
 offscreen_noatk_factor 1 # ne peut pas attaquer hors ecran
 subject_to_screen 1      # ne peut pas aller hors ecran
 
-
 #-- LIFEBAR ---------------------------------------------------------
 
 lifebarstatus 300 9 1 1 0 -500 -500 1 -500      # Barre de vie custom comme Boss
-
 
 #-- SCRIPTS ---------------------------------------------------------
 
@@ -69,18 +67,20 @@ animationscript     data/scripts/player.c               #
 didhitscript        data/scripts/didhit/tint_silver.c   # Effets de teinte sur sprite : ARGENT
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
-
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load columnT
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_jaki1
+load jaki_idle
 
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/jaki/palettes/icon1.png 0
 palette      data/chars/jaki/palettes/palette1.png
 #remap       data/chars/jaki/palettes/icon1.png  # 14 Possible MAX
-
 
 #-- ANIMATIONS -------------------------------------------------------
 

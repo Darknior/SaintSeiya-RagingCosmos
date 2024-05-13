@@ -91,6 +91,13 @@ load milo_antaresC
 load aldebaran_block
 load aldebaran_aura
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_milo1
+load dialog_milo2
+load dialog_milo3
+load dialog_milo4
+load milo_idle
 
 #-- PALETTES --------------------------------------------------------
 

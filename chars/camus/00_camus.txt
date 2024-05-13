@@ -82,6 +82,12 @@ load camus_block
 load hyoga_swing
 load aldebaran_aura
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_camus1
+load dialog_camus2
+load dialog_camus3
+load camus_idle
 
 #-- PALETTES --------------------------------------------------------
 

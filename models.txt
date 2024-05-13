@@ -26,75 +26,75 @@ load cursor_b        data/bgs/select/cursor_b.txt
 know  mu_dialog            data/bgs/temple1/mu_dialog/mu_dialog.txt
 
 #temple2D#
-load dialog_aldebaran1 data/chars/dialogs/temple2D/dialog_aldebaran1.txt
-load dialog_aldebaran2 data/chars/dialogs/temple2D/dialog_aldebaran2.txt
-load dialog_aldebaran3 data/chars/dialogs/temple2D/dialog_aldebaran3.txt
-load aldebaran_idle    data/chars/dialogs/temple2D/00_aldebaran_idle.txt
-know  aldebaran_dialog    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
-know  aldebaran_dialog2    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
+know dialog_aldebaran1 data/chars/dialogs/temple2D/dialog_aldebaran1.txt
+know dialog_aldebaran2 data/chars/dialogs/temple2D/dialog_aldebaran2.txt
+know dialog_aldebaran3 data/chars/dialogs/temple2D/dialog_aldebaran3.txt
+know aldebaran_idle    data/chars/dialogs/temple2D/00_aldebaran_idle.txt
+know aldebaran_dialog    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
+know aldebaran_dialog2    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
 
 #temple3D#
-load dialog_gemini1 data/chars/dialogs/temple3D/dialog_gemini1.txt
-load dialog_gemini2 data/chars/dialogs/temple3D/dialog_gemini2.txt
-load dialog_gemini3 data/chars/dialogs/temple3D/dialog_gemini3.txt
-load gemini_idle    data/chars/dialogs/temple3D/00_gemini_idle.txt
+know dialog_gemini1 data/chars/dialogs/temple3D/dialog_gemini1.txt
+know dialog_gemini2 data/chars/dialogs/temple3D/dialog_gemini2.txt
+know dialog_gemini3 data/chars/dialogs/temple3D/dialog_gemini3.txt
+know gemini_idle    data/chars/dialogs/temple3D/00_gemini_idle.txt
 
 #temple4C#
 know temple4C-dialog1      data/chars/dialogs/temple4C/temple4C-dialog1.txt
 
 #temple4D#
-load dialog_deathmask1 data/chars/dialogs/temple4D/dialog_deathmask1.txt
-load dialog_deathmask2 data/chars/dialogs/temple4D/dialog_deathmask2.txt
-load deathmask_idle    data/chars/dialogs/temple4D/00_deathmask_idle.txt
+know dialog_deathmask1 data/chars/dialogs/temple4D/dialog_deathmask1.txt
+know dialog_deathmask2 data/chars/dialogs/temple4D/dialog_deathmask2.txt
+know deathmask_idle    data/chars/dialogs/temple4D/00_deathmask_idle.txt
 
 #temple5D#
-load dialog_aiolia1 data/chars/dialogs/temple5D/dialog_aiolia1.txt
-load dialog_aiolia2 data/chars/dialogs/temple5D/dialog_aiolia2.txt
-load dialog_aiolia3 data/chars/dialogs/temple5D/dialog_aiolia3.txt
-load dialog_aiolia4 data/chars/dialogs/temple5D/dialog_aiolia4.txt
-load aiolia_idle    data/chars/dialogs/temple5D/00_aiolia_idle.txt
+know dialog_aiolia1 data/chars/dialogs/temple5D/dialog_aiolia1.txt
+know dialog_aiolia2 data/chars/dialogs/temple5D/dialog_aiolia2.txt
+know dialog_aiolia3 data/chars/dialogs/temple5D/dialog_aiolia3.txt
+know dialog_aiolia4 data/chars/dialogs/temple5D/dialog_aiolia4.txt
+know aiolia_idle    data/chars/dialogs/temple5D/00_aiolia_idle.txt
 
 #temple6D#
-load dialog_shaka1 data/chars/dialogs/temple6D/dialog_shaka1.txt
-load dialog_shaka2 data/chars/dialogs/temple6D/dialog_shaka2.txt
-load dialog_shaka3 data/chars/dialogs/temple6D/dialog_shaka3.txt
-load dialog_shaka4 data/chars/dialogs/temple6D/dialog_shaka4.txt
-load shaka_idle        data/chars/dialogs/temple6D/00_shaka_idle.txt
+know dialog_shaka1 data/chars/dialogs/temple6D/dialog_shaka1.txt
+know dialog_shaka2 data/chars/dialogs/temple6D/dialog_shaka2.txt
+know dialog_shaka3 data/chars/dialogs/temple6D/dialog_shaka3.txt
+know dialog_shaka4 data/chars/dialogs/temple6D/dialog_shaka4.txt
+know shaka_idle        data/chars/dialogs/temple6D/00_shaka_idle.txt
 
 #temple8D#
-load dialog_milo1 data/chars/dialogs/temple8D/dialog_milo1.txt
-load dialog_milo2 data/chars/dialogs/temple8D/dialog_milo2.txt
-load dialog_milo3 data/chars/dialogs/temple8D/dialog_milo3.txt
-load dialog_milo4 data/chars/dialogs/temple8D/dialog_milo4.txt
-load milo_idle        data/chars/dialogs/temple8D/00_milo_idle.txt
+know dialog_milo1 data/chars/dialogs/temple8D/dialog_milo1.txt
+know dialog_milo2 data/chars/dialogs/temple8D/dialog_milo2.txt
+know dialog_milo3 data/chars/dialogs/temple8D/dialog_milo3.txt
+know dialog_milo4 data/chars/dialogs/temple8D/dialog_milo4.txt
+know milo_idle        data/chars/dialogs/temple8D/00_milo_idle.txt
 
 #temple10D#
-load dialog_shura1 data/chars/dialogs/temple10D/dialog_shura1.txt
-load dialog_shura2 data/chars/dialogs/temple10D/dialog_shura2.txt
-load dialog_shura3 data/chars/dialogs/temple10D/dialog_shura3.txt
-load dialog_shura4 data/chars/dialogs/temple10D/dialog_shura4.txt
-load shura_idle        data/chars/dialogs/temple10D/00_shura_idle.txt
+know dialog_shura1 data/chars/dialogs/temple10D/dialog_shura1.txt
+know dialog_shura2 data/chars/dialogs/temple10D/dialog_shura2.txt
+know dialog_shura3 data/chars/dialogs/temple10D/dialog_shura3.txt
+know dialog_shura4 data/chars/dialogs/temple10D/dialog_shura4.txt
+know shura_idle        data/chars/dialogs/temple10D/00_shura_idle.txt
 
 #temple11D#
-load dialog_camus1 data/chars/dialogs/temple11D/dialog_camus1.txt
-load dialog_camus2 data/chars/dialogs/temple11D/dialog_camus2.txt
-load dialog_camus3 data/chars/dialogs/temple11D/dialog_camus3.txt
-load camus_idle        data/chars/dialogs/temple11D/00_camus_idle.txt
+know dialog_camus1 data/chars/dialogs/temple11D/dialog_camus1.txt
+know dialog_camus2 data/chars/dialogs/temple11D/dialog_camus2.txt
+know dialog_camus3 data/chars/dialogs/temple11D/dialog_camus3.txt
+know camus_idle        data/chars/dialogs/temple11D/00_camus_idle.txt
 
 #temple12D#
-load dialog_aphrodite1 data/chars/dialogs/temple12D/dialog_aphrodite1.txt
-load dialog_aphrodite2 data/chars/dialogs/temple12D/dialog_aphrodite2.txt
-load aphrodite_idle        data/chars/dialogs/temple12D/00_aphrodite_idle.txt
+know dialog_aphrodite1 data/chars/dialogs/temple12D/dialog_aphrodite1.txt
+know dialog_aphrodite2 data/chars/dialogs/temple12D/dialog_aphrodite2.txt
+know aphrodite_idle        data/chars/dialogs/temple12D/00_aphrodite_idle.txt
 
 #temple13D#
-load dialog_great_pope1 data/chars/dialogs/temple13D/dialog_great_pope1.txt
-load dialog_great_pope2 data/chars/dialogs/temple13D/dialog_great_pope2.txt
-load dialog_great_pope3 data/chars/dialogs/temple13D/dialog_great_pope3.txt
-load dialog_great_pope4 data/chars/dialogs/temple13D/dialog_great_pope4.txt
+know dialog_great_pope1 data/chars/dialogs/temple13D/dialog_great_pope1.txt
+know dialog_great_pope2 data/chars/dialogs/temple13D/dialog_great_pope2.txt
+know dialog_great_pope3 data/chars/dialogs/temple13D/dialog_great_pope3.txt
+know dialog_great_pope4 data/chars/dialogs/temple13D/dialog_great_pope4.txt
 
 #soldiers#
-load dialog_jaki1 data/chars/dialogs/soldiers/dialog_jaki1.txt
-load jaki_idle        data/chars/dialogs/soldiers/00_jaki_idle.txt
+know dialog_jaki1 data/chars/dialogs/soldiers/dialog_jaki1.txt
+know jaki_idle        data/chars/dialogs/soldiers/00_jaki_idle.txt
 
 #Bronze saints##
 load seiya_idle        data/chars/dialogs/bronze-saints/00_seiya_idle.txt
@@ -104,17 +104,17 @@ load shiryu_idle        data/chars/dialogs/bronze-saints/00_shiryu_idle.txt
 load ikki_idle        data/chars/dialogs/bronze-saints/00_ikki_idle.txt
 
 #silver saints#
-load dialog_marin1 data/chars/dialogs/silver-saints/dialog_marin1.txt
-load dialog_shaina1 data/chars/dialogs/silver-saints/dialog_shaina1.txt
-load dialog_tremi1 data/chars/dialogs/silver-saints/dialog_tremi1.txt
-load tremi_idle        data/chars/dialogs/silver-saints/00_tremi_idle.txt
+know dialog_marin1 data/chars/dialogs/silver-saints/dialog_marin1.txt
+know dialog_shaina1 data/chars/dialogs/silver-saints/dialog_shaina1.txt
+know dialog_tremi1 data/chars/dialogs/silver-saints/dialog_tremi1.txt
+know tremi_idle        data/chars/dialogs/silver-saints/00_tremi_idle.txt
 
 #dialog box##
 load dialog_wait       data/chars/dialogs/dialog_wait.txt
 load fade              data/chars/dialogs/fade.txt
-know dialogdelay         data/bgs/temple1/mu_dialog/dialogdelay.txt
-know  dialogbox0            data/bgs/temple1/mu_dialog/dialogbox0.txt
-know  dialogbox            data/bgs/temple1/mu_dialog/dialogbox.txt
+load dialogdelay         data/bgs/temple1/mu_dialog/dialogdelay.txt
+load dialogbox0            data/bgs/temple1/mu_dialog/dialogbox0.txt
+load dialogbox            data/bgs/temple1/mu_dialog/dialogbox.txt
 load text      data/chars/dialogs/text/text.txt
 
 ##Animations##-----------------------------------------------------------------------------------------------

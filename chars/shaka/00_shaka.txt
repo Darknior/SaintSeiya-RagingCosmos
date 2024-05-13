@@ -95,6 +95,14 @@ load aphrodite_rose_explosion
 load aldebaran_aura
 load aphrodite_rose_explosion
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_shaka1
+load dialog_shaka2
+load dialog_shaka3
+load dialog_shaka4
+load shaka_idle
+
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/shaka/palettes/icon1.png
@@ -102,7 +110,6 @@ iconpain         data/chars/shaka/palettes/iconpain.png
 icondie         data/chars/shaka/palettes/icondie.png
 palette      data/chars/shaka/palettes/palette1.png
 #remap       data/chars/shaka/palettes/palette1.png  # 14 Possible MAX
-
 
 #-- ANIMATIONS -------------------------------------------------------
 

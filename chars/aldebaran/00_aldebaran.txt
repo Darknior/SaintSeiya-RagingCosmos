@@ -88,6 +88,12 @@ load camus_lights
 load milo_blood
 load shura_rundust
 
+#---------- # Dialogs #-----------------------------------------------
+
+load dialog_aldebaran1
+load dialog_aldebaran2
+load dialog_aldebaran3
+load aldebaran_idle
 
 #-- PALETTES --------------------------------------------------------
 
