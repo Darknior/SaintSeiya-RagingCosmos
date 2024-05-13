@@ -40,7 +40,7 @@ load dialog_gemini3 data/chars/dialogs/temple3D/dialog_gemini3.txt
 load gemini_idle    data/chars/dialogs/temple3D/00_gemini_idle.txt
 
 #temple4C#
-know temple4C-dialog1      data/bgs/temple4C-road/dialogs/temple4C-dialog1.txt
+know temple4C-dialog1      data/chars/dialogs/temple4C/temple4C-dialog1.txt
 
 #temple4D#
 load dialog_deathmask1 data/chars/dialogs/temple4D/dialog_deathmask1.txt

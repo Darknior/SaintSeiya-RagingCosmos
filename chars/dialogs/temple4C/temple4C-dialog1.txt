@@ -1,0 +1,41 @@
+name			temple4C-dialog1 #TIMELINE
+type			text
+setlayer		100000001
+shadow			0
+ondrawscript	data/scripts/dialogs/dialog.c
+animationscript	data/scripts/dialogs/animation.c
+
+anim idle
+	loop	0
+	delay	400
+	offset	0 -15
+	frame	data/chars/dialogs/empty.png
+   frame	data/chars/dialogs/textbox.png
+	delay	300
+	@cmd setVar "line1" "There is only 8 hours left!"
+	@cmd setVar "line2" "We must hurry to save Athena!"
+	@cmd setVar "line3" ""
+	@cmd setVar "line4" ""
+	@cmd setVar "portraitName" "shiryu1"
+	@cmd setVar "portraitSide" "left"
+	frame	data/chars/dialogs/textbox.png
+
+	@cmd setVar "line1" NULL()
+	@cmd setVar "line2" NULL()
+	@cmd setVar "line3" NULL()
+	@cmd setVar "line4" NULL()
+	@cmd setVar "portraitName" "empty"
+	@cmd setVar "portraitSide" "right"
+	@cmd setVar "dialog_entity" NULL()
+	frame	data/chars/dialogs/empty.png
+
+	delay	250
+	@cmd spawnFade "out" 0 0 0 10000000001 0.50
+	frame	data/chars/dialogs/empty.png
+
+	delay	10
+	@cmd setVar "lockButton" 0
+	frame	data/chars/dialogs/empty.png
+
+	@cmd suicide
+	frame	data/chars/dialogs/empty.png
