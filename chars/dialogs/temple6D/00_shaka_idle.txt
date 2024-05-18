@@ -6,7 +6,7 @@ palette     data/chars/shaka/palettes/palette1.png
 #-- ANIMATIONS -------------------------------------------------------
 
 anim idle
-    loop     1 13 16
+    loop     1 12 16
     offset    93 127
     delay    15
     frame    data/chars/shaka/spawn1.png
