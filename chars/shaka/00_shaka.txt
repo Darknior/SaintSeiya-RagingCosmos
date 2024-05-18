@@ -211,6 +211,7 @@ anim attack1 # Attaque combo 1
     delay    5
     offset    84 127
     bbox 64 4 38 126
+    sound data/chars/shaka/sounds/attack1.wav
     frame    data/chars/shaka/attack1.png
     frame    data/chars/shaka/attack2.png
     attack1 100 25 71 25 10 0 0 0 5 12
@@ -233,6 +234,7 @@ anim attack3 # Attaque combo 3
     delay    5
     offset    84 127
     bbox 64 4 38 126
+    sound data/chars/shaka/sounds/attack2.wav
     frame    data/chars/shaka/attack31.png
     frame    data/chars/shaka/attack32.png
     frame    data/chars/shaka/attack33.png
@@ -249,6 +251,7 @@ anim attack4 # Attaque combo 4
     bbox 64 4 38 126
     hitflash flashmedium
     attack1 0 0 0 0 0 0 0 0 0 0
+    sound data/chars/shaka/sounds/attack3.wav
     frame    data/chars/shaka/attack41.png
     frame    data/chars/shaka/attack42.png
     attack1 99 88 73 43 10 0 0 0 5 12
@@ -262,6 +265,7 @@ anim attack5 # Attaque combo 5
     offset    84 127
     bbox 64 4 38 126
     hitflash flashbig
+    sound data/chars/shaka/sounds/attack4.wav
     frame    data/chars/shaka/attack51.png
     frame    data/chars/shaka/attack52.png
     frame    data/chars/shaka/attack53.png
@@ -333,6 +337,7 @@ anim pain # normal pain
     offset    54 127
     bbox 42 4 38 126
     delay 3
+    sound data/chars/shaka/sounds/pain1.wav
     frame    data/chars/shaka/pain2.png
     offset    52 127
     frame    data/chars/shaka/pain1.png
@@ -350,6 +355,7 @@ anim pain2 # big pain
     offset    54 127
     bbox 42 4 38 126
     delay 3
+    sound data/chars/shaka/sounds/pain3.wav
     frame    data/chars/shaka/pain2.png
     offset    52 127
     frame    data/chars/shaka/pain1.png
@@ -402,6 +408,7 @@ anim fall7 # chutte apres etre Grab
 anim rise # Se releve avec compteur de chuttes
     offset    108 127
     delay    10
+    sound data/chars/shaka/sounds/rise1.wav
     frame    data/chars/shaka/rise1.png
     frame    data/chars/shaka/rise2.png
     @cmd stunCounter 0 110 1 4
@@ -411,6 +418,7 @@ anim follow1 # Stun aprés X chuttes
     delay    50
     offset    54 127
     bbox 35 4 38 126
+    sound data/chars/shaka/sounds/stun1.wav
     frame    data/chars/shaka/stun1.png
     frame    data/chars/shaka/stun2.png
     frame    data/chars/shaka/stun1.png
@@ -479,6 +487,7 @@ anim pain20 # Blood
     bbox 42 4 38 126
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" 0 0 20 0 0
     delay 3
+    sound data/chars/shaka/sounds/pain4.wav
     frame    data/chars/shaka/pain2.png
     offset    52 127
     frame    data/chars/shaka/pain1.png
@@ -515,6 +524,7 @@ anim pain15 # Burn
     bbox 42 4 38 126
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
     delay 3
+    sound data/chars/shaka/sounds/pain5.wav
     frame    data/chars/shaka/pain2.png
     offset    52 127
     frame    data/chars/shaka/pain1.png
@@ -609,6 +619,7 @@ anim pain30# Shock Pain
     bbox 42 4 38 126
     @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 80 0 0
     delay 3
+    sound data/chars/shaka/sounds/pain2.wav
     frame    data/chars/shaka/pain2.png
     offset    52 127
     frame    data/chars/shaka/pain1.png
@@ -711,6 +722,7 @@ anim riseattack # Lotus toss (attaque en se relevant)
 	 attack1 15 39 100 40 5 0 0 0 12 12
     @cmd tosser3 "shaka_lotus_shot" 0 40 0 1 1.3 0
     frame    data/chars/shaka/special1.png
+    sound data/chars/shaka/sounds/special1.wav
     @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 10 0 0 0
     @cmd tosser3 "shaka_lotus_shot" 0 40 0 -1 1.3 0
     frame    data/chars/shaka/special2.png
@@ -798,6 +810,7 @@ anim freespecial# Melee
     forcedirection -1
     @cmd    dasher 3.5 0 0 1
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 0 1
+    sound data/chars/shaka/sounds/special3.wav
     frame    data/chars/shaka/runattack1.png
     frame    data/chars/shaka/runattack2.png
     attack2 36 40 60 27 20 1 0 0 5 12
@@ -825,6 +838,7 @@ anim freespecial3 # Shaka hands
     frame    data/chars/shaka/special23.png
     frame    data/chars/shaka/special24.png
     @cmd    shooter "shaka_hands" 0 80 0 2 0 0
+    sound data/chars/shaka/sounds/special2.wav
     frame    data/chars/shaka/special25.png
     frame    data/chars/shaka/special26.png
 	 bbox 0 0 0 0
@@ -850,6 +864,7 @@ anim freespecial4 # Lotus toss (attaque en se relevant)
 	 attack1 15 39 100 40 5 0 0 0 12 12
     @cmd tosser3 "shaka_lotus_shot" 0 40 0 1 1.3 0
     frame    data/chars/shaka/special1.png
+    sound data/chars/shaka/sounds/special1.wav
     @cmd     spawnbind "shaka_lotus_petals" "ANI_IDLE" 0 10 0 0 0
     @cmd tosser3 "shaka_lotus_shot" 0 40 0 -1 1.3 0
     frame    data/chars/shaka/special2.png
