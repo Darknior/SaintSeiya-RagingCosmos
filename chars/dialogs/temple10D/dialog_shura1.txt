@@ -23,6 +23,7 @@ anim idle
 	@cmd setVar "portraitName" "shiryu5"
 	@cmd setVar "portraitSide" "left"
 	frame	data/chars/dialogs/textbox.png
+   sound data/chars/shura/sounds/spawn2.wav
 
 	@cmd setVar "line1" "I am Shura, Golden Knight of"
 	@cmd setVar "line2" "Capricorn! I am Athena's most"
@@ -30,6 +31,7 @@ anim idle
 	@cmd setVar "line4" ""
 	@cmd setVar "portraitName" "shura1"
 	@cmd setVar "portraitSide" "right"
+   sound data/chars/shura/sounds/spawn1.wav
 	frame	data/chars/dialogs/textbox.png
 
 	@cmd setVar "line1" "Do you really think I would have"

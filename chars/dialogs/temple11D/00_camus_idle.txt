@@ -10,7 +10,6 @@ anim idle
     delay    15
     offset    66 148
     frame    data/chars/camus/spawn3.png
-    sound data/chars/camus/sounds/01-greetings.wav
     frame    data/chars/camus/spawn4.png
     frame    data/chars/camus/spawn5.png
     frame    data/chars/camus/spawn6.png

@@ -153,7 +153,6 @@ anim spawn
     @cmd spawnDialog "dialog_shura1" 200 100
     frame    data/chars/shura/idle1.png
     frame    data/chars/shura/idle2.png
-    sound data/chars/shura/sounds/09-laugh.wav
     frame    data/chars/shura/idle3.png
     frame    data/chars/shura/idle2.png
 
@@ -188,6 +187,7 @@ anim    attack1
     offset    72 153
     bbox    63 39 17 117
     frame    data/chars/shura/atk1.png
+    sound data/chars/shura/sounds/attack4.wav
 	attack 73 53 80 67 15 0 0 0 15 20
     delay    15
     frame    data/chars/shura/atk2.png
@@ -200,6 +200,7 @@ anim    attack2
     offset    67 153
     bbox    64 35 17 118
     frame    data/chars/shura/atk3.png
+    sound data/chars/shura/sounds/attack2.wav
     bbox    61 35 17 118
     offset    60 153
     frame    data/chars/shura/atk4.png
@@ -231,7 +232,7 @@ anim    attack3
     bbox    65 57 13 95
     offset    59 151
     frame    data/chars/shura/atk11.png
-    sound    data/chars/shura/sounds/cut.wav
+    sound    data/chars/shura/sounds/attack1.wav
     frame    data/chars/shura/atk8.png
     frame    data/chars/shura/atk11.png
 	 attack20 72 43 96 110 15 1 0 0 15 20
@@ -347,6 +348,7 @@ anim    pain
     bbox    51 47 46 103
     delay    3
     offset    81 152
+    sound data/chars/shura/sounds/pain1.wav
     frame    data/chars/shura/pain1.png
     offset    79 152
     frame    data/chars/shura/pain2.png
@@ -402,6 +404,7 @@ anim rise # Se releve avec compteur de chuttes
     offset    79 154
     delay    25
     @cmd stunCounter 20 110 1 4
+    sound data/chars/shura/sounds/rise1.wav
     frame    data/chars/shura/get2.png
     offset    79 154
     frame    data/chars/shura/get1.png
@@ -411,6 +414,7 @@ anim follow1 # Stun aprés X chuttes
     delay    50
 	 bbox 55 54 50 100
     frame    data/chars/shura/stun1.png
+    sound data/chars/shura/sounds/stun1.wav
     frame    data/chars/shura/stun2.png
     frame    data/chars/shura/stun1.png
     frame    data/chars/shura/stun2.png
@@ -431,6 +435,7 @@ anim pain20 # Blood pain
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -10 0 20 0 0
     delay    3
     offset    81 152
+    sound data/chars/shura/sounds/pain2.wav
     frame    data/chars/shura/pain1.png
     offset    79 152
     frame    data/chars/shura/pain2.png
@@ -453,6 +458,7 @@ anim fall20 # blood fall
     bbox 22 57 100 100
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -30 0 -10 0 0
+    sound data/chars/shura/sounds/pain3.wav
     frame    data/chars/shura/fall1.png
     offset    71 160
     delay    -1000
@@ -468,6 +474,7 @@ anim pain15# BURN PAIN
     @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
     delay    3
     offset    81 152
+    sound data/chars/shura/sounds/pain3.wav
     frame    data/chars/shura/pain1.png
     offset    79 152
     frame    data/chars/shura/pain2.png
@@ -521,6 +528,7 @@ anim pain11# ICE PAIN Big
     offset    81 152
     @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
     @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 10 1 1 1 1
+    sound data/chars/shura/sounds/pain3.wav
     frame    data/chars/shura/pain1.png
     bbox    51 47 46 103
     offset    81 152
@@ -545,6 +553,7 @@ anim pain30# Shock Pain
     @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 70 0 0
     delay    3
     offset    81 152
+    sound data/chars/shura/sounds/pain3.wav
     frame    data/chars/shura/pain1.png
     offset    79 152
     frame    data/chars/shura/pain2.png
@@ -738,13 +747,13 @@ anim freespecial5 # Slash double lame
     delay    80
     hitflash aldebaran_swing
 	 quakeframe 1 7 4
-    sound    data/chars/shura/sounds/03-excalibur.wav
     offset    55 242
     sound data/chars/aldebaran/sounds/78-cosmos.wav
     @cmd 	spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     frame    data/chars/shura/sp1.png
     delay    10
     frame    data/chars/shura/sp2.png
+    sound data/chars/shura/sounds/special1.wav
     frame    data/chars/shura/sp3.png
     @cmd	shooter "shura_lame" 0 0 0 1.5 0 0
     frame    data/chars/shura/sp4.png

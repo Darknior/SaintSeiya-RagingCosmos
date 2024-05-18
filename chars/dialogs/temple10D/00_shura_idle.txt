@@ -7,7 +7,7 @@ palette     data/chars/shura/palettes/palette1.png
 
 anim idle
     loop     1
-    delay    15
+    delay    30
     offset    35 143
     frame    data/chars/shura/idle1.png
     frame    data/chars/shura/idle2.png
