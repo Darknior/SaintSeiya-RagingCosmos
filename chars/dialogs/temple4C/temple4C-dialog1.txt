@@ -1,16 +1,17 @@
 name			temple4C-dialog1 #TIMELINE
-type			text
-setlayer		100000001
+type			panel
+scroll			1
+setlayer		1000000001
+noquake			1 1
 shadow			0
 ondrawscript	data/scripts/dialogs/dialog.c
 animationscript	data/scripts/dialogs/animation.c
 
 anim idle
 	loop	0
-	delay	400
-	offset	0 -15
+	delay	2
+	offset	400 -12
 	frame	data/chars/dialogs/empty.png
-   frame	data/chars/dialogs/textbox.png
 	delay	300
 	@cmd setVar "line1" "There is only 8 hours left!"
 	@cmd setVar "line2" "We must hurry to save Athena!"
@@ -27,14 +28,6 @@ anim idle
 	@cmd setVar "portraitName" "empty"
 	@cmd setVar "portraitSide" "right"
 	@cmd setVar "dialog_entity" NULL()
-	frame	data/chars/dialogs/empty.png
-
-	delay	250
-	@cmd spawnFade "out" 0 0 0 10000000001 0.50
-	frame	data/chars/dialogs/empty.png
-
-	delay	10
-	@cmd setVar "lockButton" 0
 	frame	data/chars/dialogs/empty.png
 
 	@cmd suicide

@@ -2,6 +2,7 @@ void main()
 {//Draw content
 	void self			= getlocalvar("self");
 	void name			= getentityproperty(self, "defaultname");
+	void type			= getentityproperty(self, "type");
 	void portName		= getglobalvar("portraitName")+"";
 	void line1			= getglobalvar("line1");
 	void line2			= getglobalvar("line2");
@@ -71,7 +72,7 @@ void main()
 		drawstring(xText, yText, font, line4, textLayer);yText = yText+lineAdd;
 	}
 	
-	hideEntity();
+	if(type == openborconstant("TYPE_TEXTBOX")){hideEntity();}
 }
 
 void hideEntity()
