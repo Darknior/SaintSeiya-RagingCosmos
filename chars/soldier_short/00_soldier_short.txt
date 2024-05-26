@@ -159,6 +159,17 @@ anim pain
     frame    data/chars/soldier_short/pain2.png
     frame    data/chars/soldier_short/pain1.png
 
+anim pain2
+    delay    7
+    offset    37 109
+    bbox 22 0 43 109
+    @cmd     dasher -0.5 0 0 1
+    frame    data/chars/soldier_short/pain1.png
+    frame    data/chars/soldier_short/pain2.png
+    frame    data/chars/soldier_short/pain3.png
+    frame    data/chars/soldier_short/pain2.png
+    frame    data/chars/soldier_short/pain1.png
+
 anim fall
     bouncefactor 1.9
     delay    10

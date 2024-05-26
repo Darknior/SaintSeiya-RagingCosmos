@@ -209,6 +209,7 @@ anim pain2 # big pain
    delay    7
    offset    26 122
 	bbox 6 5 50 120
+   @cmd     dasher -0.5 0 0 1
    frame    data/chars/soldier_muscles/bigpain1.png
    frame    data/chars/soldier_muscles/bigpain2.png
    frame    data/chars/soldier_muscles/bigpain3.png

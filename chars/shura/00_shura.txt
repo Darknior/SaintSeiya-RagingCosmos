@@ -364,6 +364,27 @@ anim    pain
     delay    8
     frame    data/chars/shura/pain1.png
 
+anim    pain2
+    bbox    51 47 46 103
+    delay    3
+    offset    81 152
+    @cmd     dasher -0.5 0 0 1
+    sound data/chars/shura/sounds/pain1.wav
+    frame    data/chars/shura/pain1.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    frame    data/chars/shura/pain2.png
+    offset    79 152
+    frame    data/chars/shura/pain2.png
+    offset    81 152
+    delay    8
+    frame    data/chars/shura/pain1.png
+
 anim    fall
     bouncefactor 1.9
     landframe 3

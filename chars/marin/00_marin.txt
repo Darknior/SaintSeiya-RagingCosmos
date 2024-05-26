@@ -334,6 +334,7 @@ anim pain2 # Big pain
     offset    24 112
     bbox 11 2 36 112
     delay    5
+    @cmd     dasher -0.5 0 0 1
     frame    data/chars/marin/pain21.png
     frame    data/chars/marin/pain22.png
     frame    data/chars/marin/pain23.png

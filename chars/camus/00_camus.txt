@@ -303,6 +303,7 @@ anim pain2 # big pain
     delay    8
     offset    49 126
     bbox 34 16 38 114
+    @cmd     dasher -0.5 0 0 1
     frame    data/chars/camus/pain21.png
     frame    data/chars/camus/pain22.png
     frame    data/chars/camus/pain23.png

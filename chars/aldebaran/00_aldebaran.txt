@@ -399,6 +399,7 @@ anim pain2 # Big pain
     bbox 22 15 45 151
     sound data/chars/aldebaran/sounds/hurt3.wav
     delay    3
+    @cmd     dasher -0.5 0 0 1
     frame    data/chars/aldebaran/pain21.png
     frame    data/chars/aldebaran/pain22.png
     offset    43 160

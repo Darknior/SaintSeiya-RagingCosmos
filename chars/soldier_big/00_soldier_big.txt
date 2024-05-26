@@ -159,6 +159,27 @@ anim pain
     delay    8
     frame    data/chars/soldier_big/03.png
     
+anim pain2
+    loop    0
+    delay    3
+    offset    120 187
+	 bbox 57 68 93 132
+    @cmd     dasher -0.5 0 0 1
+    frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    frame    data/chars/soldier_big/03.png
+    offset    118 187
+    frame    data/chars/soldier_big/03.png
+    offset    120 187
+    delay    8
+    frame    data/chars/soldier_big/03.png   
+    
 anim fall
     bouncefactor 1.9
     landframe 4

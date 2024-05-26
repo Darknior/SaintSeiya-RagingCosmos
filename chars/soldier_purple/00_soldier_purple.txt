@@ -174,6 +174,27 @@ anim pain
     delay    8
     frame    data/chars/soldier_purple/06.png
  
+anim pain2
+    loop    0
+    offset    106 180
+    bbox 66 76 80 110
+    delay    3
+    @cmd     dasher -0.5 0 0 1
+    frame    data/chars/soldier_purple/05.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    delay    8
+    frame    data/chars/soldier_purple/06.png
+ 
 anim fall
     bouncefactor 1.9
     landframe  4
