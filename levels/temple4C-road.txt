@@ -104,7 +104,7 @@ at 0
 #---------- # Dialogs #---------------------------------------------------------------
 
 spawn temple4C-dialog1
-coords	200 350 ## MAINTAIN ALWAYS THIS SAME X POSITION TO KEEP DIALOGS CENTERED ON THE SCREEN
+coords	200 160 ## MAINTAIN ALWAYS THIS SAME X POSITION TO KEEP DIALOGS CENTERED ON THE SCREEN
 at 1
 
 #----------# Enemies #---------------------------------------------------------------

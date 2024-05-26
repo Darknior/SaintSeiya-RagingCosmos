@@ -62,7 +62,6 @@ animationscript     data/scripts/player.c               # Améliore la maniabili
 didhitscript        data/scripts/didhit/tint_gold.c     # Effets de teinte sur sprite : OR
 ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
-
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
 load blood_ground_big
@@ -70,10 +69,9 @@ load shaka_flame
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/soldier_big/palettes/icon1.png 0
+icon         data/chars/soldier_big/palettes/icon1.png
 palette      data/chars/soldier_big/palettes/palette1.png
 #remap       data/chars/soldier_big/palettes/palette1.png  # 14 Possible MAX
-
 
 #-- ANIMATIONS -------------------------------------------------------
 

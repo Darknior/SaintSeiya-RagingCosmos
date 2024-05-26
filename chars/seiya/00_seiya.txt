@@ -87,7 +87,6 @@ iconmplow          data/chars/seiya/palettes/iconmplow.png
 palette      data/chars/seiya/palettes/palette1.png
 remap        data/chars/seiya/palettes/palette2.png data/chars/seiya/palettes/palette3.png data/chars/seiya/palettes/palette3.png data/chars/seiya/palettes/palette4.png  # 14 Possible MAX
 
-
 #-- COMMANDES ATTAQUES SPECIALES-----------------------------------------------
 
 # arriere + a1 attackbackward        # Attaque arrière

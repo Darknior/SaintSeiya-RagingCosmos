@@ -1,4 +1,4 @@
-name			temple4C-dialog1 #TIMELINE
+name			temple2A-dialog1 #TIMELINE
 type			panel
 scroll			1
 setlayer		1000000001
@@ -13,7 +13,7 @@ anim idle
 	offset	400 -12
 	frame	data/chars/dialogs/empty.png
 	delay	600
-   sound    data/chars/dialogs/temple4C/1.wav
+   sound    data/chars/dialogs/temple2A/1.wav
 	@cmd setVar "line1" "That must be the second temple,"
 	@cmd setVar "line2" "The Taurus one.!"
 	@cmd setVar "line3" ""
@@ -23,7 +23,7 @@ anim idle
 	frame	data/chars/dialogs/textbox.png
 
 	delay	600
-   sound    data/chars/dialogs/temple4C/2.wav
+   sound    data/chars/dialogs/temple2A/2.wav
 	@cmd setVar "line1" "That's weird. I don't feel"
 	@cmd setVar "line2" "any cosmos coming from it."
 	@cmd setVar "line3" ""
@@ -33,7 +33,7 @@ anim idle
 	frame	data/chars/dialogs/textbox.png
 
 	delay	600
-   sound    data/chars/dialogs/temple4C/3.wav
+   sound    data/chars/dialogs/temple2A/3.wav
 	@cmd setVar "line1" "Look."
 	@cmd setVar "line2" "My chain isn't reacting at all, either."
 	@cmd setVar "line3" ""
@@ -43,7 +43,7 @@ anim idle
 	frame	data/chars/dialogs/textbox.png
 
 	delay	600
-   sound    data/chars/dialogs/temple4C/4.wav
+   sound    data/chars/dialogs/temple2A/4.wav
 	@cmd setVar "line1" "Does that mean the temple"
 	@cmd setVar "line2" "is empty?"
 	@cmd setVar "line3" ""
@@ -53,11 +53,11 @@ anim idle
 	frame	data/chars/dialogs/textbox.png
 
 	delay	600
-   sound    data/chars/dialogs/temple4C/5.wav
+   sound    data/chars/dialogs/temple2A/5.wav
 	@cmd setVar "line1" "We don't have time to think"
 	@cmd setVar "line2" "For now, just focus on getting."
-	@cmd setVar "line3" "through!"
-	@cmd setVar "line4" "Let's go!"
+	@cmd setVar "line3" "through! Let's go!"
+	@cmd setVar "line4" ""
 	@cmd setVar "portraitName" "seiya1"
 	@cmd setVar "portraitSide" "left"
 	frame	data/chars/dialogs/textbox.png

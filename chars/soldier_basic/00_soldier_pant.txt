@@ -70,7 +70,7 @@ blood_ground_medium
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/soldier_basic/icon.png 1
+icon         data/chars/soldier_basic/icon.png
 palette      data/chars/soldier_basic/palettes/white_pant.png
 #remap       data/chars/soldier_basic/palettes/palette1.png  # 14 Possible MAX
 

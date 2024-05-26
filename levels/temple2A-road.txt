@@ -71,7 +71,11 @@ coords 20 156
 flip 1
 at 0
 
-----------Enemies---------------------------------------------------------------
+#---------- # Dialogs #---------------------------------------------------------------
+
+
+
+#----------# Enemies #---------------------------------------------------------------
 
 spawn soldier2
 alias konstantinos
@@ -193,10 +197,8 @@ coords -200 470
 item sacocd
 at 2400
 
-
 wait
 at 2400
-
 
 spawn soldier1-1
 alias Sebastian
@@ -216,9 +218,12 @@ coords -200 470
 item diamondff
 at 2800
 
-
 wait
 at 2800
+
+spawn temple2A-dialog1
+coords	200 100 ## MAINTAIN ALWAYS THIS SAME X POSITION TO KEEP DIALOGS CENTERED ON THE SCREEN
+at 3000
 
 spawn soldier3
 alias Enyo

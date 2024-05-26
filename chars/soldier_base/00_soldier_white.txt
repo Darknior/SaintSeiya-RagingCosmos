@@ -66,13 +66,11 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 load blood_ground_medium
 
-
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/soldier_base/palettes/icon1.png 0
+icon         data/chars/soldier_base/palettes/icon1.png
 palette      data/chars/soldier_base/palettes/palette2.png
 #remap       data/chars/soldier_base/palettes/palette1.png  # 14 Possible MAX
-
 
 #-- ANIMATIONS -------------------------------------------------------
 

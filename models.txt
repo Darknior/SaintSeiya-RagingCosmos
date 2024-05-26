@@ -25,6 +25,9 @@ load cursor_b        data/bgs/select/cursor_b.txt
 #temple1#
 know  mu_dialog            data/bgs/temple1/mu_dialog/mu_dialog.txt
 
+#temple2A#
+know temple2A-dialog1      data/chars/dialogs/temple2A/temple2A-dialog1.txt
+
 #temple2D#
 know dialog_aldebaran1 data/chars/dialogs/temple2D/dialog_aldebaran1.txt
 know dialog_aldebaran2 data/chars/dialogs/temple2D/dialog_aldebaran2.txt
