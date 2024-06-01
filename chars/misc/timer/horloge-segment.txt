@@ -1,7 +1,7 @@
 name	horloge-segment
 type    panel
 shadow    0
-setlayer 7000
+setlayer 777777
 speed 10
 #no_adjust_base  0
 noquake        1 1
