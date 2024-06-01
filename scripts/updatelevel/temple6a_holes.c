@@ -24,15 +24,17 @@ void adjustLayer()
 			continue;
 		}
 
-		if(getentityproperty(entity_cursor, "y") < -20){
-			changeentityproperty(entity_cursor, "setlayer", -3);
-			changeentityproperty(entity_cursor, "sortid", -3);
-		}
-		else
-		{
-			if(getentityproperty(entity_cursor, "setlayer") < 0){
-				changeentityproperty(entity_cursor, "setlayer", 0);
-				changeentityproperty(entity_cursor, "sortid", 0);
+		if(getentityproperty(entity_cursor, "type") != openborconstant("TYPE_PANEL")){
+			if(getentityproperty(entity_cursor, "y") < -20){
+				changeentityproperty(entity_cursor, "setlayer", -3);
+				changeentityproperty(entity_cursor, "sortid", -3);
+			}
+			else
+			{
+				if(getentityproperty(entity_cursor, "setlayer") < 0){
+					changeentityproperty(entity_cursor, "setlayer", 0);
+					changeentityproperty(entity_cursor, "sortid", 0);
+				}
 			}
 		}
 	}
