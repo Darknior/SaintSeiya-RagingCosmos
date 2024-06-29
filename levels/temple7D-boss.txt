@@ -1,4 +1,4 @@
-loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0
+loadingbg		data/sprites/loading/loading_temple7.png 1 -51 405 460 999 999 0
 
 loadingbg		data/sprites/loading/loading_Hyoga.png 1 -51 405 460 999 999 0
 

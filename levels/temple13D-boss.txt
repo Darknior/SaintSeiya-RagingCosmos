@@ -1,4 +1,4 @@
-loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+loadingbg		data/sprites/loading/loading_temple13.png 1 -51 405 460 999 999 0
 
 music		data/music/God-Warriors-vs-Saints.ogg
 background		data/bgs/temple13D-boss/layer2.png

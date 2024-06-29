@@ -12,7 +12,7 @@ order a           # ordre des panels
 
 #-------- Level options ------------------------------------------------------------------------
 
-loadingbg    data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
+loadingbg    data/sprites/loading/loading_temple2.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
 music        data/music/Pegasus_Fantasy_instrumental.ogg        # Musique du niveau
 
 light        256 -44             # Direction de l ombre x, y

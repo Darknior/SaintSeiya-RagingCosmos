@@ -1,4 +1,4 @@
-loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+loadingbg		data/sprites/loading/loading_temple5.png 1 -51 405 460 999 999 0
 
 music           data/music/coliseum.ogg
 background  	data/bgs/temple5B-midboss/background.png		0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0.5

@@ -8,7 +8,7 @@ fglayer     data/bgs/temple2D-boss/temple2_cloud.png        -25 0 0 0 -484 0 0 -
 
 #-------- Level options ------------------------------------------------------------------------
 
-loadingbg		data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+loadingbg		data/sprites/loading/loading_temple2.png 1 -51 405 460 999 999 0
 music           data/music/pegasus.ogg
 bgspeed 1 0
 order           a

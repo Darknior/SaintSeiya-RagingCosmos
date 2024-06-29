@@ -1,4 +1,4 @@
-loadingbg    data/sprites/loading/loading_Seiya.png 1 -51 405 460 999 999 0
+loadingbg    data/sprites/loading/loading_temple6.png 1 -51 405 460 999 999 0
 music        data/music/Pegasus_Fantasy_instrumental.ogg
 background   data/bgs/temple6A-road/background.png
 bglayer      data/bgs/temple6A-road/backgroundC.png 0.8 1 0 0 0 0 1 1 1 0

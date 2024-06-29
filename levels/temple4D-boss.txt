@@ -10,7 +10,7 @@ order       a                                # ordre des panels
 
 #-------- Level options ------------------------------------------------------------------------
 
-loadingbg		data/sprites/loading/loading_Shiryu.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
+loadingbg		data/sprites/loading/loading_temple4.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
 music           data/music/cancer.ogg        # Musique du niveau
 
 bgspeed 1 0                                  # Vitesse de deplacement du background / Direction gauche

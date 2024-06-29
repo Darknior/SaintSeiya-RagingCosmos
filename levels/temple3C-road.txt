@@ -1,4 +1,4 @@
-loadingbg    data/sprites/loading/loading_Shun.png 1 -51 405 460 999 999 0
+loadingbg    data/sprites/loading/loading_temple3.png 1 -51 405 460 999 999 0
 music        data/music/Pegasus_Fantasy_instrumental.ogg
 
 panel        data/bgs/temple3C-road/temple2-road.png

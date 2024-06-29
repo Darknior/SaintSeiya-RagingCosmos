@@ -1,4 +1,4 @@
-loadingbg		data/sprites/loading/loading_Shun.png 1 -51 405 460 999 999 0
+loadingbg		data/sprites/loading/loading_temple12.png 1 -51 405 460 999 999 0
 
 music           data/music/cancer.ogg
 
