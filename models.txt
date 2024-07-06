@@ -603,7 +603,7 @@ know temple2roadsky      data/bgs/temple2A-road/temple2roadsky.txt
 know temple2B_coliseum      data/bgs/temple2B-midboss/temple2B_coliseum.txt
 
 ## TEMPLE 3A ROAD
-know temple3roadcolumns      data/bgs/temple3A-road/temple3roadcolumns.txt
+know temple3Aroadcolumns      data/bgs/temple3A-road/temple3Aroadcolumns.txt
 
 ## TEMPLE 3D BOSS: GEMINI
 know temple3_columns     data/bgs/temple3D-boss/columns/temple3_columns.txt

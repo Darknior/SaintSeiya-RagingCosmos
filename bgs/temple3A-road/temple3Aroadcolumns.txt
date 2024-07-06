@@ -1,4 +1,4 @@
-name            temple3roadcolumns
+name            temple3Aroadcolumns
 type            panel
 speedf          -0.7
 setlayer        200
@@ -8,5 +8,5 @@ offscreenkill 10000
 anim idle
     offset      0 0
     drawmethod  alpha 6
-    drawmethod  channel 0.7
-    frame       data/bgs/temple3A-road/temple3roadcolumns.png
+    drawmethod  channel 0.85
+    frame       data/bgs/temple3A-road/temple3Aroadcolumns.png

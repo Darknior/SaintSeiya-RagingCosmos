@@ -1,14 +1,12 @@
 #-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
-background   data/bgs/temple2A-road/background.png        1 1 0 0 0 0 1 1 1 0
+background   data/bgs/temple3A-road/background.png        1 1 0 0 0 0 1 1 1 0
 bglayer      data/bgs/temple3A-road/clouds-back.png       0.75 0 0 0 0 0 -1 -1 1 1 0 0 0 0 1
-bglayer      data/bgs/temple2A-road/temple2A-mountainsA.png 0.8 1 0 0 0 0 1 1 1 0
-bglayer      data/bgs/temple3A-road/temple3-mountains.png 0.8 1 0 100 0 0 1 1 1 0
-bglayer      data/bgs/temple2A-road/temple2A-temple.png    0.5 1 0 0 0 0 1 9999 1 0
-fglayer  	data/bgs/temple3A-road/clouds-front.png		 -5000 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
-panel        data/bgs/temple3A-road/temple3A-road.png
-fglayer      data/bgs/temple2A-road/clouds-road.png       -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
-frontpanel   data/bgs/temple2A-road/layer1.png
+fglayer     data/bgs/temple3A-road/temple3-mountains.png   	-500 0.92 1 0 0 0 0 1 1 1 0
+fglayer     data/bgs/temple3A-road/temple3A-temple.png      -350 0.5 1 0 0 0 0 1 1 1 0
+fglayer  	 data/bgs/temple3A-road/clouds-front.png		 -250 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer      data/bgs/temple3A-road/clouds-road.png       -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
+panel		data/bgs/temple3A-road/panel.png 
 order a           # ordre des panels
 
 #-------- Level options ------------------------------------------------------------------------
@@ -53,9 +51,14 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
-spawn       temple3roadcolumns
-coords      0 0
-at          0
+---------DECORS-----------------------------------------------
+
+spawn       temple3Aroadcolumns
+coords -1 0
+flip 1
+at 0
+
+#----------# Enemies #---------------------------------------------------------------
 
 spawn soldier_muscles
 alias konstantinos
