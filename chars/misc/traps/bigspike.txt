@@ -1,11 +1,9 @@
-name		Bigspike
+name		bigspike
 type		trap
 nolife		1
 gfxshadow	1
 offscreenkill	3000
 candamage	player enemy npc obstacle
-animationscript	data/scripts/lescript.c
-
 
 anim idle
 	loop	1
@@ -15,7 +13,6 @@ anim idle
 	hitfx	data/sounds/Slash1.wav
 	frame	data/chars/misc/traps/BSpike1.png
         delay   6
-	@cmd	layer 0
 	frame	data/chars/misc/traps/BSpike2.png
         attack5	12 118 20 42 30 10 1
 	frame	data/chars/misc/traps/BSpike3.png
@@ -37,5 +34,4 @@ anim idle
         attack  0
 	frame	data/chars/misc/traps/BSpike2.png
 	delay	100
-	@cmd	layer 1
 	frame	data/chars/misc/traps/BSpike1.png

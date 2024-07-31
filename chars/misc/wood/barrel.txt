@@ -11,9 +11,9 @@ anim idle
 	offset	31 60
 	bbox	2 -25 56 80
 	platform 31 68 -40 -40 40 40 16 54
-	frame	data/chars/misc/barrel.gif
+	frame	data/chars/misc/wood/barrel.gif
 
 anim fall
 	delay	100
 	offset	31 60
-	frame	data/chars/misc/barred.gif
+	frame	data/chars/misc/wood/barred.gif

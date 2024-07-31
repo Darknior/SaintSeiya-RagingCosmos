@@ -1,4 +1,4 @@
-name		Geyser
+name		geyser
 type		trap
 nolife		1
 offscreenkill	300

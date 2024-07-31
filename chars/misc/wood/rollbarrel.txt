@@ -21,25 +21,25 @@ anim idle
 	jugglecost 2
 	bbox	6 -15 60 72
         attack4	6 5 60 52 10 1 1 0 0 20
-        frame	data/chars/misc/rollbar1.png
-        frame	data/chars/misc/rollbar2.png
-        frame	data/chars/misc/rollbar3.png
-        frame	data/chars/misc/rollbar4.png #
-        frame	data/chars/misc/rollbar1.png
-        frame	data/chars/misc/rollbar2.png
-        frame	data/chars/misc/rollbar3.png
-        frame	data/chars/misc/rollbar4.png #
-        frame	data/chars/misc/rollbar1.png
-        frame	data/chars/misc/rollbar2.png
-        frame	data/chars/misc/rollbar3.png
-        frame	data/chars/misc/rollbar4.png #
-        frame	data/chars/misc/rollbar1.png
-        frame	data/chars/misc/rollbar2.png
-        frame	data/chars/misc/rollbar3.png
+        frame	data/chars/misc/wood/rollbar1.png
+        frame	data/chars/misc/wood/rollbar2.png
+        frame	data/chars/misc/wood/rollbar3.png
+        frame	data/chars/misc/wood/rollbar4.png #
+        frame	data/chars/misc/wood/rollbar1.png
+        frame	data/chars/misc/wood/rollbar2.png
+        frame	data/chars/misc/wood/rollbar3.png
+        frame	data/chars/misc/wood/rollbar4.png #
+        frame	data/chars/misc/wood/rollbar1.png
+        frame	data/chars/misc/wood/rollbar2.png
+        frame	data/chars/misc/wood/rollbar3.png
+        frame	data/chars/misc/wood/rollbar4.png #
+        frame	data/chars/misc/wood/rollbar1.png
+        frame	data/chars/misc/wood/rollbar2.png
+        frame	data/chars/misc/wood/rollbar3.png
         attack  0
-        frame	data/chars/misc/rollbar4.png #
+        frame	data/chars/misc/wood/rollbar4.png #
 
 anim fall
 	delay	100
 	offset	31 60
-	frame	data/chars/misc/barred.gif
+	frame	data/chars/misc/wood/barred.gif

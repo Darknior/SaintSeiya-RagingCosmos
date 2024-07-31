@@ -475,12 +475,16 @@ know arma0-2         data/chars/misc/libra/arma0-2.txt
 know arma0-3         data/chars/misc/libra/arma0-3.txt
 know arma0-4         data/chars/misc/libra/arma0-4.txt
 
+## OBJECTS ##--------------------------------------------------------------------------------------------------------
+
+know barrel         data/chars/misc/wood/barrel.txt
+know rollbarrel         data/chars/misc/wood/rollbarrel.txt
+
 ## TRAPS ##--------------------------------------------------------------------------------------------------------
 
-know roccia1         data/chars/misc/obj/roccia1.txt
-know rock01          data/chars/misc/obj/rock01.txt
-know roccia2         data/chars/misc/obj/roccia2.txt
-know rock02          data/chars/misc/obj/rock02.txt
+know bigspike         data/chars/misc/traps/bigspike.txt
+know boulder         data/chars/misc/traps/boulder.txt
+know geyser         data/chars/misc/traps/geyser.txt
 
 ## HUD-HORLOGE ##--------------------------------------------------------------------------------------------------
 
