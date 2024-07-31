@@ -71,10 +71,6 @@ coords 20 156
 flip 1
 at 0
 
-#---------- # Dialogs #---------------------------------------------------------------
-
-
-
 #----------# Enemies #---------------------------------------------------------------
 
 spawn soldier2
@@ -200,9 +196,13 @@ at 2400
 wait
 at 2400
 
+#---------- # Dialogs #------
+
 spawn temple2A-dialog1
 coords	200 100 ## MAINTAIN ALWAYS THIS SAME X POSITION TO KEEP DIALOGS CENTERED ON THE SCREEN
 at 2600
+
+#------------------------------
 
 spawn soldier1-1
 alias Sebastian

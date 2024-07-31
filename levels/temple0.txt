@@ -1,26 +1,33 @@
-loadingbg		data/sprites/loading/loading.png 1 -51 405 460 999 999 0
+#-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
-music       data/music/MSC-tragic.ogg
+background     data/bgs/temple0/null.png        1 1 0 0 0 0.7 1 1 1 0
+fglayer  	data/bgs/temple0/clouds-back2.png		 -650 0.8 0 0 0 0 0 -1 -1 1 1 0 0 0 0 0
+fglayer  	data/bgs/temple0/clouds_back.png		 -550 0.7 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+fglayer     data/bgs/temple0/temple0-mountains.png   	-500 0.7 1 0 0 0 0 1 1 1 0
+fglayer     data/bgs/temple0/temple.png      -400 0.03 1 315 20 0 0 1 1 1 0
+fglayer  	data/bgs/temple0/clouds_front.png		 -350 0.7 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+panel		 data/bgs/temple0/temple0_panel.png
+fglayer      data/bgs/temple2A-road/clouds-road.png       -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
 
-panel       data/bgs/temple0/temple0_panel.png 
-background     data/bgs/temple0/background.png        1 1 0 0 0 0 1 1 1 0
-bglayer  	data/bgs/temple0/clouds_back.png		 0.6 0 0 0 0 0 -1 -1 1 1 0 0 0 0 1.1
-bglayer     data/bgs/temple0/temple0-mountains.png   	0.5 1 0 0 0 0 1 1 1 0
-fglayer  	data/bgs/temple0/clouds_front.png		 -5000 0.8 0 0 0 0 0 -1 -1 1 1 0 0 0 0 5
-bglayer     data/bgs/temple0/temple.png        0.05 1 0 0 0 0 1 1 1 0
-fglayer     data/bgs/temple0/clouds-road.png        -25 -0.4 0 0 -484 0 0 -1 -1 1 1 0 0 0 0 1
-bgspeed 1 0
+order a           # ordre des panels
 
-order       a
-direction   both
-settime     99
+#-------- Level options ------------------------------------------------------------------------
 
-cameratype  0
-light        256 -44
-at        0
-shadowalpha 6
-shadowopacity 0
-at          0
+loadingbg    data/sprites/loading/loading.png 1 -51 405 460 999 999 0 # Ecran et barre de loading
+music        data/music/MSC-tragic.ogg       # Musique du niveau
+
+light        256 -44             # Direction de l ombre x, y
+at 0
+shadowalpha  6                   # Alpha de l ombre
+at 0
+shadowopacity 0                 # Opacité de l ombre
+at 0
+
+bgspeed      1 0                 # Vitesse de deplacement du background / Direction gauche
+direction    both               # Direction du scrolling
+settime      99                  # Temps pour finir le niveau
+noreset      2                   # Reset de l horloge apres timeout
+cameratype   1                   # La caméra bouge horizontalement
 
 #-------- Players spawn position -----------------------------------------------
 
@@ -43,8 +50,9 @@ spawn       horloge-flame
 coords      387 47
 at          0
 
+#----------# Enemies #---------------------------------------------------------------
 
-spawn           tremi
+spawn           soldier1
 boss 			1
 coords          650 390
 at              0
@@ -62,3 +70,5 @@ flip            1
 boss			1
 coords          1 1
 at              0
+
+----------# End of Level #---------------------------------------------------------------
