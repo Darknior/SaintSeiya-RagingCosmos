@@ -88,17 +88,19 @@ custfade	100
 skipselect
 select data/select-all.txt
 
-#-- Temple 1 Belier (INTRO) --
+#-- Temple 0 Tremi (INTRO) --
 branch      temple0
 z           378 484
-scene       data/bgs/temple2D-boss/temple2D-boss-intro.txt
-file        data/levels/temple2D-boss.txt
-scene       data/bgs/temple2D-boss/temple2D-boss-video.txt
 file        data/levels/temple0.txt
+scene       data/bgs/temple0/temple0-video.txt
+
+#-- Temple 1 Belier (TUTORIAL) --
+
 scene       data/bgs/temple1/temple01_intro.txt
 branch      temple1
 z           378 484
 file        data/levels/temple1.txt
+scene       data/bgs/temple1/temple1-video.txt
 
 #-- Temple 2 Taurus (Aldébaran du Taureau) --
 
@@ -108,8 +110,10 @@ file        data/levels/temple2A-road.txt
 file        data/levels/temple2B-midboss.txt
 file        data/levels/temple2C-road.txt
 branch      temple2BOSS
-z           435 435
+z           378 484
+scene       data/bgs/temple2D-boss/temple2D-boss-intro.txt
 file        data/levels/temple2D-boss.txt
+scene       data/bgs/temple2D-boss/temple2D-boss-video.txt
 
 #-- Temple 3 Gemini (l'Illusion de Saga le Gemeaux) --
 
@@ -120,118 +124,142 @@ file        data/levels/temple3A-road.txt
 file        data/levels/temple3B-midboss.txt
 file        data/levels/temple3C-road.txt
 branch      temple2BOSS
-z           435 435
+z           378 484
+scene       data/bgs/temple3D-boss/temple3D-boss-intro.txt
 file        data/levels/temple3D-boss.txt
+scene       data/bgs/temple3D-boss/temple3D-boss-video.txt
 
 #-- Temple 4 Cancer (Deathmask du Cancer) --
 
 #skipselect DRAGON-SHIRYU
 branch      temple4
 z           390 480
-scene       data/scenes/temple4.txt
-file        data/levels/temple4.txt
+file        data/levels/temple4A-road.txt
+file        data/levels/temple4B-midboss.txt
+file        data/levels/temple4C-road.txt
 branch      temple4BOSS
-z           435 435
-file        data/levels/temple4BOSS.txt
+z           378 484
+scene       data/bgs/temple4D-boss/temple4D-boss-intro.txt
+file        data/levels/temple4D-boss.txt
+scene       data/bgs/temple4D-boss/temple4D-boss-video.txt
 
 #-- Temple 5 Leo (Aiolia du Lion) --
 
 #skipselect PEGASUS-SEIYA
 branch      temple5
 z           390 480
-file        data/levels/temple5.txt
-scene       data/scenes/temple5.txt
+file        data/levels/temple5A-road.txt
+file        data/levels/temple5B-midboss.txt
+file        data/levels/temple5C-road.txt
 branch      temple5BOSS
-z           435 435
-file        data/levels/temple5BOSS.txt
+z           378 484
+scene       data/bgs/temple5D-boss/temple5D-boss-intro.txt
+file        data/levels/temple5D-boss.txt
+scene       data/bgs/temple5D-boss/temple5D-boss-video.txt
 
 #-- Temple 6 Virgo (Shaka de la Vierge) --
 
 #skipselect PHOENIX-IKKI
 branch      temple6
 z           390 480
-file        data/levels/temple6.txt
-scene       data/scenes/temple6.txt
+file        data/levels/temple6A-road.txt
+file        data/levels/temple6B-midboss.txt
+file        data/levels/temple6C-road.txt
 branch      temple6BOSS
-z           435 435
-file        data/levels/temple6BOSS.txt
+z           378 484
+scene       data/bgs/temple6D-boss/temple6D-boss-intro.txt
+file        data/levels/temple6D-boss.txt
+scene       data/bgs/temple6D-boss/temple6D-boss-video.txt
+scene       data/bgs/temple6D-boss/temple6D-boss-video2.txt
 
 #-- Temple 7 Libra (Balance, casser le cerceuil de glace) --
 
 #skipselect DRAGON-SHIRYU
-scene       data/scenes/temple7.txt
-branch      temple7BOSS
-z           355 470
-file        data/levels/temple7BOSS.txt
+branch      temple7
+z           390 480
+file        data/levels/temple7A-road.txt
+scene       data/bgs/temple7D-boss/temple7D-boss-intro.txt
 
 #-- Temple 8 Scorpius (Milo du Scorpion) --
 
 #skipselect CYGNUS-HYOGA
 branch      temple8
 z           390 480
-file        data/levels/temple8.txt
-scene       data/scenes/temple8.txt
+file        data/levels/temple8A-road.txt
+file        data/levels/temple8B-midboss.txt
+file        data/levels/temple8C-road.txt
 branch      temple8BOSS
-z           435 435
-file        data/levels/temple8BOSS.txt
+z           378 484
+scene       data/bgs/temple8D-boss/temple8D-boss-intro.txt
+file        data/levels/temple8D-boss.txt
+scene       data/bgs/temple8D-boss/temple8D-boss-video.txt
+scene       data/bgs/temple8D-boss/temple8D-boss-video2.txt
 
 #-- Temple 9 Sagitarius (Les épreuves du Sagittaire) --
 
-#skipselect     ## TOUS LES PERSONNAGES AU CHOIX
-select      data/select-team.txt
-scene       data/scenes/temple9.txt
-branch      temple9
-z           320 320
-file        data/levels/temple9.txt
+
 
 #-- Temple 10 Capricornus (Shura du Capricorne) --
 
 #skipselect DRAGON-SHIRYU
 branch      temple10
 z           390 480
-file        data/levels/temple10.txt
-scene       data/scenes/temple10.txt
+file        data/levels/temple10A-road.txt
+file        data/levels/temple10B-midboss.txt
+file        data/levels/temple10C-road.txt
 branch      temple10BOSS
-z           435 435
-file        data/levels/temple10BOSS.txt
+z           378 484
+scene       data/bgs/temple10D-boss/temple10D-boss-intro.txt
+file        data/levels/temple10D-boss.txt
+scene       data/bgs/temple10D-boss/temple10D-boss-video.txt
+scene       data/bgs/temple10D-boss/temple10D-boss-video2.txt
 
 #-- Temple 11 Aquarius (Camus du Verseau) --
 
 #skipselect CYGNUS-HYOGA
 branch      temple11
-z           325 484
-file        data/levels/temple11.txt
-scene       data/scenes/temple11.txt
+z           390 480
+file        data/levels/temple11A-road.txt
+file        data/levels/temple11B-midboss.txt
+file        data/levels/temple11C-road.txt
 branch      temple11BOSS
-z           435 435
-file        data/levels/temple11BOSS.txt
+z           378 484
+scene       data/bgs/temple11D-boss/temple11D-boss-intro.txt
+file        data/levels/temple11D-boss.txt
+scene       data/bgs/temple11D-boss/temple11D-boss-video.txt
 
 #-- Temple 12 Pisces (Aphrodite des poissons) --
 
 #skipselect ANDROMEDA-SHUN
 branch      temple12
 z           390 480
-file        data/levels/temple12.txt
-scene       data/scenes/temple12.txt
+file        data/levels/temple12A-road.txt
+file        data/levels/temple12B-midboss.txt
+file        data/levels/temple12C-road.txt
 branch      temple12BOSS
-z           435 435
-file        data/levels/temple12BOSS.txt
+z           3712 484
+scene       data/bgs/temple12D-boss/temple12D-boss-intro.txt
+file        data/levels/temple12D-boss.txt
+scene       data/bgs/temple12D-boss/temple12D-boss-video.txt
 
 #-- Temple final: Gand Pope Gemini (Gemeaux) --
 
 #skipselect PEGASUS-SEIYA
-branch      templefiori
-z           420 420
-file        data/levels/templefiori.txt
-scene       data/scenes/temple13.txt
+branch      temple13
+z           390 480
+file        data/levels/temple13A-road.txt
+file        data/levels/temple13B-midboss.txt
+file        data/levels/temple13C-road.txt
 branch      temple13BOSS
-z           430 430
-file        data/levels/temple13BOSS.txt
+z           3713 484
+scene       data/bgs/temple13D-boss/temple13D-boss-intro.txt
+file        data/levels/temple13D-boss.txt
 
 #-- ENDING --
 
-scene       data/scenes/end.txt
-end
+scene       data/bgs/temple13D-boss/temple13D-boss-video.txt
+
+#-- GAME OVER --
 
 branch      gameover
 scene       data/scenes/gameover.txt

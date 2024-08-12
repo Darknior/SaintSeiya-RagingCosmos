@@ -402,23 +402,6 @@ anim death
     frame    data/chars/gemini/rise3.png
     frame    data/chars/gemini/rise4.png
     frame    data/chars/gemini/rise5.png
-    @cmd spawnDialog "dialog_gemini2" 200 100
-    offset    90 150
-    frame    data/chars/gemini/death1.png
-    @cmd spawnDialog "dialog_gemini3" 200 100
-    frame    data/chars/gemini/death1.png
-    frame    data/chars/gemini/death2.png
-    offset    90 126
-    frame    data/chars/gemini/death3.png
-    delay    150
-    frame    data/chars/gemini/death3.png
-    delay    10
-    offset    69 176
-    frame    data/chars/gemini/spawn5.png
-    frame    data/chars/gemini/spawn4.png
-    frame    data/chars/gemini/spawn3.png
-    frame    data/chars/gemini/spawn2.png
-    frame    data/chars/gemini/spawn1.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 

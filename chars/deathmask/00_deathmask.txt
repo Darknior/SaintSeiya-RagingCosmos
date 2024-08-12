@@ -87,7 +87,7 @@ load aldebaran_aura
 #---------- # Dialogs #-----------------------------------------------
 
 load dialog_deathmask1
-load dialog_deathmask2
+load dialog_aiolia2
 load deathmask_idle
 
 #-- PALETTES ---------------------------------------------------------
@@ -452,13 +452,10 @@ anim death
     offset    77 130
     frame    data/chars/deathmask/rise1.png
     frame    data/chars/deathmask/rise2.png
+    @cmd spawnDialog "dialog_aiolia2" 200 100
     frame    data/chars/deathmask/rise3.png
-    frame    data/chars/deathmask/idle1.png
-    offset    37 169
-    frame    data/chars/deathmask/special1.png
-    frame    data/chars/deathmask/special2.png
-    @cmd spawnDialog "dialog_deathmask2" 200 100
-    frame    data/chars/deathmask/special2.png
+    offset    39 127
+    frame    data/chars/deathmask/get1.png
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 

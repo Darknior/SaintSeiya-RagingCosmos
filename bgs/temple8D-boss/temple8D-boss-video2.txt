@@ -1,0 +1,6 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+video data\bgs\temple8D-boss\scene3.webm 0 1
+video data\bgs\temple8D-boss\scene4.webm 1 0

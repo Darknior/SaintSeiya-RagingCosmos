@@ -461,33 +461,8 @@ anim death
     frame    data/chars/aiolia/rise4.png
     @cmd spawnDialog "dialog_aiolia2" 200 100
     frame    data/chars/aiolia/rise4.png
-    delay    -1000
-    @cmd spawnScreen "cassios_rescue" -50 0 0 1 "ANI_IDLE"
     frame    data/chars/aiolia/rise4.png
-    offset    124 135
-    @cmd spawnDialog "dialog_aiolia3" 200 100
-    frame    data/chars/aiolia/fall1.png
-    offset    124 135
-    frame    data/chars/aiolia/death1.png
-    delay    15
-    frame    data/chars/aiolia/rise1.png
-    frame    data/chars/aiolia/rise2.png
-    frame    data/chars/aiolia/rise3.png
-    frame    data/chars/aiolia/rise4.png
-    @cmd spawnDialog "dialog_aiolia4" 200 100
-    frame    data/chars/aiolia/death1.png
-    frame    data/chars/aiolia/death2.png
-    frame    data/chars/aiolia/death3.png
-    frame    data/chars/aiolia/death4.png
-    frame    data/chars/aiolia/death5.png
-    frame    data/chars/aiolia/death6.png
-    frame    data/chars/aiolia/death7.png
-    frame    data/chars/aiolia/death8.png
-    frame    data/chars/aiolia/death9.png
-    frame    data/chars/aiolia/death10.png
-    frame    data/chars/aiolia/death11.png
-    frame    data/chars/aiolia/death12.png
-    frame    data/chars/aiolia/death13.png
+
 
 #// BLOOD / FIRE / ICE / SHOCK animations /////////////////////////////////////////////////
 
