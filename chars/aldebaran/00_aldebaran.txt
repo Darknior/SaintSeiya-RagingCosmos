@@ -468,23 +468,9 @@ anim death
     offset    118 164
     frame    data/chars/aldebaran/rise1.png
     frame    data/chars/aldebaran/rise2.png
+    delay    200
     frame    data/chars/aldebaran/rise3.png
-    @cmd spawnDialog "dialog_aldebaran2" 200 100
-    offset    52 154
-    sound data/chars/aldebaran/sounds/03-horn.wav
-    frame    data/chars/aldebaran/death1.png
-    frame    data/chars/aldebaran/death2.png
-    frame    data/chars/aldebaran/death3.png
-    frame    data/chars/aldebaran/death4.png
-    frame    data/chars/aldebaran/death5.png
-    frame    data/chars/aldebaran/death6.png
-    frame    data/chars/aldebaran/death7.png
-    frame    data/chars/aldebaran/death8.png
-    frame    data/chars/aldebaran/death9.png
-    frame    data/chars/aldebaran/death10.png
-    @cmd spawnDialog "dialog_aldebaran3" 200 100
-    frame    data/chars/aldebaran/death11.png
-    frame    data/chars/aldebaran/death11.png
+
 
 anim rise # Se releve avec compteur de chuttes
     offset    118 164

@@ -1,0 +1,25 @@
+name	cadavere
+type	none
+#shadow	0
+gfxshadow	1
+offscreenkill 9999999
+subject_to_wall 1
+
+palette	data/varie/objects/cadaveri/cad1
+
+anim idle
+	platform 43 39 -40 -40 35 35 10 12
+	loop	1
+	delay	10
+	offset	43 29
+	frame	data/varie/objects/cadaveri/cad1
+	delay	100
+	frame	data/varie/objects/cadaveri/cad2
+	delay	10
+	frame	data/varie/objects/cadaveri/cad3
+	frame	data/varie/objects/cadaveri/cad4
+	frame	data/varie/objects/cadaveri/cad5
+
+
+
+

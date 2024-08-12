@@ -1,0 +1,25 @@
+name		Fence
+health		20
+death		1
+type		obstacle
+offscreenkill	3000
+defense		normal4 10
+icon		data/chars/misc/fencicon.png
+diesound 	data/sounds/wood.wav
+
+
+anim idle
+	delay	100
+	offset	80 76
+	bbox	42 5 86 90
+	platform 78 100 -50 -20 50 80 40 60
+	frame	data/chars/misc/fence1.png
+
+anim death
+	delay	6
+	offset	80 76
+	frame	data/chars/misc/fence2.png
+	frame	data/chars/misc/fence3.png
+	frame	data/chars/misc/fence4.png
+	frame	data/chars/misc/fence5.png
+	frame	data/chars/misc/fence6.png

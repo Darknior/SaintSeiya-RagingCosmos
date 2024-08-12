@@ -91,6 +91,9 @@ select data/select-all.txt
 #-- Temple 1 Belier (INTRO) --
 branch      temple0
 z           378 484
+scene       data/bgs/temple2D-boss/temple2D-boss-intro.txt
+file        data/levels/temple2D-boss.txt
+scene       data/bgs/temple2D-boss/temple2D-boss-video.txt
 file        data/levels/temple0.txt
 scene       data/bgs/temple1/temple01_intro.txt
 branch      temple1
@@ -101,22 +104,24 @@ file        data/levels/temple1.txt
 
 branch      temple2
 z           390 480
-file        data/levels/temple2.txt
-scene       data/scenes/temple2.txt
+file        data/levels/temple2A-road.txt
+file        data/levels/temple2B-midboss.txt
+file        data/levels/temple2C-road.txt
 branch      temple2BOSS
 z           435 435
-file        data/levels/temple2BOSS.txt
+file        data/levels/temple2D-boss.txt
 
 #-- Temple 3 Gemini (l'Illusion de Saga le Gemeaux) --
 
 #skipselect ANDROMEDA-SHUN
 branch      temple3
 z           390 480
-file        data/levels/temple3.txt
-scene       data/scenes/temple3.txt
-branch      temple3BOSS
+file        data/levels/temple3A-road.txt
+file        data/levels/temple3B-midboss.txt
+file        data/levels/temple3C-road.txt
+branch      temple2BOSS
 z           435 435
-file        data/levels/temple3BOSS.txt
+file        data/levels/temple3D-boss.txt
 
 #-- Temple 4 Cancer (Deathmask du Cancer) --
 
