@@ -91,7 +91,7 @@ select data/select-all.txt
 #-- Temple 0 Tremi (INTRO) --
 branch      temple0
 z           378 484
-file        data/levels/temple0.txt
+file        data/levels/temple1.txt
 scene       data/bgs/temple0/temple0-video.txt
 
 #-- Temple 1 Belier (TUTORIAL) --

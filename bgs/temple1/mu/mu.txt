@@ -2,6 +2,7 @@ name        mu
 type        none
 shadow      0
 setlayer    2
+noquake     1 1         # Secoue l’écran qd on tombe au sol
 
 anim idle
     loop    1

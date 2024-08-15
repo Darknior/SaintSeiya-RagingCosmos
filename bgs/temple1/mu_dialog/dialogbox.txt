@@ -2,8 +2,8 @@ name	 dialogbox
 type	 panel
 speed	 5
 scroll	 -0.5
-setlayer 200
-
+setlayer 50
+noquake     1 1
 
 anim idle
 	offset   100 15

@@ -52,7 +52,7 @@ at 0
 spawn mu_dialog
 health 400051
 flip 1
-coords	400 0
+coords	400 51
 at 0
 
 group 1 1
@@ -64,8 +64,7 @@ at 0
 
 #-------------------------------------
 
-spawn malesoldier_attackcombo
-alias soldier
+spawn Comboman
 coords	850 500
 at 0
 
@@ -86,8 +85,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn malesoldier_jumpattack
-alias soldier
+spawn downman
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -112,8 +110,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn malesoldier_specialattack
-alias soldier
+spawn upman
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -138,8 +135,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn malesoldier_runattack
-alias soldier
+spawn jumpman
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -164,8 +160,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn malesoldier_attackcombo
-alias soldier
+spawn runningman
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -190,7 +185,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn malesoldier
+spawn specialman
 alias soldier
 @script
 void main() {
@@ -216,8 +211,32 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn malesoldier_specialattack
-alias soldier
+spawn grabman
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	850 500
+at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW9"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn chargeman
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -242,8 +261,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn malesoldier_specialattack
-alias soldier
+spawn Specialman
 boss 1
 @script
 void main() {

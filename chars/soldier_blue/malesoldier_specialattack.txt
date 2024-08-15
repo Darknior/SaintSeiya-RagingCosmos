@@ -1,4 +1,4 @@
-name        malesoldier_specialattack
+name Specialman
 health      30
 type        enemy
 
@@ -53,7 +53,8 @@ subject_to_screen 1      # ne peut pas aller hors ecran
 #-- SPECIFIC ---------------------------------------------------------
 
 defense all     0  # Invulnérable à toutes les attaques
-defense normal5 1  # Vulnérable aux attaques sautées
+defense normal30 1
+defense normal15 1
 
 
 #-- SCRIPTS ---------------------------------------------------------

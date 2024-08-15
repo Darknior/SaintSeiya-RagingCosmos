@@ -1,4 +1,4 @@
-name        malesoldier_jumpattack
+name Jumpman
 health      30
 type        enemy
 

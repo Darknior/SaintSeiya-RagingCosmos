@@ -429,7 +429,7 @@ anim runattack  # Attaque en courant
     subentity    dash_dust
     sound    data/chars/seiya/sounds/forward_punch.wav
     frame    data/chars/seiya/runattack1.png
-	 attack30 5 13 90 55 10 0 0 0 0 10
+	 attack13 5 13 90 55 10 0 0 0 0 10
     dropv    3.0 2 0
 	 bbox 22 0 65 120
     frame    data/chars/seiya/runattack2.png
@@ -560,7 +560,7 @@ anim grabattack # Saisie Coup de genou X2
     hitflash flashmedium
     frame    data/chars/seiya/attack51.png
     frame    data/chars/seiya/attack52.png
-    attack   53 38 40 30 5 0 0 0 12 20
+    attack20   53 38 40 30 5 0 0 0 12 20
     frame    data/chars/seiya/attack53.png
     frame    data/chars/seiya/attack51.png
 
@@ -749,7 +749,7 @@ anim runjumpattack # Attaque sautée en courant
     sound    data/chars/seiya/sounds/punch2.wav
     frame    data/chars/seiya/jumpforward1.png
     jumpframe  2 -1.5 3.5
-    attack20  75 42 67 26 10 1 0 0 10 12
+    attack4  75 42 67 26 10 1 0 0 10 12
     dropv    5.0 2.0 0.0
     frame    data/chars/seiya/jumpforward2.png
     frame    data/chars/seiya/jumpforward2.png
@@ -1555,7 +1555,7 @@ anim freespecial7 # Coup de pied haut (haut+a1)
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/attack41.png
     frame    data/chars/seiya/attack42.png
-    attack20  62 21 67 26 10 1 0 0 12 20
+    attack7  62 21 67 26 10 1 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/seiya/attack43.png
     frame    data/chars/seiya/attack42.png
@@ -1570,7 +1570,7 @@ anim freespecial8 # Balayette (bas+a1)
     frame    data/chars/seiya/brush1.png
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/brush2.png
-    attack2  23 100 100 26 10 0 0 0 12 20
+    attack8  23 100 100 26 10 0 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/seiya/brush3.png
     frame    data/chars/seiya/brush4.png
@@ -1591,7 +1591,7 @@ anim freespecial9 # Attaque au sol
     sound    data/sounds/punch.wav
     frame    data/chars/seiya/downattack-1.png
     frame    data/chars/seiya/downattack-2.png
-	 attack20 122 63 30 50 10 1 0 0 12 30
+	 attack16 122 63 30 50 10 1 0 0 12 30
     dropv    3 4
     frame    data/chars/seiya/downattack-3.png
     frame    data/chars/seiya/downattack-4.png

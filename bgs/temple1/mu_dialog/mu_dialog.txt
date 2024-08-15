@@ -2,101 +2,108 @@ name	 mu_dialog
 type	 panel
 speed	 5
 scroll -0.5
-lifespan 6
-setlayer 100
-
+setlayer 1000
 load dialogbox0
-
-anim spawn
-
+lifespan 12
+noquake     1 1
 
 
 anim idle
-    loop 1
+   loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog1.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog1.png
-	
+	frame data/bgs/temple1/mu_dialog/mu_dialog_combo.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_combo.png	
+
 anim follow1
     loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog2.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog2.png	
+	frame data/bgs/temple1/mu_dialog/mu_dialog_down.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_down.png	
 	
 anim follow2
     loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog3.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog3.png		
+	frame data/bgs/temple1/mu_dialog/mu_dialog_up.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_up.png		
 
 anim follow3
     loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog4.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog4.png	
+	frame data/bgs/temple1/mu_dialog/mu_dialog_jump.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_jump.png	
 
 anim follow4
     loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog5.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog5.png	
+	frame data/bgs/temple1/mu_dialog/mu_dialog_dash.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_dash.png	
 	
 anim follow5
     loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog6.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog6.png		
+	frame data/bgs/temple1/mu_dialog/mu_dialog_special.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_special.png		
 
 anim follow6
     loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog7.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog7.png	
+	frame data/bgs/temple1/mu_dialog/mu_dialog_throw.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_throw.png	
 
 anim follow7
     loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog8.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog8.png	
+	frame data/bgs/temple1/mu_dialog/mu_dialog_charge.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_charge.png	
 
 anim follow8
     loop 1
 	delay     2
-	offset    0 -115
+	offset  0 -110
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog9.png
-  delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog9.png		
+	frame data/bgs/temple1/mu_dialog/mu_dialog_ultra.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_ultra.png	
+
+anim follow9
+    loop 1
+	delay     2
+	offset  0 -110
+	summonframe 1 0 0 0 0
+	custentity dialogbox0
+	frame data/bgs/temple1/mu_dialog/mu_dialog_end.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_end.png		

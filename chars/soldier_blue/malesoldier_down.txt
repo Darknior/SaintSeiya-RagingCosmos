@@ -1,4 +1,4 @@
-name invincibleman
+name downman
 health      30
 type        enemy
 
@@ -52,7 +52,8 @@ subject_to_screen 1      # ne peut pas aller hors ecran
 
 #-- SPECIFIC ---------------------------------------------------------
 
-defense all 0      # Invulnérable à toutes les attaques
+defense all     0  # Invulnérable à toutes les attaques
+defense normal8 1  # Invulnérable aux attaques en courant
 
 
 #-- SCRIPTS ---------------------------------------------------------

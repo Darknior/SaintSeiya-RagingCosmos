@@ -1,4 +1,4 @@
-name invincibleman
+name grabman
 health      30
 type        enemy
 
@@ -53,6 +53,7 @@ subject_to_screen 1      # ne peut pas aller hors ecran
 #-- SPECIFIC ---------------------------------------------------------
 
 defense all 0      # Invulnérable à toutes les attaques
+defense normal20 1  # Vulnérable aux attaques sautées
 
 
 #-- SCRIPTS ---------------------------------------------------------
@@ -72,7 +73,7 @@ load blood_ground_big
 
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/soldier_blue/palettes/icon1.png 0
+icon        data/chars//soldier_blue/palettes/icon1.png 0
 palette      data/chars/soldier_blue/palettes/palette1.png
 #remap       data/chars/soldier_blue/palettes/palette1.png  # 14 Possible MAX
 
@@ -260,3 +261,4 @@ anim    block
     bbox 29 10 35 115
     frame    data/chars/soldier_blue/block1.png
     frame    data/chars/soldier_blue/block2.png
+

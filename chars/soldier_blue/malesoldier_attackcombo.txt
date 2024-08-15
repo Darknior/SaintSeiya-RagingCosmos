@@ -1,4 +1,4 @@
-name        malesoldier_attackcombo
+name Comboman
 health      30
 type        enemy
 
