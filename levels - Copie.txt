@@ -105,11 +105,9 @@ scene       data/bgs/temple1/temple1-video.txt
 #-- Temple 2 Taurus (Aldébaran du Taureau) --
 
 branch      temple2
-z           230 484
+z           390 480
 file        data/levels/temple2A-road.txt
-z           420 484
 file        data/levels/temple2B-midboss.txt
-z           230 484
 file        data/levels/temple2C-road.txt
 branch      temple2BOSS
 z           378 484

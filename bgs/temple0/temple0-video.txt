@@ -2,5 +2,5 @@
 #	animation	[path] [x] [y]		# GIF animation to play
 #	silence					# Stop music
 
-video data\bgs\temple0\scene1.webm 0 1
-video data\bgs\temple0\scene2.webm 0 1
+video data\bgs\temple0\scene1.webm 1 0
+video data\bgs\temple0\scene2.webm 1 0

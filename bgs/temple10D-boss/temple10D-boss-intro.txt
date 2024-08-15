@@ -4,13 +4,23 @@
 
 
 music           data/music/prologue.ogg 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif   0 0 1 0
-animation	data/bgs/temple1/temple_intro.gif  0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
+animation	data/bgs/temple10D-boss/temple10.gif   0 0 1 0
