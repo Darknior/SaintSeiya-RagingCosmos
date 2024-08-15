@@ -12,6 +12,9 @@ anim idle
 	offset	0 -15
 	@cmd setVar "lockButton" 1
 	@cmd spawnScreen "seiya_idle" 60 0 400 1 "ANI_IDLE"
+   @cmd spawnScreen "shiryu_idle" 160 0 400 1 "ANI_IDLE"
+   @cmd spawnScreen "hyoga_idle" 100 0 430 1 "ANI_IDLE"
+   @cmd spawnScreen "shun_idle" 80 0 460 1 "ANI_IDLE"
 	@cmd spawnScreen "tremi_idle" 650 0 400 0 "ANI_IDLE"
 	frame	data/chars/dialogs/empty.png
 
@@ -72,6 +75,9 @@ anim idle
 	delay	10
 	@cmd setVar "lockButton" 0
 	@cmd removEntity "seiya_idle"
+   @cmd removEntity "shiryu_idle"
+   @cmd removEntity "hyoga_idle"
+   @cmd removEntity "shun_idle"
 	@cmd removEntity "tremi_idle"
 	frame	data/chars/dialogs/empty.png
 
