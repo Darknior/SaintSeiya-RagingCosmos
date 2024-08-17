@@ -531,6 +531,7 @@ know downman      data/chars/soldier_blue/malesoldier_down.txt
 know upman   data/chars/soldier_blue/malesoldier_up.txt
 know backman   data/chars/soldier_blue/malesoldier_backattack.txt
 know Chargeman      data/chars/soldier_blue/malesoldier_charge.txt
+know uppercutman      data/chars/soldier_blue/malesoldier_uppercut.txt
 know grabman      data/chars/soldier_blue/malesoldier_grab.txt
 know Invincibleman     data/chars/soldier_blue/malesoldier_defense_all.txt
 know soldier_short               data/chars/soldier_short/00_soldier_short.txt

@@ -11,7 +11,7 @@ noquake     1 1
 anim idle
    loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog_combo.png
@@ -21,7 +21,7 @@ anim idle
 anim follow1
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog_down.png
@@ -31,7 +31,7 @@ anim follow1
 anim follow2
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog_up.png
@@ -41,17 +41,17 @@ anim follow2
 anim follow3
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_jump.png
+	frame data/bgs/temple1/mu_dialog/mu_dialog_special.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_jump.png	
+	frame data/bgs/temple1/mu_dialog/mu_dialog_special.png	
 
 anim follow4
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog_dash.png
@@ -61,17 +61,17 @@ anim follow4
 anim follow5
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_special.png
+	frame data/bgs/temple1/mu_dialog/mu_dialog_charge.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_special.png		
+	frame data/bgs/temple1/mu_dialog/mu_dialog_charge.png		
 
 anim follow6
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog_throw.png
@@ -81,17 +81,17 @@ anim follow6
 anim follow7
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_charge.png
+	frame data/bgs/temple1/mu_dialog/mu_dialog_uppercut.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_charge.png	
+	frame data/bgs/temple1/mu_dialog/mu_dialog_uppercut.png	
 
 anim follow8
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog_ultra.png
@@ -101,9 +101,10 @@ anim follow8
 anim follow9
     loop 1
 	delay     2
-	offset  0 -110
+	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
 	frame data/bgs/temple1/mu_dialog/mu_dialog_end.png
    delay     400
 	frame data/bgs/temple1/mu_dialog/mu_dialog_end.png		
+   

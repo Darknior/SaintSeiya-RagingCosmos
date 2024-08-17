@@ -135,7 +135,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn jumpman
+spawn specialman
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -185,7 +185,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn specialman
+spawn chargeman
 alias soldier
 @script
 void main() {
@@ -227,7 +227,7 @@ flip 1
 coords	400 51
 @script
 void main() {
-	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW9"));
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW7"));
 	changeentityproperty(getlocalvar("self"), "position", 400, 51);
 } @end_script
 at 0
@@ -236,7 +236,7 @@ spawn dialogdelay
 coords	0 
 at 0
 
-spawn chargeman
+spawn uppercutman
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -252,7 +252,7 @@ flip 1
 coords	400 51
 @script
 void main() {
-	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW7"));
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW8"));
 	changeentityproperty(getlocalvar("self"), "position", 400, 51);
 } @end_script
 at 0
@@ -276,7 +276,7 @@ flip 1
 coords	400 51
 @script
 void main() {
-	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW8"));
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW9"));
 	changeentityproperty(getlocalvar("self"), "position", 400, 51);
 } @end_script
 at 0
