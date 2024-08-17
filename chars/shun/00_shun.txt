@@ -105,15 +105,15 @@ com  a2 a2       freespecial     # Attaque de melée (coute 12 Mp)
 anim waiting # Animation d'attente dans l'écran de sélection
     loop     1
     delay 40
-    offset   52 229
+    offset   35 229
     frame    data/chars/shun/waiting1.png
     frame    data/chars/shun/waiting2.png
     frame    data/chars/shun/waiting3.png
     frame    data/chars/shun/waiting2.png
 
 anim select # Personnage sélectionné
-    delay 2
-    offset   52 229
+    delay 12
+    offset   35 229
     sound    data/chars/sounds/select-long.wav
     frame    data/chars/shun/select/select1.png
     frame    data/chars/shun/select/select2.png

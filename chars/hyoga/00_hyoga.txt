@@ -114,15 +114,15 @@ com  a2 a2       freespecial     # Attaque de melée (coute 12 Mp)
 anim waiting # Animation d'attente dans l'écran de sélection
     loop 1
     delay    40
-    offset   59 226
+    offset   35 226
     frame    data/chars/hyoga/waiting1.png
     frame    data/chars/hyoga/waiting2.png
     frame    data/chars/hyoga/waiting3.png
     frame    data/chars/hyoga/waiting4.png
 
 anim select  # Personnage sélectionné
-    delay    2
-    offset   59 226
+    delay    12
+    offset   35 226
     sound    data/chars/sounds/select-long.wav
     frame    data/chars/hyoga/select/select1.png
     frame    data/chars/hyoga/select/select2.png

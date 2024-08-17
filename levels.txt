@@ -71,7 +71,7 @@ e4icon      647 115
 
 ##-----------------------------------------------------
 
-set         Training
+set         Tutorial
 
 maxplayers  4
 #nosame     1        # Empèche de choisir les mm personnages

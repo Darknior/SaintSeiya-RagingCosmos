@@ -9,4 +9,5 @@ anim    idle
     loop    1
     offset  1 1
     delay   20
-    frame   data/bgs/select/select1.png
+    frame   data/bgs/select/select01.png
+
