@@ -1,0 +1,21 @@
+name            bgselect
+type            none
+shadow          0
+setlayer        -2000
+ondrawscript	data/scripts/menu_select.c
+
+
+anim    idle
+    loop    1
+    offset  1 1
+    delay   20
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
+    frame   data/bgs/select/select.gif
