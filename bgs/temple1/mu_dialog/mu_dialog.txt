@@ -107,4 +107,13 @@ anim follow9
 	frame data/bgs/temple1/mu_dialog/mu_dialog_end.png
    delay     400
 	frame data/bgs/temple1/mu_dialog/mu_dialog_end.png		
-   
+
+anim follow10
+    loop 1
+	delay     2
+	offset  0 -102
+	summonframe 1 0 0 0 0
+	custentity dialogbox0
+	frame data/bgs/temple1/mu_dialog/mu_dialog_jump.png
+   delay     400
+	frame data/bgs/temple1/mu_dialog/mu_dialog_jump.png		

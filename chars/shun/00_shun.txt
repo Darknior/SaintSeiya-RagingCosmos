@@ -392,7 +392,7 @@ anim runattack # Attaque en courant
     sound    data/chars/shun/sounds/attack5.wav
     frame    data/chars/shun/attack6.png
     frame    data/chars/shun/attack7.png
-    attack30 104 115 65 20 10 5 0 0 12 20
+    attack13 104 115 65 20 10 5 0 0 12 20
     dropv    3.0 2 0
     frame    data/chars/shun/attack8.png
     attack1 0
@@ -717,7 +717,7 @@ anim jumpattack #Attaque sautée statique
     frame    data/chars/shun/jumpspecial4.png
     delay 10
     jumpframe  2 0 0
-    attack 86 99 100 90 10 1 0 0 12 30
+    attack4 86 99 100 90 10 1 0 0 12 30
 	 dropv    4.0 1.0 0.0
     frame    data/chars/shun/jumpspecial5.png
     frame    data/chars/shun/jumpspecial6.png
@@ -732,7 +732,7 @@ anim jumpforward #Attaque sautée vers l'avant
     frame    data/chars/shun/jumpspecial4.png
     delay 10
     jumpframe  2 -1 2.5
-    attack20 86 99 100 90 10 1 0 0 12 30
+    attack4 86 99 100 90 10 1 0 0 12 30
 	 dropv    6.0 2.0 0.0
     frame    data/chars/shun/jumpspecial5.png
     frame    data/chars/shun/jumpspecial6.png
@@ -748,7 +748,7 @@ anim runjumpattack # Attaque sautée en courant
     frame    data/chars/shun/jumpspecial4.png
     delay 10
     jumpframe  2 -1.5 3.5
-    attack20 86 99 100 90 10 1 0 0 12 30
+    attack4 86 99 100 90 10 1 0 0 12 30
 	 dropv    6.0 2.0 0.0
     frame    data/chars/shun/jumpspecial5.png
     frame    data/chars/shun/jumpspecial6.png
@@ -763,7 +763,7 @@ anim jumpattack2 #Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/shun/downattack1.png
     frame    data/chars/shun/downattack2.png
     jumpframe  2 -2 0
-	 attack30 73 164 100 50 10 10 0 0 13 30
+	 attack4 73 164 100 50 10 10 0 0 13 30
     dropv    2 5
     delay 12
     frame    data/chars/shun/downattack3.png
@@ -1469,7 +1469,7 @@ anim freespecial7   # Coup de pied haut
     frame    data/chars/shun/attack22.png
     frame    data/chars/shun/attack23.png
     delay 12
-	 attack20 79 100 90 50 10 1 0 0 15 25
+	 attack7 79 100 90 50 10 1 0 0 15 25
     dropv    5.0 0.5
     frame    data/chars/shun/attack24.png
     delay 6
@@ -1487,7 +1487,7 @@ anim freespecial8   # Balayette
     sound    data/sounds/punch.wav
     frame    data/chars/shun/slide1.png
     delay 14
-	 attack2 63 62 80 65 10 0 0 0 12 25
+	 attack8 63 62 80 65 10 0 0 0 12 25
     dropv    5.0 0.5
     frame    data/chars/shun/slide2.png
     delay 9

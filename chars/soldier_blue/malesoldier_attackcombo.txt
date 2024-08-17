@@ -52,10 +52,9 @@ subject_to_screen 1      # ne peut pas aller hors ecran
 
 #-- SPECIFIC ---------------------------------------------------------
 
-defense normal2 0 # Invulnérable aux attaques en courant
-defense normal3 0 # Invulnérable aux attaques au corps à corps
-defense normal4 0 # Invulnérable aux attaques sautées
-defense normal5 0 # Invulnérable aux attaques spéciales
+defense all     0  # Invulnérable à toutes les attaques
+defense normal 1
+defense normal2 1
 
 
 #-- SCRIPTS ---------------------------------------------------------

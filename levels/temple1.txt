@@ -1,27 +1,32 @@
-loadingbg		data/sprites/loading/loading_temple1.png 1 -51 405 460 999 999 0
+#-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
-music		data/music/temple1.ogg
 background  	data/bgs/temple1/temple1_back.png
-panel		data/bgs/temple1/temple1_panel.png 
-frontpanel  data/bgs/temple1/layer1.png 
 bglayer  	data/bgs/temple1/temple1_back.png		0.9 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple1/temple1_bglayer2.png   	0.4 1 0 0 0 0 1 1 1 0
 bglayer     data/bgs/temple1/temple1_bglayer.png  	0.3 1 0 0 0 0 1 3 1 0
 bglayer     data/bgs/temple1/temple1_bglayer0.png  	0 1 0 0 0 0 1 9999 1 0
-
-
+panel		data/bgs/temple1/temple1_panel.png 
+frontpanel  data/bgs/temple1/layer1.png 
 order	a
 
-direction both
+#-------- Level options ------------------------------------------------------------------------
 
-settime 100
-noreset 2
-cameratype 0
+loadingbg		data/sprites/loading/loading_temple1.png 1 -51 405 460 999 999 0
+music        data/music/temple1.ogg        # Musique du niveau
 
-light 0 -64
+light 0 -64            # Direction de l ombre x, y
 at 0
-shadowalpha     6
-at        0
+shadowalpha  6                   # Alpha de l ombre
+at 0
+shadowopacity 80                 # Opacité de l ombre
+at 0
+
+bgspeed      1 0                 # Vitesse de deplacement du background / Direction gauche
+direction    both               # Direction du scrolling
+settime      99                  # Temps pour finir le niveau
+noreset      2                   # Reset de l horloge apres timeout
+cameratype   0                  # La caméra bouge horizontalement
+
 
 ---------Players spawn position-----------------------------------------------
 
@@ -31,7 +36,7 @@ spawn2 80 160 0 # position du joueur2 (x, z, Y)
 spawn3 90 220 0 # position du joueur3 (x, z, Y)
 spawn4 110 190 0 # position du joueur4 (x, z, Y)
 
-#-------------------------------------
+---------HUD-----------------------------------------------
 
 spawn       horloge-segment
 coords      368 89
@@ -44,6 +49,9 @@ at          0
 spawn       horloge-flame
 coords      387 47
 at          0
+
+#----------# Enemies #------------------------------------------------------
+
 
 spawn mu
 coords	594 319
@@ -65,6 +73,7 @@ at 0
 #-------------------------------------
 
 spawn Comboman
+alias combo_man
 coords	850 500
 at 0
 
@@ -86,6 +95,7 @@ coords	0
 at 0
 
 spawn downman
+alias down_man
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -111,6 +121,7 @@ coords	0
 at 0
 
 spawn upman
+alias up_man
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -136,6 +147,33 @@ coords	0
 at 0
 
 spawn specialman
+alias special_man
+@script
+void main() {
+	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
+} @end_script
+coords	850 500
+at 0
+
+#-------------------------------------
+
+spawn mu_dialog
+health 400051
+flip 1
+coords	400 51
+@script
+void main() {
+	changeentityproperty(getlocalvar("self"), "animation", openborconstant("ANI_FOLLOW10"));
+	changeentityproperty(getlocalvar("self"), "position", 400, 51);
+} @end_script
+at 0
+
+spawn dialogdelay
+coords	0 
+at 0
+
+spawn jumpman
+alias jump_man
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -161,6 +199,7 @@ coords	0
 at 0
 
 spawn runningman
+alias running_man
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -186,7 +225,7 @@ coords	0
 at 0
 
 spawn chargeman
-alias soldier
+alias charge_man
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -212,6 +251,7 @@ coords	0
 at 0
 
 spawn grabman
+alias grab_man
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -237,6 +277,7 @@ coords	0
 at 0
 
 spawn uppercutman
+alias uppercut_man
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));
@@ -262,7 +303,7 @@ coords	0
 at 0
 
 spawn Specialman
-boss 1
+alias ultra_man
 @script
 void main() {
 	performattack(getlocalvar("self"), openborconstant("ANI_follow1"));

@@ -459,7 +459,7 @@ anim runattack   # Attaque en courant
     frame    data/chars/hyoga/runattack2.png
     @cmd     spawnbind "hyoga_dash" "ANI_IDLE" 0 1 0 0 0
     frame    data/chars/hyoga/runattack3.png
-    attack20  50 40 70 40 10 10 0 0 5 12
+    attack13  50 40 70 40 10 10 0 0 5 12
     dropv    3.0 2 0
     frame    data/chars/hyoga/runattack4.png
     attack2  0
@@ -750,7 +750,7 @@ anim jumpattack  # Attaque sautée statique
     frame    data/chars/hyoga/jumpattack1.png
     frame    data/chars/hyoga/jumpattack2.png
     jumpframe  2 0 0
-    attack20  62 51 67 26 10 1 0 0 5 12
+    attack4  62 51 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/hyoga/jumpattack3.png
     frame    data/chars/hyoga/jumpattack4.png
@@ -762,7 +762,7 @@ anim jumpforward # Attaque sautée vers l'avant
     frame    data/chars/hyoga/jumpattack1.png
     frame    data/chars/hyoga/jumpattack2.png
     jumpframe  2 -1 2.5
-    attack20  62 51 67 26 10 1 0 0 5 12
+    attack4  62 51 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/hyoga/jumpattack3.png
     frame    data/chars/hyoga/jumpattack4.png
@@ -787,7 +787,7 @@ anim jumpattack2 # Attaque sautée vers le bas (Bas + attaque)
     frame    data/chars/hyoga/jumpattack1.png
     frame    data/chars/hyoga/jumpattack2.png
     jumpframe  2 -2 0
-    attack20  62 51 67 26 10 1 0 0 5 12
+    attack4  62 51 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/hyoga/jumpattack3.png
     frame    data/chars/hyoga/jumpattack4.png
@@ -1467,7 +1467,7 @@ anim freespecial7   # Coup de pied haut (haut+a1)
     sound    data/sounds/punch.wav
     frame    data/chars/hyoga/attack42.png
     dropv    4.0 1.0 0.0
-    attack20  62 21 67 26 10 1 0 0 12 20
+    attack7  62 21 67 26 10 1 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/hyoga/attack43.png
     frame    data/chars/hyoga/attack44.png
@@ -1484,7 +1484,7 @@ anim freespecial8       # Balayette (bas+a1)
     sound    data/sounds/punch.wav
     frame    data/chars/hyoga/brush2.png
     dropv    4.0 1.0 0.0
-    attack2  23 100 100 26 10 0 0 0 12 20
+    attack8  23 100 100 26 10 0 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/hyoga/brush3.png
     frame    data/chars/hyoga/brush4.png

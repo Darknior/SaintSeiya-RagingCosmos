@@ -70,6 +70,27 @@ e4icon      647 115
 ## END OF THE COMMANDS USED BY LIFE BAR SCRIPT
 
 ##-----------------------------------------------------
+
+set         Training
+
+maxplayers  4
+#nosame     1        # Empèche de choisir les mm personnages
+
+lives       4
+credits     10
+noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partagés
+cansave     2        # Sauvegarde complète, progression et vies
+
+disablehof  0        # Masque l'écran de Hall of fame
+typemp      1        # Type de récupération de la magie (0 Time /1 Enemy /2 Items)
+custfade	100
+skipselect
+select data/select-all.txt
+
+z           378 484
+file        data/levels/temple1.txt
+end
+
 ##-----------------------------------------------------
 
 set         Story_Mode
@@ -267,38 +288,6 @@ branch      gameover
 scene       data/scenes/gameover.txt
 end
 
-
-##-----------------------------------------------------
-##-----------------------------------------------------
-
-set         Training
-
-maxplayers  4
-#nosame     1        # Empèche de choisir les mm personnages
-
-lives       4
-credits     10
-noshare     1        # Chaqu'un a ses propres continues, ils ne sont pas partagés
-cansave     2        # Sauvegarde complète, progression et vies
-
-disablehof  0        # Masque l'écran de Hall of fame
-typemp      1        # Type de récupération de la magie (0 Time /1 Enemy /2 Items)
-custfade	100
-skipselect
-select data/select-all.txt
-
-#-- Temple 2 Taurus (Toro) --
-
-branch      training
-z           378 484
-file        data/levels/training.txt
-
-branch      gameover
-scene       data/scenes/gameover.txt
-end
-
-
-##-----------------------------------------------------
 ##-----------------------------------------------------
 
 set         1_Road_Tremi-Seiya

@@ -383,7 +383,7 @@ anim runattack # Attaque en courant
     frame    data/chars/shiryu/runattack1.png
     sound    data/chars/shiryu/sounds/runattack.wav
     frame    data/chars/shiryu/runattack2.png
-    attack2  31 13 55 83 10 0 0 0 5 12
+    attack13  31 13 55 83 10 0 0 0 5 12
     dropv    3.0 2 0
     frame    data/chars/shiryu/runattack3.png
     attack2  0
@@ -615,7 +615,7 @@ anim runjump # Saut vers l'avant
     delay    6
     offset   37 146
     bbox     16 13 51 115
-    sound    data/chars/shiryu/sounds/jump1.wav
+    sound    data/chars/seiya/sounds/jump1.wav
     frame    data/chars/shiryu/forwardjump1.png
     frame    data/chars/shiryu/forwardjump2.png
     frame    data/chars/shiryu/forwardjump3.png
@@ -672,7 +672,7 @@ anim jumpattack  # Attaque sautée statique
     frame    data/chars/shiryu/jumpattack1.png
     frame    data/chars/shiryu/jumpattack2.png
     jumpframe  2 0 0
-    attack20  62 21 67 26 10 1 0 0 5 12
+    attack4  62 21 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/shiryu/jumpattack3.png
     frame    data/chars/shiryu/jumpattack3.png
@@ -684,7 +684,7 @@ anim jumpforward  # Attaque sautée vers l avant
     frame    data/chars/shiryu/jumpattack1.png
     frame    data/chars/shiryu/jumpattack2.png
     jumpframe  2 -1 2.5
-    attack20  62 21 67 26 10 1 0 0 5 12
+    attack4  62 21 67 26 10 1 0 0 5 12
     dropv    4.0 1.0 0.0
     frame    data/chars/shiryu/jumpattack3.png
     frame    data/chars/shiryu/jumpattack3.png
@@ -1306,7 +1306,7 @@ anim freespecial7    # Coup de pied haut (haut+a1)
     hitflash flashmedium
     frame    data/chars/shiryu/attack41.png
     frame    data/chars/shiryu/attack42.png
-    attack20  62 21 67 26 10 1 0 0 10 12
+    attack7  62 21 67 26 10 1 0 0 10 12
     dropv    5.0 0.5
     frame    data/chars/shiryu/attack43.png
     frame    data/chars/shiryu/attack44.png
@@ -1321,7 +1321,7 @@ anim freespecial8    # Balayette (bas+a1)
     frame    data/chars/shiryu/slide0.png
     sound    data/sounds/punch.wav
     frame    data/chars/shiryu/slide1.png
-    attack2  23 100 100 26 10 0 0 0 12 20
+    attack8  23 100 100 26 10 0 0 0 12 20
     dropv    5.0 0.5
     frame    data/chars/shiryu/slide2.png
     frame    data/chars/shiryu/slide3.png

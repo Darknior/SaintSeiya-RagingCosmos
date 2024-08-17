@@ -48,7 +48,6 @@ anim runjump
     loop	 0
     delay    1000
     offset   37 146
-    sound    data/chars/shiryu/sounds/jump1.wav
     frame    data/chars/shiryu/forwardjump1.png
     frame    data/chars/shiryu/forwardjump2.png
     frame    data/chars/shiryu/forwardjump3.png
