@@ -407,10 +407,12 @@ anim run # course
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/seiya/run1.png
     sound    data/chars/seiya/sounds/run1.wav
+    @cmd runSplash
     frame    data/chars/seiya/run2.png
     frame    data/chars/seiya/run3.png
     frame    data/chars/seiya/run4.png
     sound    data/chars/seiya/sounds/run2.wav
+    @cmd runSplash
     frame    data/chars/seiya/run5.png
     frame    data/chars/seiya/run6.png
     frame    data/chars/seiya/run7.png

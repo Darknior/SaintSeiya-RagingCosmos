@@ -412,11 +412,13 @@ anim run # course
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 7 10 1 1
     frame    data/chars/ikki/run8.png
     sound   data/chars/ikki/sounds/run1.wav
+    @cmd runSplash
     frame    data/chars/ikki/run1.png
     frame    data/chars/ikki/run2.png
     frame    data/chars/ikki/run3.png
     frame    data/chars/ikki/run4.png
     sound   data/chars/ikki/sounds/run2.wav
+    @cmd runSplash
     frame    data/chars/ikki/run5.png
     frame    data/chars/ikki/run6.png
     frame    data/chars/ikki/run7.png

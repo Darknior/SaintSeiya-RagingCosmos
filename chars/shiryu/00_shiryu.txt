@@ -360,10 +360,12 @@ anim run # course
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/shiryu/run1.png
     sound    data/chars/shiryu/sounds/run1.wav
+    @cmd runSplash
     frame    data/chars/shiryu/run2.png
     frame    data/chars/shiryu/run3.png
     frame    data/chars/shiryu/run4.png
     sound    data/chars/shiryu/sounds/run2.wav
+    @cmd runSplash
     frame    data/chars/shiryu/run5.png
     frame    data/chars/shiryu/run6.png
     frame    data/chars/shiryu/run7.png

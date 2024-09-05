@@ -434,10 +434,12 @@ anim run # course
     @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
     frame    data/chars/hyoga/run1.png
     sound    data/chars/hyoga/sounds/run1.wav
+    @cmd runSplash
     frame    data/chars/hyoga/run2.png
     frame    data/chars/hyoga/run3.png
     frame    data/chars/hyoga/run4.png
     sound    data/chars/hyoga/sounds/run2.wav
+    @cmd runSplash
     frame    data/chars/hyoga/run5.png
     frame    data/chars/hyoga/run6.png
     frame    data/chars/hyoga/run7.png

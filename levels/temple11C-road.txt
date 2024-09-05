@@ -3,11 +3,11 @@ loadingbg		data/sprites/loading/loading_temple11.png 1 -51 405 460 999 999 0
 music		data/music/ikki2.ogg
 background	data/bgs/temple11C-road/empty.png
 panel		data/bgs/temple11C-road/original_doubled-a.png
-#fglayer    data/bgs/temple11C-road/rock.png 20 0 0 0 280 220 0 2 1 1
-#fglayer    data/bgs/temple11C-road/raft.png -300 0.5 0 0 0 0 0 -1 1 1 0 5 2 10 1
 fglayer		data/bgs/temple11C-road/original_doubled-b.png -300 0 0 0 0 0 0 -1 -1 1 0 0 0 0 0 0 1
 fglayer		data/bgs/temple11C-road/original_doubled-c.png -400 0 0 0 0 0 0 -1 -1 1 0 5 2 10 1 0 1
 fglayer		data/bgs/temple11C-road/original_doubled-d.png -150 0 0 0 0 0 0 -1 -1 1 0 0 0 0 0 0 1
+#fglayer    data/bgs/temple11C-road/rock.png 20 0 0 0 280 220 0 2 1 1
+#fglayer    data/bgs/temple11C-road/raft.png -300 0.5 0 0 0 0 0 -1 1 1 0 5 2 10 1
 
 cameratype 1
 
@@ -18,34 +18,11 @@ noreset 2
 order	a
 
 nosave 1
-blocked 1
+#blocked 1
 noslow 1
 updatescript	data/scripts/updatelevel/temple11_water.c
 
 wall	0 500 0 0 350 350 200 1000
-#basemap	1320 300 150 30 22 0
-#basemap	1310 310 150 30 22 0
-#basemap	1300 320 150 30 22 0
-#basemap	1290 330 150 30 22 0
-#basemap	1280 340 150 30 22 0
-#basemap	1270 350 150 30 22 0
-#basemap	1260 360 150 30 22 0
-#basemap	1250 370 150 30 22 0
-#basemap	1240 380 150 30 22 0
-#basemap	1230 390 150 30 22 0
-#basemap	1220 400 150 30 22 0
-#basemap	1210 410 150 30 22 0
-#basemap	1200 420 150 30 22 0
-#basemap	1190 430 150 30 22 0
-#basemap	1180 440 150 30 22 0
-#basemap	1170 450 150 30 22 0
-#basemap	1160 460 150 30 22 0
-#basemap	1150 470 150 30 22 0
-#basemap	1140 480 150 30 22 0
-#basemap	1130 490 150 30 22 0
-#basemap	1120 500 150 30 22 0
-#basemap	1110 510 150 30 22 0
-#basemap	1100 520 150 30 22 0
 
 -------------------------------------
 

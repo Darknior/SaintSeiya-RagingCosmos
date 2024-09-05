@@ -2,6 +2,7 @@
 #import "data/scripts/library/basic.h"
 #import "data/scripts/dialogs/animation.c"
 #import "data/scripts/main_grabs.c"
+#import "data/scripts/updatelevel/temple11_water.c"
 
 void keyint(void Ani, int Frame, void Key, int Hflag)
 {// Change current animation if proper key is pressed or released
@@ -300,4 +301,11 @@ void quake(void type, float intensity, float delay, float duration)
 	setglobalvar("quakeDelay", delay);
 	setglobalvar("quakeDuration", duration);
 	setglobalvar("quakeEnable", openborvariant("elapsed_time"));
+}
+
+void runSplash()
+{
+  if(openborvariant("current_branch") == "temple11"){
+    spawnStrongSplash(getlocalvar("self"));
+  }
 }
