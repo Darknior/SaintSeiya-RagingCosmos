@@ -128,7 +128,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   25 127
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/shaka/idle1.png
 
 
@@ -831,7 +831,7 @@ anim freespecial3 # Shaka hands
     forcedirection -1
     delay    10
     offset    66 149
-    sound data/chars/deathmask/05-spirit.wav
+    sound data/chars/deathmask/sounds/05-spirit.wav
     @cmd     spawnbind "shaka_cosmos" "ANI_IDLE" 0 10 0 0 0
     bbox 39 15 50 130
     frame    data/chars/shaka/special21.png
@@ -903,7 +903,7 @@ anim freespecial5 # Blood Sea
     energycost  50 1
     hitflash shaka_flame
     fastattack 1
-    sound data/chars/deathmask/78-cosmos.wav
+    sound data/chars/deathmask/sounds/78-cosmos.wav
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     summonframe 0 0 0 0 1
@@ -915,11 +915,11 @@ anim freespecial5 # Blood Sea
     attack1 0 0 0 0 0 0 0 0 0 0
     frame    data/chars/shaka/special21.png
     @cmd     spawnScreen "shaka_blood_sea" 0 0 0 0
-    sound data/chars/shaka/sounds/19-lava1.wav
+    sound data/chars/shaka/sounds/18-lava1.wav
     frame    data/chars/shaka/special22.png
     sound data/chars/shaka/sounds/08-goni.wav
     frame    data/chars/shaka/special23.png
-    sound data/chars/shaka/sounds/18-lava2.wav
+    sound data/chars/shaka/sounds/19-lava2.wav
     frame    data/chars/shaka/special24.png
     frame    data/chars/shaka/special25.png
     frame    data/chars/shaka/special26.png
@@ -1032,7 +1032,7 @@ anim freespecial6 # Ten Bu Ho Rin
     hitflash shaka_flame
     fastattack 1
     attack.damage.lethal.disable 1
-    sound data/chars/deathmask/78-cosmos.wav
+    sound data/chars/deathmask/sounds/78-cosmos.wav
     @cmd     spawnScreen "shaka_constellationA" 0 0 0 0
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0

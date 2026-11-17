@@ -115,7 +115,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset     46 119
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame     data/chars/tremi/idle1.png
 
 
@@ -586,7 +586,7 @@ anim riseattack # Arrow defense  (attaque en se relevant)
      offset     52 119
      fastattack 1
      energycost  25 1 0
-     sound data/chars/tremi/sounds/02.wav
+     sound data/chars/tremi/sounds/02-pierce.wav
      summonframe 0 120 0 0
      subentity tremi_multipunch
      unsummonframe 10
@@ -761,7 +761,7 @@ anim freespecial4 # Arrow defense
      delay     10
      offset     52 119
      fastattack 1
-     sound data/chars/tremi/sounds/02.wav
+     sound data/chars/tremi/sounds/02-pierce.wav
      summonframe 0 120 0 0
      subentity tremi_multipunch
      unsummonframe 10

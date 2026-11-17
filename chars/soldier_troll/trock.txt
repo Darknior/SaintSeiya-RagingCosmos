@@ -14,15 +14,15 @@ anim idle
 	delay	1
 	offset     170 110
 #	offset     175 130
-	hitflash fl400
+	hitflash flashmedium
 	attack3  208 107 26 58 10 1 0 0 30
-	frame	data/chars/troll/rock00.gif
+	frame	data/chars/soldier_troll/rock00.gif
 	attack3  0 0 0 0 0 0
-	frame	data/chars/troll/rock00.gif
+	frame	data/chars/soldier_troll/rock00.gif
 	attack3  208 107 26 58 10 1 0 0 30
-	frame	data/chars/troll/rock00.gif
+	frame	data/chars/soldier_troll/rock00.gif
 	attack3  0 0 0 0 0 0
-	frame	data/chars/troll/rock00.gif
+	frame	data/chars/soldier_troll/rock00.gif
 	
 anim fall
 	loop	0

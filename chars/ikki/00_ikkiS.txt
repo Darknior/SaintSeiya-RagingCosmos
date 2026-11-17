@@ -13,7 +13,7 @@ script data/scripts/channel.c
 
 
 palette      data/chars/ikki/palettes/palette1.png
-remap       data/chars/ikki/palettes/palette1.png  # 14 Possible MAX
+alternatepal data/chars/ikki/palettes/palette1.png
 
 
 #-- ANIMATIONS -------------------------------------------------------

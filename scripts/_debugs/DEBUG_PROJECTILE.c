@@ -41,7 +41,7 @@ void debugProjectile()
 			if(playerkeys(0, 1, "esc")){ //ESC KEY IS PRESSED??
 				if(getglobalvar("debugMode") != "on"){ //DEBUG MODE IS DEACTIVATED??
 					changeopenborvariant("slowmotion", 1); //ACTIVATE SLOW MOTION
-					playsample(openborconstant("SAMPLE_BEEP"), 0, openborvariant("effectvol"), openborvariant("effectvol"), 100, 0); //PLAY SAMPLE
+					playsample(openborvariant("global_sample_beep"), 0, openborvariant("effectvol"), openborvariant("effectvol"), 100, 0); //PLAY SAMPLE
 					setglobalvar("activeText", "debugProjectile");
 					setglobalvar("debugMode", "on");
 				}
@@ -50,7 +50,7 @@ void debugProjectile()
 					changeopenborvariant("slowmotion", 0); //DEACTIVATE SLOW MOTION
 					changeopenborvariant("nopause", 0); //UNLOCK PAUSE COMMAND
 					changeopenborvariant("textbox", 0); //CLEAR TEXTBOX TO UNFREEZE THE GAME
-					playsample(openborconstant("SAMPLE_BEEP"), 0, openborvariant("effectvol"), openborvariant("effectvol"), 100, 0); //PLAY SAMPLE
+					playsample(openborvariant("global_sample_beep"), 0, openborvariant("effectvol"), openborvariant("effectvol"), 100, 0); //PLAY SAMPLE
 					setglobalvar("activeText", 0);
 					setglobalvar("debugMode", 0);
 				}

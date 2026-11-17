@@ -14,15 +14,15 @@ anim idle
 	offset     238 181
 	bbox	223 164 32 16
 	@cmd itemText "HEALTH + 300" 0.8 1.5 4
-	frame	data/chars/misc/items/food/chocolateCD01.gif
+	frame	data/chars/misc/items/food/chocolatecd01.gif
       delay   4
-	frame	data/chars/misc/items/food/chocolateCD02.gif
-	frame	data/chars/misc/items/food/chocolateCD01.gif
-	frame	data/chars/misc/items/food/chocolateCD02.gif
-	frame	data/chars/misc/items/food/chocolateCD01.gif
-	frame	data/chars/misc/items/food/chocolateCD02.gif
-	frame	data/chars/misc/items/food/chocolateCD01.gif
-	frame	data/chars/misc/items/food/chocolateCD02.gif
-	frame	data/chars/misc/items/food/chocolateCD01.gif
-	frame	data/chars/misc/items/food/chocolateCD02.gif
-	frame	data/chars/misc/items/food/chocolateCD01.gif
+	frame	data/chars/misc/items/food/chocolatecd02.gif
+	frame	data/chars/misc/items/food/chocolatecd01.gif
+	frame	data/chars/misc/items/food/chocolatecd02.gif
+	frame	data/chars/misc/items/food/chocolatecd01.gif
+	frame	data/chars/misc/items/food/chocolatecd02.gif
+	frame	data/chars/misc/items/food/chocolatecd01.gif
+	frame	data/chars/misc/items/food/chocolatecd02.gif
+	frame	data/chars/misc/items/food/chocolatecd01.gif
+	frame	data/chars/misc/items/food/chocolatecd02.gif
+	frame	data/chars/misc/items/food/chocolatecd01.gif

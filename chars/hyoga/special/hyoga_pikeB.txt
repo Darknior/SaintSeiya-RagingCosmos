@@ -10,7 +10,7 @@ anim	idle
 	offset	111 137
    drawmethod  alpha 1
    drawmethod  scale 1 1
-   sound data/chars/hyoga/sounds/hyoga_502-0.wav
+   sound data/chars/hyoga/sounds/forward_punch.wav
 	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-0.png
 	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-1.png
 	frame	data/chars/hyoga/special/hyoga_pikeB/hyoga_pikeB-2.png

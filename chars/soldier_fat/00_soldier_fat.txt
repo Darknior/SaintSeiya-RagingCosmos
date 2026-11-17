@@ -65,9 +65,6 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
-blood_ground_medium
-
-
 #-- PALETTES --------------------------------------------------------
 
 icon         data/chars/soldier_fat/icon.png 1
@@ -116,7 +113,7 @@ anim follow2
 	delay	15
 	frame	data/chars/soldier_fat/stand1
 	frame	data/chars/soldier_fat/stand2
-	sound	data/voices/01.wav
+	sound	data/sounds/silence.wav
 	frame	data/chars/soldier_fat/stand3
 	frame	data/chars/soldier_fat/stand4
 	frame	data/chars/soldier_fat/stand5
@@ -136,7 +133,7 @@ anim follow3
 	delay	15
 	frame	data/chars/soldier_fat/stand1
 	frame	data/chars/soldier_fat/stand2
-	sound	data/voices/01.wav
+	sound	data/sounds/silence.wav
 	frame	data/chars/soldier_fat/stand3
 	frame	data/chars/soldier_fat/stand4
 	frame	data/chars/soldier_fat/stand5
@@ -187,7 +184,7 @@ anim attack1
 	attack	77 48 117 139 20 1 1 0 20 50
 	frame	data/chars/soldier_fat/at5
 	delay 9
-	sound	data/voices/martello.wav
+	sound	data/chars/soldier_fat/sounds/martello.wav
 	frame	data/chars/soldier_fat/at5
 	delay 10
 	frame	data/chars/soldier_fat/at6
@@ -207,7 +204,7 @@ anim attack2
 	offset 	71 143
 	followanim	4
 	followcond	1
-	hitfx	data/voices/none.wav
+	hitfx	data/sounds/silence.wav
 	frame	data/chars/soldier_fat/scaglia1
 	frame	data/chars/soldier_fat/scaglia2
 	attack	48 64 77 82 1 0 0 0 20 36
@@ -221,7 +218,7 @@ anim follow4
 	loop	0
 	delay	10
 	offset 	71 143
-	hitfx	data/voices/none.wav
+	hitfx	data/sounds/silence.wav
 	frame	data/chars/soldier_fat/scaglia3
 	frame	data/chars/soldier_fat/scaglia4
 	frame	data/chars/soldier_fat/scaglia5
@@ -244,7 +241,7 @@ anim attack3
 	frame	data/chars/soldier_fat/spe1
 	frame	data/chars/soldier_fat/spe2
 	frame	data/chars/soldier_fat/spe3
-   sound data/chars/soldier_fat/sounds/burn.wav
+   sound data/chars/soldier_fat/sounds/hit3.wav
 	frame	data/chars/soldier_fat/spe4
 	frame	data/chars/soldier_fat/spe5
 	frame	data/chars/soldier_fat/spe6
@@ -404,7 +401,7 @@ anim fall
 	frame	data/chars/soldier_fat/vola4
 	delay	12
 	offset	63 145
-   sound data/chars/soldier_fat/sounds/20.wav
+   sound data/chars/soldier_fat/sounds/hit3.wav
 	frame	data/chars/soldier_fat/vola5
 	frame	data/chars/soldier_fat/vola6
 	frame	data/chars/soldier_fat/vola7
@@ -434,7 +431,7 @@ anim fall8 # touche les enemis quand il est projetté
 	frame	data/chars/soldier_fat/vola4
 	delay	12
 	offset	63 145
-   sound data/chars/soldier_fat/sounds/20.wav
+   sound data/chars/soldier_fat/sounds/hit3.wav
 	frame	data/chars/soldier_fat/vola5
 	frame	data/chars/soldier_fat/vola6
 	frame	data/chars/soldier_fat/vola7
@@ -464,7 +461,7 @@ anim fall9 # touche les enemis quand il est projetté
 	frame	data/chars/soldier_fat/vola4
 	delay	12
 	offset	63 145
-   sound data/chars/soldier_fat/sounds/20.wav
+   sound data/chars/soldier_fat/sounds/hit3.wav
 	frame	data/chars/soldier_fat/vola5
 	frame	data/chars/soldier_fat/vola6
 	frame	data/chars/soldier_fat/vola7
@@ -497,4 +494,190 @@ anim    block
 	delay	10
 	frame	data/chars/soldier_fat/subisce4
 
+
+
+# Completed ordinary soldier reaction using native frames.
+	
+anim pain2
+   delay    6
+   offset    42 121
+   bbox 21 10 43 112
+   frame    data/chars/soldier_basic/pain21.png
+   frame    data/chars/soldier_basic/pain22.png
+   frame    data/chars/soldier_basic/pain23.png
+   frame    data/chars/soldier_basic/pain24.png
+   frame    data/chars/soldier_basic/pain23.png
+   frame    data/chars/soldier_basic/pain22.png
+   frame    data/chars/soldier_basic/pain21.png
+
+
+# Completed ordinary soldier reaction using native frames.
+    
+anim pain10# ICE PAIN
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+   frame    data/chars/soldier_basic/pain1.png
+   frame    data/chars/soldier_basic/pain2.png
+   @cmd     spawnbind "hyoga_iceB" "ANI_IDLE" 5 1 1 1 1
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain4.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain2.png
+   delay    300
+   frame    data/chars/soldier_basic/pain1.png
+
+
+# Completed ordinary soldier reaction using native frames.
+   
+anim pain11# ICE PAIN Big
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+   @cmd     spawnbind "hyoga_pike" "ANI_IDLE" 20 1 1 1 1
+   frame    data/chars/soldier_basic/pain1.png
+   frame    data/chars/soldier_basic/pain2.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain4.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain2.png
+   delay    500
+   frame    data/chars/soldier_basic/pain1.png
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain12# ICE PAIN Small
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+   @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+   frame    data/chars/soldier_basic/pain1.png
+   frame    data/chars/soldier_basic/pain2.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain4.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain2.png
+   delay    500
+   frame    data/chars/soldier_basic/pain1.png
+
+
+# Completed ordinary soldier reaction using native frames.
+ 
+anim pain15# BURN PAIN
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "shaka_flame" "ANI_IDLE" -10 1 60 0 0
+   frame    data/chars/soldier_basic/pain1.png
+   frame    data/chars/soldier_basic/pain2.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain4.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain2.png
+   frame    data/chars/soldier_basic/pain1.png
+
+
+# Completed ordinary soldier reaction using native frames.
+  
+anim fall15# BURN PAIN Ground
+    loop    0
+    delay    10
+    offset    98 125
+    bbox 20 34 65 70
+	 landframe 4
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -40 1 50 0 0
+    frame    data/chars/soldier_basic/fall1.png
+    frame    data/chars/soldier_basic/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_basic/fall3.png
+    delay    10
+    frame    data/chars/soldier_basic/fall4.png
+	 bbox 6 93 90 35
+    @cmd     spawnbind "shaka_flame" "ANI_IDLE" -60 1 0 0 0
+    frame    data/chars/soldier_basic/fall8.png	
+
+
+# Completed ordinary soldier reaction using native frames.
+ 
+anim pain20 # Blood pain
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -5 0 5 0 0
+   frame    data/chars/soldier_basic/pain1.png
+   frame    data/chars/soldier_basic/pain2.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain4.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain2.png
+   frame    data/chars/soldier_basic/pain1.png
+
+
+# Completed ordinary soldier reaction using native frames.
+    
+anim fall20 # blood fall
+    delay    10
+    offset    98 125
+	 landframe 4
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    @cmd     spawnbind "blood_projection_big" "ANI_IDLE" -60 0 10 0 0
+	 bbox 20 34 65 70
+    frame    data/chars/soldier_basic/fall1.png
+    frame    data/chars/soldier_basic/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_basic/fall3.png
+    delay    15
+    frame    data/chars/soldier_basic/fall4.png
+	 bbox 6 93 90 35
+    frame    data/chars/soldier_basic/fall8.png	
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain30# Shock Pain
+   loop    0
+   delay    5
+   offset    44 122
+   bbox 21 10 43 112
+   @cmd     spawnbind "shock1" "ANI_IDLE" 10 1 60 0 0
+   frame    data/chars/soldier_basic/pain1.png
+   frame    data/chars/soldier_basic/pain2.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain4.png
+   frame    data/chars/soldier_basic/pain3.png
+   frame    data/chars/soldier_basic/pain2.png
+   frame    data/chars/soldier_basic/pain1.png
+
+
+# Completed ordinary soldier reaction using native frames.
+  
+anim fall30# Shock PAIN Ground
+    loop    0
+    delay    10
+    offset    98 125
+    bbox 20 34 65 70
+	 landframe 4
+    @cmd     spawnbind "dash_dustB" "ANI_IDLE" 0 1 1 1 1 10
+    @cmd     spawnbind "shock1" "ANI_IDLE" -30 1 45 0 0
+    frame    data/chars/soldier_basic/fall1.png
+    frame    data/chars/soldier_basic/fall2.png
+    delay    -1000
+    frame    data/chars/soldier_basic/fall3.png
+    delay    15
+    frame    data/chars/soldier_basic/fall4.png
+	 bbox 6 93 90 35
+    @cmd     spawnbind "shock1" "ANI_IDLE" -60 1 5 0 0
+    frame    data/chars/soldier_basic/fall8.png	
+
+#// Block animations /////////////////////////////////////////////////
 

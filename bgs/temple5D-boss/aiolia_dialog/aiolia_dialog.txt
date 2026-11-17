@@ -10,9 +10,9 @@ anim idle
 	summonframe 0 0 0 0 0
 	custentity dialogbox
 	delay	  500	
-	frame data/bgs/temple5/aiolia_dialog/01.png
-	frame data/bgs/temple5/aiolia_dialog/02.png
-	frame data/bgs/temple5/aiolia_dialog/03.png	
-	frame data/bgs/temple5/aiolia_dialog/04.png
-	frame data/bgs/temple5/aiolia_dialog/05.png
-	frame data/bgs/temple5/aiolia_dialog/06.png
+	frame data/bgs/temple5D-boss/aiolia_dialog/01.png
+	frame data/bgs/temple5D-boss/aiolia_dialog/02.png
+	frame data/bgs/temple5D-boss/aiolia_dialog/03.png	
+	frame data/bgs/temple5D-boss/aiolia_dialog/04.png
+	frame data/bgs/temple5D-boss/aiolia_dialog/05.png
+	frame data/bgs/temple5D-boss/aiolia_dialog/06.png

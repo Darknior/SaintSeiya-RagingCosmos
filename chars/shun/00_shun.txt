@@ -114,7 +114,7 @@ anim waiting # Animation d'attente dans l'écran de sélection
 anim select # Personnage sélectionné
     delay 12
     offset   35 229
-    sound    data/chars/sounds/select-long.wav
+    sound    data/sounds/silence.wav
     frame    data/chars/shun/select/select1.png
     frame    data/chars/shun/select/select2.png
     frame    data/chars/shun/select/select3.png
@@ -630,7 +630,7 @@ anim grabforward  # projection en avant
     frame    data/chars/shun/grabforward3.png
     @cmd     slam 20 2 -3.5 2 0 0
     frame    data/chars/shun/grabforward4.png
-    sound   data/chars/shun/sounds/23-projection2.wav
+    sound   data/chars/seiya/sounds/23-projection2.wav
     delay 15
     frame    data/chars/shun/grabforward5.png
     frame    data/chars/shun/grabforward2.png
@@ -690,7 +690,7 @@ anim jumpland # Aterrissage du saut
     offset    62 131
     @cmd     spawnbind "round_dust" "ANI_IDLE" 0 0 0 0 1
     bbox 38 28 51 107
-    sound data/chars/shun/sounds/jump2.wav
+    sound data/chars/shun/sounds/forward_punch.wav
     frame    data/chars/shun/get1.png
     frame    data/chars/shun/get2.png
     frame    data/chars/shun/get3.png
@@ -1151,7 +1151,7 @@ anim    attackboth  # Attaque de mêlée native (j + a1)
     energycost  20 0 0
     hitflash shun_impactD
     delay 10
-    sound data/chars/shun/sounds/nebular-stream.wav
+    sound data/chars/shun/sounds/forward_punch.wav
     @cmd     spawnbind "shun_storm" "ANI_IDLE" 0 10 0 0 0
     delay 10
     offset    203 310
@@ -1189,7 +1189,7 @@ anim    freespecial2    # Thunder Wave (Avant + Bouton Special)
     frame    data/chars/shun/special1.png
     sound data/chars/shun/sounds/thunder_wave3.wav
     frame    data/chars/shun/special2.png
-    sound data/chars/shun/sounds/02.wav
+    sound data/chars/shun/sounds/forward_punch.wav
     frame    data/chars/shun/special3.png
  	 attack5 150 290 300 30 10 0 0 0 5 30
     frame    data/chars/shun/special4.png

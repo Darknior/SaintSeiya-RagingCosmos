@@ -22,7 +22,7 @@ anim idle
 	seta	110
 	offset	80 70
 	bbox	52 32 60 38
-	sound   data/sounds/wing.wav
+	sound   data/chars/misc/animals/keeper/wing.wav
 	frame	data/chars/eagle/idle1.png
 	frame	data/chars/eagle/idle2.png
 	frame	data/chars/eagle/idle3.png
@@ -41,7 +41,7 @@ anim spawn
 	frame	data/chars/eagle/idle6.png
 	frame	data/chars/eagle/idle7.png
 	frame	data/chars/eagle/idle8.png
-	sound   data/sounds/wing.wav
+	sound   data/chars/misc/animals/keeper/wing.wav
 	frame	data/chars/eagle/idle1.png
 	frame	data/chars/eagle/idle2.png
 	frame	data/chars/eagle/idle3.png
@@ -57,8 +57,8 @@ anim backwalk
 	seta	110
 	offset	80 70
 	bbox	52 32 60 38
-	frame	data/chars/eagle/float1.png
-	frame	data/chars/eagle/float2.png
+	frame	data/chars/misc/animals/eagle3/float1.png
+	frame	data/chars/misc/animals/eagle3/float2.png
 	
 
 anim fall
@@ -67,16 +67,16 @@ anim fall
 	offset	80 70
 	@cmd	degravity 0
 	bbox	52 32 60 38
-	frame	data/chars/eagle/float1.png
-	frame	data/chars/eagle/float2.png
-	frame	data/chars/eagle/float1.png
-	frame	data/chars/eagle/float2.png
+	frame	data/chars/misc/animals/eagle3/float1.png
+	frame	data/chars/misc/animals/eagle3/float2.png
+	frame	data/chars/misc/animals/eagle3/float1.png
+	frame	data/chars/misc/animals/eagle3/float2.png
 
 anim rise
 	delay	6
 	seta	60
 	offset	80 70
-	sound   data/sounds/wing.wav
+	sound   data/chars/misc/animals/keeper/wing.wav
 	frame	data/chars/eagle/idle1.png
 	@cmd	degravity 1
 	@cmd	dasher 0 1 0
@@ -91,7 +91,7 @@ anim rise
 	seta	110
 	@cmd	degravity 0
 	@cmd	dasher 0 0 0
-	sound   data/sounds/wing.wav
+	sound   data/chars/misc/animals/keeper/wing.wav
 	frame	data/chars/eagle/idle1.png
 	frame	data/chars/eagle/idle2.png
 	frame	data/chars/eagle/idle3.png
@@ -125,7 +125,7 @@ anim attack1
 	@cmd	degravity 1
 	@cmd	dasher 3 -3 0
 	attack  80 50 33 26 12 1 0 0 10
-        frame	data/chars/eagle/dive.png
+        frame	data/chars/misc/animals/eagle3/dive.png
 	delay	8
         attack	0
 	@cmd	dasher 0 0 0
@@ -133,7 +133,7 @@ anim attack1
 	frame	data/chars/eagle/idle8.png
 	delay	6
 	@cmd	dasher 0 1.5 0
-	sound   data/sounds/wing.wav
+	sound   data/chars/misc/animals/keeper/wing.wav
 	frame	data/chars/eagle/idle1.png
 	frame	data/chars/eagle/idle2.png
 	frame	data/chars/eagle/idle3.png
@@ -142,7 +142,7 @@ anim attack1
 	frame	data/chars/eagle/idle6.png
 	frame	data/chars/eagle/idle7.png
 	frame	data/chars/eagle/idle8.png
-	sound   data/sounds/wing.wav
+	sound   data/chars/misc/animals/keeper/wing.wav
 	frame	data/chars/eagle/idle1.png
 	frame	data/chars/eagle/idle2.png
 	@cmd	degravity 0

@@ -43,7 +43,7 @@ anim idle
 void self = getlocalvar("self");
 if(frame == 12)
 {
-killentity(self);
+changeentityproperty(self,"lifespancountdown",-1);
 }
 @end_script
 	frame DATA\bgs\salita\enemies\sassi011.gif

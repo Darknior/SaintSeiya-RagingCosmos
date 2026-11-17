@@ -1,3 +1,4 @@
+#import "data/scripts/library/safe_expire.c"
 void main()
 {//Set gradual channel reduction effect in each spawned entity
 	void self		= getlocalvar("self");
@@ -26,8 +27,8 @@ void main()
 		setlocalvar("channel"+self, channel-reduce);
 	}
 	
-	if(getlocalvar("channel"+self) <= 0){killentity(self);}
+	if(getlocalvar("channel"+self) <= 0){expireEntity(self);}
 
 	//REMOVE ALL SHADOW TRAILS WHEN THE ANIMATION ENDS
-	if(vAnim != pAnim){killentity(self);}
+	if(vAnim != pAnim){expireEntity(self);}
 }

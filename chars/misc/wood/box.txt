@@ -12,9 +12,9 @@ anim	idle
 	offset	41 62
 	bbox	0 -10 84 80
 	platform 41 72 -45 -45 45 45 20 50
-	frame	data/chars/misc/box.gif
+	frame	data/chars/misc/wood/box.gif
 
 anim	fall
 	delay	1000
 	offset	41 62
-	frame	data/chars/misc/box.gif
+	frame	data/chars/misc/wood/box.gif

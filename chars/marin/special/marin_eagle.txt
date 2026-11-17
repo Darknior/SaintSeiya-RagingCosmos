@@ -13,7 +13,7 @@ anim	idle
 	delay	8
 	offset	15 80
 	drawmethod alpha 1
-	sound data/chars/marin/05-eagle.wav
+	sound data/chars/marin/sounds/05-eagle.wav
 	attack5 0 0 200 150 20 0 0 0 0 20
 	frame	data/chars/marin/special/marin_eagle/eagle1.png
 	attack5 0	

@@ -15,7 +15,7 @@ score 0 -1 #necessario per evitare life up gratuiti ed inspiegabili
 
 palette data/bgs/foresta/cespu000
 
-#takedamagescript data/bgs/montagna/sasso/montsass.c
+#takedamagescript data/chars/misc/rocks/sasso/montsass.c
 
 anim spawn
 	loop	0
@@ -63,7 +63,7 @@ if(frame==1)
 	}
 if(frame==10)
 {
-killentity(self);
+changeentityproperty(self,"lifespancountdown",-1);
 }
 @end_script
 	frame 	data/bgs/foresta/cespu000

@@ -1,0 +1,24 @@
+{
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "zh",
+    "ru",
+    "ja"
+  ],
+  "translations": {
+    "en": "e34186ed62e1c14697b55ae7e870556e57d0669d8c0db64de1207c13f68c087b",
+    "fr": "8c86acb33e38a2d42b0ca5a2c9f25baadab7e920d8d82c43b9bd5d914faee865",
+    "es": "d557b2aed314dcbd9a1b18ccf217bd5b88bef54b749204285afe04b26f85f80e",
+    "pt": "4d802a88605b5e48653c3e903ab00fea99050b159a36e31a0a66ec55827e267b",
+    "zh": "00576eff55dd4157300ea7d71b3a790ce01cd602c53193647e6aaf2577c1f60d",
+    "ru": "f52ff45400b431345e6c69d5b3941ffbf91bea2a35a76d687d38b1806310a6ab",
+    "ja": "a01c44c3fed0841dc9c5eac0204606c1e5e26fcf4f8b2fd691a723c3b3b87d74"
+  },
+  "pages": 7,
+  "frames": 84,
+  "text_sprites": 658,
+  "total_sprites": 750
+}

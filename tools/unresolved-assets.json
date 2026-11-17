@@ -1,0 +1,2427 @@
+{
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt": [
+    "models.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt": [
+    "models.txt"
+  ],
+  "data/chars/shiryu/special/shiryu_dragon_uppercut.txt": [
+    "models.txt"
+  ],
+  "data/chars/deathmask/special/deathmask_spiral.txt": [
+    "models.txt"
+  ],
+  "data/bgs/temple2A-road/temple2roadsky.txt": [
+    "models.txt"
+  ],
+  "data/levels/temple13B-midboss.txt": [
+    "levels.txt",
+    "levels - Copie.txt"
+  ],
+  "data/levels/temple11B-midboss.txt": [
+    "levels.txt",
+    "levels - Copie.txt"
+  ],
+  "data/levels/temple12B-midboss.txt": [
+    "levels.txt",
+    "levels - Copie.txt"
+  ],
+  "data/levels/temple10B-midboss.txt": [
+    "levels.txt",
+    "levels - Copie.txt"
+  ],
+  "data/levels/temple8B-midboss.txt": [
+    "levels.txt",
+    "levels - Copie.txt"
+  ],
+  "data/levels/temple10A-road.txt": [
+    "levels.txt",
+    "levels - Copie.txt"
+  ],
+  "data/levels/temple12A-road.txt": [
+    "levels.txt",
+    "levels - Copie.txt"
+  ],
+  "data/scenes/end.gif": [
+    "scenes/end.txt"
+  ],
+  "data/music/remix.bor": [
+    "levels/templefinalboss.txt"
+  ],
+  "data/sprites/loading/loading_Seiya.png": [
+    "levels/training.txt"
+  ],
+  "data/music/music2.bor": [
+    "levels/temple9.txt"
+  ],
+  "data/music/boss.bor": [
+    "levels/temple9.txt"
+  ],
+  "data/bgs/temple7D-boss/temple7_columns.png": [
+    "levels/temple7D-boss.txt"
+  ],
+  "data/sprites/loading/loading_Hyoga.png": [
+    "levels/temple7D-boss.txt"
+  ],
+  "data/bgs/loading/Loading4.png": [
+    "scripts/update.c"
+  ],
+  "data/bgs/loading/Loading5.png": [
+    "scripts/update.c"
+  ],
+  "data/bgs/loading/Loading2.png": [
+    "scripts/update.c"
+  ],
+  "data/bgs/loading/Loading3.png": [
+    "scripts/update.c"
+  ],
+  "data/bgs/loading/Loading1.png": [
+    "scripts/update.c"
+  ],
+  "data/sprites/loading/loading_frame_0002.png": [
+    "scripts/loadingold.c"
+  ],
+  "data/sprites/loading/loading_frame_0001.png": [
+    "scripts/loadingold.c"
+  ],
+  "data/sprites/loading/loading_frame_0007.png": [
+    "scripts/loadingold.c"
+  ],
+  "data/sprites/loading/loading_frame_0008.png": [
+    "scripts/loadingold.c"
+  ],
+  "data/sprites/loading/loading_frame_0005.png": [
+    "scripts/loadingold.c"
+  ],
+  "data/sprites/loading/loading_frame_0003.png": [
+    "scripts/loadingold.c"
+  ],
+  "data/sprites/loading/loading_frame_0006.png": [
+    "scripts/loadingold.c"
+  ],
+  "data/sprites/loading/loading_frame_0004.png": [
+    "scripts/loadingold.c"
+  ],
+  "data/bgs/temple1/end_dialogs/2-bis.gif": [
+    "bgs/temple1/temple01_end_dialogs.txt"
+  ],
+  "data/bgs/temple1/end_dialogs/3-bis.gif": [
+    "bgs/temple1/temple01_end_dialogs.txt"
+  ],
+  "data/bgs/temple1/end_dialogs/0-bis.gif": [
+    "bgs/temple1/temple01_end_dialogs.txt"
+  ],
+  "data/bgs/temple1/end_dialogs/1-bis.gif": [
+    "bgs/temple1/temple01_end_dialogs.txt"
+  ],
+  "data/bgs/temple1/end_dialogs/3.gif": [
+    "bgs/temple1/temple01_end_dialogs.txt"
+  ],
+  "data/bgs/temple1/end_dialogs/1.gif": [
+    "bgs/temple1/temple01_end_dialogs.txt"
+  ],
+  "data/bgs/temple1/end_dialogs/2.gif": [
+    "bgs/temple1/temple01_end_dialogs.txt"
+  ],
+  "data/bgs/temple1/end_dialogs/0.gif": [
+    "bgs/temple1/temple01_end_dialogs.txt"
+  ],
+  "data/sounds/sor3_elevator2.wav": [
+    "bgs/temple7A-road/elevator.txt"
+  ],
+  "data/sounds/sor2_elevator2.wav": [
+    "bgs/temple7A-road/elevator.txt"
+  ],
+  "data/sounds/sor3_elevator.wav": [
+    "bgs/temple7A-road/elevator.txt"
+  ],
+  "data/bgs/temple4-road/temple4roadcolumns.png": [
+    "bgs/temple4A-road/temple4roadcolumns.txt"
+  ],
+  "data/bgs/temple3/temple03-cutscene.webm": [
+    "bgs/temple3D-boss/gemini_dialog/gemini_dialog2.txt"
+  ],
+  "data/bgs/temple3/gemini_dialog/05.png": [
+    "bgs/temple3D-boss/gemini_dialog/gemini_dialog2.txt"
+  ],
+  "data/bgs/temple3/gemini_dialog/04.png": [
+    "bgs/temple3D-boss/gemini_dialog/gemini_dialog2.txt",
+    "bgs/temple3D-boss/gemini_dialog/gemini_dialog.txt"
+  ],
+  "data/bgs/temple3/gemini_dialog/06.png": [
+    "bgs/temple3D-boss/gemini_dialog/gemini_dialog2.txt"
+  ],
+  "data/bgs/temple3/gemini_dialog/02.png": [
+    "bgs/temple3D-boss/gemini_dialog/gemini_dialog.txt"
+  ],
+  "data/bgs/temple3/gemini_dialog/01.png": [
+    "bgs/temple3D-boss/gemini_dialog/gemini_dialog.txt"
+  ],
+  "data/bgs/temple3/gemini_dialog/03.png": [
+    "bgs/temple3D-boss/gemini_dialog/gemini_dialog.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog5.png": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog2.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog6.png": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog2.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog7.png": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog2.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialogA.png": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog2.txt"
+  ],
+  "data/bgs/temple2/temple02-cutscene.webm": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog2.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog2.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.png": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog3.png": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog4.png": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog.txt"
+  ],
+  "data/bgs/temple2/aldebaran_dialog/aldebaran_dialog1.png": [
+    "bgs/temple5B-midboss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple3B-midboss/aldebaran_dialog/aldebaran_dialog.txt",
+    "bgs/temple2B-midboss/aldebaran_dialog/aldebaran_dialog.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/11.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog2.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/09.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog2.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/08.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog2.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/10.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog2.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/07.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog2.txt"
+  ],
+  "data/bgs/temple5/temple05-part1.webm": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog2.txt"
+  ],
+  "data/bgs/temple5/temple05-part2.webm": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog2.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/06.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/01.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/04.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/02.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/05.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog.txt"
+  ],
+  "data/bgs/temple5/aiolia_dialog/03.png": [
+    "bgs/temple5D-boss/aiolia_dialog/aiolia_dialog.txt"
+  ],
+  "data/bgs/temple4/heads/heads01_middle.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads01_closed.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads01_open.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads04.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads03.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads08.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads02.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads06.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads07.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/heads05.png": [
+    "bgs/temple4D-boss/heads/temple4_heads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads01_closed.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads01_middle.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads01_open.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads04.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads02.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads06.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads05.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads03.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads07.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads08.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/heads/wallheads09.png": [
+    "bgs/temple4D-boss/heads/temple4_wallheads.txt"
+  ],
+  "data/bgs/temple4/faces/face03.png": [
+    "bgs/temple4D-boss/faces/temple4_faces03.txt"
+  ],
+  "data/bgs/temple4/faces/voices.wav": [
+    "bgs/temple4D-boss/faces/temple4_faces01.txt"
+  ],
+  "data/bgs/temple4/faces/face01.png": [
+    "bgs/temple4D-boss/faces/temple4_faces01.txt"
+  ],
+  "data/bgs/temple4/faces/face02.png": [
+    "bgs/temple4D-boss/faces/temple4_faces02.txt"
+  ],
+  "data/bgs/temple12D-boss/temple12-cutscene.webm": [
+    "bgs/temple12D-boss/aphrodite_dialog/aphrodite_dialog2.txt"
+  ],
+  "data/bgs/temple11D-boss/temple11-cutscene.webm": [
+    "bgs/temple11D-boss/camus_dialog/camus_dialog2.txt"
+  ],
+  "data/bgs/temple7/balance_dialog/03.png": [
+    "bgs/temple7D-boss/balance_dialog/balance_dialog.txt"
+  ],
+  "data/bgs/temple7/balance_dialog/01.png": [
+    "bgs/temple7D-boss/balance_dialog/balance_dialog.txt"
+  ],
+  "data/bgs/temple7/balance_dialog/02.png": [
+    "bgs/temple7D-boss/balance_dialog/balance_dialog.txt"
+  ],
+  "data/bgs/temple7/balance_dialog/04.png": [
+    "bgs/temple7D-boss/balance_dialog/balance_dialog.txt"
+  ],
+  "data/bgs/temple7/balance_dialog/05.png": [
+    "bgs/temple7D-boss/balance_dialog/balance_dialog2.txt"
+  ],
+  "data/bgs/temple10/shura_dialog/01.png": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog.txt"
+  ],
+  "data/bgs/temple10/shura_dialog/05.png": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog.txt"
+  ],
+  "data/bgs/temple10/shura_dialog/04.png": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog.txt"
+  ],
+  "data/bgs/temple10/shura_dialog/03.png": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog.txt"
+  ],
+  "data/bgs/temple10/shura_dialog/02.png": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog.txt",
+    "bgs/temple10D-boss/shura_dialog/shura_dialog2.txt"
+  ],
+  "data/bgs/temple10/shura_dialog/08.png": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog2.txt"
+  ],
+  "data/bgs/temple10/temple10-part2.webm": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog2.txt"
+  ],
+  "data/bgs/temple10/shura_dialog/07.png": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog2.txt"
+  ],
+  "data/bgs/temple10/temple10-part1.webm": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog2.txt"
+  ],
+  "data/bgs/temple10/shura_dialog/06.png": [
+    "bgs/temple10D-boss/shura_dialog/shura_dialog2.txt"
+  ],
+  "data/bgs/temple8/milo_dialog/03.png": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog.txt"
+  ],
+  "data/bgs/temple8/milo_dialog/02.png": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog.txt"
+  ],
+  "data/bgs/temple8/milo_dialog/04.png": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog.txt"
+  ],
+  "data/bgs/temple8/milo_dialog/01.png": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog.txt"
+  ],
+  "data/bgs/temple8/temple08-part2.webm": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog2.txt"
+  ],
+  "data/bgs/temple8/milo_dialog/06.png": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog2.txt"
+  ],
+  "data/bgs/temple8/milo_dialog/07.png": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog2.txt"
+  ],
+  "data/bgs/temple8/milo_dialog/08.png": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog2.txt"
+  ],
+  "data/bgs/temple8/milo_dialog/05.png": [
+    "bgs/temple8D-boss/milo_dialog/milo_dialog2.txt"
+  ],
+  "data/bgs/temple6/shaka_dialog/05.png": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog2.txt"
+  ],
+  "data/bgs/temple6/temple06-part1.webm": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog2.txt"
+  ],
+  "data/bgs/temple6/temple06-part2.webm": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog2.txt"
+  ],
+  "data/bgs/temple6/shaka_dialog/07.png": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog2.txt"
+  ],
+  "data/bgs/temple6/shaka_dialog/08.png": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog2.txt"
+  ],
+  "data/bgs/temple6/shaka_dialog/06.png": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog2.txt"
+  ],
+  "data/bgs/temple6/shaka_dialog/01.png": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog.txt"
+  ],
+  "data/bgs/temple6/shaka_dialog/03.png": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog.txt"
+  ],
+  "data/bgs/temple6/shaka_dialog/04.png": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog.txt"
+  ],
+  "data/bgs/temple6/shaka_dialog/02.png": [
+    "bgs/temple6D-boss/shaka_dialog/shaka_dialog.txt"
+  ],
+  "data/chars/saga/palettes/palettes/palette1.png": [
+    "chars/saga/00_saga.txt"
+  ],
+  "data/chars/aldebaran/palettes/palettes/palette1.png": [
+    "chars/aldebaran/00_aldebaran.txt"
+  ],
+  "data/chars/soldier_basic/palettes/palette1.png": [
+    "chars/soldier_basic/00_soldier_basic.txt",
+    "chars/soldier_basic/00_soldier_pant.txt",
+    "chars/soldier_troll/00_soldier_troll.txt",
+    "chars/soldier_mud/00_soldier_mud.txt",
+    "chars/soldier_fat/00_soldier_pant.txt"
+  ],
+  "data/chars/tremi/sounds/02.wav": [
+    "chars/tremi/00_tremi.txt"
+  ],
+  "data/chars/kiki/palettes/palettes/palette1.png": [
+    "chars/kiki/00_kiki.txt",
+    "chars/kiki/00_kiki2.txt"
+  ],
+  "data/chars/kiki/06-1.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/14-1.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/null.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/17-1.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/11-1.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/18.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/08.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/09.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/17.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/10.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/15.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/16.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/21.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/12.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/11.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/14.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/kiki/07.png": [
+    "chars/kiki/00_kiki.txt"
+  ],
+  "data/chars/soldier_shield/palettes/palette1.png": [
+    "chars/soldier_shield/00_soldier_shield_dress.txt",
+    "chars/soldier_shield/00_soldier_shield.txt"
+  ],
+  "data/chars/deathmask/78-cosmos.wav": [
+    "chars/ikki/00_ikki.txt",
+    "chars/shaka/00_shaka.txt",
+    "chars/aiolia/00_aiolia.txt",
+    "chars/gemini/00_gemini.txt",
+    "chars/hyoga/00_hyoga.txt",
+    "chars/seiya/00_seiya.txt",
+    "chars/shiryu/00_shiryu.txt"
+  ],
+  "data/chars/sounds/select-long.wav": [
+    "chars/ikki/00_ikki.txt",
+    "chars/shun/00_shun.txt",
+    "chars/hyoga/00_hyoga.txt",
+    "chars/shiryu/00_shiryu.txt"
+  ],
+  "data/chars/june/palettes/palettes/palette1.png": [
+    "chars/june/00_june.txt"
+  ],
+  "data/chars/deathmask/palettes/palettes/palette1.png": [
+    "chars/deathmask/00_deathmask.txt"
+  ],
+  "data/chars/agora/03-special.wav": [
+    "chars/agora/00_agora.txt"
+  ],
+  "data/chars/jaki/02.wav": [
+    "chars/jaki/00_jaki.txt"
+  ],
+  "data/chars/asterion/palettes/palettes/palette1.png": [
+    "chars/asterion/00_asterion.txt"
+  ],
+  "data/chars/asterion/03-special.wav": [
+    "chars/asterion/00_asterion.txt"
+  ],
+  "data/chars/shiva/03-special.wav": [
+    "chars/shiva/00_shiva.txt"
+  ],
+  "data/chars/great_pope/palettes/palettes/palette1.png": [
+    "chars/great_pope/00_great_pope.txt"
+  ],
+  "data/chars/great_pope/02.wav": [
+    "chars/great_pope/00_great_pope.txt"
+  ],
+  "data/sounds/guard.wav": [
+    "chars/soldier_troll/00_soldier_troll.txt",
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/sounds/jump.wav": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/sounds/ddie.wav": [
+    "chars/soldier_troll/troll.txt"
+  ],
+  "data/chars/troll/sounds/die.wav": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/death05.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/alter01.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/death04.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/death03.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/death06.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/death02.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/pain101.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/death01.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/alter02.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/bshoc01.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/bshoc02.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/rise02.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/rise03.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/bfire01.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/bfire03.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/rise00.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/fall03.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/rise01.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/idle00.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/fall00.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/fall01.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/bfire04.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/bfire02.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/fall02.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/fox08.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/wk05.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/fox02.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/fox06.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/a101.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/fox07.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/fox01.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/fox03.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/wk07.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/a103.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/fox05.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/misc/fox04.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/a102.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/wk01.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/wk03.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/wk06.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/wk04.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/wk02.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/chars/troll/wk08.gif": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/scripts/ani0020.h": [
+    "chars/soldier_troll/troll.txt",
+    "chars/soldier_mud/mud.txt",
+    "chars/misc/catapult/catapult2.txt",
+    "chars/misc/catapult/catapult.txt",
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/troll/icon.gif": [
+    "chars/soldier_troll/troll2.txt"
+  ],
+  "data/sounds/bigfall.wav": [
+    "chars/soldier_troll/troll2.txt",
+    "chars/misc/stalagtite/stalagtite.txt",
+    "chars/misc/rocks/rocks/rocks.txt",
+    "chars/misc/rocks/rocks/batu.txt"
+  ],
+  "data/chars/athena/palettes/palettes/palette1.png": [
+    "chars/athena/00_athena.txt"
+  ],
+  "data/chars/soldier_base/KO.wav": [
+    "chars/soldier_base/00_soldier_yellow.txt",
+    "chars/soldier_base/00_soldier_white.txt",
+    "chars/soldier_base/00_soldier_yellow_B.txt"
+  ],
+  "data/chars/shaka/sounds/18-lava2.wav": [
+    "chars/shaka/00_shaka.txt"
+  ],
+  "data/chars/shaka/sounds/19-lava1.wav": [
+    "chars/shaka/00_shaka.txt"
+  ],
+  "data/chars/shun/sounds/nebular-stream.wav": [
+    "chars/shun/00_shun.txt"
+  ],
+  "data/chars/shun/sounds/jump2.wav": [
+    "chars/shun/00_shun.txt"
+  ],
+  "data/chars/shun/sounds/02.wav": [
+    "chars/shun/00_shun.txt"
+  ],
+  "data/chars/aphrodite/palettes/palettes/palette1.png": [
+    "chars/aphrodite/00_aphrodite.txt"
+  ],
+  "data/chars/aphrodite/08-lionstar.wav": [
+    "chars/aphrodite/00_aphrodite.txt"
+  ],
+  "data/chars/aldebaran/78-cosmos.wav": [
+    "chars/aphrodite/00_aphrodite.txt",
+    "chars/milo/00_milo.txt"
+  ],
+  "data/chars/camus/palettes/palettes/palette1.png": [
+    "chars/camus/00_camus.txt"
+  ],
+  "data/chars/cassios/icon.png": [
+    "chars/cassios/00_cassiosp.txt"
+  ],
+  "data/chars/cassios/02.wav": [
+    "chars/cassios/00_cassiosp.txt",
+    "chars/cassios/00_cassios.txt"
+  ],
+  "data/chars/cassios/palettes/palettes/palette1.png": [
+    "chars/cassios/00_cassios.txt"
+  ],
+  "data/scripts/player_ondrawscript.c": [
+    "chars/soldier_mud/mud.txt",
+    "chars/misc/ghoul/ghoul.txt",
+    "chars/misc/animals/frog/frog.txt"
+  ],
+  "data/chars/misc/empty/empty.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/testpal2.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death15.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death11.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death16.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death10.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death14.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death12.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death13.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/spawn1.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/spawn4.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death2.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death3.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death6.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/spawn2.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death7.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/spawn3.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death5.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death1.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/death4.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/idle4.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/idle1.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/walk2.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/walk1.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/walk3.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/idle3.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/idle2.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/walk4.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/walk6.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/walk5.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/light.wav": [
+    "chars/soldier_mud/mud.txt",
+    "chars/soldier_mud/00_soldier_mud.txt"
+  ],
+  "data/chars/mud/atk2.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/atk3.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/icon.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/atk5.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/atk4.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/atk1.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/chars/mud/atk6.gif": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/sounds/chidie.wav": [
+    "chars/soldier_mud/mud.txt"
+  ],
+  "data/sounds/hit1.wav": [
+    "chars/soldier_mud/mud.txt",
+    "chars/soldier_mud/00_soldier_mud.txt"
+  ],
+  "data/chars/soldier_muscles/palettes/palette1.png": [
+    "chars/soldier_muscles/00_soldier_muscles.txt"
+  ],
+  "data/chars/milo/palettes/palettes/palette1.png": [
+    "chars/milo/00_milo.txt"
+  ],
+  "data/chars/milo/sounds/scarlet-needle2.wav": [
+    "chars/milo/00_milo.txt"
+  ],
+  "data/chars/milo/15-explosion.wav": [
+    "chars/milo/00_milo.txt"
+  ],
+  "data/chars/milo/04-swing.wav": [
+    "chars/milo/00_milo.txt"
+  ],
+  "data/chars/soldier_fat/sounds/burn.wav": [
+    "chars/soldier_fat/00_soldier_fat.txt"
+  ],
+  "data/chars/soldier_fat/sounds/20.wav": [
+    "chars/soldier_fat/00_soldier_fat.txt"
+  ],
+  "data/voices/none.wav": [
+    "chars/soldier_fat/00_soldier_fat.txt",
+    "chars/misc/pieges/pic/spine.txt"
+  ],
+  "data/voices/01.wav": [
+    "chars/soldier_fat/00_soldier_fat.txt"
+  ],
+  "data/chars/sirius/03-special.wav": [
+    "chars/sirius/00_sirius.txt"
+  ],
+  "data/chars/gemini/palettes/palettes/palette1.png": [
+    "chars/gemini/00_gemini.txt"
+  ],
+  "data/sounds/grab2.wav": [
+    "chars/seiya/00_seiya.txt"
+  ],
+  "data/sounds/shiryu/kick.wav": [
+    "chars/shiryu/00_shiryu.txt"
+  ],
+  "data/chars/select.wav": [
+    "chars/shiryu/00_shiryu.txt"
+  ],
+  "data/chars/tremi/05-slash.wav": [
+    "chars/tremi/special/tremi_slash.txt"
+  ],
+  "data/chars/shura/05-slash.wav": [
+    "chars/shura/special/shura_explosion.txt"
+  ],
+  "data/chars/marin/sounds/01-uppercutB.wav": [
+    "chars/ikki/special/ikki_uppercutB.txt"
+  ],
+  "data/chars/ikki/sounds/01-laser.wav": [
+    "chars/ikki/special/ikki_impact.txt"
+  ],
+  "data/sounds/none.wav": [
+    "chars/june/special/june_whip.txt",
+    "chars/deathmask/special/deathmask_spirit.txt"
+  ],
+  "data/bgs/temple5/scene3.webm": [
+    "chars/dialogs/temple5D/dialog_aiolia3.txt"
+  ],
+  "data/bgs/temple5/scene4.webm": [
+    "chars/dialogs/temple5D/dialog_aiolia3.txt"
+  ],
+  "data/bgs/temple5/scene2.webm": [
+    "chars/dialogs/temple5D/dialog_aiolia3.txt"
+  ],
+  "data/bgs/temple5/scene1.webm": [
+    "chars/dialogs/temple5D/dialog_aiolia3.txt"
+  ],
+  "data/bgs/temple2/scene1.webm": [
+    "chars/dialogs/temple2D/dialog_aldebaran2.txt"
+  ],
+  "data/bgs/temple2/scene2.webm": [
+    "chars/dialogs/temple2D/dialog_aldebaran2.txt"
+  ],
+  "data/bgs/temple12/scene1.webm": [
+    "chars/dialogs/temple12D/dialog_aphrodite2.txt"
+  ],
+  "data/bgs/temple12/scene2.webm": [
+    "chars/dialogs/temple12D/dialog_aphrodite2.txt"
+  ],
+  "data/bgs/temple12/Roses/voices.wav": [
+    "chars/dialogs/temple12D/00_aphrodite_idle.txt"
+  ],
+  "data/bgs/temple10/scene2.webm": [
+    "chars/dialogs/temple10D/dialog_shura2.txt"
+  ],
+  "data/bgs/temple10/scene1.webm": [
+    "chars/dialogs/temple10D/dialog_shura2.txt"
+  ],
+  "data/bgs/temple10/scene4.webm": [
+    "chars/dialogs/temple10D/dialog_shura3.txt"
+  ],
+  "data/bgs/temple10/scene3.webm": [
+    "chars/dialogs/temple10D/dialog_shura3.txt"
+  ],
+  "data/bgs/temple4/scene1.webm": [
+    "chars/dialogs/temple4D/dialog_deathmask2.txt"
+  ],
+  "data/bgs/temple4/scene2.webm": [
+    "chars/dialogs/temple4D/dialog_deathmask2.txt"
+  ],
+  "data/bgs/temple8/scene4.webm": [
+    "chars/dialogs/temple8D/dialog_milo3.txt"
+  ],
+  "data/bgs/temple8/scene3.webm": [
+    "chars/dialogs/temple8D/dialog_milo3.txt"
+  ],
+  "data/bgs/temple8/scene2.webm": [
+    "chars/dialogs/temple8D/dialog_milo2.txt"
+  ],
+  "data/bgs/temple8/scene1.webm": [
+    "chars/dialogs/temple8D/dialog_milo2.txt"
+  ],
+  "data/bgs/temple3/scene2.webm": [
+    "chars/dialogs/temple3D/dialog_gemini2.txt"
+  ],
+  "data/bgs/temple3/scene1.webm": [
+    "chars/dialogs/temple3D/dialog_gemini2.txt"
+  ],
+  "data/bgs/temple11/scene1.webm": [
+    "chars/dialogs/temple11D/dialog_camus2.txt"
+  ],
+  "data/bgs/temple11/scene2.webm": [
+    "chars/dialogs/temple11D/dialog_camus2.txt"
+  ],
+  "data/chars/hand/death7.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/death5.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/death3.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/death6.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/death2.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/seiya/empty.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/death1.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/death4.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/walk1.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/walk0.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/walk2.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/map1.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/chars/hand/icon.gif": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/sounds/shaah.wav": [
+    "chars/deathmask/special/deathmask_bloodhand/hand.txt"
+  ],
+  "data/sounds/fbhit.wav": [
+    "chars/misc/catapult/rock3.txt",
+    "chars/misc/catapult/burnrock.txt"
+  ],
+  "data/sounds/gre.wav": [
+    "chars/misc/catapult/rock3.txt"
+  ],
+  "data/chars/Catapult/pain8.gif": [
+    "chars/misc/catapult/catapult2.txt",
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/pain5.gif": [
+    "chars/misc/catapult/catapult2.txt",
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/pain7.gif": [
+    "chars/misc/catapult/catapult2.txt",
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/pain6.gif": [
+    "chars/misc/catapult/catapult2.txt",
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk1.gif": [
+    "chars/misc/catapult/catapult2.txt",
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/sounds/klunk.wav": [
+    "chars/misc/catapult/catapult2.txt",
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk2-3.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk2-5.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk2-1.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk2-2.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk2-4.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk6.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk3.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk2.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/icon.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk5.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/Catapult/atk4.gif": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/chars/antimf/boom.wav": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/sounds/cat.wav": [
+    "chars/misc/catapult/catapult.txt"
+  ],
+  "data/sounds/catex.wav": [
+    "chars/misc/catapult/catex.txt"
+  ],
+  "data/scripts/lescript.c": [
+    "chars/misc/catapult/burnrock.txt",
+    "chars/misc/traps/genbucart.txt",
+    "chars/misc/animals/spider/lilspider.txt",
+    "chars/misc/animals/frog/frog.txt",
+    "chars/misc/animals/fox/fox.txt",
+    "chars/misc/animals/pig/pig.txt"
+  ],
+  "data/sounds/villag~1.wav": [
+    "chars/misc/villager/dummy.txt"
+  ],
+  "data/chars/misc/buble2.GIF": [
+    "chars/misc/villager/crowd.txt"
+  ],
+  "data/chars/misc/buble3.GIF": [
+    "chars/misc/villager/crowd.txt"
+  ],
+  "data/chars/misc/buble4.GIF": [
+    "chars/misc/villager/crowd.txt"
+  ],
+  "data/chars/misc/buble5.GIF": [
+    "chars/misc/villager/crowd.txt"
+  ],
+  "data/chars/misc/buble8.GIF": [
+    "chars/misc/villager/crowd.txt"
+  ],
+  "data/chars/misc/buble6.GIF": [
+    "chars/misc/villager/crowd.txt"
+  ],
+  "data/chars/misc/buble7.GIF": [
+    "chars/misc/villager/crowd.txt"
+  ],
+  "data/sounds/impact.wav": [
+    "chars/misc/flash/impact.txt"
+  ],
+  "data/chars/ghoul/attack2.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/attack1.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/sounds/holdpersonFX.wav": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/attack3.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/attack4.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/attack5.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/spawn2.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/spawn5.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/spawn1.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/spawn3.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/spawn4.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/spawn6.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/idle4.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/pain1.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/pain2.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/walk3.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/walk5.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/walk6.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/rise1.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/rise2.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/walk4.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/walk2.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/walk1.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/idle2.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/fall1.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/idle3.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/fall2.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/idle1.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/chars/ghoul/rise3.png": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/sounds/monsdie4.wav": [
+    "chars/misc/ghoul/ghoul.txt"
+  ],
+  "data/sounds/Slash1.wav": [
+    "chars/misc/ghoul/ghoul.txt",
+    "chars/misc/traps/bigspike.txt"
+  ],
+  "data/sounds/chinlong.wav": [
+    "chars/misc/effe0001/0001.txt"
+  ],
+  "data/sounds/zoom02.wav": [
+    "chars/misc/beam/beam.txt"
+  ],
+  "data/scripts/sceneFX.c": [
+    "chars/misc/beam/beam.txt"
+  ],
+  "data/scripts/oscript.c": [
+    "chars/misc/traps/rocker.txt"
+  ],
+  "data/sounds/trap2.wav": [
+    "chars/misc/traps/bigspike.txt"
+  ],
+  "data/chars/misc/trap2/06.gif": [
+    "chars/misc/traps/trap2.txt",
+    "chars/misc/traps/trap7.txt"
+  ],
+  "data/chars/misc/trap2/04.gif": [
+    "chars/misc/traps/trap2.txt",
+    "chars/misc/traps/trap7.txt"
+  ],
+  "data/chars/misc/trap2/02.gif": [
+    "chars/misc/traps/trap2.txt",
+    "chars/misc/traps/trap7.txt"
+  ],
+  "data/chars/misc/trap2/00.gif": [
+    "chars/misc/traps/trap2.txt",
+    "chars/misc/traps/trap7.txt"
+  ],
+  "data/chars/misc/trap2/05.gif": [
+    "chars/misc/traps/trap2.txt",
+    "chars/misc/traps/trap7.txt"
+  ],
+  "data/chars/misc/trap2/03.gif": [
+    "chars/misc/traps/trap2.txt",
+    "chars/misc/traps/trap7.txt"
+  ],
+  "data/chars/misc/trap2/01.gif": [
+    "chars/misc/traps/trap2.txt",
+    "chars/misc/traps/trap7.txt"
+  ],
+  "data/sounds/burn01.wav": [
+    "chars/misc/traps/trap2.txt",
+    "chars/misc/traps/trap7.txt"
+  ],
+  "data/sounds/FBXplos.wav": [
+    "chars/misc/traps/geyser.txt"
+  ],
+  "data/sounds/burnt.wav": [
+    "chars/misc/traps/geyser.txt"
+  ],
+  "data/scripts/common/etakehit.c": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/chars/skeleton/skeletoc.c": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/scripts/common/e_common.c": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/scripts/common/eobws.c": [
+    "chars/misc/skelescu/skelescu.txt",
+    "chars/misc/animals/insects/blatta/blatta.txt",
+    "chars/misc/animals/rat/rat1/topo.txt"
+  ],
+  "data/voices/contrast.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/voices/blocked.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/voices/skedie.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/audio/swish1.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/audio/swish4.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/audio/hit4.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/voices/38.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/voices/32.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/voices/36.wav": [
+    "chars/misc/skelescu/skelescu.txt"
+  ],
+  "data/chars/misc/guci.gif": [
+    "chars/misc/wood/guci.txt"
+  ],
+  "data/sounds/glass.wav": [
+    "chars/misc/wood/guci.txt",
+    "chars/misc/wood/guci2.txt"
+  ],
+  "data/sounds/wood.wav": [
+    "chars/misc/wood/rollbarrel.txt",
+    "chars/misc/wood/barrel.txt",
+    "chars/misc/wood/box.txt",
+    "chars/misc/wood/fence.txt"
+  ],
+  "data/chars/misc/boxicon.gif": [
+    "chars/misc/wood/box.txt"
+  ],
+  "data/chars/misc/gucicon.png": [
+    "chars/misc/wood/guci2.txt"
+  ],
+  "data/chars/misc/fencicon.png": [
+    "chars/misc/wood/fence.txt"
+  ],
+  "data/sounds/rocks.wav": [
+    "chars/misc/stalagtite/stalagtite.txt",
+    "chars/misc/rocks/rocks/rocks.txt",
+    "chars/misc/rocks/rocks/batu.txt"
+  ],
+  "data/chars/esqueleto/idle2.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/esqueleto/fall1.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/esqueleto/rise3.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/esqueleto/rise2.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/esqueleto/rise1.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/esqueleto/pain0.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/esqueleto/fall2.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/esqueleto/idle1.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/esqueleto/icon.gif": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/voices/skul.wav": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/voices/roul.wav": [
+    "chars/misc/esqueleto/esqueleto.txt"
+  ],
+  "data/chars/villager/female/stomp1.gif": [
+    "chars/misc/villager/female/female.txt"
+  ],
+  "data/chars/villager/female/stomp2.gif": [
+    "chars/misc/villager/female/female.txt"
+  ],
+  "data/sounds/female.wav": [
+    "chars/misc/villager/female/female.txt",
+    "chars/misc/villager/female/female2.txt"
+  ],
+  "data/chars/villager/female/r0.gif": [
+    "chars/misc/villager/female/female2.txt"
+  ],
+  "data/chars/villager/female/r1.gif": [
+    "chars/misc/villager/female/female2.txt"
+  ],
+  "data/chars/villager/female/r3.gif": [
+    "chars/misc/villager/female/female2.txt"
+  ],
+  "data/chars/villager/female/r4.gif": [
+    "chars/misc/villager/female/female2.txt"
+  ],
+  "data/chars/villager/female/r2.gif": [
+    "chars/misc/villager/female/female2.txt"
+  ],
+  "data/chars/villager/oldman/alt1.gif": [
+    "chars/misc/villager/oldman/oldman.txt"
+  ],
+  "data/chars/villager/oldman/r2.gif": [
+    "chars/misc/villager/oldman/oldman.txt"
+  ],
+  "data/chars/villager/oldman/r4.gif": [
+    "chars/misc/villager/oldman/oldman.txt"
+  ],
+  "data/chars/villager/oldman/r3.gif": [
+    "chars/misc/villager/oldman/oldman.txt"
+  ],
+  "data/chars/villager/oldman/r0.gif": [
+    "chars/misc/villager/oldman/oldman.txt"
+  ],
+  "data/chars/villager/oldman/r1.gif": [
+    "chars/misc/villager/oldman/oldman.txt"
+  ],
+  "data/chars/villager/kid/alt1.gif": [
+    "chars/misc/villager/kid/kid.txt"
+  ],
+  "data/chars/villager/kid/alt2.gif": [
+    "chars/misc/villager/kid/kid.txt"
+  ],
+  "data/chars/villager/kid/r1.gif": [
+    "chars/misc/villager/kid/kid.txt"
+  ],
+  "data/chars/villager/kid/r3.gif": [
+    "chars/misc/villager/kid/kid.txt"
+  ],
+  "data/chars/villager/kid/r0.gif": [
+    "chars/misc/villager/kid/kid.txt"
+  ],
+  "data/chars/villager/kid/r4.gif": [
+    "chars/misc/villager/kid/kid.txt"
+  ],
+  "data/chars/villager/kid/r2.gif": [
+    "chars/misc/villager/kid/kid.txt"
+  ],
+  "data/chars/villager/male/r4.gif": [
+    "chars/misc/villager/male/male2.txt"
+  ],
+  "data/chars/villager/male/r3.gif": [
+    "chars/misc/villager/male/male2.txt"
+  ],
+  "data/chars/villager/male/r1.gif": [
+    "chars/misc/villager/male/male2.txt"
+  ],
+  "data/chars/villager/male/r0.gif": [
+    "chars/misc/villager/male/male2.txt"
+  ],
+  "data/chars/villager/male/r2.gif": [
+    "chars/misc/villager/male/male2.txt"
+  ],
+  "data/chars/villager/male/stomp2.gif": [
+    "chars/misc/villager/male/male.txt"
+  ],
+  "data/chars/villager/male/stomp1.gif": [
+    "chars/misc/villager/male/male.txt"
+  ],
+  "data/sounds/male.wav": [
+    "chars/misc/villager/male/male.txt"
+  ],
+  "data/chars/misc/playno/empty.gif": [
+    "chars/misc/lights/sunlight/special.txt"
+  ],
+  "data/chars/misc/playno/4.gif": [
+    "chars/misc/lights/sunlight/special.txt"
+  ],
+  "data/chars/misc/playno/2.gif": [
+    "chars/misc/lights/sunlight/special.txt"
+  ],
+  "data/chars/misc/playno/5.gif": [
+    "chars/misc/lights/sunlight/special.txt"
+  ],
+  "data/chars/misc/playno/1.gif": [
+    "chars/misc/lights/sunlight/special.txt"
+  ],
+  "data/chars/misc/playno/6.gif": [
+    "chars/misc/lights/sunlight/special.txt"
+  ],
+  "data/chars/misc/playno/3.gif": [
+    "chars/misc/lights/sunlight/special.txt"
+  ],
+  "data/voices/cassabr.wav": [
+    "chars/misc/pieges/pic/spine.txt"
+  ],
+  "data/chars/2bug8/idle01.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/idle02.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/empty.gif": [
+    "chars/misc/animals/taureau/bull2.txt"
+  ],
+  "data/chars/2bug8/wk05.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/map1.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/wk01.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/map2.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/wk02.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/wk03.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/wk04.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/map3.gif": [
+    "chars/misc/animals/taureau/bull2.txt",
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/sounds/bull1.wav": [
+    "chars/misc/animals/taureau/bull2.txt"
+  ],
+  "data/chars/2bug8/rise03.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/idle04.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/rise01.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/rise02.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/idle05.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/rise04.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/idle06.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/idle03.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/fall2.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/fall3.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/pain3.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/pain1.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/fall4.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/pain2.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/fall1.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/fall5.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/pain0.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/b06.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/b03.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/b05.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/a01.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/a06.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/a04.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/b04.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/a05.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/b02.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/a03.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/b01.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/2bug8/a02.gif": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/sounds/Tiger2.wav": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/sounds/beat2.wav": [
+    "chars/misc/animals/taureau/bull.txt",
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/sounds/bull2.wav": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/sounds/beat3.wav": [
+    "chars/misc/animals/taureau/bull.txt",
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/sounds/bear3.wav": [
+    "chars/misc/animals/taureau/bull.txt"
+  ],
+  "data/chars/eagle/idle4.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/idle3.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/idle6.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/idle7.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/fall1.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/iconD.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/idle1.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/idle2.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/idle8.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/fall3.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/fall2.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/idle5.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/chars/eagle/icon.png": [
+    "chars/misc/animals/eagle3/eagle.txt"
+  ],
+  "data/scripts/enemy.c": [
+    "chars/misc/animals/eagle3/eagle.txt",
+    "chars/misc/animals/bat2/bat.txt"
+  ],
+  "data/chars/creatures/keeper/death7.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/death8.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/death1.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/death2.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/death6.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/attack.wav": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/death4.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/death3.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/death5.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/idle3.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/pain1.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/pain2.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/pain4.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/idle4.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/idle1.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/pain3.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/idle2.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/fall.wav": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/map2.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/chars/creatures/keeper/icon.png": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/scripts/escript.h": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/sounds/efall.wav": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/sounds/shock.wav": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/sounds/bite.wav": [
+    "chars/misc/animals/keeper/keeper.txt"
+  ],
+  "data/sounds/frog.wav": [
+    "chars/misc/animals/frog/frog.txt"
+  ],
+  "data/chars/bat/iconD.png": [
+    "chars/misc/animals/bat2/bat.txt"
+  ],
+  "data/chars/bat/icon.png": [
+    "chars/misc/animals/bat2/bat.txt"
+  ],
+  "data/scripts/water_puddle_script.c": [
+    "chars/misc/animals/frog2/frog2.txt"
+  ],
+  "data/chars/2bug7/idle01.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/rise04.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/rise01.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/idle02.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/idle03.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/rise03.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/rise02.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/pain3.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/fall3.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/pain1.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/fall5.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/pain2.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/fall4.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/fall1.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/pain0.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/fall2.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/wk03.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/wk05.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/map3.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/wk01.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/wk04.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/wk02.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b05.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/a08.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b02.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/a03.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/a01.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b10.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/a06.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b06.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/a07.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b01.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/a02.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/a04.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b09.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b03.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/a05.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b11.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b08.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b07.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/chars/2bug7/b04.gif": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/sounds/frog1.wav": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/sounds/frog2.wav": [
+    "chars/misc/animals/frog2/frog2.txt",
+    "chars/misc/animals/frog2/frog.txt"
+  ],
+  "data/sounds/hoof2.wav": [
+    "chars/misc/animals/horse/horserun.txt",
+    "chars/misc/animals/horse/kudarun.txt"
+  ],
+  "data/chars/2bug10/idle02.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/idle07.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/idle05.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/idle01.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/idle03.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/idle08.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/idle06.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/idle04.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/pain2.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/pain5.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/pain4.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/empty.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/pain6.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/pain7.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/pain1.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/pain3.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/pain8.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/map2.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/map1.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/a03.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/a04.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/a01.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/b07.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/a02.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/a05.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/b03.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/b06.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/b04.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/b05.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/a06.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/a07.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/b02.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/a08.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/2bug10/b01.gif": [
+    "chars/misc/animals/piranha/pirax.txt"
+  ],
+  "data/chars/scorp/pain101.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/alter02.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/alter01.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/idle00.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/fall02.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/fall00.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/fall01.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/rise03.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/rise01.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/idle01.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/fall03.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/rise00.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/rise02.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/icon.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/a101.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/a103.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/wk01.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/a102.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/scorp/wk02.gif": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/sounds/scorp01.wav": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/scripts/ndamage.c": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/sounds/fall01.wav": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/sounds/hit01.wav": [
+    "chars/misc/animals/scorp/scorp.txt",
+    "chars/misc/traps/trap4/trap9.txt",
+    "chars/misc/traps/trap4/trap4.txt",
+    "chars/misc/traps/trunk/trunk.txt"
+  ],
+  "data/sounds/pdie1.wav": [
+    "chars/misc/animals/scorp/scorp.txt"
+  ],
+  "data/chars/2bug6/idle01.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/idle03.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/idle08.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/idle04.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/idle07.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/idle06.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/idle02.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/a03.gif": [
+    "chars/misc/animals/eagle2/eagle.txt",
+    "chars/misc/animals/eagle2/eagle2.txt"
+  ],
+  "data/chars/2bug6/b03.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/b11.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/a01.gif": [
+    "chars/misc/animals/eagle2/eagle.txt",
+    "chars/misc/animals/eagle2/eagle2.txt"
+  ],
+  "data/chars/2bug6/a05.gif": [
+    "chars/misc/animals/eagle2/eagle.txt",
+    "chars/misc/animals/eagle2/eagle2.txt"
+  ],
+  "data/chars/2bug6/b04.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/b02.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/a06.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/b09.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/b08.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/b10.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/a04.gif": [
+    "chars/misc/animals/eagle2/eagle.txt",
+    "chars/misc/animals/eagle2/eagle2.txt"
+  ],
+  "data/chars/2bug6/b06.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/b01.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/b05.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/a08.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/chars/2bug6/a02.gif": [
+    "chars/misc/animals/eagle2/eagle.txt",
+    "chars/misc/animals/eagle2/eagle2.txt"
+  ],
+  "data/chars/2bug6/b07.gif": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/sounds/Eagle1.wav": [
+    "chars/misc/animals/eagle2/eagle.txt",
+    "chars/misc/animals/eagle2/eagle2.txt"
+  ],
+  "data/sounds/Eagle3.wav": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/sounds/Eagle2.wav": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/sounds/sl1.wav": [
+    "chars/misc/animals/eagle2/eagle.txt"
+  ],
+  "data/scripts/common/decortn.c": [
+    "chars/misc/animals/birds/poussin/pulcino.txt",
+    "chars/misc/animals/birds/condor/avvolt.txt",
+    "chars/misc/wood/wheel/ruota.txt",
+    "chars/misc/fire/ceppi/ceppi.txt",
+    "chars/misc/fire/ceppi/cfiam.txt"
+  ],
+  "data/scripts/common/H/enemies/selfkill.H": [
+    "chars/misc/animals/birds/hibou/gufoc.c"
+  ],
+  "data/scripts/common/H/enemies/vel.H": [
+    "chars/misc/animals/birds/hibou/gufoc.c"
+  ],
+  "data/voices/giara.wav": [
+    "chars/misc/rocks/terracot/terracot.txt"
+  ],
+  "data/chars/misc/Rocks/death15.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death10.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death01.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death07.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death11.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death04.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death03.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death05.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death06.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death16.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death12.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death13.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death14.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/death02.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/chars/misc/Rocks/idle.gif": [
+    "chars/misc/rocks/rocks/rocks.txt"
+  ],
+  "data/voices/14sass.wav": [
+    "chars/misc/rocks/falling/premass.txt"
+  ],
+  "data/bgs/salita/enemies/massoc.c": [
+    "chars/misc/rocks/rolling/masso.txt",
+    "chars/misc/wood/rolling/tronco.txt"
+  ],
+  "data/voices/15mac.wav": [
+    "chars/misc/rocks/rolling/masso.txt"
+  ],
+  "data/chars/misc/trap4/00.gif": [
+    "chars/misc/traps/trap4/trap9.txt",
+    "chars/misc/traps/trap4/trap4.txt"
+  ],
+  "data/chars/misc/trunk/03.gif": [
+    "chars/misc/traps/trunk/trunk.txt"
+  ],
+  "data/chars/misc/trunk/02.gif": [
+    "chars/misc/traps/trunk/trunk.txt"
+  ],
+  "data/chars/misc/trunk/04.gif": [
+    "chars/misc/traps/trunk/trunk.txt"
+  ],
+  "data/chars/misc/trunk/01.gif": [
+    "chars/misc/traps/trunk/trunk.txt"
+  ],
+  "data/voices/tFX.wav": [
+    "chars/misc/wood/rolling/tronco.txt"
+  ],
+  "data/chars/marin/05-eagle.wav": [
+    "chars/marin/special/marin_eagle.txt"
+  ],
+  "data/chars/marin/01-storm.wav": [
+    "chars/marin/special/marin_circle.txt"
+  ],
+  "data/chars/shun/sounds/01-chain2.wav": [
+    "chars/shun/special/shun_chain.txt"
+  ],
+  "data/chars/camus/06-ice_peak.wav": [
+    "chars/camus/special/camus_icecrystal.txt"
+  ],
+  "data/chars/camus/04-ice_star.wav": [
+    "chars/camus/special/camus_ice_star.txt"
+  ],
+  "data/chars/aiolia/04-swing.wav": [
+    "chars/aiolia/special/aiolia_explosion.txt"
+  ],
+  "data/chars/sirius/05-ray.wav": [
+    "chars/sirius/special/sirius_ray.txt"
+  ],
+  "data/chars/hyoga/sounds/hyoga_502-0.wav": [
+    "chars/hyoga/special/hyoga_pikeB.txt",
+    "chars/hyoga/special/hyoga_swing.txt"
+  ],
+  "data/chars/seiya/special/seiya_aura_air_ryuseiken/aura_air_ryuseiken0.png": [
+    "chars/seiya/special/seiya_aura_air_ryuseiken.txt"
+  ],
+  "data/chars/seiya/special/seiya_aura_air_ryuseiken/aura_air_ryuseiken1.png": [
+    "chars/seiya/special/seiya_aura_air_ryuseiken.txt"
+  ],
+  "data/chars/seiya/special/seiya_aura_air_ryuseiken/aura_air_ryuseiken2.png": [
+    "chars/seiya/special/seiya_aura_air_ryuseiken.txt"
+  ],
+  "data/chars/seiya/special/seiya_aura_air_ryuseiken/aura_air_ryuseiken3.png": [
+    "chars/seiya/special/seiya_aura_air_ryuseiken.txt"
+  ],
+  "data/scripts/_debugs/DEBUG_PROJ.c": [
+    "scripts/_debugs/DEBUG_PROJECTILE.c"
+  ]
+}

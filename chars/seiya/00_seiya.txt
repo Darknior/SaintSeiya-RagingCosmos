@@ -551,7 +551,7 @@ anim grab # saisie de l adversaire
     delay    7
     offset   20 115
     bbox     21 0 35 114
-    sound    data/sounds/grab2.wav
+    sound    data/sounds/silence.wav
     frame    data/chars/seiya/grab1.png
     frame    data/chars/seiya/grab2.png
 
@@ -1402,7 +1402,7 @@ anim freespecial6 # Ultra meteores de Pégase ( Bas + bouton special a2)
     otg 1
     delay    10
     offset   31 116
-    sound    data/chars/deathmask/78-cosmos.wav
+    sound    data/chars/deathmask/sounds/78-cosmos.wav
     @cmd     spawnScreen "seiya_lights" 0 0 0 0
     delay    10
     offset   31 116

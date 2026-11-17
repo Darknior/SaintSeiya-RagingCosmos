@@ -1,3 +1,4 @@
+#import "data/scripts/library/safe_expire.c"
 void main()
 {//Remove remaining characters after a reset timer event
 	void player1	= getplayerproperty(0, "entity");
@@ -13,8 +14,8 @@ void main()
 	int exists3		= getentityproperty(player3, "exists");
 	int exists4		= getentityproperty(player4, "exists");
 
-	if(exists1 && lives1 <= 0){killentity(player1);}
-	if(exists2 && lives2 <= 0){killentity(player2);}
-	if(exists3 && lives3 <= 0){killentity(player3);}
-	if(exists4 && lives4 <= 0){killentity(player4);}
+	if(exists1 && lives1 <= 0){expireEntity(player1);}
+	if(exists2 && lives2 <= 0){expireEntity(player2);}
+	if(exists3 && lives3 <= 0){expireEntity(player3);}
+	if(exists4 && lives4 <= 0){expireEntity(player4);}
 }

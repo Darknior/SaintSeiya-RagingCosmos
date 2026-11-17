@@ -18,7 +18,7 @@ aimove chase
 hostile player npc
 candamage player npc
 icon	data/chars/mud/icon.gif
-icondie    data/chars/misc/icond.gif
+icondie    data/chars/misc/animals/scorp/icond.gif
 diesound data/sounds/chidie.wav
 nodieblink 3
 #fmap 3
@@ -26,7 +26,7 @@ animationscript 	data/scripts/ani0020.h
 palette	data/chars/mud/idle1.gif
 ondrawscript 		data/scripts/player_ondrawscript.c
 subject_to_wall 1
-alternatepal	data/chars/mud/testpal.gif
+alternatepal	data/chars/soldier_mud/testpal.gif
 #alternatepal	data/chars/mud/testpal2.gif
 
 
@@ -85,7 +85,7 @@ anim fall
 	frame  data/chars/mud/death5.gif
 	frame  data/chars/mud/death6.gif
 	frame  data/chars/mud/death7.gif
-	frame  data/chars/mud/death8.gif
+	frame  data/chars/soldier_mud/death8.gif
 
 anim death
 	loop	0
@@ -98,8 +98,8 @@ anim death
 	frame	data/chars/mud/death5.gif
 	frame	data/chars/mud/death6.gif
 	frame	data/chars/mud/death7.gif
-	frame	data/chars/mud/death8.gif
-	frame	data/chars/mud/death9.gif
+	frame	data/chars/soldier_mud/death8.gif
+	frame	data/chars/soldier_mud/death9.gif
 	frame	data/chars/mud/death10.gif
 	frame	data/chars/mud/death11.gif
 	frame	data/chars/mud/death12.gif

@@ -90,7 +90,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   54 92
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/kiki/01.png
 
 
@@ -152,8 +152,8 @@ anim BACKWALK
     bbox.size.x 35
     bbox.size.y 73
     frame    data/chars/kiki/18.png
-    frame    data/chars/kiki/19.png
-    frame    data/chars/kiki/20.png
+    frame    data/chars/soldier_base/19.png
+    frame    data/chars/soldier_base/20.png
     frame    data/chars/kiki/21.png
 
 anim pain

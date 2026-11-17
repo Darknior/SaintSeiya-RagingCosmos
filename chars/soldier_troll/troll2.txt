@@ -21,16 +21,16 @@ jumpmove 3
 load trock
 
 icon	    data/chars/troll/icon.gif
-icondie     data/chars/misc/icond.gif
+icondie     data/chars/misc/animals/scorp/icond.gif
 #diesound    data/chars/troll/sounds/die.wav
 fmap 3
 hmap 3 3
 
-palette data/chars/troll/troll.gif #1
+palette data/chars/soldier_troll/troll.gif #1
 
 remap	data/chars/troll/idle00.gif   data/chars/troll/alter01.gif
 remap	data/chars/troll/idle00.gif   data/chars/troll/alter02.gif
-remap	data/chars/troll/pain101.gif   data/chars/troll/freeze.gif
+remap	data/chars/troll/pain101.gif   data/chars/soldier_troll/freeze.gif
 
 
 #-------Moves
@@ -41,55 +41,55 @@ anim spawn
 	 loop       0
 	 offset     220 166
 	delay      1
-	frame	data/chars/troll/jdel00.gif
-	frame	data/chars/troll/jdel00.gif
-	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
 	delay      15
 	sound data/chars/troll/sounds/jump.wav
-	frame	data/chars/troll/ju03.gif
-	frame	data/chars/troll/ju02.gif
+	frame	data/chars/soldier_troll/ju03.gif
+	frame	data/chars/soldier_troll/ju02.gif
 	delay      45
-	frame	data/chars/troll/ju01.gif
+	frame	data/chars/soldier_troll/ju01.gif
 	delay      4
 	bbox	0 0 0 0
 	sound data/sounds/fall.wav
-	frame	data/chars/troll/jdel00.gif
-	frame	data/chars/troll/jdel00.gif
-	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
 
 	delay      8
-	frame	data/chars/troll/taunt01.gif
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt01.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 
 	delay      4
-	sound data/chars/troll/sounds/a1.wav
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
+	sound data/chars/soldier_troll/sounds/a1.wav
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
 
 	delay      8
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 
 
 
@@ -105,9 +105,9 @@ anim turn
 	delay	15
 	 offset     220 166
 	bbox	201 84 43 82
-	frame	data/chars/troll/turn00.gif
-	frame	data/chars/troll/turn01.gif
-	frame	data/chars/troll/turn02.gif
+	frame	data/chars/soldier_troll/turn00.gif
+	frame	data/chars/soldier_troll/turn01.gif
+	frame	data/chars/soldier_troll/turn02.gif
 
 anim walk
 	loop	1
@@ -130,68 +130,68 @@ anim block
 	bbox	0 0 0 0
 	move    -10
 	sound   data/sounds/guard.wav
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     218 166
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     220 166
 	move    -8
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     218 166
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     220 166
 	move    -6
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     218 166
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	move    -4
 	offset     220 166
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     218 166
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     220 166
 	move    -2
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     218 166
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 	offset     220 166
 	delay   12
 	move    0
-	frame	data/chars/troll/guar00.gif
-	frame	data/chars/troll/guar00.gif
-	frame	data/chars/troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
+	frame	data/chars/soldier_troll/guar00.gif
 
 	bbox	201 84 43 82
 	delay      8
-	frame	data/chars/troll/taunt01.gif
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt01.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 	delay      4
-	sound data/chars/troll/sounds/a1.wav
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
+	sound data/chars/soldier_troll/sounds/a1.wav
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
 	delay      8
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 
 
 anim pain
@@ -218,29 +218,29 @@ anim pain2
 	delay	3
 
 	offset     220 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     218 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     220 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     218 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     220 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     218 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     220 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     218 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     220 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     218 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     220 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 	offset     218 166
-	frame	data/chars/troll/pain102.gif
+	frame	data/chars/soldier_troll/pain102.gif
 
 
 
@@ -399,7 +399,7 @@ anim burn
 	delay   99
 	frame	data/chars/troll/fall01.gif
 	delay   1
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 
 anim bpain
 	loop	0
@@ -449,7 +449,7 @@ anim shock
 	delay   99
 	frame	data/chars/troll/fall01.gif
 	delay   1
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 
 anim spain
 	loop	0
@@ -482,7 +482,7 @@ anim fall
 	loop	0
 	 offset     220 166
 	delay   10
-	sound data/chars/troll/sounds/hit.wav
+	sound data/chars/soldier_troll/sounds/hit.wav
 	frame	data/chars/troll/fall00.gif
 	frame	data/chars/troll/fall01.gif
 	delay   60
@@ -490,23 +490,23 @@ anim fall
 	delay	99
 	frame	data/chars/troll/fall03.gif
 	delay	1
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 
 
 anim rise
 	loop	0
 	 offset     220 166
 	delay   2
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 	delay   50
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 	delay   10
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 	delay   6
 	frame	data/chars/troll/rise00.gif
 	delay   15
@@ -515,7 +515,7 @@ anim rise
 	frame	data/chars/troll/rise02.gif
 	frame	data/chars/troll/rise03.gif
 	delay   20
-	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
 
 
 anim death
@@ -523,13 +523,13 @@ anim death
 	loop	0
 	 offset     220 166
 	delay   50
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 
 	delay   8
 	frame	data/chars/troll/fall03.gif
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 	frame	data/chars/troll/fall03.gif
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 
 	delay   2
 	 offset     220 166
@@ -556,28 +556,28 @@ anim death
 
 	sound data/sounds/bigfall.wav
 	delay   10
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 	delay   50
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 
 anim bdie
 	loop	0
 	 offset     220 166
 	delay   2
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 	delay   50
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 	delay   10
-	frame	data/chars/troll/fall04.gif
-	frame	data/chars/troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
+	frame	data/chars/soldier_troll/fall04.gif
 
 	delay   6
 	bbox	0 0 0 0
@@ -589,7 +589,7 @@ anim bdie
 	frame	data/chars/troll/rise03.gif
 
 	delay   20
-	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
 
 	delay   15
 	sound data/chars/troll/sounds/die.wav
@@ -611,11 +611,11 @@ anim attack1
 	loop	0
 	offset     220 166
 	bbox	201 84 43 82
-	hitfx data/chars/troll/sounds/a1hit.wav
+	hitfx data/chars/soldier_troll/sounds/a1hit.wav
 	delay	6
 	frame	data/chars/troll/a101.gif
 	attack  220 110 114 56 5 0 0 0 30
-	sound data/chars/troll/sounds/a1sw.wav
+	sound data/chars/soldier_troll/sounds/a1sw.wav
 	frame	data/chars/troll/a102.gif
 	delay	60
 	attack  0 0 0 0 0 0 0 0 0 0
@@ -628,54 +628,54 @@ anim follow1
 	loop	0
 	offset     220 166
 	bbox	201 84 43 82
-	hitfx data/chars/troll/sounds/a1hit.wav
+	hitfx data/chars/soldier_troll/sounds/a1hit.wav
 	delay	50
 	frame	data/chars/troll/a102.gif
 	delay	6
 	frame	data/chars/troll/a103.gif
 
-	frame	data/chars/troll/a201.gif
-	frame	data/chars/troll/a202.gif
-	sound data/chars/troll/sounds/a1sw.wav
+	frame	data/chars/soldier_troll/a201.gif
+	frame	data/chars/soldier_troll/a202.gif
+	sound data/chars/soldier_troll/sounds/a1sw.wav
 	blast  220 110 138 56 15 1 0 0 30
-	frame	data/chars/troll/a203.gif
+	frame	data/chars/soldier_troll/a203.gif
 	delay	60
 	blast  0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/troll/a204.gif
+	frame	data/chars/soldier_troll/a204.gif
 	delay	8
-	frame	data/chars/troll/a205.gif
+	frame	data/chars/soldier_troll/a205.gif
 
 	delay      8
-	frame	data/chars/troll/taunt01.gif
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt01.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 	delay      4
-	sound data/chars/troll/sounds/a1.wav
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
+	sound data/chars/soldier_troll/sounds/a1.wav
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
 	delay      8
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 
 anim attack2
 	range	76 105
@@ -683,7 +683,7 @@ anim attack2
 	loop	0
 	offset     220 166
 	bbox	201 84 43 82
-	hitfx data/chars/troll/sounds/a1hit.wav
+	hitfx data/chars/soldier_troll/sounds/a1hit.wav
 
 	delay	2
 	move -1
@@ -714,48 +714,48 @@ anim attack2
 
 	move 0
 	delay	6
-	frame	data/chars/troll/a201.gif
-	frame	data/chars/troll/a202.gif
-	sound data/chars/troll/sounds/a1sw.wav
+	frame	data/chars/soldier_troll/a201.gif
+	frame	data/chars/soldier_troll/a202.gif
+	sound data/chars/soldier_troll/sounds/a1sw.wav
 	blast  220 110 138 56 15 1 0 0 30
-	frame	data/chars/troll/a203.gif
+	frame	data/chars/soldier_troll/a203.gif
 	delay	60
 	blast  0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/troll/a204.gif
+	frame	data/chars/soldier_troll/a204.gif
 	delay	8
-	frame	data/chars/troll/a205.gif
+	frame	data/chars/soldier_troll/a205.gif
 
 	delay      8
-	frame	data/chars/troll/taunt01.gif
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt01.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 	delay      4
-	sound data/chars/troll/sounds/a1.wav
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
+	sound data/chars/soldier_troll/sounds/a1.wav
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
 	delay      8
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 
 
 anim attack3
@@ -766,21 +766,21 @@ anim attack3
 	loop	0
 	offset     220 166
 	bbox	201 84 43 82
-	hitfx data/chars/troll/sounds/a1hit.wav
+	hitfx data/chars/soldier_troll/sounds/a1hit.wav
 	delay	6
-	frame	data/chars/troll/a301.gif
+	frame	data/chars/soldier_troll/a301.gif
 	delay	15
-	frame	data/chars/troll/a302.gif
+	frame	data/chars/soldier_troll/a302.gif
 	delay	6
-	frame	data/chars/troll/a303.gif
-	frame	data/chars/troll/a304.gif
+	frame	data/chars/soldier_troll/a303.gif
+	frame	data/chars/soldier_troll/a304.gif
 	delay	30
-	frame	data/chars/troll/a305.gif
-	sound data/chars/troll/sounds/a1sw.wav
+	frame	data/chars/soldier_troll/a305.gif
+	sound data/chars/soldier_troll/sounds/a1sw.wav
 	delay	6
-	frame	data/chars/troll/a306.gif
+	frame	data/chars/soldier_troll/a306.gif
 	delay	60
-	frame	data/chars/troll/a307.gif
+	frame	data/chars/soldier_troll/a307.gif
 
 
 anim attack4
@@ -791,33 +791,33 @@ anim attack4
 	delay	15
 	 offset     220 166
 	bbox	201 84 43 82
-	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
 
 	sound data/chars/troll/sounds/jump.wav
 	delay	35
-	frame	data/chars/troll/ju01.gif
+	frame	data/chars/soldier_troll/ju01.gif
 	delay	5
-	frame	data/chars/troll/ju01.gif
-	frame	data/chars/troll/ju01.gif
-	frame	data/chars/troll/ju02.gif
-	frame	data/chars/troll/ju03.gif
+	frame	data/chars/soldier_troll/ju01.gif
+	frame	data/chars/soldier_troll/ju01.gif
+	frame	data/chars/soldier_troll/ju02.gif
+	frame	data/chars/soldier_troll/ju03.gif
 	bbox	0 0 0 0
 	attack  203 82 91 84 10 1 0 0 30
-	frame	data/chars/troll/ju04.gif
-	frame	data/chars/troll/ju04.gif
-	frame	data/chars/troll/ju04.gif
+	frame	data/chars/soldier_troll/ju04.gif
+	frame	data/chars/soldier_troll/ju04.gif
+	frame	data/chars/soldier_troll/ju04.gif
 	delay	20
-	frame	data/chars/troll/ju04.gif
+	frame	data/chars/soldier_troll/ju04.gif
 
 	bbox	201 84 43 82
 	delay	2
 	sound data/sounds/fall.wav
 	attack  0 0 0 0 0 0 0 0 0
-	frame	data/chars/troll/jdel00.gif
-	frame	data/chars/troll/jdel00.gif
-	frame	data/chars/troll/jdel00.gif
-	frame	data/chars/troll/jdel00.gif
-	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
+	frame	data/chars/soldier_troll/jdel00.gif
 
 
 anim riseattack
@@ -826,40 +826,40 @@ anim riseattack
 	loop	0
 	offset     220 166
 	bbox	201 84 43 82
-	hitfx data/chars/troll/sounds/a1hit.wav
+	hitfx data/chars/soldier_troll/sounds/a1hit.wav
 
 	delay	6
 
-	frame	data/chars/troll/a201.gif
-	frame	data/chars/troll/a202.gif
-	sound data/chars/troll/sounds/a1sw.wav
+	frame	data/chars/soldier_troll/a201.gif
+	frame	data/chars/soldier_troll/a202.gif
+	sound data/chars/soldier_troll/sounds/a1sw.wav
 	blast  220 108 137 58 15 1 0 0 30
-	frame	data/chars/troll/a203.gif
+	frame	data/chars/soldier_troll/a203.gif
 	delay	60
 	blast  0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/troll/a204.gif
+	frame	data/chars/soldier_troll/a204.gif
 	delay	8
-	frame	data/chars/troll/a205.gif
+	frame	data/chars/soldier_troll/a205.gif
 
 	delay      8
-	frame	data/chars/troll/taunt01.gif
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt01.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 	delay      4
-	sound data/chars/troll/sounds/a1.wav
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
-	frame	data/chars/troll/taunt03.gif
-	frame	data/chars/troll/taunt04.gif
+	sound data/chars/soldier_troll/sounds/a1.wav
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
+	frame	data/chars/soldier_troll/taunt03.gif
+	frame	data/chars/soldier_troll/taunt04.gif
 	delay      8
-	frame	data/chars/troll/taunt02.gif
+	frame	data/chars/soldier_troll/taunt02.gif
 
 
 

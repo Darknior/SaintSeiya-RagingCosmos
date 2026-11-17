@@ -15,7 +15,7 @@ candamage 	player npc obstacle
 animationscript	data/scripts/enemy.c
 icon		data/chars/bat/icon.png 1
 icondie		data/chars/bat/iconD.png 1
-palette		data/chars/bat/black.png
+palette		data/chars/misc/animals/bat2/black.png
 
 
 anim	idle
@@ -24,9 +24,9 @@ anim	idle
 	seta	60
 	offset  84 102
 	bbox    65 80 32 62
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png
 
 
 anim	fall
@@ -42,23 +42,23 @@ anim	rise
 	delay	8
 	seta	0
 	offset  84 102
-	frame	data/chars/bat/a28.png
+	frame	data/chars/misc/animals/bat2/a28.png
 	@cmd	degravity 1
 	@cmd	dasher 0 1 0
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png
 	seta	60
 	@cmd	degravity 0
 	@cmd	dasher 0 0 0
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png
 	
 anim	death
 	seta	0
@@ -77,28 +77,28 @@ anim	attack1
 	seta	60
 	offset  84 102
 	bbox    65 80 32 62
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png #
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png #
 	@cmd	dasher 3 0 0
 	attack  77 91 18 20 10 0 0 0 10
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png #
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png #
 	@cmd	dasher 2.25 0 0
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png #
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png #
 	@cmd	dasher 1.5 0 0
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png #
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png #
 	@cmd	dasher 0.75 0 0
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png #
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png #
 	attack  0
 	@cmd	dasher 0 0 0
-	frame	data/chars/bat/a28.png
-	frame	data/chars/bat/a29.png
-	frame	data/chars/bat/a30.png #
+	frame	data/chars/misc/animals/bat2/a28.png
+	frame	data/chars/misc/animals/bat2/a29.png
+	frame	data/chars/misc/animals/bat2/a30.png #

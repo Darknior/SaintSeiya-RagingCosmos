@@ -40,8 +40,8 @@ anim idle
 	@cmd spawnFade "out" 0 0 0 10000000001 0.5
 	frame	data/chars/dialogs/empty.png
 	
-	@cmd playwebm "data/bgs/temple10/scene1.webm" 1
-	@cmd playwebm "data/bgs/temple10/scene2.webm" 0
+	@cmd playwebm "data/bgs/temple10D-boss/scene1.webm" 1
+	@cmd playwebm "data/bgs/temple10D-boss/scene2.webm" 0
 	@cmd spawnFade "in" 0 0 0 10000000001 0.5
 	frame	data/chars/dialogs/empty.png
 

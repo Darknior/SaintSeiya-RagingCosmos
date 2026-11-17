@@ -1,3 +1,5 @@
+#import "data/scripts/interface.c"
+#import "data/scripts/common/effect_tint.c"
 void zoom()
 {
    void vscreen = openborvariant("vscreen");
@@ -34,6 +36,11 @@ void zoom()
 
 
 void main(){//MAIN START
+    if(openborvariant("in_titlescreen") && !openborvariant("in_level") && getglobalvar("clearAll")!=NULL()){
+        uiRelease();clearlocalvar();clearglobalvar();
+    }
+    if(interfaceDraw()) return;
+    tintEntities();
    if(getglobalvar("zoomentity"))
    {
       zoom();        
@@ -84,18 +91,18 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 	if(openborvariant("in_titlescreen")){
 
 		//FREE PORTRAIT IMAGES
-		if(getglobalvar("seiya1") != NULL()){free(getglobalvar("seiya1"));}
-		if(getglobalvar("seiya2") != NULL()){free(getglobalvar("seiya2"));}
-		if(getglobalvar("seiya3") != NULL()){free(getglobalvar("seiya3"));}
-		if(getglobalvar("aldebaran1") != NULL()){free(getglobalvar("aldebaran1"));}
-		if(getglobalvar("aldebaran2") != NULL()){free(getglobalvar("aldebaran2"));}
-		if(getglobalvar("aldebaran3") != NULL()){free(getglobalvar("aldebaran3"));}
-		if(getglobalvar("aldebaran4") != NULL()){free(getglobalvar("aldebaran4"));}
-		if(getglobalvar("aldebaran5") != NULL()){free(getglobalvar("aldebaran5"));}
-		if(getglobalvar("screen") != NULL()){free(getglobalvar("screen"));}
+		if(getglobalvar("seiya1") != NULL()){free(getglobalvar("seiya1"));setglobalvar("seiya1",NULL());}
+		if(getglobalvar("seiya2") != NULL()){free(getglobalvar("seiya2"));setglobalvar("seiya2",NULL());}
+		if(getglobalvar("seiya3") != NULL()){free(getglobalvar("seiya3"));setglobalvar("seiya3",NULL());}
+		if(getglobalvar("aldebaran1") != NULL()){free(getglobalvar("aldebaran1"));setglobalvar("aldebaran1",NULL());}
+		if(getglobalvar("aldebaran2") != NULL()){free(getglobalvar("aldebaran2"));setglobalvar("aldebaran2",NULL());}
+		if(getglobalvar("aldebaran3") != NULL()){free(getglobalvar("aldebaran3"));setglobalvar("aldebaran3",NULL());}
+		if(getglobalvar("aldebaran4") != NULL()){free(getglobalvar("aldebaran4"));setglobalvar("aldebaran4",NULL());}
+		if(getglobalvar("aldebaran5") != NULL()){free(getglobalvar("aldebaran5"));setglobalvar("aldebaran5",NULL());}
+		if(getglobalvar("screen") != NULL()){free(getglobalvar("screen"));setglobalvar("screen",NULL());}
 
 		//SCRIPT USED TO CLEAR ALL VARIABLES AND ASSETS
-		if(getglobalvar("clearAll") != NULL()){clearlocalvar();clearglobalvar();}
+		
 
 		//WORKS WITH "SELECT SCREEN" FUNCTIONS
 		if(getglobalvar("previewCol0") == NULL()){
@@ -115,11 +122,13 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 		//SET THE "CLEARALL" FLAG TO 1
 		if(getglobalvar("clearAll") == NULL()){setglobalvar("clearAll", 1);}
 		menuScreen();
+        uiMainMenu();
 	}
 
 	//IN LEVEL
 	if(openborvariant("in_level")){
 		drawOverlay();
+        uiRouteIntro();
 		drawRush();
 		timeOver();
 		quakeEffect();
@@ -175,6 +184,11 @@ void menuScreen()
 
 void drawOverlay()
 {//Draw image for overlay effect in lifebar
+			if(getglobalvar("charIcon1") == NULL()){setglobalvar("charIcon1", loadsprite("data/sprites/charicon1.png"));}
+			if(getglobalvar("charIcon2") == NULL()){setglobalvar("charIcon2", loadsprite("data/sprites/charicon2.png"));}
+			if(getglobalvar("lifebar1") == NULL()){setglobalvar("lifebar1", loadsprite("data/sprites/lifebar1.png"));}
+			if(getglobalvar("lifebar2") == NULL()){setglobalvar("lifebar2", loadsprite("data/sprites/lifebar2.png"));}
+			if(getglobalvar("mpbar") == NULL()){setglobalvar("mpbar", loadsprite("data/sprites/mpbar.png"));}
 	void player1 = getplayerproperty(0, "entity");
 	void player2 = getplayerproperty(1, "entity");
 	void player3 = getplayerproperty(2, "entity");
@@ -219,11 +233,6 @@ void overlayFunction(void player, int pIndex)
 			if(pIndex >= 2){xAdd = xAdd+addTimer;}
 
 			//LOAD ASSETS
-			if(getglobalvar("charIcon1") == NULL()){setglobalvar("charIcon1", loadsprite("data/sprites/charicon1.png"));}
-			if(getglobalvar("charIcon2") == NULL()){setglobalvar("charIcon2", loadsprite("data/sprites/charicon2.png"));}
-			if(getglobalvar("lifebar1") == NULL()){setglobalvar("lifebar1", loadsprite("data/sprites/lifebar1.png"));}
-			if(getglobalvar("lifebar2") == NULL()){setglobalvar("lifebar2", loadsprite("data/sprites/lifebar2.png"));}
-			if(getglobalvar("mpbar") == NULL()){setglobalvar("mpbar", loadsprite("data/sprites/mpbar.png"));}
 
 			//PLAYERS OVERLAY
 			setdrawmethod(NULL(),0,256,256,0,0,0,0);
@@ -534,3 +543,4 @@ void quakeEffect()
 		}
 	}
 }
+void tintEntities(){int i;int count=openborvariant("ent_max");for(i=0;i<count;i++) effect_tint(getentity(i));}

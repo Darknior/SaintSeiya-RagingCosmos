@@ -1,0 +1,88 @@
+{
+  "code": "en",
+  "name": "English",
+  "ui": {
+    "language": "Language",
+    "select_hint": "Directions: choose • Attack / Start: confirm",
+    "press_start": "PRESS START",
+    "change_language": "Block: language",
+    "pause": "PAUSE",
+    "continue": "Continue",
+    "levels": "Level Select",
+    "howto": "How to Play",
+    "quit": "End Game",
+    "choose_hint": "Up / Down: choose • Attack / Start: confirm",
+    "resume_hint": "Jump / Esc: resume",
+    "levels_hint": "Attack / Start: load • Jump / Esc: back",
+    "restart_hint": "Keeps your character; restarts the selected stage.",
+    "guide_footer": "Directions: page • Attack: next • Jump / Start: back",
+    "controls": "Buttons: Options / Control Options.",
+    "devices": "Keyboard, controller or touch controls.",
+    "guide_title": "HOW TO PLAY — SEIYA",
+    "stage": "Stage",
+    "page": "Page",
+    "temple": "Temple",
+    "road": "Road",
+    "guards": "Guards",
+    "boss": "Boss"
+  },
+  "main": [
+    "Start Game",
+    "Options",
+    "How to Play",
+    "Hall of Fame",
+    "Quit"
+  ],
+  "pages": [
+    {
+      "title": "Move",
+      "command": "DIRECTIONS",
+      "line1": "Up / Down / Left / Right",
+      "line2": "Line Seiya up with his opponent.",
+      "line3": "Attacks connect on the same lane."
+    },
+    {
+      "title": "Run",
+      "command": "TAP THE SAME DIRECTION TWICE",
+      "line1": "Double-tap Left or Right.",
+      "line2": "Hold the direction to keep running.",
+      "line3": "Press Attack to strike while running."
+    },
+    {
+      "title": "Chain attacks",
+      "command": "PRESS ATTACK REPEATEDLY",
+      "line1": "Press Attack several times.",
+      "line2": "Seiya chains five strikes.",
+      "line3": "Get close enough to hit the target."
+    },
+    {
+      "title": "Jump",
+      "command": "JUMP",
+      "line1": "Press Jump.",
+      "line2": "Add a direction to jump forward.",
+      "line3": "Watch out for gaps in the stage!"
+    },
+    {
+      "title": "Attack in the air",
+      "command": "JUMP, THEN ATTACK",
+      "line1": "Jump, then press Attack.",
+      "line2": "Seiya strikes during his jump.",
+      "line3": "Try it while jumping forward too."
+    },
+    {
+      "title": "Block",
+      "command": "HOLD BLOCK",
+      "line1": "Hold the button named Block.",
+      "line2": "Face the incoming attacks.",
+      "line3": "Release it to resume fighting."
+    },
+    {
+      "title": "Recharge Cosmos",
+      "command": "HOLD CHARGE",
+      "line1": "Hold the button named Charge.",
+      "line2": "The Cosmos gauge fills up.",
+      "line3": "Find a safe spot away from attacks."
+    }
+  ],
+  "variant": "en"
+}

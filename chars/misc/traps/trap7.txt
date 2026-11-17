@@ -12,7 +12,7 @@ bflash				guard01
 antigravity 100
 nolife				1
 
-palette 			data/chars/misc/trap2/trap2.gif
+palette 			data/chars/misc/traps/trap2.gif
 
 anim spawn
 	loop		1
@@ -39,13 +39,13 @@ anim spawn
 	frame		data/chars/misc/trap2/00.gif
 	frame		data/chars/misc/trap2/06.gif
 	frame		data/chars/misc/trap2/00.gif
-	frame		data/chars/misc/trap2/07.gif
+	frame		data/chars/misc/traps/07.gif
 	frame		data/chars/misc/trap2/00.gif
-	frame		data/chars/misc/trap2/08.gif
+	frame		data/chars/misc/traps/08.gif
 	frame		data/chars/misc/trap2/00.gif
-	frame		data/chars/misc/trap2/09.gif
+	frame		data/chars/misc/traps/09.gif
 	frame		data/chars/misc/trap2/00.gif
-	frame		data/chars/misc/trap2/10.gif
+	frame		data/chars/misc/traps/10.gif
 	frame		data/chars/misc/trap2/00.gif
 
 anim idle
@@ -73,13 +73,13 @@ anim idle
 	frame		data/chars/misc/trap2/00.gif
 	frame		data/chars/misc/trap2/06.gif
 	frame		data/chars/misc/trap2/00.gif
-	frame		data/chars/misc/trap2/07.gif
+	frame		data/chars/misc/traps/07.gif
 	frame		data/chars/misc/trap2/00.gif
-	frame		data/chars/misc/trap2/08.gif
+	frame		data/chars/misc/traps/08.gif
 	frame		data/chars/misc/trap2/00.gif
-	frame		data/chars/misc/trap2/09.gif
+	frame		data/chars/misc/traps/09.gif
 	frame		data/chars/misc/trap2/00.gif
-	frame		data/chars/misc/trap2/10.gif
+	frame		data/chars/misc/traps/10.gif
 	frame		data/chars/misc/trap2/00.gif
 
 

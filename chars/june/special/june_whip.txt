@@ -37,7 +37,7 @@ anim	follow2
 	//DETECTS IF THE CURRENT TARGET ALREADY IS IN A FALLING INSTANCE
 	//IF YES, SUICIDE. IF NOT, PROCEED NORMALLY
 	if(frame == 0){
-		if(getentityproperty(target, "aiflag", "falling")){killentity(self);}
+		if(getentityproperty(target, "aiflag", "falling")){changeentityproperty(self,"lifespancountdown",-1);}
 	}
 
 	//SCRIPT USED TO MOVE THE "SPRIRIT HANDS" TO THE SAME TARGET'S POSITION
@@ -55,7 +55,7 @@ anim	follow2
 	loop	1
 	delay	8
 	offset	79 128
-	hitfx	data/sounds/none.wav
+	hitfx	data/sounds/silence.wav
 	frame	data/chars/june/special/june_vine/vine1.png #THIS FRAME IS DISCARDED BY THE ENGINE DURING FOLLOW
    frame	data/chars/june/special/june_vine/vine2.png
 	delay	100

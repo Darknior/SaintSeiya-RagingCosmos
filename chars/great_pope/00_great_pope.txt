@@ -108,7 +108,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset    50 136
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/great_pope/idle1.png
 
 #// Static animations /////////////////////////////////////////////////
@@ -389,7 +389,7 @@ anim jumpattack # Attaque sautée statique
 anim special # Défense spéciale 
     delay    10
     offset    45 138
-    sound data/chars/great_pope/02.wav
+    sound data/chars/great_pope/sounds/arldie.wav
     energycost  10 1 0
     hitflash flashbig
     frame    data/chars/great_pope/special1.png
@@ -411,7 +411,7 @@ anim special2 #Attaque spéciale Punch combo
     energycost 20 2 5
     delay    6
     offset    56 136
-    sound data/chars/great_pope/02.wav
+    sound data/chars/great_pope/sounds/arldie.wav
     frame    data/chars/great_pope/special21.png
     frame    data/chars/great_pope/special22.png
     frame    data/chars/great_pope/special23.png
@@ -462,7 +462,7 @@ anim freespecial2 #Attaque spéciale Punch combo
     delay    6
     offset    42 160
     bbox 21 11 38 151
-    sound data/chars/great_pope/02.wav
+    sound data/chars/great_pope/sounds/arldie.wav
     frame    data/chars/great_pope/special21.png
     frame    data/chars/great_pope/special22.png
     frame    data/chars/great_pope/special23.png
@@ -512,7 +512,7 @@ anim freespecial3 # Attaque spéciale Lancer de couteau
     delay    10
     offset    77 136
     bbox 59 13 38 132
-    sound data/chars/great_pope/02.wav
+    sound data/chars/great_pope/sounds/arldie.wav
     @cmd    shooter "knife" 0 80 0 2.5 0 0
     frame    data/chars/great_pope/attack21.png
     frame    data/chars/great_pope/attack22.png
@@ -528,7 +528,7 @@ anim riseattack # Défense spéciale carnivore roses
     energycost 20 2 5
     delay    6
     offset    56 136
-    sound data/chars/great_pope/02.wav
+    sound data/chars/great_pope/sounds/arldie.wav
     frame    data/chars/great_pope/special21.png
     frame    data/chars/great_pope/special22.png
     frame    data/chars/great_pope/special23.png

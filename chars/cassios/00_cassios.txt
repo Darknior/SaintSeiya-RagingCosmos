@@ -99,7 +99,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   66 184
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/cassios/idle1.png
 
 
@@ -406,7 +406,7 @@ anim grabattack2 # Attaque au corps à corps finisher
 anim special # Défense spéciale
     delay    10
     offset    66 208
-    sound data/chars/cassios/02.wav
+    sound data/sounds/silence.wav
     hitflash flashbig
     frame    data/chars/cassios/special1.png
     frame    data/chars/cassios/special2.png
@@ -420,7 +420,7 @@ anim special # Défense spéciale
 anim special2 #Défense spéciale 
     delay    10
     offset    66 208
-    sound data/chars/cassios/02.wav
+    sound data/sounds/silence.wav
     hitflash flashbig
     frame    data/chars/cassios/special1.png
     frame    data/chars/cassios/special2.png
@@ -438,7 +438,7 @@ anim freespecial2 # Attaque spéciale Punch launcher
     energycost  20 1 0
     delay    10
     offset    113 190
-    sound data/chars/cassios/02.wav
+    sound data/sounds/silence.wav
     @cmd    dasher 4 0 0 1
     attack1 88 95 120 84 5 0 0 0 12 12
     frame    data/chars/cassios/special21.png
@@ -462,7 +462,7 @@ anim freespecial2 # Attaque spéciale Punch launcher
 anim riseattack    #Défense spéciale
     delay    10
     offset    66 208
-    sound data/chars/cassios/02.wav
+    sound data/sounds/silence.wav
     hitflash flashbig
     frame    data/chars/cassios/special1.png
     frame    data/chars/cassios/special2.png

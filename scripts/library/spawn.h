@@ -28,7 +28,8 @@ void spawn01(void vName, float fX, float fY, float fZ)
       fY = fY + getentityproperty(self, "a"); //Get Y location and add adjustment.
       fZ = fZ + getentityproperty(self, "z"); //Get Z location and add adjustment.
 	
-	vSpawn = spawn(); //Spawn in entity.
+	vSpawn = spawn();
+    if(vSpawn == NULL()) return NULL(); //Spawn in entity.
 
 	changeentityproperty(vSpawn, "position", fX, fZ, fY); //Set spawn location.
 	changeentityproperty(vSpawn, "direction", iDirection); //Set direction.
@@ -54,7 +55,8 @@ void spawn02(void vName, float fX, float fY, float fZ)
 
       fZ = fZ + getentityproperty(self, "z"); //Get Z location and add adjustment.
 
-	vSpawn = spawn(); //Spawn in entity.
+	vSpawn = spawn();
+    if(vSpawn == NULL()) return NULL(); //Spawn in entity.
 
 	changeentityproperty(vSpawn, "position", fX + XPos, fZ, fY); //Set spawn location.
 	return vSpawn; //Return spawn.
@@ -71,7 +73,8 @@ void spawner(void vName, float fX, float fY, float fZ)
 	void self = getlocalvar("self"); //Get calling entity.
 	void vSpawn; //Spawn object.
 	
-	vSpawn = spawn01(vName, fX, fY, fZ); //Spawn in entity.
+	vSpawn = spawn01(vName, fX, fY, fZ);
+    if(vSpawn == NULL()) return NULL(); //Spawn in entity.
 
 	changeentityproperty(vSpawn, "parent", self); //Set caller as parent.
     
@@ -90,7 +93,8 @@ void spawner2(void vName, float fX, float fY, float fZ)
 	void vSpawn; //Spawn object.
 	int  iMap = getentityproperty(self, "map");
 	
-	vSpawn = spawn01(vName, fX, fY, fZ); //Spawn in entity.
+	vSpawn = spawn01(vName, fX, fY, fZ);
+    if(vSpawn == NULL()) return NULL(); //Spawn in entity.
 
 	changeentityproperty(vSpawn, "map", iMap); //Use same remap as spawner's.
 	return vSpawn; //Return spawn.
@@ -108,7 +112,8 @@ void spawner3(void vName, float fX, float fY, float fZ)
 	void vSpawn; //Spawn object.
 	int  iMap = getentityproperty(self, "map");
 	
-	vSpawn = spawn02(vName, fX, fY, fZ); //Spawn in entity
+	vSpawn = spawn02(vName, fX, fY, fZ);
+    if(vSpawn == NULL()) return NULL(); //Spawn in entity
 
         changeentityproperty(vSpawn, "owner", self);
 }

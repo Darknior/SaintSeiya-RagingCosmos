@@ -1,3 +1,4 @@
+#import "data/scripts/library/safe_expire.c"
 void main()
 {//Turn on/off some effects according to global variables, used to cursor blink effect at the select screen
 	void self		= getlocalvar("self");
@@ -16,7 +17,7 @@ void main()
 			setglobalvar("channel"+self, channel+rate);
 
 			//KILL ENTITY WHEN REACHED THE MIN/MAX LIMITS
-			if(channel >= maxLimit){killentity(self);}
+			if(channel >= maxLimit){expireEntity(self);}
 		}
 
 		//DECREASE CHANNEL VALUE
@@ -24,7 +25,7 @@ void main()
 			setglobalvar("channel"+self, channel-rate);
 
 			//KILL ENTITY WHEN REACHED THE MIN/MAX LIMITS
-			if(channel <= minLimit){killentity(self);}
+			if(channel <= minLimit){expireEntity(self);}
 		}
 
 		//CHANGE DRAWMETHOD PROPERTIES

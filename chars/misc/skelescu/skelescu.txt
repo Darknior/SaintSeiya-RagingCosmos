@@ -2,7 +2,7 @@
 
 name	Skelescu
 health	586#293
-#velocità settata = 3 !!
+#velocitï¿½ settata = 3 !!
 speedf	0.3
 jumpheight	0
 #running{speed}{height}{length}{move}{land}
@@ -142,11 +142,11 @@ anim follow3
 	frame	data/chars/skelescu/stand9
 	frame	data/chars/skelescu/stand10
 
-#spadata giù
+#spadata giï¿½
 anim attack
 	range	30 70
 	rangez	-7 7
-	hitfx	data/audio/hit3.wav
+	hitfx	data/chars/soldier_fat/sounds/hit3.wav
 	loop	0
 	bbox	52 75 20 68
 	delay	10
@@ -223,7 +223,7 @@ anim attack2
 anim attack3
 	range	30 70
 	rangez	-7 7
-	hitfx	data/audio/hit3.wav
+	hitfx	data/chars/soldier_fat/sounds/hit3.wav
 	loop	0
 	bbox	52 75 20 68
 	delay	9

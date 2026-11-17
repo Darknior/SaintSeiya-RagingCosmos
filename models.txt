@@ -33,8 +33,8 @@ know dialog_aldebaran1 data/chars/dialogs/temple2D/dialog_aldebaran1.txt
 know dialog_aldebaran2 data/chars/dialogs/temple2D/dialog_aldebaran2.txt
 know dialog_aldebaran3 data/chars/dialogs/temple2D/dialog_aldebaran3.txt
 know aldebaran_idle    data/chars/dialogs/temple2D/00_aldebaran_idle.txt
-know aldebaran_dialog    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog.txt
-know aldebaran_dialog2    data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.txt
+know aldebaran_dialog    data/bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog.txt
+know aldebaran_dialog2    data/bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog2.txt
 
 #temple3D#
 know dialog_gemini1 data/chars/dialogs/temple3D/dialog_gemini1.txt
@@ -199,7 +199,7 @@ know shiryu_cosmosB         data/chars/shiryu/special/shiryu_cosmosB.txt
 know shiryu_dash            data/chars/shiryu/special/shiryu_dash.txt
 know shiryu_dragon          data/chars/shiryu/special/shiryu_dragon.txt
 know shiryu_dragon_punch    data/chars/shiryu/special/shiryu_dragon_punch.txt
-know shiryu_dragon_uppercut data/chars/shiryu/special/shiryu_dragon_uppercut.txt
+know shiryu_dragon data/chars/shiryu/special/shiryu_dragon.txt
 know shiryu_dragon_water    data/chars/shiryu/special/shiryu_dragon_water.txt
 know shiryu_explosion       data/chars/shiryu/special/shiryu_explosion.txt
 know shiryu_lights          data/chars/shiryu/special/shiryu_lights.txt
@@ -292,7 +292,7 @@ know deathmask_claw            data/chars/deathmask/special/deathmask_claw.txt
 know deathmask_constellation      data/chars/deathmask/special/deathmask_constellation.txt
 know deathmask_hands             data/chars/deathmask/special/deathmask_hands.txt
 know deathmask_melee            data/chars/deathmask/special/deathmask_melee.txt
-know deathmask_spiral            data/chars/deathmask/special/deathmask_spiral.txt
+know deathmask_thunder            data/chars/deathmask/special/deathmask_thunder.txt
 know deathmask_spirit           data/chars/deathmask/special/deathmask_spirit.txt
 know deathmask_thunder      data/chars/deathmask/special/deathmask_thunder.txt
 
@@ -577,17 +577,17 @@ know agora           data/chars/agora/00_agora.txt
 
 ## GOLD KINGHTS ##
 
-know MU2             data/chars/MU/00_MU.txt
-know ALDEBARAN       data/chars/ALDEBARAN/00_ALDEBARAN.txt
-know AIOLIA          data/chars/AIOLIA/00_AIOLIA.txt
-know APHRODITE       data/chars/APHRODITE/00_APHRODITE.txt
-know CAMUS           data/chars/CAMUS/00_CAMUS.txt
-know DEATHMASK       data/chars/DEATHMASK/00_DEATHMASK.txt
-know GEMINI          data/chars/GEMINI/00_GEMINI.txt
-know MILO            data/chars/MILO/00_MILO.txt
+know MU2             data/chars/mu/00_mu.txt
+know ALDEBARAN       data/chars/aldebaran/00_aldebaran.txt
+know AIOLIA          data/chars/aiolia/00_aiolia.txt
+know APHRODITE       data/chars/aphrodite/00_aphrodite.txt
+know CAMUS           data/chars/camus/00_camus.txt
+know DEATHMASK       data/chars/deathmask/00_deathmask.txt
+know GEMINI          data/chars/gemini/00_gemini.txt
+know MILO            data/chars/milo/00_milo.txt
 know saga            data/chars/saga/00_saga.txt
-know SHAKA           data/chars/SHAKA/00_SHAKA.txt
-know SHURA           data/chars/SHURA/00_shura.txt
+know SHAKA           data/chars/shaka/00_shaka.txt
+know SHURA           data/chars/shura/00_shura.txt
 know great_pope      data/chars/great_pope/00_great_pope.txt
 
 ## ANIMALS ##
@@ -596,8 +596,8 @@ know eagle1            data/chars/misc/animals/eagle1/eagle1.txt
 
 ## OTHER ##
 
-know cube            data/chars/CUBE/CUBE.txt
-know KIKI2           data/chars/KIKI/00_KIKI2.txt
+know cube            data/chars/cube/cube.txt
+know KIKI2           data/chars/kiki/00_kiki2.txt
 
 
 ## LEVELS ##-----------------------------------------------------------------------------------------------
@@ -646,7 +646,7 @@ know temple5columns      data/bgs/temple5D-boss/temple5columns.txt
 know volcano_flame      data/bgs/temple6B-midboss/volcano_flame.txt
 
 ## TEMPLE 6C ROAD
-know temple6rain      data/bgs/temple6-road/temple6rain.txt
+know temple6rain      data/bgs/temple6C-road/temple6rain.txt
 know temple6raindrop      data/bgs/temple6C-road/temple6raindrop.txt
 know temple6raindrop2      data/bgs/temple6C-road/temple6raindrop2.txt
 know temple6raindrop3      data/bgs/temple6C-road/temple6raindrop3.txt
@@ -657,7 +657,7 @@ know temple6columns      data/bgs/temple6D-boss/temple6columns.txt
 
 ## TEMPLE 7A Road: Elevator
 know temple7A_elevator   data/bgs/temple7A-road/elevator.txt
-know temple7columns      data/bgs/temple7A/temple7columns.txt
+know temple7columns      data/bgs/temple7D-boss/temple7columns.txt
 
 ## TEMPLE 10C ROAD
 know temple10roadcolumns      data/bgs/temple10C-road/temple10roadcolumns.txt
@@ -681,3 +681,10 @@ know temple13columns      data/bgs/temple13D-boss/temple13columns.txt
 
 
 
+
+know trock data/chars/soldier_troll/trock.txt
+
+know balance_dialog data/bgs/temple7D-boss/balance_dialog/balance_dialog.txt
+know balance_dialog2 data/bgs/temple7D-boss/balance_dialog/balance_dialog2.txt
+
+know Batu data/chars/misc/rocks/rocks/batu.txt

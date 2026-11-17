@@ -3,7 +3,7 @@ health		10
 type		obstacle
 gfxshadow	1
 defense		normal4 10
-diesound	data/sounds/wood.wav
+diesound	data/sounds/silence.wav
 
 
 anim idle

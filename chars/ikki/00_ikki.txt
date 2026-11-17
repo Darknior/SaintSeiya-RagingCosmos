@@ -114,7 +114,7 @@ anim waiting # Animation d'attente dans l'écran de sélection
 anim select  # Personnage sélectionné
     delay    12
     offset   60 226
-    sound    data/chars/sounds/select-long.wav
+    sound    data/sounds/silence.wav
     frame    data/chars/ikki/select/select1.png
     frame    data/chars/ikki/select/select2.png
     frame    data/chars/ikki/select/select3.png
@@ -1212,7 +1212,7 @@ anim freespecial2 # Phoenix Genmaken ( avant + bouton special)
     offset   60 178
     fastattack  1
     hitflash shaka_flame
-    sound    data/chars/deathmask/78-cosmos.wav
+    sound    data/chars/deathmask/sounds/78-cosmos.wav
     @cmd     spawnScreen "ikki_lights" 0 0 0 0
     #bbox    21 16 51 97
     energycost  25 1 0
@@ -1287,7 +1287,7 @@ anim    freespecial4    # Attaque arrière (a3)
     offset   82 140
     hitflash flashbig
     delay    5
-    sound    data/chars/ikki/sounds/17-back_kick.wav
+    sound    data/chars/seiya/sounds/17-back_kick.wav
     frame    data/chars/ikki/attackbackward0.png
     frame    data/chars/ikki/attackbackward1.png
     frame    data/chars/ikki/attackbackward2.png

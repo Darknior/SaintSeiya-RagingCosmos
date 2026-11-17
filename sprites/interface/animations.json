@@ -1,0 +1,772 @@
+[
+  [
+    {
+      "source": "data/chars/seiya/walk1.png",
+      "delay": 140,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-0-0.png"
+    },
+    {
+      "source": "data/chars/seiya/walk2.png",
+      "delay": 140,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-0-1.png"
+    },
+    {
+      "source": "data/chars/seiya/walk3.png",
+      "delay": 140,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-0-2.png"
+    },
+    {
+      "source": "data/chars/seiya/walk4.png",
+      "delay": 140,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-0-3.png"
+    },
+    {
+      "source": "data/chars/seiya/walk5.png",
+      "delay": 140,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-0-4.png"
+    },
+    {
+      "source": "data/chars/seiya/walk6.png",
+      "delay": 140,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-0-5.png"
+    },
+    {
+      "source": "data/chars/seiya/walk7.png",
+      "delay": 140,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-0-6.png"
+    }
+  ],
+  [
+    {
+      "source": "data/chars/seiya/run1.png",
+      "delay": 80,
+      "offset": [
+        48,
+        128
+      ],
+      "sprite": "data/sprites/interface/seiya-1-0.png"
+    },
+    {
+      "source": "data/chars/seiya/run2.png",
+      "delay": 80,
+      "offset": [
+        48,
+        128
+      ],
+      "sprite": "data/sprites/interface/seiya-1-1.png"
+    },
+    {
+      "source": "data/chars/seiya/run3.png",
+      "delay": 80,
+      "offset": [
+        48,
+        128
+      ],
+      "sprite": "data/sprites/interface/seiya-1-2.png"
+    },
+    {
+      "source": "data/chars/seiya/run4.png",
+      "delay": 80,
+      "offset": [
+        48,
+        128
+      ],
+      "sprite": "data/sprites/interface/seiya-1-3.png"
+    },
+    {
+      "source": "data/chars/seiya/run5.png",
+      "delay": 80,
+      "offset": [
+        48,
+        128
+      ],
+      "sprite": "data/sprites/interface/seiya-1-4.png"
+    },
+    {
+      "source": "data/chars/seiya/run6.png",
+      "delay": 80,
+      "offset": [
+        48,
+        128
+      ],
+      "sprite": "data/sprites/interface/seiya-1-5.png"
+    },
+    {
+      "source": "data/chars/seiya/run7.png",
+      "delay": 80,
+      "offset": [
+        48,
+        128
+      ],
+      "sprite": "data/sprites/interface/seiya-1-6.png"
+    }
+  ],
+  [
+    {
+      "source": "data/chars/seiya/attack1.png",
+      "delay": 60,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-0.png"
+    },
+    {
+      "source": "data/chars/seiya/attack2.png",
+      "delay": 60,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-1.png"
+    },
+    {
+      "source": "data/chars/seiya/attack3.png",
+      "delay": 60,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-2.png"
+    },
+    {
+      "source": "data/chars/seiya/attack2.png",
+      "delay": 60,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-3.png"
+    },
+    {
+      "source": "data/chars/seiya/attack21.png",
+      "delay": 70,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-4.png"
+    },
+    {
+      "source": "data/chars/seiya/attack22.png",
+      "delay": 70,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-5.png"
+    },
+    {
+      "source": "data/chars/seiya/attack23.png",
+      "delay": 70,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-6.png"
+    },
+    {
+      "source": "data/chars/seiya/attack24.png",
+      "delay": 70,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-7.png"
+    },
+    {
+      "source": "data/chars/seiya/attack31.png",
+      "delay": 70,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-8.png"
+    },
+    {
+      "source": "data/chars/seiya/attack32.png",
+      "delay": 70,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-9.png"
+    },
+    {
+      "source": "data/chars/seiya/attack33.png",
+      "delay": 70,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-10.png"
+    },
+    {
+      "source": "data/chars/seiya/attack41.png",
+      "delay": 90,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-11.png"
+    },
+    {
+      "source": "data/chars/seiya/attack42.png",
+      "delay": 90,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-12.png"
+    },
+    {
+      "source": "data/chars/seiya/attack43.png",
+      "delay": 90,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-13.png"
+    },
+    {
+      "source": "data/chars/seiya/attack51.png",
+      "delay": 80,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-14.png"
+    },
+    {
+      "source": "data/chars/seiya/attack52.png",
+      "delay": 80,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-15.png"
+    },
+    {
+      "source": "data/chars/seiya/attack53.png",
+      "delay": 80,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-16.png"
+    },
+    {
+      "source": "data/chars/seiya/attack54.png",
+      "delay": 80,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-17.png"
+    },
+    {
+      "source": "data/chars/seiya/attack55.png",
+      "delay": 80,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-18.png"
+    },
+    {
+      "source": "data/chars/seiya/attack56.png",
+      "delay": 80,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-19.png"
+    },
+    {
+      "source": "data/chars/seiya/attack57.png",
+      "delay": 80,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-20.png"
+    },
+    {
+      "source": "data/chars/seiya/attack58.png",
+      "delay": 80,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-21.png"
+    },
+    {
+      "source": "data/chars/seiya/attack59.png",
+      "delay": 150,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-22.png"
+    },
+    {
+      "source": "data/chars/seiya/attack60.png",
+      "delay": 150,
+      "offset": [
+        45,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-2-23.png"
+    },
+    {
+      "source": "data/chars/seiya/idle1.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-2-24.png"
+    },
+    {
+      "source": "data/chars/seiya/idle2.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-2-25.png"
+    },
+    {
+      "source": "data/chars/seiya/idle3.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-2-26.png"
+    },
+    {
+      "source": "data/chars/seiya/idle4.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-2-27.png"
+    }
+  ],
+  [
+    {
+      "source": "data/chars/seiya/jump1.png",
+      "delay": 100,
+      "offset": [
+        45,
+        137
+      ],
+      "sprite": "data/sprites/interface/seiya-3-0.png"
+    },
+    {
+      "source": "data/chars/seiya/jump2.png",
+      "delay": 100,
+      "offset": [
+        45,
+        137
+      ],
+      "sprite": "data/sprites/interface/seiya-3-1.png"
+    },
+    {
+      "source": "data/chars/seiya/jump3.png",
+      "delay": 100,
+      "offset": [
+        45,
+        137
+      ],
+      "sprite": "data/sprites/interface/seiya-3-2.png"
+    },
+    {
+      "source": "data/chars/seiya/jump4.png",
+      "delay": 100,
+      "offset": [
+        45,
+        137
+      ],
+      "sprite": "data/sprites/interface/seiya-3-3.png"
+    },
+    {
+      "source": "data/chars/seiya/jump3.png",
+      "delay": 100,
+      "offset": [
+        45,
+        137
+      ],
+      "sprite": "data/sprites/interface/seiya-3-4.png"
+    },
+    {
+      "source": "data/chars/seiya/jump2.png",
+      "delay": 100,
+      "offset": [
+        45,
+        137
+      ],
+      "sprite": "data/sprites/interface/seiya-3-5.png"
+    },
+    {
+      "source": "data/chars/seiya/jump1.png",
+      "delay": 100,
+      "offset": [
+        45,
+        137
+      ],
+      "sprite": "data/sprites/interface/seiya-3-6.png"
+    },
+    {
+      "source": "data/chars/seiya/get1.png",
+      "delay": 70,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-3-7.png"
+    },
+    {
+      "source": "data/chars/seiya/get2.png",
+      "delay": 70,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-3-8.png"
+    },
+    {
+      "source": "data/chars/seiya/get2.png",
+      "delay": 70,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-3-9.png"
+    },
+    {
+      "source": "data/chars/seiya/get1.png",
+      "delay": 70,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-3-10.png"
+    },
+    {
+      "source": "data/chars/seiya/idle1.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-3-11.png"
+    },
+    {
+      "source": "data/chars/seiya/idle2.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-3-12.png"
+    },
+    {
+      "source": "data/chars/seiya/idle3.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-3-13.png"
+    },
+    {
+      "source": "data/chars/seiya/idle4.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-3-14.png"
+    }
+  ],
+  [
+    {
+      "source": "data/chars/seiya/jumpattack1.png",
+      "delay": 50,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-4-0.png"
+    },
+    {
+      "source": "data/chars/seiya/jumpattack2.png",
+      "delay": 50,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-4-1.png"
+    },
+    {
+      "source": "data/chars/seiya/jumpattack3.png",
+      "delay": 50,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-4-2.png"
+    },
+    {
+      "source": "data/chars/seiya/jumpattack3.png",
+      "delay": 50,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-4-3.png"
+    },
+    {
+      "source": "data/chars/seiya/idle1.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-4-4.png"
+    },
+    {
+      "source": "data/chars/seiya/idle2.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-4-5.png"
+    },
+    {
+      "source": "data/chars/seiya/idle3.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-4-6.png"
+    },
+    {
+      "source": "data/chars/seiya/idle4.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-4-7.png"
+    }
+  ],
+  [
+    {
+      "source": "data/chars/seiya/block1.png",
+      "delay": 50,
+      "offset": [
+        26,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-5-0.png"
+    },
+    {
+      "source": "data/chars/seiya/block2.png",
+      "delay": 50,
+      "offset": [
+        26,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-5-1.png"
+    },
+    {
+      "source": "data/chars/seiya/block3.png",
+      "delay": 50,
+      "offset": [
+        26,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-5-2.png"
+    },
+    {
+      "source": "data/chars/seiya/idle1.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-5-3.png"
+    },
+    {
+      "source": "data/chars/seiya/idle2.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-5-4.png"
+    },
+    {
+      "source": "data/chars/seiya/idle3.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-5-5.png"
+    },
+    {
+      "source": "data/chars/seiya/idle4.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-5-6.png"
+    }
+  ],
+  [
+    {
+      "source": "data/chars/seiya/special1.png",
+      "delay": 90,
+      "offset": [
+        31,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-6-0.png"
+    },
+    {
+      "source": "data/chars/seiya/special2.png",
+      "delay": 90,
+      "offset": [
+        31,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-6-1.png"
+    },
+    {
+      "source": "data/chars/seiya/special3.png",
+      "delay": 90,
+      "offset": [
+        31,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-6-2.png"
+    },
+    {
+      "source": "data/chars/seiya/special4.png",
+      "delay": 90,
+      "offset": [
+        31,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-6-3.png"
+    },
+    {
+      "source": "data/chars/seiya/special3.png",
+      "delay": 90,
+      "offset": [
+        31,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-6-4.png"
+    },
+    {
+      "source": "data/chars/seiya/special4.png",
+      "delay": 90,
+      "offset": [
+        31,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-6-5.png"
+    },
+    {
+      "source": "data/chars/seiya/special3.png",
+      "delay": 90,
+      "offset": [
+        31,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-6-6.png"
+    },
+    {
+      "source": "data/chars/seiya/special2.png",
+      "delay": 90,
+      "offset": [
+        31,
+        119
+      ],
+      "sprite": "data/sprites/interface/seiya-6-7.png"
+    },
+    {
+      "source": "data/chars/seiya/idle1.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-6-8.png"
+    },
+    {
+      "source": "data/chars/seiya/idle2.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-6-9.png"
+    },
+    {
+      "source": "data/chars/seiya/idle3.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-6-10.png"
+    },
+    {
+      "source": "data/chars/seiya/idle4.png",
+      "delay": 100,
+      "offset": [
+        45,
+        112
+      ],
+      "sprite": "data/sprites/interface/seiya-6-11.png"
+    }
+  ]
+]

@@ -16,4 +16,4 @@ anim idle
 anim fall
 	delay	100
 	offset	25 45
-	frame	data/chars/misc/guced.gif
+	frame	data/chars/misc/wood/guced.gif

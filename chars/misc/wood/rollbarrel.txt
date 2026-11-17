@@ -9,7 +9,7 @@ subject_to_hole 1
 no_adjust_base  0
 jugglepoints	2
 offscreenkill	250
-diesound 	data/sounds/wood.wav
+diesound 	data/sounds/silence.wav
 candamage       player enemy npc obstacle
 
 

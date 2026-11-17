@@ -1,6 +1,6 @@
 music       data/music/remix.bor
 
-panel       data/bgs/ROOMS/final.png 
+panel       data/bgs/rooms/final.png 
 
 cameratype  1
 direction   right

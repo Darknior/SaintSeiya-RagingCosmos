@@ -117,7 +117,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   66 144
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/gemini/idle1.png
 
 
@@ -884,7 +884,7 @@ anim freespecial6 # Another dimension
     energycost  50 1 0
     fastattack 1
     attack.damage.lethal.disable 1
-    sound data/chars/deathmask/78-cosmos.wav
+    sound data/chars/deathmask/sounds/78-cosmos.wav
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
     @cmd     spawnScreen "aldebaran_super_lights" 0 0 0 0
     @cmd     spawnScreen "gemini_constellation" 0 0 0 0

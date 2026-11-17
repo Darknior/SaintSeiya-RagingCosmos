@@ -48,7 +48,7 @@ anim	idle
 anim	follow1
 	delay	1
 	offset	70 85
-	sound	data/chars/misc/cart.wav
+	sound	data/chars/misc/traps/cart.wav
 	platform 70 95 -70 -70 75 75 40 5000
 	frame	data/chars/misc/traps/genbucart3.png
 	delay	8

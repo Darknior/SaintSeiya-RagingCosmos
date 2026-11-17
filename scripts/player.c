@@ -79,7 +79,7 @@ void spawnM(void Name, float dx, float dy, float dz)
    void Spawn;
 
    Spawn = spawn01(Name, dx, dy, dz);
-   changeentityproperty(Spawn, "map", map);
+   if(Spawn != NULL()) changeentityproperty(Spawn, "map", map);
 }
 
 //Direction
@@ -108,6 +108,7 @@ void spawnbind(void ChildName, void ChildAnim, float OffsetX, float OffsetY, flo
   if(!airLimit || airLimit && height <= airLimit){
     void Child = spawn01(ChildName, OffsetX, OffsetY, OffsetZ);							//Spawned child entity.
     
+    if(Child == NULL()) return NULL();
     changeentityproperty(Child, "parent", self);							//Set child's parent.
     performattack(Child, openborconstant(ChildAnim));
     bindentity(Child, self, OffsetX, OffsetY, OffsetZ, Direction, BindFlag);
@@ -136,6 +137,7 @@ void tosser3(void Bomb, float dx, float dy, float dz, float Vx, float Vy, float 
 	}
 
 	Shot = projectile(Bomb, x+dx, z+dz, y+dy, Direction, 0, 0, 0);
+	if(Shot == NULL()) return NULL();
 	tossentity(Shot, Vy, Vx, Vz);
 	changeentityproperty(Shot, "speed", Vx);
 	changeentityproperty(Shot, "projectile", 0); 

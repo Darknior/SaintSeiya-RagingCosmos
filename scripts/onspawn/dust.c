@@ -1,3 +1,4 @@
+#import "data/scripts/library/safe_expire.c"
 #import "data/scripts/updatelevel/temple11_water.c"
 
 void main()
@@ -15,13 +16,13 @@ void main()
 			name == "kick_dust"		||
 			name == "jump_dust"		||
 			name == "round_dust"	){
-			killentity(self);
+			expireEntity(self);
 		}
 
 		//THESE ENTITIES WILL BE ERASED BUT REPLACED WITH SPLASH ENTITY
 		if(	name == "round_dustB"	||
 			name == "fall_dust"		){
-			killentity(self);
+			expireEntity(self);
 			spawnStrongSplash(self);
 		}
 	}

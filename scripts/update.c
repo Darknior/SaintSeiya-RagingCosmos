@@ -37,11 +37,11 @@ void oncreate()
 
     void Loading1; void Loading2; void Loading3; void Loading4; void Loading5; 
     
-    Loading1 = loadsprite("data/bgs/loading/Loading1.png");
-    Loading2 = loadsprite("data/bgs/loading/Loading2.png");
-    Loading3 = loadsprite("data/bgs/loading/Loading3.png");
-    Loading4 = loadsprite("data/bgs/loading/Loading4.png");
-    Loading5 = loadsprite("data/bgs/loading/Loading5.png");
+    Loading1 = loadsprite("data/sprites/loading/loading_temple1.png");
+    Loading2 = loadsprite("data/sprites/loading/loading_temple1.png");
+    Loading3 = loadsprite("data/sprites/loading/loading_temple1.png");
+    Loading4 = loadsprite("data/sprites/loading/loading_temple1.png");
+    Loading5 = loadsprite("data/sprites/loading/loading_temple1.png");
 
     setglobalvar("Loading1", Loading1);
     setglobalvar("Loading2", Loading2);

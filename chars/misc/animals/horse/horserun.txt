@@ -11,9 +11,9 @@ anim	idle
 	jumpframe 1 0 2 0
 	offset	187 108
 	sound	data/sounds/hoof2.wav
-	frame	data/chars/misc/animals/horse1.png
-	frame	data/chars/misc/animals/horse2.png
-	frame	data/chars/misc/animals/horse3.png
-	frame	data/chars/misc/animals/horse4.png
-	frame	data/chars/misc/animals/horse5.png
-	frame	data/chars/misc/animals/horse6.png
+	frame	data/chars/misc/animals/horse/horse1.png
+	frame	data/chars/misc/animals/horse/horse2.png
+	frame	data/chars/misc/animals/horse/horse3.png
+	frame	data/chars/misc/animals/horse/horse4.png
+	frame	data/chars/misc/animals/horse/horse5.png
+	frame	data/chars/misc/animals/horse/horse6.png

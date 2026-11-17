@@ -1,3 +1,4 @@
+#import "data/scripts/library/safe_expire.c"
 //Library scripts for basic functions
 
 void platform(int Flag)
@@ -16,9 +17,9 @@ void offscreenkill( float dx, int E )
     int XPos = openborvariant("xpos"); //Get screen edge's position
 
     if( (x > XPos + 320 + dx) && (E == 1) ){ // Offscreen to the right?
-      killentity(self); //Suicide!
+      expireEntity(self); //Suicide!
     } else if( (x < XPos - dx) && (E == 0) ){ // Offscreen to the left?
-      killentity(self); //Suicide!
+      expireEntity(self); //Suicide!
     }
 }
 
@@ -33,7 +34,7 @@ void suicide()
 { // Suicide!!
     void self = getlocalvar("self");
 
-    killentity(self); //Suicide!
+    expireEntity(self); //Suicide!
 }
 
 void move(int dx, int dz, int da)

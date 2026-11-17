@@ -87,7 +87,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   110 180
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/soldier_base/01.png
 
 #// Static animations /////////////////////////////////////////////////
@@ -141,10 +141,21 @@ anim attack1
     offset    110 180
     dropv 4 1 0
     bbox 70 68 80 120
-	 attack 132 80 50 25 0 0 0 0 0 0
+
+    attack 0 0 0 0 0
+    delay 8
+    frame data/chars/soldier_base/02.png
+    attack 132 80 50 25 0 0 0 0 0 0
+    delay 10
+
     frame    data/chars/soldier_base/03.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
+
+    attack 0 0 0 0 0
+    delay 6
+    frame data/chars/soldier_base/02.png
+    frame data/chars/soldier_base/01.png
 
 anim pain
     loop    0

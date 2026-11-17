@@ -11,7 +11,7 @@ anim	idle
 	drawmethod scale 0.8 0.8
 	drawmethod alpha 1
    drawmethod  channel 0.50
-	sound data/chars/shura/12-dash.wav
+	sound data/chars/shura/sounds/12-dash.wav
 	frame	data/chars/shura/special/shura_dash/shura_dash0.png
 	frame	data/chars/shura/special/shura_dash/shura_dash1.png
 	frame	data/chars/shura/special/shura_dash/shura_dash2.png

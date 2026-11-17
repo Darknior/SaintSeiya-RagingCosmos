@@ -1,15 +1,15 @@
 loadingbg		data/sprites/loading/loading_temple9.png 1 -51 405 460 999 999 0
 
 
-music		data/music/music2.bor
+music		data/music/7sens.ogg
 
-bossmusic	data/music/boss.bor
+bossmusic	data/music/7sens.ogg
 
-panel		data/bgs/ROOMS/temple9.png 
+panel		data/bgs/rooms/temple9.png 
 
-\\frontpanel                   data/bgs/ROOMS/templerock2.png
+# \\frontpanel                   data/bgs/rooms/templerock2.png
 
-\\background                 data/bgs/ROOMS/sky001.png
+# \\background                 data/bgs/rooms/sky001.png
 
 cameratype 1
 
@@ -21,7 +21,7 @@ order	a
 
 
 
-\\rock 3
+# \\rock 3
 
 
 
@@ -35,7 +35,7 @@ noslow 1
 
 
 
--------------------------------------
+# -------------------------------------
 
 
 spawn       horloge-segment
@@ -51,7 +51,7 @@ coords      387 47
 at          0
 
 
-spawn roccia1
+spawn Batu
 alias ROCKS
 coords	1000 0
 at 10

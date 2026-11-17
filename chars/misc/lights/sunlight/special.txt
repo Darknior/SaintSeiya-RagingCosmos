@@ -15,8 +15,8 @@ anim idle
 	 frame   data/chars/misc/playno/4.gif
 	 frame   data/chars/misc/playno/5.gif
 	 frame   data/chars/misc/playno/6.gif
-	 frame   data/chars/misc/playno/7.gif
-	 frame   data/chars/misc/playno/8.gif
+	 frame   data/chars/misc/lights/sunlight/7.gif
+	 frame   data/chars/misc/lights/sunlight/8.gif
 	 frame   data/chars/misc/playno/empty.gif
 
 

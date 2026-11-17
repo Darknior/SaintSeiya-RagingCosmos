@@ -115,7 +115,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   39 144
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/aphrodite/idle1.png
 
 
@@ -720,7 +720,7 @@ anim freespecial3 #Blue Rose shot
     frame    data/chars/aphrodite/special0.png
     @cmd    shooter "aphrodite_rose_shot" 0 80 0 4 0 0
     frame    data/chars/aphrodite/special0.png
-    sound data/chars/aphrodite/08-lionstar.wav
+    sound data/chars/aphrodite/sounds/01.wav
     delay    100
     frame    data/chars/aphrodite/special0.png
 
@@ -784,7 +784,7 @@ anim freespecial6 # Ultra Bloody rose
     fastattack 1
     @cmd     spawnScreen "aphrodite_ultra" 0 0 0 0
     @cmd     spawnbind "aldebaran_aura" "ANI_IDLE" 0 10 0 1 0
-    sound data/chars/aldebaran/78-cosmos.wav
+    sound data/chars/aldebaran/sounds/78-cosmos.wav
     spawnframe 0 0 0 0 1
     subentity aphrodite_constellation
     energycost  50 1 0

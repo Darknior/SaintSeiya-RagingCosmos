@@ -1,0 +1,52 @@
+{
+  "original_commit": "110c8b5dc1d60593dd49ba5dee70c367f5bc7ee7",
+  "engine": "OpenBOR 4.0 build 7533 official",
+  "soldier_models": 28,
+  "families": 12,
+  "added_reactions": 167,
+  "new_soldier_drawings": 1,
+  "story_stages": 43,
+  "unique_levels_started": 45,
+  "campaign_load_combat_passed": true,
+  "restored_routes": 7,
+  "encounters_on_restored_routes": 38,
+  "soldiers_on_restored_routes": 107,
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt-BR",
+    "zh-Hans",
+    "ru",
+    "ja"
+  ],
+  "guide_pages_per_language": 7,
+  "native_guide_frames": 84,
+  "interface_tests": {
+    "passed": true,
+    "checks": [
+      "Seven selectable native language names, including accents/CJK/Cyrillic",
+      "Start validates and writes French without launching the game",
+      "Localized main menu opens the animated guide; start enters play",
+      "Seven guide pages animate while the simulation clock stays frozen",
+      "Guide renders in seven languages in the native engine",
+      "Pause Level Select loads Scorpio B at its exact campaign index 41",
+      "Resume and End Game work after a level jump",
+      "French survives a complete engine restart"
+    ]
+  },
+  "packaged_ui_tests": {
+    "passed": true,
+    "checks": [
+      "Light PACK extracted and loaded in official Linux engine",
+      "Seven animated guide pages and seven Unicode languages loaded from the package",
+      "Simulation stays frozen in guide",
+      "Return from guide and pause works"
+    ],
+    "pak_bytes": 498855632
+  },
+  "windows_runtime_tested": false,
+  "android_runtime_tested": false,
+  "campaign_complete_playthrough": false,
+  "ending_fix": "generic missing end.gif skipped; campaign already plays final video"
+}

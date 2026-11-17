@@ -419,7 +419,7 @@ anim	rise
 	frame	data/chars/2bug7/rise02.gif
 	frame	data/chars/2bug7/rise03.gif
 	frame	data/chars/2bug7/rise04.gif
-	frame	data/chars/2bug7/rise05.gif
+	frame	data/chars/misc/animals/frog2/rise05.gif
 		
 anim	spawn
 	loop	0

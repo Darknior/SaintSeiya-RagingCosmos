@@ -1,0 +1,612 @@
+[
+  {
+    "name": "Tutorial",
+    "levels": [
+      {
+        "index": 2,
+        "path": "data/levels/temple1.txt",
+        "label": "Temple 1"
+      }
+    ]
+  },
+  {
+    "name": "Story_Mode",
+    "levels": [
+      {
+        "index": 2,
+        "path": "data/levels/temple0.txt",
+        "label": "Temple 0"
+      },
+      {
+        "index": 5,
+        "path": "data/levels/temple1.txt",
+        "label": "Temple 1"
+      },
+      {
+        "index": 7,
+        "path": "data/levels/temple2A-road.txt",
+        "label": "Temple 2A - Road"
+      },
+      {
+        "index": 8,
+        "path": "data/levels/temple2B-midboss.txt",
+        "label": "Temple 2B - Guards"
+      },
+      {
+        "index": 9,
+        "path": "data/levels/temple2C-road.txt",
+        "label": "Temple 2C - Road"
+      },
+      {
+        "index": 11,
+        "path": "data/levels/temple2D-boss.txt",
+        "label": "Temple 2D - Boss"
+      },
+      {
+        "index": 13,
+        "path": "data/levels/temple3A-road.txt",
+        "label": "Temple 3A - Road"
+      },
+      {
+        "index": 14,
+        "path": "data/levels/temple3B-midboss.txt",
+        "label": "Temple 3B - Guards"
+      },
+      {
+        "index": 15,
+        "path": "data/levels/temple3C-road.txt",
+        "label": "Temple 3C - Road"
+      },
+      {
+        "index": 17,
+        "path": "data/levels/temple3D-boss.txt",
+        "label": "Temple 3D - Boss"
+      },
+      {
+        "index": 19,
+        "path": "data/levels/temple4A-road.txt",
+        "label": "Temple 4A - Road"
+      },
+      {
+        "index": 20,
+        "path": "data/levels/temple4B-midboss.txt",
+        "label": "Temple 4B - Guards"
+      },
+      {
+        "index": 21,
+        "path": "data/levels/temple4C-road.txt",
+        "label": "Temple 4C - Road"
+      },
+      {
+        "index": 23,
+        "path": "data/levels/temple4D-boss.txt",
+        "label": "Temple 4D - Boss"
+      },
+      {
+        "index": 25,
+        "path": "data/levels/temple5A-road.txt",
+        "label": "Temple 5A - Road"
+      },
+      {
+        "index": 26,
+        "path": "data/levels/temple5B-midboss.txt",
+        "label": "Temple 5B - Guards"
+      },
+      {
+        "index": 27,
+        "path": "data/levels/temple5C-road.txt",
+        "label": "Temple 5C - Road"
+      },
+      {
+        "index": 29,
+        "path": "data/levels/temple5D-boss.txt",
+        "label": "Temple 5D - Boss"
+      },
+      {
+        "index": 31,
+        "path": "data/levels/temple6A-road.txt",
+        "label": "Temple 6A - Road"
+      },
+      {
+        "index": 32,
+        "path": "data/levels/temple6B-midboss.txt",
+        "label": "Temple 6B - Guards"
+      },
+      {
+        "index": 33,
+        "path": "data/levels/temple6C-road.txt",
+        "label": "Temple 6C - Road"
+      },
+      {
+        "index": 35,
+        "path": "data/levels/temple6D-boss.txt",
+        "label": "Temple 6D - Boss"
+      },
+      {
+        "index": 38,
+        "path": "data/levels/temple7A-road.txt",
+        "label": "Temple 7A - Road"
+      },
+      {
+        "index": 40,
+        "path": "data/levels/temple8A-road.txt",
+        "label": "Temple 8A - Road"
+      },
+      {
+        "index": 41,
+        "path": "data/levels/temple8B-midboss.txt",
+        "label": "Temple 8B - Guards"
+      },
+      {
+        "index": 42,
+        "path": "data/levels/temple8C-road.txt",
+        "label": "Temple 8C - Road"
+      },
+      {
+        "index": 44,
+        "path": "data/levels/temple8D-boss.txt",
+        "label": "Temple 8D - Boss"
+      },
+      {
+        "index": 47,
+        "path": "data/levels/temple10A-road.txt",
+        "label": "Temple 10A - Road"
+      },
+      {
+        "index": 48,
+        "path": "data/levels/temple10B-midboss.txt",
+        "label": "Temple 10B - Guards"
+      },
+      {
+        "index": 49,
+        "path": "data/levels/temple10C-road.txt",
+        "label": "Temple 10C - Road"
+      },
+      {
+        "index": 51,
+        "path": "data/levels/temple10D-boss.txt",
+        "label": "Temple 10D - Boss"
+      },
+      {
+        "index": 54,
+        "path": "data/levels/temple11A-road.txt",
+        "label": "Temple 11A - Road"
+      },
+      {
+        "index": 55,
+        "path": "data/levels/temple11B-midboss.txt",
+        "label": "Temple 11B - Guards"
+      },
+      {
+        "index": 56,
+        "path": "data/levels/temple11C-road.txt",
+        "label": "Temple 11C - Road"
+      },
+      {
+        "index": 58,
+        "path": "data/levels/temple11D-boss.txt",
+        "label": "Temple 11D - Boss"
+      },
+      {
+        "index": 60,
+        "path": "data/levels/temple12A-road.txt",
+        "label": "Temple 12A - Road"
+      },
+      {
+        "index": 61,
+        "path": "data/levels/temple12B-midboss.txt",
+        "label": "Temple 12B - Guards"
+      },
+      {
+        "index": 62,
+        "path": "data/levels/temple12C-road.txt",
+        "label": "Temple 12C - Road"
+      },
+      {
+        "index": 64,
+        "path": "data/levels/temple12D-boss.txt",
+        "label": "Temple 12D - Boss"
+      },
+      {
+        "index": 66,
+        "path": "data/levels/temple13A-road.txt",
+        "label": "Temple 13A - Road"
+      },
+      {
+        "index": 67,
+        "path": "data/levels/temple13B-midboss.txt",
+        "label": "Temple 13B - Guards"
+      },
+      {
+        "index": 68,
+        "path": "data/levels/temple13C-road.txt",
+        "label": "Temple 13C - Road"
+      },
+      {
+        "index": 70,
+        "path": "data/levels/temple13D-boss.txt",
+        "label": "Temple 13D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "1_Road_Tremi-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple0.txt",
+        "label": "Temple 0"
+      }
+    ]
+  },
+  {
+    "name": "1_BOSS_Mu-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple1.txt",
+        "label": "Temple 1"
+      }
+    ]
+  },
+  {
+    "name": "2A_Road-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple2A-road.txt",
+        "label": "Temple 2A - Road"
+      }
+    ]
+  },
+  {
+    "name": "2B_Midboss-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple2B-midboss.txt",
+        "label": "Temple 2B - Guards"
+      }
+    ]
+  },
+  {
+    "name": "2C_Road-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple2C-road.txt",
+        "label": "Temple 2C - Road"
+      }
+    ]
+  },
+  {
+    "name": "2D_BOSS_Taureau-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple2D-boss.txt",
+        "label": "Temple 2D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "3A_Road-Shun",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple3A-road.txt",
+        "label": "Temple 3A - Road"
+      }
+    ]
+  },
+  {
+    "name": "3B_Midboss-Asterion",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple3B-midboss.txt",
+        "label": "Temple 3B - Guards"
+      }
+    ]
+  },
+  {
+    "name": "3C_Road-Shun",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple3C-road.txt",
+        "label": "Temple 3C - Road"
+      }
+    ]
+  },
+  {
+    "name": "3D_BOSS_Gemini",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple3D-boss.txt",
+        "label": "Temple 3D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "4A_Road-Shiryu",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple4A-road.txt",
+        "label": "Temple 4A - Road"
+      }
+    ]
+  },
+  {
+    "name": "4B_Midboss-Deathmask",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple4B-midboss.txt",
+        "label": "Temple 4B - Guards"
+      }
+    ]
+  },
+  {
+    "name": "4C_Road-Shiryu",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple4C-road.txt",
+        "label": "Temple 4C - Road"
+      }
+    ]
+  },
+  {
+    "name": "4D_BOSS_Cancer",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple4D-boss.txt",
+        "label": "Temple 4D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "5A_Road-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple5A-road.txt",
+        "label": "Temple 5A - Road"
+      }
+    ]
+  },
+  {
+    "name": "5B_Midboss-Cassios",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple5B-midboss.txt",
+        "label": "Temple 5B - Guards"
+      }
+    ]
+  },
+  {
+    "name": "5C_Road-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple5C-road.txt",
+        "label": "Temple 5C - Road"
+      }
+    ]
+  },
+  {
+    "name": "5D_BOSS_Lion",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple5D-boss.txt",
+        "label": "Temple 5D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "6A_Road-Ikki",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple6A-road.txt",
+        "label": "Temple 6A - Road"
+      }
+    ]
+  },
+  {
+    "name": "6B_Midboss_Shiva_Agora",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple6B-midboss.txt",
+        "label": "Temple 6B - Guards"
+      }
+    ]
+  },
+  {
+    "name": "6C_Road-Ikki",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple6C-road.txt",
+        "label": "Temple 6C - Road"
+      }
+    ]
+  },
+  {
+    "name": "6D_BOSS_Vierge",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple6D-boss.txt",
+        "label": "Temple 6D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "7A_Road_Elevator-Shiryu",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple7A-road.txt",
+        "label": "Temple 7A - Road"
+      }
+    ]
+  },
+  {
+    "name": "7_BOSS_Balance-Shiryu",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple7D-boss.txt",
+        "label": "Temple 7D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "8A_Road-Hyoga",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple8A-road.txt",
+        "label": "Temple 8A - Road"
+      }
+    ]
+  },
+  {
+    "name": "8C_Road_Sirius-Hyoga",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple8C-road.txt",
+        "label": "Temple 8C - Road"
+      }
+    ]
+  },
+  {
+    "name": "8D_BOSS_Scorpion-Hyoga",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple8D-boss.txt",
+        "label": "Temple 8D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "9_Sagitarius-Hyoga",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple9.txt",
+        "label": "Temple 9"
+      }
+    ]
+  },
+  {
+    "name": "10C_Road-Shiryu",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple10C-road.txt",
+        "label": "Temple 10C - Road"
+      }
+    ]
+  },
+  {
+    "name": "10D_BOSS_Capricorne-Shiryu",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple10D-boss.txt",
+        "label": "Temple 10D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "11A_Road-Hyoga",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple11A-road.txt",
+        "label": "Temple 11A - Road"
+      }
+    ]
+  },
+  {
+    "name": "11C_Road-Hyoga",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple11C-road.txt",
+        "label": "Temple 11C - Road"
+      }
+    ]
+  },
+  {
+    "name": "11D_BOSS_Verseau-Hyoga",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple11D-boss.txt",
+        "label": "Temple 11D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "12C_Road_Shun",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple12C-road.txt",
+        "label": "Temple 12C - Road"
+      }
+    ]
+  },
+  {
+    "name": "12D_BOSS_Poissons-Shun",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple12D-boss.txt",
+        "label": "Temple 12D - Boss"
+      }
+    ]
+  },
+  {
+    "name": "13A_Road_Marin-Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple13A-road.txt",
+        "label": "Temple 13A - Road"
+      }
+    ]
+  },
+  {
+    "name": "13C_Road_Seiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple13C-road.txt",
+        "label": "Temple 13C - Road"
+      }
+    ]
+  },
+  {
+    "name": "13D_BOSS_Grand_PopeSeiya",
+    "levels": [
+      {
+        "index": 1,
+        "path": "data/levels/temple13D-boss.txt",
+        "label": "Temple 13D - Boss"
+      }
+    ]
+  }
+]

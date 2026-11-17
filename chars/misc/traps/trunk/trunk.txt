@@ -13,7 +13,7 @@ antigravity 100
 nolife				1
 lifespan			5
 
-palette 			data/chars/misc/trunk/trunk.gif
+palette 			data/chars/misc/traps/trunk/trunk.gif
 
 anim spawn
 #	jumpframe	0 1.5 0

@@ -16,7 +16,7 @@ anim	idle
 	drawmethod alpha 1
 	drawmethod scale 0.5 0.5
 	attack1 0
-	sound data/chars/camus/04-ice_star.wav
+	sound data/chars/camus/sounds/04-ice_star.wav
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star0.png
 	freeze  200 150 150 150 30 3.5
 	frame	data/chars/camus/special/camus_ice_star/camus_ice_star1.png

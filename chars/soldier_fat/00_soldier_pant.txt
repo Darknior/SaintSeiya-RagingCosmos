@@ -95,7 +95,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
    delay    150
    offset    30 122
-   sound    data/chars/sounds/select-short.wav
+   sound    data/sounds/select-short.wav
    frame    data/chars/soldier_basic/idle1.png
 
 
@@ -164,7 +164,7 @@ anim runattack  # Attaque en courant
    @cmd     dasher 3.5 0 0 1
    spawnframe  0 80 10 0
    subentity    dash_dust
-   sound    data/chars/soldier_basic/sounds/07-forward_punch.wav
+   sound    data/chars/seiya/sounds/07-forward_punch.wav
    frame    data/chars/soldier_basic/runattack1.png
    attack   5 13 90 55 15 0 0 0 0 20
 	dropv 3.0 2.0 0.0

@@ -13,7 +13,7 @@ fglayer         data/bgs/temple12D-boss/RosesPetals.png         100  0.1 0 -20 0
 fglayer         data/bgs/temple12D-boss/fogOrange.png       -150 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
 fglayer         data/bgs/temple12D-boss/fogOrange.png        -25 -0.4 0   0 0 0 0 -1 -1 1 1   1 5 30 0.5 0
 
-#frontpanel      data/bgs/temple12D-boss/temple12_columns.png
+#frontpanel      data/bgs/temple12D-boss/columns/temple12_columns.png
 
 order           a
 direction       both
@@ -28,11 +28,10 @@ at        0
 
 
 #-------- Players spawn position -----------------------------------------------
-
-spawn1 50 180 0 # position du joueur1 (x, z, Y)
-spawn2 80 160 0 # position du joueur2 (x, z, Y)
-spawn3 90 220 0 # position du joueur3 (x, z, Y)
-spawn4 110 190 0 # position du joueur4 (x, z, Y)
+spawn1 50 403 0 # position du joueur1 (x, z, Y)
+spawn2 80 418 0 # position du joueur2 (x, z, Y)
+spawn3 90 433 0 # position du joueur3 (x, z, Y)
+spawn4 110 448 0 # position du joueur4 (x, z, Y)
 
 #-- HUD ------------------------------------------------------------------------
 

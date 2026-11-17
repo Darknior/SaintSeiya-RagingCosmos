@@ -17,7 +17,7 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 6
         drawmethod channel 0.99
-	frame	data/chars/misc/timer/timer/horloge-constellations/taureau.png
+	frame	data/chars/misc/timer/horloge-constellations/taureau.png
 	delay	2000
         drawmethod channel 0.95
 	frame	data/chars/misc/timer/horloge-constellations/taureau.png

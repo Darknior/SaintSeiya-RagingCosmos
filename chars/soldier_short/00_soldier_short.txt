@@ -92,7 +92,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   37 109
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/soldier_short/idle1.png
 
 
@@ -130,18 +130,6 @@ anim walk
     delay    15
     offset    68 101
     bbox 68 10 50 91
-    frame    data/chars/soldier_short/run1.png
-    frame    data/chars/soldier_short/run2.png
-    frame    data/chars/soldier_short/run3.png
-    frame    data/chars/soldier_short/run4.png
-    frame    data/chars/soldier_short/run5.png
-    frame    data/chars/soldier_short/run6.png
-
-anim rise
-    loop    1
-    delay    15
-    offset    65 125
-    bbox 49 10 50 115
     frame    data/chars/soldier_short/run1.png
     frame    data/chars/soldier_short/run2.png
     frame    data/chars/soldier_short/run3.png
@@ -388,3 +376,16 @@ anim fall30# Shock PAIN Ground
     bbox 23 92 100 35
     @cmd     spawnbind "shock1" "ANI_IDLE" -35 1 5 0 0
     frame    data/chars/soldier_short/fall6.png
+# Completed ordinary soldier reaction using native frames.
+
+anim pain12
+    @cmd spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 40 1 0
+    delay    7
+    offset    37 109
+    bbox 22 0 43 109
+    frame    data/chars/soldier_short/pain1.png
+    frame    data/chars/soldier_short/pain2.png
+    frame    data/chars/soldier_short/pain3.png
+    frame    data/chars/soldier_short/pain2.png
+    frame    data/chars/soldier_short/pain1.png
+

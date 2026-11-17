@@ -19,11 +19,10 @@ light        256 -44
 
 
 #-------- Players spawn position -----------------------------------------------
-
-spawn1 50 180 0 # position du joueur1 (x, z, Y)
-spawn2 80 160 0 # position du joueur2 (x, z, Y)
-spawn3 90 220 0 # position du joueur3 (x, z, Y)
-spawn4 110 190 0 # position du joueur4 (x, z, Y)
+spawn1 50 445 0 # position du joueur1 (x, z, Y)
+spawn2 80 460 0 # position du joueur2 (x, z, Y)
+spawn3 90 474 0 # position du joueur3 (x, z, Y)
+spawn4 110 474 0 # position du joueur4 (x, z, Y)
 
 #-- HUD ------------------------------------------------------------------------
 

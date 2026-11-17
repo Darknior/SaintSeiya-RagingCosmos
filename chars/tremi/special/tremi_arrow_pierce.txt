@@ -10,7 +10,7 @@ anim	idle
 	offset	183 85
 	drawmethod scale 1 1
 	drawmethod alpha 1
-   sound data/chars/tremi/02-pierce.wav
+   sound data/chars/tremi/sounds/02-pierce.wav
 	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce4.png
 	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce5.png
 	frame	data/chars/tremi/special/tremi_arrow_pierce/arrow_pierce6.png

@@ -10,10 +10,10 @@ anim idle
 	summonframe 0 0 0 0 0
 	custentity dialogbox
 	delay	  500	
-	frame data/bgs/temple6/shaka_dialog/05.png
+	frame data/bgs/temple6D-boss/shaka_dialog/05.png
         @cmd playwebm "data/bgs/temple6/temple06-part1.webm" 1	
-	frame data/bgs/temple6/shaka_dialog/06.png
-	frame data/bgs/temple6/shaka_dialog/07.png
-	frame data/bgs/temple6/shaka_dialog/08.png
+	frame data/bgs/temple6D-boss/shaka_dialog/06.png
+	frame data/bgs/temple6D-boss/shaka_dialog/07.png
+	frame data/bgs/temple6D-boss/shaka_dialog/08.png
         @cmd playwebm "data/bgs/temple6/temple06-part2.webm" 1	
-	frame data/bgs/temple6/shaka_dialog/08.png
+	frame data/bgs/temple6D-boss/shaka_dialog/08.png

@@ -17,7 +17,7 @@ void self = getlocalvar("self");
 //int frame = getentityproperty(self, "animpos");
 	if (frame==6)
 		{
-		killentity(self);
+		changeentityproperty(self,"lifespancountdown",-1);
 		}
 @end_script
 	frame 	data/varie/dust/run1

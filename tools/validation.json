@@ -1,0 +1,150 @@
+{
+  "soldier_models": 28,
+  "families": 12,
+  "soldiers": [
+    {
+      "model": "malesoldier",
+      "family": "soldier_blue",
+      "animation_count": 30
+    },
+    {
+      "model": "Comboman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "Jumpman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "Specialman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "Runningman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "downman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "upman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "backman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "Chargeman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "uppercutman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "grabman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "Invincibleman",
+      "family": "soldier_blue",
+      "animation_count": 29
+    },
+    {
+      "model": "soldier_short",
+      "family": "soldier_short",
+      "animation_count": 29
+    },
+    {
+      "model": "soldier_basic",
+      "family": "soldier_basic",
+      "animation_count": 35
+    },
+    {
+      "model": "soldier_pant",
+      "family": "soldier_basic",
+      "animation_count": 35
+    },
+    {
+      "model": "soldier_shield",
+      "family": "soldier_shield",
+      "animation_count": 27
+    },
+    {
+      "model": "soldier_shield_dress",
+      "family": "soldier_shield",
+      "animation_count": 27
+    },
+    {
+      "model": "soldier_muscles",
+      "family": "soldier_muscles",
+      "animation_count": 26
+    },
+    {
+      "model": "soldier_fat",
+      "family": "soldier_fat",
+      "animation_count": 30
+    },
+    {
+      "model": "SOLDIER",
+      "family": "soldier_base",
+      "animation_count": 24
+    },
+    {
+      "model": "SOLDIER1",
+      "family": "soldier_base",
+      "animation_count": 24
+    },
+    {
+      "model": "SOLDIER1-1",
+      "family": "soldier_base",
+      "animation_count": 24
+    },
+    {
+      "model": "SOLDIER2",
+      "family": "soldier_purple",
+      "animation_count": 24
+    },
+    {
+      "model": "SOLDIERTRAINING",
+      "family": "soldier_purple",
+      "animation_count": 24
+    },
+    {
+      "model": "sticksoldier",
+      "family": "soldier_stick",
+      "animation_count": 30
+    },
+    {
+      "model": "SOLDIER3",
+      "family": "soldier_big",
+      "animation_count": 24
+    },
+    {
+      "model": "soldier_mud",
+      "family": "soldier_mud",
+      "animation_count": 24
+    },
+    {
+      "model": "soldier_troll",
+      "family": "soldier_troll",
+      "animation_count": 26
+    }
+  ],
+  "story_stages": 43,
+  "active_text_files": 597,
+  "missing_assets": {},
+  "errors": []
+}

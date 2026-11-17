@@ -10,7 +10,7 @@ anim	idle
 	offset	183 85
 	drawmethod scale 1 1
 	drawmethod alpha 1
-   sound data/chars/tremi/05-slash.wav
+   sound data/chars/tremi/sounds/05-slash.wav
 	frame	data/chars/tremi/special/tremi_slash/tremi_slash-0.png
 	frame	data/chars/tremi/special/tremi_slash/tremi_slash-1.png
 	frame	data/chars/tremi/special/tremi_slash/tremi_slash-2.png

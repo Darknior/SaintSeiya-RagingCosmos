@@ -14,15 +14,15 @@ anim idle
 	bbox	223 190 32 16
 	delay	100
 	@cmd itemText "HEALTH + 300" 0.8 1.5 4
-	frame	data/chars/misc/items/food/bananaFF01.gif
+	frame	data/chars/misc/items/food/bananaff01.gif
 	delay   4
-	frame	data/chars/misc/items/food/bananaFF02.gif
-	frame	data/chars/misc/items/food/bananaFF01.gif
-	frame	data/chars/misc/items/food/bananaFF02.gif
-	frame	data/chars/misc/items/food/bananaFF01.gif
-	frame	data/chars/misc/items/food/bananaFF02.gif
-	frame	data/chars/misc/items/food/bananaFF01.gif
-	frame	data/chars/misc/items/food/bananaFF02.gif
-	frame	data/chars/misc/items/food/bananaFF01.gif
-	frame	data/chars/misc/items/food/bananaFF02.gif
-	frame	data/chars/misc/items/food/bananaFF01.gif
+	frame	data/chars/misc/items/food/bananaff02.gif
+	frame	data/chars/misc/items/food/bananaff01.gif
+	frame	data/chars/misc/items/food/bananaff02.gif
+	frame	data/chars/misc/items/food/bananaff01.gif
+	frame	data/chars/misc/items/food/bananaff02.gif
+	frame	data/chars/misc/items/food/bananaff01.gif
+	frame	data/chars/misc/items/food/bananaff02.gif
+	frame	data/chars/misc/items/food/bananaff01.gif
+	frame	data/chars/misc/items/food/bananaff02.gif
+	frame	data/chars/misc/items/food/bananaff01.gif

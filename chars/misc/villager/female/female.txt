@@ -20,7 +20,7 @@ if(frame==8)
     float lx = openborvariant("xpos");
     setspawnentry("coords", x-lx, z, a);
     spawn();
-    killentity(self);
+    changeentityproperty(self,"lifespancountdown",-1);
 }
 @end_script
 	loop 0

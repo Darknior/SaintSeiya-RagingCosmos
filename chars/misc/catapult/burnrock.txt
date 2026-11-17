@@ -17,17 +17,17 @@ anim idle
 	move	5
 	hitfx	data/sounds/fbhit.wav
 	burn	19 2 28 23 20 1 1 0 15
-	frame	data/chars/catapult/burnRok1.png
-	frame	data/chars/catapult/burnRok2.png
-	frame	data/chars/catapult/burnRok3.png
-	frame	data/chars/catapult/burnRok4.png
+	frame	data/chars/misc/catapult/burnrok1.png
+	frame	data/chars/misc/catapult/burnrok2.png
+	frame	data/chars/misc/catapult/burnrok3.png
+	frame	data/chars/misc/catapult/burnrok4.png
 	offset	33 44
 	burn	19 26 28 23 20 1 1 0 15
-	frame	data/chars/catapult/burnRok5.png
-	frame	data/chars/catapult/burnRok6.png
-	frame	data/chars/catapult/burnRok7.png
-	frame	data/chars/catapult/burnRok8.png
-	frame	data/chars/catapult/burnRok5.png
+	frame	data/chars/misc/catapult/burnrok5.png
+	frame	data/chars/misc/catapult/burnrok6.png
+	frame	data/chars/misc/catapult/burnrok7.png
+	frame	data/chars/misc/catapult/burnrok8.png
+	frame	data/chars/misc/catapult/burnrok5.png
 	delay	10
 	attack	0
 	@cmd	spawn01 "Rxplos" 0 0 0

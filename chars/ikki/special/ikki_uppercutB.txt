@@ -14,7 +14,7 @@ anim	idle
    fastattack 1
 	drawmethod alpha 1
    drawmethod  scale 1 1
-	sound data/chars/marin/sounds/01-uppercutB.wav
+	sound data/chars/marin/sounds/01-eagle_shoot.wav
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-0.png
 	frame	data/chars/ikki/special/ikki_uppercutB/ikki_uppercutB-1.png
    attack15 0 0 150 200 3 1 0 0 0 20

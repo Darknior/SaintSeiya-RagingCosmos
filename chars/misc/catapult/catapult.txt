@@ -13,9 +13,9 @@ nodrop 1
 cantgrab 0
 notgrab 1
 animationscript 	data/scripts/ani0020.h
-palette data/chars/Catapult/atk12.gif
+palette data/chars/misc/catapult/atk12.gif
 #icon		data/chars/Catapult/icon.gif
-#icondie     data/chars/misc/icond.gif
+#icondie     data/chars/misc/animals/scorp/icond.gif
 diesound data/sounds/klunk.wav
 load smoke1
 load Catapult2
@@ -33,7 +33,7 @@ rangez	-90 90
 	fastattack	1
 	loop	0
 	bbox	101 152 84 57
-	hitfx	data/chars/gnolld/sounds/a1hit.wav
+	hitfx	data/chars/soldier_troll/sounds/a1hit.wav
 	offset	145 210
 	delay	6
 	sound	data/chars/antimf/boom.wav
@@ -44,28 +44,28 @@ rangez	-90 90
 	frame	data/chars/Catapult/atk4.gif
 	frame	data/chars/Catapult/atk5.gif
 	frame	data/chars/Catapult/atk6.gif
-	frame	data/chars/Catapult/atk7.gif
-	frame	data/chars/Catapult/atk8.gif
-	frame	data/chars/Catapult/atk9.gif
-	frame	data/chars/Catapult/atk10.gif
-	frame	data/chars/Catapult/atk11.gif
+	frame	data/chars/misc/catapult/atk7.gif
+	frame	data/chars/misc/catapult/atk8.gif
+	frame	data/chars/misc/catapult/atk9.gif
+	frame	data/chars/misc/catapult/atk10.gif
+	frame	data/chars/misc/catapult/atk11.gif
 	sound	data/sounds/cat.wav
-	frame	data/chars/Catapult/atk12.gif
+	frame	data/chars/misc/catapult/atk12.gif
 	delay	3
-	frame	data/chars/Catapult/atk13.gif
-	frame	data/chars/Catapult/atk14.gif
-	frame	data/chars/Catapult/atk15.gif
-	frame	data/chars/Catapult/atk16.gif
-	frame	data/chars/Catapult/atk17.gif
-	frame	data/chars/Catapult/atk18.gif
-	frame	data/chars/Catapult/atk19.gif
-	frame	data/chars/Catapult/atk20.gif
-	frame	data/chars/Catapult/atk21.gif
-	frame	data/chars/Catapult/atk22.gif
-	frame	data/chars/Catapult/atk23.gif
-	frame	data/chars/Catapult/atk24.gif
+	frame	data/chars/misc/catapult/atk13.gif
+	frame	data/chars/misc/catapult/atk14.gif
+	frame	data/chars/misc/catapult/atk15.gif
+	frame	data/chars/misc/catapult/atk16.gif
+	frame	data/chars/misc/catapult/atk17.gif
+	frame	data/chars/misc/catapult/atk18.gif
+	frame	data/chars/misc/catapult/atk19.gif
+	frame	data/chars/misc/catapult/atk20.gif
+	frame	data/chars/misc/catapult/atk21.gif
+	frame	data/chars/misc/catapult/atk22.gif
+	frame	data/chars/misc/catapult/atk23.gif
+	frame	data/chars/misc/catapult/atk24.gif
 	@cmd shooter2 "FlameBall" 0 170 0 1.5 0.5 0
-	frame	data/chars/Catapult/atk25.gif
+	frame	data/chars/misc/catapult/atk25.gif
 	throwframe	33
 	delay	6
 	frame	data/chars/Catapult/atk2-1.gif
@@ -80,11 +80,11 @@ rangez	-90 90
 	frame	data/chars/Catapult/atk2-3.gif
 	frame	data/chars/Catapult/atk2-4.gif
 	frame	data/chars/Catapult/atk2-5.gif
-	frame	data/chars/Catapult/atk2-6.gif
-	frame	data/chars/Catapult/atk2-7.gif
-	frame	data/chars/Catapult/atk2-8.gif
-	frame	data/chars/Catapult/atk2-9.gif
-	frame	data/chars/Catapult/atk2-10.gif
+	frame	data/chars/misc/catapult/atk2-6.gif
+	frame	data/chars/misc/catapult/atk2-7.gif
+	frame	data/chars/misc/catapult/atk2-8.gif
+	frame	data/chars/misc/catapult/atk2-9.gif
+	frame	data/chars/misc/catapult/atk2-10.gif
 
 anim	attack2
 	#custbomb	FlameBall#rock3
@@ -95,7 +95,7 @@ rangez	-90 90
 	fastattack	1
 	loop	0
 	bbox	101 153 82 55
-	hitfx	data/chars/gnolld/sounds/a1hit.wav
+	hitfx	data/chars/soldier_troll/sounds/a1hit.wav
 	offset	145 210
 	delay	6
 	sound	data/chars/antimf/boom.wav
@@ -106,29 +106,29 @@ rangez	-90 90
 	frame	data/chars/Catapult/atk4.gif
 	frame	data/chars/Catapult/atk5.gif
 	frame	data/chars/Catapult/atk6.gif
-	frame	data/chars/Catapult/atk7.gif
-	frame	data/chars/Catapult/atk8.gif
-	frame	data/chars/Catapult/atk9.gif
-	frame	data/chars/Catapult/atk10.gif
-	frame	data/chars/Catapult/atk11.gif
+	frame	data/chars/misc/catapult/atk7.gif
+	frame	data/chars/misc/catapult/atk8.gif
+	frame	data/chars/misc/catapult/atk9.gif
+	frame	data/chars/misc/catapult/atk10.gif
+	frame	data/chars/misc/catapult/atk11.gif
 	sound	data/sounds/cat.wav
-	frame	data/chars/Catapult/atk12.gif
+	frame	data/chars/misc/catapult/atk12.gif
 	delay	3
-	frame	data/chars/Catapult/atk13.gif
-	frame	data/chars/Catapult/atk14.gif
-	frame	data/chars/Catapult/atk15.gif
-	frame	data/chars/Catapult/atk16.gif
-	frame	data/chars/Catapult/atk17.gif
-	frame	data/chars/Catapult/atk18.gif
-	frame	data/chars/Catapult/atk19.gif
-	frame	data/chars/Catapult/atk20.gif
-	frame	data/chars/Catapult/atk21.gif
-	frame	data/chars/Catapult/atk22.gif
-	frame	data/chars/Catapult/atk23.gif
-	frame	data/chars/Catapult/atk24.gif
+	frame	data/chars/misc/catapult/atk13.gif
+	frame	data/chars/misc/catapult/atk14.gif
+	frame	data/chars/misc/catapult/atk15.gif
+	frame	data/chars/misc/catapult/atk16.gif
+	frame	data/chars/misc/catapult/atk17.gif
+	frame	data/chars/misc/catapult/atk18.gif
+	frame	data/chars/misc/catapult/atk19.gif
+	frame	data/chars/misc/catapult/atk20.gif
+	frame	data/chars/misc/catapult/atk21.gif
+	frame	data/chars/misc/catapult/atk22.gif
+	frame	data/chars/misc/catapult/atk23.gif
+	frame	data/chars/misc/catapult/atk24.gif
 	@cmd	target 2.5 1.25 15 0 0 1
 	@cmd shooter2 "FlameBall" 0 170 0 0.8 0.5 0
-	frame	data/chars/Catapult/atk25.gif
+	frame	data/chars/misc/catapult/atk25.gif
 	throwframe	33
 	delay	6
 	frame	data/chars/Catapult/atk2-1.gif
@@ -143,11 +143,11 @@ rangez	-90 90
 	frame	data/chars/Catapult/atk2-3.gif
 	frame	data/chars/Catapult/atk2-4.gif
 	frame	data/chars/Catapult/atk2-5.gif
-	frame	data/chars/Catapult/atk2-6.gif
-	frame	data/chars/Catapult/atk2-7.gif
-	frame	data/chars/Catapult/atk2-8.gif
-	frame	data/chars/Catapult/atk2-9.gif
-	frame	data/chars/Catapult/atk2-10.gif
+	frame	data/chars/misc/catapult/atk2-6.gif
+	frame	data/chars/misc/catapult/atk2-7.gif
+	frame	data/chars/misc/catapult/atk2-8.gif
+	frame	data/chars/misc/catapult/atk2-9.gif
+	frame	data/chars/misc/catapult/atk2-10.gif
 
 anim	death
 	loop	0
@@ -198,7 +198,7 @@ anim  follow1
 	@script
     void self = getlocalvar("self");
     if(frame==1){
-      killentity(self);
+      changeentityproperty(self,"lifespancountdown",-1);
     }
 @end_script
 	loop  1

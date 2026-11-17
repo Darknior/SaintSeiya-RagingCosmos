@@ -10,7 +10,7 @@ anim	idle
 	delay	8
 	offset	51 200
 	drawmethod alpha 1
-	sound data/chars/shaina/06-storm.wav
+	sound data/chars/shaina/sounds/06-storm.wav
 	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-20.png
 	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-21.png
 	frame	data/chars/shaina/special/shaina_electricity/shaina_electricity-22.png

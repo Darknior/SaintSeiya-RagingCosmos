@@ -42,6 +42,7 @@ void effect_tint(void ent)
 
     // First lets turn drawmethod on. If we don't, nothing below will
     // work at all.
+    if(!getdrawmethod(ent,"enabled")) changedrawmethod(ent,"reset",1);
     changedrawmethod(ent, "enabled", 1);
 
     // For time controlled effects, we need to know

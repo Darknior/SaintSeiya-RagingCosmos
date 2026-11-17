@@ -123,7 +123,7 @@ anim waiting # Animation d'attente dans l'écran de sélection
 anim select  # Personnage sélectionné
     delay    12
     offset   35 226
-    sound    data/chars/sounds/select-long.wav
+    sound    data/sounds/silence.wav
     frame    data/chars/hyoga/select/select1.png
     frame    data/chars/hyoga/select/select2.png
     frame    data/chars/hyoga/select/select3.png
@@ -248,7 +248,7 @@ anim cant # Plus assez de mp
     sound    data/chars/hyoga/sounds/cant.wav
     @cmd     spawnbind "impact" "ANI_IDLE" 0 1 50 0 0
     frame    data/chars/hyoga/uppercut1.png
-    sound    data/chars/hyoga/03-uppercut2.wav
+    sound    data/chars/seiya/sounds/03-uppercut2.wav
     delay    50
     frame    data/chars/hyoga/uppercut2.png
     delay    10
@@ -1214,7 +1214,7 @@ anim special3    # Saut attaque spéciale flashkick
     delay    5
     offset   55 140
     bbox     21 14 51 97
-    sound    data/chars/hyoga/sounds/19-air_special.wav
+    sound    data/chars/seiya/sounds/19-air_special.wav
     jumpframe  2 -2 0
     frame    data/chars/hyoga/jumpspecial1.png
     attack4  62 21 67 26 10 1 0 0 5 12
@@ -1357,7 +1357,7 @@ anim freespecial6    # Aurora Thunder Attack ( Bas + bouton special a2)
     hitflash hyoga_swing
     delay    10
     offset   45 148
-    sound    data/chars/deathmask/78-cosmos.wav
+    sound    data/chars/deathmask/sounds/78-cosmos.wav
     @cmd     spawnScreen "camus_lights" 0 0 0 0
     summonframe  0 0 0 0 1
     subentity    hyoga_constellation

@@ -16,8 +16,8 @@ anim idle
 	@cmd spawnFade "out" 0 0 0 10000000001 0.5
 	frame	data/chars/dialogs/empty.png
 
-	@cmd playwebm "data/bgs/temple5/scene1.webm" 1
-	@cmd playwebm "data/bgs/temple5/scene2.webm" 0
+	@cmd playwebm "data/bgs/temple5D-boss/scene1.webm" 1
+	@cmd playwebm "data/bgs/temple5D-boss/scene2.webm" 0
 	@cmd spawnFade "in" 0 0 0 10000000001 0.5
 	@cmd setVar "cassios_rescue" "fall"
 	frame	data/chars/dialogs/empty.png
@@ -57,8 +57,8 @@ anim idle
 	@cmd spawnFade "out" 0 0 0 10000000001 0.5
 	frame	data/chars/dialogs/empty.png
 	
-	@cmd playwebm "data/bgs/temple5/scene3.webm" 1
-	@cmd playwebm "data/bgs/temple5/scene4.webm" 0
+	@cmd playwebm "data/bgs/temple5D-boss/scene3.webm" 1
+	@cmd playwebm "data/bgs/temple5D-boss/scene4.webm" 0
 	@cmd setVar "aiolia" "fall"
 	@cmd spawnFade "in" 0 0 0 10000000001 0.5
 	frame	data/chars/dialogs/empty.png

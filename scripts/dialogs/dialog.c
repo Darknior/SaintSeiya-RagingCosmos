@@ -3,7 +3,7 @@ void main()
 	void self			= getlocalvar("self");
 	void name			= getentityproperty(self, "defaultname");
 	void type			= getentityproperty(self, "type");
-	void portName		= getglobalvar("portraitName")+"";
+	void portName		= getglobalvar("portraitName");
 	void line1			= getglobalvar("line1");
 	void line2			= getglobalvar("line2");
 	void line3			= getglobalvar("line3");
@@ -30,9 +30,11 @@ void main()
 	int xBox			= xPos+12;
 	int yBox			= yPos+20;
 	int font			= 5;
-	int xPortrait;
-	int xText;
+	int xPortrait = portraitRight;
+	int xText = textLeft;
 	int yText;
+
+	if(line1 == NULL() || line1 == "" || portName == NULL()){if(type == openborconstant("TYPE_TEXTBOX")) hideEntity();return;}
 
 	//REGISTER SELF AS THE CURRENT DIALOG ENTITY
 	if(getglobalvar("dialog_entity") == NULL()){setglobalvar("dialog_entity", self);}
@@ -56,7 +58,7 @@ void main()
 	}
 
 	//LOAD PORTRAITS
-	if(getglobalvar(portName) == NULL()){
+	if(portName != "empty" && getglobalvar(portName) == NULL()){
 		setglobalvar(portName, loadsprite("data/chars/dialogs/icons/"+portName+".png"));
 	}
 
@@ -65,7 +67,7 @@ void main()
 		yText = lineStart;
 		drawbox(xBox, yBox, boxWidth, boHeight, boxLayer, color, alpha);
 		changedrawmethod(NULL(), "enabled", 0);
-		drawsprite(getglobalvar(portName), xPortrait, yPortrait, spriteLayer);
+		if(getglobalvar(portName) != NULL()) drawsprite(getglobalvar(portName), xPortrait, yPortrait, spriteLayer);
 		drawstring(xText, yText, font, line1, textLayer);yText = yText+lineAdd;
 		drawstring(xText, yText, font, line2, textLayer);yText = yText+lineAdd;
 		drawstring(xText, yText, font, line3, textLayer);yText = yText+lineAdd;

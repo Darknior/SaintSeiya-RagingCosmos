@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "Light PACK extracted and loaded in official Linux engine",
+    "Seven animated guide pages and seven Unicode languages loaded from the package",
+    "Simulation stays frozen in guide",
+    "Return from guide and pause works"
+  ],
+  "pak_bytes": 498855632
+}

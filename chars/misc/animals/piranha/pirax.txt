@@ -46,45 +46,45 @@ anim	attack1
 	frame	data/chars/2bug10/a07.gif
 	frame	data/chars/2bug10/a08.gif
 	attack2	80 100 65 40 6 0 0 0 20 20
-	frame	data/chars/2bug10/a09.gif
-	frame	data/chars/2bug10/a10.gif
-	frame	data/chars/2bug10/a11.gif
-	frame	data/chars/2bug10/a12.gif
-	frame	data/chars/2bug10/a13.gif
-	frame	data/chars/2bug10/a14.gif
-	frame	data/chars/2bug10/a15.gif
-	frame	data/chars/2bug10/a16.gif
-	frame	data/chars/2bug10/a17.gif
-	frame	data/chars/2bug10/a11.gif
-	frame	data/chars/2bug10/a12.gif
-	frame	data/chars/2bug10/a13.gif
-	frame	data/chars/2bug10/a14.gif
-	frame	data/chars/2bug10/a11.gif
-	frame	data/chars/2bug10/a12.gif
-	frame	data/chars/2bug10/a13.gif
-	frame	data/chars/2bug10/a14.gif
-	frame	data/chars/2bug10/a11.gif
-	frame	data/chars/2bug10/a12.gif
-	frame	data/chars/2bug10/a13.gif
-	frame	data/chars/2bug10/a14.gif
-	frame	data/chars/2bug10/a11.gif
-	frame	data/chars/2bug10/a12.gif
-	frame	data/chars/2bug10/a13.gif
-	frame	data/chars/2bug10/a14.gif
-	frame	data/chars/2bug10/a11.gif
-	frame	data/chars/2bug10/a12.gif
-	frame	data/chars/2bug10/a13.gif
-	frame	data/chars/2bug10/a14.gif
-	frame	data/chars/2bug10/a11.gif
-	frame	data/chars/2bug10/a12.gif
-	frame	data/chars/2bug10/a13.gif
-	frame	data/chars/2bug10/a14.gif
-	frame	data/chars/2bug10/a11.gif
-	frame	data/chars/2bug10/a12.gif
-	frame	data/chars/2bug10/a13.gif
+	frame	data/chars/misc/animals/piranha/a09.gif
+	frame	data/chars/misc/animals/piranha/a10.gif
+	frame	data/chars/misc/animals/piranha/a11.gif
+	frame	data/chars/misc/animals/piranha/a12.gif
+	frame	data/chars/misc/animals/piranha/a13.gif
+	frame	data/chars/misc/animals/piranha/a14.gif
+	frame	data/chars/misc/animals/piranha/a15.gif
+	frame	data/chars/misc/animals/piranha/a16.gif
+	frame	data/chars/misc/animals/piranha/a17.gif
+	frame	data/chars/misc/animals/piranha/a11.gif
+	frame	data/chars/misc/animals/piranha/a12.gif
+	frame	data/chars/misc/animals/piranha/a13.gif
+	frame	data/chars/misc/animals/piranha/a14.gif
+	frame	data/chars/misc/animals/piranha/a11.gif
+	frame	data/chars/misc/animals/piranha/a12.gif
+	frame	data/chars/misc/animals/piranha/a13.gif
+	frame	data/chars/misc/animals/piranha/a14.gif
+	frame	data/chars/misc/animals/piranha/a11.gif
+	frame	data/chars/misc/animals/piranha/a12.gif
+	frame	data/chars/misc/animals/piranha/a13.gif
+	frame	data/chars/misc/animals/piranha/a14.gif
+	frame	data/chars/misc/animals/piranha/a11.gif
+	frame	data/chars/misc/animals/piranha/a12.gif
+	frame	data/chars/misc/animals/piranha/a13.gif
+	frame	data/chars/misc/animals/piranha/a14.gif
+	frame	data/chars/misc/animals/piranha/a11.gif
+	frame	data/chars/misc/animals/piranha/a12.gif
+	frame	data/chars/misc/animals/piranha/a13.gif
+	frame	data/chars/misc/animals/piranha/a14.gif
+	frame	data/chars/misc/animals/piranha/a11.gif
+	frame	data/chars/misc/animals/piranha/a12.gif
+	frame	data/chars/misc/animals/piranha/a13.gif
+	frame	data/chars/misc/animals/piranha/a14.gif
+	frame	data/chars/misc/animals/piranha/a11.gif
+	frame	data/chars/misc/animals/piranha/a12.gif
+	frame	data/chars/misc/animals/piranha/a13.gif
 	attack2	0 0 0 0
 	delay	100
-	frame	data/chars/2bug10/a14.gif
+	frame	data/chars/misc/animals/piranha/a14.gif
 	bbox	0 0 0 0
 	delay	3
 	frame	data/chars/2bug10/empty.gif
@@ -125,8 +125,8 @@ anim	attack2
 	frame	data/chars/2bug10/a06.gif
 	frame	data/chars/2bug10/a07.gif
 	frame	data/chars/2bug10/a08.gif
-	frame	data/chars/2bug10/a09.gif
-	frame	data/chars/2bug10/a10.gif
+	frame	data/chars/misc/animals/piranha/a09.gif
+	frame	data/chars/misc/animals/piranha/a10.gif
 	frame	data/chars/2bug10/b01.gif
 	frame	data/chars/2bug10/b02.gif
 	frame	data/chars/2bug10/b03.gif
@@ -180,13 +180,13 @@ anim	burn
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	frame	data/chars/2bug10/pain1.gif
 	frame	data/chars/2bug10/pain2.gif
 	frame	data/chars/2bug10/pain3.gif
@@ -195,13 +195,13 @@ anim	burn
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	frame	data/chars/2bug10/pain1.gif
 	frame	data/chars/2bug10/pain2.gif
 	frame	data/chars/2bug10/pain3.gif
@@ -210,14 +210,14 @@ anim	burn
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
 	delay	200
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	delay	5
 	frame	data/chars/2bug10/empty.gif
 	@cmd	spawnAni "splash" 1 30 2 "ANI_FOLLOW2"
@@ -247,13 +247,13 @@ anim	fall
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	frame	data/chars/2bug10/pain1.gif
 	frame	data/chars/2bug10/pain2.gif
 	frame	data/chars/2bug10/pain3.gif
@@ -262,13 +262,13 @@ anim	fall
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	frame	data/chars/2bug10/pain1.gif
 	frame	data/chars/2bug10/pain2.gif
 	frame	data/chars/2bug10/pain3.gif
@@ -277,14 +277,14 @@ anim	fall
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
 	delay	200
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	delay	5
 	frame	data/chars/2bug10/empty.gif
 	@cmd	spawnAni "splash" 1 30 2 "ANI_FOLLOW2"
@@ -305,8 +305,8 @@ anim	fall7
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
 		
 
 
@@ -339,13 +339,13 @@ anim	pain
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	frame	data/chars/2bug10/pain1.gif
 	frame	data/chars/2bug10/pain2.gif
 	frame	data/chars/2bug10/pain3.gif
@@ -354,13 +354,13 @@ anim	pain
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	frame	data/chars/2bug10/pain1.gif
 	frame	data/chars/2bug10/pain2.gif
 	frame	data/chars/2bug10/pain3.gif
@@ -369,14 +369,14 @@ anim	pain
 	frame	data/chars/2bug10/pain6.gif
 	frame	data/chars/2bug10/pain7.gif
 	frame	data/chars/2bug10/pain8.gif
-	frame	data/chars/2bug10/pain9.gif
-	frame	data/chars/2bug10/pain10.gif
-	frame	data/chars/2bug10/pain11.gif
-	frame	data/chars/2bug10/pain12.gif
-	frame	data/chars/2bug10/pain13.gif
-	frame	data/chars/2bug10/pain14.gif
+	frame	data/chars/misc/animals/piranha/pain9.gif
+	frame	data/chars/misc/animals/piranha/pain10.gif
+	frame	data/chars/misc/animals/piranha/pain11.gif
+	frame	data/chars/misc/animals/piranha/pain12.gif
+	frame	data/chars/misc/animals/piranha/pain13.gif
+	frame	data/chars/misc/animals/piranha/pain14.gif
 	delay	200
-	frame	data/chars/2bug10/pain15.gif
+	frame	data/chars/misc/animals/piranha/pain15.gif
 	delay	5
 	frame	data/chars/2bug10/empty.gif
 	@cmd	spawnAni "splash" 1 30 2 "ANI_FOLLOW2"
@@ -416,7 +416,7 @@ anim	turn
 	frame	data/chars/2bug10/idle06.gif
 	frame	data/chars/2bug10/idle07.gif
 	frame	data/chars/2bug10/idle08.gif
-	frame	data/chars/2bug10/idle09.gif
+	frame	data/chars/misc/animals/piranha/idle09.gif
 		
 #|edited by openBor Stats v 0.53
 		

@@ -10,28 +10,28 @@ anim idle
 	delay	8
 	landframe 6
 	offset  25 25
-	frame	data/chars/misc/animals/pig01.png
-	frame	data/chars/misc/animals/pig02.png
-	frame	data/chars/misc/animals/pig01.png
-	frame	data/chars/misc/animals/pig02.png
-	frame	data/chars/misc/animals/pig01.png
+	frame	data/chars/misc/animals/pig/pig01.png
+	frame	data/chars/misc/animals/pig/pig02.png
+	frame	data/chars/misc/animals/pig/pig01.png
+	frame	data/chars/misc/animals/pig/pig02.png
+	frame	data/chars/misc/animals/pig/pig01.png
 	delay	800
-	frame	data/chars/misc/animals/pig02.png
+	frame	data/chars/misc/animals/pig/pig02.png
 	delay	15
-	frame	data/chars/misc/animals/pig03.png
-	frame	data/chars/misc/animals/pig04.png
+	frame	data/chars/misc/animals/pig/pig03.png
+	frame	data/chars/misc/animals/pig/pig04.png
 	delay	12
-	frame	data/chars/misc/animals/pig05.png
-	frame	data/chars/misc/animals/pig06.png
-	frame	data/chars/misc/animals/pig05.png
-	frame	data/chars/misc/animals/pig06.png
+	frame	data/chars/misc/animals/pig/pig05.png
+	frame	data/chars/misc/animals/pig/pig06.png
+	frame	data/chars/misc/animals/pig/pig05.png
+	frame	data/chars/misc/animals/pig/pig06.png
 	delay	10
 	@cmd	dasher 0.7 0 0
-	frame	data/chars/misc/animals/pig07.png
-	frame	data/chars/misc/animals/pig08.png
-	frame	data/chars/misc/animals/pig09.png
-	frame	data/chars/misc/animals/pig10.png
-	frame	data/chars/misc/animals/pig07.png
-	frame	data/chars/misc/animals/pig08.png
-	frame	data/chars/misc/animals/pig09.png
-	frame	data/chars/misc/animals/pig10.png
+	frame	data/chars/misc/animals/pig/pig07.png
+	frame	data/chars/misc/animals/pig/pig08.png
+	frame	data/chars/misc/animals/pig/pig09.png
+	frame	data/chars/misc/animals/pig/pig10.png
+	frame	data/chars/misc/animals/pig/pig07.png
+	frame	data/chars/misc/animals/pig/pig08.png
+	frame	data/chars/misc/animals/pig/pig09.png
+	frame	data/chars/misc/animals/pig/pig10.png

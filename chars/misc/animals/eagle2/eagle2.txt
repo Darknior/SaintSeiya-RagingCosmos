@@ -38,72 +38,72 @@ anim	attack1
 	offset	110 260
 	bbox	0 0 0 0
 	platform   1 1 1 1 1 1 1 1
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 	offset	110 258
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 	offset	110 256
-	frame	data/chars/2bug6/xidle02.gif
+	frame	data/chars/misc/animals/eagle2/xidle02.gif
 	offset	110 254
-	frame	data/chars/2bug6/xidle02.gif
+	frame	data/chars/misc/animals/eagle2/xidle02.gif
 	offset	110 252
 	sound	data/sounds/Eagle1.wav
-	frame	data/chars/2bug6/xidle03.gif
+	frame	data/chars/misc/animals/eagle2/xidle03.gif
 	offset	110 250
-	frame	data/chars/2bug6/xidle03.gif
+	frame	data/chars/misc/animals/eagle2/xidle03.gif
 	offset	110 248
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 250
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 252
-	frame	data/chars/2bug6/xidle06.gif
+	frame	data/chars/misc/animals/eagle2/xidle06.gif
 	offset	110 254
-	frame	data/chars/2bug6/xidle06.gif
+	frame	data/chars/misc/animals/eagle2/xidle06.gif
 	offset	110 256
-	frame	data/chars/2bug6/xidle07.gif
+	frame	data/chars/misc/animals/eagle2/xidle07.gif
 	offset	110 258
-	frame	data/chars/2bug6/xidle07.gif
+	frame	data/chars/misc/animals/eagle2/xidle07.gif
 	offset	110 260
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 	offset	110 262
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 	offset	110 264
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 262
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 260
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 	offset	110 258
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 	sound	data/sounds/Eagle1.wav
 	offset	110 256
-	frame	data/chars/2bug6/xidle02.gif
+	frame	data/chars/misc/animals/eagle2/xidle02.gif
 	offset	110 254
-	frame	data/chars/2bug6/xidle02.gif
+	frame	data/chars/misc/animals/eagle2/xidle02.gif
 	offset	110 252
-	frame	data/chars/2bug6/xidle03.gif
+	frame	data/chars/misc/animals/eagle2/xidle03.gif
 	offset	110 250
-	frame	data/chars/2bug6/xidle03.gif
+	frame	data/chars/misc/animals/eagle2/xidle03.gif
 	offset	110 248
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 250
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 252
-	frame	data/chars/2bug6/xidle06.gif
+	frame	data/chars/misc/animals/eagle2/xidle06.gif
 	offset	110 254
-	frame	data/chars/2bug6/xidle06.gif
+	frame	data/chars/misc/animals/eagle2/xidle06.gif
 	offset	110 256
-	frame	data/chars/2bug6/xidle07.gif
+	frame	data/chars/misc/animals/eagle2/xidle07.gif
 	sound	data/sounds/Eagle1.wav
 	offset	110 258
-	frame	data/chars/2bug6/xidle07.gif
+	frame	data/chars/misc/animals/eagle2/xidle07.gif
 	offset	110 260
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 	offset	110 262
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 	offset	110 264
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 262
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 		
 
 		
@@ -219,70 +219,70 @@ anim	idle
 	offset	110 260
 	platform   1 1 1 1 1 1 1 1
 	bbox	0 0 0 0
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 	offset	110 258
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 	offset	110 256
-	frame	data/chars/2bug6/xidle02.gif
+	frame	data/chars/misc/animals/eagle2/xidle02.gif
 	offset	110 254
-	frame	data/chars/2bug6/xidle02.gif
+	frame	data/chars/misc/animals/eagle2/xidle02.gif
 	offset	110 252
 	sound	data/sounds/Eagle1.wav
-	frame	data/chars/2bug6/xidle03.gif
+	frame	data/chars/misc/animals/eagle2/xidle03.gif
 	offset	110 250
-	frame	data/chars/2bug6/xidle03.gif
+	frame	data/chars/misc/animals/eagle2/xidle03.gif
 	offset	110 248
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 250
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 252
-	frame	data/chars/2bug6/xidle06.gif
+	frame	data/chars/misc/animals/eagle2/xidle06.gif
 	offset	110 254
-	frame	data/chars/2bug6/xidle06.gif
+	frame	data/chars/misc/animals/eagle2/xidle06.gif
 	offset	110 256
-	frame	data/chars/2bug6/xidle07.gif
+	frame	data/chars/misc/animals/eagle2/xidle07.gif
 	offset	110 258
-	frame	data/chars/2bug6/xidle07.gif
+	frame	data/chars/misc/animals/eagle2/xidle07.gif
 	offset	110 260
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 	offset	110 262
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 	offset	110 264
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 262
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 260
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 	offset	110 258
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 	offset	110 256
-	frame	data/chars/2bug6/xidle02.gif
+	frame	data/chars/misc/animals/eagle2/xidle02.gif
 	offset	110 254
-	frame	data/chars/2bug6/xidle02.gif
+	frame	data/chars/misc/animals/eagle2/xidle02.gif
 	offset	110 252
-	frame	data/chars/2bug6/xidle03.gif
+	frame	data/chars/misc/animals/eagle2/xidle03.gif
 	offset	110 250
-	frame	data/chars/2bug6/xidle03.gif
+	frame	data/chars/misc/animals/eagle2/xidle03.gif
 	offset	110 248
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 250
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 252
-	frame	data/chars/2bug6/xidle06.gif
+	frame	data/chars/misc/animals/eagle2/xidle06.gif
 	offset	110 254
-	frame	data/chars/2bug6/xidle06.gif
+	frame	data/chars/misc/animals/eagle2/xidle06.gif
 	offset	110 256
-	frame	data/chars/2bug6/xidle07.gif
+	frame	data/chars/misc/animals/eagle2/xidle07.gif
 	offset	110 258
-	frame	data/chars/2bug6/xidle07.gif
+	frame	data/chars/misc/animals/eagle2/xidle07.gif
 	offset	110 260
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 	offset	110 262
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 	offset	110 264
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 	offset	110 262
-	frame	data/chars/2bug6/xidle04.gif
+	frame	data/chars/misc/animals/eagle2/xidle04.gif
 		
 anim	pain
 	loop	0
@@ -300,7 +300,7 @@ anim	rise
 	offset	110 260
 	bbox	0 0 0 0
 	platform   1 1 1 1 1 1 1 1
-	frame	data/chars/2bug6/xidle08.gif
+	frame	data/chars/misc/animals/eagle2/xidle08.gif
 		
 anim	spawn
 	loop	0
@@ -308,7 +308,7 @@ anim	spawn
 	offset	110 260
 	bbox	0 0 0 0
 	platform   1 1 1 1 1 1 1 1
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 
 
 
@@ -325,8 +325,8 @@ if(frame==1)
 	offset	110 260
 	bbox	0 0 0 0
 	platform   1 1 1 1 1 1 1 1
-	frame	data/chars/2bug6/xidle01.gif
-	frame	data/chars/2bug6/xidle01.gif
-	frame	data/chars/2bug6/xidle01.gif
-	frame	data/chars/2bug6/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
+	frame	data/chars/misc/animals/eagle2/xidle01.gif
 		

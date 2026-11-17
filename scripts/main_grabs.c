@@ -135,7 +135,7 @@ void throw(int damage, int type, int Vx, int Vy, int Vz, int face)
 		if(dir == 0){Vx = -Vx;}
 		if(type == 1){atkType = openborconstant("ATK_NORMAL8");}
 		if(type == 2){atkType = openborconstant("ATK_NORMAL9");}
-		if(z > (openborconstant("PLAYER_MIN_Z")+openborconstant("PLAYER_MAX_Z"))/2){Vz = -Vz ;}
+		if(z > (openborvariant("PLAYER_MIN_Z")+openborvariant("PLAYER_MAX_Z"))/2){Vz = -Vz ;}
 		
 		if(eType == openborconstant("TYPE_PLAYER") || eType == openborconstant("TYPE_NPC")){
 			changeentityproperty(target, "projectilehit", "type_player", "type_npc", "type_obstacle");

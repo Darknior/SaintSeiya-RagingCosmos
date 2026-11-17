@@ -1,0 +1,227 @@
+[
+  {
+    "level": "temple1",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple10A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple10B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple0",
+    "passed": true,
+    "all_soldiers_forced_load": true
+  },
+  {
+    "level": "temple10C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple11A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple11B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple10D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple11C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple11D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple12A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple12B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple12C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple12D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple13A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple13B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple13C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple13D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple2A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple2C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple2B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple3A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple3B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple2D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple3C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple4A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple3D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple4C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple4B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple5A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple4D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple5B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple5C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple6A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple6B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple5D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple6C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple6D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple7A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple7D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple8A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple8B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple8C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple9",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple8D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  }
+]

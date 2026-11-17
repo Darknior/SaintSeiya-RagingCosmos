@@ -114,7 +114,7 @@ anim waiting # Animation d'attente dans l'écran de sélection
 anim select  # Personnage sélectionné
     delay    12
     offset   36 211
-    sound    data/chars/sounds/select-long.wav
+    sound    data/sounds/silence.wav
     frame    data/chars/shiryu/select/select1.png
     frame    data/chars/shiryu/select/select2.png
     frame    data/chars/shiryu/select/select3.png
@@ -694,7 +694,7 @@ anim jumpforward  # Attaque sautée vers l avant
 anim runjumpattack # Attaque sautée en courant
     delay    5
     offset   50 128
-    sound    data/sounds/shiryu/kick.wav
+    sound    data/sounds/silence.wav
     frame    data/chars/shiryu/jumpforward1.png
     frame    data/chars/shiryu/jumpforward2.png
     jumpframe  2 -1.5 3.5
@@ -1260,7 +1260,7 @@ anim freespecial6 # Rozan Shoryuha ( ULTRA, haut + bouton special a2)
     fastattack  1
     delay    13
     offset   47 130
-    sound    data/chars/deathmask/78-cosmos.wav
+    sound    data/chars/deathmask/sounds/78-cosmos.wav
     @cmd     spawnScreen "shiryu_lights" 0 0 0 0
     summonframe  0 0 0 0 1
     subentity    shiryu_constellation

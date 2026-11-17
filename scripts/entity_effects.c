@@ -1,3 +1,4 @@
+#import "data/scripts/library/safe_expire.c"
 #import "data/scripts/library/spawn.h"
 #import "data/scripts/player.c"
 
@@ -436,7 +437,7 @@ void blinkCharge()
 				int exists = getentityproperty(effect, "exists");
 
 				if(vName == "super" && exists){
-					killentity(effect);
+					expireEntity(effect);
 				}
 				setglobalvar("chargeEffect"+pIndex, NULL());
 			}

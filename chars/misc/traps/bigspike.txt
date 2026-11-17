@@ -10,28 +10,28 @@ anim idle
 	delay	100
 	offset	20 160
 	hitflash slash
-	hitfx	data/sounds/Slash1.wav
-	frame	data/chars/misc/traps/BSpike1.png
+	hitfx	data/sounds/silence.wav
+	frame	data/chars/misc/traps/bspike1.png
         delay   6
-	frame	data/chars/misc/traps/BSpike2.png
+	frame	data/chars/misc/traps/bspike2.png
         attack5	12 118 20 42 30 10 1
-	frame	data/chars/misc/traps/BSpike3.png
+	frame	data/chars/misc/traps/bspike3.png
         attack5	12 89 20 71 30 10 1
-	sound   data/sounds/trap2.wav
-	frame	data/chars/misc/traps/BSpike4.png
+	sound   data/sounds/silence.wav
+	frame	data/chars/misc/traps/bspike4.png
         attack5	12 42 20 118 30 10 1
-	frame	data/chars/misc/traps/BSpike5.png
+	frame	data/chars/misc/traps/bspike5.png
 	delay	100
         attack5	12 5 20 155 30 10 1
-	frame	data/chars/misc/traps/BSpike6.png
+	frame	data/chars/misc/traps/bspike6.png
         delay   6
         attack5	12 42 20 118 30 10 1
-	frame	data/chars/misc/traps/BSpike5.png
+	frame	data/chars/misc/traps/bspike5.png
         attack5	12 89 20 71 30 10 1
-	frame	data/chars/misc/traps/BSpike4.png
+	frame	data/chars/misc/traps/bspike4.png
         attack5	12 118 20 42 30 10 1
-	frame	data/chars/misc/traps/BSpike3.png
+	frame	data/chars/misc/traps/bspike3.png
         attack  0
-	frame	data/chars/misc/traps/BSpike2.png
+	frame	data/chars/misc/traps/bspike2.png
 	delay	100
-	frame	data/chars/misc/traps/BSpike1.png
+	frame	data/chars/misc/traps/bspike1.png

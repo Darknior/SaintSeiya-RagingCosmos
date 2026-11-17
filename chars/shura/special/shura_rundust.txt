@@ -14,7 +14,7 @@ anim	idle
 	offset	121 187
    drawmethod  alpha 1
    drawmethod  channel 0.73
-	sound data/chars/shura/02-slash.wav
+	sound data/chars/shura/sounds/02-slash.wav
 	frame	data/chars/shura/special/shura_rundust/shura_rundust0.png
 	frame	data/chars/shura/special/shura_rundust/shura_rundust1.png
 	frame	data/chars/shura/special/shura_rundust/shura_rundust2.png

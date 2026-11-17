@@ -1,7 +1,2 @@
-#	music		[path] [loop]		# BOR file to play
-#	animation	[path] [x] [y]		# GIF animation to play
-#	silence					# Stop music
-
-
-music           data/music/intro.bor 1 0
-animation	data/scenes/end.gif 4 0
+# The campaign already plays data/bgs/temple13D-boss/temple13D-boss-video.txt.
+# Do not request the absent legacy end.gif a second time.

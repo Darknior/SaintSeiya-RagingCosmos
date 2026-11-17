@@ -14,7 +14,7 @@ antigravity			30
 antigravity 100
 nolife				1
 
-palette 			data/chars/misc/trap4/trap4.gif
+palette 			data/chars/misc/traps/trap4/trap4.gif
 
 anim spawn
 	loop		1

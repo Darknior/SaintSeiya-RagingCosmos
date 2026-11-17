@@ -12,9 +12,9 @@ anim idle
 	offset	30 48
 	bbox	2 -30 54 76
 	platform 30 58 -30 -30 30 30 20 40
-	frame	data/chars/misc/guci.png
+	frame	data/chars/misc/wood/guci.png
 
 anim fall
 	delay	100
 	offset	46 61
-	frame	data/chars/misc/guced.png
+	frame	data/chars/misc/wood/guced.png

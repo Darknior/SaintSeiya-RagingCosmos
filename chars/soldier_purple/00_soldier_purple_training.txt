@@ -89,7 +89,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   110 180
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/soldier_purple/01.png
 
 
@@ -148,10 +148,21 @@ anim attack1
     offset    110 180
     dropv 4 1 0
     bbox 65 59 80 133
-	 attack1 117 83 60 25 5 0 0 0 12 20
+
+    attack 0 0 0 0 0
+    delay 8
+    frame data/chars/soldier_purple/02.png
+    attack1 117 83 60 25 5 0 0 0 12 20
+    delay 10
+
     frame    data/chars/soldier_purple/03.png
 
 #// Pain/Fall/Death/Rise animations /////////////////////////////////////////////////
+
+    attack 0 0 0 0 0
+    delay 6
+    frame data/chars/soldier_purple/02.png
+    frame data/chars/soldier_purple/01.png
 
 anim pain
     loop    0
@@ -361,4 +372,42 @@ anim fall30# Shock PAIN Ground
 
 #//Jump animations/////////////////////////////////////////////////
 
+
+
+# Completed ordinary soldier reaction using native frames.
+ 
+anim pain2
+    loop    0
+    offset    106 180
+    bbox 66 76 80 110
+    delay    3
+    @cmd     dasher -0.5 0 0 1
+    frame    data/chars/soldier_purple/05.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    104 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    frame    data/chars/soldier_purple/06.png
+    offset    106 180
+    delay    8
+    frame    data/chars/soldier_purple/06.png
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain12# ICE PAIN Small
+    loop    0
+    delay    5
+    offset    102 179
+    bbox 42 64 99 121
+    @cmd     spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 1 1 1
+    @cmd     spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 1 1 1
+    frame    data/chars/soldier_purple/05.png
+    delay    500
+    frame    data/chars/soldier_purple/05.png
 

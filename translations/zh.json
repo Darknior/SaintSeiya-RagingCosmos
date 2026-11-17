@@ -1,0 +1,88 @@
+{
+  "code": "zh",
+  "name": "中文",
+  "ui": {
+    "language": "语言",
+    "select_hint": "方向键：选择 • 攻击 / Start：确认",
+    "press_start": "按 START 开始",
+    "change_language": "Block：切换语言",
+    "pause": "暂停",
+    "continue": "继续游戏",
+    "levels": "选择关卡",
+    "howto": "操作说明",
+    "quit": "结束游戏",
+    "choose_hint": "上 / 下：选择 • 攻击 / Start：确认",
+    "resume_hint": "跳跃 / Esc：继续",
+    "levels_hint": "攻击 / Start：载入 • 跳跃 / Esc：返回",
+    "restart_hint": "保留角色，并重新开始所选关卡。",
+    "guide_footer": "方向键：翻页 • 攻击：下一页 • 跳跃 / Start：返回",
+    "controls": "按键设置：Options / Control Options。",
+    "devices": "支持键盘、手柄和触屏操作。",
+    "guide_title": "操作说明 — 星矢",
+    "stage": "关卡",
+    "page": "页",
+    "temple": "神殿",
+    "road": "道路",
+    "guards": "守卫",
+    "boss": "首领"
+  },
+  "main": [
+    "开始游戏",
+    "设置",
+    "操作说明",
+    "最高分",
+    "退出"
+  ],
+  "pages": [
+    {
+      "title": "移动",
+      "command": "方向键",
+      "line1": "上 / 下 / 左 / 右",
+      "line2": "让星矢与敌人处于同一直线上。",
+      "line3": "在同一直线上才能击中敌人。"
+    },
+    {
+      "title": "奔跑",
+      "command": "连续按两次同一方向",
+      "line1": "连续按两次左或右。",
+      "line2": "按住方向键可继续奔跑。",
+      "line3": "奔跑时按攻击可出招。"
+    },
+    {
+      "title": "连续攻击",
+      "command": "连续按攻击",
+      "line1": "多次按攻击键。",
+      "line2": "星矢会使出五段连击。",
+      "line3": "靠近敌人后再出拳。"
+    },
+    {
+      "title": "跳跃",
+      "command": "跳跃",
+      "line1": "按跳跃键。",
+      "line2": "配合方向键可向前跳跃。",
+      "line3": "小心场景中的深坑！"
+    },
+    {
+      "title": "空中攻击",
+      "command": "先跳跃，再攻击",
+      "line1": "跳起后按攻击键。",
+      "line2": "星矢会在空中发动攻击。",
+      "line3": "也可以在向前跳跃时尝试。"
+    },
+    {
+      "title": "防御",
+      "command": "按住 BLOCK",
+      "line1": "按住名为 Block 的按键。",
+      "line2": "面向敌人的攻击方向。",
+      "line3": "松开按键即可继续战斗。"
+    },
+    {
+      "title": "回复小宇宙",
+      "command": "按住 CHARGE",
+      "line1": "按住名为 Charge 的按键。",
+      "line2": "小宇宙能量条会逐渐充满。",
+      "line3": "在不易受到攻击的地方蓄力。"
+    }
+  ],
+  "variant": "zh-Hans"
+}

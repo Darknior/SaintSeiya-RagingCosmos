@@ -12,27 +12,27 @@ anim idle
 	delay	800
 	landframe 1
 	offset  8 25
-	frame	data/chars/misc/animals/frog4.png
+	frame	data/chars/misc/animals/frog/frog4.png
 	delay	20
-	frame	data/chars/misc/animals/frog7.png
+	frame	data/chars/misc/animals/frog/frog7.png
 	delay	9
-	frame	data/chars/misc/animals/frog1.png
-	frame	data/chars/misc/animals/frog2.png
-	frame	data/chars/misc/animals/frog3.png
-	frame	data/chars/misc/animals/frog2.png
-	frame	data/chars/misc/animals/frog1.png
-	frame	data/chars/misc/animals/frog2.png
-	frame	data/chars/misc/animals/frog3.png
-	frame	data/chars/misc/animals/frog2.png
+	frame	data/chars/misc/animals/frog/frog1.png
+	frame	data/chars/misc/animals/frog/frog2.png
+	frame	data/chars/misc/animals/frog/frog3.png
+	frame	data/chars/misc/animals/frog/frog2.png
+	frame	data/chars/misc/animals/frog/frog1.png
+	frame	data/chars/misc/animals/frog/frog2.png
+	frame	data/chars/misc/animals/frog/frog3.png
+	frame	data/chars/misc/animals/frog/frog2.png
 	delay	12
 	sound	data/sounds/frog.wav
-	frame	data/chars/misc/animals/frog7.png
+	frame	data/chars/misc/animals/frog/frog7.png
 	delay	8
 	@cmd	leaper 0.5 2 0
-	frame	data/chars/misc/animals/frog6.png
-	frame	data/chars/misc/animals/frog5.png
-	frame	data/chars/misc/animals/frog4.png
-	frame	data/chars/misc/animals/frog5.png
-	frame	data/chars/misc/animals/frog6.png
+	frame	data/chars/misc/animals/frog/frog6.png
+	frame	data/chars/misc/animals/frog/frog5.png
+	frame	data/chars/misc/animals/frog/frog4.png
+	frame	data/chars/misc/animals/frog/frog5.png
+	frame	data/chars/misc/animals/frog/frog6.png
 	delay	12
-	frame	data/chars/misc/animals/frog7.png
+	frame	data/chars/misc/animals/frog/frog7.png

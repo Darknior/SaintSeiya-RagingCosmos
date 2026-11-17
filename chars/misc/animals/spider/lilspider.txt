@@ -11,16 +11,16 @@ anim idle
 	delay	800
 	landframe 1
 	offset  30 20
-	frame	data/chars/misc/animals/spider1.gif
+	frame	data/chars/misc/animals/spider/spider1.gif
 	delay	40
-	frame	data/chars/misc/animals/spider2.gif
+	frame	data/chars/misc/animals/spider/spider2.gif
 	delay	10
 	@cmd	dasher 1.5 0 0
-	frame	data/chars/misc/animals/spider3.gif
-	frame	data/chars/misc/animals/spider4.gif
-	frame	data/chars/misc/animals/spider5.gif
-	frame	data/chars/misc/animals/spider2.gif
-	frame	data/chars/misc/animals/spider3.gif
-	frame	data/chars/misc/animals/spider4.gif
-	frame	data/chars/misc/animals/spider5.gif
-	frame	data/chars/misc/animals/spider2.gif
+	frame	data/chars/misc/animals/spider/spider3.gif
+	frame	data/chars/misc/animals/spider/spider4.gif
+	frame	data/chars/misc/animals/spider/spider5.gif
+	frame	data/chars/misc/animals/spider/spider2.gif
+	frame	data/chars/misc/animals/spider/spider3.gif
+	frame	data/chars/misc/animals/spider/spider4.gif
+	frame	data/chars/misc/animals/spider/spider5.gif
+	frame	data/chars/misc/animals/spider/spider2.gif

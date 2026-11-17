@@ -4,7 +4,7 @@ loadingbg   1 -42 405 450 999 999 0 # ecran de chargement, offset de la barre de
 #noslow     1                       # Désactive l'effet ralenti quand le boss meurt
 completebg  1                       # Ecran de fin de niveau personnalisé data/bgs/complete.gif
 hiscorebg 1                         # Ecran de meilleurs scores apres le game over
-pauseoffset 0 1 0 60 3 0 56         # offset de l ecran de pause
+pauseoffset 0 1 -10000 -10000 3 -10000 -10000
 
 ## CAUTION!! THE COMMANDS BELOW WILL CHANGE THE LIFE BAR SCRIPT TOO
 
@@ -112,7 +112,7 @@ select data/select-all.txt
 #-- Temple 0 Tremi (INTRO) --
 branch      temple0
 z           378 484
-file        data/levels/temple1.txt
+file        data/levels/temple0.txt
 scene       data/bgs/temple0/temple0-video.txt
 
 #-- Temple 1 Belier (TUTORIAL) --
@@ -260,7 +260,7 @@ file        data/levels/temple12A-road.txt
 file        data/levels/temple12B-midboss.txt
 file        data/levels/temple12C-road.txt
 branch      temple12BOSS
-z           3712 484
+z           378 484
 scene       data/bgs/temple12D-boss/temple12D-boss-intro.txt
 file        data/levels/temple12D-boss.txt
 scene       data/bgs/temple12D-boss/temple12D-boss-video.txt
@@ -274,7 +274,7 @@ file        data/levels/temple13A-road.txt
 file        data/levels/temple13B-midboss.txt
 file        data/levels/temple13C-road.txt
 branch      temple13BOSS
-z           3713 484
+z           378 484
 scene       data/bgs/temple13D-boss/temple13D-boss-intro.txt
 file        data/levels/temple13D-boss.txt
 

@@ -100,7 +100,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   29 129
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/shiva/idle1.png
 
 
@@ -273,7 +273,7 @@ anim special # Defense spéciale
     summonframe 0 0 0 0
     subentity shiva_lotus
     unsummonframe 7
-    sound data/chars/shiva/04-skywalk.wav
+    sound data/chars/tremi/sounds/04-skywalk.wav
     frame    data/chars/shiva/special1.png
     attack5 -8 0 100 130 30 1 0 0 5 12
     frame    data/chars/shiva/special2.png
@@ -287,7 +287,7 @@ anim special # Defense spéciale
 anim special2 # Lotus Combo Palm
     delay    10
     offset    57 169
-    sound data/chars/shiva/03-special.wav
+    sound data/sounds/silence.wav
     range     80 120
     rangea     0 100
     energycost  20 1 0
@@ -330,7 +330,7 @@ anim special2 # Lotus Combo Palm
 anim freespecial2 # Lotus Combo Palm
     delay    10
     offset    57 169
-    sound data/chars/shiva/03-special.wav
+    sound data/sounds/silence.wav
     range     80 120
     rangea     0 100
     energycost  20 1 0

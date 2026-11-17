@@ -1,0 +1,88 @@
+{
+  "code": "pt",
+  "name": "Português",
+  "ui": {
+    "language": "Idioma",
+    "select_hint": "Direções: escolher • Ataque / Start: confirmar",
+    "press_start": "PRESSIONE START",
+    "change_language": "Block: idioma",
+    "pause": "PAUSA",
+    "continue": "Continuar",
+    "levels": "Selecionar fase",
+    "howto": "Como jogar",
+    "quit": "Encerrar partida",
+    "choose_hint": "Cima / Baixo: escolher • Ataque / Start: confirmar",
+    "resume_hint": "Pulo / Esc: continuar",
+    "levels_hint": "Ataque / Start: carregar • Pulo / Esc: voltar",
+    "restart_hint": "Mantém o personagem e reinicia a fase escolhida.",
+    "guide_footer": "Direções: página • Ataque: próxima • Pulo / Start: voltar",
+    "controls": "Botões: Options / Control Options.",
+    "devices": "Teclado, controle ou comandos de toque.",
+    "guide_title": "COMO JOGAR — SEIYA",
+    "stage": "Fase",
+    "page": "Página",
+    "temple": "Templo",
+    "road": "Caminho",
+    "guards": "Guardas",
+    "boss": "Chefe"
+  },
+  "main": [
+    "Jogar",
+    "Opções",
+    "Como jogar",
+    "Melhores pontuações",
+    "Sair"
+  ],
+  "pages": [
+    {
+      "title": "Mover-se",
+      "command": "DIREÇÕES",
+      "line1": "Cima / Baixo / Esquerda / Direita",
+      "line2": "Alinhe Seiya com o adversário.",
+      "line3": "Os golpes acertam na mesma linha."
+    },
+    {
+      "title": "Correr",
+      "command": "DUAS VEZES NA MESMA DIREÇÃO",
+      "line1": "Toque duas vezes em Esquerda ou Direita.",
+      "line2": "Mantenha a direção para continuar.",
+      "line3": "Aperte Ataque para golpear correndo."
+    },
+    {
+      "title": "Combinar golpes",
+      "command": "APERTE ATAQUE VÁRIAS VEZES",
+      "line1": "Aperte Ataque repetidamente.",
+      "line2": "Seiya combina cinco golpes.",
+      "line3": "Aproxime-se para atingir o inimigo."
+    },
+    {
+      "title": "Pular",
+      "command": "PULO",
+      "line1": "Aperte Pulo.",
+      "line2": "Use uma direção para avançar.",
+      "line3": "Cuidado com os buracos do cenário!"
+    },
+    {
+      "title": "Atacar no ar",
+      "command": "PULO E DEPOIS ATAQUE",
+      "line1": "Pule e depois aperte Ataque.",
+      "line2": "Seiya ataca durante o pulo.",
+      "line3": "Experimente também pulando para a frente."
+    },
+    {
+      "title": "Defender-se",
+      "command": "SEGURE BLOCK",
+      "line1": "Segure o botão chamado Block.",
+      "line2": "Fique de frente para os ataques.",
+      "line3": "Solte para voltar a lutar."
+    },
+    {
+      "title": "Recarregar o Cosmos",
+      "command": "SEGURE CHARGE",
+      "line1": "Segure o botão chamado Charge.",
+      "line2": "A barra de Cosmos é recarregada.",
+      "line3": "Escolha um lugar protegido dos golpes."
+    }
+  ],
+  "variant": "pt-BR"
+}

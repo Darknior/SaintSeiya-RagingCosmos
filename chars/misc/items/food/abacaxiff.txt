@@ -14,15 +14,15 @@ anim idle
 	bbox	223 190 32 16
 	delay	100
 	@cmd itemText "HEALTH + 200" 0.8 1.5 4
-	frame	data/chars/misc/items/food/abacaxiFF01.gif
+	frame	data/chars/misc/items/food/abacaxiff01.gif
 	delay   4
-	frame	data/chars/misc/items/food/abacaxiFF02.gif
-	frame	data/chars/misc/items/food/abacaxiFF01.gif
-	frame	data/chars/misc/items/food/abacaxiFF02.gif
-	frame	data/chars/misc/items/food/abacaxiFF01.gif
-	frame	data/chars/misc/items/food/abacaxiFF02.gif
-	frame	data/chars/misc/items/food/abacaxiFF01.gif
-	frame	data/chars/misc/items/food/abacaxiFF02.gif
-	frame	data/chars/misc/items/food/abacaxiFF01.gif
-	frame	data/chars/misc/items/food/abacaxiFF02.gif
-	frame	data/chars/misc/items/food/abacaxiFF01.gif
+	frame	data/chars/misc/items/food/abacaxiff02.gif
+	frame	data/chars/misc/items/food/abacaxiff01.gif
+	frame	data/chars/misc/items/food/abacaxiff02.gif
+	frame	data/chars/misc/items/food/abacaxiff01.gif
+	frame	data/chars/misc/items/food/abacaxiff02.gif
+	frame	data/chars/misc/items/food/abacaxiff01.gif
+	frame	data/chars/misc/items/food/abacaxiff02.gif
+	frame	data/chars/misc/items/food/abacaxiff01.gif
+	frame	data/chars/misc/items/food/abacaxiff02.gif
+	frame	data/chars/misc/items/food/abacaxiff01.gif

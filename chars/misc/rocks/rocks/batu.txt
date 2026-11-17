@@ -20,15 +20,15 @@ anim idle
 	offset	32 50
 	landframe 1
 	attack5 4 4 57 45 15 2
-	sound   data/sounds/rocks.wav
-	frame	data/chars/misc/Rocks/batu1.png
+	sound   data/sounds/silence.wav
+	frame	data/chars/misc/rocks/rocks/batu1.png
 	delay	10
 	attack5 4 4 57 45 8 2
-	sound   data/sounds/bigfall.wav
-	frame	data/chars/misc/Rocks/batu2.png
-	frame	data/chars/misc/Rocks/batu3.png
-	frame	data/chars/misc/Rocks/batu4.png
-	frame	data/chars/misc/Rocks/batu1.png
+	sound   data/sounds/silence.wav
+	frame	data/chars/misc/rocks/rocks/batu2.png
+	frame	data/chars/misc/rocks/rocks/batu3.png
+	frame	data/chars/misc/rocks/rocks/batu4.png
+	frame	data/chars/misc/rocks/rocks/batu1.png
 	attack  0
 	fshadow	0
 	frame	data/chars/misc/empty.gif

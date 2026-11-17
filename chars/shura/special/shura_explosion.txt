@@ -12,7 +12,7 @@ anim	idle
 	drawmethod scale 1 1
 	drawmethod alpha 1
    quakeframe	1 30 8
-	sound data/chars/shura/05-slash.wav
+	sound data/chars/shura/sounds/05-slash.wav
 	frame	data/chars/shura/special/shura_explosion/shura_explosion1.png
 	frame	data/chars/shura/special/shura_explosion/shura_explosion2.png
 	frame	data/chars/shura/special/shura_explosion/shura_explosion3.png

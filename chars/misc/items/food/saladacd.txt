@@ -14,16 +14,16 @@ anim idle
 	bbox	2 0 28 21
 	delay	100
 	@cmd itemText "HEALTH + 260" 0.8 2.5 4
-	frame	data/chars/misc/items/food/saladaCD01.gif
+	frame	data/chars/misc/items/food/saladacd01.gif
 	delay   4
-	frame	data/chars/misc/items/food/saladaCD02.gif
-	frame	data/chars/misc/items/food/saladaCD01.gif
-	frame	data/chars/misc/items/food/saladaCD02.gif
-	frame	data/chars/misc/items/food/saladaCD01.gif
-	frame	data/chars/misc/items/food/saladaCD02.gif
-	frame	data/chars/misc/items/food/saladaCD01.gif
-	frame	data/chars/misc/items/food/saladaCD02.gif
-	frame	data/chars/misc/items/food/saladaCD01.gif
-	frame	data/chars/misc/items/food/saladaCD02.gif
-	frame	data/chars/misc/items/food/saladaCD01.gif
+	frame	data/chars/misc/items/food/saladacd02.gif
+	frame	data/chars/misc/items/food/saladacd01.gif
+	frame	data/chars/misc/items/food/saladacd02.gif
+	frame	data/chars/misc/items/food/saladacd01.gif
+	frame	data/chars/misc/items/food/saladacd02.gif
+	frame	data/chars/misc/items/food/saladacd01.gif
+	frame	data/chars/misc/items/food/saladacd02.gif
+	frame	data/chars/misc/items/food/saladacd01.gif
+	frame	data/chars/misc/items/food/saladacd02.gif
+	frame	data/chars/misc/items/food/saladacd01.gif
 		

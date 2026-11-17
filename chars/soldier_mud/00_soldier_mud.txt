@@ -64,12 +64,9 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
-blood_ground_medium
-
-
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/soldier_basic/icon.png 1
+icon data/chars/soldier_mud/icon.gif
 palette      data/chars/soldier_mud/testpal.gif
 #remap       data/chars/soldier_basic/palettes/palette1.png  # 14 Possible MAX
 
@@ -149,7 +146,7 @@ anim attack1
 	delay	10
 	offset  146 205
 	bbox 	113 112 60 92
-	sound	data/chars/mud/light.wav
+	sound	data/sounds/silence.wav
 	frame	data/chars/soldier_mud/atk1.gif
 	frame	data/chars/soldier_mud/atk2.gif
 	attack	147 114 67 86 10 0 0 0 14
@@ -196,7 +193,7 @@ anim  pain
 	delay  3
 	offset  146  205
 	move  -3
-	sound  data/sounds/hit1.wav
+	sound  data/sounds/silence.wav
 	frame  data/chars/soldier_mud/walk6.gif
    offset  144  205
 	frame  data/chars/soldier_mud/walk5.gif
@@ -252,12 +249,265 @@ anim rise
 
 #// Block animations /////////////////////////////////////////////////
 
-anim    block
-   delay    10
-   offset    25 122
-   bbox 8 10 43 112
-   frame    data/chars/soldier_basic/block1.png
-   frame    data/chars/soldier_basic/block2.png
-   frame    data/chars/soldier_basic/block3.png	
+anim block
+    delay 4
+    offset 146 205
+    bbox 113 112 60 92
+    frame data/chars/soldier_mud/idle2.gif
+    delay 10
+    frame data/chars/soldier_mud/block1.png
+    frame data/chars/soldier_mud/block1.png
 
 
+
+anim fall8
+	loop	0
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	5
+	frame	data/chars/soldier_mud/idle1.gif
+		delay  16
+	frame  data/chars/soldier_mud/death1.gif
+	frame  data/chars/soldier_mud/death2.gif
+	frame  data/chars/soldier_mud/death3.gif
+	frame  data/chars/soldier_mud/death4.gif
+	frame  data/chars/soldier_mud/death5.gif
+	frame  data/chars/soldier_mud/death6.gif
+	frame  data/chars/soldier_mud/death7.gif
+	frame  data/chars/soldier_mud/death8.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+
+anim fall9
+	loop	0
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	5
+	frame	data/chars/soldier_mud/idle1.gif
+		delay  16
+	frame  data/chars/soldier_mud/death1.gif
+	frame  data/chars/soldier_mud/death2.gif
+	frame  data/chars/soldier_mud/death3.gif
+	frame  data/chars/soldier_mud/death4.gif
+	frame  data/chars/soldier_mud/death5.gif
+	frame  data/chars/soldier_mud/death6.gif
+	frame  data/chars/soldier_mud/death7.gif
+	frame  data/chars/soldier_mud/death8.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain10
+    @cmd spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 40 1 0
+	loop  0
+	delay  3
+	offset  146  205
+	move  -3
+	sound  data/sounds/silence.wav
+	frame  data/chars/soldier_mud/walk6.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+	offset  144  205
+	bbox  113  112  60  92
+	delay  38
+	frame  data/chars/soldier_mud/spawn4.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain11
+    @cmd spawnbind "hyoga_iceB" "ANI_IDLE" 0 1 40 1 0
+	loop  0
+	delay  3
+	offset  146  205
+	move  -3
+	sound  data/sounds/silence.wav
+	frame  data/chars/soldier_mud/walk6.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+	offset  144  205
+	bbox  113  112  60  92
+	delay  38
+	frame  data/chars/soldier_mud/spawn4.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain12
+    @cmd spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 40 1 0
+	loop  0
+	delay  3
+	offset  146  205
+	move  -3
+	sound  data/sounds/silence.wav
+	frame  data/chars/soldier_mud/walk6.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+	offset  144  205
+	bbox  113  112  60  92
+	delay  38
+	frame  data/chars/soldier_mud/spawn4.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain15
+    @cmd spawnbind "shaka_flame" "ANI_IDLE" 0 1 40 1 0
+	loop  0
+	delay  3
+	offset  146  205
+	move  -3
+	sound  data/sounds/silence.wav
+	frame  data/chars/soldier_mud/walk6.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+	offset  144  205
+	bbox  113  112  60  92
+	delay  38
+	frame  data/chars/soldier_mud/spawn4.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+
+anim fall15
+    @cmd spawnbind "shaka_flame" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	5
+	frame	data/chars/soldier_mud/idle1.gif
+		delay  16
+	frame  data/chars/soldier_mud/death1.gif
+	frame  data/chars/soldier_mud/death2.gif
+	frame  data/chars/soldier_mud/death3.gif
+	frame  data/chars/soldier_mud/death4.gif
+	frame  data/chars/soldier_mud/death5.gif
+	frame  data/chars/soldier_mud/death6.gif
+	frame  data/chars/soldier_mud/death7.gif
+	frame  data/chars/soldier_mud/death8.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain20
+    @cmd spawnbind "blood_projection_big" "ANI_IDLE" 0 1 40 1 0
+	loop  0
+	delay  3
+	offset  146  205
+	move  -3
+	sound  data/sounds/silence.wav
+	frame  data/chars/soldier_mud/walk6.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+	offset  144  205
+	bbox  113  112  60  92
+	delay  38
+	frame  data/chars/soldier_mud/spawn4.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+
+anim fall20
+    @cmd spawnbind "blood_projection_big" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	5
+	frame	data/chars/soldier_mud/idle1.gif
+		delay  16
+	frame  data/chars/soldier_mud/death1.gif
+	frame  data/chars/soldier_mud/death2.gif
+	frame  data/chars/soldier_mud/death3.gif
+	frame  data/chars/soldier_mud/death4.gif
+	frame  data/chars/soldier_mud/death5.gif
+	frame  data/chars/soldier_mud/death6.gif
+	frame  data/chars/soldier_mud/death7.gif
+	frame  data/chars/soldier_mud/death8.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain30
+    @cmd spawnbind "shock1" "ANI_IDLE" 0 1 40 1 0
+	loop  0
+	delay  3
+	offset  146  205
+	move  -3
+	sound  data/sounds/silence.wav
+	frame  data/chars/soldier_mud/walk6.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  144  205
+	frame  data/chars/soldier_mud/walk5.gif
+   offset  146  205
+	frame  data/chars/soldier_mud/walk5.gif
+	offset  144  205
+	bbox  113  112  60  92
+	delay  38
+	frame  data/chars/soldier_mud/spawn4.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+
+anim fall30
+    @cmd spawnbind "shock1" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	offset  146 205
+	bbox 	113 112 60 92
+	delay	5
+	frame	data/chars/soldier_mud/idle1.gif
+		delay  16
+	frame  data/chars/soldier_mud/death1.gif
+	frame  data/chars/soldier_mud/death2.gif
+	frame  data/chars/soldier_mud/death3.gif
+	frame  data/chars/soldier_mud/death4.gif
+	frame  data/chars/soldier_mud/death5.gif
+	frame  data/chars/soldier_mud/death6.gif
+	frame  data/chars/soldier_mud/death7.gif
+	frame  data/chars/soldier_mud/death8.gif
+
+
+anim blockpain
+    delay 6
+    offset 144 205
+    bbox 113 112 60 92
+    frame data/chars/soldier_mud/block1.png
+    offset 146 205
+    frame data/chars/soldier_mud/block1.png

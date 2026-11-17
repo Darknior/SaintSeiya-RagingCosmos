@@ -1,0 +1,110 @@
+[
+  {
+    "name": "temple8B-midboss",
+    "source_scenery": "temple8A-road",
+    "width": 4606,
+    "encounters": 6,
+    "soldiers": 17,
+    "triggers": [
+      0,
+      600,
+      1252,
+      1903,
+      2554,
+      3206
+    ],
+    "story": "Milo protects the Scorpio Temple. Cross his guard patrols."
+  },
+  {
+    "name": "temple10A-road",
+    "source_scenery": "temple10C-road",
+    "width": 4500,
+    "encounters": 6,
+    "soldiers": 17,
+    "triggers": [
+      0,
+      600,
+      1225,
+      1850,
+      2475,
+      3100
+    ],
+    "story": "Shura awaits at Capricorn. Climb the guarded mountain path."
+  },
+  {
+    "name": "temple10B-midboss",
+    "source_scenery": "temple10C-road",
+    "width": 4500,
+    "encounters": 5,
+    "soldiers": 14,
+    "triggers": [
+      0,
+      600,
+      1433,
+      2267,
+      3100
+    ],
+    "story": "Shura's guards defend the approach to the Capricorn Temple."
+  },
+  {
+    "name": "temple11B-midboss",
+    "source_scenery": "temple8C-road",
+    "width": 6000,
+    "encounters": 5,
+    "soldiers": 14,
+    "triggers": [
+      0,
+      600,
+      1933,
+      3267,
+      4600
+    ],
+    "story": "Camus freezes the road to Aquarius. Break through the icy patrols."
+  },
+  {
+    "name": "temple12A-road",
+    "source_scenery": "temple12C-road",
+    "width": 4500,
+    "encounters": 6,
+    "soldiers": 17,
+    "triggers": [
+      0,
+      600,
+      1225,
+      1850,
+      2475,
+      3100
+    ],
+    "story": "The path of Pisces leads to Aphrodite and his deadly roses."
+  },
+  {
+    "name": "temple12B-midboss",
+    "source_scenery": "temple12C-road",
+    "width": 4500,
+    "encounters": 5,
+    "soldiers": 14,
+    "triggers": [
+      0,
+      600,
+      1433,
+      2267,
+      3100
+    ],
+    "story": "Cross the last guard posts on the approach to Pisces."
+  },
+  {
+    "name": "temple13B-midboss",
+    "source_scenery": "temple13A-road",
+    "width": 4500,
+    "encounters": 5,
+    "soldiers": 14,
+    "triggers": [
+      0,
+      600,
+      1433,
+      2267,
+      3100
+    ],
+    "story": "Marin points the way. The Grand Pope waits beyond the last guards."
+  }
+]

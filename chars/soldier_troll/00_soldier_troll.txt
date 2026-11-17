@@ -64,12 +64,9 @@ ondeathscript       data/scripts/timer_reset.c          # Mort du Timer à zéro
 
 #-- EFFECTS ANIMATIONS ----------------------------------------------
 
-blood_ground_medium
-
-
 #-- PALETTES --------------------------------------------------------
 
-icon         data/chars/soldier_basic/icon.png 1
+icon data/chars/soldier_troll/icon.gif
 palette      data/chars/soldier_troll/palettes/palette1.gif
 #remap       data/chars/soldier_basic/palettes/palette1.png  # 14 Possible MAX
 
@@ -527,7 +524,7 @@ anim block
 	offset     220 166
 	bbox	0 0 0 0
 	move    -10
-	sound   data/sounds/guard.wav
+	sound   data/sounds/silence.wav
 	frame  data/chars/soldier_troll/guar00.gif
 	offset     218 166
 	frame  data/chars/soldier_troll/guar00.gif
@@ -590,4 +587,217 @@ anim block
 	delay      8
 	frame  data/chars/soldier_troll/taunt02.gif
 
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim fall8
+	landframe  4
+	loop	0
+	 offset     220 166
+	delay   10
+	sound data/chars/soldier_troll/sounds/hit.wav
+	frame  data/chars/soldier_troll/fall00.gif
+	frame  data/chars/soldier_troll/fall01.gif
+	delay   60
+	frame  data/chars/soldier_troll/fall02.gif
+	delay	99
+	frame  data/chars/soldier_troll/fall03.gif
+	delay	1
+	frame  data/chars/soldier_troll/fall04.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim fall9
+	landframe  4
+	loop	0
+	 offset     220 166
+	delay   10
+	sound data/chars/soldier_troll/sounds/hit.wav
+	frame  data/chars/soldier_troll/fall00.gif
+	frame  data/chars/soldier_troll/fall01.gif
+	delay   60
+	frame  data/chars/soldier_troll/fall02.gif
+	delay	99
+	frame  data/chars/soldier_troll/fall03.gif
+	delay	1
+	frame  data/chars/soldier_troll/fall04.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain10
+    @cmd spawnbind "hyoga_iceA" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	delay	3
+	offset	220 166
+	bbox	203 111 32 57
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	delay   23
+	frame  data/chars/soldier_troll/pain101.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain11
+    @cmd spawnbind "hyoga_iceB" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	delay	3
+	offset	220 166
+	bbox	203 111 32 57
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	delay   23
+	frame  data/chars/soldier_troll/pain101.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain12
+    @cmd spawnbind "hyoga_iceD" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	delay	3
+	offset	220 166
+	bbox	203 111 32 57
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	delay   23
+	frame  data/chars/soldier_troll/pain101.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain15
+    @cmd spawnbind "shaka_flame" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	delay	3
+	offset	220 166
+	bbox	203 111 32 57
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	delay   23
+	frame  data/chars/soldier_troll/pain101.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim fall15
+    @cmd spawnbind "shaka_flame" "ANI_IDLE" 0 1 40 1 0
+	landframe  4
+	loop	0
+	 offset     220 166
+	delay   10
+	sound data/chars/soldier_troll/sounds/hit.wav
+	frame  data/chars/soldier_troll/fall00.gif
+	frame  data/chars/soldier_troll/fall01.gif
+	delay   60
+	frame  data/chars/soldier_troll/fall02.gif
+	delay	99
+	frame  data/chars/soldier_troll/fall03.gif
+	delay	1
+	frame  data/chars/soldier_troll/fall04.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain20
+    @cmd spawnbind "blood_projection_big" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	delay	3
+	offset	220 166
+	bbox	203 111 32 57
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	delay   23
+	frame  data/chars/soldier_troll/pain101.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim fall20
+    @cmd spawnbind "blood_projection_big" "ANI_IDLE" 0 1 40 1 0
+	landframe  4
+	loop	0
+	 offset     220 166
+	delay   10
+	sound data/chars/soldier_troll/sounds/hit.wav
+	frame  data/chars/soldier_troll/fall00.gif
+	frame  data/chars/soldier_troll/fall01.gif
+	delay   60
+	frame  data/chars/soldier_troll/fall02.gif
+	delay	99
+	frame  data/chars/soldier_troll/fall03.gif
+	delay	1
+	frame  data/chars/soldier_troll/fall04.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim pain30
+    @cmd spawnbind "shock1" "ANI_IDLE" 0 1 40 1 0
+	loop	0
+	delay	3
+	offset	220 166
+	bbox	203 111 32 57
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	218 166
+	frame  data/chars/soldier_troll/pain101.gif
+	offset	220 166
+	delay   23
+	frame  data/chars/soldier_troll/pain101.gif
+
+
+# Completed ordinary soldier reaction using native frames.
+
+anim fall30
+    @cmd spawnbind "shock1" "ANI_IDLE" 0 1 40 1 0
+	landframe  4
+	loop	0
+	 offset     220 166
+	delay   10
+	sound data/chars/soldier_troll/sounds/hit.wav
+	frame  data/chars/soldier_troll/fall00.gif
+	frame  data/chars/soldier_troll/fall01.gif
+	delay   60
+	frame  data/chars/soldier_troll/fall02.gif
+	delay	99
+	frame  data/chars/soldier_troll/fall03.gif
+	delay	1
+	frame  data/chars/soldier_troll/fall04.gif
 

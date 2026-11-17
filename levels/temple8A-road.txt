@@ -7,7 +7,6 @@ background   data/bgs/temple8A-road/background.png
 bglayer      data/bgs/temple8A-road/backgroundC.png 0.8 1 0 0 0 0 1 1 1 0
 fglayer      data/bgs/temple8A-road/clouds-road.png   -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
 
- 1
 bgspeed      1 0
 
 light        256 -44
@@ -22,11 +21,10 @@ cameratype   1
 order        a
 
 #-------- Players spawn position -----------------------------------------------
-
-spawn1 50 180 0 # position du joueur1 (x, z, Y)
-spawn2 80 160 0 # position du joueur2 (x, z, Y)
-spawn3 90 220 0 # position du joueur3 (x, z, Y)
-spawn4 110 190 0 # position du joueur4 (x, z, Y)
+spawn1 50 415 0 # position du joueur1 (x, z, Y)
+spawn2 80 430 0 # position du joueur2 (x, z, Y)
+spawn3 90 445 0 # position du joueur3 (x, z, Y)
+spawn4 110 460 0 # position du joueur4 (x, z, Y)
 
 #-- HUD ------------------------------------------------------------------------
 

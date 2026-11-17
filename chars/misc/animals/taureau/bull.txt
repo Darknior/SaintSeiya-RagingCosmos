@@ -100,14 +100,14 @@ anim	attack3
 	landframe	4
 	hitfx	data/sounds/beat1.wav
 	sound	data/sounds/bull2.wav
-	frame	data/chars/2bug8/c01.gif
+	frame	data/chars/misc/animals/taureau/c01.gif
 	bbox	134 139 85 82
-	frame	data/chars/2bug8/c02.gif
-	frame	data/chars/2bug8/c03.gif
+	frame	data/chars/misc/animals/taureau/c02.gif
+	frame	data/chars/misc/animals/taureau/c03.gif
 	delay	300
 	attack	140 136 125 90 20 1 0 1 40 0
 	dropv	4 3 0
-	frame	data/chars/2bug8/c04.gif
+	frame	data/chars/misc/animals/taureau/c04.gif
 	attack	0 0 0 0
 	delay	20
 	frame	data/chars/2bug8/b01.gif

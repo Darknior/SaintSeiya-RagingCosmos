@@ -7,7 +7,7 @@ antigravity 100
 
 hostile player
 offscreenkill 9999999
-animationscript data/varie/objects/gufo/gufoc.c
+animationscript data/chars/misc/animals/birds/hibou/gufoc.c
 
 palette data/varie/objects/gufo/fly1
 

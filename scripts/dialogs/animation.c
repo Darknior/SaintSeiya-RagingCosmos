@@ -1,3 +1,4 @@
+#import "data/scripts/library/safe_expire.c"
 void spawnFade(void operation, float fX, float fY, float fZ, int layer, float rate, int scalex, int scaley)
 {//Spawn black image with alpha channel change to simulate a "Fade" effect
 	void vSpawn;
@@ -11,6 +12,7 @@ void spawnFade(void operation, float fX, float fY, float fZ, int layer, float ra
 	setspawnentry("name", "Fade");
 
 	vSpawn = spawn();
+    if(vSpawn == NULL()) return NULL();
 
 	//SET CHANNEL PROPERTIES
 	setglobalvar("operation"+vSpawn, operation);
@@ -49,6 +51,7 @@ void spawnDialog(void entity, float fX, float fY)
 	setspawnentry("name", entity);
 
 	vSpawn = spawn();
+    if(vSpawn == NULL()) return NULL();
 
 	changeentityproperty(vSpawn, "position", fX, fY, 0);
 	changeentityproperty(vSpawn, "direction", iDir);
@@ -70,6 +73,7 @@ void spawnScreen(void entity, float fX, float fY, float fZ, int dir, void anim)
 	setspawnentry("name", entity);
 
 	vSpawn = spawn();
+    if(vSpawn == NULL()) return NULL();
 	
 	changeentityproperty(vSpawn, "position", fX, fZ, fY);
 	changeentityproperty(vSpawn, "direction", dir);
@@ -91,11 +95,11 @@ void removEntity(void entity)
 	void self = getlocalvar("self");
 	void victim = getentityvar(self, entity);
 
-	killentity(victim);
+	expireEntity(victim);
 }
 
 void suicide()
 {//Set generic global variable for further use
 	
-	killentity(getlocalvar("self"));
+	expireEntity(getlocalvar("self"));
 }

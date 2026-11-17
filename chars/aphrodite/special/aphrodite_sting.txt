@@ -8,7 +8,7 @@ anim	idle
 	loop	0
 	offset	-7 212
 	drawmethod alpha 1
-	sound data/chars/milo/15-needle1.wav
+	sound data/chars/milo/sounds/15-needle1.wav
 	delay	20
 	frame	data/chars/aphrodite/special/aphrodite_sting/milo_storm07.png
 	delay	8

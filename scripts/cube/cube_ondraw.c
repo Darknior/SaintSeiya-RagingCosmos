@@ -33,20 +33,20 @@ void drawCube()
 
 	//LOAD ALL SPRITES
 	//RIGHT SIDE
-	if(getglobalvar("R00") == NULL()){setglobalvar("R00", loadsprite("data/chars/cube/right/R00.png"));}
-	if(getglobalvar("R01") == NULL()){setglobalvar("R01", loadsprite("data/chars/cube/right/R01.png"));}
-	if(getglobalvar("R02") == NULL()){setglobalvar("R02", loadsprite("data/chars/cube/right/R02.png"));}
-	if(getglobalvar("R03") == NULL()){setglobalvar("R03", loadsprite("data/chars/cube/right/R03.png"));}
-	if(getglobalvar("R04") == NULL()){setglobalvar("R04", loadsprite("data/chars/cube/right/R04.png"));}
-	if(getglobalvar("R05") == NULL()){setglobalvar("R05", loadsprite("data/chars/cube/right/R05.png"));}
+	if(getglobalvar("R00") == NULL()){setglobalvar("R00", loadsprite("data/chars/cube/Right/R00.png"));}
+	if(getglobalvar("R01") == NULL()){setglobalvar("R01", loadsprite("data/chars/cube/Right/R01.png"));}
+	if(getglobalvar("R02") == NULL()){setglobalvar("R02", loadsprite("data/chars/cube/Right/R02.png"));}
+	if(getglobalvar("R03") == NULL()){setglobalvar("R03", loadsprite("data/chars/cube/Right/R03.png"));}
+	if(getglobalvar("R04") == NULL()){setglobalvar("R04", loadsprite("data/chars/cube/Right/R04.png"));}
+	if(getglobalvar("R05") == NULL()){setglobalvar("R05", loadsprite("data/chars/cube/Right/R05.png"));}
 
 	//LEFT SIDE
-	if(getglobalvar("L00") == NULL()){setglobalvar("L00", loadsprite("data/chars/cube/left/L00.png"));}
-	if(getglobalvar("L01") == NULL()){setglobalvar("L01", loadsprite("data/chars/cube/left/L01.png"));}
-	if(getglobalvar("L02") == NULL()){setglobalvar("L02", loadsprite("data/chars/cube/left/L02.png"));}
-	if(getglobalvar("L03") == NULL()){setglobalvar("L03", loadsprite("data/chars/cube/left/L03.png"));}
-	if(getglobalvar("L04") == NULL()){setglobalvar("L04", loadsprite("data/chars/cube/left/L04.png"));}
-	if(getglobalvar("L05") == NULL()){setglobalvar("L05", loadsprite("data/chars/cube/left/L05.png"));}
+	if(getglobalvar("L00") == NULL()){setglobalvar("L00", loadsprite("data/chars/cube/Left/L00.png"));}
+	if(getglobalvar("L01") == NULL()){setglobalvar("L01", loadsprite("data/chars/cube/Left/L01.png"));}
+	if(getglobalvar("L02") == NULL()){setglobalvar("L02", loadsprite("data/chars/cube/Left/L02.png"));}
+	if(getglobalvar("L03") == NULL()){setglobalvar("L03", loadsprite("data/chars/cube/Left/L03.png"));}
+	if(getglobalvar("L04") == NULL()){setglobalvar("L04", loadsprite("data/chars/cube/Left/L04.png"));}
+	if(getglobalvar("L05") == NULL()){setglobalvar("L05", loadsprite("data/chars/cube/Left/L05.png"));}
 	
 	//CALCULATE WHICH SPRITE WILL BE USED
 	//RIGHT SIDE

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "Seven selectable native language names, including accents/CJK/Cyrillic",
+    "Start validates and writes French without launching the game",
+    "Localized main menu opens the animated guide; start enters play",
+    "Seven guide pages animate while the simulation clock stays frozen",
+    "Guide renders in seven languages in the native engine",
+    "Pause Level Select loads Scorpio B at its exact campaign index 41",
+    "Resume and End Game work after a level jump",
+    "French survives a complete engine restart"
+  ]
+}

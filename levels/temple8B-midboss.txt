@@ -1,0 +1,116 @@
+loadingbg    data/sprites/loading/loading_temple8.png 1 -51 405 460 999 999 0
+music        data/music/Pegasus_Fantasy_instrumental.ogg
+
+panel        data/bgs/temple8A-road/temple8A-road.png
+frontpanel   data/bgs/temple8A-road/layer1.png
+background   data/bgs/temple8A-road/background.png        
+bglayer      data/bgs/temple8A-road/backgroundC.png 0.8 1 0 0 0 0 1 1 1 0
+fglayer      data/bgs/temple8A-road/clouds-road.png   -5000 0.4 0 0 0 0 0 -1 -1 1 1 0 0 0 0 2
+
+bgspeed      1 0
+
+light        256 -44
+at           0
+shadowalpha  2
+shadowopacity 80
+direction    right
+
+settime      99
+noreset      2
+cameratype   1
+order        a
+
+# Milo protects the Scorpio Temple. Cross his guard patrols.
+spawn1 50 405 0
+spawn2 90 430 0
+spawn3 120 455 0
+spawn4 150 410 0
+
+wait
+at 0
+
+spawn malesoldier
+coords 470 405 0
+item apple
+at 0
+
+spawn sticksoldier
+coords 670 455 0
+item cosmos-stars
+at 0
+
+wait
+at 600
+
+spawn malesoldier
+coords 470 405 0
+at 600
+
+spawn sticksoldier
+coords 670 455 0
+at 600
+
+spawn malesoldier
+coords 700 465 0
+at 600
+
+wait
+at 1252
+
+spawn malesoldier
+coords 470 405 0
+at 1252
+
+spawn sticksoldier
+coords 670 455 0
+at 1252
+
+spawn malesoldier
+coords 700 465 0
+at 1252
+
+wait
+at 1903
+
+spawn malesoldier
+coords 470 405 0
+at 1903
+
+spawn sticksoldier
+coords 670 455 0
+at 1903
+
+spawn malesoldier
+coords 700 465 0
+at 1903
+
+wait
+at 2554
+
+spawn malesoldier
+coords 470 405 0
+at 2554
+
+spawn sticksoldier
+coords 670 455 0
+at 2554
+
+spawn malesoldier
+coords 700 465 0
+at 2554
+
+wait
+at 3206
+
+spawn malesoldier
+coords 470 405 0
+at 3206
+
+spawn sticksoldier
+coords 670 455 0
+at 3206
+
+spawn malesoldier
+coords 700 465 0
+at 3206
+

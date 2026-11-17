@@ -14,15 +14,15 @@ anim idle
 	bbox	223 190 32 16
 	delay	100
 	@cmd itemText "HEALTH + 170" 0.8 2.5 4
-	frame	data/chars/misc/items/food/uvaFF01.gif
+	frame	data/chars/misc/items/food/uvaff01.gif
 	delay   4
-	frame	data/chars/misc/items/food/uvaFF02.gif
-	frame	data/chars/misc/items/food/uvaFF01.gif
-	frame	data/chars/misc/items/food/uvaFF02.gif
-	frame	data/chars/misc/items/food/uvaFF01.gif
-	frame	data/chars/misc/items/food/uvaFF02.gif
-	frame	data/chars/misc/items/food/uvaFF01.gif
-	frame	data/chars/misc/items/food/uvaFF02.gif
-	frame	data/chars/misc/items/food/uvaFF01.gif
-	frame	data/chars/misc/items/food/uvaFF02.gif
-	frame	data/chars/misc/items/food/uvaFF01.gif
+	frame	data/chars/misc/items/food/uvaff02.gif
+	frame	data/chars/misc/items/food/uvaff01.gif
+	frame	data/chars/misc/items/food/uvaff02.gif
+	frame	data/chars/misc/items/food/uvaff01.gif
+	frame	data/chars/misc/items/food/uvaff02.gif
+	frame	data/chars/misc/items/food/uvaff01.gif
+	frame	data/chars/misc/items/food/uvaff02.gif
+	frame	data/chars/misc/items/food/uvaff01.gif
+	frame	data/chars/misc/items/food/uvaff02.gif
+	frame	data/chars/misc/items/food/uvaff01.gif

@@ -3,7 +3,7 @@ type	none
 #toflip 1
 
 
-Palette	 data/chars/catapult/exp8.gif
+Palette	 data/chars/misc/catapult/exp8.gif
 
 anim spawn
 	loop	0
@@ -12,20 +12,20 @@ anim spawn
 	bbox	0 0 0 0
 	delay	6
 	sound   data/sounds/catex.wav
-	frame	data/chars/catapult/exp1.gif
-	frame	data/chars/catapult/exp2.gif
-	frame	data/chars/catapult/exp3.gif
-	frame	data/chars/catapult/exp4.gif
-	frame	data/chars/catapult/exp5.gif
-	frame	data/chars/catapult/exp6.gif
-	frame	data/chars/catapult/exp7.gif
-	frame	data/chars/catapult/exp8.gif
-	frame	data/chars/catapult/exp9.gif
-	frame	data/chars/catapult/exp10.gif
-	frame	data/chars/catapult/exp11.gif
-	frame	data/chars/catapult/exp12.gif
-	frame	data/chars/catapult/exp13.gif
-	frame	data/chars/catapult/exp14.gif
+	frame	data/chars/misc/catapult/exp1.gif
+	frame	data/chars/misc/catapult/exp2.gif
+	frame	data/chars/misc/catapult/exp3.gif
+	frame	data/chars/misc/catapult/exp4.gif
+	frame	data/chars/misc/catapult/exp5.gif
+	frame	data/chars/misc/catapult/exp6.gif
+	frame	data/chars/misc/catapult/exp7.gif
+	frame	data/chars/misc/catapult/exp8.gif
+	frame	data/chars/misc/catapult/exp9.gif
+	frame	data/chars/misc/catapult/exp10.gif
+	frame	data/chars/misc/catapult/exp11.gif
+	frame	data/chars/misc/catapult/exp12.gif
+	frame	data/chars/misc/catapult/exp13.gif
+	frame	data/chars/misc/catapult/exp14.gif
 	frame	data/chars/misc/empty.gif
 	#frame	data/chars/misc/empty.gif
 	#frame	data/chars/misc/empty.gif
@@ -35,20 +35,20 @@ anim idle
 	loop	0
 	delay   6
 	offset     0 0
-	frame	data/chars/catapult/exp1.gif
-	frame	data/chars/catapult/exp2.gif
-	frame	data/chars/catapult/exp3.gif
-	frame	data/chars/catapult/exp4.gif
-	frame	data/chars/catapult/exp5.gif
-	frame	data/chars/catapult/exp6.gif
-	frame	data/chars/catapult/exp7.gif
-	frame	data/chars/catapult/exp8.gif
-	frame	data/chars/catapult/exp9.gif
-	frame	data/chars/catapult/exp10.gif
-	frame	data/chars/catapult/exp11.gif
-	frame	data/chars/catapult/exp12.gif
-	frame	data/chars/catapult/exp13.gif
-	frame	data/chars/catapult/exp14.gif
+	frame	data/chars/misc/catapult/exp1.gif
+	frame	data/chars/misc/catapult/exp2.gif
+	frame	data/chars/misc/catapult/exp3.gif
+	frame	data/chars/misc/catapult/exp4.gif
+	frame	data/chars/misc/catapult/exp5.gif
+	frame	data/chars/misc/catapult/exp6.gif
+	frame	data/chars/misc/catapult/exp7.gif
+	frame	data/chars/misc/catapult/exp8.gif
+	frame	data/chars/misc/catapult/exp9.gif
+	frame	data/chars/misc/catapult/exp10.gif
+	frame	data/chars/misc/catapult/exp11.gif
+	frame	data/chars/misc/catapult/exp12.gif
+	frame	data/chars/misc/catapult/exp13.gif
+	frame	data/chars/misc/catapult/exp14.gif
 	#frame	data/chars/misc/empty.gif
 	#frame	data/chars/misc/empty.gif
 	#frame	data/chars/misc/empty.gif

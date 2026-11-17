@@ -1,3 +1,4 @@
+#import "data/scripts/library/safe_expire.c"
 void main()
 {
 	void self = getlocalvar("self");
@@ -6,7 +7,7 @@ void main()
 		if(openborvariant("current_set") <= 2){drawStory();}
 	}
 	
-	if(!openborvariant("in_selectscreen")){killentity(self);}
+	if(!openborvariant("in_selectscreen")){expireEntity(self);}
 
 }
 

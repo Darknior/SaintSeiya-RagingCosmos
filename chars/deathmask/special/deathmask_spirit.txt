@@ -54,7 +54,7 @@ anim	follow1
 	//DETECTS IF THE CURRENT TARGET ALREADY IS IN A FALLING INSTANCE
 	//IF YES, SUICIDE. IF NOT, PROCEED NORMALLY
 	if(frame == 0){
-		if(getentityproperty(target, "aiflag", "falling")){killentity(self);}
+		if(getentityproperty(target, "aiflag", "falling")){changeentityproperty(self,"lifespancountdown",-1);}
 	}
 
 	//SCRIPT USED TO MOVE THE "SPRIRIT HANDS" TO THE SAME TARGET'S POSITION
@@ -73,7 +73,7 @@ anim	follow1
 	delay	2
 	offset	79 118
    dot 0 1000 1 6 100
-	hitfx	data/sounds/none.wav
+	hitfx	data/sounds/silence.wav
 	frame	data/chars/deathmask/special/deathmask_hands/hands1.png #THIS FRAME IS DISCARDED BY THE ENGINE DURING FOLLOW
 	delay	90
 	attack 86 124 162 66 0 0 0 0 0 0

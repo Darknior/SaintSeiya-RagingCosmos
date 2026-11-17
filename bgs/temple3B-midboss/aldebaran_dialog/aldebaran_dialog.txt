@@ -10,7 +10,7 @@ anim idle
 	summonframe 0 0 0 0 0
 	custentity dialogbox
 	delay	  700	
-	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog1.png
-	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog2.png
-	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog3.png	
-	frame data/bgs/temple2/aldebaran_dialog/aldebaran_dialog4.png
+	frame data/bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog1.png
+	frame data/bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog2.png
+	frame data/bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog3.png	
+	frame data/bgs/temple2D-boss/aldebaran_dialog/aldebaran_dialog4.png

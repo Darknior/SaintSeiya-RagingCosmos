@@ -98,7 +98,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   35 129
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/sirius/idle1.png
 
 
@@ -285,7 +285,7 @@ anim attack5 # Attaque combo 5
 anim special # Defense spéciale Great Mountain Smasher
     delay    10
     offset    35 147
-    sound data/chars/sirius/04-skywalk.wav
+    sound data/chars/tremi/sounds/04-skywalk.wav
     fastattack 1
     hitflash sirius_slash
     frame    data/chars/sirius/special1.png
@@ -313,7 +313,7 @@ anim special # Defense spéciale Great Mountain Smasher
 anim freespecial2 # 2X Ray projectile
     delay    10
     offset    49 127
-    sound data/chars/sirius/03-special.wav
+    sound data/sounds/silence.wav
     range     130 300
     rangea     0 100
     energycost  20 1 0

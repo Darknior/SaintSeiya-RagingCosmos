@@ -9,4 +9,4 @@ anim idle
     offset      0 0
     drawmethod  alpha 6
     drawmethod  channel 0.7
-    frame       data/bgs/temple10-road/temple10roadcolumns.png
+    frame       data/bgs/temple10C-road/temple10roadcolumns.png

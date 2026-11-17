@@ -1,0 +1,325 @@
+[
+  {
+    "model": "malesoldier",
+    "file": "chars/soldier_blue/00_soldier_blue.txt",
+    "added": []
+  },
+  {
+    "model": "Comboman",
+    "file": "chars/soldier_blue/malesoldier_attackcombo.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "Jumpman",
+    "file": "chars/soldier_blue/malesoldier_jumpattack.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "Specialman",
+    "file": "chars/soldier_blue/malesoldier_specialattack.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "Runningman",
+    "file": "chars/soldier_blue/malesoldier_runattack.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "downman",
+    "file": "chars/soldier_blue/malesoldier_down.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "upman",
+    "file": "chars/soldier_blue/malesoldier_up.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "backman",
+    "file": "chars/soldier_blue/malesoldier_backattack.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "Chargeman",
+    "file": "chars/soldier_blue/malesoldier_charge.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "uppercutman",
+    "file": "chars/soldier_blue/malesoldier_uppercut.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "grabman",
+    "file": "chars/soldier_blue/malesoldier_grab.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "Invincibleman",
+    "file": "chars/soldier_blue/malesoldier_defense_all.txt",
+    "added": [
+      "pain2",
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "soldier_short",
+    "file": "chars/soldier_short/00_soldier_short.txt",
+    "added": [
+      "pain12"
+    ]
+  },
+  {
+    "model": "soldier_basic",
+    "file": "chars/soldier_basic/00_soldier_basic.txt",
+    "added": []
+  },
+  {
+    "model": "soldier_pant",
+    "file": "chars/soldier_basic/00_soldier_pant.txt",
+    "added": []
+  },
+  {
+    "model": "soldier_shield",
+    "file": "chars/soldier_shield/00_soldier_shield.txt",
+    "added": []
+  },
+  {
+    "model": "soldier_shield_dress",
+    "file": "chars/soldier_shield/00_soldier_shield_dress.txt",
+    "added": []
+  },
+  {
+    "model": "soldier_muscles",
+    "file": "chars/soldier_muscles/00_soldier_muscles.txt",
+    "added": []
+  },
+  {
+    "model": "soldier_fat",
+    "file": "chars/soldier_fat/00_soldier_fat.txt",
+    "added": [
+      "pain2",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "SOLDIER",
+    "file": "chars/soldier_base/00_soldier_white.txt",
+    "added": []
+  },
+  {
+    "model": "SOLDIER1",
+    "file": "chars/soldier_base/00_soldier_yellow.txt",
+    "added": []
+  },
+  {
+    "model": "SOLDIER1-1",
+    "file": "chars/soldier_base/00_soldier_yellow_B.txt",
+    "added": []
+  },
+  {
+    "model": "SOLDIER2",
+    "file": "chars/soldier_purple/00_soldier_purple.txt",
+    "added": []
+  },
+  {
+    "model": "SOLDIERTRAINING",
+    "file": "chars/soldier_purple/00_soldier_purple_training.txt",
+    "added": [
+      "pain2",
+      "pain12"
+    ]
+  },
+  {
+    "model": "sticksoldier",
+    "file": "chars/soldier_stick/00_soldier_stick.txt",
+    "added": []
+  },
+  {
+    "model": "SOLDIER3",
+    "file": "chars/soldier_big/00_soldier_big.txt",
+    "added": []
+  },
+  {
+    "model": "soldier_mud",
+    "file": "chars/soldier_mud/00_soldier_mud.txt",
+    "added": [
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  },
+  {
+    "model": "soldier_troll",
+    "file": "chars/soldier_troll/00_soldier_troll.txt",
+    "added": [
+      "fall8",
+      "fall9",
+      "pain10",
+      "pain11",
+      "pain12",
+      "pain15",
+      "fall15",
+      "pain20",
+      "fall20",
+      "pain30",
+      "fall30"
+    ]
+  }
+]

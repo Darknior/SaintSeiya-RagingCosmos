@@ -14,7 +14,7 @@ anim idle
     if(frame==1){
       changeentityproperty(self, "health", Health-1);
       if(Health <= 0){
-        killentity(self);
+        changeentityproperty(self,"lifespancountdown",-1);
       }
     }
 @end_script

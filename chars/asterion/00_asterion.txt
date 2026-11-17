@@ -104,7 +104,7 @@ anim    waiting # Animation d'attente dans l'écran de sélection
 anim    select  # Personnage sélectionné
     delay    150
     offset   49 129
-    sound    data/chars/sounds/select-short.wav
+    sound    data/sounds/select-short.wav
     frame    data/chars/asterion/idle1.png
 
 
@@ -290,7 +290,7 @@ anim attack5 # Attaque combo 5
 anim special # Defense spéciale
     delay    10
     offset    35 128
-    sound data/chars/asterion/04-skywalk.wav
+    sound data/chars/tremi/sounds/04-skywalk.wav
     fastattack 1
     hitflash asterion_slash
     attack1 0 0 0 0 0 0 0 0 0 0
@@ -308,7 +308,7 @@ anim special # Defense spéciale
 anim freespecial2 # Million Ghost Attack
     delay    10
     offset    40 127
-    sound data/chars/asterion/03-special.wav
+    sound data/sounds/silence.wav
     range     130 300
     rangea     0 100
     energycost  50 1 0

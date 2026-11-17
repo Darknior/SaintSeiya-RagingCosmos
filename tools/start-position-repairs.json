@@ -1,0 +1,866 @@
+[
+  {
+    "file": "levels/temple1.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple1.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple1.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple1.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple0.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple0.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple0.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple0.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple2A-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 255
+  },
+  {
+    "file": "levels/temple2A-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 270
+  },
+  {
+    "file": "levels/temple2A-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 285
+  },
+  {
+    "file": "levels/temple2A-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 300
+  },
+  {
+    "file": "levels/temple2B-midboss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 445
+  },
+  {
+    "file": "levels/temple2B-midboss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 460
+  },
+  {
+    "file": "levels/temple2B-midboss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 474
+  },
+  {
+    "file": "levels/temple2B-midboss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 474
+  },
+  {
+    "file": "levels/temple2C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 255
+  },
+  {
+    "file": "levels/temple2C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 270
+  },
+  {
+    "file": "levels/temple2C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 285
+  },
+  {
+    "file": "levels/temple2C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 300
+  },
+  {
+    "file": "levels/temple2D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple2D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple2D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple2D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple3A-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple3A-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple3A-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple3A-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple3B-midboss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple3B-midboss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple3B-midboss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple3B-midboss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple3C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple3C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple3C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple3C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple3D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple3D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple3D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple3D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple4A-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple4A-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple4A-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple4A-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple4B-midboss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple4B-midboss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple4B-midboss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple4B-midboss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple4C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple4C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple4C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple4C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple4D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple4D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple4D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple4D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple5A-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple5A-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple5A-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple5A-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple5B-midboss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple5B-midboss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple5B-midboss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple5B-midboss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple5C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple5C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple5C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple5C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple5D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple5D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple5D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple5D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple6A-road.txt",
+    "player": 1,
+    "old_z": 350,
+    "z": 415
+  },
+  {
+    "file": "levels/temple6A-road.txt",
+    "player": 2,
+    "old_z": 350,
+    "z": 430
+  },
+  {
+    "file": "levels/temple6A-road.txt",
+    "player": 3,
+    "old_z": 350,
+    "z": 445
+  },
+  {
+    "file": "levels/temple6A-road.txt",
+    "player": 4,
+    "old_z": 350,
+    "z": 460
+  },
+  {
+    "file": "levels/temple6B-midboss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple6B-midboss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple6B-midboss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple6B-midboss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple6C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple6C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple6C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple6C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple6D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple6D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple6D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple6D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple7A-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple7A-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple7A-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple7A-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple8A-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple8A-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple8A-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple8A-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple8C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple8C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple8C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple8C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple8D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple8D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple8D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple8D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple10D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple10D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple10D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple10D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple11A-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple11A-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple11A-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple11A-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple11D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple11D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple11D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple11D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple12C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple12C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple12C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple12C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple12D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple12D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple12D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple12D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple13A-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple13A-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple13A-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple13A-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple13C-road.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 415
+  },
+  {
+    "file": "levels/temple13C-road.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 430
+  },
+  {
+    "file": "levels/temple13C-road.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 445
+  },
+  {
+    "file": "levels/temple13C-road.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 460
+  },
+  {
+    "file": "levels/temple13D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 403
+  },
+  {
+    "file": "levels/temple13D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 418
+  },
+  {
+    "file": "levels/temple13D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 433
+  },
+  {
+    "file": "levels/temple13D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 448
+  },
+  {
+    "file": "levels/temple7D-boss.txt",
+    "player": 1,
+    "old_z": 180,
+    "z": 380
+  },
+  {
+    "file": "levels/temple7D-boss.txt",
+    "player": 2,
+    "old_z": 160,
+    "z": 395
+  },
+  {
+    "file": "levels/temple7D-boss.txt",
+    "player": 3,
+    "old_z": 220,
+    "z": 410
+  },
+  {
+    "file": "levels/temple7D-boss.txt",
+    "player": 4,
+    "old_z": 190,
+    "z": 425
+  }
+]

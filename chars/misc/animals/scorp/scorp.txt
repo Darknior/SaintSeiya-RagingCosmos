@@ -21,15 +21,15 @@ nodieblink			0
 falldie				2
 jugglepoints		15
 icon				data/chars/scorp/icon.gif 1
-icondie				data/chars/scorp/icond.gif 1
+icondie				data/chars/misc/animals/scorp/icond.gif 1
 diesound			data/sounds/scorp01.wav
 takedamagescript	data/scripts/ndamage.c
 
-palette				data/chars/scorp/scorp.gif #1
+palette				data/chars/misc/animals/scorp/scorp.gif #1
 
 remap	data/chars/scorp/idle00.gif   data/chars/scorp/alter01.gif
 remap	data/chars/scorp/idle00.gif   data/chars/scorp/alter02.gif
-remap	data/chars/scorp/idle00.gif   data/chars/scorp/alter03.gif
+remap	data/chars/scorp/idle00.gif   data/chars/misc/animals/scorp/alter03.gif
 
 #-------Moves
 
@@ -42,7 +42,7 @@ anim spawn
 	jumpframe  0 0.1 0
 	landframe  1
 	delay	999
-	frame	data/chars/scorp/spawn00.gif
+	frame	data/chars/misc/animals/scorp/spawn00.gif
 	delay	6
 	frame	data/chars/scorp/idle00.gif
 	frame	data/chars/scorp/idle01.gif
@@ -70,7 +70,7 @@ anim walk
 	offset     225 198
 	bbox	213 175 32 24
 	delay   6
-	frame	data/chars/scorp/wk00.gif
+	frame	data/chars/misc/animals/scorp/wk00.gif
 	frame	data/chars/scorp/wk01.gif
 	frame	data/chars/scorp/wk02.gif
 	frame	data/chars/scorp/wk01.gif
@@ -88,7 +88,7 @@ anim attack1
 	attack1  219 143 73 56 5 0 0 0 0
 	frame	data/chars/scorp/a103.gif
 	attack1  0 0 0 0 0 0 0 0 0 0
-	frame	data/chars/scorp/a104.gif
+	frame	data/chars/misc/animals/scorp/a104.gif
 	frame	data/chars/scorp/idle00.gif
 
 #----------------------------------------ATTACK 1----------------------------------------;

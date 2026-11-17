@@ -1,0 +1,7 @@
+name temple2roadsky
+type panel
+anim idle
+ loop 1
+ delay 100
+ offset 0 0
+ frame data/bgs/temple2A-road/background.png

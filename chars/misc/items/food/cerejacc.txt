@@ -14,15 +14,15 @@ anim idle
 	bbox	223 165 32 16
 	delay	100
 	@cmd itemText "HEALTH + 100" 0.8 1.5 4
-	frame	data/chars/misc/items/food/cerejaCC01.gif
+	frame	data/chars/misc/items/food/cerejacc01.gif
 	delay   4
-	frame	data/chars/misc/items/food/cerejaCC02.gif
-	frame	data/chars/misc/items/food/cerejaCC01.gif
-	frame	data/chars/misc/items/food/cerejaCC02.gif
-	frame	data/chars/misc/items/food/cerejaCC01.gif
-	frame	data/chars/misc/items/food/cerejaCC02.gif
-	frame	data/chars/misc/items/food/cerejaCC01.gif
-	frame	data/chars/misc/items/food/cerejaCC02.gif
-	frame	data/chars/misc/items/food/cerejaCC01.gif
-	frame	data/chars/misc/items/food/cerejaCC02.gif
-	frame	data/chars/misc/items/food/cerejaCC01.gif
+	frame	data/chars/misc/items/food/cerejacc02.gif
+	frame	data/chars/misc/items/food/cerejacc01.gif
+	frame	data/chars/misc/items/food/cerejacc02.gif
+	frame	data/chars/misc/items/food/cerejacc01.gif
+	frame	data/chars/misc/items/food/cerejacc02.gif
+	frame	data/chars/misc/items/food/cerejacc01.gif
+	frame	data/chars/misc/items/food/cerejacc02.gif
+	frame	data/chars/misc/items/food/cerejacc01.gif
+	frame	data/chars/misc/items/food/cerejacc02.gif
+	frame	data/chars/misc/items/food/cerejacc01.gif

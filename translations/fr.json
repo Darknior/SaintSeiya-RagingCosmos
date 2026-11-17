@@ -1,0 +1,88 @@
+{
+  "code": "fr",
+  "name": "Français",
+  "ui": {
+    "language": "Langue",
+    "select_hint": "Directions : choisir • Attaque / Start : valider",
+    "press_start": "APPUYEZ SUR START",
+    "change_language": "Block : langue",
+    "pause": "PAUSE",
+    "continue": "Continuer",
+    "levels": "Choix du niveau",
+    "howto": "Comment jouer",
+    "quit": "Quitter la partie",
+    "choose_hint": "Haut / Bas : choisir • Attaque / Start : valider",
+    "resume_hint": "Saut / Échap : reprendre",
+    "levels_hint": "Attaque / Start : charger • Saut / Échap : retour",
+    "restart_hint": "Garde le personnage et recommence le niveau choisi.",
+    "guide_footer": "Directions : page • Attaque : suite • Saut / Start : retour",
+    "controls": "Touches : Options / Control Options.",
+    "devices": "Clavier, manette ou commandes tactiles.",
+    "guide_title": "COMMENT JOUER — SEIYA",
+    "stage": "Niveau",
+    "page": "Page",
+    "temple": "Temple",
+    "road": "Chemin",
+    "guards": "Gardes",
+    "boss": "Boss"
+  },
+  "main": [
+    "Jouer",
+    "Options",
+    "Comment jouer",
+    "Meilleurs scores",
+    "Quitter"
+  ],
+  "pages": [
+    {
+      "title": "Se déplacer",
+      "command": "DIRECTIONS",
+      "line1": "Haut / Bas / Gauche / Droite",
+      "line2": "Aligne Seiya avec son adversaire.",
+      "line3": "Les coups portent sur la même ligne."
+    },
+    {
+      "title": "Courir",
+      "command": "DEUX FOIS LA MÊME DIRECTION",
+      "line1": "Appuie deux fois sur Gauche ou Droite.",
+      "line2": "Garde la direction pour continuer.",
+      "line3": "Attaque en courant : Attaque."
+    },
+    {
+      "title": "Enchaîner les coups",
+      "command": "ATTAQUE — APPUIS SUCCESSIFS",
+      "line1": "Appuie plusieurs fois sur Attaque.",
+      "line2": "Seiya enchaîne cinq coups.",
+      "line3": "Approche-toi pour toucher la cible."
+    },
+    {
+      "title": "Sauter",
+      "command": "SAUT",
+      "line1": "Appuie sur Saut.",
+      "line2": "Ajoute une direction pour avancer.",
+      "line3": "Attention aux trous du décor !"
+    },
+    {
+      "title": "Attaquer en l’air",
+      "command": "SAUT PUIS ATTAQUE",
+      "line1": "Saute, puis appuie sur Attaque.",
+      "line2": "Seiya frappe pendant son saut.",
+      "line3": "Essaie aussi en sautant vers l’avant."
+    },
+    {
+      "title": "Se protéger",
+      "command": "MAINTENIR BLOCK",
+      "line1": "Maintiens le bouton nommé Block.",
+      "line2": "Tourne-toi vers les coups à bloquer.",
+      "line3": "Relâche pour reprendre le combat."
+    },
+    {
+      "title": "Recharger le Cosmos",
+      "command": "MAINTENIR CHARGE",
+      "line1": "Maintiens le bouton nommé Charge.",
+      "line2": "La jauge Cosmos se remplit.",
+      "line3": "Choisis un endroit à l’abri des coups."
+    }
+  ],
+  "variant": "fr"
+}
