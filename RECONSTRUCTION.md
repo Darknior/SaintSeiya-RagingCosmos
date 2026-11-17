@@ -187,3 +187,23 @@ python3 tools/archive_checkpoint.py --output /chemin/sauvegarde
 L'outil exige un arbre Git propre et produit les fichiers modifiés, un patch
 binaire, les commits dans un bundle, une liste des suppressions et la référence
 exacte du commit sauvegardé. L'envoi Drive reste une action distincte.
+
+## Corrections des dialogues et des retours de boss
+
+La branche du boss des Gémeaux est désormais `temple3BOSS` : le nom `temple2BOSS`
+était partagé avec le Taureau. Un redémarrage natif chargeait donc le mauvais
+boss. Le comparatif moteur reproduit le retour au Taureau avant correction et
+le retour aux Gémeaux après correction. La validation refuse désormais les
+branches dupliquées dans un même mode.
+
+Les dialogues conservent la profondeur de chaque combattant, la restaurent
+une seule fois à la fin du masquage et ne forcent plus tous les personnages à
+400 à chaque image. La restauration intervient aussi après disparition de la
+dernière boîte de texte ou du fondu, même sans déverrouillage explicite dans la
+timeline. Un test natif vérifie deux cycles de masquage/restauration, la liberté
+de déplacement ensuite et la disparition de la boîte encore verrouillée.
+
+Les boucles des dialogues, trous, ascenseurs et effets d'eau parcourent tous les
+emplacements d'entités (`ent_max`) : le nombre d'entités vivantes n'est pas une
+limite correcte pour leurs indices lorsqu'un emplacement est libre. Six niveaux
+concernés et le pack extrait ont été retestés. Rapports avant/après dans `reports/`.

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "original_dialog": false,
+  "positions": {
+    "unlocked": 430.0,
+    "hidden": -999.0,
+    "restored": 430.0,
+    "movable": 455.0,
+    "hidden_again": -999.0,
+    "restored_again": 455.0,
+    "hidden_final": -999.0,
+    "closed": 455.0
+  }
+}

@@ -1,3 +1,4 @@
+#import "data/scripts/library/dialog_positions.c"
 #import "data/scripts/interface.c"
 #import "data/scripts/common/effect_tint.c"
 void zoom()
@@ -40,6 +41,7 @@ void main(){//MAIN START
         uiRelease();clearlocalvar();clearglobalvar();
     }
     if(interfaceDraw()) return;
+    restoreClosedDialog();
     tintEntities();
    if(getglobalvar("zoomentity"))
    {

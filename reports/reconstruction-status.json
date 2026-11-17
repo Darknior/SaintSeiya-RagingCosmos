@@ -47,5 +47,11 @@
   },
   "native_dialogue_translation": false,
   "github_publication": "blocked: integration has no write permission",
-  "asset_cleanup": "208.84 MiB omitted from test PAK; original assets preserved"
+  "asset_cleanup": "208.84 MiB omitted from test PAK; original assets preserved",
+  "corrections": {
+    "gemini_unique_restart_branch": true,
+    "dialog_depth_preserved": true,
+    "dialog_auto_release_after_last_textbox": true,
+    "sparse_entity_slots_scanned": true
+  }
 }

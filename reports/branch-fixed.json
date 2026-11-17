@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "original_branches": false,
+  "restart_target": "temple3BOSS",
+  "loaded": [
+    "data/levels/temple3D-boss.txt",
+    "data/levels/temple3D-boss.txt"
+  ]
+}

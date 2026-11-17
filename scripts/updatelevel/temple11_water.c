@@ -154,7 +154,7 @@ void waterSplash()
 {
 	void self			= getlocalvar("self");
 	void entity_cursor	= NULL();
-	int entity_count	= openborvariant("count_entities");
+	int entity_count	= openborvariant("ent_max");
 	int entity_index	= 0;
 	int exists			= 0;
 

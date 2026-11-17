@@ -150,7 +150,7 @@ z           420 484
 file        data/levels/temple3B-midboss.txt
 z           378 484
 file        data/levels/temple3C-road.txt
-branch      temple2BOSS
+branch      temple3BOSS
 z           378 484
 scene       data/bgs/temple3D-boss/temple3D-boss-intro.txt
 z           378 484

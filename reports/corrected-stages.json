@@ -1,0 +1,32 @@
+[
+  {
+    "level": "temple3D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple2D-boss",
+    "passed": true,
+    "all_soldiers_forced_load": true
+  },
+  {
+    "level": "temple5C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple6A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple7A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple11C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  }
+]

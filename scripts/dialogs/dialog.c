@@ -1,3 +1,4 @@
+#import "data/scripts/library/dialog_positions.c"
 void main()
 {//Draw content
 	void self			= getlocalvar("self");
@@ -78,40 +79,6 @@ void main()
 }
 
 void hideEntity()
-{//Hide some entities during the cutscenes
-	void self			= getlocalvar("self");
-	void entity_cursor	= NULL();
-	int entity_count	= openborvariant("count_entities");
-	int entity_index	= 0;
-	int exists			= 0;
-
-	//PERFORM THE MAIN TASKS
-	for(entity_index = 0; entity_index < entity_count; entity_index++){
-
-		entity_cursor = getentity(entity_index);
-
-		if(!entity_cursor){
-			continue;
-		}
-
-		exists = getentityproperty(entity_cursor, "exists");
-
-		if(!exists){
-			continue;
-		}
-
-		if(	getentityproperty(entity_cursor, "type") == openborconstant("TYPE_PLAYER")	||
-			getentityproperty(entity_cursor, "type") == openborconstant("TYPE_ENEMY")	){
-			int hideZ = -999;
-			int showZ = 400;
-			
-			if(getglobalvar("lockButton") == 1){
-				changeentityproperty(entity_cursor, "z", hideZ); //HIDE REAL ENTITIES DURING THE CUTSCENE
-			}
-			else
-			{
-				changeentityproperty(entity_cursor, "z", showZ); //SHOW BACK REAL ENTITIES AFTER THE CUTSCENE
-			}
-		}
-	}
+{// Preserve combatants' depths through the cutscene.
+    dialogPositions(getglobalvar("lockButton")==1);
 }

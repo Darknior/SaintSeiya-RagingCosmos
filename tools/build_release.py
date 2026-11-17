@@ -30,6 +30,14 @@ def validate():
   for mode,(lo,hi) in entries:
    for m in re.finditer(r'^spawn([1-4])\s+\S+\s+(\S+)',(ROOT/name).read_text(),re.M):
     if not 0<float(m[2])<hi-lo:errors.append(name+': player '+m[1]+' starts outside relative Z range')
+ mode=None;branches=set()
+ for line in (ROOT/'levels.txt').read_text().splitlines():
+  w=line.split('#')[0].split()
+  if not w:continue
+  if w[0]=='set':mode=w[1];branches=set()
+  elif w[0]=='branch':
+   if w[1] in branches:errors.append(str(mode)+': duplicate branch '+w[1])
+   branches.add(w[1])
  sets=catalog()
  if len(sets[1]['levels'])!=43:errors.append('Story requires 43 stages')
  for route in json.loads((ROOT/'tools/route-layout.json').read_text()):
