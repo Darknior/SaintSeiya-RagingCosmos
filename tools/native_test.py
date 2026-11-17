@@ -15,10 +15,18 @@ class Session:
   for p in (source/'scripts').iterdir():
    if p.name!='update.c':(scripts/p.name).symlink_to(p,target_is_directory=p.is_dir())
   original=(source/'scripts/update.c').read_text().replace('void main()\n{','void main()\n{\n nativeProbe();',1)
-  original+='\nvoid nativeProbe(){\n if(openborvariant("in_level")){changeopenborvariant("skiptoset",-1);void p=getplayerproperty(0,"entity");if(p!=NULL() && getglobalvar("test_player")==NULL()){log("NATIVE_PLAYER_READY\\n");setglobalvar("test_player",1);}}\n int paused=openborvariant("game_paused");int view=getglobalvar("ui_view");int page=getglobalvar("ui_page");int lang=getglobalvar("ui_lang");int option=getglobalvar("ui_option");int title=openborvariant("in_titlescreen")!=0;int menu=openborvariant("in_menuscreen")!=0;int confirmed=getglobalvar("ui_confirmed");\n if(view==NULL()) view=0;if(page==NULL()) page=0;if(lang==NULL()) lang=0;if(option==NULL()) option=0;if(confirmed==NULL()) confirmed=0;\n int signature=paused+view*10+page*100+lang*1000+option*10000+title*100000+menu*1000000+confirmed*10000000;\n if(getglobalvar("test_signature")!=signature+1){log("NATIVE_UI pause="+paused+" view="+view+" page="+page+" lang="+lang+" option="+option+" title="+title+" menu="+menu+" confirmed="+confirmed+" time="+openborvariant("elapsed_time")+"\\n");setglobalvar("test_signature",signature+1);}\n if(paused==2 && playerkeys(0,1,"attack4")){uiRelease();setglobalvar("ui_lang",(lang+1)%7);}\n}\n'
+  original+='\nvoid nativeProbe(){\n if(openborvariant("in_level")){changeopenborvariant("skiptoset",-1);void p=getplayerproperty(0,"entity");if(p!=NULL() && getglobalvar("test_player")==NULL()){log("NATIVE_PLAYER_READY\\n");log("NATIVE_POSITION z="+getentityproperty(p,"z")+" min="+openborvariant("player_min_z")+" max="+openborvariant("player_max_z")+"\\n");setglobalvar("test_player",1);}}\n int paused=openborvariant("game_paused");int view=getglobalvar("ui_view");int page=getglobalvar("ui_page");int lang=getglobalvar("ui_lang");int option=getglobalvar("ui_option");int title=openborvariant("in_titlescreen")!=0;int menu=openborvariant("in_menuscreen")!=0;int confirmed=getglobalvar("ui_confirmed");\n if(view==NULL()) view=0;if(page==NULL()) page=0;if(lang==NULL()) lang=0;if(option==NULL()) option=0;if(confirmed==NULL()) confirmed=0;\n int signature=paused+view*10+page*100+lang*1000+option*10000+title*100000+menu*1000000+confirmed*10000000;\n if(getglobalvar("test_signature")!=signature+1){log("NATIVE_UI pause="+paused+" view="+view+" page="+page+" lang="+lang+" option="+option+" title="+title+" menu="+menu+" confirmed="+confirmed+" time="+openborvariant("elapsed_time")+"\\n");setglobalvar("test_signature",signature+1);}\n if(paused==2 && playerkeys(0,1,"attack4")){uiRelease();setglobalvar("ui_lang",(lang+1)%7);}\n}\n'
   original='#import "data/scripts/interface.c"\n'+original
   (scripts/'update.c').write_text(original)
-  config=(source/'levels.txt').read_text().replace('skipselect\nselect data/select-all.txt','skipselect seiya\nskipselect seiya');config=config.replace('file        data/levels/temple0.txt',f'file        data/levels/{level}.txt',1)
+  config=(source/'levels.txt').read_text().replace('skipselect\nselect data/select-all.txt','skipselect seiya\nskipselect seiya')
+  bounds=(378,484)
+  for line in config.splitlines():
+   w=line.split()
+   if not w:continue
+   if w[0]=='z':bounds=tuple(map(int,w[1:3]))
+   if w[0]=='file' and w[1]==f'data/levels/{level}.txt':break
+  self.bounds=bounds
+  config=config.replace('file        data/levels/temple0.txt',f'z {bounds[0]} {bounds[1]}\nfile        data/levels/{level}.txt',1)
   (data/'levels.txt').write_text(('' if title else 'skiptoset 1\n')+config)
   scenes=data/'scenes';scenes.mkdir()
   for p in (source/'scenes').iterdir():

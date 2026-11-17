@@ -25,13 +25,13 @@ def main():
   crop=im.crop((65,70,230,225)).resize((330,310),Image.Resampling.NEAREST);sheet.paste(crop,(20+i*355,110),crop);dr.text((20+i*355,73),label,font=font,fill='white');dr.line((20+i*355,388,350+i*355,388),fill='#56748a');dr.text((20+i*355,445),str(metrics[-1]['visible_size'])+' px',font=font,fill='white')
  dr.text((20,510),'Même palette et ancrage 146,205. Nouveau dessin : silhouette et',font=font,fill='white');dr.text((20,542),'ombrages à apprécier ; les autres compléments utilisent les sprites natifs.',font=font,fill='white');sheet.save(out/'comparatif-soldat-boue.png');(out/'comparatif-mesures.json').write_text(json.dumps(metrics,indent=2)+'\n')
  # Actual runtime images are labelled separately from the composed preview.
- native=Path('/workspace/interface-final')
+ native=Path('/workspace/interface-geometry')
  for name in ['language-6','main-fr','main-guide-fr','pause-fr','levels-fr','restored-route','title-fr-restored']:
   p=native/(name+'.png')
   if p.exists():(out/(name+'.png')).write_bytes(p.read_bytes())
  routes=json.loads((ROOT/'tools/route-layout.json').read_text());gallery='<!doctype html><html lang="fr"><meta charset="utf-8"><title>Routes restaurées</title><style>body{background:#0a1322;color:white;font:18px system-ui;max-width:1000px;margin:auto;padding:24px}img{max-width:100%}h2{color:#e7ca85}</style><h1>Les sept étapes restaurées</h1><p>Captures natives OpenBOR : ennemis conservés. Les décors proviennent des ressources d’origine ; il ne s’agit pas de sept nouveaux dessins de fond.</p>'
  for r in routes:
-  src=Path('/workspace/campaign-final')/r['name']/'entry.png'
+  src=Path('/workspace/geometry-campaign')/r['name']/'entry.png'
   if src.exists():
    target=out/(r['name']+'.png');target.write_bytes(src.read_bytes());gallery+=f'<h2>{r["name"]}</h2><p>{r["encounters"]} vagues, {r["soldiers"]} soldats ; décor {r["source_scenery"]}.</p><img src="{uri(target)}">'
  (out/'sept-routes.html').write_text(gallery)

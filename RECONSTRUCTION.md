@@ -45,7 +45,7 @@ anciennes archives ou des dessins générés. Moteur officiel stable vérifié :
   Les suppressions depuis les scripts sont différées d'une mise à jour via
   `lifespancountdown` : le moteur 7533 déréférence son contexte natif `self` lors
   d'un `killentity` appelé depuis certains callbacks de dessin/dialogue.
-  Les départs hors de la plage Z d'un niveau sont ramenés sur son plan jouable.
+  Les profondeurs de départ sont des décalages depuis `PLAYER_MIN_Z`, et non des positions absolues. Les limites du mode Histoire reprennent celles des modes dédiés. La grotte du Scorpion utilise le sol réel du décor (620–790), une fenêtre verticale fixe et des départs dégagés des rochers du premier plan.
 
 ## Barre jaune
 
@@ -108,3 +108,16 @@ Une archive de correctifs plus petite permet aussi de retrouver les différences
 par rapport au commit d'origine. Un patch binaire complet inclut les nouveaux
 fichiers. Les archives sont vérifiées par CRC et SHA-256 avant envoi ; les liens
 Drive sont lus après transfert, sans modifier leurs permissions de partage.
+
+## Vérification de la reconstruction
+
+Les réactions ajoutées aux soldats utilisent leurs images natives et des reprises
+de séquences existantes : 167 déclarations ne signifient pas 167 nouveaux dessins.
+La nouvelle parade du soldat de boue est le seul corps de soldat redessiné.
+Le comparatif et les aperçus indiquent cette distinction.
+
+La vérification des niveaux contrôle désormais les limites réelles du niveau testé
+et la profondeur de départ native du joueur ; l'ancien harnais réutilisait les
+limites du premier niveau. Les tests de chargement précédents ne validaient donc
+pas le placement des acteurs. Le rapport `reports/stage-geometry.json` donne les
+173 déclarations de départ contrôlées (valeurs natives conservées lorsqu’elles sont valides).

@@ -360,34 +360,6 @@ void timeOver()
 	}
 }
 
-// Import functions.
-#import "data/scripts/common/effect_tint.c"
-
-void main(){
-
-    void    ent         = NULL();   // Target entity pointer.
-    int     ent_count   = 0;        // Entity count.
-    int     i           = 0;        // Loop counter.
-
-    // Get entity count.
-    ent_count = openborvariant("ent_max");
-
-    // Loop over each entity index.
-    for(i=0; i<ent_count; i++)
-    {
-        // Get entity pointer.
-		ent = getentity(i);
-
-		// Execute tint effect on entity.
-        effect_tint(ent);
-    }
-
-    // If you have any screen controlling functions, such
-    // as full screen zooming, place them here.
-
-
-}
-
 void drawRush()
 {//Draw rush counter
 	void player1 = getplayerproperty(0, "entity");

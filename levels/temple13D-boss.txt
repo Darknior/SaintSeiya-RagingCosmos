@@ -15,10 +15,10 @@ shadowalpha 2
 at          0
 
 #-------- Players spawn position -----------------------------------------------
-spawn1 50 403 0 # position du joueur1 (x, z, Y)
-spawn2 80 418 0 # position du joueur2 (x, z, Y)
-spawn3 90 433 0 # position du joueur3 (x, z, Y)
-spawn4 110 448 0 # position du joueur4 (x, z, Y)
+spawn1 50 25 0 # position du joueur1 (x, z, Y)
+spawn2 80 40 0 # position du joueur2 (x, z, Y)
+spawn3 90 47 0 # position du joueur3 (x, z, Y)
+spawn4 110 47 0 # position du joueur4 (x, z, Y)
 
 #-- HUD ------------------------------------------------------------------------
 

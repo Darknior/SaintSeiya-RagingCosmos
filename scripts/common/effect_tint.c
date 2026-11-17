@@ -40,10 +40,29 @@ void effect_tint(void ent)
     if(typeof(ent) != openborconstant("VT_PTR")) return;
     if(!getentityproperty(ent, "exists")) return;
 
-    // First lets turn drawmethod on. If we don't, nothing below will
-    // work at all.
-    if(!getdrawmethod(ent,"enabled")) changedrawmethod(ent,"reset",1);
-    changedrawmethod(ent, "enabled", 1);
+    // Only fighters need hit tints. Enabling entity-level draw methods on
+    // dust/projectiles overrides their animation alpha and makes black boxes.
+    int type = getentityproperty(ent, "type");
+    if(type != openborconstant("TYPE_PLAYER") && type != openborconstant("TYPE_ENEMY")) return;
+    animation = getentityproperty(ent, "animationid");
+    int affected = getentityproperty(ent, "aiflag", "frozen") == 1 ||
+        animation == openborconstant("ANI_BURN") || animation == openborconstant("ANI_BURNPAIN");
+    if(!affected){
+        if(getentityvar(ent, "effect_tint_active")){
+            changedrawmethod(ent, "tintmode", 0);
+            changedrawmethod(ent, "tintcolor", 0);
+            changedrawmethod(ent, "enabled", getentityvar(ent, "effect_tint_previous_enabled"));
+            setentityvar(ent, "effect_tint_active", NULL());
+            setentityvar(ent, EFFECT_TINT_VAR_KEY + "_initial", NULL());
+        }
+        return;
+    }
+    if(!getentityvar(ent, "effect_tint_active")){
+        setentityvar(ent, "effect_tint_previous_enabled", getdrawmethod(ent, "enabled"));
+        if(!getdrawmethod(ent, "enabled")) changedrawmethod(ent, "reset", 1);
+        changedrawmethod(ent, "enabled", 1);
+        setentityvar(ent, "effect_tint_active", 1);
+    }
 
     // For time controlled effects, we need to know
     // current time and the time an effect was first

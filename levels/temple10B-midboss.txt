@@ -26,10 +26,10 @@ wall		497 809 -500 -500 3307 2837 324 400 # Mur 1 le long de la falaise
 wall		3824 800 0 0 693 693 308 306		# Mur 2 à droite du temple
 
 # Shura's guards defend the approach to the Capricorn Temple.
-spawn1 50 405 0
-spawn2 90 430 0
-spawn3 120 455 0
-spawn4 150 410 0
+spawn1 50 25 0
+spawn2 90 40 0
+spawn3 120 55 0
+spawn4 150 70 0
 
 wait
 at 0

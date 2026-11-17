@@ -27,10 +27,10 @@ order	a
 
 
 # Camus freezes the road to Aquarius. Break through the icy patrols.
-spawn1 50 405 0
-spawn2 90 430 0
-spawn3 120 455 0
-spawn4 150 410 0
+spawn1 50 25 0
+spawn2 90 40 0
+spawn3 120 55 0
+spawn4 150 70 0
 
 wait
 at 0

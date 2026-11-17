@@ -1,0 +1,1732 @@
+[
+  {
+    "file": "levels/temple1.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple1.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple1.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple1.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple0.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple0.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple0.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple0.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2A-road.txt",
+    "player": 1,
+    "offset": 180,
+    "world_z": 410,
+    "bounds": [
+      230,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2A-road.txt",
+    "player": 2,
+    "offset": 160,
+    "world_z": 390,
+    "bounds": [
+      230,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2A-road.txt",
+    "player": 3,
+    "offset": 220,
+    "world_z": 450,
+    "bounds": [
+      230,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2A-road.txt",
+    "player": 4,
+    "offset": 190,
+    "world_z": 420,
+    "bounds": [
+      230,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 445,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 460,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 475,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2B-midboss.txt",
+    "player": 4,
+    "offset": 59,
+    "world_z": 479,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2C-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2C-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2C-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple2D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 345,
+    "bounds": [
+      320,
+      444
+    ]
+  },
+  {
+    "file": "levels/temple3A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 360,
+    "bounds": [
+      320,
+      444
+    ]
+  },
+  {
+    "file": "levels/temple3A-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 375,
+    "bounds": [
+      320,
+      444
+    ]
+  },
+  {
+    "file": "levels/temple3A-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 390,
+    "bounds": [
+      320,
+      444
+    ]
+  },
+  {
+    "file": "levels/temple3B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 445,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 460,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 475,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3B-midboss.txt",
+    "player": 4,
+    "offset": 59,
+    "world_z": 479,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3C-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3C-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3C-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple3D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4A-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4A-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 445,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 460,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 475,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4B-midboss.txt",
+    "player": 4,
+    "offset": 59,
+    "world_z": 479,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4C-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4C-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4C-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple4D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5A-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5A-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 445,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 460,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 475,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5B-midboss.txt",
+    "player": 4,
+    "offset": 59,
+    "world_z": 479,
+    "bounds": [
+      420,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5C-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5C-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5C-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple5D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6A-road.txt",
+    "player": 1,
+    "offset": 350,
+    "world_z": 540,
+    "bounds": [
+      190,
+      710
+    ]
+  },
+  {
+    "file": "levels/temple6A-road.txt",
+    "player": 2,
+    "offset": 350,
+    "world_z": 540,
+    "bounds": [
+      190,
+      710
+    ]
+  },
+  {
+    "file": "levels/temple6A-road.txt",
+    "player": 3,
+    "offset": 350,
+    "world_z": 540,
+    "bounds": [
+      190,
+      710
+    ]
+  },
+  {
+    "file": "levels/temple6A-road.txt",
+    "player": 4,
+    "offset": 350,
+    "world_z": 540,
+    "bounds": [
+      190,
+      710
+    ]
+  },
+  {
+    "file": "levels/temple6B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6B-midboss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6C-road.txt",
+    "player": 1,
+    "offset": 180,
+    "world_z": 430,
+    "bounds": [
+      250,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6C-road.txt",
+    "player": 2,
+    "offset": 160,
+    "world_z": 410,
+    "bounds": [
+      250,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6C-road.txt",
+    "player": 3,
+    "offset": 220,
+    "world_z": 470,
+    "bounds": [
+      250,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6C-road.txt",
+    "player": 4,
+    "offset": 190,
+    "world_z": 440,
+    "bounds": [
+      250,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple6D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple7A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 400,
+    "bounds": [
+      375,
+      430
+    ]
+  },
+  {
+    "file": "levels/temple7A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 415,
+    "bounds": [
+      375,
+      430
+    ]
+  },
+  {
+    "file": "levels/temple7A-road.txt",
+    "player": 3,
+    "offset": 50,
+    "world_z": 425,
+    "bounds": [
+      375,
+      430
+    ]
+  },
+  {
+    "file": "levels/temple7A-road.txt",
+    "player": 4,
+    "offset": 50,
+    "world_z": 425,
+    "bounds": [
+      375,
+      430
+    ]
+  },
+  {
+    "file": "levels/temple8A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 645,
+    "bounds": [
+      620,
+      790
+    ]
+  },
+  {
+    "file": "levels/temple8A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 660,
+    "bounds": [
+      620,
+      790
+    ]
+  },
+  {
+    "file": "levels/temple8A-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 675,
+    "bounds": [
+      620,
+      790
+    ]
+  },
+  {
+    "file": "levels/temple8A-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 690,
+    "bounds": [
+      620,
+      790
+    ]
+  },
+  {
+    "file": "levels/temple8B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 645,
+    "bounds": [
+      620,
+      790
+    ]
+  },
+  {
+    "file": "levels/temple8B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 660,
+    "bounds": [
+      620,
+      790
+    ]
+  },
+  {
+    "file": "levels/temple8B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 675,
+    "bounds": [
+      620,
+      790
+    ]
+  },
+  {
+    "file": "levels/temple8B-midboss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 690,
+    "bounds": [
+      620,
+      790
+    ]
+  },
+  {
+    "file": "levels/temple8C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple8C-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple8C-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple8C-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple8D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple8D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple8D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple8D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple10A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple10A-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple10A-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple10B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple10B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple10B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple10B-midboss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 365,
+    "bounds": [
+      340,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 365,
+    "bounds": [
+      340,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 380,
+    "bounds": [
+      340,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 395,
+    "bounds": [
+      340,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10C-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 410,
+    "bounds": [
+      340,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple10D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple11A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 350,
+    "bounds": [
+      325,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple11A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 365,
+    "bounds": [
+      325,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple11A-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 380,
+    "bounds": [
+      325,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple11A-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 395,
+    "bounds": [
+      325,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple11B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple11B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple11B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple11B-midboss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple11D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple11D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple11D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 433,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple11D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 448,
+    "bounds": [
+      378,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple12A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple12A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple12A-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple12A-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple12B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple12B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple12B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple12B-midboss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple12C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 413,
+    "bounds": [
+      388,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple12C-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 428,
+    "bounds": [
+      388,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple12C-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 443,
+    "bounds": [
+      388,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple12C-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 458,
+    "bounds": [
+      388,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple12D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 420,
+    "bounds": [
+      395,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple12D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 435,
+    "bounds": [
+      395,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple12D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 450,
+    "bounds": [
+      395,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple12D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 465,
+    "bounds": [
+      395,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple13A-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 413,
+    "bounds": [
+      388,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple13A-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 428,
+    "bounds": [
+      388,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple13A-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 443,
+    "bounds": [
+      388,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple13A-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 458,
+    "bounds": [
+      388,
+      484
+    ]
+  },
+  {
+    "file": "levels/temple13B-midboss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 415,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple13B-midboss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 430,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple13B-midboss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 445,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple13B-midboss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 460,
+    "bounds": [
+      390,
+      480
+    ]
+  },
+  {
+    "file": "levels/temple13C-road.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 313,
+    "bounds": [
+      288,
+      444
+    ]
+  },
+  {
+    "file": "levels/temple13C-road.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 328,
+    "bounds": [
+      288,
+      444
+    ]
+  },
+  {
+    "file": "levels/temple13C-road.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 343,
+    "bounds": [
+      288,
+      444
+    ]
+  },
+  {
+    "file": "levels/temple13C-road.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 358,
+    "bounds": [
+      288,
+      444
+    ]
+  },
+  {
+    "file": "levels/temple13D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 403,
+    "bounds": [
+      378,
+      430
+    ]
+  },
+  {
+    "file": "levels/temple13D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 418,
+    "bounds": [
+      378,
+      430
+    ]
+  },
+  {
+    "file": "levels/temple13D-boss.txt",
+    "player": 3,
+    "offset": 47,
+    "world_z": 425,
+    "bounds": [
+      378,
+      430
+    ]
+  },
+  {
+    "file": "levels/temple13D-boss.txt",
+    "player": 4,
+    "offset": 47,
+    "world_z": 425,
+    "bounds": [
+      378,
+      430
+    ]
+  },
+  {
+    "file": "levels/temple7D-boss.txt",
+    "player": 1,
+    "offset": 25,
+    "world_z": 380,
+    "bounds": [
+      355,
+      470
+    ]
+  },
+  {
+    "file": "levels/temple7D-boss.txt",
+    "player": 2,
+    "offset": 40,
+    "world_z": 395,
+    "bounds": [
+      355,
+      470
+    ]
+  },
+  {
+    "file": "levels/temple7D-boss.txt",
+    "player": 3,
+    "offset": 55,
+    "world_z": 410,
+    "bounds": [
+      355,
+      470
+    ]
+  },
+  {
+    "file": "levels/temple7D-boss.txt",
+    "player": 4,
+    "offset": 70,
+    "world_z": 425,
+    "bounds": [
+      355,
+      470
+    ]
+  }
+]

@@ -21,21 +21,25 @@ cameratype   1
 order        a
 
 # Milo protects the Scorpio Temple. Cross his guard patrols.
-spawn1 50 405 0
-spawn2 90 430 0
-spawn3 120 455 0
-spawn4 150 410 0
+spawn1 350 25 0
+spawn2 400 40 0
+spawn3 450 55 0
+spawn4 500 70 0
+
+# Geometry: cave floor and fixed vertical window.
+scrollz 330 330
+at 0
 
 wait
 at 0
 
 spawn malesoldier
-coords 470 405 0
+coords 650 635 0
 item apple
 at 0
 
 spawn sticksoldier
-coords 670 455 0
+coords 750 685 0
 item cosmos-stars
 at 0
 
@@ -43,74 +47,74 @@ wait
 at 600
 
 spawn malesoldier
-coords 470 405 0
+coords 470 635 0
 at 600
 
 spawn sticksoldier
-coords 670 455 0
+coords 670 685 0
 at 600
 
 spawn malesoldier
-coords 700 465 0
+coords 700 695 0
 at 600
 
 wait
 at 1252
 
 spawn malesoldier
-coords 470 405 0
+coords 470 635 0
 at 1252
 
 spawn sticksoldier
-coords 670 455 0
+coords 670 685 0
 at 1252
 
 spawn malesoldier
-coords 700 465 0
+coords 700 695 0
 at 1252
 
 wait
 at 1903
 
 spawn malesoldier
-coords 470 405 0
+coords 470 635 0
 at 1903
 
 spawn sticksoldier
-coords 670 455 0
+coords 670 685 0
 at 1903
 
 spawn malesoldier
-coords 700 465 0
+coords 700 695 0
 at 1903
 
 wait
 at 2554
 
 spawn malesoldier
-coords 470 405 0
+coords 470 635 0
 at 2554
 
 spawn sticksoldier
-coords 670 455 0
+coords 670 685 0
 at 2554
 
 spawn malesoldier
-coords 700 465 0
+coords 700 695 0
 at 2554
 
 wait
 at 3206
 
 spawn malesoldier
-coords 470 405 0
+coords 470 635 0
 at 3206
 
 spawn sticksoldier
-coords 670 455 0
+coords 670 685 0
 at 3206
 
 spawn malesoldier
-coords 700 465 0
+coords 700 695 0
 at 3206
 

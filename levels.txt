@@ -120,6 +120,7 @@ scene       data/bgs/temple0/temple0-video.txt
 branch      temple1
 z           378 484
 scene       data/bgs/temple1/temple01_intro.txt
+z           378 484
 file        data/levels/temple1.txt
 scene       data/bgs/temple1/temple1-video.txt
 
@@ -130,11 +131,12 @@ z           230 484
 file        data/levels/temple2A-road.txt
 z           420 484
 file        data/levels/temple2B-midboss.txt
-z           230 484
+z           378 484
 file        data/levels/temple2C-road.txt
 branch      temple2BOSS
 z           378 484
 scene       data/bgs/temple2D-boss/temple2D-boss-intro.txt
+z           378 484
 file        data/levels/temple2D-boss.txt
 scene       data/bgs/temple2D-boss/temple2D-boss-video.txt
 
@@ -142,13 +144,16 @@ scene       data/bgs/temple2D-boss/temple2D-boss-video.txt
 
 #skipselect ANDROMEDA-SHUN
 branch      temple3
-z           390 480
+z           320 444
 file        data/levels/temple3A-road.txt
+z           420 484
 file        data/levels/temple3B-midboss.txt
+z           378 484
 file        data/levels/temple3C-road.txt
 branch      temple2BOSS
 z           378 484
 scene       data/bgs/temple3D-boss/temple3D-boss-intro.txt
+z           378 484
 file        data/levels/temple3D-boss.txt
 scene       data/bgs/temple3D-boss/temple3D-boss-video.txt
 
@@ -156,13 +161,16 @@ scene       data/bgs/temple3D-boss/temple3D-boss-video.txt
 
 #skipselect DRAGON-SHIRYU
 branch      temple4
-z           390 480
+z           378 484
 file        data/levels/temple4A-road.txt
+z           420 484
 file        data/levels/temple4B-midboss.txt
+z           378 484
 file        data/levels/temple4C-road.txt
 branch      temple4BOSS
 z           378 484
 scene       data/bgs/temple4D-boss/temple4D-boss-intro.txt
+z           378 484
 file        data/levels/temple4D-boss.txt
 scene       data/bgs/temple4D-boss/temple4D-boss-video.txt
 
@@ -170,13 +178,16 @@ scene       data/bgs/temple4D-boss/temple4D-boss-video.txt
 
 #skipselect PEGASUS-SEIYA
 branch      temple5
-z           390 480
+z           378 484
 file        data/levels/temple5A-road.txt
+z           420 484
 file        data/levels/temple5B-midboss.txt
+z           378 484
 file        data/levels/temple5C-road.txt
 branch      temple5BOSS
 z           378 484
 scene       data/bgs/temple5D-boss/temple5D-boss-intro.txt
+z           378 484
 file        data/levels/temple5D-boss.txt
 scene       data/bgs/temple5D-boss/temple5D-boss-video.txt
 
@@ -184,13 +195,16 @@ scene       data/bgs/temple5D-boss/temple5D-boss-video.txt
 
 #skipselect PHOENIX-IKKI
 branch      temple6
-z           390 480
+z           190 710
 file        data/levels/temple6A-road.txt
+z           390 484
 file        data/levels/temple6B-midboss.txt
+z           250 484
 file        data/levels/temple6C-road.txt
 branch      temple6BOSS
 z           378 484
 scene       data/bgs/temple6D-boss/temple6D-boss-intro.txt
+z           390 484
 file        data/levels/temple6D-boss.txt
 scene       data/bgs/temple6D-boss/temple6D-boss-video.txt
 scene       data/bgs/temple6D-boss/temple6D-boss-video2.txt
@@ -199,7 +213,7 @@ scene       data/bgs/temple6D-boss/temple6D-boss-video2.txt
 
 #skipselect DRAGON-SHIRYU
 branch      temple7
-z           390 480
+z           375 430
 file        data/levels/temple7A-road.txt
 scene       data/bgs/temple7D-boss/temple7D-boss-intro.txt
 
@@ -207,13 +221,16 @@ scene       data/bgs/temple7D-boss/temple7D-boss-intro.txt
 
 #skipselect CYGNUS-HYOGA
 branch      temple8
-z           390 480
+z           620 790
 file        data/levels/temple8A-road.txt
+z           620 790
 file        data/levels/temple8B-midboss.txt
+z           390 484
 file        data/levels/temple8C-road.txt
 branch      temple8BOSS
 z           378 484
 scene       data/bgs/temple8D-boss/temple8D-boss-intro.txt
+z           378 484
 file        data/levels/temple8D-boss.txt
 scene       data/bgs/temple8D-boss/temple8D-boss-video.txt
 scene       data/bgs/temple8D-boss/temple8D-boss-video2.txt
@@ -228,11 +245,14 @@ scene       data/bgs/temple8D-boss/temple8D-boss-video2.txt
 branch      temple10
 z           390 480
 file        data/levels/temple10A-road.txt
+z           390 480
 file        data/levels/temple10B-midboss.txt
+z           340 484
 file        data/levels/temple10C-road.txt
 branch      temple10BOSS
 z           378 484
 scene       data/bgs/temple10D-boss/temple10D-boss-intro.txt
+z           378 484
 file        data/levels/temple10D-boss.txt
 scene       data/bgs/temple10D-boss/temple10D-boss-video.txt
 scene       data/bgs/temple10D-boss/temple10D-boss-video2.txt
@@ -241,13 +261,16 @@ scene       data/bgs/temple10D-boss/temple10D-boss-video2.txt
 
 #skipselect CYGNUS-HYOGA
 branch      temple11
-z           390 480
+z           325 484
 file        data/levels/temple11A-road.txt
+z           390 480
 file        data/levels/temple11B-midboss.txt
+z           385 484
 file        data/levels/temple11C-road.txt
 branch      temple11BOSS
 z           378 484
 scene       data/bgs/temple11D-boss/temple11D-boss-intro.txt
+z           378 484
 file        data/levels/temple11D-boss.txt
 scene       data/bgs/temple11D-boss/temple11D-boss-video.txt
 
@@ -257,11 +280,14 @@ scene       data/bgs/temple11D-boss/temple11D-boss-video.txt
 branch      temple12
 z           390 480
 file        data/levels/temple12A-road.txt
+z           390 480
 file        data/levels/temple12B-midboss.txt
+z           388 484
 file        data/levels/temple12C-road.txt
 branch      temple12BOSS
 z           378 484
 scene       data/bgs/temple12D-boss/temple12D-boss-intro.txt
+z           395 484
 file        data/levels/temple12D-boss.txt
 scene       data/bgs/temple12D-boss/temple12D-boss-video.txt
 
@@ -269,13 +295,16 @@ scene       data/bgs/temple12D-boss/temple12D-boss-video.txt
 
 #skipselect PEGASUS-SEIYA
 branch      temple13
-z           390 480
+z           388 484
 file        data/levels/temple13A-road.txt
+z           390 480
 file        data/levels/temple13B-midboss.txt
+z           288 444
 file        data/levels/temple13C-road.txt
 branch      temple13BOSS
 z           378 484
 scene       data/bgs/temple13D-boss/temple13D-boss-intro.txt
+z           378 430
 file        data/levels/temple13D-boss.txt
 
 #-- ENDING --
@@ -685,7 +714,7 @@ typemp      1
 custfade	100
 skipselect  Hyoga
 branch      temple8
-z           500 800
+z           620 790
 file        data/levels/temple8A-road.txt
 branch      gameover
 scene       data/scenes/gameover.txt

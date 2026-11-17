@@ -16,7 +16,12 @@ def run(level):
   for _ in range(10):
    s.press(40)
    if 'NATIVE_PLAYER_READY' in s.read():break
-  s.wait('NATIVE_PLAYER_READY',90);time.sleep(3);s.capture('entry');s.keys.write_text('4');time.sleep(3);s.keys.write_text('');s.capture('combat')
+  s.wait('NATIVE_PLAYER_READY',90)
+  position=re.search(r'NATIVE_POSITION z=([\d.]+) min=([\d.]+) max=([\d.]+)',s.read())
+  if not position:raise RuntimeError('No native starting position')
+  z,lo,hi=map(float,position.groups())
+  if not lo<z<hi:raise RuntimeError(f'Player starts at a depth boundary: {z}, {lo}..{hi}')
+  time.sleep(3);s.capture('entry');s.keys.write_text('4');time.sleep(3);s.keys.write_text('');s.capture('combat')
   log=s.read();bad=[l for l in log.splitlines() if 'returned an exception' in l or 'Script compile error' in l or "An Error Occurred" in l]
   if bad:raise RuntimeError('; '.join(bad))
   return {'level':level,'passed':True,'all_soldiers_forced_load':level==levels[0]}

@@ -21,16 +21,16 @@ settime 99
 noreset 2
 order	a
 
-spawn1 60 400
+spawn1 60 25
 
 wall		497 809 -500 -500 3307 2837 324 400 # Mur 1 le long de la falaise
 wall		3824 800 0 0 693 693 308 306		# Mur 2 à droite du temple
 
 #-------- Players spawn position -----------------------------------------------
-spawn1 50 415 0 # position du joueur1 (x, z, Y)
-spawn2 80 430 0 # position du joueur2 (x, z, Y)
-spawn3 90 445 0 # position du joueur3 (x, z, Y)
-spawn4 110 460 0 # position du joueur4 (x, z, Y)
+spawn1 50 25 0 # position du joueur1 (x, z, Y)
+spawn2 80 40 0 # position du joueur2 (x, z, Y)
+spawn3 90 55 0 # position du joueur3 (x, z, Y)
+spawn4 110 70 0 # position du joueur4 (x, z, Y)
 
 #-- HUD ------------------------------------------------------------------------
 

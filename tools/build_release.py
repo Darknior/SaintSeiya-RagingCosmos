@@ -24,6 +24,12 @@ def validate():
   report.append({'model':name,'family':p.parent.name,'animation_count':len(counts)})
  seen,assets,missing=closure()
  if missing:errors.append('Missing active assets: '+str(missing))
+ # Engine spawn1..4 depths are offsets from the stage's lower world bound.
+ from fix_stage_geometry import ranges
+ for name,entries in ranges((ROOT/'levels.txt').read_text()).items():
+  for mode,(lo,hi) in entries:
+   for m in re.finditer(r'^spawn([1-4])\s+\S+\s+(\S+)',(ROOT/name).read_text(),re.M):
+    if not 0<float(m[2])<hi-lo:errors.append(name+': player '+m[1]+' starts outside relative Z range')
  sets=catalog()
  if len(sets[1]['levels'])!=43:errors.append('Story requires 43 stages')
  for route in json.loads((ROOT/'tools/route-layout.json').read_text()):
