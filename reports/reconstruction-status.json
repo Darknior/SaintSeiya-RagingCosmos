@@ -40,7 +40,10 @@
     "explicit_frame_advance": true,
     "input_only_combat_families": 12,
     "linux_pack_launcher_execution": true,
-    "additional_shiryu_mud_combat": true
+    "additional_shiryu_mud_combat": true,
+    "restored_routes_input_only_combat": 7,
+    "restored_route_enemies_defeated_natively": 107,
+    "restored_route_lives_lost": 0
   },
   "native_dialogue_translation": false,
   "github_publication": "blocked: integration has no write permission",

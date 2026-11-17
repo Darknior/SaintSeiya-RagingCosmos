@@ -165,3 +165,25 @@ de la séquence vidéo et capture native réussies. Windows et Android ne sont p
 exécutables dans cet environnement (Wine, ADB et émulateur absents). L'exécutable
 Windows est PE32 x86 ; l'APK contient ARM 32 et ARM 64 bits. Ces inspections ne
 remplacent pas les essais matériels. Rapports dans `reports/`.
+
+## Sept routes terminées avec les combats natifs
+
+`tools/test_route_native_combat.py` pilote Seiya par le clavier à travers les
+sept routes restaurées. Les 107 soldats ont été vaincus et les sept véritables
+niveaux suivants ont chargé, sans perte de vie. Aucun ennemi n'est retiré par le
+harnais ; statistiques, santé et déroulement des animations restent natifs. Les
+duels ci-dessus et ce parcours utilisent toujours le multiplicateur ×10 présent
+d'origine sur Seiya : ils ne garantissent pas la même difficulté avec les autres
+héros. Le rapport est `reports/routes-native-combat.json`. La campagne d'origine
+entière, tous ses boss et les plateformes Windows/Android ne sont pas validés
+par cet essai. Le pack distribué n'a pas nécessité de modification supplémentaire.
+
+Pour reproduire une sauvegarde locale après chaque commit :
+
+```sh
+python3 tools/archive_checkpoint.py --output /chemin/sauvegarde
+```
+
+L'outil exige un arbre Git propre et produit les fichiers modifiés, un patch
+binaire, les commits dans un bundle, une liste des suppressions et la référence
+exacte du commit sauvegardé. L'envoi Drive reste une action distincte.
