@@ -121,3 +121,9 @@ et la profondeur de départ native du joueur ; l'ancien harnais réutilisait les
 limites du premier niveau. Les tests de chargement précédents ne validaient donc
 pas le placement des acteurs. Le rapport `reports/stage-geometry.json` donne les
 173 déclarations de départ contrôlées (valeurs natives conservées lorsqu’elles sont valides).
+
+Dernière passe : 45 niveaux uniques chargés avec début de combat et contrôle de
+la profondeur native de départ, puis 5 essais ciblés après les derniers réglages.
+Le pack final est extrait et exécuté sous Linux : guide en 7 langues, 7 pages,
+pause et retour au jeu validés. Les chiffres et limites figurent dans
+`reports/reconstruction-status.json`.

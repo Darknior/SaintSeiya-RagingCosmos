@@ -1,0 +1,27 @@
+[
+  {
+    "level": "temple2C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple2A-road",
+    "passed": true,
+    "all_soldiers_forced_load": true
+  },
+  {
+    "level": "temple6A-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple6C-road",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  },
+  {
+    "level": "temple8B-midboss",
+    "passed": true,
+    "all_soldiers_forced_load": false
+  }
+]

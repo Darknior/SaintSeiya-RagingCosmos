@@ -1,0 +1,35 @@
+{
+  "features": {
+    "ordinary_soldier_models": 28,
+    "families": 12,
+    "added_reaction_declarations": 167,
+    "new_body_drawings": 1,
+    "restored_routes": 7,
+    "route_soldiers": 107,
+    "encounters": 38,
+    "pause_level_select": true,
+    "animated_seiya_guide_pages": 7,
+    "interface_languages": [
+      "en",
+      "fr",
+      "es",
+      "pt-BR",
+      "zh-Hans",
+      "ru",
+      "ja"
+    ],
+    "accents_and_non_latin_glyphs": true,
+    "official_engine_build": 7533
+  },
+  "verification": {
+    "unique_stage_load_and_short_combat": 45,
+    "final_geometry_targeted_retests": 5,
+    "packaged_linux_interface": true,
+    "full_campaign_playthrough": false,
+    "windows_execution": false,
+    "android_execution": false
+  },
+  "native_dialogue_translation": false,
+  "github_publication": "blocked: integration has no write permission",
+  "asset_cleanup": "208.84 MiB omitted from test PAK; original assets preserved"
+}
