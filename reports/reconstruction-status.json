@@ -27,7 +27,17 @@
     "packaged_linux_interface": true,
     "full_campaign_playthrough": false,
     "windows_execution": false,
-    "android_execution": false
+    "android_execution": false,
+    "restored_route_progression": {
+      "routes": 7,
+      "waves": 38,
+      "enemies": 107,
+      "actual_successors_loaded": 7,
+      "controlled_enemy_expiry": true
+    },
+    "native_soldier_callback_cases": 534,
+    "native_soldier_frames_triggered": 3102,
+    "explicit_frame_advance": true
   },
   "native_dialogue_translation": false,
   "github_publication": "blocked: integration has no write permission",

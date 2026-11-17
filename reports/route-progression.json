@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "routes": 7,
+  "observed_enemies": 107,
+  "wave_count": 38,
+  "method": "Real directional input; controlled enemy expiry in a private test copy, not combat balance verification",
+  "results": [
+    {
+      "route": "temple8B-midboss",
+      "expected_enemies": 17,
+      "controlled_defeats": true,
+      "passed": true,
+      "observed_enemies": 17,
+      "successor": "levels/temple8C-road.txt",
+      "wave_counts": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "route": "temple10A-road",
+      "expected_enemies": 17,
+      "controlled_defeats": true,
+      "passed": true,
+      "observed_enemies": 17,
+      "successor": "levels/temple10B-midboss.txt",
+      "wave_counts": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "route": "temple10B-midboss",
+      "expected_enemies": 14,
+      "controlled_defeats": true,
+      "passed": true,
+      "observed_enemies": 14,
+      "successor": "levels/temple10C-road.txt",
+      "wave_counts": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "route": "temple11B-midboss",
+      "expected_enemies": 14,
+      "controlled_defeats": true,
+      "passed": true,
+      "observed_enemies": 14,
+      "successor": "levels/temple11C-road.txt",
+      "wave_counts": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "route": "temple12A-road",
+      "expected_enemies": 17,
+      "controlled_defeats": true,
+      "passed": true,
+      "observed_enemies": 17,
+      "successor": "levels/temple12B-midboss.txt",
+      "wave_counts": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "route": "temple12B-midboss",
+      "expected_enemies": 14,
+      "controlled_defeats": true,
+      "passed": true,
+      "observed_enemies": 14,
+      "successor": "levels/temple12C-road.txt",
+      "wave_counts": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "route": "temple13B-midboss",
+      "expected_enemies": 14,
+      "controlled_defeats": true,
+      "passed": true,
+      "observed_enemies": 14,
+      "successor": "levels/temple13C-road.txt",
+      "wave_counts": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ]
+}

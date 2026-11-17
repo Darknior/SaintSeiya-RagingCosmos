@@ -127,3 +127,18 @@ la profondeur native de départ, puis 5 essais ciblés après les derniers régl
 Le pack final est extrait et exécuté sous Linux : guide en 7 langues, 7 pages,
 pause et retour au jeu validés. Les chiffres et limites figurent dans
 `reports/reconstruction-status.json`.
+
+## Progression et réactions : contrôles supplémentaires
+
+`tools/test_route_progression.py` parcourt les sept routes ajoutées avec les
+entrées directionnelles natives, compte les 107 ennemis et les 38 vagues, puis
+constate le chargement du véritable niveau suivant. Les ennemis sont retirés
+automatiquement dans une copie privée : ce test valide les événements et les
+sorties, pas les combats ni leur difficulté. Les sept parcours ont réussi.
+
+`tools/test_soldier_callbacks.py` déclenche 534 séquences sur les 28 modèles de
+soldats ordinaires, dont les deux nouvelles séquences de parade du soldat de
+boue : 3 102 images et leurs callbacks ont été exécutés sans erreur fatale. Les
+images sont avancées explicitement, sans respecter leurs délais ; la fluidité,
+les dégâts et l'IA nécessitent encore des essais de jeu ordinaires. Les copies
+de test n'altèrent ni les statistiques ni les fichiers du pack distribué.
