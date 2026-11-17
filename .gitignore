@@ -1,3 +1,6 @@
 *.psd
 stuff
 *.kate-swp
+
+__pycache__/
+*.pyc
