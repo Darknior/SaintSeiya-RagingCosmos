@@ -207,3 +207,10 @@ Les boucles des dialogues, trous, ascenseurs et effets d'eau parcourent tous les
 emplacements d'entités (`ent_max`) : le nombre d'entités vivantes n'est pas une
 limite correcte pour leurs indices lorsqu'un emplacement est libre. Six niveaux
 concernés et le pack extrait ont été retestés. Rapports avant/après dans `reports/`.
+
+Les timelines natives du Taureau et du Grand Pope ont également été observées
+jusqu'au réaffichage du joueur à sa profondeur de départ (403). Pour le Taureau,
+le boss est créé après l'arrivée du joueur dans une copie privée, afin que son
+intro immédiate ne précède pas la connexion du joueur au premier niveau de test.
+Les délais et images du dialogue restent natifs. Le rapport est
+`reports/boss-dialog-release.json`.

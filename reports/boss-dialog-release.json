@@ -1,0 +1,13 @@
+[
+  {
+    "level": "temple2D-boss",
+    "native_timeline_timing": true,
+    "boss_spawned_after_join": true,
+    "passed": true
+  },
+  {
+    "level": "temple13D-boss",
+    "native_timeline_timing": true,
+    "passed": true
+  }
+]

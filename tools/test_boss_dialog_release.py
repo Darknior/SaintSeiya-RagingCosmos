@@ -26,10 +26,12 @@ def run(level,out):
    for f in (Path(__file__).resolve().parents[1]/'levels').iterdir():
     if f.name!=level+'.txt':(directory/f.name).symlink_to(f)
    text=(Path(__file__).resolve().parents[1]/'levels'/f'{level}.txt').read_text()
-   text=re.sub(r'^spawn\s+aldebaran\n.*?^at\s+0[^\n]*','',text,flags=re.M|re.S)
+   text=re.sub(r'^spawn\s+aldebaran\b','spawn probe_anchor',text,flags=re.M)
+   (s.out/'data/test_anchor.txt').write_text('name probe_anchor\ntype enemy\nhealth 1\nnomove 1 1\nshadow 0\nanim idle\nloop 1\ndelay 10\nframe data/chars/dialogs/empty.png\n')
+   models=s.out/'data/models.txt';models.write_text(models.read_text()+'\nload probe_anchor data/test_anchor.txt\n')
    (directory/f'{level}.txt').write_text(text+'\nwait\nat 100000\n')
    probe=probe.replace(' if(getentityvar(p,"dialog_hidden")==1){',''' if(!getglobalvar("boss_spawned_after_join")){
-    setglobalvar("boss_spawned_after_join",1);clearspawnentry();setspawnentry("name","aldebaran");setspawnentry("boss",1);void boss=spawn();changeentityproperty(boss,"position",650,400,0);
+    setglobalvar("boss_spawned_after_join",1);loadmodel("aldebaran");clearspawnentry();setspawnentry("name","aldebaran");setspawnentry("boss",1);void boss=spawn();changeentityproperty(boss,"position",650,400,0);
    }
    if(getentityvar(p,"dialog_hidden")==1){''')
    r['boss_spawned_after_join']=True
@@ -45,8 +47,8 @@ def run(level,out):
  finally:s.close()
  return r
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args();a.output.mkdir(exist_ok=False,parents=True);results=[]
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--levels',nargs='*',default=['temple2D-boss','temple13D-boss']);a=p.parse_args();a.output.mkdir(exist_ok=False,parents=True);results=[]
  with ThreadPoolExecutor(max_workers=2) as pool:
-  for f in as_completed([pool.submit(run,level,a.output) for level in ['temple2D-boss','temple13D-boss']]):
+  for f in as_completed([pool.submit(run,level,a.output) for level in a.levels]):
    r=f.result();results.append(r);print(json.dumps(r),flush=True);(a.output/'results.json').write_text(json.dumps(results,indent=2)+'\n')
  raise SystemExit(any(not r['passed'] for r in results))

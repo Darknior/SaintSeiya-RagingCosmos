@@ -1,8 +1,10 @@
 {
   "scripts/interface.c": "00f88c20a24b8bfbf1c93376b55658d0812e22b7641045ea1bcda290ab3b1933",
   "scripts/interface_catalog.c": "cc50803854028a6fdad37f4fd3508df498e666f884f5fb24b7be0d78c41d2bd0",
-  "scripts/updated.c": "416b82cc62954e06245fa812607232fb048b6a44f620bd1e04ee9bcf596abb98",
+  "scripts/updated.c": "a1fa8cdc700c7b69960e24c9137502d137104b34c59d469f0ae73ac8c3d228d2",
   "scripts/inputall.c": "f1e1af3c8ebae99444e220eafa18527ecac863e9d7cb49667eec40ad145dae16",
   "scripts/common/effect_tint.c": "307ad3dafc763fcc76a032a0cbc3c7b2b62b2e6f0bb762c8bf2da7a59afc1668",
-  "levels.txt": "b58d89e16de388427b5530368a43c8399363082438dc2d358785ce065819bfd7"
+  "levels.txt": "80dcacd93456d1bcc193c4a7c6f3636976e2cd3754b769710916b1229005f8e3",
+  "scripts/dialogs/dialog.c": "930d9280f173a85074e0ce3c5c3ebf744fce0828e647299725872a6212e127ef",
+  "scripts/library/dialog_positions.c": "7d4b7bace9a4ccc69d16d00c7cb92f0d7a145ac090b3e62678e3b21620bd0e7b"
 }
