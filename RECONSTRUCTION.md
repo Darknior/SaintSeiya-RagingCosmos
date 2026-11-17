@@ -27,18 +27,17 @@ anciennes archives ou des dessins générés. Moteur officiel stable vérifié :
   glacé pour le Verseau et approche des Poissons/Grand Pope. Les murs natifs des
   falaises sont conservés. Courts textes d'ambiance inspirés de l'anime ; les
   patrouilles sont une adaptation de gameplay, pas des combats canoniques.
-- Menu pause : Continuer, Choix du niveau, Comment jouer, Quitter la partie.
-  La simulation et le son restent gérés par la pause native. Le chargement d'une
-  étape et le retour au titre sont différés après la fermeture de cette boucle.
-  Le saut conserve personnage et vies et reprend au bon indice de campagne.
-- Guide Seiya de sept pages animées : déplacement, course, combo, saut, attaque
-  aérienne, garde, Cosmos. 84 images préparées depuis le modèle natif, avec ses
-  délais. Décor original généré du Sanctuaire, Pégase et cadre zodiacal doré.
-- Sept langues au Press Start : anglais, français, espagnol, portugais du Brésil,
-  chinois simplifié, russe et japonais. Choix persistant, réouvert par Block.
-  Menu principal personnalisé, pause, niveaux et 49 pages de guide localisés.
-  DejaVu Sans et Noto Sans CJK sont rendues en PNG indexés : accents et écritures
-  non latines restent lisibles avec le moteur byte-based. Licences jointes.
+- Menus et pause natifs conservés : Continuer / Quitter la partie. Les entrées
+  ajoutées auparavant (choix du niveau, guide dans la pause) sont retirées.
+- Guide Seiya de sept pages animées, accessible par l’entrée native Comment
+  jouer. 84 images du modèle natif, avec ses délais, sur le décor original du
+  Taureau. Aucun panneau d’interface bleu ajouté.
+- Sept langues au titre par Gauche/Droite : anglais, français, espagnol,
+  portugais du Brésil, chinois simplifié, russe et japonais. Choix persistant.
+  Menus natifs et réglages, 107 pages de dialogues, instructions de Mû,
+  messages d’objets et HUD traduits. Polices natives étendues en MBS pour
+  accents, cyrillique et CJK ; textes de dialogues en PNG indexés. Licences jointes.
+- Ralenti de défaite des boss désactivé dans tous les fichiers de niveaux.
 - Migration : constantes devenues variables (`SAMPLE_BEEP`, limites Z), casse et
   déplacements de chemins, références audio/images/modèles manquantes, portraits
   initialisés avant le HUD de connexion, remaps incomplets et icônes corrigés.
@@ -63,9 +62,10 @@ ressources écartées sont listées dans le manifeste `.omitted.json` ; aucun fi
 source n'est supprimé. Les vidéos référencées restent incluses. Les sources
 complètes sont sauvegardées séparément pour pouvoir reconstruire le PAK intégral.
 
-Les dialogues, cinématiques, menus internes de réglage et choix des modes natifs
-conservent leur langue d'origine. Il ne s'agit pas d'une traduction de toute la
-campagne. Les moteurs Windows et Android sont officiels et inclus ; les essais
+Les dialogues français ont été relus ; les autres langues proviennent d’une
+traduction automatique avec corrections de terminologie et demandent encore une
+relecture linguistique. Les vidéos et voix préenregistrées restent originales.
+Les moteurs Windows et Android sont officiels et inclus ; les essais
 matériels réalisés ici utilisent uniquement le moteur Linux officiel. Les tests
 ne constituent pas une partie complète jusqu'à la fin de chaque niveau.
 
@@ -76,6 +76,7 @@ Les joueurs n'ont besoin d'installer aucune police.
 
 ```sh
 python3 tools/generate_interface.py
+python3 tools/generate_native_localization.py
 python3 tools/audit_game.py
 python3 tools/build_release.py /chemin/jeu.pak --light
 python3 tools/build_release.py /chemin/jeu-integral.pak

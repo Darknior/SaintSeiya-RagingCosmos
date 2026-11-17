@@ -1,3 +1,4 @@
+ondrawscript data/scripts/localization_mu.c
 name	 mu_dialog
 type	 panel
 speed	 5
@@ -14,9 +15,9 @@ anim idle
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_combo.png
+	frame data/sprites/localization/mu-base/mu_dialog_combo.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_combo.png	
+	frame data/sprites/localization/mu-base/mu_dialog_combo.png
 
 anim follow1
     loop 1
@@ -24,19 +25,19 @@ anim follow1
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_down.png
+	frame data/sprites/localization/mu-base/mu_dialog_down.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_down.png	
-	
+	frame data/sprites/localization/mu-base/mu_dialog_down.png
+
 anim follow2
     loop 1
 	delay     2
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_up.png
+	frame data/sprites/localization/mu-base/mu_dialog_up.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_up.png		
+	frame data/sprites/localization/mu-base/mu_dialog_up.png
 
 anim follow3
     loop 1
@@ -44,9 +45,9 @@ anim follow3
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_special.png
+	frame data/sprites/localization/mu-base/mu_dialog_special.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_special.png	
+	frame data/sprites/localization/mu-base/mu_dialog_special.png
 
 anim follow4
     loop 1
@@ -54,19 +55,19 @@ anim follow4
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_dash.png
+	frame data/sprites/localization/mu-base/mu_dialog_dash.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_dash.png	
-	
+	frame data/sprites/localization/mu-base/mu_dialog_dash.png
+
 anim follow5
     loop 1
 	delay     2
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_charge.png
+	frame data/sprites/localization/mu-base/mu_dialog_charge.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_charge.png		
+	frame data/sprites/localization/mu-base/mu_dialog_charge.png
 
 anim follow6
     loop 1
@@ -74,9 +75,9 @@ anim follow6
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_throw.png
+	frame data/sprites/localization/mu-base/mu_dialog_throw.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_throw.png	
+	frame data/sprites/localization/mu-base/mu_dialog_throw.png
 
 anim follow7
     loop 1
@@ -84,9 +85,9 @@ anim follow7
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_uppercut.png
+	frame data/sprites/localization/mu-base/mu_dialog_uppercut.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_uppercut.png	
+	frame data/sprites/localization/mu-base/mu_dialog_uppercut.png
 
 anim follow8
     loop 1
@@ -94,9 +95,9 @@ anim follow8
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_ultra.png
+	frame data/sprites/localization/mu-base/mu_dialog_ultra.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_ultra.png	
+	frame data/sprites/localization/mu-base/mu_dialog_ultra.png
 
 anim follow9
     loop 1
@@ -104,9 +105,9 @@ anim follow9
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_end.png
+	frame data/sprites/localization/mu-base/mu_dialog_end.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_end.png		
+	frame data/sprites/localization/mu-base/mu_dialog_end.png
 
 anim follow10
     loop 1
@@ -114,6 +115,6 @@ anim follow10
 	offset  0 -102
 	summonframe 1 0 0 0 0
 	custentity dialogbox0
-	frame data/bgs/temple1/mu_dialog/mu_dialog_jump.png
+	frame data/sprites/localization/mu-base/mu_dialog_jump.png
    delay     400
-	frame data/bgs/temple1/mu_dialog/mu_dialog_jump.png		
+	frame data/sprites/localization/mu-base/mu_dialog_jump.png

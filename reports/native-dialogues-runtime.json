@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "zh",
+    "ru",
+    "ja"
+  ],
+  "dialogue_pages_rendered": 749,
+  "mu_tutorial_states": 77,
+  "native_boss_slow_disabled": true
+}

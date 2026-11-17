@@ -1,3 +1,4 @@
+noslow 1
 music       data/music/remix.bor
 
 panel       data/bgs/rooms/final.png 
@@ -18,7 +19,6 @@ notime      1
 nosave      1
 blocked     1
 nosame      1
-noslow      1
 completebg  1
 
 #-------- Players spawn position -----------------------------------------------

@@ -1,3 +1,4 @@
+noslow 1
 #-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
 background   data/bgs/temple2D-boss/background0.png        1 1 0 0 0 0 1 1 1 0

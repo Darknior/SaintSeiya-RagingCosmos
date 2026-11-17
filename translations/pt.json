@@ -5,7 +5,7 @@
     "language": "Idioma",
     "select_hint": "Direções: escolher • Ataque / Start: confirmar",
     "press_start": "PRESSIONE START",
-    "change_language": "Block: idioma",
+    "change_language": "Defesa: idioma",
     "pause": "PAUSA",
     "continue": "Continuar",
     "levels": "Selecionar fase",
@@ -16,7 +16,7 @@
     "levels_hint": "Ataque / Start: carregar • Pulo / Esc: voltar",
     "restart_hint": "Mantém o personagem e reinicia a fase escolhida.",
     "guide_footer": "Direções: página • Ataque: próxima • Pulo / Start: voltar",
-    "controls": "Botões: Options / Control Options.",
+    "controls": "Opções / Opções de controle",
     "devices": "Teclado, controle ou comandos de toque.",
     "guide_title": "COMO JOGAR — SEIYA",
     "stage": "Fase",
@@ -71,15 +71,15 @@
     },
     {
       "title": "Defender-se",
-      "command": "SEGURE BLOCK",
-      "line1": "Segure o botão chamado Block.",
+      "command": "SEGURE Defesa",
+      "line1": "Segure o botão chamado Defesa.",
       "line2": "Fique de frente para os ataques.",
       "line3": "Solte para voltar a lutar."
     },
     {
       "title": "Recarregar o Cosmos",
-      "command": "SEGURE CHARGE",
-      "line1": "Segure o botão chamado Charge.",
+      "command": "SEGURE Cosmos",
+      "line1": "Segure o botão chamado Cosmos.",
       "line2": "A barra de Cosmos é recarregada.",
       "line3": "Escolha um lugar protegido dos golpes."
     }

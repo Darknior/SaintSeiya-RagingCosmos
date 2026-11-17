@@ -1,0 +1,1814 @@
+{
+  " - Device Not Ready": {
+    "text": " - Device Not Ready"
+  },
+  " Done!": {
+    "text": " Done!"
+  },
+  "%d%% AC Power": {
+    "text": "%d%% AC Power"
+  },
+  "%i": {
+    "text": "%i"
+  },
+  "%i by Module": {
+    "text": "%i by Module"
+  },
+  "%s - Finish Game %i Times To UnLock": {
+    "text": "%s - Finish Game %i Times To UnLock"
+  },
+  "%s - Finish Game To UnLock": {
+    "text": "%s - Finish Game To UnLock"
+  },
+  "%s KB": {
+    "text": "%s KB"
+  },
+  "%s KBytes": {
+    "text": "%s KBytes"
+  },
+  "10C_Road-Shiryu": {
+    "text": "10C_Road-Shiryu"
+  },
+  "10D_BOSS_Capricorne-Shiryu": {
+    "text": "10D_BOSS_Capricorne-Shiryu"
+  },
+  "11A_Road-Hyoga": {
+    "text": "11A_Road-Hyoga"
+  },
+  "11C_Road-Hyoga": {
+    "text": "11C_Road-Hyoga"
+  },
+  "11D_BOSS_Verseau-Hyoga": {
+    "text": "11D_BOSS_Verseau-Hyoga"
+  },
+  "12C_Road_Shun": {
+    "text": "12C_Road_Shun"
+  },
+  "12D_BOSS_Poissons-Shun": {
+    "text": "12D_BOSS_Poissons-Shun"
+  },
+  "13A_Road_Marin-Seiya": {
+    "text": "13A_Road_Marin-Seiya"
+  },
+  "13C_Road_Seiya": {
+    "text": "13C_Road_Seiya"
+  },
+  "13D_BOSS_Grand_PopeSeiya": {
+    "text": "13D_BOSS_Grand_PopeSeiya"
+  },
+  "1_BOSS_Mu-Seiya": {
+    "text": "1_BOSS_Mu-Seiya"
+  },
+  "1_Road_Tremi-Seiya": {
+    "text": "1_Road_Tremi-Seiya"
+  },
+  "2A_Road-Seiya": {
+    "text": "2A_Road-Seiya"
+  },
+  "2B_Midboss-Seiya": {
+    "text": "2B_Midboss-Seiya"
+  },
+  "2C_Road-Seiya": {
+    "text": "2C_Road-Seiya"
+  },
+  "2D_BOSS_Taureau-Seiya": {
+    "text": "2D_BOSS_Taureau-Seiya"
+  },
+  "3A_Road-Shun": {
+    "text": "3A_Road-Shun"
+  },
+  "3B_Midboss-Asterion": {
+    "text": "3B_Midboss-Asterion"
+  },
+  "3C_Road-Shun": {
+    "text": "3C_Road-Shun"
+  },
+  "3D_BOSS_Gemini": {
+    "text": "3D_BOSS_Gemini"
+  },
+  "4A_Road-Shiryu": {
+    "text": "4A_Road-Shiryu"
+  },
+  "4B_Midboss-Deathmask": {
+    "text": "4B_Midboss-Deathmask"
+  },
+  "4C_Road-Shiryu": {
+    "text": "4C_Road-Shiryu"
+  },
+  "4D_BOSS_Cancer": {
+    "text": "4D_BOSS_Cancer"
+  },
+  "5A_Road-Seiya": {
+    "text": "5A_Road-Seiya"
+  },
+  "5B_Midboss-Cassios": {
+    "text": "5B_Midboss-Cassios"
+  },
+  "5C_Road-Seiya": {
+    "text": "5C_Road-Seiya"
+  },
+  "5D_BOSS_Lion": {
+    "text": "5D_BOSS_Lion"
+  },
+  "6A_Road-Ikki": {
+    "text": "6A_Road-Ikki"
+  },
+  "6B_Midboss_Shiva_Agora": {
+    "text": "6B_Midboss_Shiva_Agora"
+  },
+  "6C_Road-Ikki": {
+    "text": "6C_Road-Ikki"
+  },
+  "6D_BOSS_Vierge": {
+    "text": "6D_BOSS_Vierge"
+  },
+  "7A_Road_Elevator-Shiryu": {
+    "text": "7A_Road_Elevator-Shiryu"
+  },
+  "7_BOSS_Balance-Shiryu": {
+    "text": "7_BOSS_Balance-Shiryu"
+  },
+  "8A_Road-Hyoga": {
+    "text": "8A_Road-Hyoga"
+  },
+  "8C_Road_Sirius-Hyoga": {
+    "text": "8C_Road_Sirius-Hyoga"
+  },
+  "8D_BOSS_Scorpion-Hyoga": {
+    "text": "8D_BOSS_Scorpion-Hyoga"
+  },
+  "9_Sagitarius-Hyoga": {
+    "text": "9_Sagitarius-Hyoga"
+  },
+  "Advanced Options...": {
+    "text": "Advanced Options..."
+  },
+  "Advanced Sound Options": {
+    "text": "Advanced Sound Options"
+  },
+  "Analog Pad Disabled": {
+    "text": "Analog Pad Disabled"
+  },
+  "Analog Pad Enabled": {
+    "text": "Analog Pad Enabled"
+  },
+  "Apply": {
+    "text": "Apply"
+  },
+  "Attack": {
+    "text": "Attack"
+  },
+  "Attack: next": {
+    "text": "Attack: next"
+  },
+  "Automatic": {
+    "text": "Automatic"
+  },
+  "BGM:": {
+    "text": "BGM:"
+  },
+  "Back": {
+    "text": "Back"
+  },
+  "Back Attack": {
+    "text": "Back Attack"
+  },
+  "Basic Properties:": {
+    "text": "Basic Properties:"
+  },
+  "Battery:": {
+    "text": "Battery:"
+  },
+  "Bilinear": {
+    "text": "Bilinear"
+  },
+  "Bits:": {
+    "text": "Bits:"
+  },
+  "Block": {
+    "text": "Block"
+  },
+  "Brightness:": {
+    "text": "Brightness:"
+  },
+  "CPU Speed:": {
+    "text": "CPU Speed:"
+  },
+  "Calculating...": {
+    "text": "Calculating..."
+  },
+  "Cancel": {
+    "text": "Cancel"
+  },
+  "Charge": {
+    "text": "Charge"
+  },
+  "Charging:": {
+    "text": "Charging:"
+  },
+  "Cheat Options": {
+    "text": "Cheat Options"
+  },
+  "Cheat Options...": {
+    "text": "Cheat Options..."
+  },
+  "Cheats:": {
+    "text": "Cheats:"
+  },
+  "Choose Mode": {
+    "text": "Choose Mode"
+  },
+  "Clear Bonus": {
+    "text": "Clear Bonus"
+  },
+  "Collision Attack:": {
+    "text": "Collision Attack:"
+  },
+  "Collision Body:": {
+    "text": "Collision Body:"
+  },
+  "Collision Entity:": {
+    "text": "Collision Entity:"
+  },
+  "Complete": {
+    "text": "Complete"
+  },
+  "Config Settings...": {
+    "text": "Config Settings..."
+  },
+  "Configuration Settings": {
+    "text": "Configuration Settings"
+  },
+  "Continue": {
+    "text": "Continue"
+  },
+  "Control Options": {
+    "text": "Control Options"
+  },
+  "Control Options...": {
+    "text": "Control Options..."
+  },
+  "Cosmos": {
+    "text": "Cosmos"
+  },
+  "Credit %i": {
+    "text": "Credit %i"
+  },
+  "Credits:": {
+    "text": "Credits:"
+  },
+  "Debug Settings": {
+    "text": "Debug Settings"
+  },
+  "Debug Settings...": {
+    "text": "Debug Settings..."
+  },
+  "Default": {
+    "text": "Default"
+  },
+  "Direction: page": {
+    "text": "Direction: page"
+  },
+  "Disabled": {
+    "text": "Disabled"
+  },
+  "Disabled by Module": {
+    "text": "Disabled by Module"
+  },
+  "Discard": {
+    "text": "Discard"
+  },
+  "Disconnected": {
+    "text": "Disconnected"
+  },
+  "Display Mode:": {
+    "text": "Display Mode:"
+  },
+  "Display:": {
+    "text": "Display:"
+  },
+  "Done!": {
+    "text": "Done!"
+  },
+  "Effects Volume:": {
+    "text": "Effects Volume:"
+  },
+  "Enabled": {
+    "text": "Enabled"
+  },
+  "Enabled by Module": {
+    "text": "Enabled by Module"
+  },
+  "End Game": {
+    "text": "End Game"
+  },
+  "Energy": {
+    "text": "Energy"
+  },
+  "Exit": {
+    "text": "Exit"
+  },
+  "FPS Limit:": {
+    "text": "FPS Limit:"
+  },
+  "FPS: %03d": {
+    "text": "FPS: %03d"
+  },
+  "Features:": {
+    "text": "Features:"
+  },
+  "File Logging:": {
+    "text": "File Logging:"
+  },
+  "Filters:": {
+    "text": "Filters:"
+  },
+  "Free RAM: %s KBytes": {
+    "text": "Free RAM: %s KBytes"
+  },
+  "Free Ram: %s KB": {
+    "text": "Free Ram: %s KB"
+  },
+  "Frequency:": {
+    "text": "Frequency:"
+  },
+  "Full": {
+    "text": "Full"
+  },
+  "Fullscreen Type:": {
+    "text": "Fullscreen Type:"
+  },
+  "GAME OVER": {
+    "text": "GAME OVER"
+  },
+  "GFX Filters:": {
+    "text": "GFX Filters:"
+  },
+  "Game Mode": {
+    "text": "Game Mode"
+  },
+  "GamePads Disabled": {
+    "text": "GamePads Disabled"
+  },
+  "GamePads Enabled": {
+    "text": "GamePads Enabled"
+  },
+  "Gamma:": {
+    "text": "Gamma:"
+  },
+  "Guide R/L Thumbsticks": {
+    "text": "Guide R/L Thumbsticks"
+  },
+  "Hall Of Fame": {
+    "text": "Hall Of Fame"
+  },
+  "Hardware Filter:": {
+    "text": "Hardware Filter:"
+  },
+  "High Quality": {
+    "text": "High Quality"
+  },
+  "How To Play": {
+    "text": "How To Play"
+  },
+  "Implacable March:": {
+    "text": "Implacable March:"
+  },
+  "Infinite Credits Off": {
+    "text": "Infinite Credits Off"
+  },
+  "Infinite Credits On": {
+    "text": "Infinite Credits On"
+  },
+  "Infinite Credits:": {
+    "text": "Infinite Credits:"
+  },
+  "Infinite Energy:": {
+    "text": "Infinite Energy:"
+  },
+  "Infinite Health Off": {
+    "text": "Infinite Health Off"
+  },
+  "Infinite Health On": {
+    "text": "Infinite Health On"
+  },
+  "Infinite Health:": {
+    "text": "Infinite Health:"
+  },
+  "Infinite Lives Off": {
+    "text": "Infinite Lives Off"
+  },
+  "Infinite Lives On": {
+    "text": "Infinite Lives On"
+  },
+  "Infinite Lives:": {
+    "text": "Infinite Lives:"
+  },
+  "Jump": {
+    "text": "Jump"
+  },
+  "Jump / Start: back": {
+    "text": "Jump / Start: back"
+  },
+  "Language": {
+    "text": "Language"
+  },
+  "Left / Right: language": {
+    "text": "Left / Right: language"
+  },
+  "Level:": {
+    "text": "Level:"
+  },
+  "Life bonus": {
+    "text": "Life bonus"
+  },
+  "Load Game": {
+    "text": "Load Game"
+  },
+  "Load Settings From Default.cfg%s": {
+    "text": "Load Settings From Default.cfg%s"
+  },
+  "Loading...": {
+    "text": "Loading..."
+  },
+  "Master Volume:": {
+    "text": "Master Volume:"
+  },
+  "Max Players:": {
+    "text": "Max Players:"
+  },
+  "Mode:": {
+    "text": "Mode:"
+  },
+  "Move Down": {
+    "text": "Move Down"
+  },
+  "Move Left": {
+    "text": "Move Left"
+  },
+  "Move Right": {
+    "text": "Move Right"
+  },
+  "Move Up": {
+    "text": "Move Up"
+  },
+  "Multihit Glitch Off": {
+    "text": "Multihit Glitch Off"
+  },
+  "Multihit Glitch On": {
+    "text": "Multihit Glitch On"
+  },
+  "Multihit Glitch:": {
+    "text": "Multihit Glitch:"
+  },
+  "Music Volume:": {
+    "text": "Music Volume:"
+  },
+  "New Game": {
+    "text": "New Game"
+  },
+  "No": {
+    "text": "No"
+  },
+  "No cheats available.": {
+    "text": "No cheats available."
+  },
+  "None": {
+    "text": "None"
+  },
+  "Not Found!": {
+    "text": "Not Found!"
+  },
+  "Nunchuk Analog Disabled": {
+    "text": "Nunchuk Analog Disabled"
+  },
+  "Nunchuk Analog Enabled": {
+    "text": "Nunchuk Analog Enabled"
+  },
+  "OK": {
+    "text": "OK"
+  },
+  "Off": {
+    "text": "Off"
+  },
+  "On": {
+    "text": "On"
+  },
+  "OpenGL": {
+    "text": "OpenGL"
+  },
+  "Options": {
+    "text": "Options"
+  },
+  "Overscan:": {
+    "text": "Overscan:"
+  },
+  "PRESS START": {
+    "text": "PRESS START"
+  },
+  "Pause": {
+    "text": "Pause"
+  },
+  "Performance:": {
+    "text": "Performance:"
+  },
+  "Player %i": {
+    "text": "Player %i"
+  },
+  "Player Lives:": {
+    "text": "Player Lives:"
+  },
+  "Players:": {
+    "text": "Players:"
+  },
+  "Please Wait": {
+    "text": "Please Wait"
+  },
+  "Position:": {
+    "text": "Position:"
+  },
+  "Preserve Aspect Ratio": {
+    "text": "Preserve Aspect Ratio"
+  },
+  "Press R/L Thumbsticks": {
+    "text": "Press R/L Thumbsticks"
+  },
+  "Press Start": {
+    "text": "Press Start"
+  },
+  "Press Start to apply, Up or Down to cancel": {
+    "text": "Press Start to apply, Up or Down to cancel"
+  },
+  "Quit": {
+    "text": "Quit"
+  },
+  "Range:": {
+    "text": "Range:"
+  },
+  "Ready!": {
+    "text": "Ready!"
+  },
+  "Reset": {
+    "text": "Reset"
+  },
+  "Restore OpenBoR Defaults%s": {
+    "text": "Restore OpenBoR Defaults%s"
+  },
+  "Rumble Disabled": {
+    "text": "Rumble Disabled"
+  },
+  "Rumble Enabled": {
+    "text": "Rumble Enabled"
+  },
+  "Rush": {
+    "text": "Rush"
+  },
+  "Rush Bonus": {
+    "text": "Rush Bonus"
+  },
+  "SDL": {
+    "text": "SDL"
+  },
+  "SFX Volume:": {
+    "text": "SFX Volume:"
+  },
+  "Save Settings To Default.cfg%s": {
+    "text": "Save Settings To Default.cfg%s"
+  },
+  "Saved File:": {
+    "text": "Saved File:"
+  },
+  "Scale:": {
+    "text": "Scale:"
+  },
+  "Screen Size:": {
+    "text": "Screen Size:"
+  },
+  "Screen:": {
+    "text": "Screen:"
+  },
+  "Screenshot": {
+    "text": "Screenshot"
+  },
+  "Select Hero": {
+    "text": "Select Hero"
+  },
+  "Setup Player %i...": {
+    "text": "Setup Player %i..."
+  },
+  "Setup Player 1...": {
+    "text": "Setup Player 1..."
+  },
+  "Setup Player 2...": {
+    "text": "Setup Player 2..."
+  },
+  "Setup Player 3...": {
+    "text": "Setup Player 3..."
+  },
+  "Setup Player 4...": {
+    "text": "Setup Player 4..."
+  },
+  "Show Titles:": {
+    "text": "Show Titles:"
+  },
+  "Simple": {
+    "text": "Simple"
+  },
+  "Software Filter:": {
+    "text": "Software Filter:"
+  },
+  "Sound Options": {
+    "text": "Sound Options"
+  },
+  "Sound Options...": {
+    "text": "Sound Options..."
+  },
+  "Sound Volume:": {
+    "text": "Sound Volume:"
+  },
+  "Special": {
+    "text": "Special"
+  },
+  "Sprites: %d / %d": {
+    "text": "Sprites: %d / %d"
+  },
+  "Stage": {
+    "text": "Stage"
+  },
+  "Stage %i Complete!": {
+    "text": "Stage %i Complete!"
+  },
+  "Stage:": {
+    "text": "Stage:"
+  },
+  "Start": {
+    "text": "Start"
+  },
+  "Start Game": {
+    "text": "Start Game"
+  },
+  "Story_Mode": {
+    "text": "Story_Mode"
+  },
+  "Stretch to Screen": {
+    "text": "Stretch to Screen"
+  },
+  "System Options": {
+    "text": "System Options"
+  },
+  "System Options...": {
+    "text": "System Options..."
+  },
+  "TIME OVER": {
+    "text": "TIME OVER"
+  },
+  "This file should be place in data folder": {
+    "text": "This file should be place in data folder"
+  },
+  "Total RAM:": {
+    "text": "Total RAM:"
+  },
+  "Total RAM: %s KBytes": {
+    "text": "Total RAM: %s KBytes"
+  },
+  "Total Score": {
+    "text": "Total Score"
+  },
+  "Touch of Death:": {
+    "text": "Touch of Death:"
+  },
+  "Touchpad Vibration Disabled": {
+    "text": "Touchpad Vibration Disabled"
+  },
+  "Touchpad Vibration Enabled": {
+    "text": "Touchpad Vibration Enabled"
+  },
+  "Tutorial": {
+    "text": "Tutorial"
+  },
+  "Used RAM:": {
+    "text": "Used RAM:"
+  },
+  "Used RAM: %s KBytes": {
+    "text": "Used RAM: %s KBytes"
+  },
+  "Used Ram: %s KB": {
+    "text": "Used Ram: %s KB"
+  },
+  "VSync:": {
+    "text": "VSync:"
+  },
+  "Versus Damage:": {
+    "text": "Versus Damage:"
+  },
+  "Video Backend:": {
+    "text": "Video Backend:"
+  },
+  "Video Options": {
+    "text": "Video Options"
+  },
+  "Video Options...": {
+    "text": "Video Options..."
+  },
+  "Window": {
+    "text": "Window"
+  },
+  "Window Offset:": {
+    "text": "Window Offset:"
+  },
+  "Yes": {
+    "text": "Yes"
+  },
+  "dialog:0": {
+    "lines": [
+      "...",
+      "",
+      "",
+      ""
+    ],
+    "text": "..."
+  },
+  "dialog:1": {
+    "lines": [
+      ".....",
+      "",
+      "",
+      ""
+    ],
+    "text": "....."
+  },
+  "dialog:2": {
+    "lines": [
+      "Agh... But how?? You are going to d...",
+      "",
+      "",
+      ""
+    ],
+    "text": "Agh... But how?? You are going to d..."
+  },
+  "dialog:3": {
+    "lines": [
+      "Aiolia! I'm happy to see you! We",
+      "can count on you to help us,",
+      "right?",
+      ""
+    ],
+    "text": "Aiolia! I'm happy to see you! We can count on you to help us, right?"
+  },
+  "dialog:4": {
+    "lines": [
+      "Alright, between us Hyoga! This",
+      "time I will fight with all my might!!",
+      "",
+      ""
+    ],
+    "text": "Alright, between us Hyoga! This time I will fight with all my might!!"
+  },
+  "dialog:5": {
+    "lines": [
+      "But...",
+      "what is this burning cosmos i sense?",
+      "",
+      ""
+    ],
+    "text": "But... what is this burning cosmos i sense?"
+  },
+  "dialog:6": {
+    "lines": [
+      "Cassios! How miserable you are!",
+      "",
+      "",
+      ""
+    ],
+    "text": "Cassios! How miserable you are!"
+  },
+  "dialog:7": {
+    "lines": [
+      "Cassios!! Hold on!!",
+      "Stop the fight now Aiolia!",
+      "",
+      ""
+    ],
+    "text": "Cassios!! Hold on!! Stop the fight now Aiolia!"
+  },
+  "dialog:8": {
+    "lines": [
+      "Congratulations Hyoga, you",
+      "managed to use absolute zero, I",
+      "have nothing more to teach you,",
+      "you have exceeded your master..."
+    ],
+    "text": "Congratulations Hyoga, you managed to use absolute zero, I have nothing more to teach you, you have exceeded your master..."
+  },
+  "dialog:9": {
+    "lines": [
+      "Courage...",
+      "I have almost no more strength but",
+      "I have to reach the statue of",
+      "Athena..."
+    ],
+    "text": "Courage... I have almost no more strength but I have to reach the statue of Athena..."
+  },
+  "dialog:10": {
+    "lines": [
+      "Die Seiya! Lightning plasma...",
+      "",
+      "",
+      ""
+    ],
+    "text": "Die Seiya! Lightning plasma..."
+  },
+  "dialog:11": {
+    "lines": [
+      "Do you really think I would have",
+      "taken the risk of dirtying the",
+      "statue of Athena inside my temple?",
+      ""
+    ],
+    "text": "Do you really think I would have taken the risk of dirtying the statue of Athena inside my temple?"
+  },
+  "dialog:12": {
+    "lines": [
+      "Does that mean the temple",
+      "is empty?",
+      "",
+      ""
+    ],
+    "text": "Does that mean the temple is empty?"
+  },
+  "dialog:13": {
+    "lines": [
+      "Even though I can't see you, I sense",
+      "your evil energy, your dark soul",
+      "puts the reputation of the Golden",
+      "Knights to shame!"
+    ],
+    "text": "Even though I can't see you, I sense your evil energy, your dark soul puts the reputation of the Golden Knights to shame!"
+  },
+  "dialog:14": {
+    "lines": [
+      "Every tortured face around you",
+      "belongs to a man I killed with",
+      "my own hands!",
+      ""
+    ],
+    "text": "Every tortured face around you belongs to a man I killed with my own hands!"
+  },
+  "dialog:15": {
+    "lines": [
+      "Farewell Shun! You will suffer my",
+      "most fearsome attack, the evil white",
+      "rose! This rose will absorb your",
+      "heart's blood and kill you!"
+    ],
+    "text": "Farewell Shun! You will suffer my most fearsome attack, the evil white rose! This rose will absorb your heart's blood and kill you!"
+  },
+  "dialog:16": {
+    "lines": [
+      "GGGhhh",
+      "",
+      "",
+      ""
+    ],
+    "text": "GGGhhh"
+  },
+  "dialog:17": {
+    "lines": [
+      "Grrrr!",
+      "",
+      "",
+      ""
+    ],
+    "text": "Grrrr!"
+  },
+  "dialog:18": {
+    "lines": [
+      "Here are the golden knight of",
+      "Gemini! This temple semble to float",
+      "in another dimension and has no",
+      "exit!"
+    ],
+    "text": "Here are the golden knight of Gemini! This temple semble to float in another dimension and has no exit!"
+  },
+  "dialog:19": {
+    "lines": [
+      "Hold on! I've been waiting for",
+      "this moment for too long! It's up to",
+      "me to kill Seiya!",
+      ""
+    ],
+    "text": "Hold on! I've been waiting for this moment for too long! It's up to me to kill Seiya!"
+  },
+  "dialog:20": {
+    "lines": [
+      "How can you say such nonsense!",
+      "Saori Kido is the reincarnation of",
+      "Athena! You have the wrong enemy,",
+      "we are trying to save her!"
+    ],
+    "text": "How can you say such nonsense! Saori Kido is the reincarnation of Athena! You have the wrong enemy, we are trying to save her!"
+  },
+  "dialog:21": {
+    "lines": [
+      "How dare you come here to the",
+      "sanctuary! We both have a revenge",
+      "to take;  it's my student cassios ",
+      "who deserved the pegasus armor!"
+    ],
+    "text": "How dare you come here to the sanctuary! We both have a revenge to take;  it's my student cassios who deserved the pegasus armor!"
+  },
+  "dialog:22": {
+    "lines": [
+      "How dare you disturb my",
+      "meditation?",
+      "",
+      ""
+    ],
+    "text": "How dare you disturb my meditation?"
+  },
+  "dialog:23": {
+    "lines": [
+      "However...",
+      "",
+      "",
+      ""
+    ],
+    "text": "However..."
+  },
+  "dialog:24": {
+    "lines": [
+      "I am Shura, Golden Knight of",
+      "Capricorn! I am Athena's most",
+      "trusted servant!",
+      ""
+    ],
+    "text": "I am Shura, Golden Knight of Capricorn! I am Athena's most trusted servant!"
+  },
+  "dialog:25": {
+    "lines": [
+      "I am honored to see you again my",
+      "master, Camus, knight of Aquarius!",
+      "",
+      ""
+    ],
+    "text": "I am honored to see you again my master, Camus, knight of Aquarius!"
+  },
+  "dialog:26": {
+    "lines": [
+      "I am really sorry...",
+      "",
+      "",
+      ""
+    ],
+    "text": "I am really sorry..."
+  },
+  "dialog:27": {
+    "lines": [
+      "I can't do anything to help you.",
+      "There's a room behind my throne",
+      "which leads to the big statue of",
+      "Athena! Direct the light from"
+    ],
+    "text": "I can't do anything to help you. There's a room behind my throne which leads to the big statue of Athena! Direct the light from"
+  },
+  "dialog:28": {
+    "lines": [
+      "I didn't come here to hear your",
+      "compliments! There's no time to",
+      "lose, help us remove the arrow from",
+      "Athena's heart!"
+    ],
+    "text": "I didn't come here to hear your compliments! There's no time to lose, help us remove the arrow from Athena's heart!"
+  },
+  "dialog:29": {
+    "lines": [
+      "I don't want to kill you,",
+      "don't you realize the power of",
+      "of andromeda is limitless? In that",
+      "case, you leave me no choices!"
+    ],
+    "text": "I don't want to kill you, don't you realize the power of of andromeda is limitless? In that case, you leave me no choices!"
+  },
+  "dialog:30": {
+    "lines": [
+      "I had fun with you, to tell the",
+      "truth, but it's just the beginning",
+      "Shiryu!",
+      ""
+    ],
+    "text": "I had fun with you, to tell the truth, but it's just the beginning Shiryu!"
+  },
+  "dialog:31": {
+    "lines": [
+      "I must succeed in defeating him",
+      "in order to get ou of this",
+      "illusion!",
+      ""
+    ],
+    "text": "I must succeed in defeating him in order to get ou of this illusion!"
+  },
+  "dialog:32": {
+    "lines": [
+      "I really underestimated you bronze",
+      "knights! By way of gratitude, I agree",
+      "to let you go on your way.",
+      ""
+    ],
+    "text": "I really underestimated you bronze knights! By way of gratitude, I agree to let you go on your way."
+  },
+  "dialog:33": {
+    "lines": [
+      "I see an evil look in your eyes!",
+      "You are possessed! Your mind is",
+      "being controlled by someone!",
+      ""
+    ],
+    "text": "I see an evil look in your eyes! You are possessed! Your mind is being controlled by someone!"
+  },
+  "dialog:34": {
+    "lines": [
+      "I'm Afrodite, the knight of the",
+      "fishes, it's a real miracle that",
+      "you made it to the twelfth house!!",
+      ""
+    ],
+    "text": "I'm Afrodite, the knight of the fishes, it's a real miracle that you made it to the twelfth house!!"
+  },
+  "dialog:35": {
+    "lines": [
+      "I'm not going to stand idly by!",
+      "My diamond dust will block you!",
+      "",
+      ""
+    ],
+    "text": "I'm not going to stand idly by! My diamond dust will block you!"
+  },
+  "dialog:36": {
+    "lines": [
+      "I, Aldebaran, golden knight of the",
+      "bull, i will not let anyone cross my",
+      "temple!!",
+      ""
+    ],
+    "text": "I, Aldebaran, golden knight of the bull, i will not let anyone cross my temple!!"
+  },
+  "dialog:37": {
+    "lines": [
+      "If you believe that I will let",
+      "you cross and you have the slightest",
+      "chance of beating me, you are",
+      "dreaming Hyoga of the swan!"
+    ],
+    "text": "If you believe that I will let you cross and you have the slightest chance of beating me, you are dreaming Hyoga of the swan!"
+  },
+  "dialog:38": {
+    "lines": [
+      "In that case don't be stupid...",
+      "Only the female knights' mask",
+      "protects from the demonic scent...",
+      "But to get it... you have to kill me..."
+    ],
+    "text": "In that case don't be stupid... Only the female knights' mask protects from the demonic scent... But to get it... you have to kill me..."
+  },
+  "dialog:39": {
+    "lines": [
+      "In this case, you leave me",
+      "no choice, I hate to fight, but",
+      "I have to defeat you to finally",
+      "reach the room of the great Pope!"
+    ],
+    "text": "In this case, you leave me no choice, I hate to fight, but I have to defeat you to finally reach the room of the great Pope!"
+  },
+  "dialog:40": {
+    "lines": [
+      "It doesn't bother me, quite the",
+      "contrary! Hell is a place i visit",
+      "often!",
+      ""
+    ],
+    "text": "It doesn't bother me, quite the contrary! Hell is a place i visit often!"
+  },
+  "dialog:41": {
+    "lines": [
+      "It's time to put an end to this fight",
+      "phoenix! You will receive the",
+      "treasure of heaven.",
+      ""
+    ],
+    "text": "It's time to put an end to this fight phoenix! You will receive the treasure of heaven."
+  },
+  "dialog:42": {
+    "lines": [
+      "It's too late for athena! She",
+      "is already dead, with her scepter",
+      "and her shield I will soon be able",
+      "to beat anyone, even the gods!"
+    ],
+    "text": "It's too late for athena! She is already dead, with her scepter and her shield I will soon be able to beat anyone, even the gods!"
+  },
+  "dialog:43": {
+    "lines": [
+      "Let us pass, we must cross the 12",
+      "temples to reason with the great",
+      "pope and save Saori, the",
+      "reincarnation of Athena!"
+    ],
+    "text": "Let us pass, we must cross the 12 temples to reason with the great pope and save Saori, the reincarnation of Athena!"
+  },
+  "dialog:44": {
+    "lines": [
+      "Look.",
+      "My chain isn't reacting at all, either.",
+      "",
+      ""
+    ],
+    "text": "Look. My chain isn't reacting at all, either."
+  },
+  "dialog:45": {
+    "lines": [
+      "Marin... eagle knight... You",
+      "know very well that even if I",
+      "have to give up my life,",
+      "I will move forward!"
+    ],
+    "text": "Marin... eagle knight... You know very well that even if I have to give up my life, I will move forward!"
+  },
+  "dialog:46": {
+    "lines": [
+      "Mwahaha!! You blew me away!!",
+      "You managed to break one of my",
+      "horns!",
+      ""
+    ],
+    "text": "Mwahaha!! You blew me away!! You managed to break one of my horns!"
+  },
+  "dialog:47": {
+    "lines": [
+      "My chain is not responding! It's as",
+      "if this man had no cosmos and",
+      "did not exist!",
+      ""
+    ],
+    "text": "My chain is not responding! It's as if this man had no cosmos and did not exist!"
+  },
+  "dialog:48": {
+    "lines": [
+      "No one has to tell me that I",
+      "shouldn't believe in my dreams if",
+      "that's the case! Only a loser without",
+      "convictions can believe such a thing!"
+    ],
+    "text": "No one has to tell me that I shouldn't believe in my dreams if that's the case! Only a loser without convictions can believe such a thing!"
+  },
+  "dialog:49": {
+    "lines": [
+      "No, I have a better idea! I'm going ",
+      "to kill you both at the same time!!",
+      "",
+      ""
+    ],
+    "text": "No, I have a better idea! I'm going to kill you both at the same time!!"
+  },
+  "dialog:50": {
+    "lines": [
+      "Of course! Albior was a traitor",
+      "who did not obey the orders of",
+      "the great pope! He got what he",
+      "deserved!!"
+    ],
+    "text": "Of course! Albior was a traitor who did not obey the orders of the great pope! He got what he deserved!!"
+  },
+  "dialog:51": {
+    "lines": [
+      "Poor fool, you should have stayed",
+      "inside your ice coffin!",
+      "",
+      ""
+    ],
+    "text": "Poor fool, you should have stayed inside your ice coffin!"
+  },
+  "dialog:52": {
+    "lines": [
+      "Prepare to die Seiya!",
+      "",
+      "",
+      ""
+    ],
+    "text": "Prepare to die Seiya!"
+  },
+  "dialog:53": {
+    "lines": [
+      "Right, and you're Ikki the phoenix",
+      "knight, right? I will punish your",
+      "arrogance and send you to hell!",
+      ""
+    ],
+    "text": "Right, and you're Ikki the phoenix knight, right? I will punish your arrogance and send you to hell!"
+  },
+  "dialog:54": {
+    "lines": [
+      "Saina of Ophiuchus! interesting to",
+      "see some silver knights around",
+      "Here! I see that your resentment is",
+      "tenacious!"
+    ],
+    "text": "Saina of Ophiuchus! interesting to see some silver knights around Here! I see that your resentment is tenacious!"
+  },
+  "dialog:55": {
+    "lines": [
+      "Seiya, the one who stole the",
+      "pegasus armor from my brother!",
+      "I'll crush your bones!!",
+      ""
+    ],
+    "text": "Seiya, the one who stole the pegasus armor from my brother! I'll crush your bones!!"
+  },
+  "dialog:56": {
+    "lines": [
+      "So, here are the rebellious Bronze",
+      "Knights who dare to defy the",
+      "Sanctuary and the Grand Pope's",
+      "orders!"
+    ],
+    "text": "So, here are the rebellious Bronze Knights who dare to defy the Sanctuary and the Grand Pope's orders!"
+  },
+  "dialog:57": {
+    "lines": [
+      "Thank you my master...",
+      "for all you have done for me...",
+      "",
+      ""
+    ],
+    "text": "Thank you my master... for all you have done for me..."
+  },
+  "dialog:58": {
+    "lines": [
+      "Thanks to my friends, that's no",
+      "longer the case. Know that I",
+      "want to thank you for the",
+      "techniques that you taught me"
+    ],
+    "text": "Thanks to my friends, that's no longer the case. Know that I want to thank you for the techniques that you taught me"
+  },
+  "dialog:59": {
+    "lines": [
+      "That must be the second temple,",
+      "The Taurus one.!",
+      "",
+      ""
+    ],
+    "text": "That must be the second temple, The Taurus one.!"
+  },
+  "dialog:60": {
+    "lines": [
+      "That's weird. I don't feel",
+      "any cosmos coming from it.",
+      "",
+      ""
+    ],
+    "text": "That's weird. I don't feel any cosmos coming from it."
+  },
+  "dialog:61": {
+    "lines": [
+      "That's what we're going to see!",
+      "On guard golden knight!",
+      "",
+      ""
+    ],
+    "text": "That's what we're going to see! On guard golden knight!"
+  },
+  "dialog:62": {
+    "lines": [
+      "The fun is over! You will",
+      "receive my ultimate technique!",
+      "",
+      ""
+    ],
+    "text": "The fun is over! You will receive my ultimate technique!"
+  },
+  "dialog:63": {
+    "lines": [
+      "The illusion is finally gone!",
+      "This armor was controlled by ",
+      "a distant cosmos, but by whom?",
+      ""
+    ],
+    "text": "The illusion is finally gone! This armor was controlled by a distant cosmos, but by whom?"
+  },
+  "dialog:64": {
+    "lines": [
+      "The only way to get to the Pope's",
+      "chamber is to take these stairs and",
+      "cross the 12 houses of the zodiac...",
+      ""
+    ],
+    "text": "The only way to get to the Pope's chamber is to take these stairs and cross the 12 houses of the zodiac..."
+  },
+  "dialog:65": {
+    "lines": [
+      "The treasure of heaven is a",
+      "destructive technique that I use",
+      "to deprive my victim of his 5",
+      "senses, one after the other!"
+    ],
+    "text": "The treasure of heaven is a destructive technique that I use to deprive my victim of his 5 senses, one after the other!"
+  },
+  "dialog:66": {
+    "lines": [
+      "The ultimate dragon technique?",
+      "This is ridiculous, are you going",
+      "to sacrifice yourself to beat me?",
+      ""
+    ],
+    "text": "The ultimate dragon technique? This is ridiculous, are you going to sacrifice yourself to beat me?"
+  },
+  "dialog:67": {
+    "lines": [
+      "There you are knight! Why didn't",
+      "you fight us inside your temple?",
+      "",
+      ""
+    ],
+    "text": "There you are knight! Why didn't you fight us inside your temple?"
+  },
+  "dialog:68": {
+    "lines": [
+      "There you are, Seiya. You",
+      "showed courage and exceptional",
+      "strenght to have reached me.",
+      ""
+    ],
+    "text": "There you are, Seiya. You showed courage and exceptional strenght to have reached me."
+  },
+  "dialog:69": {
+    "lines": [
+      "This time it's the end, I'm going",
+      "to use my ultimate ice technique,",
+      "the one that reaches the coldest",
+      "temperature in the universe,"
+    ],
+    "text": "This time it's the end, I'm going to use my ultimate ice technique, the one that reaches the coldest temperature in the universe,"
+  },
+  "dialog:70": {
+    "lines": [
+      "Those roses you're holding! It was",
+      "you who murdered my master Albior",
+      "on the island of Andromeda many",
+      "years ago, right?"
+    ],
+    "text": "Those roses you're holding! It was you who murdered my master Albior on the island of Andromeda many years ago, right?"
+  },
+  "dialog:71": {
+    "lines": [
+      "Very well, you have proven your",
+      "bravery and your honor as a knight,",
+      "I agree to let you pass Hyoga,",
+      "go join your friends..."
+    ],
+    "text": "Very well, you have proven your bravery and your honor as a knight, I agree to let you pass Hyoga, go join your friends..."
+  },
+  "dialog:72": {
+    "lines": [
+      "We don't have time to think",
+      "For now, just focus on getting.",
+      "through!",
+      "Let's go!"
+    ],
+    "text": "We don't have time to think For now, just focus on getting. through! Let's go!"
+  },
+  "dialog:73": {
+    "lines": [
+      "We don't have time to think",
+      "For now, just focus on getting.",
+      "through! Let's go!",
+      ""
+    ],
+    "text": "We don't have time to think For now, just focus on getting. through! Let's go!"
+  },
+  "dialog:74": {
+    "lines": [
+      "We have to meet the Great Pope!",
+      "I want to reason with him before it's",
+      "too late and a war breaks out!",
+      ""
+    ],
+    "text": "We have to meet the Great Pope! I want to reason with him before it's too late and a war breaks out!"
+  },
+  "dialog:75": {
+    "lines": [
+      "Welcome Bronze Knight!",
+      "",
+      "",
+      ""
+    ],
+    "text": "Welcome Bronze Knight!"
+  },
+  "dialog:76": {
+    "lines": [
+      "Welcome knights! Welcome to the",
+      "lair of death!",
+      "",
+      ""
+    ],
+    "text": "Welcome knights! Welcome to the lair of death!"
+  },
+  "dialog:77": {
+    "lines": [
+      "Welcome to the sanctuary Miss Kido.",
+      "We were waiting for you...",
+      "",
+      ""
+    ],
+    "text": "Welcome to the sanctuary Miss Kido. We were waiting for you..."
+  },
+  "dialog:78": {
+    "lines": [
+      "What are you doing you fool!",
+      "",
+      "",
+      ""
+    ],
+    "text": "What are you doing you fool!"
+  },
+  "dialog:79": {
+    "lines": [
+      "What are you doing? You fool!",
+      "",
+      "",
+      ""
+    ],
+    "text": "What are you doing? You fool!"
+  },
+  "dialog:80": {
+    "lines": [
+      "What happened?",
+      "",
+      "",
+      ""
+    ],
+    "text": "What happened?"
+  },
+  "dialog:81": {
+    "lines": [
+      "What is going on? You do not",
+      "answer? Your Eyes! You have",
+      "something changed on you!",
+      ""
+    ],
+    "text": "What is going on? You do not answer? Your Eyes! You have something changed on you!"
+  },
+  "dialog:82": {
+    "lines": [
+      "What is this? The floor and walls",
+      "of this temple are covered with",
+      "human faces!",
+      ""
+    ],
+    "text": "What is this? The floor and walls of this temple are covered with human faces!"
+  },
+  "dialog:83": {
+    "lines": [
+      "What's going on?",
+      "What's happening to you??",
+      "",
+      ""
+    ],
+    "text": "What's going on? What's happening to you??"
+  },
+  "dialog:84": {
+    "lines": [
+      "What? He managed to hit all my",
+      "vital points! Without the specific",
+      "resistance of my armor I would be",
+      "dead..."
+    ],
+    "text": "What? He managed to hit all my vital points! Without the specific resistance of my armor I would be dead..."
+  },
+  "dialog:85": {
+    "lines": [
+      "Who allowed you to enter my",
+      "temple?",
+      "",
+      ""
+    ],
+    "text": "Who allowed you to enter my temple?"
+  },
+  "dialog:86": {
+    "lines": [
+      "Without your 5 senses, your body",
+      "is just a piece of meat now...",
+      "",
+      ""
+    ],
+    "text": "Without your 5 senses, your body is just a piece of meat now..."
+  },
+  "dialog:87": {
+    "lines": [
+      "Yes I told you so... I can die in",
+      "this fight... but know one thing...",
+      "a dragon never dies alone!!",
+      ""
+    ],
+    "text": "Yes I told you so... I can die in this fight... but know one thing... a dragon never dies alone!!"
+  },
+  "dialog:88": {
+    "lines": [
+      "You are Milo, the Golden Knight",
+      "of the Scorpion aren't you? Let",
+      "us pass we must reach the room",
+      "of the great Pope!"
+    ],
+    "text": "You are Milo, the Golden Knight of the Scorpion aren't you? Let us pass we must reach the room of the great Pope!"
+  },
+  "dialog:89": {
+    "lines": [
+      "You are an idiot Jaki!",
+      "I'll beat you like I beat",
+      "your brother Cassios before!!",
+      ""
+    ],
+    "text": "You are an idiot Jaki! I'll beat you like I beat your brother Cassios before!!"
+  },
+  "dialog:90": {
+    "lines": [
+      "You are quite resistant; but, do",
+      "you think you can resist the ",
+      "bloody corpion stings Hyoga? ",
+      ""
+    ],
+    "text": "You are quite resistant; but, do you think you can resist the bloody corpion stings Hyoga?"
+  },
+  "dialog:91": {
+    "lines": [
+      "You are the Gemini Knight!!",
+      "It's you who usurped the place",
+      "of the true great pope all this time!!",
+      ""
+    ],
+    "text": "You are the Gemini Knight!! It's you who usurped the place of the true great pope all this time!!"
+  },
+  "dialog:92": {
+    "lines": [
+      "You are the golden knight of the",
+      "virgin Shaka, the one who claims",
+      "to be closest to the gods?",
+      ""
+    ],
+    "text": "You are the golden knight of the virgin Shaka, the one who claims to be closest to the gods?"
+  },
+  "dialog:93": {
+    "lines": [
+      "You are usurpers with your false",
+      "Athena! You deserve death for",
+      "speaking such blasphemies!",
+      ""
+    ],
+    "text": "You are usurpers with your false Athena! You deserve death for speaking such blasphemies!"
+  },
+  "dialog:94": {
+    "lines": [
+      "You guys are tougher than I",
+      "thought! Let's continue this fight in",
+      "the realm of the dead! By the waves",
+      "of Hades!"
+    ],
+    "text": "You guys are tougher than I thought! Let's continue this fight in the realm of the dead! By the waves of Hades!"
+  },
+  "dialog:95": {
+    "lines": [
+      "You leave me no choice, the only",
+      "way to defeat you  is to use the",
+      "Forbidden Ultimate Dragon",
+      "Technique!"
+    ],
+    "text": "You leave me no choice, the only way to defeat you  is to use the Forbidden Ultimate Dragon Technique!"
+  },
+  "dialog:96": {
+    "lines": [
+      "You were under the influence",
+      "of the great pope who controlled ",
+      "your mind... You came to your senses",
+      "after killing someone... Cassios..."
+    ],
+    "text": "You were under the influence of the great pope who controlled your mind... You came to your senses after killing someone... Cassios..."
+  },
+  "dialog:97": {
+    "lines": [
+      "You will die Hyoga! No one has been",
+      "able to survive multiple scorpion",
+      "stings so far; receive the last",
+      "one! the needle of Antares!!"
+    ],
+    "text": "You will die Hyoga! No one has been able to survive multiple scorpion stings so far; receive the last one! the needle of Antares!!"
+  },
+  "dialog:98": {
+    "lines": [
+      "You will never reach the room of",
+      "the Pope! The road is covered with",
+      "poisonous roses... Their perfume",
+      "will get the better of you quickly..."
+    ],
+    "text": "You will never reach the room of the Pope! The road is covered with poisonous roses... Their perfume will get the better of you quickly..."
+  },
+  "dialog:99": {
+    "lines": [
+      "You won't ever reach the first",
+      "house!! Ahaha!!",
+      "",
+      ""
+    ],
+    "text": "You won't ever reach the first house!! Ahaha!!"
+  },
+  "dialog:100": {
+    "lines": [
+      "You'll never get there, I lined",
+      "the road leading to the grand pope",
+      "with thousands of poisonous roses,",
+      "their scent is deadly!!"
+    ],
+    "text": "You'll never get there, I lined the road leading to the grand pope with thousands of poisonous roses, their scent is deadly!!"
+  },
+  "dialog:101": {
+    "lines": [
+      "Your sweet faces will soon be part",
+      "of my walls!",
+      "",
+      ""
+    ],
+    "text": "Your sweet faces will soon be part of my walls!"
+  },
+  "dialog:102": {
+    "lines": [
+      "absolute zero! Execution aurora!!",
+      "",
+      "",
+      ""
+    ],
+    "text": "absolute zero! Execution aurora!!"
+  },
+  "dialog:103": {
+    "lines": [
+      "during our previous fights.",
+      "",
+      "",
+      ""
+    ],
+    "text": "during our previous fights."
+  },
+  "dialog:104": {
+    "lines": [
+      "her shield towards your Princess's",
+      "heart to save her.",
+      "",
+      ""
+    ],
+    "text": "her shield towards your Princess's heart to save her."
+  },
+  "dialog:105": {
+    "lines": [
+      "my brother, you sacrificed",
+      "yourself for us...",
+      "",
+      ""
+    ],
+    "text": "my brother, you sacrificed yourself for us..."
+  },
+  "dialog:106": {
+    "lines": [
+      "rest assured that we will continue",
+      "the battle for you, and for",
+      "Athena!",
+      ""
+    ],
+    "text": "rest assured that we will continue the battle for you, and for Athena!"
+  },
+  "mu:combo": {
+    "text": "Repeatedly press Attack to perform a combo. Now it's your turn!"
+  },
+  "mu:down": {
+    "text": "Press Down + Attack to perform a low kick and stun your enemy."
+  },
+  "mu:up": {
+    "text": "Press Up + Attack to perform a high kick and launch your enemy into the air."
+  },
+  "mu:special": {
+    "text": "Press Forward + Special to unleash your special attack. It consumes Cosmos, so use it carefully!"
+  },
+  "mu:dash": {
+    "text": "Quickly press Forward twice, then Attack to perform a dash attack!"
+  },
+  "mu:charge": {
+    "text": "Hold Attack for five seconds, then release it to unleash a charged attack."
+  },
+  "mu:backattack": {
+    "text": "Press Back + Attack to perform a back attack. Try it!"
+  },
+  "mu:uppercut": {
+    "text": "Press Up + Special to perform a powerful uppercut and launch your enemies into the air!"
+  },
+  "mu:ultra": {
+    "text": "Press Down + Special to unleash your ultimate attack. Burn your Cosmos!"
+  },
+  "mu:jump": {
+    "text": "Press Jump, then Attack to perform an aerial attack. Now it's your turn!"
+  },
+  "mu:end": {
+    "text": "Training is complete! It's time to repair your Cloths: difficult battles await you!"
+  },
+  "mu:throw": {
+    "text": "Grab an enemy, then press Attack to strike. Finish by pressing Forward + Attack to throw them!"
+  },
+  "COSMOS 100% UP": {
+    "text": "COSMOS 100% UP"
+  },
+  "EXTRA LIFE": {
+    "text": "EXTRA LIFE"
+  },
+  "MORE TIME": {
+    "text": "MORE TIME"
+  },
+  "HEALTH + 130": {
+    "text": "HEALTH + 130"
+  },
+  "HEALTH + 200": {
+    "text": "HEALTH + 200"
+  },
+  "HEALTH + 260": {
+    "text": "HEALTH + 260"
+  },
+  "HEALTH + 150": {
+    "text": "HEALTH + 150"
+  },
+  "HEALTH + 170": {
+    "text": "HEALTH + 170"
+  },
+  "HEALTH + 100": {
+    "text": "HEALTH + 100"
+  },
+  "HEALTH + 300": {
+    "text": "HEALTH + 300"
+  },
+  "HEALTH + 120": {
+    "text": "HEALTH + 120"
+  },
+  "1000 PTS": {
+    "text": "1000 PTS"
+  },
+  "5000 PTS": {
+    "text": "5000 PTS"
+  },
+  "500 PTS": {
+    "text": "500 PTS"
+  },
+  "2500 PTS": {
+    "text": "2500 PTS"
+  },
+  "800 PTS": {
+    "text": "800 PTS"
+  },
+  "2000 PTS": {
+    "text": "2000 PTS"
+  },
+  "3500 PTS": {
+    "text": "3500 PTS"
+  },
+  "1500 PTS": {
+    "text": "1500 PTS"
+  },
+  "HITS": {
+    "text": "HITS"
+  },
+  "Soldier": {
+    "text": "Soldier"
+  },
+  "Light Soldier": {
+    "text": "Light Soldier"
+  },
+  "Guard": {
+    "text": "Guard"
+  },
+  "Shield Guard": {
+    "text": "Shield Guard"
+  },
+  "Strong Soldier": {
+    "text": "Strong Soldier"
+  },
+  "Heavy Guard": {
+    "text": "Heavy Guard"
+  },
+  "Elite Soldier": {
+    "text": "Elite Soldier"
+  },
+  "Staff Guard": {
+    "text": "Staff Guard"
+  },
+  "Giant Soldier": {
+    "text": "Giant Soldier"
+  },
+  "Mud Soldier": {
+    "text": "Mud Soldier"
+  },
+  "Troll Soldier": {
+    "text": "Troll Soldier"
+  }
+}

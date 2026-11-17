@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,os,subprocess,time,signal,shutil,json,re
 ROOT=Path(__file__).resolve().parents[1]
 class Session:
- def __init__(self,out,engine,level='temple8A-road',title=False,source=ROOT,all_soldiers=False):
+ def __init__(self,out,engine,level='temple8A-road',title=False,source=ROOT,all_soldiers=False,setup=None):
   self.out=Path(out);self.out.mkdir(exist_ok=False,parents=True);data=self.out/'data';data.mkdir();self.keys=self.out/'keys.txt';self.keys.write_text('');self.log=self.out/'Logs/OpenBorLog.txt'
   for p in source.iterdir():
    if p.name.startswith('.') or p.name in ('tools','scripts','levels.txt','scenes','models.txt'):continue
@@ -35,6 +35,7 @@ class Session:
   (self.out/'bor.pak').touch();self.capture_file=self.out/'capture.ppm'
   env=dict(os.environ,SDL_VIDEODRIVER='dummy',SDL_RENDER_DRIVER='software',SDL_AUDIODRIVER='dummy',LD_PRELOAD='/workspace/runtime/input_bridge.so',TEST_KEY_FILE=str(self.keys),TEST_CAPTURE=str(self.capture_file))
   self.env=env;self.engine=engine
+  if setup is not None:setup(self)
   self.stdout=(self.out/'stdout.txt').open('w');self.proc=subprocess.Popen([str(engine),str(self.out/'bor.pak')],cwd=self.out,env=env,stdout=self.stdout,stderr=subprocess.STDOUT)
  def read(self):return self.log.read_text(errors='replace') if self.log.exists() else ''
  def wait(self,text,timeout=90,start=0):

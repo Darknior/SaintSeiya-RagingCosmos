@@ -5,7 +5,7 @@
     "language": "言語",
     "select_hint": "方向：選択 • 攻撃 / Start：決定",
     "press_start": "START を押してください",
-    "change_language": "Block：言語を変更",
+    "change_language": "ガード：言語を変更",
     "pause": "ポーズ",
     "continue": "ゲームに戻る",
     "levels": "ステージ選択",
@@ -16,7 +16,7 @@
     "levels_hint": "攻撃 / Start：開始 • ジャンプ / Esc：戻る",
     "restart_hint": "キャラクターを引き継いで、選んだステージを最初から開始。",
     "guide_footer": "方向：ページ • 攻撃：次へ • ジャンプ / Start：戻る",
-    "controls": "ボタン設定：Options / Control Options。",
+    "controls": "設定 / 制御オプション",
     "devices": "キーボード・ゲームパッド・タッチ操作に対応。",
     "guide_title": "遊び方 — 星矢",
     "stage": "ステージ",
@@ -71,15 +71,15 @@
     },
     {
       "title": "防御",
-      "command": "BLOCK を押し続ける",
-      "line1": "Block という名前のボタンを押し続ける。",
+      "command": "ガード を押し続ける",
+      "line1": "ガード という名前のボタンを押し続ける。",
       "line2": "攻撃してくる敵の方を向こう。",
       "line3": "ボタンを離すと再び戦える。"
     },
     {
       "title": "小宇宙をためる",
-      "command": "CHARGE を押し続ける",
-      "line1": "Charge という名前のボタンを押し続ける。",
+      "command": "小宇宙チャージ を押し続ける",
+      "line1": "小宇宙チャージ という名前のボタンを押し続ける。",
       "line2": "小宇宙ゲージが回復する。",
       "line3": "敵に攻撃されにくい場所でためよう。"
     }

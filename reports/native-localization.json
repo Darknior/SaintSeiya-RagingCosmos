@@ -1,0 +1,47 @@
+{
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "zh",
+    "ru",
+    "ja"
+  ],
+  "entries_per_language": 390,
+  "dialogue_pages": 107,
+  "mu_tutorials": 12,
+  "unicode_glyphs": 1280,
+  "native_mbs_encoding": true,
+  "tables": {
+    "en": {
+      "translation_lines": 542,
+      "menu_lines": 14
+    },
+    "fr": {
+      "translation_lines": 542,
+      "menu_lines": 14
+    },
+    "es": {
+      "translation_lines": 542,
+      "menu_lines": 14
+    },
+    "pt": {
+      "translation_lines": 542,
+      "menu_lines": 14
+    },
+    "zh": {
+      "translation_lines": 542,
+      "menu_lines": 14
+    },
+    "ru": {
+      "translation_lines": 542,
+      "menu_lines": 14
+    },
+    "ja": {
+      "translation_lines": 542,
+      "menu_lines": 14
+    }
+  },
+  "translation_provenance": "Google Translate; French dialogue pages reviewed, UI labels and Saint Seiya terminology corrected; other locales need linguistic review; placeholders and layouts checked"
+}

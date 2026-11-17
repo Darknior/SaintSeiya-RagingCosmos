@@ -1,0 +1,14 @@
+disablekey screenshot
+fontmbs 1 1 1 1 1 1 1 1 1 1
+renamekey attack "€š€Ç€µ€¿€µ"
+renamekey jump "€¨€Å€Ð€»€Ã€¿"
+renamekey special "€›€À€Ã€¿"
+renamekey attack2 "€ª€Ä€º€Ë€Ä€Å€½€Õ€Á"
+renamekey attack3 "€¬€¹€µ€Å €Â€µ€¼€µ€¹"
+renamekey attack4 "€£€Ã€Æ€Á€Ã€Æ"
+renamekey moveup "€œ€·€º€Å€Ê"
+renamekey movedown "€œ€Â€½€¼"
+renamekey moveleft "€œ€À€º€·€Ã"
+renamekey moveright "€œ€Ä€Å€µ€·€Ã"
+renamekey start "€ª€Ç€µ€Å€Ç"
+renamekey esc "€¦€µ€¼€µ€¹"

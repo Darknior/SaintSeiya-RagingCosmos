@@ -1,0 +1,14 @@
+disablekey screenshot
+fontmbs 1 1 1 1 1 1 1 1 1 1
+renamekey attack "…Å…¿"
+renamekey jump "´ØâÍ"
+renamekey special "©ãÀ"
+renamekey attack2 "„Ü†¥…˜"
+renamekey attack3 "„Ô…Ö…Å…¿"
+renamekey attack4 "„˜„„†»Øã´"
+renamekey moveup "å"
+renamekey movedown "æ"
+renamekey moveleft "„¨"
+renamekey moveright "ƒ™"
+renamekey start "µ¹ã¿"
+renamekey esc "…‹™"

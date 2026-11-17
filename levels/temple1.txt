@@ -1,3 +1,4 @@
+noslow 1
 #-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
 background  	data/bgs/temple1/temple1_back.png

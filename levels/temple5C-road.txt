@@ -1,3 +1,4 @@
+noslow 1
 loadingbg		data/sprites/loading/loading_temple5.png 1 -51 405 460 999 999 0
 
 music		data/music/Pegasus_Fantasy_instrumental.ogg
@@ -28,7 +29,6 @@ order	a
 nofadeout 0
 nosave 1
 blocked 1
-noslow 1
 
 hole 967 484 -22 36 71 93 110 10
 hole 2010 484 0 0 71 71 110 10

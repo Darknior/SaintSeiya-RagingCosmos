@@ -1,3 +1,5 @@
+#import "data/scripts/native_localization_catalog.c"
+#import "data/scripts/localization.c"
 void main()
 {
 	void self		= getlocalvar("self");
@@ -10,6 +12,7 @@ void main()
 	float yPos		= openborvariant("ypos");
 
 	if(text == NULL()){text = "";}
+	text=nativeText(text);
 	if(font == NULL()){font = 8;}
 	drawstring(x-xPos-(strwidth(text, font)/2), z-y-yPos, font, text, z);
 }

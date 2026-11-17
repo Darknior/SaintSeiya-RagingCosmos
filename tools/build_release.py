@@ -38,6 +38,16 @@ def validate():
   elif w[0]=='branch':
    if w[1] in branches:errors.append(str(mode)+': duplicate branch '+w[1])
    branches.add(w[1])
+ # Current localization policy: keep the native pause and translate stock text.
+ for image in (ROOT/'sprites/localization').rglob('*.png'):
+  if image.read_bytes()[24]!=8:errors.append(str(image.relative_to(ROOT))+': native PNG must use 8-bit depth')
+ source=json.loads((ROOT/'translations/native-source.json').read_text())
+ for code in ['en','fr','es','pt','zh-CN','ru','ja']:
+  translated=json.loads((ROOT/'translations'/f'native-{code}.json').read_text())
+  if set(source)-set(translated):errors.append(code+': incomplete native translation catalogue')
+ for name in ranges((ROOT/'levels.txt').read_text()):
+  data=(ROOT/name).read_text()
+  if not re.search(r'^noslow\s+1\b',data,re.M):errors.append(name+': boss defeat slow motion enabled')
  sets=catalog()
  if len(sets[1]['levels'])!=43:errors.append('Story requires 43 stages')
  for route in json.loads((ROOT/'tools/route-layout.json').read_text()):
@@ -64,6 +74,13 @@ def prune(files):
  keep=[];omitted=[]
  for p in files:
   rel=p.relative_to(ROOT);name='data/'+rel.as_posix().lower();suffix=p.suffix.lower();referenced=name in content
+  # These generated overlays belong to the retired custom menu/pause. The
+  # native interface only uses the seven animated guide pages and Seiya frames.
+  retired=False
+  if rel.parts[:2]==('sprites','interface'):
+   if len(rel.parts)==4 and rel.parts[2] in ('en','fr','es','pt','zh','ru','ja') and not re.fullmatch(r'guide-[0-6]\.png',rel.name):retired=True
+   if rel.name=='sanctuary.png' or rel.name.endswith('-intro.png'):retired=True
+  if retired:omitted.append({'path':str(rel),'bytes':p.stat().st_size,'reason':'retired custom interface overlay'});continue
   if suffix in ('.png','.gif','.pcx','.ogg','.mp3'):referenced|=name.rsplit('.',1)[0] in content
   implicit=rel.parts[0] in ('scripts','sprites','sounds','scenes','levels','music','translations') or len(rel.parts)<=2
   if suffix=='.db' and not referenced:implicit=False

@@ -42,20 +42,23 @@ ANDROID : installer Android/OpenBOR-7533.apk. Ouvrir OpenBOR une fois, choisir
 son dossier de jeux si demande, puis y copier Paks/SaintSeiya-RagingCosmos.pak.
 L'installation de l'APK et le choix du dossier restent necessaires sur Android.
 
-Au titre, choisir une langue avec les directions et valider avec Attaque/Start.
-Appuyer ensuite sur Start. Block rouvre le choix de langue. Le choix est sauve.
+Au titre, Gauche/Droite change la langue ; Start ouvre le menu natif.
+Le choix de langue est conserve apres redemarrage.
 Clavier par defaut : fleches, A=Attaque, D=Saut, Entree=Start, F=Block.
 Commandes reconfigurables dans Options / Control Options.
-Guide anime : Comment jouer, au menu principal ou dans la pause.
-Choix de niveau : menu pause. Le personnage et les vies sont conserves.
+Guide anime : Comment jouer, dans le menu principal natif.
+Pause native : Continuer / Quitter la partie. Aucun sous-menu ajoute.
+Le ralenti a la defaite des boss est desactive.
 
 Ce paquet retire uniquement les ressources non referencees selon l'audit
 conservateur. Les cinemas references et toutes les animations utiles sont gardes.
 Il ne contient pas les sources, historiques Git, captures, tests ou fichiers de
 travail. Ceux-ci sont sauvegardes separement dans l'archive des sources.
 
-Langues interface/guide : anglais, francais, espagnol, portugais du Bresil,
-chinois simplifie, russe, japonais. Dialogues/videos/reglages natifs non traduits.
+Langues menus natifs, dialogues, tutoriel et messages : anglais, francais,
+espagnol, portugais du Bresil, chinois simplifie, russe et japonais.
+Les dialogues francais sont relus ; les autres langues demandent encore une
+relecture linguistique. Videos et voix originales conservees.
 Les moteurs officiels ne sont pas modifies. Sources :
 https://github.com/DCurrent/openbor/releases/tag/v7533
 https://github.com/Darknior/SaintSeiya-RagingCosmos

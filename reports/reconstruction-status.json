@@ -7,7 +7,7 @@
     "restored_routes": 7,
     "route_soldiers": 107,
     "encounters": 38,
-    "pause_level_select": true,
+    "pause_level_select": false,
     "animated_seiya_guide_pages": 7,
     "interface_languages": [
       "en",
@@ -19,7 +19,11 @@
       "ja"
     ],
     "accents_and_non_latin_glyphs": true,
-    "official_engine_build": 7533
+    "official_engine_build": 7533,
+    "native_menus_preserved": true,
+    "native_pause_only": true,
+    "added_blue_interface_panels": false,
+    "boss_defeat_slow_motion": false
   },
   "verification": {
     "unique_stage_load_and_short_combat": 45,
@@ -43,11 +47,14 @@
     "additional_shiryu_mud_combat": true,
     "restored_routes_input_only_combat": 7,
     "restored_route_enemies_defeated_natively": 107,
-    "restored_route_lives_lost": 0
+    "restored_route_lives_lost": 0,
+    "localized_dialogue_pages_rendered": 749,
+    "localized_mu_states": 77,
+    "native_menu_locales": 7
   },
-  "native_dialogue_translation": false,
+  "native_dialogue_translation": true,
   "github_publication": "blocked: integration has no write permission",
-  "asset_cleanup": "208.84 MiB omitted from test PAK; original assets preserved",
+  "asset_cleanup": "210.13 MiB omitted from test PAK; original source assets preserved",
   "corrections": {
     "gemini_unique_restart_branch": true,
     "dialog_depth_preserved": true,

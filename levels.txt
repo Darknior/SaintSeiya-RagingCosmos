@@ -1,10 +1,10 @@
 
 loadingbg   1 -42 405 450 999 999 0 # ecran de chargement, offset de la barre de loading
 #blocked    1                       # Détermine les bords de l'écran comme des murs solide
-#noslow     1                       # Désactive l'effet ralenti quand le boss meurt
+# Boss defeat slow motion is disabled with noslow 1 in each level.
 completebg  1                       # Ecran de fin de niveau personnalisé data/bgs/complete.gif
 hiscorebg 1                         # Ecran de meilleurs scores apres le game over
-pauseoffset 0 1 -10000 -10000 3 -10000 -10000
+pauseoffset 0 1 0 60 3 0 56
 
 ## CAUTION!! THE COMMANDS BELOW WILL CHANGE THE LIFE BAR SCRIPT TOO
 

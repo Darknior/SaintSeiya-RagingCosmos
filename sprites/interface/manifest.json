@@ -10,15 +10,15 @@
   ],
   "translations": {
     "en": "e34186ed62e1c14697b55ae7e870556e57d0669d8c0db64de1207c13f68c087b",
-    "fr": "8c86acb33e38a2d42b0ca5a2c9f25baadab7e920d8d82c43b9bd5d914faee865",
-    "es": "d557b2aed314dcbd9a1b18ccf217bd5b88bef54b749204285afe04b26f85f80e",
-    "pt": "4d802a88605b5e48653c3e903ab00fea99050b159a36e31a0a66ec55827e267b",
-    "zh": "00576eff55dd4157300ea7d71b3a790ce01cd602c53193647e6aaf2577c1f60d",
-    "ru": "f52ff45400b431345e6c69d5b3941ffbf91bea2a35a76d687d38b1806310a6ab",
-    "ja": "a01c44c3fed0841dc9c5eac0204606c1e5e26fcf4f8b2fd691a723c3b3b87d74"
+    "fr": "98a3d269cc3ea476101c802f92942b14d17f7e75de4e0a9e0f95b75a4f3d927d",
+    "es": "ceb8f0b231e93eee85ac0dfeeaed98324c5a59b6e8574ced7f32f590d3e4af45",
+    "pt": "d964e20077c996fc32d2258ca840cd130e2a70513b7ade07724e436807e0eff2",
+    "zh": "17fa39125451dcb900ff7f18a6fe91df5d78e14477876f833102edbe018e7ab5",
+    "ru": "b9be2cee7d446f1007b0552202f6b2763c1d137e8c4eda7044b10b539ca79c4e",
+    "ja": "25d2143dde276bd527e35edcf91a74e85a99a9c67c708c7554c303304848a61d"
   },
   "pages": 7,
   "frames": 84,
-  "text_sprites": 658,
-  "total_sprites": 750
+  "total_sprites": 750,
+  "text_sprites": 658
 }

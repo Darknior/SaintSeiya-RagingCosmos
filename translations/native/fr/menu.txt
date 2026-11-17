@@ -1,0 +1,14 @@
+disablekey screenshot
+fontmbs 1 1 1 1 1 1 1 1 1 1
+renamekey attack "Attaque"
+renamekey jump "Saut"
+renamekey special "Garde"
+renamekey attack2 "Sp€cial"
+renamekey attack3 "Attaque arri€re"
+renamekey attack4 "Cosmos"
+renamekey moveup "Haut"
+renamekey movedown "Bas"
+renamekey moveleft "Gauche"
+renamekey moveright "Droite"
+renamekey start "Start"
+renamekey esc "Quitter"

@@ -1,3 +1,5 @@
+#import "data/scripts/localization.c"
+#import "data/scripts/native_localization_catalog.c"
 #import "data/scripts/library/dialog_positions.c"
 #import "data/scripts/interface.c"
 #import "data/scripts/common/effect_tint.c"
@@ -42,6 +44,8 @@ void main(){//MAIN START
     }
     if(interfaceDraw()) return;
     restoreClosedDialog();
+    localizeSceneTitles();
+    localizeFighterLabels();
     tintEntities();
    if(getglobalvar("zoomentity"))
    {
@@ -124,13 +128,13 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 		//SET THE "CLEARALL" FLAG TO 1
 		if(getglobalvar("clearAll") == NULL()){setglobalvar("clearAll", 1);}
 		menuScreen();
-        uiMainMenu();
+
 	}
 
 	//IN LEVEL
 	if(openborvariant("in_level")){
 		drawOverlay();
-        uiRouteIntro();
+
 		drawRush();
 		timeOver();
 		quakeEffect();
@@ -242,8 +246,8 @@ void overlayFunction(void player, int pIndex)
 			setdrawmethod(NULL(),1,256,256,0,0,0,2);
 			drawsprite(getglobalvar("lifebar1"), xPos+xAdd, yPos1+yAdd1, layer2); //PLAYER LIFEBAR OVERLAY
 			drawsprite(getglobalvar("mpbar"), xPos+xAdd, yPos1+yAdd2, layer2); //PLAYER MPBAR OVERLAY
-			drawstring(xPos+xAdd, 3+yText1, 0, "Energy", layer1);
-			drawstring(xPos+xAdd, 3+yText2, 0, "Cosmos", layer1);
+			drawstring(xPos+xAdd, 3+yText1, 0, nativeText("Energy"), layer1);
+			drawstring(xPos+xAdd, 3+yText2, 0, nativeText("Cosmos"), layer1);
 
 			//DRAW CUSTOM LIFE BARS
 			int pIndex		= getentityproperty(player, "playerindex");
@@ -332,24 +336,9 @@ void timeOver()
 		int font	= 0;
 		int layer	= 1001;
 
-		if(getglobalvar("timeOver") != 1){
-
-			//FIRST ENTITY
-			clearspawnentry();
-			setspawnentry("name", "time-is-up");
-			vSpawn = spawn();
-			changeentityproperty(vSpawn, "position", xPos+(hRes/2), vRes/2, 0);
-			changeentityproperty(vSpawn, "direction", 1);
-			
-			//SECOND ENTITY
-			clearspawnentry();
-			setspawnentry("name", "time-is-up0");
-			vSpawn = spawn();
-			changeentityproperty(vSpawn, "position", xPos+(hRes/2), (vRes/2)-1, 0);
-			changeentityproperty(vSpawn, "direction", 1);
-
-			setglobalvar("timeOver", 1);
-		}
+        void message=nativeText("TIME OVER");
+        drawstring((hRes-strwidth(message,7))/2,vRes/2,7,message,layer);
+        setglobalvar("timeOver",1);
 		changeopenborvariant("game_time", 50);
 		//drawstring((hRes-strwidth(str, font))/2, vRes/2, font, str, layer);
 	}
@@ -411,7 +400,7 @@ void rushFunction(void player)
 				if(scale < 256){scale = 256;}
 			}
 
-			text = rush+"__HITS";
+			text = rush+"__"+nativeText("HITS");
 			x = x-xPos-(strwidth(text, font)/2);
 			y = z-yPos+screen-y-yDif;
 

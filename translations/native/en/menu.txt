@@ -1,0 +1,14 @@
+disablekey screenshot
+fontmbs 1 1 1 1 1 1 1 1 1 1
+renamekey attack "Attack"
+renamekey jump "Jump"
+renamekey special "Block"
+renamekey attack2 "Special"
+renamekey attack3 "Back Attack"
+renamekey attack4 "Charge"
+renamekey moveup "Up"
+renamekey movedown "Down"
+renamekey moveleft "Left"
+renamekey moveright "Right"
+renamekey start "Start"
+renamekey esc "Exit"

@@ -1,3 +1,4 @@
+noslow 1
 #--------# Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas) #-----------------
 
 background     data/bgs/temple4C-road/background.png        1 1 0 0 0 0 1 1 1 0
@@ -31,7 +32,6 @@ noreset 2                                    # Reset de l horloge apres timeout
 nofadeout 0
 nosave 1
 blocked 1
-noslow 1
 
 #---------# Players spawn positions #-----------------------------------------------
 spawn1 50 25 0 # position du joueur1 (x, z, Y)

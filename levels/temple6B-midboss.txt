@@ -1,3 +1,4 @@
+noslow 1
 loadingbg		data/sprites/loading/loading_temple6.png 1 -51 405 460 999 999 0
 
 music       data/music/Disciples-De-Shaka.ogg

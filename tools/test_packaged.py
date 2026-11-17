@@ -13,24 +13,33 @@ def unpack(pak,out):
    target.parent.mkdir(exist_ok=True,parents=True);f.seek(offset);target.write_bytes(f.read(size))
  return out/'data'
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('pak',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args();a.output.mkdir(exist_ok=False,parents=True);source=unpack(a.pak.resolve(),a.output/'packed');s=Session(a.output/'run',Path('/workspace/squashfs-root/usr/bin/OpenBOR'),source=source);checks=[]
+ from test_native_localized_menus import run
+ p=argparse.ArgumentParser();p.add_argument('pak',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args();a.output.mkdir(exist_ok=False,parents=True);source=unpack(a.pak.resolve(),a.output/'packed')
+ menu=run('fr',a.output/'menus',source=source);s=None;checks=[]
+ def setup(session):
+  save=session.out/'Saves/bor';save.mkdir(parents=True,exist_ok=True);(save/'ragingcosmos-language.txt').write_text('1')
+  external=session.out/'translation';external.mkdir()
+  for name in ['translation.txt','menu.txt']:(external/name).write_bytes((source/'translations/native/fr'/name).read_bytes())
  def transition(key,target):
   mark=len(s.read())
-  for _ in range(3):
+  for _ in range(5):
    s.press(key)
    if target in s.read()[mark:]:return
   raise RuntimeError('Not reached '+target)
  try:
+  assert menu['passed'],menu
+  s=Session(a.output/'run',Path('/workspace/squashfs-root/usr/bin/OpenBOR'),source=source,setup=setup)
   s.wait('Level Loaded:',120)
-  for _ in range(10):
+  for _ in range(12):
    s.press(40)
    if 'NATIVE_PLAYER_READY' in s.read():break
-  s.wait('NATIVE_PLAYER_READY');time.sleep(5);transition(40,'pause=2');s.capture('pause')
-  transition(81,'option=1');transition(81,'option=2');transition(4,'view=2')
-  for i in range(1,7):transition(79,'page='+str(i)+' ')
-  s.capture('guide-page-7');times=re.findall(r'NATIVE_UI pause=2 view=2 .* time=(\d+)',s.read());assert len(set(times))==1
-  for lang in range(1,7):transition(27,'lang='+str(lang)+' ')
-  s.capture('guide-japanese');transition(7,'view=0');transition(7,'pause=0');checks=['Light PACK extracted and loaded in official Linux engine','Seven animated guide pages and seven Unicode languages loaded from the package','Simulation stays frozen in guide','Return from guide and pause works'];result={'passed':True,'checks':checks,'pak_bytes':a.pak.stat().st_size}
+  s.wait('NATIVE_PLAYER_READY');time.sleep(5);transition(40,'pause=2');s.capture('pause-native-fr')
+  assert 'view=2' not in s.read(),'A custom pause guide was opened'
+  transition(40,'pause=0');time.sleep(1);transition(40,'pause=2');s.capture('pause-native-fr-again')
+  checks=['Extracted final PAK loads in official Linux engine','Native French menus/options/video and existing How To Play work','Native two-entry pause resumes and reopens; no custom pause submenu']
+  result={'passed':True,'checks':checks,'pak_bytes':a.pak.stat().st_size}
  except Exception as e:result={'passed':False,'checks':checks,'error':str(e)}
- finally:s.close();(a.output/'results.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))
+ finally:
+  if s:s.close()
+  (a.output/'results.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))
  raise SystemExit(not result['passed'])

@@ -1,3 +1,4 @@
+noslow 1
 loadingbg		data/sprites/loading/loading_temple8.png 1 -51 405 460 999 999 0
 
 music		data/music/Cascade-Gelee.ogg
@@ -28,7 +29,6 @@ order	a
 nofadeout 0
 nosave 1
 blocked 1
-noslow 1
 
 #-------- Players spawn position -----------------------------------------------
 spawn1 50 25 0 # position du joueur1 (x, z, Y)

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "languages": {
+    "fr": {
+      "language": "fr",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
+    "es": {
+      "language": "es",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
+    "pt": {
+      "language": "pt",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
+    "zh": {
+      "language": "zh",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
+    "ja": {
+      "language": "ja",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
+    "en": {
+      "language": "en",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
+    "ru": {
+      "language": "ru",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    }
+  }
+}

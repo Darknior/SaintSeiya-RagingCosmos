@@ -1,3 +1,5 @@
+#import "data/scripts/native_localization_catalog.c"
+#import "data/scripts/localization.c"
 #import "data/scripts/library/dialog_positions.c"
 void main()
 {//Draw content
@@ -69,10 +71,12 @@ void main()
 		drawbox(xBox, yBox, boxWidth, boHeight, boxLayer, color, alpha);
 		changedrawmethod(NULL(), "enabled", 0);
 		if(getglobalvar(portName) != NULL()) drawsprite(getglobalvar(portName), xPortrait, yPortrait, spriteLayer);
-		drawstring(xText, yText, font, line1, textLayer);yText = yText+lineAdd;
-		drawstring(xText, yText, font, line2, textLayer);yText = yText+lineAdd;
-		drawstring(xText, yText, font, line3, textLayer);yText = yText+lineAdd;
-		drawstring(xText, yText, font, line4, textLayer);yText = yText+lineAdd;
+        if(!localizedDialog(line1,line2,line3,line4,xText,yText,textLayer)){
+            drawstring(xText,yText,font,nativeText(line1),textLayer);yText=yText+lineAdd;
+            drawstring(xText,yText,font,nativeText(line2),textLayer);yText=yText+lineAdd;
+            drawstring(xText,yText,font,nativeText(line3),textLayer);yText=yText+lineAdd;
+            drawstring(xText,yText,font,nativeText(line4),textLayer);
+        }
 	}
 	
 	if(type == openborconstant("TYPE_TEXTBOX")){hideEntity();}

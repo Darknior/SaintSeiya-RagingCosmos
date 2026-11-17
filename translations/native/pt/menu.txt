@@ -1,0 +1,14 @@
+disablekey screenshot
+fontmbs 1 1 1 1 1 1 1 1 1 1
+renamekey attack "Ataque"
+renamekey jump "Pulo"
+renamekey special "Defesa"
+renamekey attack2 "Especial"
+renamekey attack3 "Ataque traseiro"
+renamekey attack4 "Cosmos"
+renamekey moveup "Cima"
+renamekey movedown "Baixo"
+renamekey moveleft "Esquerda"
+renamekey moveright "Direita"
+renamekey start "Start"
+renamekey esc "Sair"
