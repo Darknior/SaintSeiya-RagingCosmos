@@ -37,7 +37,10 @@
     },
     "native_soldier_callback_cases": 534,
     "native_soldier_frames_triggered": 3102,
-    "explicit_frame_advance": true
+    "explicit_frame_advance": true,
+    "input_only_combat_families": 12,
+    "linux_pack_launcher_execution": true,
+    "additional_shiryu_mud_combat": true
   },
   "native_dialogue_translation": false,
   "github_publication": "blocked: integration has no write permission",

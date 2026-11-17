@@ -1,0 +1,16 @@
+{
+  "linux_actual_launcher_execution": true,
+  "windows_actual_execution": false,
+  "windows_binary": "PE32 Intel i386",
+  "android_actual_execution": false,
+  "android_apk_abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "unavailable_runtimes": [
+    "Wine",
+    "ADB",
+    "Android emulator"
+  ],
+  "android_apk_sha256": "5760cdebbb6cd1541aee3e6fa1c6c6b09c531026ee60a974bbe303aa8a81f654"
+}

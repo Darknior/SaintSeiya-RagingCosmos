@@ -142,3 +142,26 @@ boue : 3 102 images et leurs callbacks ont été exécutés sans erreur fatale. 
 images sont avancées explicitement, sans respecter leurs délais ; la fluidité,
 les dégâts et l'IA nécessitent encore des essais de jeu ordinaires. Les copies
 de test n'altèrent ni les statistiques ni les fichiers du pack distribué.
+
+## Combats natifs et lanceur livré
+
+`tools/test_native_combat.py` observe des duels isolés avec les seules entrées
+directionnelles, attaque et garde. Aucun changement de points de vie, de dégâts,
+d'IA ou de vitesse d'animation : Seiya a vaincu les représentants des 12 familles
+et sa garde a été observée dans les 12 essais. Un essai supplémentaire de Shiryu
+contre le soldat de boue s'est également terminé par une victoire. La parade du
+soldat de boue n'a pas été observée par l'IA dans ces duels ; ses images et ses
+callbacks restent couverts par les essais explicites précédents.
+
+Attention pour interpréter l'équilibrage : `offense all 10` était déjà présent
+dans le fichier de Seiya au commit d'origine. Un coup de base à 10 inflige donc
+100 avant les autres facteurs, contre des multiplicateurs de 0,7 à 1,3 pour les
+autres héros. Cette valeur d'origine est conservée, pas normalisée. Les victoires
+du bot ne valident pas une difficulté de campagne équilibrée pour tous les héros.
+
+`tools/test_linux_launcher.py` démarre le véritable `Jouer-Linux.sh` distribué,
+l'AppImage officielle et le PAK intact, sans extraction du PAK ni FUSE : ouverture
+de la séquence vidéo et capture native réussies. Windows et Android ne sont pas
+exécutables dans cet environnement (Wine, ADB et émulateur absents). L'exécutable
+Windows est PE32 x86 ; l'APK contient ARM 32 et ARM 64 bits. Ces inspections ne
+remplacent pas les essais matériels. Rapports dans `reports/`.

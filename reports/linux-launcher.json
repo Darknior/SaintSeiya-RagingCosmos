@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "launcher": "Jouer-Linux.sh",
+  "official_appimage": true,
+  "pak_unmodified": true,
+  "no_fuse": true,
+  "native_capture": true,
+  "resolution": [
+    800,
+    480
+  ],
+  "opening_sequence_skipped": false
+}
