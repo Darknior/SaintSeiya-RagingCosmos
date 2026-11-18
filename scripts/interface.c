@@ -93,3 +93,21 @@ int interfaceDraw()
     }
     return 0;
 }
+
+void uiSyncRootSelection(void screen)
+{
+    // Read the selected native label, so keyboard repeat cannot desynchronise
+    // the existing How To Play shortcut from OpenBOR's own cursor.
+    int row;int x;int y;int gold=rgbcolor(252,242,48);
+    for(row=0;row<5;row++){
+        void text="Start Game";
+        if(row==1)text="Options";if(row==2)text="How To Play";
+        if(row==3)text="Hall Of Fame";if(row==4)text="Quit";
+        text=nativeText(text);
+        int left=(openborvariant("hresolution")-strwidth(text,1))/2;
+        int top=openborvariant("vresolution")/2+(row+2)*15;
+        for(y=0;y<14;y++)for(x=0;x<13;x++){
+            if(getgfxproperty(screen,"pixel",left+x,top+y)==gold){setglobalvar("ui_menu",row);return;}
+        }
+    }
+}

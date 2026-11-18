@@ -15,7 +15,6 @@
   "native_mbs_encoding": true,
   "dialogue_renderer": "native drawstring, font 5",
   "dialogue_text_images": 0,
-  "menu_font_tile_pixels": 10,
   "root_menu_display_scale": 1.6,
   "tables": {
     "en": {
@@ -47,5 +46,10 @@
       "menu_lines": 14
     }
   },
-  "translation_provenance": "Google Translate; French dialogue pages reviewed, UI labels and Saint Seiya terminology corrected; other locales need linguistic review; placeholders and layouts checked"
+  "translation_provenance": "Google Translate; French dialogue pages reviewed, UI labels and Saint Seiya terminology corrected; other locales need linguistic review; placeholders and layouts checked",
+  "menu_font_point_size": 10,
+  "menu_font_cell": [
+    13,
+    14
+  ]
 }

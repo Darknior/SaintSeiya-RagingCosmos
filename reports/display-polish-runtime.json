@@ -1,0 +1,15 @@
+{
+  "original_red_star_pixels": 63,
+  "original_logo_rgb_preserved_on_20_frames": true,
+  "frame_color": [
+    255,
+    255,
+    255
+  ],
+  "display_name_example": "Seiya",
+  "internal_model_example": "seiya",
+  "name_refresh_after_alias_change": true,
+  "control_mapping_screens_reviewed": true,
+  "native_control_capture": "control-keys.png",
+  "native_font_metrics": "native-font-metrics.json"
+}

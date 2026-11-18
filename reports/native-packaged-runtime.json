@@ -3,7 +3,8 @@
   "checks": [
     "Extracted final PAK loads in official Linux engine",
     "Native French menus/options/video and existing How To Play work",
+    "Capitalized Seiya label retains internal seiya model ID",
     "Native two-entry pause resumes and reopens; no custom pause submenu"
   ],
-  "pak_bytes": 498468499
+  "pak_bytes": 498649089
 }

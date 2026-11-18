@@ -151,6 +151,8 @@ void menuScreen()
 	float xMenu		= -216;
 
 	float yMenu		= 0;
+    if(openborvariant("in_options")){yMenu=30;xMenu=-170;}
+    if(openborvariant("in_control_options"))yMenu=60;
 	float xBar		= -100;
 	float yBar		= 0;
 	int z			= 1000000001;
@@ -183,6 +185,7 @@ void menuScreen()
             if(getglobalvar("menu_text_screen")==NULL())setglobalvar("menu_text_screen",allocscreen(openborvariant("hresolution"),openborvariant("vresolution")));
             clearscreen(getglobalvar("menu_text_screen"));
             drawspriteq(getglobalvar("menu_text_screen"),0,openborconstant("MAX_INT")/10,openborconstant("MAX_INT"),0,0);
+            uiSyncRootSelection(getglobalvar("menu_text_screen"));
             changedrawmethod(NULL(),"reset",1);changedrawmethod(NULL(),"enabled",1);
             changedrawmethod(NULL(),"scalex",410);changedrawmethod(NULL(),"scaley",410);changedrawmethod(NULL(),"transbg",1);
             // A blue edge around the native white/gold lettering, root only.

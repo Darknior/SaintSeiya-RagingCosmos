@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Native menu translation tables, MBS glyph banks and localized dialogue text.
-Retains native menu layout/input and all original ASCII glyphs. No engine fork.
+Retains native menu layout/input; shares typeface and metrics across ASCII and accents.
 """
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
-import json,re,shutil,hashlib,unicodedata
+import json,re,shutil,hashlib,unicodedata,math
 from fontTools.ttLib import TTFont
 ROOT=Path(__file__).resolve().parents[1];CODES=['en','fr','es','pt','zh','ru','ja'];SOURCE=json.loads((ROOT/'translations/native-source.json').read_text())
 FORMAT=re.compile(r'%(?:[-+0 #]*\d*(?:\.\d+)?[a-zA-Z]|%)')
@@ -96,34 +96,34 @@ def main():
   if 0x3000<=n<=0x30ff or 0xff00<=n<=0xffef:return 'ja'
   return 'fr'
  cmap={
-  'fr':TTFont('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf').getBestCmap(),
+  'fr':TTFont('/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf').getBestCmap(),
   'ja':TTFont('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',fontNumber=0).getBestCmap(),
   'zh':TTFont('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',fontNumber=2).getBestCmap()}
  missing=[ch for ch in glyphs if ord(ch) not in cmap[glyph_family(ch)]]
  assert not missing,('unsupported Unicode characters',missing)
  (ROOT/'reports/unicode-font-coverage.json').write_text(json.dumps({'required_non_ascii_glyphs':len(glyphs),'missing':missing,'french_accent_sample':'Système','cjk_punctuation_sample':'、。々「」！，：；？～','cjk_punctuation_font':'Noto Sans CJK','normalization':'NFC'},ensure_ascii=False,indent=2)+'\n')
- # The native engine MBS reader consumes two bytes for non-ASCII glyphs.
- # Both are high bytes, avoiding quotes, percent signs and control characters.
+ # ASCII and accented Latin/Cyrillic use one face, point size and baseline.
+ # Four extra vertical pixels retain capitals' accents and cedillas without
+ # shrinking the character body or clipping its descenders.
+ font_metrics={}
  for number in range(10):
-  stem='font' if number==0 else 'font'+str(number+1);original=ROOT/'sprites'/f'{stem}.gif';bank=ROOT/'sprites'/stem;bank.mkdir(exist_ok=True);
-  tile=Image.open(original).width//16
-  shutil.copyfile(original,bank/'00.gif')
+  stem='font' if number==0 else 'font'+str(number+1);original=ROOT/'sprites'/f'{stem}.gif';bank=ROOT/'sprites'/stem;bank.mkdir(exist_ok=True)
+  tile=Image.open(original).width//16;cell_width=math.ceil(tile*1.25) if number<4 else tile;cell_height=tile+4;baseline=tile
   ink=[(245,244,242),(252,242,48),(106,149,219),(106,149,219),(56,240,19),(255,255,255),(4,137,218),(251,250,247),(224,208,107),(251,75,87)][number]
-  for first in sorted({b[0] for b in glyphs.values()}):
-   im=Image.new('RGBA',(tile*16,tile*16));d=ImageDraw.Draw(im)
-   for ch,sequence in glyphs.items():
-    if sequence[0]!=first:continue
-    second=sequence[1];x=(second%16)*tile;y=(second//16)*tile;f=font(glyph_family(ch),max(7,tile-1))
-    glyph=Image.new('RGBA',(tile,tile));gd=ImageDraw.Draw(glyph)
-    cjk_punctuation=0x3000<=ord(ch)<=0x303f or 0xff00<=ord(ch)<=0xffef
-    if cjk_punctuation:
-     gd.text((1,tile-1),ch,font=f,fill=(32,24,40),anchor='ls');gd.text((0,tile-2),ch,font=f,fill=ink,anchor='ls')
-    else:
-     gd.text((1,1),ch,font=f,fill=(32,24,40),anchor='lt');gd.text((0,0),ch,font=f,fill=ink,anchor='lt')
-    im.alpha_composite(glyph,(x,y))
-   d.point((0,0),fill=ink) # Token zero carries the palette for the MBS bank.
-   indexed(im,bank/f'{first:02x}.png')
-   (bank/f'{first:02x}.gif').unlink(missing_ok=True)
+  native_fonts={family:ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf',tile) if family=='fr' else font(family,tile) for family in ('fr','ja','zh')}
+  font_metrics[stem]={'point_size':tile,'latin_face':'DejaVu Sans Condensed Bold','cell':[cell_width,cell_height],'latin_horizontal_scale':cell_width/tile,'baseline':baseline,'same_ascii_and_accent_face':True}
+  for first in [0]+sorted({v[0] for v in glyphs.values()}):
+   im=Image.new('RGBA',(cell_width*16,cell_height*16))
+   entries=[(chr(i),i) for i in range(32,127)] if first==0 else [(ch,seq[1]) for ch,seq in glyphs.items() if seq[0]==first]
+   for ch,second in entries:
+    family=glyph_family(ch);f=native_fonts[family];x=(second%16)*cell_width;y=(second//16)*cell_height
+    token=Image.new('RGBA',(tile,cell_height));draw=ImageDraw.Draw(token)
+    shift=max(0,-f.getbbox(ch,anchor='ls')[0]);draw.text((shift+1,baseline+1),ch,font=f,fill=(32,24,40),anchor='ls');draw.text((shift,baseline),ch,font=f,fill=ink,anchor='ls')
+    if family=='fr':token=token.resize((cell_width,cell_height),Image.Resampling.NEAREST)
+    im.alpha_composite(token,(x,y))
+   ImageDraw.Draw(im).point((0,0),fill=ink)
+   indexed(im,bank/f'{first:02x}.png');(bank/f'{first:02x}.gif').unlink(missing_ok=True)
+ (ROOT/'reports/native-font-metrics.json').write_text(json.dumps(font_metrics,indent=2)+'\n')
  # Engine menu tables retain all stock menus/options and printf arguments.
  for code,d in catalogues.items():
   dest=ROOT/'translations/native'/code;dest.mkdir(exist_ok=True,parents=True);rows=[]
@@ -142,10 +142,10 @@ def main():
  font_bank=ROOT/'sprites/font6';sheets={}
  def advance(ch):
   first,second=(0,ord(ch)) if ord(ch)<128 else glyphs[ch]
-  if first not in sheets:sheets[first]=Image.open(font_bank/('00.gif' if first==0 else f'{first:02x}.png'))
-  sheet=sheets[first];tile=sheet.width//16
-  token=sheet.crop(((second%16)*tile,(second//16)*tile,(second%16+1)*tile,(second//16+1)*tile))
-  xs=[x for y in range(tile) for x in range(tile) if token.getpixel((x,y))!=0]
+  if first not in sheets:sheets[first]=Image.open(font_bank/('00.png' if first==0 else f'{first:02x}.png'))
+  sheet=sheets[first];tile=sheet.width//16;cell_height=sheet.height//16
+  token=sheet.crop(((second%16)*tile,(second//16)*cell_height,(second%16+1)*tile,(second//16+1)*cell_height))
+  xs=[x for y in range(cell_height) for x in range(tile) if token.getpixel((x,y))!=0]
   width=max(xs)-min(xs)+1+tile//10 if xs else 0
   return width if width>1 else tile//3
  advances={ch:advance(ch) for ch in {c for d in catalogues.values() for text in d.values() for c in text}}
@@ -177,7 +177,7 @@ def main():
   if code in ('zh','ja'):
    assert all(line[0] not in closing for line in lines[1:]),(code,text,'CJK line starts with closing punctuation')
   return lines
- layouts={code+':'+key:{'font':5,'line_height':15,'lines':text_lines(value,code),'text':value} for code,d in catalogues.items() for key,value in d.items() if key.startswith(('dialog:','mu:'))}
+ layouts={code+':'+key:{'font':5,'line_height':16,'lines':text_lines(value,code),'text':value} for code,d in catalogues.items() for key,value in d.items() if key.startswith(('dialog:','mu:'))}
  # Script strings use the exact same glyph encoding as stock engine labels.
  c=b'// Generated native localization; do not edit by hand.\n#ifndef NATIVE_LOCALIZATION_CATALOG\n#define NATIVE_LOCALIZATION_CATALOG 1\n'
  c+=b'void locCode(int n){\n'+b''.join(b' if(n=='+str(i).encode()+b')return "'+code.encode()+b'";\n' for i,code in enumerate(CODES))+b' return "en";}\n'
@@ -197,7 +197,21 @@ def main():
  kinds={'soldier_blue':'Soldier','soldier_short':'Light Soldier','soldier_basic':'Guard','soldier_shield':'Shield Guard','soldier_muscles':'Strong Soldier','soldier_fat':'Heavy Guard','soldier_base':'Soldier','soldier_purple':'Elite Soldier','soldier_stick':'Staff Guard','soldier_big':'Giant Soldier','soldier_mud':'Mud Soldier','soldier_troll':'Troll Soldier'}
  c+=b'void nativeSoldierLabel(void model){\n'
  for model,path in soldiers():c+=b' if(model=='+quote(model)+b')return nativeText('+quote(kinds[path.parent.name])+b');\n'
- c+=b' return NULL();}\n#endif\n';(ROOT/'scripts/native_localization_catalog.c').write_bytes(c)
+ c+=b' return NULL();}\n'
+ display={}
+ for path in sorted((ROOT/'chars').glob('*/00_*.txt')):
+  data=path.read_text(errors='replace');model=re.search(r'^name\s+(\S+)',data,re.M);kind=re.search(r'^type\s+(\S+)',data,re.M)
+  if model and kind and kind[1] in ('player','enemy','npc') and not path.parent.name.startswith('soldier_'):
+   label=path.parent.name.replace('_',' ').title();display[model[1]]=label
+ for hero in ('seiya','shiryu','hyoga','shun','ikki'):display[hero+'S']=hero.capitalize()
+ for path in (ROOT/'levels').glob('*.txt'):
+  for alias in re.findall(r'^alias\s+([^#\n]+)',path.read_text(errors='replace'),re.M):
+   alias=alias.strip()
+   if alias and alias[0].islower() and alias.isascii():display.setdefault(alias,alias[0].upper()+alias[1:])
+ c+=b'void nativeDisplayName(void value){\n'
+ for model,label in display.items():c+=b' if(value=='+quote(model)+b')return '+quote(label)+b';\n'
+ c+=b' return value;}\n#endif\n';(ROOT/'scripts/native_localization_catalog.c').write_bytes(c)
+ (ROOT/'reports/character-display-names.json').write_text(json.dumps(display,ensure_ascii=False,indent=2)+'\n')
  # Paragraph catalogue: one shared native font, wrapped once at build time.
  c=(ROOT/'scripts/native_localization_catalog.c').read_bytes();assert c.endswith(b'#endif\n');c=c[:-7]
  c+=b'void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");\n'
@@ -227,7 +241,7 @@ def main():
   im=Image.open(original);bg=im.getpixel((0,0));ImageDraw.Draw(im).rectangle((24,15,298,95),fill=bg)
   im.save(mu_base/original.name,bits=8)
  (ROOT/'reports/native-localization-layouts.json').write_text(json.dumps(layouts,ensure_ascii=False,indent=2)+'\n')
- (ROOT/'reports/native-localization.json').write_text(json.dumps({'languages':CODES,'entries_per_language':len(SOURCE),'dialogue_pages':sum(k.startswith('dialog:') for k in SOURCE),'mu_tutorials':sum(k.startswith('mu:') for k in SOURCE),'unicode_glyphs':len(glyphs),'native_mbs_encoding':True,'dialogue_renderer':'native drawstring, font 5','dialogue_text_images':0,'menu_font_tile_pixels':10,'root_menu_display_scale':1.6,'tables':metadata,'translation_provenance':'Google Translate; French dialogue pages reviewed, UI labels and Saint Seiya terminology corrected; other locales need linguistic review; placeholders and layouts checked'},ensure_ascii=False,indent=2)+'\n')
+ (ROOT/'reports/native-localization.json').write_text(json.dumps({'languages':CODES,'entries_per_language':len(SOURCE),'dialogue_pages':sum(k.startswith('dialog:') for k in SOURCE),'mu_tutorials':sum(k.startswith('mu:') for k in SOURCE),'unicode_glyphs':len(glyphs),'native_mbs_encoding':True,'dialogue_renderer':'native drawstring, font 5','dialogue_text_images':0,'menu_font_point_size':10,'menu_font_cell':[13,14],'root_menu_display_scale':1.6,'tables':metadata,'translation_provenance':'Google Translate; French dialogue pages reviewed, UI labels and Saint Seiya terminology corrected; other locales need linguistic review; placeholders and layouts checked'},ensure_ascii=False,indent=2)+'\n')
  (ROOT/'translations/native-glyphs.json').write_text(json.dumps({ch:list(b) for ch,b in glyphs.items()},ensure_ascii=False,indent=2)+'\n')
  print('Native localization generated:',len(SOURCE),'entries x7;',len(glyphs),'glyphs')
 if __name__=='__main__':main()

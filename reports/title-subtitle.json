@@ -3,6 +3,7 @@
   "integration": "upright blue/silver RAGING and gold COSMOS subtitle; native logo, tower and twenty animation frames retained",
   "source_sha256": "f6076b6e301b717c73775d4b9b779bacceff828869b88cca35604cdfd41c9fc9",
   "native_base": "110c8b5dc1d60593dd49ba5dee70c367f5bc7ee7",
+  "native_logo_and_red_star_rgb_preserved": true,
   "patch_source": [
     45,
     132,

@@ -48,7 +48,9 @@ Clavier par defaut : fleches, A=Attaque, D=Saut, Entree=Start, F=Block.
 Commandes reconfigurables dans Options / Control Options.
 Guide anime : Comment jouer, dans le menu principal natif.
 Dialogues et tutoriel de Mu : vrais textes dans la police native partagee,
-sans images de texte. Encadres conserves ; ponctuation liee au mot precedent.
+sans images de texte. Encadres blancs ; ponctuation liee au mot precedent.
+Etoile rouge du logo original preservee. Noms affiches capitalises (Seiya).
+Lettres et accents : meme police, taille et ligne de base.
 Menu agrandi avec liseres bleus et selection doree. Sous-titre Raging Cosmos
 droit, bleu/argent et or comme Saint Seiya. Accents francais verifies : Systeme
 s’ecrit bien Système dans les menus du jeu.

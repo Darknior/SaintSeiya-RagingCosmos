@@ -38,7 +38,11 @@
       "silver",
       "gold"
     ],
-    "french_system_label": "Système"
+    "french_system_label": "Système",
+    "dialogue_frame_color": "white",
+    "capitalized_character_display_names": true,
+    "original_red_logo_star": true,
+    "matched_ascii_and_accent_metrics": true
   },
   "verification": {
     "unique_stage_load_and_short_combat": 45,

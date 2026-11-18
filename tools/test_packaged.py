@@ -18,6 +18,14 @@ if __name__=='__main__':
  menu=run('fr',a.output/'menus',source=source);s=None;checks=[]
  def setup(session):
   save=session.out/'Saves/bor';save.mkdir(parents=True,exist_ok=True);(save/'ragingcosmos-language.txt').write_text('1')
+  u=session.out/'data/scripts/update.c';u.write_text(u.read_text().replace(' nativeProbe();',' nativeProbe();nativeNameProbe();',1)+"""
+void nativeNameProbe(){void p=getplayerproperty(0,"entity");if(p==NULL())return;
+ if(getglobalvar("name_probe")==NULL() && getentityproperty(p,"name")=="Seiya"){
+ log("NATIVE_LABEL Seiya/"+getentityproperty(p,"defaultname")+"\\n");changeentityproperty(p,"name","seiya");setglobalvar("name_probe",1);
+ }else if(getglobalvar("name_probe")==1 && getentityproperty(p,"name")=="Seiya"){
+ log("NATIVE_NAME_REFRESH_OK\\n");setglobalvar("name_probe",2);
+ }}
+""")
   external=session.out/'translation';external.mkdir()
   for name in ['translation.txt','menu.txt']:(external/name).write_bytes((source/'translations/native/fr'/name).read_bytes())
  def transition(key,target):
@@ -33,10 +41,10 @@ if __name__=='__main__':
   for _ in range(12):
    s.press(40)
    if 'NATIVE_PLAYER_READY' in s.read():break
-  s.wait('NATIVE_PLAYER_READY');time.sleep(5);transition(40,'pause=2');s.capture('pause-native-fr')
+  s.wait('NATIVE_PLAYER_READY');s.wait('NATIVE_LABEL Seiya/seiya');s.wait('NATIVE_NAME_REFRESH_OK');time.sleep(5);transition(40,'pause=2');s.capture('pause-native-fr')
   assert 'view=2' not in s.read(),'A custom pause guide was opened'
   transition(40,'pause=0');time.sleep(1);transition(40,'pause=2');s.capture('pause-native-fr-again')
-  checks=['Extracted final PAK loads in official Linux engine','Native French menus/options/video and existing How To Play work','Native two-entry pause resumes and reopens; no custom pause submenu']
+  checks=['Extracted final PAK loads in official Linux engine','Native French menus/options/video and existing How To Play work','Capitalized Seiya label retains internal seiya model ID','Native two-entry pause resumes and reopens; no custom pause submenu']
   result={'passed':True,'checks':checks,'pak_bytes':a.pak.stat().st_size}
  except Exception as e:result={'passed':False,'checks':checks,'error':str(e)}
  finally:

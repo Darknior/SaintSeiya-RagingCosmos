@@ -17,7 +17,7 @@ void main()
 	int yPos			= y-openborvariant("ypos");
 	int portraitLeft	= xPos+21;
 	int portraitRight	= xPos+302;
-	int yPortrait		= yPos+27;
+	int yPortrait		= yPos+34;
 	int textLeft		= xPos+27;
 	int textRight		= xPos+114;
 	int lineStart		= yPos+33;
@@ -29,7 +29,7 @@ void main()
 	int channel			= 190;
 	int color			= 0;
 	int boxWidth		= 376;
-	int boHeight		= 91;
+	int boHeight		= 103;
 	int xBox			= xPos+12;
 	int yBox			= yPos+20;
 	int font			= 5;

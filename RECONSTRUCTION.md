@@ -38,13 +38,20 @@ anciennes archives ou des dessins générés. Moteur officiel stable vérifié :
   Menus natifs et réglages, 107 pages de dialogues, instructions de Mû,
   messages d’objets et HUD traduits. Polices natives étendues en MBS pour
   accents, cyrillique et CJK. Dialogues et tutoriel de Mû rendus avec la police
-  native partagée, sans images de texte ; encadrés visibles et ponctuation liée au mot précédent,
-  cinq lignes au maximum avec les
+  native partagée, sans images de texte ; encadrés blancs visibles et ponctuation liée au mot précédent,
+  cinq lignes au maximum, espacées de 16 pixels, avec les
   avances proportionnelles exactes du moteur. Menu principal agrandi à 160 % en réutilisant le rendu natif,
   sans agrandir les réglages, le HUD ni la pause. Sous-titre Raging Cosmos droit, bleu/argent et or, intégré sous le logo
   natif sur les vingt images de son animation. Le menu principal conserve ses lettres
   blanches et sa sélection dorée avec un contour bleu plus visible. « Système »
   utilise bien son è ; textes normalisés en Unicode NFC avant encodage MBS.
+  Lettres ASCII, lettres accentuées et cyrilliques partagent la même police,
+  la même taille et la même ligne de base dans chaque style (DejaVu Sans Condensed Bold).
+  Les marges du glyphe réservent la place des accents et cédilles ; les écrans
+  de réglage sont repositionnés pour conserver toutes leurs lignes visibles. Le logo conserve
+  exactement ses pixels et son étoile rouge d’origine ; seul le sous-titre
+  utilise la palette native. Les noms affichés commencent par une majuscule
+  (Seiya, Shiryu, etc.), avec identifiants internes inchangés.
   Les ponctuations chinoises et japonaises utilisent Noto Sans CJK ; contrôle
   des tables de caractères des polices : 1 280 glyphes non ASCII, aucun manquant.
   Licences jointes.

@@ -42,7 +42,7 @@ void localizationExport()
 void localizedTextFrame(int x,int y,int width,int height,int layer)
 {
     drawbox(x,y,width,height,layer,rgbcolor(0,0,0),6);
-    int edge=rgbcolor(224,196,120);
+    int edge=rgbcolor(255,255,255);
     drawbox(x-1,y-1,width+2,1,layer,edge,0);
     drawbox(x-1,y+height,width+2,1,layer,edge,0);
     drawbox(x-1,y,1,height,layer,edge,0);
@@ -58,7 +58,7 @@ void localizedParagraph(void key,int x,int y,int layer)
     }
     for(i=0;i<5;i++){
         void text=getglobalvar("loc_line_"+i);
-        if(text!="")drawstring(x,y+i*15,5,text,layer);
+        if(text!="")drawstring(x,y+i*16,5,text,layer);
     }
 }
 int localizedDialog(void a,void b,void c,void d,int x,int y,int layer)
@@ -72,10 +72,13 @@ void localizeFighterLabels()
 {
     int i;for(i=0;i<openborvariant("ent_max");i++){
         void entity=getentity(i);
-        if(entity==NULL() || !getentityproperty(entity,"exists") || getentityproperty(entity,"type")!=openborconstant("TYPE_ENEMY") || getentityvar(entity,"loc_named")==1)continue;
+        if(entity==NULL() || !getentityproperty(entity,"exists") || (getentityproperty(entity,"type")!=openborconstant("TYPE_ENEMY") && getentityproperty(entity,"type")!=openborconstant("TYPE_PLAYER") && getentityproperty(entity,"type")!=openborconstant("TYPE_NPC")))continue;
         void model=getentityproperty(entity,"defaultname");
+        void current=getentityproperty(entity,"name");
+        if(getentityvar(entity,"loc_named")==1 && getentityvar(entity,"loc_model")==model && getentityvar(entity,"loc_display")==current)continue;
         if(getentityproperty(entity,"name")==model){void label=nativeSoldierLabel(model);if(label!=NULL())changeentityproperty(entity,"name",label);}
-        setentityvar(entity,"loc_named",1);
+        changeentityproperty(entity,"name",nativeDisplayName(getentityproperty(entity,"name")));
+        setentityvar(entity,"loc_named",1);setentityvar(entity,"loc_model",model);setentityvar(entity,"loc_display",getentityproperty(entity,"name"));
     }
 }
 void localizeSceneTitles()

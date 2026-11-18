@@ -1,15 +1,15 @@
 {
   "passed": true,
   "languages": {
-    "fr": {
-      "language": "fr",
+    "ja": {
+      "language": "ja",
       "passed": true,
       "menu_files_exported": true,
       "native_root_options_video": true,
       "existing_howto_entry": true
     },
-    "en": {
-      "language": "en",
+    "fr": {
+      "language": "fr",
       "passed": true,
       "menu_files_exported": true,
       "native_root_options_video": true,
@@ -22,8 +22,8 @@
       "native_root_options_video": true,
       "existing_howto_entry": true
     },
-    "pt": {
-      "language": "pt",
+    "en": {
+      "language": "en",
       "passed": true,
       "menu_files_exported": true,
       "native_root_options_video": true,
@@ -36,15 +36,15 @@
       "native_root_options_video": true,
       "existing_howto_entry": true
     },
-    "ru": {
-      "language": "ru",
+    "pt": {
+      "language": "pt",
       "passed": true,
       "menu_files_exported": true,
       "native_root_options_video": true,
       "existing_howto_entry": true
     },
-    "ja": {
-      "language": "ja",
+    "ru": {
+      "language": "ru",
       "passed": true,
       "menu_files_exported": true,
       "native_root_options_video": true,
@@ -70,5 +70,15 @@
     "fr",
     "zh",
     "ja"
-  ]
+  ],
+  "latest_uniform_font_checks": [
+    "ja",
+    "fr",
+    "es",
+    "en",
+    "zh",
+    "pt",
+    "ru"
+  ],
+  "native_control_keys_fit": true
 }

@@ -18,6 +18,6 @@ void main()
     int layer=getentityproperty(self,"setlayer")+1;
     setdrawmethod(NULL(),0,256,256,0,0,0,0);
     int lang=getglobalvar("ui_lang");if(lang==NULL())lang=0;
-    localizedTextFrame(x+18,y+8,282,94,layer+1);
+    localizedTextFrame(x+18,y+8,282,100,layer+1);
     localizedParagraph("mu:"+key,x+30,y+18,layer+2);
 }

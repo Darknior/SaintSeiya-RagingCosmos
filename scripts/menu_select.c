@@ -1,3 +1,4 @@
+#import "data/scripts/native_localization_catalog.c"
 #import "data/scripts/library/safe_expire.c"
 void main()
 {
@@ -117,7 +118,7 @@ void storyInfo(void vName, int pIndex)
 		if(pNumber == 3 || pNumber == 4){xName = xName+1;}
 		
 		//DRAW CHARACTER'S INFO
-		str = vName;
+		str = nativeDisplayName(vName);
 		if(pNumber == 1){drawstring(xName-(strwidth(str, font0)/2), yName, font0, str);}
 		if(pNumber == 2){drawstring(xName-(strwidth(str, font0)/2), yName+yDif, font0, str);}
 		if(pNumber == 3){drawstring(hRes-xName-(strwidth(str, font0)/2), yName, font0, str);}
