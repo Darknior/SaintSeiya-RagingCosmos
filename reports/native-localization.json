@@ -8,10 +8,10 @@
     "ru",
     "ja"
   ],
-  "entries_per_language": 393,
+  "entries_per_language": 400,
   "dialogue_pages": 107,
   "mu_tutorials": 12,
-  "unicode_glyphs": 1280,
+  "unicode_glyphs": 1281,
   "native_mbs_encoding": true,
   "dialogue_renderer": "native drawstring, font 5",
   "dialogue_text_images": 0,
@@ -23,31 +23,31 @@
   "root_menu_display_scale": 1.6,
   "tables": {
     "en": {
-      "translation_lines": 548,
+      "translation_lines": 562,
       "menu_lines": 14
     },
     "fr": {
-      "translation_lines": 548,
+      "translation_lines": 562,
       "menu_lines": 14
     },
     "es": {
-      "translation_lines": 548,
+      "translation_lines": 562,
       "menu_lines": 14
     },
     "pt": {
-      "translation_lines": 548,
+      "translation_lines": 562,
       "menu_lines": 14
     },
     "zh": {
-      "translation_lines": 548,
+      "translation_lines": 562,
       "menu_lines": 14
     },
     "ru": {
-      "translation_lines": 548,
+      "translation_lines": 562,
       "menu_lines": 14
     },
     "ja": {
-      "translation_lines": 548,
+      "translation_lines": 562,
       "menu_lines": 14
     }
   },

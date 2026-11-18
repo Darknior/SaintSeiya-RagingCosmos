@@ -1819,5 +1819,26 @@
   },
   "Attack to go": {
     "text": "Attack to go"
+  },
+  "Versus": {
+    "text": "Versus"
+  },
+  "Versus Training": {
+    "text": "Versus Training"
+  },
+  "Double KO": {
+    "text": "Double KO"
+  },
+  "Wins": {
+    "text": "Wins"
+  },
+  "Attack: rematch": {
+    "text": "Attack: rematch"
+  },
+  "P2: press Start": {
+    "text": "P2: press Start"
+  },
+  "Versus_Training": {
+    "text": "Versus Training"
   }
 }

@@ -41,6 +41,13 @@ void zoom()
 
 void main(){//MAIN START
     if(pauseLevelSelect())return;
+    if(openborvariant("in_titlescreen") || openborvariant("in_menuscreen")){
+        setglobalvar("versus_round_started",NULL());
+        setglobalvar("versus_score1",NULL());
+        setglobalvar("versus_score2",NULL());
+        setglobalvar("versus_result_until",NULL());
+        setglobalvar("versus_winner",NULL());
+    }
     if(openborvariant("in_titlescreen") && !openborvariant("in_level") && getglobalvar("clearAll")!=NULL()){
         uiRelease();clearlocalvar();clearglobalvar();
     }

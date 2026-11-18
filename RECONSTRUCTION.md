@@ -233,3 +233,16 @@ le boss est créé après l'arrivée du joueur dans une copie privée, afin que 
 intro immédiate ne précède pas la connexion du joueur au premier niveau de test.
 Les délais et images du dialogue restent natifs. Le rapport est
 `reports/boss-dialog-release.json`.
+
+### Essai Versus
+
+Dans le menu natif des modes, **Versus** ouvre le duel local à deux joueurs
+et **Entraînement Versus** ouvre l'arène solo. Avant de lancer un duel,
+attribuer au joueur 2 sa manette ou ses touches dans Options → Commandes.
+Les deux modes proposent Seiya, Shiryu, Hyoga et Shun.
+
+Dans le duel, la première personne à gagner deux manches remporte le match.
+Une manche dure au plus 99 secondes. Au temps écoulé, la vie restante départage
+les joueurs. **Attaque** relance un match après le résultat.
+L'entraînement propose un mannequin immobile qui revient après un KO et
+une réserve de Cosmos qui se remplit automatiquement.

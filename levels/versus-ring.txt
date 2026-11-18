@@ -1,0 +1,16 @@
+background  data/bgs/temple7A-road/background.png
+panel       data/bgs/temple7A-road/panel.png
+order       a
+music       data/music/temple1.ogg
+direction   both
+notime      1
+noslow      1
+spawn1      260 2 0
+spawn2      540 2 0
+load        malesoldier
+updatedscript data/scripts/versus.c
+
+# The match script controls progression. Keep the native exit outside the ring.
+spawn       versus_ring_anchor
+coords      1050 2
+at          0

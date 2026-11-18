@@ -927,3 +927,36 @@ file        data/levels/temple13D-boss.txt
 branch      gameover
 scene       data/scenes/gameover.txt
 end
+
+# Local duel prototype. Appended to preserve existing save slots and mode IDs.
+set         Versus
+maxplayers  2
+lives       3
+credits     0
+disablehof  1
+noshowcomplete 1
+noshowgameover 1
+typemp      0
+skipselect
+select      data/select-versus.txt
+branch      versus_ring
+z           412 416
+file        data/levels/versus-ring.txt
+# Keep a following entry so OpenBOR can resolve the next round's branch jump.
+branch      versus_round_fallback
+file        data/levels/versus-ring.txt
+end
+
+set         Versus_Training
+maxplayers  1
+lives       3
+disablehof  1
+noshowcomplete 1
+noshowgameover 1
+typemp      0
+skipselect
+select      data/select-versus.txt
+branch      versus_training
+z           412 416
+file        data/levels/versus-ring.txt
+end

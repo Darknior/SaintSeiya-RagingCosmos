@@ -392,5 +392,12 @@
   "Troll Soldier": "Солдат-тролль",
   "Level Select": "Выбор уровня",
   "Left / Right to choose": "Влево / Вправо для выбора",
-  "Attack to go": "Атака для перехода"
+  "Attack to go": "Атака для перехода",
+  "Versus": "Дуэль",
+  "Versus Training": "Тренировка",
+  "Double KO": "Двойной нокаут",
+  "Wins": "Победа",
+  "Attack: rematch": "Атака: реванш",
+  "P2: press Start": "Игрок 2: нажмите Старт",
+  "Versus_Training": "Тренировка"
 }

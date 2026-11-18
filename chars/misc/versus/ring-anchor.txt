@@ -1,0 +1,8 @@
+name        versus_ring_anchor
+type        endlevel
+subject_to_gravity 0
+
+anim idle
+    delay 100
+    offset 0 0
+    frame data/chars/misc/empty.gif

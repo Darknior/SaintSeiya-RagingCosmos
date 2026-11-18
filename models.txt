@@ -688,3 +688,5 @@ know balance_dialog data/bgs/temple7D-boss/balance_dialog/balance_dialog.txt
 know balance_dialog2 data/bgs/temple7D-boss/balance_dialog/balance_dialog2.txt
 
 know Batu data/chars/misc/rocks/rocks/batu.txt
+
+know versus_ring_anchor data/chars/misc/versus/ring-anchor.txt

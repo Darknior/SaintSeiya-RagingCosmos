@@ -46,6 +46,17 @@ def main():
   for src,key in [('Continue','continue'),('End Game','quit'),('Pause','pause')]:d[src]=old['ui'][key]
   for src,text in zip(['Attack','Jump','Block','Special','Back Attack','Charge'],KEYS[code]):d[src]=text
   if code=='fr':d.update({'Control Options':'Commandes','Control Options...':'Commandes...','Video Options':'Affichage','Video Options...':'Affichage...','Sound Options':'Son','Sound Options...':'Son...','New Game':'Nouvelle partie','Load Game':'Charger une partie','Game Mode':'Mode de jeu','PRESS START':'APPUYEZ SUR START','Press Start':'Appuyez sur Start'})
+  versus_labels={
+   'en':['Versus', 'Versus Training', 'Double KO', 'Wins', 'Attack: rematch', 'P2: press Start'],
+   'fr':['Versus', 'Entraînement Versus', 'Double KO', 'Victoire', 'Attaque : revanche', 'J2 : appuie sur Start'],
+   'es':['Versus', 'Entrenamiento Versus', 'Doble KO', 'Victoria', 'Ataque: revancha', 'J2: pulsa Start'],
+   'pt':['Versus', 'Treino Versus', 'Duplo KO', 'Vitória', 'Ataque: revanche', 'J2: aperte Start'],
+   'zh':['对战', '对战训练', '双败', '胜利', '攻击键再战', '玩家2按开始'],
+   'ru':['Дуэль', 'Тренировка', 'Двойной нокаут', 'Победа', 'Атака: реванш', 'Игрок 2: нажмите Старт'],
+   'ja':['対戦', '対戦トレーニング', 'ダブルKO', '勝利', '攻撃で再戦', 'P2はスタートを押す'],
+  }
+  d.update(zip(versus_labels['en'],versus_labels[code]))
+  d['Versus_Training']=d['Versus Training']
   for key,entry in SOURCE.items():
    assert key in d,(code,key,'missing translation')
    if '%' in key and key!='COSMOS 100% UP':assert FORMAT.findall(d[key])==FORMAT.findall(entry['text']),(code,key,'printf mismatch')

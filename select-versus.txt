@@ -1,0 +1,3 @@
+music           data/music/prologue.ogg 1
+background      data/bgs/select/select0.png
+allowselect     seiya shiryu hyoga shun
