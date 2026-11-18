@@ -51,19 +51,19 @@ p4icon      647   7
 p4smenu     440 999 -10000 -10000 -10000 -10000
 p4namej     -1000 -1000  -1000 -1000  -1000 -1000 
 
-e1name      35 131
+e1name      35 129
 e1life      999 999 #6  140
 e1icon      7  115
 
-e2name      235 131
+e2name      235 129
 e2life      999 999 #206 140
 e2icon      207 115
 
-e3name      475 131
+e3name      475 129
 e3life      999 999 #406 140
 e3icon      447 115
 
-e4name      675 131
+e4name      675 129
 e4life      999 999 #606 140
 e4icon      647 115
 

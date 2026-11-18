@@ -32,7 +32,7 @@ def main():
   for name in ['dialog','mu']:
    p=Path('/workspace/white-true-final')/(name+'-'+code+'.png')
    if p.exists():(out/p.name).write_bytes(p.read_bytes())
- p=Path('/workspace/white-case-isolated/run/pause-native-fr.png')
+ p=Path('/workspace/white-delivery-final/run/pause-native-fr.png')
  if p.exists():(out/p.name).write_bytes(p.read_bytes())
  for name in ['control-parent','control-keys']:
   src=Path('/workspace/control-font-polish')/(name+'.png')
