@@ -185,8 +185,13 @@ void menuScreen()
             drawspriteq(getglobalvar("menu_text_screen"),0,openborconstant("MAX_INT")/10,openborconstant("MAX_INT"),0,0);
             changedrawmethod(NULL(),"reset",1);changedrawmethod(NULL(),"enabled",1);
             changedrawmethod(NULL(),"scalex",410);changedrawmethod(NULL(),"scaley",410);changedrawmethod(NULL(),"transbg",1);
-            drawscreen(getglobalvar("menu_text_screen"),-456,-144,z+1);
-            drawspriteq(getglobalvar("screen"),0,z+1,z+1,0,0);
+            // A blue edge around the native white/gold lettering, root only.
+            changedrawmethod(NULL(),"fillcolor",rgbcolor(48,126,240));
+            drawscreen(getglobalvar("menu_text_screen"),-458,-145,z+1);
+            drawscreen(getglobalvar("menu_text_screen"),-454,-143,z+1);
+            changedrawmethod(NULL(),"fillcolor",0);
+            drawscreen(getglobalvar("menu_text_screen"),-456,-144,z+2);
+            drawspriteq(getglobalvar("screen"),0,z+1,z+2,0,0);
         }else{
             drawspriteq(getglobalvar("screen"),0,openborconstant("MAX_INT")/10,openborconstant("MAX_INT"),xMenu,yMenu);
         }

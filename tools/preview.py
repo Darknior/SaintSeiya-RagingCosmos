@@ -27,12 +27,12 @@ def main():
  # Actual runtime images are labelled separately from the composed preview.
  for code in ['en','fr','es','pt','zh','ru','ja']:
   for name in ['native-main','native-options','native-video','native-howto']:
-   p=Path('/workspace/menus-root-final' if code in ('fr','ja') else '/workspace/menus-root-other')/code/(name+'.png')
+   p=Path('/workspace/menu-ja-bordered-retry' if code=='ja' else '/workspace/menu-final-bordered')/code/(name+'.png')
    if p.exists():(out/(code+'-'+name+'.png')).write_bytes(p.read_bytes())
   for name in ['dialog','mu']:
-   p=Path('/workspace/dialogues-font-cache-final')/(name+'-'+code+'.png')
+   p=Path('/workspace/dialogue-frames-punctuation')/(name+'-'+code+'.png')
    if p.exists():(out/p.name).write_bytes(p.read_bytes())
- p=Path('/workspace/package-font-final/run/pause-native-fr.png')
+ p=Path('/workspace/package-final-bordered/run/pause-native-fr.png')
  if p.exists():(out/p.name).write_bytes(p.read_bytes())
  routes=json.loads((ROOT/'tools/route-layout.json').read_text());gallery='<!doctype html><html lang="fr"><meta charset="utf-8"><title>Routes restaurées</title><style>body{background:#0a1322;color:white;font:18px system-ui;max-width:1000px;margin:auto;padding:24px}img{max-width:100%}h2{color:#e7ca85}</style><h1>Les sept étapes restaurées</h1><p>Captures natives OpenBOR : ennemis conservés. Les décors proviennent des ressources d’origine ; il ne s’agit pas de sept nouveaux dessins de fond.</p>'
  for r in routes:

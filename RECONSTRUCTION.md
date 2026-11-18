@@ -30,17 +30,22 @@ anciennes archives ou des dessins générés. Moteur officiel stable vérifié :
 - Menus et pause natifs conservés : Continuer / Quitter la partie. Les entrées
   ajoutées auparavant (choix du niveau, guide dans la pause) sont retirées.
 - Guide Seiya de sept pages animées, accessible par l’entrée native Comment
-  jouer. 84 images du modèle natif, avec ses délais, sur le décor original du
+  jouer. L’ancienne animation native ne se lance plus sous le guide et ne peut
+  plus intercepter ses commandes de retour. 84 images du modèle natif, avec ses délais, sur le décor original du
   Taureau. Aucun panneau d’interface bleu ajouté.
 - Sept langues au titre par Gauche/Droite : anglais, français, espagnol,
   portugais du Brésil, chinois simplifié, russe et japonais. Choix persistant.
   Menus natifs et réglages, 107 pages de dialogues, instructions de Mû,
   messages d’objets et HUD traduits. Polices natives étendues en MBS pour
   accents, cyrillique et CJK. Dialogues et tutoriel de Mû rendus avec la police
-  native partagée, sans images de texte ; cinq lignes au maximum avec les
+  native partagée, sans images de texte ; encadrés visibles et ponctuation liée au mot précédent,
+  cinq lignes au maximum avec les
   avances proportionnelles exactes du moteur. Menu principal agrandi à 160 % en réutilisant le rendu natif,
-  sans agrandir les réglages, le HUD ni la pause. Sous-titre Raging Cosmos doré et incliné, intégré sous le logo
-  natif sur les vingt images de son animation. Licences jointes.
+  sans agrandir les réglages, le HUD ni la pause. Sous-titre Raging Cosmos droit, bleu/argent et or, intégré sous le logo
+  natif sur les vingt images de son animation. Le menu principal conserve ses lettres
+  blanches et sa sélection dorée avec un contour bleu plus visible. « Système »
+  utilise bien son è ; textes normalisés en Unicode NFC avant encodage MBS.
+  Licences jointes.
 - Ralenti de défaite des boss désactivé dans tous les fichiers de niveaux.
 - Migration : constantes devenues variables (`SAMPLE_BEEP`, limites Z), casse et
   déplacements de chemins, références audio/images/modèles manquantes, portraits

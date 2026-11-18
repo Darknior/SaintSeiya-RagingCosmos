@@ -139,7 +139,9 @@
     "mu:backattack": "Appuyez sur Arrière + Attaque pour frapper derrière vous. Essayez !",
     "mu:jump": "Appuyez sur Saut, puis sur Attaque pour frapper en l’air. À vous de jouer !",
     "mu:throw": "Saisissez un ennemi et appuyez sur Attaque pour le frapper. Terminez avec Avant + Attaque pour le projeter !",
-    "COSMOS 100% UP": "COSMOS + 100 %"
+    "COSMOS 100% UP": "COSMOS + 100 %",
+    "System Options": "Système",
+    "System Options...": "Système..."
   },
   "es": {
     "mu:end": "¡El entrenamiento ha terminado! Es hora de reparar sus armaduras: ¡les esperan duros combates!",

@@ -68,7 +68,7 @@ void main()
 	//DRAW CONTENT
 	if(line1 != NULL()){
 		yText = lineStart;
-		drawbox(xBox, yBox, boxWidth, boHeight, boxLayer, color, alpha);
+		localizedTextFrame(xBox,yBox,boxWidth,boHeight,boxLayer);
 		changedrawmethod(NULL(), "enabled", 0);
 		if(getglobalvar(portName) != NULL()) drawsprite(getglobalvar(portName), xPortrait, yPortrait, spriteLayer);
         if(!localizedDialog(line1,line2,line3,line4,xText,yText,textLayer)){

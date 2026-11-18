@@ -39,6 +39,15 @@ void localizationExport()
     localizationCopy("data/translations/native/"+locCode(lang)+"/menu.txt","menu.txt");
     setglobalvar("loc_exported",lang+1);
 }
+void localizedTextFrame(int x,int y,int width,int height,int layer)
+{
+    drawbox(x,y,width,height,layer,rgbcolor(0,0,0),6);
+    int edge=rgbcolor(224,196,120);
+    drawbox(x-1,y-1,width+2,1,layer,edge,0);
+    drawbox(x-1,y+height,width+2,1,layer,edge,0);
+    drawbox(x-1,y,1,height,layer,edge,0);
+    drawbox(x+width,y,1,height,layer,edge,0);
+}
 void localizedParagraph(void key,int x,int y,int layer)
 {
     int lang=getglobalvar("ui_lang");if(lang==NULL())lang=0;

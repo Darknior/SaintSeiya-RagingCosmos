@@ -1984,7 +1984,7 @@ void nativeText(void text){if(text==NULL())return "";int n=getglobalvar("ui_lang
  }
  if(text=="System Options"){
   if(n==0)return "System Options";
-  if(n==1)return "Options du syst€me";
+  if(n==1)return "Syst€me";
   if(n==2)return "Opciones del sistema";
   if(n==3)return "Op€Œ€•es do sistema";
   if(n==4)return "‡È‡ß‰‰á";
@@ -1993,7 +1993,7 @@ void nativeText(void text){if(text==NULL())return "";int n=getglobalvar("ui_lang
  }
  if(text=="System Options..."){
   if(n==0)return "System Options...";
-  if(n==1)return "Options du syst€me...";
+  if(n==1)return "Syst€me...";
   if(n==2)return "Opciones del sistema...";
   if(n==3)return "Op€Œ€•es do sistema...";
   if(n==4)return "‡È‡ß‰‰á...";
@@ -2677,9 +2677,9 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==1)return "count on you to help us, right?";
    return "";}
   if(n==1){
-   if(line==0)return "Aiolia ! Je suis heureux de te revoir";
-   if(line==1)return "! Nous pouvons compter sur ton";
-   if(line==2)return "aide, n€Øest-ce pas ?";
+   if(line==0)return "Aiolia ! Je suis heureux de te";
+   if(line==1)return "revoir ! Nous pouvons compter sur";
+   if(line==2)return "ton aide, n€Øest-ce pas ?";
    return "";}
   if(n==2){
    if(line==0)return "€Aiolia! €Estoy feliz de verte!";
@@ -3220,9 +3220,10 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    return "";}
   if(n==1){
    if(line==0)return "Comment peux-tu dire cela ? Saori";
-   if(line==1)return "Kido est la r€incarnation d€ØAth€na";
-   if(line==2)return "! Tu te trompes d€Øennemis : nous";
-   if(line==3)return "essayons de la sauver !";
+   if(line==1)return "Kido est la r€incarnation";
+   if(line==2)return "d€ØAth€na ! Tu te trompes";
+   if(line==3)return "d€Øennemis : nous essayons de la";
+   if(line==4)return "sauver !";
    return "";}
   if(n==2){
    if(line==0)return "€C€“mo puedes decir semejantes";
@@ -3544,8 +3545,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==3)return "caso, voc€ n€‹o me deixa escolha!";
    return "";}
   if(n==4){
-   if(line==0)return "…„ç„ù…ù‚§Š…‚§‰Ğ‰•ç‡—‰•‚‘ƒï„À‡‡‚î‰¨…á…Ú‰Ç‡‡ƒ ";
-   if(line==1)return "Šˆ…Û†Ôƒò†ŸŠ…‚§„œˆÈ…„‚æ…Ú‰…ªŠ„";
+   if(line==0)return "…„ç„ù…ù‚§Š…‚§‰Ğ‰•ç‡—‰•‚‘ƒï„À‡‡‚î‰¨…á…Ú‰Ç‡‡";
+   if(line==1)return "ƒ Šˆ…Û†Ôƒò†ŸŠ…‚§„œˆÈ…„‚æ…Ú‰…ªŠ„";
    return "";}
   if(n==5){
    if(line==0)return "€´ €Â€º €Ê€Ã€Ì€È €Ç€º€¶€Ô €È€¶€½€·€µ€Ç€Ñ, €Ç€Ğ €Ì€Ç€Ã, €Â€º";
@@ -3719,8 +3720,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==3)return "casa!!";
    return "";}
   if(n==4){
-   if(line==0)return "…„…áƒŒ‰ö„À‰ü‰©ƒÄ…Ñƒ×‰Æ„­‡ä†ã€İ‚§‡õ…¢ˆú‡»‚ü‚€„Œ";
-   if(line==1)return "Š…‡…áğƒë‰‰Š„";
+   if(line==0)return "…„…áƒŒ‰ö„À‰ü‰©ƒÄ…Ñƒ×‰Æ„­‡ä†ã€İ‚§‡õ…¢ˆú‡»‚ü‚€";
+   if(line==1)return "„ŒŠ…‡…áğƒë‰‰Š„";
    return "";}
   if(n==5){
    if(line==0)return "€´ €š€É€Å€Ã€¹€½€Ç€µ, €Å€Ğ€Ë€µ€Å€Ñ €Å€Ğ€¶, €Ò€Ç€Ã €Â€µ€Æ€Ç€Ã€Ô€Î€º€º";
@@ -3868,8 +3869,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    return "";}
   if(n==4){
    if(line==0)return "‰†Š‡‡ˆÑ„œ‚æ†á‚½û€Û€Ûƒ–…îƒï‰ïƒ×‡‡‰Ú‚Î…‡õ…¢";
-   if(line==1)return "„Ø„ñ‰ô‡‡†­ƒ¬€Û€Û‚Ÿ…áˆ¥„×‚ç„€€Û€Û‚§„Ü‰â…ùû…„";
-   if(line==2)return "€Û€Û";
+   if(line==1)return "„Ø„ñ‰ô‡‡†­ƒ¬€Û€Û‚Ÿ…áˆ¥„×‚ç„€€Û€Û‚§„Ü‰â…ùû";
+   if(line==2)return "…„€Û€Û";
    return "";}
   if(n==5){
    if(line==0)return "€œ €Ç€µ€¿€Ã€Á €Æ€À€È€Ì€µ€º €Â€º €¹€È€Å€½... €§€Ç";
@@ -3920,10 +3921,10 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==3)return "€¹€Ã€¶€Å€µ€Ç€Ñ€Æ€Ô €¹€Ã €¿€Ã€Á€Â€µ€Ç€Ğ €·€º€À€½€¿€Ã€¸€Ã €¨€µ€Ä€Ğ!";
    return "";}
   if(n==6){
-   if(line==0)return "€í‡ƒÑƒ›€Ü€áƒ€ø„ˆ‡¥„‰œ…Ÿ‡‚¥ƒÆˆ€á˜€ô";
-   if(line==1)return "€İ‡¥ˆ…‡€ã‡ˆƒù€â€€ò€ç€Ü…í‡Í‡‡„‚´ƒâƒ†¸†ë‡";
-   if(line==2)return "‰ „ „‚ç‰–€ò™„ˆ€Ü€áƒ€ø‚®€ïƒ€ëš‰ƒ˜€ô";
-   if(line==3)return "€İ";
+   if(line==0)return "€í‡ƒÑƒ›€Ü€áƒ€ø„ˆ‡¥„‰œ…Ÿ‡‚¥ƒÆˆ€á˜€ô";
+   if(line==1)return "€İ‡¥ˆ…‡€ã‡ˆƒù€â€€ò€ç€Ü…í‡Í‡‡„‚´ƒâƒ†¸†ë";
+   if(line==2)return "‡‰ „ „‚ç‰–€ò™„ˆ€Ü€áƒ€ø‚®€ïƒ€ëš‰ƒ˜";
+   if(line==3)return "€ô€İ";
    return "";}
  }
  if(key=="dialog:40"){
@@ -4206,8 +4207,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==2)return "€Æ€È€Î€º€Æ€Ç€·€Ã€·€µ€À!";
    return "";}
   if(n==6){
-   if(line==0)return "»¤ãâ€çƒ„İ€ğ€ô!™€€í‡†ü„ˆ„„†€çƒ€é";
-   if(line==1)return "€ÜƒıƒÅ€ğ€ş€âƒ€â€æ‡–€ã€€ò€İ";
+   if(line==0)return "»¤ãâ€çƒ„İ€ğ€ô!™€€í‡†ü„ˆ„„†€çƒ";
+   if(line==1)return "€é€ÜƒıƒÅ€ğ€ş€âƒ€â€æ‡–€ã€€ò€İ";
    return "";}
  }
  if(key=="dialog:48"){
@@ -4673,8 +4674,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==1)return "€Æ€Ç€Å€µ€»€º €¼€Ã€À€Ã€Ç€Ã€¾ €Å€Ğ€Ë€µ€Å€Ñ!";
    return "";}
   if(n==6){
-   if(line==0)return "€öš€ç‡¥€ø€ú€çˆ§€ş€â€é“‡€€òŠ„‰ü‰©‰ìƒ×„‚š";
-   if(line==1)return "Š„";
+   if(line==0)return "€öš€ç‡¥€ø€ú€çˆ§€ş€â€é“‡€€òŠ„‰ü‰©‰ìƒ×„‚";
+   if(line==1)return "šŠ„";
    return "";}
  }
  if(key=="dialog:62"){
@@ -4876,8 +4877,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==2)return "do seu templo?";
    return "";}
   if(n==4){
-   if(line==0)return "‚§„œ…á‰ïƒ×Š„‚§ò‚‹õçƒÅ‚§‡‡‡¢„¼‰¥ƒ®…„‚”…†…Ñ";
-   if(line==1)return "Šˆ";
+   if(line==0)return "‚§„œ…á‰ïƒ×Š„‚§ò‚‹õçƒÅ‚§‡‡‡¢„¼‰¥ƒ®…„‚”…†";
+   if(line==1)return "…ÑŠˆ";
    return "";}
   if(n==5){
    if(line==0)return "€œ€Ã€Ç €Ç€Ğ €Å€Ğ€Ë€µ€Å€Ñ! €¨€Ã€Ì€º€Á€È €Ç€Ğ €Â€º €Æ€Å€µ€¼€½€À€Æ€Ô €Æ";
@@ -4974,8 +4975,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
   if(n==1){
    if(line==0)return "Ces roses€Û C€Øest donc toi qui as";
    if(line==1)return "assassin€ mon ma€‘tre Albior sur";
-   if(line==2)return "l€Ø€‘le d€ØAndrom€de, il y a des ann€es";
-   if(line==3)return "?";
+   if(line==2)return "l€Ø€‘le d€ØAndrom€de, il y a des";
+   if(line==3)return "ann€es ?";
    return "";}
   if(n==2){
    if(line==0)return "€Esas rosas que tienes en la mano!";
@@ -5387,8 +5388,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==1)return "to you??";
    return "";}
   if(n==1){
-   if(line==0)return "Que se passe-t-il ? Que t€Øarrive-t-il";
-   if(line==1)return "?";
+   if(line==0)return "Que se passe-t-il ? Que";
+   if(line==1)return "t€Øarrive-t-il ?";
    return "";}
   if(n==2){
    if(line==0)return "€„Qu€ est€‰ sucediendo? Que te";
@@ -5541,8 +5542,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    return "";}
   if(n==6){
    if(line==0)return "ˆ€â€Ü€ö€ãˆ±€û€ø€€ğ•€ã...‡¥ˆ€í‡…‡€â€†¡…ƒ—‡õ";
-   if(line==1)return "„æ€ç€á˜€ò...€ğ€æ€ğä€ü€ù€ë‡—€û€ş€å€â€ş€é€ù€ï€â.";
-   if(line==2)return "..ÀÜ±âˆ†´€ğ€şä‚Š€†¡…€íˆ€á˜€ô!!";
+   if(line==1)return "„æ€ç€á˜€ò...€ğ€æ€ğä€ü€ù€ë‡—€û€ş€å€â€ş€é€ù€ï";
+   if(line==2)return "€â...ÀÜ±âˆ†´€ğ€şä‚Š€†¡…€íˆ€á˜€ô!!";
    return "";}
  }
  if(key=="dialog:88"){
@@ -5643,8 +5644,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==3)return "Hyoga?";
    return "";}
   if(n==4){
-   if(line==0)return "‚Ô†·Š…‚§‰‡‰ã„ÌŠ„çˆüŠ…‚§‡õ…—ƒ‘…„‡‡†æ‡Ô†©‰¯ƒ ";
-   if(line==1)return "Šˆ";
+   if(line==0)return "‚Ô†·Š…‚§‰‡‰ã„ÌŠ„çˆüŠ…‚§‡õ…—ƒ‘…„‡‡†æ‡Ô†©‰¯";
+   if(line==1)return "ƒ Šˆ";
    return "";}
   if(n==5){
    if(line==0)return "€œ€Ğ €·€º€Æ€Ñ€Á€µ €È€Æ€Ç€Ã€¾€Ì€½€·€Ğ; €¦€Ã €¿€µ€¿ €Ç€Ğ";
@@ -6170,8 +6171,8 @@ void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
    if(line==1)return "€Â€µ€Æ...";
    return "";}
   if(n==6){
-   if(line==0)return "‚Ã–€Ü€áƒ€øˆ‡¥€ø€ú‡€ø’„‡ú‚à†à†İ„€ğ€ğ€ø";
-   if(line==1)return "...";
+   if(line==0)return "‚Ã–€Ü€áƒ€øˆ‡¥€ø€ú‡€ø’„‡ú‚à†à†İ„€ğ€ğ";
+   if(line==1)return "€ø...";
    return "";}
  }
  if(key=="dialog:106"){

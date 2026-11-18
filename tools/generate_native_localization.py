@@ -4,7 +4,7 @@ Retains native menu layout/input and all original ASCII glyphs. No engine fork.
 """
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
-import json,re,shutil,hashlib
+import json,re,shutil,hashlib,unicodedata
 ROOT=Path(__file__).resolve().parents[1];CODES=['en','fr','es','pt','zh','ru','ja'];SOURCE=json.loads((ROOT/'translations/native-source.json').read_text())
 FORMAT=re.compile(r'%(?:[-+0 #]*\d*(?:\.\d+)?[a-zA-Z]|%)')
 KEYS={
@@ -82,6 +82,7 @@ def main():
   for key in d:
    if re.fullmatch(r'HEALTH \+ \d+',key):d[key]=d['Energy']+' + '+key.split()[-1]
    if re.fullmatch(r'\d+ PTS',key):d[key]=key.split()[0]+' '+{'en':'PTS','fr':'PTS','es':'PTS','pt':'PTS','zh':'分','ru':'ОЧК.','ja':'点'}[code]
+  d={key:unicodedata.normalize('NFC',value) for key,value in d.items()}
   catalogues[code]=d
   (ROOT/'translations'/f'native-{raw}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
  chars=sorted({c for d in catalogues.values() for s in d.values() for c in s if ord(c)>127}|{c for s in names.values() for c in s if ord(c)>127})
@@ -131,8 +132,22 @@ def main():
   return width if width>1 else tile//3
  advances={ch:advance(ch) for ch in {c for d in catalogues.values() for text in d.values() for c in text}}
  def text_lines(text,code,width=258):
-  chunks=list(text) if code in ('zh','ja') else text.split();lines=[];line=''
+  # Keep closing punctuation with its preceding word/character. Keep opening
+  # quotes and brackets with the following word/character (kinsoku for CJK).
+  closing=set('!?:;%,.。．、，！？：；％…)]}»›”’」』】〉》）］｝')
+  opening=set('([{«‹“‘¿¡「『【〈《（［｛')
+  chunks=list(text) if code in ('zh','ja') else text.split()
+  units=[];pending=''
   for word in chunks:
+   if all(ch in closing for ch in word) and units:
+    units[-1]+=(' ' if code not in ('zh','ja') else '')+word
+   elif all(ch in opening for ch in word):pending+=word+(' ' if code not in ('zh','ja') else '')
+   else:units.append(pending+word);pending=''
+  if pending:
+   if units:units[-1]+=pending.rstrip()
+   else:units=[pending.rstrip()]
+  lines=[];line=''
+  for word in units:
    separator=' ' if line and code not in ('zh','ja') else ''
    candidate=line+separator+word
    if sum(advances[ch] for ch in candidate)>width and line:lines.append(line);line=word
@@ -140,6 +155,9 @@ def main():
   if line:lines.append(line)
   assert len(lines)<=5,(code,text,'paragraph overflows native window',len(lines))
   assert all(sum(advances[ch] for ch in line)<=width for line in lines),(code,text,'line too wide')
+  assert all(not all(ch in closing or ch.isspace() for ch in line) for line in lines) or all(ch in closing or ch.isspace() for ch in text),(code,text,'isolated punctuation')
+  if code in ('zh','ja'):
+   assert all(line[0] not in closing for line in lines[1:]),(code,text,'CJK line starts with closing punctuation')
   return lines
  layouts={code+':'+key:{'font':5,'line_height':15,'lines':text_lines(value,code),'text':value} for code,d in catalogues.items() for key,value in d.items() if key.startswith(('dialog:','mu:'))}
  # Script strings use the exact same glyph encoding as stock engine labels.

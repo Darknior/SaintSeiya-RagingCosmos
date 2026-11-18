@@ -28,7 +28,17 @@
     "mu_tutorial_text_images": false,
     "native_paragraph_font": true,
     "root_menu_scale": 1.6,
-    "title_subtitle_integrated": true
+    "title_subtitle_integrated": true,
+    "dialogue_frames_visible": true,
+    "punctuation_bound_to_previous_word": true,
+    "root_menu_blue_edges": true,
+    "title_subtitle_italic": false,
+    "title_subtitle_colors": [
+      "blue",
+      "silver",
+      "gold"
+    ],
+    "french_system_label": "Système"
   },
   "verification": {
     "unique_stage_load_and_short_combat": 45,
@@ -64,6 +74,7 @@
     "gemini_unique_restart_branch": true,
     "dialog_depth_preserved": true,
     "dialog_auto_release_after_last_textbox": true,
-    "sparse_entity_slots_scanned": true
+    "sparse_entity_slots_scanned": true,
+    "native_howto_underlay_disabled": true
   }
 }

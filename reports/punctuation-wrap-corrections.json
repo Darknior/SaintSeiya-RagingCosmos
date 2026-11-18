@@ -1,0 +1,180 @@
+{
+  "changed_paragraphs": 14,
+  "changes": [
+    {
+      "key": "fr:dialog:3",
+      "before": [
+        "Aiolia ! Je suis heureux de te revoir",
+        "! Nous pouvons compter sur ton",
+        "aide, n’est-ce pas ?"
+      ],
+      "after": [
+        "Aiolia ! Je suis heureux de te",
+        "revoir ! Nous pouvons compter sur",
+        "ton aide, n’est-ce pas ?"
+      ]
+    },
+    {
+      "key": "fr:dialog:20",
+      "before": [
+        "Comment peux-tu dire cela ? Saori",
+        "Kido est la réincarnation d’Athéna",
+        "! Tu te trompes d’ennemis : nous",
+        "essayons de la sauver !"
+      ],
+      "after": [
+        "Comment peux-tu dire cela ? Saori",
+        "Kido est la réincarnation",
+        "d’Athéna ! Tu te trompes",
+        "d’ennemis : nous essayons de la",
+        "sauver !"
+      ]
+    },
+    {
+      "key": "fr:dialog:70",
+      "before": [
+        "Ces roses… C’est donc toi qui as",
+        "assassiné mon maître Albior sur",
+        "l’île d’Andromède, il y a des années",
+        "?"
+      ],
+      "after": [
+        "Ces roses… C’est donc toi qui as",
+        "assassiné mon maître Albior sur",
+        "l’île d’Andromède, il y a des",
+        "années ?"
+      ]
+    },
+    {
+      "key": "fr:dialog:83",
+      "before": [
+        "Que se passe-t-il ? Que t’arrive-t-il",
+        "?"
+      ],
+      "after": [
+        "Que se passe-t-il ? Que",
+        "t’arrive-t-il ?"
+      ]
+    },
+    {
+      "key": "zh:dialog:29",
+      "before": [
+        "我不想杀你，你难道不知道仙女座的力量是无限的吗",
+        "？既然如此，你就让我别无选择！"
+      ],
+      "after": [
+        "我不想杀你，你难道不知道仙女座的力量是无限的",
+        "吗？既然如此，你就让我别无选择！"
+      ]
+    },
+    {
+      "key": "zh:dialog:34",
+      "before": [
+        "我是双鱼座黄金圣斗士阿布罗狄。你能抵达第十二宫",
+        "，真是个奇迹！"
+      ],
+      "after": [
+        "我是双鱼座黄金圣斗士阿布罗狄。你能抵达第十二",
+        "宫，真是个奇迹！"
+      ]
+    },
+    {
+      "key": "zh:dialog:38",
+      "before": [
+        "那样的话就别犯傻了……只有女骑士的面具才能抵",
+        "御恶魔的气味……但是要得到它……你必须杀了我",
+        "……"
+      ],
+      "after": [
+        "那样的话就别犯傻了……只有女骑士的面具才能抵",
+        "御恶魔的气味……但是要得到它……你必须杀了",
+        "我……"
+      ]
+    },
+    {
+      "key": "zh:dialog:67",
+      "before": [
+        "你就是骑士！你为什么不在你的神庙里和我们战斗",
+        "？"
+      ],
+      "after": [
+        "你就是骑士！你为什么不在你的神庙里和我们战",
+        "斗？"
+      ]
+    },
+    {
+      "key": "zh:dialog:90",
+      "before": [
+        "冰河，你还真顽强！不过，你能承受我的猩红毒针吗",
+        "？"
+      ],
+      "after": [
+        "冰河，你还真顽强！不过，你能承受我的猩红毒针",
+        "吗？"
+      ]
+    },
+    {
+      "key": "ja:dialog:39",
+      "before": [
+        "この場合、あなたには私に選択の余地はありません",
+        "。私は戦うのは嫌いですが、最終的に偉大な法王の",
+        "部屋に到達するには、あなたを倒さなければなりませ",
+        "ん。"
+      ],
+      "after": [
+        "この場合、あなたには私に選択の余地はありませ",
+        "ん。私は戦うのは嫌いですが、最終的に偉大な法王",
+        "の部屋に到達するには、あなたを倒さなければなりま",
+        "せん。"
+      ]
+    },
+    {
+      "key": "ja:dialog:47",
+      "before": [
+        "チェーンが反応しません!まるでこの男には宇宙がなく",
+        "、存在していないかのようです。"
+      ],
+      "after": [
+        "チェーンが反応しません!まるでこの男には宇宙がな",
+        "く、存在していないかのようです。"
+      ]
+    },
+    {
+      "key": "ja:dialog:61",
+      "before": [
+        "それが私たちが見ていくものです！黄金騎士を守れ",
+        "！"
+      ],
+      "after": [
+        "それが私たちが見ていくものです！黄金騎士を守",
+        "れ！"
+      ]
+    },
+    {
+      "key": "ja:dialog:87",
+      "before": [
+        "はい、そう言ったでしょう...私はこの戦いで死ぬ可能",
+        "性があります...しかし一つだけ知っておいてください.",
+        "..ドラゴンは決して一人で死ぬことはありません!!"
+      ],
+      "after": [
+        "はい、そう言ったでしょう...私はこの戦いで死ぬ可能",
+        "性があります...しかし一つだけ知っておいてくださ",
+        "い...ドラゴンは決して一人で死ぬことはありません!!"
+      ]
+    },
+    {
+      "key": "ja:dialog:105",
+      "before": [
+        "兄よ、あなたは私たちのために自分を犠牲にしました",
+        "..."
+      ],
+      "after": [
+        "兄よ、あなたは私たちのために自分を犠牲にしまし",
+        "た..."
+      ]
+    }
+  ],
+  "unicode_normalization": "NFC",
+  "french_system_label": "Système..."
+}

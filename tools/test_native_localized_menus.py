@@ -18,7 +18,7 @@ void nativeMenuProbe(){
  try:
   s=Session(out/code,Path('/workspace/squashfs-root/usr/bin/OpenBOR'),title=True,setup=setup,source=source)
   def menu_press(key):
-   s.keys.write_text(str(key));time.sleep(.16);s.keys.write_text('');time.sleep(.5)
+   s.keys.write_text(str(key));time.sleep(.25);s.keys.write_text('');time.sleep(.65)
   s.press=menu_press
   s.wait('title=1',120);s.wait('lang='+str(lang)+' ',120);s.capture('native-title')
   for name in ['menu.txt','translation.txt']:
