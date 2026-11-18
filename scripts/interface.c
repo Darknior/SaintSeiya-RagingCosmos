@@ -98,7 +98,9 @@ void uiSyncRootSelection(void screen)
 {
     // Read the selected native label, so keyboard repeat cannot desynchronise
     // the existing How To Play shortcut from OpenBOR's own cursor.
-    int row;int x;int y;int gold=rgbcolor(252,242,48);
+    int row;int x;int y;
+    int rm=rgbcolor(255,0,0);int gm=rgbcolor(0,255,0);int bm=rgbcolor(0,0,255);
+    int common=rm & gm & bm;rm=rm-common;gm=gm-common;bm=bm-common;
     for(row=0;row<5;row++){
         void text="Start Game";
         if(row==1)text="Options";if(row==2)text="How To Play";
@@ -107,7 +109,11 @@ void uiSyncRootSelection(void screen)
         int left=(openborvariant("hresolution")-strwidth(text,1))/2;
         int top=openborvariant("vresolution")/2+(row+2)*15;
         for(y=0;y<14;y++)for(x=0;x<13;x++){
-            if(getgfxproperty(screen,"pixel",left+x,top+y)==gold){setglobalvar("ui_menu",row);return;}
+            int pixel=getgfxproperty(screen,"pixel",left+x,top+y);
+            if(pixel!=0 && rm!=0 && gm!=0 && bm!=0){
+                float red=(pixel & rm)*1.0/rm;float green=(pixel & gm)*1.0/gm;float blue=(pixel & bm)*1.0/bm;
+                if(red>0.30 && green>0.24 && blue<green*0.65){setglobalvar("ui_menu",row);return;}
+            }
         }
     }
 }

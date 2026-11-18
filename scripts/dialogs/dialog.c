@@ -60,6 +60,26 @@ void main()
 		xText = textRight;
 	}
 
+    // Keep the native dialogue anchor, but fit the white window to its text.
+    void a=line1;void b=line2;void c=line3;void d=line4;
+    if(a==NULL())a="";if(b==NULL())b="";if(c==NULL())c="";if(d==NULL())d="";
+    int page=nativeDialogPage(a,b,c,d);
+    if(page>=0){
+        void key="dialog:"+page;int count=localizedParagraphLines(key);
+        int portrait=(portName!="empty");
+        boxWidth=localizedParagraphWidth(key)+30+portrait*86;
+        if(boxWidth<80)boxWidth=80;if(portrait && boxWidth<180)boxWidth=180;
+        boHeight=count*18+24;if(portrait && boHeight<90)boHeight=90;
+        xBox=xPos+200-boxWidth/2;
+        if(xBox<8)xBox=8;if(xBox+boxWidth>openborvariant("hresolution")-8)xBox=openborvariant("hresolution")-boxWidth-8;
+        if(yBox+boHeight>openborvariant("vresolution")-8)yBox=openborvariant("vresolution")-boHeight-8;
+        if(yBox<8)yBox=8;
+        xPortrait=xBox+9;xText=xBox+96;
+        if(getglobalvar("portraitSide")=="right"){xPortrait=xBox+boxWidth-85;xText=xBox+15;}
+        if(!portrait)xText=xBox+15;
+        yPortrait=yBox+(boHeight-76)/2;lineStart=yBox+(boHeight-count*18)/2;
+    }
+
 	//LOAD PORTRAITS
 	if(portName != "empty" && getglobalvar(portName) == NULL()){
 		setglobalvar(portName, loadsprite("data/chars/dialogs/icons/"+portName+".png"));

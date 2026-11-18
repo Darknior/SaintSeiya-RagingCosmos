@@ -18,6 +18,12 @@ void main()
     int layer=getentityproperty(self,"setlayer")+1;
     setdrawmethod(NULL(),0,256,256,0,0,0,0);
     int lang=getglobalvar("ui_lang");if(lang==NULL())lang=0;
-    localizedTextFrame(x+18,y+8,282,100,layer+1);
-    localizedParagraph("mu:"+key,x+30,y+18,layer+2);
+    void paragraph="mu:"+key;int width=localizedParagraphWidth(paragraph)+24;
+    int height=localizedParagraphLines(paragraph)*18+24;
+    if(width<120)width=120;if(height<48)height=48;
+    int left=x+18;int top=y+8+(100-height)/2;
+    if(left+width>openborvariant("hresolution")-8)left=openborvariant("hresolution")-width-8;
+    if(top<8)top=8;if(top+height>openborvariant("vresolution")-8)top=openborvariant("vresolution")-height-8;
+    localizedTextFrame(left,top,width,height,layer+1);
+    localizedParagraph(paragraph,left+12,top+12,layer+2);
 }

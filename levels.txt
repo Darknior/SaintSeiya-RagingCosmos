@@ -11,7 +11,7 @@ pauseoffset 0 1 0 60 3 0 56
 lbarsize    150 9 1 1 0 -500 -500 1 -500
 mpbarsize   100 9 1 1 0 -500 -500 1 -500
 olbarsize   75 9 1 1 0 -500 -500 1 -500
-timeloc     136 51 21 20 1
+timeloc     145 43 21 20 1 7
 
 p1score     57  30 999 999 57  43
 p1lifex     58 16 0

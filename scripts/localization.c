@@ -48,17 +48,23 @@ void localizedTextFrame(int x,int y,int width,int height,int layer)
     drawbox(x-1,y,1,height,layer,edge,0);
     drawbox(x+width,y,1,height,layer,edge,0);
 }
-void localizedParagraph(void key,int x,int y,int layer)
+void localizedPrepareParagraph(void key)
 {
     int lang=getglobalvar("ui_lang");if(lang==NULL())lang=0;
-    int i;
     if(getglobalvar("loc_paragraph_key")!=key || getglobalvar("loc_paragraph_lang")!=lang+1){
-        for(i=0;i<5;i++)setglobalvar("loc_line_"+i,nativeParagraphLine(key,i));
+        int i;for(i=0;i<7;i++)setglobalvar("loc_line_"+i,nativeParagraphLine(key,i));
+        setglobalvar("loc_paragraph_width",nativeParagraphMetric(key,0));
+        setglobalvar("loc_paragraph_lines",nativeParagraphMetric(key,1));
         setglobalvar("loc_paragraph_key",key);setglobalvar("loc_paragraph_lang",lang+1);
     }
-    for(i=0;i<5;i++){
-        void text=getglobalvar("loc_line_"+i);
-        if(text!="")drawstring(x,y+i*16,5,text,layer);
+}
+int localizedParagraphWidth(void key){localizedPrepareParagraph(key);return getglobalvar("loc_paragraph_width");}
+int localizedParagraphLines(void key){localizedPrepareParagraph(key);return getglobalvar("loc_paragraph_lines");}
+void localizedParagraph(void key,int x,int y,int layer)
+{
+    localizedPrepareParagraph(key);
+    int i;for(i=0;i<getglobalvar("loc_paragraph_lines");i++){
+        void text=getglobalvar("loc_line_"+i);if(text!="")drawstring(x,y+i*18,5,text,layer);
     }
 }
 int localizedDialog(void a,void b,void c,void d,int x,int y,int layer)

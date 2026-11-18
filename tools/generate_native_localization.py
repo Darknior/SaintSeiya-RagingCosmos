@@ -3,7 +3,7 @@
 Retains native menu layout/input; shares typeface and metrics across ASCII and accents.
 """
 from pathlib import Path
-from PIL import Image,ImageDraw,ImageFont
+from PIL import Image,ImageDraw,ImageFont,ImageChops
 import json,re,shutil,hashlib,unicodedata,math
 from fontTools.ttLib import TTFont
 ROOT=Path(__file__).resolve().parents[1];CODES=['en','fr','es','pt','zh','ru','ja'];SOURCE=json.loads((ROOT/'translations/native-source.json').read_text())
@@ -102,27 +102,47 @@ def main():
  missing=[ch for ch in glyphs if ord(ch) not in cmap[glyph_family(ch)]]
  assert not missing,('unsupported Unicode characters',missing)
  (ROOT/'reports/unicode-font-coverage.json').write_text(json.dumps({'required_non_ascii_glyphs':len(glyphs),'missing':missing,'french_accent_sample':'Système','cjk_punctuation_sample':'、。々「」！，：；？～','cjk_punctuation_font':'Noto Sans CJK','normalization':'NFC'},ensure_ascii=False,indent=2)+'\n')
- # ASCII and accented Latin/Cyrillic use one face, point size and baseline.
- # Four extra vertical pixels retain capitals' accents and cedillas without
- # shrinking the character body or clipping its descenders.
- font_metrics={}
+ # Supersampled shared glyphs with native per-pixel alpha masks. Keep the
+ # exact same support in colour and mask sheets for OpenBOR's trim validation.
+ font_metrics={};smooth=4
+ def save_font_pair(im,colour_path,mask_path):
+  alpha=im.getchannel('A').point(lambda a:a if a>=4 else 0)
+  opaque=im.copy();opaque.putalpha(alpha.point(lambda a:255 if a else 0));indexed(opaque,colour_path)
+  mask=Image.frombytes('P',im.size,alpha.tobytes());mask.putpalette([v for i in range(256) for v in (i,i,i)])
+  mask_path.parent.mkdir(exist_ok=True,parents=True);mask.save(mask_path,bits=8,transparency=0)
+  assert mask_path.read_bytes()[24]==8
  for number in range(10):
   stem='font' if number==0 else 'font'+str(number+1);original=ROOT/'sprites'/f'{stem}.gif';bank=ROOT/'sprites'/stem;bank.mkdir(exist_ok=True)
+  mask_bank=ROOT/'sprites'/('fontmask' if number==0 else 'fontmask'+str(number+1))
   tile=Image.open(original).width//16;cell_width=math.ceil(tile*1.25) if number<4 else tile;cell_height=tile+4;baseline=tile
   ink=[(245,244,242),(252,242,48),(106,149,219),(106,149,219),(56,240,19),(255,255,255),(4,137,218),(251,250,247),(224,208,107),(251,75,87)][number]
-  native_fonts={family:ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf',tile) if family=='fr' else font(family,tile) for family in ('fr','ja','zh')}
-  font_metrics[stem]={'point_size':tile,'latin_face':'DejaVu Sans Condensed Bold','cell':[cell_width,cell_height],'latin_horizontal_scale':cell_width/tile,'baseline':baseline,'same_ascii_and_accent_face':True}
+  native_fonts={family:ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf',tile*smooth) if family=='fr' else font(family,tile*smooth) for family in ('fr','ja','zh')}
+  font_metrics[stem]={'point_size':tile,'latin_face':'DejaVu Sans Condensed Bold','cell':[cell_width,cell_height],'latin_horizontal_scale':cell_width/tile,'baseline':baseline,'same_ascii_and_accent_face':True,'supersampling':smooth,'native_alpha_mask':True,'silver_native_shading':number in (0,5,7)}
   for first in [0]+sorted({v[0] for v in glyphs.values()}):
    im=Image.new('RGBA',(cell_width*16,cell_height*16))
    entries=[(chr(i),i) for i in range(32,127)] if first==0 else [(ch,seq[1]) for ch,seq in glyphs.items() if seq[0]==first]
    for ch,second in entries:
     family=glyph_family(ch);f=native_fonts[family];x=(second%16)*cell_width;y=(second//16)*cell_height
-    token=Image.new('RGBA',(tile,cell_height));draw=ImageDraw.Draw(token)
-    shift=max(0,-f.getbbox(ch,anchor='ls')[0]);draw.text((shift+1,baseline+1),ch,font=f,fill=(32,24,40),anchor='ls');draw.text((shift,baseline),ch,font=f,fill=ink,anchor='ls')
-    if family=='fr':token=token.resize((cell_width,cell_height),Image.Resampling.NEAREST)
-    im.alpha_composite(token,(x,y))
+    hi=Image.new('L',(tile*smooth,cell_height*smooth));draw=ImageDraw.Draw(hi)
+    shift=max(0,-f.getbbox(ch,anchor='ls')[0]);draw.text((shift,baseline*smooth),ch,font=f,fill=255,anchor='ls')
+    foreground=hi.resize((cell_width if family=='fr' else tile,cell_height),Image.Resampling.LANCZOS)
+    if foreground.width<cell_width:
+     padded=Image.new('L',(cell_width,cell_height));padded.paste(foreground,(0,0));foreground=padded
+    shadow=Image.new('L',foreground.size);shadow.paste(foreground,(1,1));shadow=shadow.point(lambda v:round(v*.7))
+    token=Image.new('RGBA',foreground.size,(22,29,42,0));token.putalpha(shadow)
+    front=Image.new('RGBA',foreground.size)
+    fd=ImageDraw.Draw(front)
+    for line in range(cell_height):
+     if number in (0,5,7):
+      stops=[(0,(255,255,255)),(.38,(218,220,224)),(.55,(252,253,255)),(1,(159,166,176))];t=line/max(1,baseline)
+      for (lo,c0),(up,c1) in zip(stops,stops[1:]):
+       if t<=up:break
+      u=max(0,min(1,(t-lo)/(up-lo)));colour=tuple(round(a+(b-a)*u) for a,b in zip(c0,c1))
+     else:colour=ink
+     fd.line((0,line,cell_width-1,line),fill=colour+(255,))
+    front.putalpha(foreground);token=Image.alpha_composite(token,front);im.alpha_composite(token,(x,y))
    ImageDraw.Draw(im).point((0,0),fill=ink)
-   indexed(im,bank/f'{first:02x}.png');(bank/f'{first:02x}.gif').unlink(missing_ok=True)
+   save_font_pair(im,bank/f'{first:02x}.png',mask_bank/f'{first:02x}.png');(bank/f'{first:02x}.gif').unlink(missing_ok=True)
  (ROOT/'reports/native-font-metrics.json').write_text(json.dumps(font_metrics,indent=2)+'\n')
  # Engine menu tables retain all stock menus/options and printf arguments.
  for code,d in catalogues.items():
@@ -171,18 +191,18 @@ def main():
    if sum(advances[ch] for ch in candidate)>width and line:lines.append(line);line=word
    else:line=candidate
   if line:lines.append(line)
-  assert len(lines)<=5,(code,text,'paragraph overflows native window',len(lines))
+  assert len(lines)<=7,(code,text,'paragraph overflows native window',len(lines))
   assert all(sum(advances[ch] for ch in line)<=width for line in lines),(code,text,'line too wide')
   assert all(not all(ch in closing or ch.isspace() for ch in line) for line in lines) or all(ch in closing or ch.isspace() for ch in text),(code,text,'isolated punctuation')
   if code in ('zh','ja'):
    assert all(line[0] not in closing for line in lines[1:]),(code,text,'CJK line starts with closing punctuation')
   return lines
- layouts={code+':'+key:{'font':5,'line_height':16,'lines':text_lines(value,code),'text':value} for code,d in catalogues.items() for key,value in d.items() if key.startswith(('dialog:','mu:'))}
+ layouts={code+':'+key:{'font':5,'line_height':18,'lines':text_lines(value,code),'text':value} for code,d in catalogues.items() for key,value in d.items() if key.startswith(('dialog:','mu:'))}
  # Script strings use the exact same glyph encoding as stock engine labels.
  c=b'// Generated native localization; do not edit by hand.\n#ifndef NATIVE_LOCALIZATION_CATALOG\n#define NATIVE_LOCALIZATION_CATALOG 1\n'
  c+=b'void locCode(int n){\n'+b''.join(b' if(n=='+str(i).encode()+b')return "'+code.encode()+b'";\n' for i,code in enumerate(CODES))+b' return "en";}\n'
  c+=b'void nativeLanguageName(int n){\n'+b''.join(b' if(n=='+str(i).encode()+b')return '+quote(names[code])+b';\n' for i,code in enumerate(CODES))+b' return "English";}\n'
- c+=b'void nativeText(void text){if(text==NULL())return "";int n=getglobalvar("ui_lang");\n'
+ c+=b'void nativeText(void text){if(text==NULL())return "";int n=getglobalvar("ui_lang");if(n==NULL())n=0;\n'
  for key in SOURCE:
   if key.startswith(('dialog:','mu:')):continue
   c+=b' if(text=='+quote(key)+b'){\n'+b''.join(b'  if(n=='+str(i).encode()+b')return '+quote(catalogues[code][key])+b';\n' for i,code in enumerate(CODES))+b' }\n'
@@ -214,7 +234,7 @@ def main():
  (ROOT/'reports/character-display-names.json').write_text(json.dumps(display,ensure_ascii=False,indent=2)+'\n')
  # Paragraph catalogue: one shared native font, wrapped once at build time.
  c=(ROOT/'scripts/native_localization_catalog.c').read_bytes();assert c.endswith(b'#endif\n');c=c[:-7]
- c+=b'void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");\n'
+ c+=b'void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");if(n==NULL())n=0;\n'
  for key in SOURCE:
   if not key.startswith(('dialog:','mu:')):continue
   c+=b' if(key=='+quote(key)+b'){\n'
@@ -223,7 +243,17 @@ def main():
    for j,line in enumerate(layouts[code+':'+key]['lines']):c+=b'   if(line=='+str(j).encode()+b')return '+quote(line)+b';\n'
    c+=b'   return "";}\n'
   c+=b' }\n'
- c+=b' return "";}\n#endif\n';(ROOT/'scripts/native_localization_catalog.c').write_bytes(c)
+ c+=b' return "";}\n'
+ c+=b'int nativeParagraphMetric(void key,int field){int n=getglobalvar("ui_lang");if(n==NULL())n=0;\n'
+ for key in SOURCE:
+  if not key.startswith(('dialog:','mu:')):continue
+  c+=b' if(key=='+quote(key)+b'){\n'
+  for i,code in enumerate(CODES):
+   lines=layouts[code+':'+key]['lines'];width=max((sum(advances[ch] for ch in line) for line in lines),default=0)
+   c+=b'  if(n=='+str(i).encode()+b'){if(field==0)return '+str(width).encode()+b';return '+str(len(lines)).encode()+b';}\n'
+   layouts[code+':'+key]['pixel_width']=width
+  c+=b' }\n'
+ c+=b' return 0;}\n#endif\n';(ROOT/'scripts/native_localization_catalog.c').write_bytes(c)
  # Remove superseded generated text images; keep the native Mû bubble artwork.
  for code in CODES:
   for pattern in ('dialog-*.png','mu-*.png'):
