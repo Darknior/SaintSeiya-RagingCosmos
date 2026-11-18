@@ -83,6 +83,16 @@ def main():
   for key in d:
    if re.fullmatch(r'HEALTH \+ \d+',key):d[key]=d['Energy']+' + '+key.split()[-1]
    if re.fullmatch(r'\d+ PTS',key):d[key]=key.split()[0]+' '+{'en':'PTS','fr':'PTS','es':'PTS','pt':'PTS','zh':'分','ru':'ОЧК.','ja':'点'}[code]
+  pause_select={
+   'en':['Level Select','Left / Right to choose','Attack to go'],
+   'fr':['Choix du niveau','Gauche / Droite pour choisir','Attaque pour y aller'],
+   'es':['Elegir nivel','Izquierda / Derecha para elegir','Ataque para ir'],
+   'pt':['Escolher fase','Esquerda / Direita para escolher','Ataque para ir'],
+   'zh':['选择关卡','左 / 右选择','攻击键前往'],
+   'ru':['Выбор уровня','Влево / Вправо для выбора','Атака для перехода'],
+   'ja':['ステージ選択','左 / 右で選択','攻撃で移動'],
+  }
+  d.update(zip(pause_select['en'],pause_select[code]))
   d={key:unicodedata.normalize('NFC',value) for key,value in d.items()}
   catalogues[code]=d
   (ROOT/'translations'/f'native-{raw}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')

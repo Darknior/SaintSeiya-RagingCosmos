@@ -1,3 +1,4 @@
+#import "data/scripts/pause_levels.c"
 #import "data/scripts/localization.c"
 #import "data/scripts/native_localization_catalog.c"
 #import "data/scripts/library/dialog_positions.c"
@@ -39,6 +40,7 @@ void zoom()
 
 
 void main(){//MAIN START
+    if(pauseLevelSelect())return;
     if(openborvariant("in_titlescreen") && !openborvariant("in_level") && getglobalvar("clearAll")!=NULL()){
         uiRelease();clearlocalvar();clearglobalvar();
     }

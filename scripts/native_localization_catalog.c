@@ -2459,6 +2459,33 @@ void nativeText(void text){if(text==NULL())return "";int n=getglobalvar("ui_lang
   if(n==5)return "€ª€Ã€À€¹€µ€Ç-€Ç€Å€Ã€À€À€Ñ";
   if(n==6)return "¿àãŞ‚Í";
  }
+ if(text=="Level Select"){
+  if(n==0)return "Level Select";
+  if(n==1)return "Choix du niveau";
+  if(n==2)return "Elegir nivel";
+  if(n==3)return "Escolher fase";
+  if(n==4)return "‰…ª‚Ëƒ‚";
+  if(n==5)return "€œ€Ğ€¶€Ã€Å €È€Å€Ã€·€Â€Ô";
+  if(n==6)return "µ½ã´‰œ…Ÿ";
+ }
+ if(text=="Left / Right to choose"){
+  if(n==0)return "Left / Right to choose";
+  if(n==1)return "Gauche / Droite pour choisir";
+  if(n==2)return "Izquierda / Derecha para elegir";
+  if(n==3)return "Esquerda / Direita para escolher";
+  if(n==4)return "„¨ / ƒ™‰…ª";
+  if(n==5)return "€œ€À€º€·€Ã / €œ€Ä€Å€µ€·€Ã €¹€À€Ô €·€Ğ€¶€Ã€Å€µ";
+  if(n==6)return "„¨ / ƒ™€‰œ…Ÿ";
+ }
+ if(text=="Attack to go"){
+  if(n==0)return "Attack to go";
+  if(n==1)return "Attaque pour y aller";
+  if(n==2)return "Ataque para ir";
+  if(n==3)return "Ataque para ir";
+  if(n==4)return "…Å‚ß‰¹‚ë„Ñ";
+  if(n==5)return "€š€Ç€µ€¿€µ €¹€À€Ô €Ä€º€Å€º€Ê€Ã€¹€µ";
+  if(n==6)return "…Å…¿€‡«‚÷";
+ }
  return text;}
 int nativeDialogPage(void a,void b,void c,void d){
  if(a=="..." && b=="" && c=="" && d=="")return 0;
@@ -2569,7 +2596,7 @@ int nativeDialogPage(void a,void b,void c,void d){
  if(a=="my brother, you sacrificed" && b=="yourself for us..." && c=="" && d=="")return 105;
  if(a=="rest assured that we will continue" && b=="the battle for you, and for" && c=="Athena!" && d=="")return 106;
  return -1;}
-int nativeTranslationLines(){return 542;}
+int nativeTranslationLines(){return 548;}
 void nativeSoldierLabel(void model){
  if(model=="malesoldier")return nativeText("Soldier");
  if(model=="Comboman")return nativeText("Soldier");

@@ -1810,5 +1810,14 @@
   },
   "Troll Soldier": {
     "text": "Troll Soldier"
+  },
+  "Level Select": {
+    "text": "Level Select"
+  },
+  "Left / Right to choose": {
+    "text": "Left / Right to choose"
+  },
+  "Attack to go": {
+    "text": "Attack to go"
   }
 }
