@@ -39,12 +39,24 @@ void localizationExport()
     localizationCopy("data/translations/native/"+locCode(lang)+"/menu.txt","menu.txt");
     setglobalvar("loc_exported",lang+1);
 }
+void localizedParagraph(void key,int x,int y,int layer)
+{
+    int lang=getglobalvar("ui_lang");if(lang==NULL())lang=0;
+    int i;
+    if(getglobalvar("loc_paragraph_key")!=key || getglobalvar("loc_paragraph_lang")!=lang+1){
+        for(i=0;i<5;i++)setglobalvar("loc_line_"+i,nativeParagraphLine(key,i));
+        setglobalvar("loc_paragraph_key",key);setglobalvar("loc_paragraph_lang",lang+1);
+    }
+    for(i=0;i<5;i++){
+        void text=getglobalvar("loc_line_"+i);
+        if(text!="")drawstring(x,y+i*15,5,text,layer);
+    }
+}
 int localizedDialog(void a,void b,void c,void d,int x,int y,int layer)
 {
     if(a==NULL())a="";if(b==NULL())b="";if(c==NULL())c="";if(d==NULL())d="";
     int page=nativeDialogPage(a,b,c,d);if(page<0)return 0;
-    int lang=getglobalvar("ui_lang");if(lang==NULL())lang=0;
-    localizationSprite("data/sprites/localization/"+locCode(lang)+"/dialog-"+page+".png",x,y,layer);
+    localizedParagraph("dialog:"+page,x,y,layer);
     return 1;
 }
 void localizeFighterLabels()

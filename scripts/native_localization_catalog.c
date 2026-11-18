@@ -2600,4 +2600,4025 @@ void nativeSoldierLabel(void model){
  if(model=="soldier_mud")return nativeText("Mud Soldier");
  if(model=="soldier_troll")return nativeText("Troll Soldier");
  return NULL();}
+void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");
+ if(key=="dialog:0"){
+  if(n==0){
+   if(line==0)return "...";
+   return "";}
+  if(n==1){
+   if(line==0)return "...";
+   return "";}
+  if(n==2){
+   if(line==0)return "...";
+   return "";}
+  if(n==3){
+   if(line==0)return "...";
+   return "";}
+  if(n==4){
+   if(line==0)return "...";
+   return "";}
+  if(n==5){
+   if(line==0)return "...";
+   return "";}
+  if(n==6){
+   if(line==0)return "...";
+   return "";}
+ }
+ if(key=="dialog:1"){
+  if(n==0){
+   if(line==0)return ".....";
+   return "";}
+  if(n==1){
+   if(line==0)return ".....";
+   return "";}
+  if(n==2){
+   if(line==0)return ".....";
+   return "";}
+  if(n==3){
+   if(line==0)return ".....";
+   return "";}
+  if(n==4){
+   if(line==0)return "€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return ".....";
+   return "";}
+  if(n==6){
+   if(line==0)return "€Û€Û";
+   return "";}
+ }
+ if(key=="dialog:2"){
+  if(n==0){
+   if(line==0)return "Agh... But how?? You are going to";
+   if(line==1)return "d...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Ah€Û Mais comment ? Tu vas€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "Ah... €„Pero c€“mo? Vas a morir...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Ah... Mas como?? Voc€ vai d...";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒ¸€Û€Û‚Ÿ…á„àõ‚ïŠˆ‚§„—ˆ¥...";
+   return "";}
+  if(n==5){
+   if(line==0)return "€³€Ê... €¦€Ã €¿€µ€¿?? €«€Ğ €Æ€Ã€¶€½€Å€µ€º€Í€Ñ€Æ€Ô €¹...";
+   return "";}
+  if(n==6){
+   if(line==0)return "€á€á...€“‚€ã”€û€ş??€áƒ€øˆ...";
+   return "";}
+ }
+ if(key=="dialog:3"){
+  if(n==0){
+   if(line==0)return "Aiolia! I'm happy to see you! We can";
+   if(line==1)return "count on you to help us, right?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Aiolia ! Je suis heureux de te revoir";
+   if(line==1)return "! Nous pouvons compter sur ton";
+   if(line==2)return "aide, n€Øest-ce pas ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Aiolia! €Estoy feliz de verte!";
+   if(line==1)return "Podemos contar contigo para";
+   if(line==2)return "ayudarnos, €„verdad?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Aiolia! Estou feliz em ver voc€!";
+   if(line==1)return "Podemos contar com voc€ para nos";
+   if(line==2)return "ajudar, certo?";
+   return "";}
+  if(n==4){
+   if(line==0)return "ˆ„†›‚å‚ƒŠ„…„„Ó‰ñ‚Ìˆ©‚ç‚§Š„…„‚”ƒ—‚“…°…ñ‚§†€„°‚ó";
+   if(line==1)return "…„‚”Š…„“ƒ Šˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€š€¾€Ã€À€½€Ô! €´ €Å€µ€¹ €Ç€º€¶€Ô €·€½€¹€º€Ç€Ñ! €¥€Ğ €Á€Ã€»€º€Á";
+   if(line==1)return "€Å€µ€Æ€Æ€Ì€½€Ç€Ğ€·€µ€Ç€Ñ €Â€µ €·€µ€Í€È €Ä€Ã€Á€Ã€Î€Ñ, €·€º€Å€Â€Ã?";
+   return "";}
+  if(n==6){
+   if(line==0)return " ¢§İ Š„€å‚˜€â€€è€şƒú€ğ€â€€òŠ„€áƒ€ø€ç‡¥€ø";
+   if(line==1)return "€ú‚ó€ë€ş€éš™‰Ş˜„€ğ€ş€â€ò–†?";
+   return "";}
+ }
+ if(key=="dialog:4"){
+  if(n==0){
+   if(line==0)return "Alright, between us Hyoga! This";
+   if(line==1)return "time I will fight with all my might!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tr€s bien, Hyoga ! Cette fois, je";
+   if(line==1)return "combattrai de toutes mes forces !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Muy bien, entre nosotros Hyoga!";
+   if(line==1)return "€€Esta vez luchar€ con todas mis";
+   if(line==2)return "fuerzas!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Tudo bem, entre n€“s Hyoga! Dessa";
+   if(line==1)return "vez vou lutar com todas as minhas";
+   if(line==2)return "for€Œas!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒñƒ£Š……„‚”ö‰Â‚Ô†·Š„‰‚†™…„‚˜‚É‚î…†…ÑŠ„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¤€µ€¹€Â€Ã, €Á€º€»€¹€È €Â€µ€Á€½, €®€Õ€¸€µ! €¦€µ €Ò€Ç€Ã€Ç €Å€µ€¼ €Ô";
+   if(line==1)return "€¶€È€¹€È €Æ€Å€µ€»€µ€Ç€Ñ€Æ€Ô €½€¼€Ã €·€Æ€º€Ê €Æ€½€À!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ï€ş€Ü€í€í€‡¥€ø€ú†°†·Š„‚„¿ˆ‚É‚î€…‡€â€ò!!";
+   return "";}
+ }
+ if(key=="dialog:5"){
+  if(n==0){
+   if(line==0)return "But... what is this burning cosmos i";
+   if(line==1)return "sense?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Mais€Û quel est ce Cosmos br€—lant";
+   if(line==1)return "que je ressens ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "Pero... €„qu€ es este cosmos en";
+   if(line==1)return "llamas que siento?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Mas... o que € esse cosmos ardente";
+   if(line==1)return "que sinto?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚Ÿ…á€Û€Û…„„üˆ­‚ç‡‡‰‚ğ†Õ†Ò‡‡„„†…á‚‹õŠˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€Ã... €Ì€Ç€Ã €Ò€Ç€Ã €¼€µ €¸€Ã€Å€Ô€Î€½€¾ €¿€Ã€Æ€Á€Ã€Æ €Ô";
+   if(line==1)return "€Ì€È€·€Æ€Ç€·€È€Ó?";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ğ€æ€ğ...‡¥€ç„ü€ñ™€í‡†Õ€ä™„„†ˆ‚¤€€ò€æ?";
+   return "";}
+ }
+ if(key=="dialog:6"){
+  if(n==0){
+   if(line==0)return "Cassios! How miserable you are!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Cassios ! Quel malheur€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "Casios! €Qu€ miserable eres!";
+   return "";}
+  if(n==3){
+   if(line==0)return "C€‰ssio! Como voc€ € miser€‰vel!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒ‚ˆ¤ƒí…ÔŠ„‚§ƒßƒ—„ãƒ§Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€£€µ€Æ€Æ€½€Ã€Æ! €£€µ€¿ €Ç€Ğ €Â€º€Æ€Ì€µ€Æ€Ç€º€Â!";
+   return "";}
+  if(n==6){
+   if(line==0)return "¨³§µŠ„ƒ€ş„÷’ƒ€ù›€ãŠ„";
+   return "";}
+ }
+ if(key=="dialog:7"){
+  if(n==0){
+   if(line==0)return "Cassios!! Hold on!! Stop the fight";
+   if(line==1)return "now Aiolia!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Cassios ! Attends ! Arr€te le";
+   if(line==1)return "combat, Aiolia !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Casios!! €€Esperar!! €Det€n la pelea";
+   if(line==1)return "ahora Aioria!";
+   return "";}
+  if(n==3){
+   if(line==0)return "C€‰ssios!! Aguentar!! Pare a luta";
+   if(line==1)return "agora, Aiolia!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒ‚ˆ¤ƒí…ÔŠ„Š„ƒÉ…¯Š…‡­‡¼Š„Š„ˆ„†›‚å‚ƒŠ…‚·†…†…Ñƒ£Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€£€µ€Æ€Æ€½€Ã€Æ!! €¨€Ã€¹€Ã€»€¹€½!! €§€Æ€Ç€µ€Â€Ã€·€½ €¶€Ã€¾ €Æ€º€¾€Ì€µ€Æ";
+   if(line==1)return "€»€º, €š€¾€Ã€À€½€Ô!";
+   return "";}
+  if(n==6){
+   if(line==0)return "¨³§µŠ„Š„…¯‡Ï€ò™Š„Š„ ¢§İ €Ü‚€ò€ê…‡€â†";
+   if(line==1)return "’€ş€é€ù€ï€âŠ„";
+   return "";}
+ }
+ if(key=="dialog:8"){
+  if(n==0){
+   if(line==0)return "Congratulations Hyoga, you";
+   if(line==1)return "managed to use absolute zero, I";
+   if(line==2)return "have nothing more to teach you,";
+   if(line==3)return "you have exceeded your master...";
+   return "";}
+  if(n==1){
+   if(line==0)return "F€licitations, Hyoga. Tu as atteint";
+   if(line==1)return "le z€ro absolu. Je n€Øai plus rien €ˆ";
+   if(line==2)return "t€Øapprendre : tu as surpass€ ton";
+   if(line==3)return "ma€‘tre€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "Felicidades Hyoga, lograste usar el";
+   if(line==1)return "cero absoluto, no tengo nada m€‰s";
+   if(line==2)return "que ense€’arte, has superado a tu";
+   if(line==3)return "maestro...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Parab€ns Hyoga, voc€ conseguiu";
+   if(line==1)return "usar o zero absoluto, n€‹o tenho";
+   if(line==2)return "mais nada para te ensinar, voc€";
+   if(line==3)return "superou seu mestre...";
+   return "";}
+  if(n==4){
+   if(line==0)return "„ïƒº‚Ô†·Š…‚§…ƒ‚ğ‚¨†÷û‡Ş„“‰ÖŠ……„†¶‚‹õƒ—…Ì‚§";
+   if(line==1)return "‡‡ûŠ…‚§„¬‡Ûˆçˆèû‚§‡‡ó‚Š€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¨€Ã€¼€¹€Å€µ€·€À€Ô€Ó, €®€Õ€¸€µ, €Ç€º€¶€º €È€¹€µ€À€Ã€Æ€Ñ";
+   if(line==1)return "€½€Æ€Ä€Ã€À€Ñ€¼€Ã€·€µ€Ç€Ñ €µ€¶€Æ€Ã€À€Ó€Ç€Â€Ğ€¾ €Â€Ã€À€Ñ, €Á€Â€º";
+   if(line==2)return "€¶€Ã€À€Ñ€Í€º €Â€º€Ì€º€Á€È €Ç€º€¶€Ô €È€Ì€½€Ç€Ñ, €Ç€Ğ";
+   if(line==3)return "€Ä€Å€º€·€¼€Ã€Í€º€À €Æ€·€Ã€º€¸€Ã €Á€µ€Æ€Ç€º€Å€µ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "€å’€€ã†°†·€Ü‡Î„•‰Ö„¿‚¨€â€íƒ€ò€í€ç€€è";
+   if(line==1)return "€ø€Ü“€ã…Ì€ä™€íˆƒ€â€Ü„¯‚ûˆç€ä€ø€Û€Û€İ";
+   return "";}
+ }
+ if(key=="dialog:9"){
+  if(n==0){
+   if(line==0)return "Courage... I have almost no more";
+   if(line==1)return "strength but I have to reach the";
+   if(line==2)return "statue of Athena...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Courage€Û Je n€Øai presque plus de";
+   if(line==1)return "forces, mais je dois atteindre la";
+   if(line==2)return "statue d€ØAth€na€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "€†nimo... Ya casi no tengo fuerzas";
+   if(line==1)return "pero tengo que llegar a la estatua";
+   if(line==2)return "de Atenea...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Coragem... Quase n€‹o tenho mais";
+   if(line==1)return "for€Œas mas tenho que chegar at€ a";
+   if(line==2)return "est€‰tua de Atena...";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚ö†­€Û€Û…„‚Ù÷†¶…î‚î†­ûŠ…‚Ÿ…„„Ü‰â‚çˆú‰Ò‚Ïƒø";
+   if(line==1)return "‰Ô‚¾€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¥€È€»€º€Æ€Ç€·€µ... €ª€½€À €È €Á€º€Â€Ô €Ä€Ã€Ì€Ç€½ €Â€º€Ç, €Â€Ã €Á€Â€º";
+   if(line==1)return "€Â€µ€¹€Ã €¹€Ã€¾€Ç€½ €¹€Ã €Æ€Ç€µ€Ç€È€½ €š€É€½€Â€Ğ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚ö†®€Û“€ã‚îˆ‚ƒ€â€ë‚€Ü ½Á‚¾€ˆ˜€æ";
+   if(line==1)return "ƒ€â€Û€İ";
+   return "";}
+ }
+ if(key=="dialog:10"){
+  if(n==0){
+   if(line==0)return "Die Seiya! Lightning plasma...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Meurs, Seiya ! Par le Lightning";
+   if(line==1)return "Plasma !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Muere Seiya! Plasma rel€‰mpago...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Morra Seiya! Plasma rel€Šmpago...";
+   return "";}
+  if(n==4){
+   if(line==0)return "…à‡–Š„‰À†û‡¼‡¤ƒû...";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¬€Á€Å€½ €ª€º€¾€Ô! €¥€Ã€À€Â€½€º€Â€Ã€Æ€Â€µ€Ô €Ä€À€µ€¼€Á€µ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "†¡†‡ğƒ´Š„Ü¢¿Ââ­ÍÜ¶Ó€Û";
+   return "";}
+ }
+ if(key=="dialog:11"){
+  if(n==0){
+   if(line==0)return "Do you really think I would have";
+   if(line==1)return "taken the risk of dirtying the";
+   if(line==2)return "statue of Athena inside my";
+   if(line==3)return "temple?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu crois vraiment que je prendrais";
+   if(line==1)return "le risque de salir la statue";
+   if(line==2)return "d€ØAth€na qui se trouve dans mon";
+   if(line==3)return "temple ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„De verdad crees que me habr€a";
+   if(line==1)return "arriesgado a ensuciar la estatua";
+   if(line==2)return "de Atenea dentro de mi templo?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ realmente acha que eu teria";
+   if(line==1)return "corrido o risco de sujar a est€‰tua";
+   if(line==2)return "de Atena dentro do meu templo?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§‡‡‡ˆÆò…„‚˜‚Ò‰Ê„Æ‡ö‡¢„¼‰¥‡‡‰Ò‚Ïƒø‰Ô‚¾ƒ Šˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€º€È€»€º€À€½ €Ç€Ğ €¹€È€Á€µ€º€Í€Ñ, €Ì€Ç€Ã €Ô €¶€Ğ €Å€½€Æ€¿€Â€È€À";
+   if(line==1)return "€½€Æ€Ä€µ€Ì€¿€µ€Ç€Ñ €Æ€Ç€µ€Ç€È€Ó €š€É€½€Â€Ğ €·€Â€È€Ç€Å€½ €Á€Ã€º€¸€Ã";
+   if(line==2)return "€Ê€Å€µ€Á€µ?";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥€ç„”‰È‚Ğ‡ ½Á‚¾†²€òƒ„‰Ë‚Ò€ğ€ø…õ„Í„";
+   if(line==1)return "„ä€â€ò€æ?";
+   return "";}
+ }
+ if(key=="dialog:12"){
+  if(n==0){
+   if(line==0)return "Does that mean the temple is";
+   if(line==1)return "empty?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Cela signifie-t-il que ce temple est";
+   if(line==1)return "vide ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Eso significa que el templo est€‰";
+   if(line==1)return "vac€o?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Isso significa que o templo est€‰";
+   if(line==1)return "vazio?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰‚…áƒ¢„úƒ¬‡’ƒÄ†¦„¬‡Û‡°ûŠˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€§€¼€Â€µ€Ì€µ€º€Ç €À€½ €Ò€Ç€Ã, €Ì€Ç€Ã €Ê€Å€µ€Á €Ä€È€Æ€Ç?";
+   return "";}
+  if(n==6){
+   if(line==0)return "€â€ã€íˆ‡¢‡¡ˆ‡°€â€ş€â™‡€€ğ•€ã€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:13"){
+  if(n==0){
+   if(line==0)return "Even though I can't see you, I";
+   if(line==1)return "sense your evil energy, your dark";
+   if(line==2)return "soul puts the reputation of the";
+   if(line==3)return "Golden Knights to shame!";
+   return "";}
+  if(n==1){
+   if(line==0)return "M€me sans te voir, je ressens ton";
+   if(line==1)return "€nergie mal€fique. Ton €Šme sombre";
+   if(line==2)return "d€shonore les Chevaliers d€ØOr !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Aunque no puedo verte, siento tu";
+   if(line==1)return "energ€a maligna, €tu alma oscura";
+   if(line==2)return "averg€˜enza la reputaci€“n de los";
+   if(line==3)return "Caballeros Dorados!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Mesmo que eu n€‹o possa ver voc€,";
+   if(line==1)return "sinto sua energia maligna, sua alma";
+   if(line==2)return "sombria envergonha a reputa€Œ€‹o";
+   if(line==3)return "dos Cavaleiros de Ouro!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ˆ“†Ô‡ç‚ç‚§Š…‚Ÿ…„„üƒ‘‚çû‚§‡‡‰„ñ‡õ‰¨Š…‚§‡‡‰ı";
+   if(line==1)return "…é†Ğ‰òˆÈ‰ü‰©ƒÄ…Ñƒ×‡‡ƒƒÙŠ†ÔƒçˆƒŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€®€Ã€Ç€Ñ €Ô €½ €Â€º €·€½€»€È €Ç€º€¶€Ô, €Ô €Ì€È€·€Æ€Ç€·€È€Ó €Ç€·€Ã€Ó";
+   if(line==1)return "€¼€À€È€Ó €Ò€Â€º€Å€¸€½€Ó, €Ç€·€Ã€Ô €Ç€º€Á€Â€µ€Ô €¹€È€Í€µ";
+   if(line==2)return "€Ä€Ã€Æ€Å€µ€Á€À€Ô€º€Ç €Å€º€Ä€È€Ç€µ€Ë€½€Ó €¡€Ã€À€Ã€Ç€Ğ€Ê";
+   if(line==3)return "€©€Ğ€Ë€µ€Å€º€¾!";
+   return "";}
+  if(n==6){
+   if(line==0)return "ƒ÷ˆˆ§€äƒ€é€ş“€Ü€áƒ€ø‡‰„ôƒ¥ÄŞ«ã„ü€ñ";
+   if(line==1)return "€ò€Ü€áƒ€ø‡…é€â‰òˆ‰ü‰©‡ğ‰¿ƒ×‡ƒƒÙ„í€ñ™";
+   if(line==2)return "‚€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:14"){
+  if(n==0){
+   if(line==0)return "Every tortured face around you";
+   if(line==1)return "belongs to a man I killed with my";
+   if(line==2)return "own hands!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Chacun de ces visages tortur€s";
+   if(line==1)return "appartient €ˆ un homme que j€Øai tu€";
+   if(line==2)return "de mes propres mains !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Cada rostro torturado a tu";
+   if(line==1)return "alrededor pertenece a un hombre";
+   if(line==2)return "que mat€ con mis propias manos!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Cada rosto torturado ao seu redor";
+   if(line==1)return "pertence a um homem que matei";
+   if(line==2)return "com minhas pr€“prias m€‹os!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§ƒ«ƒÀ†¨„Ê‰èƒ‘…‡Ÿ‡‡‡ø‰¡„£‚…„‚ˆ……ù†¡‡‡‚ŠŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€£€µ€»€¹€Ã€º €½€¼€Á€È€Ì€º€Â€Â€Ã€º €À€½€Ë€Ã €·€Ã€¿€Å€È€¸ €Ç€º€¶€Ô";
+   if(line==1)return "€Ä€Å€½€Â€µ€¹€À€º€»€½€Ç €Ì€º€À€Ã€·€º€¿€È, €¿€Ã€Ç€Ã€Å€Ã€¸€Ã €Ô €È€¶€½€À";
+   if(line==2)return "€Æ€Ã€¶€Æ€Ç€·€º€Â€Â€Ğ€Á€½ €Å€È€¿€µ€Á€½!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€áƒ€ø‡ƒ«˜‡…­ƒ¹€ïš€ø‰ßˆ€ò€ş€Ü‡¥€ç€í‡…";
+   if(line==1)return "€†¥€ğ€ø†ü‡“‡€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:15"){
+  if(n==0){
+   if(line==0)return "Farewell Shun! You will suffer my";
+   if(line==1)return "most fearsome attack, the evil";
+   if(line==2)return "white rose! This rose will absorb";
+   if(line==3)return "your heart's blood and kill you!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Adieu, Shun ! Subis mon attaque la";
+   if(line==1)return "plus redoutable : la rose blanche !";
+   if(line==2)return "Elle absorbera le sang de ton c€™ur";
+   if(line==3)return "jusqu€Ø€ˆ te tuer !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Adi€“s Shun! €Sufrir€‰s mi ataque m€‰s";
+   if(line==1)return "temible, la malvada rosa blanca!";
+   if(line==2)return "€Esta rosa absorber€‰ la sangre de";
+   if(line==3)return "tu coraz€“n y te matar€‰!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Adeus Shun! Voc€ sofrer€‰ meu";
+   if(line==1)return "ataque mais tem€vel, a malvada";
+   if(line==2)return "rosa branca! Esta rosa vai";
+   if(line==3)return "absorver o sangue do seu cora€Œ€‹o";
+   if(line==4)return "e te matar!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚Ñˆ©‡şŠ„‚§„—‰›ƒ‘…„…íƒ—„â‡‡…Å‚ßŠ…‰„ñ‡‡‡††î†òŠ„";
+   if(line==1)return "‰‚…÷†î†ò‚˜ƒ¦…Ä‚§‡‡„Ûˆ—„µ…ù†¡‚§Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¨€Å€Ã€Î€µ€¾, €°€È€Â! €«€Ğ €Ä€Ã€Æ€Ç€Å€µ€¹€µ€º€Í€Ñ €Ã€Ç €Á€Ã€º€¾";
+   if(line==1)return "€Æ€µ€Á€Ã€¾ €Æ€Ç€Å€µ€Í€Â€Ã€¾ €µ€Ç€µ€¿€½ €× €¼€À€Ã€¾ €¶€º€À€Ã€¾";
+   if(line==2)return "€Å€Ã€¼€Ğ! €³€Ç€µ €Å€Ã€¼€µ €Ä€Ã€¸€À€Ã€Ç€½€Ç €¿€Å€Ã€·€Ñ €Ç€·€Ã€º€¸€Ã";
+   if(line==3)return "€Æ€º€Å€¹€Ë€µ €½ €È€¶€Ñ€º€Ç €Ç€º€¶€Ô!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ï—‰³ÚâŠ„ˆÜ†–ˆ‡¥‡…í“„ê›€ğ€â…Å…¿€Ü‰„ôƒ";
+   if(line==1)return "‡†ˆ‘ˆ„ˆ§ˆ€œš™€ù›€ãŠ„€í‡ÆÜˆ€áƒ€ø‡„Û‡ù";
+   if(line==2)return "‡ˆ—ƒ¦ƒ€ğ€ş€áƒ€ø†¥€ğ€ò!";
+   return "";}
+ }
+ if(key=="dialog:16"){
+  if(n==0){
+   if(line==0)return "GGGhhh";
+   return "";}
+  if(n==1){
+   if(line==0)return "GGGhhh";
+   return "";}
+  if(n==2){
+   if(line==0)return "GGGhhh";
+   return "";}
+  if(n==3){
+   if(line==0)return "GGGhhh";
+   return "";}
+  if(n==4){
+   if(line==0)return "GGƒ¸ƒ¸ƒ¸";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€€€Ê€Ê";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ê€ê€û";
+   return "";}
+ }
+ if(key=="dialog:17"){
+  if(n==0){
+   if(line==0)return "Grrrr!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Grrrr !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Grrrr!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Grrr!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒ¯ƒ»Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€Å€Å€Å€Å!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ããŠ„";
+   return "";}
+ }
+ if(key=="dialog:18"){
+  if(n==0){
+   if(line==0)return "Here are the golden knight of";
+   if(line==1)return "Gemini! This temple semble to float";
+   if(line==2)return "in another dimension and has no";
+   if(line==3)return "exit!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Voici le Chevalier d€ØOr des";
+   if(line==1)return "G€meaux ! Ce temple semble flotter";
+   if(line==2)return "dans une autre dimension, sans";
+   if(line==3)return "aucune issue !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Aqu€ est€‰ el caballero dorado de";
+   if(line==1)return "G€minis! €Este templo parece flotar";
+   if(line==2)return "en otra dimensi€“n y no tiene";
+   if(line==3)return "salida!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Aqui est€‰ o cavaleiro de ouro de";
+   if(line==1)return "G€meos! Este templo parece";
+   if(line==2)return "flutuar em outra dimens€‹o e n€‹o";
+   if(line==3)return "tem sa€da!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰‚‰¥…áƒŒƒû„À‡‡‰ü‰©‰ïƒ×Š„‰‚„À„”„¼„œ‚¾†Í†¾ƒÅƒ•ä";
+   if(line==1)return "ğ‡â„¿Š…†¶…î‚Şƒ”Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ã€Ç €¼€Ã€À€Ã€Ç€Ã€¾ €Å€Ğ€Ë€µ€Å€Ñ €›€À€½€¼€Â€º€Ë€Ã€·! €³€Ç€Ã€Ç";
+   if(line==1)return "€Ê€Å€µ€Á €Æ€À€Ã€·€Â€Ã €Ä€µ€Å€½€Ç €· €¹€Å€È€¸€Ã€Á €½€¼€Á€º€Å€º€Â€½€½ €½";
+   if(line==2)return "€Â€º €½€Á€º€º€Ç €·€Ğ€Ê€Ã€¹€µ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€í€ú—ˆƒŒƒû„À‡‰ü‰©‰ìƒ×Š„€í‡„”‰Èˆ‡‚†™‚Â„†¾";
+   if(line==1)return "€â€ş€â™–€ã€€Ü‚Şƒ”€ç€á˜€ô€İ";
+   return "";}
+ }
+ if(key=="dialog:19"){
+  if(n==0){
+   if(line==0)return "Hold on! I've been waiting for this";
+   if(line==1)return "moment for too long! It's up to me";
+   if(line==2)return "to kill Seiya!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Attends ! J€Øattends ce moment";
+   if(line==1)return "depuis trop longtemps. C€Øest €ˆ moi";
+   if(line==2)return "de tuer Seiya !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Esperar! €He estado esperando";
+   if(line==1)return "este momento durante demasiado";
+   if(line==2)return "tiempo! €Depende de m€ matar a";
+   if(line==3)return "Seiya!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Aguentar! Estou esperando por";
+   if(line==1)return "esse momento h€‰ muito tempo!";
+   if(line==2)return "Cabe a mim matar Seiya!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒÉ…¯Š…‡­‡¼Š„…„‡¼‰‚ä‚ê„¬‡ÛƒäôûŠ„…ù†¡ƒÄƒ´…á…„";
+   if(line==1)return "‡‡şŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¨€Ã€¹€Ã€»€¹€½! €´ €Æ€À€½€Í€¿€Ã€Á €¹€Ã€À€¸€Ã €»€¹€µ€À €Ò€Ç€Ã€¸€Ã";
+   if(line==1)return "€Á€Ã€Á€º€Â€Ç€µ! €´ €¹€Ã€À€»€º€Â €È€¶€½€Ç€Ñ €ª€º€¾€Ó!";
+   return "";}
+  if(n==6){
+   if(line==0)return "…¯‡Ï€ò™Š„€í‡‡•‰¾‰»€â‰¾„Ò€û€ş€â€ğ€øŠ„…à‡–";
+   if(line==1)return "‚®€ò‡ˆ‡¥€ùŠ„";
+   return "";}
+ }
+ if(key=="dialog:20"){
+  if(n==0){
+   if(line==0)return "How can you say such nonsense!";
+   if(line==1)return "Saori Kido is the reincarnation of";
+   if(line==2)return "Athena! You have the wrong";
+   if(line==3)return "enemy, we are trying to save her!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Comment peux-tu dire cela ? Saori";
+   if(line==1)return "Kido est la r€incarnation d€ØAth€na";
+   if(line==2)return "! Tu te trompes d€Øennemis : nous";
+   if(line==3)return "essayons de la sauver !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€C€“mo puedes decir semejantes";
+   if(line==1)return "tonter€as! €Saori Kido es la";
+   if(line==2)return "reencarnaci€“n de Atenea! €Tienes";
+   if(line==3)return "el enemigo equivocado, estamos";
+   if(line==4)return "tratando de salvarla!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Como voc€ pode dizer tal bobagem!";
+   if(line==1)return "Saori Kido € a reencarna€Œ€‹o de";
+   if(line==2)return "Atena! Voc€ tem o inimigo errado,";
+   if(line==3)return "estamos tentando salv€‰-la!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§„àõ‡õˆÔ‚Ş‰‚†Š‡‡„¾ˆÑŠ„ƒÍ…‰†µ‡Ù…á‰Ò‚Ïƒø‡‡ˆó";
+   if(line==1)return "êŠ„‚§…–‰¸û…É‚ŠŠ……„‚”†ƒÅ‚ô‚î…«…ÊƒğŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€£€µ€¿ €Á€Ã€»€Â€Ã €¸€Ã€·€Ã€Å€½€Ç€Ñ €Ç€µ€¿€È€Ó €Ö€Ö€Ì€È€Í€Ñ! €ª€µ€Ã€Å€½";
+   if(line==1)return "€£€½€¹€Ã €× €Å€º€½€Â€¿€µ€Å€Â€µ€Ë€½€Ô €š€É€½€Â€Ğ! €¬ €·€µ€Æ €Â€º";
+   if(line==2)return "€Ç€Ã€Ç €·€Å€µ€¸, €Á€Ğ €Ä€Ğ€Ç€µ€º€Á€Æ€Ô €º€º €Æ€Ä€µ€Æ€Ç€½!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚€ã€ğ€ş€öƒ‰€æ‰€æ€ğ€â€í€çˆ±€ä™‡€€ğ•€ãŠ„";
+   if(line==1)return "ƒÍ…Š†µ‡Òˆ ½Á‡†öšƒÜœ˜Š„€áƒ€ø‡…Ïˆ‰¾";
+   if(line==2)return "‰—€û€ş€â€ò€Ü‡¥€ø€úˆ„Ğƒï…Ê€å€ã€ğ€ş€â€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:21"){
+  if(n==0){
+   if(line==0)return "How dare you come here to the";
+   if(line==1)return "sanctuary! We both have a revenge";
+   if(line==2)return "to take; it's my student cassios";
+   if(line==3)return "who deserved the pegasus armor!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Comment oses-tu venir au";
+   if(line==1)return "Sanctuaire ? Nous avons un compte";
+   if(line==2)return "€ˆ r€gler : c€Øest mon €l€ve Cassios";
+   if(line==3)return "qui m€ritait l€Øarmure de P€gase !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„C€“mo te atreves a venir aqu€ al";
+   if(line==1)return "santuario? Ambos tenemos una";
+   if(line==2)return "venganza que tomar; €Es mi alumno";
+   if(line==3)return "Cassios quien merec€a la armadura";
+   if(line==4)return "de Pegaso!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Como voc€ ousa vir aqui para o";
+   if(line==1)return "santu€‰rio! Ambos temos uma";
+   if(line==2)return "vingan€Œa a realizar; € meu aluno";
+   if(line==3)return "Cassios que mereceu a armadura";
+   if(line==4)return "de P€gaso!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§„†Ô…Í†€ƒÄƒÎŠ„…„‚”‰¡…îƒİ‚‡‡…ø‚˜Š‡  ‚²„×…©";
+   if(line==1)return "…îƒã‰î‰³‡‡…á…„‡‡ƒş†öƒ‚ˆ¤ƒí…ÔŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€£€µ€¿ €Ç€Ğ €Ä€Ã€Æ€Á€º€À €Ä€Å€½€¾€Ç€½ €Æ€Ó€¹€µ, €·";
+   if(line==1)return "€Æ€·€Ô€Ç€½€À€½€Î€º! €¦€µ€Á €Ã€¶€Ã€½€Á €Â€È€»€Â€Ã €Ã€Ç€Ã€Á€Æ€Ç€½€Ç€Ñ;";
+   if(line==2)return "€Ò€Ç€Ã €Á€Ã€½ €È€Ì€º€Â€½€¿€½ €£€µ€Æ€Æ€½€Ã €¼€µ€Æ€À€È€»€½€À€½";
+   if(line==3)return "€¹€Ã€Æ€Ä€º€Ê€½ €Ä€º€¸€µ€Æ€µ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚€ã€ğ€ş€í€í„‡ğƒÎ„†€™€í€ç€€è€ø‡€€ğ•€ã€æŠ„";
+   if(line==1)return "‡¥€ø€úˆ‚€‚Š“„ÙˆÄ€ğƒ€ëš‰ƒ˜€ô€İ  Ğ©";
+   if(line==2)return "²µ‡‰®‡’™‡ˆ‡¥‡†ö„Õ¨¼³§µ€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:22"){
+  if(n==0){
+   if(line==0)return "How dare you disturb my";
+   if(line==1)return "meditation?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Comment oses-tu troubler ma";
+   if(line==1)return "m€ditation ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„C€“mo te atreves a perturbar mi";
+   if(line==1)return "meditaci€“n?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Como ousa perturbar minha";
+   if(line==1)return "medita€Œ€‹o?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§‡¶…Í……•…„‡‡‚Ó„ùŠˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€£€µ€¿ €Ç€Ğ €Æ€Á€º€º€Í€Ñ €Á€º€Í€µ€Ç€Ñ €Á€Ã€º€¾ €Á€º€¹€½€Ç€µ€Ë€½€½?";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚€ã€ğ€ş‡¥‡‡”„ù‰‰ô€ò™€í€ç€€è™‡€€ò€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:23"){
+  if(n==0){
+   if(line==0)return "However...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Cependant...";
+   return "";}
+  if(n==2){
+   if(line==0)return "Sin embargo...";
+   return "";}
+  if(n==3){
+   if(line==0)return "No entanto...";
+   return "";}
+  if(n==4){
+   if(line==0)return "†Ô‡ì...";
+   return "";}
+  if(n==5){
+   if(line==0)return "€§€¹€Â€µ€¿€Ã...";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ğ€æ€ğ...";
+   return "";}
+ }
+ if(key=="dialog:24"){
+  if(n==0){
+   if(line==0)return "I am Shura, Golden Knight of";
+   if(line==1)return "Capricorn! I am Athena's most";
+   if(line==2)return "trusted servant!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je suis Shura, Chevalier d€ØOr du";
+   if(line==1)return "Capricorne ! Je suis le plus fid€le";
+   if(line==2)return "serviteur d€ØAth€na !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Soy Shura, Caballero Dorado de";
+   if(line==1)return "Capricornio! €Soy el sirviente m€‰s";
+   if(line==2)return "confiable de Atenea!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Eu sou Shura, Cavaleiro Dourado";
+   if(line==1)return "de Capric€“rnio! Eu sou o servo de";
+   if(line==2)return "maior confian€Œa de Atena!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„…á…½‡é„À‰ü‰©‰ïƒ×‚­‡äŠ„…„…á‰Ò‚Ïƒø…í‚¬‚—‡‡‚Œ";
+   if(line==1)return "‚ŠŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €°€È€Å€µ, €¡€Ã€À€Ã€Ç€Ã€¾ €©€Ğ€Ë€µ€Å€Ñ €£€Ã€¼€º€Å€Ã€¸€µ! €´";
+   if(line==1)return "€Æ€µ€Á€Ğ€¾ €¹€Ã€·€º€Å€º€Â€Â€Ğ€¾ €Æ€À€È€¸€µ €š€É€½€Â€Ğ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥ˆ„¤‡ç„À‡‰ü‰©‰ìƒ×³ÚÜ€€òŠ„‡¥ˆ ½Á‡…í";
+   if(line==1)return "“‚¬‰Ş€€è™„Ö‡ë€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:25"){
+  if(n==0){
+   if(line==0)return "I am honored to see you again my";
+   if(line==1)return "master, Camus, knight of Aquarius!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je suis honor€ de vous revoir,";
+   if(line==1)return "ma€‘tre Camus, Chevalier du";
+   if(line==2)return "Verseau !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Es un honor volver a verte mi";
+   if(line==1)return "maestro, Camus, caballero de";
+   if(line==2)return "Acuario!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Tenho a honra de v€-lo novamente";
+   if(line==1)return "meu mestre, Camus, cavaleiro de";
+   if(line==2)return "Aqu€‰rio!";
+   return "";}
+  if(n==4){
+   if(line==0)return "„Óˆ‹„¶‚Ñ†™ˆ©‚ç„óŠ……„‡‡ó‚ŠŠ…†¯†ô„À‰ïƒ×‚ñ‡ãŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€À€Ô €Á€º€Â€Ô €¶€Ã€À€Ñ€Í€µ€Ô €Ì€º€Æ€Ç€Ñ €Æ€Â€Ã€·€µ €·€½€¹€º€Ç€Ñ";
+   if(line==1)return "€·€µ€Æ, €Á€Ã€¾ €¸€Ã€Æ€Ä€Ã€¹€½€Â, €£€µ€Á€Ó, €Å€Ğ€Ë€µ€Å€Ñ";
+   if(line==2)return "€œ€Ã€¹€Ã€À€º€Ô!";
+   return "";}
+  if(n==6){
+   if(line==0)return "Óµ¹ã€Ü†¯†ô„À‡‰ìƒ×€Ü¨ÔÚ„€ø€å‚˜€â€€è€ş";
+   if(line==1)return "‚Æ†‡€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:26"){
+  if(n==0){
+   if(line==0)return "I am really sorry...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je suis vraiment d€sol€...";
+   return "";}
+  if(n==2){
+   if(line==0)return "Lo siento mucho...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Eu realmente sinto muito...";
+   return "";}
+  if(n==4){
+   if(line==0)return "‡‡‡„Ó…¡†œ...";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¥€Â€º €Ã€Ì€º€Â€Ñ €»€µ€À€Ñ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "…õ„Í„†ú€ğˆ¶€á˜€ô...";
+   return "";}
+ }
+ if(key=="dialog:27"){
+  if(n==0){
+   if(line==0)return "I can't do anything to help you.";
+   if(line==1)return "There's a room behind my throne";
+   if(line==2)return "which leads to the big statue of";
+   if(line==3)return "Athena! Direct the light from";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je ne peux rien faire pour t€Øaider.";
+   if(line==1)return "Derri€re mon tr€”ne, une salle m€ne";
+   if(line==2)return "€ˆ la statue d€ØAth€na. Dirige la";
+   if(line==3)return "lumi€re de";
+   return "";}
+  if(n==2){
+   if(line==0)return "No puedo hacer nada para";
+   if(line==1)return "ayudarte. €Hay una habitaci€“n";
+   if(line==2)return "detr€‰s de mi trono que conduce a";
+   if(line==3)return "la gran estatua de Atenea! Dirigir";
+   if(line==4)return "la luz desde";
+   return "";}
+  if(n==3){
+   if(line==0)return "N€‹o posso fazer nada para";
+   if(line==1)return "ajud€‰-lo. H€‰ uma sala atr€‰s do meu";
+   if(line==2)return "trono que leva €ˆ grande est€‰tua de";
+   if(line==3)return "Atena! Direcione a luz de";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„…Ú‡õò‚î„°‚ó‚§€İ…„‡‡†ë„Àƒ‰Ú…îäğ…Œ‰ÂŠ…‰ƒŸ";
+   if(line==1)return "‰Ò‚Ïƒø‡‡ƒâ‰Ô‚¾Š„„—‚Æ‡×‡Œ…¸‚";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €Â€½€Ì€º€Á €Â€º €Á€Ã€¸€È €·€µ€Á €Ä€Ã€Á€Ã€Ì€Ñ. €¡€µ €Á€Ã€½€Á";
+   if(line==1)return "€Ç€Å€Ã€Â€Ã€Á €º€Æ€Ç€Ñ €¿€Ã€Á€Â€µ€Ç€µ, €·€º€¹€È€Î€µ€Ô €¿";
+   if(line==2)return "€¶€Ã€À€Ñ€Í€Ã€¾ €Æ€Ç€µ€Ç€È€º €š€É€½€Â€Ğ! €¦€µ€Ä€Å€µ€·€Ñ€Ç€º €Æ€·€º€Ç";
+   if(line==3)return "€Ã€Ç";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥„ˆ‚¤“€€è€ô€İ‡¥‡†ê„À‡„Ô›„ƒâ€èƒ ";
+   if(line==1)return "½Á‚¾„€üƒ€ç™‰ „ €ç€á˜€òŠ„ Š‰€æ—‚ÆƒŸ€ë";
+   if(line==2)return "€ò";
+   return "";}
+ }
+ if(key=="dialog:28"){
+  if(n==0){
+   if(line==0)return "I didn't come here to hear your";
+   if(line==1)return "compliments! There's no time to";
+   if(line==2)return "lose, help us remove the arrow";
+   if(line==3)return "from Athena's heart!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je ne suis pas venu €couter vos";
+   if(line==1)return "compliments ! Le temps presse :";
+   if(line==2)return "aidez-nous €ˆ retirer la fl€che du";
+   if(line==3)return "c€™ur d€ØAth€na !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€No vine aqu€ para escuchar tus";
+   if(line==1)return "elogios! €No hay tiempo que perder,";
+   if(line==2)return "ay€–danos a quitar la flecha del";
+   if(line==3)return "coraz€“n de Atenea!";
+   return "";}
+  if(n==3){
+   if(line==0)return "N€‹o vim aqui para ouvir seus";
+   if(line==1)return "elogios! N€‹o h€‰ tempo a perder,";
+   if(line==2)return "ajude-nos a retirar a flecha do";
+   if(line==3)return "cora€Œ€‹o de Atena!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„†€‰‚‰¥ç…áòûƒ¤‚§‡‡ˆä‡èŠ„şç„ˆ‰‡Š…„Ş„°…„‚”";
+   if(line==1)return "…™‰Ò‚Ïƒø„Û‡öå‡‡‡À…¦…·ƒ£Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €Ä€Å€½€Í€º€À €Æ€Ó€¹€µ €Â€º €¹€À€Ô €Ç€Ã€¸€Ã, €Ì€Ç€Ã€¶€Ğ";
+   if(line==1)return "€È€Æ€À€Ğ€Í€µ€Ç€Ñ €·€µ€Í€½ €¿€Ã€Á€Ä€À€½€Á€º€Â€Ç€Ğ! €¦€º€À€Ñ€¼€Ô";
+   if(line==2)return "€Ç€º€Å€Ô€Ç€Ñ €·€Å€º€Á€º€Â€½, €Ä€Ã€Á€Ã€¸€½€Ç€º €Â€µ€Á €·€Ğ€Ç€µ€Î€½€Ç€Ñ";
+   if(line==3)return "€Æ€Ç€Å€º€À€È €½€¼ €Æ€º€Å€¹€Ë€µ €š€É€½€Â€Ğ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥ˆ€áƒ€ø‡ˆ£’ˆ±ˆ‡ñ€è„€í€í„†€€øœ€ë€ˆ";
+   if(line==1)return "€á˜€ôŠ„ä‚ê‡†çü“€á˜€ô€İ ½Á‡„Û‡ù";
+   if(line==2)return "€æ—‡–ƒ˜‰É€é‡„‚ş‚î€ğ€ş€é€ù€ï€â!";
+   return "";}
+ }
+ if(key=="dialog:29"){
+  if(n==0){
+   if(line==0)return "I don't want to kill you, don't you";
+   if(line==1)return "realize the power of of andromeda";
+   if(line==2)return "is limitless? In that case, you leave";
+   if(line==3)return "me no choices!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je ne veux pas te tuer. Ne";
+   if(line==1)return "comprends-tu pas que le pouvoir";
+   if(line==2)return "d€ØAndrom€de est sans limites ? Tu";
+   if(line==3)return "ne me laisses pas le choix !";
+   return "";}
+  if(n==2){
+   if(line==0)return "No quiero matarte, €„no te das";
+   if(line==1)return "cuenta de que el poder de";
+   if(line==2)return "Andr€“meda es ilimitado? €En ese";
+   if(line==3)return "caso, no me dejas opciones!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Eu n€‹o quero te matar, voc€ n€‹o";
+   if(line==1)return "percebe que o poder de";
+   if(line==2)return "Andr€”meda € ilimitado? Nesse";
+   if(line==3)return "caso, voc€ n€‹o me deixa escolha!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„ç„ù…ù‚§Š…‚§‰Ğ‰•ç‡—‰•‚‘ƒï„À‡‡‚î‰¨…á…Ú‰Ç‡‡ƒ ";
+   if(line==1)return "Šˆ…Û†Ôƒò†ŸŠ…‚§„œˆÈ…„‚æ…Ú‰…ªŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €Â€º €Ê€Ã€Ì€È €Ç€º€¶€Ô €È€¶€½€·€µ€Ç€Ñ, €Ç€Ğ €Ì€Ç€Ã, €Â€º";
+   if(line==1)return "€Ä€Ã€Â€½€Á€µ€º€Í€Ñ, €Ì€Ç€Ã €Æ€½€À€µ €š€Â€¹€Å€Ã€Á€º€¹€Ğ";
+   if(line==2)return "€¶€º€¼€¸€Å€µ€Â€½€Ì€Â€µ? €œ €Ç€µ€¿€Ã€Á €Æ€À€È€Ì€µ€º €·€Ğ €Â€º";
+   if(line==3)return "€Ã€Æ€Ç€µ€·€À€Ô€º€Ç€º €Á€Â€º €·€Ğ€¶€Ã€Å€µ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥ˆ€áƒ€ø†¥€ğ€ø€é€á˜€ô€Ü âÀàÖº‡‚î";
+   if(line==1)return "€ç†Ó‰Ç€€á™€í„†®€ı€â€ş€â€ô€æŠˆ€ö‡ƒÑƒ›€Ü";
+   if(line==2)return "€áƒ€ø„ˆ‡¥„‰œ…Ÿ‡óˆ€á˜€ôŠ„";
+   return "";}
+ }
+ if(key=="dialog:30"){
+  if(n==0){
+   if(line==0)return "I had fun with you, to tell the truth,";
+   if(line==1)return "but it's just the beginning Shiryu!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je me suis bien amus€ avec toi,";
+   if(line==1)return "Shiryu€Û mais ce n€Øest que le d€but !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Me divert€ contigo, a decir verdad,";
+   if(line==1)return "€pero es solo el comienzo, Shiryu!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Me diverti com voc€, pra falar a";
+   if(line==1)return "verdade, mas € s€“ o come€Œo Shiryu!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ˆÔ„ŠˆÑŠ……„ƒ®‚§†í„×„Ó„Ä„ÛŠ…‚Ÿ‰‚ƒ–…á„ÄƒõŠ…Shir";
+   if(line==1)return "yuŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¯€º€Æ€Ç€Â€Ã €¸€Ã€·€Ã€Å€Ô, €Á€Â€º €¶€Ğ€À€Ã €Æ €Ç€Ã€¶€Ã€¾ €·€º€Æ€º€À€Ã,";
+   if(line==1)return "€Â€Ã €Ò€Ç€Ã €Ç€Ã€À€Ñ€¿€Ã €Â€µ€Ì€µ€À€Ã, €ª€½€Å€Ó!";
+   return "";}
+  if(n==6){
+   if(line==0)return "†‡Œˆ±€û€ş†”€ğ€æ€û€ø€ë‚€Ü€ùƒõ€û€ø‰€æ˜€ù–";
+   if(line==1)return "‡ËŠ‚Š„";
+   return "";}
+ }
+ if(key=="dialog:31"){
+  if(n==0){
+   if(line==0)return "I must succeed in defeating him in";
+   if(line==1)return "order to get ou of this illusion!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je dois le vaincre pour sortir de";
+   if(line==1)return "cette illusion !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Debo lograr derrotarlo para poder";
+   if(line==1)return "salir de esta ilusi€“n!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Devo conseguir derrot€‰-lo para sair";
+   if(line==1)return "dessa ilus€‹o!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„„Ü‰â…ƒ‚ğ‚ßˆß‚Š……‡õ…¼‡÷‰‚ğ„·ƒÓŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €¹€Ã€À€»€º€Â €Ä€Ã€¶€º€¹€½€Ç€Ñ €º€¸€Ã, €Ì€Ç€Ã€¶€Ğ";
+   if(line==1)return "€½€¼€¶€µ€·€½€Ç€Ñ€Æ€Ô €Ã€Ç €Ò€Ç€Ã€¾ €½€À€À€Ó€¼€½€½!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€í‡„·„ù€æ—…€ë‚Ş€ò„ˆ€Ü„Ğ‚®€ò€í„…ƒ‚ğ€ğƒ";
+   if(line==1)return "€ëš‰ƒ˜€ô!";
+   return "";}
+ }
+ if(key=="dialog:32"){
+  if(n==0){
+   if(line==0)return "I really underestimated you bronze";
+   if(line==1)return "knights! By way of gratitude, I";
+   if(line==2)return "agree to let you go on your way.";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je vous ai sous-estim€s, Chevaliers";
+   if(line==1)return "de Bronze ! En reconnaissance de";
+   if(line==2)return "votre courage, j€Øaccepte de vous";
+   if(line==3)return "laisser poursuivre votre route.";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Realmente los subestim€,";
+   if(line==1)return "caballeros de bronce! A modo de";
+   if(line==2)return "agradecimiento, acepto dejarte";
+   if(line==3)return "seguir tu camino.";
+   return "";}
+  if(n==3){
+   if(line==0)return "Eu realmente subestimei voc€s,";
+   if(line==1)return "cavaleiros de bronze! A t€tulo de";
+   if(line==2)return "gratid€‹o, concordo em deix€‰-lo";
+   if(line==3)return "seguir seu caminho.";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„‡…á‚¡‚œ‚§‚”‰Ø‰²ƒÄ…Ñƒ×ûŠ„‚Ş‚„ü†Îö„õŠ……„ƒœ";
+   if(line==1)return "„úˆÈ‚§‡à‡á‚ëˆ˜€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €¹€º€¾€Æ€Ç€·€½€Ç€º€À€Ñ€Â€Ã €Â€º€¹€Ã€Ã€Ë€º€Â€½€À €·€µ€Æ,";
+   if(line==1)return "€¶€Å€Ã€Â€¼€Ã€·€Ğ€º €Å€Ğ€Ë€µ€Å€½! €œ €¼€Â€µ€¿ €¶€À€µ€¸€Ã€¹€µ€Å€Â€Ã€Æ€Ç€½";
+   if(line==2)return "€Ô €Æ€Ã€¸€À€µ€Æ€º€Â €Ã€Ç€Ä€È€Æ€Ç€½€Ç€Ñ €·€µ€Æ €Æ€·€Ã€º€¾ €¹€Ã€Å€Ã€¸€Ã€¾.";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥ˆ‰Ø‰¬‡‰ìƒ×…õ„Í„‰”„˜ˆ¸‚ª€ğ€ş€â€ğ€øŠ„„ü";
+   if(line==1)return "ˆÂ‡†®…¯€úˆù’€ş€Ü€áƒ€ø…Ù‡µ€ø€ô™€í„ƒœ";
+   if(line==2)return "„ú€ğ€ò€İ";
+   return "";}
+ }
+ if(key=="dialog:33"){
+  if(n==0){
+   if(line==0)return "I see an evil look in your eyes! You";
+   if(line==1)return "are possessed! Your mind is being";
+   if(line==2)return "controlled by someone!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tes yeux ont un €clat mal€fique ! Tu";
+   if(line==1)return "es poss€d€€Û Quelqu€Øun contr€”le ton";
+   if(line==2)return "esprit !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Veo una mirada malvada en tus";
+   if(line==1)return "ojos! €Est€‰s pose€do! €Alguien est€‰";
+   if(line==2)return "controlando tu mente!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Eu vejo um olhar maligno em seus";
+   if(line==1)return "olhos! Voc€ est€‰ possu€do! Sua";
+   if(line==2)return "mente est€‰ sendo controlada por";
+   if(line==3)return "algu€m!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„‡‚ç‚§‡‡‡‘‡¢‰¥‚Ä†Ëû‰„ñŠ„‚§‡’‰ôûŠ„‚§‡‡„Û…ç";
+   if(line==1)return "ˆŸ††‚Š…¹‚èûŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €·€½€»€È €¼€À€Ã€¶€Â€Ğ€¾ €·€¼€¸€À€Ô€¹ €· €Ç€·€Ã€½€Ê €¸€À€µ€¼€µ€Ê!";
+   if(line==1)return "€œ€Ğ €Ã€¹€º€Å€»€½€Á€Ğ! €œ€µ€Í€½€Á €Å€µ€¼€È€Á€Ã€Á €¿€Ç€Ã-€Ç€Ã";
+   if(line==2)return "€È€Ä€Å€µ€·€À€Ô€º€Ç!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€áƒ€ø‡‡‹„ˆ‰„ôƒˆ„õ€çˆ§€ä€òŠ„€áƒ€øˆƒ˜";
+   if(line==1)return "…€€æš€ş€â€òŠ„€áƒ€ø‡„ÛˆˆÀ€æ„…Ã‰¢€ïš€ş€â";
+   if(line==2)return "€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:34"){
+  if(n==0){
+   if(line==0)return "I'm Afrodite, the knight of the";
+   if(line==1)return "fishes, it's a real miracle that you";
+   if(line==2)return "made it to the twelfth house!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je suis Aphrodite, Chevalier d€ØOr";
+   if(line==1)return "des Poissons. C€Øest un miracle que";
+   if(line==2)return "tu sois parvenu jusqu€Øau douzi€me";
+   if(line==3)return "temple !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Soy Afrodita, el caballero de los";
+   if(line==1)return "peces, €€es un verdadero milagro";
+   if(line==2)return "que hayas llegado a la duod€cima";
+   if(line==3)return "casa!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Eu sou Afrodite, o cavaleiro dos";
+   if(line==1)return "peixes, € um verdadeiro milagre";
+   if(line==2)return "voc€ ter chegado €ˆ d€cima segunda";
+   if(line==3)return "casa!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„…áƒŒ‰ö„À‰ü‰©ƒÄ…Ñƒ×‰Æ„­‡ä†ã€İ‚§‡õ…¢ˆú‡»‚ü‚€„Œ";
+   if(line==1)return "Š…‡…áğƒë‰‰Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €š€É€Å€Ã€¹€½€Ç€µ, €Å€Ğ€Ë€µ€Å€Ñ €Å€Ğ€¶, €Ò€Ç€Ã €Â€µ€Æ€Ç€Ã€Ô€Î€º€º";
+   if(line==1)return "€Ì€È€¹€Ã, €Ì€Ç€Ã €·€Ğ €¹€Ã€¶€Å€µ€À€½€Æ€Ñ €¹€Ã";
+   if(line==2)return "€¹€·€º€Â€µ€¹€Ë€µ€Ç€Ã€¸€Ã €¹€Ã€Á€µ!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥ˆ‰õ„À‡‰ü‰©‡ğ‰¿ƒ× Ëà¾¡ã½€İ–€é€÷‚ü‚€‡";
+   if(line==1)return "‡‹‡„€€ø‚˜‡’€â€ø“‡€ùŠ„";
+   return "";}
+ }
+ if(key=="dialog:35"){
+  if(n==0){
+   if(line==0)return "I'm not going to stand idly by! My";
+   if(line==1)return "diamond dust will block you!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je ne resterai pas sans rien faire !";
+   if(line==1)return "Ma Poussi€re de diamant va";
+   if(line==2)return "t€Øarr€ter !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€No me voy a quedar de brazos";
+   if(line==1)return "cruzados! €Mi polvo de diamante te";
+   if(line==2)return "bloquear€‰!";
+   return "";}
+  if(n==3){
+   if(line==0)return "N€‹o vou ficar de bra€Œos cruzados!";
+   if(line==1)return "Meu p€“ de diamante ir€‰ bloquear";
+   if(line==2)return "voc€!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„ç‚˜ˆ……ØˆªŠ„…„‡‡‰±‡˜„›‚˜…³‚¢‚§Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´ €Â€º €Æ€Ã€¶€½€Å€µ€Ó€Æ€Ñ €Æ€Ç€Ã€Ô€Ç€Ñ €Æ€À€Ã€»€µ €Å€È€¿€½! €¥€Ã€Ô";
+   if(line==1)return "€µ€À€Á€µ€¼€Â€µ€Ô €Ä€Ğ€À€Ñ €¼€µ€¶€À€Ã€¿€½€Å€È€º€Ç €Ç€º€¶€Ô!";
+   return "";}
+  if(n==6){
+   if(line==0)return "Š€€û€şˆ§€ş€â™€ü“˜ˆ€á˜€ôŠ„‡¥‡º¢Ù×â";
+   if(line==1)return "Àºµ¿€ç€áƒ€øÌà¼¬€ğ€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:36"){
+  if(n==0){
+   if(line==0)return "I, Aldebaran, golden knight of the";
+   if(line==1)return "bull, i will not let anyone cross my";
+   if(line==2)return "temple!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Moi, Ald€baran, Chevalier d€ØOr du";
+   if(line==1)return "Taureau, je ne laisserai personne";
+   if(line==2)return "traverser mon temple !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€€Yo, Aldebar€‰n, caballero dorado";
+   if(line==1)return "del toro, no dejar€ que nadie cruce";
+   if(line==2)return "mi templo!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Eu, Aldebaran, cavaleiro dourado";
+   if(line==1)return "do touro, n€‹o deixarei ningu€m";
+   if(line==2)return "cruzar meu templo!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„Š…†«„‘‚‚Š…‚Ê†Ú‡‡‰ü‰©‰ïƒ×Š……„ç‚˜ˆÈ‚—‚¤‚Šˆìˆè";
+   if(line==1)return "…„‡‡ƒä‰Ä‡®Š„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€´, €š€À€Ñ€¹€º€¶€µ€Å€µ€Â, €¼€Ã€À€Ã€Ç€Ã€¾ €Å€Ğ€Ë€µ€Å€Ñ €¶€Ğ€¿€µ, €Ô";
+   if(line==1)return "€Â€½€¿€Ã€Á€È €Â€º €Ä€Ã€¼€·€Ã€À€Ó €Ä€º€Å€º€Æ€º€Ì€Ñ €Á€Ã€¾ €Ê€Å€µ€Á!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥€Ü‰ü‰©‡†Û†Ú‰ìƒ× Ş¾ÆÜâ€ÜˆÀ“‡¥‡‡¢†¦";
+   if(line==1)return "ˆè€ä€ï€ô€ô!!";
+   return "";}
+ }
+ if(key=="dialog:37"){
+  if(n==0){
+   if(line==0)return "If you believe that I will let you";
+   if(line==1)return "cross and you have the slightest";
+   if(line==2)return "chance of beating me, you are";
+   if(line==3)return "dreaming Hyoga of the swan!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu r€ves, Hyoga du Cygne, si tu";
+   if(line==1)return "crois que je vais te laisser passer";
+   if(line==2)return "ou que tu peux me vaincre !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Si crees que te dejar€ cruzar y";
+   if(line==1)return "tienes la m€‰s m€nima posibilidad de";
+   if(line==2)return "vencerme, €est€‰s so€’ando con";
+   if(line==3)return "Hyoga del cisne!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Se voc€ acredita que vou deixar";
+   if(line==1)return "voc€ atravessar e tem a menor";
+   if(line==2)return "chance de me vencer, voc€ est€‰";
+   if(line==3)return "sonhando Hyoga com o cisne!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒò†„‚§‡‚¬…„‚˜ˆÈ‚§‡±ˆèŠ…‡ì‚§…îäìä†¬‡‡…ø‚˜";
+   if(line==1)return "…ˆß…„Š…‰‚§„œ…áƒÅ‚¶ƒã‰ù‡‡‚Ô†·Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€Ÿ€Æ€À€½ €Ç€Ğ €·€º€Å€½€Í€Ñ, €Ì€Ç€Ã €Ô €Ä€Ã€¼€·€Ã€À€Ó €Ç€º€¶€º";
+   if(line==1)return "€Ä€º€Å€º€Æ€º€Ì€Ñ €¹€Ã€Å€Ã€¸€È €½ €È €Ç€º€¶€Ô €º€Æ€Ç€Ñ €Ê€Ã€Ç€Ñ";
+   if(line==2)return "€Á€µ€À€º€¾€Í€½€¾ €Í€µ€Â€Æ €Ä€Ã€¶€º€¹€½€Ç€Ñ €Á€º€Â€Ô, €Ç€º€¶€º";
+   if(line==3)return "€Æ€Â€½€Ç€Æ€Ô €®€Õ€¸€µ-€À€º€¶€º€¹€Ñ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥€ç€áƒ€ø†Å—€ô™‚¬€ñ€ş€â€ş€Ü‡¥„‚ø€üƒ—‡õ";
+   if(line==1)return "„æ€ç„™€ğ€“€á™ƒ—€Ü€áƒ€øˆ†°†·€ç‡†‰÷‡ƒá";
+   if(line==2)return "ˆ§€ş€â™‡€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:38"){
+  if(n==0){
+   if(line==0)return "In that case don't be stupid... Only";
+   if(line==1)return "the female knights' mask protects";
+   if(line==2)return "from the demonic scent... But to";
+   if(line==3)return "get it... you have to kill me...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Alors ne fais pas l€Øidiot€Û Seul le";
+   if(line==1)return "masque des femmes Chevaliers";
+   if(line==2)return "prot€ge de ce parfum d€moniaque.";
+   if(line==3)return "Mais pour l€Øobtenir€Û il faudra me";
+   if(line==4)return "tuer€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "En ese caso no seas est€–pido... S€“lo";
+   if(line==1)return "la m€‰scara de las caballeros";
+   if(line==2)return "protege del olor demon€aco... Pero";
+   if(line==3)return "para conseguirlo... tienes que";
+   if(line==4)return "matarme...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Nesse caso n€‹o seja est€–pido...";
+   if(line==1)return "Apenas a m€‰scara das cavaleiras";
+   if(line==2)return "protege do cheiro demon€aco... Mas";
+   if(line==3)return "para consegui-la... voc€ tem que me";
+   if(line==4)return "matar...";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰†Š‡‡ˆÑ„œ‚æ†á‚½û€Û€Ûƒ–…îƒï‰ïƒ×‡‡‰Ú‚Î…‡õ…¢";
+   if(line==1)return "„Ø„ñ‰ô‡‡†­ƒ¬€Û€Û‚Ÿ…áˆ¥„×‚ç„€€Û€Û‚§„Ü‰â…ùû…„";
+   if(line==2)return "€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ €Ç€µ€¿€Ã€Á €Æ€À€È€Ì€µ€º €Â€º €¹€È€Å€½... €§€Ç";
+   if(line==1)return "€¹€º€Á€Ã€Â€½€Ì€º€Æ€¿€Ã€¸€Ã €¼€µ€Ä€µ€Ê€µ €¼€µ€Î€½€Î€µ€º€Ç €Ç€Ã€À€Ñ€¿€Ã";
+   if(line==2)return "€Á€µ€Æ€¿€µ €»€º€Â€Æ€¿€Ã€¸€Ã €Å€Ğ€Ë€µ€Å€Ô... €¦€Ã €Ì€Ç€Ã€¶€Ğ";
+   if(line==3)return "€Ä€Ã€À€È€Ì€½€Ç€Ñ €º€º... €Ç€º€¶€º €Ä€Å€½€¹€º€Ç€Æ€Ô €Á€º€Â€Ô";
+   if(line==4)return "€È€¶€½€Ç€Ñ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ù€û€ø—Æ¨„€ò™ƒ–€Û‰ô†Ü‡‰ê˜‰Ã€â€€éš™";
+   if(line==1)return "‡ˆƒï‰ìƒ×‡‚•‰Ú€ù€ë€Û€ù€ë‚€öš…„‚Èš™„";
+   if(line==2)return "ˆ€Û‡¥†¥€ïƒ€ëš‰€â€ëƒ€â€Û€İ";
+   return "";}
+ }
+ if(key=="dialog:39"){
+  if(n==0){
+   if(line==0)return "In this case, you leave me no";
+   if(line==1)return "choice, I hate to fight, but I have to";
+   if(line==2)return "defeat you to finally reach the";
+   if(line==3)return "room of the great Pope!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu ne me laisses pas le choix. Je";
+   if(line==1)return "d€teste me battre, mais je dois te";
+   if(line==2)return "vaincre pour atteindre la chambre";
+   if(line==3)return "du Grand Pope !";
+   return "";}
+  if(n==2){
+   if(line==0)return "En este caso, no me dejas otra";
+   if(line==1)return "opci€“n, odio luchar, €pero tengo que";
+   if(line==2)return "derrotarte para finalmente llegar";
+   if(line==3)return "a la habitaci€“n del gran Papa!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Neste caso, voc€ n€‹o me deixa";
+   if(line==1)return "escolha, odeio lutar, mas tenho que";
+   if(line==2)return "derrot€‰-lo para finalmente chegar";
+   if(line==3)return "ao quarto do grande Papa!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…Û†Ôƒò†ŸŠ…‚§ˆÈ…„‚æ…Ú‰…ªŠ……„ˆÇƒ†…†…ÑŠ…‚Ÿ…„„Ü";
+   if(line==1)return "‰â…ˆß‚§Š……‡õ…í‡Ú‚çˆú‚™ƒâ…Ì‡‰‡‡…Œ‰ÂŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ €Ç€µ€¿€Ã€Á €Æ€À€È€Ì€µ€º €Ç€Ğ €Â€º €Ã€Æ€Ç€µ€·€À€Ô€º€Í€Ñ €Á€Â€º";
+   if(line==1)return "€·€Ğ€¶€Ã€Å€µ, €Ô €Â€º€Â€µ€·€½€»€È €Æ€Å€µ€»€µ€Ç€Ñ€Æ€Ô, €Â€Ã €Á€Â€º";
+   if(line==2)return "€Ä€Å€½€¹€º€Ç€Æ€Ô €Ä€Ã€¶€º€¹€½€Ç€Ñ €Ç€º€¶€Ô, €Ì€Ç€Ã€¶€Ğ €Â€µ€¿€Ã€Â€º€Ë";
+   if(line==3)return "€¹€Ã€¶€Å€µ€Ç€Ñ€Æ€Ô €¹€Ã €¿€Ã€Á€Â€µ€Ç€Ğ €·€º€À€½€¿€Ã€¸€Ã €¨€µ€Ä€Ğ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€í‡ƒÑƒ›€Ü€áƒ€ø„ˆ‡¥„‰œ…Ÿ‡‚¥ƒÆˆ€á˜€ô";
+   if(line==1)return "€İ‡¥ˆ…‡€ã‡ˆƒù€â€€ò€ç€Ü…í‡Í‡‡„‚´ƒâƒ†¸†ë‡";
+   if(line==2)return "‰ „ „‚ç‰–€ò™„ˆ€Ü€áƒ€ø‚®€ïƒ€ëš‰ƒ˜€ô";
+   if(line==3)return "€İ";
+   return "";}
+ }
+ if(key=="dialog:40"){
+  if(n==0){
+   if(line==0)return "It doesn't bother me, quite the";
+   if(line==1)return "contrary! Hell is a place i visit";
+   if(line==2)return "often!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Cela ne me d€range pas, bien au";
+   if(line==1)return "contraire ! L€Øenfer est un lieu que";
+   if(line==2)return "je visite souvent !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€No me molesta, todo lo contrario!";
+   if(line==1)return "€El infierno es un lugar que visito a";
+   if(line==2)return "menudo!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Isso n€‹o me incomoda, muito pelo";
+   if(line==1)return "contr€‰rio! O inferno € um lugar que";
+   if(line==2)return "visito com frequ€ncia!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰‚„µçƒ¾…•…„Š…„ğ„ğ‡ƒŠ„ƒÆ†å…á…„‡Û„±ƒ‰‡‡ƒÆ…ÖŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¥€º€Â€Ô €Ò€Ç€Ã €Â€º €¶€º€Æ€Ä€Ã€¿€Ã€½€Ç, €¹€µ€»€º €Â€µ€Ã€¶€Ã€Å€Ã€Ç!";
+   if(line==1)return "€š€¹ €× €Ò€Ç€Ã €Á€º€Æ€Ç€Ã, €¿€Ã€Ç€Ã€Å€Ã€º €Ô €Ì€µ€Æ€Ç€Ã";
+   if(line==2)return "€Ä€Ã€Æ€º€Î€µ€Ó!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€öƒ€íˆ†®„ƒ—ƒ€â€Ü‘€ğ›€ö‡‰€ùŠ„ƒÆ†èˆ";
+   if(line==1)return "‡¥€ç–€éˆ³š™ƒÑ…€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:41"){
+  if(n==0){
+   if(line==0)return "It's time to put an end to this fight";
+   if(line==1)return "phoenix! You will receive the";
+   if(line==2)return "treasure of heaven.";
+   return "";}
+  if(n==1){
+   if(line==0)return "Il est temps d€Øen finir, Chevalier du";
+   if(line==1)return "Ph€nix ! Subis le Tr€sor du Ciel !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Es hora de poner fin a esta lucha";
+   if(line==1)return "f€nix! Recibir€‰s el tesoro del cielo.";
+   return "";}
+  if(n==3){
+   if(line==0)return "€‡ hora de acabar com essa luta";
+   if(line==1)return "f€nix! Voc€ receber€‰ o tesouro do";
+   if(line==2)return "c€u.";
+   return "";}
+  if(n==4){
+   if(line==0)return "…á…Ş‚¯‡Ü…ı‰‚ƒÇ‚Û‚İö…†ûŠ„‚§„—„×‚çƒãƒÁ‡‡„‰ˆ’€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¨€Å€½€Í€À€Ã €·€Å€º€Á€Ô €Ä€Ã€À€Ã€»€½€Ç€Ñ €¿€Ã€Â€º€Ë €Ò€Ç€Ã€¾";
+   if(line==1)return "€¶€Ã€Å€Ñ€¶€º €Æ €É€º€Â€½€¿€Æ€Ã€Á! €œ€Ğ €Ä€Ã€À€È€Ì€½€Ç€º";
+   if(line==2)return "€Æ€Ã€¿€Å€Ã€·€½€Î€º €Â€º€¶€º€Æ.";
+   return "";}
+  if(n==6){
+   if(line==0)return "Ë¤Â¼¬µ‡…‡€â„‡Í†‡º…€ü…ã€ç†€€øŠ„€áƒ";
+   if(line==1)return "€øˆƒãƒÁ‡„‰†Üƒ‘€ëƒ™€€ğ•€ã€İ";
+   return "";}
+ }
+ if(key=="dialog:42"){
+  if(n==0){
+   if(line==0)return "It's too late for athena! She is";
+   if(line==1)return "already dead, with her scepter";
+   if(line==2)return "and her shield I will soon be able to";
+   if(line==3)return "beat anyone, even the gods!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Il est trop tard pour Ath€na ! Elle";
+   if(line==1)return "est d€j€ˆ morte. Avec son sceptre";
+   if(line==2)return "et son bouclier, je pourrai vaincre";
+   if(line==3)return "n€Øimporte qui, m€me les dieux !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Es demasiado tarde para Atenea!";
+   if(line==1)return "€Ella ya est€‰ muerta, con su cetro y";
+   if(line==2)return "su escudo pronto podr€ vencer a";
+   if(line==3)return "cualquiera, incluso a los dioses!";
+   return "";}
+  if(n==3){
+   if(line==0)return "€‡ tarde demais para Atenas! Ela j€‰";
+   if(line==1)return "est€‰ morta, com seu cetro e seu";
+   if(line==2)return "escudo em breve poderei vencer";
+   if(line==3)return "qualquer um, at€ mesmo os deuses!";
+   return "";}
+  if(n==4){
+   if(line==0)return "„“‚‰Ò‚Ïƒø†€ˆÔ„¬‡Ûƒä…åûŠ„ƒğ„¬‡Û†¡ûŠ…‚Ü‚°ƒğ";
+   if(line==1)return "‡‡…ú…üƒ®‡†ÙŠ……„„Ó„Ş„œ‡õ‚ßˆß‚—‚¤‚ŠŠ…†õ‡û…áˆÖ";
+   if(line==2)return "‡¢Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€À€Ô €š€É€½€Â€Ğ €È€»€º €Æ€À€½€Í€¿€Ã€Á €Ä€Ã€¼€¹€Â€Ã! €§€Â€µ";
+   if(line==1)return "€È€»€º €Á€º€Å€Ç€·€µ, €Æ €º€º €Æ€¿€½€Ä€º€Ç€Å€Ã€Á €½ €Î€½€Ç€Ã€Á €Ô";
+   if(line==2)return "€Æ€¿€Ã€Å€Ã €Æ€Á€Ã€¸€È €Ä€Ã€¶€º€¹€½€Ç€Ñ €¿€Ã€¸€Ã €È€¸€Ã€¹€Â€Ã, €¹€µ€»€º";
+   if(line==3)return "€¶€Ã€¸€Ã€·!";
+   return "";}
+  if(n==6){
+   if(line==0)return " ½Áˆ“€ã…‰’š€ùŠ„„Ğƒïˆ€ò€„†¡€€â€ò€İ";
+   if(line==1)return "„Ğƒï‡‡¸‡€ç€áš‰€Ü‡¥ˆ€ò€ê„ˆÀ„€“€Ü€ø€ä";
+   if(line==2)return "‡¢€ï€ä“‚®€ò€í€ç€€è™€€ğ•€ãŠ„";
+   return "";}
+ }
+ if(key=="dialog:43"){
+  if(n==0){
+   if(line==0)return "Let us pass, we must cross the 12";
+   if(line==1)return "temples to reason with the great";
+   if(line==2)return "pope and save Saori, the";
+   if(line==3)return "reincarnation of Athena!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Laisse-nous passer ! Nous devons";
+   if(line==1)return "traverser les douze temples pour";
+   if(line==2)return "raisonner le Grand Pope et sauver";
+   if(line==3)return "Saori, la r€incarnation d€ØAth€na !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Pasemos, debemos cruzar los 12";
+   if(line==1)return "templos para razonar con el gran";
+   if(line==2)return "papa y salvar a Saori, la";
+   if(line==3)return "reencarnaci€“n de Atenea!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Vamos passar, devemos";
+   if(line==1)return "atravessar os 12 templos para";
+   if(line==2)return "argumentar com o grande papa e";
+   if(line==3)return "salvar Saori, a reencarna€Œ€‹o de";
+   if(line==4)return "Atena!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„‚”ˆåƒ£Š……„‚”„Ü‰â‡±ˆè‚ü‚€‡¢†¦è‚™ƒâ‡‡…Ì‡‰ˆË";
+   if(line==1)return "†ğŠ……«…Ê‰Ò‚Ïƒøˆóê†µ‡ÙŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¨€Å€Ã€¾€¹€º€Á, €Á€Ğ €¹€Ã€À€»€Â€Ğ €Ä€º€Å€º€Æ€º€Ì€Ñ 12";
+   if(line==1)return "€Ê€Å€µ€Á€Ã€·, €Ì€Ç€Ã€¶€Ğ €Ã€¶€Å€µ€¼€È€Á€½€Ç€Ñ €·€º€À€½€¿€Ã€¸€Ã €Ä€µ€Ä€È";
+   if(line==2)return "€½ €Æ€Ä€µ€Æ€Ç€½ €ª€µ€Ã€Å€½, €Å€º€½€Â€¿€µ€Å€Â€µ€Ë€½€Ó €š€É€½€Â€Ğ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ï€á€ÜÇµ€ğ€ğ•€ã€İ‚´ƒâƒ™…Ì‡‰ˆÃˆÁ€ğ€Ü ½Á";
+   if(line==1)return "‡†öšƒÜœ˜€€á™†µ‡Ò…Ê€ã€ø’„€Ü12 ‡‡¢†¦";
+   if(line==2)return "†Å—ƒ€ëš‰ƒ˜€ô!";
+   return "";}
+ }
+ if(key=="dialog:44"){
+  if(n==0){
+   if(line==0)return "Look. My chain isn't reacting at all,";
+   if(line==1)return "either.";
+   return "";}
+  if(n==1){
+   if(line==0)return "Regarde : ma cha€‘ne ne r€agit pas";
+   if(line==1)return "non plus.";
+   return "";}
+  if(n==2){
+   if(line==0)return "Mirar. Mi cadena tampoco";
+   if(line==1)return "reacciona en absoluto.";
+   return "";}
+  if(n==3){
+   if(line==0)return "Olhar. Minha corrente tamb€m n€‹o";
+   if(line==1)return "est€‰ reagindo.";
+   return "";}
+  if(n==4){
+   if(line==0)return "‡€İ…„‡‡‰µ…şú„„‚É†¶…îƒ„º€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€ª€Á€Ã€Ç€Å€º€Ç€Ñ. €¥€Ã€Ô €Ë€º€Ä€Ñ €Ç€Ã€»€º €Â€½€¿€µ€¿ €Â€º";
+   if(line==1)return "€Å€º€µ€¸€½€Å€È€º€Ç.";
+   return "";}
+  if(n==6){
+   if(line==0)return "ˆ§€ş€İ»¤ãâ“‚É€éƒ„İ€ğ€ô€İ";
+   return "";}
+ }
+ if(key=="dialog:45"){
+  if(n==0){
+   if(line==0)return "Marin... eagle knight... You know";
+   if(line==1)return "very well that even if I have to give";
+   if(line==2)return "up my life, I will move forward!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Marin, Chevalier de l€ØAigle€Û Tu sais";
+   if(line==1)return "bien que j€Øavancerai, m€me au prix";
+   if(line==2)return "de ma vie !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Marin... caballero €‰guila... €Sabes";
+   if(line==1)return "muy bien que aunque tenga que";
+   if(line==2)return "renunciar a mi vida, seguir€";
+   if(line==3)return "adelante!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Marin... cavaleiro €‰guia... Voc€ sabe";
+   if(line==1)return "muito bem que mesmo que eu tenha";
+   if(line==2)return "que desistir da minha vida, seguirei";
+   if(line==3)return "em frente!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰î†ƒ€Û€Û‰ú‰ïƒ×€Û€Û‚§„Ó†Ã†‘Š…„œ‡¿ˆ¥…Æ„Å†öƒ­Š……„";
+   if(line==1)return "ú‚˜‚ö„Ñ‡Œ‚ëŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¥€µ€Å€½€Â... €Å€Ğ€Ë€µ€Å€Ñ-€Ã€Å€Õ€À... €«€Ğ €Ä€Å€º€¿€Å€µ€Æ€Â€Ã";
+   if(line==1)return "€¼€Â€µ€º€Í€Ñ, €Ì€Ç€Ã €¹€µ€»€º €º€Æ€À€½ €Á€Â€º €Ä€Å€½€¹€Õ€Ç€Æ€Ô";
+   if(line==2)return "€Ã€Ç€¹€µ€Ç€Ñ €»€½€¼€Â€Ñ, €Ô €¶€È€¹€È €½€¹€Ç€½ €·€Ä€º€Å€Õ€¹!";
+   return "";}
+  if(n==6){
+   if(line==0)return "Óİâ€Û‰ø‡‰ìƒ×€Ûƒ­…µ€ş€ş“‚ë„‰‘‘€û€ş–€éœ";
+   if(line==1)return "€æ€û€ş™–Š„";
+   return "";}
+ }
+ if(key=="dialog:46"){
+  if(n==0){
+   if(line==0)return "Mwahaha!! You blew me away!! You";
+   if(line==1)return "managed to break one of my";
+   if(line==2)return "horns!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Mwahaha ! Tu m€Øas impressionn€ :";
+   if(line==1)return "tu as r€ussi €ˆ briser l€Øune de mes";
+   if(line==2)return "cornes !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€€Mwahaha!! €€Me dejaste";
+   if(line==1)return "alucinado!! €Conseguiste romper";
+   if(line==2)return "uno de mis cuernos!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Mwahaha!! Voc€ me surpreendeu!!";
+   if(line==1)return "Voc€ conseguiu quebrar um dos";
+   if(line==2)return "meus chifres!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒ²ƒ³ƒ³ƒ³Š„Š„‚§ˆÈ…„ƒâƒšä„öŠ„Š„‚§…ƒ‚ğ……Óû…„‡‡";
+   if(line==1)return "äƒ–ˆ®Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¥€·€µ€Ê€µ€Ê€µ!! €«€Ğ €Á€º€Â€Ô €Ä€Ã€Å€µ€¼€½€À!! €«€º€¶€º";
+   if(line==1)return "€È€¹€µ€À€Ã€Æ€Ñ €Æ€À€Ã€Á€µ€Ç€Ñ €Ã€¹€½€Â €½€¼ €Á€Ã€½€Ê €Å€Ã€¸€Ã€·!";
+   return "";}
+  if(n==6){
+   if(line==0)return "ÕáÅÅ!!€áƒ€øˆ‡¥‰í€æ€ô€ğ€ø!!‡¥‡ˆ®ä";
+   if(line==1)return "…õ…™€í€ç€€è€ğ€ø†Š„";
+   return "";}
+ }
+ if(key=="dialog:47"){
+  if(n==0){
+   if(line==0)return "My chain is not responding! It's as";
+   if(line==1)return "if this man had no cosmos and did";
+   if(line==2)return "not exist!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Ma cha€‘ne ne r€agit pas ! C€Øest";
+   if(line==1)return "comme si cet homme n€Øavait aucun";
+   if(line==2)return "Cosmos€Û comme s€Øil n€Øexistait pas !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Mi cadena no responde! €Es como";
+   if(line==1)return "si este hombre no tuviera cosmos y";
+   if(line==2)return "no existiera!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Minha corrente n€‹o est€‰";
+   if(line==1)return "respondendo! €‡ como se este";
+   if(line==2)return "homem n€‹o tivesse cosmos e n€‹o";
+   if(line==3)return "existisse!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„‡‡‰µ…ş†¶…îƒ„ºŠ„„œƒñ‚¾‰‚ğ‚Š†¶…î„„†Š…çƒıƒÅ";
+   if(line==1)return "ä†ŠŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¥€Ã€Ô €Ë€º€Ä€Ñ €Â€º €Ã€Ç€·€º€Ì€µ€º€Ç! €£€µ€¿ €¶€È€¹€Ç€Ã €¶€Ğ";
+   if(line==1)return "€Ò€Ç€Ã€Ç €Ì€º€À€Ã€·€º€¿ €Â€º €½€Á€º€À €¿€Ã€Æ€Á€Ã€Æ€µ €½ €Â€º";
+   if(line==2)return "€Æ€È€Î€º€Æ€Ç€·€Ã€·€µ€À!";
+   return "";}
+  if(n==6){
+   if(line==0)return "»¤ãâ€çƒ„İ€ğ€ô!™€€í‡†ü„ˆ„„†€çƒ€é";
+   if(line==1)return "€ÜƒıƒÅ€ğ€ş€âƒ€â€æ‡–€ã€€ò€İ";
+   return "";}
+ }
+ if(key=="dialog:48"){
+  if(n==0){
+   if(line==0)return "No one has to tell me that I";
+   if(line==1)return "shouldn't believe in my dreams if";
+   if(line==2)return "that's the case! Only a loser";
+   if(line==3)return "without convictions can believe";
+   if(line==4)return "such a thing!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Je ne renoncerai pas €ˆ mes r€ves";
+   if(line==1)return "parce qu€Øon me le demande ! Seul";
+   if(line==2)return "un perdant sans conviction peut";
+   if(line==3)return "croire le contraire !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Nadie tiene que decirme que no";
+   if(line==1)return "deber€a creer en mis sue€’os si ese";
+   if(line==2)return "es el caso! €S€“lo un perdedor sin";
+   if(line==3)return "convicciones puede creer";
+   if(line==4)return "semejante cosa!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Ningu€m precisa me dizer que eu";
+   if(line==1)return "n€‹o deveria acreditar nos meus";
+   if(line==2)return "sonhos, se for esse o caso! S€“ um";
+   if(line==3)return "perdedor sem convic€Œ€•es pode";
+   if(line==4)return "acreditar em tal coisa!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒò†„…á‰‚†Š‡‡ˆÑŠ…†¶…î‚Š‚˜ƒ©ˆÏ…„…„ç„ºˆÒ‡‚¬…„";
+   if(line==1)return "‡‡†‹„ùŠ„ƒ–…î†¶…î‚¬„ß‡‡ƒçˆß‡ë…‚˜‡‚¬‰‚‡¦şŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€½€¿€Ç€Ã €Â€º €¹€Ã€À€»€º€Â €¸€Ã€·€Ã€Å€½€Ç€Ñ €Á€Â€º, €Ì€Ç€Ã €Á€Â€º";
+   if(line==1)return "€Â€º €Æ€À€º€¹€È€º€Ç €·€º€Å€½€Ç€Ñ €· €Æ€·€Ã€½ €Á€º€Ì€Ç€Ğ, €º€Æ€À€½";
+   if(line==2)return "€Ò€Ç€Ã €Ç€µ€¿! €¨€Ã€·€º€Å€½€Ç€Ñ €· €Ç€µ€¿€Ã€º €Á€Ã€»€º€Ç €Ç€Ã€À€Ñ€¿€Ã";
+   if(line==3)return "€Â€º€È€¹€µ€Ì€Â€½€¿ €¶€º€¼ €È€¶€º€»€¹€º€Â€½€¾!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ù€û€ø—ƒá‚¬€ñƒ€é€ş€â€âƒ€şˆÀ“ˆ±œƒ€é€ş€â";
+   if(line==1)return "€â–Š„€öƒ€í‚¬€ñ™€í€ç€€è™‡ˆ€Ü‚¬„ß‡ƒ";
+   if(line==2)return "€â…Ë‡ë€ù€ë€ùŠ„";
+   return "";}
+ }
+ if(key=="dialog:49"){
+  if(n==0){
+   if(line==0)return "No, I have a better idea! I'm going";
+   if(line==1)return "to kill you both at the same time!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Non, j€Øai une meilleure id€e : je vais";
+   if(line==1)return "vous tuer tous les deux !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€No, tengo una idea mejor! €€Los voy";
+   if(line==1)return "a matar a los dos al mismo tiempo!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "N€‹o, tenho uma ideia melhor! Eu";
+   if(line==1)return "vou matar voc€s dois ao mesmo";
+   if(line==2)return "tempo!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "çŠ……„…î…ìƒñ‡‡ó„úŠ„…„ˆ¥ƒœ…Ş…ù…·‚§‚”îğŠ„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€º€Ç, €È €Á€º€Â€Ô €º€Æ€Ç€Ñ €½€¹€º€Ô €Ä€Ã€À€È€Ì€Í€º! €´ €È€¶€Ñ€Ó";
+   if(line==1)return "€·€µ€Æ €Ã€¶€Ã€½€Ê €Ã€¹€Â€Ã€·€Å€º€Á€º€Â€Â€Ã!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€â€â€ä€Ü“€ûˆ€â ¢¾ €ç€á˜€ò!‚€‚Šƒœ…ã„†¥";
+   if(line==1)return "€ğ€ş”™Š„Š„";
+   return "";}
+ }
+ if(key=="dialog:50"){
+  if(n==0){
+   if(line==0)return "Of course! Albior was a traitor who";
+   if(line==1)return "did not obey the orders of the";
+   if(line==2)return "great pope! He got what he";
+   if(line==3)return "deserved!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Bien s€—r ! Albior €tait un tra€‘tre qui";
+   if(line==1)return "refusait d€Øob€ir au Grand Pope. Il a";
+   if(line==2)return "eu ce qu€Øil m€ritait !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Por supuesto! €Albior fue un traidor";
+   if(line==1)return "que no obedeci€“ las €“rdenes del";
+   if(line==2)return "gran Papa! €€Obtuvo lo que se";
+   if(line==3)return "merec€a!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Claro! Albior foi um traidor que n€‹o";
+   if(line==1)return "obedeceu €ˆs ordens do grande";
+   if(line==2)return "papa! Ele teve o que merecia!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "„Í†ÔŠ„‰Æ„š†ªƒí„š…áäğç…ğ‚‚™ƒâ…Ì‡‰ƒ­‚’‡‡ƒ“";
+   if(line==1)return "„ÕŠ„‚„×‚çû‚„º„×‡‡Š„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€£€Ã€Â€º€Ì€Â€Ã! €š€À€Ñ€¶€½€Ã€Å €¶€Ğ€À €Ä€Å€º€¹€µ€Ç€º€À€º€Á, €Â€º";
+   if(line==1)return "€Ä€Ã€¹€Ì€½€Â€½€·€Í€½€Á€Æ€Ô €Ä€Å€½€¿€µ€¼€µ€Á €·€º€À€½€¿€Ã€¸€Ã €Ä€µ€Ä€Ğ!";
+   if(line==2)return "€§€Â €Ä€Ã€À€È€Ì€½€À €Ç€Ã, €Ì€Ç€Ã €¼€µ€Æ€À€È€»€½€À!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "“€ú›Š„ ŞÉ§Şˆƒâ…Ì‡‰‡ƒ­‚’„„Öœƒ€âˆ¡";
+   if(line==1)return "‚á˜‡ë€ù€û€øŠ„„Ğˆ€öš„‚±€ò™“‡…„‚Èš€ø!!";
+   return "";}
+ }
+ if(key=="dialog:51"){
+  if(n==0){
+   if(line==0)return "Poor fool, you should have stayed";
+   if(line==1)return "inside your ice coffin!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Pauvre fou ! Tu aurais d€— rester";
+   if(line==1)return "dans ton cercueil de glace !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Pobre tonto, deber€as haberte";
+   if(line==1)return "quedado dentro de tu ata€–d de";
+   if(line==2)return "hielo!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pobre idiota, voc€ deveria ter";
+   if(line==1)return "ficado dentro do seu caix€‹o de";
+   if(line==2)return "gelo!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒ—„ã‡‡‚½†óŠ…‚§„ºˆÒƒ¨ƒÅ‚Ô†‰¥Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€›€º€¹€Â€Ğ€¾ €¹€È€Å€µ€¿, €Ç€º€¶€º €Æ€À€º€¹€Ã€·€µ€À€Ã €Ã€Æ€Ç€µ€Ç€Ñ€Æ€Ô";
+   if(line==1)return "€· €À€º€¹€Ô€Â€Ã€Á €¸€Å€Ã€¶€È!";
+   return "";}
+  if(n==6){
+   if(line==0)return "ƒ°šƒ„û€æ‡ë–€Ü†°‡†‡ñ„‡€™€è€ù€û€øŠ„";
+   return "";}
+ }
+ if(key=="dialog:52"){
+  if(n==0){
+   if(line==0)return "Prepare to die Seiya!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Pr€pare-toi €ˆ mourir, Seiya !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Prep€‰rate para morir Seiya!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Prepare-se para morrer Seiya!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚ØƒÛƒ‰†¡ƒÄƒ´ƒ£Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¨€Å€½€¸€Ã€Ç€Ã€·€Ñ€Æ€Ô €È€Á€º€Å€º€Ç€Ñ, €ª€º€¾€Ô!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡ğƒ´€Ü†¡…ˆ¨„òŠ„";
+   return "";}
+ }
+ if(key=="dialog:53"){
+  if(n==0){
+   if(line==0)return "Right, and you're Ikki the phoenix";
+   if(line==1)return "knight, right? I will punish your";
+   if(line==2)return "arrogance and send you to hell!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Exact. Tu es Ikki, le Chevalier du";
+   if(line==1)return "Ph€nix, n€Øest-ce pas ? Je vais punir";
+   if(line==2)return "ton arrogance et t€Øenvoyer en";
+   if(line==3)return "enfer !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Cierto, y t€– eres Ikki el caballero";
+   if(line==1)return "f€nix, €„verdad? €Castigar€ tu";
+   if(line==2)return "arrogancia y te enviar€ al infierno!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Certo, e voc€ € Ikki, o cavaleiro";
+   if(line==1)return "f€nix, certo? Vou punir sua";
+   if(line==2)return "arrog€Šncia e mandar voc€ para o";
+   if(line==3)return "inferno!";
+   return "";}
+  if(n==4){
+   if(line==0)return "„“ûŠ…‚§„œ…á‚Û‚İ‰ïƒ×äˆøŠ…„“ƒ£Šˆ…„ˆ¥„ø‡å‚§‡‡";
+   if(line==1)return "†âƒóŠ…‰Œ‚§æƒÆ†åŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€º€Å€Â€Ã, €µ €Ç€Ğ €¢€¿€¿€½, €Å€Ğ€Ë€µ€Å€Ñ-€É€º€Â€½€¿€Æ, €·€º€Å€Â€Ã?";
+   if(line==1)return "€´ €Â€µ€¿€µ€»€È €Ç€·€Ã€º €·€Ğ€Æ€Ã€¿€Ã€Á€º€Å€½€º €½ €Ã€Ç€Ä€Å€µ€·€À€Ó";
+   if(line==2)return "€Ç€º€¶€Ô €· €µ€¹!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ö€ã€Ü€áƒ€øˆç†¡‰÷‡‰ìƒ×äˆò€€ò–†ŠˆˆÜ†–‡";
+   if(line==1)return "‚¼„ş€ï…—€ğ’€şƒÆ†è„ˆ€ğ€ş”™Š„";
+   return "";}
+ }
+ if(key=="dialog:54"){
+  if(n==0){
+   if(line==0)return "Saina of Ophiuchus! interesting to";
+   if(line==1)return "see some silver knights around";
+   if(line==2)return "Here! I see that your resentment is";
+   if(line==3)return "tenacious!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Shaina d€ØOphiuchus ! Voil€ˆ un";
+   if(line==1)return "Chevalier d€ØArgent€Û Je vois que ta";
+   if(line==2)return "rancune est tenace !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Saina de Ofiuco! €Es interesante";
+   if(line==1)return "ver algunos caballeros plateados";
+   if(line==2)return "por aqu€! €Veo que tu rencor es";
+   if(line==3)return "tenaz!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Saina de Ophiuchus! interessante";
+   if(line==1)return "ver alguns cavaleiros de prata por";
+   if(line==2)return "aqui! Vejo que seu ressentimento €";
+   if(line==3)return "tenaz!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ˆ”ƒå„À‡‡ˆãƒøŠ„ƒÅ‰‚‰¥‡‚çä‚„‰´‰ïƒ×„Ó…îˆéŠ„…„‡";
+   if(line==1)return "‚§‡‡„ç„î„Ó‰ã„ÌŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€ª€µ€¾€Â€µ €¡€Á€º€º€Â€Ã€Æ€Ë€µ! €½€Â€Ç€º€Å€º€Æ€Â€Ã €È€·€½€¹€º€Ç€Ñ";
+   if(line==1)return "€¼€¹€º€Æ€Ñ €Æ€º€Å€º€¶€Å€Ô€Â€Ğ€Ê €Å€Ğ€Ë€µ€Å€º€¾! €´ €·€½€»€È, €Ì€Ç€Ã";
+   if(line==2)return "€Ç€·€Ã€Ô €Ã€¶€½€¹€µ €»€½€·€È€Ì€µ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "ŒŠ€ü€æ€â„À‡²¢ÁŠ„€í€í„‰«‡‰ìƒ×€ç€â™‡";
+   if(line==1)return "ˆ§™‡ˆ‡ıƒ¬†Â€â€€ò!€áƒ€ø‡„á˜€çƒÏ…§€€á™€í";
+   if(line==2)return "€ç‚à€æ˜€ğ€øŠ„";
+   return "";}
+ }
+ if(key=="dialog:55"){
+  if(n==0){
+   if(line==0)return "Seiya, the one who stole the";
+   if(line==1)return "pegasus armor from my brother! I'll";
+   if(line==2)return "crush your bones!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Seiya ! Toi qui as vol€ l€Øarmure de";
+   if(line==1)return "P€gase €ˆ mon fr€re, je vais te";
+   if(line==2)return "broyer les os !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Seiya, el que le rob€“ la armadura";
+   if(line==1)return "de pegaso a mi hermano! €€Te";
+   if(line==2)return "aplastar€ los huesos!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Seiya, aquele que roubou a";
+   if(line==1)return "armadura de P€gaso do meu irm€‹o!";
+   if(line==2)return "Eu vou esmagar seus ossos!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒÄƒ´Š…‚¹ˆåû…„ƒ¶ƒ¶‡‡ƒã‰î‰³†ù‡‡‚ŠŠ„…„ˆ¥…‡‚§‡‡";
+   if(line==1)return "‰ğƒèŠ„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€ª€º€¾€Ô, €Ç€Ã€Ç, €¿€Ç€Ã €È€¿€Å€µ€À €¹€Ã€Æ€Ä€º€Ê€½ €Ä€º€¸€µ€Æ€µ €È";
+   if(line==1)return "€Á€Ã€º€¸€Ã €¶€Å€µ€Ç€µ! €´ €Å€µ€¼€¹€Å€Ã€¶€À€Ó €Ç€º€¶€º €¿€Ã€Æ€Ç€½!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡ğƒ´€Ü‚Ã€æ—Ğ©²µ‡‰®‡Š€ù‡ë€ùŠ„‰ğ‡š€â";
+   if(line==1)return "€ş”™Š„Š„";
+   return "";}
+ }
+ if(key=="dialog:56"){
+  if(n==0){
+   if(line==0)return "So, here are the rebellious Bronze";
+   if(line==1)return "Knights who dare to defy the";
+   if(line==2)return "Sanctuary and the Grand Pope's";
+   if(line==3)return "orders!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Voici donc les Chevaliers de";
+   if(line==1)return "Bronze rebelles qui osent d€fier le";
+   if(line==2)return "Sanctuaire et les ordres du Grand";
+   if(line==3)return "Pope !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€As€ que aqu€ est€‰n los rebeldes";
+   if(line==1)return "Caballeros de Bronce que se";
+   if(line==2)return "atreven a desafiar el Santuario y";
+   if(line==3)return "las €“rdenes del Gran Papa!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Ent€‹o, aqui est€‹o os rebeldes";
+   if(line==1)return "Cavaleiros de Bronze que ousam";
+   if(line==2)return "desafiar o Santu€‰rio e as ordens";
+   if(line==3)return "do Grande Papa!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…‚“Š…‰‚„œ…á…Í‚‰……œƒÄƒÎƒ®ƒâ…Ì‡‰ƒ­‚’‡‡ƒ“‰‰Ø";
+   if(line==1)return "‰²ƒÄ…Ñƒ×Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¢€Ç€µ€¿, €·€Ã€Ç €Á€Ô€Ç€º€»€Â€Ğ€º €›€Å€Ã€Â€¼€Ã€·€Ğ€º €©€Ğ€Ë€µ€Å€½,";
+   if(line==1)return "€Ã€Æ€Á€º€À€½€·€Í€½€º€Æ€Ô €¶€Å€Ã€Æ€½€Ç€Ñ €·€Ğ€¼€Ã€· €ª€·€Ô€Ç€½€À€½€Î€È";
+   if(line==2)return "€½ €Ä€Å€½€¿€µ€¼€µ€Á €œ€º€À€½€¿€Ã€¸€Ã €¨€µ€Ä€Ğ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ö€í€€Ü‡ğƒÎƒâ…Ì‡‰‡ƒ­‚’„†„…Í„ƒ…œ€ò™ƒ‰";
+   if(line==1)return "‡‰Ø‰¬‡ğ‰¿ƒ×€ø€ú€ç‡…ƒÑ€ğ€ò!";
+   return "";}
+ }
+ if(key=="dialog:57"){
+  if(n==0){
+   if(line==0)return "Thank you my master... for all you";
+   if(line==1)return "have done for me...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Merci, ma€‘tre€Û pour tout ce que";
+   if(line==1)return "vous avez fait pour moi€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "Gracias mi maestro... por todo lo";
+   if(line==1)return "que has hecho por m€...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Obrigado meu mestre... por tudo";
+   if(line==1)return "que voc€ fez por mim...";
+   return "";}
+  if(n==4){
+   if(line==0)return "ˆÚˆÚ‚§Š……„‡‡ó‚Š€Û€ÛˆÚˆÚ‚§ò…„…‚¶‡‡ä‚á€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return "€ª€Ä€µ€Æ€½€¶€Ã €Ç€º€¶€º, €Á€Ã€¾ €Ê€Ã€¼€Ô€½€Â... €¼€µ €·€Æ€º, €Ì€Ç€Ã €Ç€Ğ";
+   if(line==1)return "€Æ€¹€º€À€µ€À €¹€À€Ô €Á€º€Â€Ô...";
+   return "";}
+  if(n==6){
+   if(line==0)return "€á˜€ç€ã€Ü‡¥‡Óµ¹ã...€áƒ€ø€ç‡¥‡€ø’„€ğ€ş";
+   if(line==1)return "€éš€ø€í€ò€ş...";
+   return "";}
+ }
+ if(key=="dialog:58"){
+  if(n==0){
+   if(line==0)return "Thanks to my friends, that's no";
+   if(line==1)return "longer the case. Know that I want";
+   if(line==2)return "to thank you for the techniques";
+   if(line==3)return "that you taught me";
+   return "";}
+  if(n==1){
+   if(line==0)return "Gr€Šce €ˆ mes amis, ce n€Øest plus le";
+   if(line==1)return "cas. Je tiens €ˆ te remercier pour les";
+   if(line==2)return "techniques que tu m€Øas enseign€es";
+   return "";}
+  if(n==2){
+   if(line==0)return "Gracias a mis amigos, ese ya no es";
+   if(line==1)return "el caso. Sepa que quiero";
+   if(line==2)return "agradecerle por las t€cnicas que";
+   if(line==3)return "me ense€’€“.";
+   return "";}
+  if(n==3){
+   if(line==0)return "Gra€Œas aos meus amigos, esse n€‹o €";
+   if(line==1)return "mais o caso. Saiba que quero";
+   if(line==2)return "agradecer pelas t€cnicas que voc€";
+   if(line==3)return "me ensinou";
+   return "";}
+  if(n==4){
+   if(line==0)return "„üˆÚ…„‡‡…ïƒ‹‚”Š…„õ‚Öç‚Ñ…á‰‚†Šû€İ…„„ù„üˆÚ‚§";
+   if(line==1)return "…Ì‡İ…„‡‡…˜„©";
+   return "";}
+  if(n==5){
+   if(line==0)return "€›€À€µ€¸€Ã€¹€µ€Å€Ô €Á€Ã€½€Á €¹€Å€È€¼€Ñ€Ô€Á, €Ò€Ç€Ã €È€»€º €Â€º";
+   if(line==1)return "€Ç€µ€¿. €¡€Â€µ€¾, €Ì€Ç€Ã €Ô €Ê€Ã€Ì€È €Ä€Ã€¶€À€µ€¸€Ã€¹€µ€Å€½€Ç€Ñ";
+   if(line==2)return "€Ç€º€¶€Ô €¼€µ €Á€º€Ç€Ã€¹€Ğ, €¿€Ã€Ç€Ã€Å€Ğ€Á €Ç€Ğ €Á€º€Â€Ô";
+   if(line==3)return "€Â€µ€È€Ì€½€À.";
+   return "";}
+  if(n==6){
+   if(line==0)return "ƒ‹‰–‡€å€æ€ì€€öƒ€íˆƒ€éƒ˜€ğ€ø€İ€áƒ€ø";
+   if(line==1)return "€ç‡¥„…Ì€ä€ş€éš€ø½¬Â¼¬„„üˆÂ€ğ€ø€â„ä€û€ş";
+   if(line==2)return "€â™€í‡—€û€ş€å€â€ş€é€ù€ï€â";
+   return "";}
+ }
+ if(key=="dialog:59"){
+  if(n==0){
+   if(line==0)return "That must be the second temple,";
+   if(line==1)return "The Taurus one.!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Ce doit €tre le deuxi€me temple :";
+   if(line==1)return "celui du Taureau !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Ese debe ser el segundo templo, el";
+   if(line==1)return "de Tauro!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Esse deve ser o segundo templo, o";
+   if(line==1)return "de Touro.!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰ä„‡…á‡»‚€„À‡¢„¼Š…‰©†Ú„À‡¢„¼€İŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€Ã€À€»€Â€Ã €¶€Ğ€Ç€Ñ, €Ò€Ç€Ã €·€Ç€Ã€Å€Ã€¾ €Ê€Å€µ€Á, €«€µ€È€Å€È€Æ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€öšˆ 2 ‡‡‹‡‡¢†¦€Ü€å€ã€ğ„À‡‡¢†¦„‰—€â€á˜";
+   if(line==1)return "€ô€İ";
+   return "";}
+ }
+ if(key=="dialog:60"){
+  if(n==0){
+   if(line==0)return "That's weird. I don't feel any";
+   if(line==1)return "cosmos coming from it.";
+   return "";}
+  if(n==1){
+   if(line==0)return "C€Øest €trange€Û Je n€Øy ressens";
+   if(line==1)return "aucun Cosmos.";
+   return "";}
+  if(n==2){
+   if(line==0)return "Eso es raro. No siento ning€–n";
+   if(line==1)return "cosmos proveniente de ello.";
+   return "";}
+  if(n==3){
+   if(line==0)return "Isso € estranho. N€‹o sinto nenhum";
+   if(line==1)return "cosmo vindo disso.";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰‚„Óƒë„è€İ…„„üˆ­ç‚ç‚—‚¤„„†‚ñ‚š†€€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€³€Ç€Ã €Æ€Ç€Å€µ€Â€Â€Ã. €´ €Â€º €Ì€È€·€Æ€Ç€·€È€Ó €Â€½€¿€µ€¿€Ã€¸€Ã";
+   if(line==1)return "€¿€Ã€Æ€Á€Ã€Æ€µ, €½€Æ€Ê€Ã€¹€Ô€Î€º€¸€Ã €Ã€Ç €Â€º€¸€Ã.";
+   return "";}
+  if(n==6){
+   if(line==0)return "€öšˆƒëƒô€ù€İ€ö€í€æ—ˆ„„†€ç„ü€ñ—š€ô€İ";
+   return "";}
+ }
+ if(key=="dialog:61"){
+  if(n==0){
+   if(line==0)return "That's what we're going to see! On";
+   if(line==1)return "guard golden knight!";
+   return "";}
+  if(n==1){
+   if(line==0)return "C€Øest ce que nous allons voir ! En";
+   if(line==1)return "garde, Chevalier d€ØOr !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Eso es lo que vamos a ver! €En";
+   if(line==1)return "guardia caballero dorado!";
+   return "";}
+  if(n==3){
+   if(line==0)return "€‡ isso que vamos ver! Em guarda";
+   if(line==1)return "cavaleiro dourado!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰‚„œ…á…„‚”„—ˆ¥‡‚ç‡‡Š„„‚… ‰ü‰©‰ïƒ×Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ã€Ç €Ì€Ç€Ã €Á€Ğ €Æ€Ã€¶€½€Å€µ€º€Á€Æ€Ô €È€·€½€¹€º€Ç€Ñ! €¦€µ";
+   if(line==1)return "€Æ€Ç€Å€µ€»€º €¼€Ã€À€Ã€Ç€Ã€¾ €Å€Ğ€Ë€µ€Å€Ñ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€öš€ç‡¥€ø€ú€çˆ§€ş€â€é“‡€€òŠ„‰ü‰©‰ìƒ×„‚š";
+   if(line==1)return "Š„";
+   return "";}
+ }
+ if(key=="dialog:62"){
+  if(n==0){
+   if(line==0)return "The fun is over! You will receive my";
+   if(line==1)return "ultimate technique!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Assez jou€ ! Subis ma technique";
+   if(line==1)return "ultime !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Se acab€“ la diversi€“n! €Recibir€‰s mi";
+   if(line==1)return "t€cnica definitiva!";
+   return "";}
+  if(n==3){
+   if(line==0)return "A divers€‹o acabou! Voc€ receber€‰";
+   if(line==1)return "minha t€cnica definitiva!";
+   return "";}
+  if(n==4){
+   if(line==0)return "øˆé‡Ü…ıûŠ„‚§„—ˆŒ„×…„‡‡‡Ú†‚…˜…öŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€º€Æ€º€À€Ñ€º €¼€µ€¿€Ã€Â€Ì€½€À€Ã€Æ€Ñ! €œ€Ğ €Ä€Ã€À€È€Ì€½€Ç€º €Á€Ã€Ó";
+   if(line==1)return "€Æ€Ã€·€º€Å€Í€º€Â€Â€È€Ó €Ç€º€Ê€Â€½€¿€È!";
+   return "";}
+  if(n==6){
+   if(line==0)return "†”€ğ€â€íˆ“€ã‡Íœ˜€€òŠ„‡¥‡‡¯†’‡½¬Â¼¬";
+   if(line==1)return "ƒ‘€ë€ş€é€ù€ï€âŠ„";
+   return "";}
+ }
+ if(key=="dialog:63"){
+  if(n==0){
+   if(line==0)return "The illusion is finally gone! This";
+   if(line==1)return "armor was controlled by a distant";
+   if(line==2)return "cosmos, but by whom?";
+   return "";}
+  if(n==1){
+   if(line==0)return "L€Øillusion s€Øest enfin dissip€e !";
+   if(line==1)return "Cette armure €tait manipul€e par";
+   if(line==2)return "un Cosmos lointain€Û mais par qui ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€La ilusi€“n finalmente se ha ido!";
+   if(line==1)return "Esta armadura estaba controlada";
+   if(line==2)return "por un cosmos distante, pero";
+   if(line==3)return "€„qui€n?";
+   return "";}
+  if(n==3){
+   if(line==0)return "A ilus€‹o finalmente desapareceu!";
+   if(line==1)return "Esta armadura era controlada por";
+   if(line==2)return "um cosmos distante, mas por";
+   if(line==3)return "quem?";
+   return "";}
+  if(n==4){
+   if(line==0)return "„·„ù‡Ú‚‡›†ÏûŠ„‰‚‰³†ù…á†ø‰™‰„‡‡„„†…¹‚è‡‡Š…‚Ÿ";
+   if(line==1)return "ƒŠ…áˆ×…¹‚è‡‡ƒªŠˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¢€À€À€Ó€¼€½€Ô €Â€µ€¿€Ã€Â€º€Ë-€Ç€Ã €½€Æ€Ì€º€¼€À€µ! €³€Ç€½€Á€½";
+   if(line==1)return "€¹€Ã€Æ€Ä€º€Ê€µ€Á€½ €È€Ä€Å€µ€·€À€Ô€À €¹€µ€À€º€¿€½€¾ €¿€Ã€Æ€Á€Ã€Æ, €Â€Ã";
+   if(line==2)return "€¿€Ç€Ã?";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ü€â„ƒó„ù€ç†¿€ä€øŠ„€í‡‰®ˆ‰˜€â„„†„–€û€ş‚è";
+   if(line==1)return "„Ø€ïš€ş€â€ğ€ø€ç€ÜˆÀ„–€û€ş‚è„Ø€ïš€ø‡€€ğ•";
+   if(line==2)return "€ã€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:64"){
+  if(n==0){
+   if(line==0)return "The only way to get to the Pope's";
+   if(line==1)return "chamber is to take these stairs";
+   if(line==2)return "and cross the 12 houses of the";
+   if(line==3)return "zodiac...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Pour atteindre la chambre du";
+   if(line==1)return "Grand Pope, il faut gravir ces";
+   if(line==2)return "escaliers et traverser les douze";
+   if(line==3)return "temples du Zodiaque€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "La €–nica forma de llegar a la";
+   if(line==1)return "c€‰mara del Papa es tomar estas";
+   if(line==2)return "escaleras y cruzar las 12 casas del";
+   if(line==3)return "zod€aco...";
+   return "";}
+  if(n==3){
+   if(line==0)return "A €–nica maneira de chegar €ˆ";
+   if(line==1)return "c€Šmara do Papa € subir estas";
+   if(line==2)return "escadas e atravessar as 12 casas";
+   if(line==3)return "do zod€aco...";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚çˆú…Ì‡‰…Œ‰Â‡‡ƒ·ä…Ö†¸…áˆå‰‚‚„†“†Œ„µ‡±ˆü‰ü‰•";
+   if(line==1)return "‚ü‚€„Œ......";
+   return "";}
+  if(n==5){
+   if(line==0)return "€Ÿ€¹€½€Â€Æ€Ç€·€º€Â€Â€Ğ€¾ €Æ€Ä€Ã€Æ€Ã€¶ €Ä€Ã€Ä€µ€Æ€Ç€Ñ €· €Ä€Ã€¿€Ã€½";
+   if(line==1)return "€¨€µ€Ä€Ğ €× €Ä€Ã€¹€Â€Ô€Ç€Ñ€Æ€Ô €Ä€Ã €Ò€Ç€Ã€¾ €À€º€Æ€Ç€Â€½€Ë€º €½";
+   if(line==2)return "€Ä€º€Å€º€Æ€º€Ì€Ñ 12 €¹€Ã€Á€Ã€· €¼€Ã€¹€½€µ€¿€µ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "…Ì‡‰‡‰ „ „ˆ˜€éƒ·ä‡…Ö†¸ˆ€Ü€í‡‰Í†¤‚¨€û€ş";
+   if(line==1)return "‰ü‰•‚ü‚€„†˜‚á™€í€€ò...";
+   return "";}
+ }
+ if(key=="dialog:65"){
+  if(n==0){
+   if(line==0)return "The treasure of heaven is a";
+   if(line==1)return "destructive technique that I use to";
+   if(line==2)return "deprive my victim of his 5 senses,";
+   if(line==3)return "one after the other!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Le Tr€sor du Ciel est une technique";
+   if(line==1)return "d€vastatrice qui prive ma victime";
+   if(line==2)return "de ses cinq sens, l€Øun apr€s l€Øautre !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€El tesoro del cielo es una t€cnica";
+   if(line==1)return "destructiva que utilizo para privar";
+   if(line==2)return "a mi v€ctima de sus 5 sentidos, uno";
+   if(line==3)return "tras otro!";
+   return "";}
+  if(n==3){
+   if(line==0)return "O tesouro do c€u € uma t€cnica";
+   if(line==1)return "destrutiva que utilizo para privar";
+   if(line==2)return "minha v€tima de seus 5 sentidos,";
+   if(line==3)return "um ap€“s o outro!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒãƒÁö„‰…áä‡¦†§†Ï„æ‡‡…˜…öŠ……„†÷„€†€‚©†™‚íƒêƒ‘";
+   if(line==1)return "„‡ë‡‡‚‚‡¦„ü„…Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€ª€Ã€¿€Å€Ã€·€½€Î€º €Â€º€¶€º€Æ €× €Ò€Ç€Ã €Å€µ€¼€Å€È€Í€½€Ç€º€À€Ñ€Â€µ€Ô";
+   if(line==1)return "€Ç€º€Ê€Â€½€¿€µ, €¿€Ã€Ç€Ã€Å€È€Ó €Ô €½€Æ€Ä€Ã€À€Ñ€¼€È€Ó, €Ì€Ç€Ã€¶€Ğ";
+   if(line==2)return "€À€½€Í€½€Ç€Ñ €Æ€·€Ã€Ó €»€º€Å€Ç€·€È €Ä€Ô€Ç€½ €Ì€È€·€Æ€Ç€·, €Ã€¹€Â€Ã";
+   if(line==3)return "€¼€µ €¹€Å€È€¸€½€Á!";
+   return "";}
+  if(n==6){
+   if(line==0)return "ƒãå‡‡û„‰ˆ€Ü†™€ŞˆŸ„‡ë‡‚‚„üƒî€ã‡›ƒÖˆ™Š„";
+   return "";}
+ }
+ if(key=="dialog:66"){
+  if(n==0){
+   if(line==0)return "The ultimate dragon technique?";
+   if(line==1)return "This is ridiculous, are you going to";
+   if(line==2)return "sacrifice yourself to beat me?";
+   return "";}
+  if(n==1){
+   if(line==0)return "L€Øultime technique du Dragon ?";
+   if(line==1)return "Ridicule ! Tu vas te sacrifier pour";
+   if(line==2)return "me vaincre ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„La t€cnica definitiva del drag€“n?";
+   if(line==1)return "Esto es rid€culo, €„vas a sacrificarte";
+   if(line==2)return "para vencerme?";
+   return "";}
+  if(n==3){
+   if(line==0)return "A t€cnica definitiva do drag€‹o?";
+   if(line==1)return "Isso € rid€culo, voc€ vai se";
+   if(line==2)return "sacrificar para me vencer?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‡Ú†‚Šƒ…˜Šˆ‰‚ƒäƒ—‡¹ûŠ…‚§ˆ¥†ß†İ‡ú„«†€…ˆß…„ƒ Šˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€ª€Ã€·€º€Å€Í€º€Â€Â€µ€Ô €Ç€º€Ê€Â€½€¿€µ €¹€Å€µ€¿€Ã€Â€µ? €³€Ç€Ã";
+   if(line==1)return "€Æ€Á€º€Í€Â€Ã, €Ç€Ğ €Æ€Ã€¶€½€Å€µ€º€Í€Ñ€Æ€Ô €Ä€Ã€»€º€Å€Ç€·€Ã€·€µ€Ç€Ñ";
+   if(line==2)return "€Æ€Ã€¶€Ã€¾, €Ì€Ç€Ã€¶€Ğ €Ä€Ã€¶€º€¹€½€Ç€Ñ €Á€º€Â€Ô?";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¯†’‡ÀÜ±â½¬Â¼¬?€“ƒ€âˆº€ù€Ü‡ú‚à";
+   if(line==1)return "†à†İ„€ğ€ş‡¥‚®€ò†®€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:67"){
+  if(n==0){
+   if(line==0)return "There you are knight! Why didn't";
+   if(line==1)return "you fight us inside your temple?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Te voil€ˆ, Chevalier ! Pourquoi ne";
+   if(line==1)return "nous as-tu pas affront€s dans ton";
+   if(line==2)return "temple ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Ah€ est€‰s caballero! €„Por qu€ no";
+   if(line==1)return "luchaste contra nosotros dentro";
+   if(line==2)return "de tu templo?";
+   return "";}
+  if(n==3){
+   if(line==0)return "A€ est€‰ voc€, cavaleiro! Por que";
+   if(line==1)return "voc€ n€‹o lutou contra n€“s dentro";
+   if(line==2)return "do seu templo?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§„œ…á‰ïƒ×Š„‚§ò‚‹õçƒÅ‚§‡‡‡¢„¼‰¥ƒ®…„‚”…†…Ñ";
+   if(line==1)return "Šˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ã€Ç €Ç€Ğ €Å€Ğ€Ë€µ€Å€Ñ! €¨€Ã€Ì€º€Á€È €Ç€Ğ €Â€º €Æ€Å€µ€¼€½€À€Æ€Ô €Æ";
+   if(line==1)return "€Â€µ€Á€½ €· €Æ€·€Ã€º€Á €Ê€Å€µ€Á€º?";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ö€í„€áƒ€øˆ‰ìƒ×€€òŠ„ƒ€õ‡¢†¦‚Ğ€‡¥€ø€ú…‡";
+   if(line==1)return "œƒ€æ€û€ø‡€€ò€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:68"){
+  if(n==0){
+   if(line==0)return "There you are, Seiya. You showed";
+   if(line==1)return "courage and exceptional strenght";
+   if(line==2)return "to have reached me.";
+   return "";}
+  if(n==1){
+   if(line==0)return "Te voil€ˆ, Seiya. Tu as fait preuve";
+   if(line==1)return "d€Øun courage et d€Øune force";
+   if(line==2)return "exceptionnels pour parvenir jusqu€Ø€ˆ";
+   if(line==3)return "moi.";
+   return "";}
+  if(n==2){
+   if(line==0)return "Ah€ est€‰s, Seiya. Mostraste coraje";
+   if(line==1)return "y una fuerza excepcional para";
+   if(line==2)return "haberme alcanzado.";
+   return "";}
+  if(n==3){
+   if(line==0)return "A€ est€‰ voc€, Seiya. Voc€ mostrou";
+   if(line==1)return "coragem e for€Œa excepcional por";
+   if(line==2)return "ter me alcan€Œado.";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒ‡†€‚§…á‰‚†Šƒ¸Š…ƒÄƒ´€İ‚§ˆ†ï‚Şû‚ö†­ƒ®‰Ù‚Ú‡‡‚î";
+   if(line==1)return "‰¨†€…–‚ç…„€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ã€Ç €Ç€Ğ €¸€¹€º, €ª€º€¾€Ô. €œ€Ğ €Ä€Å€Ã€Ô€·€½€À€½ €Æ€Á€º€À€Ã€Æ€Ç€Ñ";
+   if(line==1)return "€½ €½€Æ€¿€À€Ó€Ì€½€Ç€º€À€Ñ€Â€È€Ó €Æ€½€À€È, €¹€Ã€¾€¹€Ô €¹€Ã €Á€º€Â€Ô.";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ö€í„€â™–€Ü‡ğƒ´€İ€áƒ€øˆ‚ö†®ïƒŞš€ø„Ë€ï";
+   if(line==1)return "‡ €ğ€ş‡¥„ˆş€ı€è€ğ€ø€İ";
+   return "";}
+ }
+ if(key=="dialog:69"){
+  if(n==0){
+   if(line==0)return "This time it's the end, I'm going to";
+   if(line==1)return "use my ultimate ice technique, the";
+   if(line==2)return "one that reaches the coldest";
+   if(line==3)return "temperature in the universe,";
+   return "";}
+  if(n==1){
+   if(line==0)return "Cette fois, c€Øest la fin ! Je vais";
+   if(line==1)return "utiliser mon ultime technique de";
+   if(line==2)return "glace, celle qui atteint la";
+   if(line==3)return "temp€rature la plus basse de";
+   if(line==4)return "l€Øunivers :";
+   return "";}
+  if(n==2){
+   if(line==0)return "Esta vez es el final, voy a usar mi";
+   if(line==1)return "t€cnica de hielo definitiva, la que";
+   if(line==2)return "alcanza la temperatura m€‰s fr€a";
+   if(line==3)return "del universo,";
+   return "";}
+  if(n==3){
+   if(line==0)return "Desta vez € o fim, vou usar minha";
+   if(line==1)return "€–ltima t€cnica de gelo, aquela que";
+   if(line==2)return "atinge a temperatura mais fria do";
+   if(line==3)return "universo,";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰‚†™‡Ú‚‚çûŠ……„ˆ¥†÷…„‡‡‡Ú†‚‚Ô…öŠ…ˆú‚ç„„†…í‚×";
+   if(line==1)return "‡‡†Æ„¿Š…";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ €Ò€Ç€Ã€Ç €Å€µ€¼ €Ò€Ç€Ã €¿€Ã€Â€º€Ë, €Ô €Æ€Ã€¶€½€Å€µ€Ó€Æ€Ñ";
+   if(line==1)return "€½€Æ€Ä€Ã€À€Ñ€¼€Ã€·€µ€Ç€Ñ €Æ€·€Ã€Ó €À€È€Ì€Í€È€Ó €À€º€¹€Ô€Â€È€Ó";
+   if(line==2)return "€Ç€º€Ê€Â€½€¿€È, €Ç€È, €¿€Ã€Ç€Ã€Å€µ€Ô €¹€Ã€Æ€Ç€½€¸€µ€º€Ç €Æ€µ€Á€Ã€¾";
+   if(line==3)return "€Â€½€¼€¿€Ã€¾ €Ç€º€Á€Ä€º€Å€µ€Ç€È€Å€Ğ €·€Ã €œ€Æ€º€À€º€Â€Â€Ã€¾.";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚„¿€í€ö…í„Ô€ù€Ü„„†…í‚×†Æ„¿„‰–€ò™‡¯†’‡†°ˆ™";
+   if(line==1)return "‚¨€û€ş”™€Ü";
+   return "";}
+ }
+ if(key=="dialog:70"){
+  if(n==0){
+   if(line==0)return "Those roses you're holding! It was";
+   if(line==1)return "you who murdered my master";
+   if(line==2)return "Albior on the island of Andromeda";
+   if(line==3)return "many years ago, right?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Ces roses€Û C€Øest donc toi qui as";
+   if(line==1)return "assassin€ mon ma€‘tre Albior sur";
+   if(line==2)return "l€Ø€‘le d€ØAndrom€de, il y a des ann€es";
+   if(line==3)return "?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Esas rosas que tienes en la mano!";
+   if(line==1)return "Fuiste t€– quien asesin€“ a mi";
+   if(line==2)return "maestro Albior en la isla de";
+   if(line==3)return "Andr€“meda hace muchos a€’os,";
+   if(line==4)return "€„verdad?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Essas rosas que voc€ est€‰";
+   if(line==1)return "segurando! Foi voc€ quem";
+   if(line==2)return "assassinou meu mestre Albior na";
+   if(line==3)return "ilha de Andr€”meda h€‰ muitos anos,";
+   if(line==4)return "certo?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§…‰¥…®‡’‡‡†î†òˆ†Š„ƒß„´‚ëŠ…„œ…á‚§ƒÅ‚‘ƒï„À„¥å";
+   if(line==1)return "ˆÙ…ùû…„‡‡ó‚Š‰Æ„š†ªƒíƒ£Šˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€«€º €Å€Ã€¼€Ğ, €¿€Ã€Ç€Ã€Å€Ğ€º €Ç€Ğ €¹€º€Å€»€½€Í€Ñ! €³€Ç€Ã €Ç€Ğ";
+   if(line==1)return "€È€¶€½€À €Á€Ã€º€¸€Ã €Ê€Ã€¼€Ô€½€Â€µ €š€À€Ñ€¶€½€Ã€Å€µ €Â€µ €Ã€Æ€Ç€Å€Ã€·€º";
+   if(line==2)return "€š€Â€¹€Å€Ã€Á€º€¹€µ €Á€Â€Ã€¸€Ã €À€º€Ç €Â€µ€¼€µ€¹, €·€º€Å€Â€Ã?";
+   return "";}
+  if(n==6){
+   if(line==0)return "€áƒ€ø€ç…¯€û€ş€â™€á‡ÆÜ–Š„‚¤„´“‚ë„ âÀà";
+   if(line==1)return "Öº„¦€‡¥‡ó‚Š ŞÉ§Ş†¥„€ğ€ø‡ˆ€áƒ€ø";
+   if(line==2)return "€€ò–†Šˆ";
+   return "";}
+ }
+ if(key=="dialog:71"){
+  if(n==0){
+   if(line==0)return "Very well, you have proven your";
+   if(line==1)return "bravery and your honor as a";
+   if(line==2)return "knight, I agree to let you pass";
+   if(line==3)return "Hyoga, go join your friends...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu as prouv€ ta bravoure et ton";
+   if(line==1)return "honneur, Hyoga. J€Øaccepte de te";
+   if(line==2)return "laisser passer. Va rejoindre tes";
+   if(line==3)return "amis€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "Muy bien, has demostrado tu";
+   if(line==1)return "valent€a y tu honor como caballero,";
+   if(line==2)return "acepto dejarte pasar Hyoga, ve y";
+   if(line==3)return "€–nete a tus amigos...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Muito bem, voc€ provou sua bravura";
+   if(line==1)return "e sua honra como cavaleiro,";
+   if(line==2)return "concordo em deixar voc€ passar";
+   if(line==3)return "por Hyoga, v€‰ se juntar aos seus";
+   if(line==4)return "amigos...";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒñƒ£Š…‚§„¬‡ÛˆÎ…ßû‚§‡‡‚ö…Íƒ®‚¦ò‰ïƒ×‡‡ˆ‹ˆ¼Š…";
+   if(line==1)return "…„ƒœ„úˆÈ‚§‰ˆü‚Ô†·Š…ƒ‰ƒ®‚§‡‡…ïƒ‹‚”‚˜ƒ›ƒ£€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return "€§€Ç€À€½€Ì€Â€Ã, €Ç€Ğ €¹€Ã€¿€µ€¼€µ€À €Æ€·€Ã€Ó €Ê€Å€µ€¶€Å€Ã€Æ€Ç€Ñ €½";
+   if(line==1)return "€Æ€·€Ã€Ó €Å€Ğ€Ë€µ€Å€Æ€¿€È€Ó €Ì€º€Æ€Ç€Ñ, €Ô €Æ€Ã€¸€À€µ€Æ€º€Â";
+   if(line==2)return "€Ä€Ã€¼€·€Ã€À€½€Ç€Ñ €Ç€º€¶€º €Ä€Å€Ã€¾€Ç€½ €®€Õ€¸€È, €½€¹€½";
+   if(line==3)return "€Ä€Å€½€Æ€Ã€º€¹€½€Â€Ô€¾€Æ€Ô €¿ €Æ€·€Ã€½€Á €¹€Å€È€¼€Ñ€Ô€Á...";
+   return "";}
+  if(n==6){
+   if(line==0)return "ƒ™‚€Ü€áƒ€øˆ‰ìƒ×€ğ€ş‡‚ö†®ƒˆ¼ˆ·…ß€ğ";
+   if(line==1)return "€ğ€ø€İ†°†·‰Š€âˆè€ò€í„ƒœ„ú€ğ€ò€İƒ‹‰–ä";
+   if(line==2)return "‡Ñ„ˆ˜€è€ğ•€ã...";
+   return "";}
+ }
+ if(key=="dialog:72"){
+  if(n==0){
+   if(line==0)return "We don't have time to think For";
+   if(line==1)return "now, just focus on getting.";
+   if(line==2)return "through! Let's go!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Nous n€Øavons pas le temps de";
+   if(line==1)return "r€fl€chir. Concentrons-nous sur";
+   if(line==2)return "notre travers€e du temple !";
+   if(line==3)return "Allons-y !";
+   return "";}
+  if(n==2){
+   if(line==0)return "No tenemos tiempo para pensar.";
+   if(line==1)return "Por ahora, s€“lo conc€ntrate en";
+   if(line==2)return "conseguir. €a trav€s de! €Vamos!";
+   return "";}
+  if(n==3){
+   if(line==0)return "N€‹o temos tempo para pensar. Por";
+   if(line==1)return "enquanto, concentre-se apenas em";
+   if(line==2)return "conseguir. atrav€s! Vamos!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„‚”†ïƒÅ†¶…î…Ş‰Â„ä‡êŠ…ƒ–é†»‚ˆŒƒ€İ‰ˆüŠ„…„‚”";
+   if(line==1)return "ˆåƒ£Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¬ €Â€µ€Æ €Â€º€Ç €·€Å€º€Á€º€Â€½ €¹€È€Á€µ€Ç€Ñ. €š €Æ€º€¾€Ì€µ€Æ";
+   if(line==1)return "€Ä€Å€Ã€Æ€Ç€Ã €Æ€Ã€Æ€Å€º€¹€Ã€Ç€Ã€Ì€Ñ€Ç€º€Æ€Ñ €Â€µ €Ç€Ã€Á, €Ì€Ç€Ã€¶€Ğ";
+   if(line==2)return "€Ä€Ã€À€È€Ì€½€Ç€Ñ. €Ì€º€Å€º€¼! €¨€Ã€¾€¹€º€Á!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡ê€ä™…ã‰¾ˆ€á˜€ô€İ‚ˆƒ„×€ò™€í„‰Óñ€ğ";
+   if(line==1)return "€ş€é€ù€ï€â€İ‰€ğ€şŠ„€ï€áˆ˜€í€ãŠ„";
+   return "";}
+ }
+ if(key=="dialog:73"){
+  if(n==0){
+   if(line==0)return "We don't have time to think For";
+   if(line==1)return "now, just focus on getting.";
+   if(line==2)return "through! Let's go!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Nous n€Øavons pas le temps de";
+   if(line==1)return "r€fl€chir. Concentrons-nous sur";
+   if(line==2)return "notre travers€e du temple !";
+   if(line==3)return "Allons-y !";
+   return "";}
+  if(n==2){
+   if(line==0)return "No tenemos tiempo para pensar.";
+   if(line==1)return "Por ahora, s€“lo conc€ntrate en";
+   if(line==2)return "conseguir. €a trav€s de! €Vamos!";
+   return "";}
+  if(n==3){
+   if(line==0)return "N€‹o temos tempo para pensar. Por";
+   if(line==1)return "enquanto, concentre-se apenas em";
+   if(line==2)return "conseguir. atrav€s! Vamos!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„‚”†ïƒÅ†¶…î…Ş‰Â„ä‡êŠ…ƒ–é†»‚ˆŒƒ€İ‰ˆüŠ„…„‚”";
+   if(line==1)return "ˆåƒ£Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¬ €Â€µ€Æ €Â€º€Ç €·€Å€º€Á€º€Â€½ €¹€È€Á€µ€Ç€Ñ. €š €Æ€º€¾€Ì€µ€Æ";
+   if(line==1)return "€Ä€Å€Ã€Æ€Ç€Ã €Æ€Ã€Æ€Å€º€¹€Ã€Ç€Ã€Ì€Ñ€Ç€º€Æ€Ñ €Â€µ €Ç€Ã€Á, €Ì€Ç€Ã€¶€Ğ";
+   if(line==2)return "€Ä€Ã€À€È€Ì€½€Ç€Ñ. €Ì€º€Å€º€¼! €¨€Ã€¾€¹€º€Á!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡ê€ä™…ã‰¾ˆ€á˜€ô€İ‚ˆƒ„×€ò™€í„‰Óñ€ğ";
+   if(line==1)return "€ş€é€ù€ï€â€İ‰€ğ€şŠ„€ï€áˆ˜€í€ãŠ„";
+   return "";}
+ }
+ if(key=="dialog:74"){
+  if(n==0){
+   if(line==0)return "We have to meet the Great Pope! I";
+   if(line==1)return "want to reason with him before it's";
+   if(line==2)return "too late and a war breaks out!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Nous devons rencontrer le Grand";
+   if(line==1)return "Pope ! Je veux le raisonner avant";
+   if(line==2)return "qu€Øil ne soit trop tard et qu€Øune";
+   if(line==3)return "guerre n€Ø€clate !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Tenemos que encontrarnos con el";
+   if(line==1)return "Gran Papa! €Quiero razonar con €l";
+   if(line==2)return "antes de que sea demasiado tarde";
+   if(line==3)return "y estalle una guerra!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Temos que conhecer o Grande";
+   if(line==1)return "Papa! Quero argumentar com ele";
+   if(line==2)return "antes que seja tarde demais e";
+   if(line==3)return "comece uma guerra!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…„‚”„Ü‰âƒ‰ˆ©‚™ƒâ‡‡…Ì‡‰Š„…„ˆ¥ƒÅò…Ş„¬…å€Ü…†ı†Ö";
+   if(line==1)return "ƒö‚ëˆë‚ˆË‰•†ğŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ€Á €Ä€Å€º€¹€Æ€Ç€Ã€½€Ç €·€Æ€Ç€Å€º€Ç€½€Ç€Ñ€Æ€Ô €Æ €œ€º€À€½€¿€½€Á";
+   if(line==1)return "€¨€µ€Ä€Ã€¾! €´ €Ê€Ã€Ì€È €È€Å€º€¼€Ã€Â€½€Ç€Ñ €º€¸€Ã, €Ä€Ã€¿€µ €Â€º";
+   if(line==2)return "€Æ€Ç€µ€À€Ã €Æ€À€½€Í€¿€Ã€Á €Ä€Ã€¼€¹€Â€Ã €½ €Â€º €Å€µ€¼€Å€µ€¼€½€À€µ€Æ€Ñ";
+   if(line==3)return "€·€Ã€¾€Â€µ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥€ø€úˆƒâ†¸†ë„‚˜œƒ€ëš‰ƒ˜€ôŠ„…‰’š";
+   if(line==1)return "„ƒ€û€ş…‡ı€çƒõ™‚ë„€Ü„Ğˆ¾„×€ğ€ø€â‡€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:75"){
+  if(n==0){
+   if(line==0)return "Welcome Bronze Knight!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Bienvenue, Chevalier de Bronze !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Bienvenido Caballero de Bronce!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Bem vindo Cavaleiro de Bronze!";
+   return "";}
+  if(n==4){
+   if(line==0)return "†šˆı‰Ø‰²ƒÄ…Ñƒ×Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€Ã€¶€Å€Ã €Ä€Ã€»€µ€À€Ã€·€µ€Ç€Ñ, €›€Å€Ã€Â€¼€Ã€·€Ğ€¾ €©€Ğ€Ë€µ€Å€Ñ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "–€ã€í€ö‰Ø‰¬‡‰ìƒ×Š„";
+   return "";}
+ }
+ if(key=="dialog:76"){
+  if(n==0){
+   if(line==0)return "Welcome knights! Welcome to the";
+   if(line==1)return "lair of death!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Bienvenue, Chevaliers€Û Bienvenue";
+   if(line==1)return "dans l€Øantre de la mort !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Bienvenidos caballeros!";
+   if(line==1)return "€Bienvenidos a la guarida de la";
+   if(line==2)return "muerte!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Bem vindos cavaleiros! Bem-vindo";
+   if(line==1)return "ao covil da morte!";
+   return "";}
+  if(n==4){
+   if(line==0)return "†šˆı‰ïƒ×‚”Š„†šˆı†€‚ç†¡‚…„§‡®Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€Ã€¶€Å€Ã €Ä€Ã€»€µ€À€Ã€·€µ€Ç€Ñ, €Å€Ğ€Ë€µ€Å€½! €€Ã€¶€Å€Ã";
+   if(line==1)return "€Ä€Ã€»€µ€À€Ã€·€µ€Ç€Ñ €· €À€Ã€¸€Ã€·€Ã €Æ€Á€º€Å€Ç€½!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‰ìƒ×‡‡ˆ€ï€Ü–€ã€í€öŠ„†¡‡‰Ïš„Œ–€ã€í€öŠ„";
+   return "";}
+ }
+ if(key=="dialog:77"){
+  if(n==0){
+   if(line==0)return "Welcome to the sanctuary Miss";
+   if(line==1)return "Kido. We were waiting for you...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Bienvenue au Sanctuaire,";
+   if(line==1)return "mademoiselle Kido. Nous vous";
+   if(line==2)return "attendions€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "Bienvenida al santuario se€’orita";
+   if(line==1)return "Kido. Te est€‰bamos esperando...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Bem-vinda ao santu€‰rio, senhorita";
+   if(line==1)return "Kido. Est€‰vamos esperando por";
+   if(line==2)return "voc€...";
+   return "";}
+  if(n==4){
+   if(line==0)return "†šˆı†€‚ç…ó…‰„˜ƒö„¸… …€İ…„‚”ä‡ŒƒÅ‡¼‚§...";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€Ã€¶€Å€Ã €Ä€Ã€»€µ€À€Ã€·€µ€Ç€Ñ €· €È€¶€º€»€½€Î€º, €Á€½€Æ€Æ";
+   if(line==1)return "€£€½€¹€Ã. €¥€Ğ €»€¹€µ€À€½ €Ç€º€¶€Ô...";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡ğƒÎŒ–€ã€í€ö€ÜƒÍ…Š€ï€İ‡¥€ø€úˆ€áƒ€ø„Ò€û€ş";
+   if(line==1)return "€â€ğ€ø...";
+   return "";}
+ }
+ if(key=="dialog:78"){
+  if(n==0){
+   if(line==0)return "What are you doing you fool!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Que fais-tu, imb€cile ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Qu€ est€‰s haciendo tonto!";
+   return "";}
+  if(n==3){
+   if(line==0)return "O que voc€ est€‰ fazendo, seu";
+   if(line==1)return "idiota!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§‰‚ğ‚½†óƒÅ‚¶‚‹õŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¯€Ç€Ã €Ç€Ğ €¹€º€À€µ€º€Í€Ñ, €¹€È€Å€µ€¿!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚¤€ğ€ş™‡€ÜÆ¨Š„";
+   return "";}
+ }
+ if(key=="dialog:79"){
+  if(n==0){
+   if(line==0)return "What are you doing? You fool!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Qu€Øest-ce que tu fais ? Esp€ce";
+   if(line==1)return "d€Øidiot !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Qu€ est€‰s haciendo? €Tonto!";
+   return "";}
+  if(n==3){
+   if(line==0)return "O que voc€ est€‰ fazendo? Seu";
+   if(line==1)return "idiota!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§ƒÅ„³‚‹õŠˆ‚§‰‚ğ‚½†óŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¯€Ç€Ã €Ç€Ğ €¹€º€À€µ€º€Í€Ñ? €«€Ğ €¹€È€Å€µ€¿!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚¤€ğ€ş™‡Šˆ‰ë‰û‰§‰ŸŠ„";
+   return "";}
+ }
+ if(key=="dialog:80"){
+  if(n==0){
+   if(line==0)return "What happened?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Que s€Øest-il pass€ ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Qu€ pas€“?";
+   return "";}
+  if(n==3){
+   if(line==0)return "O que aconteceu?";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒ†öû‚‹õŠˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¯€Ç€Ã €Æ€À€È€Ì€½€À€Ã€Æ€Ñ?";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚€ã€ğ€ø‡Šˆ";
+   return "";}
+ }
+ if(key=="dialog:81"){
+  if(n==0){
+   if(line==0)return "What is going on? You do not";
+   if(line==1)return "answer? Your Eyes! You have";
+   if(line==2)return "something changed on you!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Que se passe-t-il ? Tu ne r€ponds";
+   if(line==1)return "pas€Û Tes yeux ! Quelque chose a";
+   if(line==2)return "chang€ en toi !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Qu€ est€‰ pasando? €„No";
+   if(line==1)return "respondes? €Tus ojos! €Tienes algo";
+   if(line==2)return "cambiado en ti!";
+   return "";}
+  if(n==3){
+   if(line==0)return "O que est€‰ acontecendo? Voc€ n€‹o";
+   if(line==1)return "responde? Seus olhos! Voc€ tem";
+   if(line==2)return "algo mudado em voc€!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚ç„»…á„àõƒ½şŠˆ‚§çƒ½‡½ƒ Šˆ‚§‡‡‡‘‡“Š„‚§ˆğå…î";
+   if(line==1)return "‚„ëˆ¤ƒ’ûŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¯€Ç€Ã €Ä€Å€Ã€½€Æ€Ê€Ã€¹€½€Ç? €œ€Ğ €Â€º €Ã€Ç€·€º€Ì€µ€º€Ç€º?";
+   if(line==1)return "€«€·€Ã€½ €¸€À€µ€¼€µ! €¬ €Ç€º€¶€Ô €Ì€Ç€Ã-€Ç€Ã €½€¼€Á€º€Â€½€À€Ã€Æ€Ñ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚¤€çˆæ€í€û€ş€â™‡€æŠˆ‡½€äƒ€â€€ò€æŠˆ€áƒ€ø‡";
+   if(line==1)return "‡‹Š„€áƒ€ø„ˆ‚¤€æ€çƒÜœ€û€ø‡€€òŠ„";
+   return "";}
+ }
+ if(key=="dialog:82"){
+  if(n==0){
+   if(line==0)return "What is this? The floor and walls";
+   if(line==1)return "of this temple are covered with";
+   if(line==2)return "human faces!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Qu€Øest-ce que c€Øest ? Le sol et les";
+   if(line==1)return "murs de ce temple sont couverts";
+   if(line==2)return "de visages humains !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Qu€ es esto? €El suelo y las";
+   if(line==1)return "paredes de este templo est€‰n";
+   if(line==2)return "cubiertos de rostros humanos!";
+   return "";}
+  if(n==3){
+   if(line==0)return "O que € isso? O ch€‹o e as paredes";
+   if(line==1)return "deste templo est€‹o cobertos de";
+   if(line==2)return "rostos humanos!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰‚…á‚‹õŠˆ‰‚„À„”„¼‡‡ƒÆ†ƒ®ƒÔƒÕå‰¡„­†Ëû‚Š‡øŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¯€Ç€Ã €Ò€Ç€Ã? €¨€Ã€À €½ €Æ€Ç€º€Â€Ğ €Ò€Ç€Ã€¸€Ã €Ê€Å€µ€Á€µ";
+   if(line==1)return "€Ä€Ã€¿€Å€Ğ€Ç€Ğ €Ì€º€À€Ã€·€º€Ì€º€Æ€¿€½€Á€½ €À€½€Ë€µ€Á€½!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€íšˆ‚¤€€ò€æŠˆ€í‡„”‰È‡„¹”ƒÕˆ‚Š‰¾‡‰ß€ˆ¦";
+   if(line==1)return "œš€ş€â€ò€İ";
+   return "";}
+ }
+ if(key=="dialog:83"){
+  if(n==0){
+   if(line==0)return "What's going on? What's happening";
+   if(line==1)return "to you??";
+   return "";}
+  if(n==1){
+   if(line==0)return "Que se passe-t-il ? Que t€Øarrive-t-il";
+   if(line==1)return "?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Qu€ est€‰ sucediendo? Que te";
+   if(line==1)return "pasa??";
+   return "";}
+  if(n==3){
+   if(line==0)return "O que est€‰ acontecendo? O que";
+   if(line==1)return "est€‰ acontecendo com voc€??";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰‚…á„àõƒ½şŠˆ‚§„àõûŠˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¯€Ç€Ã €Ä€Å€Ã€½€Æ€Ê€Ã€¹€½€Ç? €¯€Ç€Ã €Æ €Ç€Ã€¶€Ã€¾";
+   if(line==1)return "€Ä€Å€Ã€½€Æ€Ê€Ã€¹€½€Ç??";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚€ã€ğ€ø‡Šˆ‚¤€çˆæ€í€û€ş€â™‡€€ò€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:84"){
+  if(n==0){
+   if(line==0)return "What? He managed to hit all my";
+   if(line==1)return "vital points! Without the specific";
+   if(line==2)return "resistance of my armor I would be";
+   if(line==3)return "dead...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Quoi ? Il a touch€ tous mes points";
+   if(line==1)return "vitaux ! Sans la r€sistance de mon";
+   if(line==2)return "armure, je serais mort€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Qu€? €Logr€“ alcanzar todos mis";
+   if(line==1)return "puntos vitales! Sin la resistencia";
+   if(line==2)return "espec€fica de mi armadura estar€a";
+   if(line==3)return "muerto...";
+   return "";}
+  if(n==3){
+   if(line==0)return "O que? Ele conseguiu acertar";
+   if(line==1)return "todos os meus pontos vitais! Sem a";
+   if(line==2)return "resist€ncia espec€fica da minha";
+   if(line==3)return "armadura eu estaria morto...";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚‹õŠˆ‚…ƒ‚ğ‚ßñû…„……î‡‡ˆ¥„Š„ƒò†„†¶…î…„‡‡‰³";
+   if(line==1)return "†ù‡‡†Ş„‡…¢…œ‚î…„„œ‚˜†¡…·......";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¯€Ç€Ã? €Ÿ€Á€È €È€¹€µ€À€Ã€Æ€Ñ €Ä€Ã€Å€µ€¼€½€Ç€Ñ €·€Æ€º €Á€Ã€½";
+   if(line==1)return "€»€½€¼€Â€º€Â€Â€Ã €·€µ€»€Â€Ğ€º €Ç€Ã€Ì€¿€½! €›€º€¼ €Ã€Æ€Ã€¶€Ã€¸€Ã";
+   if(line==2)return "€Æ€Ã€Ä€Å€Ã€Ç€½€·€À€º€Â€½€Ô €Á€Ã€º€¾ €¶€Å€Ã€Â€½ €Ô €¶€Ğ€À €¶€Ğ";
+   if(line==3)return "€Á€º€Å€Ç€·...";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚¤Šˆ„Ğˆ‡¥‡„å…€ò€ş…Å…¿€ò™€í„…ƒ‚ğ€ğ";
+   if(line==1)return "€ğ€øŠ„‡¥‡‰®‡†Ş‚äƒ…¢…œ€çƒ€ëš‰€Ü‡¥ˆ†¡";
+   if(line==2)return "€€â€ø€€ğ•€ã...";
+   return "";}
+ }
+ if(key=="dialog:85"){
+  if(n==0){
+   if(line==0)return "Who allowed you to enter my";
+   if(line==1)return "temple?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Qui t€Øa permis d€Øentrer dans mon";
+   if(line==1)return "temple ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Qui€n te permiti€“ entrar a mi";
+   if(line==1)return "templo?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Quem permitiu que voc€ entrasse";
+   if(line==1)return "no meu templo?";
+   return "";}
+  if(n==4){
+   if(line==0)return "ˆ×‚ÁˆÌ‚§‰ƒ…„„¼‡‡Šˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€£€Ç€Ã €Ä€Ã€¼€·€Ã€À€½€À €Ç€º€¶€º €·€Ã€¾€Ç€½ €· €Á€Ã€¾ €Ê€Å€µ€Á?";
+   return "";}
+  if(n==6){
+   if(line==0)return "ˆÀ€ç€áƒ€ø‡¥‡„”‰È„‚Èš™€íˆµƒ—€ğ€ğ€ø";
+   if(line==1)return "€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:86"){
+  if(n==0){
+   if(line==0)return "Without your 5 senses, your body";
+   if(line==1)return "is just a piece of meat now...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Priv€ de tes cinq sens, ton corps";
+   if(line==1)return "n€Øest plus qu€Øun morceau de chair€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "Sin tus 5 sentidos, tu cuerpo ahora";
+   if(line==1)return "es solo un trozo de carne...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Sem os seus 5 sentidos, seu corpo";
+   if(line==1)return "agora € apenas um peda€Œo de";
+   if(line==2)return "carne...";
+   return "";}
+  if(n==4){
+   if(line==0)return "†¶…î‚§‡‡‚‚‡¦„ü„…Š…‚§‡‡ˆğ‚£†ïƒÅƒ–…áäƒÈ‡ò......";
+   return "";}
+  if(n==5){
+   if(line==0)return "€›€º€¼ €Ä€Ô€Ç€½ €Ì€È€·€Æ€Ç€· €·€µ€Í€º €Ç€º€À€Ã €Ç€º€Ä€º€Å€Ñ";
+   if(line==1)return "€Ä€Å€Ã€Æ€Ç€Ã €¿€È€Æ€Ã€¿ €Á€Ô€Æ€µ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚‚„ü€çƒ€ëš‰€Ü€áƒ€ø‡‚£ˆ€ø€ù‡‡ò†Ø„ƒ€û€ş";
+   if(line==1)return "€ğ€â€ò...";
+   return "";}
+ }
+ if(key=="dialog:87"){
+  if(n==0){
+   if(line==0)return "Yes I told you so... I can die in this";
+   if(line==1)return "fight... but know one thing... a";
+   if(line==2)return "dragon never dies alone!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Oui, je te l€Øavais dit€Û Je peux";
+   if(line==1)return "mourir dans ce combat, mais sache";
+   if(line==2)return "une chose : un dragon ne meurt";
+   if(line==3)return "jamais seul !";
+   return "";}
+  if(n==2){
+   if(line==0)return "S€, te lo dije... Puedo morir en esta";
+   if(line==1)return "pelea... pero debes saber una cosa...";
+   if(line==2)return "€€un drag€“n nunca muere solo!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Sim, eu te avisei... posso morrer";
+   if(line==1)return "nessa luta... mas saiba de uma";
+   if(line==2)return "coisa... um drag€‹o nunca morre";
+   if(line==3)return "sozinho!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…á‡‡Š……„ƒ©ˆÏˆü‚§û...…„ƒ—‚“ƒÅ‰‚ƒÇ…†…Ññ†¡ƒ‰...‚Ÿ";
+   if(line==1)return "ˆ¥‡—‰•ä‚–ş...Šƒ†±‰„ç‚˜†ä‡ú†¡ƒ‰Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€€µ, €Ô €»€º €Ç€º€¶€º €¸€Ã€·€Ã€Å€½€À... €´ €Á€Ã€¸€È €È€Á€º€Å€º€Ç€Ñ";
+   if(line==1)return "€· €Ò€Ç€Ã€Á €¶€Ã€Ó... €Â€Ã €¼€Â€µ€¾ €Ã€¹€Â€Ã... €¹€Å€µ€¿€Ã€Â";
+   if(line==2)return "€Â€½€¿€Ã€¸€¹€µ €Â€º €È€Á€½€Å€µ€º€Ç €· €Ã€¹€½€Â€Ã€Ì€¿€È!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "ˆ€â€Ü€ö€ãˆ±€û€ø€€ğ•€ã...‡¥ˆ€í‡…‡€â€†¡…ƒ—‡õ";
+   if(line==1)return "„æ€ç€á˜€ò...€ğ€æ€ğä€ü€ù€ë‡—€û€ş€å€â€ş€é€ù€ï€â.";
+   if(line==2)return "..ÀÜ±âˆ†´€ğ€şä‚Š€†¡…€íˆ€á˜€ô!!";
+   return "";}
+ }
+ if(key=="dialog:88"){
+  if(n==0){
+   if(line==0)return "You are Milo, the Golden Knight of";
+   if(line==1)return "the Scorpion aren't you? Let us";
+   if(line==2)return "pass we must reach the room of";
+   if(line==3)return "the great Pope!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu es Milo, le Chevalier d€ØOr du";
+   if(line==1)return "Scorpion, n€Øest-ce pas ?";
+   if(line==2)return "Laisse-nous passer : nous devons";
+   if(line==3)return "atteindre la chambre du Grand";
+   if(line==4)return "Pope !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Eres Milo, el Caballero Dorado del";
+   if(line==1)return "Escorpi€“n, €„no? €Pasemos, debemos";
+   if(line==2)return "llegar a la habitaci€“n del gran";
+   if(line==3)return "Papa!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ € Milo, o Cavaleiro de Ouro do";
+   if(line==1)return "Escorpi€‹o, n€‹o €? Passemos,";
+   if(line==2)return "devemos chegar €ˆ sala do grande";
+   if(line==3)return "Papa!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§…áˆ–ƒû‰ü‰©‰ïƒ×‡Å†¼ƒ£ŠˆˆÈ…„‚”ˆüƒ‰ƒ£Š……„‚”„Ü";
+   if(line==1)return "‰â‚çˆú‚™ƒâ…Ì‡‰‡‡…Œ‰ÂŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ğ €¥€µ€¾€À€Ã, €¡€Ã€À€Ã€Ç€Ã€¾ €©€Ğ€Ë€µ€Å€Ñ €ª€¿€Ã€Å€Ä€½€Ã€Â€µ, €Â€º";
+   if(line==1)return "€Ç€µ€¿ €À€½? €¨€Å€Ã€¾€¹€º€Á, €Â€µ€Á €Â€µ€¹€Ã €Ä€Ã€Ä€µ€Æ€Ç€Ñ €·";
+   if(line==2)return "€¿€Ã€Á€Â€µ€Ç€È €·€º€À€½€¿€Ã€¸€Ã €¨€µ€Ä€Ğ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€áƒ€øˆµ°ãÊ§â‡‰ü‰©‰ìƒ×Ó¢à€€ò–†Šˆ‚´";
+   if(line==1)return "ƒâƒ†¸†ë‡‰ „ „‡’€æƒ€ëš‰ƒ˜€ô€İ";
+   return "";}
+ }
+ if(key=="dialog:89"){
+  if(n==0){
+   if(line==0)return "You are an idiot Jaki! I'll beat you";
+   if(line==1)return "like I beat your brother Cassios";
+   if(line==2)return "before!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu es un idiot, Jaki ! Je te battrai";
+   if(line==1)return "comme j€Øai d€j€ˆ battu ton fr€re";
+   if(line==2)return "Cassios !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Eres un idiota Jaki! €€Te vencer€";
+   if(line==1)return "como venc€ antes a tu hermano";
+   if(line==2)return "Cassios!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ € um idiota Jaki! Eu vou";
+   if(line==1)return "vencer voc€ como venci seu irm€‹o";
+   if(line==2)return "C€‰ssio antes!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§„œ…áğ‡†‡„ˆâƒĞŠ„…„‚˜‚¾‚“‚ë…ˆß‚§ƒ¶ƒ¶ƒ‚ˆ¤ƒí…Ô";
+   if(line==1)return "ä†Š…ˆß‚§Š„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€«€Ğ €½€¹€½€Ã€Ç, €€»€µ€¿€½! €´ €Ä€Ã€¶€Ñ€Ó €Ç€º€¶€Ô, €¿€µ€¿";
+   if(line==1)return "€Å€µ€Â€Ñ€Í€º €Ä€Ã€¶€½€À €Ç€·€Ã€º€¸€Ã €¶€Å€µ€Ç€µ €£€µ€Æ€Æ€½€Ã€Æ€µ!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "Æ¨Ùª€ùŠ„‚“‚ëƒ¡‡‚Ã¨³§µ‚®€ğ€ø–€ã„€Ü‚¿";
+   if(line==1)return "“ƒ¡‚®€ò!!";
+   return "";}
+ }
+ if(key=="dialog:90"){
+  if(n==0){
+   if(line==0)return "You are quite resistant; but, do you";
+   if(line==1)return "think you can resist the bloody";
+   if(line==2)return "corpion stings Hyoga?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu es r€sistant, Hyoga€Û Mais";
+   if(line==1)return "pourras-tu supporter les piq€—res du";
+   if(line==2)return "Scorpion €carlate ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "Eres bastante resistente; pero,";
+   if(line==1)return "€„crees que podr€‰s resistir las";
+   if(line==2)return "sangrientas picaduras del corpi€“n";
+   if(line==3)return "de Hyoga?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ € bastante resistente; mas,";
+   if(line==1)return "voc€ acha que pode resistir €ˆs";
+   if(line==2)return "picadas sangrentas do corpi€‹o de";
+   if(line==3)return "Hyoga?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚Ô†·Š…‚§‰‡‰ã„ÌŠ„çˆüŠ…‚§‡õ…—ƒ‘…„‡‡†æ‡Ô†©‰¯ƒ ";
+   if(line==1)return "Šˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ğ €·€º€Æ€Ñ€Á€µ €È€Æ€Ç€Ã€¾€Ì€½€·€Ğ; €¦€Ã €¿€µ€¿ €Ç€Ğ";
+   if(line==1)return "€¹€È€Á€µ€º€Í€Ñ, €Æ€Á€Ã€»€º€Í€Ñ €À€½ €Ç€Ğ €Ä€Å€Ã€Ç€½€·€Ã€Æ€Ç€Ã€Ô€Ç€Ñ";
+   if(line==2)return "€¿€Å€Ã€·€µ€·€Ğ€Á €È€¿€È€Æ€µ€Á €¿€Ã€Å€Ä€½€Ã€Â€µ, €®€Õ€¸€µ?";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ğ‹€âƒ€Ü†°†·€İ€ù€ç€Ü€í‡µ¨ãß¼¿ÂãÀŞ„";
+   if(line==1)return "‡í€ä—š™€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:91"){
+  if(n==0){
+   if(line==0)return "You are the Gemini Knight!! It's you";
+   if(line==1)return "who usurped the place of the true";
+   if(line==2)return "great pope all this time!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu es le Chevalier des G€meaux !";
+   if(line==1)return "C€Øest toi qui as usurp€ la place du";
+   if(line==2)return "v€ritable Grand Pope !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€€Eres el Caballero G€minis!! €€Fuiste";
+   if(line==1)return "t€– quien usurp€“ el lugar del";
+   if(line==2)return "verdadero gran Papa todo este";
+   if(line==3)return "tiempo!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ € o Cavaleiro de G€meos!! Foi";
+   if(line==1)return "voc€ quem usurpou o lugar do";
+   if(line==2)return "verdadeiro grande papa todo esse";
+   if(line==3)return "tempo!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§„œ…áƒŒƒû„À‰ïƒ×Š„Š„ä‡Œ‚“†€‰¡…á‚§‡Âƒêû‡†‡‡";
+   if(line==1)return "ƒâ…Ì‡‰‡‡‚ ‡æŠ„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€«€Ğ €©€Ğ€Ë€µ€Å€Ñ-€›€À€½€¼€Â€º€Ë€Ğ!! €³€Ç€Ã €Ç€Ğ €·€Æ€Õ €Ò€Ç€Ã";
+   if(line==1)return "€·€Å€º€Á€Ô €È€¼€È€Å€Ä€½€Å€Ã€·€µ€À €Á€º€Æ€Ç€Ã €½€Æ€Ç€½€Â€Â€Ã€¸€Ã";
+   if(line==2)return "€·€º€À€½€¿€Ã€¸€Ã €Ä€µ€Ä€Ğ!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€áƒ€øˆ´¤ÔÂÁ¢¿€€ò!!‡‡ƒâ…Ì‡‰‡„À€ó€û";
+   if(line==1)return "†˜ƒ˜€ğ€ş€è€ø‡ˆ€áƒ€ø€ù!!";
+   return "";}
+ }
+ if(key=="dialog:92"){
+  if(n==0){
+   if(line==0)return "You are the golden knight of the";
+   if(line==1)return "virgin Shaka, the one who claims to";
+   if(line==2)return "be closest to the gods?";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu es Shaka, le Chevalier d€ØOr de";
+   if(line==1)return "la Vierge, celui qu€Øon dit le plus";
+   if(line==2)return "proche des dieux ?";
+   return "";}
+  if(n==2){
+   if(line==0)return "€„Eres el caballero dorado de la";
+   if(line==1)return "virgen Shaka, el que dice ser el m€‰s";
+   if(line==2)return "cercano a los dioses?";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ € o cavaleiro de ouro da";
+   if(line==1)return "virgem Shaka, aquele que afirma";
+   if(line==2)return "ser o mais pr€“ximo dos deuses?";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§„œ…áƒÚƒï„À‰ü‰©ƒÄ…Ñƒ×†µ‚ñŠ…‰ğˆŸ‡ªò…í…¸ˆş‡¢";
+   if(line==1)return "‡‡†ü‚Šƒ Šˆ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€«€Ğ €¼€Ã€À€Ã€Ç€Ã€¾ €Å€Ğ€Ë€µ€Å€Ñ €¹€º€·€Æ€Ç€·€º€Â€Â€½€Ë€Ğ €°€µ€¿€½,";
+   if(line==1)return "€Ç€Ã€Ç, €¿€Ç€Ã €È€Ç€·€º€Å€»€¹€µ€º€Ç, €Ì€Ç€Ã €Ã€Â €¶€À€½€»€º";
+   if(line==2)return "€·€Æ€º€¸€Ã €¿ €¶€Ã€¸€µ€Á?";
+   return "";}
+  if(n==6){
+   if(line==0)return "€å‚ë€çùƒï„À‡‰ü‰©‡ğ‰¿ƒ×³Ø¨€Ü‡¢„…í“ˆş€â";
+   if(line==1)return "€âœš™†ü€æŠˆ";
+   return "";}
+ }
+ if(key=="dialog:93"){
+  if(n==0){
+   if(line==0)return "You are usurpers with your false";
+   if(line==1)return "Athena! You deserve death for";
+   if(line==2)return "speaking such blasphemies!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Vous €tes des usurpateurs avec";
+   if(line==1)return "votre fausse Ath€na ! Vous m€ritez";
+   if(line==2)return "la mort pour de tels blasph€mes !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Sois usurpadores con vuestra";
+   if(line==1)return "falsa Atenea! €Mereces la muerte";
+   if(line==2)return "por decir tales blasfemias!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€s s€‹o usurpadores com sua";
+   if(line==1)return "falsa Atenas! Voc€ merece a morte";
+   if(line==2)return "por falar tais blasf€mias!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§‚”…á‚§‚”‡‡‚³‰Ò‚Ïƒø‡‡‡Â‚ ‡ëŠ„‚§‡¶ˆÔ‚Şƒò†Ÿ‚‰";
+   if(line==1)return "†Ä‡‡ˆÑŠ…ˆÒ†¡Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ğ €È€¼€È€Å€Ä€µ€Ç€Ã€Å€Ğ €Æ€Ã €Æ€·€Ã€º€¾ €À€Ã€»€Â€Ã€¾ €š€É€½€Â€Ã€¾!";
+   if(line==1)return "€œ€Ğ €¼€µ€Æ€À€È€»€½€·€µ€º€Ç€º €Æ€Á€º€Å€Ç€½ €¼€µ €Ç€µ€¿€½€º";
+   if(line==2)return "€¶€Ã€¸€Ã€Ê€È€À€Ñ€Æ€Ç€·€µ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€áƒ€ø€ø€úˆ‚º ½Á„–™‡Ãƒî‡ëƒ‡€€òŠ„€ö‡–";
+   if(line==1)return "€ãƒ‚Ò†Áˆ±€û€ø€áƒ€øˆ†¡‚â„‚±€ğ€ò!";
+   return "";}
+ }
+ if(key=="dialog:94"){
+  if(n==0){
+   if(line==0)return "You guys are tougher than I";
+   if(line==1)return "thought! Let's continue this fight";
+   if(line==2)return "in the realm of the dead! By the";
+   if(line==3)return "waves of Hades!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Vous €tes plus coriaces que pr€vu !";
+   if(line==1)return "Poursuivons ce combat au royaume";
+   if(line==2)return "des morts€Û Par les Vagues";
+   if(line==3)return "d€ØHad€s !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Ustedes son m€‰s duros de lo que";
+   if(line==1)return "pensaba! €Continuemos esta lucha";
+   if(line==2)return "en el reino de los muertos! €Por las";
+   if(line==3)return "olas del Hades!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€s s€‹o mais dur€•es do que eu";
+   if(line==1)return "pensava! Vamos continuar esta";
+   if(line==2)return "luta no reino dos mortos! Pelas";
+   if(line==3)return "ondas do Hades!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§‚”†ª…„„ùˆÛ‡‡‰ˆ¥ƒÉ„ÌŠ„ˆÈ…„‚”ƒÅ†¡‡ë‰äƒÎ‡à‡á";
+   if(line==1)return "‰‚ƒÇ…†…Ñƒ£Š„‚°‡’ƒ³‰ˆ…Ô‡‡†¹†ÀŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€©€º€¶€Ô€Ç€µ, €·€Ğ €Æ€½€À€Ñ€Â€º€º, €Ì€º€Á €Ô €¹€È€Á€µ€À!";
+   if(line==1)return "€€µ€·€µ€¾€Ç€º €Ä€Å€Ã€¹€Ã€À€»€½€Á €Ò€Ç€È €¶€Ã€Å€Ñ€¶€È €·";
+   if(line==2)return "€Ë€µ€Å€Æ€Ç€·€º €Á€º€Å€Ç€·€Ğ€Ê! €œ€Ã€À€Â€µ€Á€½ €š€½€¹€µ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "ƒ¡€ø€úˆ„ä€û€ø‚“å„¹Ë€ù–Š„†¡‡ë‡ê†ş€€í‡…‡";
+   if(line==1)return "€â‡Ï€ë€ğ•€ã!‚Ó„½‡†¹–Š„";
+   return "";}
+ }
+ if(key=="dialog:95"){
+  if(n==0){
+   if(line==0)return "You leave me no choice, the only";
+   if(line==1)return "way to defeat you is to use the";
+   if(line==2)return "Forbidden Ultimate Dragon";
+   if(line==3)return "Technique!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu ne me laisses pas le choix. Pour";
+   if(line==1)return "te vaincre, je dois utiliser la";
+   if(line==2)return "technique interdite de l€ØUltime";
+   if(line==3)return "Dragon !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€No me dejas otra opci€“n, la €–nica";
+   if(line==1)return "forma de derrotarte es usar la";
+   if(line==2)return "T€cnica del Drag€“n Supremo";
+   if(line==3)return "Prohibido!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ n€‹o me deixa escolha, a €–nica";
+   if(line==1)return "maneira de derrot€‰-lo € usar a";
+   if(line==2)return "T€cnica Proibida do Drag€‹o";
+   if(line==3)return "Supremo!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§ˆÈ…„‚æ…Ú‰…ªŠ……ˆß‚§‡‡ƒ·ä‚ï†¸„œ…á‚¨†÷‡£†‚";
+   if(line==1)return "Šƒ‚ğŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€«€Ğ €Â€º €Ã€Æ€Ç€µ€·€À€Ô€º€Í€Ñ €Á€Â€º €·€Ğ€¶€Ã€Å€µ,";
+   if(line==1)return "€º€¹€½€Â€Æ€Ç€·€º€Â€Â€Ğ€¾ €Æ€Ä€Ã€Æ€Ã€¶ €Ä€Ã€¶€º€¹€½€Ç€Ñ €Ç€º€¶€Ô €×";
+   if(line==2)return "€½€Æ€Ä€Ã€À€Ñ€¼€Ã€·€µ€Ç€Ñ €«€º€Ê€Â€½€¿€È €¡€µ€Ä€Å€º€Ç€Â€Ã€¸€Ã";
+   if(line==3)return "€š€¶€Æ€Ã€À€Ó€Ç€Â€Ã€¸€Ã €€Å€µ€¿€Ã€Â€µ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€å‚ë„‰œ…Ÿ‡óˆƒ€â€Ü€å‚ë‚®€òƒ·ä‡…Ö†¸ˆ‡£…Ó";
+   if(line==1)return "‡‡¯†’Š‚…˜‚¨€ã€í€ùŠ„";
+   return "";}
+ }
+ if(key=="dialog:96"){
+  if(n==0){
+   if(line==0)return "You were under the influence of";
+   if(line==1)return "the great pope who controlled";
+   if(line==2)return "your mind... You came to your";
+   if(line==3)return "senses after killing someone...";
+   if(line==4)return "Cassios...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Le Grand Pope contr€”lait ton";
+   if(line==1)return "esprit€Û Tu as repris tes esprits";
+   if(line==2)return "apr€s avoir tu€ quelqu€Øun€Û";
+   if(line==3)return "Cassios€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "Estabas bajo la influencia del gran";
+   if(line==1)return "Papa que controlaba tu mente...";
+   if(line==2)return "Volviste en s€ despu€s de matar a";
+   if(line==3)return "alguien... Casios...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ estava sob a influ€ncia do";
+   if(line==1)return "grande papa que controlava sua";
+   if(line==2)return "mente... Voc€ recuperou o ju€zo";
+   if(line==3)return "depois de matar algu€m... C€‰ssios...";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§ƒ‘‚çû…¹‚è‚§„ä„ù‡‡‚™ƒâ…Ì‡‰‡‡„Ïƒµ€Û€Û‚§ƒÅ…ù";
+   if(line==1)return "ûäğ‚Šƒˆ‡‰£û€Û€Ûƒ‚ˆ¤ƒí…Ô€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ğ €Â€µ€Ê€Ã€¹€½€À€½€Æ€Ñ €Ä€Ã€¹ €·€À€½€Ô€Â€½€º€Á €·€º€À€½€¿€Ã€¸€Ã";
+   if(line==1)return "€Ä€µ€Ä€Ğ, €¿€Ã€Ç€Ã€Å€Ğ€¾ €¿€Ã€Â€Ç€Å€Ã€À€½€Å€Ã€·€µ€À €·€µ€Í";
+   if(line==2)return "€Å€µ€¼€È€Á... €œ€Ğ €Ä€Å€½€Í€À€½ €· €Æ€º€¶€Ô €Ä€Ã€Æ€À€º €È€¶€½€¾€Æ€Ç€·€µ";
+   if(line==3)return "€¿€Ã€¸€Ã-€Ç€Ã... €£€µ€Æ€Æ€½€Ã€Æ€µ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "€áƒ€øˆ€áƒ€ø‡„Û…Ã‰¢€ò™‚´ƒâƒ…Ì‡‰‡„Ï‰Üæ";
+   if(line==1)return "„€á˜€ğ€ø...‚Š†¥€ğ€ø„Ô€Ü††®„…‹˜€ğ€ø...¨³";
+   if(line==2)return "§µ...";
+   return "";}
+ }
+ if(key=="dialog:97"){
+  if(n==0){
+   if(line==0)return "You will die Hyoga! No one has";
+   if(line==1)return "been able to survive multiple";
+   if(line==2)return "scorpion stings so far; receive the";
+   if(line==3)return "last one! the needle of Antares!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu vas mourir, Hyoga ! Personne";
+   if(line==1)return "n€Øa surv€cu €ˆ tant de piq€—res du";
+   if(line==2)return "Scorpion. Re€Œois la derni€re :";
+   if(line==3)return "l€Øaiguille Antar€s !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Morir€‰s Hyoga! Hasta ahora nadie";
+   if(line==1)return "ha podido sobrevivir a m€–ltiples";
+   if(line==2)return "picaduras de escorpi€“n; €Recibe el";
+   if(line==3)return "€–ltimo! la aguja de Antares!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ vai morrer Hyoga! Ningu€m";
+   if(line==1)return "conseguiu sobreviver a m€–ltiplas";
+   if(line==2)return "picadas de escorpi€‹o at€ agora;";
+   if(line==3)return "receba o €–ltimo! a agulha de";
+   if(line==4)return "Antares!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§‚˜†¡‡‡Š„‚ç‡‹‚ëò†Š…‰†¶…î‚Š‡õƒàƒÅƒß†™ˆŸˆ–ƒû";
+   if(line==1)return "ˆ•‚›ƒ„¶ƒıæ†€€İ…Ä‚ç…íƒä„ÊŠ„„ƒƒÒ†ñ…Ôö‰¯Š„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€«€Ğ €È€Á€Å€º€Í€Ñ, €®€Õ€¸€µ! €€Ã €Æ€½€Ê €Ä€Ã€Å €Â€½€¿€Ã€Á€È €Â€º";
+   if(line==1)return "€È€¹€µ€À€Ã€Æ€Ñ €Ä€º€Å€º€»€½€Ç€Ñ €Á€Â€Ã€»€º€Æ€Ç€·€º€Â€Â€Ğ€º";
+   if(line==2)return "€È€¿€È€Æ€Ğ €Æ€¿€Ã€Å€Ä€½€Ã€Â€µ; €Ä€Ã€À€È€Ì€½ €Ä€Ã€Æ€À€º€¹€Â€½€¾!";
+   if(line==3)return "€½€¸€À€µ €š€Â€Ç€µ€Å€º€Æ€µ!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "†°†·†¡…–Š„€íš€‡€í›€Ü²¸İ„ˆ¢…Îƒ½‚é€ï";
+   if(line==1)return "š€ş“†ö€è„ÃŠ€ø‚Šˆ€âƒ€â€İ…í„Ô‡1€üƒ‘€ëƒ˜";
+   if(line==2)return "€òŠ„ â¹ßµ‡‰ªŠ„Š„";
+   return "";}
+ }
+ if(key=="dialog:98"){
+  if(n==0){
+   if(line==0)return "You will never reach the room of";
+   if(line==1)return "the Pope! The road is covered with";
+   if(line==2)return "poisonous roses... Their perfume";
+   if(line==3)return "will get the better of you quickly...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu n€Øatteindras jamais la chambre";
+   if(line==1)return "du Grand Pope ! La route est";
+   if(line==2)return "couverte de roses empoisonn€es.";
+   if(line==3)return "Leur parfum aura vite raison de";
+   if(line==4)return "toi€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Nunca llegar€‰s a la habitaci€“n del";
+   if(line==1)return "Papa! El camino est€‰ cubierto de";
+   if(line==2)return "rosas venenosas... Su perfume te";
+   if(line==3)return "dominar€‰ r€‰pidamente...";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ nunca chegar€‰ €ˆ sala do Papa!";
+   if(line==1)return "A estrada est€‰ coberta de rosas";
+   if(line==2)return "venenosas... O perfume delas vai";
+   if(line==3)return "tomar conta de voc€ rapidamente...";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§†±‰„ç‚˜‚çˆú…Ì‡‰‡‡…Œ‰ÂŠ„ˆíå„­†Ëû…î†©‡‡†î";
+   if(line==1)return "†ò€Û€Û„€‚”‡‡‰ê†¯ƒ¬„Ó„Ş„œ‚˜ˆÈ‚§ƒ‘çû€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ğ €Â€½€¿€Ã€¸€¹€µ €Â€º €¹€Ã€¶€º€Å€º€Ç€º€Æ€Ñ €¹€Ã €¿€Ã€Á€Â€µ€Ç€Ğ";
+   if(line==1)return "€¨€µ€Ä€Ğ! €€Ã€Å€Ã€¸€µ €È€Æ€Ğ€Ä€µ€Â€µ €Ô€¹€Ã€·€½€Ç€Ğ€Á€½";
+   if(line==2)return "€Å€Ã€¼€µ€Á€½... €¢€Ê €µ€Å€Ã€Á€µ€Ç €¶€Ğ€Æ€Ç€Å€Ã €Ã€¹€Ã€À€º€º€Ç";
+   if(line==3)return "€Ç€º€¶€Ô...";
+   return "";}
+  if(n==6){
+   if(line==0)return "…Ì‡‰‡‰ „ „ˆ†´€ğ€ş€ø‚˜‡’€ëƒ€â€€ğ•€ãŠ„‰•ˆí";
+   if(line==1)return "ˆ…î†©ƒÆÜ€ˆ¦œš€ş€â€ò...€ö‡‰ê˜ˆ€ò€ê„€á";
+   if(line==2)return "ƒ€ø‰óû€ğ€ò...";
+   return "";}
+ }
+ if(key=="dialog:99"){
+  if(n==0){
+   if(line==0)return "You won't ever reach the first";
+   if(line==1)return "house!! Ahaha!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Vous n€Øatteindrez jamais le";
+   if(line==1)return "premier temple ! Ahaha !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€€Nunca llegar€‰s a la primera casa!!";
+   if(line==1)return "Jajaja!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ nunca chegar€‰ €ˆ primeira";
+   if(line==1)return "casa!! Ahaha!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§†±‰„ç‚˜‚çˆú‡»ä†‰…ŒƒûŠ„ƒ¸ƒ³ƒ³Š„Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€Ğ €Â€½€¿€Ã€¸€¹€µ €Â€º €¹€Ã€¶€º€Å€º€Ç€º€Æ€Ñ €¹€Ã €Ä€º€Å€·€Ã€¸€Ã";
+   if(line==1)return "€¹€Ã€Á€µ!! €š€Ê€µ€Ê€µ!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "…í‚ã‡„„€ø‚˜‡’€é€íˆ€á˜€ô!!€áˆˆ!!";
+   return "";}
+ }
+ if(key=="dialog:100"){
+  if(n==0){
+   if(line==0)return "You'll never get there, I lined the";
+   if(line==1)return "road leading to the grand pope";
+   if(line==2)return "with thousands of poisonous roses,";
+   if(line==3)return "their scent is deadly!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Tu n€Øy arriveras pas ! J€Øai couvert";
+   if(line==1)return "la route du Grand Pope de milliers";
+   if(line==2)return "de roses empoisonn€es. Leur";
+   if(line==3)return "parfum est mortel !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Nunca llegar€‰s all€, he bordeado el";
+   if(line==1)return "camino que conduce al gran Papa";
+   if(line==2)return "con miles de rosas venenosas, €€su";
+   if(line==3)return "aroma es mortal!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Voc€ nunca chegar€‰ l€‰, eu forrei a";
+   if(line==1)return "estrada que leva ao grande papa";
+   if(line==2)return "com milhares de rosas venenosas,";
+   if(line==3)return "seu perfume € mortal!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§†±‰„‚ççû‰‰¥Š……„ƒÅ‰„Ñƒâ…Ì‡‰‡‡ˆíå‡¦û…Î";
+   if(line==1)return "‚ı…÷…î†©‡‡†î†òŠ…„€‚”‡‡†­ƒ¬…á‡üƒ­‡‡Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€«€Ğ €Â€½€¿€Ã€¸€¹€µ €Ç€È€¹€µ €Â€º €¹€Ã€¶€º€Å€º€Í€Ñ€Æ€Ô, €Ô";
+   if(line==1)return "€·€Ğ€À€Ã€»€½€À €¹€Ã€Å€Ã€¸€È, €·€º€¹€È€Î€È€Ó €¿ €·€º€À€½€¿€Ã€Á€È";
+   if(line==2)return "€Ä€µ€Ä€º, €Ç€Ğ€Æ€Ô€Ì€µ€Á€½ €Ô€¹€Ã€·€½€Ç€Ğ€Ê €Å€Ã€¼, €½€Ê €¼€µ€Ä€µ€Ê";
+   if(line==3)return "€Æ€Á€º€Å€Ç€º€À€º€Â!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "†´€ğ€ş€ö€í„ˆˆû˜‡’€ëƒ€â–€Ü‡¥ˆƒâ…Ì‡‰„‡Ï€é‰•";
+   if(line==1)return "„‚¤‚ı…õ“‡…î†©ƒÆÜï€ø€Ü€ö‡‰ê˜ˆ‡üƒ­";
+   if(line==2)return "‡‡€ù!!";
+   return "";}
+ }
+ if(key=="dialog:101"){
+  if(n==0){
+   if(line==0)return "Your sweet faces will soon be part";
+   if(line==1)return "of my walls!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Vos jolis visages orneront bient€”t";
+   if(line==1)return "mes murs !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Tus dulces caras pronto ser€‰n";
+   if(line==1)return "parte de mis paredes!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Seus lindos rostos em breve far€‹o";
+   if(line==1)return "parte das minhas paredes!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚§ƒ—†×‡‡‡ø„Ó„Ş„œ‚˜…ƒò…„ƒÔƒÕ‡‡ä‰ ‚àŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€œ€µ€Í€½ €Á€½€À€Ğ€º €À€½€Ë€µ €Æ€¿€Ã€Å€Ã €Æ€Ç€µ€Â€È€Ç €Ì€µ€Æ€Ç€Ñ€Ó";
+   if(line==1)return "€Á€Ã€½€Ê €Æ€Ç€º€Â!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€áƒ€ø‡‚À€ğ€â‰ß€ç€ò€ê„‡¥‡ƒÕ‡ä‰ „ƒ™€€ğ";
+   if(line==1)return "•€ãŠ„";
+   return "";}
+ }
+ if(key=="dialog:102"){
+  if(n==0){
+   if(line==0)return "absolute zero! Execution aurora!!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Le z€ro absolu ! Par l€ØEx€cution de";
+   if(line==1)return "l€ØAurore !";
+   return "";}
+  if(n==2){
+   if(line==0)return "cero absoluto! €€Aurora de";
+   if(line==1)return "ejecuci€“n!!";
+   return "";}
+  if(n==3){
+   if(line==0)return "zero absoluto! Aurora de";
+   if(line==1)return "execu€Œ€‹o!!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‡Ş„“‰Ö„¿Š„…ê‚Æƒï‡¢ö„„ëŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€µ€¶€Æ€Ã€À€Ó€Ç€Â€Ğ€¾ €Â€Ã€À€Ñ! €£€µ€¼€Â€Ñ €š€·€Å€Ã€Å€µ!!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡Î„•‰Ö„¿Š„§ãàÜ¥¬µªÚã³ÛâŠ„";
+   return "";}
+ }
+ if(key=="dialog:103"){
+  if(n==0){
+   if(line==0)return "during our previous fights.";
+   return "";}
+  if(n==1){
+   if(line==0)return "lors de nos pr€c€dents combats.";
+   return "";}
+  if(n==2){
+   if(line==0)return "durante nuestras peleas";
+   if(line==1)return "anteriores.";
+   return "";}
+  if(n==3){
+   if(line==0)return "durante nossas lutas anteriores.";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒÅ…„‚”ö‚ë‡‡…†…Ññ€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€·€Ã €·€Å€º€Á€Ô €Â€µ€Í€½€Ê €Ä€Å€º€¹€Ğ€¹€È€Î€½€Ê €¶€Ã€º€·.";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚“‚ë‡…‡€â‡€è€İ";
+   return "";}
+ }
+ if(key=="dialog:104"){
+  if(n==0){
+   if(line==0)return "her shield towards your Princess's";
+   if(line==1)return "heart to save her.";
+   return "";}
+  if(n==1){
+   if(line==0)return "son bouclier vers le c€™ur de ta";
+   if(line==1)return "princesse pour la sauver.";
+   return "";}
+  if(n==2){
+   if(line==0)return "su escudo hacia el coraz€“n de su";
+   if(line==1)return "princesa para salvarla.";
+   return "";}
+  if(n==3){
+   if(line==0)return "seu escudo em dire€Œ€‹o ao cora€Œ€‹o";
+   if(line==1)return "de sua princesa para salv€‰-la.";
+   return "";}
+  if(n==4){
+   if(line==0)return "ƒğ†÷‡†Ù…¢‚¢‚Êó‡‡„Û†€…«…Êƒğ€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€º€º €Î€½€Ç €¿ €Æ€º€Å€¹€Ë€È €·€µ€Í€º€¾ €Ä€Å€½€Â€Ë€º€Æ€Æ€Ğ,";
+   if(line==1)return "€Ì€Ç€Ã€¶€Ğ €Æ€Ä€µ€Æ€Ç€½ €º€º.";
+   return "";}
+  if(n==6){
+   if(line==0)return "„Ğƒï…Ê€ã€ø’„€áƒ€ø‡Íİâ·µ‡„Û‡ù„„Ğƒï";
+   if(line==1)return "‡‡ƒŸ€ë€ş€é€ù€ï€â€İ";
+   return "";}
+ }
+ if(key=="dialog:105"){
+  if(n==0){
+   if(line==0)return "my brother, you sacrificed";
+   if(line==1)return "yourself for us...";
+   return "";}
+  if(n==1){
+   if(line==0)return "Mon fr€re€Û tu t€Øes sacrifi€ pour";
+   if(line==1)return "nous€Û";
+   return "";}
+  if(n==2){
+   if(line==0)return "hermano m€o, te sacrificaste por";
+   if(line==1)return "nosotros...";
+   return "";}
+  if(n==3){
+   if(line==0)return "meu irm€‹o, voc€ se sacrificou por";
+   if(line==1)return "n€“s...";
+   return "";}
+  if(n==4){
+   if(line==0)return "‚Ã„ÉŠ…‚§òû…„‚”†ß†İû‡ú„«€Û€Û";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¶€Å€µ€Ç €Á€Ã€¾, €Ç€Ğ €Ä€Ã€»€º€Å€Ç€·€Ã€·€µ€À €Æ€Ã€¶€Ã€¾ €Å€µ€¹€½";
+   if(line==1)return "€Â€µ€Æ...";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚Ã–€Ü€áƒ€øˆ‡¥€ø€ú‡€ø’„‡ú‚à†à†İ„€ğ€ğ€ø";
+   if(line==1)return "...";
+   return "";}
+ }
+ if(key=="dialog:106"){
+  if(n==0){
+   if(line==0)return "rest assured that we will continue";
+   if(line==1)return "the battle for you, and for Athena!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Sois certain que nous poursuivrons";
+   if(line==1)return "le combat pour toi et pour Ath€na !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Tenga la seguridad de que";
+   if(line==1)return "continuaremos la batalla por usted";
+   if(line==2)return "y por Athena!";
+   return "";}
+  if(n==3){
+   if(line==0)return "tenha certeza de que";
+   if(line==1)return "continuaremos a batalha por voc€ e";
+   if(line==2)return "por Atenas!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ˆÕ…Æ„ÛŠ……„‚”„—‡à‡áò„óƒ®‰Ò‚Ïƒø‡ì…†Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¶€È€¹€Ñ€Ç€º €È€·€º€Å€º€Â€Ğ, €Á€Ğ €Ä€Å€Ã€¹€Ã€À€»€½€Á €¶€½€Ç€·€È";
+   if(line==1)return "€¼€µ €·€µ€Æ €½ €¼€µ €š€É€½€Â€È!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‡¥€ø€úˆ€áƒ€ø ½Á‡€ø’„…‡€â‡Ï€ë€ò‡";
+   if(line==1)return "€€Ü€î„ƒ„Û€é€ù€ï€â!";
+   return "";}
+ }
+ if(key=="mu:combo"){
+  if(n==0){
+   if(line==0)return "Repeatedly press Attack to";
+   if(line==1)return "perform a combo. Now it's your";
+   if(line==2)return "turn!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez plusieurs fois sur Attaque";
+   if(line==1)return "pour encha€‘ner les coups. €… vous de";
+   if(line==2)return "jouer !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Presiona repetidamente Ataque";
+   if(line==1)return "para realizar un combo. €Ahora es";
+   if(line==2)return "tu turno!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione Attack repetidamente";
+   if(line==1)return "para realizar um combo. Agora € a";
+   if(line==2)return "sua vez!";
+   return "";}
+  if(n==4){
+   if(line==0)return "‰¦ƒİ…±€Ù…Å‚ß€Ú‚“…“ˆ˜‰†‚ß€İ†ïƒÅˆô‚ç‚§ûŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€º€Æ€¿€Ã€À€Ñ€¿€Ã €Å€µ€¼ €Â€µ€»€Á€½€Ç€º €‚€š€Ç€µ€¿€µ€ƒ, €Ì€Ç€Ã€¶€Ğ";
+   if(line==1)return "€·€Ğ€Ä€Ã€À€Â€½€Ç€Ñ €¿€Ã€Á€¶€Ã. €«€º€Ä€º€Å€Ñ €·€µ€Í€µ €Ã€Ì€º€Å€º€¹€Ñ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "…Å…¿‡Ó˜‰€€ğ…£€ğ€ş°âÑ„‹ˆ˜€ğ€ò€İ‚„¿ˆ€á";
+   if(line==1)return "ƒ€ø‡‡€€òŠ„";
+   return "";}
+ }
+ if(key=="mu:down"){
+  if(n==0){
+   if(line==0)return "Press Down + Attack to perform a";
+   if(line==1)return "low kick and stun your enemy.";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez sur Bas + Attaque pour";
+   if(line==1)return "effectuer un coup de pied bas et";
+   if(line==2)return "€tourdir votre ennemi.";
+   return "";}
+  if(n==2){
+   if(line==0)return "Pulsa Abajo + Ataque para realizar";
+   if(line==1)return "una patada baja y aturdir a tu";
+   if(line==2)return "enemigo.";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione Baixo + Ataque para";
+   if(line==1)return "executar um chute baixo e";
+   if(line==2)return "atordoar seu inimigo.";
+   return "";}
+  if(n==4){
+   if(line==0)return "…±ƒŸæ+…Å‚ß…“ˆ˜‚¡ˆï„µ‚ß…ä…É‚Š€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ€»€Á€½€Ç€º €‚€œ€Â€½€¼ + €š€Ç€µ€¿€µ€ƒ, €Ì€Ç€Ã€¶€Ğ";
+   if(line==1)return "€·€Ğ€Ä€Ã€À€Â€½€Ç€Ñ €À€Ã€È-€¿€½€¿ €½ €Ã€¸€À€È€Í€½€Ç€Ñ €·€Å€µ€¸€µ.";
+   return "";}
+  if(n==6){
+   if(line==0)return "æ+…Å…¿…£€ğ€şàãª¼¬„‹ˆ˜€ğ€Ü…Ï†®‡Î€ï";
+   if(line==1)return "€ô€ò€İ";
+   return "";}
+ }
+ if(key=="mu:up"){
+  if(n==0){
+   if(line==0)return "Press Up + Attack to perform a";
+   if(line==1)return "high kick and launch your enemy";
+   if(line==2)return "into the air.";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez sur Haut + Attaque pour";
+   if(line==1)return "effectuer un coup de pied haut et";
+   if(line==2)return "lancer votre ennemi dans les airs.";
+   return "";}
+  if(n==2){
+   if(line==0)return "Pulsa Arriba + Ataque para realizar";
+   if(line==1)return "una patada alta y lanzar a tu";
+   if(line==2)return "enemigo al aire.";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione Cima + Ataque para dar";
+   if(line==1)return "um chute alto e lan€Œar seu inimigo";
+   if(line==2)return "no ar.";
+   return "";}
+  if(n==4){
+   if(line==0)return "…±ƒŸå+…Å‚ß…“ˆ˜‰ñˆï„µ„—…É‚Šƒ„–‚ç‡°ñ€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ€»€Á€½€Ç€º €‚€œ€·€º€Å€Ê€ƒ + €‚€š€Ç€µ€¿€µ€ƒ, €Ì€Ç€Ã€¶€Ğ";
+   if(line==1)return "€·€Ğ€Ä€Ã€À€Â€½€Ç€Ñ €·€Ğ€Æ€Ã€¿€½€¾ €È€¹€µ€Å €½ €Ä€Ã€¹€¶€Å€Ã€Æ€½€Ç€Ñ";
+   if(line==2)return "€·€Å€µ€¸€µ €· €·€Ã€¼€¹€È€Ê.";
+   return "";}
+  if(n==6){
+   if(line==0)return "å+…Å…¿…£€ğ€şÅ¢ª¼¬„‹ˆ˜€ğ€Ü…Ï‡°ñ„";
+   if(line==1)return "…€úå€ì€ò€İ";
+   return "";}
+ }
+ if(key=="mu:special"){
+  if(n==0){
+   if(line==0)return "Press Forward + Special to unleash";
+   if(line==1)return "your special attack. It consumes";
+   if(line==2)return "Cosmos, so use it carefully!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez sur Avant + Sp€cial pour";
+   if(line==1)return "d€clencher votre attaque sp€ciale.";
+   if(line==2)return "Elle consomme du Cosmos :";
+   if(line==3)return "utilisez-la avec pr€caution !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Pulsa Adelante + Especial para";
+   if(line==1)return "desatar tu ataque especial.";
+   if(line==2)return "Consume Cosmos, €as€ que €–salo";
+   if(line==3)return "con cuidado!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione Avan€Œar + Especial para";
+   if(line==1)return "liberar seu ataque especial.";
+   if(line==2)return "Consome Cosmos, ent€‹o use-o com";
+   if(line==3)return "cuidado!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…±‚ë‰ƒ+†Ş†¢‰¹‰¤…Æ†Ş†¢…Å‚ß€İ„€‚˜†¿‡îCosmo";
+   if(line==1)return "sŠ……‚“ˆ¥„˜„Û‚¨†÷Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ€»€Á€½€Ç€º €‚€œ€Ä€º€Å€º€¹€ƒ + €‚€ª€Ä€º€Ë€½€µ€À€Ñ€Â€Ğ€¾€ƒ,";
+   if(line==1)return "€Ì€Ç€Ã€¶€Ğ €Ä€Å€½€Á€º€Â€½€Ç€Ñ €Æ€Ä€º€Ë€½€µ€À€Ñ€Â€È€Ó €µ€Ç€µ€¿€È. €§€Â";
+   if(line==2)return "€Ä€Ã€¸€À€Ã€Î€µ€º€Ç €£€Ã€Æ€Á€Ã€Æ, €Ä€Ã€Ò€Ç€Ã€Á€È €½€Æ€Ä€Ã€À€Ñ€¼€È€¾€Ç€º";
+   if(line==3)return "€º€¸€Ã €Ã€Æ€Ç€Ã€Å€Ã€»€Â€Ã!";
+   return "";}
+  if(n==6){
+   if(line==0)return "Forward + Special …£€ğ€ş†Ş‚äƒ…Å…¿";
+   if(line==1)return "…Æ€ú€ò€İ°µ×µ†¿ˆİ€ò™‡€„ı‰¦„‚¨€â€ğ•";
+   if(line==2)return "€ãŠ„";
+   return "";}
+ }
+ if(key=="mu:dash"){
+  if(n==0){
+   if(line==0)return "Quickly press Forward twice, then";
+   if(line==1)return "Attack to perform a dash attack!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez rapidement deux fois sur";
+   if(line==1)return "Avant, puis sur Attaque pour";
+   if(line==2)return "frapper en courant !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Presiona r€‰pidamente Adelante";
+   if(line==1)return "dos veces y luego Ataque para";
+   if(line==2)return "realizar un ataque r€‰pido!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione rapidamente Avan€Œar";
+   if(line==1)return "duas vezes e depois Atacar para";
+   if(line==2)return "realizar um ataque r€‰pido!";
+   return "";}
+  if(n==4){
+   if(line==0)return "„Ş‰…±î†™€Ù‚ë‰ƒ€ÚŠ…†Ôƒ…±€Ù…Å‚ß€Ú‰ƒˆ˜‚Õ‚é…Å‚ßŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€›€Ğ€Æ€Ç€Å€Ã €¹€·€µ€»€¹€Ğ €Â€µ€»€Á€½€Ç€º €‚€œ€Ä€º€Å€º€¹€ƒ, €µ";
+   if(line==1)return "€¼€µ€Ç€º€Á €‚€š€Ç€µ€¿€µ€ƒ, €Ì€Ç€Ã€¶€Ğ €·€Ğ€Ä€Ã€À€Â€½€Ç€Ñ €Å€Ğ€·€Ã€¿!";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ß‚ë‰‘€à‡É…İ€é2ƒ½…£€ğ€ş€æ—€ß…Å…¿€à…£€òº¼";
+   if(line==1)return "³Ú…Å…¿„‹ˆ˜€€è€ò€İ";
+   return "";}
+ }
+ if(key=="mu:charge"){
+  if(n==0){
+   if(line==0)return "Hold Attack for five seconds, then";
+   if(line==1)return "release it to unleash a charged";
+   if(line==2)return "attack.";
+   return "";}
+  if(n==1){
+   if(line==0)return "Maintenez l'attaque pendant cinq";
+   if(line==1)return "secondes, puis rel€Šchez-la pour";
+   if(line==2)return "d€clencher une attaque charg€e.";
+   return "";}
+  if(n==2){
+   if(line==0)return "Mant€n presionado Ataque";
+   if(line==1)return "durante cinco segundos, luego";
+   if(line==2)return "su€ltalo para desatar un ataque";
+   if(line==3)return "cargado.";
+   return "";}
+  if(n==3){
+   if(line==0)return "Segure Attack por cinco segundos";
+   if(line==1)return "e depois solte para desencadear";
+   if(line==2)return "um ataque carregado.";
+   return "";}
+  if(n==4){
+   if(line==0)return "…±‚¢…Å‚ß‚‚‡§‰°Š…†Ôƒ‰¤…Æ‚“ƒ‚òˆ‚î…Å‚ß€İ";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¬€¹€º€Å€»€½€·€µ€¾€Ç€º Attack €· €Ç€º€Ì€º€Â€½€º €Ä€Ô€Ç€½";
+   if(line==1)return "€Æ€º€¿€È€Â€¹, €¼€µ€Ç€º€Á €Ã€Ç€Ä€È€Æ€Ç€½€Ç€º €º€º, €Ì€Ç€Ã€¶€Ğ";
+   if(line==2)return "€Â€µ€Ì€µ€Ç€Ñ €¼€µ€Å€Ô€»€º€Â€Â€È€Ó €µ€Ç€µ€¿€È.";
+   return "";}
+  if(n==6){
+   if(line==0)return "€ß…Å…¿€à 5 ‡§‰¾…£€ğ‡Ï€ë€ş€æ—…Æ€ò€Ü†Ê’…Å…¿";
+   if(line==1)return "‡Ó˜‚Ş€ğ€ò€İ";
+   return "";}
+ }
+ if(key=="mu:backattack"){
+  if(n==0){
+   if(line==0)return "Press Back + Attack to perform a";
+   if(line==1)return "back attack. Try it!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez sur Arri€re + Attaque pour";
+   if(line==1)return "frapper derri€re vous. Essayez !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Pulsa Atr€‰s + Ataque para realizar";
+   if(line==1)return "un ataque por la espalda. €Pru€balo!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione Voltar + Ataque para";
+   if(line==1)return "realizar um ataque pelas costas.";
+   if(line==2)return "Experimente!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…±€Ùƒ‰‹€Ú+€Ù…Å‚ß€Úƒ—‰ƒˆ˜ƒ‰‹…Å‚ß€İˆĞˆĞƒ£Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ€»€Á€½€Ç€º Back + Attack, €Ì€Ç€Ã€¶€Ğ";
+   if(line==1)return "€·€Ğ€Ä€Ã€À€Â€½€Ç€Ñ €µ€Ç€µ€¿€È €Æ€¼€µ€¹€½. €¨€Ã€Ä€Å€Ã€¶€È€¾€Ç€º!";
+   return "";}
+  if(n==6){
+   if(line==0)return "Æ¼¬ +  ¹¼¬…£€ğ€şÆ¼¬ ¹¼¬„‹ˆ˜€ğ";
+   if(line==1)return "€ò€İˆ¹€ğ€ş€ş€é€ù€ï€âŠ„";
+   return "";}
+ }
+ if(key=="mu:uppercut"){
+  if(n==0){
+   if(line==0)return "Press Up + Special to perform a";
+   if(line==1)return "powerful uppercut and launch your";
+   if(line==2)return "enemies into the air!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez sur Haut + Sp€cial pour";
+   if(line==1)return "effectuer un uppercut puissant et";
+   if(line==2)return "lancer vos ennemis dans les airs !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€Presiona Arriba + Especial para";
+   if(line==1)return "realizar un poderoso gancho y";
+   if(line==2)return "lanzar a tus enemigos al aire!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione Cima + Especial para";
+   if(line==1)return "executar um gancho poderoso e";
+   if(line==2)return "lan€Œar seus inimigos no ar!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…±ƒŸå + †Ş‚æ‰¹ƒ…ƒ—…×„¢„Ì‚îå‚ù…¬Š…„—…É‚Šƒ";
+   if(line==1)return "„–‚ç‡°ñŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ€»€Á€½€Ç€º €‚€œ€·€º€Å€Ê€ƒ + €‚€ª€Ä€º€Ë€½€µ€À€Ñ€Â€Ğ€¾€ƒ,";
+   if(line==1)return "€Ì€Ç€Ã€¶€Ğ €·€Ğ€Ä€Ã€À€Â€½€Ç€Ñ €Á€Ã€Î€Â€Ğ€¾ €µ€Ä€Ä€º€Å€¿€Ã€Ç €½";
+   if(line==2)return "€Ä€Ã€¹€¶€Å€Ã€Æ€½€Ç€Ñ €·€Å€µ€¸€Ã€· €· €·€Ã€¼€¹€È€Ê!";
+   return "";}
+  if(n==6){
+   if(line==0)return "å + µĞ³ØŞ…£€ğ€ş„Ë‚îƒ ¼Çã¨¼¿„‹";
+   if(line==1)return "ˆ˜€ğ€Ü…Ï‡°ñ„…€úå€ì€ğ•€ã!";
+   return "";}
+ }
+ if(key=="mu:ultra"){
+  if(n==0){
+   if(line==0)return "Press Down + Special to unleash";
+   if(line==1)return "your ultimate attack. Burn your";
+   if(line==2)return "Cosmos!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez sur Bas + Sp€cial pour";
+   if(line==1)return "d€clencher votre attaque ultime.";
+   if(line==2)return "Br€—lez votre Cosmos !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Pulsa Abajo + Especial para";
+   if(line==1)return "desatar tu ataque definitivo.";
+   if(line==2)return "€Quema tu Cosmos!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione Baixo + Especial para";
+   if(line==1)return "liberar seu ataque final. Queime";
+   if(line==2)return "seu cosmos!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…±ƒŸæ‰¹ + Special †€‰¤…Æ‚§‡‡‡Ú†‚…Å‚ß€İ†Õ";
+   if(line==1)return "†Ò‚§‡‡„„†Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ€»€Á€½€Ç€º €‚€œ€Â€½€¼€ƒ + €‚€ª€Ä€º€Ë€½€µ€À€Ñ€Â€Ğ€¾€ƒ,";
+   if(line==1)return "€Ì€Ç€Ã€¶€Ğ €Ä€Å€½€Á€º€Â€½€Ç€Ñ €Æ€·€Ã€Ó €Á€Ã€Î€Â€È€Ó €µ€Ç€µ€¿€È.";
+   if(line==2)return "€ª€Ã€»€¸€½ €Æ€·€Ã€¾ €£€Ã€Æ€Á€Ã€Æ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "æ + µĞ³ØŞ…£€ğ€ş‡¯†’‡…Å…¿…Æ€ú€ò€İ°";
+   if(line==1)return "µ×µ†Õ”€ôŠ„";
+   return "";}
+ }
+ if(key=="mu:jump"){
+  if(n==0){
+   if(line==0)return "Press Jump, then Attack to";
+   if(line==1)return "perform an aerial attack. Now it's";
+   if(line==2)return "your turn!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Appuyez sur Saut, puis sur Attaque";
+   if(line==1)return "pour frapper en l€Øair. €… vous de";
+   if(line==2)return "jouer !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Pulsa Saltar y luego Atacar para";
+   if(line==1)return "realizar un ataque a€reo. €Ahora es";
+   if(line==2)return "tu turno!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Pressione Jump e depois Attack";
+   if(line==1)return "para realizar um ataque a€reo.";
+   if(line==2)return "Agora € a sua vez!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…±€Ùˆîˆê€ÚŠ…†Ôƒ…±€Ù…Å‚ß€Ú‰ƒˆ˜‡°ñ…Å‚ß€İ†ïƒÅˆô‚ç";
+   if(line==1)return "‚§ûŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€¦€µ€»€Á€½€Ç€º €‚€¨€Å€Ğ€»€Ã€¿€ƒ, €¼€µ€Ç€º€Á €‚€š€Ç€µ€¿€µ€ƒ,";
+   if(line==1)return "€Ì€Ç€Ã€¶€Ğ €·€Ğ€Ä€Ã€À€Â€½€Ç€Ñ €·€Ã€¼€¹€È€Í€Â€È€Ó €µ€Ç€µ€¿€È.";
+   if(line==2)return "€«€º€Ä€º€Å€Ñ €·€µ€Í€µ €Ã€Ì€º€Å€º€¹€Ñ!";
+   return "";}
+  if(n==6){
+   if(line==0)return "´ØâÍ…£€ğ€ş€æ—…Å…¿…£€ğ€ş‡°ñ…Å…¿„‹ˆ˜";
+   if(line==1)return "€ğ€ò€İ‚„¿ˆ€áƒ€ø‡‡€€òŠ„";
+   return "";}
+ }
+ if(key=="mu:end"){
+  if(n==0){
+   if(line==0)return "Training is complete! It is time to";
+   if(line==1)return "repair your Cloths: difficult battles";
+   if(line==2)return "await you!";
+   return "";}
+  if(n==1){
+   if(line==0)return "L€Øentra€‘nement est termin€ ! Il est";
+   if(line==1)return "temps de r€parer vos armures : de";
+   if(line==2)return "rudes combats vous attendent !";
+   return "";}
+  if(n==2){
+   if(line==0)return "€El entrenamiento ha terminado! Es";
+   if(line==1)return "hora de reparar sus armaduras:";
+   if(line==2)return "€les esperan duros combates!";
+   return "";}
+  if(n==3){
+   if(line==0)return "O treinamento terminou! €‡ hora de";
+   if(line==1)return "reparar suas armaduras: batalhas";
+   if(line==2)return "dif€ceis esperam por voc€s!";
+   return "";}
+  if(n==4){
+   if(line==0)return "ˆÉ‡Ø‡Ü…ıûŠ„ˆÒ‚­ƒİ‚§‚”‡‡ƒÄˆœûŠ…ˆ‚ˆˆ‡‡…†…Ñ‰ƒÅ";
+   if(line==1)return "‚ë…Ö‡¼„Ò‡’‚§‚”Š„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€«€Å€º€Â€½€Å€Ã€·€¿€µ €Ã€¿€Ã€Â€Ì€º€Â€µ! €¨€Ã€Å€µ €Ä€Ã€Ì€½€Â€½€Ç€Ñ";
+   if(line==1)return "€¹€Ã€Æ€Ä€º€Ê€½: €·€Ä€º€Å€º€¹€½ €·€µ€Æ €»€¹€È€Ç €Ç€Ô€»€Õ€À€Ğ€º";
+   if(line==2)return "€Æ€Å€µ€»€º€Â€½€Ô!";
+   return "";}
+  if(n==6){
+   if(line==0)return "‚­ˆ˜ˆ‡Íœ˜€ùŠ„‡ğˆœ‚­„Ù€ğ–€ã€İ€í‡‚Å„ˆƒˆ€ğ";
+   if(line==1)return "€â…‡€â€ç„Ò€û€ş€â™Š„";
+   return "";}
+ }
+ if(key=="mu:throw"){
+  if(n==0){
+   if(line==0)return "Grab an enemy, then press Attack";
+   if(line==1)return "to strike. Finish by pressing";
+   if(line==2)return "Forward + Attack to throw them!";
+   return "";}
+  if(n==1){
+   if(line==0)return "Saisissez un ennemi et appuyez sur";
+   if(line==1)return "Attaque pour le frapper. Terminez";
+   if(line==2)return "avec Avant + Attaque pour le";
+   if(line==3)return "projeter !";
+   return "";}
+  if(n==2){
+   if(line==0)return "Agarra a un enemigo y luego";
+   if(line==1)return "presiona Atacar para atacar.";
+   if(line==2)return "€Termina presionando Adelante +";
+   if(line==3)return "Ataque para lanzarlos!";
+   return "";}
+  if(n==3){
+   if(line==0)return "Agarre um inimigo e pressione";
+   if(line==1)return "Ataque para atacar. Termine";
+   if(line==2)return "pressionando Avan€Œar + Ataque";
+   if(line==3)return "para jog€‰-los!";
+   return "";}
+  if(n==4){
+   if(line==0)return "…š‚¢äğ…É‚ŠŠ…†Ôƒ…±…Å‚ß‰¹‰ƒˆ˜…Å‚ß€İ…±‚ë‰ƒ+";
+   if(line==1)return "…Å‚ß†€…‘…·„€‚”ƒ…ƒ—„„…ƒŠ„";
+   return "";}
+  if(n==5){
+   if(line==0)return "€ª€Ê€·€µ€Ç€½€Ç€º €·€Å€µ€¸€µ, €¼€µ€Ç€º€Á €Â€µ€»€Á€½€Ç€º";
+   if(line==1)return "€‚€š€Ç€µ€¿€µ€ƒ, €Ì€Ç€Ã€¶€Ğ €Â€µ€Â€º€Æ€Ç€½ €È€¹€µ€Å.";
+   if(line==2)return "€¡€µ€¿€Ã€Â€Ì€½€Ç€º, €Â€µ€»€µ€· €‚€œ€Ä€º€Å€º€¹ + €š€Ç€µ€¿€µ€ƒ,";
+   if(line==3)return "€Ì€Ç€Ã€¶€Ğ €¶€Å€Ã€Æ€½€Ç€Ñ €½€Ê!";
+   return "";}
+  if(n==6){
+   if(line==0)return "…Ï…º€€Ü€ß…Å…¿€à…£€ğ€ş…Å…¿€ğ€ò€İ‚ë‰‘+…Å";
+   if(line==1)return "…¿…£€ğ€ş…›€ì€ş‡Íû€€òŠ„";
+   return "";}
+ }
+ return "";}
 #endif

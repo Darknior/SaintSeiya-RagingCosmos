@@ -91,8 +91,9 @@ def main():
  # The native engine MBS reader consumes two bytes for non-ASCII glyphs.
  # Both are high bytes, avoiding quotes, percent signs and control characters.
  for number in range(10):
-  stem='font' if number==0 else 'font'+str(number+1);original=ROOT/'sprites'/f'{stem}.gif';bank=ROOT/'sprites'/stem;bank.mkdir(exist_ok=True);shutil.copyfile(original,bank/'00.gif')
+  stem='font' if number==0 else 'font'+str(number+1);original=ROOT/'sprites'/f'{stem}.gif';bank=ROOT/'sprites'/stem;bank.mkdir(exist_ok=True);
   tile=Image.open(original).width//16
+  shutil.copyfile(original,bank/'00.gif')
   ink=[(245,244,242),(252,242,48),(106,149,219),(106,149,219),(56,240,19),(255,255,255),(4,137,218),(251,250,247),(224,208,107),(251,75,87)][number]
   for first in sorted({b[0] for b in glyphs.values()}):
    im=Image.new('RGBA',(tile*16,tile*16));d=ImageDraw.Draw(im)
@@ -117,6 +118,30 @@ def main():
    menu.append(b'renamekey '+key.encode()+b' '+quote(d[src]))
   (dest/'menu.txt').write_bytes(b'\n'.join(menu)+b'\n');metadata[code]={'translation_lines':len(rows),'menu_lines':len(menu)}
  shutil.copyfile(ROOT/'translations/native/en/translation.txt',ROOT/'translation.txt');shutil.copyfile(ROOT/'translations/native/en/menu.txt',ROOT/'menu.txt')
+ # Layout uses the exact advances computed by OpenBOR's proportional font loader.
+ # The text stays as strings; no per-dialogue or tutorial text sprites are built.
+ font_bank=ROOT/'sprites/font6';sheets={}
+ def advance(ch):
+  first,second=(0,ord(ch)) if ord(ch)<128 else glyphs[ch]
+  if first not in sheets:sheets[first]=Image.open(font_bank/('00.gif' if first==0 else f'{first:02x}.png'))
+  sheet=sheets[first];tile=sheet.width//16
+  token=sheet.crop(((second%16)*tile,(second//16)*tile,(second%16+1)*tile,(second//16+1)*tile))
+  xs=[x for y in range(tile) for x in range(tile) if token.getpixel((x,y))!=0]
+  width=max(xs)-min(xs)+1+tile//10 if xs else 0
+  return width if width>1 else tile//3
+ advances={ch:advance(ch) for ch in {c for d in catalogues.values() for text in d.values() for c in text}}
+ def text_lines(text,code,width=258):
+  chunks=list(text) if code in ('zh','ja') else text.split();lines=[];line=''
+  for word in chunks:
+   separator=' ' if line and code not in ('zh','ja') else ''
+   candidate=line+separator+word
+   if sum(advances[ch] for ch in candidate)>width and line:lines.append(line);line=word
+   else:line=candidate
+  if line:lines.append(line)
+  assert len(lines)<=5,(code,text,'paragraph overflows native window',len(lines))
+  assert all(sum(advances[ch] for ch in line)<=width for line in lines),(code,text,'line too wide')
+  return lines
+ layouts={code+':'+key:{'font':5,'line_height':15,'lines':text_lines(value,code),'text':value} for code,d in catalogues.items() for key,value in d.items() if key.startswith(('dialog:','mu:'))}
  # Script strings use the exact same glyph encoding as stock engine labels.
  c=b'// Generated native localization; do not edit by hand.\n#ifndef NATIVE_LOCALIZATION_CATALOG\n#define NATIVE_LOCALIZATION_CATALOG 1\n'
  c+=b'void locCode(int n){\n'+b''.join(b' if(n=='+str(i).encode()+b')return "'+code.encode()+b'";\n' for i,code in enumerate(CODES))+b' return "en";}\n'
@@ -137,19 +162,22 @@ def main():
  c+=b'void nativeSoldierLabel(void model){\n'
  for model,path in soldiers():c+=b' if(model=='+quote(model)+b')return nativeText('+quote(kinds[path.parent.name])+b');\n'
  c+=b' return NULL();}\n#endif\n';(ROOT/'scripts/native_localization_catalog.c').write_bytes(c)
- # Native portrait windows stay unchanged; only their text is rasterized.
- layouts={}
- for code,d in catalogues.items():
-  for key,entry in SOURCE.items():
-   if not key.startswith(('dialog:','mu:')):continue
-   width,height=(260,76) if key.startswith('dialog:') else (264,76);chosen=None
-   for size in range(15,8,-1):
-    lines=wrap(d[key],code,size,width-4)
-    if len(lines)<=4 and len(lines)*(size+2)<=height:chosen=(size,lines);break
-   if chosen is None:raise ValueError((code,key,'does not fit',d[key]))
-   size,lines=chosen;im=Image.new('RGBA',(width,height));draw=ImageDraw.Draw(im)
-   for i,line in enumerate(lines):draw.text((1,i*(size+2)),line,font=font(code,size),fill='white',stroke_width=0,anchor='lt')
-   slug=key.replace(':','-');indexed(im,ROOT/'sprites/localization'/code/f'{slug}.png');layouts[code+':'+key]={'size':size,'lines':len(lines),'text':d[key]}
+ # Paragraph catalogue: one shared native font, wrapped once at build time.
+ c=(ROOT/'scripts/native_localization_catalog.c').read_bytes();assert c.endswith(b'#endif\n');c=c[:-7]
+ c+=b'void nativeParagraphLine(void key,int line){int n=getglobalvar("ui_lang");\n'
+ for key in SOURCE:
+  if not key.startswith(('dialog:','mu:')):continue
+  c+=b' if(key=='+quote(key)+b'){\n'
+  for i,code in enumerate(CODES):
+   c+=b'  if(n=='+str(i).encode()+b'){\n'
+   for j,line in enumerate(layouts[code+':'+key]['lines']):c+=b'   if(line=='+str(j).encode()+b')return '+quote(line)+b';\n'
+   c+=b'   return "";}\n'
+  c+=b' }\n'
+ c+=b' return "";}\n#endif\n';(ROOT/'scripts/native_localization_catalog.c').write_bytes(c)
+ # Remove superseded generated text images; keep the native Mû bubble artwork.
+ for code in CODES:
+  for pattern in ('dialog-*.png','mu-*.png'):
+   for obsolete in (ROOT/'sprites/localization'/code).glob(pattern):obsolete.unlink()
  # Translate the caption of the existing Game Over sequence too.
  for code,d in catalogues.items():
   im=Image.new('RGBA',(300,42));draw=ImageDraw.Draw(im);size=28
@@ -163,7 +191,7 @@ def main():
   im=Image.open(original);bg=im.getpixel((0,0));ImageDraw.Draw(im).rectangle((24,15,298,95),fill=bg)
   im.save(mu_base/original.name,bits=8)
  (ROOT/'reports/native-localization-layouts.json').write_text(json.dumps(layouts,ensure_ascii=False,indent=2)+'\n')
- (ROOT/'reports/native-localization.json').write_text(json.dumps({'languages':CODES,'entries_per_language':len(SOURCE),'dialogue_pages':sum(k.startswith('dialog:') for k in SOURCE),'mu_tutorials':sum(k.startswith('mu:') for k in SOURCE),'unicode_glyphs':len(glyphs),'native_mbs_encoding':True,'tables':metadata,'translation_provenance':'Google Translate; French dialogue pages reviewed, UI labels and Saint Seiya terminology corrected; other locales need linguistic review; placeholders and layouts checked'},ensure_ascii=False,indent=2)+'\n')
+ (ROOT/'reports/native-localization.json').write_text(json.dumps({'languages':CODES,'entries_per_language':len(SOURCE),'dialogue_pages':sum(k.startswith('dialog:') for k in SOURCE),'mu_tutorials':sum(k.startswith('mu:') for k in SOURCE),'unicode_glyphs':len(glyphs),'native_mbs_encoding':True,'dialogue_renderer':'native drawstring, font 5','dialogue_text_images':0,'menu_font_tile_pixels':10,'root_menu_display_scale':1.6,'tables':metadata,'translation_provenance':'Google Translate; French dialogue pages reviewed, UI labels and Saint Seiya terminology corrected; other locales need linguistic review; placeholders and layouts checked'},ensure_ascii=False,indent=2)+'\n')
  (ROOT/'translations/native-glyphs.json').write_text(json.dumps({ch:list(b) for ch,b in glyphs.items()},ensure_ascii=False,indent=2)+'\n')
  print('Native localization generated:',len(SOURCE),'entries x7;',len(glyphs),'glyphs')
 if __name__=='__main__':main()

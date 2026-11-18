@@ -8,29 +8,15 @@
       "native_root_options_video": true,
       "existing_howto_entry": true
     },
-    "es": {
-      "language": "es",
-      "passed": true,
-      "menu_files_exported": true,
-      "native_root_options_video": true,
-      "existing_howto_entry": true
-    },
-    "pt": {
-      "language": "pt",
-      "passed": true,
-      "menu_files_exported": true,
-      "native_root_options_video": true,
-      "existing_howto_entry": true
-    },
-    "zh": {
-      "language": "zh",
-      "passed": true,
-      "menu_files_exported": true,
-      "native_root_options_video": true,
-      "existing_howto_entry": true
-    },
     "ja": {
       "language": "ja",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
+    "es": {
+      "language": "es",
       "passed": true,
       "menu_files_exported": true,
       "native_root_options_video": true,
@@ -43,6 +29,20 @@
       "native_root_options_video": true,
       "existing_howto_entry": true
     },
+    "zh": {
+      "language": "zh",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
+    "pt": {
+      "language": "pt",
+      "passed": true,
+      "menu_files_exported": true,
+      "native_root_options_video": true,
+      "existing_howto_entry": true
+    },
     "ru": {
       "language": "ru",
       "passed": true,
@@ -50,5 +50,7 @@
       "native_root_options_video": true,
       "existing_howto_entry": true
     }
-  }
+  },
+  "root_menu_render_scale": 1.6,
+  "settings_fonts_unchanged": true
 }

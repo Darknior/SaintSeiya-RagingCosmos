@@ -23,7 +23,12 @@
     "native_menus_preserved": true,
     "native_pause_only": true,
     "added_blue_interface_panels": false,
-    "boss_defeat_slow_motion": false
+    "boss_defeat_slow_motion": false,
+    "dialogue_text_images": false,
+    "mu_tutorial_text_images": false,
+    "native_paragraph_font": true,
+    "root_menu_scale": 1.6,
+    "title_subtitle_integrated": true
   },
   "verification": {
     "unique_stage_load_and_short_combat": 45,

@@ -1,0 +1,13 @@
+{
+  "text_images_removed": 833,
+  "deleted_png_bytes": 1421655,
+  "rendering": "native drawstring; shared font 5, five lines at 15px spacing",
+  "wrapping": "exact OpenBOR proportional glyph advances, computed at build time",
+  "runtime_cache": "five strings, refreshed only when paragraph or language changes",
+  "native_menu_navigation_retained": true,
+  "root_menu_render_scale": 1.6,
+  "settings_hud_pause_fonts_unchanged": true,
+  "previous_pak_bytes": 500304188,
+  "optimized_pak_bytes": 498471639,
+  "pak_bytes_saved": 1832549
+}

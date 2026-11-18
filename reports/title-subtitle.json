@@ -1,0 +1,16 @@
+{
+  "creative_edit": "image generation/edit tool",
+  "integration": "subtitle patch only, native logo, tower and twenty animation frames retained",
+  "source_sha256": "220ef5d57c38828c1102fc57d5bc0b8990d54e15e3d83ebd954a214b0c32ab54",
+  "native_base": "110c8b5dc1d60593dd49ba5dee70c367f5bc7ee7",
+  "patch_source": [
+    45,
+    128,
+    330,
+    163
+  ],
+  "patch_position": [
+    45,
+    134
+  ]
+}

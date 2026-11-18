@@ -106,6 +106,7 @@ if(openborvariant("in_menuscreen")) // Check if the game is in menu screen
 		if(getglobalvar("aldebaran4") != NULL()){free(getglobalvar("aldebaran4"));setglobalvar("aldebaran4",NULL());}
 		if(getglobalvar("aldebaran5") != NULL()){free(getglobalvar("aldebaran5"));setglobalvar("aldebaran5",NULL());}
 		if(getglobalvar("screen") != NULL()){free(getglobalvar("screen"));setglobalvar("screen",NULL());}
+        if(getglobalvar("menu_text_screen") != NULL()){free(getglobalvar("menu_text_screen"));setglobalvar("menu_text_screen",NULL());}
 
 		//SCRIPT USED TO CLEAR ALL VARIABLES AND ASSETS
 		
@@ -148,6 +149,7 @@ void menuScreen()
 	float scaleX	= 256;
 	float scaleY	= 256;
 	float xMenu		= -216;
+
 	float yMenu		= 0;
 	float xBar		= -100;
 	float yBar		= 0;
@@ -175,7 +177,19 @@ void menuScreen()
 
 		//DRAW MENU
 		drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/2000000000, openborconstant("MAX_INT")/1000000000, xBar, yBar);
-		drawspriteq(getglobalvar("screen"), 0, openborconstant("MAX_INT")/10, openborconstant("MAX_INT"), xMenu, yMenu);
+        // Scale the native root menu's own draw queue, retaining its entries,
+        // selection colours and input. Settings, modes, HUD and pause stay native.
+        if(!openborvariant("in_options") && !openborvariant("in_new_game") && !openborvariant("in_load_game") && !openborvariant("in_start_game")){
+            if(getglobalvar("menu_text_screen")==NULL())setglobalvar("menu_text_screen",allocscreen(openborvariant("hresolution"),openborvariant("vresolution")));
+            clearscreen(getglobalvar("menu_text_screen"));
+            drawspriteq(getglobalvar("menu_text_screen"),0,openborconstant("MAX_INT")/10,openborconstant("MAX_INT"),0,0);
+            changedrawmethod(NULL(),"reset",1);changedrawmethod(NULL(),"enabled",1);
+            changedrawmethod(NULL(),"scalex",410);changedrawmethod(NULL(),"scaley",410);changedrawmethod(NULL(),"transbg",1);
+            drawscreen(getglobalvar("menu_text_screen"),-456,-144,z+1);
+            drawspriteq(getglobalvar("screen"),0,z+1,z+1,0,0);
+        }else{
+            drawspriteq(getglobalvar("screen"),0,openborconstant("MAX_INT")/10,openborconstant("MAX_INT"),xMenu,yMenu);
+        }
 	}
 
 	//DRAW SCREEN

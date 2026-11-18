@@ -15,7 +15,7 @@ if __name__=='__main__':
   for f in (ROOT/'levels').iterdir():
    if f.name!='temple8C-road.txt':(directory/f.name).symlink_to(f)
   (directory/'temple8C-road.txt').write_text('noslow 1\npanel data/bgs/temple8C-road/temple8C-road.png\norder a\ndirection right\nsettime 999\nspawn1 50 30 0\nspawn loc_anchor\ncoords 600 430 0\nat 0\nwait\nat 100000\n')
-  f=data/'scripts/localization.c';f.unlink();t=(ROOT/'scripts/localization.c').read_text();t=t.replace('if(page<0)return 0;','if(page<0){log("LOC_PAGE_MISSING\\n");return 0;}');t=t.replace('    if(sprite!=NULL())drawsprite(sprite,x,y,layer);','    if(typeof(sprite)!=openborconstant("VT_PTR")){log("LOC_BAD_SPRITE "+path+"\\n");} log("LOC_LOAD "+path+"\\n"); if(sprite!=NULL())drawsprite(sprite,x,y,layer);');t=t.replace('    return 1;\n}', '    log("LOC_PAGE "+lang+" "+page+"\\n");\n    return 1;\n}');f.write_text(t)
+  f=data/'scripts/localization.c';f.unlink();t=(ROOT/'scripts/localization.c').read_text();t=t.replace('if(page<0)return 0;','if(page<0){log("LOC_PAGE_MISSING\\n");return 0;}');t=t.replace('    if(sprite!=NULL())drawsprite(sprite,x,y,layer);','    if(typeof(sprite)!=openborconstant("VT_PTR")){log("LOC_BAD_SPRITE "+path+"\\n");} log("LOC_LOAD "+path+"\\n"); if(sprite!=NULL())drawsprite(sprite,x,y,layer);');t=t.replace('    return 1;\n}', '    log("LOC_PAGE "+getglobalvar("ui_lang")+" "+page+"\\n");\n    return 1;\n}');f.write_text(t)
   code='void setLocPage(int i){switch(i){\n'
   for i,page in enumerate(pages):code+='case '+str(i)+':'+''.join('setglobalvar("line'+str(j+1)+'",'+json.dumps(text)+');' for j,text in enumerate(page))+'break;\n'
   code+='}}\n'

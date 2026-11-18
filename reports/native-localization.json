@@ -13,6 +13,10 @@
   "mu_tutorials": 12,
   "unicode_glyphs": 1280,
   "native_mbs_encoding": true,
+  "dialogue_renderer": "native drawstring, font 5",
+  "dialogue_text_images": 0,
+  "menu_font_tile_pixels": 10,
+  "root_menu_display_scale": 1.6,
   "tables": {
     "en": {
       "translation_lines": 542,

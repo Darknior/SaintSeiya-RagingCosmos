@@ -18,5 +18,5 @@ void main()
     int layer=getentityproperty(self,"setlayer")+1;
     setdrawmethod(NULL(),0,256,256,0,0,0,0);
     int lang=getglobalvar("ui_lang");if(lang==NULL())lang=0;
-    localizationSprite("data/sprites/localization/"+locCode(lang)+"/mu-"+key+".png",x+30,y+18,layer+1);
+    localizedParagraph("mu:"+key,x+30,y+18,layer+1);
 }

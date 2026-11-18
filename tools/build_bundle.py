@@ -47,6 +47,8 @@ Le choix de langue est conserve apres redemarrage.
 Clavier par defaut : fleches, A=Attaque, D=Saut, Entree=Start, F=Block.
 Commandes reconfigurables dans Options / Control Options.
 Guide anime : Comment jouer, dans le menu principal natif.
+Dialogues et tutoriel de Mu : vrais textes dans la police native partagee,
+sans images de texte. Menu agrandi, sous-titre Raging Cosmos harmonise.
 Pause native : Continuer / Quitter la partie. Aucun sous-menu ajoute.
 Le ralenti a la defaite des boss est desactive.
 
