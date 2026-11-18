@@ -45,6 +45,8 @@ anciennes archives ou des dessins générés. Moteur officiel stable vérifié :
   natif sur les vingt images de son animation. Le menu principal conserve ses lettres
   blanches et sa sélection dorée avec un contour bleu plus visible. « Système »
   utilise bien son è ; textes normalisés en Unicode NFC avant encodage MBS.
+  Les ponctuations chinoises et japonaises utilisent Noto Sans CJK ; contrôle
+  des tables de caractères des polices : 1 280 glyphes non ASCII, aucun manquant.
   Licences jointes.
 - Ralenti de défaite des boss désactivé dans tous les fichiers de niveaux.
 - Migration : constantes devenues variables (`SAMPLE_BEEP`, limites Z), casse et

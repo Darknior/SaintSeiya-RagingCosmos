@@ -64,5 +64,11 @@
       "passed": false,
       "error": "Timeout NATIVE_OPTIONS 1 /chars/misc/water/water.txt \n ...done!\n\nLoading models...............\tDone!\nObject engine init...........\tDone!\nLoading menu.txt.............\tDone!\nLoading fonts................\t1 2 3 4 5 6 7 8 9 10 Done!\nLoading translation..........\tDone!\nInput init...................\tNo Joystick(s) Found!\nDone!\nCreate blending tables.......\tDone!\nSave settings so far.........\tDone!\n\n\nNATIVE_UI pause=0 view=0 page=0 lang=0 option=0 title=0 menu=0 confirmed=0 time=0\nNATIVE_OPTIONS 0\nNATIVE_UI pause=0 view=0 page=0 lang=6 option=0 title=0 menu=0 confirmed=1 time=1\nNATIVE_UI pause=0 view=0 page=0 lang=6 option=0 title=1 menu=0 confirmed=1 time=1202\nLoading 'bgtitle'NATIVE_UI pause=0 view=0 page=0 lang=6 option=0 title=0 menu=1 confirmed=1 time=1251\nNATIVE_UI pause=0 view=2 page=0 lang=6 option=0 title=0 menu=1 confirmed=1 time=1923\nNATIVE_UI pause=0 view=2 page=1 lang=6 option=0 title=0 menu=1 confirmed=1 time=2143\nNATIVE_UI pause=0 view=0 page=1 lang=6 option=0 title=0 menu=1 confirmed=1 time=2323\nNATIVE_UI pause=0 view=0 page=1 lang=6 option=0 title=1 menu=0 confirmed=1 time=6985\nLoading 'bgtitle'NATIVE_UI pause=0 view=0 page=0 lang=6 option=0 title=1 menu=0 confirmed=1 time=6987\nNATIVE_OPTIONS 0\n"
     }
+  ],
+  "unicode_cmap_coverage_missing": [],
+  "latest_unicode_locale_checks": [
+    "fr",
+    "zh",
+    "ja"
   ]
 }

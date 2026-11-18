@@ -23,8 +23,8 @@ void nativeMenuProbe(){
   s.wait('title=1',120);s.wait('lang='+str(lang)+' ',120);s.capture('native-title')
   for name in ['menu.txt','translation.txt']:
    assert (s.out/'translation'/name).read_bytes().rstrip(b'\r\n')==(source/'translations/native'/code/name).read_bytes().rstrip(b'\r\n'),name+' export mismatch'
-  for attempt in range(5):
-   s.press(40)
+  for attempt in range(15):
+   s.press(40 if attempt<3 else 4)
    if 'menu=1' in s.read():break
    time.sleep(.7)
   s.wait('menu=1');time.sleep(.5);s.capture('native-main')

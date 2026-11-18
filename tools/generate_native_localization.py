@@ -5,6 +5,7 @@ Retains native menu layout/input and all original ASCII glyphs. No engine fork.
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 import json,re,shutil,hashlib,unicodedata
+from fontTools.ttLib import TTFont
 ROOT=Path(__file__).resolve().parents[1];CODES=['en','fr','es','pt','zh','ru','ja'];SOURCE=json.loads((ROOT/'translations/native-source.json').read_text())
 FORMAT=re.compile(r'%(?:[-+0 #]*\d*(?:\.\d+)?[a-zA-Z]|%)')
 KEYS={
@@ -89,6 +90,18 @@ def main():
  glyphs={ch:bytes((128+i//127,128+i%127)) for i,ch in enumerate(chars)};assert len(chars)<127*127
  def encode(s):return b''.join(glyphs[c] if ord(c)>127 else c.encode('ascii') for c in s)
  def quote(s):return b'"'+encode(s).replace(b'\\',b'\\\\').replace(b'"',b'\\"').replace(b'\n',b'\\n')+b'"'
+ def glyph_family(ch):
+  n=ord(ch)
+  if 0x3400<=n<=0x9fff:return 'zh'
+  if 0x3000<=n<=0x30ff or 0xff00<=n<=0xffef:return 'ja'
+  return 'fr'
+ cmap={
+  'fr':TTFont('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf').getBestCmap(),
+  'ja':TTFont('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',fontNumber=0).getBestCmap(),
+  'zh':TTFont('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',fontNumber=2).getBestCmap()}
+ missing=[ch for ch in glyphs if ord(ch) not in cmap[glyph_family(ch)]]
+ assert not missing,('unsupported Unicode characters',missing)
+ (ROOT/'reports/unicode-font-coverage.json').write_text(json.dumps({'required_non_ascii_glyphs':len(glyphs),'missing':missing,'french_accent_sample':'Système','cjk_punctuation_sample':'、。々「」！，：；？～','cjk_punctuation_font':'Noto Sans CJK','normalization':'NFC'},ensure_ascii=False,indent=2)+'\n')
  # The native engine MBS reader consumes two bytes for non-ASCII glyphs.
  # Both are high bytes, avoiding quotes, percent signs and control characters.
  for number in range(10):
@@ -100,9 +113,14 @@ def main():
    im=Image.new('RGBA',(tile*16,tile*16));d=ImageDraw.Draw(im)
    for ch,sequence in glyphs.items():
     if sequence[0]!=first:continue
-    second=sequence[1];x=(second%16)*tile;y=(second//16)*tile;f=font('zh' if '\u3400'<=ch<='\u9fff' else 'ja' if '\u3040'<=ch<='\u30ff' else 'fr',max(7,tile-1))
+    second=sequence[1];x=(second%16)*tile;y=(second//16)*tile;f=font(glyph_family(ch),max(7,tile-1))
     glyph=Image.new('RGBA',(tile,tile));gd=ImageDraw.Draw(glyph)
-    gd.text((1,1),ch,font=f,fill=(32,24,40),anchor='lt');gd.text((0,0),ch,font=f,fill=ink,anchor='lt');im.alpha_composite(glyph,(x,y))
+    cjk_punctuation=0x3000<=ord(ch)<=0x303f or 0xff00<=ord(ch)<=0xffef
+    if cjk_punctuation:
+     gd.text((1,tile-1),ch,font=f,fill=(32,24,40),anchor='ls');gd.text((0,tile-2),ch,font=f,fill=ink,anchor='ls')
+    else:
+     gd.text((1,1),ch,font=f,fill=(32,24,40),anchor='lt');gd.text((0,0),ch,font=f,fill=ink,anchor='lt')
+    im.alpha_composite(glyph,(x,y))
    d.point((0,0),fill=ink) # Token zero carries the palette for the MBS bank.
    indexed(im,bank/f'{first:02x}.png')
    (bank/f'{first:02x}.gif').unlink(missing_ok=True)
