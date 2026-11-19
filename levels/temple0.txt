@@ -1,4 +1,5 @@
 noslow 1
+updatedscript data/scripts/saori_support.c
 #-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
 background     data/bgs/temple0/null.png        1 1 0 0 0 0.7 1 1 1 0

@@ -75,7 +75,7 @@ at 1000
 
 spawn soldier2
 alias Leander
-cosmos-stars
+item cosmos-stars
 coords -200 640
 at 1000
 
@@ -90,6 +90,11 @@ alias Carlito
 coords -230 660
 at 1000
 
+
+# Shaina intercepts the larger ambush on the way to Scorpio.
+spawn shaina_ally
+coords 210 660
+at 1000
 
 wait
 at 1000

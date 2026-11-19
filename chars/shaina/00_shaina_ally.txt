@@ -1,0 +1,49 @@
+name        shaina_ally
+type        npc
+health      1
+speed       16
+hostile     enemy
+candamage   enemy
+aimove      chase
+aggression  200
+nolife      1
+lifespan    9
+subject_to_screen 1
+
+# Body boxes are omitted so party attacks cannot interrupt the assist.
+anim idle
+    loop 1
+    delay    10
+    offset    30 129
+    frame    data/chars/shaina/idle1.png
+    frame    data/chars/shaina/idle2.png
+    frame    data/chars/shaina/idle3.png
+    frame    data/chars/shaina/idle4.png
+    frame    data/chars/shaina/idle3.png
+    frame    data/chars/shaina/idle2.png
+
+anim walk
+    loop    1
+    delay    14
+    offset    23 132
+    frame    data/chars/shaina/walk1.png
+    frame    data/chars/shaina/walk2.png
+    frame    data/chars/shaina/walk3.png
+    frame    data/chars/shaina/walk4.png
+    frame    data/chars/shaina/walk5.png
+    frame    data/chars/shaina/walk6.png
+    frame    data/chars/shaina/walk7.png
+    frame    data/chars/shaina/walk8.png
+
+anim attack1
+    range 0 99
+    rangez -12 12
+    delay    5
+    offset    43 129
+    frame    data/chars/shaina/attack1.png
+    attack1 43 63 100 26 8 1 0 0 5 12
+    frame    data/chars/shaina/attack2.png
+    frame    data/chars/shaina/attack3.png
+    attack1 0
+    frame    data/chars/shaina/attack4.png
+    frame    data/chars/shaina/attack1.png
