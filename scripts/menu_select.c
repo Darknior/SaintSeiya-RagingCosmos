@@ -1,3 +1,4 @@
+#import "data/scripts/library/live_entity.c"
 #import "data/scripts/native_localization_catalog.c"
 #import "data/scripts/library/safe_expire.c"
 void main()
@@ -47,7 +48,11 @@ void storyInfo(void vName, int pIndex)
 		//GLOBAL USAGE
 		void self	= getlocalvar("self");
 		void cursor;
-		void previewEntity;
+		void previewEntity=liveEntity(getglobalvar("previewEntity"+pIndex));
+        if(previewEntity!=NULL()){
+            if(getentityvar(previewEntity,"selection_preview")!=pIndex+1)previewEntity=NULL();
+        }
+        if(previewEntity==NULL())setglobalvar("previewEntity"+pIndex,NULL());
 		void str;
 		float hRes	= openborvariant("hresolution")+1;
 		int xCol	= 719;	//X DIFERRENCE BETWEEN PLAYERS COLUMNS
@@ -55,7 +60,7 @@ void storyInfo(void vName, int pIndex)
 		int aniDif	= 4;	//DIFFERENCE BETWEEN "FOLLOW" ANIMATIONS (EX: FOLLOW1, FOLLOW2, FOLLOW3, ETC...)
 
 		//GET THE CURRENT ANIMATION OF THE HIGHLIGHTED/SELECTED CHARACTER
-		void aniPrev	= getentityproperty(getglobalvar("previewEntity"+pIndex), "animationID");
+		void aniPrev	= getentityproperty(previewEntity, "animationID");
 		void aniDef		= getentityproperty(getglobalvar("defaultEntity"+pIndex), "animationID");
 		int pNumber		= pIndex+1;
 
@@ -73,12 +78,14 @@ void storyInfo(void vName, int pIndex)
 			clearspawnentry();
 			setspawnentry("name", vName);
 			previewEntity = spawn();
+            if(previewEntity==NULL())return;
 			changeentityproperty(previewEntity, "type", openborconstant("TYPE_NPC"));
 			changeentityproperty(previewEntity, "position", xPrev, yPrev, 0);
 			changeentityproperty(previewEntity, "direction", facing);
 			changeentityproperty(previewEntity, "animation", openborconstant("ANI_SELECT"));
 			changeentityproperty(previewEntity, "map", pIndex);
 			setglobalvar("previewMap"+pIndex, pIndex);
+			setentityvar(previewEntity, "selection_preview", pIndex+1);
 			setglobalvar("previewEntity"+pIndex, previewEntity);
 		}
 

@@ -1,17 +1,25 @@
+#import "data/scripts/library/live_entity.c"
+
 void main()
 {//Global keyall scripts, detects player index
 	int player = getlocalvar("player");
 	
-	menuSelect(player);
-	dialogs(player);
+	if(player==NULL() || player<0 || player>=openborvariant("maxplayers"))return;
+    if(openborvariant("in_selectscreen")){
+        if(openborvariant("current_set")<=2)menuSelect(player);
+    }else if(openborvariant("in_level") && playerkeys(player,1,"attack")){
+        dialogs();
+    }
 }
 
 void menuSelect(int player)
 {//Change player preview model according to global variable "previewModel"+player check
 	
 	if(openborvariant("in_selectscreen")){ //LEVEL SELECT MENU STARTED
-		if(getglobalvar("previewEntity"+player) != NULL()){
-			void ani = getentityproperty(getglobalvar("previewEntity"+player), "animationID");
+		void preview=liveEntity(getglobalvar("previewEntity"+player));
+        if(preview==NULL())return;
+        if(getentityvar(preview,"selection_preview")==player+1){
+			void ani = getentityproperty(preview, "animationID");
 
 			//THE CURRENT HIGHLIGHTED CHARACTER IS NOT CONFIRMED YET?? EXECUTE ALL TASKS BELOW
 			if(ani != openborconstant("ANI_PICK")){
@@ -55,17 +63,17 @@ void menuSelect(int player)
 						if(column == 2){setglobalvar("previewCol"+player, maxCols);}
 					}
 				}
-				changeModel(player);
+				changeModel(player, preview);
 			}
 		}
 	}
 }
 
-void changeModel(int player)
+void changeModel(int player, void preview)
 {//Change model preview according to player changes
 	
-	if(getglobalvar("previewEntity"+player) != NULL()){
-		void ani = getentityproperty(getglobalvar("previewEntity"+player), "animationID");
+	if(preview != NULL()){
+		void ani = getentityproperty(preview, "animationID");
 		
 		if(ani != openborconstant("ANI_PICK")){ //THE CURRENT HIGHLIGHTED CHARACTER IS NOT CONFIRMED YET?? EXECUTE ALL TASKS BELOW
 
@@ -89,24 +97,20 @@ void changeModel(int player)
 				playerkeys(player, 1, "moveup")		||
 				playerkeys(player, 1, "movedown")	){
 
-				changeentityproperty(getglobalvar("previewEntity"+player), "model", getglobalvar("previewModel"+player), 1);
-				changeentityproperty(getglobalvar("previewEntity"+player), "animation", openborconstant("ANI_SELECT"));
+				changeentityproperty(preview, "model", getglobalvar("previewModel"+player), 1);
+				changeentityproperty(preview, "animation", openborconstant("ANI_SELECT"));
 			}
 		}
 	}
 }
 
-void dialogs(int player)
-{//Used to advance frames of the dialog entities
-	void entity	= getglobalvar("dialog_entity");
-	int exists	= getentityproperty(entity, "exists");
-	int lock	= getglobalvar("lockButton");
-	int frame	= getentityproperty(entity, "animpos");
-
-	//FRAME ADVANCE
-	if(entity && lock == 0){
-		if(playerkeys(player, 1, "attack")){
-			updateframe(entity, frame+1);
-		}
-	}
+void dialogs()
+{
+    if(getglobalvar("lockButton")!=0 || !getglobalvar("line1"))return;
+    void entity=liveEntity(getglobalvar("dialog_entity"));
+    if(entity==NULL())return;
+    if(getentityvar(entity,"dialog_input")!=1)return;
+    if(getentityproperty(entity,"animation_handle")==NULL())return;
+    int frame=getentityproperty(entity,"animpos");
+    if(frame>=0)updateframe(entity,frame+1);
 }

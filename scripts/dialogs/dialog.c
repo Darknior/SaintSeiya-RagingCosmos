@@ -40,7 +40,10 @@ void main()
 	if(line1 == NULL() || line1 == "" || portName == NULL()){if(type == openborconstant("TYPE_TEXTBOX")) hideEntity();return;}
 
 	//REGISTER SELF AS THE CURRENT DIALOG ENTITY
-	if(getglobalvar("dialog_entity") == NULL()){setglobalvar("dialog_entity", self);}
+	if(getglobalvar("dialog_entity") == NULL()){
+        setentityvar(self,"dialog_input",1);
+        setglobalvar("dialog_entity",self);
+    }
 
 	//SET CHANNEL OPACITIY
 	changedrawmethod(NULL(), "enabled", 1);
