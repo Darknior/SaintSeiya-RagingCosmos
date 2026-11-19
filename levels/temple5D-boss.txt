@@ -1,4 +1,6 @@
 noslow 1
+updatescript data/scripts/cassios_support.c
+load cassios_support
 loadingbg		data/sprites/loading/loading_temple5.png 1 -51 405 460 999 999 0
 
 music           data/music/ryuseiken.ogg

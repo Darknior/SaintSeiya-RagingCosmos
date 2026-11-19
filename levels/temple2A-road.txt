@@ -1,4 +1,5 @@
 noslow 1
+updatescript data/scripts/mu_support.c
 #-------- Level Layers (Ordre: Calque de fond en Haut, Calque de Devant en bas)-----------------
 
 background   data/bgs/temple2A-road/background.png        1 1 0 0 0 0 1 1 1 0
@@ -63,6 +64,11 @@ spawn2 80 160 0 # position du joueur2 (x, z, Y)
 spawn3 90 220 0 # position du joueur3 (x, z, Y)
 spawn4 110 190 0 # position du joueur4 (x, z, Y)
 
+# Mû lends a little Cosmos near the start of the road.
+spawn mu_support
+coords 205 412
+at 0
+
 # ----------Animals---------------------------------------------------------------
 
 spawn eagle1
@@ -98,7 +104,7 @@ at 1000
 
 spawn soldier2
 alias Leander
-cosmos-stars
+item cosmos-stars
 coords -200 410
 at 1000
 

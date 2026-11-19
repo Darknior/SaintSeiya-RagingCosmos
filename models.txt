@@ -557,6 +557,7 @@ know SOLDIER3        data/chars/soldier_big/00_soldier_big.txt
 know jaki            data/chars/jaki/00_jaki.txt
 know cassios         data/chars/cassios/00_cassios.txt
 know cassiosp        data/chars/cassios/00_cassiosp.txt
+know cassios_support data/chars/cassios/00_cassios_support.txt
 know cassios_rescue  data/chars/cassios/00_cassios_rescue.txt
 
 ## ZOMBIES SOLDIERS ##
@@ -604,6 +605,7 @@ know KIKI2           data/chars/kiki/00_kiki2.txt
 ## LEVELS ##-----------------------------------------------------------------------------------------------
 
 ## TEMPLE 1
+know mu_support          data/bgs/temple1/mu/mu-support.txt
 know mu                  data/bgs/temple1/mu/mu.txt
 
 ## TEMPLE 2A ROAD

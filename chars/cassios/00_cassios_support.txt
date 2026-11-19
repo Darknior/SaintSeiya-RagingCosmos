@@ -1,0 +1,12 @@
+name        cassios_support
+type        none
+shadow      0
+lifespan    1.5
+
+anim idle
+    delay 15
+    offset 73 187
+    frame data/chars/cassios/walk4.png
+    offset 67 191
+    delay 135
+    frame data/chars/cassios/special26.png
