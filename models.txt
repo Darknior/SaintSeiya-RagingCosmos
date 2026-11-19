@@ -567,6 +567,7 @@ know soldier_troll   data/chars/soldier_troll/00_soldier_troll.txt
 ## SILVER SAINTS ##
 
 know marin           data/chars/marin/00_marin.txt
+know marin_ally      data/chars/marin/00_marin_ally.txt
 know asterion        data/chars/asterion/00_asterion.txt
 know shaina          data/chars/shaina/00_shaina.txt
 know tremi           data/chars/tremi/00_tremi.txt

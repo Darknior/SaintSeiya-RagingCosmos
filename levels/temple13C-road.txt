@@ -67,6 +67,11 @@ coords	-200 470
 at 400
 
 
+# After the 13A encounter, Marin returns to break the first ambush.
+spawn marin_ally
+coords 240 410
+at 400
+
 wait
 at 400
 
