@@ -1,4 +1,5 @@
 noslow 1
+updatedscript data/scripts/marin_shelter.c
 loadingbg		data/sprites/loading/loading_temple13.png 1 -51 405 460 999 999 0
 
 music		data/music/athenabg.ogg
@@ -57,7 +58,7 @@ at 400
 
 spawn soldier3
 alias SOLDIER
-laranjaff
+item laranjaff
 coords	-200 410
 at 400
 
@@ -193,7 +194,7 @@ at 3800
 
 spawn soldier3
 alias SOLDIER
-goldbc
+item goldbc
 coords	-200 410
 at 3800
 

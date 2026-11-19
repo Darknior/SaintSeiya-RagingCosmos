@@ -599,6 +599,7 @@ know eagle1            data/chars/misc/animals/eagle1/eagle1.txt
 ## OTHER ##
 
 know cube            data/chars/cube/cube.txt
+know kiki_support    data/chars/kiki/00_kiki_support.txt
 know KIKI2           data/chars/kiki/00_kiki2.txt
 
 

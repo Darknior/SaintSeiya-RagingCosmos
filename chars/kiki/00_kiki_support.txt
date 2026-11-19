@@ -1,0 +1,8 @@
+name        kiki_support
+type        none
+shadow      0
+
+anim idle
+    delay 20
+    offset 45 95
+    frame data/chars/kiki/01.png

@@ -1,4 +1,5 @@
 noslow 1
+updatedscript data/scripts/kiki_support.c
 loadingbg		data/sprites/loading/loading_temple7.png 1 -51 405 460 999 999 0
 
 music       data/music/MSC-tragic.ogg
@@ -63,6 +64,11 @@ at          0
 
 hole		0 449 -1000 -1000 83 -30 81 10
 hole		800 449 -1 -74 1000 1000 81 10
+
+# Kiki offers an optional assist during the ascent.
+spawn kiki_support
+coords 400 409
+at 0
 
 ## ELEVATOR ENTITY ############################################################################
 
