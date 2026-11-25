@@ -8,7 +8,7 @@ Le dossier [build](build/) contient les moteurs officiels **OpenBOR 4.0 build 75
 Depuis la racine du dépôt, générez le PAK avec Python 3 avec Pillow et fonttools (`python -m pip install Pillow fonttools`) :
 
 ```sh
-python tools/build_release.py build/Paks/SaintSeiya-RagingCosmos.pak --light
+python -X utf8 tools/build_release.py build/Paks/SaintSeiya-RagingCosmos.pak --light
 ```
 
 - Windows : lancez `build/Jouer-Windows.bat`.
