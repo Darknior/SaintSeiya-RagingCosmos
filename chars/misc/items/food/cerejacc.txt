@@ -1,4 +1,4 @@
-misc/items/food/	CerejaCC
+name	CerejaCC
 health	100
 #score		2500
 type		item

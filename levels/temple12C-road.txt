@@ -57,7 +57,7 @@ at 400
 
 spawn soldier3
 alias SOLDIER
-laranjaff
+item laranjaff
 coords	-200 410
 at 400
 
@@ -188,7 +188,7 @@ at 3800
 
 spawn soldier3
 alias SOLDIER
-goldbc
+item goldbc
 coords	-200 410
 at 3800
 

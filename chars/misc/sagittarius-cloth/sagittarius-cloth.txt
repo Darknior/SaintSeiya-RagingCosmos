@@ -7,7 +7,6 @@ type        enemy
 aggression  -50
 hitenemy    0 0
 blockodds   1
-blocked     1
 noquake     1 1
 nodrop      2
 nodieblink  3

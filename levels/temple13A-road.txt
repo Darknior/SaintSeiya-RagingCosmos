@@ -198,7 +198,7 @@ at 3800
 
 spawn soldier3
 alias SOLDIER
-goldbc
+item goldbc
 coords	-200 410
 at 3800
 
