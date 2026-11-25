@@ -12,14 +12,6 @@ void main()
 
       setglobalvar("C1", 0);
 
-// Random starting seed from msMalik681
-      int seed; //initialize seed.
-      if(seed==NULL()){
-        seed=1;
-      } //start it off.
-      seed++; //increment seed.
-      srand(seed); //apply seed to random function.
-
     } else if(openborvariant("in_level")==1){
       int K1 = getglobalvar("Kalah1");
       int K2 = getglobalvar("Kalah2");
