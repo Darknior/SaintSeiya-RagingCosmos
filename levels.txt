@@ -935,7 +935,7 @@ lives       3
 credits     0
 disablehof  1
 noshowcomplete 1
-noshowgameover 1
+disablegameover 1
 typemp      0
 skipselect
 select      data/select-versus.txt
@@ -952,7 +952,7 @@ maxplayers  1
 lives       3
 disablehof  1
 noshowcomplete 1
-noshowgameover 1
+disablegameover 1
 typemp      0
 skipselect
 select      data/select-versus.txt

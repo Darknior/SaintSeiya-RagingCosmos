@@ -51,10 +51,12 @@ Dialogues et tutoriel de Mu : vrais textes dans la police native partagee,
 sans images de texte. Encadres blancs ; ponctuation liee au mot precedent.
 Etoile rouge du logo original preservee. Noms affiches capitalises (Seiya).
 Lettres et accents : meme police, taille et ligne de base.
-Menu agrandi avec liseres bleus et selection doree. Sous-titre Raging Cosmos
+Menu centre, police argentee et selection doree. Sous-titre Raging Cosmos
 droit, bleu/argent et or comme Saint Seiya. Accents francais verifies : Systeme
 s’ecrit bien Système dans les menus du jeu.
-Pause native : Continuer / Quitter la partie. Aucun sous-menu ajoute.
+En pause en mode Histoire : Gauche/Droite choisit une destination, puis
+Attaque charge le niveau. Continuer et Quitter la partie restent disponibles.
+Versus : configurer les commandes du joueur 2 dans Options avant le duel.
 Le ralenti a la defaite des boss est desactive.
 
 Ce paquet retire uniquement les ressources non referencees selon l'audit
