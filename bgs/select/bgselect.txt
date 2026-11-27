@@ -8,11 +8,19 @@ ondrawscript	data/scripts/menu_select.c
 anim    idle
     loop    1
     offset  1 1
-    delay   50
+    delay   12
     frame   data/bgs/select/select01.png
-    frame   data/bgs/select/select02.png
-    delay   70
     frame   data/bgs/select/select01.png
-    delay   35
     frame   data/bgs/select/select03.png
+    frame   data/bgs/select/select04.png
+    frame   data/bgs/select/select05.png
+    frame   data/bgs/select/select06.png
+    frame   data/bgs/select/select07.png
+    frame   data/bgs/select/select08.png
+    frame   data/bgs/select/select09.png
+    frame   data/bgs/select/select10.png
+    frame   data/bgs/select/select11.png
+    frame   data/bgs/select/select12.png
+    frame   data/bgs/select/select13.png
+    frame   data/bgs/select/select14.png
 
