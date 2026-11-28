@@ -6,7 +6,12 @@ void main()
 	void self = getlocalvar("self");
 	
 	if(openborvariant("in_selectscreen")){
-		if(openborvariant("current_set") <= 2){drawStory();}
+		if(openborvariant("current_set") <= 2){
+            int clock = 0;
+            if(getglobalvar("ss_cursor_clock") != NULL()){clock = getglobalvar("ss_cursor_clock");}
+            setglobalvar("ss_cursor_clock", (clock + 1) % 96);
+            drawStory();
+        }
 	}
 	
 	if(!openborvariant("in_selectscreen")){expireEntity(self);}
@@ -48,6 +53,7 @@ void storyInfo(void vName, int pIndex)
 		//GLOBAL USAGE
 		void self	= getlocalvar("self");
 		void cursor;
+
 		void previewEntity=liveEntity(getglobalvar("previewEntity"+pIndex));
         if(previewEntity!=NULL()){
             if(getentityvar(previewEntity,"selection_preview")!=pIndex+1)previewEntity=NULL();
@@ -101,17 +107,14 @@ void storyInfo(void vName, int pIndex)
 		}
 		
 		//CHANGE CURSOR POSITION ACCORDING TO THE HERO'S NAME
-		int xBase = 330;	//BASE X POSITION
-		int yBase = 326;	//BASE Y POSITION
-		int xMove = 150;	//DIFERRENCE BETWEEN PLAYER'S PORTRAITS COLUMNS
-		int yMove = 125;	//DIFERRENCE BETWEEN PLAYER'S PORTRAITS LINES
+		// Exact portrait origins (top left).
 
 		if(getlocalvar("cursor"+pNumber) != NULL()){
-			if(vName == "seiya"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase, yBase, 0);}
-			if(vName == "shiryu"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase-(xMove/2), yBase-yMove, 0);}
-			if(vName == "hyoga"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase+(xMove/2), yBase-yMove, 0);}
-			if(vName == "shun"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase-xMove, yBase, 0);}
-			if(vName == "ikki"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", xBase+xMove, yBase, 0);}
+			if(vName == "seiya"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", 354, 318, 0);}
+			if(vName == "shiryu"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", 275, 193, 0);}
+			if(vName == "hyoga"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", 434, 193, 0);}
+			if(vName == "shun"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", 196, 318, 0);}
+			if(vName == "ikki"){	changeentityproperty(getlocalvar("cursor"+pNumber), "position", 513, 318, 0);}
 		}
 
 		//CALCULATE LINES AND COLUMNS FOR CHARACTER'S INFO POSITION
@@ -134,18 +137,12 @@ void storyInfo(void vName, int pIndex)
 		//THE CURRENT HIGHLIGHTED CHARACTER IS NOT CONFIRMED YET?? EXECUTE ALL TASKS BELOW
 		if(aniPrev != openborconstant("ANI_PICK")){
 
-			//MAKE SHAKE EFFECT WHEN THE HERO IS HIGHLIGHTED
-			if(	playerkeys(pIndex, 1, "moveleft")	||
-				playerkeys(pIndex, 1, "moveright")	||
-				playerkeys(pIndex, 1, "moveup")		||
-				playerkeys(pIndex, 1, "movedown")	){
+			// Draw the highlighted cursor directly, independently of entity animation.
+            if(aniDef != openborconstant("ANI_PICK")){
+                drawCursorPulse(vName, pNumber);
+            }
 
-				if(getentityproperty(getlocalvar("cursor"+pNumber), "animationID") != openborconstant("ANI_FOLLOW"+(pNumber+aniDif))){
-					updateframe(getlocalvar("cursor"+pNumber), 0);
-				}
-			}
-
-			//MAKE CHOSEN EFFECT WHEN THE HERO IS SELECTED
+            //MAKE CHOSEN EFFECT WHEN THE HERO IS SELECTED
 			if(aniDef == openborconstant("ANI_PICK")){
 				if(getentityproperty(getlocalvar("cursor"+pNumber), "animationID") != openborconstant("ANI_FOLLOW"+(pNumber+aniDif))){
 					changeentityproperty(getlocalvar("cursor"+pNumber), "animation", openborconstant("ANI_FOLLOW"+(pNumber+aniDif)));
@@ -158,4 +155,72 @@ void storyInfo(void vName, int pIndex)
 			}
 		}
 	}
+}
+
+void drawCursorPulse(void hero, int player)
+{
+    int x = 0;
+    int y = 0;
+    int frame = getglobalvar("ss_cursor_clock") / 8;
+    void sprite;
+    void key = "ss_cursor_sprite_"+player+"_"+frame;
+    if(hero == "seiya"){x=354;y=318;}
+    else if(hero == "shiryu"){x=275;y=193;}
+    else if(hero == "hyoga"){x=434;y=193;}
+    else if(hero == "shun"){x=196;y=318;}
+    else if(hero == "ikki"){x=513;y=318;}
+    else{return;}
+    sprite = getglobalvar(key);
+    if(sprite == NULL()){
+        if(player == 1 && frame == 0){sprite = loadsprite("data/bgs/select/cursor01_pulse00.png");}
+        if(player == 1 && frame == 1){sprite = loadsprite("data/bgs/select/cursor01_pulse01.png");}
+        if(player == 1 && frame == 2){sprite = loadsprite("data/bgs/select/cursor01_pulse02.png");}
+        if(player == 1 && frame == 3){sprite = loadsprite("data/bgs/select/cursor01_pulse03.png");}
+        if(player == 1 && frame == 4){sprite = loadsprite("data/bgs/select/cursor01_pulse04.png");}
+        if(player == 1 && frame == 5){sprite = loadsprite("data/bgs/select/cursor01_pulse05.png");}
+        if(player == 1 && frame == 6){sprite = loadsprite("data/bgs/select/cursor01_pulse06.png");}
+        if(player == 1 && frame == 7){sprite = loadsprite("data/bgs/select/cursor01_pulse07.png");}
+        if(player == 1 && frame == 8){sprite = loadsprite("data/bgs/select/cursor01_pulse08.png");}
+        if(player == 1 && frame == 9){sprite = loadsprite("data/bgs/select/cursor01_pulse09.png");}
+        if(player == 1 && frame == 10){sprite = loadsprite("data/bgs/select/cursor01_pulse10.png");}
+        if(player == 1 && frame == 11){sprite = loadsprite("data/bgs/select/cursor01_pulse11.png");}
+        if(player == 2 && frame == 0){sprite = loadsprite("data/bgs/select/cursor02_pulse00.png");}
+        if(player == 2 && frame == 1){sprite = loadsprite("data/bgs/select/cursor02_pulse01.png");}
+        if(player == 2 && frame == 2){sprite = loadsprite("data/bgs/select/cursor02_pulse02.png");}
+        if(player == 2 && frame == 3){sprite = loadsprite("data/bgs/select/cursor02_pulse03.png");}
+        if(player == 2 && frame == 4){sprite = loadsprite("data/bgs/select/cursor02_pulse04.png");}
+        if(player == 2 && frame == 5){sprite = loadsprite("data/bgs/select/cursor02_pulse05.png");}
+        if(player == 2 && frame == 6){sprite = loadsprite("data/bgs/select/cursor02_pulse06.png");}
+        if(player == 2 && frame == 7){sprite = loadsprite("data/bgs/select/cursor02_pulse07.png");}
+        if(player == 2 && frame == 8){sprite = loadsprite("data/bgs/select/cursor02_pulse08.png");}
+        if(player == 2 && frame == 9){sprite = loadsprite("data/bgs/select/cursor02_pulse09.png");}
+        if(player == 2 && frame == 10){sprite = loadsprite("data/bgs/select/cursor02_pulse10.png");}
+        if(player == 2 && frame == 11){sprite = loadsprite("data/bgs/select/cursor02_pulse11.png");}
+        if(player == 3 && frame == 0){sprite = loadsprite("data/bgs/select/cursor03_pulse00.png");}
+        if(player == 3 && frame == 1){sprite = loadsprite("data/bgs/select/cursor03_pulse01.png");}
+        if(player == 3 && frame == 2){sprite = loadsprite("data/bgs/select/cursor03_pulse02.png");}
+        if(player == 3 && frame == 3){sprite = loadsprite("data/bgs/select/cursor03_pulse03.png");}
+        if(player == 3 && frame == 4){sprite = loadsprite("data/bgs/select/cursor03_pulse04.png");}
+        if(player == 3 && frame == 5){sprite = loadsprite("data/bgs/select/cursor03_pulse05.png");}
+        if(player == 3 && frame == 6){sprite = loadsprite("data/bgs/select/cursor03_pulse06.png");}
+        if(player == 3 && frame == 7){sprite = loadsprite("data/bgs/select/cursor03_pulse07.png");}
+        if(player == 3 && frame == 8){sprite = loadsprite("data/bgs/select/cursor03_pulse08.png");}
+        if(player == 3 && frame == 9){sprite = loadsprite("data/bgs/select/cursor03_pulse09.png");}
+        if(player == 3 && frame == 10){sprite = loadsprite("data/bgs/select/cursor03_pulse10.png");}
+        if(player == 3 && frame == 11){sprite = loadsprite("data/bgs/select/cursor03_pulse11.png");}
+        if(player == 4 && frame == 0){sprite = loadsprite("data/bgs/select/cursor04_pulse00.png");}
+        if(player == 4 && frame == 1){sprite = loadsprite("data/bgs/select/cursor04_pulse01.png");}
+        if(player == 4 && frame == 2){sprite = loadsprite("data/bgs/select/cursor04_pulse02.png");}
+        if(player == 4 && frame == 3){sprite = loadsprite("data/bgs/select/cursor04_pulse03.png");}
+        if(player == 4 && frame == 4){sprite = loadsprite("data/bgs/select/cursor04_pulse04.png");}
+        if(player == 4 && frame == 5){sprite = loadsprite("data/bgs/select/cursor04_pulse05.png");}
+        if(player == 4 && frame == 6){sprite = loadsprite("data/bgs/select/cursor04_pulse06.png");}
+        if(player == 4 && frame == 7){sprite = loadsprite("data/bgs/select/cursor04_pulse07.png");}
+        if(player == 4 && frame == 8){sprite = loadsprite("data/bgs/select/cursor04_pulse08.png");}
+        if(player == 4 && frame == 9){sprite = loadsprite("data/bgs/select/cursor04_pulse09.png");}
+        if(player == 4 && frame == 10){sprite = loadsprite("data/bgs/select/cursor04_pulse10.png");}
+        if(player == 4 && frame == 11){sprite = loadsprite("data/bgs/select/cursor04_pulse11.png");}
+        setglobalvar(key, sprite);
+    }
+    if(sprite != NULL()){drawsprite(sprite, x, y, 2001, 0);}
 }

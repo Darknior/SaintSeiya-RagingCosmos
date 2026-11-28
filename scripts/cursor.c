@@ -12,14 +12,14 @@ void main()
 		
 		if(time%2 == 0){ //USED TO SAVE CPU POWER
 			if(getlocalvar("drawmethod"+self) == NULL()){setlocalvar("drawmethod"+self, 1);}
-			if(getlocalvar("color") == NULL()){setlocalvar("color", 0xFF);}
+			if(getlocalvar("color") == NULL()){setlocalvar("color", 180);}
 			
 			void operation	= getlocalvar("operation");
 			float color		= getlocalvar("color");
 			float rate		= 4;
 			int tintMode	= 3;
 			int maxLimit	= 200;
-			int minLimit	= 20;
+			int minLimit	= 120;
 			
 			if(color != NULL()){
 				changedrawmethod(self, "enabled", 1);
