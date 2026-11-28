@@ -1,5 +1,5 @@
 blackbox	255	255	0
-whitebox	0	0	0
+whitebox	255	255	0
 
 color25		255	255	0
 color50		255	255	0
